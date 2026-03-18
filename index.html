@@ -8936,7 +8936,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
 
   showTripRestaurantPicker(){
     const trips = S.userData.trips || [];
-    const trip = trips[S._viewingTrip || 0];
+    const trip = TRIPS.current || trips[S._viewingTrip || 0];
     const isCruise = trip && (trip.name||'').toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i);
     if(isCruise){
       const ports = [
