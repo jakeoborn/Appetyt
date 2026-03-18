@@ -10352,6 +10352,7 @@ Return ONLY the JSON object, nothing else.`,
             style="padding:9px 16px;background:linear-gradient(135deg,#3eb8a8,#267a6e);border:none;border-radius:9px;color:#fff;font-size:12px;font-weight:700;cursor:pointer;touch-action:manipulation;font-family:inherit;white-space:nowrap">Subscribe</button>
         </div>
         <div id="brief-status" style="margin-top:8px;font-size:11px;display:none"></div>
+        <div style="margin-top:8px;font-size:10px;color:var(--text3);line-height:1.5">📧 To receive emails at any address, verify appetyt.app at <a href="https://resend.com/domains" target="_blank" style="color:var(--gold2)">resend.com/domains</a></div>
         ${S.briefingEmail ? '<div style="margin-top:8px;display:flex;align-items:center;justify-content:space-between;background:rgba(62,184,168,.08);border:1px solid rgba(62,184,168,.2);border-radius:8px;padding:8px 10px"><div style="font-size:11px;color:#3eb8a8;font-weight:600">✅ Subscribed · ' + S.briefingEmail + '</div><button onclick=\"A.unsubscribeBriefing()\" style=\"font-size:10px;color:var(--text3);background:none;border:none;cursor:pointer\">Remove</button></div>' : ''}
       </div>
       Get your key at <a href="https://console.anthropic.com" target="_blank" style="color:var(--gold)">console.anthropic.com</a>. Stored locally on your device only.</div>
@@ -12129,32 +12130,47 @@ function showPortGuide(code) {
 async function sendMorningBriefTest() {
   const btn = event.target;
   const orig = btn.textContent;
-  btn.textContent = '⏳ Sending…';
+  btn.textContent = '⏳ Sending...';
   btn.disabled = true;
 
   try {
-    // Use today's date or the first cruise port for testing
     const today = new Date().toISOString().split('T')[0];
     const testDate = today >= '2026-03-21' && today <= '2026-03-28' ? today : '2026-03-24';
+    const testEmail = S.briefingEmail || null;
+
+    if (!testEmail) {
+      A.showToast('Subscribe to briefings in Profile tab first');
+      btn.textContent = orig; btn.disabled = false;
+      return;
+    }
 
     const res = await fetch('/.netlify/functions/morning-brief', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ testDate, testEmail: S.briefingEmail || null })
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({testDate, testEmail})
     });
+
     const data = await res.json();
 
-    if (data.success) {
-      btn.textContent = '✅ Sent!';
-      btn.style.background = 'rgba(62,184,168,.2)';
-      setTimeout(() => { btn.textContent = orig; btn.disabled = false; btn.style.background = ''; }, 3000);
+    if (data.success && data.results?.[0]?.status === 'sent') {
+      A.showToast('Email sent to ' + testEmail + ' check your inbox!');
+    } else if (data.results?.[0]?.error) {
+      const err = data.results[0].error;
+      if (err.includes('validation_error') || err.includes('403')) {
+        A.showToast('Email domain needs verification -- see Profile to fix');
+      } else {
+        A.showToast('Error: ' + err.slice(0, 60));
+      }
+    } else if (data.message) {
+      A.showToast(data.message);
     } else {
-      throw new Error(data.error || 'Send failed');
+      A.showToast('Sent! Check ' + testEmail);
     }
-  } catch(e) {
-    btn.textContent = '❌ Error';
-    console.error('Morning brief test:', e);
-    setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 3000);
+  } catch(err) {
+    A.showToast('Network error -- try again');
+  } finally {
+    btn.textContent = orig;
+    btn.disabled = false;
   }
 }
 
