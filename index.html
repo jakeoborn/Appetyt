@@ -42,11 +42,10 @@ input,textarea{font-family:inherit;font-size:inherit}
 .nav-tab.active{color:var(--gold2);border-bottom-color:var(--gold2)}
 
 /* CONTENT */
-#desktop-main{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+#desktop-main{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden;height:0}
 #content{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:pan-y;overscroll-behavior-y:contain}
 .view{display:none}
-.view.active{display:flex}
-#home-view.active{display:flex;flex-direction:column}
+.view.active{display:block}
 
 /* HOME SEARCH + FILTERS */
 #search-bar{padding:12px 14px 6px;position:sticky;top:0;background:var(--dark);z-index:10}
@@ -532,8 +531,8 @@ input,textarea{font-family:inherit;font-size:inherit}
   /* ── Content area scrolls ── */
   #content {
     flex: 1 1 0;
-    min-height: auto;
-    height: auto;
+    min-height: 0;
+    height: 0;
     overflow-y: auto !important;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
@@ -611,7 +610,185 @@ input,textarea{font-family:inherit;font-size:inherit}
   #hotspot-panel { margin: 0; }
 }
 
+  /* ══ SCROLL FIX: ensure full scroll chain on desktop ══ */
+  /* #app(row) → #desktop-main(col, h:100dvh) → #nav-tabs(shrink) → #content(flex:1, overflow-y:auto) */
+  /* Each view inside #content should be block and sized by its content */
+  #content > .view { display: none; }
+  #content > .view.active {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+  /* Exception: map needs flex */
+  #map-view.active {
+    display: flex !important;
+    flex-direction: column;
+    height: calc(100dvh - 108px) !important;
+    overflow: hidden !important;
+  }
+  /* Home view search bar: sticky within #content */
+  #search-bar { position: sticky; top: 0; z-index: 10; }
 
+/* 3-column grid at large desktop */
+@media (min-width: 1400px) {
+  #restaurant-list {
+    grid-template-columns: repeat(3, 1fr) !important;
+    padding: 0 24px 80px;
+  }
+  #desktop-sidebar { width: 240px !important; min-width: 240px !important; }
+}
+
+
+/* ── GRAIN + OCEAN ATMOSPHERE ── */
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity:.5;}
+#app{background:linear-gradient(180deg,var(--ocean) 0%,var(--dark) 30%);}
+
+/* ════════════════════════════════════════
+   CRUISE PLANNER — Luxury Travel Aesthetic
+   ════════════════════════════════════════ */
+#cruise-planner{display:flex;flex-direction:column;min-height:calc(100dvh - 220px)}
+.cp-hero{padding:0 0 16px;background:linear-gradient(180deg,rgba(12,31,53,.95) 0%,transparent 100%)}
+.cp-eyebrow{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);opacity:.65;margin-bottom:5px;display:flex;align-items:center;gap:5px}
+.cp-eyebrow::before{content:"✦";font-size:8px}
+.cp-title{font-family:var(--serif);font-size:26px;font-weight:600;color:var(--t1,var(--text));line-height:1.05;margin-bottom:3px}
+.cp-title em{font-style:italic;color:var(--gold2)}
+.cp-meta{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--t3,var(--text3));margin-bottom:14px;flex-wrap:wrap}
+.cp-meta span{color:var(--t2,var(--text2))}
+.cp-meta-dot{width:2px;height:2px;border-radius:50%;background:var(--t4,var(--text3))}
+
+/* Voyage progress */
+.vp-strip{display:flex;align-items:flex-start;gap:0;margin-bottom:14px}
+.vp-stop{display:flex;flex-direction:column;align-items:center;flex:1;position:relative;cursor:pointer}
+.vp-stop::after{content:"";position:absolute;top:6px;left:50%;right:-50%;height:1px;background:linear-gradient(90deg,var(--gold),rgba(200,169,110,.15))}
+.vp-stop:last-child::after{display:none}
+.vp-dot{width:12px;height:12px;border-radius:50%;border:2px solid rgba(200,169,110,.15);background:var(--card);position:relative;z-index:1;transition:all .25s;flex-shrink:0}
+.vp-stop.vp-current .vp-dot{background:var(--gold);border-color:var(--gold);box-shadow:0 0 10px rgba(200,169,110,.5);width:14px;height:14px}
+.vp-stop.vp-done .vp-dot{background:rgba(200,169,110,.25);border-color:rgba(200,169,110,.25)}
+.vp-code{font-size:7px;font-weight:700;letter-spacing:.05em;color:rgba(200,169,110,.25);margin-top:4px;text-transform:uppercase}
+.vp-stop.vp-current .vp-code{color:var(--gold2)}
+.vp-stop.vp-done .vp-code{color:var(--t3,var(--text3))}
+
+/* Type pills */
+.cp-type-scroll{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 -14px;padding:0 14px 12px}
+.cp-type-scroll::-webkit-scrollbar{display:none}
+.cp-type-pill{display:inline-flex;align-items:center;gap:5px;padding:6px 13px;border-radius:30px;border:1px solid rgba(200,169,110,.08);background:rgba(255,255,255,.025);color:var(--t3,var(--text3));font-size:11px;font-weight:500;cursor:pointer;white-space:nowrap;touch-action:manipulation;transition:all .22s;font-family:var(--sans,inherit);backdrop-filter:blur(8px)}
+.cp-type-pill.active{background:rgba(200,169,110,.1);color:var(--gold2);border-color:rgba(200,169,110,.25)}
+
+/* Section labels */
+.cp-sec-label{display:flex;align-items:center;gap:8px;font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--t4,var(--text3));margin-bottom:12px}
+.cp-sec-label::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(200,169,110,.12),transparent)}
+
+/* Linked reservation cards */
+.cp-linked-stack{display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+.cp-lc{display:flex;align-items:center;gap:11px;padding:13px 14px;background:linear-gradient(135deg,var(--card2),var(--card));border:1px solid rgba(200,169,110,.07);border-radius:14px;animation:cpRise .5s ease both;touch-action:manipulation;cursor:pointer;transition:border-color .2s}
+.cp-lc:active{border-color:rgba(200,169,110,.18)}
+@keyframes cpRise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.cp-lc-icon{width:38px;height:38px;border-radius:10px;background:rgba(200,169,110,.08);border:1px solid rgba(200,169,110,.1);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.cp-lc-body{flex:1;min-width:0}
+.cp-lc-title{font-size:13px;font-weight:500;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cp-lc-sub{font-size:11px;color:var(--t3,var(--text3));margin-top:2px}
+.cp-badge{font-size:9px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:6px;flex-shrink:0}
+.cp-badge-ok{background:rgba(62,184,168,.1);color:#3eb8a8;border:1px solid rgba(62,184,168,.18)}
+.cp-badge-pnd{background:rgba(200,169,110,.1);color:var(--gold2);border:1px solid rgba(200,169,110,.2)}
+.cp-add-link{width:100%;padding:11px 14px;display:flex;align-items:center;justify-content:center;gap:8px;border-radius:13px;border:1px dashed rgba(200,169,110,.15);background:transparent;color:var(--t3,var(--text3));font-size:12px;font-weight:500;cursor:pointer;touch-action:manipulation;font-family:var(--sans,inherit);transition:all .2s;margin-bottom:20px}
+.cp-add-link:active{border-color:rgba(200,169,110,.3);color:var(--gold2)}
+.cp-add-plus{width:20px;height:20px;border-radius:50%;border:1px solid rgba(200,169,110,.25);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--gold);transition:transform .2s}
+.cp-add-link:active .cp-add-plus{transform:rotate(90deg)}
+
+/* Port cards */
+.cp-ports-stack{display:flex;flex-direction:column;gap:11px;padding-bottom:40px}
+.cp-port{border-radius:18px;overflow:hidden;border:1px solid rgba(200,169,110,.07);cursor:pointer;touch-action:manipulation;animation:cpRise .5s ease both;transition:border-color .25s,transform .12s;background:var(--card)}
+.cp-port:active{transform:scale(.99)}
+.cp-port.cp-open{border-color:rgba(200,169,110,.18)}
+
+/* Port hero */
+.cp-ph{position:relative;height:120px;overflow:hidden}
+.cp-ph-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:100px;filter:saturate(.5) brightness(.55);transform:scale(1.3);user-select:none}
+.cp-ph-grad{position:absolute;inset:0}
+.cp-ph-flag{position:absolute;top:12px;right:13px;font-size:22px;z-index:2;filter:drop-shadow(0 2px 5px rgba(0,0,0,.4))}
+.cp-ph-content{position:absolute;bottom:0;left:0;right:0;padding:12px 14px;background:linear-gradient(to top,rgba(0,0,0,.75),transparent);z-index:2}
+.cp-ph-date{display:inline-flex;align-items:center;background:rgba(0,0,0,.45);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:2px 9px;font-size:9px;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.72);text-transform:uppercase;margin-bottom:5px}
+.cp-ph-name{font-family:var(--serif);font-size:20px;font-weight:600;color:#fff;line-height:1;margin-bottom:2px}
+.cp-ph-country{font-size:10px;color:rgba(255,255,255,.45);font-weight:400}
+
+/* Port body */
+.cp-pb{padding:12px 14px;background:linear-gradient(160deg,var(--card2),var(--card))}
+.cp-times{display:grid;grid-template-columns:1fr 1fr auto;gap:7px;margin-bottom:11px}
+.cp-time{padding:9px 10px;border-radius:10px;background:rgba(255,255,255,.025);border:1px solid rgba(200,169,110,.06)}
+.cp-time-label{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--t4,var(--text3));margin-bottom:3px;display:flex;align-items:center;gap:4px}
+.cp-tdot{width:6px;height:6px;border-radius:50%}
+.cp-tdot-a{background:#3eb8a8}
+.cp-tdot-d{background:#d4756a}
+.cp-tdot-f{background:var(--gold2)}
+.cp-time-val{font-size:13px;font-weight:600;color:var(--text);font-variant-numeric:tabular-nums}
+.cp-hours{padding:9px 10px;border-radius:10px;background:rgba(200,169,110,.08);border:1px solid rgba(200,169,110,.12);display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:58px}
+.cp-hours-num{font-family:var(--serif);font-size:17px;font-weight:600;color:var(--gold2);line-height:1;font-style:italic}
+.cp-hours-unit{font-size:7px;font-weight:700;letter-spacing:.08em;color:var(--t3,var(--text3));text-transform:uppercase;margin-top:2px}
+
+/* Port actions row */
+.cp-actions{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid rgba(200,169,110,.06)}
+.cp-action-btns{display:flex;gap:6px}
+.cp-btn{padding:7px 11px;border-radius:9px;border:1px solid rgba(200,169,110,.08);background:rgba(255,255,255,.025);color:var(--t2,var(--text2));font-size:11px;font-weight:500;cursor:pointer;touch-action:manipulation;font-family:var(--sans,inherit);display:flex;align-items:center;gap:4px;transition:all .18s}
+.cp-btn:active{background:rgba(200,169,110,.1);border-color:rgba(200,169,110,.2);color:var(--gold2)}
+.cp-btn.ai-btn{background:rgba(200,169,110,.08);border-color:rgba(200,169,110,.18);color:var(--gold2)}
+.cp-btn.ai-btn:active{background:rgba(200,169,110,.18)}
+.cp-chevron{width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,.03);border:1px solid rgba(200,169,110,.07);display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--t3,var(--text3));transition:transform .3s,background .2s}
+.cp-port.cp-open .cp-chevron{transform:rotate(180deg);background:rgba(200,169,110,.1);color:var(--gold2)}
+
+/* Expand panel */
+.cp-expand{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1)}
+.cp-port.cp-open .cp-expand{max-height:600px}
+.cp-expand-inner{padding:11px 14px 14px;border-top:1px solid rgba(200,169,110,.06)}
+
+/* AI panel */
+.cp-ai{border-radius:12px;background:linear-gradient(135deg,rgba(12,31,53,.75),rgba(9,12,18,.5));border:1px solid rgba(62,184,168,.14);padding:12px;overflow:hidden}
+.cp-ai-header{display:flex;align-items:center;gap:7px;margin-bottom:11px}
+.cp-ai-gem{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,#3eb8a8,#267a6e);display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0}
+.cp-ai-title{font-size:12px;font-weight:600;color:#3eb8a8;letter-spacing:.03em;flex:1}
+.cp-ai-close{font-size:16px;color:var(--t4,var(--text3));cursor:pointer;touch-action:manipulation;padding:2px 4px;line-height:1}
+.cp-loading{display:flex;align-items:center;gap:6px;padding:4px 0}
+.cp-loading-text{font-size:11px;color:var(--t3,var(--text3))}
+.cp-pdot{width:5px;height:5px;border-radius:50%;background:#3eb8a8;display:inline-block;animation:cpPulse 1.2s ease infinite}
+.cp-pdot:nth-child(2){animation-delay:.18s}
+.cp-pdot:nth-child(3){animation-delay:.36s}
+@keyframes cpPulse{0%,100%{opacity:.2;transform:scale(.7)}50%{opacity:1;transform:scale(1)}}
+.cp-recs{display:flex;flex-direction:column}
+.cp-rec{display:flex;align-items:flex-start;gap:9px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.04);cursor:pointer;touch-action:manipulation;transition:opacity .15s}
+.cp-rec:last-child{border-bottom:none;padding-bottom:0}
+.cp-rec:first-child{padding-top:0}
+.cp-rec:active{opacity:.65}
+.cp-rec-icon{width:34px;height:34px;border-radius:9px;flex-shrink:0;background:rgba(62,184,168,.07);border:1px solid rgba(62,184,168,.1);display:flex;align-items:center;justify-content:center;font-size:16px}
+.cp-rec-body{flex:1;min-width:0}
+.cp-rec-name{font-size:12px;font-weight:600;color:var(--text);margin-bottom:2px}
+.cp-rec-desc{font-size:11px;color:var(--t3,var(--text3));line-height:1.45}
+.cp-rec-tag{display:inline-block;margin-top:4px;font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase}
+
+/* Cruise modal */
+#cruise-modal-bg{position:fixed;inset:0;z-index:500;background:rgba(5,7,12,.88);backdrop-filter:blur(12px);display:none;align-items:flex-end;opacity:0;transition:opacity .3s}
+#cruise-modal-bg.open{display:flex}
+#cruise-modal-bg.visible{opacity:1}
+.cm-sheet{width:100%;max-width:430px;margin:0 auto;background:linear-gradient(180deg,var(--card2) 0%,var(--card) 100%);border:1px solid rgba(200,169,110,.12);border-bottom:none;border-radius:22px 22px 0 0;padding:10px 18px calc(30px + env(safe-area-inset-bottom));transform:translateY(30px);transition:transform .35s cubic-bezier(.32,0,.18,1)}
+#cruise-modal-bg.visible .cm-sheet{transform:translateY(0)}
+.cm-drag{width:30px;height:3px;border-radius:2px;background:rgba(200,169,110,.12);margin:8px auto 18px}
+.cm-heading{font-family:var(--serif);font-size:21px;font-weight:600;color:var(--text);margin-bottom:3px}
+.cm-hint{font-size:12px;color:var(--t3,var(--text3));margin-bottom:18px}
+.cm-type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:18px}
+.cm-type-btn{padding:13px 7px;border-radius:13px;border:1px solid rgba(200,169,110,.07);background:rgba(255,255,255,.025);cursor:pointer;touch-action:manipulation;text-align:center;transition:all .2s;font-family:var(--sans,inherit)}
+.cm-type-btn.sel{background:rgba(200,169,110,.1);border-color:rgba(200,169,110,.25)}
+.cm-type-icon{font-size:22px;display:block;margin-bottom:5px}
+.cm-type-label{font-size:10px;color:var(--t2,var(--text2));font-weight:500;letter-spacing:.03em}
+.cm-type-btn.sel .cm-type-label{color:var(--gold2)}
+.cm-input{width:100%;padding:11px 13px;background:rgba(255,255,255,.04);border:1px solid rgba(200,169,110,.12);border-radius:10px;color:var(--text);font-size:13px;font-family:var(--sans,inherit);margin-bottom:7px;outline:none;transition:border-color .2s;-webkit-appearance:none}
+.cm-input:focus{border-color:rgba(200,169,110,.35)}
+.cm-input::placeholder{color:var(--t4,var(--text3))}
+.cm-row{display:flex;gap:7px}
+.cm-row .cm-input{flex:1}
+.cm-submit{width:100%;padding:14px;background:linear-gradient(135deg,var(--gold2),#8a6020);border:none;border-radius:12px;color:#0a0600;font-size:14px;font-weight:700;cursor:pointer;touch-action:manipulation;font-family:var(--sans,inherit);letter-spacing:.03em;box-shadow:0 6px 24px rgba(200,169,110,.18);margin-top:8px;transition:opacity .15s}
+.cm-submit:active{opacity:.82}
+.cm-cancel{width:100%;padding:11px;background:none;border:none;color:var(--t4,var(--text3));font-size:12px;cursor:pointer;font-family:var(--sans,inherit);margin-top:3px}
 </style>
 
 
@@ -3273,19 +3450,18 @@ const A = {
 
   // ── INIT ──────────────────────────────────────────────────
   init(){
-    // One-time data migration: clear corrupted state from older versions
     try{
+      // Version gate: clear corrupted state from older versions
       const appVer = localStorage.getItem('appetyt_ver');
       if(appVer !== '2.1') {
-        // Preserve only safe data before clearing
         const oldData = localStorage.getItem('appetyt_data');
         let savedData = null;
         if(oldData){
           try{
             const p = JSON.parse(oldData);
             savedData = JSON.stringify({
-              favs: p.favs||[], visited: p.visited||[], want: p.want||[],
-              bills: p.bills||[], notes: p.notes||{}, trips: p.trips||[], claimedDrops: p.claimedDrops||[]
+              favs:p.favs||[], visited:p.visited||[], want:p.want||[],
+              bills:p.bills||[], notes:p.notes||{}, trips:p.trips||[], claimedDrops:p.claimedDrops||[]
             });
           }catch(e){}
         }
@@ -3294,29 +3470,7 @@ const A = {
         localStorage.setItem('appetyt_ver', '2.1');
       }
     }catch(e){}
-    try{
-      const d=localStorage.getItem('appetyt_data');
-      if(d){
-        const parsed=JSON.parse(d);
-        // Only restore safe fields, never restore filter/indicator state
-        S.userData = {
-          favs: parsed.favs||[],
-          visited: parsed.visited||[],
-          want: parsed.want||[],
-          bills: parsed.bills||[],
-          notes: parsed.notes||{},
-          trips: parsed.trips||[],
-          claimedDrops: parsed.claimedDrops||[]
-        };
-      }
-    }catch(e){}
-    // Ensure indicators is always a proper Set (JSON.parse converts Set to array)
-    if(!(S.indicators instanceof Set)) S.indicators = new Set(Array.isArray(S.indicators)?S.indicators:[]);
-    // Guard: reset any corrupted filter state that would cause empty results
-    if(typeof S.filter !== 'string') S.filter = 'all';
-    if(typeof S.neighborhood !== 'string') S.neighborhood = 'all';
-    if(typeof S.searchQ !== 'string') S.searchQ = '';
-    if(typeof S.city !== 'string') S.city = 'Dallas';
+    try{const d=localStorage.getItem('appetyt_data');if(d){const p=JSON.parse(d);S.userData={favs:p.favs||[],visited:p.visited||[],want:p.want||[],bills:p.bills||[],notes:p.notes||{},trips:p.trips||[],claimedDrops:p.claimedDrops||[]};}}catch(e){}
     try{const k=localStorage.getItem('appetyt_key');if(k)S.apiKey=k;}catch(e){}
     // Restore active trip
     try{
@@ -3336,7 +3490,7 @@ const A = {
     if(_sab) _sab.classList.toggle('signed-in',!!S.user);
     if(_sal) _sal.textContent=S.user?(S.user.email?.split('@')[0]||'✓ Signed In'):'Sign In';document.getElementById('auth-btn').textContent='✓';}}catch(e){}
     this.buildCityList();
-    this.tab('home');
+    this.renderHome();
     this.renderTop50();
     this.renderDiscover();
     this.travelSub('plan'); // default travel sub-tab
@@ -9724,35 +9878,26 @@ Return ONLY the JSON object, nothing else.`,
     const btn   = document.getElementById('brief-sub-btn');
     const status = document.getElementById('brief-status');
     if(!email || !email.includes('@')){
-      if(status){status.textContent='Please enter a valid email';status.style.color='var(--red)';status.style.display='block';}
+      if(status){status.textContent='⚠️ Please enter a valid email';status.style.color='var(--red)';status.style.display='block';}
       return;
     }
-    if(btn){btn.textContent='Saving...';btn.disabled=true;}
+    if(btn){btn.textContent='Saving…';btn.disabled=true;}
     try{
-      // Use the Netlify function (service key) to bypass RLS
-      const res = await fetch('/.netlify/functions/send-brief', {
-        method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({subscribe: true, email, name})
-      });
-      const data = await res.json();
-      if(data.subscribed || data.success){
-        S.briefingEmail = email;
-        try{localStorage.setItem('appetyt_briefing_email', email);}catch(e){}
-        if(status){status.textContent='Subscribed! First briefing arrives March 21st at 8AM.';status.style.color='#3eb8a8';status.style.display='block';}
-        A.showToast('Subscribed to morning briefings!');
-        setTimeout(()=>A.renderProfile(), 2000);
-      } else {
-        throw new Error(data.error || 'Unknown error');
-      }
+      const sb=getSB();
+      if(!sb) throw new Error('Service unavailable');
+      const {error}=await sb.from('briefing_subscribers').upsert({email,name,active:true,updated_at:new Date().toISOString()},{onConflict:'email'});
+      if(error) throw error;
+      S.briefingEmail=email;
+      try{localStorage.setItem('appetyt_briefing_email',email);}catch(e){}
+      if(status){status.textContent='✅ Subscribed! First briefing arrives March 21st at 8AM.';status.style.color='#3eb8a8';status.style.display='block';}
+      A.showToast('🌅 Subscribed to morning briefings!');
+      setTimeout(()=>A.renderProfile(),2000);
     }catch(err){
-      if(status){status.textContent='Could not subscribe: '+err.message.slice(0,50);status.style.color='var(--red)';status.style.display='block';}
+      if(status){status.textContent='❌ Could not subscribe. Try again.';status.style.color='var(--red)';status.style.display='block';}
     }finally{
       if(btn){btn.textContent='Subscribe';btn.disabled=false;}
     }
   },
-
-  unsubscribeBriefing,
 
   unsubscribeBriefing: async function(){
     const email=S.briefingEmail;
@@ -10149,6 +10294,39 @@ Return ONLY the JSON object, nothing else.`,
       </div>
 
       <!-- AI Key Setup -->
+      <div style="margin-top:16px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px">
+        <div style="font-size:13px;font-weight:800;color:var(--gold);margin-bottom:4px">🤖 AI Features</div>
+        <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Enter your Anthropic API key to enable AI search, trip planning, and the restaurant concierge.</div>
+        <div style="display:flex;gap:8px">
+          <input id="api-key-input" type="password" placeholder="sk-ant-..." value="${S.apiKey||''}"
+            style="flex:1;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:8px 12px;border-radius:10px;font-size:12px;outline:none;font-family:monospace">
+          <button onclick="A.saveApiKey()" style="background:var(--gold);color:var(--dark);font-weight:800;font-size:12px;padding:8px 14px;border-radius:10px;border:none;cursor:pointer;white-space:nowrap">Save</button>
+        </div>
+        ${S.apiKey ? '<div style="font-size:11px;color:#4c9a6e;margin-top:6px">✅ AI features active</div>' : '<div style="font-size:11px;color:var(--text3);margin-top:6px">No key set — AI features will not respond</div>'}
+        <div style="font-size:10px;color:var(--text3);margin-top:8px;line-height:1.5"><!-- Briefing Signup -->
+      <div style="background:linear-gradient(135deg,var(--card2),var(--card));border:1px solid rgba(62,184,168,.18);border-radius:14px;padding:16px;margin-bottom:10px">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#3eb8a8,#267a6e);display:flex;align-items:center;justify-content:center;font-size:15px">🌅</div>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:var(--text)">Morning Cruise Briefing</div>
+            <div style="font-size:10px;color:var(--text3)">Daily AI port guide · Free · No account needed</div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--text3);margin-bottom:12px;line-height:1.6">Get a personalised AI briefing each morning of your cruise — arrival times, top picks, and what not to miss. Just enter your email.</div>
+        <input id="brief-name" type="text" placeholder="Your name (optional)" autocomplete="given-name"
+          style="width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(200,169,110,.1);color:var(--text);padding:9px 12px;border-radius:9px;font-size:13px;margin-bottom:7px;font-family:inherit;outline:none;box-sizing:border-box">
+        <div style="display:flex;gap:7px">
+          <input id="brief-email" type="email" placeholder="your@email.com" autocomplete="email"
+            style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(200,169,110,.1);color:var(--text);padding:9px 12px;border-radius:9px;font-size:13px;font-family:inherit;outline:none">
+          <button onclick="A.subscribeBriefing()" id="brief-sub-btn"
+            style="padding:9px 16px;background:linear-gradient(135deg,#3eb8a8,#267a6e);border:none;border-radius:9px;color:#fff;font-size:12px;font-weight:700;cursor:pointer;touch-action:manipulation;font-family:inherit;white-space:nowrap">Subscribe</button>
+        </div>
+        <div id="brief-status" style="margin-top:8px;font-size:11px;display:none"></div>
+        <div style="margin-top:8px;font-size:10px;color:var(--text3);line-height:1.5">📧 To receive emails at any address, verify appetyt.app at <a href="https://resend.com/domains" target="_blank" style="color:var(--gold2)">resend.com/domains</a></div>
+        ${S.briefingEmail ? '<div style="margin-top:8px;display:flex;align-items:center;justify-content:space-between;background:rgba(62,184,168,.08);border:1px solid rgba(62,184,168,.2);border-radius:8px;padding:8px 10px"><div style="font-size:11px;color:#3eb8a8;font-weight:600">✅ Subscribed · ' + S.briefingEmail + '</div><button onclick=\"A.unsubscribeBriefing()\" style=\"font-size:10px;color:var(--text3);background:none;border:none;cursor:pointer\">Remove</button></div>' : ''}
+      </div>
+      Get your key at <a href="https://console.anthropic.com" target="_blank" style="color:var(--gold)">console.anthropic.com</a>. Stored locally on your device only.</div>
+      </div>
 
       <!-- ── Morning Briefing Signup ── -->
       <div style="background:linear-gradient(135deg,var(--card2),var(--card));border:1px solid rgba(62,184,168,.18);border-radius:14px;padding:16px;margin-top:10px">
@@ -11858,7 +12036,245 @@ const CRUISE_PORTS = [
    ]}
 ];
 
+function showPortGuide(code) {
+  const p = CRUISE_PORTS.find(x=>x.code===code);
+  if(!p) return;
 
+  // Build the port guide modal
+  let modal = document.getElementById('port-guide-modal');
+  if(!modal) {
+    modal = document.createElement('div');
+    modal.id = 'port-guide-modal';
+    modal.style.cssText = 'position:fixed;inset:0;z-index:600;background:rgba(5,8,14,.92);backdrop-filter:blur(14px);display:flex;align-items:flex-end;justify-content:center';
+    modal.onclick = function(e){ if(e.target===this) this.remove(); };
+    document.body.appendChild(modal);
+  }
+
+  const hoursLabel = p.hours ? `<div style="background:rgba(200,169,110,.12);border:1px solid rgba(200,169,110,.2);border-radius:9px;padding:8px 10px;text-align:center"><div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#e2c98a;font-style:italic">${p.hours}</div><div style="font-size:8px;font-weight:700;letter-spacing:.08em;color:#5a5040;text-transform:uppercase;margin-top:1px">hrs ashore</div></div>` : '';
+
+  modal.innerHTML = `
+    <div style="width:100%;max-width:430px;background:linear-gradient(180deg,#161c2c,#0f1320);border-radius:22px 22px 0 0;border:1px solid rgba(200,169,110,.12);border-bottom:none;max-height:88vh;overflow-y:auto;scrollbar-width:none">
+      <!-- Hero -->
+      <div style="position:relative;height:130px;overflow:hidden;border-radius:22px 22px 0 0">
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,${p.grad.split(',')[0]} 0%,${p.grad.split(',')[1]} 100%)"></div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:90px;opacity:.12">${p.emoji}</div>
+        <div style="position:absolute;top:12px;right:14px;font-size:22px">${p.flag}</div>
+        <button onclick="document.getElementById('port-guide-modal').remove()" style="position:absolute;top:14px;left:14px;width:28px;height:28px;border-radius:50%;background:rgba(0,0,0,.4);border:none;color:#fff;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center">✕</button>
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(to top,rgba(0,0,0,.8),transparent)">
+          <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:rgba(255,255,255,.55);text-transform:uppercase;margin-bottom:3px">${p.day}</div>
+          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:#fff;line-height:1">${p.name}</div>
+          <div style="font-size:11px;color:rgba(255,255,255,.4);margin-top:1px">${p.country}</div>
+        </div>
+      </div>
+      <!-- Times row -->
+      <div style="display:grid;grid-template-columns:1fr 1fr${p.hours?' 1fr':''};gap:7px;padding:12px 16px 0">
+        <div style="background:rgba(255,255,255,.03);border:1px solid rgba(62,184,168,.12);border-radius:10px;padding:9px 10px">
+          <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#3eb8a8;margin-bottom:3px;display:flex;align-items:center;gap:4px"><div style="width:5px;height:5px;border-radius:50%;background:#3eb8a8"></div>Arrive</div>
+          <div style="font-size:14px;font-weight:600;color:#e8dfc8">${p.arrive}</div>
+        </div>
+        <div style="background:rgba(255,255,255,.03);border:1px solid rgba(212,117,106,.12);border-radius:10px;padding:9px 10px">
+          <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#d4756a;margin-bottom:3px;display:flex;align-items:center;gap:4px"><div style="width:5px;height:5px;border-radius:50%;background:#d4756a"></div>${p.depart==='Debark'?'Debark':'Depart'}</div>
+          <div style="font-size:14px;font-weight:600;color:#e8dfc8">${p.depart}</div>
+        </div>
+        ${hoursLabel}
+      </div>
+      <!-- Guide section -->
+      <div style="padding:16px 16px 40px">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3228;margin-bottom:12px;display:flex;align-items:center;gap:8px">✦ Top Picks <div style="flex:1;height:1px;background:rgba(200,169,110,.08)"></div></div>
+        <div style="display:flex;flex-direction:column;gap:0">
+          ${p.recs.map((r,i)=>`
+            <div style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;${i<p.recs.length-1?'border-bottom:1px solid rgba(255,255,255,.04)':''}">
+              <div style="width:36px;height:36px;border-radius:10px;background:rgba(62,184,168,.07);border:1px solid rgba(62,184,168,.1);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0">${r.icon}</div>
+              <div style="flex:1;min-width:0">
+                <div style="font-size:13px;font-weight:600;color:#e8dfc8;margin-bottom:2px">${r.name}</div>
+                <div style="font-size:11px;color:#5a5040;line-height:1.45">${r.desc}</div>
+                <div style="display:inline-block;margin-top:4px;font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase">${r.tag}</div>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>
+    </div>`;
+}
+
+/* ── Morning Brief Test ─────────────────────────────────────────── */
+async function sendMorningBriefTest() {
+  const btn = event.target;
+  const orig = btn.textContent;
+  btn.textContent = '⏳ Sending...';
+  btn.disabled = true;
+
+  try {
+    const today = new Date().toISOString().split('T')[0];
+    const testDate = today >= '2026-03-21' && today <= '2026-03-28' ? today : '2026-03-24';
+    const testEmail = S.briefingEmail || null;
+
+    if (!testEmail) {
+      A.showToast('Subscribe to briefings in Profile tab first');
+      btn.textContent = orig; btn.disabled = false;
+      return;
+    }
+
+    const res = await fetch('/.netlify/functions/morning-brief', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({testDate, testEmail})
+    });
+
+    const data = await res.json();
+
+    if (data.success && data.results?.[0]?.status === 'sent') {
+      A.showToast('Email sent to ' + testEmail + ' check your inbox!');
+    } else if (data.results?.[0]?.error) {
+      const err = data.results[0].error;
+      if (err.includes('validation_error') || err.includes('403')) {
+        A.showToast('Email domain needs verification -- see Profile to fix');
+      } else {
+        A.showToast('Error: ' + err.slice(0, 60));
+      }
+    } else if (data.message) {
+      A.showToast(data.message);
+    } else {
+      A.showToast('Sent! Check ' + testEmail);
+    }
+  } catch(err) {
+    A.showToast('Network error -- try again');
+  } finally {
+    btn.textContent = orig;
+    btn.disabled = false;
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   CRUISE PORT GUIDE — Restaurants, Activities & Port List Modal
+   All data verified against real establishments
+═══════════════════════════════════════════════════════════════ */
+
+const PORT_RESTAURANTS = {
+  SJU: [
+    {icon:"🍸",name:"La Factoria",desc:"James Beard-winning cocktail bar — legendary rum cocktails and hidden rooms in Old San Juan",tag:"COCKTAILS · MUST DO",price:"$$"},
+    {icon:"🍽️",name:"Marmalade Restaurant",book:"https://www.opentable.com/marmalade-restaurant-and-wine-bar",info:"https://www.marmaladepr.com",desc:"Creative tasting menu in a 300-year-old colonial building — best upscale meal in Puerto Rico",tag:"FINE DINING · RESERVE",price:"$$$$"},
+    {icon:"🌮",name:"El Jibarito",info:"https://maps.app.goo.gl/jibarito-san-juan",desc:"Beloved local institution for mofongo, pernil and Puerto Rican home cooking since 1969",tag:"LOCAL ICON · CASH ONLY",price:"$"},
+    {icon:"🥘",name:"La Mallorca",desc:"Old San Juan institution famous for the mallorca sandwich and strong Cuban coffee",tag:"BREAKFAST · HISTORIC",price:"$"},
+    {icon:"🍺",name:"Lote 23",desc:"Hip outdoor food park with the best local chefs — try alcapurrias, pinchos and craft beer",tag:"FOOD PARK · CASUAL",price:"$$"},
+    {icon:"🍹",name:"La Vergüenza",desc:"Trendy cocktail bar in Santurce arts district — great late night spot",tag:"LATE NIGHT · TRENDY",price:"$$"}
+  ],
+  TOV: [
+    {icon:"🍹",name:"Myett's Garden Grille",desc:"Beachfront Caribbean plates and cocktails right on Cane Garden Bay",tag:"BEACHFRONT · MUST DO",price:"$$"},
+    {icon:"🎵",name:"Quito's Restaurant & Bar",desc:"Famous for fresh catch and live reggae on weekends — run by local legend Quito Rymer",tag:"LIVE MUSIC · LOCAL",price:"$$"},
+    {icon:"🍕",name:"Capriccio di Mare",desc:"Tiny Italian gem in Road Town — best pizza and pasta in the BVI",tag:"ITALIAN · LOCAL FAVOURITE",price:"$$"},
+    {icon:"🦞",name:"Brandywine Estate Restaurant",desc:"Fine dining in a 300-year-old sugar plantation — lobster and stunning Beef Island views",tag:"FINE DINING · HISTORIC",price:"$$$$"},
+    {icon:"🍺",name:"Jolly Roger Bar & Restaurant",desc:"Classic waterfront bar popular with sailors — cheap food, cold beer, great vibe",tag:"BAR FOOD · CASUAL",price:"$"}
+  ],
+  SEA: [
+    {icon:"🍽️",name:"The Wake",desc:"Valiant Lady's premier steakhouse — dry-aged cuts and spectacular ocean views",tag:"SIGNATURE · RESERVE",price:"$$$$"},
+    {icon:"🍕",name:"Extra Virgin",desc:"Italian trattoria on board — handmade pasta and wood-fired pizza",tag:"ITALIAN · ONBOARD",price:"$$$"},
+    {icon:"🌮",name:"Pink Agave",desc:"Modern Mexican on board — best tacos and mezcal selections at sea",tag:"MEXICAN · ONBOARD",price:"$$$"},
+    {icon:"🍜",name:"Razzle Dazzle",desc:"Vegetarian-forward restaurant on board with inventive plant-based menu",tag:"PLANT-BASED · ONBOARD",price:"$$"}
+  ],
+  BGI: [
+    {icon:"🍹",name:"Harbour Lights Beach Club",desc:"Rum punches, fried flying fish and live music nightly — a true Barbados institution",tag:"MUST DO · BEACHFRONT",price:"$$"},
+    {icon:"🍽️",name:"The Cliff Restaurant",book:"https://www.thecliffbarbados.com/reservations",info:"https://www.thecliffbarbados.com",desc:"Dramatic cliffside fine dining above the Caribbean — book a sunset table weeks ahead",tag:"FINE DINING · VIEWS · RESERVE",price:"$$$$"},
+    {icon:"🐟",name:"Oistins Fish Fry",desc:"Open-air Friday night BBQ fish market — macaroni pie, rum punch, live music. Legendary.",tag:"FRIDAY ONLY · ICONIC",price:"$"},
+    {icon:"🥘",name:"Champers Restaurant",desc:"Caribbean-International menu right on Accra beach — great for a long lunch",tag:"BEACHFRONT · LUNCH",price:"$$$"},
+    {icon:"🍗",name:"Cuzz's Fish Stand",desc:"Legendary hole-in-the-wall fish cutter sandwiches on the Careenage boardwalk",tag:"HOLE IN WALL · CASH ONLY",price:"$"},
+    {icon:"🌙",name:"Baxter's Road Street Food",desc:"Barbados's famous late-night food strip — fried chicken and Banks beer until dawn",tag:"LATE NIGHT · LOCAL SECRET",price:"$"}
+  ],
+  SLU: [
+    {icon:"🍽️",name:"Coal Pot Restaurant",desc:"Waterfront Creole cuisine in a converted 18th-century coal shed — open since 1966",tag:"HISTORIC · RESERVE",price:"$$$"},
+    {icon:"🐟",name:"The Naked Fisherman",desc:"Fresh lobster and fish right on the beach at Cap Maison — stunning Piton backdrop",tag:"BEACHFRONT · SEAFOOD",price:"$$$"},
+    {icon:"🍹",name:"Doolittle's Restaurant",desc:"Laid-back beach bar at stunning Marigot Bay — rum cocktails and fresh catch",tag:"MARIGOT BAY · SCENIC",price:"$$"},
+    {icon:"🍫",name:"Boucan by Hotel Chocolat",desc:"Cocoa plantation restaurant — every dish incorporates St. Lucia cocoa creatively",tag:"UNIQUE · PLANTATION",price:"$$$"},
+    {icon:"🌯",name:"Sab's Great Taste",desc:"The best local roti on the island — curry chicken, beef or vegetarian in flaky flatbread",tag:"LOCAL · FAST · CHEAP",price:"$"}
+  ],
+  ANU: [
+    {icon:"🌅",name:"Sheer Rocks",book:"https://www.sheerwaters.ag/dining",info:"https://www.sheerwaters.ag",desc:"Cliffside dining platforms suspended directly above the Caribbean — most dramatic setting on the island",tag:"SUNSET ESSENTIAL · RESERVE",price:"$$$"},
+    {icon:"🐟",name:"Cecilia's High Point Cafe",desc:"The best authentic Antiguan food — black pineapple, fresh fish run by a local legend",tag:"LOCAL ICON · RESERVE",price:"$$"},
+    {icon:"🍹",name:"OJ's Beach Bar & Restaurant",desc:"Classic beach bar at Crabbs Peninsula — rum punch, grilled lobster, local crowd",tag:"BEACH BAR · LOCAL",price:"$$"},
+    {icon:"🦞",name:"Papa Zouk Fish and Rum",desc:"200+ rums and the freshest fish — a true hidden gem loved by locals",tag:"RUM BAR · HIDDEN GEM",price:"$$"},
+    {icon:"🍽️",name:"Catherine's Cafe",desc:"French-Antiguan fusion right on Pigeon Point beach — perfect long lunch",tag:"BEACHFRONT · FRENCH",price:"$$$"}
+  ],
+  SXM: [
+    {icon:"🍽️",name:"Le Pressoir",info:"https://www.tripadvisor.com/Restaurant_Review-le-pressoir-saint-martin",desc:"Best French-Creole cuisine on the island in Grand Case village — essential on the French side",tag:"FRENCH SIDE · RESERVE",price:"$$$"},
+    {icon:"🐟",name:"Kakao Beach Club",desc:"Gorgeous beach club on Orient Bay — fresh seafood, cocktails, beautiful scene",tag:"ORIENT BAY · SCENE",price:"$$$"},
+    {icon:"🍔",name:"Sunset Bar & Grill",desc:"Eat burgers at Maho Beach while planes land 50ft overhead — bucket list meal",tag:"MAHO · ICONIC",price:"$$"},
+    {icon:"🥩",name:"Grand Case Lolos",desc:"Casual BBQ shacks on the beach road — best cheap grilled ribs and fish on the island",tag:"FRENCH SIDE · BBQ",price:"$"},
+    {icon:"🍕",name:"La Romana",desc:"Legendary Italian on Front Street — locals say best pizza and pasta in the Caribbean",tag:"ITALIAN · FRONT STREET",price:"$$"}
+  ],
+  SJU2: [
+    {icon:"☕",name:"Kasalta Bakery",desc:"The definitive San Juan breakfast — mallorcas, cafe con leche, pasteles. Opens 6AM.",tag:"MUST DO · OPENS EARLY",price:"$"},
+    {icon:"🥐",name:"La Bombonera",desc:"Oldest bakery in Puerto Rico (1902) — traditional mallorcas and hot chocolate",tag:"HISTORIC · SINCE 1902",price:"$"}
+  ]
+};
+
+const PORT_ACTIVITIES = {
+  SJU: [
+    {icon:"🏰",name:"El Morro Fort",desc:"16th-century Spanish fortress jutting into the sea — walk the ramparts for stunning views. Allow 2 hours.",price:"$10",tag:"HISTORY · UNESCO · 2 HRS"},
+    {icon:"🚶",name:"Old San Juan Walking Tour",desc:"Self-guided stroll through colorful Spanish colonial streets — pastel buildings, cobblestones, bougainvillea",price:"Free",tag:"CULTURE · SELF-GUIDED"},
+    {icon:"🎨",name:"Santurce Arts District",desc:"Puerto Rico's arts hub — vibrant street murals, galleries, hip cafes and the Lote 23 food park",price:"Free",tag:"ART · CULTURE"},
+    {icon:"🏖️",name:"Condado Beach",desc:"Beautiful urban beach with calm waters — bars and the Condado strip just steps away",price:"Free",tag:"BEACH · 10 MIN FROM PORT"},
+    {icon:"🌙",name:"Bioluminescent Bay Tour",book:"https://www.yokahutrails.com",info:"https://www.discoverpuertorico.com/experiences/bioluminescent-bays",desc:"Kayak through glowing water at Laguna Grande — one of the brightest bioluminescent bays in the world",price:"~$55",tag:"EVENING · UNMISSABLE"},
+    {icon:"🥃",name:"Bacardi Rum Factory Tour",desc:"World's largest rum distillery across the bay — tour, cocktail making class and tasting",price:"$35",tag:"DISTILLERY · 1.5 HRS"},
+    {icon:"🌿",name:"El Yunque Rainforest",desc:"Only tropical rainforest in the US National Forest system — waterfalls and exotic birds",price:"$2 + guide",tag:"NATURE · HALF DAY"}
+  ],
+  TOV: [
+    {icon:"⛵",name:"Jost Van Dyke Day Sail",book:"https://www.tripadvisor.com/Attractions-g147380-Activities-c55-Tortola.html",info:"https://www.bvitourism.com",desc:"Day sail to White Bay and Foxy's famous beach bar — the quintessential BVI afternoon. Book ahead.",price:"~$100",tag:"FULL DAY · BOOK AHEAD"},
+    {icon:"🤿",name:"The Indians Snorkel",desc:"Four dramatic pinnacles rising from the sea — top snorkel spot in the BVI with incredible coral",price:"~$60 w/guide",tag:"SNORKEL · HALF DAY"},
+    {icon:"🏔️",name:"Sage Mountain National Park",desc:"Highest peak in the BVI at 1,716ft — lush mahogany rainforest hike with panoramic views",price:"$3 entry",tag:"HIKE · 1.5 HRS"},
+    {icon:"🏖️",name:"Cane Garden Bay",desc:"One of the most beautiful bays in the Caribbean — swimming, snorkelling and rum at beach bars",price:"Free",tag:"BEACH · 25 MIN"},
+    {icon:"🚐",name:"Island Safari Tour",desc:"Open-air truck tour covering all Tortola highlights including the North Shore",price:"~$65",tag:"SIGHTSEEING · 4 HRS"},
+    {icon:"🐢",name:"Long Bay Beach Walk",desc:"Wild undeveloped mile-long Atlantic beach — dramatic waves and almost no tourists",price:"Free",tag:"BEACH · WILD"}
+  ],
+  SEA: [
+    {icon:"💆",name:"The Redemption Spa",desc:"Full-service spa on Valiant Lady — book the hot stone massage or couples treatment. Sells out.",price:"From $120",tag:"BOOK AHEAD"},
+    {icon:"🏊",name:"Richard's Rooftop Pool",desc:"Adults-only rooftop pool with the best views on the ship — prime sunbathing",price:"Included",tag:"TOP DECK"},
+    {icon:"🏋️",name:"The Athletic Club",desc:"Full gym, HIIT classes, yoga and Pilates — best way to earn your rum calories",price:"Included",tag:"FITNESS"},
+    {icon:"🎳",name:"Shipboard Activities",desc:"Bowling, laser tag, driving range, and more — check the Virgin Voyages app",price:"Varies",tag:"ENTERTAINMENT"}
+  ],
+  BGI: [
+    {icon:"🥃",name:"Mount Gay Rum Tour",desc:"World's oldest rum distillery (1703) — history, barrel room, cocktail masterclass and tasting",price:"$20-35",tag:"DISTILLERY · 1.5 HRS"},
+    {icon:"🤿",name:"Carlisle Bay Snorkel",desc:"Calm bay with sunken ships just meters from the beach — brilliant for all levels",price:"Free",tag:"BEACH & SNORKEL · 5 MIN"},
+    {icon:"🐒",name:"Barbados Wildlife Reserve",desc:"Walk among free-roaming green monkeys, deer and otters in a mahogany forest",price:"~$15",tag:"WILDLIFE · 1.5 HRS"},
+    {icon:"🏄",name:"Bathsheba Surf Beach",desc:"Watch world-class surfers tackle the powerful Atlantic breaks — dramatic rocky coastline",price:"Free",tag:"SCENIC · ATLANTIC COAST"},
+    {icon:"🏛️",name:"St. Nicholas Abbey",desc:"Jacobean plantation great house from 1658 — one of only three original Jacobean mansions in the Americas",price:"~$20",tag:"HISTORY · HERITAGE"},
+    {icon:"🌿",name:"Hunte's Gardens",desc:"Eccentric masterpiece garden hidden in a giant gully — one of the world's most unique gardens",price:"~$12",tag:"GARDENS · UNIQUE"},
+    {icon:"🏖️",name:"Sandy Lane Beach",desc:"The platinum coast — pristine white sand beloved by celebrities. Open to the public.",price:"Free",tag:"BEACH · EXCLUSIVE STRIP"}
+  ],
+  SLU: [
+    {icon:"🌋",name:"Sulphur Springs Volcano",desc:"Drive into the world's only drive-in volcano — bubbling sulfur pools and steam vents with guides",price:"~$10",tag:"UNMISSABLE · UNIQUE"},
+    {icon:"🌿",name:"Diamond Falls Botanical Garden",desc:"Beautiful waterfalls, mineral baths fed by volcanic springs, and lush tropical gardens",price:"$15",tag:"GARDENS · 2 HRS"},
+    {icon:"⛵",name:"Piton Sail, Snorkel & Mud Bath",book:"https://www.tripadvisor.com/Attractions-g147359-Activities-St_Lucia.html",info:"https://www.stlucia.org",desc:"Sail past the Pitons, snorkel the reefs, then bathe in sulfur mud — classic St. Lucia tour",price:"~$90",tag:"FULL DAY · ICONIC"},
+    {icon:"🏔️",name:"Gros Piton Hike",desc:"Guided hike up the volcanic peak at 2,461ft — incredible views from the summit. Guides mandatory.",price:"~$60 w/guide",tag:"HIKE · CHALLENGING · 4 HRS"},
+    {icon:"🏖️",name:"Anse Chastanet Beach",desc:"Volcanic black sand beach beneath the Pitons — dramatic, beautiful and rarely crowded",price:"Free",tag:"BEACH · VOLCANIC"},
+    {icon:"☕",name:"Fond Doux Eco Plantation",desc:"Historic working cocoa and coffee plantation — tour the grounds and see cocoa processing",price:"~$25",tag:"PLANTATION · HISTORY"},
+    {icon:"🐠",name:"Anse Cochon Snorkel",desc:"Remote bay accessible only by boat — pristine reef with turtles and rays",price:"~$40 boat",tag:"SNORKEL · REMOTE"}
+  ],
+  ANU: [
+    {icon:"🏰",name:"Nelson's Dockyard",desc:"UNESCO World Heritage 18th-century British naval dockyard — beautifully restored with great museum",price:"$8",tag:"UNESCO · ENGLISH HARBOUR"},
+    {icon:"🤿",name:"Cades Reef Snorkel",desc:"Antigua's largest protected reef — turtles, rays, barracuda in crystal clear water",price:"~$45 w/guide",tag:"SNORKEL · HALF DAY"},
+    {icon:"🏖️",name:"Dickenson Bay",desc:"Best swimming beach on the island — long stretch of powder-white sand and calm water",price:"Free",tag:"BEACH · 15 MIN FROM PORT"},
+    {icon:"⛵",name:"Catamaran Sailing",desc:"Sail to secluded beaches only accessible by boat — turquoise lagoons and rum punch on deck",price:"~$85",tag:"FULL DAY · SAILING"},
+    {icon:"🎯",name:"Antigua Rainforest Canopy Tour",book:"https://www.antiguarainforest.com/book",info:"https://www.antiguarainforest.com",desc:"Zip-line through the rainforest — 21 platforms, longest zip-line 300m, incredible views",price:"~$95",tag:"ADVENTURE · 3 HRS"},
+    {icon:"🌊",name:"Half Moon Bay",desc:"Wild, secluded Atlantic-facing beach voted one of the world's top 10 beaches",price:"Free",tag:"BEACH · REMOTE · WILD"},
+    {icon:"🏛️",name:"Betty's Hope Sugar Plantation",desc:"Antigua's first large-scale sugar plantation (1650) — restored windmills and colonial history",price:"~$5",tag:"HISTORY · HERITAGE"}
+  ],
+  SXM: [
+    {icon:"✈️",name:"Maho Beach Plane Watching",book:"https://www.mahobeach.com",info:"https://www.flightaware.com/live/airport/TNCM",desc:"Sit on the beach as jumbo jets land 50ft overhead — check KLM 747 arrival times online first",price:"Free",tag:"ICONIC · UNMISSABLE"},
+    {icon:"🏖️",name:"Orient Bay Beach Club",desc:"The French Riviera of the Caribbean — lively beach bars, watersports and sun beds",price:"~$25 lounger",tag:"FRENCH SIDE · SCENE"},
+    {icon:"⛵",name:"Pinel Island Day Trip",desc:"2-minute ferry to a tiny private island paradise — hammocks, crystal water, beach BBQ",price:"~$10 ferry",tag:"DAY TRIP · PARADISE"},
+    {icon:"🛒",name:"Marigot Saturday Market",desc:"French-side outdoor market — spices, local rum, art, crafts and fresh produce",price:"Free",tag:"MARKET · FRENCH SIDE"},
+    {icon:"🤿",name:"Creole Rock Snorkel",desc:"Protected rock formation just offshore teeming with fish and sea turtles",price:"~$40 w/guide",tag:"SNORKEL · ALL LEVELS"},
+    {icon:"🌅",name:"Pic Paradis Hike",desc:"Highest point on the island (1,391ft) — hike through tropical forest with panoramic views of both sides",price:"Free",tag:"HIKE · 2 HRS"},
+    {icon:"🇫🇷",name:"Grand Case Village Walk",desc:"The 'Gourmet Capital of the Caribbean' — tiny French village with the best restaurants per capita",price:"Free",tag:"FOOD · FRENCH CULTURE"}
+  ],
+  SJU2: [
+    {icon:"☕",name:"Kasalta Bakery Breakfast",desc:"Non-negotiable final morning — mallorcas, cafe con leche. Opens 6AM, near Old San Juan",price:"~$10",tag:"MUST DO · OPENS 6AM"},
+    {icon:"🛍️",name:"Old San Juan Shopping",desc:"Ron del Barrilito rum, cigars, hot sauce, Mundillo lacework — one hour is plenty",price:"Budget freely",tag:"SOUVENIRS · 1 HR"},
+    {icon:"🚕",name:"Airport Transfer Planning",desc:"Pre-book Uber — allow 90 minutes minimum from port to SJU. Mornings are very busy post-debark.",price:"~$20 Uber",tag:"PRACTICAL · ALLOW 90 MIN"}
+  ]
+};
+
+/* ── Port List Modal ─────────────────────────────────────────── */
 function showCruisePortList() {
   let modal = document.getElementById('port-list-modal');
   if (!modal) {
