@@ -9153,16 +9153,14 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
       });
     });
 
-    el.innerHTML = `
-      <!-- Cruise Calendar -->
-      ${(()=>{
-        const n = TRIPS.current ? TRIPS.current.name||'' : '';
-        if(n.toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i)){
-          return '<div style="margin-bottom:16px">'+buildCruiseCard()+'</div>';
-        }
-        return '';
-      })()}
+    
+    // Build cruise card if this is a cruise trip
+    const _tripName = (TRIPS.current && TRIPS.current.name) ? TRIPS.current.name : '';
+    const _isCruiseTrip = _tripName.toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i);
+    const _cruiseCardHTML = _isCruiseTrip ? '<div style="margin-bottom:16px">'+buildCruiseCard()+'</div>' : '';
 
+    el.innerHTML = `
+      ${_cruiseCardHTML}
       <!-- Trip Header -->
       <div style="background:linear-gradient(135deg,rgba(201,168,76,.12),rgba(201,168,76,.04));border:1px solid rgba(201,168,76,.3);border-radius:16px;padding:16px;margin-bottom:14px">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px">
