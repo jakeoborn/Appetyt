@@ -16,4 +16,3 @@
 
 [functions."morning-brief"]
   schedule = "0 12 * * *"
-  node_bundler = "esbuild"
