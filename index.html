@@ -8887,6 +8887,70 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
   // ══════════════════════════════════════════════
   // PROFILE
   // ══════════════════════════════════════════════
+
+  showTripRestaurantPicker(){
+    // Check if this is a cruise trip
+    const trip = TRIPS.current || (S.userData.trips||[])[S._viewingTrip||0];
+    const isCruise = trip && (trip.name||'').toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i);
+
+    if(isCruise){
+      // Show port city picker then search within that city
+      const ports = [
+        {code:'SJU', name:'San Juan, Puerto Rico', flag:'🇵🇷'},
+        {code:'TOV', name:'Tortola, BVI', flag:'🇻🇬'},
+        {code:'BGI', name:'Bridgetown, Barbados', flag:'🇧🇧'},
+        {code:'SLU', name:'Castries, St. Lucia', flag:'🇱🇨'},
+        {code:'ANU', name:"St. John's, Antigua", flag:'🇦🇬'},
+        {code:'SXM', name:'Philipsburg, St. Maarten', flag:'🇸🇽'},
+      ];
+
+      let modal = document.getElementById('trip-rest-picker');
+      if(!modal){
+        modal = document.createElement('div');
+        modal.id = 'trip-rest-picker';
+        modal.style.cssText = 'position:fixed;inset:0;z-index:600;background:rgba(5,8,14,.92);backdrop-filter:blur(14px);display:flex;align-items:flex-end;justify-content:center';
+        modal.onclick = function(e){ if(e.target===this) this.remove(); };
+        document.body.appendChild(modal);
+      }
+
+      modal.innerHTML = `
+        <div style="width:100%;max-width:430px;background:linear-gradient(180deg,var(--card2),var(--card));border-radius:22px 22px 0 0;border:1px solid rgba(200,169,110,.12);border-bottom:none;padding:10px 18px calc(30px + env(safe-area-inset-bottom))">
+          <div style="width:30px;height:3px;border-radius:2px;background:rgba(200,169,110,.15);margin:8px auto 16px"></div>
+          <div style="font-family:var(--serif);font-size:18px;font-weight:600;color:var(--text);margin-bottom:4px;font-style:italic">Add to Trip</div>
+          <div style="font-size:12px;color:var(--text3);margin-bottom:16px">Which port city are you looking in?</div>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px">
+            ${ports.map(p=>`
+              <div onclick="document.getElementById('trip-rest-picker').remove();A.searchForTripCity('${p.name}','${p.code}')"
+                style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(255,255,255,.03);border:1px solid rgba(200,169,110,.08);border-radius:12px;cursor:pointer;touch-action:manipulation;transition:border-color .2s"
+                onmouseenter="this.style.borderColor='rgba(200,169,110,.3)'" onmouseleave="this.style.borderColor='rgba(200,169,110,.08)'">
+                <span style="font-size:22px">${p.flag}</span>
+                <div style="font-size:13px;font-weight:500;color:var(--text)">${p.name}</div>
+                <div style="margin-left:auto;font-size:11px;color:rgba(62,184,168,.7);font-weight:600">Search →</div>
+              </div>`).join('')}
+          </div>
+          <div onclick="document.getElementById('trip-rest-picker').remove();A.tab('home');A.showToast('Search for a restaurant and tap ✈️ Add to Trip')"
+            style="text-align:center;padding:10px;font-size:12px;color:var(--text3);cursor:pointer;touch-action:manipulation">
+            Or search Dallas guide instead →
+          </div>
+        </div>`;
+    } else {
+      // Non-cruise trip — go to Dallas guide as before
+      this.tab('home');
+      this.showToast('Find a restaurant and tap ✈️ Add to Trip');
+    }
+  },
+
+  searchForTripCity(cityName, portCode){
+    // Open the port guide restaurant tab for this city
+    if(typeof showPortGuide === 'function'){
+      // Switch to the Eat tab of the port guide
+      showPortGuide(portCode);
+      setTimeout(()=>{
+        if(typeof pgShowTab === 'function') pgShowTab('eat', portCode);
+      }, 100);
+    }
+  },
+
   renderTrips(){
     const el = document.getElementById('trips-content');
     if(!el) return;
@@ -9961,7 +10025,7 @@ Return ONLY the JSON object, nothing else.`,
       <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
           <div style="font-size:13px;font-weight:800;color:var(--text)">🍽️ Trip Restaurants (${restaurants.length})</div>
-          <button onclick="A.tab('home');A.showToast('Find a restaurant and tap + Add to Trip')" style="background:var(--gold);border:none;color:var(--dark);font-weight:700;font-size:11px;padding:6px 10px;border-radius:8px;cursor:pointer">+ Add</button>
+          <button onclick="A.showTripRestaurantPicker()" style="background:var(--gold);border:none;color:var(--dark);font-weight:700;font-size:11px;padding:6px 10px;border-radius:8px;cursor:pointer;touch-action:manipulation">+ Add</button>
         </div>
         ${restaurants.length ? restaurants.map(r => {
           const votes = Object.values(r.votes||{});
