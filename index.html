@@ -8926,14 +8926,14 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
                 ${CRUISE_PORTS.map(p=>`<div onclick="showPortGuide('${p.code}')" style="display:flex;align-items:center;gap:9px;padding:8px 11px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:11px;cursor:pointer;touch-action:manipulation;margin-bottom:6px"><span style="font-size:17px">${p.flag}</span><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:600;color:#fff">${p.name}</div><div style="font-size:10px;color:rgba(255,255,255,.4);margin-top:1px">${p.day} · 🟢${p.arrive} ${p.depart==='Debark'?'· 🔴 Debark':'· 🔵'+p.depart}${p.hours?' · ⏱'+p.hours+'h':''}</div></div><div style="font-size:10px;color:rgba(62,184,168,.7);font-weight:600;flex-shrink:0">Guide →</div></div>`).join('')}
               </div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px">
-                <div style="background:rgba(200,169,110,.1);border:1px solid rgba(200,169,110,.2);border-radius:10px;padding:9px 11px;display:flex;align-items:center;gap:7px;cursor:pointer;touch-action:manipulation" onclick="A.tab('travel');setTimeout(()=>A.travelSub('cruises'),100)">
+                <div style="background:rgba(200,169,110,.1);border:1px solid rgba(200,169,110,.2);border-radius:10px;padding:9px 11px;display:flex;align-items:center;gap:7px;cursor:pointer;touch-action:manipulation" onclick="showCruisePortList()">
                   <span style="font-size:16px">🗺️</span>
                   <div>
                     <div style="font-size:11px;font-weight:600;color:var(--gold2)">Port Guide</div>
                     <div style="font-size:10px;color:var(--text3)">AI picks per stop</div>
                   </div>
                 </div>
-                <div style="background:rgba(62,184,168,.08);border:1px solid rgba(62,184,168,.15);border-radius:10px;padding:9px 11px;display:flex;align-items:center;gap:7px;cursor:pointer;touch-action:manipulation" onclick="A.tab('travel');setTimeout(()=>A.travelSub('cruises'),100)">
+                <div style="background:rgba(62,184,168,.08);border:1px solid rgba(62,184,168,.15);border-radius:10px;padding:9px 11px;display:flex;align-items:center;gap:7px;cursor:pointer;touch-action:manipulation" onclick="showCruisePortList()">
                   <span style="font-size:16px">📎</span>
                   <div>
                     <div style="font-size:11px;font-weight:600;color:#3eb8a8">Reservations</div>
@@ -9939,7 +9939,7 @@ Return ONLY the JSON object, nothing else.`,
               ${['🇵🇷 San Juan','🇻🇬 Tortola','🇧🇧 Bridgetown','🇱🇨 St. Lucia','🇦🇬 Antigua','🇸🇽 St. Maarten','🇵🇷 Debark'].map(p=>'<div style="flex-shrink:0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:4px 9px;font-size:9px;color:rgba(255,255,255,.55);white-space:nowrap">'+p+'</div>').join('')}
             </div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px">
-              <button onclick="A.tab('travel');setTimeout(()=>A.travelSub('cruises'),150)" style="padding:9px;background:rgba(200,169,110,.12);border:1px solid rgba(200,169,110,.25);border-radius:10px;color:var(--gold2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">🗺️ Port Guide →</button>
+              <button onclick="showCruisePortList()" style="padding:9px;background:rgba(200,169,110,.12);border:1px solid rgba(200,169,110,.25);border-radius:10px;color:var(--gold2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">🗺️ Port Guide →</button>
               <button onclick="sendMorningBriefTest()" style="padding:9px;background:rgba(62,184,168,.1);border:1px solid rgba(62,184,168,.25);border-radius:10px;color:#3eb8a8;font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">🌅 Test Brief →</button>
             </div>
           </div>
@@ -11831,6 +11831,204 @@ async function sendMorningBriefTest() {
     btn.textContent = '❌ Error';
     console.error('Morning brief test:', e);
     setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 3000);
+  }
+}
+
+/* ── CRUISE PORT LIST + ENHANCED PORT GUIDE ────────────────────── */
+
+function showCruisePortList() {
+  let modal = document.getElementById('port-list-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'port-list-modal';
+    modal.style.cssText = 'position:fixed;inset:0;z-index:600;background:rgba(5,8,14,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:flex;align-items:flex-end;justify-content:center';
+    modal.onclick = function(e){ if(e.target===this) this.remove(); };
+    document.body.appendChild(modal);
+  }
+
+  modal.innerHTML = `
+    <div style="width:100%;max-width:430px;background:linear-gradient(180deg,#161c2c,#0f1320);border-radius:22px 22px 0 0;border:1px solid rgba(200,169,110,.12);border-bottom:none;max-height:88vh;overflow-y:auto;scrollbar-width:none;padding-bottom:30px">
+      <div style="padding:20px 18px 0">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+          <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:#e8dfc8;font-style:italic">Port Schedule</div>
+          <button onclick="document.getElementById('port-list-modal').remove()" style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.06);border:none;color:#9a8e72;font-size:16px;cursor:pointer">✕</button>
+        </div>
+        <div style="font-size:11px;color:#5a5040;margin-bottom:16px">Caribbean Cruise · Mar 21–28, 2026</div>
+      </div>
+      <div style="padding:0 14px">
+        ${CRUISE_PORTS.map((p,i) => `
+          <div onclick="document.getElementById('port-list-modal').remove();showPortGuide('${p.code}')"
+            style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid rgba(200,169,110,.08);border-radius:14px;margin-bottom:8px;cursor:pointer;touch-action:manipulation;transition:border-color .2s"
+            onmouseenter="this.style.borderColor='rgba(200,169,110,.25)'" onmouseleave="this.style.borderColor='rgba(200,169,110,.08)'">
+            <div style="font-size:26px">${p.flag}</div>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:#e8dfc8;font-style:italic">${p.name}</div>
+              <div style="font-size:10px;color:#5a5040;margin-top:1px">${p.country.replace(' · Debark','')}</div>
+              <div style="font-size:10px;color:#3a3228;margin-top:3px">${p.day} &nbsp;·&nbsp; 🟢 ${p.arrive} ${p.depart === 'Debark' ? '· 🔴 Debark' : '· 🔵 ' + p.depart}${p.hours ? ' &nbsp;·&nbsp; ⏱ ' + p.hours + 'h' : ''}</div>
+            </div>
+            <div style="font-size:11px;color:rgba(62,184,168,.7);font-weight:600;flex-shrink:0">→</div>
+          </div>`).join('')}
+      </div>
+    </div>`;
+}
+
+// Override showPortGuide to include Restaurants + Activities tabs
+function showPortGuide(code) {
+  const p = CRUISE_PORTS.find(x => x.code === code);
+  if (!p) return;
+
+  const citySearch = p.name.replace(' · Debark','');
+  const country = p.country.replace(' · Debark','');
+
+  let modal = document.getElementById('port-guide-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'port-guide-modal';
+    modal.style.cssText = 'position:fixed;inset:0;z-index:650;background:rgba(5,8,14,.92);backdrop-filter:blur(14px);display:flex;align-items:flex-end;justify-content:center';
+    modal.onclick = function(e){ if(e.target===this) this.remove(); };
+    document.body.appendChild(modal);
+  }
+
+  const hoursCell = p.hours ? `
+    <div style="background:rgba(200,169,110,.12);border:1px solid rgba(200,169,110,.2);border-radius:9px;padding:8px 10px;text-align:center">
+      <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#c8a96e;margin-bottom:3px">⏱ Ashore</div>
+      <div style="font-family:'Playfair Display',serif;font-size:17px;font-weight:600;color:#e2c98a;font-style:italic">${p.hours}h</div>
+    </div>` : '';
+
+  modal.innerHTML = `
+    <div style="width:100%;max-width:430px;background:linear-gradient(180deg,#161c2c,#0f1320);border-radius:22px 22px 0 0;border:1px solid rgba(200,169,110,.12);border-bottom:none;max-height:92vh;display:flex;flex-direction:column">
+      <!-- Hero -->
+      <div style="position:relative;height:130px;overflow:hidden;border-radius:22px 22px 0 0;flex-shrink:0">
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,${p.grad.split(',')[0]} 0%,${p.grad.split(',')[1]} 100%)"></div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:90px;opacity:.12">${p.emoji}</div>
+        <div style="position:absolute;top:14px;right:14px;font-size:24px">${p.flag}</div>
+        <button onclick="document.getElementById('port-guide-modal').remove()" style="position:absolute;top:14px;left:14px;width:28px;height:28px;border-radius:50%;background:rgba(0,0,0,.4);border:none;color:#fff;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center">✕</button>
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(to top,rgba(0,0,0,.8),transparent)">
+          <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:rgba(255,255,255,.5);text-transform:uppercase;margin-bottom:2px">${p.day}</div>
+          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:#fff;line-height:1;font-style:italic">${p.name}</div>
+          <div style="font-size:11px;color:rgba(255,255,255,.4)">${country}</div>
+        </div>
+      </div>
+      <!-- Times -->
+      <div style="display:grid;grid-template-columns:1fr 1fr${p.hours?' 1fr':''};gap:7px;padding:12px 16px 0;flex-shrink:0">
+        <div style="background:rgba(255,255,255,.03);border:1px solid rgba(62,184,168,.12);border-radius:10px;padding:9px 10px">
+          <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#3eb8a8;margin-bottom:3px;display:flex;align-items:center;gap:4px"><span style="width:5px;height:5px;border-radius:50%;background:#3eb8a8;display:inline-block"></span>Arrive</div>
+          <div style="font-size:14px;font-weight:600;color:#e8dfc8">${p.arrive}</div>
+        </div>
+        <div style="background:rgba(255,255,255,.03);border:1px solid rgba(212,117,106,.12);border-radius:10px;padding:9px 10px">
+          <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#d4756a;margin-bottom:3px;display:flex;align-items:center;gap:4px"><span style="width:5px;height:5px;border-radius:50%;background:#d4756a;display:inline-block"></span>${p.depart==='Debark'?'Debark':'Depart'}</div>
+          <div style="font-size:14px;font-weight:600;color:#e8dfc8">${p.depart}</div>
+        </div>
+        ${hoursCell}
+      </div>
+      <!-- Tab bar -->
+      <div style="display:flex;gap:0;padding:10px 16px 0;flex-shrink:0;border-bottom:1px solid rgba(200,169,110,.06)">
+        <button id="pg-tab-picks" onclick="pgShowTab('picks','${code}')" style="flex:1;padding:8px 4px;background:none;border:none;border-bottom:2px solid var(--gold2);color:var(--gold2);font-size:11px;font-weight:700;cursor:pointer;font-family:var(--sans);letter-spacing:.04em">✦ Top Picks</button>
+        <button id="pg-tab-eat" onclick="pgShowTab('eat','${code}')" style="flex:1;padding:8px 4px;background:none;border:none;border-bottom:2px solid transparent;color:#5a5040;font-size:11px;font-weight:600;cursor:pointer;font-family:var(--sans);letter-spacing:.04em">🍽 Eat</button>
+        <button id="pg-tab-do" onclick="pgShowTab('do','${code}')" style="flex:1;padding:8px 4px;background:none;border:none;border-bottom:2px solid transparent;color:#5a5040;font-size:11px;font-weight:600;cursor:pointer;font-family:var(--sans);letter-spacing:.04em">🎯 Do</button>
+      </div>
+      <!-- Tab content -->
+      <div id="pg-tab-content" style="flex:1;overflow-y:auto;scrollbar-width:none;padding:14px 16px 40px">
+        ${buildPicksHTML(p)}
+      </div>
+    </div>`;
+}
+
+function buildPicksHTML(p) {
+  return `<div style="display:flex;flex-direction:column">
+    ${p.recs.map((r,i) => `
+      <div style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;${i<p.recs.length-1?'border-bottom:1px solid rgba(255,255,255,.04)':''}">
+        <div style="width:36px;height:36px;border-radius:10px;background:rgba(62,184,168,.07);border:1px solid rgba(62,184,168,.1);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0">${r.icon}</div>
+        <div style="flex:1;min-width:0">
+          <div style="font-size:13px;font-weight:600;color:#e8dfc8;margin-bottom:2px">${r.name}</div>
+          <div style="font-size:11px;color:#5a5040;line-height:1.45">${r.desc}</div>
+          <div style="display:inline-block;margin-top:4px;font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase">${r.tag}</div>
+        </div>
+      </div>`).join('')}
+  </div>`;
+}
+
+const PORT_ACTIVITIES = {
+  SJU:  [{icon:'🏰',name:'El Morro Fort',desc:'16th-century Spanish fortress — guided or self-guided. Allow 2hrs',price:'$10',tag:'HISTORY'},{icon:'🎨',name:'Old San Juan Art Walk',desc:'Colorful Spanish colonial buildings and local galleries on cobblestone streets',price:'Free',tag:'CULTURE'},{icon:'🌊',name:'Ocean Park Kayak',desc:'Kayak rentals right off the beach — calm waters, great for beginners',price:'~$30/hr',tag:'WATER SPORT'},{icon:'🏖️',name:'Condado Beach',desc:'Upscale beach strip with calm waters, 10min from Old San Juan',price:'Free',tag:'BEACH'},{icon:'🎭',name:'Bacardi Rum Distillery',desc:'Largest rum distillery in the world — tours and tastings',price:'$35',tag:'1.5 HRS'}],
+  TOV:  [{icon:'⛵',name:'Jost Van Dyke Sail',desc:'Day sail to White Bay and Foxy\'s famous beach bar — a BVI essential',price:'~$80–120',tag:'FULL DAY'},{icon:'🤿',name:'The Indians Snorkel',desc:'Four dramatic pinnacles rising from the sea — top snorkel in BVI',price:'~$60 w/guide',tag:'HALF DAY'},{icon:'🚐',name:'Island Safari Tour',desc:'Open-air truck tour covering all of Tortola\'s highlights',price:'~$65/person',tag:'4 HRS'},{icon:'🏖️',name:'Cane Garden Bay',desc:'Stunning curved bay — swim, snorkel or just relax on the sand',price:'Free',tag:'BEACH'},{icon:'🐢',name:'Sage Mountain Hike',desc:'Highest peak in the BVI — lush rainforest trail with sea views',price:'$3 entry',tag:'1.5 HRS'}],
+  BGI:  [{icon:'🥃',name:'Mount Gay Rum Tour',desc:'World\'s oldest rum distillery (1703) — history, tasting and cocktails',price:'$20',tag:'1.5 HRS'},{icon:'🤿',name:'Carlisle Bay Snorkel',desc:'Calm bay with shipwrecks just meters from the beach',price:'Free',tag:'BEACH & SNORKEL'},{icon:'🏇',name:'Barbados Heritage Passport',desc:'Discounted entry to multiple historic sites island-wide',price:'$35',tag:'FULL DAY'},{icon:'🌴',name:'Bathsheba Beach',desc:'Wild dramatic Atlantic coast with rock pools — great for photos',price:'Free',tag:'SCENIC'},{icon:'🎉',name:'Oistins Fish Fry',desc:'Famous Friday night street food market — BBQ fish, rum and live music',price:'~$15–25',tag:'EVENING ONLY'}],
+  SLU:  [{icon:'🌋',name:'Sulphur Springs',desc:'Drive into a volcano crater — the only one in the world you can drive into',price:'~$10',tag:'UNMISSABLE'},{icon:'🌿',name:'Diamond Falls Botanical',desc:'Waterfalls, mineral baths and exotic tropical gardens',price:'$15',tag:'2 HRS'},{icon:'⛵',name:'Piton Sail & Snorkel',desc:'See the iconic twin peaks from the water + snorkel the coral reefs',price:'~$80–110',tag:'FULL DAY'},{icon:'🏖️',name:'Anse Chastanet Beach',desc:'Black sand volcanic beach beneath the Pitons — stunning and secluded',price:'Free',tag:'BEACH'},{icon:'🎭',name:'St. Lucia Jazz Festival',desc:'World-class music festival if visiting in May — plan ahead!',price:'Varies',tag:'SEASONAL'}],
+  ANU:  [{icon:'🏰',name:"Nelson's Dockyard",desc:'UNESCO World Heritage Georgian naval dockyard — history and great views',price:'$8',tag:'ENGLISH HARBOUR'},{icon:'🤿',name:'Cades Reef Snorkel',desc:'Largest and most protected reef in Antigua — incredible marine life',price:'~$45 w/guide',tag:'HALF DAY'},{icon:'⛵',name:'Catamaran Beach Cruise',desc:'Sail to secluded beaches only reachable by boat',price:'~$75',tag:'FULL DAY'},{icon:'🏖️',name:'Dickenson Bay',desc:'Best swimming beach on the island — powdery white sand, calm waters',price:'Free',tag:'15 MIN FROM PORT'},{icon:'🎯',name:'Antigua Rainforest Canopy',desc:'Zip-line through the rainforest canopy — great for adventure seekers',price:'~$95',tag:'3 HRS'}],
+  SXM:  [{icon:'✈️',name:'Maho Beach Plane Watch',desc:'Sit on the beach as jumbo jets land 50ft overhead — truly bucket-list',price:'Free',tag:'ICONIC'},{icon:'🎲',name:'Casino Royale',desc:'Largest casino in the Caribbean — free entry, fun evening',price:'Free entry',tag:'EVENING'},{icon:'🏖️',name:'Orient Bay Beach Club',desc:'Lively French Riviera beach — sunbeds, beach bars, watersports',price:'~$20–30 for chair',tag:'FRENCH SIDE'},{icon:'🛒',name:'Marigot Market',desc:'French-side outdoor market for spices, rum, art and crafts',price:'Free',tag:'FRENCH SIDE'},{icon:'🤿',name:'Creole Rock Snorkel',desc:'Protected rock formation teaming with fish — great for all levels',price:'~$40',tag:'HALF DAY'}],
+  SJU2: [{icon:'☕',name:'Kasalta Bakery',desc:'The definitive San Juan breakfast — mallorcas, café con leche, pasteles',price:'~$10',tag:'MUST DO'},{icon:'🛍️',name:'Last-Minute Shopping',desc:'Ron del Barrilito rum, La Flor de Caña cigars, Mundillo lacework',price:'Budget as needed',tag:'OLD SAN JUAN'},{icon:'🚕',name:'Airport Transfer',desc:'Allow 90 minutes minimum — very busy post-debark mornings at SJU',price:'~$15–25 Uber',tag:'PRACTICAL'}],
+};
+
+const PORT_RESTAURANTS = {
+  SJU:  [{icon:'🍸',name:'La Factoria',desc:'James Beard-winning cocktail bar hidden inside Old San Juan — legendary rum cocktails',tag:'COCKTAILS · LATE NIGHT',price:'$$'},{icon:'🍽️',name:'La Bodeguita del Medio',desc:'Cuban-inspired food with live music in a colorful Old San Juan spot',tag:'CUBAN LATIN',price:'$$'},{icon:'🥩',name:'Marmalade Restaurant',desc:'Creative fine dining in a 300-year-old building — best tasting menu in PR',tag:'FINE DINING · RESERVE',price:'$$$$'},{icon:'🌮',name:'El Jibarito',desc:'Beloved local institution — Puerto Rican classics like pernil and mofongo',tag:'LOCAL FAVOURITE',price:'$'},{icon:'☕',name:'Caficultura',desc:'Best coffee in Old San Juan — try the cortado and house-made pastries',tag:'COFFEE & BRUNCH',price:'$'}],
+  TOV:  [{icon:'🍹',name:"Myett's Garden Grille",desc:'Laid-back beachfront Caribbean plates right on Cane Garden Bay',tag:'BEACHFRONT',price:'$$'},{icon:'🐟',name:"Quito's Restaurant & Bar",desc:'Famous for fresh fish and live reggae on weekends on Cane Garden Bay',tag:'LIVE MUSIC',price:'$$'},{icon:'🍔',name:'The Village Cay Restaurant',desc:'Reliable marina-side dining — good burgers, salads and rum cocktails',tag:'MARINA · CASUAL',price:'$$'},{icon:'🌮',name:'Capriccio di Mare',desc:'Best pizza and pasta in the BVI — tiny but outstanding',tag:'ITALIAN · SMALL',price:'$$'}],
+  BGI:  [{icon:'🍹',name:'Harbour Lights Beach Club',desc:'Rum punches, fried fish and live music nightly — a true local institution',tag:'MUST DO · BEACHFRONT',price:'$$'},{icon:'🐟',name:"Oistins Fish Fry",desc:'Open-air Friday night market with BBQ fish, macaroni pie and rum — legendary',tag:'FRIDAY NIGHT ONLY',price:'$'},{icon:'🍽️',name:"The Cliff Restaurant",desc:'Dramatic cliffside fine dining — reserve weeks ahead for sunset tables',tag:'FINE DINING · RESERVE',price:'$$$$'},{icon:'🌮',name:'Champers Restaurant',desc:'Excellent Caribbean-International menu right on Accra beach',tag:'BEACHFRONT',price:'$$$'}],
+  SLU:  [{icon:'🍽️',name:'Coal Pot Restaurant',desc:'Waterfront Creole cuisine in a converted coal shed — open since 1966',tag:'HISTORIC · RESERVE',price:'$$$'},{icon:'🐟',name:'The Naked Fisherman',desc:'Fresh fish and lobster on the beach at Cap Maison — stunning views',tag:'BEACHFRONT · SEAFOOD',price:'$$$'},{icon:'🌮',name:'The Pink Plantation House',desc:'Colonial house restaurant with stunning Piton views and Creole menu',tag:'VIEWS · LOCAL',price:'$$$'},{icon:'🍹',name:'Doolittle\'s Restaurant',desc:'Laid-back beach bar and restaurant at Marigot Bay — great rum cocktails',tag:'BEACH BAR',price:'$$'}],
+  ANU:  [{icon:'🌅',name:'Sheer Rocks',desc:'Cliffside dining platforms suspended above the sea — most dramatic setting in Antigua',tag:'SUNSET · RESERVE AHEAD',price:'$$$'},{icon:'🐟',name:"Cecilia's High Point Cafe",desc:'Best local food on the island — Antiguan black pineapple and fresh fish',tag:'LOCAL FAVOURITE',price:'$$'},{icon:'🍹',name:'OJ\'s Beach Bar',desc:'Classic beach bar at Crabbs Peninsula — rum punches and grilled lobster',tag:'BEACH BAR',price:'$$'},{icon:'🍽️',name:'Catherine\'s Cafe',desc:'French-Antiguan fusion on the beach at Pigeon Point — great for lunch',tag:'BEACHFRONT LUNCH',price:'$$$'}],
+  SXM:  [{icon:'🍽️',name:'Le Pressoir',desc:'Best French-Creole cuisine on the island — the Grand Case restaurant scene is unmissable',tag:'FRENCH SIDE · RESERVE',price:'$$$'},{icon:'🐟',name:'Kakao Beach Club',desc:'Gorgeous beach club on Orient Bay — fresh seafood and cocktails',tag:'FRENCH SIDE · BEACH',price:'$$$'},{icon:'🍔',name:'Sunset Bar & Grill',desc:'Right on Maho Beach — watch planes land while you eat',tag:'MAHO BEACH · ICONIC',price:'$$'},{icon:'🥩',name:'Ginger Restaurant',desc:'Sophisticated Asian fusion at the Westin — best on the Dutch side',tag:'FINE DINING',price:'$$$'}],
+  SJU2: [{icon:'☕',name:'Kasalta Bakery',desc:'Mallorcas and café con leche — non-negotiable final morning breakfast',tag:'BREAKFAST · EARLY OPEN',price:'$'},{icon:'🍽️',name:'La Mallorca',desc:'Another great option for Puerto Rican breakfast before the airport',tag:'BREAKFAST',price:'$'}],
+};
+
+function pgShowTab(tab, code) {
+  const p = CRUISE_PORTS.find(x => x.code === code);
+  if (!p) return;
+  const content = document.getElementById('pg-tab-content');
+  if (!content) return;
+
+  // Update tab styles
+  ['picks','eat','do'].forEach(t => {
+    const btn = document.getElementById('pg-tab-'+t);
+    if (!btn) return;
+    if (t === tab) {
+      btn.style.borderBottomColor = 'var(--gold2)';
+      btn.style.color = 'var(--gold2)';
+      btn.style.fontWeight = '700';
+    } else {
+      btn.style.borderBottomColor = 'transparent';
+      btn.style.color = '#5a5040';
+      btn.style.fontWeight = '600';
+    }
+  });
+
+  if (tab === 'picks') {
+    content.innerHTML = buildPicksHTML(p);
+  } else if (tab === 'eat') {
+    const rests = PORT_RESTAURANTS[code] || [];
+    content.innerHTML = `
+      <div style="margin-bottom:12px">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3228;margin-bottom:10px;display:flex;align-items:center;gap:8px">🍽️ Where to Eat <div style="flex:1;height:1px;background:rgba(200,169,110,.08)"></div></div>
+        <div style="font-size:11px;color:#5a5040;margin-bottom:12px">Top restaurants in ${p.name}, ${p.country.replace(' · Debark','')}</div>
+        ${rests.map((r,i) => `
+          <div style="background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid rgba(200,169,110,.08);border-radius:13px;padding:12px;margin-bottom:8px">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+              <div style="display:flex;align-items:center;gap:7px">
+                <span style="font-size:18px">${r.icon}</span>
+                <div style="font-size:13px;font-weight:600;color:#e8dfc8">${r.name}</div>
+              </div>
+              <div style="font-size:11px;color:#c8a96e;font-weight:600">${r.price}</div>
+            </div>
+            <div style="font-size:11px;color:#5a5040;line-height:1.45;margin-bottom:6px">${r.desc}</div>
+            <div style="font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase">${r.tag}</div>
+          </div>`).join('')}
+      </div>`;
+  } else if (tab === 'do') {
+    const acts = PORT_ACTIVITIES[code] || [];
+    content.innerHTML = `
+      <div style="margin-bottom:12px">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3228;margin-bottom:10px;display:flex;align-items:center;gap:8px">🎯 Things to Do <div style="flex:1;height:1px;background:rgba(200,169,110,.08)"></div></div>
+        <div style="font-size:11px;color:#5a5040;margin-bottom:12px">Activities & excursions in ${p.name}</div>
+        ${acts.map((a,i) => `
+          <div style="background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid rgba(200,169,110,.08);border-radius:13px;padding:12px;margin-bottom:8px">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+              <div style="display:flex;align-items:center;gap:7px">
+                <span style="font-size:18px">${a.icon}</span>
+                <div style="font-size:13px;font-weight:600;color:#e8dfc8">${a.name}</div>
+              </div>
+              <div style="font-size:11px;color:#c8a96e;font-weight:600">${a.price}</div>
+            </div>
+            <div style="font-size:11px;color:#5a5040;line-height:1.45;margin-bottom:6px">${a.desc}</div>
+            <div style="font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase">${a.tag}</div>
+          </div>`).join('')}
+      </div>`;
   }
 }
 </script>
