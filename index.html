@@ -3451,6 +3451,8 @@ const A = {
   // ── INIT ──────────────────────────────────────────────────
   init(){
     try{const d=localStorage.getItem('appetyt_data');if(d)S.userData=JSON.parse(d);}catch(e){}
+    // Ensure indicators is always a proper Set (JSON.parse converts Set to array)
+    if(!(S.indicators instanceof Set)) S.indicators = new Set(Array.isArray(S.indicators)?S.indicators:[]);
     try{const k=localStorage.getItem('appetyt_key');if(k)S.apiKey=k;}catch(e){}
     // Restore active trip
     try{
