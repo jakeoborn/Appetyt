@@ -45,7 +45,8 @@ input,textarea{font-family:inherit;font-size:inherit}
 #desktop-main{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
 #content{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:pan-y;overscroll-behavior-y:contain}
 .view{display:none}
-.view.active{display:block}
+.view.active{display:flex}
+#home-view.active{display:flex;flex-direction:column}
 
 /* HOME SEARCH + FILTERS */
 #search-bar{padding:12px 14px 6px;position:sticky;top:0;background:var(--dark);z-index:10}
@@ -3335,7 +3336,7 @@ const A = {
     if(_sab) _sab.classList.toggle('signed-in',!!S.user);
     if(_sal) _sal.textContent=S.user?(S.user.email?.split('@')[0]||'✓ Signed In'):'Sign In';document.getElementById('auth-btn').textContent='✓';}}catch(e){}
     this.buildCityList();
-    this.renderHome();
+    this.tab('home');
     this.renderTop50();
     this.renderDiscover();
     this.travelSub('plan'); // default travel sub-tab
