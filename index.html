@@ -42,7 +42,7 @@ input,textarea{font-family:inherit;font-size:inherit}
 .nav-tab.active{color:var(--gold2);border-bottom-color:var(--gold2)}
 
 /* CONTENT */
-#desktop-main{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden;height:0}
+#desktop-main{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
 #content{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:pan-y;overscroll-behavior-y:contain}
 .view{display:none}
 .view.active{display:block}
@@ -612,14 +612,6 @@ input,textarea{font-family:inherit;font-size:inherit}
 
   /* ══ SCROLL FIX: ensure full scroll chain on desktop ══ */
   /* #app(row) → #desktop-main(col, h:100dvh) → #nav-tabs(shrink) → #content(flex:1, overflow-y:auto) */
-  /* Each view inside #content should be block and sized by its content */
-  #content > .view { display: none; }
-  #content > .view.active {
-    display: block !important;
-    height: auto !important;
-    min-height: 0 !important;
-    overflow: visible !important;
-  }
   /* Exception: map needs flex */
   #map-view.active {
     display: flex !important;
