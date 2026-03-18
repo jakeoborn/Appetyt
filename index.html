@@ -12070,7 +12070,7 @@ async function sendMorningBriefTest() {
       return;
     }
 
-    const res = await fetch('/.netlify/functions/morning-brief', {
+    const res = await fetch('/.netlify/functions/send-brief', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({testDate, testEmail})
