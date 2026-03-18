@@ -3450,9 +3450,29 @@ const A = {
 
   // ── INIT ──────────────────────────────────────────────────
   init(){
-    try{const d=localStorage.getItem('appetyt_data');if(d)S.userData=JSON.parse(d);}catch(e){}
+    try{
+      const d=localStorage.getItem('appetyt_data');
+      if(d){
+        const parsed=JSON.parse(d);
+        // Only restore safe fields, never restore filter/indicator state
+        S.userData = {
+          favs: parsed.favs||[],
+          visited: parsed.visited||[],
+          want: parsed.want||[],
+          bills: parsed.bills||[],
+          notes: parsed.notes||{},
+          trips: parsed.trips||[],
+          claimedDrops: parsed.claimedDrops||[]
+        };
+      }
+    }catch(e){}
     // Ensure indicators is always a proper Set (JSON.parse converts Set to array)
     if(!(S.indicators instanceof Set)) S.indicators = new Set(Array.isArray(S.indicators)?S.indicators:[]);
+    // Guard: reset any corrupted filter state that would cause empty results
+    if(typeof S.filter !== 'string') S.filter = 'all';
+    if(typeof S.neighborhood !== 'string') S.neighborhood = 'all';
+    if(typeof S.searchQ !== 'string') S.searchQ = '';
+    if(typeof S.city !== 'string') S.city = 'Dallas';
     try{const k=localStorage.getItem('appetyt_key');if(k)S.apiKey=k;}catch(e){}
     // Restore active trip
     try{
