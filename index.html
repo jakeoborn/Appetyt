@@ -9053,57 +9053,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         <!-- Virgin Voyages Cruise Card -->
         <div style="margin-bottom:20px">
           <div style="font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);margin-bottom:12px;display:flex;align-items:center;gap:8px">🚢 Upcoming Trip <div style="flex:1;height:1px;background:rgba(200,169,110,.08)"></div></div>
-          <div style="background:linear-gradient(160deg,#063a58,#021520);border:1px solid rgba(62,184,168,.2);border-radius:18px;overflow:hidden;margin-bottom:8px">
-            <div style="position:relative;height:110px;background:linear-gradient(160deg,#063a58 0%,#021520 100%);display:flex;align-items:flex-end;padding:14px">
-              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:80px;opacity:.12">🌊</div>
-              <div style="position:relative;z-index:1">
-                <div style="font-size:9px;font-weight:700;letter-spacing:.14em;color:rgba(62,184,168,.8);text-transform:uppercase;margin-bottom:4px">✦ Appetyt Travel · Cruise</div>
-                <div style="font-family:var(--serif);font-size:20px;font-weight:600;color:#fff;font-style:italic;line-height:1">Caribbean <em style="color:var(--gold2)">Cruise</em></div>
-                <div style="font-size:11px;color:rgba(255,255,255,.5);margin-top:2px">Virgin Voyages · Valiant Lady</div>
-              </div>
-            </div>
-            <div style="padding:13px 14px">
-              <div style="display:flex;gap:8px;margin-bottom:12px">
-                <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:9px 10px">
-                  <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:3px">Departs</div>
-                  <div style="font-size:13px;font-weight:600;color:#fff">Mar 21, 2026</div>
-                </div>
-                <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:9px 10px">
-                  <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:3px">Returns</div>
-                  <div style="font-size:13px;font-weight:600;color:#fff">Mar 28, 2026</div>
-                </div>
-                <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:9px 10px">
-                  <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:3px">Ports</div>
-                  <div style="font-size:13px;font-weight:600;color:#fff">7 stops</div>
-                </div>
-              </div>
-              <div style="display:flex;flex-direction:column;gap:0;margin-bottom:12px">
-                ${CRUISE_PORTS.map(p=>`<div onclick="showPortGuide('${p.code}')" style="display:flex;align-items:center;gap:9px;padding:8px 11px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:11px;cursor:pointer;touch-action:manipulation;margin-bottom:6px"><span style="font-size:17px">${p.flag}</span><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:600;color:#fff">${p.name}</div><div style="font-size:10px;color:rgba(255,255,255,.4);margin-top:1px">${p.day} · 🟢${p.arrive} ${p.depart==='Debark'?'· 🔴 Debark':'· 🔵'+p.depart}${p.hours?' · ⏱'+p.hours+'h':''}</div></div><div style="font-size:10px;color:rgba(62,184,168,.7);font-weight:600;flex-shrink:0">Guide →</div></div>`).join('')}
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px">
-                <div style="background:rgba(200,169,110,.1);border:1px solid rgba(200,169,110,.2);border-radius:10px;padding:9px 11px;display:flex;align-items:center;gap:7px;cursor:pointer;touch-action:manipulation" onclick="showCruisePortList()">
-                  <span style="font-size:16px">🗺️</span>
-                  <div>
-                    <div style="font-size:11px;font-weight:600;color:var(--gold2)">Port Guide</div>
-                    <div style="font-size:10px;color:var(--text3)">AI picks per stop</div>
-                  </div>
-                </div>
-                <div style="background:rgba(62,184,168,.08);border:1px solid rgba(62,184,168,.15);border-radius:10px;padding:9px 11px;display:flex;align-items:center;gap:7px;cursor:pointer;touch-action:manipulation" onclick="showCruisePortList()">
-                  <span style="font-size:16px">📎</span>
-                  <div>
-                    <div style="font-size:11px;font-weight:600;color:#3eb8a8">Reservations</div>
-                    <div style="font-size:10px;color:var(--text3)">3 linked · 1 pending</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="text-align:center;padding:16px 0 20px">
-          <div style="font-size:40px;margin-bottom:10px">🌍</div>
-          <div style="font-size:20px;font-weight:700;color:var(--text);margin-bottom:6px">Group Trips</div>
-          <div style="font-size:12px;color:var(--text3);line-height:1.6;max-width:280px;margin:0 auto 24px">Your trip command center — hotels, flights, activities, restaurants, and bills. All in one place. Shared with your crew in real time.</div>
-        </div>
+          ${buildCruiseCard()}
         <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px">
           <div style="font-size:13px;font-weight:800;color:var(--gold);margin-bottom:12px">✈️ Create a New Trip</div>
           <input id="trip-name" placeholder="Trip name (e.g. Europe Summer 2026)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
@@ -12455,6 +12405,174 @@ function pgShowTab(tab, code) {
           </div>
         </div>`).join('')}`;
   }
+}
+
+
+
+/* ════════════════════════════════════════════════════
+   CRUISE CALENDAR — Timeline + Day Detail
+   Called from renderTrips template literal
+════════════════════════════════════════════════════ */
+
+function buildCruiseCard() {
+  var today = new Date().toISOString().split('T')[0];
+  var activePort = null;
+  for (var pi = 0; pi < CRUISE_PORTS.length; pi++) {
+    if (CRUISE_PORTS[pi].date === today) { activePort = CRUISE_PORTS[pi]; break; }
+  }
+  if (!activePort) {
+    for (var pi = 0; pi < CRUISE_PORTS.length; pi++) {
+      if (new Date(CRUISE_PORTS[pi].date + 'T12:00:00Z') >= new Date()) {
+        activePort = CRUISE_PORTS[pi]; break;
+      }
+    }
+  }
+  if (!activePort) activePort = CRUISE_PORTS[0];
+
+  // Build timeline pills
+  var pills = '';
+  for (var i = 0; i < CRUISE_PORTS.length; i++) {
+    var p = CRUISE_PORTS[i];
+    var isToday = today === p.date;
+    var isPast  = new Date() > new Date(p.date + 'T23:59:00Z');
+    var dayNum  = i + 1;
+    var border  = isToday ? 'rgba(62,184,168,.6)' : 'rgba(255,255,255,.06)';
+    var bg      = isToday ? 'rgba(62,184,168,.12)' : 'rgba(255,255,255,.03)';
+    var clr     = isToday ? '#3eb8a8' : isPast ? '#3a3228' : '#9a8e72';
+    var flag    = isPast && !isToday ? '<span style="opacity:.4">' + p.flag + '</span>' : p.flag;
+    var dot     = isToday ? '<div style="width:4px;height:4px;border-radius:50%;background:#3eb8a8;margin-top:1px"></div>' : '';
+    var shortName = p.name.split(' ')[0];
+    pills += '<div onclick="cruiseSelectDay(\'' + p.code + '\')" id="day-pill-' + p.code + '" ' +
+      'style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;touch-action:manipulation;' +
+      'padding:7px 8px;border-radius:12px;border:1.5px solid ' + border + ';background:' + bg + ';min-width:52px;text-align:center;transition:all .15s">' +
+      '<div style="font-size:20px">' + flag + '</div>' +
+      '<div style="font-size:9px;font-weight:700;color:' + clr + ';white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:48px">' + shortName + '</div>' +
+      '<div style="font-size:8px;color:' + clr + ';opacity:.7">D' + dayNum + '</div>' +
+      dot + '</div>';
+  }
+
+  return '<div style="background:linear-gradient(160deg,#063a58,#021520);border:1px solid rgba(62,184,168,.2);border-radius:16px;overflow:hidden;margin-bottom:12px">' +
+
+    // Hero header
+    '<div style="position:relative;height:88px;display:flex;align-items:flex-end;padding:12px">' +
+    '<div style="position:absolute;top:10px;right:14px;font-size:32px;opacity:.2">🌊</div>' +
+    '<div style="position:relative;z-index:1">' +
+    '<div style="font-size:9px;font-weight:700;letter-spacing:.14em;color:rgba(62,184,168,.7);text-transform:uppercase;margin-bottom:3px">+ Cruise Itinerary</div>' +
+    '<div style="font-family:var(--serif);font-size:18px;font-weight:600;color:#fff;font-style:italic">Southern <em style="color:var(--gold2)">Caribbean</em></div>' +
+    '<div style="font-size:10px;color:rgba(255,255,255,.35);margin-top:2px">Valiant Lady · Virgin Voyages · Mar 21\u201328, 2026</div>' +
+    '</div></div>' +
+
+    // Timeline strip
+    '<div style="padding:0 12px 2px">' +
+    '<div style="display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:8px 0 10px">' +
+    pills +
+    '</div></div>' +
+
+    // Day detail
+    '<div style="margin:0 12px 12px;background:rgba(0,0,0,.28);border-radius:12px;border:1px solid rgba(255,255,255,.06)">' +
+    '<div id="cruise-day-content" style="padding:12px">' + buildPortDayDetail(activePort) + '</div>' +
+    '</div>' +
+
+    // Buttons
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:0 12px 12px">' +
+    '<div onclick="showCruisePortList()" style="background:rgba(200,169,110,.1);border:1px solid rgba(200,169,110,.2);border-radius:10px;padding:9px 11px;display:flex;align-items:center;gap:7px;cursor:pointer;touch-action:manipulation">' +
+    '<span style="font-size:16px">🗺\uFE0F</span>' +
+    '<div><div style="font-size:11px;font-weight:600;color:var(--gold2)">Port Guide</div>' +
+    '<div style="font-size:10px;color:var(--text3)">Eat \xb7 Do \xb7 Book</div></div></div>' +
+    '<div onclick="sendMorningBriefTest()" style="background:rgba(62,184,168,.1);border:1px solid rgba(62,184,168,.2);border-radius:10px;padding:9px 11px;display:flex;align-items:center;gap:7px;cursor:pointer;touch-action:manipulation">' +
+    '<span style="font-size:16px">\uD83C\uDF05</span>' +
+    '<div><div style="font-size:11px;font-weight:600;color:#3eb8a8">Test Brief</div>' +
+    '<div style="font-size:10px;color:var(--text3)">Send to email</div></div></div>' +
+    '</div>' +
+
+    '</div>';
+}
+
+function buildPortDayDetail(p) {
+  if (!p) return '';
+  var today   = new Date().toISOString().split('T')[0];
+  var isToday = p.date === today;
+  var daysUntil = Math.ceil((new Date(p.date) - new Date()) / (1000*60*60*24));
+  var isAtSea  = p.name === 'At Sea';
+  var isDebark = p.depart === 'Debark';
+
+  var badge = '';
+  if (isToday)        badge = '<span style="font-size:9px;font-weight:700;color:#c8a96e;background:rgba(200,169,110,.15);padding:2px 7px;border-radius:5px;margin-left:6px">TODAY</span>';
+  else if (daysUntil === 1) badge = '<span style="font-size:9px;font-weight:700;color:#3eb8a8;background:rgba(62,184,168,.1);padding:2px 7px;border-radius:5px;margin-left:6px">TOMORROW</span>';
+  else if (daysUntil > 1)   badge = '<span style="font-size:9px;font-weight:700;color:#3eb8a8;background:rgba(62,184,168,.1);padding:2px 7px;border-radius:5px;margin-left:6px">' + daysUntil + 'd away</span>';
+
+  // Header row
+  var html = '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">' +
+    '<div style="display:flex;align-items:center;gap:6px">' +
+    '<span style="font-size:22px">' + p.flag + '</span>' +
+    '<div><div style="font-family:var(--serif);font-size:15px;font-weight:600;color:#e8dfc8;font-style:italic">' + p.name + '</div>' +
+    '<div style="font-size:10px;color:#5a5040">' + p.day + '</div></div></div>' +
+    badge + '</div>';
+
+  // Time chips
+  if (!isAtSea && !isDebark && p.arrive && p.depart) {
+    html += '<div style="display:flex;gap:6px;margin-bottom:10px">' +
+      '<div style="flex:1;background:rgba(62,184,168,.08);border:1px solid rgba(62,184,168,.15);border-radius:8px;padding:7px;text-align:center">' +
+      '<div style="font-size:8px;font-weight:700;color:#3eb8a8;letter-spacing:.06em;margin-bottom:2px">ARRIVE</div>' +
+      '<div style="font-size:13px;font-weight:600;color:#e8dfc8">' + p.arrive + '</div></div>' +
+      '<div style="flex:1;background:rgba(212,117,106,.08);border:1px solid rgba(212,117,106,.15);border-radius:8px;padding:7px;text-align:center">' +
+      '<div style="font-size:8px;font-weight:700;color:#d4756a;letter-spacing:.06em;margin-bottom:2px">DEPART</div>' +
+      '<div style="font-size:13px;font-weight:600;color:#e8dfc8">' + p.depart + '</div></div>' +
+      '<div style="flex:1;background:rgba(200,169,110,.08);border:1px solid rgba(200,169,110,.15);border-radius:8px;padding:7px;text-align:center">' +
+      '<div style="font-size:8px;font-weight:700;color:#c8a96e;letter-spacing:.06em;margin-bottom:2px">ASHORE</div>' +
+      '<div style="font-size:13px;font-weight:600;color:#e8dfc8">' + (p.hours || '\u2014') + 'h</div></div>' +
+      '</div>';
+  }
+
+  // Top picks (3 max)
+  if (p.recs && p.recs.length) {
+    html += '<div style="font-size:8px;font-weight:700;letter-spacing:.1em;color:#3a3228;margin-bottom:7px">TOP PICKS</div>';
+    var shown = p.recs.slice(0, 3);
+    for (var ri = 0; ri < shown.length; ri++) {
+      var r = shown[ri];
+      var border = ri < shown.length - 1 ? 'border-bottom:1px solid rgba(255,255,255,.04);' : '';
+      html += '<div style="display:flex;align-items:center;gap:8px;padding:5px 0;' + border + '">' +
+        '<span style="font-size:15px">' + r.icon + '</span>' +
+        '<div style="flex:1;min-width:0">' +
+        '<div style="font-size:11px;font-weight:600;color:#e8dfc8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + r.name + '</div>' +
+        '<div style="font-size:10px;color:#5a5040">' + r.tag + '</div></div></div>';
+    }
+  }
+
+  // CTA
+  html += '<button onclick="showPortGuide(\'' + p.code + '\')" ' +
+    'style="width:100%;margin-top:10px;padding:8px;background:rgba(200,169,110,.1);border:1px solid rgba(200,169,110,.2);' +
+    'border-radius:9px;color:var(--gold2);font-size:11px;font-weight:700;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">' +
+    'Full Port Guide \u2014 Eat \xb7 Do \xb7 Book \u2192</button>';
+
+  return html;
+}
+
+function cruiseSelectDay(code) {
+  var port = null;
+  for (var i = 0; i < CRUISE_PORTS.length; i++) {
+    if (CRUISE_PORTS[i].code === code) { port = CRUISE_PORTS[i]; break; }
+  }
+  if (!port) return;
+
+  // Update pill styles
+  var today = new Date().toISOString().split('T')[0];
+  for (var i = 0; i < CRUISE_PORTS.length; i++) {
+    var p   = CRUISE_PORTS[i];
+    var pill = document.getElementById('day-pill-' + p.code);
+    if (!pill) continue;
+    if (p.code === code) {
+      pill.style.borderColor = 'rgba(62,184,168,.6)';
+      pill.style.background  = 'rgba(62,184,168,.12)';
+    } else {
+      pill.style.borderColor = 'rgba(255,255,255,.06)';
+      pill.style.background  = 'rgba(255,255,255,.03)';
+    }
+  }
+
+  // Update day detail
+  var content = document.getElementById('cruise-day-content');
+  if (content) content.innerHTML = buildPortDayDetail(port);
 }
 
 </script>
