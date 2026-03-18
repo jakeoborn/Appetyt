@@ -1573,15 +1573,26 @@ const TRIPS = {
       return cruiseTrip;
     }
 
+    // Try Supabase library first, then fall back to direct REST API fetch
+    let trip = null;
     if(sb){
-      const {data: trip, error} = await sb.from('trips').select().eq('code', code.toUpperCase()).single();
-      if(error || !trip) throw new Error('Trip not found. Check the code and try again.');
-      this.current = trip;
-      localStorage.setItem('appetyt_active_trip', JSON.stringify(trip));
-      return trip;
-    } else {
-      throw new Error('Looking up trip "'+code+'"... (Supabase sync coming soon)');
+      const {data, error} = await sb.from('trips').select().eq('code', code.toUpperCase()).single();
+      if(!error && data) trip = data;
     }
+    if(!trip){
+      // Direct REST fetch - works even when Supabase library fails to load
+      try{
+        const res = await fetch(SUPABASE_URL+'/rest/v1/trips?code=eq.'+code.toUpperCase()+'&select=*', {
+          headers: {'apikey': SUPABASE_ANON_KEY, 'Authorization': 'Bearer '+SUPABASE_ANON_KEY}
+        });
+        const rows = await res.json();
+        if(rows && rows.length > 0) trip = rows[0];
+      }catch(e){}
+    }
+    if(!trip) throw new Error('Trip not found. Check the code and try again.');
+    this.current = trip;
+    localStorage.setItem('appetyt_active_trip', JSON.stringify(trip));
+    return trip;
   },
 
   // Load trip data
