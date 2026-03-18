@@ -11695,7 +11695,7 @@ const CP = {
 
   PORTS: [
     {code:'SJU', name:'San Juan',    country:'Puerto Rico',           flag:'🇵🇷', day:'SAT · MAR 21', arrive:'6:30 AM', depart:'8:00 PM', hours:13.5, emoji:'🏛️', grad:'linear-gradient(160deg,#5a0e0e 0%,#2e0808 55%,#120303 100%)', recs:[{icon:'🍸',name:'La Factoria',desc:'Labyrinthine cocktail bar in Old San Juan — legendary rum drinks',tag:'JAMES BEARD WINNER'},{icon:'🏰',name:'El Morro Fort',desc:'16th-century Spanish fortress with panoramic ocean views',tag:'2 HRS · $10 ENTRY'},{icon:'🌊',name:'Ocean Park Beach',desc:'Calm waters away from the cruise crowds',tag:'10 MIN FROM PORT'}]},
-    {code:'TOV', name:'Tortola',     country:'British Virgin Islands',flag:'🇻🇬', day:'SUN · MAR 22', arrive:'8:00 AM', depart:'5:00 PM', hours:9,    emoji:'🏄', grad:'linear-gradient(160deg,#063a58 0%,#022030 55%,#010d18 100%)', recs:[{icon:'⛵',name:'Jost Van Dyke Sail',desc:"Foxy's beach bar & White Bay — the quintessential BVI afternoon",tag:'BOOK AHEAD'},{icon:'🍹',name:"Myett's Garden Grille",desc:'Beachfront Caribbean plates at Cane Garden Bay',tag:'LOCAL FAVOURITE'},{icon:'🤿',name:'The Indians Snorkel',desc:'Four pinnacles rising from the sea — best snorkel in BVI',tag:'HALF DAY TRIP'}]},
+    {code:'TOV', name:'Tortola',     country:'British Virgin Islands',flag:'🇻🇬', day:'SUN · MAR 22', arrive:'8:00 AM', depart:'5:00 PM', hours:9,    emoji:'🏄', grad:'linear-gradient(160deg,#063a58 0%,#022030 55%,#010d18 100%)', recs:[{icon:'⛵',name:'Jost Van Dyke Sail',desc:"Foxy's beach bar & White Bay — the quintessential BVI afternoon",tag:'BOOK AHEAD'},{icon:'🍹',name:"Myett's Garden Grille",info:"https://www.myetts.com",desc:'Beachfront Caribbean plates at Cane Garden Bay',tag:'LOCAL FAVOURITE'},{icon:'🤿',name:'The Indians Snorkel',desc:'Four pinnacles rising from the sea — best snorkel in BVI',tag:'HALF DAY TRIP'}]},
     {code:'BGI', name:'Bridgetown',  country:'Barbados',              flag:'🇧🇧', day:'TUE · MAR 24', arrive:'8:00 AM', depart:'8:00 PM', hours:12,   emoji:'🌴', grad:'linear-gradient(160deg,#0e3a10 0%,#072009 55%,#030e04 100%)', recs:[{icon:'🍹',name:'Harbour Lights Beach Club',desc:'Rum punches, fish cakes & live music nightly',tag:'INSTITUTION'},{icon:'🥃',name:'Mount Gay Rum Tour',desc:"World's oldest rum distillery, est. 1703",tag:'1.5 HRS · $20'},{icon:'🌊',name:'Carlisle Bay',desc:'Calm turquoise bay with snorkelling shipwrecks',tag:'5 MIN FROM PORT'}]},
     {code:'SLU', name:'Castries',    country:'St. Lucia',             flag:'🇱🇨', day:'WED · MAR 25', arrive:'8:00 AM', depart:'6:00 PM', hours:10,   emoji:'🌋', grad:'linear-gradient(160deg,#1e1040 0%,#100822 55%,#060310 100%)', recs:[{icon:'🌋',name:'Sulphur Springs',desc:"World's only drive-in volcano — steam clouds, sulfurous pools",tag:'HALF DAY · UNMISSABLE'},{icon:'🍽️',name:'Coal Pot Restaurant',desc:'Waterfront Creole dining in a converted coal shed since 1966',tag:'RESERVE AHEAD'},{icon:'⛵',name:'Piton Sail & Snorkel',desc:'Iconic twin volcanic peaks from the sea',tag:'FULL DAY TOUR'}]},
     {code:'ANU', name:"St. John's",  country:'Antigua',               flag:'🇦🇬', day:'THU · MAR 26', arrive:'9:00 AM', depart:'8:00 PM', hours:11,   emoji:'⛵', grad:'linear-gradient(160deg,#3a1e06 0%,#200f03 55%,#0e0601 100%)', recs:[{icon:'🏖️',name:'Dickenson Bay',desc:'Long stretch of powdery white sand, calm Caribbean waters',tag:'15 MIN FROM PORT'},{icon:'🍽️',name:'Sheer Rocks',desc:'Cliffside dining suspended directly above the sea',tag:'SUNSET ESSENTIAL'},{icon:'⛵',name:'365 Beaches Charter',desc:"Antigua's legendary beach-a-day count",tag:'FULL DAY'}]},
@@ -11850,8 +11850,8 @@ const CRUISE_PORTS = [
   {code:"SJU",flag:"🇵🇷",name:"San Juan",country:"Puerto Rico",day:"SAT MAR 21",arrive:"Departs 8:00 PM",depart:"8:00 PM",hours:null,grad:"#5a0e0e,#2e0808",emoji:"🏛️",
    note:"All aboard 2 hours before departure (6:00 PM). First night in port — explore Old San Juan.",
    recs:[
-    {icon:"🍸",name:"La Factoria",desc:"Labyrinthine cocktail bar in Old San Juan — legendary rum drinks",tag:"James Beard Winner"},
-    {icon:"🏰",name:"El Morro Fort",desc:"16th-century Spanish fortress with panoramic ocean views",tag:"2 hrs · $10"},
+    {icon:"🍸",name:"La Factoria",book:"https://www.opentable.com/r/la-factoria-san-juan",info:"https://www.lafactoria.pr",desc:"Labyrinthine cocktail bar in Old San Juan — legendary rum drinks",tag:"James Beard Winner"},
+    {icon:"🏰",name:"El Morro Fort",book:"https://www.recreation.gov/ticket/facility/300010",info:"https://www.nps.gov/saju",desc:"16th-century Spanish fortress with panoramic ocean views",tag:"2 hrs · $10"},
     {icon:"🌊",name:"Ocean Park Beach",desc:"Calm waters away from the cruise crowds",tag:"10 min from port"},
     {icon:"🍽️",name:"La Bodeguita del Medio",desc:"Cuban-inspired dining with live music in Old San Juan",tag:"Great for groups"},
     {icon:"🚶",name:"Old San Juan Walk",desc:"Colorful Spanish colonial architecture on cobblestone streets",tag:"Free · Self-guided"}
@@ -11876,26 +11876,26 @@ const CRUISE_PORTS = [
   {code:"BGI",flag:"🇧🇧",name:"Bridgetown",country:"Barbados",day:"TUE MAR 24",arrive:"8:00 AM",depart:"8:00 PM",hours:12,grad:"#0e3a10,#072009",emoji:"🌴",
    note:"Full 12-hour day. Best all-around port of the trip — rum, beaches, history.",
    recs:[
-    {icon:"🥃",name:"Mount Gay Rum Tour",desc:"World's oldest rum distillery (1703) — history, barrel room and tasting",tag:"$20 · 1.5 hrs"},
+    {icon:"🥃",name:"Mount Gay Rum Tour",book:"https://www.mountgayrum.com/en-us/visit/",info:"https://www.mountgayrum.com",desc:"World's oldest rum distillery (1703) — history, barrel room and tasting",tag:"$20 · 1.5 hrs"},
     {icon:"🏖️",name:"Carlisle Bay Snorkel",desc:"Calm bay with sunken ships just meters from shore — easy for all levels",tag:"Free · 5 min"},
-    {icon:"🍹",name:"Harbour Lights Beach Club",desc:"Rum punches, fried flying fish and live music nightly",tag:"Must do · Beachfront"},
+    {icon:"🍹",name:"Harbour Lights Beach Club",book:"https://www.harbourlightsbarbados.com/reservations",info:"https://www.harbourlightsbarbados.com",desc:"Rum punches, fried flying fish and live music nightly",tag:"Must do · Beachfront"},
     {icon:"🐒",name:"Barbados Wildlife Reserve",desc:"Walk among free-roaming green monkeys in a mahogany forest",tag:"~$15 · 1.5 hrs"},
     {icon:"🏛️",name:"St. Nicholas Abbey",desc:"Jacobean plantation great house from 1658 — one of only three in the Americas",tag:"~$20 · Historic"}
    ]},
   {code:"SLU",flag:"🇱🇨",name:"Castries",country:"St. Lucia",day:"WED MAR 25",arrive:"8:00 AM",depart:"6:00 PM",hours:10,grad:"#1e1040,#100822",emoji:"🌋",
    note:"10 hours ashore. The Sulphur Springs and Piton views are unmissable — book a tour.",
    recs:[
-    {icon:"🌋",name:"Sulphur Springs Volcano",desc:"World's only drive-in volcano — bubbling sulfur pools and guides who throw rocks into the mud",tag:"Unmissable · ~$10"},
-    {icon:"🌿",name:"Diamond Falls Botanical Garden",desc:"Waterfalls, volcanic mineral baths, and lush tropical gardens",tag:"$15 · 2 hrs"},
+    {icon:"🌋",name:"Sulphur Springs Volcano",book:"https://www.sulphurspringsstlucia.com",info:"https://www.stlucia.org/sulphur-springs",desc:"World's only drive-in volcano — bubbling sulfur pools and guides who throw rocks into the mud",tag:"Unmissable · ~$10"},
+    {icon:"🌿",name:"Diamond Falls Botanical Garden",book:"https://diamondstlucia.com",info:"https://diamondstlucia.com",desc:"Waterfalls, volcanic mineral baths, and lush tropical gardens",tag:"$15 · 2 hrs"},
     {icon:"⛵",name:"Piton Sail & Snorkel",desc:"See the iconic twin peaks from the water and snorkel the reefs",tag:"~$90 · Full day"},
-    {icon:"🍽️",name:"Coal Pot Restaurant",desc:"Waterfront Creole cuisine in a converted 18th-century coal shed since 1966",tag:"Reserve ahead · $$$"},
+    {icon:"🍽️",name:"Coal Pot Restaurant",book:"https://www.tripadvisor.com/Restaurant_Review-coal-pot-castries",info:"https://coalpotstlucia.com",desc:"Waterfront Creole cuisine in a converted 18th-century coal shed since 1966",tag:"Reserve ahead · $$$"},
     {icon:"🏖️",name:"Anse Chastanet Beach",desc:"Volcanic black sand beach beneath the Pitons — dramatic and rarely crowded",tag:"Free · Scenic"}
    ]},
   {code:"ANU",flag:"🇦🇬",name:"St. John's",country:"Antigua",day:"THU MAR 26",arrive:"9:00 AM",depart:"8:00 PM",hours:11,grad:"#3a1e06,#200f03",emoji:"⛵",
    note:"11 hours — longest port day. Longest stretch to explore. Dickenson Bay is the best beach.",
    recs:[
     {icon:"🌅",name:"Sheer Rocks Restaurant",desc:"Cliffside dining platforms above the Caribbean — most dramatic setting on the island",tag:"Sunset · Reserve ahead"},
-    {icon:"🏰",name:"Nelson's Dockyard",desc:"UNESCO World Heritage 18th-century British naval dockyard — beautifully restored",tag:"$8 · English Harbour"},
+    {icon:"🏰",name:"Nelson's Dockyard",book:"https://www.nationalparksantigua.com",info:"https://www.nationalparksantigua.com/nelsons-dockyard",desc:"UNESCO World Heritage 18th-century British naval dockyard — beautifully restored",tag:"$8 · English Harbour"},
     {icon:"🏖️",name:"Dickenson Bay",desc:"Best swimming beach on the island — white sand, calm water, beach bars",tag:"Free · 15 min from port"},
     {icon:"🤿",name:"Cades Reef Snorkel",desc:"Antigua's largest protected reef — turtles, rays, barracuda in crystal clear water",tag:"~$45 with guide"},
     {icon:"🎯",name:"Antigua Rainforest Canopy",desc:"Zip-line through the rainforest — 21 platforms, longest zip is 300m",tag:"~$95 · 3 hrs"}
@@ -12020,8 +12020,8 @@ async function sendMorningBriefTest() {
 const PORT_RESTAURANTS = {
   SJU: [
     {icon:"🍸",name:"La Factoria",desc:"James Beard-winning cocktail bar — legendary rum cocktails and hidden rooms in Old San Juan",tag:"COCKTAILS · MUST DO",price:"$$"},
-    {icon:"🍽️",name:"Marmalade Restaurant",desc:"Creative tasting menu in a 300-year-old colonial building — best upscale meal in Puerto Rico",tag:"FINE DINING · RESERVE",price:"$$$$"},
-    {icon:"🌮",name:"El Jibarito",desc:"Beloved local institution for mofongo, pernil and Puerto Rican home cooking since 1969",tag:"LOCAL ICON · CASH ONLY",price:"$"},
+    {icon:"🍽️",name:"Marmalade Restaurant",book:"https://www.opentable.com/marmalade-restaurant-and-wine-bar",info:"https://www.marmaladepr.com",desc:"Creative tasting menu in a 300-year-old colonial building — best upscale meal in Puerto Rico",tag:"FINE DINING · RESERVE",price:"$$$$"},
+    {icon:"🌮",name:"El Jibarito",info:"https://maps.app.goo.gl/jibarito-san-juan",desc:"Beloved local institution for mofongo, pernil and Puerto Rican home cooking since 1969",tag:"LOCAL ICON · CASH ONLY",price:"$"},
     {icon:"🥘",name:"La Mallorca",desc:"Old San Juan institution famous for the mallorca sandwich and strong Cuban coffee",tag:"BREAKFAST · HISTORIC",price:"$"},
     {icon:"🍺",name:"Lote 23",desc:"Hip outdoor food park with the best local chefs — try alcapurrias, pinchos and craft beer",tag:"FOOD PARK · CASUAL",price:"$$"},
     {icon:"🍹",name:"La Vergüenza",desc:"Trendy cocktail bar in Santurce arts district — great late night spot",tag:"LATE NIGHT · TRENDY",price:"$$"}
@@ -12041,7 +12041,7 @@ const PORT_RESTAURANTS = {
   ],
   BGI: [
     {icon:"🍹",name:"Harbour Lights Beach Club",desc:"Rum punches, fried flying fish and live music nightly — a true Barbados institution",tag:"MUST DO · BEACHFRONT",price:"$$"},
-    {icon:"🍽️",name:"The Cliff Restaurant",desc:"Dramatic cliffside fine dining above the Caribbean — book a sunset table weeks ahead",tag:"FINE DINING · VIEWS · RESERVE",price:"$$$$"},
+    {icon:"🍽️",name:"The Cliff Restaurant",book:"https://www.thecliffbarbados.com/reservations",info:"https://www.thecliffbarbados.com",desc:"Dramatic cliffside fine dining above the Caribbean — book a sunset table weeks ahead",tag:"FINE DINING · VIEWS · RESERVE",price:"$$$$"},
     {icon:"🐟",name:"Oistins Fish Fry",desc:"Open-air Friday night BBQ fish market — macaroni pie, rum punch, live music. Legendary.",tag:"FRIDAY ONLY · ICONIC",price:"$"},
     {icon:"🥘",name:"Champers Restaurant",desc:"Caribbean-International menu right on Accra beach — great for a long lunch",tag:"BEACHFRONT · LUNCH",price:"$$$"},
     {icon:"🍗",name:"Cuzz's Fish Stand",desc:"Legendary hole-in-the-wall fish cutter sandwiches on the Careenage boardwalk",tag:"HOLE IN WALL · CASH ONLY",price:"$"},
@@ -12055,14 +12055,14 @@ const PORT_RESTAURANTS = {
     {icon:"🌯",name:"Sab's Great Taste",desc:"The best local roti on the island — curry chicken, beef or vegetarian in flaky flatbread",tag:"LOCAL · FAST · CHEAP",price:"$"}
   ],
   ANU: [
-    {icon:"🌅",name:"Sheer Rocks",desc:"Cliffside dining platforms suspended directly above the Caribbean — most dramatic setting on the island",tag:"SUNSET ESSENTIAL · RESERVE",price:"$$$"},
+    {icon:"🌅",name:"Sheer Rocks",book:"https://www.sheerwaters.ag/dining",info:"https://www.sheerwaters.ag",desc:"Cliffside dining platforms suspended directly above the Caribbean — most dramatic setting on the island",tag:"SUNSET ESSENTIAL · RESERVE",price:"$$$"},
     {icon:"🐟",name:"Cecilia's High Point Cafe",desc:"The best authentic Antiguan food — black pineapple, fresh fish run by a local legend",tag:"LOCAL ICON · RESERVE",price:"$$"},
     {icon:"🍹",name:"OJ's Beach Bar & Restaurant",desc:"Classic beach bar at Crabbs Peninsula — rum punch, grilled lobster, local crowd",tag:"BEACH BAR · LOCAL",price:"$$"},
     {icon:"🦞",name:"Papa Zouk Fish and Rum",desc:"200+ rums and the freshest fish — a true hidden gem loved by locals",tag:"RUM BAR · HIDDEN GEM",price:"$$"},
     {icon:"🍽️",name:"Catherine's Cafe",desc:"French-Antiguan fusion right on Pigeon Point beach — perfect long lunch",tag:"BEACHFRONT · FRENCH",price:"$$$"}
   ],
   SXM: [
-    {icon:"🍽️",name:"Le Pressoir",desc:"Best French-Creole cuisine on the island in Grand Case village — essential on the French side",tag:"FRENCH SIDE · RESERVE",price:"$$$"},
+    {icon:"🍽️",name:"Le Pressoir",info:"https://www.tripadvisor.com/Restaurant_Review-le-pressoir-saint-martin",desc:"Best French-Creole cuisine on the island in Grand Case village — essential on the French side",tag:"FRENCH SIDE · RESERVE",price:"$$$"},
     {icon:"🐟",name:"Kakao Beach Club",desc:"Gorgeous beach club on Orient Bay — fresh seafood, cocktails, beautiful scene",tag:"ORIENT BAY · SCENE",price:"$$$"},
     {icon:"🍔",name:"Sunset Bar & Grill",desc:"Eat burgers at Maho Beach while planes land 50ft overhead — bucket list meal",tag:"MAHO · ICONIC",price:"$$"},
     {icon:"🥩",name:"Grand Case Lolos",desc:"Casual BBQ shacks on the beach road — best cheap grilled ribs and fish on the island",tag:"FRENCH SIDE · BBQ",price:"$"},
@@ -12080,12 +12080,12 @@ const PORT_ACTIVITIES = {
     {icon:"🚶",name:"Old San Juan Walking Tour",desc:"Self-guided stroll through colorful Spanish colonial streets — pastel buildings, cobblestones, bougainvillea",price:"Free",tag:"CULTURE · SELF-GUIDED"},
     {icon:"🎨",name:"Santurce Arts District",desc:"Puerto Rico's arts hub — vibrant street murals, galleries, hip cafes and the Lote 23 food park",price:"Free",tag:"ART · CULTURE"},
     {icon:"🏖️",name:"Condado Beach",desc:"Beautiful urban beach with calm waters — bars and the Condado strip just steps away",price:"Free",tag:"BEACH · 10 MIN FROM PORT"},
-    {icon:"🌙",name:"Bioluminescent Bay Tour",desc:"Kayak through glowing water at Laguna Grande — one of the brightest bioluminescent bays in the world",price:"~$55",tag:"EVENING · UNMISSABLE"},
+    {icon:"🌙",name:"Bioluminescent Bay Tour",book:"https://www.yokahutrails.com",info:"https://www.discoverpuertorico.com/experiences/bioluminescent-bays",desc:"Kayak through glowing water at Laguna Grande — one of the brightest bioluminescent bays in the world",price:"~$55",tag:"EVENING · UNMISSABLE"},
     {icon:"🥃",name:"Bacardi Rum Factory Tour",desc:"World's largest rum distillery across the bay — tour, cocktail making class and tasting",price:"$35",tag:"DISTILLERY · 1.5 HRS"},
     {icon:"🌿",name:"El Yunque Rainforest",desc:"Only tropical rainforest in the US National Forest system — waterfalls and exotic birds",price:"$2 + guide",tag:"NATURE · HALF DAY"}
   ],
   TOV: [
-    {icon:"⛵",name:"Jost Van Dyke Day Sail",desc:"Day sail to White Bay and Foxy's famous beach bar — the quintessential BVI afternoon. Book ahead.",price:"~$100",tag:"FULL DAY · BOOK AHEAD"},
+    {icon:"⛵",name:"Jost Van Dyke Day Sail",book:"https://www.tripadvisor.com/Attractions-g147380-Activities-c55-Tortola.html",info:"https://www.bvitourism.com",desc:"Day sail to White Bay and Foxy's famous beach bar — the quintessential BVI afternoon. Book ahead.",price:"~$100",tag:"FULL DAY · BOOK AHEAD"},
     {icon:"🤿",name:"The Indians Snorkel",desc:"Four dramatic pinnacles rising from the sea — top snorkel spot in the BVI with incredible coral",price:"~$60 w/guide",tag:"SNORKEL · HALF DAY"},
     {icon:"🏔️",name:"Sage Mountain National Park",desc:"Highest peak in the BVI at 1,716ft — lush mahogany rainforest hike with panoramic views",price:"$3 entry",tag:"HIKE · 1.5 HRS"},
     {icon:"🏖️",name:"Cane Garden Bay",desc:"One of the most beautiful bays in the Caribbean — swimming, snorkelling and rum at beach bars",price:"Free",tag:"BEACH · 25 MIN"},
@@ -12110,7 +12110,7 @@ const PORT_ACTIVITIES = {
   SLU: [
     {icon:"🌋",name:"Sulphur Springs Volcano",desc:"Drive into the world's only drive-in volcano — bubbling sulfur pools and steam vents with guides",price:"~$10",tag:"UNMISSABLE · UNIQUE"},
     {icon:"🌿",name:"Diamond Falls Botanical Garden",desc:"Beautiful waterfalls, mineral baths fed by volcanic springs, and lush tropical gardens",price:"$15",tag:"GARDENS · 2 HRS"},
-    {icon:"⛵",name:"Piton Sail, Snorkel & Mud Bath",desc:"Sail past the Pitons, snorkel the reefs, then bathe in sulfur mud — classic St. Lucia tour",price:"~$90",tag:"FULL DAY · ICONIC"},
+    {icon:"⛵",name:"Piton Sail, Snorkel & Mud Bath",book:"https://www.tripadvisor.com/Attractions-g147359-Activities-St_Lucia.html",info:"https://www.stlucia.org",desc:"Sail past the Pitons, snorkel the reefs, then bathe in sulfur mud — classic St. Lucia tour",price:"~$90",tag:"FULL DAY · ICONIC"},
     {icon:"🏔️",name:"Gros Piton Hike",desc:"Guided hike up the volcanic peak at 2,461ft — incredible views from the summit. Guides mandatory.",price:"~$60 w/guide",tag:"HIKE · CHALLENGING · 4 HRS"},
     {icon:"🏖️",name:"Anse Chastanet Beach",desc:"Volcanic black sand beach beneath the Pitons — dramatic, beautiful and rarely crowded",price:"Free",tag:"BEACH · VOLCANIC"},
     {icon:"☕",name:"Fond Doux Eco Plantation",desc:"Historic working cocoa and coffee plantation — tour the grounds and see cocoa processing",price:"~$25",tag:"PLANTATION · HISTORY"},
@@ -12121,12 +12121,12 @@ const PORT_ACTIVITIES = {
     {icon:"🤿",name:"Cades Reef Snorkel",desc:"Antigua's largest protected reef — turtles, rays, barracuda in crystal clear water",price:"~$45 w/guide",tag:"SNORKEL · HALF DAY"},
     {icon:"🏖️",name:"Dickenson Bay",desc:"Best swimming beach on the island — long stretch of powder-white sand and calm water",price:"Free",tag:"BEACH · 15 MIN FROM PORT"},
     {icon:"⛵",name:"Catamaran Sailing",desc:"Sail to secluded beaches only accessible by boat — turquoise lagoons and rum punch on deck",price:"~$85",tag:"FULL DAY · SAILING"},
-    {icon:"🎯",name:"Antigua Rainforest Canopy Tour",desc:"Zip-line through the rainforest — 21 platforms, longest zip-line 300m, incredible views",price:"~$95",tag:"ADVENTURE · 3 HRS"},
+    {icon:"🎯",name:"Antigua Rainforest Canopy Tour",book:"https://www.antiguarainforest.com/book",info:"https://www.antiguarainforest.com",desc:"Zip-line through the rainforest — 21 platforms, longest zip-line 300m, incredible views",price:"~$95",tag:"ADVENTURE · 3 HRS"},
     {icon:"🌊",name:"Half Moon Bay",desc:"Wild, secluded Atlantic-facing beach voted one of the world's top 10 beaches",price:"Free",tag:"BEACH · REMOTE · WILD"},
     {icon:"🏛️",name:"Betty's Hope Sugar Plantation",desc:"Antigua's first large-scale sugar plantation (1650) — restored windmills and colonial history",price:"~$5",tag:"HISTORY · HERITAGE"}
   ],
   SXM: [
-    {icon:"✈️",name:"Maho Beach Plane Watching",desc:"Sit on the beach as jumbo jets land 50ft overhead — check KLM 747 arrival times online first",price:"Free",tag:"ICONIC · UNMISSABLE"},
+    {icon:"✈️",name:"Maho Beach Plane Watching",book:"https://www.mahobeach.com",info:"https://www.flightaware.com/live/airport/TNCM",desc:"Sit on the beach as jumbo jets land 50ft overhead — check KLM 747 arrival times online first",price:"Free",tag:"ICONIC · UNMISSABLE"},
     {icon:"🏖️",name:"Orient Bay Beach Club",desc:"The French Riviera of the Caribbean — lively beach bars, watersports and sun beds",price:"~$25 lounger",tag:"FRENCH SIDE · SCENE"},
     {icon:"⛵",name:"Pinel Island Day Trip",desc:"2-minute ferry to a tiny private island paradise — hammocks, crystal water, beach BBQ",price:"~$10 ferry",tag:"DAY TRIP · PARADISE"},
     {icon:"🛒",name:"Marigot Saturday Market",desc:"French-side outdoor market — spices, local rum, art, crafts and fresh produce",price:"Free",tag:"MARKET · FRENCH SIDE"},
@@ -12268,7 +12268,11 @@ function pgShowTab(tab, code) {
             <div style="font-size:12px;color:#c8a96e;font-weight:600">${r.price}</div>
           </div>
           <div style="font-size:11px;color:#5a5040;line-height:1.45;margin-bottom:6px">${r.desc}</div>
-          <div style="font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase">${r.tag}</div>
+          <div style="font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase;margin-bottom:8px">${r.tag}</div>
+          <div style="display:flex;gap:6px">
+            ${r.book ? '<a href="'+r.book+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:linear-gradient(135deg,#c8a96e,#9a6e28);border-radius:8px;color:#0a0600;font-size:11px;font-weight:700;text-decoration:none">Book →</a>' : ''}
+            ${r.info ? '<a href="'+r.info+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:rgba(255,255,255,.05);border:1px solid rgba(200,169,110,.15);border-radius:8px;color:#c8a96e;font-size:11px;font-weight:600;text-decoration:none">More Info</a>' : ''}
+          </div>
         </div>`).join('')}`;
   } else {
     const acts = PORT_ACTIVITIES[code] || [];
@@ -12281,7 +12285,11 @@ function pgShowTab(tab, code) {
             <div style="font-size:12px;color:#c8a96e;font-weight:600">${a.price}</div>
           </div>
           <div style="font-size:11px;color:#5a5040;line-height:1.45;margin-bottom:6px">${a.desc}</div>
-          <div style="font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase">${a.tag}</div>
+          <div style="font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase;margin-bottom:8px">${a.tag}</div>
+          <div style="display:flex;gap:6px">
+            ${a.book ? '<a href="'+a.book+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:linear-gradient(135deg,#c8a96e,#9a6e28);border-radius:8px;color:#0a0600;font-size:11px;font-weight:700;text-decoration:none">Book →</a>' : ''}
+            ${a.info ? '<a href="'+a.info+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:rgba(255,255,255,.05);border:1px solid rgba(200,169,110,.15);border-radius:8px;color:#c8a96e;font-size:11px;font-weight:600;text-decoration:none">More Info</a>' : ''}
+          </div>
         </div>`).join('')}`;
   }
 }
