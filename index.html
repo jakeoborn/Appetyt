@@ -8932,6 +8932,116 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     }
   },
 
+
+  addTravelDetail(tripId){
+    // Build the add modal
+    let modal = document.getElementById('travel-detail-modal');
+    if(!modal){
+      modal = document.createElement('div');
+      modal.id = 'travel-detail-modal';
+      modal.style.cssText = 'position:fixed;inset:0;z-index:600;background:rgba(5,8,14,.92);backdrop-filter:blur(14px);display:flex;align-items:flex-end;justify-content:center';
+      modal.onclick = function(e){if(e.target===this)this.remove();};
+      document.body.appendChild(modal);
+    }
+
+    const types = [
+      {value:'flight',label:'✈️ Flight'},
+      {value:'hotel',label:'🏨 Hotel'},
+      {value:'activity',label:'🎯 Activity'},
+      {value:'transfer',label:'🚗 Transfer'},
+      {value:'cruise',label:'🚢 Cruise'},
+      {value:'other',label:'📋 Other'},
+    ];
+
+    modal.innerHTML =
+      '<div style="width:100%;max-width:430px;background:var(--card2);border-radius:22px 22px 0 0;border:1px solid var(--border);border-bottom:none;padding:16px 18px calc(30px + env(safe-area-inset-bottom))">' +
+      '<div style="width:30px;height:3px;border-radius:2px;background:rgba(200,169,110,.15);margin:4px auto 16px"></div>' +
+      '<div style="font-size:17px;font-weight:700;color:var(--text);margin-bottom:14px">Add Travel Detail</div>' +
+
+      '<div style="font-size:11px;font-weight:600;color:var(--text3);margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em">Type</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px">' +
+      types.map(t =>
+        '<button onclick="document.querySelectorAll(\'.td-type-btn\').forEach(b=>b.style.background=\'var(--card)\');this.style.background=\'rgba(200,169,110,.2)\';document.getElementById(\'td-type\').value=\''+t.value+'\'" '+
+        'class="td-type-btn" style="padding:6px 12px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);font-size:12px;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">'+t.label+'</button>'
+      ).join('') +
+      '<input type="hidden" id="td-type" value="flight"></div>' +
+
+      '<div style="font-size:11px;font-weight:600;color:var(--text3);margin-bottom:5px;text-transform:uppercase;letter-spacing:.06em">Title *</div>' +
+      '<input id="td-title" placeholder="e.g. American Airlines AA 1234" style="width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:10px;font-family:inherit;outline:none;box-sizing:border-box">' +
+
+      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px">' +
+      '<div><div style="font-size:11px;font-weight:600;color:var(--text3);margin-bottom:5px;text-transform:uppercase;letter-spacing:.06em">Date</div>' +
+      '<input id="td-date" type="date" style="width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;font-family:inherit;outline:none;box-sizing:border-box"></div>' +
+      '<div><div style="font-size:11px;font-weight:600;color:var(--text3);margin-bottom:5px;text-transform:uppercase;letter-spacing:.06em">Time</div>' +
+      '<input id="td-time" type="time" style="width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;font-family:inherit;outline:none;box-sizing:border-box"></div>' +
+      '</div>' +
+
+      '<div style="font-size:11px;font-weight:600;color:var(--text3);margin-bottom:5px;text-transform:uppercase;letter-spacing:.06em">Subtitle / Route</div>' +
+      '<input id="td-subtitle" placeholder="e.g. Dallas DFW → San Juan SJU" style="width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:10px;font-family:inherit;outline:none;box-sizing:border-box">' +
+
+      '<div style="font-size:11px;font-weight:600;color:var(--text3);margin-bottom:5px;text-transform:uppercase;letter-spacing:.06em">Confirmation #</div>' +
+      '<input id="td-conf" placeholder="e.g. ABC123" style="width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:10px;font-family:inherit;outline:none;box-sizing:border-box">' +
+
+      '<div style="font-size:11px;font-weight:600;color:var(--text3);margin-bottom:5px;text-transform:uppercase;letter-spacing:.06em">Notes</div>' +
+      '<textarea id="td-notes" placeholder="Gate info, check-in details, special instructions..." style="width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:14px;font-family:inherit;outline:none;box-sizing:border-box;resize:none;height:70px"></textarea>' +
+
+      '<div style="display:flex;gap:8px">' +
+      '<button onclick="document.getElementById(\'travel-detail-modal\').remove()" style="flex:1;padding:12px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text3);font-size:13px;cursor:pointer;font-family:var(--sans)">Cancel</button>' +
+      '<button onclick="A.saveTravelDetail(\''+tripId+'\')" style="flex:2;padding:12px;background:var(--gold);border:none;border-radius:10px;color:var(--dark);font-size:13px;font-weight:700;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">Save Detail</button>' +
+      '</div>' +
+      '</div>';
+
+    // Pre-select flight
+    setTimeout(()=>{
+      const btns = document.querySelectorAll('.td-type-btn');
+      if(btns[0]) btns[0].style.background = 'rgba(200,169,110,.2)';
+    },50);
+  },
+
+  saveTravelDetail(tripId){
+    const title = document.getElementById('td-title')?.value?.trim();
+    if(!title){ this.showToast('Please enter a title'); return; }
+
+    const detail = {
+      type:  document.getElementById('td-type')?.value || 'other',
+      title,
+      subtitle: document.getElementById('td-subtitle')?.value?.trim() || '',
+      date:  document.getElementById('td-date')?.value || '',
+      time:  document.getElementById('td-time')?.value || '',
+      confirmation: document.getElementById('td-conf')?.value?.trim() || '',
+      notes: document.getElementById('td-notes')?.value?.trim() || '',
+    };
+
+    const trips = S.userData.trips || [];
+    const trip = trips.find(t => t.id === tripId);
+    if(!trip){ this.showToast('Trip not found'); return; }
+
+    if(!trip.travelDetails) trip.travelDetails = [];
+    trip.travelDetails.push(detail);
+
+    // Sort by date
+    trip.travelDetails.sort((a,b) => {
+      if(!a.date && !b.date) return 0;
+      if(!a.date) return 1;
+      if(!b.date) return -1;
+      return a.date.localeCompare(b.date);
+    });
+
+    this.saveUserData();
+    document.getElementById('travel-detail-modal')?.remove();
+    this.showToast('✈️ Travel detail saved!');
+    this.renderTrips();
+  },
+
+  removeTravelDetail(tripId, index){
+    const trips = S.userData.trips || [];
+    const trip = trips.find(t => t.id === tripId);
+    if(!trip || !trip.travelDetails) return;
+    trip.travelDetails.splice(index, 1);
+    this.saveUserData();
+    this.renderTrips();
+  },
+
   renderTrips(){
     const el = document.getElementById('trips-content');
     if(!el) return;
@@ -9180,6 +9290,43 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
             <span style="font-size:14px;font-weight:800;color:var(--gold)">$${s.amount.toFixed(2)}</span>
           </div>`).join('')}
       </div>` : ''}
+
+      <!-- Travel Details -->
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+          <div style="font-size:14px;font-weight:700;color:var(--text)">✈️ Travel Details</div>
+          <button onclick="A.addTravelDetail('${trip.id}')" style="background:var(--gold);border:none;color:var(--dark);font-weight:700;font-size:11px;padding:6px 10px;border-radius:8px;cursor:pointer;touch-action:manipulation">+ Add</button>
+        </div>
+        ${(trip.travelDetails||[]).length ? `
+          <div style="display:flex;flex-direction:column;gap:8px">
+            ${(trip.travelDetails||[]).map((d,di) => `
+              <div style="background:var(--card2);border:1px solid var(--border);border-radius:11px;padding:12px;position:relative">
+                <div style="display:flex;align-items:flex-start;gap:10px">
+                  <div style="font-size:22px;flex-shrink:0">${
+                    d.type==='flight' ? '✈️' :
+                    d.type==='hotel' ? '🏨' :
+                    d.type==='activity' ? '🎯' :
+                    d.type==='transfer' ? '🚗' :
+                    d.type==='cruise' ? '🚢' : '📋'
+                  }</div>
+                  <div style="flex:1;min-width:0">
+                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:2px">
+                      <div style="font-size:13px;font-weight:700;color:var(--text)">${d.title}</div>
+                      <button onclick="A.removeTravelDetail('${trip.id}',${di})" style="background:none;border:none;color:var(--text3);font-size:14px;cursor:pointer;padding:0 0 0 8px;touch-action:manipulation">×</button>
+                    </div>
+                    ${d.subtitle ? '<div style="font-size:11px;color:var(--text3);margin-bottom:4px">'+d.subtitle+'</div>' : ''}
+                    <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:5px">
+                      ${d.date ? '<span style="font-size:10px;font-weight:600;color:var(--gold2);background:rgba(200,169,110,.1);padding:2px 7px;border-radius:5px">'+d.date+'</span>' : ''}
+                      ${d.time ? '<span style="font-size:10px;color:var(--text3);background:var(--card);padding:2px 7px;border-radius:5px">'+d.time+'</span>' : ''}
+                      ${d.confirmation ? '<span style="font-size:10px;color:#3eb8a8;background:rgba(62,184,168,.1);padding:2px 7px;border-radius:5px">Conf: '+d.confirmation+'</span>' : ''}
+                    </div>
+                    ${d.notes ? '<div style="font-size:11px;color:var(--text3);margin-top:6px;line-height:1.4">'+d.notes+'</div>' : ''}
+                  </div>
+                </div>
+              </div>`).join('')}
+          </div>` : `
+          <div style="font-size:12px;color:var(--text3);padding:4px 0">No travel details yet — add flights, hotels, transfers or activities</div>`}
+      </div>
 
       <!-- Bills -->
       <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:14px">
