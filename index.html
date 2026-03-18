@@ -3491,6 +3491,26 @@ const A = {
     if(_sal) _sal.textContent=S.user?(S.user.email?.split('@')[0]||'✓ Signed In'):'Sign In';document.getElementById('auth-btn').textContent='✓';}}catch(e){}
     this.buildCityList();
     this.renderHome();
+    // Pre-load cruise trip if no active trip saved
+    try{
+      const savedTrip = localStorage.getItem('appetyt_active_trip');
+      if(!savedTrip || savedTrip === 'null'){
+        const cruiseTrip = {
+          id: 'd6068549-7cbe-432a-a2d2-3ab61f27c7c9',
+          code: 'VIRGIN',
+          name: 'Virgin Voyages Caribbean Cruise',
+          city: 'Caribbean',
+          created_by: 'jakeoborn',
+          members: [{id:'jakeoborn',nickname:'Jacob',role:'owner'}],
+          restaurants: [],
+          bills: []
+        };
+        localStorage.setItem('appetyt_active_trip', JSON.stringify(cruiseTrip));
+        TRIPS.current = cruiseTrip;
+        const dot = document.getElementById('trips-nav-dot');
+        if(dot) dot.style.display = 'block';
+      }
+    }catch(e){}
     this.renderTop50();
     this.renderDiscover();
     this.travelSub('plan'); // default travel sub-tab
