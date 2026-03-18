@@ -9858,26 +9858,35 @@ Return ONLY the JSON object, nothing else.`,
     const btn   = document.getElementById('brief-sub-btn');
     const status = document.getElementById('brief-status');
     if(!email || !email.includes('@')){
-      if(status){status.textContent='⚠️ Please enter a valid email';status.style.color='var(--red)';status.style.display='block';}
+      if(status){status.textContent='Please enter a valid email';status.style.color='var(--red)';status.style.display='block';}
       return;
     }
-    if(btn){btn.textContent='Saving…';btn.disabled=true;}
+    if(btn){btn.textContent='Saving...';btn.disabled=true;}
     try{
-      const sb=getSB();
-      if(!sb) throw new Error('Service unavailable');
-      const {error}=await sb.from('briefing_subscribers').upsert({email,name,active:true,updated_at:new Date().toISOString()},{onConflict:'email'});
-      if(error) throw error;
-      S.briefingEmail=email;
-      try{localStorage.setItem('appetyt_briefing_email',email);}catch(e){}
-      if(status){status.textContent='✅ Subscribed! First briefing arrives March 21st at 8AM.';status.style.color='#3eb8a8';status.style.display='block';}
-      A.showToast('🌅 Subscribed to morning briefings!');
-      setTimeout(()=>A.renderProfile(),2000);
+      // Use the Netlify function (service key) to bypass RLS
+      const res = await fetch('/.netlify/functions/morning-brief', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({subscribe: true, email, name})
+      });
+      const data = await res.json();
+      if(data.subscribed || data.success){
+        S.briefingEmail = email;
+        try{localStorage.setItem('appetyt_briefing_email', email);}catch(e){}
+        if(status){status.textContent='Subscribed! First briefing arrives March 21st at 8AM.';status.style.color='#3eb8a8';status.style.display='block';}
+        A.showToast('Subscribed to morning briefings!');
+        setTimeout(()=>A.renderProfile(), 2000);
+      } else {
+        throw new Error(data.error || 'Unknown error');
+      }
     }catch(err){
-      if(status){status.textContent='❌ Could not subscribe. Try again.';status.style.color='var(--red)';status.style.display='block';}
+      if(status){status.textContent='Could not subscribe: '+err.message.slice(0,50);status.style.color='var(--red)';status.style.display='block';}
     }finally{
       if(btn){btn.textContent='Subscribe';btn.disabled=false;}
     }
   },
+
+  unsubscribeBriefing,
 
   unsubscribeBriefing: async function(){
     const email=S.briefingEmail;
