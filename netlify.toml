@@ -1,7 +1,9 @@
 [build]
   functions = "netlify/functions"
 
-# Only set content-type for the HTML page, not all routes
+[build.environment]
+  NODE_VERSION = "18"
+
 [[headers]]
   for = "/index.html"
   [headers.values]
@@ -12,6 +14,6 @@
   [headers.values]
     Content-Type = "text/html; charset=UTF-8"
 
-# Morning Cruise Briefing — 8AM Caribbean time (12:00 UTC)
 [functions."morning-brief"]
   schedule = "0 12 * * *"
+  node_bundler = "esbuild"
