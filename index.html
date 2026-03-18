@@ -9154,6 +9154,15 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     });
 
     el.innerHTML = `
+      <!-- Cruise Calendar -->
+      ${(()=>{
+        const n = TRIPS.current ? TRIPS.current.name||'' : '';
+        if(n.toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i)){
+          return '<div style="margin-bottom:16px">'+buildCruiseCard()+'</div>';
+        }
+        return '';
+      })()}
+
       <!-- Trip Header -->
       <div style="background:linear-gradient(135deg,rgba(201,168,76,.12),rgba(201,168,76,.04));border:1px solid rgba(201,168,76,.3);border-radius:16px;padding:16px;margin-bottom:14px">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px">
@@ -12350,6 +12359,17 @@ function cruiseSelectDay(code) {
   if (content) content.innerHTML = buildPortDayDetail(port);
 }
 
+
+function sendMorningBriefTest(){
+  const email = localStorage.getItem('appetyt_briefing_email') || 'jakeoborn@gmail.com';
+  fetch('/.netlify/functions/send-brief', {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({testEmail: email, testDate: new Date().toISOString().split('T')[0]})
+  }).then(r=>r.json()).then(d=>{
+    A.showToast(d.success ? '🌅 Brief sent to '+email+'!' : '❌ '+( d.error||'Failed'));
+  }).catch(()=>A.showToast('❌ Could not send brief'));
+}
 </script>
 
 <!-- ══ CRUISE PLANNER MODAL ══ -->
