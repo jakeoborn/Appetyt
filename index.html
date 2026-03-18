@@ -3450,6 +3450,27 @@ const A = {
 
   // ── INIT ──────────────────────────────────────────────────
   init(){
+    // One-time data migration: clear corrupted state from older versions
+    try{
+      const appVer = localStorage.getItem('appetyt_ver');
+      if(appVer !== '2.1') {
+        // Preserve only safe data before clearing
+        const oldData = localStorage.getItem('appetyt_data');
+        let savedData = null;
+        if(oldData){
+          try{
+            const p = JSON.parse(oldData);
+            savedData = JSON.stringify({
+              favs: p.favs||[], visited: p.visited||[], want: p.want||[],
+              bills: p.bills||[], notes: p.notes||{}, trips: p.trips||[], claimedDrops: p.claimedDrops||[]
+            });
+          }catch(e){}
+        }
+        localStorage.clear();
+        if(savedData) localStorage.setItem('appetyt_data', savedData);
+        localStorage.setItem('appetyt_ver', '2.1');
+      }
+    }catch(e){}
     try{
       const d=localStorage.getItem('appetyt_data');
       if(d){
