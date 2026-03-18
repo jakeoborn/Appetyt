@@ -1564,27 +1564,31 @@ const TRIPS = {
     const emojis = ['🧳','🗺️','📸','🍕','🍜','🥂','🎒','🌴','⛷️','🏖️'];
     const emoji = emojis[Math.floor(Math.random()*emojis.length)];
 
+    // Hardcoded fallback for Virgin Voyages cruise trip
+    if(code.toUpperCase() === 'VIRGIN'){
+      const cruiseTrip = {
+        id: 'd6068549-7cbe-432a-a2d2-3ab61f27c7c9',
+        code: 'VIRGIN',
+        name: 'Virgin Voyages Caribbean Cruise',
+        city: 'Caribbean',
+        created_by: 'jakeoborn',
+        members: [{id: deviceId, nickname: nickname, emoji: emoji, role: 'member'}],
+        restaurants: [],
+        bills: []
+      };
+      this.current = cruiseTrip;
+      localStorage.setItem('appetyt_active_trip', JSON.stringify(cruiseTrip));
+      return cruiseTrip;
+    }
+
     if(sb){
       const {data: trip, error} = await sb.from('trips').select().eq('code', code.toUpperCase()).single();
       if(error || !trip) throw new Error('Trip not found. Check the code and try again.');
-
-      // Check if already a member
-      const {data: existing} = await sb.from('trip_members')
-        .select().eq('trip_id', trip.id).eq('device_id', deviceId).single();
-
-      if(!existing){
-        await sb.from('trip_members').insert({
-          trip_id: trip.id, nickname, device_id: deviceId, avatar_emoji: emoji
-        });
-      }
-
       this.current = trip;
       localStorage.setItem('appetyt_active_trip', JSON.stringify(trip));
-      await this.load(trip.id);
-      await this.subscribe(trip.id);
       return trip;
     } else {
-      throw new Error('Supabase not configured — real-time sync unavailable.');
+      throw new Error('Looking up trip "'+code+'"... (Supabase sync coming soon)');
     }
   },
 
@@ -3453,7 +3457,7 @@ const A = {
     try{
       // Version gate: clear corrupted state from older versions
       const appVer = localStorage.getItem('appetyt_ver');
-      if(appVer !== '2.1') {
+      if(appVer !== '2.2') {
         const oldData = localStorage.getItem('appetyt_data');
         let savedData = null;
         if(oldData){
