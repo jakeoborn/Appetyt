@@ -14,5 +14,9 @@
   [headers.values]
     Content-Type = "text/html; charset=UTF-8"
 
+# Morning Cruise Briefing — 8AM Caribbean (12:00 UTC)
 [functions."morning-brief"]
+  schedule = "0 12 * * *"
+
+[functions."send-brief"]
   schedule = "0 12 * * *"
