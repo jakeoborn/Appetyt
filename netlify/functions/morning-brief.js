@@ -1,25 +1,25 @@
-// Appetyt · Morning Cruise Briefing
+// Appetyt - Morning Cruise Briefing
 // Runs daily at 8AM Caribbean (12:00 UTC) via netlify.toml schedule
 
 const CRUISE_START = new Date('2026-03-21T00:00:00Z');
 
 const PORTS = [
   {date:'2026-03-21',name:'San Juan',country:'Puerto Rico',flag:'🇵🇷',arrive:'6:30 AM',depart:'8:00 PM',hours:13.5,grad:'#5a0e0e,#2e0808',emoji:'🏛️',
-   highlights:["La Factoria — James Beard-winning cocktail bar","El Morro Fort — 16th-century Spanish fortress","Old San Juan cobblestone walking tour — free","Ocean Park Beach — calm waters, away from crowds"]},
+   highlights:["La Factoria -- James Beard-winning cocktail bar","El Morro Fort -- 16th-century Spanish fortress","Old San Juan cobblestone walking tour -- free","Ocean Park Beach -- calm waters, away from crowds"]},
   {date:'2026-03-22',name:'Tortola',country:'British Virgin Islands',flag:'🇻🇬',arrive:'8:00 AM',depart:'5:00 PM',hours:9,grad:'#063a58,#022030',emoji:'🏄',
-   highlights:["Jost Van Dyke day sail — Foxy's Beach Bar & White Bay","The Indians snorkel — best reef in the BVI","Cane Garden Bay — swim and rum cocktails","Myett's Garden Grille beachfront lunch"]},
+   highlights:["Jost Van Dyke day sail -- Foxy's Beach Bar & White Bay","The Indians snorkel -- best reef in the BVI","Cane Garden Bay -- swim and rum cocktails","Myett's Garden Grille beachfront lunch"]},
   {date:'2026-03-23',name:'At Sea',country:'Caribbean Sea',flag:'🌊',arrive:'',depart:'',hours:null,grad:'#0a1f3a,#050e1a',emoji:'🌊',
-   highlights:["The Redemption Spa — book ahead","Richard's Rooftop adults-only pool","Specialty dining at The Wake or Extra Virgin","Evening show at The Manor"]},
+   highlights:["The Redemption Spa -- book ahead","Richard's Rooftop adults-only pool","Specialty dining at The Wake or Extra Virgin","Evening show at The Manor"]},
   {date:'2026-03-24',name:'Bridgetown',country:'Barbados',flag:'🇧🇧',arrive:'8:00 AM',depart:'8:00 PM',hours:12,grad:'#0e3a10,#072009',emoji:'🌴',
-   highlights:["Mount Gay Rum Tour — world's oldest distillery (1703)","Carlisle Bay snorkel — sunken ships 5 min from port","Harbour Lights Beach Club — rum punch & live music","Barbados Wildlife Reserve — free-roaming green monkeys"]},
+   highlights:["Mount Gay Rum Tour -- world's oldest distillery (1703)","Carlisle Bay snorkel -- sunken ships 5 min from port","Harbour Lights Beach Club -- rum punch & live music","Barbados Wildlife Reserve -- free-roaming green monkeys"]},
   {date:'2026-03-25',name:'Castries',country:'St. Lucia',flag:'🇱🇨',arrive:'8:00 AM',depart:'6:00 PM',hours:10,grad:'#1e1040,#100822',emoji:'🌋',
-   highlights:["Sulphur Springs — world's only drive-in volcano","Diamond Falls Botanical Garden & mineral baths","Piton Sail & Snorkel full-day tour","Coal Pot Restaurant — waterfront Creole since 1966"]},
+   highlights:["Sulphur Springs -- world's only drive-in volcano","Diamond Falls Botanical Garden & mineral baths","Piton Sail & Snorkel full-day tour","Coal Pot Restaurant -- waterfront Creole since 1966"]},
   {date:'2026-03-26',name:"St. John's",country:'Antigua',flag:'🇦🇬',arrive:'9:00 AM',depart:'8:00 PM',hours:11,grad:'#3a1e06,#200f03',emoji:'⛵',
-   highlights:["Sheer Rocks — cliffside dining above the Caribbean","Nelson's Dockyard — UNESCO Heritage naval base","Dickenson Bay — best white sand beach on the island","Cades Reef snorkel — turtles and barracuda"]},
+   highlights:["Sheer Rocks -- cliffside dining above the Caribbean","Nelson's Dockyard -- UNESCO Heritage naval base","Dickenson Bay -- best white sand beach on the island","Cades Reef snorkel -- turtles and barracuda"]},
   {date:'2026-03-27',name:'Philipsburg',country:'St. Maarten',flag:'🇸🇽',arrive:'8:00 AM',depart:'5:00 PM',hours:9,grad:'#101038,#080820',emoji:'🛍️',
-   highlights:["Maho Beach — jumbo jets land 50ft overhead","Orient Bay Beach Club — French Riviera vibes","Grand Case village — gourmet capital of the Caribbean","Pinel Island ferry — tiny paradise, 2-minute crossing"]},
+   highlights:["Maho Beach -- jumbo jets land 50ft overhead","Orient Bay Beach Club -- French Riviera vibes","Grand Case village -- gourmet capital of the Caribbean","Pinel Island ferry -- tiny paradise, 2-minute crossing"]},
   {date:'2026-03-28',name:'San Juan',country:'Puerto Rico (Debark)',flag:'🇵🇷',arrive:'6:30 AM',depart:'Debark',hours:null,grad:'#4a1a08,#260d04',emoji:'🏛️',
-   highlights:["Kasalta Bakery — mallorcas & cafe con leche (opens 6AM)","Last-minute Old San Juan shopping — Ron del Barrilito rum","Allow 90 min minimum from port to SJU airport","Pre-book Uber — very busy post-debark mornings"]},
+   highlights:["Kasalta Bakery -- mallorcas & cafe con leche (opens 6AM)","Last-minute Old San Juan shopping -- Ron del Barrilito rum","Allow 90 min minimum from port to SJU airport","Pre-book Uber -- very busy post-debark mornings"]},
 ];
 
 function getTodayPort(overrideDate) {
@@ -54,16 +54,16 @@ async function generateBriefing(port, dayNum, recipientName) {
 
   let prompt;
   if (isAtSea) {
-    prompt = `Write a warm morning message (under 120 words) for ${firstName} — it's Day ${dayNum}, a sea day on their Caribbean cruise aboard Valiant Lady by Virgin Voyages. Suggest how to enjoy it. Warm, personal, no bullet points.`;
+    prompt = `Write a warm morning message (under 120 words) for ${firstName} -- it's Day ${dayNum}, a sea day on their Caribbean cruise aboard Valiant Lady by Virgin Voyages. Suggest how to enjoy it. Warm, personal, no bullet points.`;
   } else if (isDebark) {
-    prompt = `Write a warm farewell morning message (under 120 words) for ${firstName} — it's debark day in San Juan. Include: breakfast at Kasalta Bakery, allow 90 min to SJU airport. End with a warm send-off. Personal tone.`;
+    prompt = `Write a warm farewell morning message (under 120 words) for ${firstName} -- it's debark day in San Juan. Include: breakfast at Kasalta Bakery, allow 90 min to SJU airport. End with a warm send-off. Personal tone.`;
   } else {
-    prompt = `Write a personalised morning port briefing (under 180 words) for ${firstName} arriving in ${port.name}, ${port.country} — Day ${dayNum} of their Caribbean cruise on Valiant Lady by Virgin Voyages.
+    prompt = `Write a personalised morning port briefing (under 180 words) for ${firstName} arriving in ${port.name}, ${port.country} -- Day ${dayNum} of their Caribbean cruise on Valiant Lady by Virgin Voyages.
 
-Arriving ${port.arrive} · Departing ${port.depart} · ${port.hours} hours ashore
+Arriving ${port.arrive} - Departing ${port.depart} - ${port.hours} hours ashore
 Top picks: ${port.highlights.join(' | ')}
 
-Format: warm opening → one unmissable priority with a specific tip → suggested flow for the day → one practical reminder. No bullet points. Conversational and specific — like advice from a well-travelled friend.`;
+Format: warm opening → one unmissable priority with a specific tip → suggested flow for the day → one practical reminder. No bullet points. Conversational and specific -- like advice from a well-travelled friend.`;
   }
 
   const res = await fetch('https://api.anthropic.com/v1/messages', {
@@ -76,7 +76,7 @@ Format: warm opening → one unmissable priority with a specific tip → suggest
     body: JSON.stringify({
       model: 'claude-haiku-4-5-20251001',
       max_tokens: 350,
-      system: "You are Appetyt's luxury travel concierge for a Virgin Voyages Caribbean cruise. Write warm, elegant, specific morning briefings. No markdown, no bullet points, no headers — only conversational prose.",
+      system: "You are Appetyt's luxury travel concierge for a Virgin Voyages Caribbean cruise. Write warm, elegant, specific morning briefings. No markdown, no bullet points, no headers -- only conversational prose.",
       messages: [{role:'user', content: prompt}]
     })
   });
@@ -96,8 +96,8 @@ function buildEmailHTML(port, dayNum, briefingText, recipientName) {
   const [g1, g2] = port.grad.split(',');
   const greeting = recipientName ? `Good morning, ${recipientName.split(' ')[0]}` : 'Good morning';
   const titleLine = isAtSea  ? 'A Day at Sea'
-                  : isDebark ? `Final Morning · ${port.name}`
-                  : `Day ${dayNum} · ${port.name}`;
+                  : isDebark ? `Final Morning - ${port.name}`
+                  : `Day ${dayNum} - ${port.name}`;
 
   const timesHTML = (!isAtSea && !isDebark) ? `
     <table width="100%" cellpadding="0" cellspacing="6" style="margin:16px 0 0">
@@ -135,15 +135,15 @@ function buildEmailHTML(port, dayNum, briefingText, recipientName) {
 
   return `<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>${greeting} — ${port.name}</title></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>${greeting} -- ${port.name}</title></head>
 <body style="margin:0;padding:0;background:#090c12;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif">
 <table width="100%" cellpadding="0" cellspacing="0">
 <tr><td align="center" style="padding:20px 16px 48px">
 <table width="100%" cellpadding="0" cellspacing="0" style="max-width:500px">
   <tr><td style="background:linear-gradient(135deg,${g1},${g2});border-radius:18px 18px 0 0;padding:28px 24px 22px">
-    <div style="font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(200,169,110,.65);margin-bottom:6px">Appetyt Travel · ${greeting}</div>
+    <div style="font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(200,169,110,.65);margin-bottom:6px">Appetyt Travel - ${greeting}</div>
     <div style="font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:600;color:#ffffff;line-height:1.1;font-style:italic;margin-bottom:4px">${titleLine}</div>
-    <div style="font-size:12px;color:rgba(255,255,255,.4)">${port.country} · Virgin Voyages Valiant Lady</div>
+    <div style="font-size:12px;color:rgba(255,255,255,.4)">${port.country} - Virgin Voyages Valiant Lady</div>
     ${timesHTML}
   </td></tr>
   <tr><td style="background:#11151f;border:1px solid rgba(200,169,110,.1);border-top:none;border-radius:0 0 18px 18px;padding:24px 24px 28px">
@@ -153,8 +153,8 @@ function buildEmailHTML(port, dayNum, briefingText, recipientName) {
       <a href="https://appetyt.app" style="display:inline-block;background:linear-gradient(135deg,#e2c98a,#9a6e28);color:#0a0600;font-size:13px;font-weight:700;text-decoration:none;padding:13px 28px;border-radius:12px">Open Port Guide in Appetyt →</a>
     </div>
     <div style="margin-top:22px;padding-top:18px;border-top:1px solid rgba(200,169,110,.06);text-align:center">
-      <div style="font-size:11px;color:#3a3228">Appetyt · Southern Caribbean Cruise · Mar 21–28, 2026</div>
-      <div style="font-size:10px;color:#2a2218;margin-top:3px">Virgin Voyages · Valiant Lady</div>
+      <div style="font-size:11px;color:#3a3228">Appetyt - Southern Caribbean Cruise - Mar 21–28, 2026</div>
+      <div style="font-size:10px;color:#2a2218;margin-top:3px">Virgin Voyages - Valiant Lady</div>
     </div>
   </td></tr>
 </table>
@@ -204,7 +204,7 @@ exports.handler = async (event) => {
 
     const port = getTodayPort(testDate);
     if (!port) {
-      return {statusCode:200, headers, body: JSON.stringify({message:'No port today — outside cruise window', date: testDate || new Date().toISOString().split('T')[0]})};
+      return {statusCode:200, headers, body: JSON.stringify({message:'No port today -- outside cruise window', date: testDate || new Date().toISOString().split('T')[0]})};
     }
 
     const dayNum = getDayNumber(testDate);
@@ -226,9 +226,9 @@ exports.handler = async (event) => {
         const briefingText = await generateBriefing(port, dayNum, sub.name);
         const isDebark = port.depart === 'Debark';
         const isAtSea  = port.name === 'At Sea';
-        const subject  = isDebark ? `Safe Travels Home — Final Morning`
-                       : isAtSea  ? `Good Morning — A Day at Sea`
-                       : `${port.flag} Good Morning — ${port.name}, ${port.country}`;
+        const subject  = isDebark ? `Safe Travels Home -- Final Morning`
+                       : isAtSea  ? `Good Morning -- A Day at Sea`
+                       : `${port.flag} Good Morning -- ${port.name}, ${port.country}`;
         const html = buildEmailHTML(port, dayNum, briefingText, sub.name);
         await sendEmail(sub.email, subject, html);
         results.push({email: sub.email, status:'sent', port: port.name});
