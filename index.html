@@ -9864,7 +9864,7 @@ Return ONLY the JSON object, nothing else.`,
     if(btn){btn.textContent='Saving...';btn.disabled=true;}
     try{
       // Use the Netlify function (service key) to bypass RLS
-      const res = await fetch('/.netlify/functions/morning-brief', {
+      const res = await fetch('/.netlify/functions/send-brief', {
         method: 'POST',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({subscribe: true, email, name})
