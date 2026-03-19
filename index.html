@@ -9515,7 +9515,10 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const restaurants  = TRIPS.restaurants  || [];
     const members      = TRIPS.members      || [];
     const bills        = TRIPS.bills        || [];
-    const cities = Array.isArray(trip.cities)?trip.cities:(trip.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
+    const isCruiseTrip = trip && (trip.name||'').toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i);
+    const cities = isCruiseTrip
+      ? CRUISE_PORTS.map(p => p.name + ' — ' + p.day)
+      : Array.isArray(trip.cities)?trip.cities:(trip.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
 
     const dateStr = targetDate || new Date().toISOString().split('T')[0];
     const dateLabel = new Date(dateStr+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
@@ -9791,7 +9794,10 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
             style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
 
           <select id="ar-city" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
-            ${cities.map(c=>`<option value="${c}" ${c===preCity?'selected':''}>${c}</option>`).join('')}
+            ${(isCruiseTrip ? CRUISE_PORTS.map(p => {
+              const selected = p.name+' — '+p.day === preCity ? 'selected' : '';
+              return `<option value="${p.date}" ${selected}>${p.flag} ${p.name} — ${p.day}</option>`;
+            }) : cities.map(c=>`<option value="${c}" ${c===preCity?'selected':''}>${c}</option>`)).join('')}
           </select>
 
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
