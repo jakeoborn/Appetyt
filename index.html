@@ -8936,7 +8936,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
 
   showTripRestaurantPicker(){
     const trips = S.userData.trips || [];
-    const trip = TRIPS.current || trips[S._viewingTrip || 0];
+    const trip = trips[S._viewingTrip || 0];
     const isCruise = trip && (trip.name||'').toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i);
     if(isCruise){
       const ports = [
@@ -9154,13 +9154,12 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     });
 
     
-    // Build cruise card if this is a cruise trip
-    const _tripName = (TRIPS.current && TRIPS.current.name) ? TRIPS.current.name : '';
-    const _isCruiseTrip = _tripName.toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i);
-    const _cruiseCardHTML = _isCruiseTrip ? '<div style="margin-bottom:16px">'+buildCruiseCard()+'</div>' : '';
+    // Cruise detection
+    const isCruise = trip && (trip.name||'').toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i);
+    const cruiseCardHTML = isCruise ? buildCruiseCard() : '';
 
     el.innerHTML = `
-      ${_cruiseCardHTML}
+      ${cruiseCardHTML}
       <!-- Trip Header -->
       <div style="background:linear-gradient(135deg,rgba(201,168,76,.12),rgba(201,168,76,.04));border:1px solid rgba(201,168,76,.3);border-radius:16px;padding:16px;margin-bottom:14px">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px">
@@ -9954,74 +9953,6 @@ Return ONLY the JSON object, nothing else.`,
     this.renderProfile();
   },
 
-  renderTrips(){
-    const el = document.getElementById('trips-content');
-    if(!el) return;
-
-    const trips = S.userData.trips || [];
-
-    el.innerHTML = `
-      <div style="margin-bottom:16px">
-        <div style="font-size:22px;font-weight:700;color:var(--text);margin-bottom:4px">🌍 Group Trips</div>
-        <div style="font-size:12px;color:var(--text3)">Plan together, split bills, share the experience</div>
-      </div>
-
-      <!-- Create Trip CTA -->
-      <div style="background:linear-gradient(135deg,rgba(201,168,76,.12),rgba(201,168,76,.04));border:1px solid rgba(201,168,76,.3);border-radius:16px;padding:18px;margin-bottom:16px;text-align:center">
-        <div style="font-size:28px;margin-bottom:8px">✈️</div>
-        <div style="font-family:var(--serif);font-size:15px;font-weight:600;color:var(--text);font-style:italic;margin-bottom:6px">Plan a Trip Together</div>
-        <div style="font-size:12px;color:var(--text3);margin-bottom:14px;line-height:1.5">Invite friends, discover restaurants as a group,<br>and split the bill automatically</div>
-        <button onclick="A.openCreateTrip()" style="background:var(--gold);color:var(--dark);font-weight:800;font-size:14px;padding:12px 28px;border-radius:12px;border:none;cursor:pointer;touch-action:manipulation">+ Create a Trip</button>
-      </div>
-
-      ${trips.length === 0 ? `
-      <!-- How it works -->
-      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
-        <div style="font-size:12px;font-weight:800;color:var(--gold);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px">How It Works</div>
-        ${[
-          ['🗓️','Create a Trip','Name your trip, set dates, add a destination city'],
-          ['👥','Invite Friends','Share a link via SMS or WhatsApp — they join instantly'],
-          ['🍽️','Discover Together','Everyone votes on restaurants from the Appetyt guide'],
-          ['💰','Split the Bill','Add bills to the trip — splits automatically across the group'],
-        ].map(([emoji, title, desc]) => `
-          <div style="display:flex;gap:12px;margin-bottom:10px;align-items:flex-start">
-            <span style="font-size:22px;flex-shrink:0">${emoji}</span>
-            <div>
-              <div style="font-size:12px;font-weight:700;color:var(--text)">${title}</div>
-              <div style="font-size:11px;color:var(--text3);margin-top:2px">${desc}</div>
-            </div>
-          </div>`).join('')}
-      </div>` : `
-      <!-- Existing trips -->
-      <div style="font-size:11px;font-weight:800;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Your Trips</div>
-      ${trips.map((trip,i) => `
-        <div onclick="A.openTrip(${i})" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:10px;cursor:pointer;touch-action:manipulation"
-          onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px">
-            <div>
-              <div style="font-family:var(--serif);font-size:15px;font-weight:600;color:var(--text);font-style:italic">${trip.name}</div>
-              <div style="font-size:11px;color:var(--text3);margin-top:3px">📍 ${trip.city || 'Dallas'} · ${trip.dates || 'No dates set'}</div>
-              <div style="font-size:11px;color:var(--text2);margin-top:2px">👥 ${trip.members ? trip.members.length : 1} member${trip.members?.length !== 1 ? 's' : ''}</div>
-            </div>
-            <div style="text-align:right;flex-shrink:0">
-              <div style="font-size:20px;font-weight:700;color:var(--gold)">$${trip.totalSpend ? trip.totalSpend.toFixed(0) : '0'}</div>
-              <div style="font-size:9px;color:var(--text3)">spent</div>
-            </div>
-          </div>
-        </div>`).join('')}`}
-
-      <!-- Join trip -->
-      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-top:8px">
-        <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:8px">Have a trip code?</div>
-        <div style="display:flex;gap:8px">
-          <input id="trip-code-input" type="text" placeholder="Enter invite code..."
-            style="flex:1;background:var(--dark);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:10px;font-size:13px;outline:none">
-          <button onclick="A.joinTrip()" style="background:var(--gold);color:var(--dark);font-weight:800;font-size:13px;padding:9px 16px;border-radius:10px;border:none;cursor:pointer">Join</button>
-        </div>
-      </div>
-    `;
-  },
-
   openCreateTrip(){
     const modal = document.getElementById('create-trip-modal');
     if(modal) { modal.style.display='flex'; return; }
@@ -10108,9 +10039,6 @@ Return ONLY the JSON object, nothing else.`,
     const el = document.getElementById('trips-content');
     if(!el) return;
 
-    
-    const _isCruiseTrip2 = trip && (trip.name||'').toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i);
-    const _cruiseCardHTML2 = _isCruiseTrip2 ? buildCruiseCard() : '';
     el.innerHTML = `
       <!-- Header -->
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px">
@@ -10151,7 +10079,40 @@ Return ONLY the JSON object, nothing else.`,
 
       <!-- Members -->
       ${(trip.name||'').toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i) ? `
-        ${_cruiseCardHTML2}<div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">👥 Members (${members.length})</div>
+        <div style="background:linear-gradient(160deg,#063a58,#021520);border:1px solid rgba(62,184,168,.2);border-radius:16px;overflow:hidden;margin-bottom:12px">
+          <div style="position:relative;height:90px;display:flex;align-items:flex-end;padding:12px">
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:70px;opacity:.1">🌊</div>
+            <div style="position:relative;z-index:1">
+              <div style="font-size:9px;font-weight:700;letter-spacing:.14em;color:rgba(62,184,168,.8);text-transform:uppercase;margin-bottom:3px">✦ Cruise Itinerary</div>
+              <div style="font-family:var(--serif);font-size:18px;font-weight:600;color:#fff;font-style:italic">Caribbean <em style="color:var(--gold2)">Cruise</em></div>
+            </div>
+          </div>
+          <div style="padding:12px 14px">
+            <div style="display:flex;gap:6px;margin-bottom:10px">
+              <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:9px;padding:8px 10px">
+                <div style="font-size:9px;color:rgba(255,255,255,.3);font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px">Departs</div>
+                <div style="font-size:12px;font-weight:600;color:#fff">Mar 21, 2026</div>
+              </div>
+              <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:9px;padding:8px 10px">
+                <div style="font-size:9px;color:rgba(255,255,255,.3);font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px">Returns</div>
+                <div style="font-size:12px;font-weight:600;color:#fff">Mar 28, 2026</div>
+              </div>
+              <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:9px;padding:8px 10px">
+                <div style="font-size:9px;color:rgba(255,255,255,.3);font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px">Ports</div>
+                <div style="font-size:12px;font-weight:600;color:#fff">7 stops</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;margin-bottom:10px">
+              ${['🇵🇷 San Juan','🇻🇬 Tortola','🇧🇧 Bridgetown','🇱🇨 St. Lucia','🇦🇬 Antigua','🇸🇽 St. Maarten','🇵🇷 Debark'].map(p=>'<div style="flex-shrink:0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:4px 9px;font-size:9px;color:rgba(255,255,255,.55);white-space:nowrap">'+p+'</div>').join('')}
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px">
+              <button onclick="showCruisePortList()" style="padding:9px;background:rgba(200,169,110,.12);border:1px solid rgba(200,169,110,.25);border-radius:10px;color:var(--gold2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">🗺️ Port Guide →</button>
+              <button onclick="sendMorningBriefTest()" style="padding:9px;background:rgba(62,184,168,.1);border:1px solid rgba(62,184,168,.25);border-radius:10px;color:#3eb8a8;font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">🌅 Test Brief →</button>
+            </div>
+          </div>
+        </div>` : ''}
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
+        <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">👥 Members (${members.length})</div>
         ${members.length ? members.map(m => `
           <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)">
             <div style="width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">${m.avatar_emoji || m.name?.[0]?.toUpperCase() || '👤'}</div>
@@ -12327,17 +12288,6 @@ function cruiseSelectDay(code) {
   if (content) content.innerHTML = buildPortDayDetail(port);
 }
 
-
-function sendMorningBriefTest(){
-  const email = localStorage.getItem('appetyt_briefing_email') || 'jakeoborn@gmail.com';
-  fetch('/.netlify/functions/send-brief', {
-    method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({testEmail: email, testDate: new Date().toISOString().split('T')[0]})
-  }).then(r=>r.json()).then(d=>{
-    A.showToast(d.success ? '🌅 Brief sent to '+email+'!' : '❌ '+( d.error||'Failed'));
-  }).catch(()=>A.showToast('❌ Could not send brief'));
-}
 </script>
 
 <!-- ══ CRUISE PLANNER MODAL ══ -->
