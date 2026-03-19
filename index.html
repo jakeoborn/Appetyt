@@ -1516,7 +1516,7 @@ const TRIPS = {
   genCode(){ return Math.random().toString(36).slice(2,8).toUpperCase(); },
 
   // Create a new trip
-  async create(name, cities, startDate, endDate){
+  async create(name, cities, startDate, endDate, cruiseItinerary=null){
     const sb = getSB();
     const code = this.genCode();
     const deviceId = getDeviceId();
@@ -1525,7 +1525,8 @@ const TRIPS = {
     if(sb){
       const {data, error} = await sb.from('trips').insert({
         code, name, owner_id: deviceId,
-        cities, start_date: startDate, end_date: endDate
+        cities, start_date: startDate, end_date: endDate,
+        ...(cruiseItinerary ? {cruise_itinerary: cruiseItinerary} : {})
       }).select().single();
       if(error) throw error;
 
@@ -9172,7 +9173,17 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
           ${buildCruiseCard()}
         <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px">
           <div style="font-size:13px;font-weight:800;color:var(--gold);margin-bottom:12px">✈️ Create a New Trip</div>
-          <input id="trip-name" placeholder="Trip name (e.g. Europe Summer 2026)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
+          <input id="trip-name" placeholder="Trip name (e.g. Virgin Caribbean Cruise)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none" oninput="A.checkIfCruise(this.value)">
+          <div id="cruise-itinerary-upload" style="display:none;margin-bottom:10px">
+            <div onclick="document.getElementById('cruise-photo-input').click()" id="cruise-upload-btn"
+              style="width:100%;padding:14px;background:linear-gradient(135deg,rgba(62,184,168,.1),rgba(62,184,168,.05));border:1.5px dashed rgba(62,184,168,.4);border-radius:12px;cursor:pointer;text-align:center;touch-action:manipulation">
+              <div style="font-size:24px;margin-bottom:4px">📷</div>
+              <div style="font-size:13px;font-weight:700;color:#3eb8a8">Upload Cruise Itinerary</div>
+              <div style="font-size:11px;color:var(--text3);margin-top:2px">Snap your booking confirmation — AI extracts all ports & dates</div>
+            </div>
+            <input type="file" id="cruise-photo-input" accept="image/*" style="display:none" onchange="A.extractCruiseItinerary(this.files[0])"/>
+            <div id="cruise-extract-status" style="display:none;margin-top:8px;padding:10px;background:rgba(62,184,168,.08);border-radius:10px;font-size:12px;color:#3eb8a8;text-align:center"></div>
+          </div>
           <input id="trip-cities" placeholder="Cities (e.g. Paris, Rome, Barcelona)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
             <input id="trip-start" type="date" style="background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:12px;font-family:inherit;outline:none">
@@ -9479,6 +9490,86 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     `;
   },
 
+
+  checkIfCruise(name){
+    const isCruise = name.toLowerCase().match(/cruise|virgin|caribbean|ship|sail|voyages|cunard|royal|carnival|celebrity|ncl|msc|princess/i);
+    const uploadDiv = document.getElementById('cruise-itinerary-upload');
+    if(uploadDiv) uploadDiv.style.display = isCruise ? 'block' : 'none';
+  },
+
+  async extractCruiseItinerary(file){
+    if(!file) return;
+    const status = document.getElementById('cruise-extract-status');
+    const btn = document.getElementById('cruise-upload-btn');
+    if(status){ status.style.display='block'; status.textContent='🔍 Reading your itinerary...'; }
+    if(btn) btn.style.opacity = '0.5';
+
+    try{
+      const base64 = await new Promise((res,rej)=>{
+        const r = new FileReader();
+        r.onload = ()=>res(r.result.split(',')[1]);
+        r.onerror = rej;
+        r.readAsDataURL(file);
+      });
+
+      const response = await fetch('https://api.anthropic.com/v1/messages',{
+        method:'POST',
+        headers:{
+          'Content-Type':'application/json',
+          'x-api-key': 'sk-ant-api03-JI7xYFq7JshvMH8aNpW3Q_7lIZGVBq1U-pkDuarIaMj5OZ7_d-j0MUf8hWZ07RxFrrgKWrI8xyxhEBzGi2X1OQ-qBYlDwAA',
+          'anthropic-version':'2023-06-01'
+        },
+        body: JSON.stringify({
+          model:'claude-haiku-4-5-20251001',
+          max_tokens:1000,
+          messages:[{
+            role:'user',
+            content:[
+              {type:'image', source:{type:'base64', media_type: file.type||'image/jpeg', data: base64}},
+              {type:'text', text:`Extract cruise itinerary details from this image. Return ONLY valid JSON in this exact format:
+{
+  "shipName": "ship name",
+  "cruiseLine": "cruise line name",
+  "ports": [
+    {"name": "port city, country", "date": "YYYY-MM-DD", "arrive": "HH:MM AM/PM or Embark", "depart": "HH:MM AM/PM or Debark", "flag": "flag emoji for country"}
+  ]
+}
+Include ALL ports in order. For embarkation use arrive:"Embark". For debarkation use depart:"Debark". Estimate flag emoji based on country.`}
+            ]
+          }]
+        })
+      });
+
+      if(!response.ok) throw new Error('API error '+response.status);
+      const data = await response.json();
+      const text = data.content?.[0]?.text||'';
+      const jsonMatch = text.match(/\{[\s\S]*\}/);
+      if(!jsonMatch) throw new Error('No JSON found');
+      const itinerary = JSON.parse(jsonMatch[0]);
+
+      // Store extracted itinerary
+      window._extractedCruiseItinerary = itinerary;
+
+      // Update UI
+      const portCount = itinerary.ports?.length||0;
+      if(status){
+        status.style.background = 'rgba(62,184,168,.12)';
+        status.innerHTML = '✅ Found <b>'+portCount+' ports</b> on <b>'+(itinerary.shipName||'your cruise')+'</b> — itinerary ready!';
+      }
+      if(btn) btn.style.opacity='1';
+
+      // Pre-fill ship name into trip name if empty
+      const nameInput = document.getElementById('trip-name');
+      if(nameInput && !nameInput.value && itinerary.shipName){
+        nameInput.value = itinerary.shipName + ' Cruise';
+      }
+
+    }catch(e){
+      if(status){ status.textContent='❌ Could not read itinerary — you can add ports manually after creating the trip'; }
+      if(btn) btn.style.opacity='1';
+    }
+  },
+
   async createTrip(){
     const name = document.getElementById('trip-name')?.value?.trim();
     const cities = document.getElementById('trip-cities')?.value?.trim().split(',').map(x=>x.trim()).filter(Boolean);
@@ -9489,7 +9580,9 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     localStorage.setItem('appetyt_nickname', nickname);
     try{
       this.showToast('Creating trip...');
-      await TRIPS.create(name, cities, start, end);
+      const cruiseItinerary = window._extractedCruiseItinerary || null;
+      await TRIPS.create(name, cities, start, end, cruiseItinerary);
+      window._extractedCruiseItinerary = null;
       await TRIPS.load(TRIPS.current.id);
       this.renderTrips();
       this.showToast('🌍 Trip created! Share the code with your crew');
@@ -12255,21 +12348,39 @@ function pgShowTab(tab, code) {
 function buildCruiseCard() {
   var today = new Date().toISOString().split('T')[0];
   var activePort = null;
-  for (var pi = 0; pi < CRUISE_PORTS.length; pi++) {
-    if (CRUISE_PORTS[pi].date === today) { activePort = CRUISE_PORTS[pi]; break; }
+  // Use custom itinerary if available, otherwise fall back to hardcoded
+  var _ports = CRUISE_PORTS;
+  if(TRIPS.current && TRIPS.current.cruise_itinerary && TRIPS.current.cruise_itinerary.ports){
+    _ports = TRIPS.current.cruise_itinerary.ports.map(function(p,i){
+      return {
+        code: 'P'+i,
+        flag: p.flag||'🌍',
+        name: p.name,
+        country: p.name.split(',')[1]||'',
+        day: p.date ? new Date(p.date+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}).toUpperCase() : 'Day '+(i+1),
+        date: p.date||'',
+        arrive: p.arrive||'',
+        depart: p.depart||'',
+        hours: p.arrive && p.depart && p.arrive!=='Embark' && p.depart!=='Debark' ? null : null,
+        recs: []
+      };
+    });
+  }
+  for (var pi = 0; pi < _ports.length; pi++) {
+    if (_ports[pi].date === today) { activePort = _ports[pi]; break; }
   }
   if (!activePort) {
-    for (var pi = 0; pi < CRUISE_PORTS.length; pi++) {
-      if (new Date(CRUISE_PORTS[pi].date + 'T12:00:00Z') >= new Date()) {
-        activePort = CRUISE_PORTS[pi]; break;
+    for (var pi = 0; pi < _ports.length; pi++) {
+      if (new Date(_ports[pi].date + 'T12:00:00Z') >= new Date()) {
+        activePort = _ports[pi]; break;
       }
     }
   }
-  if (!activePort) activePort = CRUISE_PORTS[0];
+  if (!activePort) activePort = _ports[0];
 
   // Build timeline pills
   var pills = '';
-  for (var i = 0; i < CRUISE_PORTS.length; i++) {
+  for (var i = 0; i < _ports.length; i++) {
     var p = CRUISE_PORTS[i];
     var isToday = today === p.date;
     var isPast  = new Date() > new Date(p.date + 'T23:59:00Z');
