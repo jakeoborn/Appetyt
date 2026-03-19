@@ -9173,16 +9173,16 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
           ${buildCruiseCard()}
         <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px">
           <div style="font-size:13px;font-weight:800;color:var(--gold);margin-bottom:12px">✈️ Create a New Trip</div>
-          <input id="trip-name" placeholder="Trip name (e.g. Virgin Caribbean Cruise)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none" oninput="A.checkIfCruise(this.value)">
-          <div id="cruise-itinerary-upload" style="display:none;margin-bottom:10px">
-            <div onclick="document.getElementById('cruise-photo-input').click()" id="cruise-upload-btn"
-              style="width:100%;padding:14px;background:linear-gradient(135deg,rgba(62,184,168,.1),rgba(62,184,168,.05));border:1.5px dashed rgba(62,184,168,.4);border-radius:12px;cursor:pointer;text-align:center;touch-action:manipulation">
+          <input id="trip-name" placeholder="Trip name (e.g. Virgin Caribbean Cruise)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
+          <div style="margin-bottom:10px">
+            <div onclick="document.getElementById('trip-photo-input').click()" id="trip-upload-btn"
+              style="width:100%;padding:14px;background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.03));border:1.5px dashed rgba(201,168,76,.3);border-radius:12px;cursor:pointer;text-align:center;touch-action:manipulation">
               <div style="font-size:24px;margin-bottom:4px">📷</div>
-              <div style="font-size:13px;font-weight:700;color:#3eb8a8">Upload Cruise Itinerary</div>
-              <div style="font-size:11px;color:var(--text3);margin-top:2px">Snap your booking confirmation — AI extracts all ports & dates</div>
+              <div style="font-size:13px;font-weight:700;color:var(--gold2)">Upload Booking Confirmation</div>
+              <div style="font-size:11px;color:var(--text3);margin-top:2px">Hotel, flight, cruise, Airbnb — AI fills in the details</div>
             </div>
-            <input type="file" id="cruise-photo-input" accept="image/*" style="display:none" onchange="A.extractCruiseItinerary(this.files[0])"/>
-            <div id="cruise-extract-status" style="display:none;margin-top:8px;padding:10px;background:rgba(62,184,168,.08);border-radius:10px;font-size:12px;color:#3eb8a8;text-align:center"></div>
+            <input type="file" id="trip-photo-input" accept="image/*" style="display:none" onchange="A.extractTripFromPhoto(this.files[0])"/>
+            <div id="trip-extract-status" style="display:none;margin-top:8px;padding:10px;background:rgba(201,168,76,.08);border-radius:10px;font-size:12px;color:var(--gold2);text-align:center"></div>
           </div>
           <input id="trip-cities" placeholder="Cities (e.g. Paris, Rome, Barcelona)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
@@ -9491,18 +9491,12 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
   },
 
 
-  checkIfCruise(name){
-    const isCruise = name.toLowerCase().match(/cruise|virgin|caribbean|ship|sail|voyages|cunard|royal|carnival|celebrity|ncl|msc|princess/i);
-    const uploadDiv = document.getElementById('cruise-itinerary-upload');
-    if(uploadDiv) uploadDiv.style.display = isCruise ? 'block' : 'none';
-  },
-
-  async extractCruiseItinerary(file){
+  async extractTripFromPhoto(file){
     if(!file) return;
-    const status = document.getElementById('cruise-extract-status');
-    const btn = document.getElementById('cruise-upload-btn');
-    if(status){ status.style.display='block'; status.textContent='🔍 Reading your itinerary...'; }
-    if(btn) btn.style.opacity = '0.5';
+    const status = document.getElementById('trip-extract-status');
+    const btn = document.getElementById('trip-upload-btn');
+    if(status){ status.style.display='block'; status.textContent='🔍 Analyzing your booking...'; }
+    if(btn) btn.style.opacity='0.5';
 
     try{
       const base64 = await new Promise((res,rej)=>{
@@ -9516,59 +9510,73 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         method:'POST',
         headers:{
           'Content-Type':'application/json',
-          'x-api-key': 'sk-ant-api03-JI7xYFq7JshvMH8aNpW3Q_7lIZGVBq1U-pkDuarIaMj5OZ7_d-j0MUf8hWZ07RxFrrgKWrI8xyxhEBzGi2X1OQ-qBYlDwAA',
+          'x-api-key':'sk-ant-api03-JI7xYFq7JshvMH8aNpW3Q_7lIZGVBq1U-pkDuarIaMj5OZ7_d-j0MUf8hWZ07RxFrrgKWrI8xyxhEBzGi2X1OQ-qBYlDwAA',
           'anthropic-version':'2023-06-01'
         },
         body: JSON.stringify({
           model:'claude-haiku-4-5-20251001',
-          max_tokens:1000,
+          max_tokens:1500,
           messages:[{
             role:'user',
             content:[
-              {type:'image', source:{type:'base64', media_type: file.type||'image/jpeg', data: base64}},
-              {type:'text', text:`Extract cruise itinerary details from this image. Return ONLY valid JSON in this exact format:
+              {type:'image', source:{type:'base64', media_type:file.type||'image/jpeg', data:base64}},
+              {type:'text', text:`Extract trip details from this booking confirmation. Return ONLY valid JSON:
 {
-  "shipName": "ship name",
-  "cruiseLine": "cruise line name",
-  "ports": [
-    {"name": "port city, country", "date": "YYYY-MM-DD", "arrive": "HH:MM AM/PM or Embark", "depart": "HH:MM AM/PM or Debark", "flag": "flag emoji for country"}
+  "tripType": "cruise|hotel|flight|airbnb|tour|general",
+  "tripName": "suggested trip name",
+  "destination": "city/country",
+  "startDate": "YYYY-MM-DD",
+  "endDate": "YYYY-MM-DD",
+  "confirmation": "confirmation number if visible",
+  "details": [
+    {"type": "flight|hotel|activity|cruise_port|transfer|other", "title": "name", "date": "YYYY-MM-DD", "time": "HH:MM AM/PM", "notes": "key info"}
+  ],
+  "cruisePorts": [
+    {"name": "port, country", "date": "YYYY-MM-DD", "arrive": "time or Embark", "depart": "time or Debark", "flag": "flag emoji"}
   ]
 }
-Include ALL ports in order. For embarkation use arrive:"Embark". For debarkation use depart:"Debark". Estimate flag emoji based on country.`}
+Only include cruisePorts if this is a cruise itinerary. Include all bookings/legs in details array.`}
             ]
           }]
         })
       });
 
-      if(!response.ok) throw new Error('API error '+response.status);
+      if(!response.ok) throw new Error('API '+response.status);
       const data = await response.json();
       const text = data.content?.[0]?.text||'';
       const jsonMatch = text.match(/\{[\s\S]*\}/);
-      if(!jsonMatch) throw new Error('No JSON found');
-      const itinerary = JSON.parse(jsonMatch[0]);
+      if(!jsonMatch) throw new Error('No data found');
+      const info = JSON.parse(jsonMatch[0]);
 
-      // Store extracted itinerary
-      window._extractedCruiseItinerary = itinerary;
+      // Store for use when trip is created
+      window._extractedTripInfo = info;
 
-      // Update UI
-      const portCount = itinerary.ports?.length||0;
-      if(status){
-        status.style.background = 'rgba(62,184,168,.12)';
-        status.innerHTML = '✅ Found <b>'+portCount+' ports</b> on <b>'+(itinerary.shipName||'your cruise')+'</b> — itinerary ready!';
-      }
-      if(btn) btn.style.opacity='1';
-
-      // Pre-fill ship name into trip name if empty
+      // Auto-fill form fields
       const nameInput = document.getElementById('trip-name');
-      if(nameInput && !nameInput.value && itinerary.shipName){
-        nameInput.value = itinerary.shipName + ' Cruise';
-      }
+      const startInput = document.getElementById('trip-start');
+      const endInput = document.getElementById('trip-end');
+      const citiesInput = document.getElementById('trip-cities');
+      if(nameInput && !nameInput.value && info.tripName) nameInput.value = info.tripName;
+      if(startInput && !startInput.value && info.startDate) startInput.value = info.startDate;
+      if(endInput && !endInput.value && info.endDate) endInput.value = info.endDate;
+      if(citiesInput && !citiesInput.value && info.destination) citiesInput.value = info.destination;
+
+      // Show success
+      const isCruise = info.tripType === 'cruise' || (info.cruisePorts && info.cruisePorts.length > 0);
+      const detailCount = (info.details||[]).length;
+      const portCount = (info.cruisePorts||[]).length;
+      const summary = isCruise
+        ? '✅ Found '+portCount+' cruise ports · '+detailCount+' items — form filled!'
+        : '✅ Found '+detailCount+' booking item'+(detailCount!==1?'s':'') + ' — form filled!';
+      if(status){ status.textContent = summary; }
+      if(btn){ btn.style.opacity='1'; btn.querySelector('div:nth-child(2)').textContent='✅ Booking Loaded'; }
 
     }catch(e){
-      if(status){ status.textContent='❌ Could not read itinerary — you can add ports manually after creating the trip'; }
+      if(status){ status.textContent='❌ Could not read — fill in manually'; }
       if(btn) btn.style.opacity='1';
     }
   },
+
 
   async createTrip(){
     const name = document.getElementById('trip-name')?.value?.trim();
@@ -9580,9 +9588,9 @@ Include ALL ports in order. For embarkation use arrive:"Embark". For debarkation
     localStorage.setItem('appetyt_nickname', nickname);
     try{
       this.showToast('Creating trip...');
-      const cruiseItinerary = window._extractedCruiseItinerary || null;
-      await TRIPS.create(name, cities, start, end, cruiseItinerary);
-      window._extractedCruiseItinerary = null;
+      const tripInfo = window._extractedTripInfo || null;
+      await TRIPS.create(name, cities, start, end, tripInfo);
+      window._extractedTripInfo = null;
       await TRIPS.load(TRIPS.current.id);
       this.renderTrips();
       this.showToast('🌍 Trip created! Share the code with your crew');
