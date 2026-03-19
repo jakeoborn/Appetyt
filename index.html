@@ -10108,6 +10108,9 @@ Return ONLY the JSON object, nothing else.`,
     const el = document.getElementById('trips-content');
     if(!el) return;
 
+    
+    const _isCruiseTrip2 = trip && (trip.name||'').toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i);
+    const _cruiseCardHTML2 = _isCruiseTrip2 ? buildCruiseCard() : '';
     el.innerHTML = `
       <!-- Header -->
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px">
@@ -10148,40 +10151,7 @@ Return ONLY the JSON object, nothing else.`,
 
       <!-- Members -->
       ${(trip.name||'').toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i) ? `
-        <div style="background:linear-gradient(160deg,#063a58,#021520);border:1px solid rgba(62,184,168,.2);border-radius:16px;overflow:hidden;margin-bottom:12px">
-          <div style="position:relative;height:90px;display:flex;align-items:flex-end;padding:12px">
-            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:70px;opacity:.1">🌊</div>
-            <div style="position:relative;z-index:1">
-              <div style="font-size:9px;font-weight:700;letter-spacing:.14em;color:rgba(62,184,168,.8);text-transform:uppercase;margin-bottom:3px">✦ Cruise Itinerary</div>
-              <div style="font-family:var(--serif);font-size:18px;font-weight:600;color:#fff;font-style:italic">Caribbean <em style="color:var(--gold2)">Cruise</em></div>
-            </div>
-          </div>
-          <div style="padding:12px 14px">
-            <div style="display:flex;gap:6px;margin-bottom:10px">
-              <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:9px;padding:8px 10px">
-                <div style="font-size:9px;color:rgba(255,255,255,.3);font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px">Departs</div>
-                <div style="font-size:12px;font-weight:600;color:#fff">Mar 21, 2026</div>
-              </div>
-              <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:9px;padding:8px 10px">
-                <div style="font-size:9px;color:rgba(255,255,255,.3);font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px">Returns</div>
-                <div style="font-size:12px;font-weight:600;color:#fff">Mar 28, 2026</div>
-              </div>
-              <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:9px;padding:8px 10px">
-                <div style="font-size:9px;color:rgba(255,255,255,.3);font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px">Ports</div>
-                <div style="font-size:12px;font-weight:600;color:#fff">7 stops</div>
-              </div>
-            </div>
-            <div style="display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;margin-bottom:10px">
-              ${['🇵🇷 San Juan','🇻🇬 Tortola','🇧🇧 Bridgetown','🇱🇨 St. Lucia','🇦🇬 Antigua','🇸🇽 St. Maarten','🇵🇷 Debark'].map(p=>'<div style="flex-shrink:0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:4px 9px;font-size:9px;color:rgba(255,255,255,.55);white-space:nowrap">'+p+'</div>').join('')}
-            </div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px">
-              <button onclick="showCruisePortList()" style="padding:9px;background:rgba(200,169,110,.12);border:1px solid rgba(200,169,110,.25);border-radius:10px;color:var(--gold2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">🗺️ Port Guide →</button>
-              <button onclick="sendMorningBriefTest()" style="padding:9px;background:rgba(62,184,168,.1);border:1px solid rgba(62,184,168,.25);border-radius:10px;color:#3eb8a8;font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">🌅 Test Brief →</button>
-            </div>
-          </div>
-        </div>` : ''}
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
-        <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">👥 Members (${members.length})</div>
+        ${_cruiseCardHTML2}<div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">👥 Members (${members.length})</div>
         ${members.length ? members.map(m => `
           <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)">
             <div style="width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">${m.avatar_emoji || m.name?.[0]?.toUpperCase() || '👤'}</div>
