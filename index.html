@@ -2075,10 +2075,8 @@ const TRIPS = {
       </div>
     </div>
 
-    </div><!-- /lists-view -->
-
-
     
+
     <!-- DROPS VIEW — Last-Minute Reservations & Loyalty Drops -->
     <div id="drops-view" class="view">
       <div id="drops-content" style="padding:14px 14px 120px">
@@ -2119,7 +2117,11 @@ const TRIPS = {
     <!-- TRIPS VIEW -->
     <div id="trips-view" class="view">
       <div id="trips-content" style="padding:14px 14px 120px"></div>
-</div><!-- /content -->
+</div>
+    </div><!-- /lists-view -->
+
+
+    <!-- /content -->
 
   <!-- BOTTOM NAV -->
   <div id="bottom-nav">
@@ -5797,7 +5799,7 @@ const A = {
 
       if(useProxy){
         // Call your Netlify serverless function -- key lives on the server
-        const res = await fetch('/.netlify/functions/concierge', {
+        const res = await fetch('/.netlify/functions/ai-plan', {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({siteName, country, category, question: q})
