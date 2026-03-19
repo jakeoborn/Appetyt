@@ -9278,7 +9278,56 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         </div>`;
       }).join('')}
 
-      <!-- Settle Up -->
+      
+        <!-- Cruise Port Guide + Test Brief -->
+        ${isCruise ? `
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">
+          <div onclick="showCruisePortList()" style="background:rgba(200,169,110,.1);border:1px solid rgba(200,169,110,.2);border-radius:12px;padding:12px;display:flex;align-items:center;gap:8px;cursor:pointer;touch-action:manipulation">
+            <span style="font-size:18px">🗺️</span>
+            <div>
+              <div style="font-size:12px;font-weight:700;color:var(--gold2)">Port Guide</div>
+              <div style="font-size:10px;color:var(--text3)">Eat · Do · Book</div>
+            </div>
+          </div>
+          <div onclick="sendMorningBriefTest()" style="background:rgba(62,184,168,.1);border:1px solid rgba(62,184,168,.2);border-radius:12px;padding:12px;display:flex;align-items:center;gap:8px;cursor:pointer;touch-action:manipulation">
+            <span style="font-size:18px">🌅</span>
+            <div>
+              <div style="font-size:12px;font-weight:700;color:#3eb8a8">Test Brief</div>
+              <div style="font-size:10px;color:var(--text3)">Send to email</div>
+            </div>
+          </div>
+        </div>` : ''}
+
+        <!-- Members -->
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
+          <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">👥 Members (${members.length})</div>
+          ${members.length ? members.map(m => `
+            <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)">
+              <span style="font-size:22px">${m.avatar_emoji||'👤'}</span>
+              <div style="flex:1">
+                <div style="font-size:13px;font-weight:600;color:${m.device_id===deviceId?'var(--gold)':'var(--text)'}">${m.nickname}${m.device_id===deviceId?' (you)':''}</div>
+                <div style="font-size:10px;color:var(--text3)">${m.role||'member'}</div>
+              </div>
+            </div>`).join('') : '<div style="font-size:12px;color:var(--text3)">Share the code to invite your crew</div>'}
+        </div>
+
+        <!-- Trip Restaurants -->
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+            <div style="font-size:13px;font-weight:800;color:var(--text)">🍽️ Trip Restaurants (${restaurants.length})</div>
+            <button onclick="A.showTripRestaurantPicker()" style="background:var(--gold);border:none;color:var(--dark);font-weight:700;font-size:11px;padding:6px 12px;border-radius:8px;cursor:pointer;touch-action:manipulation">+ Add</button>
+          </div>
+          ${restaurants.length ? restaurants.map(r => `
+            <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)">
+              <div style="flex:1">
+                <div style="font-size:13px;font-weight:600;color:var(--text)">${r.name}</div>
+                <div style="font-size:11px;color:var(--text3)">${r.city||''}</div>
+              </div>
+              <button onclick="TRIPS.removeRestaurant('${r.id}');A.renderTrips()" style="font-size:16px;background:none;border:none;cursor:pointer;color:var(--text3)">×</button>
+            </div>`).join('') : '<div style="font-size:12px;color:var(--text3)">No restaurants yet — tap + Add to save places for your trip</div>'}
+        </div>
+
+<!-- Settle Up -->
       ${settlements.length > 0 ? `
       <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:14px">
         <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">💸 Settle Up</div>
