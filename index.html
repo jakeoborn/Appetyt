@@ -6073,6 +6073,12 @@ const A = {
       </div>
       <div id="detail-desc">${r.description}</div>
 
+      <!-- Website & Instagram -->
+      ${r.website||r.instagram?`<div style="display:flex;gap:8px;margin-bottom:10px">
+        ${r.website?`<a href="${r.website.startsWith('http')?r.website:'https://'+r.website}" target="_blank" style="flex:1;text-align:center;background:rgba(201,168,76,.15);border:1px solid var(--gold);border-radius:10px;padding:12px;color:var(--gold);text-decoration:none;font-size:13px;font-weight:700">🌐 Website</a>`:''}
+        ${r.instagram?`<a href="https://instagram.com/${r.instagram.replace('@','')}" target="_blank" style="flex:1;text-align:center;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:12px;color:var(--text2);text-decoration:none;font-size:13px;font-weight:600">📸 ${r.instagram}</a>`:''}
+      </div>`:''}
+
       <!-- Primary reserve button -->
       <a href="${primaryUrl}" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px;border-radius:12px;background:var(--gold);color:var(--dark);font-weight:800;font-size:14px;margin-bottom:10px;text-decoration:none">
         📅 Reserve on ${primary}
@@ -6147,11 +6153,6 @@ const A = {
       <div class="detail-section">
         <div class="detail-label">Best Of ${S.city}</div>
         ${r.bestOf.map(b=>`<div class="detail-val" style="color:var(--gold);margin-bottom:3px">⭐ ${b}</div>`).join('')}
-      </div>`:''}
-
-      ${r.website||r.instagram?`<div style="display:flex;gap:8px;margin-top:10px">
-        ${r.website?`<a href="${r.website.startsWith('http')?r.website:'https://'+r.website}" target="_blank" style="flex:1;text-align:center;background:rgba(201,168,76,.15);border:1px solid var(--gold);border-radius:10px;padding:12px;color:var(--gold);text-decoration:none;font-size:13px;font-weight:700">🌐 Website</a>`:''}
-        ${r.instagram?`<a href="https://instagram.com/${r.instagram.replace('@','')}" target="_blank" style="flex:1;text-align:center;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:12px;color:var(--text2);text-decoration:none;font-size:13px;font-weight:600">📸 ${r.instagram}</a>`:''}
       </div>`:''}
     `;
 
