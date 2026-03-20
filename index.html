@@ -10404,44 +10404,15 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         r.readAsDataURL(file);
       });
 
-      const response = await fetch('https://api.anthropic.com/v1/messages',{
+      const response = await fetch('/.netlify/functions/extract-trip',{
         method:'POST',
-        headers:{
-          'Content-Type':'application/json',
-          'x-api-key':'sk-ant-api03-JI7xYFq7JshvMH8aNpW3Q_7lIZGVBq1U-pkDuarIaMj5OZ7_d-j0MUf8hWZ07RxFrrgKWrI8xyxhEBzGi2X1OQ-qBYlDwAA',
-          'anthropic-version':'2023-06-01'
-        },
-        body: JSON.stringify({
-          model:'claude-haiku-4-5-20251001',
-          max_tokens:1500,
-          messages:[{
-            role:'user',
-            content:[
-              {type:'image', source:{type:'base64', media_type:file.type||'image/jpeg', data:base64}},
-              {type:'text', text:`Extract trip details from this booking confirmation. Return ONLY valid JSON:
-{
-  "tripType": "cruise|hotel|flight|airbnb|tour|general",
-  "tripName": "suggested trip name",
-  "destination": "city/country",
-  "startDate": "YYYY-MM-DD",
-  "endDate": "YYYY-MM-DD",
-  "confirmation": "confirmation number if visible",
-  "details": [
-    {"type": "flight|hotel|activity|cruise_port|transfer|other", "title": "name", "date": "YYYY-MM-DD", "time": "HH:MM AM/PM", "notes": "key info"}
-  ],
-  "cruisePorts": [
-    {"name": "port, country", "date": "YYYY-MM-DD", "arrive": "time or Embark", "depart": "time or Debark", "flag": "flag emoji"}
-  ]
-}
-Only include cruisePorts if this is a cruise itinerary. Include all bookings/legs in details array.`}
-            ]
-          }]
-        })
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ image: base64, mediaType: file.type||'image/jpeg' })
       });
 
       if(!response.ok) throw new Error('API '+response.status);
       const data = await response.json();
-      const text = data.content?.[0]?.text||'';
+      const text = data.text||'';
       const jsonMatch = text.match(/\{[\s\S]*\}/);
       if(!jsonMatch) throw new Error('No data found');
       const info = JSON.parse(jsonMatch[0]);
