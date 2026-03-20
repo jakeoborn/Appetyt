@@ -362,32 +362,46 @@ input,textarea{font-family:inherit;font-size:inherit}
 .drops-dot { position:absolute;top:6px;right:calc(50% - 16px);width:7px;height:7px;background:#ff4444;border-radius:50%;animation:drop-blink .9s infinite }
 
 /* Social Feed */
-.social-post{background:var(--card);border:1px solid var(--border);border-radius:14px;margin-bottom:12px;overflow:hidden}
-.social-post-header{display:flex;align-items:center;gap:10px;padding:12px 14px 0}
-.social-avatar{width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--dark);flex-shrink:0}
-.social-post-body{padding:10px 14px}
-.social-post-text{font-size:13px;color:var(--text);line-height:1.55}
+.social-post{background:var(--card);border:1px solid var(--border);border-radius:16px;margin-bottom:14px;overflow:hidden;transition:border-color .2s}
+.social-post:hover{border-color:rgba(201,168,76,.25)}
+.social-post-header{display:flex;align-items:center;gap:10px;padding:14px 16px 0}
+.social-avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#b8942e);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--dark);flex-shrink:0;box-shadow:0 2px 8px rgba(201,168,76,.25)}
+.social-post-body{padding:10px 16px}
+.social-post-text{font-size:13.5px;color:var(--text);line-height:1.6;letter-spacing:.01em}
 .social-post-photo{width:100%;max-height:320px;object-fit:cover;display:block}
-.social-post-restaurant{display:flex;align-items:center;gap:8px;padding:8px 12px;margin:0 14px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:10px;cursor:pointer}
-.social-post-actions{display:flex;align-items:center;gap:0;padding:6px 8px;border-top:1px solid var(--border)}
-.social-action{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:8px;font-size:12px;color:var(--text3);font-weight:600;cursor:pointer;border-radius:8px;background:none;border:none;font-family:inherit}
-.social-action:active{background:rgba(201,168,76,.08)}
+.social-post-restaurant{display:flex;align-items:center;gap:10px;padding:10px 14px;margin:4px 16px 8px;background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.03));border:1px solid rgba(201,168,76,.18);border-radius:12px;cursor:pointer;transition:background .2s}
+.social-post-restaurant:hover{background:rgba(201,168,76,.12)}
+.social-post-actions{display:flex;align-items:center;gap:0;padding:4px 8px 8px;border-top:1px solid var(--border);margin-top:4px}
+.social-action{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:8px;font-size:12px;color:var(--text3);font-weight:600;cursor:pointer;border-radius:8px;background:none;border:none;font-family:inherit;transition:all .15s}
+.social-action:hover{background:rgba(201,168,76,.06);color:var(--text2)}
+.social-action:active{transform:scale(.96)}
 .social-action.liked{color:#ff4466}
-.social-comments{padding:0 14px 12px}
-.social-comment{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.social-comments{padding:0 16px 14px}
+.social-comment{display:flex;gap:8px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04)}
 .social-comment:last-child{border-bottom:none}
-.social-comment-avatar{width:24px;height:24px;border-radius:50%;background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:var(--text2);flex-shrink:0}
-.social-comment-text{font-size:12px;color:var(--text2);line-height:1.45}
+.social-comment-avatar{width:26px;height:26px;border-radius:50%;background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:var(--text2);flex-shrink:0}
+.social-comment-text{font-size:12px;color:var(--text2);line-height:1.5}
 .social-comment-text b{color:var(--text);font-weight:700}
-.social-compose{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:16px}
-.social-compose textarea{width:100%;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-size:13px;font-family:inherit;resize:none;outline:none;min-height:60px;box-sizing:border-box}
-.social-compose textarea:focus{border-color:var(--gold)}
+.social-compose{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;margin-bottom:16px}
+.social-compose textarea{width:100%;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:12px 14px;color:var(--text);font-size:13px;font-family:inherit;resize:none;outline:none;min-height:60px;box-sizing:border-box;transition:border-color .2s}
+.social-compose textarea:focus{border-color:var(--gold);box-shadow:0 0 0 2px rgba(201,168,76,.1)}
 .social-compose-actions{display:flex;align-items:center;justify-content:space-between;margin-top:10px}
-.social-compose-btn{background:var(--gold);color:var(--dark);font-weight:800;font-size:12px;padding:8px 18px;border-radius:8px;border:none;cursor:pointer;font-family:inherit}
-.social-compose-btn:disabled{opacity:.4;cursor:default}
-.social-tab-bar{display:flex;gap:0;background:var(--dark);border-bottom:1px solid var(--border);margin-bottom:14px;position:sticky;top:0;z-index:10}
-.social-tab{flex:1;padding:10px;font-size:12px;font-weight:600;color:var(--text3);text-align:center;cursor:pointer;border-bottom:2px solid transparent;background:none;border-left:none;border-right:none;border-top:none;font-family:inherit}
+.social-compose-btn{background:linear-gradient(135deg,var(--gold),#b8942e);color:var(--dark);font-weight:800;font-size:12px;padding:8px 20px;border-radius:10px;border:none;cursor:pointer;font-family:inherit;transition:transform .1s,box-shadow .2s;box-shadow:0 2px 8px rgba(201,168,76,.25)}
+.social-compose-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(201,168,76,.35)}
+.social-compose-btn:disabled{opacity:.4;cursor:default;transform:none;box-shadow:none}
+.social-tab-bar{display:flex;gap:0;background:var(--dark);border-bottom:1px solid var(--border);margin-bottom:14px;position:sticky;top:0;z-index:10;padding:0 4px}
+.social-tab{flex:1;padding:11px 6px;font-size:11.5px;font-weight:700;color:var(--text3);text-align:center;cursor:pointer;border-bottom:2.5px solid transparent;background:none;border-left:none;border-right:none;border-top:none;font-family:inherit;transition:color .15s;letter-spacing:.02em}
+.social-tab:hover{color:var(--text2)}
 .social-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+.list-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin-bottom:10px;cursor:pointer;transition:border-color .2s,transform .15s}
+.list-card:hover{border-color:rgba(201,168,76,.3);transform:translateY(-1px)}
+.list-card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.list-card-title{font-size:14px;font-weight:800;color:var(--text)}
+.list-card-count{font-size:11px;color:var(--text3);font-weight:600}
+.list-card-desc{font-size:11.5px;color:var(--text2);line-height:1.5}
+.list-card-preview{display:flex;gap:6px;margin-top:10px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.list-card-preview::-webkit-scrollbar{display:none}
+.list-preview-chip{flex-shrink:0;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:6px 10px;font-size:10.5px;font-weight:600;color:var(--text2);white-space:nowrap}
 
 /* TOAST */
 #toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12px;padding:10px 16px;border-radius:22px;z-index:400;opacity:0;transition:all .3s;pointer-events:none;white-space:nowrap;max-width:calc(100vw - 40px)}
@@ -7459,14 +7473,19 @@ const A = {
     const userPosts = S.userData.socialPosts.filter(p=>!p.cityFilter||p.cityFilter===S.city);
     const allPosts = [...userPosts, ...communityPosts].sort((a,b)=>b.timestamp-a.timestamp);
 
+    // Lists sub-tab content
+    const listsContent = feedSub==='lists' ? this._renderListsTab(restaurants) : '';
+
     el.innerHTML=`
       <!-- Sub-tabs -->
       <div class="social-tab-bar">
-        <button class="social-tab${feedSub==='feed'?' active':''}" onclick="S._feedSub='feed';A.renderFeed()">📰 Feed</button>
-        <button class="social-tab${feedSub==='trending'?' active':''}" onclick="S._feedSub='trending';A.renderFeed()">🔥 Trending</button>
-        <button class="social-tab${feedSub==='my'?' active':''}" onclick="S._feedSub='my';A.renderFeed()">👤 My Posts</button>
+        <button class="social-tab${feedSub==='feed'?' active':''}" onclick="S._feedSub='feed';A.renderFeed()">Feed</button>
+        <button class="social-tab${feedSub==='trending'?' active':''}" onclick="S._feedSub='trending';A.renderFeed()">Trending</button>
+        <button class="social-tab${feedSub==='lists'?' active':''}" onclick="S._feedSub='lists';A.renderFeed()">My Lists</button>
+        <button class="social-tab${feedSub==='my'?' active':''}" onclick="S._feedSub='my';A.renderFeed()">My Posts</button>
       </div>
 
+      ${feedSub==='lists' ? listsContent : `
       <!-- Compose new post -->
       <div class="social-compose">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
@@ -7499,6 +7518,7 @@ const A = {
           ? this._renderTrendingFeed(restaurants)
           : this._renderPostList(allPosts)}
       </div>
+      `}
     `;
   },
 
@@ -7597,25 +7617,27 @@ const A = {
     const sorted=[...restaurants].sort((a,b)=>b.score-a.score);
     const actions=['is trending this week','was just favorited','has happy hour right now','is the talk of the city','got a new review','is booking up fast','is a local favorite','just opened reservations'];
 
-    return `<div style="font-size:12px;font-weight:700;color:var(--text2);margin-bottom:10px;text-transform:uppercase;letter-spacing:.06em">🔥 Trending in ${S.city}</div>` +
+    return `<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+      <div style="font-size:13px;font-weight:800;color:var(--text);letter-spacing:.02em">Trending in ${S.city}</div>
+      <div style="font-size:10px;color:var(--text3);font-weight:600">Updated today</div>
+    </div>` +
     sorted.slice(0,10).map((r,i)=>{
       const isHH=r.hh&&this.isHHActive?.(r.hh,new Date().getHours()*60+new Date().getMinutes());
       const action=isHH?'has happy hour right now':actions[i%actions.length];
-      return `<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:13px;margin-bottom:9px">
-        <div style="display:flex;align-items:flex-start;gap:10px">
-          <div style="font-size:28px;flex-shrink:0">${r.score>=95?'⭐':r.score>=92?'🔥':r.score>=88?'📅':'🍽️'}</div>
+      const rankBadge=i<3?`<div style="width:22px;height:22px;border-radius:50%;background:${i===0?'var(--gold)':i===1?'rgba(201,168,76,.5)':'rgba(201,168,76,.25)'};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:${i===0?'var(--dark)':'var(--text)'};flex-shrink:0">${i+1}</div>`:`<div style="width:22px;text-align:center;font-size:12px;font-weight:700;color:var(--text3);flex-shrink:0">${i+1}</div>`;
+      return `<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin-bottom:10px;transition:border-color .2s;cursor:pointer" onclick="A.openDetail(${r.id})" onmouseover="this.style.borderColor='rgba(201,168,76,.3)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="display:flex;align-items:center;gap:12px">
+          ${rankBadge}
           <div style="flex:1;min-width:0">
-            <div style="font-size:14px;font-weight:700;color:var(--gold);cursor:pointer" onclick="A.openDetail(${r.id})">${r.name}</div>
-            <div style="font-size:11px;color:var(--text2);margin:2px 0">${r.cuisine} · ${r.neighborhood} · ${'$'.repeat(r.price||2)}</div>
-            <div style="font-size:11px;color:var(--text3)">${action}</div>
-            ${r.awards?`<div style="font-size:10px;color:var(--gold);margin-top:3px">🏆 ${r.awards}</div>`:''}
+            <div style="font-size:14px;font-weight:800;color:var(--text)">${r.name}</div>
+            <div style="font-size:11px;color:var(--text3);margin-top:2px">${r.cuisine} · ${r.neighborhood} · ${'$'.repeat(r.price||2)}</div>
           </div>
-          <div style="font-size:18px;font-weight:700;color:var(--gold);flex-shrink:0">${r.score}</div>
+          <div style="text-align:right;flex-shrink:0">
+            <div style="font-size:18px;font-weight:800;color:var(--gold)">${r.score}</div>
+            <div style="font-size:9px;color:var(--text3);font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:1px">${action.split(' ').slice(0,3).join(' ')}</div>
+          </div>
         </div>
-        <div style="font-size:11px;color:var(--text2);margin-top:8px;line-height:1.5;padding-top:8px;border-top:1px solid var(--border)">${(r.description||'').split('.')[0]}.</div>
-        <div style="margin-top:8px">
-          <button onclick="A.openDetail(${r.id})" style="background:var(--gold);color:var(--dark);font-size:10px;font-weight:700;padding:5px 12px;border-radius:8px;border:none">View →</button>
-        </div>
+        ${r.awards?`<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border);font-size:10.5px;color:var(--gold);font-weight:600">🏆 ${r.awards}</div>`:''}
       </div>`;
     }).join('');
   },
@@ -7764,6 +7786,244 @@ const A = {
     this.renderFeed();
   },
 
+  // -- CUSTOM LISTS ------------------------------------------
+  _renderListsTab(restaurants){
+    if(!S.userData.customLists) S.userData.customLists=[];
+    const lists=S.userData.customLists;
+
+    const defaultLists=[
+      {id:'favs',name:'Favorites',emoji:'❤️',desc:'Restaurants you love',ids:S.userData.favs||[],isDefault:true},
+      {id:'want',name:'Want to Try',emoji:'🔖',desc:'Your saved spots',ids:S.userData.want||[],isDefault:true},
+      {id:'visited',name:'Visited',emoji:'✅',desc:'Places you have been',ids:S.userData.visited||[],isDefault:true},
+    ];
+
+    const allLists=[...defaultLists,...lists];
+
+    return `
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+        <div>
+          <div style="font-size:15px;font-weight:800;color:var(--text)">My Lists</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px">${allLists.length} lists · Organize your dining world</div>
+        </div>
+        <button onclick="A.createListPrompt()" style="background:linear-gradient(135deg,var(--gold),#b8942e);color:var(--dark);font-weight:800;font-size:11px;padding:8px 14px;border-radius:10px;border:none;cursor:pointer;box-shadow:0 2px 8px rgba(201,168,76,.25)">+ New List</button>
+      </div>
+
+      ${allLists.map(list=>{
+        const listRestaurants=list.ids.map(id=>restaurants.find(r=>r.id===id)).filter(Boolean);
+        const count=listRestaurants.length;
+        const previewItems=listRestaurants.slice(0,4);
+        const pinned=(S.userData.pinnedLists||[]).includes(list.id);
+        return `<div class="list-card" onclick="A.openListDetail('${list.id}')">
+          <div class="list-card-header">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:18px">${list.emoji||'📋'}</span>
+              <div>
+                <div class="list-card-title">${list.name}</div>
+                ${list.desc?`<div class="list-card-desc" style="margin:0">${list.desc}</div>`:''}
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px">
+              <span class="list-card-count">${count} spot${count!==1?'s':''}</span>
+              ${!list.isDefault?`<button onclick="event.stopPropagation();A.togglePinList('${list.id}')" style="background:none;border:none;font-size:14px;cursor:pointer;padding:2px" title="${pinned?'Unpin from profile':'Pin to profile'}">${pinned?'📌':'📍'}</button>`:''}
+            </div>
+          </div>
+          ${previewItems.length?`<div class="list-card-preview">
+            ${previewItems.map(r=>`<div class="list-preview-chip">${r.name} · ${r.score}</div>`).join('')}
+            ${count>4?`<div class="list-preview-chip" style="color:var(--gold)">+${count-4} more</div>`:''}
+          </div>`:`<div style="font-size:11px;color:var(--text3);margin-top:6px;font-style:italic">No restaurants added yet</div>`}
+        </div>`;
+      }).join('')}
+
+      <div style="margin-top:16px;text-align:center;padding:16px;background:rgba(201,168,76,.04);border:1px dashed rgba(201,168,76,.2);border-radius:14px;cursor:pointer" onclick="A.createListPrompt()">
+        <div style="font-size:24px;margin-bottom:6px">+</div>
+        <div style="font-size:12px;font-weight:700;color:var(--text2)">Create a new list</div>
+        <div style="font-size:10.5px;color:var(--text3);margin-top:2px">Date night spots, brunch favorites, happy hours...</div>
+      </div>
+    `;
+  },
+
+  createListPrompt(){
+    const name=prompt('Name your list:');
+    if(!name||!name.trim()) return;
+    const desc=prompt('Description (optional):');
+    const emojis=['🍽️','🌮','🍕','🥂','🍜','🥩','☕','🍰','🍣','🥗'];
+    const emoji=emojis[Math.floor(Math.random()*emojis.length)];
+
+    if(!S.userData.customLists) S.userData.customLists=[];
+    S.userData.customLists.push({
+      id:'list-'+Date.now(),
+      name:name.trim(),
+      desc:(desc||'').trim(),
+      emoji,
+      ids:[],
+      createdAt:Date.now(),
+    });
+    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    this.showToast('List created!');
+    this.renderFeed();
+  },
+
+  openListDetail(listId){
+    const restaurants=this.getRestaurants();
+    let list;
+    if(listId==='favs') list={id:'favs',name:'Favorites',emoji:'❤️',ids:S.userData.favs||[],isDefault:true};
+    else if(listId==='want') list={id:'want',name:'Want to Try',emoji:'🔖',ids:S.userData.want||[],isDefault:true};
+    else if(listId==='visited') list={id:'visited',name:'Visited',emoji:'✅',ids:S.userData.visited||[],isDefault:true};
+    else list=(S.userData.customLists||[]).find(l=>l.id===listId);
+    if(!list) return;
+
+    const listRestaurants=list.ids.map(id=>restaurants.find(r=>r.id===id)).filter(Boolean);
+
+    const el=document.getElementById('feed-content');
+    el.innerHTML=`
+      <div style="padding:4px 0">
+        <button onclick="S._feedSub='lists';A.renderFeed()" style="background:none;border:none;color:var(--gold);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;padding:0;margin-bottom:12px">← Back to Lists</button>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="font-size:28px">${list.emoji||'📋'}</span>
+            <div>
+              <div style="font-size:17px;font-weight:800;color:var(--text)">${list.name}</div>
+              <div style="font-size:11px;color:var(--text3)">${listRestaurants.length} spot${listRestaurants.length!==1?'s':''}</div>
+            </div>
+          </div>
+          ${!list.isDefault?`<div style="display:flex;gap:6px">
+            <button onclick="A.addToListPrompt('${list.id}')" style="background:var(--gold);color:var(--dark);font-weight:800;font-size:11px;padding:7px 12px;border-radius:8px;border:none;cursor:pointer">+ Add</button>
+            <button onclick="A.deleteList('${list.id}')" style="background:none;border:1px solid rgba(255,77,77,.3);color:#ff4d4d;font-weight:700;font-size:11px;padding:7px 12px;border-radius:8px;cursor:pointer">Delete</button>
+          </div>`:`<button onclick="A.addToListPrompt('${list.id}')" style="background:var(--gold);color:var(--dark);font-weight:800;font-size:11px;padding:7px 12px;border-radius:8px;border:none;cursor:pointer">+ Add</button>`}
+        </div>
+
+        ${listRestaurants.length?listRestaurants.map((r,i)=>`
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin-bottom:8px;display:flex;align-items:center;gap:12px;cursor:pointer" onclick="A.openDetail(${r.id})">
+            <div style="font-size:14px;font-weight:800;color:var(--text3);width:20px;text-align:center">${i+1}</div>
+            <div style="flex:1;min-width:0">
+              <div style="font-size:13.5px;font-weight:800;color:var(--text)">${r.name}</div>
+              <div style="font-size:11px;color:var(--text3);margin-top:1px">${r.cuisine} · ${r.neighborhood} · ${'$'.repeat(r.price||2)}</div>
+            </div>
+            <div style="text-align:right;flex-shrink:0">
+              <div style="font-size:16px;font-weight:800;color:var(--gold)">${r.score}</div>
+            </div>
+            ${!list.isDefault?`<button onclick="event.stopPropagation();A.removeFromList('${list.id}',${r.id})" style="background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;padding:4px" title="Remove">✕</button>`:''}
+          </div>`).join('')
+        :`<div style="text-align:center;padding:30px 20px">
+          <div style="font-size:36px;margin-bottom:10px">${list.emoji||'📋'}</div>
+          <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px">This list is empty</div>
+          <div style="font-size:11px;color:var(--text3);line-height:1.6">Add restaurants from their detail page or tap "+ Add" above.</div>
+        </div>`}
+      </div>
+    `;
+  },
+
+  addToListPrompt(listId){
+    const restaurants=this.getRestaurants();
+    let list;
+    if(listId==='favs') list={id:'favs',name:'Favorites',ids:S.userData.favs||[]};
+    else if(listId==='want') list={id:'want',name:'Want to Try',ids:S.userData.want||[]};
+    else if(listId==='visited') list={id:'visited',name:'Visited',ids:S.userData.visited||[]};
+    else list=(S.userData.customLists||[]).find(l=>l.id===listId);
+    if(!list) return;
+
+    const available=restaurants.filter(r=>!list.ids.includes(r.id)).sort((a,b)=>b.score-a.score);
+    const el=document.getElementById('feed-content');
+    const currentHTML=el.innerHTML;
+
+    // Build search overlay
+    const overlay=document.createElement('div');
+    overlay.id='list-add-overlay';
+    overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:var(--dark);z-index:999;overflow-y:auto;padding:16px;box-sizing:border-box';
+    overlay.innerHTML=`
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <div style="font-size:15px;font-weight:800;color:var(--text)">Add to ${list.name}</div>
+        <button onclick="document.getElementById('list-add-overlay').remove()" style="background:none;border:none;color:var(--text3);font-size:20px;cursor:pointer">✕</button>
+      </div>
+      <input type="text" id="list-search-input" placeholder="Search restaurants..." oninput="A.filterListAddResults('${listId}')" style="width:100%;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;color:var(--text);font-size:13px;font-family:inherit;outline:none;box-sizing:border-box;margin-bottom:12px">
+      <div id="list-add-results">${available.slice(0,20).map(r=>`
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:6px;display:flex;align-items:center;gap:10px;cursor:pointer" onclick="A.addRestaurantToList('${listId}',${r.id})">
+          <div style="flex:1;min-width:0">
+            <div style="font-size:13px;font-weight:700;color:var(--text)">${r.name}</div>
+            <div style="font-size:10.5px;color:var(--text3)">${r.cuisine} · ${r.neighborhood}</div>
+          </div>
+          <div style="font-size:14px;font-weight:800;color:var(--gold)">${r.score}</div>
+          <div style="font-size:16px;color:var(--gold)">+</div>
+        </div>`).join('')}</div>
+    `;
+    document.body.appendChild(overlay);
+    document.getElementById('list-search-input')?.focus();
+  },
+
+  filterListAddResults(listId){
+    const q=(document.getElementById('list-search-input')?.value||'').toLowerCase();
+    const restaurants=this.getRestaurants();
+    let list;
+    if(listId==='favs') list={ids:S.userData.favs||[]};
+    else if(listId==='want') list={ids:S.userData.want||[]};
+    else if(listId==='visited') list={ids:S.userData.visited||[]};
+    else list=(S.userData.customLists||[]).find(l=>l.id===listId);
+    if(!list) return;
+    const available=restaurants.filter(r=>!list.ids.includes(r.id)&&(!q||r.name.toLowerCase().includes(q))).sort((a,b)=>b.score-a.score).slice(0,20);
+    document.getElementById('list-add-results').innerHTML=available.map(r=>`
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:6px;display:flex;align-items:center;gap:10px;cursor:pointer" onclick="A.addRestaurantToList('${listId}',${r.id})">
+        <div style="flex:1;min-width:0">
+          <div style="font-size:13px;font-weight:700;color:var(--text)">${r.name}</div>
+          <div style="font-size:10.5px;color:var(--text3)">${r.cuisine} · ${r.neighborhood}</div>
+        </div>
+        <div style="font-size:14px;font-weight:800;color:var(--gold)">${r.score}</div>
+        <div style="font-size:16px;color:var(--gold)">+</div>
+      </div>`).join('')||'<div style="text-align:center;padding:20px;color:var(--text3);font-size:12px">No results</div>';
+  },
+
+  addRestaurantToList(listId,restaurantId){
+    if(listId==='favs'){
+      if(!S.userData.favs) S.userData.favs=[];
+      if(!S.userData.favs.includes(restaurantId)) S.userData.favs.push(restaurantId);
+    } else if(listId==='want'){
+      if(!S.userData.want) S.userData.want=[];
+      if(!S.userData.want.includes(restaurantId)) S.userData.want.push(restaurantId);
+    } else if(listId==='visited'){
+      if(!S.userData.visited) S.userData.visited=[];
+      if(!S.userData.visited.includes(restaurantId)) S.userData.visited.push(restaurantId);
+    } else {
+      const list=(S.userData.customLists||[]).find(l=>l.id===listId);
+      if(list&&!list.ids.includes(restaurantId)) list.ids.push(restaurantId);
+    }
+    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    this.showToast('Added!');
+    document.getElementById('list-add-overlay')?.remove();
+    this.openListDetail(listId);
+  },
+
+  removeFromList(listId,restaurantId){
+    const list=(S.userData.customLists||[]).find(l=>l.id===listId);
+    if(list){
+      list.ids=list.ids.filter(id=>id!==restaurantId);
+      localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+      this.showToast('Removed');
+      this.openListDetail(listId);
+    }
+  },
+
+  deleteList(listId){
+    if(!confirm('Delete this list?')) return;
+    S.userData.customLists=(S.userData.customLists||[]).filter(l=>l.id!==listId);
+    S.userData.pinnedLists=(S.userData.pinnedLists||[]).filter(id=>id!==listId);
+    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    this.showToast('List deleted');
+    S._feedSub='lists';
+    this.renderFeed();
+  },
+
+  togglePinList(listId){
+    if(!S.userData.pinnedLists) S.userData.pinnedLists=[];
+    const idx=S.userData.pinnedLists.indexOf(listId);
+    if(idx===-1){
+      S.userData.pinnedLists.push(listId);
+      this.showToast('Pinned to profile!');
+    } else {
+      S.userData.pinnedLists.splice(idx,1);
+      this.showToast('Unpinned');
+    }
+    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    this.renderFeed();
+  },
 
   generateMiniReview(r){
     const reviews={
@@ -11131,6 +11391,31 @@ Return ONLY the JSON object, nothing else.`,
         <div style="font-size:28px">🏆</div>
         <div><div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em">Top Cuisine</div><div style="font-size:15px;font-weight:700;color:var(--text);margin-top:2px">${topCuisine}</div></div>
       </div>`:''}
+      <!-- Pinned Lists -->
+      ${(()=>{
+        const pinnedIds=S.userData.pinnedLists||[];
+        const customLists=S.userData.customLists||[];
+        const pinnedLists=pinnedIds.map(id=>customLists.find(l=>l.id===id)).filter(Boolean);
+        if(!pinnedLists.length) return '';
+        const allR=A.getRestaurants();
+        return `<div style="margin-bottom:12px">
+          <div style="font-size:12px;font-weight:800;color:var(--text);margin-bottom:8px;text-transform:uppercase;letter-spacing:.06em">📌 Pinned Lists</div>
+          ${pinnedLists.map(list=>{
+            const items=list.ids.map(id=>allR.find(r=>r.id===id)).filter(Boolean);
+            return `<div class="list-card" onclick="S._feedSub='lists';A.tab('feed');setTimeout(()=>A.openListDetail('${list.id}'),100)" style="margin-bottom:8px">
+              <div class="list-card-header">
+                <div style="display:flex;align-items:center;gap:8px">
+                  <span style="font-size:16px">${list.emoji||'📋'}</span>
+                  <span class="list-card-title" style="font-size:13px">${list.name}</span>
+                </div>
+                <span class="list-card-count">${items.length} spot${items.length!==1?'s':''}</span>
+              </div>
+              ${items.length?`<div class="list-card-preview" style="margin-top:6px">${items.slice(0,3).map(r=>`<div class="list-preview-chip">${r.name}</div>`).join('')}${items.length>3?`<div class="list-preview-chip" style="color:var(--gold)">+${items.length-3}</div>`:''}</div>`:''}
+            </div>`;
+          }).join('')}
+        </div>`;
+      })()}
+
       <!-- Data privacy note -->
       <div style="background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.15);border-radius:10px;padding:12px;margin-top:8px">
         <div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:4px">🔒 Your data stays private</div>
