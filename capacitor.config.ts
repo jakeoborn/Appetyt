@@ -39,7 +39,9 @@ const config: CapacitorConfig = {
     contentInset: 'automatic',
     backgroundColor: '#0a0d14',
     preferredContentMode: 'mobile',
-    scheme: 'Appetyt'
+    scheme: 'Appetyt',
+    // Universal Links (for https://appetyt.app links to open the app)
+    associatedDomains: ['applinks:appetyt.app']
   }
 };
 

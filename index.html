@@ -8,6 +8,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="description" content="Appetyt — Discover the best restaurants in 248 cities worldwide.">
 <meta name="theme-color" content="#c9a84c">
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Appetyt">
+<link rel="apple-touch-icon" href="/icons/icon-180.png">
 <link rel="canonical" href="https://appetyt.app/">
 <title>Appetyt</title>
 
@@ -12894,6 +12899,11 @@ function cruiseSelectDay(code) {
   <div id="event-detail-modal"></div>
 
 <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').catch(function(){});
+}
+</script>
+<script>
 /* Capacitor native app bridge */
 window.addEventListener('load', function() {
   if (window.Capacitor && window.Capacitor.isNativePlatform()) {
@@ -12908,6 +12918,71 @@ window.addEventListener('load', function() {
     var SplashScreen = window.Capacitor.Plugins.SplashScreen;
     if (SplashScreen) {
       SplashScreen.hide();
+    }
+
+    // Haptic feedback on interactive taps
+    var Haptics = window.Capacitor.Plugins.Haptics;
+    if (Haptics) {
+      document.addEventListener('click', function(e) {
+        var target = e.target.closest('[onclick], .nav-tab, .chip, .combo-chip, .r-card, button, .filter-btn');
+        if (target) {
+          Haptics.impact({ style: 'LIGHT' });
+        }
+      });
+    }
+
+    // Deep link handling
+    var App = window.Capacitor.Plugins.App;
+    if (App) {
+      App.addListener('appUrlOpen', function(data) {
+        var url = data.url || '';
+        // Handle appetyt://city/dallas or https://appetyt.app/city/dallas
+        var cityMatch = url.match(/city\/([a-z-]+)/i);
+        if (cityMatch && cityMatch[1]) {
+          var cityName = cityMatch[1].replace(/-/g, ' ').replace(/\b\w/g, function(l) { return l.toUpperCase(); });
+          if (typeof S !== 'undefined' && typeof S.setCity === 'function') {
+            S.setCity(cityName);
+          }
+        }
+      });
+    }
+  }
+});
+</script>
+<script>
+/* Push notification registration */
+window.addEventListener('load', function() {
+  if (window.Capacitor && window.Capacitor.isNativePlatform()) {
+    // Push notifications
+    var PushNotifications = window.Capacitor.Plugins.PushNotifications;
+    if (PushNotifications) {
+      PushNotifications.requestPermissions().then(function(result) {
+        if (result.receive === 'granted') {
+          PushNotifications.register();
+        }
+      });
+
+      PushNotifications.addListener('registration', function(token) {
+        // Send token to backend
+        fetch((window.Capacitor.isNativePlatform() ? 'https://appetyt.app' : '') + '/.netlify/functions/register-push', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            deviceId: typeof DEVICE_ID !== 'undefined' ? DEVICE_ID : '',
+            token: token.value,
+            city: typeof S !== 'undefined' ? S.city : 'Dallas',
+            platform: 'ios'
+          })
+        }).catch(function() {});
+      });
+
+      PushNotifications.addListener('pushNotificationReceived', function(notification) {
+        console.log('Push received:', notification);
+      });
+
+      PushNotifications.addListener('pushNotificationActionPerformed', function(notification) {
+        console.log('Push action:', notification);
+      });
     }
   }
 });
