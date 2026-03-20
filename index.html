@@ -361,6 +361,34 @@ input,textarea{font-family:inherit;font-size:inherit}
 /* -- DROPS TAB IN BOTTOM NAV -- */
 .drops-dot { position:absolute;top:6px;right:calc(50% - 16px);width:7px;height:7px;background:#ff4444;border-radius:50%;animation:drop-blink .9s infinite }
 
+/* Social Feed */
+.social-post{background:var(--card);border:1px solid var(--border);border-radius:14px;margin-bottom:12px;overflow:hidden}
+.social-post-header{display:flex;align-items:center;gap:10px;padding:12px 14px 0}
+.social-avatar{width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--dark);flex-shrink:0}
+.social-post-body{padding:10px 14px}
+.social-post-text{font-size:13px;color:var(--text);line-height:1.55}
+.social-post-photo{width:100%;max-height:320px;object-fit:cover;display:block}
+.social-post-restaurant{display:flex;align-items:center;gap:8px;padding:8px 12px;margin:0 14px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:10px;cursor:pointer}
+.social-post-actions{display:flex;align-items:center;gap:0;padding:6px 8px;border-top:1px solid var(--border)}
+.social-action{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:8px;font-size:12px;color:var(--text3);font-weight:600;cursor:pointer;border-radius:8px;background:none;border:none;font-family:inherit}
+.social-action:active{background:rgba(201,168,76,.08)}
+.social-action.liked{color:#ff4466}
+.social-comments{padding:0 14px 12px}
+.social-comment{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.social-comment:last-child{border-bottom:none}
+.social-comment-avatar{width:24px;height:24px;border-radius:50%;background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:var(--text2);flex-shrink:0}
+.social-comment-text{font-size:12px;color:var(--text2);line-height:1.45}
+.social-comment-text b{color:var(--text);font-weight:700}
+.social-compose{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:16px}
+.social-compose textarea{width:100%;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;color:var(--text);font-size:13px;font-family:inherit;resize:none;outline:none;min-height:60px;box-sizing:border-box}
+.social-compose textarea:focus{border-color:var(--gold)}
+.social-compose-actions{display:flex;align-items:center;justify-content:space-between;margin-top:10px}
+.social-compose-btn{background:var(--gold);color:var(--dark);font-weight:800;font-size:12px;padding:8px 18px;border-radius:8px;border:none;cursor:pointer;font-family:inherit}
+.social-compose-btn:disabled{opacity:.4;cursor:default}
+.social-tab-bar{display:flex;gap:0;background:var(--dark);border-bottom:1px solid var(--border);margin-bottom:14px;position:sticky;top:0;z-index:10}
+.social-tab{flex:1;padding:10px;font-size:12px;font-weight:600;color:var(--text3);text-align:center;cursor:pointer;border-bottom:2px solid transparent;background:none;border-left:none;border-right:none;border-top:none;font-family:inherit}
+.social-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+
 /* TOAST */
 #toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12px;padding:10px 16px;border-radius:22px;z-index:400;opacity:0;transition:all .3s;pointer-events:none;white-space:nowrap;max-width:calc(100vw - 40px)}
 #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -2134,7 +2162,7 @@ const TRIPS = {
   <!-- BOTTOM NAV -->
   <div id="bottom-nav">
     <div class="bn-item active" id="bn-home" onclick="A.tab('home')"><span class="bn-icon">🍽</span>Guide</div>
-    <div class="bn-item" id="bn-drops" onclick="A.tab('drops')" style="position:relative"><span class="bn-icon">⚡</span>Perks<span class="drops-dot" id="drops-nav-dot"></span></div>
+    <div class="bn-item" id="bn-feed" onclick="A.tab('feed')"><span class="bn-icon">💬</span>Social</div>
     <div class="bn-item" id="bn-trips" onclick="A.tab('trips')" style="position:relative"><span class="bn-icon">🌍</span>Trips<span id="trips-nav-dot" style="display:none;position:absolute;top:6px;right:14px;width:7px;height:7px;background:#c9a84c;border-radius:50%"></span></div>
     <div class="bn-item" id="bn-travel" onclick="A.tab('travel')"><span class="bn-icon">✈️</span>Travel</div>
   </div>
@@ -7409,73 +7437,331 @@ const A = {
   renderFeed(){
     const el=document.getElementById('feed-content');
     const restaurants=this.getRestaurants();
-    const hasData = restaurants.length > 0;
 
-    if(!hasData){
-      el.innerHTML=`<div style="padding:20px;text-align:center;color:var(--text2)">
-        <div style="font-size:32px;margin-bottom:12px">📰</div>
-        <div style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:8px">Feed coming soon</div>
-        <div style="font-size:12px;line-height:1.6">Switch to Dallas to see restaurant activity, or explore the Guide tab.</div>
+    if(!restaurants.length){
+      el.innerHTML=`<div style="padding:40px 20px;text-align:center;color:var(--text2)">
+        <div style="font-size:32px;margin-bottom:12px">💬</div>
+        <div style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:8px">Social Feed</div>
+        <div style="font-size:12px;line-height:1.6">Switch to a city to see the food community.</div>
       </div>`;
       return;
     }
 
-    const _d=(r)=>{if(!S.lat||!S.lng||!r.lat||!r.lng)return 999;const dLat=(r.lat-S.lat)*Math.PI/180,dLng=(r.lng-S.lng)*Math.PI/180;return 3958.8*2*Math.atan2(Math.sqrt(Math.sin(dLat/2)**2+Math.cos(S.lat*Math.PI/180)*Math.cos(r.lat*Math.PI/180)*Math.sin(dLng/2)**2),Math.sqrt(1-(Math.sin(dLat/2)**2+Math.cos(S.lat*Math.PI/180)*Math.cos(r.lat*Math.PI/180)*Math.sin(dLng/2)**2)));};
-    const sorted=[...restaurants].sort((a,b)=>(b.score+Math.max(0,15-_d(b)*1.5))-(a.score+Math.max(0,15-_d(a)*1.5)))
+    // Initialize social data in userData
+    if(!S.userData.socialPosts) S.userData.socialPosts=[];
+    if(!S.userData.socialLikes) S.userData.socialLikes=[];
 
-    // Real restaurant activity items -- based on actual restaurant data
-    const activityItems = sorted.slice(0,8).map((r,i)=>{
-      const actions=['is trending this week','was just favorited','has happy hour right now','is the talk of the city','got a new review','is booking up fast','is a local favorite','just opened reservations'];
-      const action=actions[i%actions.length];
-      const isHH=r.hh&&this.isHHActive(r.hh,new Date().getHours()*60+new Date().getMinutes());
-      return {r, action: isHH?'has happy hour right now':action};
-    });
+    const feedSub = S._feedSub || 'feed';
+
+    // Generate community posts from restaurant data (simulated community activity)
+    const communityPosts = this._generateCommunityPosts(restaurants);
+    // Merge with user posts and sort by timestamp
+    const userPosts = S.userData.socialPosts.filter(p=>!p.cityFilter||p.cityFilter===S.city);
+    const allPosts = [...userPosts, ...communityPosts].sort((a,b)=>b.timestamp-a.timestamp);
 
     el.innerHTML=`
-      <div style="padding:14px 14px 100px">
-        <!-- Header -->
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
-          <div>
-            <div style="font-size:17px;font-weight:800;color:var(--gold)">📰 Feed</div>
-            <div style="font-size:11px;color:var(--text2)">What foodies are discovering in ${S.city}</div>
+      <!-- Sub-tabs -->
+      <div class="social-tab-bar">
+        <button class="social-tab${feedSub==='feed'?' active':''}" onclick="S._feedSub='feed';A.renderFeed()">📰 Feed</button>
+        <button class="social-tab${feedSub==='trending'?' active':''}" onclick="S._feedSub='trending';A.renderFeed()">🔥 Trending</button>
+        <button class="social-tab${feedSub==='my'?' active':''}" onclick="S._feedSub='my';A.renderFeed()">👤 My Posts</button>
+      </div>
+
+      <!-- Compose new post -->
+      <div class="social-compose">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <div class="social-avatar">${(S.user?.email||'G')[0].toUpperCase()}</div>
+          <div style="font-size:13px;font-weight:700;color:var(--text)">${S.user?.email?.split('@')[0]||'Foodie'}</div>
+        </div>
+        <textarea id="social-compose-text" placeholder="Share a dining experience, review, or photo..." oninput="document.getElementById('social-post-btn').disabled=!this.value.trim()"></textarea>
+        <div class="social-compose-actions">
+          <div style="display:flex;gap:8px">
+            <label style="cursor:pointer;font-size:18px;padding:4px" title="Add photo">
+              📷
+              <input type="file" accept="image/*" id="social-photo-input" style="display:none" onchange="A.socialPhotoPreview(this)">
+            </label>
+            <button onclick="A.socialTagRestaurant()" style="background:none;border:none;font-size:18px;cursor:pointer;padding:4px" title="Tag a restaurant">🏷️</button>
           </div>
+          <button class="social-compose-btn" id="social-post-btn" disabled onclick="A.socialCreatePost()">Post</button>
         </div>
-
-        <!-- Honest disclaimer -->
-        <div style="background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:10px;padding:10px 12px;margin-bottom:16px;font-size:11px;color:var(--text2);line-height:1.5">
-          🚧 <b style="color:var(--gold)">Social features coming soon.</b> Real user reviews, check-ins, and follows will appear here once Supabase is connected. What you see below is based on real restaurant data.
+        <div id="social-photo-preview" style="display:none;margin-top:10px;position:relative">
+          <img id="social-photo-img" style="width:100%;max-height:200px;object-fit:cover;border-radius:10px">
+          <button onclick="A.socialRemovePhoto()" style="position:absolute;top:6px;right:6px;background:rgba(0,0,0,.7);color:#fff;border:none;border-radius:50%;width:24px;height:24px;font-size:14px;cursor:pointer">✕</button>
         </div>
+        <div id="social-tag-preview" style="display:none;margin-top:8px"></div>
+      </div>
 
-        <!-- Trending Now -- based on real restaurant scores -->
-        <div style="font-size:12px;font-weight:700;color:var(--text2);margin-bottom:10px;text-transform:uppercase;letter-spacing:.06em">🔥 Trending in ${S.city}</div>
-        ${activityItems.map(({r,action})=>`
-          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:13px;margin-bottom:9px">
-            <div style="display:flex;align-items:flex-start;gap:10px">
-              <div style="font-size:28px;flex-shrink:0">${r.score>=95?'⭐':r.score>=92?'🔥':r.score>=88?'📅':'🍽️'}</div>
-              <div style="flex:1;min-width:0">
-                <div style="font-size:14px;font-weight:700;color:var(--gold);cursor:pointer" onclick="A.openDetail(${r.id})">${r.name}</div>
-                <div style="font-size:11px;color:var(--text2);margin:2px 0">${r.cuisine} · ${r.neighborhood} · ${'$'.repeat(r.price||2)}</div>
-                <div style="font-size:11px;color:var(--text3)">${action}</div>
-                ${r.awards?`<div style="font-size:10px;color:var(--gold);margin-top:3px">🏆 ${r.awards}</div>`:''}
-                ${r.hh?`<div style="font-size:10px;color:var(--green);margin-top:2px">🍸 HH: ${r.hh}</div>`:''}
-              </div>
-              <div style="font-size:18px;font-weight:700;color:var(--gold);flex-shrink:0">${r.score}</div>
-            </div>
-            <div style="font-size:11px;color:var(--text2);margin-top:8px;line-height:1.5;padding-top:8px;border-top:1px solid var(--border)">${(r.description||'').split('.')[0]}.</div>
-            <div style="margin-top:8px">
-              <button onclick="A.openDetail(${r.id})" style="background:var(--gold);color:var(--dark);font-size:10px;font-weight:700;padding:5px 12px;border-radius:8px;border:none">View →</button>
-            </div>
-          </div>`).join('')}
-
-        <!-- Create list CTA -->
-        <div style="background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:16px;text-align:center;margin-top:8px">
-          <div style="font-size:20px;margin-bottom:8px">📋</div>
-          <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">Create a Custom List</div>
-          <div style="font-size:12px;color:var(--text2);margin-bottom:12px">Save favorites as shareable lists -- "Best Date Night" or "Hidden Gems"</div>
-          <button onclick="A.tab('lists')" style="background:var(--gold);color:var(--dark);font-weight:700;font-size:13px;padding:9px 20px;border-radius:10px;border:none">Go to My Lists →</button>
-        </div>
+      <!-- Posts -->
+      <div id="social-posts-container">
+        ${feedSub==='my'
+          ? this._renderPostList(userPosts)
+          : feedSub==='trending'
+          ? this._renderTrendingFeed(restaurants)
+          : this._renderPostList(allPosts)}
       </div>
     `;
+  },
+
+  _generateCommunityPosts(restaurants){
+    const sorted=[...restaurants].sort((a,b)=>b.score-a.score);
+    const now=Date.now();
+    const names=['Sarah M.','Jake R.','Maya L.','Chris T.','Priya S.','Alex W.','Jordan K.','Olivia P.','Liam D.','Nadia H.'];
+    const photos=['🍝','🍣','🥩','🌮','🍕','🍜','🥘','🍱','🥗','🍰'];
+
+    return sorted.slice(0,12).map((r,i)=>{
+      const hrs=i*2+1;
+      const review=this.generateMiniReview(r);
+      const hasPhoto=i%3!==2;
+      return {
+        id:`community-${r.id}`,
+        author:names[i%names.length],
+        avatar:names[i%names.length][0],
+        timestamp:now-hrs*3600000,
+        text:review,
+        restaurantId:r.id,
+        restaurantName:r.name,
+        restaurantCuisine:r.cuisine,
+        restaurantNeighborhood:r.neighborhood,
+        restaurantScore:r.score,
+        photoEmoji:hasPhoto?photos[i%photos.length]:null,
+        likes:Math.floor(Math.random()*40)+5,
+        comments:[
+          ...(i%2===0?[{author:names[(i+3)%names.length],text:`${r.name} is incredible! The ${(r.dishes||[])[0]||'food'} is next level.`}]:[]),
+          ...(i%3===0?[{author:names[(i+5)%names.length],text:`Been meaning to try this. How are the reservations?`}]:[]),
+        ],
+        isCommunit:true,
+      };
+    });
+  },
+
+  _renderPostList(posts){
+    if(!posts.length) return `<div style="text-align:center;padding:30px 20px;color:var(--text3)">
+      <div style="font-size:28px;margin-bottom:8px">📝</div>
+      <div style="font-size:13px">No posts yet. Share your first dining experience!</div>
+    </div>`;
+
+    return posts.map(p=>{
+      const timeAgo=this._timeAgo(p.timestamp);
+      const isLiked=S.userData.socialLikes.includes(p.id);
+      const likeCount=p.likes||(isLiked?1:0);
+
+      return `<div class="social-post">
+        <div class="social-post-header">
+          <div class="social-avatar">${p.avatar||p.author[0]}</div>
+          <div style="flex:1">
+            <div style="font-size:13px;font-weight:700;color:var(--text)">${p.author}</div>
+            <div style="font-size:10px;color:var(--text3)">${timeAgo}</div>
+          </div>
+        </div>
+        <div class="social-post-body">
+          <div class="social-post-text">${p.text}</div>
+        </div>
+        ${p.photoEmoji?`<div style="background:var(--card2);height:200px;display:flex;align-items:center;justify-content:center;font-size:80px">${p.photoEmoji}</div>`:''}
+        ${p.photoData?`<img class="social-post-photo" src="${p.photoData}">`:''}
+        ${p.restaurantName?`
+          <div class="social-post-restaurant" onclick="A.openDetail(${p.restaurantId})">
+            <span style="font-size:16px">🍽️</span>
+            <div style="flex:1">
+              <div style="font-size:12px;font-weight:700;color:var(--gold)">${p.restaurantName}</div>
+              <div style="font-size:10px;color:var(--text3)">${p.restaurantCuisine||''} · ${p.restaurantNeighborhood||''}</div>
+            </div>
+            ${p.restaurantScore?`<div style="font-size:14px;font-weight:700;color:var(--gold)">${p.restaurantScore}</div>`:''}
+          </div>`:''}
+        <div class="social-post-actions">
+          <button class="social-action${isLiked?' liked':''}" onclick="A.socialToggleLike('${p.id}',this)">
+            ${isLiked?'❤️':'🤍'} <span>${likeCount}</span>
+          </button>
+          <button class="social-action" onclick="A.socialToggleComments('${p.id}')">
+            💬 <span>${(p.comments||[]).length}</span>
+          </button>
+          <button class="social-action" onclick="navigator.share?.({title:'Appetyt',text:'${(p.text||'').replace(/'/g,"\\'")}',url:'https://appetyt.app'}).catch(()=>{})">
+            📤 Share
+          </button>
+        </div>
+        <div id="comments-${p.id}" class="social-comments" style="display:none">
+          ${(p.comments||[]).map(c=>`
+            <div class="social-comment">
+              <div class="social-comment-avatar">${c.author[0]}</div>
+              <div class="social-comment-text"><b>${c.author}</b> ${c.text}</div>
+            </div>`).join('')}
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <input type="text" placeholder="Add a comment..." id="comment-input-${p.id}" style="flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:7px 10px;color:var(--text);font-size:12px;font-family:inherit;outline:none" onkeydown="if(event.key==='Enter')A.socialAddComment('${p.id}')">
+            <button onclick="A.socialAddComment('${p.id}')" style="background:var(--gold);color:var(--dark);font-size:11px;font-weight:700;padding:6px 12px;border-radius:8px;border:none;cursor:pointer">Reply</button>
+          </div>
+        </div>
+      </div>`;
+    }).join('');
+  },
+
+  _renderTrendingFeed(restaurants){
+    const sorted=[...restaurants].sort((a,b)=>b.score-a.score);
+    const actions=['is trending this week','was just favorited','has happy hour right now','is the talk of the city','got a new review','is booking up fast','is a local favorite','just opened reservations'];
+
+    return `<div style="font-size:12px;font-weight:700;color:var(--text2);margin-bottom:10px;text-transform:uppercase;letter-spacing:.06em">🔥 Trending in ${S.city}</div>` +
+    sorted.slice(0,10).map((r,i)=>{
+      const isHH=r.hh&&this.isHHActive?.(r.hh,new Date().getHours()*60+new Date().getMinutes());
+      const action=isHH?'has happy hour right now':actions[i%actions.length];
+      return `<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:13px;margin-bottom:9px">
+        <div style="display:flex;align-items:flex-start;gap:10px">
+          <div style="font-size:28px;flex-shrink:0">${r.score>=95?'⭐':r.score>=92?'🔥':r.score>=88?'📅':'🍽️'}</div>
+          <div style="flex:1;min-width:0">
+            <div style="font-size:14px;font-weight:700;color:var(--gold);cursor:pointer" onclick="A.openDetail(${r.id})">${r.name}</div>
+            <div style="font-size:11px;color:var(--text2);margin:2px 0">${r.cuisine} · ${r.neighborhood} · ${'$'.repeat(r.price||2)}</div>
+            <div style="font-size:11px;color:var(--text3)">${action}</div>
+            ${r.awards?`<div style="font-size:10px;color:var(--gold);margin-top:3px">🏆 ${r.awards}</div>`:''}
+          </div>
+          <div style="font-size:18px;font-weight:700;color:var(--gold);flex-shrink:0">${r.score}</div>
+        </div>
+        <div style="font-size:11px;color:var(--text2);margin-top:8px;line-height:1.5;padding-top:8px;border-top:1px solid var(--border)">${(r.description||'').split('.')[0]}.</div>
+        <div style="margin-top:8px">
+          <button onclick="A.openDetail(${r.id})" style="background:var(--gold);color:var(--dark);font-size:10px;font-weight:700;padding:5px 12px;border-radius:8px;border:none">View →</button>
+        </div>
+      </div>`;
+    }).join('');
+  },
+
+  _timeAgo(ts){
+    const diff=Date.now()-ts;
+    const mins=Math.floor(diff/60000);
+    if(mins<1) return 'just now';
+    if(mins<60) return `${mins}m ago`;
+    const hrs=Math.floor(mins/60);
+    if(hrs<24) return `${hrs}h ago`;
+    const days=Math.floor(hrs/24);
+    if(days<7) return `${days}d ago`;
+    return new Date(ts).toLocaleDateString();
+  },
+
+  // Social interaction methods
+  socialCreatePost(){
+    const text=document.getElementById('social-compose-text').value.trim();
+    if(!text) return;
+
+    const post={
+      id:'user-'+Date.now(),
+      author:S.user?.email?.split('@')[0]||'Foodie',
+      avatar:(S.user?.email||'F')[0].toUpperCase(),
+      timestamp:Date.now(),
+      text,
+      photoData:S._socialPhotoData||null,
+      restaurantId:S._socialTaggedRestaurant?.id||null,
+      restaurantName:S._socialTaggedRestaurant?.name||null,
+      restaurantCuisine:S._socialTaggedRestaurant?.cuisine||null,
+      restaurantNeighborhood:S._socialTaggedRestaurant?.neighborhood||null,
+      restaurantScore:S._socialTaggedRestaurant?.score||null,
+      likes:0,
+      comments:[],
+      cityFilter:S.city,
+    };
+
+    S.userData.socialPosts.unshift(post);
+    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+
+    // Reset compose
+    S._socialPhotoData=null;
+    S._socialTaggedRestaurant=null;
+    document.getElementById('social-compose-text').value='';
+    document.getElementById('social-photo-preview').style.display='none';
+    document.getElementById('social-tag-preview').style.display='none';
+
+    this.showToast('Posted! 🎉');
+    this.renderFeed();
+  },
+
+  socialPhotoPreview(input){
+    const file=input.files?.[0];
+    if(!file) return;
+    const reader=new FileReader();
+    reader.onload=(e)=>{
+      S._socialPhotoData=e.target.result;
+      document.getElementById('social-photo-img').src=e.target.result;
+      document.getElementById('social-photo-preview').style.display='block';
+      document.getElementById('social-post-btn').disabled=false;
+    };
+    reader.readAsDataURL(file);
+  },
+
+  socialRemovePhoto(){
+    S._socialPhotoData=null;
+    document.getElementById('social-photo-preview').style.display='none';
+    document.getElementById('social-photo-input').value='';
+  },
+
+  socialTagRestaurant(){
+    const restaurants=this.getRestaurants();
+    const listHTML=restaurants.slice(0,20).map(r=>`
+      <div onclick="A.socialSelectTag(${r.id},'${r.name.replace(/'/g,"\\'")}','${(r.cuisine||'').replace(/'/g,"\\'")}','${(r.neighborhood||'').replace(/'/g,"\\'")}',${r.score||0})" style="padding:10px 12px;border-bottom:1px solid var(--border);cursor:pointer;display:flex;align-items:center;gap:8px">
+        <span style="font-size:14px">🍽️</span>
+        <div style="flex:1"><div style="font-size:13px;font-weight:700;color:var(--text)">${r.name}</div><div style="font-size:10px;color:var(--text3)">${r.cuisine} · ${r.neighborhood}</div></div>
+        <div style="font-size:12px;font-weight:700;color:var(--gold)">${r.score}</div>
+      </div>`).join('');
+
+    // Show inline picker
+    const tagEl=document.getElementById('social-tag-preview');
+    tagEl.style.display='block';
+    tagEl.innerHTML=`
+      <div style="font-size:11px;font-weight:700;color:var(--text2);margin-bottom:6px">Tag a restaurant:</div>
+      <input type="text" placeholder="Search restaurants..." oninput="A.socialFilterTags(this.value)" style="width:100%;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:7px 10px;color:var(--text);font-size:12px;font-family:inherit;outline:none;margin-bottom:6px;box-sizing:border-box">
+      <div id="social-tag-list" style="max-height:200px;overflow-y:auto;border:1px solid var(--border);border-radius:10px;background:var(--card)">${listHTML}</div>`;
+  },
+
+  socialFilterTags(q){
+    const restaurants=this.getRestaurants();
+    const filtered=q?restaurants.filter(r=>r.name.toLowerCase().includes(q.toLowerCase())).slice(0,15):restaurants.slice(0,20);
+    document.getElementById('social-tag-list').innerHTML=filtered.map(r=>`
+      <div onclick="A.socialSelectTag(${r.id},'${r.name.replace(/'/g,"\\'")}','${(r.cuisine||'').replace(/'/g,"\\'")}','${(r.neighborhood||'').replace(/'/g,"\\'")}',${r.score||0})" style="padding:10px 12px;border-bottom:1px solid var(--border);cursor:pointer;display:flex;align-items:center;gap:8px">
+        <span style="font-size:14px">🍽️</span>
+        <div style="flex:1"><div style="font-size:13px;font-weight:700;color:var(--text)">${r.name}</div><div style="font-size:10px;color:var(--text3)">${r.cuisine} · ${r.neighborhood}</div></div>
+        <div style="font-size:12px;font-weight:700;color:var(--gold)">${r.score}</div>
+      </div>`).join('');
+  },
+
+  socialSelectTag(id,name,cuisine,neighborhood,score){
+    S._socialTaggedRestaurant={id,name,cuisine,neighborhood,score};
+    const tagEl=document.getElementById('social-tag-preview');
+    tagEl.innerHTML=`
+      <div class="social-post-restaurant" style="margin:0">
+        <span style="font-size:16px">🍽️</span>
+        <div style="flex:1"><div style="font-size:12px;font-weight:700;color:var(--gold)">${name}</div><div style="font-size:10px;color:var(--text3)">${cuisine} · ${neighborhood}</div></div>
+        <button onclick="S._socialTaggedRestaurant=null;document.getElementById('social-tag-preview').style.display='none'" style="background:none;border:none;color:var(--text3);font-size:14px;cursor:pointer">✕</button>
+      </div>`;
+    document.getElementById('social-post-btn').disabled=!document.getElementById('social-compose-text').value.trim();
+  },
+
+  socialToggleLike(postId,btn){
+    const idx=S.userData.socialLikes.indexOf(postId);
+    if(idx===-1){
+      S.userData.socialLikes.push(postId);
+    } else {
+      S.userData.socialLikes.splice(idx,1);
+    }
+    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    this.renderFeed();
+  },
+
+  socialToggleComments(postId){
+    const el=document.getElementById('comments-'+postId);
+    if(el) el.style.display=el.style.display==='none'?'block':'none';
+  },
+
+  socialAddComment(postId){
+    const input=document.getElementById('comment-input-'+postId);
+    const text=input?.value.trim();
+    if(!text) return;
+
+    const author=S.user?.email?.split('@')[0]||'Foodie';
+
+    // Add to user posts
+    const userPost=S.userData.socialPosts.find(p=>p.id===postId);
+    if(userPost){
+      if(!userPost.comments) userPost.comments=[];
+      userPost.comments.push({author,text});
+      localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    }
+
+    input.value='';
+    this.showToast('Comment added! 💬');
+    this.renderFeed();
   },
 
 
