@@ -81,6 +81,7 @@ input,textarea{font-family:inherit;font-size:inherit}
 /* Top action bar */
 .r-topbar{display:flex;align-items:center;justify-content:space-between;padding:8px 10px 6px;border-bottom:1px solid rgba(42,35,24,.6)}
 .r-reserve-btn{background:var(--gold);color:var(--dark);font-size:10px;font-weight:800;padding:4px 10px;border-radius:6px;letter-spacing:.04em;flex-shrink:0}
+.r-order-btn{background:#ff3008;color:#fff;font-size:10px;font-weight:800;padding:4px 10px;border-radius:6px;letter-spacing:.04em;flex-shrink:0;text-decoration:none}
 .r-filter-icons{display:flex;gap:5px;align-items:center;flex:1;justify-content:center}
 .r-filter-icon{font-size:14px;opacity:.7}
 .r-diff-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;flex-shrink:0}
@@ -4865,6 +4866,7 @@ const A = {
     const bookUrl=r.reservation==='OpenTable'?`https://www.opentable.com/s/?term=${encodeURIComponent(r.name)}`
       :r.reservation==='Resy'?`https://resy.com/?q=${encodeURIComponent(r.name)}`
       :r.reservation==='Tock'?`https://www.exploretock.com/search?q=${encodeURIComponent(r.name)}`:'#';
+    const orderUrl=`https://www.doordash.com/search/store/${encodeURIComponent(r.name)}/`;
 
     const awardLine=r.awards?`<div class="r-award">🏆 ${r.awards}</div>`:'';
     const bestOfLine=r.bestOf?.length?`<div class="r-bestof">${r.bestOf.map(b=>`<span class="r-bestof-item">${b}</span>`).join('')}</div>`:'';
@@ -4874,6 +4876,7 @@ const A = {
     return `<div class="r-card${rank===1?' rank1':''}" onclick="A.openDetail(${r.id})">
       <div class="r-topbar" onclick="event.stopPropagation()">
         <a href="${bookUrl}" target="_blank" class="r-reserve-btn">RESERVE</a>
+        <a href="${orderUrl}" target="_blank" class="r-order-btn">ORDER</a>
         <div class="r-filter-icons">${filterIcons}</div>
         ${diffBadge}
       </div>
@@ -5962,6 +5965,13 @@ const A = {
       Directions:`https://www.google.com/maps/search/${enc(r.name+' '+S.city)}`,
     };
 
+    // Delivery platform deep-links
+    const DELIVERY_URLS={
+      DoorDash:`https://www.doordash.com/search/store/${enc(r.name)}/?utm_source=appetyt`,
+      UberEats:`https://www.ubereats.com/search?q=${enc(r.name)}&utm_source=appetyt`,
+      Grubhub:`https://www.grubhub.com/search?orderMethod=delivery&locationMode=DELIVERY&query=${enc(r.name)}&utm_source=appetyt`,
+    };
+
     // Determine primary platform + show all options
     const primary=r.reservation&&r.reservation!=='walk-in'?r.reservation:'OpenTable';
     const primaryUrl=BOOK_URLS[primary]||BOOK_URLS.OpenTable;
@@ -6021,6 +6031,25 @@ const A = {
               <span style="font-size:18px">${p.emoji}</span>
               <span>${p.label}</span>
             </a>`).join('')}
+        </div>
+      </div>
+
+      <!-- Order Delivery -->
+      <div style="margin:0 0 14px">
+        <div style="font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px">Order Delivery</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px">
+          <a href="${DELIVERY_URLS.DoorDash}" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px 6px;border-radius:10px;background:#ff3008;color:#fff;text-decoration:none;font-size:11px;font-weight:600;text-align:center">
+            <span style="font-size:18px">🚗</span>
+            <span>DoorDash</span>
+          </a>
+          <a href="${DELIVERY_URLS.UberEats}" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px 6px;border-radius:10px;background:#06c167;color:#fff;text-decoration:none;font-size:11px;font-weight:600;text-align:center">
+            <span style="font-size:18px">🛵</span>
+            <span>Uber Eats</span>
+          </a>
+          <a href="${DELIVERY_URLS.Grubhub}" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px 6px;border-radius:10px;background:#f63440;color:#fff;text-decoration:none;font-size:11px;font-weight:600;text-align:center">
+            <span style="font-size:18px">🍔</span>
+            <span>Grubhub</span>
+          </a>
         </div>
       </div>
 
@@ -6292,7 +6321,7 @@ const A = {
     typing.className='msg ai';typing.id='typing';typing.textContent='...';
     document.getElementById('chat-msgs').appendChild(typing);
 
-    const restaurants=this.getRestaurants().slice(0,15).map(r=>({name:r.name,score:r.score,cuisine:r.cuisine,neighborhood:r.neighborhood,price:r.price,tags:r.tags,hh:r.hh}));
+    const restaurants=this.getRestaurants().slice(0,15).map(r=>({name:r.name,score:r.score,cuisine:r.cuisine,neighborhood:r.neighborhood,price:r.price,tags:r.tags,hh:r.hh,reservation:r.reservation||''}));
 
     try{
       const res=await fetch('https://api.anthropic.com/v1/messages',{
@@ -6301,14 +6330,17 @@ const A = {
         body:JSON.stringify({
           model:'claude-sonnet-4-20250514',
           max_tokens:250,
-          system:`You are Appetyt's AI concierge for ${S.city}. Be concise, specific, and enthusiastic. Reference actual restaurants. Max 80 words.\nRestaurants: ${JSON.stringify(restaurants)}`,
+          system:`You are Appetyt's AI concierge for ${S.city}. Be concise, specific, and enthusiastic. Reference actual restaurants. Max 100 words.\n\nWhen recommending a restaurant, ALWAYS include a booking link at the end using this format:\n- For Resy restaurants: [Reserve on Resy](https://resy.com/?q=RESTAURANT_NAME)\n- For Tock restaurants: [Reserve on Tock](https://www.exploretock.com/search?q=RESTAURANT_NAME)\n- For OpenTable restaurants: [Reserve on OpenTable](https://www.opentable.com/s/?term=RESTAURANT_NAME)\n- Also include: [Order on DoorDash](https://www.doordash.com/search/store/RESTAURANT_NAME/)\n\nUse the restaurant's reservation field to pick the right platform. If empty, default to OpenTable.\n\nRestaurants: ${JSON.stringify(restaurants)}`,
           messages:[{role:'user',content:q}]
         })
       });
       document.getElementById('typing')?.remove();
       const data=await res.json();
       const text=data.content?.[0]?.text||'Try filtering by vibe above!';
-      this.chatMsg('ai',text.replace(/\*\*(.*?)\*\*/g,'<b>$1</b>'),['Another option','Price range?','Best for groups','Open now']);
+      const formatted=text
+        .replace(/\*\*(.*?)\*\*/g,'<b>$1</b>')
+        .replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g,'<a href="$2" target="_blank" style="color:var(--gold);font-weight:600;text-decoration:underline">$1</a>');
+      this.chatMsg('ai',formatted,['Another option','Price range?','Best for groups','Open now','Reserve','Order delivery']);
     } catch(e){
       document.getElementById('typing')?.remove();
       // Smart local fallback
@@ -6319,8 +6351,18 @@ const A = {
       else if(q2.includes('happy')) recs=all.filter(r=>r.hh).slice(0,2);
       else if(q2.includes('cheap')||q2.includes('budget')) recs=all.filter(r=>r.price<=2).sort((a,b)=>b.score-a.score).slice(0,2);
       else recs=all.sort((a,b)=>b.score-a.score).slice(0,2);
-      const reply=recs.length?`Try <b>${recs[0].name}</b>${recs[1]?' or <b>'+recs[1].name+'</b>':''} -- both excellent choices for ${S.city}!`:`Filter by vibe using the chips above to find the perfect spot!`;
-      this.chatMsg('ai',reply,['See more','Different vibe','What to order?']);
+      let reply;
+      if(recs.length){
+        const r1=recs[0];const r2=recs[1];
+        const link1=`<a href="https://www.doordash.com/search/store/${encodeURIComponent(r1.name)}/" target="_blank" style="color:var(--gold);font-weight:600;text-decoration:underline">Order</a>`;
+        const resPlat1=r1.reservation&&r1.reservation!=='walk-in'?r1.reservation:'OpenTable';
+        const resUrl1=resPlat1==='Resy'?`https://resy.com/?q=${encodeURIComponent(r1.name)}`:resPlat1==='Tock'?`https://www.exploretock.com/search?q=${encodeURIComponent(r1.name)}`:`https://www.opentable.com/s/?term=${encodeURIComponent(r1.name)}`;
+        const bookLink1=`<a href="${resUrl1}" target="_blank" style="color:var(--gold);font-weight:600;text-decoration:underline">Reserve</a>`;
+        reply=`Try <b>${r1.name}</b> (${bookLink1} · ${link1})${r2?' or <b>'+r2.name+'</b>':''} -- excellent choices for ${S.city}!`;
+      } else {
+        reply=`Filter by vibe using the chips above to find the perfect spot!`;
+      }
+      this.chatMsg('ai',reply,['See more','Different vibe','What to order?','Reserve','Order delivery']);
     }
     S.chatLoading=false;
   },
