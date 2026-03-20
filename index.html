@@ -5,7 +5,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="description" content="Appetyt — Discover the best restaurants in 248 cities worldwide.">
 <meta name="theme-color" content="#c9a84c">
 <link rel="canonical" href="https://appetyt.app/">
@@ -797,6 +797,10 @@ body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
 .cm-submit{width:100%;padding:14px;background:linear-gradient(135deg,var(--gold2),#8a6020);border:none;border-radius:12px;color:#0a0600;font-size:14px;font-weight:700;cursor:pointer;touch-action:manipulation;font-family:var(--sans,inherit);letter-spacing:.03em;box-shadow:0 6px 24px rgba(200,169,110,.18);margin-top:8px;transition:opacity .15s}
 .cm-submit:active{opacity:.82}
 .cm-cancel{width:100%;padding:11px;background:none;border:none;color:var(--t4,var(--text3));font-size:12px;cursor:pointer;font-family:var(--sans,inherit);margin-top:3px}
+
+/* Capacitor native app — safe area adjustments */
+body.capacitor-native #topbar{padding-top:calc(7px + env(safe-area-inset-top))}
+body.capacitor-native #content{padding-bottom:env(safe-area-inset-bottom)}
 </style>
 
 
@@ -5797,7 +5801,8 @@ const A = {
 
       if(useProxy){
         // Call your Netlify serverless function -- key lives on the server
-        const res = await fetch('/.netlify/functions/ai-plan', {
+        const apiBase = (window.Capacitor && window.Capacitor.isNativePlatform()) ? 'https://appetyt.app' : '';
+        const res = await fetch(apiBase + '/.netlify/functions/ai-plan', {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({siteName, country, category, question: q})
@@ -12929,5 +12934,25 @@ function cruiseSelectDay(code) {
 </div>
 
   <div id="event-detail-modal"></div>
+
+<script>
+/* Capacitor native app bridge */
+window.addEventListener('load', function() {
+  if (window.Capacitor && window.Capacitor.isNativePlatform()) {
+    document.body.classList.add('capacitor-native');
+
+    var StatusBar = window.Capacitor.Plugins.StatusBar;
+    if (StatusBar) {
+      StatusBar.setStyle({ style: 'LIGHT' });
+      StatusBar.setBackgroundColor({ color: '#0a0d14' });
+    }
+
+    var SplashScreen = window.Capacitor.Plugins.SplashScreen;
+    if (SplashScreen) {
+      SplashScreen.hide();
+    }
+  }
+});
+</script>
 </body>
 </html>

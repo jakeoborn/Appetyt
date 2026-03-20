@@ -1,7 +1,25 @@
 {
-  "name": "appetyt-functions",
+  "name": "appetyt",
   "version": "1.0.0",
   "engines": {
     "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "mkdir -p dist && cp index.html dist/",
+    "cap:sync": "npm run build && npx cap sync ios",
+    "cap:open": "npx cap open ios",
+    "cap:build": "npm run build && npx cap sync ios && npx cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
+    "@capacitor/status-bar": "^6.0.0",
+    "@capacitor/splash-screen": "^6.0.0",
+    "@capacitor/keyboard": "^6.0.0",
+    "@capacitor/haptics": "^6.0.0",
+    "@capacitor/app": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0"
   }
 }
