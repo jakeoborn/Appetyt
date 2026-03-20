@@ -66,6 +66,7 @@ const CITIES = [
   // Tier 1 — 500 restaurants
   { name: 'New York',              slug: 'new-york',        country: 'US', searchName: 'New York City',            lat: 40.7128, lng: -74.0060,   tier: 1, target: 500 },
   { name: 'Los Angeles',           slug: 'los-angeles',     country: 'US', searchName: 'Los Angeles',              lat: 34.0522, lng: -118.2437,  tier: 1, target: 500 },
+  { name: 'Chicago',               slug: 'chicago',         country: 'US', searchName: 'Chicago',                  lat: 41.8781, lng: -87.6298,   tier: 1, target: 500 },
   { name: 'Mexico City',           slug: 'mexico-city',     country: 'MX', searchName: 'Mexico City',              lat: 19.4326, lng: -99.1332,   tier: 1, target: 500 },
   { name: 'Miami',                 slug: 'miami',           country: 'US', searchName: 'Miami',                    lat: 25.7617, lng: -80.1918,   tier: 1, target: 500 },
   { name: 'San Francisco Bay Area',slug: 'san-francisco',   country: 'US', searchName: 'San Francisco',            lat: 37.7749, lng: -122.4194,  tier: 1, target: 500 },

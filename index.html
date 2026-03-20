@@ -3037,68 +3037,26 @@ const DALLAS_DATA = [{"id": 1, "name": "Lucia", "cuisine": "Italian", "neighborh
 {"id": 427, "name": "Saaya", "cuisine": "Indian", "neighborhood": "Deep Ellum", "score": 83, "price": 2, "tags": ["Local Favorites", "Date Night", "Cocktails"], "group": "Milkshake Concepts", "description": "Modern Indian restaurant from Milkshake Concepts bringing bold subcontinental flavors to Deep Ellum. Creative cocktails and vibrant atmosphere make it a standout in Dallas Indian dining.", "address": "2707 Commerce St, Dallas, TX 75226", "lat": 32.7828, "lng": -96.7910, "reservation": "Resy", "hh": null, "awards": null, "vibe": "modern Indian, vibrant, cocktail-forward"},
 {"id": 428, "name": "Serious Sliders", "cuisine": "Sliders / American", "neighborhood": "Deep Ellum", "score": 80, "price": 1, "tags": ["Local Favorites", "Late Night"], "group": "Milkshake Concepts", "description": "Milkshake Concepts spin-off focused on elevated sliders. Small but mighty -- crispy patties, creative toppings, and a cult following in Deep Ellum.", "address": "Deep Ellum, Dallas, TX", "lat": 32.7833, "lng": -96.7895, "reservation": "walk-in", "hh": null, "awards": null, "vibe": "casual, quick, late night friendly"},
 {"id": 429, "name": "Dough Bird", "cuisine": "Rotisserie Chicken / American", "neighborhood": "Inwood Village", "score": 83, "price": 2, "tags": ["Local Favorites", "Brunch", "Happy Hour"], "group": "Fox Restaurant Concepts", "description": "Sam Fox's fast-casual rotisserie concept at Inwood Village. Known for juicy whole birds, creative sides, and scratch sauces. Simple done right.", "address": "5290 Belt Line Rd, Dallas, TX 75254", "lat": 32.8599, "lng": -96.8399, "reservation": "walk-in", "hh": null, "awards": null, "vibe": "casual, quick, great rotisserie chicken"}]
-const CITY_DATA = {'Dallas':DALLAS_DATA,'Lima':[
-  {id:1001,name:'Central',cuisine:'Peruvian Altitudes',neighborhood:'Miraflores',score:99,price:4,tags:['Fine Dining','Critics Pick','Awards','Exclusive'],hh:'',reservation:'Tock',awards:'#1 World\'s Best Restaurant 2023',description:'Virgilio Mart\u00ednez\'s masterpiece. Each course represents a different Peruvian altitude ecosystem. 17 courses from ocean floor to Andean peaks.',dishes:['Altitude Menu (17 courses)','Cushuro (Andean algae)','Forest Potato'],address:'Av. Pedro de Osma 301, Barranco',hours:'Tue-Sat 1pm-3pm, 7pm-10pm',lat:-12.1436,lng:-77.0283,bestOf:['#1 Best Overall','#1 Best Fine Dining']},
-  {id:1002,name:'Maido',cuisine:'Nikkei Japanese-Peruvian',neighborhood:'Miraflores',score:97,price:4,tags:['Fine Dining','Critics Pick','Awards','Date Night'],hh:'',reservation:'OpenTable',awards:'#5 World\'s Best Restaurant',description:'Mitsuharu Tsumura\'s Japanese-Peruvian fusion. The 500-year history menu traces Japanese immigration to Peru. Extraordinary.',dishes:['Nikkei Tasting Menu','Wagyu Anticucho','Sea Urchin Tiradito'],address:'Calle San Martin 399, Miraflores',hours:'Mon-Sat 12:30pm-3pm, 7pm-11pm',lat:-12.1222,lng:-77.0321,bestOf:['#1 Best Fusion','#2 Best Fine Dining']},
-  {id:1003,name:'Astrid y Gaston',cuisine:'Modern Peruvian',neighborhood:'San Isidro',score:95,price:4,tags:['Fine Dining','Critics Pick','Awards'],hh:'',reservation:'OpenTable',awards:'Latin America 50 Best',description:'Gaston Acurio flagship that put Peruvian cuisine on the world map. Casa Moreyra is a stunning colonial house.',dishes:['Lima Causa','Ceviche Clasico','Leche de Tigre'],address:'Av. Paz Soldan 290, San Isidro',hours:'Mon-Sat 12:30pm-3pm, 7pm-11pm',lat:-12.0987,lng:-77.0332,bestOf:['#2 Best Overall']},
-  {id:1004,name:'La Mar Cebicheria',cuisine:'Ceviche',neighborhood:'Miraflores',score:91,price:3,tags:['Critics Pick','Casual','Local Favorites'],hh:'',reservation:'walk-in',awards:'Gaston Acurio Group',description:'The definitive Lima ceviche experience. Bustling cebicheria with the best leche de tigre in the city. Lunch only.',dishes:['Ceviche Clasico','Tiradito Nikkei','Leche de Tigre shot'],address:'Av. La Mar 770, Miraflores',hours:'Mon-Sun 12pm-5pm',lat:-12.1198,lng:-77.0387,bestOf:['#1 Best Ceviche']},
-  {id:1005,name:'Isolina',cuisine:'Traditional Peruvian',neighborhood:'Barranco',score:90,price:2,tags:['Local Favorites','Casual','Critics Pick'],hh:'',reservation:'OpenTable',awards:'Latin America 50 Best',description:'Jose del Castillo tribute to traditional Lima home cooking. Massive portions. The lomo saltado is definitive.',dishes:['Lomo Saltado','Carapulcra','Arroz con Leche'],address:'Av. San Martin 101, Barranco',hours:'Tue-Sun 12pm-10pm',lat:-12.1487,lng:-77.0214,bestOf:['#1 Best Traditional Peruvian']},
-  {id:1006,name:'Kjolle',cuisine:'Peruvian Creative',neighborhood:'Barranco',score:94,price:4,tags:['Fine Dining','Critics Pick','Awards'],hh:'',reservation:'Tock',awards:'#24 World\'s Best 2023',description:'Pia Leon (Central co-founder) runs her own kitchen. Feminine, botanical, creative -- as extraordinary as Central in its own way.',dishes:['Seasonal Tasting Menu','Chaco Clay-Baked Potato','Amazon Ingredients'],address:'Av. Pedro de Osma 301, Barranco',hours:'Tue-Sat 1pm-3pm, 7pm-10pm',lat:-12.1436,lng:-77.0283,bestOf:['#3 Best Fine Dining']},
-]};
-
-// Beach & Mountain Towns verified restaurant data
-const BEACH_MOUNTAIN_DATA = {
-  'Charleston':[
-    {id:2001,name:"FIG",cuisine:"Farm-to-Table",neighborhood:"Downtown",score:95,price:3,tags:["Critics Pick","Fine Dining","Date Night","Awards"],hh:"",reservation:"OpenTable",awards:"James Beard Best Chef Southeast",description:"Mike Lata farm-to-table landmark. Menu changes nightly based on local farms. One of the best restaurants in the American South.",dishes:["Ricotta Gnudi","Pan-Roasted Fish","Daily Market Menu"],address:"232 Meeting St, Charleston SC",hours:"Mon-Sat 5:30pm-10pm",lat:32.7765,lng:-79.9371,bestOf:["#1 Best Overall","#1 Best Date Night"]},
-    {id:2002,name:"Husk",cuisine:"Southern Heritage",neighborhood:"Cannonborough",score:93,price:3,tags:["Critics Pick","Local Favorites","Fine Dining"],hh:"",reservation:"OpenTable",awards:"Sean Brock",description:"Sean Brock love letter to Southern ingredients. If it is not grown in the South, it is not on the menu. The whole hog barbecue is exceptional.",dishes:["Whole Hog Barbecue","Heirloom Grains","Cast-Iron Cornbread"],address:"76 Queen St, Charleston SC",hours:"Mon-Sun 5:30pm-10pm",lat:32.7749,lng:-79.9380,bestOf:["#2 Best Overall","#1 Best Southern"]},
-    {id:2003,name:"167 Raw",cuisine:"Raw Bar Seafood",neighborhood:"Ansonborough",score:91,price:2,tags:["Local Favorites","Critics Pick","Casual"],hh:"",reservation:"walk-in",awards:"",description:"The best raw bar in the South. The lobster roll is worth the wait. Tiny space, enormous reputation. Come very early.",dishes:["Lobster Roll","Oysters on the Half Shell","Tuna Poke Bowl"],address:"289 E Bay St, Charleston SC",hours:"Mon-Sat 11am-10pm",lat:32.7758,lng:-79.9333,bestOf:["#1 Best Seafood","#1 Best Lobster Roll"]},
-    {id:2004,name:"Leon's Oyster Shop",cuisine:"Oysters and Fried Chicken",neighborhood:"Upper King",score:90,price:2,tags:["Local Favorites","Critics Pick","Happy Hour"],hh:"Mon-Fri 4-6PM",reservation:"walk-in",awards:"",description:"Oysters and fried chicken in a converted auto body shop. Best happy hour in Charleston. The fried chicken alone justifies the trip.",dishes:["Fried Chicken","Raw Oysters","Frozen Custard"],address:"698 King St, Charleston SC",hours:"Mon-Sun 11am-10pm",lat:32.7834,lng:-79.9432,bestOf:["#1 Best Happy Hour","#2 Best Casual"]},
-  ],
-  'Key West':[
-    {id:2101,name:"Blue Heaven",cuisine:"Caribbean American",neighborhood:"Bahama Village",score:88,price:2,tags:["Local Favorites","Brunch","Casual","Live Music"],hh:"",reservation:"walk-in",awards:"",description:"Roosters wander the yard. Cats sleep under tables. Hemingway used to box here. The most Key West experience in Key West.",dishes:["Banana Foster French Toast","Lobster Benedict","Jerk Chicken"],address:"729 Thomas St, Key West FL",hours:"Mon-Sun 8am-4pm, 6pm-10:30pm",lat:24.5582,lng:-81.8012,bestOf:["#1 Best Brunch"]},
-    {id:2102,name:"Santiago's Bodega",cuisine:"Tapas",neighborhood:"Bahama Village",score:86,price:2,tags:["Date Night","Cocktails","Casual"],hh:"Mon-Fri 4-6PM",reservation:"walk-in",awards:"",description:"Hidden tapas bar in a Bahama Village cottage. One of the best-kept secrets in Key West. Tiny, dimly lit, and perfect for a date.",dishes:["Goat Cheese Crostini","Fresh Ceviche","Lamb Chops"],address:"207 Petronia St, Key West FL",hours:"Mon-Sun 5pm-midnight",lat:24.5587,lng:-81.7998,bestOf:["#1 Best Hidden Gem"]},
-    {id:2103,name:"El Siboney",cuisine:"Cuban",neighborhood:"Casa Marina",score:85,price:1,tags:["Local Favorites","Casual"],hh:"",reservation:"walk-in",awards:"",description:"The real Cuban restaurant since 1984. Cash only, no pretense, extraordinary ropa vieja. Every local Sunday spot.",dishes:["Ropa Vieja","Lechon Asado","Cuban Sandwich"],address:"900 Catherine St, Key West FL",hours:"Mon-Sun 11am-9:30pm",lat:24.5531,lng:-81.7892,bestOf:["#1 Best Cuban","#1 Best Value"]},
-  ],
-  'Aspen':[
-    {id:2201,name:"Matsuhisa Aspen",cuisine:"Japanese-Peruvian",neighborhood:"Downtown",score:94,price:4,tags:["Fine Dining","Date Night","Awards"],hh:"",reservation:"OpenTable",awards:"Nobu Matsuhisa Original",description:"The original Nobu Matsuhisa concept that predates the global empire. The black cod with miso here is the dish that started everything.",dishes:["Black Cod with Miso","Rock Shrimp Tempura","Yellowtail Sashimi"],address:"303 E Main St, Aspen CO",hours:"Mon-Sun 6pm-10pm",lat:39.1911,lng:-106.8196,bestOf:["#1 Best Fine Dining","#1 Best Date Night"]},
-    {id:2202,name:"Element 47",cuisine:"Fine American",neighborhood:"Little Nell Hotel",score:92,price:4,tags:["Fine Dining","Awards","Hotel"],hh:"",reservation:"OpenTable",awards:"Wine Spectator Grand Award",description:"Inside the Little Nell hotel. Named for silver (element 47). The most sophisticated wine program in mountain dining -- 20,000 bottles.",dishes:["Wagyu Beef","Colorado Lamb Rack","Tableside Smores"],address:"675 E Durant Ave, Aspen CO",hours:"Mon-Sun 7am-9pm",lat:39.1898,lng:-106.8147,bestOf:["#2 Best Fine Dining","#1 Best Wine"]},
-    {id:2203,name:"White House Tavern",cuisine:"American Casual",neighborhood:"Downtown",score:87,price:3,tags:["Local Favorites","Casual","Brunch"],hh:"",reservation:"OpenTable",awards:"",description:"Victorian house turned neighborhood restaurant. Brilliant burgers, great cocktails, no pretense. The locals alternative to hotel dining.",dishes:["WH Burger","Wagyu Meatloaf","Banana Bread French Toast"],address:"302 E Hopkins Ave, Aspen CO",hours:"Mon-Sun 11:30am-10pm",lat:39.1913,lng:-106.8175,bestOf:["#1 Best Casual","#1 Best Burger"]},
-  ],
-  'Park City':[
-    {id:2301,name:"Handle",cuisine:"American Creative",neighborhood:"Historic Main Street",score:92,price:3,tags:["Critics Pick","Date Night","Fine Dining"],hh:"Mon-Fri 4-6PM",reservation:"OpenTable",awards:"Utah Best Restaurant",description:"Briar Handly creative American in a 100-year-old building on Main Street. One of the best restaurants in Utah.",dishes:["Crispy Potato","Duck Confit","Seasonal Tasting Menu"],address:"136 Heber Ave, Park City UT",hours:"Mon-Sun 5pm-10pm",lat:40.6461,lng:-111.4980,bestOf:["#1 Best Overall","#1 Best Date Night"]},
-    {id:2302,name:"Riverhorse on Main",cuisine:"American",neighborhood:"Historic Main Street",score:88,price:3,tags:["Date Night","Local Favorites","Celebrations"],hh:"",reservation:"OpenTable",awards:"",description:"Park City institution in a historic building on Main Street. The macadamia crusted halibut has been on the menu for decades for good reason.",dishes:["Macadamia Halibut","Elk Tenderloin","Utah Lamb Rack"],address:"540 Main St, Park City UT",hours:"Mon-Sun 5:30pm-10pm",lat:40.6456,lng:-111.4987,bestOf:["#1 Best Celebration"]},
-  ],
-};
-Object.assign(CITY_DATA, BEACH_MOUNTAIN_DATA);
+const CITY_DATA = {'Dallas':DALLAS_DATA};
 
 const CITY_GROUPS = {
-  '🤠 Texas':['Dallas','Austin','Houston','San Antonio','Fort Worth'],
-  '🍑 US South':['New Orleans','Nashville','Atlanta','Miami','Memphis'],
-  '🏙️ US Northeast':['New York','Boston','Philadelphia','Washington DC','New Haven'],
-  '🌾 US Midwest':['Chicago','Minneapolis','Kansas City','Detroit'],
-  '☀️ US West':['Los Angeles','San Francisco','Seattle','Portland','Las Vegas','San Diego'],
-  '⛷️ Mountain Towns':['Denver','Aspen','Park City','Jackson Hole','Santa Fe','Taos','Breckenridge','Telluride','Sun Valley','Lake Tahoe'],
-  '🏖️ Beach Towns':['Miami Beach','Charleston','Savannah','Key West','Outer Banks','Cape Cod','Hilton Head','Santa Cruz','Malibu','Montauk'],
-  '🎓 College Towns':['Austin','New Haven','Chapel Hill','Madison','Ann Arbor','Boulder','Charlottesville'],
-  '🇬🇧 United Kingdom':['London','Edinburgh','Dublin'],
-  '🇪🇺 Europe':['Paris','Barcelona','Rome','Amsterdam','Berlin','Lisbon','Copenhagen','Vienna','Prague','Budapest','Ibiza'],
-  '🇯🇵 Japan':['Tokyo','Kyoto','Osaka','Fukuoka'],
-  '🌏 Asia':['Seoul','Bangkok','Singapore','Bali','Hong Kong','Taipei','Kuala Lumpur'],
-  '🇻🇳 Vietnam':['Hanoi','Ho Chi Minh City','Da Nang','Hoi An'],
-  '🇦🇺 Australia':['Sydney','Melbourne','Brisbane','Perth'],
-  '🌎 Latin America':['Mexico City','Buenos Aires','Lima','Bogota','Tulum'],
-  '🌍 Middle East & Africa':['Dubai','Istanbul','Cape Town','Marrakech'],
+  '🤠 Texas':['Dallas','Houston'],
+  '🏙️ US Northeast':['New York','Boston','Philadelphia'],
+  '🌾 US Midwest':['Chicago','Kansas City'],
+  '☀️ US West':['Los Angeles','San Francisco','Seattle','Miami'],
+  '🍑 US South':['Atlanta'],
+  '🇲🇽 Mexico':['Mexico City','Guadalajara','Monterrey'],
+  '🇨🇦 Canada':['Toronto','Vancouver'],
 };
 
 const CITY_COORDS = {
-  'Dallas':[32.7767,-96.7970],'Austin':[30.2672,-97.7431],'Houston':[29.7604,-95.3698],
-  'San Antonio':[29.4241,-98.4936],'New Orleans':[29.9511,-90.0715],'Nashville':[36.1627,-86.7816],
-  'Chicago':[41.8781,-87.6298],'New York':[40.7128,-74.0060],'Los Angeles':[34.0522,-118.2437],
-  'Miami':[25.7617,-80.1918],'San Francisco':[37.7749,-122.4194],'Seattle':[47.6062,-122.3321],
-  'London':[51.5074,-0.1278],'Paris':[48.8566,2.3522],'Barcelona':[41.3851,2.1734],
-  'Tokyo':[35.6762,139.6503],'Sydney':[-33.8688,151.2093],'Bangkok':[13.7563,100.5018],
-  'Singapore':[1.3521,103.8198],'Dubai':[25.2048,55.2708],'Seoul':[37.5665,126.9780],
-  'Buenos Aires':[-34.6037,-58.3816],'Mexico City':[19.4326,-99.1332],'Cape Town':[-33.9249,18.4241],
+  'Dallas':[32.7767,-96.7970],'Houston':[29.7604,-95.3698],
+  'New York':[40.7128,-74.0060],'Boston':[42.3601,-71.0589],'Philadelphia':[39.9526,-75.1652],
+  'Chicago':[41.8781,-87.6298],'Kansas City':[39.0997,-94.5786],
+  'Los Angeles':[34.0522,-118.2437],'San Francisco':[37.7749,-122.4194],'Seattle':[47.6062,-122.3321],'Miami':[25.7617,-80.1918],
+  'Atlanta':[33.7490,-84.3880],
+  'Mexico City':[19.4326,-99.1332],'Guadalajara':[20.6597,-103.3496],'Monterrey':[25.6866,-100.3161],
+  'Toronto':[43.6532,-79.3832],'Vancouver':[49.2827,-123.1207],
 };
 
 // 30 Lifestyle Filters
