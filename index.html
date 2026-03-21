@@ -4668,6 +4668,8 @@ const A = {
 
   filterRestaurants(list){
     return list.filter(r=>{
+      // Hide closed restaurants
+      if((r.indicators||[]).includes('closed')) return false;
       if(S.searchQ){
         const hay=[r.name,r.cuisine,r.neighborhood,r.description,...(r.tags||[])].join(' ').toLowerCase();
         // Normalize haystack for common spelling variations (e.g. "Beverly" matches "Beverley")
