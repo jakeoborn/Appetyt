@@ -139,12 +139,6 @@ input,textarea{font-family:inherit;font-size:inherit}
 
 /* TOP 50 SECTION */
 .top50-grid{display:flex;flex-direction:column;gap:0}
-.top50-row{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
-.top50-num{font-size:12px;font-weight:800;color:var(--gold);min-width:26px;text-align:right}
-.top50-info{flex:1;min-width:0}
-.top50-name{font-size:13px;font-weight:600;color:var(--text)}
-.top50-sub{font-size:11px;color:var(--text2)}
-.top50-score{font-size:13px;font-weight:800;color:var(--gold)}
 
 .map-chip{flex-shrink:0;background:rgba(255,255,255,.05);border:1px solid rgba(200,169,110,.12);color:var(--text2);font-size:11px;font-weight:500;padding:5px 12px;border-radius:20px;white-space:nowrap;cursor:pointer;transition:all .2s;font-family:var(--sans)}
 .map-chip.active{background:var(--gold-dim);border-color:rgba(200,169,110,.5);color:var(--gold2);font-weight:700}
@@ -4799,7 +4793,7 @@ const A = {
       const hhActive=r.hh&&this.isHHActive(r.hh,nowMins);
       const diffLabel=r.score>=95?'⭐ Legendary':r.score>=92&&r.reservation!=='walk-in'?'🔥 Hard':r.score>=88&&r.reservation!=='walk-in'?'📅 Book Ahead':'';
       const shortDesc=(r.description||'').split('.')[0];
-      html+=`<div onclick="A.openDetail(${r.id})" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:11px;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:rgba(201,168,76,.15)">
+      html+=`<div onclick="A.openDetail(${r.id})" style="background:linear-gradient(145deg,var(--card2),var(--card));border:1px solid rgba(200,169,110,.25);border-radius:12px;padding:11px;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:rgba(201,168,76,.15)">
         <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:6px;margin-bottom:4px">
           <div style="font-size:13px;font-weight:700;color:var(--text);line-height:1.3;flex:1">${r.name}</div>
           <div style="font-size:16px;font-weight:700;color:var(--gold);flex-shrink:0;line-height:1">${r.score}</div>
@@ -5021,10 +5015,10 @@ const A = {
           ${r.awards?`<div style="font-size:10px;color:var(--gold);margin-top:2px">🏆 ${r.awards}</div>`:''}
           ${r.bestOf?.length?`<div style="font-size:10px;color:var(--text3);margin-top:1px">${r.bestOf[0]}</div>`:''}
         </div>
-        <div class="top50-right">
+        <div class="top50-right" style="min-width:58px">
           <div class="top50-score">${r.score}</div>
-          ${diffLabel?`<div style="font-size:10px;color:var(--gold)">${diffLabel}</div>`:''}
-          <a href="${bookUrl}" target="_blank" onclick="event.stopPropagation()" style="font-size:10px;font-weight:700;color:var(--dark);background:var(--gold);padding:2px 7px;border-radius:5px;margin-top:2px">RES</a>
+          ${diffLabel?`<div style="font-size:9px;color:var(--gold);white-space:nowrap">${diffLabel}</div>`:''}
+          <a href="${bookUrl}" target="_blank" onclick="event.stopPropagation()" style="font-size:9px;font-weight:700;color:var(--dark);background:var(--gold);padding:2px 8px;border-radius:5px;margin-top:1px;text-align:center;display:inline-block">RES</a>
         </div>
       </div>`;
     }).join('');
@@ -10835,7 +10829,22 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
             style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
 
           <textarea id="ar-notes" placeholder="Notes (optional)" rows="2"
-            style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:12px;font-family:inherit;outline:none;resize:none"></textarea>
+            style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none;resize:none"></textarea>
+
+          <input id="ar-link" type="url" placeholder="Link -- booking URL, email link, etc (optional)"
+            style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
+
+          <div style="margin-bottom:12px">
+            <label style="display:flex;align-items:center;gap:8px;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;cursor:pointer">
+              <span style="font-size:16px">📎</span>
+              <span id="ar-file-label" style="font-size:13px;color:var(--text3)">Attach screenshot or confirmation (optional)</span>
+              <input id="ar-file" type="file" accept="image/*,.pdf" onchange="A.handleReservationFile(this)" style="display:none">
+            </label>
+            <div id="ar-file-preview" style="display:none;margin-top:6px;padding:8px 10px;background:rgba(62,184,168,.08);border:1px solid rgba(62,184,168,.2);border-radius:8px;font-size:11px;color:#3eb8a8;display:none">
+              <span id="ar-file-name"></span>
+              <button onclick="A.clearReservationFile()" style="margin-left:8px;font-size:10px;color:var(--text3);background:none;border:none;cursor:pointer">✕ Remove</button>
+            </div>
+          </div>
 
           <button onclick="A.submitReservation('${category}')"
             style="width:100%;background:var(--gold);color:var(--dark);font-weight:800;font-size:14px;padding:13px;border-radius:12px;border:none;cursor:pointer">
@@ -10844,6 +10853,32 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         </div>
       </div>`;
     m.style.display='block';
+  },
+
+  _reservationFileData: null,
+
+  handleReservationFile(input){
+    const file = input.files?.[0];
+    if(!file) return;
+    const label = document.getElementById('ar-file-label');
+    const preview = document.getElementById('ar-file-preview');
+    const fname = document.getElementById('ar-file-name');
+    if(label) label.textContent = file.name;
+    if(fname) fname.textContent = '📎 ' + file.name + ' (' + (file.size/1024).toFixed(0) + ' KB)';
+    if(preview) preview.style.display = 'flex';
+    const reader = new FileReader();
+    reader.onload = (e) => { A._reservationFileData = { name: file.name, type: file.type, data: e.target.result }; };
+    reader.readAsDataURL(file);
+  },
+
+  clearReservationFile(){
+    A._reservationFileData = null;
+    const label = document.getElementById('ar-file-label');
+    const preview = document.getElementById('ar-file-preview');
+    const input = document.getElementById('ar-file');
+    if(label) label.textContent = 'Attach screenshot or confirmation (optional)';
+    if(preview) preview.style.display = 'none';
+    if(input) input.value = '';
   },
 
   async submitReservation(category){
@@ -10859,7 +10894,10 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
       address: document.getElementById('ar-address')?.value?.trim(),
       cost: document.getElementById('ar-cost')?.value,
       notes: document.getElementById('ar-notes')?.value?.trim(),
+      link: document.getElementById('ar-link')?.value?.trim(),
+      attachment: A._reservationFileData || null,
     };
+    A._reservationFileData = null;
     document.getElementById('event-detail-modal').style.display='none';
     try{
       await TRIPS.addReservation(item);
