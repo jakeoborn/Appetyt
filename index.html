@@ -48,11 +48,11 @@ input,textarea{font-family:inherit;font-size:inherit}
 
 /* CONTENT */
 #desktop-main{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
-#content{flex:1 1 0;min-height:0;height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:pan-y;overscroll-behavior-y:contain}
-.view{display:none}
+#content{flex:1 1 0;min-height:0;height:0;overflow:hidden;position:relative}
+.view{display:none;position:absolute;inset:0;overflow-y:scroll;-webkit-overflow-scrolling:touch}
 .view.active{display:block}
-#local-content,#trips-content{-webkit-overflow-scrolling:touch;touch-action:pan-y}
-#local-view.active,#trips-view.active{position:relative}
+#mapnear-view{overflow:hidden}
+#mapnear-view.active{display:flex!important}
 
 /* HOME SEARCH + FILTERS */
 #search-bar{padding:12px 14px 6px;position:sticky;top:0;background:var(--dark);z-index:10}
@@ -3640,11 +3640,9 @@ const A = {
     if(t==='bills') this.renderBills();
     if(t==='lists'){this.renderLists();setTimeout(()=>this.listsSub('lists'),50);}
     if(t==='profile'){this.tab('lists');return;}
-    const ct=document.getElementById('content');
-    ct.scrollTop=0;
-    // Force iOS Safari to recalculate scroll area after view switch
-    ct.style.overflowY='hidden';
-    requestAnimationFrame(()=>{ct.style.overflowY='auto';});
+    // Reset scroll position on the active view
+    const activeView=document.getElementById(t+'-view');
+    if(activeView) activeView.scrollTop=0;
   },
 
   // -- MAP & NEAR ME -----------------------------------------
@@ -13243,7 +13241,7 @@ function showCruisePortList() {
     document.body.appendChild(modal);
   }
   modal.innerHTML = `
-    <div style="width:100%;max-width:430px;background:linear-gradient(180deg,#161c2c,#0f1320);border-radius:22px 22px 0 0;border:1px solid rgba(200,169,110,.12);border-bottom:none;max-height:88vh;overflow-y:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:30px;touch-action:pan-y">
+    <div style="width:100%;max-width:430px;background:linear-gradient(180deg,#161c2c,#0f1320);border-radius:22px 22px 0 0;border:1px solid rgba(200,169,110,.12);border-bottom:none;max-height:88vh;overflow-y:scroll;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:30px">
       <div style="padding:20px 18px 0">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
           <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:#e8dfc8;font-style:italic">Port Schedule</div>
@@ -13318,7 +13316,7 @@ function showPortGuide(code) {
         <button id="pg-tab-eat" onclick="pgShowTab('eat','${code}')" style="flex:1;padding:8px 4px;background:none;border:none;border-bottom:2px solid transparent;color:#5a5040;font-size:11px;font-weight:600;cursor:pointer;font-family:var(--sans)">🍽 Eat</button>
         <button id="pg-tab-do" onclick="pgShowTab('do','${code}')" style="flex:1;padding:8px 4px;background:none;border:none;border-bottom:2px solid transparent;color:#5a5040;font-size:11px;font-weight:600;cursor:pointer;font-family:var(--sans)">🎯 Do</button>
       </div>
-      <div id="pg-tab-content" style="flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:14px 16px 40px;touch-action:pan-y">${buildPicksHTML(p)}</div>
+      <div id="pg-tab-content" style="flex:1;overflow-y:scroll;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:14px 16px 40px;min-height:0">${buildPicksHTML(p)}</div>
     </div>`;
 }
 
