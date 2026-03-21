@@ -10787,6 +10787,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
   openAddReservation(category='hotel', preCity=''){
     const trip = TRIPS.current;
     if(!trip) return;
+    const isCruiseTrip = (trip.name||'').toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i);
     const cities = Array.isArray(trip.cities)?trip.cities:(trip.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
     const catIcon = {hotel:'🏨',flight:'✈️',activity:'🎭',restaurant:'🍽️',car:'🚗',note:'📋',other:'📌'};
     const catLabel = {hotel:'Hotel / Accommodation',flight:'Flight / Transport',activity:'Activity / Experience',restaurant:'Restaurant Reservation',car:'Car Rental',note:'Note / Reminder',other:'Other'};
@@ -13234,6 +13235,24 @@ const PORT_ACTIVITIES = {
     {icon:"🎭",name:"The Manor Entertainment",desc:"Live show at The Manor nightclub -- check the ship app for times",tag:"Evening",price:"Free",book:"",info:""},
   ],
 };
+
+function sendMorningBriefTest(){
+  var m = document.getElementById('event-detail-modal');
+  if(!m) return;
+  m.innerHTML = '<div style="position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:2000;display:flex;align-items:flex-end" onclick="if(event.target===this)this.style.display=\'none\'">' +
+    '<div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:92vh;overflow-y:scroll;-webkit-overflow-scrolling:touch;padding:20px 16px 40px">' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">' +
+        '<div style="font-size:16px;font-weight:700;color:#3eb8a8">🌅 Morning Cruise Briefing</div>' +
+        '<button onclick="document.getElementById(\'event-detail-modal\').style.display=\'none\'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>' +
+      '</div>' +
+      '<div style="font-size:11px;color:var(--text3);margin-bottom:16px;line-height:1.6">Get a personalised briefing each morning of your cruise -- arrival times, top picks, and what not to miss. Enter your email below.</div>' +
+      '<input id="brief-name" type="text" placeholder="Your name (optional)" autocomplete="given-name" style="width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(200,169,110,.1);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">' +
+      '<input id="brief-email" type="email" placeholder="your@email.com" autocomplete="email" style="width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(200,169,110,.1);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:12px;font-family:inherit;outline:none">' +
+      '<button onclick="A.subscribeBriefing()" style="width:100%;padding:13px;background:linear-gradient(135deg,#3eb8a8,#267a6e);border:none;border-radius:12px;color:#fff;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit">Subscribe to Morning Briefing</button>' +
+      '<div id="brief-status" style="margin-top:8px;font-size:11px;display:none"></div>' +
+    '</div></div>';
+  m.style.display='block';
+}
 
 function showCruisePortList() {
   let modal = document.getElementById('port-list-modal');
