@@ -48,7 +48,7 @@ input,textarea{font-family:inherit;font-size:inherit}
 
 /* CONTENT */
 #desktop-main{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
-#content{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:pan-y;overscroll-behavior-y:contain}
+#content{flex:1 1 0;min-height:0;height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:pan-y;overscroll-behavior-y:contain}
 .view{display:none}
 .view.active{display:block}
 
@@ -13126,6 +13126,104 @@ const CRUISE_PORTS = [
    ]}
 ];
 
+/* -- PORT RESTAURANTS (Eat tab) ---------------------------------- */
+const PORT_RESTAURANTS = {
+  SJU: [
+    {icon:"🍸",name:"La Factoria",desc:"Labyrinthine cocktail bar in Old San Juan -- legendary rum drinks across multiple hidden rooms",tag:"James Beard Winner",price:"$$",book:"",info:"https://www.lafactoria.pr"},
+    {icon:"🍗",name:"La Casita de Rones",desc:"Mofongo, tostones & rum flights inside a charming colonial courtyard",tag:"Old San Juan",price:"$$",book:"",info:""},
+    {icon:"🦐",name:"Marmalade",desc:"Upscale tasting menus with local ingredients -- plantain gnocchi, red snapper ceviche",tag:"Reserve Ahead",price:"$$$",book:"https://www.opentable.com/r/marmalade-restaurant-and-wine-bar-san-juan",info:"https://www.marmaladepr.com"},
+    {icon:"🌮",name:"El Jibarito",desc:"No-frills local icon for jibarito sandwiches, pernil & arroz con gandules",tag:"Cash Only · Cheap Eats",price:"$",book:"",info:""},
+    {icon:"🍽️",name:"La Bodeguita del Medio",desc:"Cuban-inspired dining with live music in Old San Juan",tag:"Great for Groups",price:"$$",book:"",info:""},
+    {icon:"🍧",name:"Señor Paleta",desc:"Fresh tropical fruit popsicles -- passion fruit, coconut, guava",tag:"Walk-Up · $4",price:"$",book:"",info:""},
+  ],
+  TOV: [
+    {icon:"🍹",name:"Myett's Garden Grille",desc:"Beachfront Caribbean plates at Cane Garden Bay",tag:"Local Favourite",price:"$$",book:"",info:"https://www.myetts.com"},
+    {icon:"🐟",name:"The Dove",desc:"Intimate French-Caribbean fine dining -- pan-seared wahoo, conch bisque",tag:"Dinner · Reserve",price:"$$$",book:"",info:""},
+    {icon:"🍔",name:"D' Best Cup",desc:"Legendary roti wraps, fresh juices & johnnycakes near the ferry dock",tag:"Quick Bite · $8",price:"$",book:"",info:""},
+    {icon:"🍹",name:"Soggy Dollar Bar",desc:"Home of the Painkiller cocktail -- swim ashore to White Bay",tag:"Iconic · Cash Only",price:"$$",book:"",info:""},
+  ],
+  BGI: [
+    {icon:"🍹",name:"Harbour Lights Beach Club",desc:"Rum punches, fish cakes & live music nightly",tag:"Institution",price:"$$",book:"https://www.harbourlightsbarbados.com/reservations",info:"https://www.harbourlightsbarbados.com"},
+    {icon:"🐟",name:"Oistins Fish Fry",desc:"Legendary open-air fish market -- grilled marlin, swordfish, flying fish cutters",tag:"Friday Night Best",price:"$",book:"",info:""},
+    {icon:"🍽️",name:"The Cliff",desc:"Torchlit cliffside fine dining over the Caribbean Sea",tag:"Splurge · Reserve",price:"$$$$",book:"",info:"https://www.thecliffbarbados.com"},
+    {icon:"🥧",name:"Cuz's Fish Stand",desc:"Roadside fish cutters & macaroni pie -- the real Bajan lunch",tag:"Cheap Eats · $6",price:"$",book:"",info:""},
+  ],
+  SLU: [
+    {icon:"🍽️",name:"Coal Pot Restaurant",desc:"Waterfront Creole dining in a converted coal shed since 1966",tag:"Reserve Ahead",price:"$$$",book:"",info:"https://coalpotstlucia.com"},
+    {icon:"🦀",name:"Orlando's Restaurant",desc:"Family-run Creole kitchen -- jerk chicken, green fig & saltfish, breadfruit chips",tag:"Local Gem",price:"$$",book:"",info:""},
+    {icon:"🍫",name:"Hotel Chocolat Rabot",desc:"Bean-to-bar chocolate estate with cacao-infused tasting menu amid the Pitons",tag:"Book Ahead",price:"$$$",book:"",info:"https://www.hotelchocolat.com/uk/rabot-hotel.html"},
+    {icon:"🍹",name:"Marigot Bay Rum Bar",desc:"Sunset rum punches overlooking one of the Caribbean's most beautiful bays",tag:"Scenic · Worth the Drive",price:"$$",book:"",info:""},
+  ],
+  ANU: [
+    {icon:"🍽️",name:"Sheer Rocks",desc:"Cliffside dining suspended directly above the sea",tag:"Sunset Essential",price:"$$$$",book:"",info:""},
+    {icon:"🦞",name:"Papa Zouk",desc:"Legendary rum bar & seafood shack -- 260+ rums, garlic lobster, Creole fish",tag:"Worth the Taxi",price:"$$",book:"",info:""},
+    {icon:"🍖",name:"Roti King",desc:"Massive curry-stuffed roti wraps -- the local lunch staple since the 80s",tag:"Cheap Eats · $7",price:"$",book:"",info:""},
+    {icon:"🍹",name:"Catherine's Café Plage",desc:"Chic French bistro on Pigeon Beach -- moules frites, rosé on the sand",tag:"French Harbour",price:"$$$",book:"",info:""},
+  ],
+  SXM: [
+    {icon:"🍽️",name:"Le Pressoir",desc:"French-Creole cuisine on the quiet French side",tag:"French Side",price:"$$$",book:"",info:""},
+    {icon:"🦞",name:"The Hideaway",desc:"Beachside lobster & grilled catch of the day at Grand Case -- the gourmet strip",tag:"Grand Case · Reserve",price:"$$$",book:"",info:""},
+    {icon:"🥖",name:"Sarafina's",desc:"French bakery with fresh croissants, tartines & espresso on the Dutch side",tag:"Breakfast Spot",price:"$",book:"",info:""},
+    {icon:"🍹",name:"Sunset Bar at Maho",desc:"Rum cocktails under the flight path -- watch the planes while you sip",tag:"Bucket List",price:"$$",book:"",info:""},
+    {icon:"🍔",name:"Sunset Bar & Grill",desc:"Eat at Maho Beach while planes land overhead -- bucket-list meal",tag:"$$ · Maho",price:"$$",book:"",info:""},
+  ],
+  SJU2: [
+    {icon:"☕",name:"Kasalta Bakery",desc:"Mallorcas, café con leche -- the definitive San Juan morning",tag:"Pre-Flight Essential",price:"$",book:"",info:""},
+    {icon:"🍳",name:"Pinky's West",desc:"Hearty brunch spot -- stuffed French toast, huevos rancheros, fresh juices",tag:"Condado · Open 7 AM",price:"$$",book:"",info:""},
+  ],
+  SEA: [],
+};
+
+/* -- PORT ACTIVITIES (Do tab) ---------------------------------- */
+const PORT_ACTIVITIES = {
+  SJU: [
+    {icon:"🏰",name:"El Morro Fort",desc:"16th-century Spanish fortress with panoramic ocean views",tag:"2 hrs · $10",price:"$10",book:"https://www.recreation.gov/ticket/facility/300010",info:"https://www.nps.gov/saju"},
+    {icon:"🌊",name:"Ocean Park Beach",desc:"Calm waters away from the cruise crowds",tag:"10 min from port",price:"Free",book:"",info:""},
+    {icon:"🚶",name:"Old San Juan Walk",desc:"Colorful Spanish colonial architecture on cobblestone streets",tag:"Free · Self-Guided",price:"Free",book:"",info:""},
+  ],
+  TOV: [
+    {icon:"⛵",name:"Jost Van Dyke Sail",desc:"Day sail to White Bay and Foxy's beach bar -- a BVI essential",tag:"Book Ahead · ~$100",price:"~$100",book:"",info:""},
+    {icon:"🤿",name:"The Indians Snorkel",desc:"Four dramatic pinnacles -- top snorkel spot in the BVI",tag:"~$60 with guide",price:"~$60",book:"",info:""},
+    {icon:"🏖️",name:"Cane Garden Bay",desc:"Stunning curved bay -- swim, relax and rum drinks at beach bars",tag:"Free · 25 min",price:"Free",book:"",info:""},
+    {icon:"🏔️",name:"Sage Mountain Hike",desc:"Highest peak in BVI -- lush rainforest trail with sea views",tag:"$3 · 1.5 hrs",price:"$3",book:"",info:""},
+  ],
+  BGI: [
+    {icon:"🥃",name:"Mount Gay Rum Tour",desc:"World's oldest rum distillery (1703) -- history, barrel room and tasting",tag:"$20 · 1.5 hrs",price:"$20",book:"https://www.mountgayrum.com/en-us/visit/",info:"https://www.mountgayrum.com"},
+    {icon:"🏖️",name:"Carlisle Bay Snorkel",desc:"Calm bay with sunken ships just meters from shore -- easy for all levels",tag:"Free · 5 min",price:"Free",book:"",info:""},
+    {icon:"🐒",name:"Barbados Wildlife Reserve",desc:"Walk among free-roaming green monkeys in a mahogany forest",tag:"~$15 · 1.5 hrs",price:"~$15",book:"",info:""},
+    {icon:"🏛️",name:"St. Nicholas Abbey",desc:"Jacobean plantation great house from 1658 -- one of only three in the Americas",tag:"~$20 · Historic",price:"~$20",book:"",info:""},
+  ],
+  SLU: [
+    {icon:"🌋",name:"Sulphur Springs Volcano",desc:"World's only drive-in volcano -- bubbling sulfur pools and guided tours",tag:"Unmissable · ~$10",price:"~$10",book:"https://www.sulphurspringsstlucia.com",info:""},
+    {icon:"🌿",name:"Diamond Falls Botanical Garden",desc:"Waterfalls, volcanic mineral baths, and lush tropical gardens",tag:"$15 · 2 hrs",price:"$15",book:"https://diamondstlucia.com",info:""},
+    {icon:"⛵",name:"Piton Sail & Snorkel",desc:"See the iconic twin peaks from the water and snorkel the reefs",tag:"~$90 · Full Day",price:"~$90",book:"",info:""},
+    {icon:"🏖️",name:"Anse Chastanet Beach",desc:"Volcanic black sand beach beneath the Pitons -- dramatic and rarely crowded",tag:"Free · Scenic",price:"Free",book:"",info:""},
+  ],
+  ANU: [
+    {icon:"🏰",name:"Nelson's Dockyard",desc:"UNESCO World Heritage 18th-century British naval dockyard -- beautifully restored",tag:"$8 · English Harbour",price:"$8",book:"https://www.nationalparksantigua.com",info:"https://www.nationalparksantigua.com/nelsons-dockyard"},
+    {icon:"🏖️",name:"Dickenson Bay",desc:"Best swimming beach on the island -- white sand, calm water, beach bars",tag:"Free · 15 min from port",price:"Free",book:"",info:""},
+    {icon:"🤿",name:"Cades Reef Snorkel",desc:"Antigua's largest protected reef -- turtles, rays, barracuda in crystal clear water",tag:"~$45 with guide",price:"~$45",book:"",info:""},
+    {icon:"🎯",name:"Antigua Rainforest Canopy",desc:"Zip-line through the rainforest -- 21 platforms, longest zip is 300m",tag:"~$95 · 3 hrs",price:"~$95",book:"",info:""},
+    {icon:"⛵",name:"365 Beaches Charter",desc:"Antigua's legendary beach-a-day count -- hire a boat and island hop",tag:"Full Day",price:"Varies",book:"",info:""},
+  ],
+  SXM: [
+    {icon:"✈️",name:"Maho Beach Plane Watch",desc:"Jumbo jets land 50ft overhead -- check KLM 747 arrival times before you go",tag:"Iconic · Free",price:"Free",book:"",info:""},
+    {icon:"🏖️",name:"Orient Bay Beach Club",desc:"French Riviera of the Caribbean -- beach bars, watersports, beautiful scene",tag:"French Side · ~$25 chair",price:"~$25",book:"",info:""},
+    {icon:"🛒",name:"Marigot French Market",desc:"French-side outdoor market -- spices, local rum, art, crafts by the marina",tag:"Free · French Side",price:"Free",book:"",info:""},
+    {icon:"⛵",name:"Pinel Island Picnic",desc:"2-minute ferry to a tiny island paradise -- hammocks and crystal water",tag:"~$10 ferry · Paradise",price:"~$10",book:"",info:""},
+    {icon:"🛍️",name:"Front Street Shopping",desc:"Duty-free shopping -- rum, jewellery, crafts. No sales tax",tag:"Great Value",price:"Free",book:"",info:""},
+  ],
+  SJU2: [
+    {icon:"🛍️",name:"Last-Minute Old San Juan",desc:"Ron del Barrilito rum, cigars, hot sauce -- one hour of shopping is plenty",tag:"Souvenirs · 1 hr",price:"Varies",book:"",info:""},
+    {icon:"🚕",name:"Airport Transfer",desc:"Pre-book Uber -- mornings are extremely busy post-debark at SJU",tag:"Allow 90 min · ~$20",price:"~$20",book:"",info:""},
+  ],
+  SEA: [
+    {icon:"💆",name:"The Redemption Spa",desc:"Valiant Lady's full-service spa -- book ahead, treatments sell out",tag:"Book Onboard",price:"Varies",book:"",info:""},
+    {icon:"🏊",name:"Richard's Rooftop Pool",desc:"Adults-only rooftop pool with the best views on the ship",tag:"Top Deck",price:"Free",book:"",info:""},
+    {icon:"🍽️",name:"Specialty Dining Night",desc:"Book The Wake or Extra Virgin for tonight -- best tables available",tag:"Reserve Now",price:"$$-$$$",book:"",info:""},
+    {icon:"🎭",name:"The Manor Entertainment",desc:"Live show at The Manor nightclub -- check the ship app for times",tag:"Evening",price:"Free",book:"",info:""},
+  ],
+};
 
 function showCruisePortList() {
   let modal = document.getElementById('port-list-modal');
