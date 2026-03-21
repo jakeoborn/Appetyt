@@ -9769,7 +9769,24 @@ const A = {
           <div style="font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:12px">
             Paste a confirmation email below. Works with: OpenTable, Resy, Tock, Delta, American Airlines, United, Ticketmaster, Hotels.com, Booking.com, Airbnb, and more.
           </div>
-          <textarea id="email-paste-input" placeholder="Paste your confirmation email here...&#10;&#10;Example:&#10;Your reservation at Tatsu Dallas is confirmed.&#10;Date: Saturday, March 22, 2026&#10;Time: 7:45 PM · Party of 2&#10;Confirmation: TK-482991" style="width:100%;height:180px;background:var(--dark);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;outline:none;font-size:12px;line-height:1.6;resize:none;font-family:inherit"></textarea>
+          <div style="display:flex;gap:8px;margin-bottom:12px">
+            <button id="import-tab-text" onclick="A.switchImportTab('text')" style="flex:1;padding:8px;border-radius:8px;border:1px solid var(--gold);background:rgba(200,169,110,.15);color:var(--gold);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">📧 Paste Email</button>
+            <button id="import-tab-photo" onclick="A.switchImportTab('photo')" style="flex:1;padding:8px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">📸 Screenshot</button>
+          </div>
+          <div id="import-text-panel">
+            <textarea id="email-paste-input" placeholder="Paste your confirmation email here...&#10;&#10;Example:&#10;Your reservation at Tatsu Dallas is confirmed.&#10;Date: Saturday, March 22, 2026&#10;Time: 7:45 PM · Party of 2&#10;Confirmation: TK-482991" style="width:100%;height:180px;background:var(--dark);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;outline:none;font-size:12px;line-height:1.6;resize:none;font-family:inherit"></textarea>
+          </div>
+          <div id="import-photo-panel" style="display:none">
+            <input type="file" id="screenshot-input" accept="image/*" capture="environment" style="display:none" onchange="A.handleScreenshot(this)">
+            <div id="screenshot-preview" onclick="document.getElementById('screenshot-input').click()" style="width:100%;min-height:160px;background:var(--dark);border:2px dashed rgba(200,169,110,.2);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;overflow:hidden;position:relative">
+              <div id="screenshot-placeholder" style="text-align:center;padding:20px">
+                <div style="font-size:36px;margin-bottom:8px">📸</div>
+                <div style="font-size:13px;font-weight:600;color:var(--text2)">Tap to upload screenshot</div>
+                <div style="font-size:11px;color:var(--text3);margin-top:4px">Take a photo or choose from gallery</div>
+              </div>
+              <img id="screenshot-img" style="display:none;width:100%;border-radius:10px;object-fit:contain;max-height:300px">
+            </div>
+          </div>
           <div id="email-parse-result" style="display:none;margin-top:10px;background:var(--dark);border:1px solid var(--border);border-radius:10px;padding:12px;font-size:12px;color:var(--text);line-height:1.7"></div>
           <div style="display:flex;gap:8px;margin-top:12px">
             <button onclick="A.parseEmail()" id="parse-btn" style="flex:1;background:var(--gold);color:var(--dark);font-weight:800;font-size:13px;padding:12px;border-radius:10px;border:none">🤖 Parse with AI</button>
@@ -9787,6 +9804,100 @@ const A = {
   },
 
   _parsedEmailData: null,
+  _screenshotBase64: null,
+
+  switchImportTab(tab){
+    const textTab=document.getElementById('import-tab-text');
+    const photoTab=document.getElementById('import-tab-photo');
+    const textPanel=document.getElementById('import-text-panel');
+    const photoPanel=document.getElementById('import-photo-panel');
+    const parseBtn=document.getElementById('parse-btn');
+    if(tab==='text'){
+      textTab.style.cssText='flex:1;padding:8px;border-radius:8px;border:1px solid var(--gold);background:rgba(200,169,110,.15);color:var(--gold);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit';
+      photoTab.style.cssText='flex:1;padding:8px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit';
+      textPanel.style.display='block';
+      photoPanel.style.display='none';
+      if(parseBtn) parseBtn.onclick=function(){A.parseEmail()};
+    } else {
+      photoTab.style.cssText='flex:1;padding:8px;border-radius:8px;border:1px solid var(--gold);background:rgba(200,169,110,.15);color:var(--gold);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit';
+      textTab.style.cssText='flex:1;padding:8px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit';
+      textPanel.style.display='none';
+      photoPanel.style.display='block';
+      if(parseBtn) parseBtn.onclick=function(){A.parseScreenshot()};
+    }
+  },
+
+  handleScreenshot(input){
+    const file=input.files?.[0];
+    if(!file) return;
+    const reader=new FileReader();
+    reader.onload=function(e){
+      const img=document.getElementById('screenshot-img');
+      const placeholder=document.getElementById('screenshot-placeholder');
+      if(img){img.src=e.target.result;img.style.display='block'}
+      if(placeholder) placeholder.style.display='none';
+      A._screenshotBase64=e.target.result.split(',')[1];
+    };
+    reader.readAsDataURL(file);
+  },
+
+  async parseScreenshot(){
+    if(!this._screenshotBase64){this.showToast('Please upload a screenshot first');return}
+    const btn=document.getElementById('parse-btn');
+    const resultEl=document.getElementById('email-parse-result');
+    const saveRow=document.getElementById('email-save-row');
+    if(btn){btn.textContent='🤖 Reading screenshot...';btn.disabled=true}
+    if(resultEl){resultEl.style.display='block';resultEl.innerHTML='<span style="color:var(--text3)">Analyzing your screenshot...</span>'}
+    try{
+      const trip=TRIPS.current;
+      const cities=Array.isArray(trip?.cities)?trip.cities:(trip?.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
+      const res=await fetch('https://api.anthropic.com/v1/messages',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true',...(S.apiKey?{'x-api-key':S.apiKey}:{})},
+        body:JSON.stringify({
+          model:'claude-sonnet-4-20250514',
+          max_tokens:600,
+          system:`You extract structured booking information from confirmation screenshots. Always respond with ONLY valid JSON, no markdown, no backticks. Extract these fields:
+{
+  "type": "reservation|flight|hotel|ticket|cruise|other",
+  "title": "short descriptive title",
+  "restaurant": "restaurant name if applicable",
+  "date": "formatted date like March 22, 2026",
+  "time": "time if applicable",
+  "location": "venue/address/airport/ship name",
+  "confirmationCode": "confirmation or booking code",
+  "partySize": "number of guests if applicable",
+  "notes": "any other key details in one sentence",
+  "confidence": "high|medium|low"
+}
+If a field is not found, use null.`,
+          messages:[{role:'user',content:[
+            {type:'image',source:{type:'base64',media_type:'image/jpeg',data:this._screenshotBase64}},
+            {type:'text',text:'Extract booking info from this confirmation screenshot.'}
+          ]}]
+        })
+      });
+      const data=await res.json();
+      const raw=data.content?.[0]?.text||'{}';
+      const parsed=JSON.parse(raw.replace(/```json|```/g,'').trim());
+      this._parsedEmailData=parsed;
+      const icons={reservation:'🍽️',flight:'✈️',hotel:'🏨',ticket:'🎟️',cruise:'🚢',other:'📌'};
+      if(resultEl){
+        resultEl.innerHTML=`
+          <div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px">${icons[parsed.type]||'📌'} ${parsed.type?.toUpperCase()||'BOOKING'} DETECTED</div>
+          <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">${parsed.title||parsed.restaurant||'Booking'}</div>
+          ${parsed.date?'<div style="color:var(--text2)">📅 '+parsed.date+(parsed.time?' at '+parsed.time:'')+'</div>':''}
+          ${parsed.location?'<div style="color:var(--text2)">📍 '+parsed.location+'</div>':''}
+          ${parsed.confirmationCode?'<div style="color:var(--text2)">🔖 '+parsed.confirmationCode+'</div>':''}
+          ${parsed.partySize?'<div style="color:var(--text2)">👥 Party of '+parsed.partySize+'</div>':''}
+          ${parsed.notes?'<div style="color:var(--text3);margin-top:4px;font-size:11px">'+parsed.notes+'</div>':''}`;
+      }
+      if(saveRow) saveRow.style.display='block';
+    }catch(e){
+      if(resultEl) resultEl.innerHTML='<span style="color:var(--red)">Error reading screenshot: '+e.message+'</span>';
+    }
+    if(btn){btn.textContent='🤖 Parse with AI';btn.disabled=false}
+  },
 
   async parseEmail(){
     const text=document.getElementById('email-paste-input')?.value?.trim();
@@ -13273,7 +13384,13 @@ function showCruisePortList() {
         <div style="font-size:11px;color:#5a5040;margin-bottom:16px">Southern Caribbean · Valiant Lady · Mar 21-28, 2026</div>
       </div>
       <div style="padding:0 14px">
-        ${CRUISE_PORTS.map(p => `
+        ${CRUISE_PORTS.map(p => {
+          const saved = JSON.parse(localStorage.getItem('appetyt_port_saves')||'{}');
+          const eatSaved = (saved[p.code]||[]).length;
+          const doSaved = (saved[p.code+'_do']||[]).length;
+          const totalSaved = eatSaved + doSaved;
+          const hasData = (PORT_RESTAURANTS[p.code]||[]).length > 0;
+          return `
           <div onclick="document.getElementById('port-list-modal').remove();showPortGuide('${p.code}')"
             style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid rgba(200,169,110,.08);border-radius:14px;margin-bottom:8px;cursor:pointer;touch-action:manipulation"
             onmouseenter="this.style.borderColor='rgba(200,169,110,.3)'" onmouseleave="this.style.borderColor='rgba(200,169,110,.08)'">
@@ -13282,9 +13399,13 @@ function showCruisePortList() {
               <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:#e8dfc8;font-style:italic">${p.name}</div>
               <div style="font-size:10px;color:#5a5040;margin-top:1px">${p.country}</div>
               <div style="font-size:10px;color:#3a3228;margin-top:3px">${p.day}${p.hours ? ' &nbsp;·&nbsp; ⏱ '+p.hours+'h ashore' : p.depart === 'Debark' ? ' &nbsp;·&nbsp; Debark Day' : ' &nbsp;·&nbsp; Departs '+p.depart}</div>
+              ${totalSaved>0?'<div style="font-size:9px;color:var(--gold);margin-top:4px;font-weight:700">❤️ '+totalSaved+' saved</div>':''}
             </div>
-            <div style="font-size:11px;color:rgba(62,184,168,.7);font-weight:600;flex-shrink:0">→</div>
-          </div>`).join('')}
+            <div style="display:flex;flex-direction:column;align-items:center;gap:2px;flex-shrink:0">
+              ${hasData?'<div style="font-size:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(62,184,168,.7)">Explore</div>':''}
+              <div style="font-size:14px;color:rgba(62,184,168,.7);font-weight:600">→</div>
+            </div>
+          </div>`;}).join('')}
       </div>
     </div>`;
 }
@@ -13375,13 +13496,23 @@ function pgShowTab(tab, code) {
     content.innerHTML = buildPicksHTML(p) + '<div style="height:60px"></div>';
   } else if (tab === 'eat') {
     const rests = PORT_RESTAURANTS[code] || [];
+    const saved = JSON.parse(localStorage.getItem('appetyt_port_saves')||'{}');
+    const portSaved = saved[code] || [];
     content.innerHTML = `
-      <div style="font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3228;margin-bottom:12px">🍽️ Where to Eat in ${p.name}</div>
-      ${rests.map(r => `
-        <div style="background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid rgba(200,169,110,.08);border-radius:13px;padding:12px;margin-bottom:8px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3228">🍽️ Where to Eat in ${p.name}</div>
+        <div style="font-size:10px;color:#5a5040">${rests.length} spots</div>
+      </div>
+      ${rests.map((r,i) => {
+        const isSaved = portSaved.includes(r.name);
+        return `
+        <div style="background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid ${isSaved?'rgba(200,169,110,.25)':'rgba(200,169,110,.08)'};border-radius:13px;padding:12px;margin-bottom:8px;transition:border-color .2s">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
             <div style="display:flex;align-items:center;gap:7px"><span style="font-size:18px">${r.icon}</span><div style="font-size:13px;font-weight:600;color:#e8dfc8">${r.name}</div></div>
-            <div style="font-size:12px;color:#c8a96e;font-weight:600">${r.price}</div>
+            <div style="display:flex;align-items:center;gap:8px">
+              <div style="font-size:12px;color:#c8a96e;font-weight:600">${r.price}</div>
+              <button onclick="togglePortSave('${code}','${r.name.replace(/'/g,"\\'")}');pgShowTab('eat','${code}')" style="background:none;border:none;font-size:16px;cursor:pointer;padding:2px;opacity:${isSaved?'1':'.4'};transition:opacity .2s">${isSaved?'❤️':'🤍'}</button>
+            </div>
           </div>
           <div style="font-size:11px;color:#5a5040;line-height:1.45;margin-bottom:6px">${r.desc}</div>
           <div style="font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase;margin-bottom:8px">${r.tag}</div>
@@ -13389,16 +13520,28 @@ function pgShowTab(tab, code) {
             ${r.book ? '<a href="'+r.book+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:linear-gradient(135deg,#c8a96e,#9a6e28);border-radius:8px;color:#0a0600;font-size:11px;font-weight:700;text-decoration:none">Book →</a>' : ''}
             ${r.info ? '<a href="'+r.info+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:rgba(255,255,255,.05);border:1px solid rgba(200,169,110,.15);border-radius:8px;color:#c8a96e;font-size:11px;font-weight:600;text-decoration:none">More Info</a>' : ''}
           </div>
-        </div>`).join('')}<div style="height:60px"></div>`;
+        </div>`;}).join('')}
+      ${portSaved.length>0?'<div style="margin-top:12px;padding:10px 12px;background:rgba(200,169,110,.06);border:1px solid rgba(200,169,110,.12);border-radius:10px"><div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px">❤️ Your '+p.name+' List</div><div style="font-size:11px;color:#9a8e72">'+portSaved.join(' · ')+'</div></div>':''}
+    <div style="height:60px"></div>`;
   } else {
     const acts = PORT_ACTIVITIES[code] || [];
+    const saved = JSON.parse(localStorage.getItem('appetyt_port_saves')||'{}');
+    const portSaved = saved[code+'_do'] || [];
     content.innerHTML = `
-      <div style="font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3228;margin-bottom:12px">🎯 Things to Do in ${p.name}</div>
-      ${acts.map(a => `
-        <div style="background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid rgba(200,169,110,.08);border-radius:13px;padding:12px;margin-bottom:8px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3228">🎯 Things to Do in ${p.name}</div>
+        <div style="font-size:10px;color:#5a5040">${acts.length} activities</div>
+      </div>
+      ${acts.map((a,i) => {
+        const isSaved = portSaved.includes(a.name);
+        return `
+        <div style="background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid ${isSaved?'rgba(200,169,110,.25)':'rgba(200,169,110,.08)'};border-radius:13px;padding:12px;margin-bottom:8px;transition:border-color .2s">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
             <div style="display:flex;align-items:center;gap:7px"><span style="font-size:18px">${a.icon}</span><div style="font-size:13px;font-weight:600;color:#e8dfc8">${a.name}</div></div>
-            <div style="font-size:12px;color:#c8a96e;font-weight:600">${a.price}</div>
+            <div style="display:flex;align-items:center;gap:8px">
+              <div style="font-size:12px;color:#c8a96e;font-weight:600">${a.price}</div>
+              <button onclick="togglePortSave('${code}_do','${a.name.replace(/'/g,"\\'")}');pgShowTab('do','${code}')" style="background:none;border:none;font-size:16px;cursor:pointer;padding:2px;opacity:${isSaved?'1':'.4'};transition:opacity .2s">${isSaved?'❤️':'🤍'}</button>
+            </div>
           </div>
           <div style="font-size:11px;color:#5a5040;line-height:1.45;margin-bottom:6px">${a.desc}</div>
           <div style="font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase;margin-bottom:8px">${a.tag}</div>
@@ -13406,7 +13549,9 @@ function pgShowTab(tab, code) {
             ${a.book ? '<a href="'+a.book+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:linear-gradient(135deg,#c8a96e,#9a6e28);border-radius:8px;color:#0a0600;font-size:11px;font-weight:700;text-decoration:none">Book →</a>' : ''}
             ${a.info ? '<a href="'+a.info+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:rgba(255,255,255,.05);border:1px solid rgba(200,169,110,.15);border-radius:8px;color:#c8a96e;font-size:11px;font-weight:600;text-decoration:none">More Info</a>' : ''}
           </div>
-        </div>`).join('')}<div style="height:60px"></div>`;
+        </div>`;}).join('')}
+      ${portSaved.length>0?'<div style="margin-top:12px;padding:10px 12px;background:rgba(200,169,110,.06);border:1px solid rgba(200,169,110,.12);border-radius:10px"><div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px">❤️ Your '+p.name+' Plans</div><div style="font-size:11px;color:#9a8e72">'+portSaved.join(' · ')+'</div></div>':''}
+    <div style="height:60px"></div>`;
   }
   // Force iOS Safari to recalculate scroll after content change
   content.scrollTop = 0;
@@ -13415,6 +13560,14 @@ function pgShowTab(tab, code) {
 }
 
 
+function togglePortSave(portKey, name) {
+  const saved = JSON.parse(localStorage.getItem('appetyt_port_saves')||'{}');
+  if (!saved[portKey]) saved[portKey] = [];
+  const idx = saved[portKey].indexOf(name);
+  if (idx >= 0) saved[portKey].splice(idx, 1);
+  else saved[portKey].push(name);
+  localStorage.setItem('appetyt_port_saves', JSON.stringify(saved));
+}
 
 /* ----------------------------------------------------
    CRUISE CALENDAR -- Timeline + Day Detail
