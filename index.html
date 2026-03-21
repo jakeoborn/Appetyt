@@ -13349,7 +13349,7 @@ function pgShowTab(tab, code) {
     btn.style.fontWeight = t===tab ? '700' : '600';
   });
   if (tab === 'picks') {
-    content.innerHTML = buildPicksHTML(p);
+    content.innerHTML = buildPicksHTML(p) + '<div style="height:60px"></div>';
   } else if (tab === 'eat') {
     const rests = PORT_RESTAURANTS[code] || [];
     content.innerHTML = `
@@ -13366,7 +13366,7 @@ function pgShowTab(tab, code) {
             ${r.book ? '<a href="'+r.book+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:linear-gradient(135deg,#c8a96e,#9a6e28);border-radius:8px;color:#0a0600;font-size:11px;font-weight:700;text-decoration:none">Book →</a>' : ''}
             ${r.info ? '<a href="'+r.info+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:rgba(255,255,255,.05);border:1px solid rgba(200,169,110,.15);border-radius:8px;color:#c8a96e;font-size:11px;font-weight:600;text-decoration:none">More Info</a>' : ''}
           </div>
-        </div>`).join('')}`;
+        </div>`).join('')}<div style="height:60px"></div>`;
   } else {
     const acts = PORT_ACTIVITIES[code] || [];
     content.innerHTML = `
@@ -13383,8 +13383,12 @@ function pgShowTab(tab, code) {
             ${a.book ? '<a href="'+a.book+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:linear-gradient(135deg,#c8a96e,#9a6e28);border-radius:8px;color:#0a0600;font-size:11px;font-weight:700;text-decoration:none">Book →</a>' : ''}
             ${a.info ? '<a href="'+a.info+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:rgba(255,255,255,.05);border:1px solid rgba(200,169,110,.15);border-radius:8px;color:#c8a96e;font-size:11px;font-weight:600;text-decoration:none">More Info</a>' : ''}
           </div>
-        </div>`).join('')}`;
+        </div>`).join('')}<div style="height:60px"></div>`;
   }
+  // Force iOS Safari to recalculate scroll after content change
+  content.scrollTop = 0;
+  content.style.overflowY = 'hidden';
+  requestAnimationFrame(()=>{ content.style.overflowY = 'scroll'; });
 }
 
 
