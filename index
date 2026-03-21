@@ -9185,7 +9185,24 @@ const A = {
           <div style="font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:12px">
             Paste a confirmation email below. Works with: OpenTable, Resy, Tock, Delta, American Airlines, United, Ticketmaster, Hotels.com, Booking.com, Airbnb, and more.
           </div>
-          <textarea id="email-paste-input" placeholder="Paste your confirmation email here...&#10;&#10;Example:&#10;Your reservation at Tatsu Dallas is confirmed.&#10;Date: Saturday, March 22, 2026&#10;Time: 7:45 PM · Party of 2&#10;Confirmation: TK-482991" style="width:100%;height:180px;background:var(--dark);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;outline:none;font-size:12px;line-height:1.6;resize:none;font-family:inherit"></textarea>
+          <div style="display:flex;gap:8px;margin-bottom:12px">
+            <button id="import-tab-text" onclick="A.switchImportTab('text')" style="flex:1;padding:8px;border-radius:8px;border:1px solid var(--gold);background:rgba(200,169,110,.15);color:var(--gold);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">📧 Paste Email</button>
+            <button id="import-tab-photo" onclick="A.switchImportTab('photo')" style="flex:1;padding:8px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">📸 Screenshot</button>
+          </div>
+          <div id="import-text-panel">
+            <textarea id="email-paste-input" placeholder="Paste your confirmation email here...&#10;&#10;Example:&#10;Your reservation at Tatsu Dallas is confirmed.&#10;Date: Saturday, March 22, 2026&#10;Time: 7:45 PM · Party of 2&#10;Confirmation: TK-482991" style="width:100%;height:180px;background:var(--dark);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;outline:none;font-size:12px;line-height:1.6;resize:none;font-family:inherit"></textarea>
+          </div>
+          <div id="import-photo-panel" style="display:none">
+            <input type="file" id="screenshot-input" accept="image/*" capture="environment" style="display:none" onchange="A.handleScreenshot(this)">
+            <div id="screenshot-preview" onclick="document.getElementById('screenshot-input').click()" style="width:100%;min-height:160px;background:var(--dark);border:2px dashed rgba(200,169,110,.2);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;overflow:hidden;position:relative">
+              <div id="screenshot-placeholder" style="text-align:center;padding:20px">
+                <div style="font-size:36px;margin-bottom:8px">📸</div>
+                <div style="font-size:13px;font-weight:600;color:var(--text2)">Tap to upload screenshot</div>
+                <div style="font-size:11px;color:var(--text3);margin-top:4px">Take a photo or choose from gallery</div>
+              </div>
+              <img id="screenshot-img" style="display:none;width:100%;border-radius:10px;object-fit:contain;max-height:300px">
+            </div>
+          </div>
           <div id="email-parse-result" style="display:none;margin-top:10px;background:var(--dark);border:1px solid var(--border);border-radius:10px;padding:12px;font-size:12px;color:var(--text);line-height:1.7"></div>
           <div style="display:flex;gap:8px;margin-top:12px">
             <button onclick="A.parseEmail()" id="parse-btn" style="flex:1;background:var(--gold);color:var(--dark);font-weight:800;font-size:13px;padding:12px;border-radius:10px;border:none">🤖 Parse with AI</button>
@@ -9203,6 +9220,100 @@ const A = {
   },
 
   _parsedEmailData: null,
+  _screenshotBase64: null,
+
+  switchImportTab(tab){
+    const textTab=document.getElementById('import-tab-text');
+    const photoTab=document.getElementById('import-tab-photo');
+    const textPanel=document.getElementById('import-text-panel');
+    const photoPanel=document.getElementById('import-photo-panel');
+    const parseBtn=document.getElementById('parse-btn');
+    if(tab==='text'){
+      textTab.style.cssText='flex:1;padding:8px;border-radius:8px;border:1px solid var(--gold);background:rgba(200,169,110,.15);color:var(--gold);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit';
+      photoTab.style.cssText='flex:1;padding:8px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit';
+      textPanel.style.display='block';
+      photoPanel.style.display='none';
+      if(parseBtn) parseBtn.onclick=function(){A.parseEmail()};
+    } else {
+      photoTab.style.cssText='flex:1;padding:8px;border-radius:8px;border:1px solid var(--gold);background:rgba(200,169,110,.15);color:var(--gold);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit';
+      textTab.style.cssText='flex:1;padding:8px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit';
+      textPanel.style.display='none';
+      photoPanel.style.display='block';
+      if(parseBtn) parseBtn.onclick=function(){A.parseScreenshot()};
+    }
+  },
+
+  handleScreenshot(input){
+    const file=input.files?.[0];
+    if(!file) return;
+    const reader=new FileReader();
+    reader.onload=function(e){
+      const img=document.getElementById('screenshot-img');
+      const placeholder=document.getElementById('screenshot-placeholder');
+      if(img){img.src=e.target.result;img.style.display='block'}
+      if(placeholder) placeholder.style.display='none';
+      A._screenshotBase64=e.target.result.split(',')[1];
+    };
+    reader.readAsDataURL(file);
+  },
+
+  async parseScreenshot(){
+    if(!this._screenshotBase64){this.showToast('Please upload a screenshot first');return}
+    const btn=document.getElementById('parse-btn');
+    const resultEl=document.getElementById('email-parse-result');
+    const saveRow=document.getElementById('email-save-row');
+    if(btn){btn.textContent='🤖 Reading screenshot...';btn.disabled=true}
+    if(resultEl){resultEl.style.display='block';resultEl.innerHTML='<span style="color:var(--text3)">Analyzing your screenshot...</span>'}
+    try{
+      const trip=TRIPS.current;
+      const cities=Array.isArray(trip?.cities)?trip.cities:(trip?.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
+      const res=await fetch('https://api.anthropic.com/v1/messages',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true',...(S.apiKey?{'x-api-key':S.apiKey}:{})},
+        body:JSON.stringify({
+          model:'claude-sonnet-4-20250514',
+          max_tokens:600,
+          system:`You extract structured booking information from confirmation screenshots. Always respond with ONLY valid JSON, no markdown, no backticks. Extract these fields:
+{
+  "type": "reservation|flight|hotel|ticket|cruise|other",
+  "title": "short descriptive title",
+  "restaurant": "restaurant name if applicable",
+  "date": "formatted date like March 22, 2026",
+  "time": "time if applicable",
+  "location": "venue/address/airport/ship name",
+  "confirmationCode": "confirmation or booking code",
+  "partySize": "number of guests if applicable",
+  "notes": "any other key details in one sentence",
+  "confidence": "high|medium|low"
+}
+If a field is not found, use null.`,
+          messages:[{role:'user',content:[
+            {type:'image',source:{type:'base64',media_type:'image/jpeg',data:this._screenshotBase64}},
+            {type:'text',text:'Extract booking info from this confirmation screenshot.'}
+          ]}]
+        })
+      });
+      const data=await res.json();
+      const raw=data.content?.[0]?.text||'{}';
+      const parsed=JSON.parse(raw.replace(/```json|```/g,'').trim());
+      this._parsedEmailData=parsed;
+      const icons={reservation:'🍽️',flight:'✈️',hotel:'🏨',ticket:'🎟️',cruise:'🚢',other:'📌'};
+      if(resultEl){
+        resultEl.innerHTML=`
+          <div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px">${icons[parsed.type]||'📌'} ${parsed.type?.toUpperCase()||'BOOKING'} DETECTED</div>
+          <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">${parsed.title||parsed.restaurant||'Booking'}</div>
+          ${parsed.date?'<div style="color:var(--text2)">📅 '+parsed.date+(parsed.time?' at '+parsed.time:'')+'</div>':''}
+          ${parsed.location?'<div style="color:var(--text2)">📍 '+parsed.location+'</div>':''}
+          ${parsed.confirmationCode?'<div style="color:var(--text2)">🔖 '+parsed.confirmationCode+'</div>':''}
+          ${parsed.partySize?'<div style="color:var(--text2)">👥 Party of '+parsed.partySize+'</div>':''}
+          ${parsed.notes?'<div style="color:var(--text3);margin-top:4px;font-size:11px">'+parsed.notes+'</div>':''}`;
+      }
+      if(saveRow) saveRow.style.display='block';
+    }catch(e){
+      if(resultEl) resultEl.innerHTML='<span style="color:var(--red)">Error reading screenshot: '+e.message+'</span>';
+    }
+    if(btn){btn.textContent='🤖 Parse with AI';btn.disabled=false}
+  },
 
   async parseEmail(){
     const text=document.getElementById('email-paste-input')?.value?.trim();
@@ -12556,6 +12667,100 @@ const CRUISE_PORTS = [
    ]}
 ];
 
+const PORT_RESTAURANTS = {
+  'SJU': [
+    {icon:'🍽️',name:'Marmalade',price:'$$$$',desc:'Upscale multi-course tasting menu in a colonial townhouse. One of Old San Juan\'s finest.',tag:'Fine Dining · Old San Juan',book:'https://www.marmaladepr.com',info:'https://www.marmaladepr.com'},
+    {icon:'🦐',name:'La Casita Blanca',price:'$$',desc:'Legendary local comida criolla -- mofongo, pernil, arroz con gandules. Cash only.',tag:'Must Try · Authentic · Cash Only',info:''},
+    {icon:'🍹',name:'La Factoria',price:'$$',desc:'Multi-room speakeasy with world-class cocktails. James Beard Award winner.',tag:'James Beard · Cocktails',info:'https://www.lafactoria.pr'},
+    {icon:'🐟',name:'El Jibarito',price:'$$',desc:'Homestyle Puerto Rican cooking in Santurce. Famous for their mofongo relleno.',tag:'Local Favorite · Santurce',info:''},
+    {icon:'🥘',name:'Santaella',price:'$$$',desc:'Chef Jose Santaella\'s modern Puerto Rican cuisine in a chic Santurce setting.',tag:'Modern · Chef-Driven',book:'https://www.santaellapr.com',info:'https://www.santaellapr.com'},
+    {icon:'🌮',name:'Cocina Abierta',price:'$$$',desc:'Global-inspired tapas with Puerto Rican flair. Great cocktails and outdoor seating.',tag:'Tapas · Trendy',info:''},
+    {icon:'🍦',name:'Lote 23',price:'$',desc:'Open-air food park with local vendors -- craft beer, tacos, empanadas, desserts.',tag:'Food Park · Casual',info:''}
+  ],
+  'TOV': [
+    {icon:'🍽️',name:'Brandywine Bay',price:'$$$$',desc:'Caribbean-Mediterranean fine dining with harbor views. Book ahead.',tag:'Fine Dining · Waterfront',info:''},
+    {icon:'🦞',name:'Myett\'s Garden Grille',price:'$$',desc:'Beachfront Caribbean plates on Cane Garden Bay -- jerk chicken, conch fritters.',tag:'Beachfront · Cane Garden Bay',info:''},
+    {icon:'🍹',name:'Foxy\'s Tamarind Bar',price:'$$',desc:'Legendary beach bar on Jost Van Dyke. Live music and rum punches.',tag:'Iconic · Jost Van Dyke',info:''},
+    {icon:'🐟',name:'The Dove',price:'$$$',desc:'French-Caribbean cuisine in Road Town. Intimate 24-seat dining room.',tag:'Intimate · French-Caribbean',info:''},
+    {icon:'🍔',name:'Soggy Dollar Bar',price:'$$',desc:'Home of the Painkiller cocktail. Swim up to the bar at White Bay.',tag:'Bucket List · White Bay',info:''}
+  ],
+  'BGI': [
+    {icon:'🍽️',name:'The Cliff',price:'$$$$',desc:'Dramatic cliffside dining over the Caribbean. One of the best restaurants in the region.',tag:'Iconic · Reserve Ahead',book:'https://www.thecliffbarbados.com',info:'https://www.thecliffbarbados.com'},
+    {icon:'🐟',name:'Oistins Fish Fry',price:'$',desc:'Friday night fish fry is a Barbadian institution -- grilled mahi, music, dancing.',tag:'Must Do · Friday Night',info:''},
+    {icon:'🦐',name:'Champers',price:'$$$',desc:'Beachfront fine dining with Bajan flair. Famous rum punch and seafood.',tag:'Waterfront · Seafood',book:'https://www.champersbarbados.com',info:'https://www.champersbarbados.com'},
+    {icon:'🍹',name:'Harbour Lights',price:'$$',desc:'Beach club with dinner, rum punch and live music nightly.',tag:'Beach Club · Live Music',book:'https://www.harbourlightsbarbados.com',info:'https://www.harbourlightsbarbados.com'},
+    {icon:'🌮',name:'Cuz\'s Fish Stand',price:'$',desc:'Fresh grilled fish right on Pebbles Beach. Best casual lunch on the island.',tag:'Casual · Beach Lunch',info:''},
+    {icon:'🥃',name:'Round House Inn',price:'$$',desc:'Historic clifftop restaurant in Bathsheba with Atlantic Ocean views and Bajan cuisine.',tag:'Scenic · East Coast',info:''}
+  ],
+  'SLU': [
+    {icon:'🍽️',name:'Coal Pot Restaurant',price:'$$$',desc:'Waterfront Creole cuisine in a converted 18th-century coal shed since 1966.',tag:'Historic · Creole · Reserve',book:'',info:'https://coalpotstlucia.com'},
+    {icon:'🐟',name:'Orlando\'s Restaurant',price:'$$',desc:'Chef Orlando\'s creative Caribbean-French fusion. Intimate garden setting in Soufriere.',tag:'Garden · Soufriere',info:''},
+    {icon:'🦞',name:'The Naked Fisherman',price:'$$',desc:'Beachfront seafood at Anse Chastanet. Feet in the sand, Piton views.',tag:'Beach · Piton Views',info:''},
+    {icon:'🍹',name:'Boucan by Chocolate',price:'$$$',desc:'Hotel Chocolat\'s cacao-themed restaurant. Unique cocoa-infused dishes.',tag:'Unique · Cacao-Themed',info:''},
+    {icon:'🌮',name:'Martha\'s Tables',price:'$',desc:'Best local Creole lunch in Castries market area. Generous portions.',tag:'Local · Budget',info:''}
+  ],
+  'ANU': [
+    {icon:'🍽️',name:'Sheer Rocks',price:'$$$$',desc:'Cliffside dining platforms above the Caribbean. Most dramatic setting on the island.',tag:'Sunset · Must Reserve',info:''},
+    {icon:'🦞',name:'Catherine\'s Cafe',price:'$$$',desc:'French-Caribbean cuisine on Pigeon Beach. Romantic and relaxed.',tag:'Beach · French-Caribbean',info:''},
+    {icon:'🐟',name:'Papa Zouk',price:'$$',desc:'Legendary fish shack -- 30+ varieties of rum, best fresh fish on the island.',tag:'Local Legend · Rum',info:''},
+    {icon:'🌮',name:'Roti King',price:'$',desc:'Best roti on the island -- massive portions, incredible curry.',tag:'Street Food · Budget',info:''},
+    {icon:'🍹',name:'Ana\'s on the Beach',price:'$$',desc:'Beachfront dining at Dickenson Bay. Fresh seafood, cocktails, sunset views.',tag:'Dickenson Bay · Sunset',info:''}
+  ],
+  'SXM': [
+    {icon:'🍽️',name:'Le Cottage',price:'$$$$',desc:'Refined French-Caribbean cuisine in Grand Case. The best restaurant on the island.',tag:'Fine Dining · French Side',info:''},
+    {icon:'🍔',name:'Sunset Bar & Grill',price:'$$',desc:'Eat at Maho Beach while planes land 50ft overhead. Bucket-list dining.',tag:'Iconic · Maho Beach',info:''},
+    {icon:'🐟',name:'The Hideaway',price:'$$$',desc:'Beachside seafood at La Playa. Locals\' favorite for lobster and ribs.',tag:'Seafood · Dutch Side',info:''},
+    {icon:'🌮',name:'Lolos of Grand Case',price:'$',desc:'Open-air BBQ grills on the beach -- ribs, grilled lobster, chicken. Cash only.',tag:'Must Do · BBQ · Cash',info:''},
+    {icon:'🦐',name:'Ocean 82',price:'$$$',desc:'Upscale waterfront dining in Grand Case. Fresh daily catch and Mediterranean flair.',tag:'Waterfront · Grand Case',info:''},
+    {icon:'🍹',name:'Karakter Beach Lounge',price:'$$',desc:'Bohemian beach bar on Simpson Bay -- loungers, cocktails and tapas.',tag:'Beach Bar · Chill',info:''}
+  ]
+};
+
+const PORT_ACTIVITIES = {
+  'SJU': [
+    {icon:'🏰',name:'El Morro Fort',price:'$10',desc:'16th-century Spanish fortress with panoramic ocean views and tunnels to explore.',tag:'Historic · 2 hrs',book:'https://www.recreation.gov/ticket/facility/300010',info:'https://www.nps.gov/saju'},
+    {icon:'🌊',name:'Ocean Park Beach',price:'Free',desc:'Calm waters and local vibe -- away from the cruise crowds. Great for swimming.',tag:'Beach · 10 min from port',info:''},
+    {icon:'🚶',name:'Old San Juan Walking Tour',price:'Free',desc:'Colorful colonial architecture, cobblestone streets, and vibrant street art.',tag:'Self-Guided · 2 hrs',info:''},
+    {icon:'🎨',name:'Museo de Arte de PR',price:'$6',desc:'World-class collection of Puerto Rican art from the 17th century to today.',tag:'Culture · Santurce',info:''},
+    {icon:'🌿',name:'El Yunque Rainforest',price:'$8',desc:'Only tropical rainforest in the US National Forest system. Waterfalls and trails.',tag:'Half Day · 45 min drive',info:''}
+  ],
+  'TOV': [
+    {icon:'⛵',name:'Jost Van Dyke Day Sail',price:'~$100',desc:'Day sail to White Bay and Foxy\'s beach bar -- a BVI essential.',tag:'Book Ahead · Full Day',info:''},
+    {icon:'🤿',name:'The Indians Snorkel',price:'~$60',desc:'Four dramatic pinnacles -- top snorkel spot in the BVI.',tag:'Snorkeling · 2 hrs',info:''},
+    {icon:'🏖️',name:'Cane Garden Bay',price:'Free',desc:'Stunning curved bay -- swim, relax and rum drinks at beach bars.',tag:'Beach · 25 min from port',info:''},
+    {icon:'🏔️',name:'Sage Mountain Hike',price:'$3',desc:'Highest peak in BVI -- lush rainforest trail with sea views.',tag:'Hiking · 1.5 hrs',info:''},
+    {icon:'🛍️',name:'Road Town Shopping',price:'Free',desc:'Craft markets, local rum, and duty-free shopping in the capital.',tag:'Shopping · Near Port',info:''}
+  ],
+  'BGI': [
+    {icon:'🥃',name:'Mount Gay Rum Tour',price:'$20',desc:'World\'s oldest rum distillery (1703) -- history, barrel room and tasting.',tag:'1.5 hrs · Must Do',book:'https://www.mountgayrum.com/en-us/visit/',info:'https://www.mountgayrum.com'},
+    {icon:'🏖️',name:'Carlisle Bay Snorkel',price:'Free',desc:'Calm bay with sunken ships just meters from shore -- easy for all levels.',tag:'Free · 5 min from port',info:''},
+    {icon:'🐒',name:'Wildlife Reserve',price:'~$15',desc:'Walk among free-roaming green monkeys in a mahogany forest.',tag:'1.5 hrs · Unique',info:''},
+    {icon:'🏛️',name:'St. Nicholas Abbey',price:'~$20',desc:'Jacobean plantation great house from 1658 -- one of only three in the Americas.',tag:'Historic · 1.5 hrs',info:''},
+    {icon:'🤿',name:'Folkestone Marine Park',price:'Free',desc:'Snorkel over a shipwreck and coral reef right from the beach.',tag:'Snorkeling · West Coast',info:''}
+  ],
+  'SLU': [
+    {icon:'🌋',name:'Sulphur Springs Volcano',price:'~$10',desc:'World\'s only drive-in volcano -- bubbling sulfur pools and mud baths.',tag:'Unmissable · Soufriere',book:'https://www.sulphurspringsstlucia.com',info:''},
+    {icon:'🌿',name:'Diamond Falls Garden',price:'$15',desc:'Waterfalls, volcanic mineral baths, and lush tropical gardens.',tag:'2 hrs · Botanical',book:'https://diamondstlucia.com',info:'https://diamondstlucia.com'},
+    {icon:'⛵',name:'Piton Sail & Snorkel',price:'~$90',desc:'See the iconic twin peaks from the water and snorkel the reefs.',tag:'Full Day · Iconic',info:''},
+    {icon:'🏖️',name:'Anse Chastanet Beach',price:'Free',desc:'Volcanic black sand beach beneath the Pitons -- dramatic and rarely crowded.',tag:'Beach · Scenic',info:''},
+    {icon:'🍫',name:'Cocoa Farm Tour',price:'~$25',desc:'Bean-to-bar chocolate making at a working cocoa estate.',tag:'2 hrs · Unique',info:''}
+  ],
+  'ANU': [
+    {icon:'🏰',name:'Nelson\'s Dockyard',price:'$8',desc:'UNESCO World Heritage 18th-century British naval dockyard -- beautifully restored.',tag:'English Harbour · Historic',book:'https://www.nationalparksantigua.com',info:''},
+    {icon:'🏖️',name:'Dickenson Bay',price:'Free',desc:'Best swimming beach on the island -- white sand, calm water, beach bars.',tag:'15 min from port',info:''},
+    {icon:'🤿',name:'Cades Reef Snorkel',price:'~$45',desc:'Antigua\'s largest protected reef -- turtles, rays, barracuda.',tag:'Snorkeling · 2 hrs',info:''},
+    {icon:'🎯',name:'Rainforest Zip Line',price:'~$95',desc:'Zip-line through the rainforest -- 21 platforms, longest zip is 300m.',tag:'Adventure · 3 hrs',info:''},
+    {icon:'🌅',name:'Shirley Heights Lookout',price:'Free',desc:'Best panoramic views on the island. Steel band and BBQ on Sundays.',tag:'Sunset · Views',info:''}
+  ],
+  'SXM': [
+    {icon:'✈️',name:'Maho Beach Planes',price:'Free',desc:'Jumbo jets land 50ft overhead -- check KLM 747 arrival times.',tag:'Iconic · Bucket List',info:''},
+    {icon:'🏖️',name:'Orient Bay Beach',price:'~$25',desc:'French Riviera of the Caribbean -- beach bars, watersports, beautiful scene.',tag:'French Side · Chair Rental',info:''},
+    {icon:'🛒',name:'Marigot French Market',price:'Free',desc:'French-side outdoor market -- spices, local rum, art, crafts by the marina.',tag:'Shopping · French Side',info:''},
+    {icon:'⛵',name:'Pinel Island Picnic',price:'~$10',desc:'2-minute ferry to a tiny island paradise -- hammocks and crystal water.',tag:'Paradise · Easy',info:''},
+    {icon:'🤿',name:'Creole Rock Snorkel',price:'~$40',desc:'Best snorkel spot -- volcanic rock formation teeming with fish and turtles.',tag:'Grand Case · 1.5 hrs',info:''}
+  ]
+};
+
 
 function showCruisePortList() {
   let modal = document.getElementById('port-list-modal');
@@ -12576,7 +12781,13 @@ function showCruisePortList() {
         <div style="font-size:11px;color:#5a5040;margin-bottom:16px">Southern Caribbean · Valiant Lady · Mar 21-28, 2026</div>
       </div>
       <div style="padding:0 14px">
-        ${CRUISE_PORTS.map(p => `
+        ${CRUISE_PORTS.map(p => {
+          const saved = JSON.parse(localStorage.getItem('appetyt_port_saves')||'{}');
+          const eatSaved = (saved[p.code]||[]).length;
+          const doSaved = (saved[p.code+'_do']||[]).length;
+          const totalSaved = eatSaved + doSaved;
+          const hasData = (PORT_RESTAURANTS[p.code]||[]).length > 0;
+          return `
           <div onclick="document.getElementById('port-list-modal').remove();showPortGuide('${p.code}')"
             style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid rgba(200,169,110,.08);border-radius:14px;margin-bottom:8px;cursor:pointer;touch-action:manipulation"
             onmouseenter="this.style.borderColor='rgba(200,169,110,.3)'" onmouseleave="this.style.borderColor='rgba(200,169,110,.08)'">
@@ -12585,9 +12796,13 @@ function showCruisePortList() {
               <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:#e8dfc8;font-style:italic">${p.name}</div>
               <div style="font-size:10px;color:#5a5040;margin-top:1px">${p.country}</div>
               <div style="font-size:10px;color:#3a3228;margin-top:3px">${p.day}${p.hours ? ' &nbsp;·&nbsp; ⏱ '+p.hours+'h ashore' : p.depart === 'Debark' ? ' &nbsp;·&nbsp; Debark Day' : ' &nbsp;·&nbsp; Departs '+p.depart}</div>
+              ${totalSaved>0?'<div style="font-size:9px;color:var(--gold);margin-top:4px;font-weight:700">❤️ '+totalSaved+' saved</div>':''}
             </div>
-            <div style="font-size:11px;color:rgba(62,184,168,.7);font-weight:600;flex-shrink:0">→</div>
-          </div>`).join('')}
+            <div style="display:flex;flex-direction:column;align-items:center;gap:2px;flex-shrink:0">
+              ${hasData?'<div style="font-size:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(62,184,168,.7)">Explore</div>':''}
+              <div style="font-size:14px;color:rgba(62,184,168,.7);font-weight:600">→</div>
+            </div>
+          </div>`;}).join('')}
       </div>
     </div>`;
 }
@@ -12674,13 +12889,23 @@ function pgShowTab(tab, code) {
     content.innerHTML = buildPicksHTML(p);
   } else if (tab === 'eat') {
     const rests = PORT_RESTAURANTS[code] || [];
+    const saved = JSON.parse(localStorage.getItem('appetyt_port_saves')||'{}');
+    const portSaved = saved[code] || [];
     content.innerHTML = `
-      <div style="font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3228;margin-bottom:12px">🍽️ Where to Eat in ${p.name}</div>
-      ${rests.map(r => `
-        <div style="background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid rgba(200,169,110,.08);border-radius:13px;padding:12px;margin-bottom:8px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3228">🍽️ Where to Eat in ${p.name}</div>
+        <div style="font-size:10px;color:#5a5040">${rests.length} spots</div>
+      </div>
+      ${rests.map((r,i) => {
+        const isSaved = portSaved.includes(r.name);
+        return `
+        <div style="background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid ${isSaved?'rgba(200,169,110,.25)':'rgba(200,169,110,.08)'};border-radius:13px;padding:12px;margin-bottom:8px;transition:border-color .2s">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
             <div style="display:flex;align-items:center;gap:7px"><span style="font-size:18px">${r.icon}</span><div style="font-size:13px;font-weight:600;color:#e8dfc8">${r.name}</div></div>
-            <div style="font-size:12px;color:#c8a96e;font-weight:600">${r.price}</div>
+            <div style="display:flex;align-items:center;gap:8px">
+              <div style="font-size:12px;color:#c8a96e;font-weight:600">${r.price}</div>
+              <button onclick="togglePortSave('${code}','${r.name.replace(/'/g,"\\'")}');pgShowTab('eat','${code}')" style="background:none;border:none;font-size:16px;cursor:pointer;padding:2px;opacity:${isSaved?'1':'.4'};transition:opacity .2s">${isSaved?'❤️':'🤍'}</button>
+            </div>
           </div>
           <div style="font-size:11px;color:#5a5040;line-height:1.45;margin-bottom:6px">${r.desc}</div>
           <div style="font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase;margin-bottom:8px">${r.tag}</div>
@@ -12688,16 +12913,28 @@ function pgShowTab(tab, code) {
             ${r.book ? '<a href="'+r.book+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:linear-gradient(135deg,#c8a96e,#9a6e28);border-radius:8px;color:#0a0600;font-size:11px;font-weight:700;text-decoration:none">Book →</a>' : ''}
             ${r.info ? '<a href="'+r.info+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:rgba(255,255,255,.05);border:1px solid rgba(200,169,110,.15);border-radius:8px;color:#c8a96e;font-size:11px;font-weight:600;text-decoration:none">More Info</a>' : ''}
           </div>
-        </div>`).join('')}`;
+        </div>`;}).join('')}
+      ${portSaved.length>0?'<div style="margin-top:12px;padding:10px 12px;background:rgba(200,169,110,.06);border:1px solid rgba(200,169,110,.12);border-radius:10px"><div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px">❤️ Your '+p.name+' List</div><div style="font-size:11px;color:#9a8e72">'+portSaved.join(' · ')+'</div></div>':''}
+    `;
   } else {
     const acts = PORT_ACTIVITIES[code] || [];
+    const saved = JSON.parse(localStorage.getItem('appetyt_port_saves')||'{}');
+    const portSaved = saved[code+'_do'] || [];
     content.innerHTML = `
-      <div style="font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3228;margin-bottom:12px">🎯 Things to Do in ${p.name}</div>
-      ${acts.map(a => `
-        <div style="background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid rgba(200,169,110,.08);border-radius:13px;padding:12px;margin-bottom:8px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3228">🎯 Things to Do in ${p.name}</div>
+        <div style="font-size:10px;color:#5a5040">${acts.length} activities</div>
+      </div>
+      ${acts.map((a,i) => {
+        const isSaved = portSaved.includes(a.name);
+        return `
+        <div style="background:linear-gradient(135deg,rgba(22,28,44,.8),rgba(15,19,32,.6));border:1px solid ${isSaved?'rgba(200,169,110,.25)':'rgba(200,169,110,.08)'};border-radius:13px;padding:12px;margin-bottom:8px;transition:border-color .2s">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
             <div style="display:flex;align-items:center;gap:7px"><span style="font-size:18px">${a.icon}</span><div style="font-size:13px;font-weight:600;color:#e8dfc8">${a.name}</div></div>
-            <div style="font-size:12px;color:#c8a96e;font-weight:600">${a.price}</div>
+            <div style="display:flex;align-items:center;gap:8px">
+              <div style="font-size:12px;color:#c8a96e;font-weight:600">${a.price}</div>
+              <button onclick="togglePortSave('${code}_do','${a.name.replace(/'/g,"\\'")}');pgShowTab('do','${code}')" style="background:none;border:none;font-size:16px;cursor:pointer;padding:2px;opacity:${isSaved?'1':'.4'};transition:opacity .2s">${isSaved?'❤️':'🤍'}</button>
+            </div>
           </div>
           <div style="font-size:11px;color:#5a5040;line-height:1.45;margin-bottom:6px">${a.desc}</div>
           <div style="font-size:9px;font-weight:700;letter-spacing:.06em;color:#3eb8a8;text-transform:uppercase;margin-bottom:8px">${a.tag}</div>
@@ -12705,11 +12942,22 @@ function pgShowTab(tab, code) {
             ${a.book ? '<a href="'+a.book+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:linear-gradient(135deg,#c8a96e,#9a6e28);border-radius:8px;color:#0a0600;font-size:11px;font-weight:700;text-decoration:none">Book →</a>' : ''}
             ${a.info ? '<a href="'+a.info+'" target="_blank" style="flex:1;text-align:center;padding:7px;background:rgba(255,255,255,.05);border:1px solid rgba(200,169,110,.15);border-radius:8px;color:#c8a96e;font-size:11px;font-weight:600;text-decoration:none">More Info</a>' : ''}
           </div>
-        </div>`).join('')}`;
+        </div>`;}).join('')}
+      ${portSaved.length>0?'<div style="margin-top:12px;padding:10px 12px;background:rgba(200,169,110,.06);border:1px solid rgba(200,169,110,.12);border-radius:10px"><div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px">❤️ Your '+p.name+' Plans</div><div style="font-size:11px;color:#9a8e72">'+portSaved.join(' · ')+'</div></div>':''}
+    `;
   }
 }
 
 
+
+function togglePortSave(portKey, name) {
+  const saved = JSON.parse(localStorage.getItem('appetyt_port_saves')||'{}');
+  if (!saved[portKey]) saved[portKey] = [];
+  const idx = saved[portKey].indexOf(name);
+  if (idx >= 0) saved[portKey].splice(idx, 1);
+  else saved[portKey].push(name);
+  localStorage.setItem('appetyt_port_saves', JSON.stringify(saved));
+}
 
 /* ----------------------------------------------------
    CRUISE CALENDAR -- Timeline + Day Detail
