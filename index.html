@@ -9559,19 +9559,20 @@ const A = {
     el.innerHTML = `
       <div style="margin-bottom:16px">
         <div style="font-size:22px;font-weight:700;color:var(--text);margin-bottom:4px">📍 Dallas Local</div>
-        <div style="font-size:12px;color:var(--text3)">Hotels · Malls · Opening soon · Hospitality Groups</div>
       </div>
 
-      <!-- Sub-tabs -->
-      <div style="display:flex;gap:8px;margin-bottom:20px;overflow-x:auto;scrollbar-width:none">
+      <!-- Sub-tabs 2x2 grid -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px">
         ${subTabs.map(t=>`
           <button onclick="A._localSub='${t.id}';A.renderLocal()" style="
-            flex-shrink:0;padding:8px 16px;border-radius:22px;border:none;cursor:pointer;
-            font-size:13px;font-weight:700;white-space:nowrap;
-            background:${sub===t.id?'var(--gold)':'var(--card2)'};
-            color:${sub===t.id?'var(--dark)':'var(--text2)'};
-            border:1px solid ${sub===t.id?'var(--gold)':'var(--border)'};
-          ">${t.icon} ${t.label}</button>
+            padding:14px 10px;border-radius:12px;border:none;cursor:pointer;
+            font-size:13px;font-weight:700;text-align:center;
+            background:${sub===t.id?'rgba(201,168,76,.15)':'var(--card2)'};
+            color:${sub===t.id?'var(--gold)':'var(--text2)'};
+            border:1px solid ${sub===t.id?'rgba(201,168,76,.4)':'var(--border)'};
+            display:flex;flex-direction:column;align-items:center;gap:4px;
+            touch-action:manipulation;font-family:inherit;
+          "><span style="font-size:22px">${t.icon}</span>${t.label}</button>
         `).join('')}
       </div>
 
