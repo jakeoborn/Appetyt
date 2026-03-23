@@ -91,7 +91,7 @@ input,textarea{font-family:inherit;font-size:inherit}
 .r-diff-badge.hard{background:rgba(201,68,68,.12);color:#e07070;border:1px solid rgba(201,68,68,.2)}
 .r-diff-badge.moderate{background:rgba(76,122,201,.12);color:#7a9ed4;border:1px solid rgba(76,122,201,.2)}
 /* Card body */
-.r-body{padding:10px 12px 10px}
+.r-body{padding:12px}
 .r-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
 .r-rank{font-size:11px;color:var(--text3);font-weight:700;min-width:22px}
 .r-name{font-family:var(--serif);font-size:14px;font-weight:600;line-height:1.25;flex:1;color:var(--text)}
@@ -165,15 +165,15 @@ input,textarea{font-family:inherit;font-size:inherit}
 /* DISCOVER VIEW */
 #discover-view{padding:14px 14px 100px}
 .discover-section{margin-bottom:22px}
-.discover-title{font-size:13px;font-weight:700;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.discover-title{font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:6px}
 .discover-cards{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
 .discover-cards::-webkit-scrollbar{display:none}
-.d-card{flex-shrink:0;width:160px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:12px;cursor:pointer;transition:border-color .15s}
+.d-card{flex-shrink:0;width:160px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer;transition:border-color .15s}
 .d-card:hover{border-color:var(--gold)}
 .d-card-icon{font-size:24px;margin-bottom:6px}
 .d-card-name{font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px;line-height:1.3}
 .d-card-sub{font-size:10px;color:var(--text2)}
-.for-you-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:12px;margin-bottom:8px}
+.for-you-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:8px}
 .for-you-label{font-size:10px;color:var(--gold);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
 .for-you-name{font-size:14px;font-weight:700;color:var(--text)}
 .for-you-sub{font-size:11px;color:var(--text2);margin-top:2px}
@@ -182,7 +182,7 @@ input,textarea{font-family:inherit;font-size:inherit}
 #travel-view{padding:14px 14px 100px}
 .travel-section{margin-bottom:20px}
 .travel-section-title{font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
-.trip-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:12px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
+.trip-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
 .trip-card:hover{border-color:var(--gold)}
 .trip-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:3px}
 .trip-sub{font-size:11px;color:var(--text2);line-height:1.4}
@@ -201,7 +201,7 @@ input,textarea{font-family:inherit;font-size:inherit}
 .list-section{margin-bottom:20px}
 .list-section-title{font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
 .list-empty{font-size:12px;color:var(--text3);padding:10px 0}
-.mini-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;margin-bottom:7px;display:flex;align-items:center;gap:10px;cursor:pointer}
+.mini-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;margin-bottom:8px;display:flex;align-items:center;gap:10px;cursor:pointer}
 .mini-card-info{flex:1;min-width:0}
 .mini-card-name{font-size:13px;font-weight:600;color:var(--text)}
 .mini-card-sub{font-size:11px;color:var(--text2)}
@@ -413,7 +413,7 @@ input,textarea{font-family:inherit;font-size:inherit}
 .social-tab{flex:1;padding:11px 6px;font-size:11.5px;font-weight:700;color:var(--text3);text-align:center;cursor:pointer;border-bottom:2.5px solid transparent;background:none;border-left:none;border-right:none;border-top:none;font-family:inherit;transition:color .15s;letter-spacing:.02em}
 .social-tab:hover{color:var(--text2)}
 .social-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
-.list-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin-bottom:10px;cursor:pointer;transition:border-color .2s,transform .15s}
+.list-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-bottom:10px;cursor:pointer;transition:border-color .2s,transform .15s}
 .list-card:hover{border-color:rgba(201,168,76,.3);transform:translateY(-1px)}
 .list-card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
 .list-card-title{font-size:14px;font-weight:800;color:var(--text)}
@@ -3284,7 +3284,6 @@ const FILTERS = [
   {id:'fine-dining',label:'Fine Dining',emoji:'🎖️'},
   {id:'casual',label:'Casual',emoji:'😎'},
   {id:'dog-friendly',label:'Dog Friendly',emoji:'🐕'},
-  {id:'brunch',label:'Brunch',emoji:'🥂'},
   {id:'live-music',label:'Live Music',emoji:'🎵'},
   {id:'sports',label:'Sports Bar',emoji:'🏈'},
   {id:'celebrations',label:'Celebrations',emoji:'🎂'},
@@ -4963,15 +4962,34 @@ const A = {
       :r.reservation==='Tock'?`https://www.exploretock.com/search?q=${encodeURIComponent(r.name)}`:'#';
     const orderUrl=`https://www.doordash.com/search/store/${encodeURIComponent(r.name)}/`;
 
+    // Restaurant type detection (matches detail view smart links logic)
+    const _ctags=(r.tags||[]).map(t=>t.toLowerCase());
+    const _ccuisine=(r.cuisine||'').toLowerCase();
+    const _cIsWalkIn=r.reservation==='walk-in'||r.reservation==='Recommended';
+    const _cIsFineDining=_ctags.includes('fine dining')||_ctags.includes('tasting menu')||_ctags.includes('omakase');
+    const _cIsFastCasual=_ctags.includes('fast casual')||_ctags.includes('bakery/coffee')||r.price<=1;
+    const _cIsCoffee=_ccuisine.includes('coffee')||_ccuisine.includes('bakery')||_ccuisine.includes('donut');
+    const _cIsBar=_ccuisine.includes('brewery')||_ccuisine.includes('brewing')||_ctags.includes('dive bar')||_ctags.includes('craft beer');
+    const _cIsEntertainment=_ctags.includes('eat & play')||_ccuisine.includes('cinema')||_ccuisine.includes('bowling')||_ccuisine.includes('golf');
+    const _cShowReserve=!_cIsWalkIn&&!_cIsFastCasual&&!_cIsCoffee;
+    const _cShowOrder=!_cIsFineDining&&!_cIsBar&&!_cIsEntertainment;
+
+    const reserveBtn=_cShowReserve
+      ?`<a href="${bookUrl}" target="_blank" class="r-reserve-btn">RESERVE</a>`
+      :`<span class="r-reserve-btn" style="opacity:.45;pointer-events:none;cursor:default">WALK IN</span>`;
+    const orderBtn=_cShowOrder
+      ?`<a href="${orderUrl}" target="_blank" class="r-order-btn">ORDER</a>`
+      :'';
+
     const awardLine=r.awards?`<div class="r-award">🏆 ${r.awards}</div>`:'';
     const bestOfLine=r.bestOf?.length?`<div class="r-bestof">${r.bestOf.map(b=>`<span class="r-bestof-item">${b}</span>`).join('')}</div>`:'';
-    const hhLine=r.hh?`<span class="${hhActive?'badge green':'badge'}">🍸 HH ${hhActive?'ACTIVE NOW':r.hh}</span>`:''; 
+    const hhLine=r.hh?`<span class="${hhActive?'badge green':'badge'}">🍸 HH ${hhActive?'ACTIVE NOW':r.hh}</span>`:'';
     const hotBadge=(typeof HOTSPOT!=='undefined')?HOTSPOT.cardBadge(r):'';
 
     return `<div class="r-card${rank===1?' rank1':''}" onclick="A.openDetail(${r.id})">
       <div class="r-topbar" onclick="event.stopPropagation()">
-        <a href="${bookUrl}" target="_blank" class="r-reserve-btn">RESERVE</a>
-        <a href="${orderUrl}" target="_blank" class="r-order-btn">ORDER</a>
+        ${reserveBtn}
+        ${orderBtn}
         <div class="r-filter-icons">${filterIcons}</div>
         ${diffBadge}
       </div>
