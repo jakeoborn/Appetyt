@@ -355,6 +355,24 @@ input,textarea{font-family:inherit;font-size:inherit}
 .drop-claimed { opacity:.5;pointer-events:none }
 .drop-claimed .drop-claim-btn { background:var(--border);color:var(--text3) }
 
+/* -- CHECK-IN SYSTEM -- */
+.checkin-modal{position:fixed;inset:0;z-index:600;background:rgba(0,0,0,.7);display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s}
+.checkin-modal.open{opacity:1;pointer-events:auto}
+.checkin-sheet{width:100%;max-width:420px;max-height:88vh;background:var(--dark);border-radius:20px 20px 0 0;overflow-y:auto;transform:translateY(100%);transition:transform .3s ease}
+.checkin-modal.open .checkin-sheet{transform:translateY(0)}
+.checkin-status{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;padding:4px 10px;border-radius:10px}
+.checkin-active{background:rgba(76,154,110,.15);color:#4c9a6e;border:1px solid rgba(76,154,110,.3)}
+.checkin-vip{background:linear-gradient(135deg,rgba(201,168,76,.2),rgba(201,168,76,.08));border:1px solid rgba(201,168,76,.4)}
+.guest-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px}
+.guest-card-header{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.guest-avatar{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.guest-tag{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:600;padding:3px 8px;border-radius:8px;margin-right:4px;margin-bottom:4px}
+.dietary-tag{background:rgba(76,154,110,.12);color:#4c9a6e;border:1px solid rgba(76,154,110,.25)}
+.allergy-tag{background:rgba(220,70,70,.12);color:#dc4646;border:1px solid rgba(220,70,70,.25)}
+.pref-tag{background:rgba(100,149,237,.12);color:#6495ed;border:1px solid rgba(100,149,237,.25)}
+@keyframes checkinPulse{0%,100%{box-shadow:0 0 0 0 rgba(76,154,110,.4)}70%{box-shadow:0 0 0 10px rgba(76,154,110,0)}}
+.checkin-pulse-ring{animation:checkinPulse 1.5s ease infinite}
+
 /* -- SPEND TRACKER -- */
 .spend-bar-wrap { background:var(--border);border-radius:4px;height:5px;overflow:hidden;margin:6px 0 }
 .spend-bar { height:100%;border-radius:4px;transition:width .6s ease }
@@ -2451,6 +2469,16 @@ const TRIPS = {
   </div>
 </div>
 
+<!-- Check-In Modal -->
+<div id="checkin-modal" class="checkin-modal" onclick="if(event.target===this)A.closeCheckIn()">
+  <div class="checkin-sheet" id="checkin-sheet"></div>
+</div>
+
+<!-- Restaurant Alert Modal (simulates restaurant-side notification) -->
+<div id="restaurant-alert-modal" class="checkin-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="checkin-sheet" id="restaurant-alert-sheet"></div>
+</div>
+
 <!-- Toast -->
 <div id="toast"></div>
 
@@ -3517,7 +3545,7 @@ const A = {
         localStorage.setItem('appetyt_ver', '2.1');
       }
     }catch(e){}
-    try{const d=localStorage.getItem('appetyt_data');if(d){const p=JSON.parse(d);S.userData={favs:p.favs||[],visited:p.visited||[],want:p.want||[],bills:p.bills||[],notes:p.notes||{},trips:p.trips||[],claimedDrops:p.claimedDrops||[]};}}catch(e){}
+    try{const d=localStorage.getItem('appetyt_data');if(d){const p=JSON.parse(d);S.userData={favs:p.favs||[],visited:p.visited||[],want:p.want||[],bills:p.bills||[],notes:p.notes||{},trips:p.trips||[],claimedDrops:p.claimedDrops||[],checkins:p.checkins||[],guestProfile:p.guestProfile||{},customLists:p.customLists||[],pinnedLists:p.pinnedLists||[],reminders:p.reminders||[]};}}catch(e){}
     try{const k=localStorage.getItem('appetyt_key');if(k)S.apiKey=k;}catch(e){}
     // Restore active trip
     try{
@@ -6017,7 +6045,14 @@ const A = {
   openDetail(id){
     id=parseInt(id,10);
     const restaurants=this.getRestaurants();
-    const r=restaurants.find(x=>x.id===id);
+    let r=restaurants.find(x=>x.id===id);
+    // Fallback: search all city data (fixes hospitality group clicks when city doesn't match)
+    if(!r){
+      for(const key of Object.keys(CITY_DATA)){
+        r=(CITY_DATA[key]||[]).find(x=>x.id===id);
+        if(r) break;
+      }
+    }
     if(!r) return;
 
     const isFav=S.userData.favs.includes(id);
@@ -6140,6 +6175,15 @@ const A = {
         <button class="da-btn" onclick="navigator.share?.({title:'${r.name}',text:'Check out ${r.name} on Appetyt -- scored ${r.score}/100',url:'https://appetyt.app'}).catch(()=>A.showToast('Link copied!'))" >📤 Share</button>
         <button class="da-btn" onclick="window.open('https://maps.google.com/?q=${encodeURIComponent(r.name+' '+r.neighborhood+' Dallas TX')}','_blank')">🗺️ Maps</button>
         ${r.phone ? `<button class="da-btn" onclick="window.location.href='tel:${r.phone}'">📞 Call</button>` : ''}
+      </div>
+
+      <!-- Check-In -->
+      <div style="margin-bottom:14px">
+        <button onclick="A.openCheckIn(${id},'${r.name.replace(/'/g,"\\'")}')" style="width:100%;padding:14px;border-radius:12px;border:1px solid rgba(76,154,110,.4);background:linear-gradient(135deg,rgba(76,154,110,.15),rgba(76,154,110,.05));color:#4c9a6e;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:8px">
+          <span class="checkin-pulse-ring" style="width:10px;height:10px;border-radius:50%;background:#4c9a6e;display:inline-block"></span>
+          I'm Here -- Check In
+        </button>
+        ${(S.userData.checkins||[]).find(c=>c.id===id&&Date.now()-c.time<7200000)?'<div style="font-size:11px;color:#4c9a6e;text-align:center;margin-top:5px">✅ Checked in '+new Date((S.userData.checkins||[]).find(c=>c.id===id).time).toLocaleTimeString([],{hour:"numeric",minute:"2-digit"})+'</div>':''}
       </div>
 
       <!-- My Notes -->
@@ -11517,6 +11561,31 @@ Return ONLY the JSON object, nothing else.`,
         <div style="font-size:11px;color:var(--text2);line-height:1.6">All your favorites, bills, and travel items are saved locally on this device. Connect Supabase to sync across devices.</div>
       </div>
 
+      <!-- Guest Profile / Check-In Preferences -->
+      ${(()=>{
+        const gp=S.userData.guestProfile||{};
+        const checkins=S.userData.checkins||[];
+        const recentCheckins=checkins.slice(-5).reverse();
+        return `<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+            <div style="font-size:13px;font-weight:800;color:var(--text)">📍 Check-In Profile</div>
+            <span class="checkin-status checkin-active">${checkins.length} check-in${checkins.length!==1?'s':''}</span>
+          </div>
+          ${gp.name?`<div style="font-size:12px;color:var(--text2);margin-bottom:6px">Name: <b style="color:var(--text)">${gp.name}</b></div>`:''}
+          ${(gp.dietary||[]).length?`<div style="margin-bottom:6px"><span style="font-size:10px;color:var(--text3)">Dietary: </span>${gp.dietary.map(d=>'<span class="guest-tag dietary-tag">'+d+'</span>').join('')}</div>`:''}
+          ${(gp.allergies||[]).length?`<div style="margin-bottom:6px"><span style="font-size:10px;color:var(--text3)">Allergies: </span>${gp.allergies.map(a=>'<span class="guest-tag allergy-tag">⚠ '+a+'</span>').join('')}</div>`:''}
+          ${recentCheckins.length?`
+          <div style="margin-top:8px;border-top:1px solid var(--border);padding-top:8px">
+            <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Recent Check-Ins</div>
+            ${recentCheckins.map(c=>`<div style="display:flex;justify-content:space-between;padding:4px 0;font-size:11px">
+              <span style="color:var(--text)">${c.name}</span>
+              <span style="color:var(--text3)">${new Date(c.time).toLocaleDateString()}</span>
+            </div>`).join('')}
+          </div>`:''}
+          ${!gp.name&&!checkins.length?'<div style="font-size:11px;color:var(--text3)">Check in at any restaurant to build your guest profile</div>':''}
+        </div>`;
+      })()}
+
       <!-- Perks & Rewards shortcut -->
       <div style="margin-top:16px;background:linear-gradient(135deg,rgba(201,168,76,.1),rgba(201,168,76,.04));border:1px solid rgba(201,168,76,.25);border-radius:14px;padding:14px;cursor:pointer" onclick="A.tab('drops')">
         <div style="display:flex;align-items:center;justify-content:space-between">
@@ -12352,6 +12421,289 @@ Return ONLY the JSON object, nothing else.`,
     } else {
       navigator.clipboard.writeText(text).then(()=>A.showToast('Link copied! 📋')).catch(()=>A.showToast(name+' -- Score: '+score));
     }
+  },
+
+  // -- CHECK-IN SYSTEM -------------------------------------------
+  openCheckIn(id, name){
+    const gp = S.userData.guestProfile || {};
+    const checkins = S.userData.checkins || [];
+    const visitCount = checkins.filter(c=>c.id===id).length;
+    const totalVisits = (S.userData.visited||[]).length;
+    const totalSpent = (S.userData.bills||[]).reduce((s,b)=>s+(b.total||0),0);
+
+    // Determine tier
+    let tier='Bronze', tierClass='tier-bronze', tierIcon='🥉';
+    if(totalSpent>=5000||totalVisits>=50){tier='Black';tierClass='tier-black';tierIcon='💎';}
+    else if(totalSpent>=2000||totalVisits>=25){tier='Gold';tierClass='tier-gold';tierIcon='🥇';}
+    else if(totalSpent>=500||totalVisits>=10){tier='Silver';tierClass='tier-silver';tierIcon='🥈';}
+
+    const isVIP = tier==='Gold'||tier==='Black';
+
+    const sheet = document.getElementById('checkin-sheet');
+    sheet.innerHTML = `
+      <div style="padding:20px 16px 24px">
+        <!-- Handle bar -->
+        <div style="width:36px;height:4px;border-radius:2px;background:var(--border);margin:0 auto 16px"></div>
+
+        <div style="text-align:center;margin-bottom:20px">
+          <div class="checkin-pulse-ring" style="width:56px;height:56px;border-radius:50%;background:rgba(76,154,110,.15);border:2px solid #4c9a6e;display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 10px">📍</div>
+          <div style="font-size:18px;font-weight:800;color:var(--text)">Check In at ${name}</div>
+          <div style="font-size:12px;color:var(--text3);margin-top:4px">${visitCount>0?'Welcome back! Visit #'+(visitCount+1):'First visit -- welcome!'}</div>
+          ${isVIP?'<div class="checkin-status checkin-vip" style="margin-top:8px">'+tierIcon+' VIP Guest · '+tier+' Tier</div>':''}
+        </div>
+
+        <!-- Guest Profile Card -->
+        <div class="guest-card">
+          <div style="font-size:11px;font-weight:800;color:var(--gold);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px">👤 Guest Profile (shared with restaurant)</div>
+
+          <div style="margin-bottom:10px">
+            <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:4px">Display Name</label>
+            <input id="ci-name" type="text" value="${gp.name||''}" placeholder="Your first name"
+              style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:9px;font-size:13px;font-family:inherit;outline:none">
+          </div>
+
+          <div style="margin-bottom:10px">
+            <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:4px">Party Size</label>
+            <div style="display:flex;gap:6px" id="ci-party-btns">
+              ${[1,2,3,4,'5+'].map(n=>`<button onclick="document.querySelectorAll('#ci-party-btns button').forEach(b=>b.style.cssText='flex:1;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text3);font-size:13px;font-weight:600;cursor:pointer;font-family:inherit');this.style.cssText='flex:1;padding:8px;border-radius:8px;border:1px solid var(--gold);background:rgba(201,168,76,.15);color:var(--gold);font-size:13px;font-weight:700;cursor:pointer;font-family:inherit';document.getElementById('ci-party').value='${n}'"
+                style="flex:1;padding:8px;border-radius:8px;border:1px solid ${(gp.defaultParty||2)==n?'var(--gold)':'var(--border)'};background:${(gp.defaultParty||2)==n?'rgba(201,168,76,.15)':'var(--card2)'};color:${(gp.defaultParty||2)==n?'var(--gold)':'var(--text3)'};font-size:13px;font-weight:${(gp.defaultParty||2)==n?'700':'600'};cursor:pointer;font-family:inherit">${n}</button>`).join('')}
+            </div>
+            <input type="hidden" id="ci-party" value="${gp.defaultParty||2}">
+          </div>
+
+          <!-- Dietary Restrictions -->
+          <div style="margin-bottom:10px">
+            <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:6px">Dietary Restrictions</label>
+            <div style="display:flex;flex-wrap:wrap;gap:4px" id="ci-dietary">
+              ${['Vegetarian','Vegan','Gluten-Free','Dairy-Free','Keto','Halal','Kosher','Pescatarian'].map(d=>{
+                const active=(gp.dietary||[]).includes(d);
+                return `<button onclick="this.classList.toggle('on');this.style.cssText=this.classList.contains('on')?'font-size:11px;font-weight:700;padding:5px 10px;border-radius:8px;cursor:pointer;font-family:inherit;background:rgba(76,154,110,.15);color:#4c9a6e;border:1px solid rgba(76,154,110,.4)':'font-size:11px;font-weight:600;padding:5px 10px;border-radius:8px;cursor:pointer;font-family:inherit;background:var(--card2);color:var(--text3);border:1px solid var(--border)'"
+                  class="${active?'on':''}"
+                  data-diet="${d}"
+                  style="font-size:11px;font-weight:${active?'700':'600'};padding:5px 10px;border-radius:8px;cursor:pointer;font-family:inherit;background:${active?'rgba(76,154,110,.15)':'var(--card2)'};color:${active?'#4c9a6e':'var(--text3)'};border:1px solid ${active?'rgba(76,154,110,.4)':'var(--border)'}">
+                  ${d}</button>`;
+              }).join('')}
+            </div>
+          </div>
+
+          <!-- Allergies -->
+          <div style="margin-bottom:10px">
+            <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:6px">Allergies</label>
+            <div style="display:flex;flex-wrap:wrap;gap:4px" id="ci-allergies">
+              ${['Nuts','Shellfish','Soy','Eggs','Fish','Wheat','Sesame','None'].map(a=>{
+                const active=(gp.allergies||[]).includes(a);
+                return `<button onclick="this.classList.toggle('on');this.style.cssText=this.classList.contains('on')?'font-size:11px;font-weight:700;padding:5px 10px;border-radius:8px;cursor:pointer;font-family:inherit;background:rgba(220,70,70,.12);color:#dc4646;border:1px solid rgba(220,70,70,.3)':'font-size:11px;font-weight:600;padding:5px 10px;border-radius:8px;cursor:pointer;font-family:inherit;background:var(--card2);color:var(--text3);border:1px solid var(--border)'"
+                  class="${active?'on':''}"
+                  data-allergy="${a}"
+                  style="font-size:11px;font-weight:${active?'700':'600'};padding:5px 10px;border-radius:8px;cursor:pointer;font-family:inherit;background:${active?'rgba(220,70,70,.12)':'var(--card2)'};color:${active?'#dc4646':'var(--text3)'};border:1px solid ${active?'rgba(220,70,70,.3)':'var(--border)'}">
+                  ${a}</button>`;
+              }).join('')}
+            </div>
+          </div>
+
+          <!-- Special requests -->
+          <div>
+            <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:4px">Special Requests / Notes</label>
+            <textarea id="ci-notes" rows="2" placeholder="Birthday celebration, high chair needed, window seat preferred..."
+              style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:9px;font-size:12px;font-family:inherit;outline:none;resize:none">${gp.lastNotes||''}</textarea>
+          </div>
+        </div>
+
+        <!-- What restaurant sees -->
+        <div style="background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.15);border-radius:10px;padding:10px 12px;margin-bottom:16px">
+          <div style="font-size:10px;font-weight:700;color:var(--gold);margin-bottom:4px">🔔 What the restaurant sees</div>
+          <div style="font-size:11px;color:var(--text2);line-height:1.6">Your name, party size, dietary needs, allergies, special requests, visit history, and loyalty tier. Used to personalize your experience.</div>
+        </div>
+
+        <!-- Confirm Check-In -->
+        <button onclick="A.confirmCheckIn(${id},'${name.replace(/'/g,"\\'")}')"
+          style="width:100%;padding:15px;border-radius:14px;border:none;background:linear-gradient(135deg,#4c9a6e,#367a52);color:#fff;font-size:15px;font-weight:800;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:8px">
+          📍 Confirm Check-In
+        </button>
+        <button onclick="A.closeCheckIn()" style="width:100%;padding:10px;background:none;border:none;color:var(--text3);font-size:13px;cursor:pointer;font-family:inherit">Cancel</button>
+      </div>
+    `;
+    document.getElementById('checkin-modal').classList.add('open');
+  },
+
+  closeCheckIn(){
+    document.getElementById('checkin-modal').classList.remove('open');
+  },
+
+  confirmCheckIn(id, name){
+    // Gather profile data from form
+    const guestName = document.getElementById('ci-name').value.trim();
+    const partySize = document.getElementById('ci-party').value;
+    const dietary = [...document.querySelectorAll('#ci-dietary button.on')].map(b=>b.dataset.diet);
+    const allergies = [...document.querySelectorAll('#ci-allergies button.on')].map(b=>b.dataset.allergy).filter(a=>a!=='None');
+    const notes = document.getElementById('ci-notes').value.trim();
+
+    // Save guest profile for future check-ins
+    S.userData.guestProfile = {
+      name: guestName,
+      dietary: dietary,
+      allergies: allergies,
+      defaultParty: partySize,
+      lastNotes: notes
+    };
+
+    // Save check-in record
+    if(!S.userData.checkins) S.userData.checkins = [];
+    const checkin = {
+      id: id,
+      name: name,
+      time: Date.now(),
+      party: partySize,
+      dietary: dietary,
+      allergies: allergies,
+      notes: notes
+    };
+    S.userData.checkins.push(checkin);
+
+    // Auto-mark as visited
+    if(!S.userData.visited.includes(id)){
+      S.userData.visited.push(id);
+    }
+
+    localStorage.setItem('appetyt_data', JSON.stringify(S.userData));
+    this.closeCheckIn();
+
+    // Calculate guest tier
+    const totalSpent = (S.userData.bills||[]).reduce((s,b)=>s+(b.total||0),0);
+    const totalVisits = (S.userData.visited||[]).length;
+    let tier='Bronze', tierIcon='🥉';
+    if(totalSpent>=5000||totalVisits>=50){tier='Black';tierIcon='💎';}
+    else if(totalSpent>=2000||totalVisits>=25){tier='Gold';tierIcon='🥇';}
+    else if(totalSpent>=500||totalVisits>=10){tier='Silver';tierIcon='🥈';}
+    const isVIP = tier==='Gold'||tier==='Black';
+
+    // Show user confirmation
+    this.showToast('Checked in at ' + name + '!');
+
+    // Simulate restaurant-side alert after 1s
+    setTimeout(()=>{
+      this.showRestaurantAlert({
+        guestName: guestName || 'Guest',
+        partySize: partySize,
+        dietary: dietary,
+        allergies: allergies,
+        notes: notes,
+        tier: tier,
+        tierIcon: tierIcon,
+        isVIP: isVIP,
+        restaurant: name,
+        visitHistory: S.userData.checkins.filter(c=>c.id===id).length,
+        totalSpentHere: (S.userData.bills||[]).filter(b=>b.restaurant===name).reduce((s,b)=>s+(b.total||0),0),
+        favDishes: this.getGuestFavDishes(id),
+        time: new Date().toLocaleTimeString([], {hour:'numeric', minute:'2-digit'})
+      });
+    }, 1200);
+
+    // Refresh detail view to show checked-in status
+    this.openDetail(id);
+  },
+
+  getGuestFavDishes(id){
+    const restaurants = this.getRestaurants();
+    const r = restaurants.find(x=>x.id===id);
+    return r?.dishes?.slice(0,3) || [];
+  },
+
+  showRestaurantAlert(guest){
+    const sheet = document.getElementById('restaurant-alert-sheet');
+    sheet.innerHTML = `
+      <div style="padding:20px 16px 24px">
+        <div style="width:36px;height:4px;border-radius:2px;background:var(--border);margin:0 auto 16px"></div>
+
+        <!-- Alert Header -->
+        <div style="background:linear-gradient(135deg,rgba(76,154,110,.15),rgba(76,154,110,.05));border:2px solid rgba(76,154,110,.4);border-radius:14px;padding:14px;margin-bottom:16px;text-align:center">
+          <div style="font-size:12px;font-weight:700;color:#4c9a6e;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px">🔔 New Guest Check-In</div>
+          <div style="font-size:20px;font-weight:800;color:var(--text)">${guest.restaurant}</div>
+          <div style="font-size:12px;color:var(--text3);margin-top:4px">${guest.time} · Table for ${guest.partySize}</div>
+        </div>
+
+        <!-- Guest Card (what restaurant staff sees) -->
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px">
+          <div style="padding:14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px">
+            <div class="guest-avatar" style="background:${guest.isVIP?'linear-gradient(135deg,var(--gold),#b8922e)':'var(--card2)'};border:${guest.isVIP?'2px solid var(--gold)':'1px solid var(--border)'}">
+              ${guest.isVIP?'⭐':'👤'}
+            </div>
+            <div style="flex:1">
+              <div style="font-size:16px;font-weight:700;color:var(--text)">${guest.guestName}</div>
+              <div style="display:flex;align-items:center;gap:6px;margin-top:3px">
+                <span class="tier-badge tier-${guest.tier.toLowerCase()}">${guest.tierIcon} ${guest.tier}</span>
+                ${guest.isVIP?'<span class="checkin-status checkin-vip" style="font-size:10px">VIP</span>':''}
+              </div>
+            </div>
+            <div style="text-align:right">
+              <div style="font-size:24px;font-weight:800;color:var(--gold)">${guest.partySize}</div>
+              <div style="font-size:9px;color:var(--text3)">GUESTS</div>
+            </div>
+          </div>
+
+          <div style="padding:14px">
+            <!-- Visit History -->
+            <div style="display:flex;gap:8px;margin-bottom:12px">
+              <div style="flex:1;background:var(--card2);border-radius:8px;padding:8px;text-align:center">
+                <div style="font-size:18px;font-weight:700;color:var(--text)">${guest.visitHistory}</div>
+                <div style="font-size:9px;color:var(--text3)">VISITS</div>
+              </div>
+              <div style="flex:1;background:var(--card2);border-radius:8px;padding:8px;text-align:center">
+                <div style="font-size:18px;font-weight:700;color:var(--gold)">${guest.totalSpentHere>0?'$'+guest.totalSpentHere.toFixed(0):'New'}</div>
+                <div style="font-size:9px;color:var(--text3)">SPENT HERE</div>
+              </div>
+              <div style="flex:1;background:var(--card2);border-radius:8px;padding:8px;text-align:center">
+                <div style="font-size:18px;font-weight:700;color:var(--text)">${guest.tier}</div>
+                <div style="font-size:9px;color:var(--text3)">TIER</div>
+              </div>
+            </div>
+
+            ${guest.dietary.length?`
+            <div style="margin-bottom:10px">
+              <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px">🥗 Dietary</div>
+              <div style="display:flex;flex-wrap:wrap;gap:4px">
+                ${guest.dietary.map(d=>`<span class="guest-tag dietary-tag">✓ ${d}</span>`).join('')}
+              </div>
+            </div>`:''}
+
+            ${guest.allergies.length?`
+            <div style="margin-bottom:10px">
+              <div style="font-size:10px;font-weight:700;color:#dc4646;text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px">⚠️ Allergies</div>
+              <div style="display:flex;flex-wrap:wrap;gap:4px">
+                ${guest.allergies.map(a=>`<span class="guest-tag allergy-tag">⚠ ${a}</span>`).join('')}
+              </div>
+            </div>`:''}
+
+            ${guest.favDishes.length?`
+            <div style="margin-bottom:10px">
+              <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px">🍽️ Previous Orders / Favorites</div>
+              <div style="display:flex;flex-wrap:wrap;gap:4px">
+                ${guest.favDishes.map(d=>`<span class="guest-tag pref-tag">${d}</span>`).join('')}
+              </div>
+            </div>`:''}
+
+            ${guest.notes?`
+            <div>
+              <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px">📝 Guest Notes</div>
+              <div style="font-size:12px;color:var(--text);background:var(--card2);border-radius:8px;padding:8px 10px;line-height:1.5">${guest.notes}</div>
+            </div>`:''}
+          </div>
+        </div>
+
+        <!-- Restaurant Actions -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">
+          <button onclick="document.getElementById('restaurant-alert-modal').classList.remove('open');A.showToast('Table assigned -- guest notified')"
+            style="padding:12px;border-radius:10px;border:none;background:var(--gold);color:var(--dark);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">🪑 Seat Guest</button>
+          <button onclick="document.getElementById('restaurant-alert-modal').classList.remove('open');A.showToast('Added to waitlist')"
+            style="padding:12px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">⏳ Waitlist</button>
+        </div>
+
+        <div style="text-align:center;font-size:10px;color:var(--text3);padding:4px">
+          This is a preview of what restaurant partners see via the Appetyt Partner Dashboard
+        </div>
+      </div>
+    `;
+    document.getElementById('restaurant-alert-modal').classList.add('open');
   },
 
   showToast(msg){
