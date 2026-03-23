@@ -12478,213 +12478,103 @@ Return ONLY the JSON object, nothing else.`,
   // -- CHECK-IN SYSTEM -------------------------------------------
   openCheckIn(id, name){
     const gp = S.userData.guestProfile || {};
-    const hasProfile = !!(gp.name);
 
-    // Quick mode: profile exists → just pick party size and go
-    if(hasProfile){
-      this._quickCheckIn(id, name, gp);
+    // Has profile → instant one-tap check-in, no modal
+    if(gp.name){
+      this._instantCheckIn(id, name, gp);
       return;
     }
-    // First time: show full setup
-    this._fullCheckInSetup(id, name, gp);
+    // First time only: ask for name
+    this._firstTimeCheckIn(id, name);
   },
 
-  _quickCheckIn(id, name, gp){
-    const checkins = S.userData.checkins || [];
-    const visitCount = checkins.filter(c=>c.id===id).length;
+  _instantCheckIn(id, name, gp){
+    // Record check-in immediately
+    if(!S.userData.checkins) S.userData.checkins = [];
+    S.userData.checkins.push({ id, name, time: Date.now(), party: gp.defaultParty||2, dietary: gp.dietary||[], allergies: gp.allergies||[], notes: gp.lastNotes||'' });
+    if(!S.userData.visited.includes(id)) S.userData.visited.push(id);
+    localStorage.setItem('appetyt_data', JSON.stringify(S.userData));
+
+    // Toast + restaurant alert
+    this.showToast('Checked in at ' + name + '!');
+    const tier = this._calcTier();
+    setTimeout(()=>{
+      this.showRestaurantAlert({
+        guestName: gp.name, partySize: gp.defaultParty||2, dietary: gp.dietary||[], allergies: gp.allergies||[],
+        notes: gp.lastNotes||'', tier: tier.name, tierIcon: tier.icon, isVIP: tier.vip, restaurant: name,
+        visitHistory: S.userData.checkins.filter(c=>c.id===id).length,
+        totalSpentHere: (S.userData.bills||[]).filter(b=>b.restaurant===name).reduce((s,b)=>s+(b.total||0),0),
+        favDishes: this.getGuestFavDishes(id),
+        time: new Date().toLocaleTimeString([], {hour:'numeric', minute:'2-digit'})
+      });
+    }, 600);
+    this.openDetail(id);
+  },
+
+  _firstTimeCheckIn(id, name){
     const sheet = document.getElementById('checkin-sheet');
     sheet.innerHTML = `
       <div style="padding:20px 16px 24px">
         <div style="width:36px;height:4px;border-radius:2px;background:var(--border);margin:0 auto 16px"></div>
-        <div style="text-align:center;margin-bottom:16px">
-          <div class="checkin-pulse-ring" style="width:48px;height:48px;border-radius:50%;background:rgba(76,154,110,.15);border:2px solid #4c9a6e;display:flex;align-items:center;justify-content:center;font-size:22px;margin:0 auto 8px">📍</div>
-          <div style="font-size:17px;font-weight:800;color:var(--text)">${name}</div>
-          <div style="font-size:12px;color:var(--text3);margin-top:3px">Hi ${gp.name}! ${visitCount>0?'Visit #'+(visitCount+1):'First visit here'}</div>
+        <div style="text-align:center;margin-bottom:20px">
+          <div style="font-size:17px;font-weight:800;color:var(--text)">Quick Profile Setup</div>
+          <div style="font-size:12px;color:var(--text3);margin-top:3px">One-time setup -- future check-ins are instant</div>
         </div>
-
-        <!-- Quick party size -->
-        <div style="margin-bottom:16px">
-          <div style="font-size:11px;color:var(--text3);text-align:center;margin-bottom:8px">How many in your party?</div>
-          <div style="display:flex;gap:8px;justify-content:center" id="ci-party-btns">
-            ${[1,2,3,4,'5+'].map(n=>`<button onclick="document.querySelectorAll('#ci-party-btns button').forEach(b=>{b.style.background='var(--card2)';b.style.borderColor='var(--border)';b.style.color='var(--text3)'});this.style.background='rgba(201,168,76,.15)';this.style.borderColor='var(--gold)';this.style.color='var(--gold)';document.getElementById('ci-party').value='${n}'"
-              style="width:48px;height:48px;border-radius:12px;border:1px solid ${(gp.defaultParty||2)==n?'var(--gold)':'var(--border)'};background:${(gp.defaultParty||2)==n?'rgba(201,168,76,.15)':'var(--card2)'};color:${(gp.defaultParty||2)==n?'var(--gold)':'var(--text3)'};font-size:16px;font-weight:700;cursor:pointer;font-family:inherit">${n}</button>`).join('')}
-          </div>
-          <input type="hidden" id="ci-party" value="${gp.defaultParty||2}">
+        <div style="margin-bottom:14px">
+          <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:4px">Your Name</label>
+          <input id="ci-name" type="text" placeholder="First name" autofocus
+            style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:12px;border-radius:10px;font-size:15px;font-family:inherit;outline:none">
         </div>
-
-        <!-- Profile summary (compact) -->
-        ${(gp.dietary||[]).length||(gp.allergies||[]).length?`
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:16px">
-          ${(gp.dietary||[]).length?'<div style="margin-bottom:4px">'+gp.dietary.map(d=>'<span class="guest-tag dietary-tag" style="font-size:9px">'+d+'</span>').join('')+'</div>':''}
-          ${(gp.allergies||[]).length?'<div>'+gp.allergies.map(a=>'<span class="guest-tag allergy-tag" style="font-size:9px">⚠ '+a+'</span>').join('')+'</div>':''}
-        </div>`:''}
-
-        <!-- Quick note (optional, collapsed) -->
-        <div style="margin-bottom:16px">
-          <button onclick="const el=document.getElementById('ci-notes-wrap');el.style.display=el.style.display==='none'?'block':'none';this.style.display='none'" style="width:100%;background:none;border:1px dashed var(--border);border-radius:8px;padding:8px;color:var(--text3);font-size:11px;cursor:pointer;font-family:inherit">+ Add a note for the restaurant</button>
-          <div id="ci-notes-wrap" style="display:none;margin-top:6px">
-            <textarea id="ci-notes" rows="2" placeholder="Birthday, high chair, window seat..."
-              style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:9px;font-size:12px;font-family:inherit;outline:none;resize:none"></textarea>
+        <div style="margin-bottom:14px">
+          <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:6px">Dietary <span style="color:var(--text3);font-weight:400">(optional)</span></label>
+          <div style="display:flex;flex-wrap:wrap;gap:5px" id="ci-dietary">
+            ${['Vegetarian','Vegan','Gluten-Free','Dairy-Free','Halal','Kosher'].map(d=>
+              `<button onclick="this.classList.toggle('on');this.style.borderColor=this.classList.contains('on')?'rgba(76,154,110,.5)':'var(--border)';this.style.background=this.classList.contains('on')?'rgba(76,154,110,.12)':'var(--card2)';this.style.color=this.classList.contains('on')?'#4c9a6e':'var(--text3)'" data-diet="${d}" style="font-size:11px;padding:6px 10px;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text3);cursor:pointer;font-family:inherit">${d}</button>`
+            ).join('')}
           </div>
         </div>
-
-        <button onclick="A.confirmCheckIn(${id},'${name.replace(/'/g,"\\'")}')"
-          style="width:100%;padding:16px;border-radius:14px;border:none;background:linear-gradient(135deg,#4c9a6e,#367a52);color:#fff;font-size:16px;font-weight:800;cursor:pointer;font-family:inherit">
-          📍 Check In Now
+        <div style="margin-bottom:18px">
+          <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:6px">Allergies <span style="color:var(--text3);font-weight:400">(optional)</span></label>
+          <div style="display:flex;flex-wrap:wrap;gap:5px" id="ci-allergies">
+            ${['Nuts','Shellfish','Gluten','Dairy','None'].map(a=>
+              `<button onclick="this.classList.toggle('on');this.style.borderColor=this.classList.contains('on')?'rgba(220,70,70,.4)':'var(--border)';this.style.background=this.classList.contains('on')?'rgba(220,70,70,.1)':'var(--card2)';this.style.color=this.classList.contains('on')?'#dc4646':'var(--text3)'" data-allergy="${a}" style="font-size:11px;padding:6px 10px;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text3);cursor:pointer;font-family:inherit">${a}</button>`
+            ).join('')}
+          </div>
+        </div>
+        <button onclick="A._saveProfileAndCheckIn(${id},'${name.replace(/'/g,"\\'")}')"
+          style="width:100%;padding:15px;border-radius:12px;border:none;background:linear-gradient(135deg,#4c9a6e,#367a52);color:#fff;font-size:15px;font-weight:800;cursor:pointer;font-family:inherit">
+          📍 Check In
         </button>
-        <div style="display:flex;justify-content:center;gap:16px;margin-top:10px">
-          <button onclick="A.closeCheckIn()" style="background:none;border:none;color:var(--text3);font-size:12px;cursor:pointer;font-family:inherit">Cancel</button>
-          <button onclick="A.closeCheckIn();A._fullCheckInSetup(${id},'${name.replace(/'/g,"\\'")}',S.userData.guestProfile||{})" style="background:none;border:none;color:var(--gold);font-size:12px;cursor:pointer;font-family:inherit">Edit Profile</button>
-        </div>
+        <button onclick="A.closeCheckIn()" style="width:100%;padding:10px;background:none;border:none;color:var(--text3);font-size:12px;cursor:pointer;font-family:inherit;margin-top:4px">Cancel</button>
       </div>
     `;
     document.getElementById('checkin-modal').classList.add('open');
   },
 
-  _fullCheckInSetup(id, name, gp){
-    const checkins = S.userData.checkins || [];
-    const visitCount = checkins.filter(c=>c.id===id).length;
-    const sheet = document.getElementById('checkin-sheet');
-    const partyBtnStyle = (n, active) => `flex:1;padding:8px;border-radius:8px;border:1px solid ${active?'var(--gold)':'var(--border)'};background:${active?'rgba(201,168,76,.15)':'var(--card2)'};color:${active?'var(--gold)':'var(--text3)'};font-size:13px;font-weight:${active?'700':'600'};cursor:pointer;font-family:inherit`;
-    const dietBtnStyle = (active) => `font-size:11px;font-weight:${active?'700':'600'};padding:5px 10px;border-radius:8px;cursor:pointer;font-family:inherit;background:${active?'rgba(76,154,110,.15)':'var(--card2)'};color:${active?'#4c9a6e':'var(--text3)'};border:1px solid ${active?'rgba(76,154,110,.4)':'var(--border)'}`;
-    const allergyBtnStyle = (active) => `font-size:11px;font-weight:${active?'700':'600'};padding:5px 10px;border-radius:8px;cursor:pointer;font-family:inherit;background:${active?'rgba(220,70,70,.12)':'var(--card2)'};color:${active?'#dc4646':'var(--text3)'};border:1px solid ${active?'rgba(220,70,70,.3)':'var(--border)'}`;
+  _saveProfileAndCheckIn(id, name){
+    const guestName = (document.getElementById('ci-name')?.value||'').trim();
+    if(!guestName){ document.getElementById('ci-name').style.borderColor='var(--red)'; return; }
+    const dietary = [...document.querySelectorAll('#ci-dietary button.on')].map(b=>b.dataset.diet);
+    const allergies = [...document.querySelectorAll('#ci-allergies button.on')].map(b=>b.dataset.allergy).filter(a=>a!=='None');
+    S.userData.guestProfile = { name: guestName, dietary, allergies, defaultParty: 2, lastNotes: '' };
+    localStorage.setItem('appetyt_data', JSON.stringify(S.userData));
+    this.closeCheckIn();
+    this._instantCheckIn(id, name, S.userData.guestProfile);
+  },
 
-    sheet.innerHTML = `
-      <div style="padding:20px 16px 24px">
-        <div style="width:36px;height:4px;border-radius:2px;background:var(--border);margin:0 auto 16px"></div>
-        <div style="text-align:center;margin-bottom:16px">
-          <div style="font-size:17px;font-weight:800;color:var(--text)">${gp.name?'Edit Profile':'Set Up Your Guest Profile'}</div>
-          <div style="font-size:12px;color:var(--text3);margin-top:3px">Saved for all future check-ins</div>
-        </div>
-
-        <div class="guest-card">
-          <div style="margin-bottom:10px">
-            <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:4px">Your Name</label>
-            <input id="ci-name" type="text" value="${gp.name||''}" placeholder="First name"
-              style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:9px;font-size:14px;font-family:inherit;outline:none">
-          </div>
-
-          <div style="margin-bottom:10px">
-            <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:4px">Default Party Size</label>
-            <div style="display:flex;gap:6px" id="ci-party-btns">
-              ${[1,2,3,4,'5+'].map(n=>`<button onclick="document.querySelectorAll('#ci-party-btns button').forEach(b=>b.style.cssText='${partyBtnStyle(n,false)}');this.style.cssText='${partyBtnStyle(n,true)}';document.getElementById('ci-party').value='${n}'" style="${partyBtnStyle(n,(gp.defaultParty||2)==n)}">${n}</button>`).join('')}
-            </div>
-            <input type="hidden" id="ci-party" value="${gp.defaultParty||2}">
-          </div>
-
-          <div style="margin-bottom:10px">
-            <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:6px">Dietary Restrictions</label>
-            <div style="display:flex;flex-wrap:wrap;gap:4px" id="ci-dietary">
-              ${['Vegetarian','Vegan','Gluten-Free','Dairy-Free','Keto','Halal','Kosher','Pescatarian'].map(d=>{
-                const active=(gp.dietary||[]).includes(d);
-                return `<button onclick="this.classList.toggle('on');this.style.cssText=this.classList.contains('on')?'${dietBtnStyle(true)}':'${dietBtnStyle(false)}'" class="${active?'on':''}" data-diet="${d}" style="${dietBtnStyle(active)}">${d}</button>`;
-              }).join('')}
-            </div>
-          </div>
-
-          <div style="margin-bottom:10px">
-            <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:6px">Allergies</label>
-            <div style="display:flex;flex-wrap:wrap;gap:4px" id="ci-allergies">
-              ${['Nuts','Shellfish','Soy','Eggs','Fish','Wheat','Sesame','None'].map(a=>{
-                const active=(gp.allergies||[]).includes(a);
-                return `<button onclick="this.classList.toggle('on');this.style.cssText=this.classList.contains('on')?'${allergyBtnStyle(true)}':'${allergyBtnStyle(false)}'" class="${active?'on':''}" data-allergy="${a}" style="${allergyBtnStyle(active)}">${a}</button>`;
-              }).join('')}
-            </div>
-          </div>
-
-          <div>
-            <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:4px">Notes for Restaurants</label>
-            <textarea id="ci-notes" rows="2" placeholder="Birthday, high chair, window seat..."
-              style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:9px;font-size:12px;font-family:inherit;outline:none;resize:none">${gp.lastNotes||''}</textarea>
-          </div>
-        </div>
-
-        <button onclick="A.confirmCheckIn(${id},'${name.replace(/'/g,"\\'")}')"
-          style="width:100%;padding:15px;border-radius:14px;border:none;background:linear-gradient(135deg,#4c9a6e,#367a52);color:#fff;font-size:15px;font-weight:800;cursor:pointer;font-family:inherit;margin-bottom:8px">
-          📍 Save Profile & Check In
-        </button>
-        <button onclick="A.closeCheckIn()" style="width:100%;padding:10px;background:none;border:none;color:var(--text3);font-size:13px;cursor:pointer;font-family:inherit">Cancel</button>
-      </div>
-    `;
-    document.getElementById('checkin-modal').classList.add('open');
+  _calcTier(){
+    const totalSpent = (S.userData.bills||[]).reduce((s,b)=>s+(b.total||0),0);
+    const totalVisits = (S.userData.visited||[]).length;
+    if(totalSpent>=5000||totalVisits>=50) return {name:'Black',icon:'💎',vip:true};
+    if(totalSpent>=2000||totalVisits>=25) return {name:'Gold',icon:'🥇',vip:true};
+    if(totalSpent>=500||totalVisits>=10) return {name:'Silver',icon:'🥈',vip:false};
+    return {name:'Bronze',icon:'🥉',vip:false};
   },
 
   closeCheckIn(){
     document.getElementById('checkin-modal').classList.remove('open');
   },
 
-  confirmCheckIn(id, name){
-    // Gather profile data from form
-    const guestName = document.getElementById('ci-name').value.trim();
-    const partySize = document.getElementById('ci-party').value;
-    const dietary = [...document.querySelectorAll('#ci-dietary button.on')].map(b=>b.dataset.diet);
-    const allergies = [...document.querySelectorAll('#ci-allergies button.on')].map(b=>b.dataset.allergy).filter(a=>a!=='None');
-    const notes = document.getElementById('ci-notes').value.trim();
-
-    // Save guest profile for future check-ins
-    S.userData.guestProfile = {
-      name: guestName,
-      dietary: dietary,
-      allergies: allergies,
-      defaultParty: partySize,
-      lastNotes: notes
-    };
-
-    // Save check-in record
-    if(!S.userData.checkins) S.userData.checkins = [];
-    const checkin = {
-      id: id,
-      name: name,
-      time: Date.now(),
-      party: partySize,
-      dietary: dietary,
-      allergies: allergies,
-      notes: notes
-    };
-    S.userData.checkins.push(checkin);
-
-    // Auto-mark as visited
-    if(!S.userData.visited.includes(id)){
-      S.userData.visited.push(id);
-    }
-
-    localStorage.setItem('appetyt_data', JSON.stringify(S.userData));
-    this.closeCheckIn();
-
-    // Calculate guest tier
-    const totalSpent = (S.userData.bills||[]).reduce((s,b)=>s+(b.total||0),0);
-    const totalVisits = (S.userData.visited||[]).length;
-    let tier='Bronze', tierIcon='🥉';
-    if(totalSpent>=5000||totalVisits>=50){tier='Black';tierIcon='💎';}
-    else if(totalSpent>=2000||totalVisits>=25){tier='Gold';tierIcon='🥇';}
-    else if(totalSpent>=500||totalVisits>=10){tier='Silver';tierIcon='🥈';}
-    const isVIP = tier==='Gold'||tier==='Black';
-
-    // Show user confirmation
-    this.showToast('Checked in at ' + name + '!');
-
-    // Simulate restaurant-side alert after 1s
-    setTimeout(()=>{
-      this.showRestaurantAlert({
-        guestName: guestName || 'Guest',
-        partySize: partySize,
-        dietary: dietary,
-        allergies: allergies,
-        notes: notes,
-        tier: tier,
-        tierIcon: tierIcon,
-        isVIP: isVIP,
-        restaurant: name,
-        visitHistory: S.userData.checkins.filter(c=>c.id===id).length,
-        totalSpentHere: (S.userData.bills||[]).filter(b=>b.restaurant===name).reduce((s,b)=>s+(b.total||0),0),
-        favDishes: this.getGuestFavDishes(id),
-        time: new Date().toLocaleTimeString([], {hour:'numeric', minute:'2-digit'})
-      });
-    }, 1200);
-
-    // Refresh detail view to show checked-in status
-    this.openDetail(id);
-  },
 
   getGuestFavDishes(id){
     const restaurants = this.getRestaurants();
