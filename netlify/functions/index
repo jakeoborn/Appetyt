@@ -9,6 +9,21 @@
 <meta name="description" content="Appetyt — Discover the best restaurants in 248 cities worldwide.">
 <meta name="theme-color" content="#c9a84c">
 <link rel="canonical" href="https://appetyt.app/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://appetyt.app/">
+<meta property="og:title" content="Appetyt — Discover the Best Restaurants Worldwide">
+<meta property="og:description" content="Curated restaurant guides for 248 cities. Scores, reviews, filters, and local intel — all in one app.">
+<meta property="og:image" content="https://appetyt.app/icons/og-image.png">
+<meta property="og:site_name" content="Appetyt">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Appetyt — Discover the Best Restaurants Worldwide">
+<meta name="twitter:description" content="Curated restaurant guides for 248 cities. Scores, reviews, filters, and local intel — all in one app.">
+<meta name="twitter:image" content="https://appetyt.app/icons/og-image.png">
+
 <title>Appetyt</title>
 
 
