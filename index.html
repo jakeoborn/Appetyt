@@ -4612,14 +4612,63 @@ const A = {
       const nd=DALLAS_NEIGHBORHOODS[n];
       if(nd&&n!=='all'){
         infoEl.style.display='block';
-        infoEl.innerHTML=`<div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:11px 13px;margin-bottom:8px">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
-            <div style="font-size:13px;font-weight:700;color:var(--text)">${nd.emoji} ${n}</div>
-            <span style="font-size:10px;color:var(--text3)">${nd.bestFor}</span>
+        // Pull top restaurants in this neighborhood from data
+        const allR=this.getRestaurants();
+        const nbhdR=allR.filter(r=>(r.neighborhood||'').toLowerCase().includes(n.toLowerCase())).sort((a,b)=>b.score-a.score);
+        const topR=nbhdR.slice(0,6);
+        const avgScore=nbhdR.length?Math.round(nbhdR.reduce((s,r)=>s+r.score,0)/nbhdR.length):0;
+        const bestForTags=nd.bestFor.split(',').map(t=>t.trim());
+        const knownForItems=nd.knownFor.split(',').map(t=>t.trim());
+        const mustVisitItems=nd.mustVisit.split(',').map(t=>t.trim());
+        infoEl.innerHTML=`<div style="background:linear-gradient(135deg,var(--card2),var(--card));border:1px solid rgba(201,168,76,.25);border-radius:14px;overflow:hidden;margin-bottom:10px">
+          <!-- Header -->
+          <div style="background:linear-gradient(135deg,rgba(201,168,76,.12),rgba(201,168,76,.04));padding:14px 14px 12px;border-bottom:1px solid var(--border)">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+              <div style="font-size:18px;font-weight:800;color:var(--text)">${nd.emoji} ${n}</div>
+              <div style="display:flex;align-items:center;gap:6px">
+                <span style="font-size:10px;color:var(--text3)">${nbhdR.length} spots</span>
+                ${avgScore?`<span style="font-size:11px;font-weight:700;color:var(--gold);background:rgba(201,168,76,.12);padding:2px 8px;border-radius:8px">Avg ${avgScore}</span>`:''}
+              </div>
+            </div>
+            <div style="font-size:12px;color:var(--text2);line-height:1.6">${nd.vibe}</div>
           </div>
-          <div style="font-size:11px;color:var(--text2);line-height:1.5;margin-bottom:6px">${nd.vibe}</div>
-          <div style="font-size:10px;color:var(--gold);margin-bottom:3px">📍 ${nd.mustVisit}</div>
-          <div style="font-size:10px;color:var(--text3);font-style:italic">💡 ${nd.tip}</div>
+          <!-- Best For Tags -->
+          <div style="padding:10px 14px;border-bottom:1px solid var(--border)">
+            <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px">Best For</div>
+            <div style="display:flex;gap:5px;flex-wrap:wrap">${bestForTags.map(t=>`<span style="font-size:10px;font-weight:700;background:rgba(201,168,76,.1);color:var(--gold);padding:4px 10px;border-radius:20px;border:1px solid rgba(201,168,76,.2)">${t}</span>`).join('')}</div>
+          </div>
+          <!-- Known For -->
+          <div style="padding:10px 14px;border-bottom:1px solid var(--border)">
+            <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px">Known For</div>
+            <div style="display:flex;gap:5px;flex-wrap:wrap">${knownForItems.map(t=>`<span style="font-size:10px;color:var(--text2);background:var(--card);padding:4px 9px;border-radius:8px;border:1px solid var(--border)">${t}</span>`).join('')}</div>
+          </div>
+          <!-- Top Restaurants -->
+          ${topR.length?`<div style="padding:10px 14px;border-bottom:1px solid var(--border)">
+            <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Top Rated</div>
+            <div style="display:flex;flex-direction:column;gap:6px">${topR.map((r,i)=>{
+              const sc=r.score;const color=sc>=90?'var(--green)':sc>=80?'var(--gold)':'var(--text2)';
+              return `<div onclick="A.openDetail(${r.id})" style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:10px;cursor:pointer;touch-action:manipulation">
+                <div style="font-size:11px;color:var(--text3);font-weight:700;width:16px;text-align:center">${i+1}</div>
+                <div style="flex:1;min-width:0">
+                  <div style="font-size:12px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${r.name}</div>
+                  <div style="font-size:10px;color:var(--text3)">${r.cuisine} · ${'$'.repeat(r.price)}</div>
+                </div>
+                <div style="font-size:14px;font-weight:800;color:${color}">${sc}</div>
+              </div>`;
+            }).join('')}</div>
+          </div>`:''}
+          <!-- Must Visit -->
+          <div style="padding:10px 14px;border-bottom:1px solid var(--border)">
+            <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px">Must Visit</div>
+            <div style="display:flex;gap:5px;flex-wrap:wrap">${mustVisitItems.map(t=>`<span style="font-size:10px;font-weight:600;color:var(--gold);padding:4px 9px;border-radius:8px;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.15)">📍 ${t}</span>`).join('')}</div>
+          </div>
+          <!-- Local Tip -->
+          <div style="padding:10px 14px;background:rgba(201,168,76,.04)">
+            <div style="display:flex;align-items:flex-start;gap:8px">
+              <span style="font-size:14px;flex-shrink:0">💡</span>
+              <div style="font-size:11px;color:var(--text2);line-height:1.6;font-style:italic">${nd.tip}</div>
+            </div>
+          </div>
         </div>`;
       } else {
         infoEl.style.display='none';
@@ -5384,12 +5433,69 @@ const A = {
             "ig": "@lepetitchef_official"
       }
 ];
+    // Pull coming-soon restaurants from DALLAS_DATA for tappable info cards
+    const comingSoonData=(this.getRestaurants()||[]).filter(r=>(r.indicators||[]).includes('coming-soon'));
+
     return `
       <div style="margin-bottom:16px">
         <div style="font-size:20px;font-weight:700;color:var(--gold);margin-bottom:4px">🔮 Coming Soon to Dallas</div>
         <div style="font-size:12px;color:var(--text2);margin-bottom:4px">Verified upcoming openings tracked from D Magazine, CultureMap & Dallas Observer</div>
-        <div style="font-size:11px;color:var(--text3);margin-bottom:16px">${items.length} restaurants on the radar</div>
+        <div style="font-size:11px;color:var(--text3);margin-bottom:16px">${comingSoonData.length + items.length} restaurants on the radar</div>
       </div>
+
+      ${comingSoonData.length?`
+      <!-- Confirmed Coming Soon — tappable info cards from database -->
+      <div style="margin-bottom:18px">
+        <div style="font-size:11px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;display:flex;align-items:center;gap:6px">
+          <span style="width:6px;height:6px;border-radius:50%;background:var(--green);display:inline-block"></span> Confirmed Openings
+        </div>
+        ${comingSoonData.map(r=>{
+          const sc=r.score;const color=sc>=90?'var(--green)':sc>=80?'var(--gold)':'var(--text2)';
+          const isFav=S.userData.favs.includes(r.id);
+          const isWant=S.userData.want.includes(r.id);
+          return `
+          <div style="background:linear-gradient(145deg,var(--card2),var(--card));border:1px solid rgba(76,154,110,.3);border-radius:14px;overflow:hidden;margin-bottom:12px;position:relative">
+            <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#4c9a6e,var(--gold))"></div>
+            <!-- Tappable header opens detail -->
+            <div onclick="A.openDetail(${r.id})" style="padding:14px 14px 10px;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:rgba(76,154,110,.15)">
+              <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px">
+                <div style="flex:1">
+                  <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:3px">
+                    <div style="font-size:17px;font-weight:700;color:var(--text);line-height:1.2">${r.name}</div>
+                    <span style="font-size:9px;font-weight:800;background:#4c9a6e;color:#fff;padding:2px 7px;border-radius:8px;letter-spacing:.04em">CONFIRMED</span>
+                  </div>
+                  <div style="font-size:11px;color:var(--gold);font-weight:700">${r.cuisine}</div>
+                </div>
+                <div style="text-align:center;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:6px 10px;flex-shrink:0">
+                  <div style="font-size:8px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px">Score</div>
+                  <div style="font-size:16px;font-weight:800;color:${color};line-height:1">${sc}</div>
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:8px">
+                <span style="font-size:11px;color:var(--text2);font-weight:600">📍 ${r.neighborhood}</span>
+                <span style="font-size:10px;color:var(--text3)">· ${'$'.repeat(r.price)}</span>
+                <span style="margin-left:auto;font-size:10px;font-weight:800;color:#4c9a6e;background:rgba(76,154,110,.1);padding:3px 8px;border-radius:8px;border:1px solid rgba(76,154,110,.25)">🔥 Opening Soon</span>
+              </div>
+              <div style="font-size:12px;color:var(--text2);line-height:1.65;margin-bottom:10px">${r.description}</div>
+              ${r.dishes?.length?`<div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px">${r.dishes.map(d=>`<span style="font-size:10px;background:rgba(201,168,76,.08);color:var(--gold);padding:3px 9px;border-radius:20px;border:1px solid rgba(201,168,76,.18);font-weight:600">🍽️ ${d}</span>`).join('')}</div>`:''}
+              <div style="display:flex;gap:5px;flex-wrap:wrap">${(r.tags||[]).map(t=>`<span style="font-size:10px;background:var(--card);color:var(--text2);padding:3px 9px;border-radius:20px;border:1px solid var(--border);font-weight:600">${t}</span>`).join('')}</div>
+            </div>
+            <!-- Action bar -->
+            <div style="display:flex;align-items:center;gap:8px;padding:10px 14px;border-top:1px solid var(--border);background:rgba(76,154,110,.03)">
+              <button onclick="event.stopPropagation();A.toggleList('favs',${r.id},this)" style="flex:1;padding:8px;border-radius:8px;border:1px solid ${isFav?'rgba(201,168,76,.4)':'var(--border)'};background:${isFav?'rgba(201,168,76,.12)':'var(--card)'};color:${isFav?'var(--gold)':'var(--text2)'};font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">❤️ ${isFav?'Saved':'Save'}</button>
+              <button onclick="event.stopPropagation();A.toggleList('want',${r.id},this)" style="flex:1;padding:8px;border-radius:8px;border:1px solid ${isWant?'rgba(201,168,76,.4)':'var(--border)'};background:${isWant?'rgba(201,168,76,.12)':'var(--card)'};color:${isWant?'var(--gold)':'var(--text2)'};font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🔖 ${isWant?'On List':'Want to Go'}</button>
+              <button onclick="event.stopPropagation();A.openDetail(${r.id})" style="flex:1;padding:8px;border-radius:8px;border:1px solid rgba(201,168,76,.3);background:var(--gold);color:var(--dark);font-size:11px;font-weight:800;cursor:pointer;font-family:inherit">View Details →</button>
+              ${r.instagram?`<a href="https://instagram.com/${r.instagram.replace('@','')}" target="_blank" onclick="event.stopPropagation()" style="padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:13px;text-decoration:none;display:flex;align-items:center">📸</a>`:''}
+            </div>
+          </div>`;
+        }).join('')}
+      </div>
+
+      <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;display:flex;align-items:center;gap:6px">
+        <span style="width:6px;height:6px;border-radius:50%;background:var(--gold);display:inline-block"></span> On The Radar
+      </div>
+      `:''}
+
       ${items.map(r=>{
         const isHot = r.eta==='Q1 2026'||r.eta==='Early 2026'||r.eta==='Spring 2026'||r.eta==='April 2026'||r.eta==='March 2026';
         const buzz = isHot ? '🔥 Opening Soon' : r.eta==='Dec 2026' ? '📅 Late 2026' : '⏳ 2026';
