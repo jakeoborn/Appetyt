@@ -90,6 +90,9 @@ input,textarea{font-family:inherit;font-size:inherit}
 .r-diff-badge.legendary{background:rgba(201,168,76,.15);color:var(--gold);border:1px solid rgba(201,168,76,.3)}
 .r-diff-badge.hard{background:rgba(201,68,68,.12);color:#e07070;border:1px solid rgba(201,68,68,.2)}
 .r-diff-badge.moderate{background:rgba(76,122,201,.12);color:#7a9ed4;border:1px solid rgba(76,122,201,.2)}
+/* Gold highlight strip */
+.r-gold-hl{background:linear-gradient(135deg,rgba(201,168,76,.14),rgba(201,168,76,.06));border-bottom:1px solid rgba(201,168,76,.18);padding:6px 12px;display:flex;align-items:center;min-height:28px}
+.r-gold-hl span{font-size:11px;font-weight:700;color:var(--gold);letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 /* Card body */
 .r-body{padding:12px}
 .r-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
@@ -5035,6 +5038,20 @@ const A = {
     const hhLine=r.hh?`<span class="${hhActive?'badge green':'badge'}">🍸 HH ${hhActive?'ACTIVE NOW':r.hh}</span>`:'';
     const hotBadge=(typeof HOTSPOT!=='undefined')?HOTSPOT.cardBadge(r):'';
 
+    // Gold highlight — pick the most relevant highlight for this restaurant
+    const _hlTags=(r.tags||[]);const _hlDishes=(r.dishes||[]);
+    let goldHL='';
+    if(r.awards) goldHL=`🏆 ${r.awards}`;
+    else if(_hlDishes.length) goldHL=`🍽️ Must Try: ${_hlDishes.slice(0,2).join(' · ')}`;
+    else if(r.hh) goldHL=`🍸 Happy Hour: ${r.hh}`;
+    else if(_hlTags.includes('Date Night')) goldHL='💕 Great for Date Night';
+    else if(_hlTags.includes('Brunch')) goldHL='🥂 Popular Brunch Spot';
+    else if(_hlTags.includes('Patio')) goldHL='🌳 Great Patio';
+    else if(_hlTags.includes('Late Night')) goldHL='🌙 Late Night Favorite';
+    else if(_hlTags.includes('Local Favorites')) goldHL='🤠 Local Favorite';
+    else if(r.score>=90) goldHL='⭐ Top Rated in Dallas';
+    else goldHL=`📍 ${r.neighborhood}`;
+
     return `<div class="r-card${rank===1?' rank1':''}" onclick="A.openDetail(${r.id})">
       <div class="r-topbar" onclick="event.stopPropagation()">
         ${reserveBtn}
@@ -5042,6 +5059,7 @@ const A = {
         <div class="r-filter-icons">${filterIcons}</div>
         ${diffBadge}
       </div>
+      <div class="r-gold-hl"><span>${goldHL}</span></div>
       <div class="r-body">
         <div class="r-top">
           <div class="r-rank">${rank}</div>
