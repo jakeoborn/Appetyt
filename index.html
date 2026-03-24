@@ -126,7 +126,7 @@ input,textarea{font-family:inherit;font-size:inherit}
 .top50-info{flex:1;min-width:0}
 .top50-name{font-family:var(--serif);font-size:13px;font-weight:600;color:var(--text)}
 .top50-sub{font-size:10px;color:var(--text2);margin-top:1px}
-.top50-right{display:flex;flex-direction:column;align-items:flex-end;gap:3px;flex-shrink:0}
+.top50-right{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;min-width:56px}
 .top50-score{font-family:var(--serif);font-size:15px;font-weight:600;color:var(--gold2);font-style:italic}
 .top50-expand-btn{width:100%;padding:11px;text-align:center;font-size:12px;color:var(--gold);background:var(--card2);border:none;border-top:1px solid var(--border);cursor:pointer;font-weight:600}
 .top50-expand-btn:hover{background:var(--card)}
@@ -2013,34 +2013,37 @@ const TRIPS = {
       <!-- Neighborhood quick-filter: 2 rows + expand -->
       <div id="neighborhood-bar" style="padding:10px 14px 8px;border-top:1px solid var(--border)">
         <div style="font-size:10px;color:var(--gold);font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px">📍 Neighborhood</div>
-        <!-- Row 1: All + top 4 -->
-        <div style="display:flex;gap:5px;margin-bottom:5px;overflow-x:auto;scrollbar-width:none">
-          <button class="nbhd-chip active" id="nbhd-all" onclick="A.setNeighborhood('all',this)" style="flex-shrink:0">All</button>
-          <button class="nbhd-chip" onclick="A.setNeighborhood('Uptown',this)" style="flex-shrink:0">Uptown</button>
-          <button class="nbhd-chip" onclick="A.setNeighborhood('Bishop Arts',this)" style="flex-shrink:0">Bishop Arts</button>
-          <button class="nbhd-chip" onclick="A.setNeighborhood('Knox Henderson',this)" style="flex-shrink:0">Knox Henderson</button>
-          <button class="nbhd-chip" onclick="A.setNeighborhood('Deep Ellum',this)" style="flex-shrink:0">Deep Ellum</button>
-        </div>
-        <!-- Row 2: next 4 -->
-        <div style="display:flex;gap:5px;margin-bottom:5px;overflow-x:auto;scrollbar-width:none">
-          <button class="nbhd-chip" onclick="A.setNeighborhood('Design District',this)" style="flex-shrink:0">Design District</button>
-          <button class="nbhd-chip" onclick="A.setNeighborhood('Oak Cliff',this)" style="flex-shrink:0">Oak Cliff</button>
-          <button class="nbhd-chip" onclick="A.setNeighborhood('Arts District',this)" style="flex-shrink:0">Arts District</button>
-          <button class="nbhd-chip" onclick="A.setNeighborhood('Lower Greenville',this)" style="flex-shrink:0">Greenville</button>
-        </div>
-        <!-- More: hidden by default -->
-        <div id="nbhd-more" style="display:none;flex-direction:column;gap:5px">
-          <div style="display:flex;gap:5px;overflow-x:auto;scrollbar-width:none">
-            <button class="nbhd-chip" onclick="A.setNeighborhood('Highland Park Village',this)" style="flex-shrink:0">Highland Park</button>
-            <button class="nbhd-chip" onclick="A.setNeighborhood('North Dallas',this)" style="flex-shrink:0">North Dallas</button>
-            <button class="nbhd-chip" onclick="A.setNeighborhood('Victory Park',this)" style="flex-shrink:0">Victory Park</button>
-            <button class="nbhd-chip" onclick="A.setNeighborhood('__suburbs__',this)" style="flex-shrink:0">🌆 Suburbs</button>
+        <!-- Dynamic neighborhood chips (populated by buildNeighborhoodChips) -->
+        <div id="nbhd-chips-container">
+          <!-- Row 1: All + top 4 -->
+          <div style="display:flex;gap:5px;margin-bottom:5px;overflow-x:auto;scrollbar-width:none">
+            <button class="nbhd-chip active" id="nbhd-all" onclick="A.setNeighborhood('all',this)" style="flex-shrink:0">All</button>
+            <button class="nbhd-chip" onclick="A.setNeighborhood('Uptown',this)" style="flex-shrink:0">Uptown</button>
+            <button class="nbhd-chip" onclick="A.setNeighborhood('Bishop Arts',this)" style="flex-shrink:0">Bishop Arts</button>
+            <button class="nbhd-chip" onclick="A.setNeighborhood('Knox Henderson',this)" style="flex-shrink:0">Knox Henderson</button>
+            <button class="nbhd-chip" onclick="A.setNeighborhood('Deep Ellum',this)" style="flex-shrink:0">Deep Ellum</button>
           </div>
+          <!-- Row 2: next 4 -->
+          <div style="display:flex;gap:5px;margin-bottom:5px;overflow-x:auto;scrollbar-width:none">
+            <button class="nbhd-chip" onclick="A.setNeighborhood('Design District',this)" style="flex-shrink:0">Design District</button>
+            <button class="nbhd-chip" onclick="A.setNeighborhood('Oak Cliff',this)" style="flex-shrink:0">Oak Cliff</button>
+            <button class="nbhd-chip" onclick="A.setNeighborhood('Arts District',this)" style="flex-shrink:0">Arts District</button>
+            <button class="nbhd-chip" onclick="A.setNeighborhood('Lower Greenville',this)" style="flex-shrink:0">Greenville</button>
+          </div>
+          <!-- More: hidden by default -->
+          <div id="nbhd-more" style="display:none;flex-direction:column;gap:5px">
+            <div style="display:flex;gap:5px;overflow-x:auto;scrollbar-width:none">
+              <button class="nbhd-chip" onclick="A.setNeighborhood('Highland Park Village',this)" style="flex-shrink:0">Highland Park</button>
+              <button class="nbhd-chip" onclick="A.setNeighborhood('North Dallas',this)" style="flex-shrink:0">North Dallas</button>
+              <button class="nbhd-chip" onclick="A.setNeighborhood('Victory Park',this)" style="flex-shrink:0">Victory Park</button>
+              <button class="nbhd-chip" onclick="A.setNeighborhood('__suburbs__',this)" style="flex-shrink:0">🌆 Suburbs</button>
+            </div>
+          </div>
+          <!-- More toggle -->
+          <button onclick="A.toggleNbhdMore()" id="nbhd-more-btn" style="background:none;border:none;color:var(--text3);font-size:11px;font-weight:600;padding:3px 0 0;cursor:pointer;display:flex;align-items:center;gap:4px">
+            <span id="nbhd-more-label">+ More</span>
+          </button>
         </div>
-        <!-- More toggle -->
-        <button onclick="A.toggleNbhdMore()" id="nbhd-more-btn" style="background:none;border:none;color:var(--text3);font-size:11px;font-weight:600;padding:3px 0 0;cursor:pointer;display:flex;align-items:center;gap:4px">
-          <span id="nbhd-more-label">+ More</span>
-        </button>
       </div>
       <div id="nbhd-info-card" style="display:none;padding:0 14px"></div>
       <div id="restaurant-list"></div>
@@ -5188,8 +5191,8 @@ const A = {
         </div>
         <div class="top50-right">
           <div class="top50-score">${r.score}</div>
-          ${diffLabel?`<div style="font-size:10px;color:var(--gold)">${diffLabel}</div>`:''}
-          <a href="${bookUrl}" target="_blank" onclick="event.stopPropagation()" style="font-size:10px;font-weight:700;color:var(--dark);background:var(--gold);padding:2px 7px;border-radius:5px;margin-top:2px">RES</a>
+          ${diffLabel?`<div style="font-size:9px;color:var(--gold);white-space:nowrap">${diffLabel}</div>`:''}
+          <a href="${bookUrl}" target="_blank" onclick="event.stopPropagation()" style="font-size:10px;font-weight:700;color:var(--dark);background:var(--gold);padding:3px 10px;border-radius:6px;margin-top:3px;text-decoration:none;display:inline-block">RES</a>
         </div>
       </div>`;
     }).join('');
@@ -5784,7 +5787,7 @@ const A = {
         {trend:'Modern Mexican Elevation',desc:'Beyond Tex-Mex -- Lucia-style refinement applied to Mexican cuisine. Revolver Taco Lounge, Ruins, Puerto Cocina, and incoming Toca Madera are redefining what Dallas Mexican can be.',emoji:'🌮',spots:['Revolver Taco Lounge','Ruins','Puerto Cocina']},
         {trend:'Chef-Driven Breakfast',desc:'The most underrated Dallas trend. Izkina, Little Ruby\'s, Two Hands, and Maple & Motor are elevating a meal that used to be an afterthought.',emoji:'🍳',spots:['Izkina','Little Ruby\'s','Maple & Motor']},
         {trend:'Hospitality Group Consolidation',desc:'FB Society, Noble 33, Major Food Group, and Fox Restaurant Concepts are all planting flags in Dallas. The city is becoming a proving ground for national concepts.',emoji:'🏢',spots:['Toca Madera (Noble 33)','Carbone (MFG)','The Henry (Fox)']},
-        {trend:'Late Night Dining',desc:'Deep Ellum is finally getting a serious late-night food scene. Milo Butterfingers, Three Links, and Boogies are drawing crowds that want food after midnight.',emoji:'🌙',spots:['Milo Butterfingers','Boogies','AKAI at Musume']},
+        {trend:'Late Night Dining',desc:'Deep Ellum and Lower Greenville are the late-night hubs. Tatsu Dallas serves omakase past midnight, Rodeo Bar does cocktails til 2AM, and Vidorra\'s rooftop is packed every Friday. The city finally has a real after-hours food scene.',emoji:'🌙',spots:['Tatsu Dallas','Rodeo Bar','Vidorra']},
       ],
       'New York': [
         {trend:'Omakase Everywhere',desc:'Not just sushi -- omakase pasta, omakase tacos, omakase pizza. The format went citywide.',emoji:'🍽️'},
@@ -5840,7 +5843,31 @@ const A = {
           <div class="discover-cards">${dateNight.map(r=>miniCard(r,'💕')).join('')}</div>
         </div>`:''}
 
-        <!-- CELEBRITY & ATHLETE HOTSPOTS (Multi-City) -->
+        ${hhSpots.length?`
+        <div class="discover-section">
+          <div class="discover-title">🍸 Happy Hour Right Now</div>
+          <div class="discover-cards">${hhSpots.map(r=>`
+            <div class="d-card" onclick="A.openDetail(${r.id})">
+              <div class="d-card-icon">🍸</div>
+              <div class="d-card-name">${r.name}</div>
+              <div class="d-card-sub">${r.hh}</div>
+            </div>`).join('')}</div>
+        </div>`:''}
+
+        ${critics.length?`
+        <div class="discover-section">
+          <div class="discover-title">📰 Critics Picks</div>
+          <div class="discover-cards">${critics.map(r=>miniCard(r,'📰')).join('')}</div>
+        </div>`:''}
+        ` : `
+        <div class="empty-state">
+          <div class="empty-icon">🌍</div>
+          <div class="empty-title">${S.city} Restaurant Guides</div>
+          <div class="empty-desc">Full restaurant data is being curated for ${S.city}. Celebrity hotspots, events, and trends are available below.</div>
+        </div>
+        `}
+
+        <!-- CELEBRITY & ATHLETE HOTSPOTS (Multi-City) — always visible -->
         ${(()=>{
           const CELEB_DATA = {
             'Dallas':[
@@ -5888,54 +5915,31 @@ const A = {
             ],
           };
           const cityName=S.city||'Dallas';
-          const celeb=CELEB_DATA[cityName]||CELEB_DATA['Dallas'];
+          const celeb=CELEB_DATA[cityName];
+          if(!celeb) return '';
           const cityLabels={'Dallas':'Dallas','New York':'NYC','Los Angeles':'LA','Miami':'Miami'};
           const displayCity=cityLabels[cityName]||cityName;
-          return `<div class="discover-section">
-          <div class="discover-title">🌟 Celebrity & Athlete Hotspots</div>
-          <div style="font-size:11px;color:var(--text3);margin:-8px 0 10px">Where celebrities, NBA & NFL players dine in ${displayCity}</div>
-          ${celeb.map(c=>{
-            const rest=c.id?restaurants.find(r=>r.id===c.id):restaurants.find(r=>r.name===c.name);
-            const clickAttr=rest?'onclick="A.openDetail('+rest.id+')"':c.id?'onclick="A.openDetail('+c.id+')"':'';
-            const score=rest?rest.score:'';
-            return '<div '+clickAttr+' style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor=\'var(--gold)\'" onmouseleave="this.style.borderColor=\'var(--border)\'">'
-              +'<div style="display:flex;align-items:flex-start;gap:10px">'
-              +'<div style="font-size:24px;flex-shrink:0">'+c.icon+'</div>'
-              +'<div style="flex:1;min-width:0">'
-              +'<div style="display:flex;align-items:center;gap:6px;margin-bottom:3px">'
-              +'<span style="font-size:13px;font-weight:700;color:var(--text)">'+c.name+'</span>'
-              +(score?'<span style="font-size:10px;font-weight:700;color:var(--gold)">'+score+'</span>':'')
-              +'</div>'
-              +'<div style="font-size:11px;color:var(--text2);line-height:1.5;margin-bottom:4px">'+c.note+'</div>'
-              +'<div style="font-size:10px;color:var(--text3)">'+c.who+'</div>'
-              +'</div></div></div>';
-          }).join('')}
-        </div>`;
+          return '<div class="discover-section">'
+            +'<div class="discover-title">🌟 Celebrity & Athlete Hotspots</div>'
+            +'<div style="font-size:11px;color:var(--text3);margin:-8px 0 10px">Where celebrities, NBA & NFL players dine in '+displayCity+'</div>'
+            +celeb.map(c=>{
+              const rest=c.id?restaurants.find(r=>r.id===c.id):null;
+              const clickAttr=rest?'onclick="A.openDetail('+rest.id+')"':'';
+              const score=rest?rest.score:'';
+              return '<div '+clickAttr+' style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor=\'var(--gold)\'" onmouseleave="this.style.borderColor=\'var(--border)\'">'
+                +'<div style="display:flex;align-items:flex-start;gap:10px">'
+                +'<div style="font-size:24px;flex-shrink:0">'+c.icon+'</div>'
+                +'<div style="flex:1;min-width:0">'
+                +'<div style="display:flex;align-items:center;gap:6px;margin-bottom:3px">'
+                +'<span style="font-size:13px;font-weight:700;color:var(--text)">'+c.name+'</span>'
+                +(score?'<span style="font-size:10px;font-weight:700;color:var(--gold)">'+score+'</span>':'')
+                +'</div>'
+                +'<div style="font-size:11px;color:var(--text2);line-height:1.5;margin-bottom:4px">'+c.note+'</div>'
+                +'<div style="font-size:10px;color:var(--text3)">'+c.who+'</div>'
+                +'</div></div></div>';
+            }).join('')
+            +'</div>';
         })()}
-
-        ${hhSpots.length?`
-        <div class="discover-section">
-          <div class="discover-title">🍸 Happy Hour Right Now</div>
-          <div class="discover-cards">${hhSpots.map(r=>`
-            <div class="d-card" onclick="A.openDetail(${r.id})">
-              <div class="d-card-icon">🍸</div>
-              <div class="d-card-name">${r.name}</div>
-              <div class="d-card-sub">${r.hh}</div>
-            </div>`).join('')}</div>
-        </div>`:''}
-
-        ${critics.length?`
-        <div class="discover-section">
-          <div class="discover-title">📰 Critics Picks</div>
-          <div class="discover-cards">${critics.map(r=>miniCard(r,'📰')).join('')}</div>
-        </div>`:''}
-        ` : `
-        <div class="empty-state">
-          <div class="empty-icon">🌍</div>
-          <div class="empty-title">${S.city} -- Coming Soon</div>
-          <div class="empty-desc">Restaurant data is being curated. Run build_all_cities.js to populate.</div>
-        </div>
-        `}
 
         <!-- EVENTS & CONCERTS (city-specific) -->
         ${cityEvents.length?`
@@ -5973,7 +5977,7 @@ const A = {
               </div>
               <div style="padding:9px 12px">
                 <div style="font-size:11px;color:var(--text2);line-height:1.6;margin-bottom:${t.spots?'8px':'0'}">${t.desc}</div>
-                ${t.spots ? `<div style="display:flex;flex-wrap:wrap;gap:4px">${t.spots.map(s=>`<span style="font-size:10px;background:var(--card2);color:var(--text3);padding:2px 8px;border-radius:12px;border:1px solid var(--border)">${s}</span>`).join('')}</div>` : ''}
+                ${t.spots ? `<div style="display:flex;flex-wrap:wrap;gap:4px">${t.spots.map(s=>{const match=restaurants.find(r=>r.name===s||r.name.includes(s)||s.includes(r.name));return match?'<span onclick="event.stopPropagation();A.openDetail('+match.id+')" style="font-size:10px;background:rgba(201,168,76,.08);color:var(--gold);padding:3px 9px;border-radius:12px;border:1px solid rgba(201,168,76,.2);cursor:pointer;font-weight:600">'+s+' →</span>':'<span style="font-size:10px;background:var(--card2);color:var(--text3);padding:3px 8px;border-radius:12px;border:1px solid var(--border)">'+s+'</span>';}).join('')}</div>` : ''}
               </div>
             </div>`).join('')}
         </div>
@@ -6561,11 +6565,41 @@ const A = {
     document.querySelectorAll('.chip').forEach((c,i)=>c.classList.toggle('active',i===0));
     document.querySelectorAll('.combo-chip,.ind-chip').forEach(c=>c.classList.remove('active'));
     document.querySelectorAll('.nbhd-chip').forEach((b,i)=>b.classList.toggle('active',i===0));
+    this.buildNeighborhoodChips();
     this.renderHome();
     this.renderTop50();
     this.renderDiscover();
     if(S.mapInst){S.mapInst.remove();S.mapInst=null;}
     this.buildCityList();
+  },
+
+  buildNeighborhoodChips(){
+    const container=document.getElementById('nbhd-chips-container');
+    if(!container) return;
+    // Get neighborhoods: from restaurant data + CITY_NEIGHBORHOODS
+    const restaurants=this.getRestaurants();
+    const dataNeighborhoods=[...new Set(restaurants.map(r=>r.neighborhood).filter(Boolean))].sort();
+    const guideNeighborhoods=Object.keys(CITY_NEIGHBORHOODS[S.city]||{});
+    const dallasNeighborhoods=S.city==='Dallas'?Object.keys(DALLAS_NEIGHBORHOODS):[];
+    // Merge all, deduplicate
+    const allNbhds=[...new Set([...dataNeighborhoods,...guideNeighborhoods,...dallasNeighborhoods])].sort();
+    if(!allNbhds.length){
+      container.innerHTML='<div style="font-size:10px;color:var(--text3)">No neighborhood data yet for '+S.city+'</div>';
+      return;
+    }
+    const row1=allNbhds.slice(0,4);
+    const row2=allNbhds.slice(4,8);
+    const moreItems=allNbhds.slice(8);
+    const chip=(n,short)=>'<button class="nbhd-chip" onclick="A.setNeighborhood(\''+n.replace(/'/g,"\\'")+'\',this)" style="flex-shrink:0">'+(short||n)+'</button>';
+    let html='<div style="display:flex;gap:5px;margin-bottom:5px;overflow-x:auto;scrollbar-width:none">'
+      +'<button class="nbhd-chip active" id="nbhd-all" onclick="A.setNeighborhood(\'all\',this)" style="flex-shrink:0">All</button>'
+      +row1.map(n=>chip(n)).join('')+'</div>';
+    if(row2.length) html+='<div style="display:flex;gap:5px;margin-bottom:5px;overflow-x:auto;scrollbar-width:none">'+row2.map(n=>chip(n)).join('')+'</div>';
+    if(moreItems.length){
+      html+='<div id="nbhd-more" style="display:none;flex-direction:column;gap:5px"><div style="display:flex;gap:5px;flex-wrap:wrap">'+moreItems.map(n=>chip(n)).join('')+'</div></div>';
+      html+='<button onclick="A.toggleNbhdMore()" id="nbhd-more-btn" style="background:none;border:none;color:var(--text3);font-size:11px;font-weight:600;padding:3px 0 0;cursor:pointer"><span id="nbhd-more-label">+ More</span></button>';
+    }
+    container.innerHTML=html;
   },
 
   filterCities(){
