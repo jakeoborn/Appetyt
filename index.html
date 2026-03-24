@@ -90,6 +90,9 @@ input,textarea{font-family:inherit;font-size:inherit}
 .r-diff-badge.legendary{background:rgba(201,168,76,.15);color:var(--gold);border:1px solid rgba(201,168,76,.3)}
 .r-diff-badge.hard{background:rgba(201,68,68,.12);color:#e07070;border:1px solid rgba(201,68,68,.2)}
 .r-diff-badge.moderate{background:rgba(76,122,201,.12);color:#7a9ed4;border:1px solid rgba(76,122,201,.2)}
+/* Gold highlight strip */
+.r-gold-hl{background:linear-gradient(135deg,rgba(201,168,76,.14),rgba(201,168,76,.06));border-bottom:1px solid rgba(201,168,76,.18);padding:6px 12px;display:flex;align-items:center;min-height:28px}
+.r-gold-hl span{font-size:11px;font-weight:700;color:var(--gold);letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 /* Card body */
 .r-body{padding:12px}
 .r-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
@@ -4612,14 +4615,63 @@ const A = {
       const nd=DALLAS_NEIGHBORHOODS[n];
       if(nd&&n!=='all'){
         infoEl.style.display='block';
-        infoEl.innerHTML=`<div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:11px 13px;margin-bottom:8px">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
-            <div style="font-size:13px;font-weight:700;color:var(--text)">${nd.emoji} ${n}</div>
-            <span style="font-size:10px;color:var(--text3)">${nd.bestFor}</span>
+        // Pull top restaurants in this neighborhood from data
+        const allR=this.getRestaurants();
+        const nbhdR=allR.filter(r=>(r.neighborhood||'').toLowerCase().includes(n.toLowerCase())).sort((a,b)=>b.score-a.score);
+        const topR=nbhdR.slice(0,6);
+        const avgScore=nbhdR.length?Math.round(nbhdR.reduce((s,r)=>s+r.score,0)/nbhdR.length):0;
+        const bestForTags=nd.bestFor.split(',').map(t=>t.trim());
+        const knownForItems=nd.knownFor.split(',').map(t=>t.trim());
+        const mustVisitItems=nd.mustVisit.split(',').map(t=>t.trim());
+        infoEl.innerHTML=`<div style="background:linear-gradient(135deg,var(--card2),var(--card));border:1px solid rgba(201,168,76,.25);border-radius:14px;overflow:hidden;margin-bottom:10px">
+          <!-- Header -->
+          <div style="background:linear-gradient(135deg,rgba(201,168,76,.12),rgba(201,168,76,.04));padding:14px 14px 12px;border-bottom:1px solid var(--border)">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+              <div style="font-size:18px;font-weight:800;color:var(--text)">${nd.emoji} ${n}</div>
+              <div style="display:flex;align-items:center;gap:6px">
+                <span style="font-size:10px;color:var(--text3)">${nbhdR.length} spots</span>
+                ${avgScore?`<span style="font-size:11px;font-weight:700;color:var(--gold);background:rgba(201,168,76,.12);padding:2px 8px;border-radius:8px">Avg ${avgScore}</span>`:''}
+              </div>
+            </div>
+            <div style="font-size:12px;color:var(--text2);line-height:1.6">${nd.vibe}</div>
           </div>
-          <div style="font-size:11px;color:var(--text2);line-height:1.5;margin-bottom:6px">${nd.vibe}</div>
-          <div style="font-size:10px;color:var(--gold);margin-bottom:3px">📍 ${nd.mustVisit}</div>
-          <div style="font-size:10px;color:var(--text3);font-style:italic">💡 ${nd.tip}</div>
+          <!-- Best For Tags -->
+          <div style="padding:10px 14px;border-bottom:1px solid var(--border)">
+            <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px">Best For</div>
+            <div style="display:flex;gap:5px;flex-wrap:wrap">${bestForTags.map(t=>`<span style="font-size:10px;font-weight:700;background:rgba(201,168,76,.1);color:var(--gold);padding:4px 10px;border-radius:20px;border:1px solid rgba(201,168,76,.2)">${t}</span>`).join('')}</div>
+          </div>
+          <!-- Known For -->
+          <div style="padding:10px 14px;border-bottom:1px solid var(--border)">
+            <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px">Known For</div>
+            <div style="display:flex;gap:5px;flex-wrap:wrap">${knownForItems.map(t=>`<span style="font-size:10px;color:var(--text2);background:var(--card);padding:4px 9px;border-radius:8px;border:1px solid var(--border)">${t}</span>`).join('')}</div>
+          </div>
+          <!-- Top Restaurants -->
+          ${topR.length?`<div style="padding:10px 14px;border-bottom:1px solid var(--border)">
+            <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Top Rated</div>
+            <div style="display:flex;flex-direction:column;gap:6px">${topR.map((r,i)=>{
+              const sc=r.score;const color=sc>=90?'var(--green)':sc>=80?'var(--gold)':'var(--text2)';
+              return `<div onclick="A.openDetail(${r.id})" style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:10px;cursor:pointer;touch-action:manipulation">
+                <div style="font-size:11px;color:var(--text3);font-weight:700;width:16px;text-align:center">${i+1}</div>
+                <div style="flex:1;min-width:0">
+                  <div style="font-size:12px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${r.name}</div>
+                  <div style="font-size:10px;color:var(--text3)">${r.cuisine} · ${'$'.repeat(r.price)}</div>
+                </div>
+                <div style="font-size:14px;font-weight:800;color:${color}">${sc}</div>
+              </div>`;
+            }).join('')}</div>
+          </div>`:''}
+          <!-- Must Visit -->
+          <div style="padding:10px 14px;border-bottom:1px solid var(--border)">
+            <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px">Must Visit</div>
+            <div style="display:flex;gap:5px;flex-wrap:wrap">${mustVisitItems.map(t=>`<span style="font-size:10px;font-weight:600;color:var(--gold);padding:4px 9px;border-radius:8px;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.15)">📍 ${t}</span>`).join('')}</div>
+          </div>
+          <!-- Local Tip -->
+          <div style="padding:10px 14px;background:rgba(201,168,76,.04)">
+            <div style="display:flex;align-items:flex-start;gap:8px">
+              <span style="font-size:14px;flex-shrink:0">💡</span>
+              <div style="font-size:11px;color:var(--text2);line-height:1.6;font-style:italic">${nd.tip}</div>
+            </div>
+          </div>
         </div>`;
       } else {
         infoEl.style.display='none';
@@ -4986,6 +5038,20 @@ const A = {
     const hhLine=r.hh?`<span class="${hhActive?'badge green':'badge'}">🍸 HH ${hhActive?'ACTIVE NOW':r.hh}</span>`:'';
     const hotBadge=(typeof HOTSPOT!=='undefined')?HOTSPOT.cardBadge(r):'';
 
+    // Gold highlight — pick the most relevant highlight for this restaurant
+    const _hlTags=(r.tags||[]);const _hlDishes=(r.dishes||[]);
+    let goldHL='';
+    if(r.awards) goldHL=`🏆 ${r.awards}`;
+    else if(_hlDishes.length) goldHL=`🍽️ Must Try: ${_hlDishes.slice(0,2).join(' · ')}`;
+    else if(r.hh) goldHL=`🍸 Happy Hour: ${r.hh}`;
+    else if(_hlTags.includes('Date Night')) goldHL='💕 Great for Date Night';
+    else if(_hlTags.includes('Brunch')) goldHL='🥂 Popular Brunch Spot';
+    else if(_hlTags.includes('Patio')) goldHL='🌳 Great Patio';
+    else if(_hlTags.includes('Late Night')) goldHL='🌙 Late Night Favorite';
+    else if(_hlTags.includes('Local Favorites')) goldHL='🤠 Local Favorite';
+    else if(r.score>=90) goldHL='⭐ Top Rated in Dallas';
+    else goldHL=`📍 ${r.neighborhood}`;
+
     return `<div class="r-card${rank===1?' rank1':''}" onclick="A.openDetail(${r.id})">
       <div class="r-topbar" onclick="event.stopPropagation()">
         ${reserveBtn}
@@ -4993,6 +5059,7 @@ const A = {
         <div class="r-filter-icons">${filterIcons}</div>
         ${diffBadge}
       </div>
+      <div class="r-gold-hl"><span>${goldHL}</span></div>
       <div class="r-body">
         <div class="r-top">
           <div class="r-rank">${rank}</div>
@@ -5384,12 +5451,69 @@ const A = {
             "ig": "@lepetitchef_official"
       }
 ];
+    // Pull coming-soon restaurants from DALLAS_DATA for tappable info cards
+    const comingSoonData=(this.getRestaurants()||[]).filter(r=>(r.indicators||[]).includes('coming-soon'));
+
     return `
       <div style="margin-bottom:16px">
         <div style="font-size:20px;font-weight:700;color:var(--gold);margin-bottom:4px">🔮 Coming Soon to Dallas</div>
         <div style="font-size:12px;color:var(--text2);margin-bottom:4px">Verified upcoming openings tracked from D Magazine, CultureMap & Dallas Observer</div>
-        <div style="font-size:11px;color:var(--text3);margin-bottom:16px">${items.length} restaurants on the radar</div>
+        <div style="font-size:11px;color:var(--text3);margin-bottom:16px">${comingSoonData.length + items.length} restaurants on the radar</div>
       </div>
+
+      ${comingSoonData.length?`
+      <!-- Confirmed Coming Soon — tappable info cards from database -->
+      <div style="margin-bottom:18px">
+        <div style="font-size:11px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;display:flex;align-items:center;gap:6px">
+          <span style="width:6px;height:6px;border-radius:50%;background:var(--green);display:inline-block"></span> Confirmed Openings
+        </div>
+        ${comingSoonData.map(r=>{
+          const sc=r.score;const color=sc>=90?'var(--green)':sc>=80?'var(--gold)':'var(--text2)';
+          const isFav=S.userData.favs.includes(r.id);
+          const isWant=S.userData.want.includes(r.id);
+          return `
+          <div style="background:linear-gradient(145deg,var(--card2),var(--card));border:1px solid rgba(76,154,110,.3);border-radius:14px;overflow:hidden;margin-bottom:12px;position:relative">
+            <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#4c9a6e,var(--gold))"></div>
+            <!-- Tappable header opens detail -->
+            <div onclick="A.openDetail(${r.id})" style="padding:14px 14px 10px;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:rgba(76,154,110,.15)">
+              <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px">
+                <div style="flex:1">
+                  <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:3px">
+                    <div style="font-size:17px;font-weight:700;color:var(--text);line-height:1.2">${r.name}</div>
+                    <span style="font-size:9px;font-weight:800;background:#4c9a6e;color:#fff;padding:2px 7px;border-radius:8px;letter-spacing:.04em">CONFIRMED</span>
+                  </div>
+                  <div style="font-size:11px;color:var(--gold);font-weight:700">${r.cuisine}</div>
+                </div>
+                <div style="text-align:center;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:6px 10px;flex-shrink:0">
+                  <div style="font-size:8px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px">Score</div>
+                  <div style="font-size:16px;font-weight:800;color:${color};line-height:1">${sc}</div>
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:8px">
+                <span style="font-size:11px;color:var(--text2);font-weight:600">📍 ${r.neighborhood}</span>
+                <span style="font-size:10px;color:var(--text3)">· ${'$'.repeat(r.price)}</span>
+                <span style="margin-left:auto;font-size:10px;font-weight:800;color:#4c9a6e;background:rgba(76,154,110,.1);padding:3px 8px;border-radius:8px;border:1px solid rgba(76,154,110,.25)">🔥 Opening Soon</span>
+              </div>
+              <div style="font-size:12px;color:var(--text2);line-height:1.65;margin-bottom:10px">${r.description}</div>
+              ${r.dishes?.length?`<div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px">${r.dishes.map(d=>`<span style="font-size:10px;background:rgba(201,168,76,.08);color:var(--gold);padding:3px 9px;border-radius:20px;border:1px solid rgba(201,168,76,.18);font-weight:600">🍽️ ${d}</span>`).join('')}</div>`:''}
+              <div style="display:flex;gap:5px;flex-wrap:wrap">${(r.tags||[]).map(t=>`<span style="font-size:10px;background:var(--card);color:var(--text2);padding:3px 9px;border-radius:20px;border:1px solid var(--border);font-weight:600">${t}</span>`).join('')}</div>
+            </div>
+            <!-- Action bar -->
+            <div style="display:flex;align-items:center;gap:8px;padding:10px 14px;border-top:1px solid var(--border);background:rgba(76,154,110,.03)">
+              <button onclick="event.stopPropagation();A.toggleList('favs',${r.id},this)" style="flex:1;padding:8px;border-radius:8px;border:1px solid ${isFav?'rgba(201,168,76,.4)':'var(--border)'};background:${isFav?'rgba(201,168,76,.12)':'var(--card)'};color:${isFav?'var(--gold)':'var(--text2)'};font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">❤️ ${isFav?'Saved':'Save'}</button>
+              <button onclick="event.stopPropagation();A.toggleList('want',${r.id},this)" style="flex:1;padding:8px;border-radius:8px;border:1px solid ${isWant?'rgba(201,168,76,.4)':'var(--border)'};background:${isWant?'rgba(201,168,76,.12)':'var(--card)'};color:${isWant?'var(--gold)':'var(--text2)'};font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🔖 ${isWant?'On List':'Want to Go'}</button>
+              <button onclick="event.stopPropagation();A.openDetail(${r.id})" style="flex:1;padding:8px;border-radius:8px;border:1px solid rgba(201,168,76,.3);background:var(--gold);color:var(--dark);font-size:11px;font-weight:800;cursor:pointer;font-family:inherit">View Details →</button>
+              ${r.instagram?`<a href="https://instagram.com/${r.instagram.replace('@','')}" target="_blank" onclick="event.stopPropagation()" style="padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:13px;text-decoration:none;display:flex;align-items:center">📸</a>`:''}
+            </div>
+          </div>`;
+        }).join('')}
+      </div>
+
+      <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;display:flex;align-items:center;gap:6px">
+        <span style="width:6px;height:6px;border-radius:50%;background:var(--gold);display:inline-block"></span> On The Radar
+      </div>
+      `:''}
+
       ${items.map(r=>{
         const isHot = r.eta==='Q1 2026'||r.eta==='Early 2026'||r.eta==='Spring 2026'||r.eta==='April 2026'||r.eta==='March 2026';
         const buzz = isHot ? '🔥 Opening Soon' : r.eta==='Dec 2026' ? '📅 Late 2026' : '⏳ 2026';
@@ -9453,19 +9577,20 @@ const A = {
     el.innerHTML = `
       <div style="margin-bottom:16px">
         <div style="font-size:22px;font-weight:700;color:var(--text);margin-bottom:4px">📍 Dallas Local</div>
-        <div style="font-size:12px;color:var(--text3)">Hotels · Malls · Opening soon · Hospitality Groups</div>
       </div>
 
-      <!-- Sub-tabs -->
-      <div style="display:flex;gap:8px;margin-bottom:20px;overflow-x:auto;scrollbar-width:none">
+      <!-- Sub-tabs 2x2 grid -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px">
         ${subTabs.map(t=>`
           <button onclick="A._localSub='${t.id}';A.renderLocal()" style="
-            flex-shrink:0;padding:8px 16px;border-radius:22px;border:none;cursor:pointer;
-            font-size:13px;font-weight:700;white-space:nowrap;
-            background:${sub===t.id?'var(--gold)':'var(--card2)'};
-            color:${sub===t.id?'var(--dark)':'var(--text2)'};
-            border:1px solid ${sub===t.id?'var(--gold)':'var(--border)'};
-          ">${t.icon} ${t.label}</button>
+            padding:14px 10px;border-radius:12px;border:none;cursor:pointer;
+            font-size:13px;font-weight:700;text-align:center;
+            background:${sub===t.id?'rgba(201,168,76,.15)':'var(--card2)'};
+            color:${sub===t.id?'var(--gold)':'var(--text2)'};
+            border:1px solid ${sub===t.id?'rgba(201,168,76,.4)':'var(--border)'};
+            display:flex;flex-direction:column;align-items:center;gap:4px;
+            touch-action:manipulation;font-family:inherit;
+          "><span style="font-size:22px">${t.icon}</span>${t.label}</button>
         `).join('')}
       </div>
 
@@ -13582,41 +13707,71 @@ const PORT_RESTAURANTS = {
     {icon:"🌮",name:"El Jibarito",desc:"No-frills local icon for jibarito sandwiches, pernil & arroz con gandules",tag:"Cash Only · Cheap Eats",price:"$",book:"",info:""},
     {icon:"🍽️",name:"La Bodeguita del Medio",desc:"Cuban-inspired dining with live music in Old San Juan",tag:"Great for Groups",price:"$$",book:"",info:""},
     {icon:"🍧",name:"Señor Paleta",desc:"Fresh tropical fruit popsicles -- passion fruit, coconut, guava",tag:"Walk-Up · $4",price:"$",book:"",info:""},
+    {icon:"🍖",name:"La Alcapurria Quemá",desc:"Famous roadside kiosk in Piñones -- crispy alcapurrias, bacalaítos & empanadillas",tag:"Piñones Strip · Cash",price:"$",book:"",info:""},
+    {icon:"🐙",name:"Cocina Abierta",desc:"Creative farm-to-table plates in Santurce -- octopus with mango mojo, pork belly sliders",tag:"Santurce · Trendy",price:"$$$",book:"",info:"https://www.cocinaabiertapr.com"},
+    {icon:"🍹",name:"Jungle Bird",desc:"Tropical craft cocktails in a lush courtyard setting -- named for the classic tiki drink",tag:"Santurce · Cocktails",price:"$$",book:"",info:""},
+    {icon:"🍦",name:"Lares Ice Cream",desc:"Helados de Lares pop-up in Old San Juan -- arroz con dulce, corn & cheese, tamarind flavors",tag:"Walk-Up · Unique Flavors",price:"$",book:"",info:""},
   ],
   TOV: [
     {icon:"🍹",name:"Myett's Garden Grille",desc:"Beachfront Caribbean plates at Cane Garden Bay",tag:"Local Favourite",price:"$$",book:"",info:"https://www.myetts.com"},
     {icon:"🐟",name:"The Dove",desc:"Intimate French-Caribbean fine dining -- pan-seared wahoo, conch bisque",tag:"Dinner · Reserve",price:"$$$",book:"",info:""},
     {icon:"🍔",name:"D' Best Cup",desc:"Legendary roti wraps, fresh juices & johnnycakes near the ferry dock",tag:"Quick Bite · $8",price:"$",book:"",info:""},
-    {icon:"🍹",name:"Soggy Dollar Bar",desc:"Home of the Painkiller cocktail -- swim ashore to White Bay",tag:"Iconic · Cash Only",price:"$$",book:"",info:""},
+    {icon:"🍹",name:"Soggy Dollar Bar",desc:"Home of the Painkiller cocktail -- swim ashore to White Bay on Jost Van Dyke",tag:"Iconic · Cash Only",price:"$$",book:"",info:""},
+    {icon:"🦞",name:"Brandywine Estate",desc:"Romantic hilltop restaurant with sweeping sea views -- Florentine-Caribbean fusion",tag:"Dinner Only · Reserve",price:"$$$",book:"",info:""},
+    {icon:"🐠",name:"Quito's Bar & Restaurant",desc:"Beachside at Cane Garden Bay -- live music from owner Quito Rymer (BVI's folk hero)",tag:"Live Music Fri-Sat",price:"$$",book:"",info:""},
+    {icon:"🥥",name:"Sebastian's on the Beach",desc:"Toes-in-the-sand breakfast and lunch on Apple Bay -- fish tacos, lobster rolls",tag:"Apple Bay · Casual",price:"$$",book:"",info:""},
+    {icon:"🍽️",name:"Sugar Mill Restaurant",desc:"Fine dining in a 360-year-old rum distillery ruin -- candlelit Caribbean elegance",tag:"Historic · Reserve",price:"$$$",book:"",info:""},
   ],
   BGI: [
     {icon:"🍹",name:"Harbour Lights Beach Club",desc:"Rum punches, fish cakes & live music nightly",tag:"Institution",price:"$$",book:"https://www.harbourlightsbarbados.com/reservations",info:"https://www.harbourlightsbarbados.com"},
     {icon:"🐟",name:"Oistins Fish Fry",desc:"Legendary open-air fish market -- grilled marlin, swordfish, flying fish cutters",tag:"Friday Night Best",price:"$",book:"",info:""},
     {icon:"🍽️",name:"The Cliff",desc:"Torchlit cliffside fine dining over the Caribbean Sea",tag:"Splurge · Reserve",price:"$$$$",book:"",info:"https://www.thecliffbarbados.com"},
     {icon:"🥧",name:"Cuz's Fish Stand",desc:"Roadside fish cutters & macaroni pie -- the real Bajan lunch",tag:"Cheap Eats · $6",price:"$",book:"",info:""},
+    {icon:"🦐",name:"Champers",desc:"Upscale waterfront dining on the south coast -- grilled lobster, rum-glazed ribs",tag:"Lunch Views · Reserve",price:"$$$",book:"",info:"https://www.champersbarbados.com"},
+    {icon:"🍗",name:"Cutters Deli",desc:"Bajan salt bread sandwiches (cutters) stuffed with fish, ham, or cheese -- a local breakfast staple",tag:"Breakfast · $4",price:"$",book:"",info:""},
+    {icon:"🌿",name:"Lone Star Restaurant",desc:"Beachfront celebrity haunt in a restored 1940s garage -- grilled mahi mahi, wagyu burgers",tag:"West Coast · $$$$",price:"$$$$",book:"",info:""},
+    {icon:"🥃",name:"The Rum Vault at Colony Club",desc:"Over 160 rums from across the Caribbean -- guided flight tastings in a colonial-era vault",tag:"West Coast · Tasting",price:"$$",book:"",info:""},
+    {icon:"🍝",name:"Tapas at Daphne's",desc:"Italian-Caribbean fusion on the Platinum Coast -- fresh pasta, grilled catch of the day",tag:"Reserve · Upscale",price:"$$$",book:"",info:""},
   ],
   SLU: [
     {icon:"🍽️",name:"Coal Pot Restaurant",desc:"Waterfront Creole dining in a converted coal shed since 1966",tag:"Reserve Ahead",price:"$$$",book:"",info:"https://coalpotstlucia.com"},
     {icon:"🦀",name:"Orlando's Restaurant",desc:"Family-run Creole kitchen -- jerk chicken, green fig & saltfish, breadfruit chips",tag:"Local Gem",price:"$$",book:"",info:""},
     {icon:"🍫",name:"Hotel Chocolat Rabot",desc:"Bean-to-bar chocolate estate with cacao-infused tasting menu amid the Pitons",tag:"Book Ahead",price:"$$$",book:"",info:"https://www.hotelchocolat.com/uk/rabot-hotel.html"},
     {icon:"🍹",name:"Marigot Bay Rum Bar",desc:"Sunset rum punches overlooking one of the Caribbean's most beautiful bays",tag:"Scenic · Worth the Drive",price:"$$",book:"",info:""},
+    {icon:"🐟",name:"Big Chef Steakhouse",desc:"Rodney Bay Marina favorite -- surf & turf, lobster thermidor, waterfront terrace",tag:"Rodney Bay",price:"$$$",book:"",info:""},
+    {icon:"🥥",name:"Anse Chastanet Treehouse",desc:"Open-air restaurant 25 feet up in the trees -- Piton views, Creole-Asian fusion",tag:"Jade Mountain · $$$",price:"$$$",book:"",info:""},
+    {icon:"🍖",name:"Martha's Tables",desc:"Home-style St. Lucian cooking -- stewed chicken, green banana, callaloo soup. The real thing",tag:"Cash · Local Favorite",price:"$",book:"",info:""},
+    {icon:"🦞",name:"Jacques Waterfront Dining",desc:"French-Creole fine dining at Vigie Marina -- flambéed lobster, bouillabaisse",tag:"Reserve · Upscale",price:"$$$",book:"",info:""},
+    {icon:"🍹",name:"Spice of India",desc:"Unexpectedly excellent Indian food in Rodney Bay -- butter chicken, garlic naan, mango lassi",tag:"Rodney Bay · $$",price:"$$",book:"",info:""},
   ],
   ANU: [
     {icon:"🍽️",name:"Sheer Rocks",desc:"Cliffside dining suspended directly above the sea",tag:"Sunset Essential",price:"$$$$",book:"",info:""},
     {icon:"🦞",name:"Papa Zouk",desc:"Legendary rum bar & seafood shack -- 260+ rums, garlic lobster, Creole fish",tag:"Worth the Taxi",price:"$$",book:"",info:""},
     {icon:"🍖",name:"Roti King",desc:"Massive curry-stuffed roti wraps -- the local lunch staple since the 80s",tag:"Cheap Eats · $7",price:"$",book:"",info:""},
     {icon:"🍹",name:"Catherine's Café Plage",desc:"Chic French bistro on Pigeon Beach -- moules frites, rosé on the sand",tag:"French Harbour",price:"$$$",book:"",info:""},
+    {icon:"🐟",name:"The Bay at Nonsuch",desc:"Farm-to-table dining at a boutique resort -- fresh lobster, garden greens, harbor views",tag:"East Coast · Reserve",price:"$$$",book:"",info:""},
+    {icon:"🍗",name:"Jacqui O's BeachHouse",desc:"All-day beach dining on Grand Pineapple Beach -- jerk wings, rum punch, lobster pizza",tag:"Casual · Fun Vibe",price:"$$",book:"",info:""},
+    {icon:"🥖",name:"Le Bistro",desc:"French fine dining in Hodges Bay -- duck confit, escargot, crème brûlée in an intimate setting",tag:"Reserve · Dinner",price:"$$$",book:"",info:""},
+    {icon:"🌊",name:"Dennis Cocktail Bar & Restaurant",desc:"Perched above Ffryes Beach -- grilled catch of the day, sunset cocktails, reggae playlist",tag:"Sunset Views",price:"$$",book:"",info:""},
+    {icon:"🐠",name:"Ana's on the Beach",desc:"Relaxed Dickenson Bay spot -- conch fritters, grilled snapper, fresh coconut water straight from the shell",tag:"Dickenson Bay",price:"$$",book:"",info:""},
   ],
   SXM: [
-    {icon:"🍽️",name:"Le Pressoir",desc:"French-Creole cuisine on the quiet French side",tag:"French Side",price:"$$$",book:"",info:""},
+    {icon:"🍽️",name:"Le Pressoir",desc:"French-Creole cuisine in a restored stone house on the quiet French side",tag:"French Side · Reserve",price:"$$$",book:"",info:""},
     {icon:"🦞",name:"The Hideaway",desc:"Beachside lobster & grilled catch of the day at Grand Case -- the gourmet strip",tag:"Grand Case · Reserve",price:"$$$",book:"",info:""},
     {icon:"🥖",name:"Sarafina's",desc:"French bakery with fresh croissants, tartines & espresso on the Dutch side",tag:"Breakfast Spot",price:"$",book:"",info:""},
     {icon:"🍹",name:"Sunset Bar at Maho",desc:"Rum cocktails under the flight path -- watch the planes while you sip",tag:"Bucket List",price:"$$",book:"",info:""},
     {icon:"🍔",name:"Sunset Bar & Grill",desc:"Eat at Maho Beach while planes land overhead -- bucket-list meal",tag:"$$ · Maho",price:"$$",book:"",info:""},
+    {icon:"🐟",name:"Lolos at Grand Case",desc:"Open-air BBQ shacks on Grand Case beach -- grilled ribs, lobster, chicken. Pick any lolo, they're all great",tag:"Grand Case · Cash",price:"$",book:"",info:""},
+    {icon:"🍝",name:"Temptation",desc:"Creative French cuisine on the waterfront in Cupecoy -- foie gras, duck breast, passion fruit soufflé",tag:"Dutch Side · Upscale",price:"$$$",book:"",info:""},
+    {icon:"🥥",name:"Kakao Beach Restaurant",desc:"Toes-in-the-sand at Orient Bay -- fresh ceviche, grilled mahi, frozen mojitos",tag:"Orient Bay",price:"$$",book:"",info:""},
+    {icon:"🦐",name:"Ocean Lounge at Holland House",desc:"Dutch-side waterfront dining on the Boardwalk -- lobster bisque, shrimp risotto, Front Street views",tag:"Great Location",price:"$$$",book:"",info:""},
+    {icon:"🍧",name:"Ti Bouchon Wine Bar",desc:"French wine bar with charcuterie, cheese & small plates -- cozy hideaway in Grand Case",tag:"Grand Case · Wine",price:"$$",book:"",info:""},
   ],
   SJU2: [
     {icon:"☕",name:"Kasalta Bakery",desc:"Mallorcas, café con leche -- the definitive San Juan morning",tag:"Pre-Flight Essential",price:"$",book:"",info:""},
     {icon:"🍳",name:"Pinky's West",desc:"Hearty brunch spot -- stuffed French toast, huevos rancheros, fresh juices",tag:"Condado · Open 7 AM",price:"$$",book:"",info:""},
+    {icon:"🥐",name:"Pannes",desc:"European-style bakery in Condado -- buttery croissants, açaí bowls, cold brew",tag:"Quick · Condado",price:"$",book:"",info:""},
+    {icon:"🍽️",name:"Café Manolín",desc:"Local breakfast institution -- scrambled eggs with salami, tostada con mantequilla, fresh OJ",tag:"Old San Juan · Since 1970",price:"$",book:"",info:""},
   ],
   SEA: [],
 };
@@ -13625,50 +13780,70 @@ const PORT_RESTAURANTS = {
 const PORT_ACTIVITIES = {
   SJU: [
     {icon:"🏰",name:"El Morro Fort",desc:"16th-century Spanish fortress with panoramic ocean views",tag:"2 hrs · $10",price:"$10",book:"https://www.recreation.gov/ticket/facility/300010",info:"https://www.nps.gov/saju"},
-    {icon:"🌊",name:"Ocean Park Beach",desc:"Calm waters away from the cruise crowds",tag:"10 min from port",price:"Free",book:"",info:""},
-    {icon:"🚶",name:"Old San Juan Walk",desc:"Colorful Spanish colonial architecture on cobblestone streets",tag:"Free · Self-Guided",price:"Free",book:"",info:""},
+    {icon:"🌊",name:"Ocean Park Beach",desc:"Calm waters away from the cruise crowds -- locals' favorite swimming beach",tag:"10 min from port",price:"Free",book:"",info:""},
+    {icon:"🚶",name:"Old San Juan Walk",desc:"Colorful Spanish colonial architecture on cobblestone streets -- blue-painted adoquín stones",tag:"Free · Self-Guided",price:"Free",book:"",info:""},
+    {icon:"🏰",name:"San Cristóbal Fort",desc:"Largest Spanish fort in the Americas -- tunnels, sentry boxes, ocean panoramas",tag:"$10 · Adjacent to El Morro",price:"$10",book:"",info:""},
+    {icon:"🌳",name:"Paseo de la Princesa",desc:"Tree-lined promenade along the old city walls -- fountains, street vendors, sunset views",tag:"Free · Perfect Stroll",price:"Free",book:"",info:""},
+    {icon:"🎨",name:"Santurce Street Art",desc:"Open-air gallery district with murals on every block -- Calle Cerra is the epicenter",tag:"Free · 30 min walk",price:"Free",book:"",info:""},
   ],
   TOV: [
     {icon:"⛵",name:"Jost Van Dyke Sail",desc:"Day sail to White Bay and Foxy's beach bar -- a BVI essential",tag:"Book Ahead · ~$100",price:"~$100",book:"",info:""},
     {icon:"🤿",name:"The Indians Snorkel",desc:"Four dramatic pinnacles -- top snorkel spot in the BVI",tag:"~$60 with guide",price:"~$60",book:"",info:""},
     {icon:"🏖️",name:"Cane Garden Bay",desc:"Stunning curved bay -- swim, relax and rum drinks at beach bars",tag:"Free · 25 min",price:"Free",book:"",info:""},
-    {icon:"🏔️",name:"Sage Mountain Hike",desc:"Highest peak in BVI -- lush rainforest trail with sea views",tag:"$3 · 1.5 hrs",price:"$3",book:"",info:""},
+    {icon:"🏔️",name:"Sage Mountain Hike",desc:"Highest peak in BVI (1,716 ft) -- lush rainforest trail with sea views",tag:"$3 · 1.5 hrs",price:"$3",book:"",info:""},
+    {icon:"🥃",name:"Callwood Rum Distillery",desc:"Oldest continuously operating distillery in the Caribbean (1800s) -- free tastings of raw cane rum",tag:"Free · Road Town",price:"Free",book:"",info:""},
+    {icon:"🏖️",name:"Smuggler's Cove",desc:"Secluded beach at the western tip -- no crowds, just crystal water and the occasional turtle",tag:"Free · 35 min drive",price:"Free",book:"",info:""},
   ],
   BGI: [
     {icon:"🥃",name:"Mount Gay Rum Tour",desc:"World's oldest rum distillery (1703) -- history, barrel room and tasting",tag:"$20 · 1.5 hrs",price:"$20",book:"https://www.mountgayrum.com/en-us/visit/",info:"https://www.mountgayrum.com"},
     {icon:"🏖️",name:"Carlisle Bay Snorkel",desc:"Calm bay with sunken ships just meters from shore -- easy for all levels",tag:"Free · 5 min",price:"Free",book:"",info:""},
     {icon:"🐒",name:"Barbados Wildlife Reserve",desc:"Walk among free-roaming green monkeys in a mahogany forest",tag:"~$15 · 1.5 hrs",price:"~$15",book:"",info:""},
     {icon:"🏛️",name:"St. Nicholas Abbey",desc:"Jacobean plantation great house from 1658 -- one of only three in the Americas",tag:"~$20 · Historic",price:"~$20",book:"",info:""},
+    {icon:"🏄",name:"Soup Bowl Surfing",desc:"Bathsheba's legendary east-coast break -- even if you don't surf, watching is incredible",tag:"Free · East Coast",price:"Free",book:"",info:""},
+    {icon:"🐢",name:"Barbados Sea Turtle Swim",desc:"Swim alongside hawksbill turtles off the west coast -- catamaran or glass-bottom boat trips",tag:"~$50 · 3 hrs",price:"~$50",book:"",info:""},
+    {icon:"🌿",name:"Hunte's Gardens",desc:"Magical sunken garden in a collapsed sinkhole -- orchids, heliconias, birdsong. Owner Anthony Hunte greets visitors personally",tag:"$20 · 1 hr",price:"$20",book:"",info:""},
   ],
   SLU: [
     {icon:"🌋",name:"Sulphur Springs Volcano",desc:"World's only drive-in volcano -- bubbling sulfur pools and guided tours",tag:"Unmissable · ~$10",price:"~$10",book:"https://www.sulphurspringsstlucia.com",info:""},
     {icon:"🌿",name:"Diamond Falls Botanical Garden",desc:"Waterfalls, volcanic mineral baths, and lush tropical gardens",tag:"$15 · 2 hrs",price:"$15",book:"https://diamondstlucia.com",info:""},
-    {icon:"⛵",name:"Piton Sail & Snorkel",desc:"See the iconic twin peaks from the water and snorkel the reefs",tag:"~$90 · Full Day",price:"~$90",book:"",info:""},
+    {icon:"⛵",name:"Piton Sail & Snorkel",desc:"See the iconic twin peaks from the water and snorkel the reefs beneath them",tag:"~$90 · Full Day",price:"~$90",book:"",info:""},
     {icon:"🏖️",name:"Anse Chastanet Beach",desc:"Volcanic black sand beach beneath the Pitons -- dramatic and rarely crowded",tag:"Free · Scenic",price:"Free",book:"",info:""},
+    {icon:"🤿",name:"Anse Cochon Snorkel",desc:"Sheltered bay with a vibrant reef -- accessible only by boat or steep trail, so it stays pristine",tag:"~$40 boat · Half Day",price:"~$40",book:"",info:""},
+    {icon:"🏖️",name:"Sugar Beach",desc:"White sand between the Pitons at Viceroy resort -- day passes available, one of the most photographed beaches in the Caribbean",tag:"Day Pass · $$$",price:"$100+",book:"",info:""},
+    {icon:"🌴",name:"Tet Paul Nature Trail",desc:"Short but stunning Piton viewpoint hike -- the postcard photo of St. Lucia in 30 minutes",tag:"~$10 · Easy Hike",price:"~$10",book:"",info:""},
   ],
   ANU: [
     {icon:"🏰",name:"Nelson's Dockyard",desc:"UNESCO World Heritage 18th-century British naval dockyard -- beautifully restored",tag:"$8 · English Harbour",price:"$8",book:"https://www.nationalparksantigua.com",info:"https://www.nationalparksantigua.com/nelsons-dockyard"},
     {icon:"🏖️",name:"Dickenson Bay",desc:"Best swimming beach on the island -- white sand, calm water, beach bars",tag:"Free · 15 min from port",price:"Free",book:"",info:""},
     {icon:"🤿",name:"Cades Reef Snorkel",desc:"Antigua's largest protected reef -- turtles, rays, barracuda in crystal clear water",tag:"~$45 with guide",price:"~$45",book:"",info:""},
     {icon:"🎯",name:"Antigua Rainforest Canopy",desc:"Zip-line through the rainforest -- 21 platforms, longest zip is 300m",tag:"~$95 · 3 hrs",price:"~$95",book:"",info:""},
-    {icon:"⛵",name:"365 Beaches Charter",desc:"Antigua's legendary beach-a-day count -- hire a boat and island hop",tag:"Full Day",price:"Varies",book:"",info:""},
+    {icon:"⛵",name:"365 Beaches Charter",desc:"Antigua's legendary beach-a-day count -- hire a boat and island hop the coastline",tag:"Full Day",price:"Varies",book:"",info:""},
+    {icon:"🌅",name:"Shirley Heights Lookout",desc:"Panoramic hilltop above English Harbour -- famous Sunday BBQ & steel band party (if timing works)",tag:"$8 · Stunning Views",price:"$8",book:"",info:""},
+    {icon:"🏖️",name:"Half Moon Bay",desc:"Protected national park beach on the Atlantic side -- dramatic waves, white sand, usually empty",tag:"Free · East Coast",price:"Free",book:"",info:""},
+    {icon:"🦎",name:"Devil's Bridge",desc:"Natural limestone arch carved by Atlantic waves -- blowholes spray 30 feet. Bring a camera",tag:"Free · 20 min drive",price:"Free",book:"",info:""},
   ],
   SXM: [
-    {icon:"✈️",name:"Maho Beach Plane Watch",desc:"Jumbo jets land 50ft overhead -- check KLM 747 arrival times before you go",tag:"Iconic · Free",price:"Free",book:"",info:""},
+    {icon:"✈️",name:"Maho Beach Plane Watch",desc:"Jumbo jets land 50ft overhead -- check flight arrival times before you go",tag:"Iconic · Free",price:"Free",book:"",info:""},
     {icon:"🏖️",name:"Orient Bay Beach Club",desc:"French Riviera of the Caribbean -- beach bars, watersports, beautiful scene",tag:"French Side · ~$25 chair",price:"~$25",book:"",info:""},
     {icon:"🛒",name:"Marigot French Market",desc:"French-side outdoor market -- spices, local rum, art, crafts by the marina",tag:"Free · French Side",price:"Free",book:"",info:""},
     {icon:"⛵",name:"Pinel Island Picnic",desc:"2-minute ferry to a tiny island paradise -- hammocks and crystal water",tag:"~$10 ferry · Paradise",price:"~$10",book:"",info:""},
-    {icon:"🛍️",name:"Front Street Shopping",desc:"Duty-free shopping -- rum, jewellery, crafts. No sales tax",tag:"Great Value",price:"Free",book:"",info:""},
+    {icon:"🛍️",name:"Front Street Shopping",desc:"Duty-free shopping on the Dutch side -- rum, jewellery, electronics. No sales tax",tag:"Great Value",price:"Free",book:"",info:""},
+    {icon:"🏖️",name:"Mullet Bay Beach",desc:"Beautiful crescent beach near the golf course -- calm waters, fewer crowds than Orient",tag:"Free · Dutch Side",price:"Free",book:"",info:""},
+    {icon:"🏔️",name:"Pic Paradis Hike",desc:"Highest point on the island (424m) -- rainforest trail with 360° views of both the French and Dutch sides",tag:"Free · 2 hrs",price:"Free",book:"",info:""},
+    {icon:"🍷",name:"Grand Case Boulevard",desc:"Stroll the 'Gourmet Capital of the Caribbean' -- art galleries, boutiques, lolos, and fine dining side by side",tag:"Free · French Side",price:"Free",book:"",info:""},
   ],
   SJU2: [
     {icon:"🛍️",name:"Last-Minute Old San Juan",desc:"Ron del Barrilito rum, cigars, hot sauce -- one hour of shopping is plenty",tag:"Souvenirs · 1 hr",price:"Varies",book:"",info:""},
     {icon:"🚕",name:"Airport Transfer",desc:"Pre-book Uber -- mornings are extremely busy post-debark at SJU",tag:"Allow 90 min · ~$20",price:"~$20",book:"",info:""},
+    {icon:"🏖️",name:"Condado Beach",desc:"If your flight is late afternoon, spend a couple hours at Condado -- hotels rent chairs, the water is warm",tag:"$10 chair rental",price:"$10",book:"",info:""},
   ],
   SEA: [
     {icon:"💆",name:"The Redemption Spa",desc:"Valiant Lady's full-service spa -- book ahead, treatments sell out",tag:"Book Onboard",price:"Varies",book:"",info:""},
     {icon:"🏊",name:"Richard's Rooftop Pool",desc:"Adults-only rooftop pool with the best views on the ship",tag:"Top Deck",price:"Free",book:"",info:""},
     {icon:"🍽️",name:"Specialty Dining Night",desc:"Book The Wake or Extra Virgin for tonight -- best tables available",tag:"Reserve Now",price:"$$-$$$",book:"",info:""},
     {icon:"🎭",name:"The Manor Entertainment",desc:"Live show at The Manor nightclub -- check the ship app for times",tag:"Evening",price:"Free",book:"",info:""},
+    {icon:"🎲",name:"The Casino",desc:"Table games, slots, and poker -- opens when the ship is at sea",tag:"21+ · Open at Sea",price:"Varies",book:"",info:""},
+    {icon:"🏋️",name:"Athletic Club & Running Track",desc:"Full gym, group fitness classes, and an open-air running track on the top deck",tag:"Free · Top Deck",price:"Free",book:"",info:""},
   ],
 };
 
