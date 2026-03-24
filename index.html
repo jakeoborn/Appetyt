@@ -5166,7 +5166,7 @@ const A = {
               <span>${r.cuisine}</span><span style="color:var(--text3)">·</span>
               <span>${r.neighborhood}</span><span style="color:var(--text3)">·</span>
               <span>${price}</span>
-              ${hhLine}${hotBadge}
+              ${hotBadge}
             </div>
           </div>
           <div class="r-score">${r.score}</div>
@@ -5174,6 +5174,11 @@ const A = {
         ${awardLine}
         ${bestOfLine}
         <div class="r-desc">${(r.description||'').slice(0,105)}...</div>
+        ${r.hh?`<div style="display:flex;align-items:center;gap:5px;margin:5px 0;padding:5px 8px;background:${hhActive?'rgba(76,154,110,.1)':'rgba(201,168,76,.06)'};border:1px solid ${hhActive?'rgba(76,154,110,.25)':'rgba(201,168,76,.15)'};border-radius:8px">
+          <span style="font-size:11px">${hhActive?'🟢':'🍸'}</span>
+          <span style="font-size:10px;font-weight:700;color:${hhActive?'#4c9a6e':'var(--gold)'}">${hhActive?'Happy Hour NOW':'Happy Hour'}</span>
+          <span style="font-size:10px;color:var(--text3)">${r.hh}</span>
+        </div>`:''}
         <div class="r-footer">
           <div class="r-meta">${r.reservation||'Walk-in'}</div>
           <div class="r-actions" onclick="event.stopPropagation()">
