@@ -376,6 +376,27 @@ input,textarea{font-family:inherit;font-size:inherit}
 @keyframes checkinPulse{0%,100%{box-shadow:0 0 0 0 rgba(76,154,110,.4)}70%{box-shadow:0 0 0 10px rgba(76,154,110,0)}}
 .checkin-pulse-ring{animation:checkinPulse 1.5s ease infinite}
 
+/* -- CHECK-IN STATS DASHBOARD -- */
+.ci-stats-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px}
+.ci-stats-header{padding:14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.ci-stat-box{flex:1;text-align:center;padding:10px 6px}
+.ci-stat-num{font-size:20px;font-weight:800;color:var(--text)}
+.ci-stat-label{font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+.ci-tier-progress{padding:12px 14px;border-bottom:1px solid var(--border)}
+.ci-progress-bar{height:6px;background:var(--card2);border-radius:3px;overflow:hidden;margin-top:6px}
+.ci-progress-fill{height:100%;border-radius:3px;transition:width .5s ease}
+.ci-streak-badge{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;padding:4px 10px;border-radius:10px;background:rgba(224,107,60,.12);color:#e06b3c;border:1px solid rgba(224,107,60,.3)}
+.ci-history-item{display:flex;align-items:center;gap:10px;padding:9px 14px;border-bottom:1px solid var(--border);cursor:pointer;touch-action:manipulation}
+.ci-history-item:last-child{border-bottom:none}
+.ci-history-item:hover{background:var(--card2)}
+@keyframes streakGlow{0%,100%{text-shadow:0 0 4px rgba(224,107,60,.3)}50%{text-shadow:0 0 12px rgba(224,107,60,.6)}}
+.ci-streak-fire{animation:streakGlow 2s ease infinite}
+
+/* -- NOTIFY ME BTN -- */
+.notify-me-btn{padding:8px 12px;border-radius:8px;border:1px solid rgba(62,184,168,.3);background:rgba(62,184,168,.08);color:#3eb8a8;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:5px;transition:all .2s}
+.notify-me-btn:hover{background:rgba(62,184,168,.15);border-color:rgba(62,184,168,.5)}
+.notify-me-btn.notified{background:rgba(76,154,110,.12);border-color:rgba(76,154,110,.3);color:#4c9a6e}
+
 /* -- SPEND TRACKER -- */
 .spend-bar-wrap { background:var(--border);border-radius:4px;height:5px;overflow:hidden;margin:6px 0 }
 .spend-bar { height:100%;border-radius:4px;transition:width .6s ease }
@@ -3148,6 +3169,46 @@ const CITY_COORDS = {
 
 // 30 Lifestyle Filters
 
+  const CITY_NEIGHBORHOODS = {
+    'New York':{
+      'West Village':{emoji:'🌿',vibe:'Cobblestone streets, intimate restaurants, and some of the best dining in NYC. Tree-lined blocks with a neighborhood feel in the heart of Manhattan.',bestFor:'Date Night, Italian, Cocktails',knownFor:'Via Carota, I Sodi, Dante, corner cafés and jazz clubs',mustVisit:'Via Carota, I Sodi, Dante, The Spotted Pig space',tip:'Walk Bleecker Street between 6th and 7th Ave for the densest concentration of excellent restaurants in Manhattan.'},
+      'SoHo':{emoji:'🛍️',vibe:'Cast-iron architecture meets high-end shopping and dining. Buzzy brunch spots and celebrity-magnet restaurants.',bestFor:'Brunch, People Watching, Upscale Casual',knownFor:'Balthazar, The Mercer Kitchen, cobblestone streets, art galleries',mustVisit:'Balthazar, The Dutch, Fanelli Cafe, Le Coucou',tip:'Balthazar is best on weekdays -- weekends have 90+ minute waits. Fanelli Cafe is one of the oldest bars in NYC.'},
+      'Lower East Side':{emoji:'🎵',vibe:'Gritty-turned-trendy neighborhood with some of the most exciting new restaurants in NYC. Late-night food and cocktail bars everywhere.',bestFor:'Late Night, Cocktails, Trendy',knownFor:'Katz Deli, Clinton Street Baking, cocktail bars, live music',mustVisit:'Katz Delicatessen, Dimes, Cervo\'s, Attaboy',tip:'Katz Deli is cash only at the counter. Attaboy has no sign -- look for the unmarked door on Eldridge.'},
+      'Williamsburg':{emoji:'🎨',vibe:'Brooklyn\'s dining powerhouse. Former industrial warehouses now house some of the best restaurants in the five boroughs.',bestFor:'Brunch, Craft Beer, Farm-to-Table',knownFor:'Peter Luger, Smorgasburg, rooftop bars, Bedford Ave',mustVisit:'Peter Luger, Lilia, Diner, Sunday in Brooklyn',tip:'Peter Luger is cash only. Lilia does walk-ins only for the bar -- arrive right at 5PM opening.'},
+      'Chelsea':{emoji:'🏙️',vibe:'Home to Chelsea Market, the High Line, and a thriving restaurant scene between art galleries.',bestFor:'Food Halls, Upscale Casual, Gallery Hopping',knownFor:'Chelsea Market, High Line, art galleries, Buddakan',mustVisit:'Chelsea Market, Buddakan, Cookshop, La Bonbonniere',tip:'Walk the High Line from Hudson Yards to the Whitney Museum and stop at Chelsea Market for lunch.'},
+      'Harlem':{emoji:'🎷',vibe:'Rich cultural history meets a renaissance of dining. Soul food institutions alongside innovative new concepts.',bestFor:'Soul Food, Jazz, Local Faves',knownFor:'Sylvia\'s, Red Rooster, Apollo Theater, African cuisine',mustVisit:'Sylvia\'s, Red Rooster, Vinatería, Melba\'s',tip:'Sunday gospel brunch at Sylvia\'s or Red Rooster is a must. Red Rooster does not take reservations for brunch -- arrive early.'},
+    },
+    'Los Angeles':{
+      'Silver Lake':{emoji:'🌿',vibe:'LA\'s hipster epicenter. Coffee culture, wine bars, and chef-driven neighborhood restaurants along Sunset Boulevard.',bestFor:'Coffee, Brunch, Wine Bars',knownFor:'Intelligentsia Coffee, Sunset Junction, indie boutiques',mustVisit:'Sqirl, Night + Market Song, Botanica, Pine & Crane',tip:'Sqirl has a famous ricotta toast -- arrive before 9AM on weekends or expect a 45-minute wait.'},
+      'West Hollywood':{emoji:'🌴',vibe:'The Sunset Strip and Santa Monica Boulevard packed with celebrity hotspots, rooftop bars, and world-class dining.',bestFor:'Nightlife, Celebrity Dining, Rooftop',knownFor:'Sunset Strip, BOA Steakhouse, Craig\'s, The Abbey',mustVisit:'Craig\'s, Tao, Catch LA, EP & LP',tip:'Craig\'s does not take reservations -- the wait is part of the experience. Best celebrity sightings are Thursday-Saturday.'},
+      'Santa Monica':{emoji:'🏖️',vibe:'Beachside dining with ocean views. From the pier to Montana Avenue, a mix of casual and refined coastal cooking.',bestFor:'Seafood, Brunch, Ocean Views',knownFor:'Santa Monica Pier, Third Street Promenade, farmers market',mustVisit:'Elephante, Cassia, Bay Cities Italian Deli, Tar & Roses',tip:'The Wednesday Santa Monica Farmers Market is where LA chefs shop. Bay Cities Deli -- order the Godmother sandwich.'},
+      'Downtown LA':{emoji:'🏙️',vibe:'A transformed urban core with Grand Central Market anchoring a diverse dining scene. Arts District restaurants are the hottest openings in LA.',bestFor:'Food Halls, Cocktails, Arts & Culture',knownFor:'Grand Central Market, Arts District, rooftop bars, Broad Museum',mustVisit:'Bestia, Bavel, Grand Central Market, Broken Spanish',tip:'Bestia reservations open 30 days out and sell out in minutes. Book at midnight exactly 30 days before your date.'},
+      'Beverly Hills':{emoji:'💎',vibe:'Power lunches, hotel dining rooms, and Rodeo Drive shopping. Old Hollywood glamour meets modern fine dining.',bestFor:'Fine Dining, Power Lunch, Special Occasions',knownFor:'Rodeo Drive, The Beverly Hills Hotel, Spago',mustVisit:'Spago, Matsuhisa, The Polo Lounge, Maude',tip:'The Polo Lounge at The Beverly Hills Hotel is LA\'s ultimate power breakfast. Book a patio booth.'},
+      'Koreatown':{emoji:'🏮',vibe:'24-hour Korean BBQ joints, late-night karaoke, and some of the best Asian food in America. The most densely packed dining neighborhood in LA.',bestFor:'Korean BBQ, Late Night, Karaoke',knownFor:'Korean BBQ, all-night dining, karaoke bars, soju',mustVisit:'Park\'s BBQ, Sun Nong Dan, Quarters Korean BBQ, Dan Sung Sa',tip:'Park\'s BBQ is the gold standard -- USDA Prime galbi. Go after 9PM for no wait. Dan Sung Sa is a hidden speakeasy behind an unmarked door.'},
+    },
+    'Chicago':{
+      'West Loop':{emoji:'🍽️',vibe:'Chicago\'s restaurant row. Randolph Street and Fulton Market have the highest concentration of acclaimed restaurants in the Midwest.',bestFor:'Fine Dining, Date Night, Cocktails',knownFor:'Girl & the Goat, Randolph Street, Fulton Market, Google HQ',mustVisit:'Girl & the Goat, Avec, Publican, Oriole',tip:'Oriole has two Michelin stars and is hidden in an alley -- no sign, just an unmarked door. Reservations required weeks ahead.'},
+      'Lincoln Park':{emoji:'🌳',vibe:'Tree-lined streets, the zoo, and neighborhood restaurants that Chicagoans actually eat at weekly. Less trendy, more reliable.',bestFor:'Brunch, Casual, Family-Friendly',knownFor:'Lincoln Park Zoo, DePaul University, Armitage shopping',mustVisit:'Alinea, North Pond, Summer House Santa Monica, Mon Ami Gabi',tip:'Alinea is a three-Michelin-star experience but books up months ahead. North Pond\'s views of the skyline from the park are stunning.'},
+      'Wicker Park':{emoji:'🎸',vibe:'Chicago\'s creative hub. Former artist neighborhood now packed with cocktail bars, taquerias, and chef-driven restaurants along Milwaukee Avenue.',bestFor:'Cocktails, Late Night, Trendy',knownFor:'Milwaukee Avenue, Six Corners, indie music venues',mustVisit:'Big Star, Dove\'s Luncheonette, Piece Brewery, The Violet Hour',tip:'The Violet Hour is a speakeasy with no sign -- look for the unlit building on Damen. Big Star\'s patio is perfect on summer evenings.'},
+      'River North':{emoji:'🏙️',vibe:'Gallery district turned nightlife hub. Steakhouses, rooftop bars, and high-energy restaurants near the Magnificent Mile.',bestFor:'Steakhouse, Nightlife, Rooftop',knownFor:'RPM Italian, steakhouses, galleries, Marina City',mustVisit:'RPM Italian, Bavette\'s Bar & Boeuf, Frontera Grill, Portillo\'s',tip:'Bavette\'s is the best steakhouse atmosphere in Chicago -- dark, sexy, and the Dover Sole is legendary. No shorts or flip-flops.'},
+      'Pilsen':{emoji:'🎨',vibe:'Mexican-American neighborhood with authentic taquerias, murals on every block, and a growing fine dining presence.',bestFor:'Mexican, Tacos, Street Art',knownFor:'18th Street murals, National Museum of Mexican Art, panaderías',mustVisit:'S.K.Y., Dusek\'s, Don Pedro Carnitas, Nuevo León',tip:'Don Pedro Carnitas has been serving since 1972 -- get the carnitas plate. Walk 18th Street for the best street murals in Chicago.'},
+    },
+    'Houston':{
+      'Montrose':{emoji:'🌈',vibe:'Houston\'s most eclectic neighborhood. Vintage shops, world-class Vietnamese food, and James Beard-winning restaurants on every block.',bestFor:'International, Date Night, Craft Cocktails',knownFor:'Underbelly, museum district proximity, diversity, street art',mustVisit:'Underbelly Hospitality, Hugo\'s, Uchi Houston, Anvil Bar & Refuge',tip:'Anvil Bar & Refuge is one of the most important cocktail bars in America -- their menu is a masterclass. Hugo\'s Sunday brunch buffet is legendary.'},
+      'Heights':{emoji:'🏡',vibe:'19th Street and White Oak have transformed into Houston\'s walkable dining district. Bungalows and craftsman homes with chef-driven restaurants.',bestFor:'Brunch, Local Faves, Patio',knownFor:'19th Street shops, White Oak Music Hall, bungalow bars',mustVisit:'Coltivare, Revival Market, Eight Row Flint, Better Luck Tomorrow',tip:'Eight Row Flint does frozen margaritas and smoked meat tacos under a tin roof -- the most Houston patio experience possible.'},
+      'Chinatown / Bellaire':{emoji:'🏮',vibe:'One of the most authentic Chinatowns in America. Spanning miles along Bellaire Boulevard with dim sum palaces, hot pot, pho, and Chinese bakeries.',bestFor:'Dim Sum, Pho, Hot Pot, Asian',knownFor:'Bellaire Blvd food corridor, crawfish season, bubble tea',mustVisit:'Crawfish & Noodles, Mala Sichuan Bistro, Tiger Den, Huynh',tip:'Crawfish & Noodles is a Vietnamese-Cajun mashup unique to Houston -- viet-cajun crawfish in garlic butter. Go during crawfish season (March-June).'},
+      'EaDo (East Downtown)':{emoji:'🏟️',vibe:'Rapidly growing neighborhood anchored by Minute Maid Park and BBVA Stadium. Breweries, BBQ, and a gritty creative energy.',bestFor:'BBQ, Breweries, Pre-Game',knownFor:'8th Wonder Brewery, Minute Maid Park, murals',mustVisit:'Truth BBQ, 8th Wonder Brewery, Nancy\'s Hustle, Indianola',tip:'Truth BBQ opens at 11AM and sells out daily. Arrive by 10:30 for brisket. Nancy\'s Hustle is one of the most acclaimed restaurants in Texas.'},
+      'River Oaks':{emoji:'🌳',vibe:'Houston\'s wealthiest neighborhood. Tree-canopied boulevards with white-tablecloth restaurants and power-lunch spots.',bestFor:'Fine Dining, Power Lunch, Special Occasions',knownFor:'River Oaks Country Club, Highland Village, Menil Collection',mustVisit:'Pappas Bros. Steakhouse, Le Jardinier, March, Steak 48',tip:'Pappas Bros. is Houston\'s best steakhouse -- the porterhouse for two is the move. March is from the former chef of Oxheart, one of the most acclaimed restaurants in Houston history.'},
+    },
+    'Miami':{
+      'Wynwood':{emoji:'🎨',vibe:'Street art capital of the world turned dining and nightlife destination. Warehouse restaurants, craft cocktails, and Art Basel energy year-round.',bestFor:'Street Art, Cocktails, Trendy',knownFor:'Wynwood Walls, murals, galleries, Art Basel',mustVisit:'KYU, Alter, Zak the Baker, Coyo Taco',tip:'KYU\'s wood-fired short rib is one of the most famous dishes in Miami. Visit Wynwood Walls during the day and the restaurants at night.'},
+      'South Beach':{emoji:'🏖️',vibe:'Ocean Drive and Collins Avenue packed with hotels, clubs, and restaurants. The iconic Miami experience -- art deco, poolside dining, and late-night energy.',bestFor:'Nightlife, Beach Dining, People Watching',knownFor:'Ocean Drive, Art Deco Historic District, rooftop pools',mustVisit:'Joe\'s Stone Crab, Juvia, The Surf Club, Prime 112',tip:'Joe\'s Stone Crab does not take reservations -- arrive by 4:30 PM or expect a 2-hour wait. The creamed spinach is almost as famous as the claws.'},
+      'Brickell':{emoji:'🏙️',vibe:'Miami\'s financial district with a skyline full of condo towers, rooftop bars, and polished restaurants catering to the young professional crowd.',bestFor:'Rooftop, Happy Hour, Upscale Casual',knownFor:'Brickell City Centre, rooftop bars, condo towers',mustVisit:'Quinto La Huella, Komodo, La Mar by Gastón Acurio, Novikov',tip:'Komodo is where Miami\'s athletes and celebrities dine -- it\'s a scene. La Mar has the best ceviche in Miami with waterfront views.'},
+      'Little Havana':{emoji:'🇨🇺',vibe:'The soul of Miami. Cuban coffee windows, domino parks, and authentic Latin American restaurants along Calle Ocho (8th Street).',bestFor:'Cuban, Latin American, Local Faves',knownFor:'Calle Ocho, Domino Park, ventanitas, cigar shops',mustVisit:'Versailles, Ball & Chain, Azucar Ice Cream, El Exquisito',tip:'Versailles is the most famous Cuban restaurant in America -- get the vaca frita and a cafecito at the ventanita window. Ball & Chain has live salsa every night.'},
+      'Design District':{emoji:'💎',vibe:'Luxury shopping meets high-end dining in a walkable outdoor district. Every major fashion house and some of Miami\'s best restaurants.',bestFor:'Fine Dining, Luxury Shopping, Special Occasions',knownFor:'Louis Vuitton, Cartier, Institute of Contemporary Art',mustVisit:'Michael\'s Genuine, MC Kitchen, Mandolin Aegean Bistro, OTL',tip:'Mandolin is set in a 1940s house with a Mediterranean garden -- the best patio in Miami. Book for lunch on a weekday.'},
+    },
+  };
+
   const DALLAS_NEIGHBORHOODS = {
     'Uptown':{emoji:'🏙️',vibe:'Dallas most walkable neighborhood. Bars, brunch spots, and patios for days. McKinney Avenue is the main artery.',bestFor:'Happy Hour, Brunch, Nightlife',knownFor:'Katy Trail access, rooftop bars, the young professional crowd',mustVisit:'Midnight Rambler, Las Palmas, HG Sply Co, Komali',tip:'Park once and walk everywhere. The M-Line Trolley runs along McKinney Avenue free of charge.'},
     'Bishop Arts':{emoji:'🎨',vibe:'Oak Cliff independent arts and dining district. 60+ locally owned shops and restaurants in a walkable 6-block area.',bestFor:'Date Night, Local Faves, Brunch',knownFor:'James Beard nominees, chef-driven concepts, walkable streets',mustVisit:'Lucia, Enos Pizza Tavern, Oddfellows, Lockhart Smokehouse',tip:'Go on a weekday evening -- weekends get extremely crowded and parking is tough.'},
@@ -4612,7 +4673,8 @@ const A = {
     // Show neighborhood info card if we have data
     const infoEl=document.getElementById('nbhd-info-card');
     if(infoEl){
-      const nd=DALLAS_NEIGHBORHOODS[n];
+      const cityNbhd=(CITY_NEIGHBORHOODS[S.city]||{});
+      const nd=DALLAS_NEIGHBORHOODS[n]||cityNbhd[n];
       if(nd&&n!=='all'){
         infoEl.style.display='block';
         // Pull top restaurants in this neighborhood from data
@@ -5503,6 +5565,9 @@ const A = {
               <button onclick="event.stopPropagation();A.toggleList('favs',${r.id},this)" style="flex:1;padding:8px;border-radius:8px;border:1px solid ${isFav?'rgba(201,168,76,.4)':'var(--border)'};background:${isFav?'rgba(201,168,76,.12)':'var(--card)'};color:${isFav?'var(--gold)':'var(--text2)'};font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">❤️ ${isFav?'Saved':'Save'}</button>
               <button onclick="event.stopPropagation();A.toggleList('want',${r.id},this)" style="flex:1;padding:8px;border-radius:8px;border:1px solid ${isWant?'rgba(201,168,76,.4)':'var(--border)'};background:${isWant?'rgba(201,168,76,.12)':'var(--card)'};color:${isWant?'var(--gold)':'var(--text2)'};font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🔖 ${isWant?'On List':'Want to Go'}</button>
               <button onclick="event.stopPropagation();A.openDetail(${r.id})" style="flex:1;padding:8px;border-radius:8px;border:1px solid rgba(201,168,76,.3);background:var(--gold);color:var(--dark);font-size:11px;font-weight:800;cursor:pointer;font-family:inherit">View Details →</button>
+              <button onclick="event.stopPropagation();A.toggleNotifyMe('${r.name.replace(/'/g,"\\'")}')" class="notify-me-btn${(S.userData.reminders||[]).includes(r.name)?' notified':''}" style="padding:8px 10px">
+                ${(S.userData.reminders||[]).includes(r.name)?'✅':'🔔'}
+              </button>
               ${r.instagram?`<a href="https://instagram.com/${r.instagram.replace('@','')}" target="_blank" onclick="event.stopPropagation()" style="padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:13px;text-decoration:none;display:flex;align-items:center">📸</a>`:''}
             </div>
           </div>`;
@@ -5593,12 +5658,15 @@ const A = {
                 <div style="font-size:11px;font-weight:700;color:${isHot ? '#e06b3c' : 'var(--text)'}">Coming Soon</div>
               </div>
             </div>
-            <!-- Footer -->
+            <!-- Footer with Notify Me -->
             <div style="display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid var(--border)">
               <div style="display:flex;align-items:center;gap:6px">
                 ${r.group&&r.group!=='Independent'?`<span style="font-size:10px;background:rgba(201,168,76,.12);color:var(--gold);padding:3px 9px;border-radius:8px;border:1px solid rgba(201,168,76,.25);font-weight:700">🏢 ${r.group}</span>`:''}
+                <button onclick="event.stopPropagation();A.toggleNotifyMe('${r.name.replace(/'/g,"\\'")}')" class="notify-me-btn${(S.userData.reminders||[]).includes(r.name)?' notified':''}" id="notify-${r.name.replace(/[^a-zA-Z0-9]/g,'_')}">
+                  ${(S.userData.reminders||[]).includes(r.name)?'✅ Notified':'🔔 Notify Me'}
+                </button>
               </div>
-              ${r.ig?`<a href="https://instagram.com/${r.ig.replace('@','')}" target="_blank" style="font-size:11px;color:var(--gold);font-weight:700;text-decoration:none;display:flex;align-items:center;gap:4px"><span style="font-size:13px">📸</span>${r.ig}</a>`:''}
+              ${r.ig?`<a href="https://instagram.com/${r.ig.replace('@','')}" target="_blank" onclick="event.stopPropagation()" style="font-size:11px;color:var(--gold);font-weight:700;text-decoration:none;display:flex;align-items:center;gap:4px"><span style="font-size:13px">📸</span>${r.ig}</a>`:''}
             </div>
           </div>
         </div>`;
@@ -5772,44 +5840,78 @@ const A = {
           <div class="discover-cards">${dateNight.map(r=>miniCard(r,'💕')).join('')}</div>
         </div>`:''}
 
-        <!-- CELEBRITY & ATHLETE HOTSPOTS -->
-        <div class="discover-section">
-          <div class="discover-title">🌟 Celebrity & Athlete Hotspots</div>
-          <div style="font-size:11px;color:var(--text3);margin:-8px 0 10px">Where celebrities, NBA & NFL players dine in Dallas</div>
-          ${(()=>{
-            const celeb = [
+        <!-- CELEBRITY & ATHLETE HOTSPOTS (Multi-City) -->
+        ${(()=>{
+          const CELEB_DATA = {
+            'Dallas':[
               {id:23,name:"Al Biernat's",note:"Power lunch central -- Mark Cuban, Jerry Jones, Troy Aikman regulars",who:"🏈 Cowboys · 🏀 Mavs ownership",icon:"🥩"},
               {id:304,name:"Carbone",note:"Major Food Group's hottest table -- A-list celebrities and athletes on game nights",who:"🌟 A-List · 🏀 NBA players",icon:"🍝"},
               {id:49,name:"Nick & Sam's Steakhouse",note:"Dallas Cowboys postgame favorite -- private dining for team dinners",who:"🏈 Dallas Cowboys",icon:"🥩"},
               {id:73,name:"Town Hearth",note:"Exotic cars in the dining room, VIP bottle service -- athlete and rapper favorite",who:"🏈 NFL · 🎤 Music industry",icon:"🍖"},
               {id:32,name:"Nobu Dallas",note:"Go-to for visiting NBA teams and Hollywood celebrities at the Crescent",who:"🏀 Visiting NBA · 🎬 Hollywood",icon:"🍣"},
               {id:184,name:"Delilah Dallas",note:"Late-night scene attracts athletes, influencers, and celebrities",who:"🏀 NBA · 📱 Influencers",icon:"🍸"},
-              {id:156,name:"Avra Dallas",note:"Mediterranean fine dining drawing sports agents and team owners",who:"🏈 Team owners · ⚖️ Agents",icon:"🐟"},
               {id:158,name:"The Mansion on Turtle Creek",note:"Old-money Dallas power dining -- where deals get done",who:"💼 Business elite · 🏈 Ownership",icon:"🏰"},
               {id:114,name:"Javier's",note:"Legendary Dallas scene -- celebrities, socialites, cigar lounge regulars",who:"🌟 Dallas society · 🎬 Celebs",icon:"🌮"},
               {id:224,name:"Fearing's",note:"Hotel restaurant at The Ritz -- visiting teams, celebrity chefs, galas",who:"🏀 Visiting teams · 🍳 Chefs",icon:"🤠"},
               {id:4,name:"Midnight Rambler",note:"Underground cocktail bar -- athletes and musicians after hours",who:"🎤 Musicians · 🏀 Athletes",icon:"🍹"},
               {id:170,name:"Docent Steak & Lounge",note:"Upscale lounge scene popular with Dallas Mavericks and Cowboys players",who:"🏀 Mavericks · 🏈 Cowboys",icon:"🥃"},
-            ];
-            return celeb.map(c=>{
-              const rest = restaurants.find(r=>r.id===c.id);
-              if(!rest) return '';
-              return `<div onclick="A.openDetail(${c.id})" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
-                <div style="display:flex;align-items:flex-start;gap:10px">
-                  <div style="font-size:24px;flex-shrink:0">${c.icon}</div>
-                  <div style="flex:1;min-width:0">
-                    <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px">
-                      <span style="font-size:13px;font-weight:700;color:var(--text)">${c.name}</span>
-                      <span style="font-size:10px;font-weight:700;color:var(--gold)">${rest.score}</span>
-                    </div>
-                    <div style="font-size:11px;color:var(--text2);line-height:1.5;margin-bottom:4px">${c.note}</div>
-                    <div style="font-size:10px;color:var(--text3)">${c.who}</div>
-                  </div>
-                </div>
-              </div>`;
-            }).join('');
-          })()}
-        </div>
+            ],
+            'New York':[
+              {name:"Carbone",note:"The hardest reservation in NYC -- Jay-Z, Drake, Kim K regulars. The spicy rigatoni is famous.",who:"🌟 A-List · 🎤 Music royalty",icon:"🍝"},
+              {name:"Rao's",note:"115-year-old Harlem institution. Tables are passed down like family heirlooms. You need to know someone.",who:"🌟 NYC elite · 🎬 Hollywood",icon:"🍝"},
+              {name:"Polo Bar",note:"Ralph Lauren's private club feel -- models, media moguls, and old money at the bar",who:"💼 Fashion · 📺 Media moguls",icon:"🥃"},
+              {name:"The Grill",note:"Power lunch in the former Four Seasons space. Wall Street titans and billionaires",who:"💼 Wall Street · 🏛️ Power brokers",icon:"🥩"},
+              {name:"Nobu Downtown",note:"Robert De Niro's landmark -- global celebrities and visiting athletes nightly",who:"🎬 Hollywood · 🏀 NBA stars",icon:"🍣"},
+              {name:"TAO Downtown",note:"Massive Asian-fusion nightclub-restaurant hybrid -- celebrities, athletes, and models pack the mezzanine",who:"🏀 NBA · 🎤 Music · 📱 Influencers",icon:"🍜"},
+              {name:"Catch",note:"Meatpacking rooftop seafood where paparazzi camp outside. Hadid sisters, Bieber, Kardashians spotted regularly",who:"📱 Influencers · 🎬 Reality TV",icon:"🦞"},
+              {name:"Peter Luger",note:"Brooklyn steakhouse since 1887. Cash only. Jay-Z filmed here. The porterhouse is unmatched.",who:"🏀 Brooklyn Nets · 🎤 Hip-hop icons",icon:"🥩"},
+            ],
+            'Los Angeles':[
+              {name:"Craig's",note:"No-reservations WeHo celebrity canteen -- every A-lister in town eats here. Paparazzi outside nightly.",who:"🎬 Hollywood A-List · 📱 Influencers",icon:"🍽️"},
+              {name:"Nobu Malibu",note:"Pacific Coast Highway landmark. Lakers, Dodgers, and Hollywood royalty on the patio.",who:"🏀 Lakers · ⚾ Dodgers · 🎬 Hollywood",icon:"🍣"},
+              {name:"Catch LA",note:"Rooftop seafood in WeHo. One of the most paparazzi-heavy restaurants in LA.",who:"📱 Influencers · 🎬 Reality TV",icon:"🦞"},
+              {name:"BOA Steakhouse",note:"Sunset Strip power steakhouse. Agents, managers, and A-list talent close deals here.",who:"💼 Talent agents · 🎬 Film industry",icon:"🥩"},
+              {name:"Spago",note:"Wolfgang Puck's legendary Beverly Hills flagship. Oscar-party HQ and power lunch institution.",who:"🎬 Hollywood legends · 🏆 Oscar winners",icon:"🍕"},
+              {name:"Matsuhisa",note:"Nobu Matsuhisa's original Beverly Hills restaurant where it all started. Loyal celebrity following since 1987.",who:"🎬 Hollywood · 🏀 NBA legends",icon:"🍣"},
+              {name:"The Nice Guy",note:"Unmarked door in West Hollywood. The celebrity speakeasy -- Drake, Rihanna, Leo DiCaprio regulars",who:"🎤 Music · 🎬 Film · 🏀 Athletes",icon:"🍸"},
+              {name:"Bestia",note:"Arts District powerhouse. Chefs and food-obsessed celebrities. The most critically acclaimed restaurant in LA.",who:"🍳 Celebrity chefs · 🎬 Foodies",icon:"🍝"},
+            ],
+            'Miami':[
+              {name:"Komodo",note:"Three-story Brickell restaurant-lounge. Heat and Dolphins players, DJ Khaled, every visiting celebrity.",who:"🏀 Heat · 🏈 Dolphins · 🎤 DJ Khaled",icon:"🍜"},
+              {name:"Prime 112",note:"South Beach power steakhouse since 2004. LeBron, Drake, Dwyane Wade regular table holders.",who:"🏀 NBA legends · 🎤 Hip-hop",icon:"🥩"},
+              {name:"Carbone Miami",note:"Major Food Group's Miami outpost. The same impossible-to-get table energy as NYC.",who:"🌟 A-List · 💼 Miami moguls",icon:"🍝"},
+              {name:"Papi Steak",note:"David Grutman's over-the-top South Beach steakhouse. Tableside theatrics and celebrity sightings nightly.",who:"🎤 Music · 🏈 NFL · 📱 Influencers",icon:"🥩"},
+              {name:"Swan",note:"Design District restaurant from Pharrell Williams and David Grutman. Art world meets nightlife.",who:"🎤 Pharrell · 🎨 Art Basel crowd",icon:"🍽️"},
+              {name:"Zuma Miami",note:"Japanese izakaya on the river. Inter Miami players, Formula 1 crowd, visiting Europeans.",who:"⚽ Inter Miami · 🏎️ F1 crowd",icon:"🍣"},
+              {name:"The Surf Club",note:"Thomas Keller's Miami outpost in the historic Surf Club. Old-money glamour, private club energy.",who:"💼 Business elite · 🎬 Film royalty",icon:"🦞"},
+              {name:"Joe's Stone Crab",note:"Miami institution since 1913. Every president, every celebrity, every athlete has eaten here.",who:"🌟 Everyone · 🏀 🏈 All teams",icon:"🦀"},
+            ],
+          };
+          const cityName=S.city||'Dallas';
+          const celeb=CELEB_DATA[cityName]||CELEB_DATA['Dallas'];
+          const cityLabels={'Dallas':'Dallas','New York':'NYC','Los Angeles':'LA','Miami':'Miami'};
+          const displayCity=cityLabels[cityName]||cityName;
+          return `<div class="discover-section">
+          <div class="discover-title">🌟 Celebrity & Athlete Hotspots</div>
+          <div style="font-size:11px;color:var(--text3);margin:-8px 0 10px">Where celebrities, NBA & NFL players dine in ${displayCity}</div>
+          ${celeb.map(c=>{
+            const rest=c.id?restaurants.find(r=>r.id===c.id):restaurants.find(r=>r.name===c.name);
+            const clickAttr=rest?'onclick="A.openDetail('+rest.id+')"':c.id?'onclick="A.openDetail('+c.id+')"':'';
+            const score=rest?rest.score:'';
+            return '<div '+clickAttr+' style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor=\'var(--gold)\'" onmouseleave="this.style.borderColor=\'var(--border)\'">'
+              +'<div style="display:flex;align-items:flex-start;gap:10px">'
+              +'<div style="font-size:24px;flex-shrink:0">'+c.icon+'</div>'
+              +'<div style="flex:1;min-width:0">'
+              +'<div style="display:flex;align-items:center;gap:6px;margin-bottom:3px">'
+              +'<span style="font-size:13px;font-weight:700;color:var(--text)">'+c.name+'</span>'
+              +(score?'<span style="font-size:10px;font-weight:700;color:var(--gold)">'+score+'</span>':'')
+              +'</div>'
+              +'<div style="font-size:11px;color:var(--text2);line-height:1.5;margin-bottom:4px">'+c.note+'</div>'
+              +'<div style="font-size:10px;color:var(--text3)">'+c.who+'</div>'
+              +'</div></div></div>';
+          }).join('')}
+        </div>`;
+        })()}
 
         ${hhSpots.length?`
         <div class="discover-section">
@@ -7735,18 +7837,68 @@ const A = {
     // Lists sub-tab content
     const listsContent = feedSub==='lists' ? this._renderListsTab(restaurants) : '';
 
-    // Coming soon placeholder for future social features
-    const comingSoonContent = `
-      <div style="text-align:center;padding:50px 20px">
-        <div style="font-size:40px;margin-bottom:14px">💬</div>
-        <div style="font-size:16px;font-weight:800;color:var(--text);margin-bottom:6px">Community Feed</div>
-        <div style="font-size:12px;color:var(--text2);line-height:1.7;max-width:260px;margin:0 auto">Coming soon. Share reviews, photos, and dining experiences with the Appetyt community.</div>
-        <div style="margin-top:20px;display:inline-flex;align-items:center;gap:6px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.18);border-radius:10px;padding:8px 16px">
-          <div style="width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse-gold 1.4s infinite"></div>
-          <span style="font-size:11px;font-weight:700;color:var(--gold)">In Development</span>
+    // Activity feed: check-ins + community posts
+    const activityContent = (()=>{
+      const checkins=S.userData.checkins||[];
+      const gp=S.userData.guestProfile||{};
+      const tier=A._calcTier();
+      const recentCheckins=checkins.slice(-20).reverse();
+
+      // Mix check-ins with generated community posts
+      const communityPosts=this._generateCommunityPosts(restaurants);
+
+      // Build activity items from user check-ins
+      const checkinPosts=recentCheckins.map(c=>{
+        const r=restaurants.find(x=>x.id===c.id);
+        const d=new Date(c.time);
+        const timeStr=d.toLocaleTimeString([],{hour:'numeric',minute:'2-digit'});
+        const dateStr=d.toLocaleDateString([],{month:'short',day:'numeric'});
+        const visitCount=checkins.filter(x=>x.id===c.id).length;
+        return `<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:10px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <div style="width:36px;height:36px;border-radius:50%;background:${tier.vip?'linear-gradient(135deg,var(--gold),#b8922e)':'rgba(76,154,110,.15)'};display:flex;align-items:center;justify-content:center;font-size:16px">${tier.vip?'⭐':'📍'}</div>
+            <div style="flex:1">
+              <div style="font-size:12px;font-weight:700;color:var(--text)">${gp.name||'You'} <span style="font-weight:400;color:var(--text3)">checked in at</span></div>
+              <div style="font-size:10px;color:var(--text3)">${dateStr} · ${timeStr}</div>
+            </div>
+            <span class="tier-badge tier-${tier.name.toLowerCase()}" style="font-size:9px">${tier.icon} ${tier.name}</span>
+          </div>
+          <div onclick="A.openDetail(${c.id})" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <div>
+                <div style="font-size:14px;font-weight:700;color:var(--text)">${c.name}</div>
+                <div style="font-size:10px;color:var(--text3)">${r?r.cuisine+' · '+r.neighborhood:''}${visitCount>1?' · Visit #'+visitCount:''}</div>
+              </div>
+              ${r?'<div style="font-size:16px;font-weight:800;color:'+(r.score>=90?'var(--green)':r.score>=80?'var(--gold)':'var(--text2)')+'">'+r.score+'</div>':''}
+            </div>
+          </div>
+          ${c.dietary?.length?'<div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap">'+c.dietary.map(d=>'<span class="guest-tag dietary-tag">'+d+'</span>').join('')+'</div>':''}
+        </div>`;
+      });
+
+      if(!checkinPosts.length&&!communityPosts.length){
+        return `<div style="text-align:center;padding:50px 20px">
+          <div style="font-size:40px;margin-bottom:14px">📍</div>
+          <div style="font-size:16px;font-weight:800;color:var(--text);margin-bottom:6px">Your Activity Feed</div>
+          <div style="font-size:12px;color:var(--text2);line-height:1.7;max-width:260px;margin:0 auto">Check in at restaurants to build your feed. Your dining journey starts here.</div>
+        </div>`;
+      }
+
+      return `<div style="padding:0">
+        ${checkinPosts.length?`
+        <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;display:flex;align-items:center;gap:6px">
+          <span style="width:6px;height:6px;border-radius:50%;background:#4c9a6e;display:inline-block"></span> Your Check-Ins
         </div>
-      </div>
-    `;
+        ${checkinPosts.join('')}
+        `:''}
+        ${communityPosts.length?`
+        <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin:16px 0 10px;display:flex;align-items:center;gap:6px">
+          <span style="width:6px;height:6px;border-radius:50%;background:var(--gold);display:inline-block"></span> Community
+        </div>
+        ${this._renderPostList(communityPosts)}
+        `:''}
+      </div>`;
+    })();
 
     el.innerHTML=`
       <!-- Sub-tabs -->
@@ -7756,7 +7908,7 @@ const A = {
         <button class="social-tab${feedSub==='trending'?' active':''}" onclick="S._feedSub='trending';A.renderFeed()">Trending</button>
       </div>
 
-      ${feedSub==='lists' ? listsContent : comingSoonContent}
+      ${feedSub==='lists' ? listsContent : feedSub==='feed' ? activityContent : this._renderTrendingTab(restaurants)}
     `;
   },
 
@@ -7849,6 +8001,10 @@ const A = {
         </div>
       </div>`;
     }).join('');
+  },
+
+  _renderTrendingTab(restaurants){
+    return this._renderTrendingFeed(restaurants);
   },
 
   _renderTrendingFeed(restaurants){
@@ -9576,7 +9732,7 @@ const A = {
 
     el.innerHTML = `
       <div style="margin-bottom:16px">
-        <div style="font-size:22px;font-weight:700;color:var(--text);margin-bottom:4px">📍 Dallas Local</div>
+        <div style="font-size:22px;font-weight:700;color:var(--text);margin-bottom:4px">📍 ${S.city||'Dallas'} Local</div>
       </div>
 
       <!-- Sub-tabs 2x2 grid -->
@@ -11748,28 +11904,109 @@ Return ONLY the JSON object, nothing else.`,
         <div style="font-size:11px;color:var(--text2);line-height:1.6">All your favorites, bills, and travel items are saved locally on this device. Connect Supabase to sync across devices.</div>
       </div>
 
-      <!-- Guest Profile / Check-In Preferences -->
+      <!-- Guest Profile / Check-In Stats Dashboard -->
       ${(()=>{
         const gp=S.userData.guestProfile||{};
         const checkins=S.userData.checkins||[];
-        const recentCheckins=checkins.slice(-5).reverse();
-        return `<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
-            <div style="font-size:13px;font-weight:800;color:var(--text)">📍 Check-In Profile</div>
+        const recentCheckins=checkins.slice(-10).reverse();
+        const tier=A._calcTier();
+        const uniqueSpots=[...new Set(checkins.map(c=>c.id))].length;
+
+        // Streak calculation
+        const streak=(()=>{
+          if(!checkins.length) return 0;
+          const days=checkins.map(c=>new Date(c.time).toDateString());
+          const uniqueDays=[...new Set(days)].sort((a,b)=>new Date(b)-new Date(a));
+          let s=1;
+          for(let i=1;i<uniqueDays.length;i++){
+            const diff=Math.round((new Date(uniqueDays[i-1])-new Date(uniqueDays[i]))/(1000*60*60*24));
+            if(diff<=1) s++; else break;
+          }
+          // Check if most recent day is today or yesterday
+          const last=new Date(uniqueDays[0]);
+          const now=new Date();
+          const dayDiff=Math.round((now-last)/(1000*60*60*24));
+          return dayDiff<=1?s:0;
+        })();
+
+        // Tier progress
+        const totalVisits=(S.userData.visited||[]).length;
+        const totalSpent=(S.userData.bills||[]).reduce((s,b)=>s+(b.total||0),0);
+        const tierThresholds=[{name:'Bronze',icon:'🥉',visits:0,spend:0},{name:'Silver',icon:'🥈',visits:10,spend:500},{name:'Gold',icon:'🥇',visits:25,spend:2000},{name:'Black',icon:'💎',visits:50,spend:5000}];
+        const currentIdx=tierThresholds.findIndex(t=>t.name===tier.name);
+        const nextTier=currentIdx<3?tierThresholds[currentIdx+1]:null;
+        const progress=nextTier?Math.min(100,Math.round((totalVisits/nextTier.visits)*100)):100;
+        const tierColor={Bronze:'#b45a28',Silver:'#a0aabc',Gold:'var(--gold)',Black:'#e8e0d0'};
+
+        // Favorite spot (most checked-in)
+        const spotCounts={};
+        checkins.forEach(c=>{spotCounts[c.name]=(spotCounts[c.name]||0)+1;});
+        const favSpot=Object.entries(spotCounts).sort((a,b)=>b[1]-a[1])[0];
+
+        return `<div class="ci-stats-card">
+          <!-- Header with tier + stats -->
+          <div class="ci-stats-header">
+            <div style="display:flex;align-items:center;gap:10px">
+              <div style="width:44px;height:44px;border-radius:50%;background:${tier.vip?'linear-gradient(135deg,var(--gold),#b8922e)':'var(--card2)'};border:${tier.vip?'2px solid var(--gold)':'1px solid var(--border)'};display:flex;align-items:center;justify-content:center;font-size:20px">${tier.icon}</div>
+              <div>
+                <div style="font-size:15px;font-weight:800;color:var(--text)">${gp.name||'Guest'}</div>
+                <div style="display:flex;align-items:center;gap:6px;margin-top:2px">
+                  <span class="tier-badge tier-${tier.name.toLowerCase()}">${tier.icon} ${tier.name}</span>
+                  ${streak>0?`<span class="ci-streak-badge"><span class="ci-streak-fire">🔥</span> ${streak}-day streak</span>`:''}
+                </div>
+              </div>
+            </div>
             <span class="checkin-status checkin-active">${checkins.length} check-in${checkins.length!==1?'s':''}</span>
           </div>
-          ${gp.name?`<div style="font-size:12px;color:var(--text2);margin-bottom:6px">Name: <b style="color:var(--text)">${gp.name}</b></div>`:''}
-          ${(gp.dietary||[]).length?`<div style="margin-bottom:6px"><span style="font-size:10px;color:var(--text3)">Dietary: </span>${gp.dietary.map(d=>'<span class="guest-tag dietary-tag">'+d+'</span>').join('')}</div>`:''}
-          ${(gp.allergies||[]).length?`<div style="margin-bottom:6px"><span style="font-size:10px;color:var(--text3)">Allergies: </span>${gp.allergies.map(a=>'<span class="guest-tag allergy-tag">⚠ '+a+'</span>').join('')}</div>`:''}
+
+          <!-- Quick Stats Row -->
+          <div style="display:flex;border-bottom:1px solid var(--border)">
+            <div class="ci-stat-box"><div class="ci-stat-num">${checkins.length}</div><div class="ci-stat-label">Total</div></div>
+            <div class="ci-stat-box" style="border-left:1px solid var(--border);border-right:1px solid var(--border)"><div class="ci-stat-num">${uniqueSpots}</div><div class="ci-stat-label">Unique Spots</div></div>
+            <div class="ci-stat-box"><div class="ci-stat-num" style="color:${tierColor[tier.name]||'var(--text)'}">${tier.name}</div><div class="ci-stat-label">Tier</div></div>
+          </div>
+
+          <!-- Tier Progress -->
+          ${nextTier?`<div class="ci-tier-progress">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <span style="font-size:11px;font-weight:700;color:var(--text2)">${tier.icon} ${tier.name}</span>
+              <span style="font-size:10px;color:var(--text3)">${nextTier.visits - totalVisits} more visits to ${nextTier.icon} ${nextTier.name}</span>
+            </div>
+            <div class="ci-progress-bar">
+              <div class="ci-progress-fill" style="width:${progress}%;background:linear-gradient(90deg,${tierColor[tier.name]||'var(--gold)'},var(--gold))"></div>
+            </div>
+          </div>`:`<div class="ci-tier-progress">
+            <div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px;font-weight:700;color:var(--gold)">💎 Black Tier -- Highest Status</span></div>
+            <div class="ci-progress-bar"><div class="ci-progress-fill" style="width:100%;background:linear-gradient(90deg,#e8e0d0,var(--gold))"></div></div>
+          </div>`}
+
+          <!-- Favorite Spot + Dietary -->
+          <div style="padding:10px 14px;border-bottom:1px solid var(--border)">
+            ${favSpot?`<div style="margin-bottom:6px"><span style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em">Favorite Spot: </span><span style="font-size:11px;font-weight:700;color:var(--gold)">${favSpot[0]} (${favSpot[1]}x)</span></div>`:''}
+            ${(gp.dietary||[]).length?`<div style="margin-bottom:4px"><span style="font-size:10px;color:var(--text3)">Dietary: </span>${gp.dietary.map(d=>'<span class="guest-tag dietary-tag">'+d+'</span>').join('')}</div>`:''}
+            ${(gp.allergies||[]).length?`<div><span style="font-size:10px;color:var(--text3)">Allergies: </span>${gp.allergies.map(a=>'<span class="guest-tag allergy-tag">⚠ '+a+'</span>').join('')}</div>`:''}
+            ${!gp.name&&!checkins.length?'<div style="font-size:11px;color:var(--text3)">Check in at any restaurant to build your guest profile</div>':''}
+          </div>
+
+          <!-- Recent Check-In History -->
           ${recentCheckins.length?`
-          <div style="margin-top:8px;border-top:1px solid var(--border);padding-top:8px">
-            <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Recent Check-Ins</div>
-            ${recentCheckins.map(c=>`<div style="display:flex;justify-content:space-between;padding:4px 0;font-size:11px">
-              <span style="color:var(--text)">${c.name}</span>
-              <span style="color:var(--text3)">${new Date(c.time).toLocaleDateString()}</span>
-            </div>`).join('')}
-          </div>`:''}
-          ${!gp.name&&!checkins.length?'<div style="font-size:11px;color:var(--text3)">Check in at any restaurant to build your guest profile</div>':''}
+          <div style="padding:10px 14px 6px">
+            <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Recent Activity</div>
+          </div>
+          ${recentCheckins.map(c=>{
+            const d=new Date(c.time);
+            const timeStr=d.toLocaleTimeString([],{hour:'numeric',minute:'2-digit'});
+            const dateStr=d.toLocaleDateString([],{month:'short',day:'numeric'});
+            return `<div class="ci-history-item" onclick="A.openDetail(${c.id})">
+              <div style="width:32px;height:32px;border-radius:8px;background:rgba(76,154,110,.1);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0">📍</div>
+              <div style="flex:1;min-width:0">
+                <div style="font-size:12px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${c.name}</div>
+                <div style="font-size:10px;color:var(--text3)">${dateStr} · ${timeStr}</div>
+              </div>
+              <div style="font-size:11px;color:var(--text3)">›</div>
+            </div>`;
+          }).join('')}
+          `:''}
         </div>`;
       })()}
 
@@ -12708,6 +12945,22 @@ Return ONLY the JSON object, nothing else.`,
 
   closeCheckIn(){
     document.getElementById('checkin-modal').classList.remove('open');
+  },
+
+  // -- NOTIFY ME for Coming Soon restaurants
+  toggleNotifyMe(name){
+    if(!S.userData.reminders) S.userData.reminders=[];
+    const idx=S.userData.reminders.indexOf(name);
+    if(idx>=0){
+      S.userData.reminders.splice(idx,1);
+      this.showToast('Notification removed for '+name);
+    } else {
+      S.userData.reminders.push(name);
+      this.showToast('🔔 You\'ll be notified when '+name+' opens!');
+    }
+    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    // Re-render the local tab if visible
+    if(this._localSub==='coming'||S.activeTab==='local') this.renderLocal();
   },
 
 
