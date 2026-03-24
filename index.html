@@ -5496,16 +5496,6 @@ const A = {
             "ig": ""
       },
       {
-            "name": "LA Lupita",
-            "hood": "Dallas",
-            "address": "TBD Dallas",
-            "eta": "2026",
-            "cuisine": "Mexican",
-            "desc": "Authentic Mexican street food bringing vibrant flavors to Dallas. Known for handmade tortillas, slow-cooked meats, and fresh salsas made daily. A neighborhood gathering spot with colorful decor and lively atmosphere.",
-            "group": "Independent",
-            "ig": ""
-      },
-      {
             "name": "Le Petit Chef",
             "hood": "TBD -- Multiple Dallas Venues",
             "address": "Various Dallas event venues",
@@ -5518,6 +5508,8 @@ const A = {
 ];
     // Pull coming-soon restaurants from DALLAS_DATA for tappable info cards
     const comingSoonData=(this.getRestaurants()||[]).filter(r=>(r.indicators||[]).includes('coming-soon'));
+    // Store items on window for onclick access
+    window._csItems=items;
 
     return `
       <div style="margin-bottom:16px">
@@ -5661,15 +5653,13 @@ const A = {
                 <div style="font-size:11px;font-weight:700;color:${isHot ? '#e06b3c' : 'var(--text)'}">Coming Soon</div>
               </div>
             </div>
-            <!-- Footer with Notify Me -->
-            <div style="display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid var(--border)">
-              <div style="display:flex;align-items:center;gap:6px">
-                ${r.group&&r.group!=='Independent'?`<span style="font-size:10px;background:rgba(201,168,76,.12);color:var(--gold);padding:3px 9px;border-radius:8px;border:1px solid rgba(201,168,76,.25);font-weight:700">🏢 ${r.group}</span>`:''}
-                <button onclick="event.stopPropagation();A.toggleNotifyMe('${r.name.replace(/'/g,"\\'")}')" class="notify-me-btn${(S.userData.reminders||[]).includes(r.name)?' notified':''}" id="notify-${r.name.replace(/[^a-zA-Z0-9]/g,'_')}">
-                  ${(S.userData.reminders||[]).includes(r.name)?'✅ Notified':'🔔 Notify Me'}
-                </button>
-              </div>
-              ${r.ig?`<a href="https://instagram.com/${r.ig.replace('@','')}" target="_blank" onclick="event.stopPropagation()" style="font-size:11px;color:var(--gold);font-weight:700;text-decoration:none;display:flex;align-items:center;gap:4px"><span style="font-size:13px">📸</span>${r.ig}</a>`:''}
+            <!-- Action bar -->
+            <div style="display:flex;align-items:center;gap:6px;padding-top:10px;border-top:1px solid var(--border)">
+              <button onclick="event.stopPropagation();A.openComingSoonDetail(window._csItems[${items.indexOf(r)}])" style="flex:1;padding:8px;border-radius:8px;border:1px solid rgba(201,168,76,.3);background:var(--gold);color:var(--dark);font-size:11px;font-weight:800;cursor:pointer;font-family:inherit">View Details →</button>
+              <button onclick="event.stopPropagation();A.toggleNotifyMe('${r.name.replace(/'/g,"\\'")}')" class="notify-me-btn${(S.userData.reminders||[]).includes(r.name)?' notified':''}" style="padding:8px 10px">
+                ${(S.userData.reminders||[]).includes(r.name)?'✅':'🔔'}
+              </button>
+              ${r.ig?`<a href="https://instagram.com/${r.ig.replace('@','')}" target="_blank" onclick="event.stopPropagation()" style="padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:13px;text-decoration:none;display:flex;align-items:center">📸</a>`:''}
             </div>
           </div>
         </div>`;
@@ -12979,6 +12969,79 @@ Return ONLY the JSON object, nothing else.`,
 
   closeCheckIn(){
     document.getElementById('checkin-modal').classList.remove('open');
+  },
+
+  // -- COMING SOON DETAIL VIEW
+  openComingSoonDetail(r){
+    if(!r) return;
+    const isNotified=(S.userData.reminders||[]).includes(r.name);
+    const isHot=r.eta==='Q1 2026'||r.eta==='Early 2026'||r.eta==='Spring 2026'||r.eta==='April 2026'||r.eta==='March 2026';
+    const price=r.cuisine.includes('Steakhouse')||r.cuisine.includes('Fine')||r.group==='Noble 33'||r.group==='Major Food Group'?'$$$$':r.cuisine.includes('Bagel')||r.cuisine.includes('Café')?'$$':'$$$';
+    const sheet=document.getElementById('checkin-sheet');
+    sheet.innerHTML=`
+      <div style="padding:20px 16px 24px">
+        <div style="width:36px;height:4px;border-radius:2px;background:var(--border);margin:0 auto 16px"></div>
+        ${isHot?'<div style="height:3px;background:linear-gradient(90deg,#e06b3c,#e8a84c);border-radius:2px;margin-bottom:14px"></div>':''}
+        <div style="text-align:center;margin-bottom:16px">
+          <div style="display:inline-flex;align-items:center;gap:6px;margin-bottom:8px">
+            <span style="font-size:9px;font-weight:800;background:${isHot?'#e06b3c':'var(--gold)'};color:#fff;padding:3px 10px;border-radius:8px;letter-spacing:.04em">${isHot?'OPENING SOON':'COMING SOON'}</span>
+            <span style="font-size:10px;color:var(--text3)">${r.eta}</span>
+          </div>
+          <div style="font-size:22px;font-weight:800;color:var(--text);margin-bottom:4px">${r.name}</div>
+          <div style="font-size:13px;color:var(--gold);font-weight:700">${r.cuisine}</div>
+        </div>
+
+        <!-- Location -->
+        <div style="background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:12px">
+          <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">📍 Location</div>
+          <div style="font-size:13px;color:var(--text);font-weight:600">${r.hood}</div>
+          <div style="font-size:11px;color:var(--text3);margin-top:2px">${r.address}</div>
+        </div>
+
+        <!-- Description -->
+        <div style="background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:12px">
+          <div style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">About</div>
+          <div style="font-size:12px;color:var(--text2);line-height:1.7">${r.desc}</div>
+        </div>
+
+        <!-- Quick Info Grid -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px">
+          <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;text-align:center">
+            <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Price</div>
+            <div style="font-size:14px;font-weight:700;color:var(--gold)">${price}</div>
+          </div>
+          <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;text-align:center">
+            <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Status</div>
+            <div style="font-size:11px;font-weight:700;color:${isHot?'#e06b3c':'var(--text)'}">${isHot?'Opening Soon':'Coming '+r.eta}</div>
+          </div>
+          <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;text-align:center">
+            <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Reservations</div>
+            <div style="font-size:11px;font-weight:700;color:var(--text)">TBD</div>
+          </div>
+        </div>
+
+        ${r.group&&r.group!=='Independent'?`
+        <div style="background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);border-radius:10px;padding:10px;margin-bottom:12px;display:flex;align-items:center;gap:8px">
+          <span style="font-size:16px">🏢</span>
+          <div>
+            <div style="font-size:11px;font-weight:700;color:var(--gold)">${r.group}</div>
+            <div style="font-size:10px;color:var(--text3)">Restaurant Group</div>
+          </div>
+        </div>`:''}
+
+        <!-- Actions -->
+        <div style="display:flex;gap:8px;margin-bottom:10px">
+          <button onclick="A.toggleNotifyMe('${r.name.replace(/'/g,"\\'")}');A.closeCheckIn()" style="flex:1;padding:12px;border-radius:10px;border:1px solid ${isNotified?'rgba(76,154,110,.4)':'rgba(62,184,168,.3)'};background:${isNotified?'rgba(76,154,110,.12)':'rgba(62,184,168,.08)'};color:${isNotified?'#4c9a6e':'#3eb8a8'};font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">
+            ${isNotified?'✅ Notified':'🔔 Notify Me When Open'}
+          </button>
+        </div>
+
+        ${r.ig?`<a href="https://instagram.com/${r.ig.replace('@','')}" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:6px;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--gold);font-size:12px;font-weight:700;text-decoration:none;margin-bottom:8px">📸 Follow ${r.ig} on Instagram</a>`:''}
+
+        <button onclick="A.closeCheckIn()" style="width:100%;padding:10px;background:none;border:none;color:var(--text3);font-size:12px;cursor:pointer;font-family:inherit;margin-top:4px">Close</button>
+      </div>
+    `;
+    document.getElementById('checkin-modal').classList.add('open');
   },
 
   // -- NOTIFY ME for Coming Soon restaurants
