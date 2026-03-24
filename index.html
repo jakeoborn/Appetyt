@@ -10731,254 +10731,209 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const isCruise = trip && (trip.name||'').toLowerCase().match(/cruise|virgin|caribbean|ship|sail/i);
     const cruiseCardHTML = isCruise ? buildCruiseCard() : '';
 
+    // Sub-tab state for trip view
+    const tripTab = this._tripTab || 'overview';
+
     el.innerHTML = `
       ${cruiseCardHTML}
-      <!-- Trip Header -->
-      <div style="background:linear-gradient(135deg,rgba(201,168,76,.12),rgba(201,168,76,.04));border:1px solid rgba(201,168,76,.3);border-radius:16px;padding:16px;margin-bottom:14px">
-        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px">
-          <div style="flex:1;margin-right:12px">
-            <div style="font-size:19px;font-weight:700;color:var(--text);line-height:1.2">${trip.name}</div>
-            <div style="font-size:11px;color:var(--text3);margin-top:4px">${cities.join(' → ')}</div>
-            ${trip.start_date ? `<div style="font-size:11px;color:var(--text3);margin-top:2px">📅 ${trip.start_date}${trip.end_date?' → '+trip.end_date:''}</div>` : ''}
+      <!-- Compact Trip Header -->
+      <div style="margin-bottom:12px">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+          <div style="flex:1;min-width:0">
+            <div style="font-size:18px;font-weight:800;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${trip.name}</div>
+            <div style="font-size:11px;color:var(--text3);margin-top:2px">${cities.join(' → ')}${trip.start_date?' · '+trip.start_date+(trip.end_date?' → '+trip.end_date:''):''}</div>
           </div>
-          <div style="background:var(--dark);border:1px solid var(--border);border-radius:10px;padding:8px 12px;text-align:center;flex-shrink:0">
-            <div style="font-size:9px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;margin-bottom:2px">Share Code</div>
-            <div style="font-size:20px;font-weight:700;color:var(--gold);letter-spacing:4px;font-family:monospace">${trip.code}</div>
+          <div onclick="navigator.clipboard?.writeText('${trip.code}');A.showToast('Code copied!')" style="background:var(--card);border:1px solid rgba(201,168,76,.3);border-radius:10px;padding:6px 12px;text-align:center;cursor:pointer;flex-shrink:0;margin-left:10px">
+            <div style="font-size:16px;font-weight:800;color:var(--gold);letter-spacing:3px;font-family:monospace">${trip.code}</div>
+            <div style="font-size:8px;color:var(--text3);letter-spacing:.5px">TAP TO COPY</div>
           </div>
         </div>
-        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px">
-          ${members.map(m=>`
-            <div style="display:flex;align-items:center;gap:4px;background:var(--dark);border:1px solid var(--border);border-radius:20px;padding:4px 10px">
-              <span style="font-size:13px">${m.avatar_emoji||'👤'}</span>
-              <span style="font-size:11px;color:${m.device_id===deviceId?'var(--gold)':'var(--text2)'};">${m.nickname}${m.device_id===deviceId?' ✓':''}</span>
-            </div>`).join('')}
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px">
-          <button onclick="navigator.clipboard?.writeText('${trip.code}');A.showToast('Code copied! Share with your crew 🌍')"
-            style="background:none;border:1px solid rgba(201,168,76,.35);color:var(--gold);font-size:12px;font-weight:700;padding:9px;border-radius:10px;cursor:pointer">
-            📋 Copy Code
-          </button>
-          <button onclick="A.openShareModal()"
-            style="background:var(--gold);color:var(--dark);font-size:12px;font-weight:800;padding:9px;border-radius:10px;border:none;cursor:pointer;touch-action:manipulation">
-            📤 Share Plan
-          </button>
+        <!-- Inline members -->
+        <div style="display:flex;gap:4px;flex-wrap:wrap">
+          ${members.map(m=>`<span style="font-size:10px;color:${m.device_id===deviceId?'var(--gold)':'var(--text3)'}">${m.avatar_emoji||'👤'} ${m.nickname}</span>`).join('<span style="color:var(--border)">·</span>')}
+          <span style="font-size:10px;color:var(--text3)">· ${members.length} travelers</span>
         </div>
       </div>
 
-      <!-- Quick Stats -->
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:7px;margin-bottom:14px">
+      <!-- Inline Stats Bar -->
+      <div style="display:flex;gap:0;background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:14px">
         ${[
-          ['💰','$'+totalSpend.toFixed(0),'Spent'],
-          ['👥',members.length,'Travelers'],
-          ['🗓️',reservations.length,'Items'],
-          ['🍽️',restaurants.length,'Wishlist'],
-        ].map(([emoji,val,label])=>`
-          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 6px;text-align:center">
-            <div style="font-size:16px;margin-bottom:2px">${emoji}</div>
-            <div style="font-size:15px;font-weight:700;color:var(--gold)">${val}</div>
+          ['$'+totalSpend.toFixed(0),'spent'],
+          [reservations.length,'items'],
+          [restaurants.length,'saved'],
+          [bills.length,'bills'],
+        ].map(([val,label],i)=>`
+          <div style="flex:1;text-align:center;padding:10px 4px;${i>0?'border-left:1px solid var(--border)':''}">
+            <div style="font-size:14px;font-weight:800;color:var(--gold)">${val}</div>
             <div style="font-size:8px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px">${label}</div>
           </div>`).join('')}
       </div>
 
-      <!-- Add reservation buttons -->
-      <div style="margin-bottom:14px">
-        <div style="font-size:11px;font-weight:800;color:var(--text3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">Quick Add</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:7px">
-          <button onclick="A.openAddReservation('hotel')" style="background:var(--card);border:1px solid #4c8ec944;color:#4c8ec9;font-weight:700;font-size:12px;padding:10px;border-radius:10px;cursor:pointer;touch-action:manipulation;font-family:inherit">🏨 Hotel</button>
-          <button onclick="A.openAddReservation('flight')" style="background:var(--card);border:1px solid #9b59b644;color:#9b59b6;font-weight:700;font-size:12px;padding:10px;border-radius:10px;cursor:pointer;touch-action:manipulation;font-family:inherit">✈️ Flight</button>
-          <button onclick="A.openAddReservation('activity')" style="background:var(--card);border:1px solid #e67e2244;color:#e67e22;font-weight:700;font-size:12px;padding:10px;border-radius:10px;cursor:pointer;touch-action:manipulation;font-family:inherit">🎭 Activity</button>
-          <button onclick="A.openAddReservation('restaurant')" style="background:var(--card);border:1px solid rgba(201,168,76,.3);color:var(--gold);font-weight:700;font-size:12px;padding:10px;border-radius:10px;cursor:pointer;touch-action:manipulation;font-family:inherit">🍽️ Restaurant</button>
-        </div>
-        <button onclick="A.openEmailParser()" style="width:100%;background:linear-gradient(135deg,rgba(201,168,76,.1),rgba(201,168,76,.05));border:1px solid rgba(201,168,76,.4);color:var(--gold);font-weight:800;font-size:13px;padding:11px;border-radius:10px;cursor:pointer;touch-action:manipulation;font-family:inherit">
-          📧 Paste Confirmation Email → AI Extracts Details
-        </button>
+      <!-- Trip Sub-tabs -->
+      <div style="display:flex;gap:0;background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:14px">
+        ${[
+          {id:'overview',icon:'📋',label:'Itinerary'},
+          {id:'dining',icon:'🍽️',label:'Dining'},
+          {id:'details',icon:'✈️',label:'Details'},
+          {id:'money',icon:'💰',label:'Money'},
+        ].map(t=>`
+          <button onclick="A._tripTab='${t.id}';A.renderTrips()" style="flex:1;padding:10px 4px;border:none;cursor:pointer;font-family:inherit;font-size:10px;font-weight:700;text-align:center;background:${tripTab===t.id?'rgba(201,168,76,.12)':'transparent'};color:${tripTab===t.id?'var(--gold)':'var(--text3)'};${tripTab===t.id?'box-shadow:inset 0 -2px 0 var(--gold)':''}">
+            <div style="font-size:16px;margin-bottom:2px">${t.icon}</div>${t.label}
+          </button>`).join('')}
       </div>
 
-      <!-- City-by-city itinerary -->
-      ${cities.map(city => {
-        const items = byCity[city] || [];
-        const cityRestos = restaurants.filter(r=>r.city===city||(!r.city&&cities[0]===city));
-        return `
-        <div style="margin-bottom:16px">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border)">
-            <div style="font-size:15px;font-weight:700;color:var(--text)">📍 ${city}</div>
-            <button onclick="A.openAddReservation('hotel','${city}')" style="font-size:10px;color:var(--text3);background:none;border:1px solid var(--border);padding:4px 10px;border-radius:8px;cursor:pointer;touch-action:manipulation">+ Add</button>
-          </div>
+      <!-- TAB: Overview / Itinerary -->
+      ${tripTab==='overview' ? `
+        <!-- Quick Add Row -->
+        <div style="display:flex;gap:6px;margin-bottom:14px;overflow-x:auto;scrollbar-width:none">
+          ${[['🏨','hotel'],['✈️','flight'],['🎭','activity'],['🍽️','restaurant']].map(([icon,cat])=>
+            `<button onclick="A.openAddReservation('${cat}')" style="flex-shrink:0;background:var(--card);border:1px solid var(--border);color:var(--text2);font-size:11px;font-weight:700;padding:8px 14px;border-radius:10px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px">${icon} ${cat[0].toUpperCase()+cat.slice(1)}</button>`
+          ).join('')}
+          <button onclick="A.openEmailParser()" style="flex-shrink:0;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.25);color:var(--gold);font-size:11px;font-weight:700;padding:8px 14px;border-radius:10px;cursor:pointer;font-family:inherit">📧 Paste Email</button>
+        </div>
 
-          ${items.length===0 && cityRestos.length===0 ? `
-            <div style="text-align:center;padding:16px;font-size:12px;color:var(--text3);background:var(--card);border-radius:10px;border:1px dashed var(--border)">
-              Nothing planned yet -- tap Quick Add above or paste a confirmation email
-            </div>` : ''}
-
-          <!-- Reservation items -->
-          ${items.map((item,idx) => `
-            <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:7px;position:relative">
-              <div style="display:flex;align-items:flex-start;gap:10px">
-                <div style="width:36px;height:36px;border-radius:10px;background:${catColor[item.category]||'#666'}22;border:1px solid ${catColor[item.category]||'#666'}44;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">${catIcon[item.category]||'📌'}</div>
-                <div style="flex:1;min-width:0">
-                  <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:2px">${item.name}</div>
-                  <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:4px">
-                    ${item.date ? `<span style="font-size:10px;color:var(--text3)">📅 ${item.date}</span>` : ''}
-                    ${item.time ? `<span style="font-size:10px;color:var(--text3)">· ⏰ ${item.time}</span>` : ''}
-                    ${item.confirmation ? `<span style="font-size:10px;color:#4c8ec9;font-family:monospace">· #${item.confirmation}</span>` : ''}
-                  </div>
-                  ${item.address ? `<div style="font-size:11px;color:var(--text3)">📍 ${item.address}</div>` : ''}
-                  ${item.cost ? `<div style="font-size:11px;color:var(--gold);font-weight:700;margin-top:2px">$${parseFloat(item.cost).toFixed(2)}</div>` : ''}
-                  ${item.notes ? `<div style="font-size:11px;color:var(--text3);margin-top:4px;padding:6px 8px;background:var(--card2);border-radius:6px;line-height:1.5">${item.notes}</div>` : ''}
-                  <div style="font-size:9px;color:var(--text3);margin-top:5px">${memberEmoji(item.added_by)} Added by ${memberName(item.added_by)}</div>
-                </div>
-                <button onclick="TRIPS.deleteReservation('${item.id}')" style="background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;padding:0;flex-shrink:0;line-height:1">×</button>
-              </div>
-            </div>`).join('')}
-
-          <!-- Wishlist restaurants for this city -->
-          ${cityRestos.length > 0 ? `
-            <div style="background:var(--card);border:1px solid rgba(201,168,76,.2);border-radius:12px;padding:12px 14px;margin-bottom:7px">
-              <div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px;text-transform:uppercase;letter-spacing:.06em">🍽️ Restaurant Wishlist</div>
-              ${cityRestos.map(r=>{
-                const votes = r.votes||{};
-                const score = Object.values(votes).reduce((s,v)=>s+v,0);
-                const myVote = votes[deviceId];
-                return `<div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--border)">
-                  <div style="flex:1"><div style="font-size:12px;font-weight:700;color:var(--text)">${r.restaurant_name}</div></div>
-                  <div style="display:flex;align-items:center;gap:4px">
-                    <button onclick="TRIPS.vote('${r.id}',${myVote===1?0:1});A.renderTrips()" style="font-size:12px;background:${myVote===1?'rgba(76,154,110,.2)':'var(--card2)'};border:1px solid ${myVote===1?'#4c9a6e':'var(--border)'};border-radius:6px;padding:3px 7px;cursor:pointer">👍</button>
-                    <span style="font-size:11px;font-weight:700;color:${score>0?'#4c9a6e':score<0?'#c96b4c':'var(--text3)'}">${score>0?'+':''}${score}</span>
-                    <button onclick="TRIPS.vote('${r.id}',${myVote===-1?0:-1});A.renderTrips()" style="font-size:12px;background:${myVote===-1?'rgba(201,107,76,.2)':'var(--card2)'};border:1px solid ${myVote===-1?'#c96b4c':'var(--border)'};border-radius:6px;padding:3px 7px;cursor:pointer">👎</button>
-                  </div>
-                </div>`;}).join('')}
-            </div>` : ''}
-        </div>`;
-      }).join('')}
-
-      
-        <!-- Cruise Port Guide + Test Brief -->
         ${isCruise ? `
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">
-          <div onclick="showCruisePortList()" style="background:rgba(200,169,110,.1);border:1px solid rgba(200,169,110,.2);border-radius:12px;padding:12px;display:flex;align-items:center;gap:8px;cursor:pointer;touch-action:manipulation">
-            <span style="font-size:18px">🗺️</span>
-            <div>
-              <div style="font-size:12px;font-weight:700;color:var(--gold2)">Port Guide</div>
-              <div style="font-size:10px;color:var(--text3)">Eat · Do · Book</div>
-            </div>
+        <div style="display:flex;gap:8px;margin-bottom:14px">
+          <div onclick="showCruisePortList()" style="flex:1;background:rgba(200,169,110,.08);border:1px solid rgba(200,169,110,.2);border-radius:12px;padding:12px;display:flex;align-items:center;gap:8px;cursor:pointer">
+            <span style="font-size:16px">🗺️</span>
+            <div><div style="font-size:12px;font-weight:700;color:var(--gold2)">Port Guide</div><div style="font-size:9px;color:var(--text3)">Eat · Do · Book</div></div>
           </div>
-          <div onclick="sendMorningBriefTest()" style="background:rgba(62,184,168,.1);border:1px solid rgba(62,184,168,.2);border-radius:12px;padding:12px;display:flex;align-items:center;gap:8px;cursor:pointer;touch-action:manipulation">
-            <span style="font-size:18px">🌅</span>
-            <div>
-              <div style="font-size:12px;font-weight:700;color:#3eb8a8">Test Brief</div>
-              <div style="font-size:10px;color:var(--text3)">Send to email</div>
-            </div>
+          <div onclick="sendMorningBriefTest()" style="flex:1;background:rgba(62,184,168,.08);border:1px solid rgba(62,184,168,.2);border-radius:12px;padding:12px;display:flex;align-items:center;gap:8px;cursor:pointer">
+            <span style="font-size:16px">🌅</span>
+            <div><div style="font-size:12px;font-weight:700;color:#3eb8a8">Test Brief</div><div style="font-size:9px;color:var(--text3)">Send to email</div></div>
           </div>
         </div>` : ''}
 
-        <!-- Members -->
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
-          <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">👥 Members (${members.length})</div>
-          ${members.length ? members.map(m => `
-            <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)">
-              <span style="font-size:22px">${m.avatar_emoji||'👤'}</span>
-              <div style="flex:1">
-                <div style="font-size:13px;font-weight:600;color:${m.device_id===deviceId?'var(--gold)':'var(--text)'}">${m.nickname}${m.device_id===deviceId?' (you)':''}</div>
-                <div style="font-size:10px;color:var(--text3)">${m.role||'member'}</div>
-              </div>
-            </div>`).join('') : '<div style="font-size:12px;color:var(--text3)">Share the code to invite your crew</div>'}
-        </div>
-
-        <!-- Trip Restaurants -->
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
-            <div style="font-size:13px;font-weight:800;color:var(--text)">🍽️ Trip Restaurants (${restaurants.length})</div>
-            <button onclick="A.showTripRestaurantPicker()" style="background:var(--gold);border:none;color:var(--dark);font-weight:700;font-size:11px;padding:6px 12px;border-radius:8px;cursor:pointer;touch-action:manipulation">+ Add</button>
-          </div>
-          ${restaurants.length ? restaurants.map(r => `
-            <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)">
-              <div style="flex:1">
-                <div style="font-size:13px;font-weight:600;color:var(--text)">${r.name}</div>
-                <div style="font-size:11px;color:var(--text3)">${r.city||''}</div>
-              </div>
-              <button onclick="TRIPS.removeRestaurant('${r.id}');A.renderTrips()" style="font-size:16px;background:none;border:none;cursor:pointer;color:var(--text3)">×</button>
-            </div>`).join('') : '<div style="font-size:12px;color:var(--text3)">No restaurants yet -- tap + Add to save places for your trip</div>'}
-        </div>
-
-<!-- Settle Up -->
-      ${settlements.length > 0 ? `
-      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:14px">
-        <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">💸 Settle Up</div>
-        ${settlements.map(s=>`
-          <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">
-            <div style="font-size:12px;color:var(--text2)">
-              <span style="color:${s.fromId===deviceId?'#c96b4c':'var(--text)'};font-weight:${s.fromId===deviceId?'700':'400'}">${s.from}</span>
-              <span style="color:var(--text3)"> → </span>
-              <span style="color:${s.toId===deviceId?'#4c9a6e':'var(--text)'};font-weight:${s.toId===deviceId?'700':'400'}">${s.to}</span>
+        <!-- City-by-city itinerary -->
+        ${cities.map(city => {
+          const items = byCity[city] || [];
+          return `
+          <div style="margin-bottom:12px">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+              <div style="font-size:14px;font-weight:700;color:var(--text)">📍 ${city}</div>
+              <button onclick="A.openAddReservation('hotel','${city}')" style="font-size:10px;color:var(--gold);background:none;border:1px solid rgba(201,168,76,.25);padding:3px 10px;border-radius:8px;cursor:pointer">+ Add</button>
             </div>
-            <span style="font-size:14px;font-weight:800;color:var(--gold)">$${s.amount.toFixed(2)}</span>
-          </div>`).join('')}
-      </div>` : ''}
+            ${items.length===0 ? `<div style="padding:12px;font-size:11px;color:var(--text3);background:var(--card);border-radius:10px;border:1px dashed var(--border);text-align:center">No plans yet</div>` : items.map(item => `
+              <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:6px;display:flex;align-items:center;gap:10px">
+                <div style="width:32px;height:32px;border-radius:8px;background:${catColor[item.category]||'#666'}15;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0">${catIcon[item.category]||'📌'}</div>
+                <div style="flex:1;min-width:0">
+                  <div style="font-size:12px;font-weight:700;color:var(--text)">${item.name}</div>
+                  <div style="font-size:10px;color:var(--text3)">${[item.date,item.time,item.confirmation?'#'+item.confirmation:''].filter(Boolean).join(' · ')}</div>
+                </div>
+                ${item.cost?'<div style="font-size:11px;font-weight:700;color:var(--gold)">$'+parseFloat(item.cost).toFixed(0)+'</div>':''}
+                <button onclick="TRIPS.deleteReservation('${item.id}')" style="background:none;border:none;color:var(--text3);font-size:14px;cursor:pointer;padding:0;flex-shrink:0">×</button>
+              </div>`).join('')}
+          </div>`;
+        }).join('')}
+      ` : ''}
 
-      <!-- Travel Details -->
-      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
+      <!-- TAB: Dining -->
+      ${tripTab==='dining' ? `
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
-          <div style="font-size:14px;font-weight:700;color:var(--text)">✈️ Travel Details</div>
-          <button onclick="A.addTravelDetail('${trip.id}')" style="background:var(--gold);border:none;color:var(--dark);font-weight:700;font-size:11px;padding:6px 10px;border-radius:8px;cursor:pointer;touch-action:manipulation">+ Add</button>
+          <div style="font-size:14px;font-weight:700;color:var(--text)">🍽️ Restaurant Wishlist</div>
+          <button onclick="A.showTripRestaurantPicker()" style="background:var(--gold);border:none;color:var(--dark);font-weight:700;font-size:11px;padding:6px 14px;border-radius:8px;cursor:pointer">+ Add</button>
         </div>
-        ${(trip.travelDetails||[]).length ? `
-          <div style="display:flex;flex-direction:column;gap:8px">
-            ${(trip.travelDetails||[]).map((d,di) => `
-              <div style="background:var(--card2);border:1px solid var(--border);border-radius:11px;padding:12px;position:relative">
-                <div style="display:flex;align-items:flex-start;gap:10px">
-                  <div style="font-size:22px;flex-shrink:0">${
-                    d.type==='flight' ? '✈️' :
-                    d.type==='hotel' ? '🏨' :
-                    d.type==='activity' ? '🎯' :
-                    d.type==='transfer' ? '🚗' :
-                    d.type==='cruise' ? '🚢' : '📋'
-                  }</div>
-                  <div style="flex:1;min-width:0">
-                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:2px">
-                      <div style="font-size:13px;font-weight:700;color:var(--text)">${d.title}</div>
-                      <button onclick="A.removeTravelDetail('${trip.id}',${di})" style="background:none;border:none;color:var(--text3);font-size:14px;cursor:pointer;padding:0 0 0 8px;touch-action:manipulation">×</button>
-                    </div>
-                    ${d.subtitle ? '<div style="font-size:11px;color:var(--text3);margin-bottom:4px">'+d.subtitle+'</div>' : ''}
-                    <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:5px">
-                      ${d.date ? '<span style="font-size:10px;font-weight:600;color:var(--gold2);background:rgba(200,169,110,.1);padding:2px 7px;border-radius:5px">'+d.date+'</span>' : ''}
-                      ${d.time ? '<span style="font-size:10px;color:var(--text3);background:var(--card);padding:2px 7px;border-radius:5px">'+d.time+'</span>' : ''}
-                      ${d.confirmation ? '<span style="font-size:10px;color:#3eb8a8;background:rgba(62,184,168,.1);padding:2px 7px;border-radius:5px">Conf: '+d.confirmation+'</span>' : ''}
-                    </div>
-                    ${d.notes ? '<div style="font-size:11px;color:var(--text3);margin-top:6px;line-height:1.4">'+d.notes+'</div>' : ''}
-                  </div>
+        ${restaurants.length ? restaurants.map(r => {
+          const votes = r.votes||{};
+          const score = Object.values(votes).reduce((s,v)=>s+v,0);
+          const myVote = votes[deviceId];
+          return `<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:6px;display:flex;align-items:center;gap:10px">
+            <div style="flex:1;min-width:0">
+              <div style="font-size:13px;font-weight:700;color:var(--text)">${r.restaurant_name||r.name}</div>
+              <div style="font-size:10px;color:var(--text3)">${r.city||''}</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:4px">
+              <button onclick="TRIPS.vote('${r.id}',${myVote===1?0:1});A.renderTrips()" style="font-size:11px;background:${myVote===1?'rgba(76,154,110,.2)':'var(--card2)'};border:1px solid ${myVote===1?'#4c9a6e':'var(--border)'};border-radius:6px;padding:3px 7px;cursor:pointer">👍</button>
+              <span style="font-size:11px;font-weight:700;color:${score>0?'#4c9a6e':score<0?'#c96b4c':'var(--text3)'}; min-width:18px;text-align:center">${score>0?'+':''}${score}</span>
+              <button onclick="TRIPS.vote('${r.id}',${myVote===-1?0:-1});A.renderTrips()" style="font-size:11px;background:${myVote===-1?'rgba(201,107,76,.2)':'var(--card2)'};border:1px solid ${myVote===-1?'#c96b4c':'var(--border)'};border-radius:6px;padding:3px 7px;cursor:pointer">👎</button>
+            </div>
+            <button onclick="TRIPS.removeRestaurant('${r.id}');A.renderTrips()" style="background:none;border:none;color:var(--text3);font-size:14px;cursor:pointer">×</button>
+          </div>`;}).join('') : `<div style="text-align:center;padding:30px 20px;font-size:12px;color:var(--text3)">
+            <div style="font-size:28px;margin-bottom:8px">🍽️</div>
+            No restaurants saved yet. Tap + Add to start building your dining wishlist.
+          </div>`}
+      ` : ''}
+
+      <!-- TAB: Details (Travel + Members) -->
+      ${tripTab==='details' ? `
+        <!-- Members -->
+        <div style="margin-bottom:14px">
+          <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:10px">👥 Crew (${members.length})</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px">
+            ${members.map(m=>`
+              <div style="background:var(--card);border:1px solid ${m.device_id===deviceId?'rgba(201,168,76,.3)':'var(--border)'};border-radius:12px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+                <span style="font-size:18px">${m.avatar_emoji||'👤'}</span>
+                <div>
+                  <div style="font-size:12px;font-weight:700;color:${m.device_id===deviceId?'var(--gold)':'var(--text)'}">${m.nickname}${m.device_id===deviceId?' (you)':''}</div>
+                  <div style="font-size:9px;color:var(--text3)">${m.role||'member'}</div>
                 </div>
               </div>`).join('')}
-          </div>` : `
-          <div style="font-size:12px;color:var(--text3);padding:4px 0">No travel details yet -- add flights, hotels, transfers or activities</div>`}
-      </div>
-
-      <!-- Bills -->
-      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:14px">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
-          <div style="font-size:13px;font-weight:800;color:var(--text)">🧾 Trip Bills</div>
-          <button onclick="A.openTripBillModal()" style="background:var(--gold);color:var(--dark);font-weight:800;font-size:11px;padding:6px 14px;border-radius:20px;border:none;cursor:pointer;touch-action:manipulation">+ Add</button>
+          </div>
+          <div style="display:flex;gap:8px">
+            <button onclick="navigator.clipboard?.writeText('${trip.code}');A.showToast('Code copied!')" style="flex:1;background:none;border:1px solid var(--border);color:var(--text2);font-size:11px;font-weight:700;padding:9px;border-radius:10px;cursor:pointer;font-family:inherit">📋 Copy Code</button>
+            <button onclick="A.openShareModal()" style="flex:1;background:var(--gold);color:var(--dark);font-size:11px;font-weight:800;padding:9px;border-radius:10px;border:none;cursor:pointer;font-family:inherit">📤 Share Plan</button>
+          </div>
         </div>
-        ${bills.length===0 ? `<div style="text-align:center;padding:16px;font-size:12px;color:var(--text3)">No bills yet -- add your first meal!</div>` :
-          bills.slice(0,10).map(b=>{
-            const splitCount = (b.split_between||[]).length||1;
-            return `<div style="padding:8px 0;border-bottom:1px solid var(--border)">
-              <div style="display:flex;justify-content:space-between;align-items:flex-start">
-                <div>
-                  <div style="font-size:13px;font-weight:700;color:var(--text)">${b.restaurant}</div>
-                  <div style="font-size:10px;color:var(--text3)">${b.city||''} · ${b.date||''} · ${memberEmoji(b.paid_by)} ${memberName(b.paid_by)} paid</div>
-                </div>
-                <div style="text-align:right">
-                  <div style="font-size:14px;font-weight:800;color:var(--gold)">$${parseFloat(b.total).toFixed(2)}</div>
-                  <div style="font-size:10px;color:var(--text3)">$${(parseFloat(b.total)/splitCount).toFixed(2)}/person</div>
-                </div>
-              </div>
-            </div>`;}).join('')}
-      </div>
 
-      <!-- Leave -->
-      <button onclick="A.leaveTrip()" style="width:100%;background:none;border:1px solid var(--border);color:var(--text3);font-size:12px;padding:11px;border-radius:12px;cursor:pointer">
-        Leave Trip
-      </button>
+        <!-- Travel Details -->
+        <div style="margin-bottom:14px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+            <div style="font-size:14px;font-weight:700;color:var(--text)">✈️ Travel Details</div>
+            <button onclick="A.addTravelDetail('${trip.id}')" style="background:var(--gold);border:none;color:var(--dark);font-weight:700;font-size:11px;padding:6px 12px;border-radius:8px;cursor:pointer">+ Add</button>
+          </div>
+          ${(trip.travelDetails||[]).length ? (trip.travelDetails||[]).map((d,di) => `
+            <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:6px;display:flex;align-items:center;gap:10px">
+              <div style="font-size:18px;flex-shrink:0">${d.type==='flight'?'✈️':d.type==='hotel'?'🏨':d.type==='activity'?'🎯':d.type==='transfer'?'🚗':d.type==='cruise'?'🚢':'📋'}</div>
+              <div style="flex:1;min-width:0">
+                <div style="font-size:12px;font-weight:700;color:var(--text)">${d.title}</div>
+                <div style="font-size:10px;color:var(--text3)">${[d.date,d.time,d.confirmation?'Conf: '+d.confirmation:''].filter(Boolean).join(' · ')}</div>
+                ${d.notes?'<div style="font-size:10px;color:var(--text3);margin-top:2px">'+d.notes+'</div>':''}
+              </div>
+              <button onclick="A.removeTravelDetail('${trip.id}',${di})" style="background:none;border:none;color:var(--text3);font-size:14px;cursor:pointer">×</button>
+            </div>`).join('') : `<div style="padding:16px;font-size:11px;color:var(--text3);background:var(--card);border-radius:10px;border:1px dashed var(--border);text-align:center">No travel details yet</div>`}
+        </div>
+
+        <!-- Leave Trip -->
+        <button onclick="A.leaveTrip()" style="width:100%;background:none;border:1px solid rgba(220,70,70,.2);color:var(--text3);font-size:11px;padding:10px;border-radius:10px;cursor:pointer">Leave Trip</button>
+      ` : ''}
+
+      <!-- TAB: Money (Bills + Settle) -->
+      ${tripTab==='money' ? `
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+          <div style="font-size:14px;font-weight:700;color:var(--text)">🧾 Bills</div>
+          <button onclick="A.openTripBillModal()" style="background:var(--gold);color:var(--dark);font-weight:800;font-size:11px;padding:6px 14px;border-radius:8px;border:none;cursor:pointer">+ Add Bill</button>
+        </div>
+
+        ${settlements.length > 0 ? `
+        <div style="background:linear-gradient(135deg,rgba(76,154,110,.08),rgba(76,154,110,.02));border:1px solid rgba(76,154,110,.2);border-radius:12px;padding:12px;margin-bottom:14px">
+          <div style="font-size:11px;font-weight:700;color:#4c9a6e;margin-bottom:8px;text-transform:uppercase;letter-spacing:.06em">💸 Settle Up</div>
+          ${settlements.map(s=>`
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;${settlements.indexOf(s)<settlements.length-1?'border-bottom:1px solid rgba(76,154,110,.15)':''}">
+              <div style="font-size:12px;color:var(--text2)">
+                <span style="font-weight:${s.fromId===deviceId?'700':'400'};color:${s.fromId===deviceId?'#c96b4c':'var(--text)'}">${s.from}</span>
+                <span style="color:var(--text3)"> → </span>
+                <span style="font-weight:${s.toId===deviceId?'700':'400'};color:${s.toId===deviceId?'#4c9a6e':'var(--text)'}">${s.to}</span>
+              </div>
+              <span style="font-size:13px;font-weight:800;color:var(--gold)">$${s.amount.toFixed(2)}</span>
+            </div>`).join('')}
+        </div>` : ''}
+
+        ${bills.length===0 ? `<div style="text-align:center;padding:30px 20px;font-size:12px;color:var(--text3)">
+          <div style="font-size:28px;margin-bottom:8px">🧾</div>
+          No bills yet. Add your first meal to start splitting costs.
+        </div>` : bills.slice(0,15).map(b=>{
+          const splitCount = (b.split_between||[]).length||1;
+          return `<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:6px;display:flex;align-items:center;justify-content:space-between">
+            <div style="flex:1;min-width:0">
+              <div style="font-size:12px;font-weight:700;color:var(--text)">${b.restaurant}</div>
+              <div style="font-size:10px;color:var(--text3)">${[b.city,b.date,memberName(b.paid_by)+' paid'].filter(Boolean).join(' · ')}</div>
+            </div>
+            <div style="text-align:right;flex-shrink:0;margin-left:8px">
+              <div style="font-size:13px;font-weight:800;color:var(--gold)">$${parseFloat(b.total).toFixed(2)}</div>
+              <div style="font-size:9px;color:var(--text3)">$${(parseFloat(b.total)/splitCount).toFixed(0)}/ea</div>
+            </div>
+          </div>`;}).join('')}
+      ` : ''}
     `;
   },
 
