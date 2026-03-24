@@ -5130,7 +5130,6 @@ const A = {
       ?`<a href="${orderUrl}" target="_blank" class="r-order-btn">ORDER</a>`
       :'';
 
-    const awardLine=r.awards?`<div class="r-award">🏆 ${r.awards}</div>`:'';
     const bestOfLine=r.bestOf?.length?`<div class="r-bestof">${r.bestOf.map(b=>`<span class="r-bestof-item">${b}</span>`).join('')}</div>`:'';
     const hhLine=r.hh?`<span class="${hhActive?'badge green':'badge'}">🍸 HH ${hhActive?'ACTIVE NOW':r.hh}</span>`:'';
     const hotBadge=(typeof HOTSPOT!=='undefined')?HOTSPOT.cardBadge(r):'';
@@ -5138,7 +5137,8 @@ const A = {
     // Gold highlight — pick the most relevant highlight for this restaurant
     const _hlTags=(r.tags||[]);const _hlDishes=(r.dishes||[]);
     let goldHL='';
-    if(r.awards) goldHL=`🏆 ${r.awards}`;
+    let goldShowsAward=false;
+    if(r.awards){ goldHL=`🏆 ${r.awards}`; goldShowsAward=true; }
     else if(_hlDishes.length) goldHL=`🍽️ Must Try: ${_hlDishes.slice(0,2).join(' · ')}`;
     else if(r.hh) goldHL=`🍸 Happy Hour: ${r.hh}`;
     else if(_hlTags.includes('Date Night')) goldHL='💕 Great for Date Night';
@@ -5171,7 +5171,7 @@ const A = {
           </div>
           <div class="r-score">${r.score}</div>
         </div>
-        ${awardLine}
+        ${!goldShowsAward&&r.awards?`<div class="r-award">🏆 ${r.awards}</div>`:''}
         ${bestOfLine}
         <div class="r-desc">${(r.description||'').slice(0,105)}...</div>
         ${r.hh?`<div style="display:flex;align-items:center;gap:5px;margin:5px 0;padding:5px 8px;background:${hhActive?'rgba(76,154,110,.1)':'rgba(201,168,76,.06)'};border:1px solid ${hhActive?'rgba(76,154,110,.25)':'rgba(201,168,76,.15)'};border-radius:8px">
