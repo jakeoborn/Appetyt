@@ -10431,6 +10431,81 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
   // PROFILE
   // ----------------------------------------------
 
+  tripRestaurantSearch(){
+    const q=(document.getElementById('trip-search-input')?.value||'').trim().toLowerCase();
+    const resultsEl=document.getElementById('trip-search-results');
+    if(!resultsEl) return;
+    const trip=TRIPS.current;
+    const cities=trip?Array.isArray(trip.cities)?trip.cities:(trip.cities||'').split(',').map(x=>x.trim()).filter(Boolean):[];
+    const filterCity=this._tripSearchCity||'all';
+
+    // Search across all city data
+    let allResults=[];
+    const searchCities=filterCity==='all'?[...cities,...Object.keys(CITY_DATA)]:[ filterCity];
+    const seen=new Set();
+    searchCities.forEach(city=>{
+      const data=CITY_DATA[city]||[];
+      data.forEach(r=>{
+        if(seen.has(r.id)) return;
+        if(!q || [r.name,r.cuisine,r.neighborhood,...(r.tags||[]),r.description||''].join(' ').toLowerCase().includes(q)){
+          seen.add(r.id);
+          allResults.push({...r,_city:city});
+        }
+      });
+    });
+    allResults.sort((a,b)=>b.score-a.score);
+    const results=allResults.slice(0,12);
+
+    if(!results.length){
+      resultsEl.innerHTML=q?'<div style="font-size:11px;color:var(--text3);padding:8px">No results for "'+q+'"</div>':'<div style="font-size:11px;color:var(--text3);padding:8px">Type a search or pick a city above</div>';
+      return;
+    }
+    resultsEl.innerHTML=results.map(r=>{
+      const sc=r.score;const color=sc>=90?'var(--green)':sc>=80?'var(--gold)':'var(--text2)';
+      const alreadySaved=(TRIPS.restaurants||[]).some(tr=>tr.restaurant_name===r.name||tr.name===r.name);
+      return `<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)">
+        <div style="flex:1;min-width:0;cursor:pointer" onclick="A.openDetail(${r.id})">
+          <div style="font-size:12px;font-weight:700;color:var(--text)">${r.name}</div>
+          <div style="font-size:10px;color:var(--text3)">${r.cuisine} · ${r._city} · ${'$'.repeat(r.price)}</div>
+        </div>
+        <div style="font-size:13px;font-weight:800;color:${color};flex-shrink:0">${sc}</div>
+        ${alreadySaved
+          ?'<span style="font-size:9px;color:#4c9a6e;font-weight:700;padding:4px 8px;border:1px solid rgba(76,154,110,.3);border-radius:6px;background:rgba(76,154,110,.1)">Saved ✓</span>'
+          :`<button onclick="TRIPS.addRestaurant({restaurant_name:'${r.name.replace(/'/g,"\\'")}',city:'${r._city}',restaurant_id:${r.id}});this.outerHTML='<span style=\\'font-size:9px;color:#4c9a6e;font-weight:700;padding:4px 8px;border:1px solid rgba(76,154,110,.3);border-radius:6px;background:rgba(76,154,110,.1)\\'>Saved ✓</span>';A.showToast('Added ${r.name.replace(/'/g,"\\'")} to trip!')" style="font-size:10px;font-weight:700;color:var(--gold);background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.25);padding:4px 10px;border-radius:6px;cursor:pointer;font-family:inherit;flex-shrink:0">+ Save</button>`}
+      </div>`;
+    }).join('');
+  },
+
+  async tripAISuggest(prompt){
+    if(!prompt||!prompt.trim()) return;
+    const el=document.getElementById('trip-ai-suggestions');
+    if(!el) return;
+    const trip=TRIPS.current;
+    const cities=trip?Array.isArray(trip.cities)?trip.cities:(trip.cities||'').split(',').map(x=>x.trim()).filter(Boolean):[];
+    const members=TRIPS.members||[];
+    const saved=(TRIPS.restaurants||[]).map(r=>r.restaurant_name||r.name).join(', ');
+
+    el.innerHTML='<div style="font-size:11px;color:#3eb8a8;padding:8px">🤖 Thinking...</div>';
+    document.getElementById('trip-ai-input').value='';
+
+    try{
+      const res=await fetch('/.netlify/functions/concierge',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({
+          city:cities[0]||'Dallas',
+          system:'You are Appetyt\'s group dining AI. The user is planning a trip to '+cities.join(', ')+' with '+members.length+' people. They already saved: '+saved+'. Suggest 3-5 specific restaurants with why they\'re great for the group. Use **bold** for names. Be concise and fun.',
+          messages:[{role:'user',content:prompt}]
+        })
+      });
+      const data=await res.json();
+      const text=(data.content?.[0]?.text||data.text||'').replace(/\*\*(.*?)\*\*/g,'<b style="color:var(--gold)">$1</b>').replace(/\n/g,'<br>');
+      el.innerHTML=`<div style="font-size:12px;color:var(--text2);line-height:1.7;padding:8px;background:var(--card);border-radius:10px;border:1px solid var(--border)">${text||'Try asking something else!'}</div>`;
+    }catch(e){
+      el.innerHTML='<div style="font-size:11px;color:var(--text3);padding:8px">Couldn\'t reach AI -- try again in a moment</div>';
+    }
+  },
+
   showTripRestaurantPicker(){
     const trips = S.userData.trips || [];
     const trip = trips[S._viewingTrip || 0];
@@ -10828,29 +10903,89 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
 
       <!-- TAB: Dining -->
       ${tripTab==='dining' ? `
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
-          <div style="font-size:14px;font-weight:700;color:var(--text)">🍽️ Restaurant Wishlist</div>
-          <button onclick="A.showTripRestaurantPicker()" style="background:var(--gold);border:none;color:var(--dark);font-weight:700;font-size:11px;padding:6px 14px;border-radius:8px;cursor:pointer">+ Add</button>
+        <!-- Quick Actions Row -->
+        <div style="display:flex;gap:6px;margin-bottom:14px;overflow-x:auto;scrollbar-width:none">
+          <button onclick="A._tripDiningSub='search';A.renderTrips()" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid ${(this._tripDiningSub||'')==='search'?'var(--gold)':'var(--border)'};background:${(this._tripDiningSub||'')==='search'?'rgba(201,168,76,.12)':'var(--card)'};color:${(this._tripDiningSub||'')==='search'?'var(--gold)':'var(--text2)'};font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🔍 Find Restaurants</button>
+          <button onclick="A.openTripBillModal()" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🧾 Add Bill</button>
+          <button onclick="A._tripDiningSub='suggest';A.renderTrips()" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid ${(this._tripDiningSub||'')==='suggest'?'rgba(62,184,168,.4)':'var(--border)'};background:${(this._tripDiningSub||'')==='suggest'?'rgba(62,184,168,.1)':'var(--card)'};color:${(this._tripDiningSub||'')==='suggest'?'#3eb8a8':'var(--text2)'};font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🤖 AI Suggest</button>
+          <button onclick="A.openAddReservation('restaurant')" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">📅 Add Reservation</button>
+        </div>
+
+        <!-- Restaurant Search Panel -->
+        ${(this._tripDiningSub||'')==='search' ? `
+        <div style="background:var(--card);border:1px solid rgba(201,168,76,.2);border-radius:12px;padding:14px;margin-bottom:14px">
+          <div style="font-size:12px;font-weight:700;color:var(--gold);margin-bottom:8px">Search restaurants in your trip cities</div>
+          <div style="display:flex;gap:6px;margin-bottom:10px">
+            <input id="trip-search-input" placeholder="Search by name, cuisine, vibe..." style="flex:1;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:10px;font-size:13px;font-family:inherit;outline:none" onkeydown="if(event.key==='Enter')A.tripRestaurantSearch()">
+            <button onclick="A.tripRestaurantSearch()" style="background:var(--gold);color:var(--dark);font-weight:800;font-size:13px;padding:9px 16px;border-radius:10px;border:none;cursor:pointer">Go</button>
+          </div>
+          <!-- City filter chips -->
+          <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px">
+            <button onclick="A._tripSearchCity='all';A.tripRestaurantSearch()" style="font-size:10px;padding:4px 10px;border-radius:8px;border:1px solid ${(this._tripSearchCity||'all')==='all'?'var(--gold)':'var(--border)'};background:${(this._tripSearchCity||'all')==='all'?'rgba(201,168,76,.12)':'var(--card2)'};color:${(this._tripSearchCity||'all')==='all'?'var(--gold)':'var(--text3)'};cursor:pointer;font-family:inherit;font-weight:600">All Cities</button>
+            ${cities.map(c=>`<button onclick="A._tripSearchCity='${c}';A.tripRestaurantSearch()" style="font-size:10px;padding:4px 10px;border-radius:8px;border:1px solid ${(this._tripSearchCity||'')=== c?'var(--gold)':'var(--border)'};background:${(this._tripSearchCity||'')=== c?'rgba(201,168,76,.12)':'var(--card2)'};color:${(this._tripSearchCity||'')=== c?'var(--gold)':'var(--text3)'};cursor:pointer;font-family:inherit;font-weight:600">${c}</button>`).join('')}
+          </div>
+          <div id="trip-search-results"></div>
+        </div>` : ''}
+
+        <!-- AI Suggestions Panel -->
+        ${(this._tripDiningSub||'')==='suggest' ? `
+        <div style="background:linear-gradient(135deg,rgba(62,184,168,.06),rgba(62,184,168,.02));border:1px solid rgba(62,184,168,.2);border-radius:12px;padding:14px;margin-bottom:14px">
+          <div style="font-size:12px;font-weight:700;color:#3eb8a8;margin-bottom:4px">🤖 AI Group Dining Suggestions</div>
+          <div style="font-size:10px;color:var(--text3);margin-bottom:10px">Get personalized picks for your crew based on your trip</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px">
+            ${['Best for our group','Date night spot','Casual group dinner','Local must-try','Brunch spot','Late night eats','Splurge-worthy'].map(chip=>
+              `<button onclick="A.tripAISuggest('${chip}')" style="font-size:10px;padding:5px 10px;border-radius:8px;border:1px solid rgba(62,184,168,.25);background:rgba(62,184,168,.06);color:#3eb8a8;cursor:pointer;font-family:inherit;font-weight:600">${chip}</button>`
+            ).join('')}
+          </div>
+          <div style="display:flex;gap:6px">
+            <input id="trip-ai-input" placeholder="Or ask anything... e.g. 'where should 6 of us go for birthday dinner?'" style="flex:1;background:var(--card);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:10px;font-size:12px;font-family:inherit;outline:none" onkeydown="if(event.key==='Enter')A.tripAISuggest(this.value)">
+            <button onclick="A.tripAISuggest(document.getElementById('trip-ai-input').value)" style="background:#3eb8a8;color:var(--dark);font-weight:800;font-size:12px;padding:9px 14px;border-radius:10px;border:none;cursor:pointer">Ask</button>
+          </div>
+          <div id="trip-ai-suggestions" style="margin-top:10px"></div>
+        </div>` : ''}
+
+        <!-- Restaurant Wishlist -->
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+          <div style="font-size:13px;font-weight:700;color:var(--text)">🍽️ Saved (${restaurants.length})</div>
+          <button onclick="A.showTripRestaurantPicker()" style="background:none;border:1px solid var(--border);color:var(--text3);font-weight:700;font-size:10px;padding:5px 10px;border-radius:8px;cursor:pointer">+ From Guide</button>
         </div>
         ${restaurants.length ? restaurants.map(r => {
           const votes = r.votes||{};
           const score = Object.values(votes).reduce((s,v)=>s+v,0);
           const myVote = votes[deviceId];
-          return `<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:6px;display:flex;align-items:center;gap:10px">
-            <div style="flex:1;min-width:0">
-              <div style="font-size:13px;font-weight:700;color:var(--text)">${r.restaurant_name||r.name}</div>
-              <div style="font-size:10px;color:var(--text3)">${r.city||''}</div>
+          return `<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:6px">
+            <div style="display:flex;align-items:center;gap:10px">
+              <div style="flex:1;min-width:0">
+                <div style="font-size:13px;font-weight:700;color:var(--text)">${r.restaurant_name||r.name}</div>
+                <div style="font-size:10px;color:var(--text3)">${r.city||''}</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:3px">
+                <button onclick="TRIPS.vote('${r.id}',${myVote===1?0:1});A.renderTrips()" style="font-size:11px;background:${myVote===1?'rgba(76,154,110,.2)':'var(--card2)'};border:1px solid ${myVote===1?'#4c9a6e':'var(--border)'};border-radius:6px;padding:3px 6px;cursor:pointer">👍</button>
+                <span style="font-size:10px;font-weight:700;color:${score>0?'#4c9a6e':score<0?'#c96b4c':'var(--text3)'};min-width:16px;text-align:center">${score>0?'+':''}${score}</span>
+                <button onclick="TRIPS.vote('${r.id}',${myVote===-1?0:-1});A.renderTrips()" style="font-size:11px;background:${myVote===-1?'rgba(201,107,76,.2)':'var(--card2)'};border:1px solid ${myVote===-1?'#c96b4c':'var(--border)'};border-radius:6px;padding:3px 6px;cursor:pointer">👎</button>
+              </div>
+              <button onclick="TRIPS.removeRestaurant('${r.id}');A.renderTrips()" style="background:none;border:none;color:var(--text3);font-size:14px;cursor:pointer">×</button>
             </div>
-            <div style="display:flex;align-items:center;gap:4px">
-              <button onclick="TRIPS.vote('${r.id}',${myVote===1?0:1});A.renderTrips()" style="font-size:11px;background:${myVote===1?'rgba(76,154,110,.2)':'var(--card2)'};border:1px solid ${myVote===1?'#4c9a6e':'var(--border)'};border-radius:6px;padding:3px 7px;cursor:pointer">👍</button>
-              <span style="font-size:11px;font-weight:700;color:${score>0?'#4c9a6e':score<0?'#c96b4c':'var(--text3)'}; min-width:18px;text-align:center">${score>0?'+':''}${score}</span>
-              <button onclick="TRIPS.vote('${r.id}',${myVote===-1?0:-1});A.renderTrips()" style="font-size:11px;background:${myVote===-1?'rgba(201,107,76,.2)':'var(--card2)'};border:1px solid ${myVote===-1?'#c96b4c':'var(--border)'};border-radius:6px;padding:3px 7px;cursor:pointer">👎</button>
-            </div>
-            <button onclick="TRIPS.removeRestaurant('${r.id}');A.renderTrips()" style="background:none;border:none;color:var(--text3);font-size:14px;cursor:pointer">×</button>
-          </div>`;}).join('') : `<div style="text-align:center;padding:30px 20px;font-size:12px;color:var(--text3)">
-            <div style="font-size:28px;margin-bottom:8px">🍽️</div>
-            No restaurants saved yet. Tap + Add to start building your dining wishlist.
+          </div>`;}).join('') : `<div style="text-align:center;padding:24px 20px;font-size:12px;color:var(--text3)">
+            <div style="font-size:24px;margin-bottom:6px">🍽️</div>
+            Search above or browse the guide to save restaurants for your trip
           </div>`}
+
+        <!-- Quick Split -->
+        ${bills.length > 0 ? `
+        <div style="margin-top:14px;background:linear-gradient(135deg,rgba(201,168,76,.06),rgba(201,168,76,.02));border:1px solid rgba(201,168,76,.2);border-radius:12px;padding:12px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+            <div style="font-size:12px;font-weight:700;color:var(--gold)">💰 Trip Spend</div>
+            <div style="font-size:14px;font-weight:800;color:var(--gold)">$${totalSpend.toFixed(0)} total</div>
+          </div>
+          <div style="font-size:10px;color:var(--text3)">${bills.length} bills · $${members.length>0?(totalSpend/members.length).toFixed(0):'0'}/person avg</div>
+          ${settlements.length ? `<div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(201,168,76,.15)">
+            ${settlements.map(s=>`<div style="display:flex;justify-content:space-between;font-size:11px;padding:2px 0">
+              <span style="color:var(--text2)">${s.from} → ${s.to}</span>
+              <span style="font-weight:700;color:var(--gold)">$${s.amount.toFixed(0)}</span>
+            </div>`).join('')}
+          </div>` : ''}
+        </div>` : ''}
       ` : ''}
 
       <!-- TAB: Details (Travel + Members) -->
