@@ -91,7 +91,7 @@ input,textarea{font-family:inherit;font-size:inherit}
 .r-diff-badge.hard{background:rgba(201,68,68,.12);color:#e07070;border:1px solid rgba(201,68,68,.2)}
 .r-diff-badge.moderate{background:rgba(76,122,201,.12);color:#7a9ed4;border:1px solid rgba(76,122,201,.2)}
 /* Gold highlight strip */
-.r-gold-hl{background:linear-gradient(135deg,rgba(201,168,76,.14),rgba(201,168,76,.06));border-bottom:1px solid rgba(201,168,76,.18);padding:6px 12px;display:flex;align-items:center;min-height:28px}
+.r-gold-hl{background:linear-gradient(135deg,rgba(201,168,76,.22),rgba(201,168,76,.10));border-bottom:1px solid rgba(201,168,76,.30);border-top:1px solid rgba(201,168,76,.15);padding:7px 12px;display:flex;align-items:center;min-height:30px}
 .r-gold-hl span{font-size:11px;font-weight:700;color:var(--gold);letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 /* Card body */
 .r-body{padding:12px}
@@ -5111,7 +5111,7 @@ const A = {
     else if(_hlTags.includes('Patio')) goldHL='🌳 Great Patio';
     else if(_hlTags.includes('Late Night')) goldHL='🌙 Late Night Favorite';
     else if(_hlTags.includes('Local Favorites')) goldHL='🤠 Local Favorite';
-    else if(r.score>=90) goldHL='⭐ Top Rated in Dallas';
+    else if(r.score>=90) goldHL='⭐ Top Rated in '+(S.city||'Dallas');
     else goldHL=`📍 ${r.neighborhood}`;
 
     return `<div class="r-card${rank===1?' rank1':''}" onclick="A.openDetail(${r.id})">
