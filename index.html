@@ -2415,7 +2415,7 @@ const TRIPS = {
       <div id="city-search-results" style="display:none;padding-bottom:4px"></div>
       <div style="display:flex;gap:6px;margin-bottom:4px">
         <button onclick="A.tab('travel');A.closeCityPicker()" style="flex:1;background:var(--card2);border:1px solid var(--border);color:var(--gold);font-size:11px;padding:7px;border-radius:8px;font-weight:600">✈️ Travel →</button>
-        <button onclick="A.tab('discover');A.closeCityPicker()" style="flex:1;background:var(--card2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:7px;border-radius:8px">🌍 Global Top 25 →</button>
+        <button onclick="A.tab('discover');A.closeCityPicker()" style="flex:1;background:var(--card2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:7px;border-radius:8px">🔥 Hotspots →</button>
       </div>
     </div>
     <div id="city-list"></div>
@@ -5947,7 +5947,6 @@ const A = {
       ],
     };
 
-    const cityEvents = CITY_EVENTS[S.city] || [];
     const cityTrends = DINING_TRENDS[S.city] || DINING_TRENDS['default'];
 
     document.getElementById('discover-content').innerHTML=`
@@ -5999,249 +5998,19 @@ const A = {
           <div class="discover-cards">${critics.map(r=>miniCard(r,'📰')).join('')}</div>
         </div>`:''}
 
-        <!-- WEEKEND GUIDES curated by creators -->
-        ${(()=>{
-          const WEEKEND_GUIDES = {
-            'Dallas':[
-              {
-                id:'madison-weekend',
-                creator:'Madison Sieli',
-                handle:'@madisonsieli',
-                platform:'TikTok',
-                avatar:'🎬',
-                title:'The Perfect Dallas Weekend',
-                subtitle:'Hidden gems + date night favorites',
-                theme:'linear-gradient(135deg,#2a1f3d,#1a1528)',
-                days:[
-                  {label:'Friday Night',emoji:'🌙',slots:[
-                    {time:'6:30 PM',spot:'Drinks at Midnight Rambler',id:4,note:'Underground cocktail bar — skip the line, go early'},
-                    {time:'8:00 PM',spot:'Dinner at Sachet',id:7,note:'French-Vietnamese date night vibes'},
-                    {time:'10:00 PM',spot:'Nightcap at Leela\'s Wine Bar',id:388,note:'Natural wine in a cozy Bishop Arts nook'}
-                  ]},
-                  {label:'Saturday',emoji:'☀️',slots:[
-                    {time:'9:00 AM',spot:'Coffee at Cultivar Coffee',id:381,note:'Best specialty coffee in Dallas'},
-                    {time:'10:30 AM',spot:'Brunch at Jonathon\'s Oak Cliff',id:26,note:'The pancake flight is a must'},
-                    {time:'1:00 PM',spot:'Explore Bishop Arts District',id:null,note:'Walk, shop, people-watch'},
-                    {time:'3:00 PM',spot:'Snack at Emporium Pies',id:111,note:'The Drunken Nut is legendary'},
-                    {time:'7:00 PM',spot:'Dinner at Lucia',id:1,note:'Best Italian in Dallas — book ahead'},
-                    {time:'9:30 PM',spot:'Drinks at Happiest Hour',id:22,note:'Massive rooftop patio vibes'}
-                  ]},
-                  {label:'Sunday',emoji:'🌅',slots:[
-                    {time:'9:30 AM',spot:'Pastries at Village Baking Co.',id:16,note:'Croissants rival Paris'},
-                    {time:'11:00 AM',spot:'Brunch at Rise No. 1',id:100,note:'Soufflé brunch in Oak Cliff'},
-                    {time:'2:00 PM',spot:'Tacos at Fuel City',id:55,note:'The iconic gas station taco stop'},
-                    {time:'4:00 PM',spot:'Sunset at Truck Yard',id:25,note:'Beer garden with a treehouse — only in Dallas'}
-                  ]}
-                ]
-              },
-              {
-                id:'foodie-deep-dive',
-                creator:'The Rose Table',
-                handle:'@therosetable',
-                platform:'TikTok',
-                avatar:'🌹',
-                title:'Dallas Fine Dining Weekend',
-                subtitle:'Tasting menus, omakase & chef experiences',
-                theme:'linear-gradient(135deg,#2a2518,#1a1810)',
-                days:[
-                  {label:'Friday Night',emoji:'🌙',slots:[
-                    {time:'6:00 PM',spot:'Cocktails at Hide',id:40,note:'Japanese-inspired bar — stunning interior'},
-                    {time:'7:30 PM',spot:'Omakase at Tatsu Dallas',id:2,note:'12-course chef experience — top 3 in Dallas'},
-                    {time:'10:00 PM',spot:'Dessert at Kate Weiser Chocolate',id:212,note:'Artisan truffles & sipping chocolate'}
-                  ]},
-                  {label:'Saturday',emoji:'☀️',slots:[
-                    {time:'9:00 AM',spot:'La Rue Doughnuts',id:30,note:'Elevated doughnuts — earl grey glaze is incredible'},
-                    {time:'12:00 PM',spot:'Lunch at Zodiac Room',id:44,note:'At Neiman Marcus — old Dallas glamour'},
-                    {time:'3:00 PM',spot:'Wine at Trova Wine + Market',id:385,note:'Natural wine tasting in Oak Cliff'},
-                    {time:'7:00 PM',spot:'Dinner at Mansion on Turtle Creek',id:158,note:'The pinnacle of Dallas fine dining'},
-                    {time:'10:00 PM',spot:'Bar at Bowen House',id:437,note:'Craft cocktails in a townhouse setting'}
-                  ]},
-                  {label:'Sunday',emoji:'🌅',slots:[
-                    {time:'10:00 AM',spot:'Brunch at The Charles',id:128,note:'Elegant brunch with live jazz'},
-                    {time:'1:00 PM',spot:'BBQ at Cattleack',id:14,note:'Thu-Sat only — get there early, worth the wait'},
-                    {time:'4:00 PM',spot:'Coffee at Ascension',id:376,note:'Beautiful space in the Design District'}
-                  ]}
-                ]
-              },
-              {
-                id:'dallas-discovered',
-                creator:'Dallas Discovered',
-                handle:'@dallas_discovered',
-                platform:'TikTok/IG',
-                avatar:'🔍',
-                title:'The Casual Dallas Weekend',
-                subtitle:'Budget-friendly spots + local favorites',
-                theme:'linear-gradient(135deg,#18282a,#101c1e)',
-                days:[
-                  {label:'Friday Night',emoji:'🌙',slots:[
-                    {time:'5:00 PM',spot:'Happy Hour at Katy Trail Ice House',id:24,note:'Huge patio, cheap beer, great people-watching'},
-                    {time:'7:30 PM',spot:'Dinner at Velvet Taco',id:108,note:'Wild tacos — try the spicy tikka chicken'},
-                    {time:'9:30 PM',spot:'Dive bar at Adair\'s',id:38,note:'Deep Ellum live music institution'}
-                  ]},
-                  {label:'Saturday',emoji:'☀️',slots:[
-                    {time:'9:00 AM',spot:'Breakfast tacos at Fuel City',id:55,note:'$2 tacos at a gas station — trust us'},
-                    {time:'11:00 AM',spot:'Walk the Dallas Farmers Market',id:null,note:'Local vendors, food stalls, vibes'},
-                    {time:'1:00 PM',spot:'BBQ at Pecan Lodge',id:57,note:'Deep Ellum legend — brisket is king'},
-                    {time:'4:00 PM',spot:'Beers at Deep Ellum Brewing',id:37,note:'Taproom tours on weekends'},
-                    {time:'7:00 PM',spot:'Pizza at Cane Rosso',id:348,note:'Best Neapolitan pizza in Dallas'},
-                    {time:'9:30 PM',spot:'Drinks at Double Wide',id:274,note:'Trailer-park themed dive — uniquely Dallas'}
-                  ]},
-                  {label:'Sunday',emoji:'🌅',slots:[
-                    {time:'10:00 AM',spot:'Brunch at Norma\'s Cafe',id:101,note:'Classic Texas diner since 1956'},
-                    {time:'1:00 PM',spot:'Tacos at Revolver Taco Lounge',id:233,note:'Gourmet tacos in Deep Ellum'},
-                    {time:'3:00 PM',spot:'Ice cream at Jeni\'s',id:341,note:'Brambleberry Crisp is perfection'},
-                    {time:'5:00 PM',spot:'Sunset at The Rustic',id:41,note:'Live Texas country music + cold beer'}
-                  ]}
-                ]
-              },
-              {
-                id:'nightlife-weekend',
-                creator:'Stephanie Camille',
-                handle:'@stephaniecamille',
-                platform:'TikTok',
-                avatar:'✨',
-                title:'Dallas Girls\' Weekend',
-                subtitle:'Brunch, cocktails & nightlife',
-                theme:'linear-gradient(135deg,#2a1828,#1c1018)',
-                days:[
-                  {label:'Friday Night',emoji:'🌙',slots:[
-                    {time:'7:00 PM',spot:'Dinner at Besos Day & Night',id:434,note:'Trendy Latin vibes in Deep Ellum'},
-                    {time:'9:00 PM',spot:'Rooftop at Happiest Hour',id:22,note:'Three-story playground — go for sunset'},
-                    {time:'11:00 PM',spot:'Dancing at LadyLove',id:439,note:'Vinyl bar + dance floor in Deep Ellum'}
-                  ]},
-                  {label:'Saturday',emoji:'☀️',slots:[
-                    {time:'10:00 AM',spot:'Brunch at The Henry',id:18,note:'Aesthetic heaven — order the ahi poke bowl'},
-                    {time:'1:00 PM',spot:'Shopping + Salty Donut',id:29,note:'Design District stroll + artisan donuts'},
-                    {time:'3:00 PM',spot:'Mochi at IFKYK',id:343,note:'The cutest dessert spot in town'},
-                    {time:'7:00 PM',spot:'Dinner at Nobu Dallas',id:32,note:'Dress up — the black cod is unreal'},
-                    {time:'10:00 PM',spot:'Cocktails at Tipsy Alchemist',id:444,note:'Instagram-worthy molecular cocktails'}
-                  ]},
-                  {label:'Sunday',emoji:'🌅',slots:[
-                    {time:'10:00 AM',spot:'Coffee at Hola Café',id:373,note:'Cute cafe + great avocado toast'},
-                    {time:'11:30 AM',spot:'Brunch at Toulouse',id:96,note:'French brunch on Knox — champagne vibes'},
-                    {time:'2:00 PM',spot:'Wine at Bodega Wine Bar',id:386,note:'Chill Sunday wind-down in Bishop Arts'}
-                  ]}
-                ]
-              },
-              {
-                id:'bbq-trail',
-                creator:'Eat in Dallas',
-                handle:'@eatindallas',
-                platform:'Instagram',
-                avatar:'🔥',
-                title:'The Dallas BBQ Trail',
-                subtitle:'Smoke, meat & craft beer weekend',
-                theme:'linear-gradient(135deg,#2a1c14,#1a1208)',
-                days:[
-                  {label:'Friday Night',emoji:'🌙',slots:[
-                    {time:'6:00 PM',spot:'Beers at Lakewood Brewing',id:56,note:'Taproom vibes — Temptress on draft'},
-                    {time:'8:00 PM',spot:'BBQ at Terry Black\'s',id:159,note:'Austin transplant — beef rib is massive'},
-                    {time:'10:00 PM',spot:'Live music at Adair\'s',id:38,note:'Honky-tonk dive in Deep Ellum'}
-                  ]},
-                  {label:'Saturday',emoji:'☀️',slots:[
-                    {time:'9:00 AM',spot:'Breakfast at Norma\'s Cafe',id:101,note:'Texas diner since 1956 — chicken fried steak'},
-                    {time:'11:00 AM',spot:'BBQ at Cattleack',id:14,note:'Thu-Sat only — arrive 10:30, sells out by 1'},
-                    {time:'2:00 PM',spot:'Craft beer at Deep Ellum Brewing',id:37,note:'Dallas IPA is the flagship'},
-                    {time:'5:00 PM',spot:'Tacos at Revolver Taco Lounge',id:233,note:'Gourmet tacos to bridge the gap'},
-                    {time:'7:30 PM',spot:'BBQ at Pecan Lodge',id:57,note:'The Hot Mess — brisket nachos legend'},
-                    {time:'10:00 PM',spot:'Dive bar at Double Wide',id:274,note:'Trailer park kitsch — cheap beer'}
-                  ]},
-                  {label:'Sunday',emoji:'🌅',slots:[
-                    {time:'10:00 AM',spot:'Kolaches at Village Baking Co.',id:16,note:'Czech-Texas pastry perfection'},
-                    {time:'12:00 PM',spot:'BBQ at Hutchins',id:478,note:'McKinney legend — ribs fall off the bone'},
-                    {time:'3:00 PM',spot:'Beer garden at Truck Yard',id:25,note:'Treehouse + food trucks + cold beer'}
-                  ]}
-                ]
-              },
-              {
-                id:'brunch-crawl',
-                creator:'Hungry in Dallas',
-                handle:'@hungryindallastx',
-                platform:'TikTok',
-                avatar:'🥂',
-                title:'Ultimate Brunch Crawl',
-                subtitle:'Saturday & Sunday brunch spots to hit',
-                theme:'linear-gradient(135deg,#1a2828,#0e1c1c)',
-                days:[
-                  {label:'Friday Night',emoji:'🌙',slots:[
-                    {time:'7:00 PM',spot:'Dinner at Uchi Dallas',id:13,note:'Japanese farmhouse — the hama chili is iconic'},
-                    {time:'9:30 PM',spot:'Cocktails at Bowen House',id:437,note:'Intimate cocktail bar — old-world charm'},
-                    {time:'11:00 PM',spot:'Late-night at Rodeo Bar',id:10,note:'Mezcal forward — Deep Ellum after dark'}
-                  ]},
-                  {label:'Saturday',emoji:'☀️',slots:[
-                    {time:'9:30 AM',spot:'Doughnuts at The Salty Donut',id:29,note:'Artisan doughnuts — maple bacon is unreal'},
-                    {time:'11:00 AM',spot:'Brunch at Toulouse',id:96,note:'French quarter vibes — eggs Sardou'},
-                    {time:'1:30 PM',spot:'Walk Knox-Henderson',id:null,note:'Shop the boutiques, digest, repeat'},
-                    {time:'3:00 PM',spot:'Coffee at Hola Café',id:373,note:'Best oat milk latte in Dallas'},
-                    {time:'7:00 PM',spot:'Dinner at Gemma',id:69,note:'Uptown Italian — handmade pasta'},
-                    {time:'10:00 PM',spot:'Mezcal at Ayahuasca Cantina',id:455,note:'Psychedelic vibes — oaxacan cocktails'}
-                  ]},
-                  {label:'Sunday',emoji:'🌅',slots:[
-                    {time:'10:00 AM',spot:'Brunch at Rise No. 1',id:100,note:'Soufflé everything — sweet or savory'},
-                    {time:'12:30 PM',spot:'Tacos at Resident Taqueria',id:471,note:'Oak Cliff gem — al pastor is perfection'},
-                    {time:'3:00 PM',spot:'Ice cream at Van Leeuwen',id:342,note:'Brooklyn-born, Dallas-approved'},
-                    {time:'5:00 PM',spot:'Happy hour at HG Sply Co.',id:19,note:'Rooftop with skyline views'}
-                  ]}
-                ]
-              },
-              {
-                id:'comfort-food',
-                creator:'Cowgirlseat',
-                handle:'@cowgirlseat',
-                platform:'TikTok',
-                avatar:'🤠',
-                title:'Comfort Food Weekend',
-                subtitle:'Burgers, tacos, fried chicken & BBQ',
-                theme:'linear-gradient(135deg,#2a2014,#1a150c)',
-                days:[
-                  {label:'Friday Night',emoji:'🌙',slots:[
-                    {time:'6:00 PM',spot:'Wings at Pluckers',id:60,note:'Holy Macaroni wings — trust the process'},
-                    {time:'8:30 PM',spot:'Burgers at Rodeo Goat',id:52,note:'The Baaad Boy burger with fried goat cheese'},
-                    {time:'10:30 PM',spot:'Late-night at Lucky Dog Saloon',id:419,note:'Cheap shots and good times'}
-                  ]},
-                  {label:'Saturday',emoji:'☀️',slots:[
-                    {time:'9:00 AM',spot:'Breakfast at Ellen\'s',id:476,note:'Southern Kitchen — biscuits and gravy'},
-                    {time:'11:30 AM',spot:'Chicken at Gus\'s',id:345,note:'World Famous Fried Chicken — crispy, spicy, perfect'},
-                    {time:'2:00 PM',spot:'Tacos at Fuel City',id:55,note:'$2 gas station tacos — a Dallas right of passage'},
-                    {time:'4:00 PM',spot:'Beer at Katy Trail Ice House',id:24,note:'Huge patio — cold Lone Star'},
-                    {time:'7:00 PM',spot:'BBQ at Smokey Joe\'s',id:72,note:'Dallas soul food BBQ institution'},
-                    {time:'10:00 PM',spot:'Dive at Lakewood Landing',id:353,note:'Cheap beer, pool tables, no pretense'}
-                  ]},
-                  {label:'Sunday',emoji:'🌅',slots:[
-                    {time:'10:00 AM',spot:'Brunch at Breadwinners',id:35,note:'The oversized cinnamon roll is famous'},
-                    {time:'1:00 PM',spot:'Hot chicken at Hattie B\'s',id:335,note:'Nashville hot chicken — pick your heat level'},
-                    {time:'3:30 PM',spot:'Twisted Root Burger',id:42,note:'Weekly exotic burger — bison, elk, gator'},
-                    {time:'5:30 PM',spot:'Sunset at The Rustic',id:41,note:'Live music + Pat Green vibes'}
-                  ]}
-                ]
-              }
-            ]
-          };
-          const guides = WEEKEND_GUIDES[S.city] || [];
-          if(!guides.length) return '';
-          return `<div class="discover-section">
-            <div class="discover-title">📋 Weekend Guides</div>
-            <div style="font-size:11px;color:var(--text2);margin:-4px 0 12px">Curated itineraries inspired by Dallas creators</div>
-            <div class="discover-cards" style="gap:12px;padding-bottom:4px">
-              ${guides.map(g=>`
-                <div onclick="A.openWeekendGuide('${g.id}')" style="min-width:220px;max-width:220px;border-radius:14px;padding:16px;cursor:pointer;background:${g.theme};border:1px solid rgba(200,169,110,.2);flex-shrink:0">
-                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
-                    <div style="font-size:24px">${g.avatar}</div>
-                    <div>
-                      <div style="font-size:10px;color:var(--text3);font-weight:600">${g.creator}</div>
-                      <div style="font-size:9px;color:var(--text3)">${g.handle} · ${g.platform}</div>
-                    </div>
-                  </div>
-                  <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">${g.title}</div>
-                  <div style="font-size:11px;color:var(--text2);margin-bottom:10px">${g.subtitle}</div>
-                  <div style="display:flex;gap:6px">
-                    ${g.days.map(d=>`<span style="font-size:9px;background:rgba(200,169,110,.12);color:var(--gold);padding:3px 8px;border-radius:6px;font-weight:600">${d.emoji} ${d.label}</span>`).join('')}
-                  </div>
-                </div>
-              `).join('')}
+        <!-- ACTIVITIES & GUIDES (sub-page) -->
+        <div class="discover-section">
+          <div onclick="A.openActivitiesPage()" style="background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.02));border:1.5px solid var(--gold);border-radius:14px;padding:16px;cursor:pointer">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <div>
+                <div style="font-size:15px;font-weight:800;color:var(--gold);margin-bottom:4px">🎯 Activities & Guides</div>
+                <div style="font-size:11px;color:var(--text2)">Weekend guides · Events · Things to do in ${S.city}</div>
+              </div>
+              <div style="font-size:20px;color:var(--gold)">›</div>
             </div>
-          </div>`;
-        })()}
+          </div>
+        </div>
+
 
         ` : `
         <div class="empty-state">
@@ -6325,28 +6094,6 @@ const A = {
             +'</div>';
         })()}
 
-        <!-- EVENTS & CONCERTS (city-specific) -->
-        ${cityEvents.length?`
-        <div class="discover-section">
-          <div class="discover-title">🎟️ Events in ${S.city}</div>
-          ${(window._cityEventsCache = cityEvents) && cityEvents.map((ev,ei)=>`
-            <div onclick="A.openEventDetail(window._cityEventsCache[${ei}])" style="background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:8px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
-              <div style="background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.02));padding:11px 12px 9px;border-bottom:1px solid var(--border)">
-                <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px">
-                  <div style="flex:1">
-                    <div style="font-size:14px;font-weight:800;color:var(--text);line-height:1.2">${ev.emoji} ${ev.name}</div>
-                    <div style="display:flex;gap:5px;flex-wrap:wrap;margin-top:5px">
-                      <span style="font-size:10px;font-weight:700;background:var(--card2);color:var(--text2);padding:2px 8px;border-radius:6px;border:1px solid var(--border)">📅 ${ev.date}</span>
-                      <span style="font-size:10px;font-weight:700;background:rgba(201,168,76,.12);color:var(--gold);padding:2px 8px;border-radius:6px;border:1px solid rgba(201,168,76,.25)">${ev.type}</span>
-                    </div>
-                  </div>
-                  ${ev.ticket ? `<a href="${ev.ticket}" target="_blank" style="font-size:10px;font-weight:800;color:var(--gold);background:rgba(201,168,76,.12);padding:4px 10px;border-radius:8px;border:1px solid rgba(201,168,76,.3);text-decoration:none;flex-shrink:0;white-space:nowrap">🎟 Tickets</a>` : ''}
-                </div>
-              </div>
-              <div style="padding:8px 12px;font-size:11px;color:var(--text2);line-height:1.55">${ev.note}</div>
-            </div>`).join('')}
-        </div>`:''}
-
         <!-- DINING TRENDS -->
         <div class="discover-section">
           <div class="discover-title">🔥 Dining Trends -- ${S.city}</div>
@@ -6365,26 +6112,6 @@ const A = {
               </div>
             </div>`).join('')}
         </div>
-
-        </div>
-
-        <!-- GLOBAL TOP 25 TEASER -->
-        <div class="discover-section">
-          <div class="discover-title">🌍 Global Top 25</div>
-          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center">
-            <div style="font-size:22px;margin-bottom:6px">🌎</div>
-            <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px">Best Restaurants Worldwide</div>
-            <div style="font-size:11px;color:var(--text2);margin-bottom:12px">Top picks across all cities in Appetyt</div>
-            <button onclick="A.showGlobalTop25()" style="background:var(--gold);color:var(--dark);font-weight:700;font-size:12px;padding:8px 20px;border-radius:8px;border:none">Explore Global Top 25 →</button>
-          </div>
-        </div>
-
-        <!-- THINGS TO DO -->
-        ${hasData?`
-        <div class="discover-section">
-          <div class="discover-title">🎯 Things To Do in ${S.city}</div>
-          ${this.activitiesForCityHTML(S.city)}
-        </div>`:''}
 
         <!-- CITY EXPLORER -->
         <div class="discover-section">
@@ -6453,8 +6180,92 @@ const A = {
     </div>`;
   },
 
-  openWeekendGuide(guideId){
-    const WEEKEND_GUIDES = {
+  openActivitiesPage(){
+    const el = document.getElementById('discover-content');
+    if(!el) return;
+    const restaurants = this.getRestaurants().filter(r=>!(r.indicators||[]).includes('closed'));
+    const CITY_EVENTS = {
+      'Dallas': [
+        {emoji:'🏈',name:'Dallas Cowboys at AT&T Stadium',date:'Sep-Jan 2026/27',type:'Sports',note:'America\'s Team in the world\'s most expensive stadium.',ticket:'https://www.dallascowboys.com/tickets',venue:'AT&T Stadium, Arlington'},
+        {emoji:'⭐',name:'Dallas Stars at American Airlines Center',date:'Oct 2026-Apr 2027',type:'Sports',note:'The most electric arena in the city.',ticket:'https://www.nhl.com/stars/tickets',venue:'American Airlines Center'},
+        {emoji:'🏀',name:'Dallas Mavericks at American Airlines Center',date:'Oct 2026-Apr 2027',type:'Sports',note:'Luka watch.',ticket:'https://www.mavs.com/tickets',venue:'American Airlines Center'},
+        {emoji:'⚾',name:'Texas Rangers at Globe Life Field',date:'Apr-Oct 2026',type:'Sports',note:'Retractable roof. Best ballpark food in MLB.',ticket:'https://www.mlb.com/rangers/tickets',venue:'Globe Life Field, Arlington'},
+        {emoji:'🎪',name:'State Fair of Texas',date:'Sep 26-Oct 18, 2026',type:'Festival',note:'Big Tex, Fletcher\'s corny dogs, and fried everything.',ticket:'https://bigtex.com/tickets/',venue:'Fair Park, Dallas'},
+        {emoji:'🍽️',name:'Dallas Food & Wine Festival',date:'Apr 2026',type:'Food',note:'Celebrity chefs and reserve tastings across the city.',ticket:'https://www.dfwfoodandwinefestival.com/',venue:'Various Dallas venues'},
+        {emoji:'🎵',name:'Dos Equis Pavilion -- Summer Concerts',date:'May-Sep 2026',type:'Concert',note:'20,000-cap outdoor amphitheater.',ticket:'https://www.livenation.com/venue/KovZpZAE6eeA/dos-equis-pavilion-events',venue:'Dos Equis Pavilion'},
+        {emoji:'🎸',name:'Deep Ellum Arts Festival',date:'Mar 27-29, 2026',type:'Festival',note:'400+ artists, live music on 4 stages.',ticket:'https://www.deepellumartsfestival.com/',venue:'Deep Ellum'},
+        {emoji:'🎄',name:'Dallas Arboretum -- Dallas Blooms',date:'Mar 1-Apr 13, 2026',type:'Seasonal',note:'500,000 spring blooms across 66 acres.',ticket:'https://www.dallasarboretum.org/',venue:'Dallas Arboretum'},
+        {emoji:'🎆',name:'July 4th at Addison Kaboom Town',date:'Jul 3, 2026',type:'Festival',note:'The biggest fireworks show in Texas.',ticket:'https://www.addisontexas.net/kaboom-town',venue:'Addison Circle Park'},
+      ]
+    };
+    const cityEvents = CITY_EVENTS[S.city] || [];
+    window._cityEventsCache = cityEvents;
+    const WEEKEND_GUIDES = this._getWeekendGuides();
+    const guides = WEEKEND_GUIDES[S.city] || [];
+
+    el.innerHTML = `<div style="padding:14px 14px 100px">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+        <button onclick="A.renderDiscover()" style="background:none;border:none;color:var(--gold);font-size:20px;cursor:pointer">←</button>
+        <div>
+          <div style="font-size:16px;font-weight:800;color:var(--gold)">Activities & Guides</div>
+          <div style="font-size:11px;color:var(--text2)">${S.city}</div>
+        </div>
+      </div>
+
+      ${guides.length ? `
+      <div style="margin-bottom:20px">
+        <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">📋 Weekend Guides</div>
+        <div style="font-size:11px;color:var(--text2);margin:-4px 0 12px">Curated itineraries inspired by Dallas creators</div>
+        <div style="display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch">
+          ${guides.map(g=>`
+            <div onclick="A.openWeekendGuide('${g.id}')" style="min-width:220px;max-width:220px;border-radius:14px;padding:16px;cursor:pointer;background:linear-gradient(135deg,#2a1f3d,#1a1528);border:1px solid rgba(200,169,110,.2);flex-shrink:0">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+                <div style="font-size:24px">${g.avatar}</div>
+                <div>
+                  <div style="font-size:10px;color:var(--text3);font-weight:600">${g.creator}</div>
+                  <div style="font-size:9px;color:var(--text3)">${g.handle} · ${g.platform}</div>
+                </div>
+              </div>
+              <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">${g.title}</div>
+              <div style="font-size:11px;color:var(--text2);margin-bottom:10px">${g.subtitle}</div>
+              <div style="display:flex;gap:6px">
+                ${g.days.map(d=>`<span style="font-size:9px;background:rgba(200,169,110,.12);color:var(--gold);padding:3px 8px;border-radius:6px;font-weight:600">${d.emoji} ${d.label}</span>`).join('')}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>` : ''}
+
+      ${cityEvents.length ? `
+      <div style="margin-bottom:20px">
+        <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">🎟️ Events in ${S.city}</div>
+        ${cityEvents.map((ev,ei)=>`
+          <div onclick="A.openEventDetail(window._cityEventsCache[${ei}])" style="background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:8px;cursor:pointer">
+            <div style="background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.02));padding:11px 12px 9px;border-bottom:1px solid var(--border)">
+              <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px">
+                <div style="flex:1">
+                  <div style="font-size:14px;font-weight:800;color:var(--text);line-height:1.2">${ev.emoji} ${ev.name}</div>
+                  <div style="display:flex;gap:5px;flex-wrap:wrap;margin-top:5px">
+                    <span style="font-size:10px;font-weight:700;background:var(--card2);color:var(--text2);padding:2px 8px;border-radius:6px;border:1px solid var(--border)">📅 ${ev.date}</span>
+                    <span style="font-size:10px;font-weight:700;background:rgba(201,168,76,.12);color:var(--gold);padding:2px 8px;border-radius:6px;border:1px solid rgba(201,168,76,.25)">${ev.type}</span>
+                  </div>
+                </div>
+                ${ev.ticket ? `<a href="${ev.ticket}" target="_blank" onclick="event.stopPropagation()" style="font-size:10px;font-weight:800;color:var(--gold);background:rgba(201,168,76,.12);padding:4px 10px;border-radius:8px;border:1px solid rgba(201,168,76,.3);text-decoration:none;flex-shrink:0;white-space:nowrap">🎟 Tickets</a>` : ''}
+              </div>
+            </div>
+            <div style="padding:8px 12px;font-size:11px;color:var(--text2);line-height:1.55">${ev.note}</div>
+          </div>`).join('')}
+      </div>` : ''}
+
+      <div style="margin-bottom:20px">
+        <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">🎯 Things To Do in ${S.city}</div>
+        ${this.activitiesForCityHTML(S.city)}
+      </div>
+    </div>`;
+  },
+
+  _getWeekendGuides(){
+    return {
       'Dallas':[
         {id:'madison-weekend',creator:'Madison Sieli',handle:'@madisonsieli',platform:'TikTok',avatar:'🎬',title:'The Perfect Dallas Weekend',subtitle:'Hidden gems + date night favorites',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
@@ -6600,6 +6411,9 @@ const A = {
         ]}
       ]
     };
+  },
+  openWeekendGuide(guideId){
+    const WEEKEND_GUIDES = this._getWeekendGuides();
     const guides = WEEKEND_GUIDES[S.city] || [];
     const guide = guides.find(g=>g.id===guideId);
     if(!guide) return;
@@ -11324,7 +11138,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         </div>` : ''}
         <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px">
           <div style="font-size:13px;font-weight:800;color:var(--gold);margin-bottom:12px">✈️ Create a New Trip</div>
-          <input id="trip-name" placeholder="Trip name (e.g. Virgin Caribbean Cruise)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
+          <input id="trip-name" placeholder="Trip name (e.g. Dallas Food Crawl)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
           <div style="margin-bottom:10px">
             <div onclick="document.getElementById('trip-photo-input').click()" id="trip-upload-btn"
               style="width:100%;padding:14px;background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.03));border:1.5px dashed rgba(201,168,76,.3);border-radius:12px;cursor:pointer;text-align:center;touch-action:manipulation">
@@ -11337,8 +11151,14 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
           </div>
           <input id="trip-cities" placeholder="Cities (e.g. Paris, Rome, Barcelona)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
-            <input id="trip-start" type="date" style="background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:12px;font-family:inherit;outline:none">
-            <input id="trip-end" type="date" style="background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:12px;font-family:inherit;outline:none">
+            <div style="position:relative">
+              <label style="position:absolute;top:4px;left:12px;font-size:9px;color:var(--text3);font-weight:600;letter-spacing:.04em;text-transform:uppercase;pointer-events:none">Start Date</label>
+              <input id="trip-start" type="date" style="background:var(--card2);border:1px solid var(--border);color:var(--text);padding:18px 12px 6px;border-radius:10px;font-size:12px;font-family:inherit;outline:none;width:100%">
+            </div>
+            <div style="position:relative">
+              <label style="position:absolute;top:4px;left:12px;font-size:9px;color:var(--text3);font-weight:600;letter-spacing:.04em;text-transform:uppercase;pointer-events:none">End Date</label>
+              <input id="trip-end" type="date" style="background:var(--card2);border:1px solid var(--border);color:var(--text);padding:18px 12px 6px;border-radius:10px;font-size:12px;font-family:inherit;outline:none;width:100%">
+            </div>
           </div>
           <input id="trip-nickname" placeholder="Your name on this trip" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:12px;font-family:inherit;outline:none">
           <button onclick="A.createTrip()" style="width:100%;background:var(--gold);color:var(--dark);font-weight:800;font-size:14px;padding:13px;border-radius:12px;border:none;cursor:pointer">Create Trip →</button>
