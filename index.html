@@ -66,7 +66,7 @@ input,textarea{font-family:inherit;font-size:inherit}
 #combo-scroll::-webkit-scrollbar{display:none}
 #indicator-scroll{display:flex;gap:6px;padding:0 14px 8px;overflow-x:auto;scrollbar-width:none}
 #indicator-scroll::-webkit-scrollbar{display:none}
-.chip{flex-shrink:0;background:rgba(255,255,255,.03);border:1px solid rgba(200,169,110,.08);color:var(--text2);font-size:11px;padding:5px 13px;border-radius:20px;transition:all .2s;white-space:nowrap;cursor:pointer;touch-action:manipulation;font-family:var(--sans);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.chip{flex-shrink:0;background:rgba(255,255,255,.03);border:1.5px solid var(--gold);color:var(--text2);font-size:11px;padding:5px 13px;border-radius:20px;transition:all .2s;white-space:nowrap;cursor:pointer;touch-action:manipulation;font-family:var(--sans);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
 .chip:hover{border-color:var(--gold)}
 .chip.active{background:var(--gold-dim);border-color:rgba(200,169,110,.4);color:var(--gold2);font-weight:600;box-shadow:0 0 12px rgba(200,169,110,.1)}
 .combo-chip{flex-shrink:0;background:var(--card2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:4px 10px;border-radius:14px;transition:all .15s;white-space:nowrap}
@@ -308,7 +308,7 @@ details>summary::-webkit-details-marker{display:none}
 
 
 /* Indicator pills */
-.ind-pill{flex-shrink:0;background:rgba(255,255,255,.03);border:1px solid var(--border2);color:var(--text2);font-size:11px;padding:4px 10px;border-radius:12px;cursor:pointer;white-space:nowrap;transition:all .15s;font-family:inherit}
+.ind-pill{flex-shrink:0;background:rgba(255,255,255,.03);border:1.5px solid var(--gold);color:var(--text2);font-size:11px;padding:4px 10px;border-radius:12px;cursor:pointer;white-space:nowrap;transition:all .15s;font-family:inherit}
 .ind-pill:hover{border-color:var(--gold);color:var(--text)}
 .ind-pill.active{background:rgba(201,168,76,.12);border-color:var(--gold);color:var(--gold);font-weight:600}
 /* Hotspot badge */
@@ -462,7 +462,7 @@ details>summary::-webkit-details-marker{display:none}
 .spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--gold);border-radius:50%;animation:spin .8s linear infinite;margin:40px auto 12px}
 @keyframes spin{to{transform:rotate(360deg)}}
 
-.nbhd-chip{flex-shrink:0;background:var(--card);border:1px solid var(--border);color:var(--text3);font-size:10px;padding:3px 9px;border-radius:12px;cursor:pointer;transition:all .15s;white-space:nowrap}
+.nbhd-chip{flex-shrink:0;background:var(--card);border:1.5px solid var(--gold);color:var(--text3);font-size:10px;padding:3px 9px;border-radius:12px;cursor:pointer;transition:all .15s;white-space:nowrap}
 .nbhd-chip.active{border-color:var(--blue);color:var(--blue)}
 .tip-btn{cursor:pointer;transition:all .15s}
 .tip-btn.active{background:var(--gold)!important;color:var(--dark)!important;border-color:var(--gold)!important}
@@ -1966,15 +1966,15 @@ const TRIPS = {
     <div id="home-view" class="view active">
       <div id="search-bar">
         <div style="position:relative;margin-bottom:8px">
-          <input id="search" type="search" placeholder="🔍 Search restaurants, dishes, neighborhoods…" oninput="A.search()" autocomplete="off" style="width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:9px 38px 9px 14px;border-radius:22px;outline:none;font-size:13px">
+          <input id="search" type="search" placeholder="🔍 Search restaurants, dishes, neighborhoods…" oninput="A.search()" autocomplete="off" style="width:100%;background:var(--card);border:1.5px solid var(--gold);color:var(--text);padding:9px 38px 9px 14px;border-radius:22px;outline:none;font-size:13px">
           <button id="search-clear" onclick="document.getElementById('search').value='';A.search();this.style.display='none'" style="display:none;position:absolute;right:10px;top:50%;transform:translateY(-50%);background:var(--border2);border:none;color:var(--text2);width:20px;height:20px;border-radius:50%;font-size:12px;cursor:pointer;line-height:20px;text-align:center;padding:0">✕</button>
         </div>
         <!-- Lifestyle Filter Button + active indicator -->
         <div style="display:flex;align-items:center;gap:8px;padding:0 0 6px">
-          <button onclick="A.openFilterModal()" id="lifestyle-btn" style="background:var(--card);border:1px solid var(--border);color:var(--text2);font-size:12px;padding:7px 14px;border-radius:20px;display:flex;align-items:center;gap:6px;flex-shrink:0">
+          <button onclick="A.openFilterModal()" id="lifestyle-btn" style="background:var(--card);border:1.5px solid var(--gold);color:var(--text2);font-size:12px;padding:7px 14px;border-radius:20px;display:flex;align-items:center;gap:6px;flex-shrink:0">
             🎛️ Lifestyle Filter <span id="lifestyle-active-label" style="color:var(--gold);font-weight:700"></span> <span style="color:var(--text3)">▾</span>
           </button>
-          <button onclick="A.openComboModal()" id="combo-btn" style="background:var(--card);border:1px solid var(--border);color:var(--text2);font-size:12px;padding:7px 14px;border-radius:20px;display:flex;align-items:center;gap:6px;flex-shrink:0">
+          <button onclick="A.openComboModal()" id="combo-btn" style="background:var(--card);border:1.5px solid var(--gold);color:var(--text2);font-size:12px;padding:7px 14px;border-radius:20px;display:flex;align-items:center;gap:6px;flex-shrink:0">
             🔀 Combos <span id="combo-active-label" style="color:var(--purple);font-weight:700"></span> <span style="color:var(--text3)">▾</span>
           </button>
           <button onclick="A.clearFilters()" id="clear-filters-btn" style="display:none;background:none;border:1px solid var(--red);color:var(--red);font-size:11px;padding:6px 10px;border-radius:20px">✕ Clear</button>
@@ -4762,8 +4762,8 @@ const A = {
     document.getElementById('lifestyle-active-label').textContent='';
     document.getElementById('combo-active-label').textContent='';
     document.getElementById('clear-filters-btn').style.display='none';
-    document.getElementById('lifestyle-btn').style.borderColor='var(--border)';
-    document.getElementById('combo-btn').style.borderColor='var(--border)';
+    document.getElementById('lifestyle-btn').style.borderColor='var(--gold)';
+    document.getElementById('combo-btn').style.borderColor='var(--gold)';
     this.renderHome();
   },
 
@@ -4771,9 +4771,9 @@ const A = {
     S.filter=f; S.combo=null;
     const fObj=FILTERS.find(x=>x.id===f);
     document.getElementById('lifestyle-active-label').textContent=f==='all'?'':(fObj?fObj.emoji+' '+fObj.label:'');
-    document.getElementById('lifestyle-btn').style.borderColor=f==='all'?'var(--border)':'var(--gold)';
+    document.getElementById('lifestyle-btn').style.borderColor='var(--gold)';
     document.getElementById('combo-active-label').textContent='';
-    document.getElementById('combo-btn').style.borderColor='var(--border)';
+    document.getElementById('combo-btn').style.borderColor='var(--gold)';
     document.getElementById('clear-filters-btn').style.display=f==='all'?'none':'block';
     // sync quick pills
     document.querySelectorAll('.chip').forEach(b=>b.classList.remove('active'));
@@ -4791,7 +4791,7 @@ const A = {
     document.getElementById('combo-active-label').textContent=cc?cc.label.split(' ')[0]:'✓';
     document.getElementById('combo-btn').style.borderColor='var(--purple)';
     document.getElementById('lifestyle-active-label').textContent='';
-    document.getElementById('lifestyle-btn').style.borderColor='var(--border)';
+    document.getElementById('lifestyle-btn').style.borderColor='var(--gold)';
     document.getElementById('clear-filters-btn').style.display='block';
     // sync quick combo pills
     document.querySelectorAll('.chip').forEach(b=>b.classList.remove('active'));
