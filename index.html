@@ -2099,7 +2099,7 @@ const TRIPS = {
         </div>
       </div>
       <!-- Nearby panel -->
-      <div id="mn-near-panel" style="flex:1;padding:14px 14px 120px;display:none">
+      <div id="mn-near-panel" style="flex:1;padding:14px 14px 120px;display:none;overflow-y:auto;-webkit-overflow-scrolling:touch">
         <button id="loc-btn" onclick="A.getNearby()" style="width:100%;background:var(--gold);color:var(--dark);font-weight:700;font-size:14px;padding:13px;border-radius:12px;margin-bottom:10px;border:none">📍 Find Restaurants Near Me</button>
         <div id="loc-status" style="font-size:12px;color:var(--text2);margin-bottom:10px;text-align:center"></div>
         <div id="nearby-list"></div>
@@ -5511,14 +5511,16 @@ const A = {
         document.getElementById('nearby-list').innerHTML=
           `<div class="section-head">Near You <span>${withDist.length} spots</span></div>`+
           withDist.map((r,i)=>`
-            <div class="r-card" onclick="A.openDetail(${r.id})"><div style="padding:14px 14px 12px">
-              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px">
-                <div style="font-size:11px;color:var(--text3);font-weight:600;min-width:48px">${r.dist<1?'<1':'~'+Math.round(r.dist)}mi</div>
-                <div style="flex:1;font-family:var(--serif);font-size:15px;font-weight:600;color:var(--text)">${r.name}</div>
-                <div style="font-family:var(--serif);font-size:18px;font-weight:600;color:var(--gold2);font-style:italic">${r.score}</div>
+            <div class="r-card" onclick="A.openDetail(${r.id})"><div style="padding:14px 16px 14px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                <div style="flex:1;min-width:0">
+                  <div style="font-family:var(--serif);font-size:16px;font-weight:600;color:var(--text);line-height:1.2">${r.name}</div>
+                  <div style="font-size:11px;color:var(--text2);margin-top:3px">${r.cuisine} · ${r.neighborhood} · ${r.dist<1?'<1':'~'+Math.round(r.dist)} mi</div>
+                </div>
+                <div style="font-family:var(--serif);font-size:20px;font-weight:600;color:var(--gold2);font-style:italic;margin-left:12px">${r.score}</div>
               </div>
-              <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px"><span class="badge">${r.cuisine}</span><span class="badge">${r.neighborhood}</span>${r.hh?`<span class="badge ${this.isHHActive(r.hh,nowMins)?'green':''}">🍸 ${r.hh}</span>`:''}</div>
-              <div style="font-size:12px;color:var(--text3);line-height:1.45">${(r.description||'').slice(0,120)}...</div>
+              ${r.hh?`<div style="font-size:10px;color:${this.isHHActive(r.hh,nowMins)?'#4c9a6e':'var(--gold)'};margin-bottom:6px">${this.isHHActive(r.hh,nowMins)?'🟢':'🍸'} ${r.hh}</div>`:''}
+              <div style="font-size:12px;color:var(--text3);line-height:1.5">${(r.description||'').slice(0,100)}...</div>
             </div></div>
           `).join('');
       },
