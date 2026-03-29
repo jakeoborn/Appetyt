@@ -2007,7 +2007,6 @@ const TRIPS = {
             <button class="ind-pill" id="ind-dive-bar" onclick="A.toggleIndicator('dive-bar',this)">🍺 Dive Bar</button>
             <button class="ind-pill" id="ind-brewery" onclick="A.toggleIndicator('brewery',this)">🍻 Brewery</button>
             <button class="ind-pill" id="ind-outdoor-only" onclick="A.toggleIndicator('outdoor-only',this)">🌿 Outdoor Only</button>
-            <button class="ind-pill" id="ind-happy-hour" onclick="A.toggleIndicator('happy-hour',this)">🍸 Happy Hour</button>
             <button class="ind-pill" id="ind-byob" onclick="A.toggleIndicator('byob',this)">🍾 BYOB</button>
           </div>
         </div>
@@ -4966,7 +4965,6 @@ const A = {
       // Indicator filter -- checks r.indicators AND r.tags for viral/hole-in-wall
       if(S.indicators&&S.indicators.size>0){
         for(const ind of S.indicators){
-          if(ind==='happy-hour'){ if(!r.hh) return false; continue; }
           const inIndicators = (r.indicators||[]).includes(ind);
           const inTags = (r.tags||[]).some(t => t.toLowerCase().replace(/[^a-z-]/g,'') === ind ||
             (ind==='viral' && t.toLowerCase().includes('viral')) ||
