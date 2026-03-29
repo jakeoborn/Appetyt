@@ -34,7 +34,7 @@ a{color:inherit;text-decoration:none}
 input,textarea{font-family:inherit;font-size:inherit}
 
 /* TOPBAR */
-#topbar{display:flex;align-items:center;padding:7px 12px;border-bottom:1px solid var(--border2);flex-shrink:0;backdrop-filter:blur(20px);background:var(--dark)}
+#topbar{display:flex;align-items:center;padding:7px 12px;border-bottom:1px solid var(--border2);flex-shrink:0;background:var(--dark);z-index:30;position:relative}
 #logo{font-family:var(--serif);font-weight:700;font-size:17px;color:var(--gold2);letter-spacing:-.5px;flex-shrink:0;font-style:italic}
 #city-btn{flex:1;background:none;border:none;color:var(--text2);font-size:12px;padding:4px 6px;text-align:center;display:flex;align-items:center;justify-content:center;gap:4px;transition:color .15s;cursor:pointer}
 #city-btn:hover{color:var(--gold)}
@@ -42,7 +42,7 @@ input,textarea{font-family:inherit;font-size:inherit}
 #auth-btn.on{border-color:var(--gold);color:var(--gold)}
 
 /* MAIN NAV TABS */
-#nav-tabs{display:flex;background:#0a0d14;border-bottom:1px solid var(--border);flex-shrink:0;overflow-x:auto;scrollbar-width:none;z-index:20;position:relative}
+#nav-tabs{display:flex;background:var(--dark);border-bottom:1px solid var(--border);flex-shrink:0;overflow-x:auto;scrollbar-width:none;z-index:25;position:relative}
 #nav-tabs::-webkit-scrollbar{display:none}
 .nav-tab{flex-shrink:0;padding:10px 14px;font-size:12px;font-weight:500;color:var(--text3);border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;font-family:var(--sans);cursor:pointer;touch-action:manipulation}
 .nav-tab.active{color:var(--gold2);border-bottom-color:var(--gold2)}
