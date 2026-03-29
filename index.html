@@ -11308,11 +11308,20 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const deviceId = getDeviceId();
 
     if(!trip){
+      const tripHistory = JSON.parse(localStorage.getItem('appetyt_trip_history')||'[]');
       el.innerHTML = `
-        <!-- Virgin Voyages Cruise Card -->
-        <div style="margin-bottom:20px">
-          <div style="font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);margin-bottom:12px;display:flex;align-items:center;gap:8px">🚢 Upcoming Trip <div style="flex:1;height:1px;background:rgba(200,169,110,.08)"></div></div>
-          ${buildCruiseCard()}
+        ${tripHistory.length ? `
+        <div style="margin-bottom:16px">
+          <div style="font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);margin-bottom:10px;display:flex;align-items:center;gap:8px">📁 Past Trips <div style="flex:1;height:1px;background:rgba(200,169,110,.08)"></div></div>
+          ${tripHistory.map((t,i)=>`
+            <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:6px;display:flex;align-items:center;justify-content:space-between">
+              <div>
+                <div style="font-size:12px;font-weight:700;color:var(--text)">${t.name}</div>
+                <div style="font-size:10px;color:var(--text3)">${t.cities||''} ${t.endedAt?'· Ended '+t.endedAt:''}</div>
+              </div>
+              <button onclick="A.removeFromHistory(${i})" style="background:none;border:none;color:var(--text3);font-size:14px;cursor:pointer">×</button>
+            </div>`).join('')}
+        </div>` : ''}
         <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px">
           <div style="font-size:13px;font-weight:800;color:var(--gold);margin-bottom:12px">✈️ Create a New Trip</div>
           <input id="trip-name" placeholder="Trip name (e.g. Virgin Caribbean Cruise)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">
@@ -11603,8 +11612,11 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
             </div>`).join('') : `<div style="padding:16px;font-size:11px;color:var(--text3);background:var(--card);border-radius:10px;border:1px dashed var(--border);text-align:center">No travel details yet</div>`}
         </div>
 
-        <!-- Leave Trip -->
-        <button onclick="A.leaveTrip()" style="width:100%;background:none;border:1px solid rgba(220,70,70,.2);color:var(--text3);font-size:11px;padding:10px;border-radius:10px;cursor:pointer">Leave Trip</button>
+        <!-- End / Leave Trip -->
+        <div style="display:flex;gap:8px;margin-top:14px">
+          <button onclick="A.endTrip()" style="flex:1;background:none;border:1px solid rgba(201,168,76,.3);color:var(--gold2);font-size:11px;font-weight:700;padding:10px;border-radius:10px;cursor:pointer">✓ End Trip</button>
+          <button onclick="A.leaveTrip()" style="flex:1;background:none;border:1px solid rgba(220,70,70,.2);color:var(--text3);font-size:11px;padding:10px;border-radius:10px;cursor:pointer">Leave Trip</button>
+        </div>
       ` : ''}
 
       <!-- TAB: Money (Bills + Settle) -->
@@ -11944,6 +11956,36 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         </div>
       </div>`;
     m.style.display='block';
+  },
+
+  endTrip(){
+    if(!confirm('End this trip and move it to history?')) return;
+    const trip = TRIPS.current;
+    if(trip){
+      const history = JSON.parse(localStorage.getItem('appetyt_trip_history')||'[]');
+      history.unshift({
+        name: trip.name,
+        code: trip.code,
+        cities: Array.isArray(trip.cities)?trip.cities.join(', '):(trip.cities||''),
+        endedAt: new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})
+      });
+      localStorage.setItem('appetyt_trip_history', JSON.stringify(history.slice(0,20)));
+    }
+    TRIPS.current = null;
+    TRIPS.members = [];
+    TRIPS.restaurants = [];
+    TRIPS.bills = [];
+    if(TRIPS._channel) TRIPS._channel.unsubscribe?.();
+    localStorage.removeItem('appetyt_active_trip');
+    this.renderTrips();
+    this.showToast('Trip ended and saved to history');
+  },
+
+  removeFromHistory(index){
+    const history = JSON.parse(localStorage.getItem('appetyt_trip_history')||'[]');
+    history.splice(index,1);
+    localStorage.setItem('appetyt_trip_history', JSON.stringify(history));
+    this.renderTrips();
   },
 
   leaveTrip(){
