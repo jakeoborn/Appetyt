@@ -6002,6 +6002,159 @@ const A = {
           <div class="discover-title">📰 Critics Picks</div>
           <div class="discover-cards">${critics.map(r=>miniCard(r,'📰')).join('')}</div>
         </div>`:''}
+
+        <!-- WEEKEND GUIDES curated by creators -->
+        ${(()=>{
+          const WEEKEND_GUIDES = {
+            'Dallas':[
+              {
+                id:'madison-weekend',
+                creator:'Madison Sieli',
+                handle:'@madisonsieli',
+                platform:'TikTok',
+                avatar:'🎬',
+                title:'The Perfect Dallas Weekend',
+                subtitle:'Hidden gems + date night favorites',
+                theme:'linear-gradient(135deg,#2a1f3d,#1a1528)',
+                days:[
+                  {label:'Friday Night',emoji:'🌙',slots:[
+                    {time:'6:30 PM',spot:'Drinks at Midnight Rambler',id:4,note:'Underground cocktail bar — skip the line, go early'},
+                    {time:'8:00 PM',spot:'Dinner at Sachet',id:7,note:'French-Vietnamese date night vibes'},
+                    {time:'10:00 PM',spot:'Nightcap at Leela\'s Wine Bar',id:388,note:'Natural wine in a cozy Bishop Arts nook'}
+                  ]},
+                  {label:'Saturday',emoji:'☀️',slots:[
+                    {time:'9:00 AM',spot:'Coffee at Cultivar Coffee',id:381,note:'Best specialty coffee in Dallas'},
+                    {time:'10:30 AM',spot:'Brunch at Jonathon\'s Oak Cliff',id:26,note:'The pancake flight is a must'},
+                    {time:'1:00 PM',spot:'Explore Bishop Arts District',id:null,note:'Walk, shop, people-watch'},
+                    {time:'3:00 PM',spot:'Snack at Emporium Pies',id:111,note:'The Drunken Nut is legendary'},
+                    {time:'7:00 PM',spot:'Dinner at Lucia',id:1,note:'Best Italian in Dallas — book ahead'},
+                    {time:'9:30 PM',spot:'Drinks at Happiest Hour',id:22,note:'Massive rooftop patio vibes'}
+                  ]},
+                  {label:'Sunday',emoji:'🌅',slots:[
+                    {time:'9:30 AM',spot:'Pastries at Village Baking Co.',id:16,note:'Croissants rival Paris'},
+                    {time:'11:00 AM',spot:'Brunch at Rise No. 1',id:100,note:'Soufflé brunch in Oak Cliff'},
+                    {time:'2:00 PM',spot:'Tacos at Fuel City',id:55,note:'The iconic gas station taco stop'},
+                    {time:'4:00 PM',spot:'Sunset at Truck Yard',id:25,note:'Beer garden with a treehouse — only in Dallas'}
+                  ]}
+                ]
+              },
+              {
+                id:'foodie-deep-dive',
+                creator:'The Rose Table',
+                handle:'@therosetable',
+                platform:'TikTok',
+                avatar:'🌹',
+                title:'Dallas Fine Dining Weekend',
+                subtitle:'Tasting menus, omakase & chef experiences',
+                theme:'linear-gradient(135deg,#2a2518,#1a1810)',
+                days:[
+                  {label:'Friday Night',emoji:'🌙',slots:[
+                    {time:'6:00 PM',spot:'Cocktails at Hide',id:40,note:'Japanese-inspired bar — stunning interior'},
+                    {time:'7:30 PM',spot:'Omakase at Tatsu Dallas',id:2,note:'12-course chef experience — top 3 in Dallas'},
+                    {time:'10:00 PM',spot:'Dessert at Kate Weiser Chocolate',id:212,note:'Artisan truffles & sipping chocolate'}
+                  ]},
+                  {label:'Saturday',emoji:'☀️',slots:[
+                    {time:'9:00 AM',spot:'La Rue Doughnuts',id:30,note:'Elevated doughnuts — earl grey glaze is incredible'},
+                    {time:'12:00 PM',spot:'Lunch at Zodiac Room',id:44,note:'At Neiman Marcus — old Dallas glamour'},
+                    {time:'3:00 PM',spot:'Wine at Trova Wine + Market',id:385,note:'Natural wine tasting in Oak Cliff'},
+                    {time:'7:00 PM',spot:'Dinner at Mansion on Turtle Creek',id:158,note:'The pinnacle of Dallas fine dining'},
+                    {time:'10:00 PM',spot:'Bar at Bowen House',id:437,note:'Craft cocktails in a townhouse setting'}
+                  ]},
+                  {label:'Sunday',emoji:'🌅',slots:[
+                    {time:'10:00 AM',spot:'Brunch at The Charles',id:128,note:'Elegant brunch with live jazz'},
+                    {time:'1:00 PM',spot:'BBQ at Cattleack',id:14,note:'Thu-Sat only — get there early, worth the wait'},
+                    {time:'4:00 PM',spot:'Coffee at Ascension',id:376,note:'Beautiful space in the Design District'}
+                  ]}
+                ]
+              },
+              {
+                id:'dallas-discovered',
+                creator:'Dallas Discovered',
+                handle:'@dallas_discovered',
+                platform:'TikTok/IG',
+                avatar:'🔍',
+                title:'The Casual Dallas Weekend',
+                subtitle:'Budget-friendly spots + local favorites',
+                theme:'linear-gradient(135deg,#18282a,#101c1e)',
+                days:[
+                  {label:'Friday Night',emoji:'🌙',slots:[
+                    {time:'5:00 PM',spot:'Happy Hour at Katy Trail Ice House',id:24,note:'Huge patio, cheap beer, great people-watching'},
+                    {time:'7:30 PM',spot:'Dinner at Velvet Taco',id:108,note:'Wild tacos — try the spicy tikka chicken'},
+                    {time:'9:30 PM',spot:'Dive bar at Adair\'s',id:38,note:'Deep Ellum live music institution'}
+                  ]},
+                  {label:'Saturday',emoji:'☀️',slots:[
+                    {time:'9:00 AM',spot:'Breakfast tacos at Fuel City',id:55,note:'$2 tacos at a gas station — trust us'},
+                    {time:'11:00 AM',spot:'Walk the Dallas Farmers Market',id:null,note:'Local vendors, food stalls, vibes'},
+                    {time:'1:00 PM',spot:'BBQ at Pecan Lodge',id:57,note:'Deep Ellum legend — brisket is king'},
+                    {time:'4:00 PM',spot:'Beers at Deep Ellum Brewing',id:37,note:'Taproom tours on weekends'},
+                    {time:'7:00 PM',spot:'Pizza at Cane Rosso',id:348,note:'Best Neapolitan pizza in Dallas'},
+                    {time:'9:30 PM',spot:'Drinks at Double Wide',id:274,note:'Trailer-park themed dive — uniquely Dallas'}
+                  ]},
+                  {label:'Sunday',emoji:'🌅',slots:[
+                    {time:'10:00 AM',spot:'Brunch at Norma\'s Cafe',id:101,note:'Classic Texas diner since 1956'},
+                    {time:'1:00 PM',spot:'Tacos at Revolver Taco Lounge',id:233,note:'Gourmet tacos in Deep Ellum'},
+                    {time:'3:00 PM',spot:'Ice cream at Jeni\'s',id:341,note:'Brambleberry Crisp is perfection'},
+                    {time:'5:00 PM',spot:'Sunset at The Rustic',id:41,note:'Live Texas country music + cold beer'}
+                  ]}
+                ]
+              },
+              {
+                id:'nightlife-weekend',
+                creator:'Stephanie Camille',
+                handle:'@stephaniecamille',
+                platform:'TikTok',
+                avatar:'✨',
+                title:'Dallas Girls\' Weekend',
+                subtitle:'Brunch, cocktails & nightlife',
+                theme:'linear-gradient(135deg,#2a1828,#1c1018)',
+                days:[
+                  {label:'Friday Night',emoji:'🌙',slots:[
+                    {time:'7:00 PM',spot:'Dinner at Besos Day & Night',id:434,note:'Trendy Latin vibes in Deep Ellum'},
+                    {time:'9:00 PM',spot:'Rooftop at Happiest Hour',id:22,note:'Three-story playground — go for sunset'},
+                    {time:'11:00 PM',spot:'Dancing at LadyLove',id:439,note:'Vinyl bar + dance floor in Deep Ellum'}
+                  ]},
+                  {label:'Saturday',emoji:'☀️',slots:[
+                    {time:'10:00 AM',spot:'Brunch at The Henry',id:18,note:'Aesthetic heaven — order the ahi poke bowl'},
+                    {time:'1:00 PM',spot:'Shopping + Salty Donut',id:29,note:'Design District stroll + artisan donuts'},
+                    {time:'3:00 PM',spot:'Mochi at IFKYK',id:343,note:'The cutest dessert spot in town'},
+                    {time:'7:00 PM',spot:'Dinner at Nobu Dallas',id:32,note:'Dress up — the black cod is unreal'},
+                    {time:'10:00 PM',spot:'Cocktails at Tipsy Alchemist',id:444,note:'Instagram-worthy molecular cocktails'}
+                  ]},
+                  {label:'Sunday',emoji:'🌅',slots:[
+                    {time:'10:00 AM',spot:'Coffee at Hola Café',id:373,note:'Cute cafe + great avocado toast'},
+                    {time:'11:30 AM',spot:'Brunch at Toulouse',id:96,note:'French brunch on Knox — champagne vibes'},
+                    {time:'2:00 PM',spot:'Wine at Bodega Wine Bar',id:386,note:'Chill Sunday wind-down in Bishop Arts'}
+                  ]}
+                ]
+              }
+            ]
+          };
+          const guides = WEEKEND_GUIDES[S.city] || [];
+          if(!guides.length) return '';
+          return `<div class="discover-section">
+            <div class="discover-title">📋 Weekend Guides</div>
+            <div style="font-size:11px;color:var(--text2);margin:-4px 0 12px">Curated itineraries inspired by Dallas creators</div>
+            <div class="discover-cards" style="gap:12px;padding-bottom:4px">
+              ${guides.map(g=>`
+                <div onclick="A.openWeekendGuide('${g.id}')" style="min-width:220px;max-width:220px;border-radius:14px;padding:16px;cursor:pointer;background:${g.theme};border:1px solid rgba(200,169,110,.2);flex-shrink:0">
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+                    <div style="font-size:24px">${g.avatar}</div>
+                    <div>
+                      <div style="font-size:10px;color:var(--text3);font-weight:600">${g.creator}</div>
+                      <div style="font-size:9px;color:var(--text3)">${g.handle} · ${g.platform}</div>
+                    </div>
+                  </div>
+                  <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">${g.title}</div>
+                  <div style="font-size:11px;color:var(--text2);margin-bottom:10px">${g.subtitle}</div>
+                  <div style="display:flex;gap:6px">
+                    ${g.days.map(d=>`<span style="font-size:9px;background:rgba(200,169,110,.12);color:var(--gold);padding:3px 8px;border-radius:6px;font-weight:600">${d.emoji} ${d.label}</span>`).join('')}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>`;
+        })()}
+
         ` : `
         <div class="empty-state">
           <div class="empty-icon">🌍</div>
@@ -6210,6 +6363,154 @@ const A = {
         </div>
       `).join('')}
     </div>`;
+  },
+
+  openWeekendGuide(guideId){
+    const WEEKEND_GUIDES = {
+      'Dallas':[
+        {id:'madison-weekend',creator:'Madison Sieli',handle:'@madisonsieli',platform:'TikTok',avatar:'🎬',title:'The Perfect Dallas Weekend',subtitle:'Hidden gems + date night favorites',days:[
+          {label:'Friday Night',emoji:'🌙',slots:[
+            {time:'6:30 PM',spot:'Drinks at Midnight Rambler',id:4,note:'Underground cocktail bar — skip the line, go early'},
+            {time:'8:00 PM',spot:'Dinner at Sachet',id:7,note:'French-Vietnamese date night vibes'},
+            {time:'10:00 PM',spot:'Nightcap at Leela\'s Wine Bar',id:388,note:'Natural wine in a cozy Bishop Arts nook'}
+          ]},
+          {label:'Saturday',emoji:'☀️',slots:[
+            {time:'9:00 AM',spot:'Coffee at Cultivar Coffee',id:381,note:'Best specialty coffee in Dallas'},
+            {time:'10:30 AM',spot:'Brunch at Jonathon\'s Oak Cliff',id:26,note:'The pancake flight is a must'},
+            {time:'1:00 PM',spot:'Explore Bishop Arts District',id:null,note:'Walk, shop, people-watch'},
+            {time:'3:00 PM',spot:'Snack at Emporium Pies',id:111,note:'The Drunken Nut is legendary'},
+            {time:'7:00 PM',spot:'Dinner at Lucia',id:1,note:'Best Italian in Dallas — book ahead'},
+            {time:'9:30 PM',spot:'Drinks at Happiest Hour',id:22,note:'Massive rooftop patio vibes'}
+          ]},
+          {label:'Sunday',emoji:'🌅',slots:[
+            {time:'9:30 AM',spot:'Pastries at Village Baking Co.',id:16,note:'Croissants rival Paris'},
+            {time:'11:00 AM',spot:'Brunch at Rise No. 1',id:100,note:'Soufflé brunch in Oak Cliff'},
+            {time:'2:00 PM',spot:'Tacos at Fuel City',id:55,note:'The iconic gas station taco stop'},
+            {time:'4:00 PM',spot:'Sunset at Truck Yard',id:25,note:'Beer garden with a treehouse — only in Dallas'}
+          ]}
+        ]},
+        {id:'foodie-deep-dive',creator:'The Rose Table',handle:'@therosetable',platform:'TikTok',avatar:'🌹',title:'Dallas Fine Dining Weekend',subtitle:'Tasting menus, omakase & chef experiences',days:[
+          {label:'Friday Night',emoji:'🌙',slots:[
+            {time:'6:00 PM',spot:'Cocktails at Hide',id:40,note:'Japanese-inspired bar — stunning interior'},
+            {time:'7:30 PM',spot:'Omakase at Tatsu Dallas',id:2,note:'12-course chef experience — top 3 in Dallas'},
+            {time:'10:00 PM',spot:'Dessert at Kate Weiser Chocolate',id:212,note:'Artisan truffles & sipping chocolate'}
+          ]},
+          {label:'Saturday',emoji:'☀️',slots:[
+            {time:'9:00 AM',spot:'La Rue Doughnuts',id:30,note:'Elevated doughnuts — earl grey glaze is incredible'},
+            {time:'12:00 PM',spot:'Lunch at Zodiac Room',id:44,note:'At Neiman Marcus — old Dallas glamour'},
+            {time:'3:00 PM',spot:'Wine at Trova Wine + Market',id:385,note:'Natural wine tasting in Oak Cliff'},
+            {time:'7:00 PM',spot:'Dinner at Mansion on Turtle Creek',id:158,note:'The pinnacle of Dallas fine dining'},
+            {time:'10:00 PM',spot:'Bar at Bowen House',id:437,note:'Craft cocktails in a townhouse setting'}
+          ]},
+          {label:'Sunday',emoji:'🌅',slots:[
+            {time:'10:00 AM',spot:'Brunch at The Charles',id:128,note:'Elegant brunch with live jazz'},
+            {time:'1:00 PM',spot:'BBQ at Cattleack',id:14,note:'Thu-Sat only — get there early, worth the wait'},
+            {time:'4:00 PM',spot:'Coffee at Ascension',id:376,note:'Beautiful space in the Design District'}
+          ]}
+        ]},
+        {id:'dallas-discovered',creator:'Dallas Discovered',handle:'@dallas_discovered',platform:'TikTok/IG',avatar:'🔍',title:'The Casual Dallas Weekend',subtitle:'Budget-friendly spots + local favorites',days:[
+          {label:'Friday Night',emoji:'🌙',slots:[
+            {time:'5:00 PM',spot:'Happy Hour at Katy Trail Ice House',id:24,note:'Huge patio, cheap beer, great people-watching'},
+            {time:'7:30 PM',spot:'Dinner at Velvet Taco',id:108,note:'Wild tacos — try the spicy tikka chicken'},
+            {time:'9:30 PM',spot:'Dive bar at Adair\'s',id:38,note:'Deep Ellum live music institution'}
+          ]},
+          {label:'Saturday',emoji:'☀️',slots:[
+            {time:'9:00 AM',spot:'Breakfast tacos at Fuel City',id:55,note:'$2 tacos at a gas station — trust us'},
+            {time:'11:00 AM',spot:'Walk the Dallas Farmers Market',id:null,note:'Local vendors, food stalls, vibes'},
+            {time:'1:00 PM',spot:'BBQ at Pecan Lodge',id:57,note:'Deep Ellum legend — brisket is king'},
+            {time:'4:00 PM',spot:'Beers at Deep Ellum Brewing',id:37,note:'Taproom tours on weekends'},
+            {time:'7:00 PM',spot:'Pizza at Cane Rosso',id:348,note:'Best Neapolitan pizza in Dallas'},
+            {time:'9:30 PM',spot:'Drinks at Double Wide',id:274,note:'Trailer-park themed dive — uniquely Dallas'}
+          ]},
+          {label:'Sunday',emoji:'🌅',slots:[
+            {time:'10:00 AM',spot:'Brunch at Norma\'s Cafe',id:101,note:'Classic Texas diner since 1956'},
+            {time:'1:00 PM',spot:'Tacos at Revolver Taco Lounge',id:233,note:'Gourmet tacos in Deep Ellum'},
+            {time:'3:00 PM',spot:'Ice cream at Jeni\'s',id:341,note:'Brambleberry Crisp is perfection'},
+            {time:'5:00 PM',spot:'Sunset at The Rustic',id:41,note:'Live Texas country music + cold beer'}
+          ]}
+        ]},
+        {id:'nightlife-weekend',creator:'Stephanie Camille',handle:'@stephaniecamille',platform:'TikTok',avatar:'✨',title:'Dallas Girls\' Weekend',subtitle:'Brunch, cocktails & nightlife',days:[
+          {label:'Friday Night',emoji:'🌙',slots:[
+            {time:'7:00 PM',spot:'Dinner at Besos Day & Night',id:434,note:'Trendy Latin vibes in Deep Ellum'},
+            {time:'9:00 PM',spot:'Rooftop at Happiest Hour',id:22,note:'Three-story playground — go for sunset'},
+            {time:'11:00 PM',spot:'Dancing at LadyLove',id:439,note:'Vinyl bar + dance floor in Deep Ellum'}
+          ]},
+          {label:'Saturday',emoji:'☀️',slots:[
+            {time:'10:00 AM',spot:'Brunch at The Henry',id:18,note:'Aesthetic heaven — order the ahi poke bowl'},
+            {time:'1:00 PM',spot:'Shopping + Salty Donut',id:29,note:'Design District stroll + artisan donuts'},
+            {time:'3:00 PM',spot:'Mochi at IFKYK',id:343,note:'The cutest dessert spot in town'},
+            {time:'7:00 PM',spot:'Dinner at Nobu Dallas',id:32,note:'Dress up — the black cod is unreal'},
+            {time:'10:00 PM',spot:'Cocktails at Tipsy Alchemist',id:444,note:'Instagram-worthy molecular cocktails'}
+          ]},
+          {label:'Sunday',emoji:'🌅',slots:[
+            {time:'10:00 AM',spot:'Coffee at Hola Café',id:373,note:'Cute cafe + great avocado toast'},
+            {time:'11:30 AM',spot:'Brunch at Toulouse',id:96,note:'French brunch on Knox — champagne vibes'},
+            {time:'2:00 PM',spot:'Wine at Bodega Wine Bar',id:386,note:'Chill Sunday wind-down in Bishop Arts'}
+          ]}
+        ]}
+      ]
+    };
+    const guides = WEEKEND_GUIDES[S.city] || [];
+    const guide = guides.find(g=>g.id===guideId);
+    if(!guide) return;
+    const restaurants = this.getRestaurants();
+    const rMap = {};
+    restaurants.forEach(r=>rMap[r.id]=r);
+
+    const overlay = document.createElement('div');
+    overlay.id = 'weekend-guide-overlay';
+    overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:var(--dark);z-index:999;overflow-y:auto;-webkit-overflow-scrolling:touch';
+    overlay.innerHTML = `
+      <div style="padding:16px 16px 100px;max-width:500px;margin:0 auto">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+          <button onclick="document.getElementById('weekend-guide-overlay').remove()" style="background:none;border:none;color:var(--text3);font-size:22px;cursor:pointer;padding:4px">←</button>
+          <div style="font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase">Weekend Guide</div>
+          <div style="width:30px"></div>
+        </div>
+
+        <div style="text-align:center;margin-bottom:20px">
+          <div style="font-size:36px;margin-bottom:8px">${guide.avatar}</div>
+          <div style="font-size:20px;font-weight:800;color:var(--text);margin-bottom:4px">${guide.title}</div>
+          <div style="font-size:12px;color:var(--text2);margin-bottom:6px">${guide.subtitle}</div>
+          <div style="font-size:11px;color:var(--text3)">Inspired by <b style="color:var(--gold)">${guide.creator}</b> ${guide.handle} on ${guide.platform}</div>
+        </div>
+
+        ${guide.days.map(day=>`
+          <div style="margin-bottom:20px">
+            <div style="font-size:14px;font-weight:800;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:6px">
+              <span style="font-size:18px">${day.emoji}</span> ${day.label}
+            </div>
+            ${day.slots.map(slot=>{
+              const r = slot.id ? rMap[slot.id] : null;
+              return `<div style="display:flex;gap:10px;margin-bottom:8px;${slot.id?'cursor:pointer':''}" ${slot.id?`onclick="document.getElementById('weekend-guide-overlay').remove();A.openDetail(${slot.id})"`:''}>
+                <div style="min-width:58px;text-align:right">
+                  <div style="font-size:11px;font-weight:700;color:var(--gold)">${slot.time}</div>
+                </div>
+                <div style="flex:1;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;${slot.id?'border-left:3px solid var(--gold)':'border-left:3px solid var(--border)'}">
+                  <div style="font-size:13px;font-weight:700;color:var(--text)">${slot.spot}</div>
+                  <div style="font-size:11px;color:var(--text2);margin-top:3px">${slot.note}</div>
+                  ${r?`<div style="display:flex;align-items:center;gap:6px;margin-top:6px">
+                    <span style="font-size:10px;color:var(--gold);font-weight:700">Score ${r.score}</span>
+                    <span style="font-size:10px;color:var(--text3)">·</span>
+                    <span style="font-size:10px;color:var(--text3)">${r.cuisine}</span>
+                    <span style="font-size:10px;color:var(--text3)">·</span>
+                    <span style="font-size:10px;color:var(--text3)">${r.neighborhood}</span>
+                    <span style="font-size:10px;color:var(--text3)">·</span>
+                    <span style="font-size:10px;color:var(--text3)">${'$'.repeat(r.price||2)}</span>
+                  </div>`:''}
+                </div>
+              </div>`;
+            }).join('')}
+          </div>
+        `).join('')}
+
+        <div style="text-align:center;margin-top:10px">
+          <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Tap any stop to see full details and book</div>
+          <button onclick="document.getElementById('weekend-guide-overlay').remove()" style="background:var(--gold);color:var(--dark);font-weight:800;font-size:13px;padding:12px 30px;border-radius:10px;border:none;cursor:pointer">Back to Discover</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(overlay);
   },
 
   // -- TRAVEL ------------------------------------------------
