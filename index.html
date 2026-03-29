@@ -1997,12 +1997,11 @@ const TRIPS = {
             <span id="indicator-active-count" style="display:none;background:rgba(76,154,106,.15);color:var(--green);font-size:10px;font-weight:700;padding:1px 7px;border-radius:10px;border:1px solid rgba(76,154,106,.3)"></span>
             <span id="indicator-toggle-arrow" style="margin-left:auto;transition:transform .2s">▾</span>
           </button>
-          <div id="indicator-row" style="display:none;gap:5px;overflow-x:auto;scrollbar-width:none;padding:0 0 6px;-webkit-overflow-scrolling:touch">
+          <div id="indicator-row" style="display:none;flex-wrap:wrap;gap:5px;padding:0 0 6px">
             <button class="ind-pill" id="ind-vegetarian" onclick="A.toggleIndicator('vegetarian',this)">🌱 Veg-Friendly</button>
             <button class="ind-pill" id="ind-black-owned" onclick="A.toggleIndicator('black-owned',this)">✊ Black-Owned</button>
             <button class="ind-pill" id="ind-women-owned" onclick="A.toggleIndicator('women-owned',this)">👩 Women-Owned</button>
-            <button class="ind-pill" id="ind-lgbtq-friendly" onclick="A.toggleIndicator('lgbtq-friendly',this)">🏳️‍🌈 LGBTQ+ Friendly</button>
-            <button class="ind-pill" id="ind-viral" onclick="A.toggleIndicator('viral',this)">📱 Influencer</button>
+            <button class="ind-pill" id="ind-lgbtq-friendly" onclick="A.toggleIndicator('lgbtq-friendly',this)">🏳️‍🌈 LGBT</button>
             <button class="ind-pill" id="ind-hole-in-the-wall" onclick="A.toggleIndicator('hole-in-the-wall',this)">🕳️ Hole-in-Wall</button>
             <button class="ind-pill" id="ind-halal" onclick="A.toggleIndicator('halal',this)">☪️ Halal</button>
             <button class="ind-pill" id="ind-dive-bar" onclick="A.toggleIndicator('dive-bar',this)">🍺 Dive Bar</button>
@@ -3487,7 +3486,7 @@ const FILTERS = [
   {id:'live-music',label:'Live Music',emoji:'🎵'},
   {id:'sports',label:'Sports Bar',emoji:'🏈'},
   {id:'celebrations',label:'Celebrations',emoji:'🎂'},
-  {id:'viral',label:'Viral/Trending',emoji:'📱'},
+  {id:'viral',label:'Viral/Influencer',emoji:'📱'},
   {id:'hotel',label:'Hotel Bar',emoji:'🏨'},
   {id:'exclusive',label:'Exclusive',emoji:'🔒'},
   {id:'awards',label:'Awards',emoji:'🏆'},
