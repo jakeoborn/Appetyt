@@ -4891,12 +4891,15 @@ const A = {
     S.searchQ=document.getElementById('search').value.toLowerCase().trim();
     const cb=document.getElementById('search-clear');if(cb)cb.style.display=S.searchQ?'block':'none';
     this.renderHome();
-    // If exactly 1 result, auto-open its detail card
+    // Auto-open only if search is an exact or near-exact restaurant name match
     if(S.searchQ.length>2){
       const all=this.getRestaurants();
       const matches=this.filterRestaurants(all);
-      if(matches.length===1){
-        setTimeout(()=>this.openDetail(matches[0].id),150);
+      const norm=s=>s.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,' ').trim();
+      const q=norm(S.searchQ);
+      const exactMatch=matches.find(r=>norm(r.name)===q);
+      if(exactMatch){
+        setTimeout(()=>this.openDetail(exactMatch.id),150);
       }
     }
   },
@@ -4915,10 +4918,21 @@ const A = {
       // Hide closed restaurants
       if((r.indicators||[]).includes('closed')) return false;
       if(S.searchQ){
-        const hay=[r.name,r.cuisine,r.neighborhood,r.description,...(r.tags||[])].join(' ').toLowerCase();
-        // Normalize haystack for common spelling variations (e.g. "Beverly" matches "Beverley")
-        const normalizeSearch = (s) => s.replace(/eley/g,'ley').replace(/ey/g,'y').replace(/ae/g,'e');
-        if(!hay.includes(S.searchQ) && !normalizeSearch(hay).includes(normalizeSearch(S.searchQ))) return false;
+        const hay=[r.name,r.cuisine,r.neighborhood,r.description,...(r.tags||[]),...(r.dishes||[])].join(' ').toLowerCase();
+        // Normalize: strip apostrophes, accents, punctuation for fuzzy matching
+        const norm=s=>s.replace(/[\u2019'`]/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
+        const nHay=norm(hay);
+        const nQ=norm(S.searchQ);
+        // Direct match or normalized match
+        if(!hay.includes(S.searchQ)&&!nHay.includes(nQ)){
+          // Try matching each search word individually (all must match)
+          const words=nQ.split(' ').filter(w=>w.length>1);
+          const allWordsMatch=words.length>1&&words.every(w=>nHay.includes(w));
+          // Levenshtein-lite: allow 1 char off per word (for words >= 4 chars)
+          const fuzzyWord=(w,h)=>{if(h.includes(w))return true;if(w.length<4)return false;for(let i=0;i<w.length;i++){const v=w.slice(0,i)+w.slice(i+1);if(h.includes(v))return true;}for(let i=0;i<w.length-1;i++){const v=w.slice(0,i)+w[i+1]+w[i]+w.slice(i+2);if(h.includes(v))return true;}return false;};
+          const fuzzyMatch=words.length>=1&&words.every(w=>fuzzyWord(w,nHay));
+          if(!allWordsMatch&&!fuzzyMatch) return false;
+        }
       }
       if(S.combo){
         const tags=(r.tags||[]).map(t=>t.toLowerCase().replace(/\s+/g,'-').replace(/'/g,''));
