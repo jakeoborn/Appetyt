@@ -1,5 +1,10 @@
 node_modules/
 dist/
-ios/
 android/
 .capacitor/
+
+# iOS - track project config, ignore build artifacts
+ios/App/Pods/
+ios/App/App/public/
+ios/App/build/
+ios/DerivedData/
