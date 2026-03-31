@@ -3822,18 +3822,19 @@ const A = {
       }
     }
     if(t==='home') this.renderHome();
-    if(t==='lists') this.renderLists();
+    if(t==='top50') this.renderTop50();
+    if(t==='lists'){this.renderLists();setTimeout(()=>this.listsSub('lists'),50);}
     if(t==='upcoming'){ this.tab('local'); return; }
     if(t==='upcoming_direct') setTimeout(()=>this.renderUpcoming(),50);
     if(t==='drops'){renderDrops();}
     if(t==='trips') this.renderTrips();
     if(t==='discover') this.renderDiscover();
+    if(t==='travel') this.travelSub(S.travelSub||'plan');
     if(t==='malls') this.renderMalls();
     if(t==='hotels') this.renderHotels();
     if(t==='local'){this.renderLocal();}
     if(t==='feed') this.renderFeed();
     if(t==='bills') this.renderBills();
-    if(t==='lists'){this.renderLists();setTimeout(()=>this.listsSub('lists'),50);}
     if(t==='profile'){this.tab('lists');return;}
     // Reset scroll position on the active view
     const activeView=document.getElementById(t+'-view');
