@@ -2949,7 +2949,223 @@ const HOTEL_DATA = {
     }
   ]
 ,
-  'los angeles': [{"id":1,"tier":"Ultra Luxury","tierEmoji":"👑","name":"The Beverly Hills Hotel","tagline":"The Pink Palace. Hollywood's Living Room.","neighborhood":"Beverly Hills","address":"9641 Sunset Blvd, Beverly Hills CA 90210","lat":34.0816,"lng":-118.4138,"instagram":"@bevhillshotel","website":"https://www.dorchestercollection.com/beverly-hills-hotel","priceRange":"$800-$3,000+/night","score":98,"awards":"Forbes Five-Star | Condé Nast Gold List","about":"The iconic Pink Palace since 1912. Where Old Hollywood meets modern luxury — the Polo Lounge is LA's ultimate power breakfast spot. Bungalows hidden among 12 acres of tropical gardens.","highlights":[{"icon":"🍽","label":"The Polo Lounge","note":"LA's most famous power dining room"},{"icon":"🏊","label":"Pool & Cabanas","note":"The most photographed pool in Hollywood"},{"icon":"🌴","label":"Private Bungalows","note":"Legendary garden bungalows — Marilyn Monroe's favorite"}],"insiderTips":["Request Bungalow 5 — Marilyn Monroe's favorite","The Polo Lounge patio booth is the power seat","Sunday brunch poolside is peak LA"],"bestFor":["Special Occasion","Celebrity Spotting","Honeymoon","Power Breakfast"]},{"id":2,"tier":"Ultra Luxury","tierEmoji":"👑","name":"Hotel Bel-Air","tagline":"A Swan Lake Sanctuary in Stone Canyon.","neighborhood":"Bel-Air","address":"701 Stone Canyon Rd, Los Angeles CA 90077","lat":34.0793,"lng":-118.4471,"instagram":"@hotelbelair","website":"https://www.dorchestercollection.com/hotel-bel-air","priceRange":"$700-$2,500+/night","score":97,"awards":"Forbes Five-Star | AAA Five Diamond","about":"Hidden in a lush canyon with swan-filled gardens and absolute privacy. Wolfgang Puck's restaurant on-site. The most serene luxury hotel in Los Angeles.","highlights":[{"icon":"🦢","label":"Swan Lake","note":"Iconic swan-filled gardens and walking paths"},{"icon":"🍽","label":"Wolfgang Puck Restaurant","note":"Fine dining by the master himself"},{"icon":"💆","label":"La Prairie Spa","note":"World-class treatments in garden suites"}],"insiderTips":["Request a suite overlooking the gardens","Breakfast on the terrace is the most peaceful meal in LA","The hotel is dog-friendly — even the swans are used to it"],"bestFor":["Privacy","Honeymoon","Anniversary","Ultimate Splurge"]},{"id":3,"tier":"Luxury","tierEmoji":"🏨","name":"Chateau Marmont","tagline":"Where Hollywood Goes to Misbehave.","neighborhood":"West Hollywood","address":"8221 Sunset Blvd, Los Angeles CA 90046","lat":34.0981,"lng":-118.3668,"instagram":"@chateaumarmont","website":"https://www.chateaumarmont.com","priceRange":"$500-$1,500+/night","score":95,"awards":"","about":"The most storied hotel in Hollywood history. A Gothic castle on Sunset Boulevard where every room has witnessed rock-and-roll legend. Now members-only under André Balazs.","highlights":[{"icon":"🎬","label":"Hollywood History","note":"Where Led Zeppelin, Jim Morrison, and every rock star stayed"},{"icon":"🏊","label":"Pool & Garden","note":"The most exclusive pool scene in LA"},{"icon":"🍽","label":"Bar Marmont","note":"Celebrity-spotting central"}],"insiderTips":["Now members-only — you must be invited or referred","The bungalows are the real experience, not the tower rooms","Bar Marmont terrace is magical at sunset"],"bestFor":["Celebrity","Cool Factor","Rock & Roll History"]},{"id":4,"tier":"Luxury","tierEmoji":"🏨","name":"Shutters on the Beach","tagline":"Barefoot Luxury on Santa Monica Beach.","neighborhood":"Santa Monica","address":"1 Pico Blvd, Santa Monica CA 90405","lat":34.0016,"lng":-118.4921,"instagram":"@shuttersonthebeach","website":"https://www.shuttersonthebeach.com","priceRange":"$500-$1,200+/night","score":93,"awards":"Condé Nast Readers' Choice","about":"The only luxury hotel directly on Santa Monica beach. Cape Cod-meets-California design with ocean views from every room. One Santa Monica serves farm-to-table California cuisine.","highlights":[{"icon":"🏖","label":"Beachfront","note":"Steps from the sand — the only luxury beachfront in LA"},{"icon":"🍽","label":"One Santa Monica","note":"Farm-to-table California cuisine with ocean views"},{"icon":"📚","label":"Living Room Library","note":"Curated art collection and cozy fireside seating"}],"insiderTips":["Request an ocean-facing room on floors 3+","Walk south on the beach path to Venice for sunset","Sunday brunch on the terrace is dreamy"],"bestFor":["Beach Vacation","Romantic Getaway","Family"]},{"id":5,"tier":"Boutique","tierEmoji":"🎨","name":"The Line LA","tagline":"K-Town Cool. A Koreatown Landmark Reimagined.","neighborhood":"Koreatown","address":"3515 Wilshire Blvd, Los Angeles CA 90010","lat":34.0617,"lng":-118.3101,"instagram":"@thelinehotel","website":"https://www.thelinehotel.com/la","priceRange":"$200-$500/night","score":88,"awards":"","about":"A reimagined 1960s hotel in the heart of Koreatown. Roy Choi's Openaire restaurant, a greenhouse rooftop, and the best access to LA's most exciting food neighborhood.","highlights":[{"icon":"🍽","label":"Openaire","note":"Roy Choi's greenhouse restaurant on the rooftop"},{"icon":"🏊","label":"Rooftop Pool","note":"Pool with Downtown LA skyline views"},{"icon":"📍","label":"Koreatown Access","note":"Walk to the best Korean BBQ in America"}],"insiderTips":["Use the hotel as a base to explore Koreatown's 24-hour food scene","The POT at The Line by Roy Choi is excellent Korean hot pot","Rooftop pool at sunset is magical"],"bestFor":["Cool Factor","Foodie","Budget Luxury","Koreatown Access"]}]
+  'los angeles': [{"id":1,"tier":"Ultra Luxury","tierEmoji":"👑","name":"The Beverly Hills Hotel","tagline":"The Pink Palace. Hollywood's Living Room.","neighborhood":"Beverly Hills","address":"9641 Sunset Blvd, Beverly Hills CA 90210","lat":34.0816,"lng":-118.4138,"instagram":"@bevhillshotel","website":"https://www.dorchestercollection.com/beverly-hills-hotel","priceRange":"$800-$3,000+/night","score":98,"awards":"Forbes Five-Star | Condé Nast Gold List","about":"The iconic Pink Palace since 1912. Where Old Hollywood meets modern luxury — the Polo Lounge is LA's ultimate power breakfast spot. Bungalows hidden among 12 acres of tropical gardens.","highlights":[{"icon":"🍽","label":"The Polo Lounge","note":"LA's most famous power dining room"},{"icon":"🏊","label":"Pool & Cabanas","note":"The most photographed pool in Hollywood"},{"icon":"🌴","label":"Private Bungalows","note":"Legendary garden bungalows — Marilyn Monroe's favorite"}],"insiderTips":["Request Bungalow 5 — Marilyn Monroe's favorite","The Polo Lounge patio booth is the power seat","Sunday brunch poolside is peak LA"],"bestFor":["Special Occasion","Celebrity Spotting","Honeymoon","Power Breakfast"]},{"id":2,"tier":"Ultra Luxury","tierEmoji":"👑","name":"Hotel Bel-Air","tagline":"A Swan Lake Sanctuary in Stone Canyon.","neighborhood":"Bel-Air","address":"701 Stone Canyon Rd, Los Angeles CA 90077","lat":34.0793,"lng":-118.4471,"instagram":"@hotelbelair","website":"https://www.dorchestercollection.com/hotel-bel-air","priceRange":"$700-$2,500+/night","score":97,"awards":"Forbes Five-Star | AAA Five Diamond","about":"Hidden in a lush canyon with swan-filled gardens and absolute privacy. Wolfgang Puck's restaurant on-site. The most serene luxury hotel in Los Angeles.","highlights":[{"icon":"🦢","label":"Swan Lake","note":"Iconic swan-filled gardens and walking paths"},{"icon":"🍽","label":"Wolfgang Puck Restaurant","note":"Fine dining by the master himself"},{"icon":"💆","label":"La Prairie Spa","note":"World-class treatments in garden suites"}],"insiderTips":["Request a suite overlooking the gardens","Breakfast on the terrace is the most peaceful meal in LA","The hotel is dog-friendly — even the swans are used to it"],"bestFor":["Privacy","Honeymoon","Anniversary","Ultimate Splurge"]},{"id":3,"tier":"Luxury","tierEmoji":"🏨","name":"Chateau Marmont","tagline":"Where Hollywood Goes to Misbehave.","neighborhood":"West Hollywood","address":"8221 Sunset Blvd, Los Angeles CA 90046","lat":34.0981,"lng":-118.3668,"instagram":"@chateaumarmont","website":"https://www.chateaumarmont.com","priceRange":"$500-$1,500+/night","score":95,"awards":"","about":"The most storied hotel in Hollywood history. A Gothic castle on Sunset Boulevard where every room has witnessed rock-and-roll legend. Now members-only under André Balazs.","highlights":[{"icon":"🎬","label":"Hollywood History","note":"Where Led Zeppelin, Jim Morrison, and every rock star stayed"},{"icon":"🏊","label":"Pool & Garden","note":"The most exclusive pool scene in LA"},{"icon":"🍽","label":"Bar Marmont","note":"Celebrity-spotting central"}],"insiderTips":["Now members-only — you must be invited or referred","The bungalows are the real experience, not the tower rooms","Bar Marmont terrace is magical at sunset"],"bestFor":["Celebrity","Cool Factor","Rock & Roll History"]},{"id":4,"tier":"Luxury","tierEmoji":"🏨","name":"Shutters on the Beach","tagline":"Barefoot Luxury on Santa Monica Beach.","neighborhood":"Santa Monica","address":"1 Pico Blvd, Santa Monica CA 90405","lat":34.0016,"lng":-118.4921,"instagram":"@shuttersonthebeach","website":"https://www.shuttersonthebeach.com","priceRange":"$500-$1,200+/night","score":93,"awards":"Condé Nast Readers' Choice","about":"The only luxury hotel directly on Santa Monica beach. Cape Cod-meets-California design with ocean views from every room. One Santa Monica serves farm-to-table California cuisine.","highlights":[{"icon":"🏖","label":"Beachfront","note":"Steps from the sand — the only luxury beachfront in LA"},{"icon":"🍽","label":"One Santa Monica","note":"Farm-to-table California cuisine with ocean views"},{"icon":"📚","label":"Living Room Library","note":"Curated art collection and cozy fireside seating"}],"insiderTips":["Request an ocean-facing room on floors 3+","Walk south on the beach path to Venice for sunset","Sunday brunch on the terrace is dreamy"],"bestFor":["Beach Vacation","Romantic Getaway","Family"]},{"id":5,"tier":"Boutique","tierEmoji":"🎨","name":"The Line LA","tagline":"K-Town Cool. A Koreatown Landmark Reimagined.","neighborhood":"Koreatown","address":"3515 Wilshire Blvd, Los Angeles CA 90010","lat":34.0617,"lng":-118.3101,"instagram":"@thelinehotel","website":"https://www.thelinehotel.com/la","priceRange":"$200-$500/night","score":88,"awards":"","about":"A reimagined 1960s hotel in the heart of Koreatown. Roy Choi's Openaire restaurant, a greenhouse rooftop, and the best access to LA's most exciting food neighborhood.","highlights":[{"icon":"🍽","label":"Openaire","note":"Roy Choi's greenhouse restaurant on the rooftop"},{"icon":"🏊","label":"Rooftop Pool","note":"Pool with Downtown LA skyline views"},{"icon":"📍","label":"Koreatown Access","note":"Walk to the best Korean BBQ in America"}],"insiderTips":["Use the hotel as a base to explore Koreatown's 24-hour food scene","The POT at The Line by Roy Choi is excellent Korean hot pot","Rooftop pool at sunset is magical"],"bestFor":["Cool Factor","Foodie","Budget Luxury","Koreatown Access"]}],
+  chicago: [
+    {
+      id: 1, tier: "Ultra Luxury", tierEmoji: "👑",
+      name: "The Peninsula Chicago",
+      tagline: "No. 1 Hotel in Illinois. Far Eastern Elegance.",
+      neighborhood: "Magnificent Mile",
+      address: "108 E Superior St, Chicago IL 60611",
+      lat: 41.8964, lng: -87.6245,
+      instagram: "@thepeninsulachi",
+      website: "https://www.peninsula.com/en/chicago/5-star-luxury-hotel-downtown-chicago",
+      priceRange: "$600-$1,500+/night",
+      score: 99,
+      awards: "No. 1 Hotel in Illinois -- US News 2025 | Forbes Five-Star Every Year Since Opening | AAA Five Diamond",
+      about: "The Peninsula Chicago combines Far Eastern graciousness with Midwestern hospitality on the Magnificent Mile. 289 rooms renovated in 2024 with in-room technology panels, a rooftop terrace with skyline views, the acclaimed Pierrot Gourmet cafe, and Shanghai Terrace for elevated Chinese dining. The staff-to-guest ratio and attention to detail are unmatched in Chicago.",
+      highlights: [
+        {icon:"🍽", label:"Shanghai Terrace", note:"Refined Chinese cuisine with a stunning outdoor terrace -- one of Chicago finest dining rooms"},
+        {icon:"🏊", label:"Rooftop Pool & Sun Terrace", note:"Indoor pool and outdoor sun deck on the 19th floor with skyline views"},
+        {icon:"💆", label:"Peninsula Spa", note:"Full-service spa with ESPA treatments across two floors"},
+        {icon:"🚗", label:"Peninsula Fleet", note:"Complimentary Rolls-Royce house car service within downtown"},
+        {icon:"📍", label:"Magnificent Mile", note:"Steps from luxury shopping, Water Tower Place, and Oak Street Beach"}
+      ],
+      insiderTips: [
+        "Shanghai Terrace outdoor dining in summer is one of Chicago best-kept secrets",
+        "The Rolls-Royce house car will take you anywhere downtown -- just ask the doorman",
+        "Afternoon tea at The Lobby is a refined Chicago tradition -- book ahead on weekends"
+      ],
+      bestFor: ["Special Occasion","Honeymoon","Anniversary","Ultimate Luxury","International Travelers"]
+    },
+    {
+      id: 2, tier: "Ultra Luxury", tierEmoji: "👑",
+      name: "Waldorf Astoria Chicago",
+      tagline: "Gold Coast French Chateau. Quiet Grandeur.",
+      neighborhood: "Gold Coast",
+      address: "11 E Walton St, Chicago IL 60611",
+      lat: 41.8987, lng: -87.6265,
+      instagram: "@waldorfchicago",
+      website: "https://www.hilton.com/en/hotels/chiwawa-waldorf-astoria-chicago/",
+      priceRange: "$500-$1,200+/night",
+      score: 97,
+      awards: "Forbes Five-Star | AAA Five Diamond | Spa renovated 2026",
+      about: "French-inspired elegance in the Gold Coast, one block from the Magnificent Mile. 214 rooms and suites with marble bathrooms, a private courtyard reminiscent of a Parisian chateau, and the award-winning spa freshly renovated in early 2026. Brass Tack restaurant serves refined American cuisine. The Waldorf is quieter and more residential than its Michigan Avenue neighbors -- a sophisticated retreat.",
+      highlights: [
+        {icon:"💆", label:"Waldorf Spa", note:"Freshly renovated 2026 -- award-winning treatments in a serene, nature-inspired setting"},
+        {icon:"🍽", label:"Brass Tack", note:"On-site American restaurant -- breakfast, brunch, lunch, dinner"},
+        {icon:"🏛", label:"French Courtyard", note:"Private courtyard entrance evokes a Parisian chateau -- stunning arrival"},
+        {icon:"🛍", label:"Oak Street", note:"Steps from Oak Street luxury boutiques -- Hermes, Prada, Chanel"},
+        {icon:"📍", label:"Gold Coast", note:"One block from Mag Mile, walk to Lake Shore Drive and Oak Street Beach"}
+      ],
+      insiderTips: [
+        "The spa was fully renovated in early 2026 -- book treatments for the freshest experience in Chicago",
+        "Request a courtyard-facing room for the quietest stay",
+        "Oak Street boutiques are a 2-minute walk -- better luxury shopping than the Mag Mile itself"
+      ],
+      bestFor: ["Quiet Luxury","Spa Weekend","Couples","Gold Coast Shopping","Forbes Travelers"]
+    },
+    {
+      id: 3, tier: "Ultra Luxury", tierEmoji: "👑",
+      name: "The Langham, Chicago",
+      tagline: "Mies van der Rohe Tower. River Views. Michelin Key.",
+      neighborhood: "River North",
+      address: "330 N Wabash Ave, Chicago IL 60611",
+      lat: 41.8889, lng: -87.6265,
+      instagram: "@langham_chicago",
+      website: "https://www.langhamhotels.com/en/the-langham/chicago/",
+      priceRange: "$600-$1,400+/night",
+      score: 96,
+      awards: "Forbes Five-Star | Michelin Two Key Award | Mies van der Rohe landmark",
+      about: "316 luxurious rooms occupying the first 13 floors of a landmark 52-story Mies van der Rohe tower on the Chicago River. Majestic views of the skyline, river, and Lake Michigan. Chuan Spa practices Traditional Chinese Medicine, and Travelle restaurant offers seasonal American fare. The Langham Afternoon Tea at Pavilion is a signature experience.",
+      highlights: [
+        {icon:"🏛", label:"Mies van der Rohe Building", note:"AIA IBM Plaza -- one of Chicago most important modernist buildings"},
+        {icon:"💆", label:"Chuan Spa", note:"Traditional Chinese Medicine-inspired treatments -- deeply restorative"},
+        {icon:"☕", label:"Afternoon Tea", note:"Langham signature afternoon tea at Pavilion -- a refined Chicago tradition"},
+        {icon:"🌊", label:"River Views", note:"Rooms face the Chicago River, skyline, or Lake Michigan"},
+        {icon:"📍", label:"River North", note:"Walk to Magnificent Mile, Art Institute, Millennium Park"}
+      ],
+      insiderTips: [
+        "River-facing rooms have the best views -- request a high floor for the full panorama",
+        "Chuan Spa is one of the only TCM-based hotel spas in the US -- the Five Elements treatments are exceptional",
+        "Afternoon tea sells out on weekends -- book 2+ weeks ahead"
+      ],
+      bestFor: ["Architecture Lovers","River Views","Spa Experience","Afternoon Tea","Luxury Business Travel"]
+    },
+    {
+      id: 4, tier: "Luxury", tierEmoji: "⭐",
+      name: "Soho House Chicago",
+      tagline: "Fulton Market Members Club & Hotel. 80ft Rooftop Pool.",
+      neighborhood: "Fulton Market / West Loop",
+      address: "113-125 N Green St, Chicago IL 60607",
+      lat: 41.8839, lng: -87.6484,
+      instagram: "@sohohousechicago",
+      website: "https://www.sohohouse.com/en-us/houses/soho-house-chicago",
+      priceRange: "$250-$600/night",
+      score: 93,
+      awards: "Michelin Guide Hotel | 108,000 sq ft in a 1907 belting factory",
+      about: "One of the largest Soho Houses in the world -- 108,000 square feet inside a beautifully restored 1907 industrial building in Fulton Market. 40 bedrooms open to the public, with hotel guests gaining full member access including the 80ft rooftop pool, screening room, gym, spa, and members-only floors. Two public restaurants and The Allis lounge on the ground floor.",
+      highlights: [
+        {icon:"🏊", label:"80ft Rooftop Pool", note:"Heated rooftop pool with Fulton Market views -- hotel guests get member access"},
+        {icon:"🎬", label:"Screening Room", note:"Private cinema for members and hotel guests"},
+        {icon:"🍽", label:"Two Restaurants", note:"Ground floor dining open to the public -- The Allis lounge is a local hangout"},
+        {icon:"💆", label:"Cowshed Spa & Gym", note:"Full spa and gym with Cowshed treatments"},
+        {icon:"📍", label:"Fulton Market", note:"Heart of Chicago hottest dining neighborhood -- Girl & the Goat, Au Cheval steps away"}
+      ],
+      insiderTips: [
+        "Book a hotel room to get full member access -- the rooftop pool alone is worth it",
+        "The Allis ground-floor lounge is open to the public and great for coffee or cocktails",
+        "Fulton Market location means you are steps from Chicago best restaurants"
+      ],
+      bestFor: ["Creative Professionals","Fulton Market Dining","Pool Scene","Design Lovers","Weekend Escape"]
+    },
+    {
+      id: 5, tier: "Luxury", tierEmoji: "⭐",
+      name: "Chicago Athletic Association",
+      tagline: "1893 Venetian-Gothic Icon. Michelin Key. Shake Shack Room Service.",
+      neighborhood: "The Loop / Millennium Park",
+      address: "12 S Michigan Ave, Chicago IL 60603",
+      lat: 41.8818, lng: -87.6246,
+      instagram: "@chicagoathletichotel",
+      website: "https://www.chicagoathletichotel.com",
+      priceRange: "$250-$600/night",
+      score: 94,
+      awards: "Michelin Key Award | Hyatt Unbound Collection | 1893 Venetian-Gothic landmark",
+      about: "Originally an elite men's sporting club built in 1893, this Venetian-Gothic landmark on Michigan Avenue was restored into a 240-room boutique hotel directly across from Millennium Park. Michelin Key awarded for its authentic character. Cindy's rooftop bar with Grant Park views, a Topgolf Swing Suite, and the only hotel in the world offering Shake Shack room service.",
+      highlights: [
+        {icon:"🍸", label:"Cindy's Rooftop", note:"Stunning rooftop bar overlooking Millennium Park and Grant Park -- one of Chicago best"},
+        {icon:"🍔", label:"Shake Shack Room Service", note:"The only hotel in the world with Shake Shack room service"},
+        {icon:"🏛", label:"1893 Architecture", note:"Venetian-Gothic landmark with original details throughout -- a museum experience"},
+        {icon:"🎮", label:"Game Room & Topgolf", note:"Bocce, shuffleboard, billiards, and Topgolf Swing Suite"},
+        {icon:"📍", label:"Millennium Park", note:"Directly across Michigan Ave from The Bean, Crown Fountain, and the Art Institute"}
+      ],
+      insiderTips: [
+        "Cindy's rooftop is open to the public but fills fast -- arrive before 5PM on weekdays for a table",
+        "Request a park-facing room for views of Millennium Park and the lakefront",
+        "Free bike rentals for guests -- perfect for the Lakefront Trail"
+      ],
+      bestFor: ["Millennium Park","Art & Culture","Rooftop Drinks","Boutique Experience","Architecture Lovers"]
+    },
+    {
+      id: 6, tier: "Luxury", tierEmoji: "⭐",
+      name: "The Drake",
+      tagline: "Chicago Grand Dame Since 1920. Gold Coast Icon.",
+      neighborhood: "Gold Coast / Magnificent Mile",
+      address: "140 E Walton Pl, Chicago IL 60611",
+      lat: 41.8997, lng: -87.6228,
+      instagram: "@thedrakehotel",
+      website: "https://www.thedrakehotel.com",
+      priceRange: "$160-$450/night",
+      score: 88,
+      awards: "National Register of Historic Places | A Hilton Hotel | Chicago landmark since 1920",
+      about: "Chicago's grand dame, presiding over the north end of the Magnificent Mile since 1920. 535 individually furnished rooms in an Italian Renaissance-style building overlooking Oak Street Beach and Lake Michigan. Palm Court afternoon tea, Coq d'Or lounge (one of Chicago oldest bars), and Cafe on Oak. Every US president since Coolidge has stayed here.",
+      highlights: [
+        {icon:"☕", label:"Palm Court Afternoon Tea", note:"Elegant afternoon tea in a grand setting -- a Chicago tradition since the 1920s"},
+        {icon:"🍸", label:"Coq d'Or Lounge", note:"One of Chicago oldest bars -- opened the day after Prohibition ended"},
+        {icon:"🌊", label:"Lake Michigan Views", note:"Lake-facing rooms overlook Oak Street Beach and the Gold Coast shoreline"},
+        {icon:"🏛", label:"Historic Grandeur", note:"Italian Renaissance architecture -- every president since Coolidge has stayed"},
+        {icon:"📍", label:"Gold Coast", note:"North end of the Mag Mile, steps from Oak Street Beach and Rush Street"}
+      ],
+      insiderTips: [
+        "Lake-facing rooms are the highlight -- worth requesting even if it costs more",
+        "Coq d'Or is a genuine Chicago institution -- perfect for a pre-dinner Old Fashioned",
+        "No Urban Destination Fee -- a rarity for major Chicago hotels"
+      ],
+      bestFor: ["Historic Experience","Gold Coast","Budget Luxury","First-Time Chicago","Classic Elegance"]
+    },
+    {
+      id: 7, tier: "Boutique", tierEmoji: "🌟",
+      name: "Pendry Chicago",
+      tagline: "Art Deco Carbide & Carbon Building. Loop Landmark.",
+      neighborhood: "The Loop",
+      address: "230 N Michigan Ave, Chicago IL 60601",
+      lat: 41.8862, lng: -87.6246,
+      instagram: "@pendrychi",
+      website: "https://www.pendry.com/chicago/",
+      priceRange: "$250-$550/night",
+      score: 91,
+      awards: "Set in the 1929 Carbide & Carbon Building | Art Deco landmark",
+      about: "364 rooms and 81 suites inside the iconic 1929 Art Deco Carbide & Carbon Building -- the dark green terra cotta tower with gold leaf accents is one of Chicago most photographed buildings. Venteux serves refined French cuisine, and Chateau Carbide rooftop offers private event space with skyline views. The Art Deco details throughout the lobby and corridors are extraordinary.",
+      highlights: [
+        {icon:"🏛", label:"Carbide & Carbon Building", note:"1929 Art Deco landmark -- dark green terra cotta with gold leaf. Iconic Chicago architecture."},
+        {icon:"🍽", label:"Venteux", note:"French brasserie on-site -- brunch, lunch, dinner with Art Deco ambiance"},
+        {icon:"🎨", label:"Art Deco Interiors", note:"Original architectural details throughout -- the lobby is museum-quality"},
+        {icon:"📍", label:"The Loop", note:"Steps from Millennium Park, Art Institute, Chicago Riverwalk, and Michigan Ave shopping"}
+      ],
+      insiderTips: [
+        "The building exterior is best photographed from across the river -- the gold leaf catches afternoon light",
+        "Venteux brunch is excellent and less crowded than the hotel restaurants on the Mag Mile",
+        "Great Loop base -- walk to Millennium Park, Art Institute, and Riverwalk in minutes"
+      ],
+      bestFor: ["Art Deco Lovers","Loop Location","Design Lovers","French Dining","Couples"]
+    },
+    {
+      id: 8, tier: "Budget", tierEmoji: "💰",
+      name: "Freehand Chicago",
+      tagline: "Art Deco Boutique Hostel. Broken Shaker Cocktails. Best Value.",
+      neighborhood: "River North / Magnificent Mile",
+      address: "19 E Ohio St, Chicago IL 60611",
+      lat: 41.8924, lng: -87.6268,
+      instagram: "@freehandhotels",
+      website: "https://freehandhotels.com/chicago/",
+      priceRange: "$60-$250/night",
+      score: 82,
+      awards: "Broken Shaker -- Tales of the Cocktail Best Hotel Bar | Roman & Williams design",
+      about: "A hybrid hotel-hostel in a restored 1927 Art Deco building designed by Roman & Williams, two blocks from Michigan Avenue. Options range from shared bunk rooms to private suites. The Broken Shaker cocktail bar (Tales of the Cocktail Best Hotel Bar winner) and Cafe Integral Nicaraguan coffee make it a destination even for non-guests. The best value accommodation in downtown Chicago.",
+      highlights: [
+        {icon:"🍸", label:"Broken Shaker", note:"Award-winning cocktail bar -- Tales of the Cocktail Best Hotel Bar. Open to the public."},
+        {icon:"☕", label:"Cafe Integral", note:"Nicaraguan gourmet coffee and creative breakfast -- a local favorite"},
+        {icon:"🎨", label:"Roman & Williams Design", note:"Beautifully restored 1927 Art Deco interiors by the NYC design firm"},
+        {icon:"📍", label:"River North", note:"2 blocks from Michigan Ave, 10 min walk to Millennium Park"}
+      ],
+      insiderTips: [
+        "Private rooms are genuinely nice -- not a hostel vibe at all. Suites are 25% off with code SUITELIFE",
+        "Broken Shaker is worth visiting even if you stay elsewhere -- one of Chicago best bars",
+        "Walk to Water Tower Place, Magnificent Mile, and River North restaurants in minutes"
+      ],
+      bestFor: ["Budget Travel","Solo Travelers","Young Professionals","Groups","Cocktail Lovers"]
+    }
+  ]
 };
 
 
@@ -3158,7 +3374,184 @@ const MALL_DATA = {
     }
   ]
 ,
-  'los angeles': [{"id":1,"name":"Rodeo Drive & Beverly Hills","tagline":"The Most Famous Shopping Street in the World.","tier":"Ultra Luxury","neighborhood":"Beverly Hills","address":"300 N Rodeo Dr, Beverly Hills CA 90210","lat":34.0694,"lng":-118.4008,"instagram":"@rikilovesrodeo","hours":"Mon-Sat 10AM-6PM, Sun 12-5PM","parking":"Valet or 2hr free at Beverly Dr parking","score":97,"emoji":"💎","vibe":"Three blocks of the world's most prestigious luxury brands. The flagship Gucci, Louis Vuitton, Cartier, and Harry Winston stores are architectural landmarks.","about":"Rodeo Drive is more than shopping — it's a cultural experience. The 3-block stretch between Wilshire and Santa Monica Blvds features every major luxury house in the world. The street was immortalized in Pretty Woman and remains the global symbol of luxury retail.","anchors":["Louis Vuitton","Gucci","Cartier","Chanel","Harry Winston"],"mustVisit":[{"name":"Louis Vuitton Flagship","note":"Multi-level flagship — one of LV's most important stores globally"},{"name":"Two Rodeo Drive","note":"European-style cobblestone shopping lane with Tiffany and Versace"},{"name":"Via Rodeo","note":"The newer extension with Bvlgari and Jimmy Choo"}],"dining":[{"name":"Spago","type":"Fine Dining","note":"Wolfgang Puck's flagship — 2 blocks away"},{"name":"The Polo Lounge","type":"Power Breakfast","note":"At the Beverly Hills Hotel — 5 min drive"},{"name":"Wally's Beverly Hills","type":"Wine Bar / Cheese","note":"Perfect shopping break — wine, cheese, charcuterie"}],"tips":["Free 2-hour parking at Beverly Dr public garage","Visit on a weekday morning for the best experience","Walk down Two Rodeo Drive for the European cobblestone feel"],"bestFor":["Luxury Shopping","Special Occasion","Tourist Experience","Celebrity Spotting"]},{"id":2,"name":"The Grove","tagline":"LA's Outdoor Lifestyle Center.","tier":"Upscale","neighborhood":"Mid-Wilshire / Fairfax","address":"189 The Grove Dr, Los Angeles CA 90036","lat":34.0719,"lng":-118.3575,"instagram":"@thegrove","hours":"Mon-Thu 10AM-9PM, Fri-Sat 10AM-10PM, Sun 10AM-8PM","parking":"First hour free, then $4/hr","score":92,"emoji":"🛍","vibe":"LA's most popular outdoor shopping center with a dancing fountain, trolley, and the adjacent Original Farmers Market. Where Angelenos actually shop.","about":"The Grove is the anti-mall: an open-air Mediterranean-style lifestyle center that feels like a European piazza. The dancing fountain show runs every hour, a vintage trolley connects to the Original Farmers Market, and it draws 18M visitors annually.","anchors":["Nordstrom","Apple","Anthropologie","Barnes & Noble"],"mustVisit":[{"name":"The Original Farmers Market","note":"Adjacent 1934 landmark — Du-par's pancakes, Loteria Grill tacos"},{"name":"Apple Grove","note":"One of Apple's most beautiful stores"},{"name":"The Grove Theatre","note":"Classic movie theater for premieres"}],"dining":[{"name":"The Original Farmers Market","type":"Food Hall","note":"Since 1934 — Du-par's, Loteria Grill, Bob's Donuts"},{"name":"The Cheesecake Factory","type":"American","note":"The original location that started it all"},{"name":"Umami Burger","type":"Burgers","note":"LA-born gourmet burger chain"}],"tips":["The Original Farmers Market next door is the real gem — locals go there, tourists stay at The Grove","Parking is free the first hour — park on the Farmers Market side for easier access","The trolley to the Farmers Market is free and charming"],"bestFor":["Family","Tourist","Casual Shopping","Farmers Market"]}]
+  'los angeles': [{"id":1,"name":"Rodeo Drive & Beverly Hills","tagline":"The Most Famous Shopping Street in the World.","tier":"Ultra Luxury","neighborhood":"Beverly Hills","address":"300 N Rodeo Dr, Beverly Hills CA 90210","lat":34.0694,"lng":-118.4008,"instagram":"@rikilovesrodeo","hours":"Mon-Sat 10AM-6PM, Sun 12-5PM","parking":"Valet or 2hr free at Beverly Dr parking","score":97,"emoji":"💎","vibe":"Three blocks of the world's most prestigious luxury brands. The flagship Gucci, Louis Vuitton, Cartier, and Harry Winston stores are architectural landmarks.","about":"Rodeo Drive is more than shopping — it's a cultural experience. The 3-block stretch between Wilshire and Santa Monica Blvds features every major luxury house in the world. The street was immortalized in Pretty Woman and remains the global symbol of luxury retail.","anchors":["Louis Vuitton","Gucci","Cartier","Chanel","Harry Winston"],"mustVisit":[{"name":"Louis Vuitton Flagship","note":"Multi-level flagship — one of LV's most important stores globally"},{"name":"Two Rodeo Drive","note":"European-style cobblestone shopping lane with Tiffany and Versace"},{"name":"Via Rodeo","note":"The newer extension with Bvlgari and Jimmy Choo"}],"dining":[{"name":"Spago","type":"Fine Dining","note":"Wolfgang Puck's flagship — 2 blocks away"},{"name":"The Polo Lounge","type":"Power Breakfast","note":"At the Beverly Hills Hotel — 5 min drive"},{"name":"Wally's Beverly Hills","type":"Wine Bar / Cheese","note":"Perfect shopping break — wine, cheese, charcuterie"}],"tips":["Free 2-hour parking at Beverly Dr public garage","Visit on a weekday morning for the best experience","Walk down Two Rodeo Drive for the European cobblestone feel"],"bestFor":["Luxury Shopping","Special Occasion","Tourist Experience","Celebrity Spotting"]},{"id":2,"name":"The Grove","tagline":"LA's Outdoor Lifestyle Center.","tier":"Upscale","neighborhood":"Mid-Wilshire / Fairfax","address":"189 The Grove Dr, Los Angeles CA 90036","lat":34.0719,"lng":-118.3575,"instagram":"@thegrove","hours":"Mon-Thu 10AM-9PM, Fri-Sat 10AM-10PM, Sun 10AM-8PM","parking":"First hour free, then $4/hr","score":92,"emoji":"🛍","vibe":"LA's most popular outdoor shopping center with a dancing fountain, trolley, and the adjacent Original Farmers Market. Where Angelenos actually shop.","about":"The Grove is the anti-mall: an open-air Mediterranean-style lifestyle center that feels like a European piazza. The dancing fountain show runs every hour, a vintage trolley connects to the Original Farmers Market, and it draws 18M visitors annually.","anchors":["Nordstrom","Apple","Anthropologie","Barnes & Noble"],"mustVisit":[{"name":"The Original Farmers Market","note":"Adjacent 1934 landmark — Du-par's pancakes, Loteria Grill tacos"},{"name":"Apple Grove","note":"One of Apple's most beautiful stores"},{"name":"The Grove Theatre","note":"Classic movie theater for premieres"}],"dining":[{"name":"The Original Farmers Market","type":"Food Hall","note":"Since 1934 — Du-par's, Loteria Grill, Bob's Donuts"},{"name":"The Cheesecake Factory","type":"American","note":"The original location that started it all"},{"name":"Umami Burger","type":"Burgers","note":"LA-born gourmet burger chain"}],"tips":["The Original Farmers Market next door is the real gem — locals go there, tourists stay at The Grove","Parking is free the first hour — park on the Farmers Market side for easier access","The trolley to the Farmers Market is free and charming"],"bestFor":["Family","Tourist","Casual Shopping","Farmers Market"]}],
+  chicago: [
+    {
+      id: 1, name: "The Magnificent Mile",
+      tagline: "America's Greatest Shopping Boulevard. 460+ Retailers.",
+      tier: "Luxury", neighborhood: "Near North Side / Streeterville",
+      address: "N Michigan Ave, Chicago IL 60611",
+      lat: 41.8943, lng: -87.6249,
+      instagram: "@themagnificentmile",
+      hours: "Varies by store -- most retailers 10AM-8PM daily",
+      parking: "Garage parking throughout -- $20-40 for 2-3 hours. Street parking very limited.",
+      score: 97, emoji: "🏙",
+      vibe: "13-block stretch of North Michigan Avenue between the Chicago River and Oak Street packed with 460+ retailers, flagship stores, and three vertical shopping centers. Chicago's answer to Fifth Avenue.",
+      about: "The Magnificent Mile is one of the most famous shopping streets in the world -- 13 blocks of North Michigan Avenue lined with luxury flagships, department stores, and three vertical malls (Water Tower Place, 900 North Michigan, Shops at North Bridge). Burberry's US flagship, the world's largest Ralph Lauren store, and the largest Starbucks in the world (Starbucks Reserve Roastery) all call the Mag Mile home. Recent additions include the Harry Potter Shop Chicago and Collars & Co's first retail location.",
+      anchors: ["Nordstrom","Bloomingdale's","Saks Fifth Avenue","Neiman Marcus","Apple"],
+      mustVisit: [
+        {name:"Ralph Lauren Flagship", note:"The world's largest Ralph Lauren store -- 4 floors in a landmark mansion"},
+        {name:"Starbucks Reserve Roastery", note:"The largest Starbucks in the world -- 5 floors, cocktails, immersive coffee experience"},
+        {name:"Burberry US Flagship", note:"Burberry's most important US store -- full range across 3 levels"},
+        {name:"Harry Potter Shop Chicago", note:"Immersive Harry Potter retail experience with only-in-Chicago merchandise"},
+        {name:"Cartier", note:"Full boutique with fine jewelry, watches, and accessories"}
+      ],
+      dining: [
+        {name:"Starbucks Reserve Roastery", type:"Coffee / Cocktails", note:"5-floor immersive experience -- Arriviamo cocktail bar on the top floor"},
+        {name:"Eataly Chicago", type:"Italian Market / Dining", note:"Mario Batali's Italian marketplace -- multiple restaurants, wine bar, cooking classes"},
+        {name:"The Purple Pig", type:"Mediterranean", note:"Michelin Bib Gourmand -- excellent charcuterie and wine on Michigan Ave"},
+        {name:"Signature Room at the 95th", type:"American / Views", note:"360-degree skyline views from the 95th floor of 875 N Michigan"}
+      ],
+      tips: [
+        "Start at Oak Street (north end) and walk south toward the river for the best flow",
+        "The Starbucks Reserve Roastery alone is worth an hour -- the Arriviamo bar serves cocktails",
+        "Weekday mornings are quietest -- Saturday afternoons are extremely crowded",
+        "Use the underground Pedway system to connect buildings in winter",
+        "The holiday lights (Nov-Jan) transform the mile into one of the best holiday experiences in the US"
+      ],
+      bestFor: ["Luxury Shopping","Flagship Stores","Tourist Must-Do","Holiday Lights","Window Shopping"],
+      awards: "One of the most famous shopping streets in the world | 460+ retailers"
+    },
+    {
+      id: 2, name: "Water Tower Place",
+      tagline: "World's First Vertical Mall. Magnificent Mile Anchor.",
+      tier: "Mid-Range", neighborhood: "Magnificent Mile",
+      address: "835 N Michigan Ave, Chicago IL 60611",
+      lat: 41.8979, lng: -87.6238,
+      instagram: "@shopwatertower",
+      hours: "Mon-Thu 11AM-7PM, Fri-Sat 11AM-8PM, Sun 12-6PM",
+      parking: "Garage on-site -- $23 for up to 3 hours, $28 for 6 hours",
+      score: 85, emoji: "🏬",
+      vibe: "Seven-story vertical mall anchoring the Magnificent Mile. A Chicago landmark since 1975 and the world's first vertical shopping center. Currently in transition with a mix of national brands, pop-up experiences, and entertainment.",
+      about: "Water Tower Place opened in 1975 as the world's first vertical mall and remains a Magnificent Mile anchor at 835 N Michigan Ave. Seven floors of retail with American Girl Place, LEGO, Akira, and a rotating lineup of pop-up experiences including FashionBar on Level 3. A Broadway in Chicago theater brings live entertainment. The mall has faced vacancies in recent years but remains a convenient indoor shopping option, especially in Chicago's harsh winters.",
+      anchors: ["American Girl Place","LEGO","Akira","Forever 21"],
+      mustVisit: [
+        {name:"American Girl Place", note:"Multi-floor experience with salon, dining, and doll customization -- a Chicago institution"},
+        {name:"LEGO Store", note:"Interactive build stations, pick-a-brick wall, and Chicago skyline LEGO sets"},
+        {name:"FashionBar Pop-Up", note:"Level 3 rotating pop-up fashion experience with emerging designers"},
+        {name:"Broadway in Chicago Theater", note:"Live Broadway productions inside the mall"}
+      ],
+      dining: [
+        {name:"Foodlife", type:"Food Court", note:"Elevated food court with diverse stations -- a step above typical mall dining"},
+        {name:"M Burger", type:"Burgers", note:"Lettuce Entertain You's casual burger concept -- quick and solid"},
+        {name:"American Girl Cafe", type:"Family Dining", note:"Themed dining experience for kids and families"}
+      ],
+      tips: [
+        "Best for families with kids -- American Girl Place and LEGO are the highlights",
+        "Use this as a winter escape -- connected to Michigan Ave shopping via indoor corridors",
+        "Upper floors have more vacancies -- focus your time on levels 1-4",
+        "Broadway in Chicago shows are a good option for evening entertainment"
+      ],
+      bestFor: ["Families","Winter Shopping","Mag Mile Convenience","Kids Activities","Rainy Day"],
+      awards: "World's First Vertical Mall (1975) | Chicago Landmark"
+    },
+    {
+      id: 3, name: "900 North Michigan Shops",
+      tagline: "Gold Coast Luxury. Bloomingdale's. Aster Hall Food Emporium.",
+      tier: "Luxury", neighborhood: "Gold Coast / Magnificent Mile",
+      address: "900 N Michigan Ave, Chicago IL 60611",
+      lat: 41.8994, lng: -87.6240,
+      instagram: "@900shops",
+      hours: "Mon-Sat 11AM-6PM, Sun 12-6PM",
+      parking: "Garage on-site via Rush Street entrance",
+      score: 91, emoji: "👑",
+      vibe: "Seven levels of upscale retail anchored by Bloomingdale's in the iconic 67-story 900 North Michigan tower. More curated and less crowded than Water Tower Place, with a chef-driven food hall and Topgolf lounge.",
+      about: "900 North Michigan Shops occupies the first seven levels of the iconic 67-story tower at the nexus of the Magnificent Mile and Gold Coast. 450,000 square feet of lifestyle retail anchored by Bloomingdale's, with 70+ retailers including a two-level Gucci, MaxMara, Montblanc, Tesla, Aritzia, and Sur La Table. Aster Hall, a 22,000 sq ft chef-driven food emporium, and a Topgolf Swing Suite round out the experience. More refined and less crowded than Water Tower Place next door.",
+      anchors: ["Bloomingdale's","Gucci","MaxMara","Tesla","Montblanc"],
+      mustVisit: [
+        {name:"Bloomingdale's", note:"Multi-level anchor -- strong designer collections, beauty, and home departments"},
+        {name:"Gucci", note:"Two-level boutique -- one of the largest Gucci stores in the Midwest"},
+        {name:"Aster Hall", note:"22,000 sq ft chef-driven food emporium with handcrafted cocktails"},
+        {name:"Sur La Table", note:"Cooking classes and premium kitchen supplies"},
+        {name:"Topgolf Swing Suite", note:"Simulated golf and sports gaming in a lounge setting"}
+      ],
+      dining: [
+        {name:"Aster Hall", type:"Food Emporium", note:"Chef-driven food hall with multiple stations and a cocktail bar -- elevated casual"},
+        {name:"Bloomingdale's Cafe", type:"American / Light", note:"Quick bites inside Bloomingdale's -- good for a shopping break"}
+      ],
+      tips: [
+        "Aster Hall is the best dining option on the upper Mag Mile -- skip the chains",
+        "Less crowded than Water Tower Place -- better for a relaxed shopping experience",
+        "The Topgolf Swing Suite is a fun group activity, even for non-golfers",
+        "Garage parking via Rush Street is easier than Michigan Ave garages",
+        "Check 900's Vault events for sample sales and exclusive offers at select retailers"
+      ],
+      bestFor: ["Luxury Shopping","Food Hall","Relaxed Browsing","Designer Brands","Date Afternoon"],
+      awards: "Iconic 67-story tower | 70+ luxury and lifestyle retailers"
+    },
+    {
+      id: 4, name: "Wicker Park & Bucktown",
+      tagline: "Indie Boutiques. Vinyl. Vintage. Zero Chains.",
+      tier: "Indie / Eclectic", neighborhood: "Wicker Park / Bucktown",
+      address: "N Milwaukee Ave & N Damen Ave, Chicago IL 60622",
+      lat: 41.9088, lng: -87.6776,
+      instagram: "@wickerparkbucktown",
+      hours: "Varies by store -- most shops 11AM-7PM, later on weekends",
+      parking: "Street parking (metered). Paid lots on Milwaukee Ave.",
+      score: 93, emoji: "🎸",
+      vibe: "Chicago's creative shopping district where six-way intersections and converted warehouses house the best independent boutiques, record stores, vintage shops, and bookstores in the city. The anti-Mag Mile.",
+      about: "Wicker Park and Bucktown form Chicago's premier independent shopping district, centered where Milwaukee, Damen, and North Avenues intersect. Instead of department stores and chains, you'll find Reckless Records, Myopic Books (three floors of used books), Mildblend premium denim, Cynthia Rowley's flagship, and a density of vintage shops (Buffalo Exchange, Crossroads) unmatched anywhere in Chicago. Walk The 606 elevated trail for views connecting Wicker Park to Bucktown, Humboldt Park, and Logan Square.",
+      anchors: ["Reckless Records","Myopic Books","Mildblend","Buffalo Exchange","Aesop"],
+      mustVisit: [
+        {name:"Reckless Records", note:"Legendary secondhand vinyl and CD store -- one of Chicago most iconic shops"},
+        {name:"Myopic Books", note:"Three floors of used books floor-to-ceiling -- one of Chicago oldest bookstores"},
+        {name:"Mildblend Supply Co.", note:"Premium denim experts with in-house repairs and alterations"},
+        {name:"Cynthia Rowley", note:"Chicago-native designer's Bucktown flagship -- dresses, separates, accessories"},
+        {name:"The 606 Trail", note:"Elevated rail-trail connecting four neighborhoods -- walk or bike between shops"}
+      ],
+      dining: [
+        {name:"Big Star", type:"Tacos / Whiskey", note:"Iconic patio, honky-tonk vibes, excellent tacos and bourbon"},
+        {name:"Dove's Luncheonette", type:"Southern / Mexican", note:"Tiny diner with a Texas-meets-Mexico menu and vinyl on the turntable"},
+        {name:"Handlebar", type:"Vegetarian / Brunch", note:"Bike-themed vegetarian spot with outstanding weekend brunch"},
+        {name:"Piece Brewery & Pizzeria", type:"Pizza / Beer", note:"Award-winning New Haven-style pizza with house-brewed beers"}
+      ],
+      tips: [
+        "Start at the Damen/Milwaukee/North intersection and explore outward in any direction",
+        "Walk north on Damen to Armitage Ave for Bucktown's boutiques",
+        "The 606 trail access at Milwaukee and Damen is the best starting point for the elevated walk",
+        "The Indoor Farmers Market at Royal Palms Shuffleboard runs through spring -- great local finds",
+        "Saturday afternoon is the best time to visit -- all shops open, great people-watching"
+      ],
+      bestFor: ["Indie Shopping","Vinyl & Records","Vintage Clothing","Bookstores","Creative Neighborhood"],
+      awards: "Chicago's premier independent retail district | The 606 trail access"
+    },
+    {
+      id: 5, name: "Fulton Market District",
+      tagline: "Meatpacking Turned Michelin Row. Chicago's Hottest Neighborhood.",
+      tier: "Upscale / Experiential", neighborhood: "West Loop / Fulton Market",
+      address: "Fulton Market St & Halsted St, Chicago IL 60607",
+      lat: 41.8866, lng: -87.6484,
+      instagram: "@fultonmarketdistrict",
+      hours: "Varies -- restaurants and boutiques open afternoon through late night",
+      parking: "Very limited street parking. Paid lots on Halsted and Green St. CTA Green/Pink Line to Morgan Station.",
+      score: 94, emoji: "🍽",
+      vibe: "Chicago's former meatpacking district transformed into the city's premier dining, nightlife, and boutique shopping destination. Converted warehouses house celebrity chef restaurants, art galleries, and design-forward shops.",
+      about: "Fulton Market is Chicago's hottest neighborhood -- a former meatpacking district now home to the highest concentration of acclaimed restaurants in the city, including Girl & the Goat, Au Cheval, The Aviary, and Rose Mary. The industrial architecture has been repurposed into art galleries (Kavi Gupta), boutique retail (Uncommon James, Scratch Goods), and design showrooms. Google's Midwest HQ and McDonald's global HQ anchor the corporate presence. The energy is undeniable -- every visit reveals something new.",
+      anchors: ["Girl & the Goat","Au Cheval","Google HQ","Soho House","Kavi Gupta Gallery"],
+      mustVisit: [
+        {name:"Girl & the Goat", note:"Stephanie Izard's flagship -- the restaurant that launched the West Loop dining scene"},
+        {name:"Au Cheval", note:"Best burger in America (Bon Appetit) -- expect a wait"},
+        {name:"Kavi Gupta Gallery", note:"World-class contemporary art gallery in a converted warehouse"},
+        {name:"Uncommon James", note:"Kristin Cavallari's lifestyle brand -- jewelry, home, beauty"},
+        {name:"Randolph Street Market", note:"Monthly indoor antique and vintage market -- one of the best in the Midwest"}
+      ],
+      dining: [
+        {name:"Girl & the Goat", type:"New American", note:"James Beard winner Stephanie Izard -- goat empanadas, bold flavors, book ahead"},
+        {name:"Au Cheval", type:"Burgers", note:"The legendary double cheeseburger -- walk-in only, expect 60-90 min wait"},
+        {name:"Rose Mary", type:"Italian-Croatian", note:"Joe Flamm's acclaimed concept -- fresh pasta, seafood, wood-fired dishes"},
+        {name:"The Aviary", type:"Cocktail Bar", note:"Grant Achatz's molecular cocktail lounge -- theatrical drinks in custom vessels"}
+      ],
+      tips: [
+        "Take the CTA Green or Pink Line to Morgan Station -- 5-minute walk to Fulton Street",
+        "Au Cheval is walk-in only -- put your name in early and bar-hop nearby while you wait",
+        "Randolph Street Market runs one weekend per month -- check dates, it sells out",
+        "Evening is the best time -- the neighborhood truly comes alive after 6PM",
+        "Street parking is nearly impossible -- use transit or a paid lot on Halsted"
+      ],
+      bestFor: ["Dining Destination","Nightlife","Art Galleries","Boutique Shopping","Celebrity Chef Restaurants"],
+      awards: "Chicago's premier dining district | Google Midwest HQ | McDonald's Global HQ"
+    }
+  ]
 };
 
 const PARK_DATA = {
