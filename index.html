@@ -604,6 +604,10 @@ details>summary::-webkit-details-marker{display:none}
     height: 100dvh;
     max-height: 100dvh;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background: var(--dark);
+    isolation: isolate;
   }
 
   /* -- Sidebar: show it -- */
@@ -617,6 +621,8 @@ details>summary::-webkit-details-marker{display:none}
     border-right: 1px solid var(--border);
     flex-shrink: 0;
     overflow-y: auto;
+    position: relative;
+    z-index: 50;
   }
 
   /* -- Hide mobile chrome -- */
@@ -6055,6 +6061,17 @@ const A = {
           </div>
         </div>
 
+        <!-- ACTIVITIES & GUIDES — compact link after Best Of -->
+        <div class="discover-section" style="margin-top:-4px">
+          <div onclick="A.openActivitiesPage()" style="background:linear-gradient(135deg,rgba(201,168,76,.06),rgba(201,168,76,.02));border:1px solid rgba(201,168,76,.3);border-radius:10px;padding:12px 14px;cursor:pointer;display:flex;align-items:center;justify-content:space-between">
+            <div>
+              <div style="font-size:13px;font-weight:700;color:var(--gold)">🎯 Activities & Guides</div>
+              <div style="font-size:10px;color:var(--text2)">Weekend guides · Events · Things to do</div>
+            </div>
+            <div style="font-size:18px;color:var(--gold)">›</div>
+          </div>
+        </div>
+
         <!-- TOP RATED -->
         <div class="discover-section">
           <div class="discover-title">⭐ Top Rated</div>
@@ -6084,17 +6101,6 @@ const A = {
           <div class="discover-title">📰 Critics Picks</div>
           <div class="discover-cards">${critics.map(r=>miniCard(r,'📰')).join('')}</div>
         </div>`:''}
-
-        <!-- ACTIVITIES & GUIDES — compact link under Best Of -->
-        <div class="discover-section" style="margin-top:-8px">
-          <div onclick="A.openActivitiesPage()" style="background:linear-gradient(135deg,rgba(201,168,76,.06),rgba(201,168,76,.02));border:1px solid rgba(201,168,76,.3);border-radius:10px;padding:12px 14px;cursor:pointer;display:flex;align-items:center;justify-content:space-between">
-            <div>
-              <div style="font-size:13px;font-weight:700;color:var(--gold)">🎯 Activities & Guides</div>
-              <div style="font-size:10px;color:var(--text2)">Weekend guides · Events · Things to do</div>
-            </div>
-            <div style="font-size:18px;color:var(--gold)">›</div>
-          </div>
-        </div>
 
 
         ` : `
@@ -6850,22 +6856,25 @@ const A = {
     const isWant=S.userData.want.includes(id);
 
     // All reservation platform URLs -- use direct reserveUrl when available, otherwise search fallback
+    // Affiliate tracking: OpenTable ref=appetyt, Resy/Tock utm_source=appetyt
     const enc=encodeURIComponent;
     const citySlug=(S.city||'Dallas').toLowerCase().replace(/ /g,'-');
+    const nameSlug=r.name.toLowerCase().replace(/[^a-z0-9]+/g,'-');
     const BOOK_URLS={
-      OpenTable:r.reserveUrl||`https://www.opentable.com/s/?term=${enc(r.name)}&covers=2&dateTime=${new Date().toISOString().split('T')[0]}T19:00&ref=appetyt`,
-      Resy:r.reserveUrl||`https://resy.com/cities/${citySlug}?query=${enc(r.name)}&utm_source=appetyt&utm_medium=referral`,
-      Tock:r.reserveUrl||`https://www.exploretock.com/search?q=${enc(r.name)}&utm_source=appetyt`,
-      SevenRooms:r.reserveUrl||`https://www.sevenrooms.com/search?q=${enc(r.name)}`,
+      OpenTable:r.reserveUrl||`https://www.opentable.com/s/?term=${enc(r.name)}&covers=2&dateTime=${new Date().toISOString().split('T')[0]}T19:00&ref=appetyt&utm_source=appetyt&utm_medium=referral&utm_campaign=${nameSlug}`,
+      Resy:r.reserveUrl||`https://resy.com/cities/${citySlug}?query=${enc(r.name)}&utm_source=appetyt&utm_medium=referral&utm_campaign=${nameSlug}`,
+      Tock:r.reserveUrl||`https://www.exploretock.com/search?q=${enc(r.name)}&utm_source=appetyt&utm_medium=referral&utm_campaign=${nameSlug}`,
+      SevenRooms:r.reserveUrl||`https://www.sevenrooms.com/search?q=${enc(r.name)}&utm_source=appetyt`,
       Yelp:`https://www.yelp.com/search?find_desc=${enc(r.name)}&find_loc=${enc(S.city)}`,
-      Directions:`https://www.google.com/maps/search/${enc(r.name+' '+S.city)}`,
+      Directions:`https://www.google.com/maps/search/${enc(r.name+' '+r.address)}`,
+      Google:`https://www.google.com/search?q=${enc(r.name+' '+S.city+' reservations')}`,
     };
 
     // Delivery platform deep-links
     const DELIVERY_URLS={
-      DoorDash:`https://www.doordash.com/search/store/${enc(r.name)}/?utm_source=appetyt`,
-      UberEats:`https://www.ubereats.com/search?q=${enc(r.name)}&utm_source=appetyt`,
-      Grubhub:`https://www.grubhub.com/search?orderMethod=delivery&locationMode=DELIVERY&query=${enc(r.name)}&utm_source=appetyt`,
+      DoorDash:`https://www.doordash.com/search/store/${enc(r.name)}/?utm_source=appetyt&utm_medium=referral`,
+      UberEats:`https://www.ubereats.com/search?q=${enc(r.name)}&utm_source=appetyt&utm_medium=referral`,
+      Grubhub:`https://www.grubhub.com/search?orderMethod=delivery&locationMode=DELIVERY&query=${enc(r.name)}&utm_source=appetyt&utm_medium=referral`,
     };
 
     // Determine primary platform + show all options
@@ -6933,8 +6942,22 @@ const A = {
         const _showDelivery=!_isFineDining&&!_isBar&&!_isEntertainment&&r.price<=3&&!_isCoffee;
         let _h='';
         if(_needsRes){
-          _h+=`<a href="${primaryUrl}" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px;border-radius:12px;background:var(--gold);color:var(--dark);font-weight:800;font-size:14px;margin-bottom:10px;text-decoration:none">📅 Reserve on ${primary}</a>${resNote}
-          <details style="margin:10px 0 14px"><summary style="font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:5px;-webkit-user-select:none;user-select:none"><span>All Booking Options</span><span style="font-size:8px;opacity:.6">▼</span></summary>
+          // Inline booking widget — date/time/party picker
+          const _today=new Date().toISOString().split('T')[0];
+          const _times=['5:00 PM','5:30 PM','6:00 PM','6:30 PM','7:00 PM','7:30 PM','8:00 PM','8:30 PM','9:00 PM','9:30 PM'];
+          const _timeOpts=_times.map(t=>'<option value="'+t+'"'+(t==='7:00 PM'?' selected':'')+'>'+t+'</option>').join('');
+          const _partyOpts=[1,2,3,4,5,6,7,8].map(n=>'<option value="'+n+'"'+(n===2?' selected':'')+'>'+n+(n===1?' Guest':' Guests')+'</option>').join('');
+          _h+=`<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">
+            <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:10px">📅 Make a Reservation</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:10px">
+              <div><div style="font-size:9px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px">Date</div><input type="date" id="res-date-${id}" value="${_today}" min="${_today}" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:8px;border-radius:8px;font-size:12px;font-family:inherit"></div>
+              <div><div style="font-size:9px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px">Time</div><select id="res-time-${id}" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:8px;border-radius:8px;font-size:12px;font-family:inherit;-webkit-appearance:none">${_timeOpts}</select></div>
+              <div><div style="font-size:9px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px">Party</div><select id="res-party-${id}" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:8px;border-radius:8px;font-size:12px;font-family:inherit;-webkit-appearance:none">${_partyOpts}</select></div>
+            </div>
+            <button onclick="A.bookReservation(${id},'${primary}')" style="width:100%;padding:13px;border-radius:10px;background:var(--gold);color:var(--dark);font-weight:800;font-size:14px;border:none;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:8px">📅 Find a Table on ${primary}</button>
+            ${resNote}
+          </div>
+          <details style="margin:0 0 14px"><summary style="font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:5px;-webkit-user-select:none;user-select:none"><span>All Booking Options</span><span style="font-size:8px;opacity:.6">▼</span></summary>
           <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-top:8px">${platforms.map(p=>'<a href="'+BOOK_URLS[p.key]+'" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px 6px;border-radius:10px;background:'+p.color+';color:'+p.textColor+';text-decoration:none;border:'+(p.border||'none')+';font-size:11px;font-weight:600;text-align:center"><span style="font-size:18px">'+p.emoji+'</span><span>'+p.label+'</span></a>').join('')}</div></details>`;
         } else {
           _h+=`<a href="${BOOK_URLS.Directions}" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px;border-radius:12px;background:var(--gold);color:var(--dark);font-weight:800;font-size:14px;margin-bottom:10px;text-decoration:none">🗺️ Get Directions</a>
@@ -7020,6 +7043,35 @@ const A = {
     detailBody._fadeListener=onDetailScroll;
     detailBody.addEventListener('scroll',onDetailScroll,{passive:true});
     requestAnimationFrame(onDetailScroll);
+  },
+
+  bookReservation(id, platform){
+    const dateEl=document.getElementById('res-date-'+id);
+    const timeEl=document.getElementById('res-time-'+id);
+    const partyEl=document.getElementById('res-party-'+id);
+    const date=dateEl?dateEl.value:new Date().toISOString().split('T')[0];
+    const time=timeEl?timeEl.value:'7:00 PM';
+    const party=partyEl?partyEl.value:'2';
+    const r=this.getRestaurants().find(x=>x.id===id)||(()=>{for(const k of Object.keys(CITY_DATA)){const f=(CITY_DATA[k]||[]).find(x=>x.id===id);if(f)return f;}return null;})();
+    if(!r) return;
+    const enc=encodeURIComponent;
+    const name=enc(r.name);
+    const city=enc(S.city||'Dallas');
+    const citySlug=(S.city||'Dallas').toLowerCase().replace(/ /g,'-');
+    // Convert time like "7:00 PM" to "19:00"
+    const tMatch=time.match(/(\d+):(\d+)\s*(AM|PM)/i);
+    let h=tMatch?parseInt(tMatch[1]):19;
+    const m=tMatch?tMatch[2]:'00';
+    if(tMatch&&tMatch[3].toUpperCase()==='PM'&&h!==12) h+=12;
+    if(tMatch&&tMatch[3].toUpperCase()==='AM'&&h===12) h=0;
+    const time24=String(h).padStart(2,'0')+':'+m;
+    let url='';
+    if(r.reserveUrl) url=r.reserveUrl;
+    else if(platform==='OpenTable') url=`https://www.opentable.com/s/?term=${name}&covers=${party}&dateTime=${date}T${time24}&ref=appetyt&utm_source=appetyt&utm_medium=referral`;
+    else if(platform==='Resy') url=`https://resy.com/cities/${citySlug}?query=${name}&date=${date}&seats=${party}&utm_source=appetyt&utm_medium=referral`;
+    else if(platform==='Tock') url=`https://www.exploretock.com/search?q=${name}&date=${date}&size=${party}&utm_source=appetyt&utm_medium=referral`;
+    else url=`https://www.google.com/search?q=${name}+${city}+reservations+${date}`;
+    window.open(url,'_blank');
   },
 
   closeDetail(){
