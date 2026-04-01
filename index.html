@@ -54,8 +54,8 @@ input,textarea{font-family:inherit;font-size:inherit}
 
 /* CONTENT */
 #desktop-main{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
-#content{flex:1 1 0;min-height:0;height:0;overflow:hidden;position:relative;z-index:1}
-.view{display:none;position:absolute;inset:0;overflow-y:scroll;overflow-x:hidden;-webkit-overflow-scrolling:touch}
+#content{flex:1 1 0;min-height:0;overflow:hidden;position:relative;z-index:1}
+.view{display:none;position:absolute;top:0;left:0;right:0;bottom:0;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
 .view.active{display:block}
 #mapnear-view{overflow:hidden}
 #mapnear-view.active{display:flex!important}
