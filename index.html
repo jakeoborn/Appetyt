@@ -653,6 +653,8 @@ details>summary::-webkit-details-marker{display:none}
   /* -- Travel/discover: natural scroll -- */
   #travel-view, #discover-view, #lists-view, #top50-view, #nearby-view, #bills-view, #local-view, #trips-view {
     min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
 
@@ -6083,16 +6085,14 @@ const A = {
           <div class="discover-cards">${critics.map(r=>miniCard(r,'📰')).join('')}</div>
         </div>`:''}
 
-        <!-- ACTIVITIES & GUIDES (sub-page) -->
-        <div class="discover-section">
-          <div onclick="A.openActivitiesPage()" style="background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.02));border:1.5px solid var(--gold);border-radius:14px;padding:16px;cursor:pointer">
-            <div style="display:flex;align-items:center;justify-content:space-between">
-              <div>
-                <div style="font-size:15px;font-weight:800;color:var(--gold);margin-bottom:4px">🎯 Activities & Guides</div>
-                <div style="font-size:11px;color:var(--text2)">Weekend guides · Events · Things to do in ${S.city}</div>
-              </div>
-              <div style="font-size:20px;color:var(--gold)">›</div>
+        <!-- ACTIVITIES & GUIDES — compact link under Best Of -->
+        <div class="discover-section" style="margin-top:-8px">
+          <div onclick="A.openActivitiesPage()" style="background:linear-gradient(135deg,rgba(201,168,76,.06),rgba(201,168,76,.02));border:1px solid rgba(201,168,76,.3);border-radius:10px;padding:12px 14px;cursor:pointer;display:flex;align-items:center;justify-content:space-between">
+            <div>
+              <div style="font-size:13px;font-weight:700;color:var(--gold)">🎯 Activities & Guides</div>
+              <div style="font-size:10px;color:var(--text2)">Weekend guides · Events · Things to do</div>
             </div>
+            <div style="font-size:18px;color:var(--gold)">›</div>
           </div>
         </div>
 
@@ -8339,10 +8339,6 @@ const A = {
             <div style="font-size:18px;font-weight:700;color:var(--gold);flex-shrink:0">${r.score}</div>
           </div>
         </div>`).join('')}
-      <div style="margin-top:14px">
-        <div style="font-size:13px;font-weight:700;color:var(--text2);margin-bottom:10px">Things to Do</div>
-        ${this.activitiesForCityHTML(city)}
-      </div>
     </div>`;
   },
 
