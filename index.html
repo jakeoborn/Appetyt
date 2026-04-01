@@ -6878,15 +6878,19 @@ const A = {
     const primary=r.reservation&&r.reservation!=='walk-in'?r.reservation:'OpenTable';
     const primaryUrl=BOOK_URLS[primary]||BOOK_URLS.OpenTable;
 
-    // Platform button config
-    const platforms=[
+    // Platform button config — only show platforms relevant to this restaurant
+    const allPlatforms=[
       {key:'OpenTable',label:'OpenTable',emoji:'📅',color:'#da3743',textColor:'#fff'},
       {key:'Resy',label:'Resy',emoji:'🔥',color:'#1a1a2e',textColor:'#e8e0d4',border:'1px solid #2a2a4e'},
       {key:'Tock',label:'Tock',emoji:'🍽️',color:'var(--card2)',textColor:'var(--text)',border:'1px solid var(--border)'},
       {key:'SevenRooms',label:'SevenRooms',emoji:'🎯',color:'var(--card2)',textColor:'var(--text)',border:'1px solid var(--border)'},
+      {key:'Google',label:'Google',emoji:'🔍',color:'var(--card2)',textColor:'var(--text)',border:'1px solid var(--border)'},
       {key:'Yelp',label:'Yelp',emoji:'⭐',color:'#c41200',textColor:'#fff'},
       {key:'Directions',label:'Directions',emoji:'🗺️',color:'var(--card2)',textColor:'var(--gold)',border:'1px solid var(--border)'},
     ];
+    // Filter: show the restaurant's actual platform + always show Yelp, Directions, Google
+    const alwaysShow=['Yelp','Directions','Google'];
+    const platforms=allPlatforms.filter(p=>alwaysShow.includes(p.key)||p.key===primary||(r.reserveUrl&&p.key===primary));
 
     // Determine reservation note for Tock
     const resNote = r.reservation==='Tock'
