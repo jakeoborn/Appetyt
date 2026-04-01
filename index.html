@@ -3,6 +3,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -3706,6 +3709,7 @@ const A = {
   // -- TABS --------------------------------------------------
   tab(t){
     S.activeTab=t;
+    if(typeof gtag==='function') gtag('event','tab_switch',{tab:t,city:S.city||'Dallas'});
     // Close detail panel when switching tabs
     const detailEl=document.getElementById('detail');
     if(detailEl && detailEl.classList.contains('open')) this.closeDetail();
@@ -6847,6 +6851,7 @@ const A = {
       }
     }
     if(!r) return;
+    if(typeof gtag==='function') gtag('event','view_restaurant',{restaurant_name:r.name,cuisine:r.cuisine,score:r.score,city:S.city||'Dallas'});
 
     const isFav=S.userData.favs.includes(id);
     const isVisited=S.userData.visited.includes(id);
@@ -7047,6 +7052,8 @@ const A = {
   },
 
   bookReservation(id, platform){
+    const _r=this.getRestaurants().find(x=>x.id===id);
+    if(typeof gtag==='function') gtag('event','book_reservation',{restaurant_name:_r?.name||'',platform:platform,city:S.city||'Dallas'});
     const dateEl=document.getElementById('res-date-'+id);
     const timeEl=document.getElementById('res-time-'+id);
     const partyEl=document.getElementById('res-party-'+id);
@@ -7106,6 +7113,7 @@ const A = {
   },
 
   selectCity(city){
+    if(typeof gtag==='function') gtag('event','select_city',{city:city});
     S.city=city;
     document.getElementById('city-label').textContent=city;
     const scl=document.getElementById('sidebar-city-label');
