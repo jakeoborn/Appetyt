@@ -6048,6 +6048,39 @@ const A = {
           const sc=r.score;const color=sc>=90?'var(--green)':sc>=80?'var(--gold)':'var(--text2)';
           const isFav=S.userData.favs.includes(r.id);
           const isWant=S.userData.want.includes(r.id);
+          const csDateMap = {
+            'Parlor Doughnuts':'2026-05-15',
+            'Luna Roja':'2026-04-02',
+            'Toca Madera':'2026-09-01',
+            'Élephante':'2026-03-15',
+            "Clark's Oyster Bar":'2026-10-01',
+            'Corsaire':'2026-04-15',
+            'Molino Oloyo':'2026-06-01',
+            'Serritella Prime Italian':'2026-03-31',
+            'Punk Noir':'2026-04-01',
+            'Sant Ambroeus':'2026-11-01',
+            'Brazamar':'2026-07-01',
+            'Neighborhood Sushi':'2026-05-01',
+            'La Lupita Taco & Mezcal':'2026-04-15',
+            'Ospi':'2026-04-01',
+            'Alara':'2026-04-15',
+            "Walker's":'2026-04-15'
+          };
+          const targetDate = csDateMap[r.name];
+          let countdownHtml = '';
+          if(targetDate){
+            const now = new Date();
+            const target = new Date(targetDate+'T00:00:00');
+            const diffMs = target - now;
+            const diffDays = Math.ceil(diffMs / (1000*60*60*24));
+            if(diffDays > 0){
+              countdownHtml = `<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 12px;margin-bottom:10px;background:linear-gradient(135deg,rgba(76,154,110,.08),rgba(201,168,76,.08));border:1px solid rgba(76,154,110,.2);border-radius:10px"><span style="font-size:18px">⏱️</span><div style="text-align:center"><div style="font-size:18px;font-weight:800;color:#4c9a6e;line-height:1">${diffDays}</div><div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em">days until est. opening</div></div></div>`;
+            } else if(diffDays >= -14){
+              countdownHtml = `<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 12px;margin-bottom:10px;background:linear-gradient(135deg,rgba(76,154,110,.12),rgba(76,154,110,.05));border:1px solid rgba(76,154,110,.3);border-radius:10px"><span style="font-size:16px">🎉</span><div style="font-size:11px;font-weight:700;color:#4c9a6e">Opening any day now!</div></div>`;
+            } else {
+              countdownHtml = `<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 12px;margin-bottom:10px;background:linear-gradient(135deg,rgba(76,154,110,.12),rgba(76,154,110,.05));border:1px solid rgba(76,154,110,.3);border-radius:10px"><span style="font-size:16px">✅</span><div style="font-size:11px;font-weight:700;color:#4c9a6e">Now Open!</div></div>`;
+            }
+          }
           return `
           <div style="background:linear-gradient(145deg,var(--card2),var(--card));border:1px solid rgba(76,154,110,.3);border-radius:14px;overflow:hidden;margin-bottom:12px;position:relative">
             <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#4c9a6e,var(--gold))"></div>
@@ -6066,6 +6099,7 @@ const A = {
                   <div style="font-size:16px;font-weight:800;color:${color};line-height:1">${sc}</div>
                 </div>
               </div>
+              ${countdownHtml}
               <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:8px">
                 <span style="font-size:11px;color:var(--text2);font-weight:600">📍 ${r.neighborhood}</span>
                 <span style="font-size:10px;color:var(--text3)">· ${'$'.repeat(r.price)}</span>
