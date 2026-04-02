@@ -5932,6 +5932,7 @@ const A = {
             +'<button class="r-btn" onclick="A.shareRestaurant(\''+safeName+'\',\''+r.cuisine.replace(/'/g,"&#39;")+'\',\''+r.neighborhood.replace(/'/g,"&#39;")+'\','+r.score+')">↗️</button>'
           +'</div>'
         +'</div>'
+        +'<div onclick="event.stopPropagation();A.openDetail('+r.id+')" style="margin:8px 0 4px;padding:10px;text-align:center;background:var(--gold);color:var(--dark);font-size:12px;font-weight:800;border-radius:8px;cursor:pointer;letter-spacing:.03em">View Restaurant →</div>'
       +'</div>'
       +'</div>'
     +'</div>';
@@ -5983,6 +5984,7 @@ const A = {
             +'<button class="r-btn" onclick="A.shareRestaurant(\''+safeName+'\',\''+r.cuisine.replace(/'/g,"&#39;")+'\',\''+r.hood.replace(/'/g,"&#39;")+'\',0)">↗️</button>'
           +'</div>'
         +'</div>'
+        +'<div onclick="event.stopPropagation();A.openComingSoonDetail(window._csItems['+idx+'])" style="margin:8px 0 4px;padding:10px;text-align:center;background:var(--gold);color:var(--dark);font-size:12px;font-weight:800;border-radius:8px;cursor:pointer;letter-spacing:.03em">View Restaurant →</div>'
       +'</div>'
       +'</div>'
     +'</div>';
