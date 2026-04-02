@@ -10754,7 +10754,6 @@ const A = {
     `;
 
   },
-  },
 
   renderHotels(){
     const el = document.getElementById('hotels-content');
