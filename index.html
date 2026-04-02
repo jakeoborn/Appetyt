@@ -6011,13 +6011,30 @@ const A = {
       if(f==='tbd') return eta==='2026';
       return true;
     };
-    const filteredItems = items.filter(r => filterMatch(r.eta, csFilter));
+    const filteredItems = items.filter(r => filterMatch(r.eta, csFilter)).sort((a,b) => _csGetDate(a.name).localeCompare(_csGetDate(b.name)));
     // Also filter confirmed cards — map coming-soon indicator to eta categories
+    // Master opening date map for sorting all coming soon by soonest first
+    const _csOpenDates = {
+      'Luna Roja':'2026-04-02','Punk Noir':'2026-04-01','Ospi':'2026-04-01',
+      'Corsaire':'2026-04-15','Alara':'2026-04-15','La Lupita Taco & Mezcal':'2026-04-15',
+      "Walker's":'2026-04-15','Élephante':'2026-03-15','Serritella Prime Italian':'2026-03-31',
+      'Parlor Doughnuts':'2026-05-15','Neighborhood Sushi':'2026-05-01',
+      'Molino Oloyo':'2026-06-01','Brazamar':'2026-07-01','Toca Madera':'2026-09-01',
+      "Clark's Oyster Bar":'2026-10-01','Sant Ambroeus':'2026-11-01',
+      // Items array ETAs
+      'Sueno':'2026-03-01','Palladino\'s Steak and Seafood':'2026-03-01',
+      'CRAFT Restaurant & Beer Market':'2026-03-01','Kilmac\'s':'2026-03-01',
+      'Seegar\'s Deli':'2026-01-15','Ctrl Room':'2026-09-01','Pop Up Bagels':'2026-09-01',
+      'Aba Dallas':'2026-10-01','Docent Steak & Lounge':'2026-09-01',
+      'Romy':'2026-12-01','Le Petit Chef':'2026-09-01'
+    };
+    const _csGetDate = (name) => _csOpenDates[name] || '2026-12-31';
+
     const filteredConfirmed = comingSoonData.filter(r => {
       if(csFilter==='all') return true;
-      if(csFilter==='opened') return false; // coming-soon are not open
-      return true; // show confirmed in all other filters since they dont have eta
-    });
+      if(csFilter==='opened') return false;
+      return true;
+    }).sort((a,b) => _csGetDate(a.name).localeCompare(_csGetDate(b.name)));
     const allCount = comingSoonData.length + items.length;
     const filters = [
       {id:'all',label:'All',count:allCount},
