@@ -7415,7 +7415,12 @@ const A = {
   },
 
   closeDetail(){
-    document.getElementById('detail').classList.remove('open');
+    const d=document.getElementById('detail');
+    d.classList.remove('open');
+    // Restore structure if it was replaced (safety check)
+    if(!document.getElementById('detail-header')){
+      d.innerHTML='<div id="detail-header"><button id="detail-back" onclick="A.closeDetail()">←</button><div id="detail-name"></div></div><div id="detail-body"></div>';
+    }
     const _mc=document.getElementById('map-container');
     if(_mc) _mc.style.zIndex='';
   },
@@ -10946,11 +10951,11 @@ const A = {
     const parks = (typeof PARK_DATA!=='undefined' && PARK_DATA[(city).toLowerCase()]) || (typeof PARK_DATA!=='undefined' && PARK_DATA['dallas']) || [];
     const p = parks.find(x=>x.id===id);
     if(!p) return;
-    const detailEl = document.getElementById('detail');
-    if(!detailEl) return;
-    detailEl.innerHTML = `
-      <div style="padding:16px 16px 100px;overflow-y:auto;-webkit-overflow-scrolling:touch;height:100%">
-        <button onclick="A.closeDetail()" style="font-size:18px;color:var(--text2);background:none;border:none;margin-bottom:10px;cursor:pointer" aria-label="Close">← Back</button>
+    const el = document.getElementById('detail');
+    if(!el) return;
+    el.classList.add('open');
+    document.getElementById('detail-header').innerHTML = '<button onclick="A.closeDetail()" style="background:none;border:none;color:var(--text2);font-size:18px;cursor:pointer;padding:0">←</button><span style="font-weight:700;color:var(--text);font-size:14px">'+p.emoji+' '+p.name+'</span>';
+    document.getElementById('detail-body').innerHTML = `
         <div style="font-size:28px;margin-bottom:6px">${p.emoji}</div>
         <div style="font-size:22px;font-weight:800;color:var(--text);margin-bottom:4px">${p.name}</div>
         <div style="font-size:13px;color:var(--gold);font-weight:700;margin-bottom:2px">${p.type} · ${p.neighborhood}</div>
@@ -10965,9 +10970,7 @@ const A = {
         <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:14px">
           ${p.bestFor.map(t=>`<span style="font-size:11px;background:rgba(201,168,76,.1);color:var(--gold);padding:4px 10px;border-radius:20px;border:1px solid rgba(201,168,76,.2);font-weight:600">${t}</span>`).join('')}
         </div>
-        ${p.website?`<a href="${p.website}" target="_blank" style="display:block;margin-top:16px;background:var(--gold);color:var(--dark);font-weight:700;font-size:13px;padding:12px;border-radius:10px;text-align:center;text-decoration:none">🔗 Visit Website →</a>`:''}
-      </div>`;
-    detailEl.classList.add('open');
+        ${p.website?`<a href="${p.website}" target="_blank" style="display:block;margin-top:16px;background:var(--gold);color:var(--dark);font-weight:700;font-size:13px;padding:12px;border-radius:10px;text-align:center;text-decoration:none">🔗 Visit Website →</a>`:''}`;
   },
 
   localMuseumsHTML(){
@@ -11003,11 +11006,11 @@ const A = {
     const museums = (typeof MUSEUM_DATA!=='undefined' && MUSEUM_DATA[(city).toLowerCase()]) || (typeof MUSEUM_DATA!=='undefined' && MUSEUM_DATA['dallas']) || [];
     const m = museums.find(x=>x.id===id);
     if(!m) return;
-    const detailEl = document.getElementById('detail');
-    if(!detailEl) return;
-    detailEl.innerHTML = `
-      <div style="padding:16px 16px 100px;overflow-y:auto;-webkit-overflow-scrolling:touch;height:100%">
-        <button onclick="A.closeDetail()" style="font-size:18px;color:var(--text2);background:none;border:none;margin-bottom:10px;cursor:pointer" aria-label="Close">← Back</button>
+    const el = document.getElementById('detail');
+    if(!el) return;
+    el.classList.add('open');
+    document.getElementById('detail-header').innerHTML = '<button onclick="A.closeDetail()" style="background:none;border:none;color:var(--text2);font-size:18px;cursor:pointer;padding:0">←</button><span style="font-weight:700;color:var(--text);font-size:14px">'+m.emoji+' '+m.name+'</span>';
+    document.getElementById('detail-body').innerHTML = `
         <div style="font-size:28px;margin-bottom:6px">${m.emoji}</div>
         <div style="font-size:22px;font-weight:800;color:var(--text);margin-bottom:4px">${m.name}</div>
         <div style="font-size:13px;color:var(--gold);font-weight:700;margin-bottom:2px">${m.type} · ${m.neighborhood}</div>
@@ -11023,9 +11026,7 @@ const A = {
         <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:14px">
           ${m.bestFor.map(t=>`<span style="font-size:11px;background:rgba(201,168,76,.1);color:var(--gold);padding:4px 10px;border-radius:20px;border:1px solid rgba(201,168,76,.2);font-weight:600">${t}</span>`).join('')}
         </div>
-        ${m.website?`<a href="${m.website}" target="_blank" style="display:block;margin-top:16px;background:var(--gold);color:var(--dark);font-weight:700;font-size:13px;padding:12px;border-radius:10px;text-align:center;text-decoration:none">🔗 Visit Website →</a>`:''}
-      </div>`;
-    detailEl.classList.add('open');
+        ${m.website?`<a href="${m.website}" target="_blank" style="display:block;margin-top:16px;background:var(--gold);color:var(--dark);font-weight:700;font-size:13px;padding:12px;border-radius:10px;text-align:center;text-decoration:none">🔗 Visit Website →</a>`:''}`;
   },
 
   openMall(id){
