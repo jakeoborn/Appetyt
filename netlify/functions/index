@@ -5991,7 +5991,7 @@ const A = {
             "name": "Ctrl Room",
             "hood": "Deep Ellum",
             "address": "Deep Ellum",
-            "eta": "2026",
+            "eta": "April 2026",
             "cuisine": "Bar/Entertainment",
             "desc": "Immersive gaming bar and restaurant concept coming to Deep Ellum. Craft cocktails, elevated bar food, state-of-the-art gaming experiences.",
             "group": "Independent",
@@ -6125,7 +6125,7 @@ const A = {
       // Items array ETAs
       'Sueno':'2026-03-01','Palladino\'s Steak and Seafood':'2026-03-01',
       'CRAFT Restaurant & Beer Market':'2026-03-01','Kilmac\'s':'2026-03-01',
-      'Seegar\'s Deli':'2026-01-15','Ctrl Room':'2026-09-01','Pop Up Bagels':'2026-09-01',
+      'Seegar\'s Deli':'2026-01-15','Ctrl Room':'2026-04-09','Pop Up Bagels':'2026-09-01',
       'Aba Dallas':'2026-10-01','Docent Steak & Lounge':'2026-09-01',
       'Romy':'2026-12-01','Le Petit Chef':'2026-09-01'
     };
