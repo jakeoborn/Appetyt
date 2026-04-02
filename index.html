@@ -7411,7 +7411,7 @@ const A = {
       <div style="display:flex;gap:7px;margin-bottom:14px;flex-wrap:wrap">
         <button class="da-btn" onclick="A.openBillModal('${r.name}')" style="flex:1;background:rgba(201,168,76,.1);border-color:var(--gold);color:var(--gold)">💰 Track Bill</button>
         ${TRIPS.current ? `<button class="da-btn" onclick="TRIPS.addRestaurant(${id},'${r.name.replace(/'/g,"\\'")}','${r.neighborhood||'Dallas'}');A.showToast('Added to '+TRIPS.current.name+' ✈️')" style="flex:1;background:rgba(201,168,76,.1);border-color:var(--gold);color:var(--gold)">✈️ Trip</button>` : ''}
-        <button class="da-btn" onclick="navigator.share?.({title:'${r.name}',text:'Check out ${r.name} on Appetyt -- scored ${r.score}/100',url:'https://appetyt.app'}).catch(()=>A.showToast('Link copied!'))" style="flex:1">📤 Share</button>
+        <button class="da-btn" onclick="navigator.share?.({title:'${r.name}',text:'Check out ${r.name} on Appetyt -- scored ${r.score}/100',url:'https://appetyt.app?r=${id}'}).catch(()=>{navigator.clipboard?.writeText('https://appetyt.app?r=${id}');A.showToast('Link copied!')})" style="flex:1">📤 Share</button>
         ${r.phone ? `<button class="da-btn" onclick="window.location.href='tel:${r.phone}'" style="flex:1">📞 Call</button>` : ''}
       </div>
 
@@ -15116,6 +15116,17 @@ window.receiptPhotoHandler = function(input) {
 })();
 
 try{A.init();}catch(e){console.error('Init error:',e);}
+
+// Deep linking — open restaurant from shared URL
+// Supports: appetyt.app?r=123 or appetyt.app#r=123
+try{
+  const _dlParams = new URLSearchParams(window.location.search);
+  const _dlHash = window.location.hash;
+  let _dlId = _dlParams.get('r') || (_dlHash.match(/r=(\d+)/) || [])[1];
+  if(_dlId){
+    setTimeout(()=>A.openDetail(parseInt(_dlId,10)),500);
+  }
+}catch(e){}
 
 /* --------------------------------------
    CP -- Cruise Planner Controller
