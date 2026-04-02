@@ -6094,7 +6094,7 @@ const A = {
       </div>
       `:''}
 
-      ${filteredItems.map(r=>{
+      ${filteredItems.map((r,idx)=>{
         const isHot = r.eta==='Q1 2026'||r.eta==='Early 2026'||r.eta==='Spring 2026'||r.eta==='April 2026'||r.eta==='March 2026'||r.eta.toLowerCase().includes('opened');
         const buzz = isHot ? '🔥 Opening Soon' : r.eta==='Dec 2026' ? '📅 Late 2026' : '⏳ 2026';
         const buzzColor = isHot ? '#e06b3c' : '#9e8e6e';
@@ -6124,6 +6124,22 @@ const A = {
         const mockScore = r.group==='Noble 33'||r.group==='Major Food Group'||r.group==='Lettuce Entertain You' ? '~92-95' :
                           r.group==='Independent'||!r.group ? '~85-90' : '~88-93';
 
+        // Countdown for confirmed dates
+        const etaDateMap = {'January 2026':'2026-01-15','Early 2026':'2026-03-01','Q1 2026':'2026-03-31','March 2026':'2026-03-15','April 2026':'2026-04-15','Spring 2026':'2026-05-01','Summer 2026':'2026-07-01','Dec 2026':'2026-12-01','Late 2026':'2026-10-01'};
+        const targetDate = etaDateMap[r.eta];
+        let countdownHtml = '';
+        if(targetDate){
+          const now = new Date();
+          const target = new Date(targetDate+'T00:00:00');
+          const diffMs = target - now;
+          const diffDays = Math.ceil(diffMs / (1000*60*60*24));
+          if(diffDays > 0){
+            countdownHtml = '<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 12px;margin-bottom:12px;background:linear-gradient(135deg,rgba(224,107,60,.08),rgba(201,168,76,.08));border:1px solid rgba(224,107,60,.2);border-radius:10px"><span style="font-size:18px">⏱️</span><div style="text-align:center"><div style="font-size:18px;font-weight:800;color:#e06b3c;line-height:1">'+diffDays+'</div><div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em">days until est. opening</div></div></div>';
+          } else if(diffDays >= -30){
+            countdownHtml = '<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 12px;margin-bottom:12px;background:linear-gradient(135deg,rgba(76,154,110,.1),rgba(76,154,110,.05));border:1px solid rgba(76,154,110,.25);border-radius:10px"><span style="font-size:16px">🎉</span><div style="font-size:11px;font-weight:700;color:#4c9a6e">Opening any day now!</div></div>';
+          }
+        }
+
         return `
         <div style="background:var(--card);border:1px solid ${borderColor};border-radius:16px;overflow:hidden;margin-bottom:14px;position:relative">
           ${isHot ? '<div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#e06b3c,#e8a84c)"></div>' : ''}
@@ -6152,6 +6168,7 @@ const A = {
           </div>
           <!-- Body -->
           <div style="padding:12px 14px">
+            ${countdownHtml}
             <!-- Description -->
             <div style="font-size:12px;color:var(--text2);line-height:1.65;margin-bottom:12px">${r.desc}</div>
             <!-- Vibe tags -->
@@ -6173,9 +6190,9 @@ const A = {
                 <div style="font-size:11px;font-weight:700;color:${isHot ? '#e06b3c' : 'var(--text)'}">Coming Soon</div>
               </div>
             </div>
-            <!-- Action bar -->
+            <!-- Action bar — matches confirmed cards -->
             <div style="display:flex;align-items:center;gap:6px;padding-top:10px;border-top:1px solid var(--border)">
-              <button onclick="event.stopPropagation();A.openComingSoonDetail(window._csItems[${items.indexOf(r)}])" style="flex:1;padding:8px;border-radius:8px;border:1px solid rgba(201,168,76,.3);background:var(--gold);color:var(--dark);font-size:11px;font-weight:800;cursor:pointer;font-family:inherit">View Details →</button>
+              <button onclick="event.stopPropagation();A.openComingSoonDetail(window._csItems[${idx}])" style="flex:1;padding:8px;border-radius:8px;border:1px solid rgba(201,168,76,.3);background:var(--gold);color:var(--dark);font-size:11px;font-weight:800;cursor:pointer;font-family:inherit">View Details →</button>
               <button onclick="event.stopPropagation();A.toggleNotifyMe('${r.name.replace(/'/g,"\\'")}')" class="notify-me-btn${(S.userData.reminders||[]).includes(r.name)?' notified':''}" style="padding:8px 10px">
                 ${(S.userData.reminders||[]).includes(r.name)?'✅':'🔔'}
               </button>
