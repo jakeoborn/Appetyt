@@ -10699,6 +10699,7 @@ const A = {
   renderLocal(){
     const el = document.getElementById('local-content');
     if(!el) return;
+    try {
 
     // Sub-tab state
     const sub = this._localSub || 'coming';
@@ -10713,6 +10714,7 @@ const A = {
     ];
 
     let contentHTML = '';
+    try {
     if(sub === 'coming'){
       contentHTML = this.upcomingHTML();
     } else if(sub === 'hotels'){
@@ -10725,6 +10727,9 @@ const A = {
       contentHTML = this.localMuseumsHTML();
     } else if(sub === 'groups'){
       contentHTML = this.hospitalityGroupsHTML();
+    }
+    } catch(subErr) {
+      contentHTML = '<div style="color:#e06b3c;padding:20px;font-size:13px;font-weight:600">Error in '+sub+': '+subErr.message+'<br><pre style="font-size:10px;margin-top:8px;white-space:pre-wrap;color:var(--text3)">'+subErr.stack+'</pre></div>';
     }
 
     el.innerHTML = `
@@ -10753,7 +10758,9 @@ const A = {
       </div>
     `;
 
-
+    } catch(e) {
+      el.innerHTML = '<div style="color:#e06b3c;padding:20px;font-size:14px;font-weight:700">renderLocal error: '+e.message+'<br><pre style="font-size:10px;margin-top:8px;white-space:pre-wrap;color:var(--text3)">'+e.stack+'</pre></div>';
+    }
   },
 
   renderHotels(){
