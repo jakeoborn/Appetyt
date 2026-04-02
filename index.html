@@ -5662,6 +5662,7 @@ const A = {
             <button class="r-btn" onclick="A.shareRestaurant('${r.name}','${r.cuisine}','${r.neighborhood}',${r.score})">↗️</button>
           </div>
         </div>
+        <div onclick="event.stopPropagation();A.openDetail(${r.id})" style="margin:8px 0 4px;padding:10px;text-align:center;background:var(--gold);color:var(--dark);font-size:12px;font-weight:800;border-radius:8px;cursor:pointer;letter-spacing:.03em">View Restaurant →</div>
       </div>
       </div>
     </div>`;
