@@ -6011,8 +6011,6 @@ const A = {
       if(f==='tbd') return eta==='2026';
       return true;
     };
-    const filteredItems = items.filter(r => filterMatch(r.eta, csFilter)).sort((a,b) => _csGetDate(a.name).localeCompare(_csGetDate(b.name)));
-    // Also filter confirmed cards — map coming-soon indicator to eta categories
     // Master opening date map for sorting all coming soon by soonest first
     const _csOpenDates = {
       'Luna Roja':'2026-04-02','Punk Noir':'2026-05-15','Ospi':'2026-04-01',
@@ -6029,6 +6027,8 @@ const A = {
       'Romy':'2026-12-01','Le Petit Chef':'2026-09-01'
     };
     const _csGetDate = (name) => _csOpenDates[name] || '2026-12-31';
+
+    const filteredItems = items.filter(r => filterMatch(r.eta, csFilter)).sort((a,b) => _csGetDate(a.name).localeCompare(_csGetDate(b.name)));
 
     const filteredConfirmed = comingSoonData.filter(r => {
       if(csFilter==='all') return true;
