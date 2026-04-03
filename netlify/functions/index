@@ -180,12 +180,12 @@ details>summary::-webkit-details-marker{display:none}
 .discover-title{font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:6px}
 .discover-cards{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
 .discover-cards::-webkit-scrollbar{display:none}
-.d-card{flex-shrink:0;width:160px;background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer;transition:border-color .15s}
-.d-card:hover{border-color:var(--gold)}
+.d-card{flex-shrink:0;width:160px;background:linear-gradient(145deg,var(--card2),var(--card));border:2px solid var(--gold);border-radius:14px;padding:12px;cursor:pointer;transition:border-color .15s;box-shadow:0 0 8px rgba(200,169,110,.2)}
+.d-card:hover{border-color:var(--gold);box-shadow:0 0 12px rgba(200,169,110,.25)}
 .d-card-icon{font-size:24px;margin-bottom:6px}
 .d-card-name{font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px;line-height:1.3}
 .d-card-sub{font-size:10px;color:var(--text2)}
-.for-you-card{background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;margin-bottom:8px}
+.for-you-card{background:linear-gradient(145deg,var(--card2),var(--card));border:2px solid var(--gold);border-radius:14px;padding:12px;margin-bottom:8px;box-shadow:0 0 8px rgba(200,169,110,.2)}
 .for-you-label{font-size:10px;color:var(--gold);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
 .for-you-name{font-size:14px;font-weight:700;color:var(--text)}
 .for-you-sub{font-size:11px;color:var(--text2);margin-top:2px}
