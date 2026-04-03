@@ -7253,6 +7253,7 @@ const A = {
         <button class="da-btn" onclick="navigator.share?.({title:'${r.name}',text:'Check out ${r.name} on Appetyt -- scored ${r.score}/100',url:'https://appetyt.app?r=${id}'}).catch(()=>{navigator.clipboard?.writeText('https://appetyt.app?r=${id}');A.showToast('Link copied!')})" style="flex:1">📤 Share</button>
         ${r.phone ? `<button class="da-btn" onclick="window.location.href='tel:${r.phone}'" style="flex:1">📞 Call</button>` : ''}
       </div>
+      ${(S.userData.customLists||[]).length?`<button onclick="A.showAddToListPicker(${id})" style="width:100%;padding:12px;border-radius:10px;border:1px solid var(--gold);background:rgba(201,168,76,.08);color:var(--gold);font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;margin-bottom:14px;display:flex;align-items:center;justify-content:center;gap:8px">📋 Add to List</button>`:''}
 
       <!-- Check-In -->
       <div style="margin-bottom:14px">
@@ -9247,6 +9248,35 @@ const A = {
       this.showToast('Removed');
       this.openListDetail(listId);
     }
+  },
+
+  showAddToListPicker(restId){
+    const lists=S.userData.customLists||[];
+    if(!lists.length){this.showToast('No lists yet — create one first');return;}
+    let overlay=document.getElementById('add-to-list-overlay');
+    if(overlay) overlay.remove();
+    overlay=document.createElement('div');
+    overlay.id='add-to-list-overlay';
+    overlay.style.cssText='position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.6);display:flex;align-items:flex-end;justify-content:center;animation:fadeIn .2s';
+    const listItems=lists.map(l=>{
+      const already=(l.ids||[]).includes(restId);
+      return '<div onclick="'+(already?'':'A.addToCustomList(\''+l.id+'\','+restId+')')+'" style="display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--border);cursor:'+(already?'default':'pointer')+';opacity:'+(already?'.5':'1')+'"><span style="font-size:22px">'+l.emoji+'</span><div style="flex:1"><div style="font-size:14px;font-weight:700;color:var(--text)">'+l.name+'</div><div style="font-size:11px;color:var(--text3)">'+(l.ids||[]).length+' restaurants'+(already?' · Already added':'')+'</div></div>'+(already?'<span style="color:var(--gold);font-size:14px">✓</span>':'<span style="color:var(--gold);font-size:18px">+</span>')+'</div>';
+    }).join('');
+    overlay.innerHTML='<div style="width:100%;max-width:420px;max-height:70vh;background:var(--card);border-radius:18px 18px 0 0;overflow:hidden;display:flex;flex-direction:column"><div style="padding:16px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between"><div style="font-size:16px;font-weight:800;color:var(--text)">Add to List</div><button onclick="document.getElementById(\'add-to-list-overlay\').remove()" style="background:none;border:none;color:var(--text2);font-size:22px;cursor:pointer;padding:4px">✕</button></div><div style="overflow-y:auto;flex:1">'+listItems+'</div></div>';
+    overlay.addEventListener('click',function(e){if(e.target===overlay)overlay.remove();});
+    document.body.appendChild(overlay);
+  },
+
+  addToCustomList(listId,restId){
+    const list=(S.userData.customLists||[]).find(l=>l.id===listId);
+    if(!list) return;
+    if(!list.ids) list.ids=[];
+    if(list.ids.includes(restId)){this.showToast('Already in '+list.name);return;}
+    list.ids.push(restId);
+    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    this.showToast('Added to '+list.name+' '+list.emoji);
+    const overlay=document.getElementById('add-to-list-overlay');
+    if(overlay) overlay.remove();
   },
 
   deleteList(listId){
