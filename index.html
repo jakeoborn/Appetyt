@@ -4242,42 +4242,24 @@ const A = {
   // -- AI SEARCH ---------------------------------------------
   searchKeydown(e){if(e.key==='Enter')this.aiSearch();},
 
-  async aiSearch(){
+  aiSearch(){
     const q=document.getElementById('search').value.trim();
     if(!q) return;
     const resultEl=document.getElementById('ai-search-result');
     resultEl.style.display='block';
-    resultEl.innerHTML='<span style="color:var(--text3)">🤖 Thinking...</span>';
-
-    const restaurants=this.getRestaurants().slice(0,20).map(r=>({name:r.name,score:r.score,cuisine:r.cuisine,neighborhood:r.neighborhood,price:r.price,tags:r.tags,hh:r.hh,awards:r.awards}));
-
-    try{
-      const res=await fetch('/.netlify/functions/concierge',{
-        method:'POST',
-        headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({
-          city: S.city||'Dallas',
-          system:`You are Appetyt's AI for ${S.city}. User is searching the restaurant guide. Give a direct, helpful 1-3 sentence answer referencing specific restaurants from the data. Use bold for restaurant names with **name**. Be concise.\nData: ${JSON.stringify(restaurants)}`,
-          messages:[{role:'user',content:q}]
-        })
-      });
-      const data=await res.json();
-      const text=data.reply||data.content?.[0]?.text||data.text||'';
-      resultEl.innerHTML=text.replace(/\*\*(.*?)\*\*/g,'<b>$1</b>')||'Try filtering below ↓';
-    } catch(e){
-      // Smart local fallback
-      const q2=q.toLowerCase();
-      const all=this.getRestaurants();
-      let recs;
-      if(q2.includes('date')||q2.includes('romantic')) recs=all.filter(r=>(r.tags||[]).some(t=>t.includes('Date'))).slice(0,3);
-      else if(q2.includes('happy hour')||q2.includes('hh')) recs=all.filter(r=>r.hh).slice(0,3);
-      else if(q2.includes('cheap')||q2.includes('budget')) recs=all.filter(r=>r.price<=2).sort((a,b)=>b.score-a.score).slice(0,3);
-      else if(q2.includes('best')||q2.includes('top')) recs=all.sort((a,b)=>b.score-a.score).slice(0,3);
-      else recs=all.filter(r=>[r.name,r.cuisine,r.neighborhood,...(r.tags||[])].some(s=>s.toLowerCase().includes(q2))).slice(0,3);
-      resultEl.innerHTML=recs.length
-        ?`Try: <b>${recs.map(r=>r.name).join('</b>, <b>')}</b>`
-        :'No matches -- try a different term or use filters below ↓';
-    }
+    const q2=q.toLowerCase();
+    const all=this.getRestaurants();
+    let recs;
+    if(q2.includes('date')||q2.includes('romantic')) recs=all.filter(r=>(r.tags||[]).some(t=>t.includes('Date'))).sort((a,b)=>b.score-a.score).slice(0,3);
+    else if(q2.includes('happy hour')||q2.includes('hh')) recs=all.filter(r=>r.hh).sort((a,b)=>b.score-a.score).slice(0,3);
+    else if(q2.includes('cheap')||q2.includes('budget')) recs=all.filter(r=>r.price<=2).sort((a,b)=>b.score-a.score).slice(0,3);
+    else if(q2.includes('best')||q2.includes('top')) recs=all.sort((a,b)=>b.score-a.score).slice(0,3);
+    else if(q2.includes('brunch')) recs=all.filter(r=>(r.tags||[]).some(t=>t.toLowerCase().includes('brunch'))).sort((a,b)=>b.score-a.score).slice(0,3);
+    else if(q2.includes('bbq')||q2.includes('barbecue')) recs=all.filter(r=>(r.cuisine||'').toLowerCase().includes('bbq')).sort((a,b)=>b.score-a.score).slice(0,3);
+    else recs=all.filter(r=>[r.name,r.cuisine,r.neighborhood,...(r.tags||[]),...(r.dishes||[])].some(s=>(s||'').toLowerCase().includes(q2))).sort((a,b)=>b.score-a.score).slice(0,3);
+    resultEl.innerHTML=recs.length
+      ?`Try: <b>${recs.map(r=>r.name).join('</b>, <b>')}</b>`
+      :'No matches — try a cuisine, vibe, or restaurant name';
   },
 
   // -- TRAVEL SUB-TABS ---------------------------------------
@@ -7619,34 +7601,9 @@ const A = {
     document.getElementById('chat-msgs').appendChild(typing);
 
     const all=this.getRestaurants();
-    const restaurants=all.slice(0,15).map(r=>({name:r.name,score:r.score,cuisine:r.cuisine,neighborhood:r.neighborhood,price:r.price,tags:r.tags,hh:r.hh,reservation:r.reservation||''}));
-
-    // Try Netlify concierge function first, then direct API, then local fallback
-    let replied=false;
-    try{
-      const res=await fetch('/.netlify/functions/concierge',{
-        method:'POST',
-        headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({
-          city: S.city||'Dallas',
-          system:`You are Appetyt's AI concierge for ${S.city}. Be concise, specific, and enthusiastic. Reference actual restaurants from the data. Max 100 words. Use **bold** for restaurant names. Include booking links: [Reserve](https://resy.com/?q=NAME) or [Order](https://www.doordash.com/search/store/NAME/).\n\nRestaurants: ${JSON.stringify(restaurants)}`,
-          messages:[{role:'user',content:q}]
-        })
-      });
-      if(res.ok){
-        const data=await res.json();
-        const text=data.reply||data.content?.[0]?.text||'';
-        if(text&&!text.includes('error')){
-          document.getElementById('typing')?.remove();
-          const formatted=text.replace(/\*\*(.*?)\*\*/g,'<b>$1</b>').replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g,'<a href="$2" target="_blank" style="color:var(--gold);font-weight:600;text-decoration:underline">$1</a>');
-          this.chatMsg('ai',formatted,['Another option','Price range?','Best for groups','Open now']);
-          replied=true;
-        }
-      }
-    }catch(e){}
-    if(!replied){
+    {
       document.getElementById('typing')?.remove();
-      // Smart local fallback with real recommendations
+      // Smart local recommendations engine
       const q2=q.toLowerCase();
       let recs=[];let context='';
       const _bookLink=(r)=>{
