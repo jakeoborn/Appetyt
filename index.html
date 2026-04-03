@@ -6351,7 +6351,7 @@ const A = {
           <div class="discover-title">🏆 Best Of ${S.city}</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
             ${Object.entries(bestOf).filter(([k,v])=>v).map(([cat,r])=>`
-              <div onclick="A.openDetail(${r.id})" style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation">
+              <div onclick="A.openDetail(${r.id})" style="background:linear-gradient(145deg,var(--card2),var(--card));border:2px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer;touch-action:manipulation;box-shadow:0 0 8px rgba(200,169,110,.2)">
                 <div style="font-size:10px;color:var(--text3);font-weight:600;margin-bottom:3px">${cat}</div>
                 <div style="font-size:13px;font-weight:700;color:var(--text)">${r.name}</div>
                 <div style="font-size:11px;color:var(--gold);margin-top:2px">${r.score} · ${r.cuisine}</div>
