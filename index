@@ -4208,44 +4208,91 @@ const A = {
     }
   },
 
-  // -- AI SEARCH ---------------------------------------------
-  searchKeydown(e){if(e.key==='Enter')this.aiSearch();},
+  // -- SMART SEARCH -------------------------------------------
+  searchKeydown(e){if(e.key==='Enter')this.smartSearch();},
 
-  async aiSearch(){
+  smartSearch(){
     const q=document.getElementById('search').value.trim();
     if(!q) return;
     const resultEl=document.getElementById('ai-search-result');
     resultEl.style.display='block';
-    resultEl.innerHTML='<span style="color:var(--text3)">🤖 Thinking...</span>';
+    const q2=q.toLowerCase();
+    const all=this.getRestaurants();
+    let recs=[], label='';
 
-    const restaurants=this.getRestaurants().slice(0,20).map(r=>({name:r.name,score:r.score,cuisine:r.cuisine,neighborhood:r.neighborhood,price:r.price,tags:r.tags,hh:r.hh,awards:r.awards}));
+    // Intent detection — match vibes, moods, dietary, price, occasion
+    const vibeMap={
+      'date night':r=>(r.tags||[]).some(t=>/date|romantic/i.test(t))||r.price>=3,
+      'date':r=>(r.tags||[]).some(t=>/date|romantic/i.test(t))||r.price>=3,
+      'romantic':r=>(r.tags||[]).some(t=>/date|romantic/i.test(t))||r.price>=3,
+      'happy hour':r=>!!r.hh, 'hh':r=>!!r.hh, 'drinks':r=>!!r.hh,
+      'cheap':r=>r.price<=2, 'budget':r=>r.price<=2, 'affordable':r=>r.price<=2, 'under 20':r=>r.price<=2,
+      'splurge':r=>r.price>=4, 'fancy':r=>r.price>=4, 'fine dining':r=>(r.tags||[]).some(t=>/fine dining|tasting/i.test(t)),
+      'brunch':r=>(r.tags||[]).some(t=>/brunch/i.test(t))||(r.cuisine||'').toLowerCase().includes('brunch'),
+      'late night':r=>(r.tags||[]).some(t=>/late/i.test(t)),
+      'outdoor':r=>(r.tags||[]).some(t=>/patio|outdoor|rooftop/i.test(t)),
+      'patio':r=>(r.tags||[]).some(t=>/patio|outdoor|rooftop/i.test(t)),
+      'rooftop':r=>(r.tags||[]).some(t=>/rooftop/i.test(t)),
+      'family':r=>(r.tags||[]).some(t=>/family|kid/i.test(t))||r.price<=2,
+      'groups':r=>(r.tags||[]).some(t=>/group|large part/i.test(t)),
+      'vegan':r=>(r.tags||[]).some(t=>/vegan|plant/i.test(t)),
+      'vegetarian':r=>(r.tags||[]).some(t=>/vegetarian|vegan|plant/i.test(t)),
+      'gluten free':r=>(r.tags||[]).some(t=>/gluten/i.test(t)),
+      'new':r=>(r.tags||[]).some(t=>/new opening|coming soon/i.test(t)),
+      'award':r=>!!r.awards, 'michelin':r=>!!r.awards,
+      'walk in':r=>r.reservation==='walk-in',
+      'no reservation':r=>r.reservation==='walk-in',
+      'coffee':r=>(r.cuisine||'').toLowerCase().includes('coffee')||(r.tags||[]).some(t=>/coffee|cafe/i.test(t)),
+      'breakfast':r=>(r.tags||[]).some(t=>/breakfast|brunch/i.test(t)),
+      'best':r=>true, 'top':r=>true, 'top rated':r=>true,
+    };
 
-    try{
-      const res=await fetch('/.netlify/functions/concierge',{
-        method:'POST',
-        headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({
-          city: S.city||'Dallas',
-          system:`You are Appetyt's AI for ${S.city}. User is searching the restaurant guide. Give a direct, helpful 1-3 sentence answer referencing specific restaurants from the data. Use bold for restaurant names with **name**. Be concise.\nData: ${JSON.stringify(restaurants)}`,
-          messages:[{role:'user',content:q}]
-        })
-      });
-      const data=await res.json();
-      const text=data.reply||data.content?.[0]?.text||data.text||'';
-      resultEl.innerHTML=text.replace(/\*\*(.*?)\*\*/g,'<b>$1</b>')||'Try filtering below ↓';
-    } catch(e){
-      // Smart local fallback
-      const q2=q.toLowerCase();
-      const all=this.getRestaurants();
-      let recs;
-      if(q2.includes('date')||q2.includes('romantic')) recs=all.filter(r=>(r.tags||[]).some(t=>t.includes('Date'))).slice(0,3);
-      else if(q2.includes('happy hour')||q2.includes('hh')) recs=all.filter(r=>r.hh).slice(0,3);
-      else if(q2.includes('cheap')||q2.includes('budget')) recs=all.filter(r=>r.price<=2).sort((a,b)=>b.score-a.score).slice(0,3);
-      else if(q2.includes('best')||q2.includes('top')) recs=all.sort((a,b)=>b.score-a.score).slice(0,3);
-      else recs=all.filter(r=>[r.name,r.cuisine,r.neighborhood,...(r.tags||[])].some(s=>s.toLowerCase().includes(q2))).slice(0,3);
-      resultEl.innerHTML=recs.length
-        ?`Try: <b>${recs.map(r=>r.name).join('</b>, <b>')}</b>`
-        :'No matches -- try a different term or use filters below ↓';
+    // Check vibe matches first
+    for(const[key,fn] of Object.entries(vibeMap)){
+      if(q2.includes(key)){
+        recs=all.filter(fn).sort((a,b)=>b.score-a.score).slice(0,5);
+        label=key.charAt(0).toUpperCase()+key.slice(1);
+        break;
+      }
+    }
+
+    // Cuisine match
+    if(!recs.length){
+      const cuisineHits=all.filter(r=>(r.cuisine||'').toLowerCase().includes(q2));
+      if(cuisineHits.length){recs=cuisineHits.sort((a,b)=>b.score-a.score).slice(0,5);label=q;}
+    }
+
+    // Neighborhood match
+    if(!recs.length){
+      const nbhdHits=all.filter(r=>(r.neighborhood||'').toLowerCase().includes(q2));
+      if(nbhdHits.length){recs=nbhdHits.sort((a,b)=>b.score-a.score).slice(0,5);label='in '+q;}
+    }
+
+    // Tag match
+    if(!recs.length){
+      const tagHits=all.filter(r=>(r.tags||[]).some(t=>t.toLowerCase().includes(q2)));
+      if(tagHits.length){recs=tagHits.sort((a,b)=>b.score-a.score).slice(0,5);label=q;}
+    }
+
+    // Fuzzy name/description match
+    if(!recs.length){
+      const words=q2.split(/\s+/);
+      recs=all.filter(r=>{
+        const hay=[r.name,r.cuisine,r.neighborhood,r.description||'',...(r.tags||[]),...(r.dishes||[])].join(' ').toLowerCase();
+        return words.every(w=>hay.includes(w));
+      }).sort((a,b)=>b.score-a.score).slice(0,5);
+      label=q;
+    }
+
+    // Render results as clickable cards
+    if(recs.length){
+      resultEl.innerHTML=(label?'<div style="font-size:10px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">'+label+'</div>':'')+
+        recs.map(r=>'<div onclick="A.openDetail('+r.id+')" style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:10px;cursor:pointer;margin-bottom:6px;touch-action:manipulation">'+
+          '<div style="min-width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,rgba(201,168,76,.2),rgba(201,168,76,.05));display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--gold)">'+r.score+'</div>'+
+          '<div style="flex:1;min-width:0"><div style="font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+r.name+'</div>'+
+          '<div style="font-size:11px;color:var(--text3)">'+r.cuisine+' · '+r.neighborhood+' · '+'$'.repeat(r.price||2)+(r.hh?' · 🍸 HH':'')+'</div></div></div>').join('');
+    } else {
+      resultEl.innerHTML='No matches for "<b>'+q+'</b>" — try a cuisine, neighborhood, vibe (date night, happy hour, brunch), or restaurant name';
     }
   },
 
@@ -4934,56 +4981,38 @@ const A = {
   },
 
 
-  async planAsk(){
+  planAsk(){
     const input = document.getElementById('plan-ai-input');
     const q = input?.value?.trim();
     if(!q) return;
     input.value = '';
     const result = document.getElementById('plan-ai-result');
     result.style.display = 'block';
-    result.innerHTML = '<span style="color:var(--text3)">🤖 Thinking...</span>';
-    try {
-      const res = await fetch('/.netlify/functions/concierge', {
-        method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({
-          city: S.city || 'Dallas',
-          system: 'You are Appetyt\'s travel food AI. Give specific, actionable travel food recommendations. Mention restaurant names, dishes, neighborhoods. Bold key names with **text**. Be warm and direct -- 3-5 sentences max.',
-          messages: [{role:'user', content: q}]
-        })
-      });
-      const data = await res.json();
-      const answer = data.reply || data.content?.[0]?.text || data.text || '';
-      result.innerHTML = answer ? answer.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/\n/g, '<br>') : 'Try a more specific question!';
-    } catch(e) {
-      result.innerHTML = 'Try asking: best ramen in Tokyo, where to eat in Barcelona, 3-day Paris food itinerary...';
-    }
+    const enc=encodeURIComponent;
+    const searchQ=q+' food restaurants where to eat';
+    result.innerHTML='<div style="font-size:12px;color:var(--text2);line-height:1.7">'+
+      '<div style="margin-bottom:10px">Here are some ways to research <b style="color:var(--gold)">'+q+'</b>:</div>'+
+      '<a href="https://www.google.com/search?q='+enc(searchQ)+'" target="_blank" style="display:block;padding:10px 14px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text);text-decoration:none;margin-bottom:6px;font-weight:600">🔍 Search Google for food guides</a>'+
+      '<a href="https://www.google.com/maps/search/restaurants+'+enc(q)+'" target="_blank" style="display:block;padding:10px 14px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text);text-decoration:none;margin-bottom:6px;font-weight:600">🗺️ Browse restaurants on Google Maps</a>'+
+      '<a href="https://www.yelp.com/search?find_desc=restaurants&find_loc='+enc(q)+'" target="_blank" style="display:block;padding:10px 14px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text);text-decoration:none;font-weight:600">⭐ Check Yelp reviews</a>'+
+      '</div>';
   },
 
-  async travelAsk(){
+  travelAsk(){
     const input=document.getElementById('travel-ai-input');
     const q=input.value.trim();
     if(!q) return;
     input.value='';
     const result=document.getElementById('travel-ai-result');
     result.style.display='block';
-    result.innerHTML='<span style="color:var(--text3)">🤖 Thinking...</span>';
-    try{
-      const res = await fetch('/.netlify/functions/concierge', {
-        method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({
-          city: S.city || 'Dallas',
-          system: 'You are Appetyt\'s travel AI. Answer travel food questions with specific, actionable recommendations. Bold key names with **text**. Be concise -- 2-4 sentences max.',
-          messages: [{role:'user', content: q}]
-        })
-      });
-      const data=await res.json();
-      const answer = data.reply || data.content?.[0]?.text || data.text || '';
-      result.innerHTML = answer ? answer.replace(/\*\*(.*?)\*\*/g,'<b>$1</b>').replace(/\n/g,'<br>') : 'Try a more specific question!';
-    } catch(e){
-      result.innerHTML='Ask me: river cruise in Paris, best wine region for beginners, walking tour in Tokyo, 3-day food trip to Rome...';
-    }
+    const enc=encodeURIComponent;
+    const searchQ=q+' food guide restaurants';
+    result.innerHTML='<div style="font-size:12px;color:var(--text2);line-height:1.7">'+
+      '<div style="margin-bottom:10px">Explore food in <b style="color:var(--gold)">'+q+'</b>:</div>'+
+      '<a href="https://www.google.com/search?q='+enc(searchQ)+'" target="_blank" style="display:block;padding:10px 14px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text);text-decoration:none;margin-bottom:6px;font-weight:600">🔍 Google food guides</a>'+
+      '<a href="https://www.google.com/maps/search/restaurants+'+enc(q)+'" target="_blank" style="display:block;padding:10px 14px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text);text-decoration:none;margin-bottom:6px;font-weight:600">🗺️ Google Maps restaurants</a>'+
+      '<a href="https://www.yelp.com/search?find_desc=restaurants&find_loc='+enc(q)+'" target="_blank" style="display:block;padding:10px 14px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text);text-decoration:none;font-weight:600">⭐ Yelp reviews</a>'+
+      '</div>';
   },
 
   openEventDetail(ev){
@@ -6906,72 +6935,19 @@ const A = {
     setTimeout(()=>A.runAIPlan(siteName, country, category), 200);
   },
 
-  async runAIPlan(siteName, country, category){
-    const q = document.getElementById('ai-plan-q')?.value || `Plan my trip to ${siteName}`;
+  runAIPlan(siteName, country, category){
+    const q = document.getElementById('ai-plan-q')?.value || 'Plan my trip to '+siteName;
     const result = document.getElementById('ai-plan-result');
     if(!result) return;
-    result.innerHTML = '<div style="color:var(--text3);font-size:12px;padding:8px 0">🤖 Generating your travel plan...</div>';
-
-    // Try proxy endpoint first (production -- no key needed for users)
-    // Falls back to direct API if user has their own key stored
-    const apiKey = S.apiKey || '';
-    const useProxy = true; // set false if running without Netlify functions
-
-    try {
-      let text = '';
-
-      if(useProxy){
-        // Call your Netlify serverless function -- key lives on the server
-        const apiBase = (window.Capacitor && window.Capacitor.isNativePlatform()) ? 'https://appetyt.app' : '';
-        const res = await fetch(apiBase + '/.netlify/functions/ai-plan', {
-          method: 'POST',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({siteName, country, category, question: q})
-        });
-        if(res.ok){
-          const data = await res.json();
-          text = data.text || '';
-        } else {
-          // Fallback to direct if proxy unavailable (local dev)
-          throw new Error('proxy_unavailable');
-        }
-      } else {
-        throw new Error('proxy_disabled');
-      }
-
-      if(!text && apiKey){
-        // Direct fallback with user key
-        const res2 = await fetch('https://api.anthropic.com/v1/messages', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'anthropic-dangerous-direct-browser-access': 'true',
-            'x-api-key': apiKey
-          },
-          body: JSON.stringify({
-            model: 'claude-haiku-4-5-20251001',
-            max_tokens: 600,
-            system: `You are Appetyt's AI travel planner for ${siteName}, ${country} (${category}). Give concise, specific travel advice with **bold** headers. Under 350 words. Name real hotels and restaurants.`,
-            messages: [{role: 'user', content: q}]
-          })
-        });
-        const d2 = await res2.json();
-        text = d2.content?.[0]?.text || '';
-      }
-
-      if(text){
-        const formatted = text.replace(/\*\*(.*?)\*\*/g,'<b style="color:var(--gold)">$1</b>').replace(/\n/g,'<br>');
-        result.innerHTML = `<div style="font-size:12px;line-height:1.8">${formatted}</div>`;
-      } else {
-        result.innerHTML = '<div style="color:var(--text3);font-size:12px">AI travel planning requires setup. See appetyt.app/setup for instructions.</div>';
-      }
-    } catch(e) {
-      if(apiKey){
-        result.innerHTML = '<div style="color:#c96b4c;font-size:12px">Connection error. Try again.</div>';
-      } else {
-        result.innerHTML = '<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:12px;color:var(--text2);line-height:1.6">✨ <b style="color:var(--gold)">AI planning is coming soon!</b><br><br>This feature requires the Appetyt backend to be configured. Visit <a href="https://appetyt.app" style="color:var(--gold)">appetyt.app</a> for the full experience.</div>';
-      }
-    }
+    const enc=encodeURIComponent;
+    result.innerHTML = '<div style="font-size:12px;line-height:1.8">'+
+      '<div style="font-size:14px;font-weight:800;color:var(--gold);margin-bottom:12px">'+siteName+', '+country+'</div>'+
+      '<div style="display:flex;flex-direction:column;gap:8px">'+
+      '<a href="https://www.google.com/search?q='+enc(q+' '+siteName+' '+country+' travel guide food restaurants')+'" target="_blank" style="display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--card);border:1px solid var(--border);border-radius:12px;color:var(--text);text-decoration:none;font-weight:600;font-size:13px"><span style="font-size:20px">🔍</span> Google Travel Guide</a>'+
+      '<a href="https://www.google.com/travel/search?q='+enc(siteName+' '+country)+'" target="_blank" style="display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--card);border:1px solid var(--border);border-radius:12px;color:var(--text);text-decoration:none;font-weight:600;font-size:13px"><span style="font-size:20px">✈️</span> Google Travel</a>'+
+      '<a href="https://www.google.com/maps/search/restaurants+'+enc(siteName)+'" target="_blank" style="display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--card);border:1px solid var(--border);border-radius:12px;color:var(--text);text-decoration:none;font-weight:600;font-size:13px"><span style="font-size:20px">🗺️</span> Restaurants on Google Maps</a>'+
+      '<a href="https://www.tripadvisor.com/Search?q='+enc(siteName+' restaurants')+'" target="_blank" style="display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--card);border:1px solid var(--border);border-radius:12px;color:var(--text);text-decoration:none;font-weight:600;font-size:13px"><span style="font-size:20px">🏨</span> TripAdvisor</a>'+
+      '</div></div>';
   },
 
   openNatureSpot(events, spotIdx, eventIdx){
@@ -7235,7 +7211,7 @@ const A = {
           <a href="${DELIVERY_URLS.UberEats}" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px 6px;border-radius:10px;background:#06c167;color:#fff;text-decoration:none;font-size:11px;font-weight:600;text-align:center"><span style="font-size:18px">🛵</span><span>Uber Eats</span></a>
           <a href="${DELIVERY_URLS.Grubhub}" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px 6px;border-radius:10px;background:#f63440;color:#fff;text-decoration:none;font-size:11px;font-weight:600;text-align:center"><span style="font-size:18px">🍔</span><span>Grubhub</span></a>
           </div>
-          ${r.phone ? `<div style="margin-top:8px"><button onclick="openAIOrder(${r.id})" style="width:100%;padding:11px;border-radius:10px;border:1px solid rgba(76,154,110,.4);background:rgba(76,154,110,.1);color:#4c9a6e;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:6px">📞 AI Order — Call for Pickup or Delivery</button></div>` : ''}
+          ${r.phone ? `<div style="margin-top:8px"><a href="tel:${r.phone}" style="display:flex;width:100%;padding:11px;border-radius:10px;border:1px solid rgba(76,154,110,.4);background:rgba(76,154,110,.1);color:#4c9a6e;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;align-items:center;justify-content:center;gap:6px;text-decoration:none;box-sizing:border-box">📞 Call for Pickup or Delivery</a></div>` : ''}
           </details>`;
         }
         return _h;
@@ -11476,34 +11452,21 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     }).join('');
   },
 
-  async tripAISuggest(prompt){
+  tripAISuggest(prompt){
     if(!prompt||!prompt.trim()) return;
     const el=document.getElementById('trip-ai-suggestions');
     if(!el) return;
     const trip=TRIPS.current;
     const cities=trip?Array.isArray(trip.cities)?trip.cities:(trip.cities||'').split(',').map(x=>x.trim()).filter(Boolean):[];
-    const members=TRIPS.members||[];
-    const saved=(TRIPS.restaurants||[]).map(r=>r.restaurant_name||r.name).join(', ');
-
-    el.innerHTML='<div style="font-size:11px;color:#3eb8a8;padding:8px">🤖 Thinking...</div>';
+    const city=cities[0]||'Dallas';
     document.getElementById('trip-ai-input').value='';
-
-    try{
-      const res=await fetch('/.netlify/functions/concierge',{
-        method:'POST',
-        headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({
-          city:cities[0]||'Dallas',
-          system:'You are Appetyt\'s group dining AI. The user is planning a trip to '+cities.join(', ')+' with '+members.length+' people. They already saved: '+saved+'. Suggest 3-5 specific restaurants with why they\'re great for the group. Use **bold** for names. Be concise and fun.',
-          messages:[{role:'user',content:prompt}]
-        })
-      });
-      const data=await res.json();
-      const text=(data.reply||data.content?.[0]?.text||data.text||'').replace(/\*\*(.*?)\*\*/g,'<b style="color:var(--gold)">$1</b>').replace(/\n/g,'<br>');
-      el.innerHTML=`<div style="font-size:12px;color:var(--text2);line-height:1.7;padding:8px;background:var(--card);border-radius:10px;border:1px solid var(--border)">${text||'Try asking something else!'}</div>`;
-    }catch(e){
-      el.innerHTML='<div style="font-size:11px;color:var(--text3);padding:8px">Couldn\'t reach AI -- try again in a moment</div>';
-    }
+    const enc=encodeURIComponent;
+    const searchQ=prompt+' restaurants '+city;
+    el.innerHTML='<div style="font-size:12px;color:var(--text2);line-height:1.7;padding:8px;background:var(--card);border-radius:10px;border:1px solid var(--border)">'+
+      '<div style="margin-bottom:8px">Search for <b style="color:var(--gold)">'+prompt+'</b> in '+city+':</div>'+
+      '<a href="https://www.google.com/search?q='+enc(searchQ)+'" target="_blank" style="display:block;padding:8px 12px;background:var(--card2);border:1px solid var(--border);border-radius:8px;color:var(--text);text-decoration:none;margin-bottom:5px;font-weight:600;font-size:12px">🔍 Google: '+prompt+'</a>'+
+      '<a href="https://www.yelp.com/search?find_desc='+enc(prompt)+'&find_loc='+enc(city)+'" target="_blank" style="display:block;padding:8px 12px;background:var(--card2);border:1px solid var(--border);border-radius:8px;color:var(--text);text-decoration:none;font-weight:600;font-size:12px">⭐ Yelp: '+prompt+' in '+city+'</a>'+
+      '</div>';
   },
 
   showTripRestaurantPicker(){
@@ -12090,61 +12053,12 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
   },
 
 
-  async extractTripFromPhoto(file){
+  extractTripFromPhoto(file){
     if(!file) return;
     const status = document.getElementById('trip-extract-status');
     const btn = document.getElementById('trip-upload-btn');
-    if(status){ status.style.display='block'; status.textContent='🔍 Analyzing your booking...'; }
-    if(btn) btn.style.opacity='0.5';
-
-    try{
-      const base64 = await new Promise((res,rej)=>{
-        const r = new FileReader();
-        r.onload = ()=>res(r.result.split(',')[1]);
-        r.onerror = rej;
-        r.readAsDataURL(file);
-      });
-
-      const response = await fetch('/.netlify/functions/extract-trip',{
-        method:'POST',
-        headers:{'Content-Type':'application/json'},
-        body: JSON.stringify({ image: base64, mediaType: file.type||'image/jpeg' })
-      });
-
-      if(!response.ok) throw new Error('API '+response.status);
-      const data = await response.json();
-      const text = data.text||'';
-      const jsonMatch = text.match(/\{[\s\S]*\}/);
-      if(!jsonMatch) throw new Error('No data found');
-      const info = JSON.parse(jsonMatch[0]);
-
-      // Store for use when trip is created
-      window._extractedTripInfo = info;
-
-      // Auto-fill form fields
-      const nameInput = document.getElementById('trip-name');
-      const startInput = document.getElementById('trip-start');
-      const endInput = document.getElementById('trip-end');
-      const citiesInput = document.getElementById('trip-cities');
-      if(nameInput && !nameInput.value && info.tripName) nameInput.value = info.tripName;
-      if(startInput && !startInput.value && info.startDate) startInput.value = info.startDate;
-      if(endInput && !endInput.value && info.endDate) endInput.value = info.endDate;
-      if(citiesInput && !citiesInput.value && info.destination) citiesInput.value = info.destination;
-
-      // Show success
-      const isCruise = info.tripType === 'cruise' || (info.cruisePorts && info.cruisePorts.length > 0);
-      const detailCount = (info.details||[]).length;
-      const portCount = (info.cruisePorts||[]).length;
-      const summary = isCruise
-        ? '✅ Found '+portCount+' cruise ports · '+detailCount+' items -- form filled!'
-        : '✅ Found '+detailCount+' booking item'+(detailCount!==1?'s':'') + ' -- form filled!';
-      if(status){ status.textContent = summary; }
-      if(btn){ btn.style.opacity='1'; btn.querySelector('div:nth-child(2)').textContent='✅ Booking Loaded'; }
-
-    }catch(e){
-      if(status){ status.textContent='❌ Could not read -- fill in manually'; }
-      if(btn) btn.style.opacity='1';
-    }
+    if(status){ status.style.display='block'; status.textContent='📝 Photo saved -- fill in trip details below'; }
+    if(btn) btn.style.opacity='1';
   },
 
 
@@ -15878,17 +15792,7 @@ window.addEventListener('load', function() {
       });
 
       PushNotifications.addListener('registration', function(token) {
-        // Send token to backend
-        fetch((window.Capacitor.isNativePlatform() ? 'https://appetyt.app' : '') + '/.netlify/functions/register-push', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            deviceId: typeof DEVICE_ID !== 'undefined' ? DEVICE_ID : '',
-            token: token.value,
-            city: typeof S !== 'undefined' ? S.city : 'Dallas',
-            platform: 'ios'
-          })
-        }).catch(function() {});
+        // Push token received — registration endpoint removed
       });
 
       PushNotifications.addListener('pushNotificationReceived', function(notification) {
@@ -16037,145 +15941,63 @@ window.addEventListener('load', function() {
     if(_arPollTimer) { clearInterval(_arPollTimer); _arPollTimer = null; }
   };
 
-  window.submitAIReserve = async function(){
-    const guestName = document.getElementById('ar-guest-name').value.trim();
-    const partySize = document.getElementById('ar-party-size').value;
-    const date = document.getElementById('ar-date').value;
-    const time = document.getElementById('ar-time').value;
-    const special = document.getElementById('ar-special').value.trim();
+  window.submitAIReserve = function(){
     const phone = document.getElementById('ar-restaurant-phone').value;
-
-    if(!guestName){ alert('Please enter your name.'); return; }
-    if(!date){ alert('Please select a date.'); return; }
-    if(!time){ alert('Please select a time.'); return; }
-    if(!_arRestaurant){ alert('No restaurant selected.'); return; }
-
-    const btn = document.getElementById('ar-call-btn');
-    btn.disabled = true;
-    btn.innerHTML = '<span class="ar-pulsing">📞</span> Calling...';
-
-    const statusEl = document.getElementById('ar-status');
-    const statusText = document.getElementById('ar-status-text');
-    statusEl.classList.add('visible');
-    statusText.className = '';
-    statusText.id = 'ar-status-text';
-    statusText.innerHTML = '<span class="ar-pulsing">⏳</span> Initiating call to ' + _arRestaurant.name + '...';
-
-    try {
-      const res = await fetch('/.netlify/functions/reserve-call', {
-        method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({
-          restaurantName: _arRestaurant.name,
-          phone: phone,
-          partySize: parseInt(partySize,10),
-          date: date,
-          time: time,
-          guestName: guestName,
-          specialRequests: special || undefined
-        })
-      });
-      const data = await res.json();
-      if(!res.ok || !data.success){
-        throw new Error(data.error || 'Failed to initiate call');
-      }
-      _arCallId = data.callId;
-      statusText.innerHTML = '<span class="ar-pulsing">📞</span> Call in progress -- AI is speaking with ' + _arRestaurant.name + '...';
+    if(!phone){ alert('No phone number available for this restaurant.'); return; }
+    // Direct call to the restaurant
+    window.location.href = 'tel:' + phone;
 
       // Start polling for status
-      checkReserveStatus(_arCallId);
-      _arPollTimer = setInterval(()=> checkReserveStatus(_arCallId), 5000);
-    } catch(err){
-      statusText.className = 'error';
-      statusText.id = 'ar-status-text';
-      statusText.textContent = 'Error: ' + err.message;
-      btn.disabled = false;
-      btn.innerHTML = '📞 Call Restaurant';
-    }
   };
 
-  window.checkReserveStatus = async function(callId){
-    if(!callId) return;
-    const statusText = document.getElementById('ar-status-text');
-    const transcriptEl = document.getElementById('ar-transcript');
-    const btn = document.getElementById('ar-call-btn');
+  window.checkReserveStatus = function(){};
 
-    try {
-      const res = await fetch('/.netlify/functions/reserve-status?callId=' + encodeURIComponent(callId));
-      const data = await res.json();
-
-      if(data.transcript){
-        transcriptEl.style.display = 'block';
-        transcriptEl.textContent = data.transcript;
-      }
-
-      if(data.completed || data.status === 'completed' || data.status === 'ended'){
-        // Call finished
-        if(_arPollTimer){ clearInterval(_arPollTimer); _arPollTimer = null; }
-        _arConfirmed = data.confirmed;
-
-        if(data.confirmed){
-          statusText.className = 'success';
-          statusText.id = 'ar-status-text';
-          statusText.innerHTML = '✅ Reservation confirmed at ' + (_arRestaurant?_arRestaurant.name:'the restaurant') + '!';
-          // Show calendar buttons
-          document.getElementById('ar-calendar-row').classList.add('visible');
-        } else {
-          statusText.className = '';
-          statusText.id = 'ar-status-text';
-          statusText.innerHTML = '📞 Call completed. Check the transcript below for details.';
-          document.getElementById('ar-calendar-row').classList.add('visible');
-        }
-        btn.disabled = false;
-        btn.innerHTML = '📞 Call Again';
-      } else if(data.status === 'failed' || data.status === 'error'){
-        if(_arPollTimer){ clearInterval(_arPollTimer); _arPollTimer = null; }
-        statusText.className = 'error';
-        statusText.id = 'ar-status-text';
-        statusText.textContent = 'Call failed. Please try again or call directly.';
-        btn.disabled = false;
-        btn.innerHTML = '📞 Retry Call';
-      }
-    } catch(err){
-      // Silently continue polling on network errors
-    }
-  };
-
-  window.downloadCalendarEvent = async function(){
+  window.downloadCalendarEvent = function(){
     if(!_arRestaurant) return;
-    const date = document.getElementById('ar-date').value;
-    const time = document.getElementById('ar-time').value;
-    const partySize = document.getElementById('ar-party-size').value;
-    const guestName = document.getElementById('ar-guest-name').value.trim();
-    const address = document.getElementById('ar-restaurant-address').value;
+    var date = document.getElementById('ar-date').value;
+    var time = document.getElementById('ar-time').value;
+    var partySize = document.getElementById('ar-party-size').value;
+    var guestName = document.getElementById('ar-guest-name').value.trim();
+    var address = document.getElementById('ar-restaurant-address').value;
+    var rName = _arRestaurant.name;
 
-    try {
-      const res = await fetch('/.netlify/functions/generate-calendar', {
-        method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({
-          restaurantName: _arRestaurant.name,
-          address: address,
-          date: date,
-          time: time,
-          partySize: parseInt(partySize,10),
-          confirmationId: _arCallId || '',
-          notes: 'Reserved for ' + guestName + ' via Appetyt AI'
-        })
-      });
-      const icsText = await res.text();
-      const blob = new Blob([icsText], { type: 'text/calendar;charset=utf-8' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'reservation-' + _arRestaurant.name.replace(/[^a-zA-Z0-9]/g, '-') + '.ics';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    } catch(err){
-      alert('Failed to generate calendar file. Please try again.');
+    // Parse time
+    var tMatch = time.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);
+    var h = tMatch ? parseInt(tMatch[1],10) : 19;
+    var m = tMatch ? tMatch[2] : '00';
+    if(tMatch && tMatch[3]){
+      var ampm = tMatch[3].toUpperCase();
+      if(ampm==='PM' && h!==12) h+=12;
+      if(ampm==='AM' && h===12) h=0;
     }
+    var dp = date.split('-');
+    var yr=dp[0], mo=dp[1], dy=dp[2];
+    var hStr=String(h).padStart(2,'0'), mStr=String(m).padStart(2,'0');
+    var dtStart = yr+mo+dy+'T'+hStr+mStr+'00';
+    var eh=h+1, em=parseInt(m,10)+30;
+    if(em>=60){eh++;em-=60;}
+    var ed=parseInt(dy,10); if(eh>=24){eh-=24;ed++;}
+    var dtEnd = yr+mo+String(ed).padStart(2,'0')+'T'+String(eh).padStart(2,'0')+String(em).padStart(2,'0')+'00';
+    var uid = 'appetyt-'+Date.now()+'-'+Math.random().toString(36).slice(2,9)+'@appetyt.app';
+    var stamp = new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
+    var desc = 'Party size: '+(partySize||'N/A')+'\\nReserved for '+guestName+' via Appetyt';
+    var escICS = function(s){return s.replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n');};
+
+    var ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Appetyt//Reservation//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH',
+      'BEGIN:VEVENT','UID:'+uid,'DTSTAMP:'+stamp,'DTSTART:'+dtStart,'DTEND:'+dtEnd,
+      'SUMMARY:Dinner at '+rName, address?'LOCATION:'+escICS(address):'','DESCRIPTION:'+escICS(desc),'STATUS:CONFIRMED',
+      'BEGIN:VALARM','TRIGGER:-PT60M','ACTION:DISPLAY','DESCRIPTION:Reminder: Dinner at '+rName+' in 1 hour','END:VALARM',
+      'END:VEVENT','END:VCALENDAR'].filter(Boolean).join('\r\n');
+
+    var blob = new Blob([ics], {type:'text/calendar;charset=utf-8'});
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'reservation-'+rName.replace(/[^a-zA-Z0-9]/g,'-')+'.ics';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   };
 
   window.addToGoogleCalendar = function(){
@@ -16362,109 +16184,13 @@ window.addEventListener('load', function() {
     if(_aoPollTimer) { clearInterval(_aoPollTimer); _aoPollTimer = null; }
   };
 
-  window.submitAIOrder = async function(){
-    const guestName = document.getElementById('ao-guest-name').value.trim();
-    const items = document.getElementById('ao-items').value.trim();
-    const pickupTime = document.getElementById('ao-pickup-time').value;
-    const special = document.getElementById('ao-special').value.trim();
+  window.submitAIOrder = function(){
     const phone = document.getElementById('ao-restaurant-phone').value;
-    const deliveryAddress = document.getElementById('ao-delivery-address').value.trim();
-
-    if(!guestName){ alert('Please enter your name.'); return; }
-    if(!items){ alert('Please enter items to order.'); return; }
-    if(_aoOrderType==='delivery' && !deliveryAddress){ alert('Please enter a delivery address.'); return; }
-    if(!_aoRestaurant){ alert('No restaurant selected.'); return; }
-
-    const btn = document.getElementById('ao-call-btn');
-    btn.disabled = true;
-    btn.innerHTML = '<span class="ar-pulsing">📞</span> Calling...';
-
-    const statusEl = document.getElementById('ao-status');
-    const statusText = document.getElementById('ao-status-text');
-    statusEl.classList.add('visible');
-    statusText.className = '';
-    statusText.id = 'ao-status-text';
-    statusText.innerHTML = '<span class="ar-pulsing">⏳</span> Calling ' + _aoRestaurant.name + '...';
-
-    try {
-      const res = await fetch('/.netlify/functions/order-call', {
-        method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({
-          restaurantName: _aoRestaurant.name,
-          phone: phone,
-          orderType: _aoOrderType,
-          items: items,
-          guestName: guestName,
-          pickupTime: pickupTime || undefined,
-          deliveryAddress: _aoOrderType==='delivery' ? deliveryAddress : undefined,
-          specialRequests: special || undefined
-        })
-      });
-      const data = await res.json();
-      if(!res.ok || !data.success){
-        throw new Error(data.error || 'Failed to initiate call');
-      }
-      _aoCallId = data.callId;
-      statusText.innerHTML = '<span class="ar-pulsing">📞</span> AI is placing your order with ' + _aoRestaurant.name + '...';
-
-      // Poll using the same reserve-status endpoint (same Bland API)
-      checkOrderStatus(_aoCallId);
-      _aoPollTimer = setInterval(()=> checkOrderStatus(_aoCallId), 5000);
-    } catch(err){
-      statusText.className = 'error';
-      statusText.id = 'ao-status-text';
-      statusText.textContent = 'Error: ' + err.message;
-      btn.disabled = false;
-      btn.innerHTML = '📞 Call & Place Order';
-    }
+    if(!phone){ alert('No phone number available for this restaurant.'); return; }
+    window.location.href = 'tel:' + phone;
   };
 
-  window.checkOrderStatus = async function(callId){
-    if(!callId) return;
-    const statusText = document.getElementById('ao-status-text');
-    const transcriptEl = document.getElementById('ao-transcript');
-    const btn = document.getElementById('ao-call-btn');
-
-    try {
-      const res = await fetch('/.netlify/functions/reserve-status?callId=' + encodeURIComponent(callId));
-      const data = await res.json();
-
-      if(data.transcript){
-        transcriptEl.style.display = 'block';
-        transcriptEl.textContent = data.transcript;
-      }
-
-      if(data.completed || data.status === 'completed' || data.status === 'ended'){
-        if(_aoPollTimer){ clearInterval(_aoPollTimer); _aoPollTimer = null; }
-
-        const transcriptLower = (data.transcript||'').toLowerCase();
-        const confirmed = transcriptLower.includes('confirmed') || transcriptLower.includes('ready') ||
-          transcriptLower.includes('minutes') || transcriptLower.includes('total') || transcriptLower.includes('order is in');
-
-        if(confirmed){
-          statusText.className = 'success';
-          statusText.id = 'ao-status-text';
-          statusText.innerHTML = '✅ Order placed at ' + (_aoRestaurant?_aoRestaurant.name:'the restaurant') + '!';
-        } else {
-          statusText.className = '';
-          statusText.id = 'ao-status-text';
-          statusText.innerHTML = '📞 Call completed. Check the transcript below for details.';
-        }
-        btn.disabled = false;
-        btn.innerHTML = '📞 Call Again';
-      } else if(data.status === 'failed' || data.status === 'error'){
-        if(_aoPollTimer){ clearInterval(_aoPollTimer); _aoPollTimer = null; }
-        statusText.className = 'error';
-        statusText.id = 'ao-status-text';
-        statusText.textContent = 'Call failed. Please try again or call directly.';
-        btn.disabled = false;
-        btn.innerHTML = '📞 Retry Call';
-      }
-    } catch(err){
-      // Silently continue polling
-    }
-  };
+  window.checkOrderStatus = function(){};
 })();
 </script>
 
