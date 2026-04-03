@@ -5642,6 +5642,7 @@ const A = {
       </div>
       <div class="r-gold-hl"><span>${goldHL}</span></div>
       <div class="r-body">
+        ${r.dist!=null?`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px"><span style="font-size:11px;color:var(--gold);font-weight:700">${r.dist<0.1?(r.dist*5280).toFixed(0)+' ft':r.dist.toFixed(1)+' mi'} away</span><a href="https://www.google.com/maps/dir/?api=1&destination=${r.lat},${r.lng}" target="_blank" onclick="event.stopPropagation()" style="font-size:10px;color:var(--gold2);text-decoration:none;padding:3px 8px;border:1px solid rgba(201,168,76,.3);border-radius:6px">📍 Directions</a></div>`:''}
         <div class="r-top">
           <div class="r-rank">${rank}</div>
           <div style="flex:1">
