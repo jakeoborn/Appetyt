@@ -2034,19 +2034,28 @@ const TRIPS = {
             <button class="nbhd-chip" onclick="A.setNeighborhood('Knox Henderson',this)" style="flex-shrink:0">Knox Henderson</button>
             <button class="nbhd-chip" onclick="A.setNeighborhood('Deep Ellum',this)" style="flex-shrink:0">Deep Ellum</button>
           </div>
-          <!-- Row 2: next 4 -->
+          <!-- Row 2: next 5 -->
           <div style="display:flex;gap:5px;margin-bottom:5px;overflow-x:auto;scrollbar-width:none">
             <button class="nbhd-chip" onclick="A.setNeighborhood('Design District',this)" style="flex-shrink:0">Design District</button>
             <button class="nbhd-chip" onclick="A.setNeighborhood('Oak Cliff',this)" style="flex-shrink:0">Oak Cliff</button>
-            <button class="nbhd-chip" onclick="A.setNeighborhood('Arts District',this)" style="flex-shrink:0">Arts District</button>
+            <button class="nbhd-chip" onclick="A.setNeighborhood('Oak Lawn',this)" style="flex-shrink:0">Oak Lawn</button>
             <button class="nbhd-chip" onclick="A.setNeighborhood('Lower Greenville',this)" style="flex-shrink:0">Greenville</button>
+            <button class="nbhd-chip" onclick="A.setNeighborhood('West Village',this)" style="flex-shrink:0">West Village</button>
           </div>
           <!-- More: hidden by default -->
           <div id="nbhd-more" style="display:none;flex-direction:column;gap:5px">
             <div style="display:flex;gap:5px;overflow-x:auto;scrollbar-width:none">
+              <button class="nbhd-chip" onclick="A.setNeighborhood('East Dallas / Lakewood',this)" style="flex-shrink:0">East Dallas / Lakewood</button>
+              <button class="nbhd-chip" onclick="A.setNeighborhood('Cedars',this)" style="flex-shrink:0">Cedars</button>
+              <button class="nbhd-chip" onclick="A.setNeighborhood('Lake Highlands',this)" style="flex-shrink:0">Lake Highlands</button>
+              <button class="nbhd-chip" onclick="A.setNeighborhood('Arts District',this)" style="flex-shrink:0">Arts District</button>
+            </div>
+            <div style="display:flex;gap:5px;overflow-x:auto;scrollbar-width:none">
               <button class="nbhd-chip" onclick="A.setNeighborhood('Highland Park Village',this)" style="flex-shrink:0">Highland Park</button>
+              <button class="nbhd-chip" onclick="A.setNeighborhood('Harwood District',this)" style="flex-shrink:0">Harwood</button>
               <button class="nbhd-chip" onclick="A.setNeighborhood('North Dallas',this)" style="flex-shrink:0">North Dallas</button>
               <button class="nbhd-chip" onclick="A.setNeighborhood('Victory Park',this)" style="flex-shrink:0">Victory Park</button>
+              <button class="nbhd-chip" onclick="A.setNeighborhood('Preston Center',this)" style="flex-shrink:0">Preston Center</button>
               <button class="nbhd-chip" onclick="A.setNeighborhood('__suburbs__',this)" style="flex-shrink:0">🌆 Suburbs</button>
             </div>
           </div>
