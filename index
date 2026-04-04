@@ -2093,18 +2093,28 @@ const TRIPS = {
       </div>
       <!-- Map panel -->
       <div id="mn-map-panel" style="flex:1;display:flex;flex-direction:column">
-        <!-- Map filter chips -->
-        <div id="map-filter-bar" style="display:flex;gap:6px;padding:8px 12px;overflow-x:auto;scrollbar-width:none;background:var(--dark);border-bottom:1px solid var(--border);flex-shrink:0;-webkit-overflow-scrolling:touch">
-          <button class="map-chip active" id="mf-all" onclick="A.setMapFilter('all',this)">All</button>
-          <button class="map-chip" id="mf-date-night" onclick="A.setMapFilter('date-night',this)">💕 Date Night</button>
-          <button class="map-chip" id="mf-happy-hour" onclick="A.setMapFilter('happy-hour',this)">🍸 Happy Hour</button>
-          <button class="map-chip" id="mf-brunch" onclick="A.setMapFilter('brunch',this)">🥂 Brunch</button>
-          <button class="map-chip" id="mf-patio" onclick="A.setMapFilter('patio',this)">🌳 Patio</button>
-          <button class="map-chip" id="mf-rooftop" onclick="A.setMapFilter('rooftop',this)">🌆 Rooftop</button>
-          <button class="map-chip" id="mf-late-night" onclick="A.setMapFilter('late-night',this)">🌙 Late Night</button>
-          <button class="map-chip" id="mf-fine-dining" onclick="A.setMapFilter('fine-dining',this)">🎖️ Fine Dining</button>
-          <button class="map-chip" id="mf-cocktails" onclick="A.setMapFilter('cocktails',this)">🍹 Cocktails</button>
-          <button class="map-chip" id="mf-live-music" onclick="A.setMapFilter('live-music',this)">🎵 Live Music</button>
+        <!-- Map filter chips: Row 1 -->
+        <div id="map-filter-bar" style="display:flex;flex-direction:column;gap:4px;padding:8px 12px 4px;background:var(--dark);border-bottom:1px solid var(--border);flex-shrink:0">
+          <div style="display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch">
+            <button class="map-chip active" id="mf-all" onclick="A.setMapFilter('all',this)">All</button>
+            <button class="map-chip" onclick="A.setMapFilter('date-night',this)">💕 Date</button>
+            <button class="map-chip" onclick="A.setMapFilter('happy-hour',this)">🍸 HH</button>
+            <button class="map-chip" onclick="A.setMapFilter('brunch',this)">🥂 Brunch</button>
+            <button class="map-chip" onclick="A.setMapFilter('patio',this)">🌳 Patio</button>
+            <button class="map-chip" onclick="A.setMapFilter('rooftop',this)">🌆 Roof</button>
+            <button class="map-chip" onclick="A.setMapFilter('late-night',this)">🌙 Late</button>
+            <button class="map-chip" onclick="A.setMapFilter('cocktails',this)">🍹 Cocktails</button>
+          </div>
+          <!-- Row 2 -->
+          <div style="display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:4px">
+            <button class="map-chip" onclick="A.setMapFilter('fine-dining',this)">🎖️ Fine Dining</button>
+            <button class="map-chip" onclick="A.setMapFilter('live-music',this)">🎵 Music</button>
+            <button class="map-chip" onclick="A.setMapFilter('family',this)">👨‍👩‍👧‍👦 Family</button>
+            <button class="map-chip" onclick="A.setMapFilter('dessert',this)">🍦 Dessert</button>
+            <button class="map-chip" onclick="A.setMapFilter('bbq',this)">🍖 BBQ</button>
+            <button class="map-chip" onclick="A.setMapFilter('sushi',this)">🍣 Sushi</button>
+            <button class="map-chip" onclick="A.openMapFilterModal()" style="background:rgba(201,168,76,.15);border-color:var(--gold);color:var(--gold)">🎛️ All 30+</button>
+          </div>
         </div>
         <div id="map-container" style="flex:1;min-height:0"></div>
         <div id="map-controls" style="padding:8px 14px;background:var(--dark);border-top:1px solid var(--border);display:flex;gap:8px;align-items:center;flex-shrink:0">
@@ -5900,7 +5910,33 @@ const A = {
     // Update active chip
     document.querySelectorAll('.map-chip').forEach(b=>b.classList.remove('active'));
     if(btn) btn.classList.add('active');
+    else { const el=document.getElementById('mf-'+filter); if(el) el.classList.add('active'); }
+    // Close modal if open
+    const modal=document.getElementById('map-filter-modal');
+    if(modal) modal.style.display='none';
     this.refreshMapMarkers();
+  },
+  openMapFilterModal(){
+    let modal=document.getElementById('map-filter-modal');
+    if(!modal){
+      modal=document.createElement('div');
+      modal.id='map-filter-modal';
+      modal.style.cssText='position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;padding:20px';
+      modal.onclick=(e)=>{if(e.target===modal)modal.style.display='none';};
+      document.body.appendChild(modal);
+    }
+    const current=S.mapFilter||'all';
+    modal.innerHTML=`<div style="background:var(--card);border:2px solid var(--gold);border-radius:16px;padding:16px;max-width:380px;width:100%;max-height:70vh;overflow-y:auto">
+      <div style="font-size:15px;font-weight:800;color:var(--gold);margin-bottom:12px;text-align:center">🎛️ Map Filters</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+        <button onclick="A.setMapFilter('all')" style="grid-column:1/-1;background:var(--gold);color:var(--dark);font-weight:700;font-size:13px;padding:10px;border-radius:10px;border:none">✕ Show All</button>
+        ${FILTERS.filter(f=>f.id!=='all').map(f=>{
+          const active=current===f.id;
+          return '<button onclick="A.setMapFilter(\''+f.id+'\')" style="background:'+(active?'rgba(201,168,76,.2)':'var(--card2)')+';border:'+(active?'2px solid var(--gold)':'1px solid var(--border)')+';color:'+(active?'var(--gold)':'var(--text2)')+';font-size:12px;padding:10px 8px;border-radius:10px;text-align:left;display:flex;align-items:center;gap:6px;font-weight:'+(active?'700':'400')+'"><span style="font-size:18px">'+f.emoji+'</span><span>'+f.label+'</span></button>';
+        }).join('')}
+      </div>
+    </div>`;
+    modal.style.display='flex';
   },
 
   refreshMapMarkers(){
