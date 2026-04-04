@@ -5948,7 +5948,10 @@ const A = {
     const filter = S.mapFilter || 'all';
     let restaurants = (this.getRestaurants().length ? this.getRestaurants() : (typeof DALLAS_DATA!=='undefined' ? DALLAS_DATA : [])).filter(r=>r.lat&&r.lng);
     if(filter !== 'all'){
-      restaurants = restaurants.filter(r=>(r.tags||[]).some(t=>t.toLowerCase().replace(/\s+/g,'-').includes(filter)||filter.includes(t.toLowerCase().replace(/\s+/g,'-'))));
+      restaurants = restaurants.filter(r=>(r.tags||[]).some(t=>{
+        const tn=t.toLowerCase().replace(/\s+/g,'-').replace(/'/g,'');
+        return tn.includes(filter)||filter.includes(tn)||tn.includes(filter.split('-')[0])||filter.includes(tn.split('-')[0]);
+      }));
     }
     restaurants.forEach(r=>{
       const sc=r.score||50;
@@ -6747,8 +6750,8 @@ const A = {
         {id:'madison-weekend',creator:'Madison Sieli',handle:'@madisonsieli',platform:'TikTok',avatar:'🎬',title:'The Perfect Dallas Weekend',subtitle:'Hidden gems + date night favorites',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
             {time:'6:30 PM',spot:'Drinks at Midnight Rambler',id:4,note:'Underground cocktail bar — skip the line, go early'},
-            {time:'8:00 PM',spot:'Dinner at Sachet',id:7,note:'French-Vietnamese date night vibes'},
-            {time:'10:00 PM',spot:'Nightcap at Leela\'s Wine Bar',id:388,note:'Natural wine in a cozy Bishop Arts nook'}
+            {time:'8:00 PM',spot:'Dinner at Dakotas',id:7,note:'Underground steakhouse — incredible steaks and date night vibes'},
+            {time:'10:00 PM',spot:'Nightcap at Leela\'s Wine Bar',id:388,note:'Natural wine — cozy Lower Greenville spot'}
           ]},
           {label:'Saturday',emoji:'☀️',slots:[
             {time:'9:00 AM',spot:'Coffee at Cultivar Coffee',id:381,note:'Best specialty coffee in Dallas'},
@@ -6767,19 +6770,19 @@ const A = {
         ]},
         {id:'foodie-deep-dive',creator:'The Rose Table',handle:'@therosetable',platform:'TikTok',avatar:'🌹',title:'Dallas Fine Dining Weekend',subtitle:'Tasting menus, omakase & chef experiences',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
-            {time:'6:00 PM',spot:'Cocktails at Hide',id:40,note:'Japanese-inspired bar — stunning interior'},
+            {time:'6:00 PM',spot:'Cocktails at Midnight Rambler',id:4,note:'Underground speakeasy beneath The Joule — world-class cocktails'},
             {time:'7:30 PM',spot:'Omakase at Tatsu Dallas',id:2,note:'12-course chef experience — top 3 in Dallas'},
             {time:'10:00 PM',spot:'Dessert at Kate Weiser Chocolate',id:212,note:'Artisan truffles & sipping chocolate'}
           ]},
           {label:'Saturday',emoji:'☀️',slots:[
             {time:'9:00 AM',spot:'La Rue Doughnuts',id:30,note:'Elevated doughnuts — earl grey glaze is incredible'},
             {time:'12:00 PM',spot:'Lunch at Zodiac Room',id:44,note:'At Neiman Marcus — old Dallas glamour'},
-            {time:'3:00 PM',spot:'Wine at Trova Wine + Market',id:385,note:'Natural wine tasting in Oak Cliff'},
+            {time:'3:00 PM',spot:'Wine at Leela\'s Wine Bar',id:385,note:'Natural wine on Lower Greenville — cozy and curated'},
             {time:'7:00 PM',spot:'Dinner at Mansion on Turtle Creek',id:158,note:'The pinnacle of Dallas fine dining'},
             {time:'10:00 PM',spot:'Bar at Bowen House',id:437,note:'Craft cocktails in a townhouse setting'}
           ]},
           {label:'Sunday',emoji:'🌅',slots:[
-            {time:'10:00 AM',spot:'Brunch at The Charles',id:128,note:'Elegant brunch with live jazz'},
+            {time:'10:00 AM',spot:'Brunch at The French Room',id:128,note:'Legendary brunch at The Adolphus — afternoon tea tradition since 1912'},
             {time:'1:00 PM',spot:'BBQ at Cattleack',id:14,note:'Thu-Sat only — get there early, worth the wait'},
             {time:'4:00 PM',spot:'Coffee at Ascension',id:376,note:'Beautiful space in the Design District'}
           ]}
@@ -6807,16 +6810,16 @@ const A = {
         ]},
         {id:'nightlife-weekend',creator:'Stephanie Camille',handle:'@stephaniecamille',platform:'TikTok',avatar:'✨',title:'Dallas Girls\' Weekend',subtitle:'Brunch, cocktails & nightlife',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
-            {time:'7:00 PM',spot:'Dinner at Besos Day & Night',id:434,note:'Trendy Latin vibes in Deep Ellum'},
+            {time:'7:00 PM',spot:'Dinner at Te Deseo',id:434,note:'Latin-inspired rooftop with incredible cocktails'},
             {time:'9:00 PM',spot:'Rooftop at Happiest Hour',id:22,note:'Three-story playground — go for sunset'},
-            {time:'11:00 PM',spot:'Dancing at LadyLove',id:439,note:'Vinyl bar + dance floor in Deep Ellum'}
+            {time:'11:00 PM',spot:'Dancing at It\'ll Do Club',id:439,note:'Legendary dance club — DJ sets until late'}
           ]},
           {label:'Saturday',emoji:'☀️',slots:[
             {time:'10:00 AM',spot:'Brunch at The Henry',id:18,note:'Aesthetic heaven — order the ahi poke bowl'},
             {time:'1:00 PM',spot:'Shopping + Salty Donut',id:29,note:'Design District stroll + artisan donuts'},
             {time:'3:00 PM',spot:'Mochi at IFKYK',id:343,note:'The cutest dessert spot in town'},
             {time:'7:00 PM',spot:'Dinner at Nobu Dallas',id:32,note:'Dress up — the black cod is unreal'},
-            {time:'10:00 PM',spot:'Cocktails at Tipsy Alchemist',id:444,note:'Instagram-worthy molecular cocktails'}
+            {time:'10:00 PM',spot:'Cocktails at Catbird',id:444,note:'50th floor cocktails at The National — stunning skyline views'}
           ]},
           {label:'Sunday',emoji:'🌅',slots:[
             {time:'10:00 AM',spot:'Coffee at Hola Café',id:373,note:'Cute cafe + great avocado toast'},
@@ -6826,7 +6829,7 @@ const A = {
         ]},
         {id:'bbq-trail',creator:'Eat in Dallas',handle:'@eatindallas',platform:'Instagram',avatar:'🔥',title:'The Dallas BBQ Trail',subtitle:'Smoke, meat & craft beer weekend',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
-            {time:'6:00 PM',spot:'Beers at Lakewood Brewing',id:56,note:'Taproom vibes — Temptress on draft'},
+            {time:'6:00 PM',spot:'Beers at Four Corners Brewing',id:56,note:'Cedars taproom with great patio — local craft beer'},
             {time:'8:00 PM',spot:'BBQ at Terry Black\'s',id:159,note:'Austin transplant — beef rib is massive'},
             {time:'10:00 PM',spot:'Live music at Adair\'s',id:38,note:'Honky-tonk dive in Deep Ellum'}
           ]},
@@ -6840,7 +6843,7 @@ const A = {
           ]},
           {label:'Sunday',emoji:'🌅',slots:[
             {time:'10:00 AM',spot:'Kolaches at Village Baking Co.',id:16,note:'Czech-Texas pastry perfection'},
-            {time:'12:00 PM',spot:'BBQ at Hutchins',id:478,note:'McKinney legend — ribs fall off the bone'},
+            {time:'12:00 PM',spot:'BBQ at Slow Bone',id:478,note:'Texas Monthly Top 50 — prime brisket and chef-driven sides'},
             {time:'3:00 PM',spot:'Beer garden at Truck Yard',id:25,note:'Treehouse + food trucks + cold beer'}
           ]}
         ]},
@@ -6856,20 +6859,20 @@ const A = {
             {time:'1:30 PM',spot:'Walk Knox-Henderson',id:null,note:'Shop the boutiques, digest, repeat'},
             {time:'3:00 PM',spot:'Coffee at Hola Café',id:373,note:'Best oat milk latte in Dallas'},
             {time:'7:00 PM',spot:'Dinner at Gemma',id:69,note:'Uptown Italian — handmade pasta'},
-            {time:'10:00 PM',spot:'Mezcal at Ayahuasca Cantina',id:455,note:'Psychedelic vibes — oaxacan cocktails'}
+            {time:'10:00 PM',spot:'Cocktails at Apothecary',id:455,note:'Intimate cocktail bar — seasonal menu changes constantly'}
           ]},
           {label:'Sunday',emoji:'🌅',slots:[
             {time:'10:00 AM',spot:'Brunch at Rise No. 1',id:100,note:'Soufflé everything — sweet or savory'},
-            {time:'12:30 PM',spot:'Tacos at Resident Taqueria',id:471,note:'Oak Cliff gem — al pastor is perfection'},
+            {time:'12:30 PM',spot:'Tacos at Revolver Taco Lounge',id:471,note:'Gourmet tacos in Deep Ellum — James Beard recognized'},
             {time:'3:00 PM',spot:'Ice cream at Van Leeuwen',id:342,note:'Brooklyn-born, Dallas-approved'},
             {time:'5:00 PM',spot:'Happy hour at HG Sply Co.',id:19,note:'Rooftop with skyline views'}
           ]}
         ]},
         {id:'comfort-food',creator:'Cowgirlseat',handle:'@cowgirlseat',platform:'TikTok',avatar:'🤠',title:'Comfort Food Weekend',subtitle:'Burgers, tacos, fried chicken & BBQ',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
-            {time:'6:00 PM',spot:'Wings at Pluckers',id:60,note:'Holy Macaroni wings — trust the process'},
-            {time:'8:30 PM',spot:'Burgers at Rodeo Goat',id:52,note:'The Baaad Boy burger with fried goat cheese'},
-            {time:'10:30 PM',spot:'Late-night at Lucky Dog Saloon',id:419,note:'Cheap shots and good times'}
+            {time:'6:00 PM',spot:'Soul food at Soul Shack',id:60,note:'1920s jazz-themed southern kitchen — fried chicken and soul rolls'},
+            {time:'8:30 PM',spot:'Sandwiches at Jimmy\'s Food Store',id:52,note:'Iconic Italian deli — the muffuletta is legendary'},
+            {time:'10:30 PM',spot:'Steaks at 12 Cuts Brazilian',id:419,note:'Go-to Brazilian steakhouse — endless meat parade'}
           ]},
           {label:'Saturday',emoji:'☀️',slots:[
 
