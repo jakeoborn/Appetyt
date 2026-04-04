@@ -5372,7 +5372,7 @@ const A = {
       } else if(S.filters&&S.filters.size>0){
         const tags=(r.tags||[]).map(t=>t.toLowerCase().replace(/\s+/g,'-').replace(/'/g,''));
         const matchF=(f)=>tags.some(t=>t.includes(f)||f.includes(t.split('-')[0]));
-        if(![...S.filters].some(f=>matchF(f))) return false;
+        if(![...S.filters].every(f=>matchF(f))) return false;
       } else if(S.filter!=='all'&&S.filter!=='multi'){
         const tags=(r.tags||[]).map(t=>t.toLowerCase().replace(/\s+/g,'-').replace(/'/g,''));
         if(!tags.some(t=>t.includes(S.filter)||S.filter.includes(t.split('-')[0]))) return false;
@@ -5462,7 +5462,13 @@ const A = {
         const m2 = tags.some(t=>t.includes(S.combo.f2.replace('-',' '))||t===S.combo.f2) ? 1 : 0;
         return m1 + m2; // 0=none, 1=partial, 2=both
       }
-      if(S.filter && S.filter !== 'all'){
+      if(S.filters&&S.filters.size>0){
+        // Multi-filter: count how many selected filters this restaurant matches
+        let hits=0;
+        S.filters.forEach(f=>{if(tags.some(t=>t.includes(f)||f.includes(t.split('-')[0])))hits++;});
+        return hits; // higher = better match across all selected filters
+      }
+      if(S.filter && S.filter !== 'all' && S.filter !== 'multi'){
         return tags.some(t=>t.includes(S.filter)||S.filter.includes(t.split('-')[0])) ? 1 : 0;
       }
       return 0;
@@ -5470,11 +5476,15 @@ const A = {
     const compositeScore = (r) => {
       const dist = calcDist(r);
       const proxBonus = S.lat ? Math.max(0, 15 - dist * 1.5) : 0; // up to +15 for nearby
-      const matchBonus = filterStrength(r) * 8; // up to +16 for combo match
+      const filterHits = filterStrength(r);
+      const maxFilters = S.filters&&S.filters.size>0 ? S.filters.size : (S.combo ? 2 : 1);
+      const matchBonus = maxFilters > 0 ? (filterHits / maxFilters) * 20 : 0; // up to +20, scaled by match %
       const editBonus = getEditorialBoost(r.name, S.filter, S.combo, S.indicators); // up to +25 editorial
       const favBonus = S.userData.favs.includes(r.id) ? 5 : 0;
       const visitBonus = S.userData.visited.includes(r.id) ? -3 : 0;
-      return r.score + proxBonus + matchBonus + editBonus + favBonus + visitBonus;
+      const awardsBonus = (r.awards && r.awards.length > 5) ? 3 : 0; // slight boost for awarded spots
+      const priceRelevance = (S.filter==='casual'||S.filter==='family') && r.price<=2 ? 3 : 0; // cheaper = better for casual/family
+      return r.score + proxBonus + matchBonus + editBonus + favBonus + visitBonus + awardsBonus + priceRelevance;
     };
     const sorted = filtered.slice().sort((a,b) => compositeScore(b) - compositeScore(a));
 
