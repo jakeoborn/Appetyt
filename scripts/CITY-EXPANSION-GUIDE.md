@@ -121,7 +121,7 @@ Format each as a JSON object matching this exact schema:
 Scores should range 90-98. Price mostly $$$$ with some $$$. All should have reservations (Resy/Tock/OpenTable).
 
 Add them to [CITY]_DATA in index.html. Start at ID [NEXT_ID].
-After adding, copy index.html to index and netlify/functions/index.
+After adding, copy index.html to the index file: cp index.html index
 ```
 
 ### STEP 2: Upscale Casual & Date Night (~80 restaurants, score 84-92, $$$)
@@ -206,8 +206,8 @@ Target: 500. If under, repeat the step that's most lacking.
 ### STEP 9: Commit & Move to Next City
 
 ```
-Copy index.html to index and netlify/functions/index. Then:
-git add index.html index netlify/functions/index
+Copy index.html to index. Then:
+git add index.html index
 git commit -m "Expand [CITY] restaurant data to 500 — full dining scene coverage"
 git push -u origin claude/fix-local-tab-scroll-V7wuv
 ```
