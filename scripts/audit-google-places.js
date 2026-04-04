@@ -418,12 +418,8 @@ async function run() {
 
     if (fixCount > 0) {
       fs.writeFileSync(indexPath, fixHtml);
-      // Sync copies
+      // Sync copy
       fs.writeFileSync(path.join(__dirname, '..', 'index'), fixHtml);
-      const netlifyPath = path.join(__dirname, '..', 'netlify', 'functions', 'index');
-      if (fs.existsSync(path.dirname(netlifyPath))) {
-        fs.writeFileSync(netlifyPath, fixHtml);
-      }
       console.log(`Applied ${fixCount} fixes to index.html (+ synced copies)`);
     } else {
       console.log('No high-confidence fixes to apply.');
