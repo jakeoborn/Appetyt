@@ -1,0 +1,4069 @@
+{
+  "city": "Dallas",
+  "audited": 573,
+  "apiErrors": 0,
+  "noMatch": [
+    {
+      "id": 26,
+      "name": "Jonathon's Oak Cliff"
+    },
+    {
+      "id": 31,
+      "name": "Fogo de Chao"
+    },
+    {
+      "id": 36,
+      "name": "Monica Aca y Alla"
+    },
+    {
+      "id": 55,
+      "name": "Fuel City Tacos"
+    },
+    {
+      "id": 58,
+      "name": "Chengdu Taste"
+    },
+    {
+      "id": 61,
+      "name": "Texas De Brazil Churrascaria"
+    },
+    {
+      "id": 64,
+      "name": "Ramen Tatsu Yokocho"
+    },
+    {
+      "id": 68,
+      "name": "Purépecha"
+    },
+    {
+      "id": 78,
+      "name": "Beverly's Bistro & Bar"
+    },
+    {
+      "id": 87,
+      "name": "Uchiba"
+    },
+    {
+      "id": 100,
+      "name": "Rise No 1"
+    },
+    {
+      "id": 121,
+      "name": "Milagro Cantina"
+    },
+    {
+      "id": 139,
+      "name": "Mabo"
+    },
+    {
+      "id": 145,
+      "name": "Nikki Greek Bistro & Lounge"
+    },
+    {
+      "id": 158,
+      "name": "The Mansion on Turtle Creek"
+    },
+    {
+      "id": 161,
+      "name": "Chamberlain's Steak and Fish"
+    },
+    {
+      "id": 172,
+      "name": "Café Duro"
+    },
+    {
+      "id": 187,
+      "name": "The Blue Fish"
+    },
+    {
+      "id": 192,
+      "name": "Postino Wine Cafe"
+    },
+    {
+      "id": 205,
+      "name": "The Slow Bone"
+    },
+    {
+      "id": 206,
+      "name": "Café Madrid"
+    },
+    {
+      "id": 213,
+      "name": "Bulla Gastrobar Dallas"
+    },
+    {
+      "id": 214,
+      "name": "Honor Bar Dallas"
+    },
+    {
+      "id": 217,
+      "name": "Sant Ambroeus Dallas"
+    },
+    {
+      "id": 218,
+      "name": "Rex's Seafood & Market"
+    },
+    {
+      "id": 236,
+      "name": "Harvest McKinney"
+    },
+    {
+      "id": 244,
+      "name": "Community Beer Company"
+    },
+    {
+      "id": 259,
+      "name": "Cinépolis Luxury Cinemas"
+    },
+    {
+      "id": 265,
+      "name": "Maroma Dallas"
+    },
+    {
+      "id": 270,
+      "name": "Local Yocal BBQ"
+    },
+    {
+      "id": 272,
+      "name": "Royal China (Richardson)"
+    },
+    {
+      "id": 330,
+      "name": "Crisp & Green"
+    },
+    {
+      "id": 343,
+      "name": "IFKYK Mochi Churro"
+    },
+    {
+      "id": 361,
+      "name": "JG Old Fashioned Hamburgers"
+    },
+    {
+      "id": 369,
+      "name": "Royal China (Preston)"
+    },
+    {
+      "id": 372,
+      "name": "Slow & Steady Coffee"
+    },
+    {
+      "id": 375,
+      "name": "Triumvir Coffee"
+    },
+    {
+      "id": 383,
+      "name": "Magnolia Sous le Pont"
+    },
+    {
+      "id": 408,
+      "name": "Centralé Italia"
+    },
+    {
+      "id": 418,
+      "name": "Yearby's BBQ"
+    },
+    {
+      "id": 422,
+      "name": "Slider and Blues"
+    },
+    {
+      "id": 431,
+      "name": "Shorty's Coneys & Cocktails"
+    },
+    {
+      "id": 440,
+      "name": "Bar Charles"
+    },
+    {
+      "id": 457,
+      "name": "La Viuda Negra"
+    },
+    {
+      "id": 459,
+      "name": "The Golf Ranch"
+    },
+    {
+      "id": 462,
+      "name": "Terry Black's BBQ"
+    },
+    {
+      "id": 464,
+      "name": "Ellie's"
+    },
+    {
+      "id": 475,
+      "name": "Pepe & Mito's"
+    },
+    {
+      "id": 491,
+      "name": "Bishop Cidercade"
+    },
+    {
+      "id": 496,
+      "name": "Taco y Vino - Garland"
+    },
+    {
+      "id": 520,
+      "name": "Cafe Lucca"
+    },
+    {
+      "id": 523,
+      "name": "Craft Restaurant & Beer Market"
+    },
+    {
+      "id": 527,
+      "name": "Cafe Olivia"
+    },
+    {
+      "id": 547,
+      "name": "Corsaire"
+    },
+    {
+      "id": 550,
+      "name": "Punk Noir"
+    },
+    {
+      "id": 551,
+      "name": "Sant Ambroeus"
+    },
+    {
+      "id": 552,
+      "name": "Brazamar"
+    },
+    {
+      "id": 553,
+      "name": "Neighborhood Sushi"
+    },
+    {
+      "id": 554,
+      "name": "La Lupita Taco & Mezcal"
+    },
+    {
+      "id": 563,
+      "name": "Club Dada"
+    },
+    {
+      "id": 1074,
+      "name": "Fortune House - Greenville"
+    },
+    {
+      "id": 1078,
+      "name": "Harumama Noodles + Buns"
+    },
+    {
+      "id": 1084,
+      "name": "Mas Chingon Cantina"
+    },
+    {
+      "id": 1086,
+      "name": "Walker's"
+    },
+    {
+      "id": 1088,
+      "name": "Nora Restaurant and Bar"
+    },
+    {
+      "id": 1091,
+      "name": "Phở Xóm"
+    },
+    {
+      "id": 1115,
+      "name": "Doc B's Fresh Kitchen"
+    }
+  ],
+  "closedOrMoved": [
+    {
+      "id": 232,
+      "name": "Rudy's BBQ",
+      "googleName": "Rudy's",
+      "diffs": [
+        {
+          "field": "status",
+          "ours": "listed as open",
+          "google": "CLOSED_PERMANENTLY",
+          "confidence": "critical"
+        }
+      ]
+    },
+    {
+      "id": 385,
+      "name": "Trova Wine + Market",
+      "googleName": "Trova Wine + Market",
+      "diffs": [
+        {
+          "field": "status",
+          "ours": "listed as open",
+          "google": "CLOSED_PERMANENTLY",
+          "confidence": "critical"
+        }
+      ]
+    },
+    {
+      "id": 546,
+      "name": "Clark's Oyster Bar",
+      "googleName": "Clark's Oyster Bar",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "4155 Buena Vista St, Dallas TX",
+          "google": "4155 Buena Vista St, Dallas, TX 75204",
+          "confidence": "low"
+        },
+        {
+          "field": "status",
+          "ours": "listed as open",
+          "google": "CLOSED_PERMANENTLY",
+          "confidence": "critical"
+        }
+      ]
+    },
+    {
+      "id": 560,
+      "name": "Seegar's Deli",
+      "googleName": "Seegars Deli",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1910 S Harwood St, Dallas TX",
+          "google": "1910 S Harwood St, Dallas, TX 75215",
+          "confidence": "low"
+        },
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.seegarsdeli.com/",
+          "confidence": "medium"
+        },
+        {
+          "field": "status",
+          "ours": "listed as open",
+          "google": "CLOSED_TEMPORARILY",
+          "confidence": "critical"
+        }
+      ]
+    }
+  ],
+  "addressMismatch": [
+    {
+      "id": 6,
+      "name": "Namo",
+      "googleName": "Namo",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "3699 McKinney Ave, Ste 305, Dallas TX 75204",
+          "google": "3699 McKinney Ave #305, Dallas, TX 75204",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Culinary Dropout",
+      "googleName": "Culinary Dropout",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "150 Turtle Creek Blvd, Dallas TX 75207",
+          "google": "150 Turtle Creek Blvd # 101, Dallas, TX 75207",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(214) 273-7700",
+          "google": "(469) 259-2250",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Uchi Dallas",
+      "googleName": "Uchi Dallas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2817 Maple Ave, Dallas TX",
+          "google": "2817 Maple Ave, Dallas, TX 75201",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(214) 855-5554",
+          "google": "(214) 855-5454",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "HG Sply Co.",
+      "googleName": "HG Sply Co.",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2008 Greenville Ave, Dallas TX",
+          "google": "2008 Greenville Ave, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Al Biernat's",
+      "googleName": "Al Biernat's Oak Lawn",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "4217 Oak Lawn Ave, Dallas TX",
+          "google": "4217 Oak Lawn Ave, Dallas, TX 75219",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Katy Trail Ice House",
+      "googleName": "Katy Trail Ice House",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "3127 Routh St, Dallas TX",
+          "google": "3127 Routh St, Dallas, TX 75201",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Truck Yard",
+      "googleName": "Truck Yard",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5624 Sears St, Dallas TX",
+          "google": "5624 Sears St, Dallas, TX 75206",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(469) 500-0139",
+          "google": "(877) 447-2967",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Meso Maya",
+      "googleName": "Meso Maya Comida y Copas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1611 McKinney Ave, Dallas TX",
+          "google": "1611 McKinney Ave, Dallas, TX 75202",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Adair's",
+      "googleName": "Adair's Saloon",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2651 Commerce St, Dallas, TX 75226",
+          "google": "2624 Commerce St, Dallas, TX 75226",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Campisi's Egyptian Restaurant",
+      "googleName": "Campisi's",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5610 E Mockingbird Lane, Dallas, TX 75206",
+          "google": "5610 E Mockingbird Ln, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "name": "Jeng Chi",
+      "googleName": "Jeng Chi Restaurant Bar and Bakery",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "400 N Greenville Ave Ste 11, Richardson TX 75081",
+          "google": "400 N Greenville Ave #11, Richardson, TX 75081",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(972) 669-9988",
+          "google": "(972) 669-9094",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "name": "Darna",
+      "googleName": "Darna Mediterranean Eatery",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "7700 Windrose Ave #G-170, Plano TX 75024",
+          "google": "7700 Windrose Ave., Plano, TX 75024",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "name": "Mercat Bistro",
+      "googleName": "Mercat Bistro",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2501 N Harwood St Ste 225, Dallas TX 75201",
+          "google": "2501 N Harwood St Suite 225, Dallas, TX 75201",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(214) 764-1840",
+          "google": "(214) 953-0917",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 220,
+      "name": "Two Hands",
+      "googleName": "Two Hands",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2681 Howell St, Dallas TX 75201",
+          "google": "2681 Howell St, Dallas, TX 75204",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 221,
+      "name": "Haywire",
+      "googleName": "Haywire",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1920 McKinney Ave #100, Dallas TX 75201",
+          "google": "1920 McKinney Ave Ste 100, Dallas, TX 75201",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 247,
+      "name": "Vector Brewing",
+      "googleName": "Vector Brewing + Pizza + Coffee",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "9850 Walnut Hill Ln Suite 405, Dallas TX 75238",
+          "google": "9850 Walnut Hill Ln #405, Dallas, TX 75238",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 253,
+      "name": "Birdies Golf Lounge",
+      "googleName": "Birdies Golf Lounge",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2401 Victory Park Ln #100, Dallas TX 75219",
+          "google": "2401 Victory Park Ln Suite 100, Dallas, TX 75219",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 255,
+      "name": "Punch Bowl Social",
+      "googleName": "Punch Bowl Social",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2714 Elm St, Dallas, TX 75226",
+          "google": "2600 Main St, Dallas, TX 75226",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 267,
+      "name": "Armoury D.E.",
+      "googleName": "Armoury D.E.",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2600 Main St, Dallas, TX 75226",
+          "google": "2714 Elm St, Dallas, TX 75226",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 283,
+      "name": "Puerto Cocina",
+      "googleName": "Puerto Cocina & Bar",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "155 Riveredge Dr Suite 119, Dallas TX 75207",
+          "google": "155 Riveredge Dr Ste 119, Dallas, TX 75207",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "Angelika Film Center",
+      "googleName": "Angelika Film Center & Café - Dallas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5321 E Mockingbird Ln, Dallas TX 75206",
+          "google": "5321 E Mockingbird Ln #230, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 303,
+      "name": "Rose Café",
+      "googleName": "Rose Café",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "4205 Buena Vista St, Dallas TX 75205",
+          "google": "4205 Buena Vista St Suite 160, Dallas, TX 75205",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 306,
+      "name": "True Food Kitchen",
+      "googleName": "True Food Kitchen",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "8383 Preston Center Plaza, Dallas TX 75225",
+          "google": "8383 Preston Center Plaza #100, Dallas, TX 75225",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 313,
+      "name": "El Fenix",
+      "googleName": "El Fenix",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1601 McKinney Ave, Dallas TX 75202",
+          "google": "1601 McKinney Ave Downtown #1, Dallas, TX 75202",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 316,
+      "name": "Urban Italia",
+      "googleName": "Urban Italia",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "3030 Nowitzki Way, Dallas TX 75201",
+          "google": "3030 Nowitzki Way, Dallas, TX 75219",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 319,
+      "name": "Yard House",
+      "googleName": "Yard House",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5100 Belt Line Rd, Addison, TX 75254",
+          "google": "5100 Belt Line Rd, Dallas, TX 75254",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 336,
+      "name": "Brick & Bones",
+      "googleName": "Brick & Bones",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2624 Commerce St, Dallas TX 75226",
+          "google": "2651 Commerce St, Dallas, TX 75226",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 426,
+      "name": "The Finch",
+      "googleName": "The Finch",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5307 E Mockingbird Ln, Ste 150, Dallas, TX 75206",
+          "google": "5307 E Mockingbird Ln #150, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 456,
+      "name": "Boxcar",
+      "googleName": "Boxcar",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "4509 Greenville Ave Ste B, Dallas TX 75206",
+          "google": "4509 Greenville Ave, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 463,
+      "name": "Eataly Dallas",
+      "googleName": "Eataly Dallas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "8687 N Central Expy, Dallas TX 75225",
+          "google": "8687 N Central Expy #2172, Dallas, TX 75225",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 472,
+      "name": "Malai Kitchen",
+      "googleName": "Malai Kitchen",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "3699 McKinney Ave, Dallas TX 75204",
+          "google": "3699 McKinney Ave #319, Dallas, TX 75204",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 512,
+      "name": "Piada Italian Street Food",
+      "googleName": "Piada Italian Street Food",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "6333 E Mockingbird Ln Ste 101, Dallas TX 75214",
+          "google": "6333 E Mockingbird Ln Suite 101, Dallas, TX 75214",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 513,
+      "name": "Original ChopShop",
+      "googleName": "Original ChopShop",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "6401 Hillcrest Ave Ste 100, Dallas TX 75205",
+          "google": "6401 Hillcrest Ave #100, Dallas, TX 75205",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 516,
+      "name": "Snarf's Sandwiches",
+      "googleName": "Snarf's Sandwiches",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2337 W Mockingbird Ln Ste 150, Dallas TX 75235",
+          "google": "2337 W Mockingbird Ln #150, Dallas, TX 75235",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 534,
+      "name": "Via Triozzi",
+      "googleName": "Via Triozzi",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1806 Greenville Ave, Dallas, TX 75206",
+          "google": "1806 Greenville Ave Suite 120, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 538,
+      "name": "Sidecar Social",
+      "googleName": "Sidecar Social Addison",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5100 Belt Line Rd, Dallas, TX 75254",
+          "google": "5100 Belt Line Rd, Addison, TX 75254",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 541,
+      "name": "The Reserve at The Highland",
+      "googleName": "The Reserve at The Highland",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5300 E. Mockingbird Ln., Dallas, TX",
+          "google": "5300 E Mockingbird Ln, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 542,
+      "name": "Meridian",
+      "googleName": "Meridian",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5650 Village Glen Dr., Dallas, TX",
+          "google": "5650 Village Glen Dr, Dallas, TX 75206",
+          "confidence": "low"
+        },
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: Closed; Tuesday: Closed; Wednesday: 4:30 – 10:00 PM; Thursday: 4:30 – 10:00 PM; Friday: 4:30 – 11:00 PM; Saturday: 4:30 – 11:00 PM; Sunday: 4:30 – 10:00 PM",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 546,
+      "name": "Clark's Oyster Bar",
+      "googleName": "Clark's Oyster Bar",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "4155 Buena Vista St, Dallas TX",
+          "google": "4155 Buena Vista St, Dallas, TX 75204",
+          "confidence": "low"
+        },
+        {
+          "field": "status",
+          "ours": "listed as open",
+          "google": "CLOSED_PERMANENTLY",
+          "confidence": "critical"
+        }
+      ]
+    },
+    {
+      "id": 549,
+      "name": "Serritella Prime Italian",
+      "googleName": "Serritella Prime Italian",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1904 Skillman St, Dallas TX",
+          "google": "1904 Skillman St, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 556,
+      "name": "Alara",
+      "googleName": "Alara Uptown Luxury Apartments",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2025 Pacific Ave, Venice, CA 90291",
+          "google": "2990 Blackburn St, Dallas, TX 75204",
+          "confidence": "high"
+        },
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(844) 786-1723",
+          "confidence": "high"
+        },
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.alarauptown.com/?utm_source=gmb&utm_medium=organic",
+          "confidence": "medium"
+        },
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: 10:00 AM – 6:00 PM; Tuesday: 10:00 AM – 6:00 PM; Wednesday: 10:00 AM – 6:00 PM; Thursday: 10:00 AM – 6:00 PM; Friday: 10:00 AM – 6:00 PM; Saturday: 10:00 AM – 5:00 PM; Sunday: Closed",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 558,
+      "name": "Night Rooster",
+      "googleName": "Night Rooster",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1000 N Riverfront Blvd, Dallas TX",
+          "google": "1000 N Riverfront Blvd, Dallas, TX 75207",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 559,
+      "name": "Little Ruby's",
+      "googleName": "Little Ruby's Dallas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2305 Cedar Springs Rd, Dallas TX",
+          "google": "2305 Cedar Springs Rd suite 150, Dallas, TX 75201",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 560,
+      "name": "Seegar's Deli",
+      "googleName": "Seegars Deli",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1910 S Harwood St, Dallas TX",
+          "google": "1910 S Harwood St, Dallas, TX 75215",
+          "confidence": "low"
+        },
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.seegarsdeli.com/",
+          "confidence": "medium"
+        },
+        {
+          "field": "status",
+          "ours": "listed as open",
+          "google": "CLOSED_TEMPORARILY",
+          "confidence": "critical"
+        }
+      ]
+    },
+    {
+      "id": 569,
+      "name": "Ka Thai",
+      "googleName": "Ka Thai Uptown",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "3220 McKinney Ave #120, Dallas TX 75204",
+          "google": "3220 McKinney Ave Suite 120, Dallas, TX 75204",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 1059,
+      "name": "Bowlounge",
+      "googleName": "Bowlounge",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "167 Turtle Creek Blvd, Ste 103, Dallas, TX 75207",
+          "google": "167 Turtle Creek Blvd #103, Dallas, TX 75207",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 1076,
+      "name": "Ayat",
+      "googleName": "Ayat Dallas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "200 W Spring Valley Rd, Richardson, TX",
+          "google": "200 W Spring Valley Rd, Richardson, TX 75081",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 1080,
+      "name": "Pan Pa' Vos",
+      "googleName": "Pan Pa’ Vos",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "3855 Frankford Rd, Ste 100, Dallas, TX 75287",
+          "google": "3855 Frankford Rd, Dallas, TX 75287",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 1096,
+      "name": "Velvet Taco (Addison)",
+      "googleName": "Velvet Taco",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "15104 Dallas Pkwy, Addison TX 75248",
+          "google": "15104 Dallas Pkwy, Dallas, TX 75248",
+          "confidence": "low"
+        }
+      ]
+    }
+  ],
+  "phoneMismatch": [
+    {
+      "id": 2,
+      "name": "Tatsu Dallas",
+      "googleName": "Tatsu Dallas",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 702-7988",
+          "google": "(469) 271-7710",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Sachet",
+      "googleName": "Sachet",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 520-7488",
+          "google": "(214) 613-6425",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Culinary Dropout",
+      "googleName": "Culinary Dropout",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "150 Turtle Creek Blvd, Dallas TX 75207",
+          "google": "150 Turtle Creek Blvd # 101, Dallas, TX 75207",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(214) 273-7700",
+          "google": "(469) 259-2250",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Uchi Dallas",
+      "googleName": "Uchi Dallas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2817 Maple Ave, Dallas TX",
+          "google": "2817 Maple Ave, Dallas, TX 75201",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(214) 855-5554",
+          "google": "(214) 855-5454",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Cattleack Barbeque",
+      "googleName": "Cattleack Barbeque",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(972) 991-2425",
+          "google": "(972) 805-0999",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Sassetta",
+      "googleName": "Sassetta",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 964-0459",
+          "google": "(214) 290-7555",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Happiest Hour",
+      "googleName": "Happiest Hour",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 334-0200",
+          "google": "(972) 528-0067",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Truck Yard",
+      "googleName": "Truck Yard",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5624 Sears St, Dallas TX",
+          "google": "5624 Sears St, Dallas, TX 75206",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(469) 500-0139",
+          "google": "(877) 447-2967",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Las Palmas",
+      "googleName": "Las Palmas Tex-Mex",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 922-0200",
+          "google": "(214) 647-1232",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Nobu Dallas",
+      "googleName": "Nobu Dallas",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 252-7900",
+          "google": "(214) 252-7000",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Rodeo Goat",
+      "googleName": "Rodeo Goat",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 776-1476",
+          "google": "(214) 741-4628",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Lakewood Brewing Company",
+      "googleName": "Lakewood Brewing Company",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 370-8400",
+          "google": "(972) 864-2337",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Pluckers Wing Bar",
+      "googleName": "Pluckers Wing Bar",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 370-1800",
+          "google": "(214) 363-9464",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Gemma",
+      "googleName": "Gemma",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 891-0015",
+          "google": "(214) 370-9426",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Town Hearth",
+      "googleName": "Town Hearth",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 906-9600",
+          "google": "(214) 761-1617",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Hudson House",
+      "googleName": "Hudson House",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 347-9822",
+          "google": "(214) 894-7874",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Monarch",
+      "googleName": "Monarch Restaurant",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 400-8098",
+          "google": "(214) 945-2222",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "name": "Oddfellows",
+      "googleName": "Oddfellows",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 944-5765",
+          "google": "(214) 944-5958",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "name": "Bob's Steak & Chop House",
+      "googleName": "Bob's Steak & Chop House",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 528-9446",
+          "google": "(214) 652-4800",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "name": "Asian Mint",
+      "googleName": "Asian Mint",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 363-6655",
+          "google": "(214) 219-6468",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "name": "Jeng Chi",
+      "googleName": "Jeng Chi Restaurant Bar and Bakery",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "400 N Greenville Ave Ste 11, Richardson TX 75081",
+          "google": "400 N Greenville Ave #11, Richardson, TX 75081",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(972) 669-9988",
+          "google": "(972) 669-9094",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "name": "Velvet Taco",
+      "googleName": "Velvet Taco",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 823-8358",
+          "google": "(214) 329-0663",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "name": "Emporium Pies",
+      "googleName": "Emporium Pies",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 942-7437",
+          "google": "(972) 982-2757",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "name": "The Charles",
+      "googleName": "The Charles",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 779-7590",
+          "google": "(469) 917-9000",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "name": "Mister Charles",
+      "googleName": "Mister Charles",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 468-4099",
+          "google": "(972) 920-9471",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "name": "Terry Black's Barbecue",
+      "googleName": "Terry Black's Barbecue",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(972) 895-9155",
+          "google": "(469) 399-0081",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "name": "Mercat Bistro",
+      "googleName": "Mercat Bistro",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2501 N Harwood St Ste 225, Dallas TX 75201",
+          "google": "2501 N Harwood St Suite 225, Dallas, TX 75201",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(214) 764-1840",
+          "google": "(214) 953-0917",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "name": "Mi Cocina",
+      "googleName": "Mi Cocina",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 521-6426",
+          "google": "(214) 531-6061",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 190,
+      "name": "La La Land Kind Cafe",
+      "googleName": "La La Land",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 399-7949",
+          "google": "(214) 579-9550",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "name": "The Mexican",
+      "googleName": "The Mexican",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 930-3399",
+          "google": "(214) 210-5700",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 230,
+      "name": "Zalat Pizza",
+      "googleName": "Zalat Pizza",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 888-0045",
+          "google": "(214) 484-8368",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 234,
+      "name": "Hopdoddy Burger Bar",
+      "googleName": "Hopdoddy Burger Bar",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 219-5600",
+          "google": "(214) 871-2337",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 248,
+      "name": "Texas Ale Project",
+      "googleName": "Texas Ale Project",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 257-0666",
+          "google": "(214) 965-0606",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "name": "Manhattan Project Beer Company",
+      "googleName": "Manhattan Project Beer Co.",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 484-6555",
+          "google": "(469) 678-8870",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 260,
+      "name": "Alamo Drafthouse",
+      "googleName": "Alamo Drafthouse Cinema Cedars",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 914-4200",
+          "google": "(469) 701-4679",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 278,
+      "name": "Three Links",
+      "googleName": "Three Links Deep Ellum",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 927-0033",
+          "google": "(214) 484-6011",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 280,
+      "name": "Sons of Hermann Hall",
+      "googleName": "Sons of Hermann Hall",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 747-4422",
+          "google": "(972) 834-6899",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 291,
+      "name": "Ruins",
+      "googleName": "Ruins",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 749-5501",
+          "google": "(972) 707-0607",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 297,
+      "name": "Carbone Vino",
+      "googleName": "Vino",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 972-6944",
+          "google": "(469) 290-6009",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 302,
+      "name": "Barcelona Wine Bar",
+      "googleName": "Barcelona Wine Bar",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 219-2710",
+          "google": "(469) 862-8500",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 312,
+      "name": "E Bar Tex-Mex",
+      "googleName": "E Bar Tex-Mex",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 823-2822",
+          "google": "(214) 824-3227",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 345,
+      "name": "Gus's World Famous Fried Chicken",
+      "googleName": "Gus's World Famous Fried Chicken",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 776-9072",
+          "google": "(469) 709-8294",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 349,
+      "name": "Greenville Avenue Pizza Company",
+      "googleName": "Greenville Avenue Pizza Company",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 827-4722",
+          "google": "(214) 826-5404",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 362,
+      "name": "Sky Rocket Burger",
+      "googleName": "Sky Rocket Burger",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 372-6122",
+          "google": "(469) 863-7090",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 365,
+      "name": "Village Burger Bar",
+      "googleName": "Village Burger Bar",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 855-5543",
+          "google": "(214) 443-9998",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 376,
+      "name": "Ascension Coffee",
+      "googleName": "Ascension Coffee - Crescent Court",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 741-3040",
+          "google": "(469) 941-4542",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 420,
+      "name": "Sixty Vines",
+      "googleName": "Sixty Vines",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 694-8463",
+          "google": "(214) 814-8463",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 421,
+      "name": "Whiskey Cake Kitchen & Bar",
+      "googleName": "Whiskey Cake Kitchen & Bar",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 890-2253",
+          "google": "(972) 993-2253",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 423,
+      "name": "East Hampton Sandwich Co.",
+      "googleName": "East Hampton Sandwich Co.",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 443-7925",
+          "google": "(214) 698-5108",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 433,
+      "name": "Tango Room",
+      "googleName": "Tango Room",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(972) 685-0395",
+          "google": "(214) 252-8595",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 437,
+      "name": "Bowen House",
+      "googleName": "Bowen House",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 250-6263",
+          "google": "(214) 484-1385",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 478,
+      "name": "Hutchins BBQ",
+      "googleName": "Hutchins BBQ",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(972) 548-2629",
+          "google": "(972) 377-2046",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 497,
+      "name": "Cosmic Cafe",
+      "googleName": "Cosmic Cafe",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 521-6157",
+          "google": "(214) 377-8486",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 500,
+      "name": "Medieval Times",
+      "googleName": "Medieval Times Dinner & Tournament",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 761-1801",
+          "google": "(888) 935-6878",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 505,
+      "name": "AllGood Cafe",
+      "googleName": "AllGood Cafe",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 742-5362",
+          "google": "(469) 251-7706",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 506,
+      "name": "Easy Slider",
+      "googleName": "Easy Slider",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 668-1910",
+          "google": "(469) 917-7111",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 503,
+      "name": "Open Sesame Lebanese Grill",
+      "googleName": "Open Sesame Lebanese Grill",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 489-5767",
+          "google": "(469) 726-2825",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 522,
+      "name": "Chilangos",
+      "googleName": "Chilangos Tacos",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 200-3869",
+          "google": "(469) 399-0322",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 533,
+      "name": "Monkey Bar",
+      "googleName": "Monkey Bar on 9",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 521-6426",
+          "google": "(972) 992-9993",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 535,
+      "name": "Green Light Social",
+      "googleName": "Green Light Social",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 928-4430",
+          "google": "(469) 871-0111",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 539,
+      "name": "Shug's Bagels",
+      "googleName": "Shug's Bagels",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 526-5050",
+          "google": "(214) 466-8200",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 1070,
+      "name": "White Rhino Coffee",
+      "googleName": "White Rhino Coffee",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 774-2406",
+          "google": "(214) 980-1150",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 1077,
+      "name": "La Comida Mexican Kitchen",
+      "googleName": "La Comida Mexican Kitchen and Cocktails",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(945) 206-2323",
+          "google": "(214) 272-7437",
+          "confidence": "high"
+        }
+      ]
+    }
+  ],
+  "missingPhone": [
+    {
+      "id": 76,
+      "name": "Fond",
+      "googleName": "Fond",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(972) 803-6045",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 406,
+      "name": "Columbian Country Club",
+      "googleName": "Columbian Country Club",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(214) 484-1555",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 409,
+      "name": "Ella",
+      "googleName": "The Ella Beauty Studio",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(469) 679-1021",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 410,
+      "name": "III Forks",
+      "googleName": "III Forks",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(972) 267-1776",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 411,
+      "name": "Taqueria La Ventana",
+      "googleName": "Taqueria La Ventana",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(214) 484-6803",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 412,
+      "name": "Donde los Tacos",
+      "googleName": "Donde Los Tacos",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(214) 258-6689",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 419,
+      "name": "Lucky Dog Saloon",
+      "googleName": "Lucky Dog Saloon",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(214) 985-8811",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 556,
+      "name": "Alara",
+      "googleName": "Alara Uptown Luxury Apartments",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2025 Pacific Ave, Venice, CA 90291",
+          "google": "2990 Blackburn St, Dallas, TX 75204",
+          "confidence": "high"
+        },
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(844) 786-1723",
+          "confidence": "high"
+        },
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.alarauptown.com/?utm_source=gmb&utm_medium=organic",
+          "confidence": "medium"
+        },
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: 10:00 AM – 6:00 PM; Tuesday: 10:00 AM – 6:00 PM; Wednesday: 10:00 AM – 6:00 PM; Thursday: 10:00 AM – 6:00 PM; Friday: 10:00 AM – 6:00 PM; Saturday: 10:00 AM – 5:00 PM; Sunday: Closed",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 567,
+      "name": "Gilley's Dallas",
+      "googleName": "Gilley's Dallas",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(214) 421-2021",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 1116,
+      "name": "STK Steakhouse",
+      "googleName": "STK Steakhouse",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(972) 842-9450",
+          "confidence": "high"
+        }
+      ]
+    }
+  ],
+  "coordsMismatch": [],
+  "missingWebsite": [
+    {
+      "id": 294,
+      "name": "Off the Record",
+      "googleName": "Off the Record Craft Beer & Vinyl",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.facebook.com/OTRDallas/",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 434,
+      "name": "Besos Day & Night",
+      "googleName": "Besos Day & Night",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.luxxgrouphospitality.com/copy-of-jv-marketing",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 507,
+      "name": "Herby's Burgers",
+      "googleName": "Herby's Burgers",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://cash.app/order/$herbysburgers",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 555,
+      "name": "Ospi",
+      "googleName": "Ospi Venice",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://ospi.com/venice",
+          "confidence": "medium"
+        },
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: 8:00 AM – 9:30 PM; Tuesday: 8:00 AM – 9:30 PM; Wednesday: 8:00 AM – 9:30 PM; Thursday: 8:00 AM – 9:30 PM; Friday: 8:00 AM – 10:30 PM; Saturday: 8:00 AM – 10:30 PM; Sunday: 8:00 AM – 9:30 PM",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 556,
+      "name": "Alara",
+      "googleName": "Alara Uptown Luxury Apartments",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2025 Pacific Ave, Venice, CA 90291",
+          "google": "2990 Blackburn St, Dallas, TX 75204",
+          "confidence": "high"
+        },
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(844) 786-1723",
+          "confidence": "high"
+        },
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.alarauptown.com/?utm_source=gmb&utm_medium=organic",
+          "confidence": "medium"
+        },
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: 10:00 AM – 6:00 PM; Tuesday: 10:00 AM – 6:00 PM; Wednesday: 10:00 AM – 6:00 PM; Thursday: 10:00 AM – 6:00 PM; Friday: 10:00 AM – 6:00 PM; Saturday: 10:00 AM – 5:00 PM; Sunday: Closed",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 560,
+      "name": "Seegar's Deli",
+      "googleName": "Seegars Deli",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1910 S Harwood St, Dallas TX",
+          "google": "1910 S Harwood St, Dallas, TX 75215",
+          "confidence": "low"
+        },
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.seegarsdeli.com/",
+          "confidence": "medium"
+        },
+        {
+          "field": "status",
+          "ours": "listed as open",
+          "google": "CLOSED_TEMPORARILY",
+          "confidence": "critical"
+        }
+      ]
+    },
+    {
+      "id": 1085,
+      "name": "Lawnie's",
+      "googleName": "Lawnie's",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.instagram.com/lawniesbar",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 1092,
+      "name": "Kendall Karsen's Upscale Soul Food",
+      "googleName": "Kendall Karsen’s Upscale Soul Food",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://sites.google.com/view/kendallkarsensupscalesoulfood/",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 1093,
+      "name": "Taqueria El Si Hay",
+      "googleName": "Taqueria El Si Hay",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://taqueria-el-si-hay.shop/",
+          "confidence": "medium"
+        }
+      ]
+    }
+  ],
+  "missingHours": [
+    {
+      "id": 540,
+      "name": "Blues Burgers",
+      "googleName": "Blues Burgers",
+      "diffs": [
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: 11:00 AM – 9:00 PM; Tuesday: 11:00 AM – 9:00 PM; Wednesday: 11:00 AM – 9:00 PM; Thursday: 11:00 AM – 9:00 PM; Friday: 11:00 AM – 9:00 PM; Saturday: 11:00 AM – 9:00 PM; Sunday: 11:00 AM – 9:00 PM",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 542,
+      "name": "Meridian",
+      "googleName": "Meridian",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5650 Village Glen Dr., Dallas, TX",
+          "google": "5650 Village Glen Dr, Dallas, TX 75206",
+          "confidence": "low"
+        },
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: Closed; Tuesday: Closed; Wednesday: 4:30 – 10:00 PM; Thursday: 4:30 – 10:00 PM; Friday: 4:30 – 11:00 PM; Saturday: 4:30 – 11:00 PM; Sunday: 4:30 – 10:00 PM",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 544,
+      "name": "Toca Madera",
+      "googleName": "Toca Madera Houston",
+      "diffs": [
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: 5:00 PM – 12:00 AM; Tuesday: 5:00 PM – 12:00 AM; Wednesday: 5:00 PM – 12:00 AM; Thursday: 5:00 PM – 12:00 AM; Friday: 5:00 PM – 1:00 AM; Saturday: 11:00 AM – 1:00 AM; Sunday: 11:00 AM – 12:00 AM",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 545,
+      "name": "Élephante",
+      "googleName": "Elephant East",
+      "diffs": [
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: Closed; Tuesday: Closed; Wednesday: 5:00 – 9:00 PM; Thursday: 5:00 – 9:00 PM; Friday: 5:00 PM – 12:00 AM; Saturday: 5:00 PM – 12:00 AM; Sunday: 5:00 – 9:00 PM",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 555,
+      "name": "Ospi",
+      "googleName": "Ospi Venice",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://ospi.com/venice",
+          "confidence": "medium"
+        },
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: 8:00 AM – 9:30 PM; Tuesday: 8:00 AM – 9:30 PM; Wednesday: 8:00 AM – 9:30 PM; Thursday: 8:00 AM – 9:30 PM; Friday: 8:00 AM – 10:30 PM; Saturday: 8:00 AM – 10:30 PM; Sunday: 8:00 AM – 9:30 PM",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 556,
+      "name": "Alara",
+      "googleName": "Alara Uptown Luxury Apartments",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2025 Pacific Ave, Venice, CA 90291",
+          "google": "2990 Blackburn St, Dallas, TX 75204",
+          "confidence": "high"
+        },
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(844) 786-1723",
+          "confidence": "high"
+        },
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.alarauptown.com/?utm_source=gmb&utm_medium=organic",
+          "confidence": "medium"
+        },
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: 10:00 AM – 6:00 PM; Tuesday: 10:00 AM – 6:00 PM; Wednesday: 10:00 AM – 6:00 PM; Thursday: 10:00 AM – 6:00 PM; Friday: 10:00 AM – 6:00 PM; Saturday: 10:00 AM – 5:00 PM; Sunday: Closed",
+          "confidence": "medium"
+        }
+      ]
+    }
+  ],
+  "allDiffs": [
+    {
+      "id": 2,
+      "name": "Tatsu Dallas",
+      "googleName": "Tatsu Dallas",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 702-7988",
+          "google": "(469) 271-7710",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Namo",
+      "googleName": "Namo",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "3699 McKinney Ave, Ste 305, Dallas TX 75204",
+          "google": "3699 McKinney Ave #305, Dallas, TX 75204",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Sachet",
+      "googleName": "Sachet",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 520-7488",
+          "google": "(214) 613-6425",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Culinary Dropout",
+      "googleName": "Culinary Dropout",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "150 Turtle Creek Blvd, Dallas TX 75207",
+          "google": "150 Turtle Creek Blvd # 101, Dallas, TX 75207",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(214) 273-7700",
+          "google": "(469) 259-2250",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Uchi Dallas",
+      "googleName": "Uchi Dallas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2817 Maple Ave, Dallas TX",
+          "google": "2817 Maple Ave, Dallas, TX 75201",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(214) 855-5554",
+          "google": "(214) 855-5454",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Cattleack Barbeque",
+      "googleName": "Cattleack Barbeque",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(972) 991-2425",
+          "google": "(972) 805-0999",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Sassetta",
+      "googleName": "Sassetta",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 964-0459",
+          "google": "(214) 290-7555",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "HG Sply Co.",
+      "googleName": "HG Sply Co.",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2008 Greenville Ave, Dallas TX",
+          "google": "2008 Greenville Ave, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Happiest Hour",
+      "googleName": "Happiest Hour",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 334-0200",
+          "google": "(972) 528-0067",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Al Biernat's",
+      "googleName": "Al Biernat's Oak Lawn",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "4217 Oak Lawn Ave, Dallas TX",
+          "google": "4217 Oak Lawn Ave, Dallas, TX 75219",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Katy Trail Ice House",
+      "googleName": "Katy Trail Ice House",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "3127 Routh St, Dallas TX",
+          "google": "3127 Routh St, Dallas, TX 75201",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Truck Yard",
+      "googleName": "Truck Yard",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5624 Sears St, Dallas TX",
+          "google": "5624 Sears St, Dallas, TX 75206",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(469) 500-0139",
+          "google": "(877) 447-2967",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Meso Maya",
+      "googleName": "Meso Maya Comida y Copas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1611 McKinney Ave, Dallas TX",
+          "google": "1611 McKinney Ave, Dallas, TX 75202",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Las Palmas",
+      "googleName": "Las Palmas Tex-Mex",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 922-0200",
+          "google": "(214) 647-1232",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Nobu Dallas",
+      "googleName": "Nobu Dallas",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 252-7900",
+          "google": "(214) 252-7000",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Adair's",
+      "googleName": "Adair's Saloon",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2651 Commerce St, Dallas, TX 75226",
+          "google": "2624 Commerce St, Dallas, TX 75226",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Rodeo Goat",
+      "googleName": "Rodeo Goat",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 776-1476",
+          "google": "(214) 741-4628",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Lakewood Brewing Company",
+      "googleName": "Lakewood Brewing Company",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 370-8400",
+          "google": "(972) 864-2337",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Pluckers Wing Bar",
+      "googleName": "Pluckers Wing Bar",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 370-1800",
+          "google": "(214) 363-9464",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Campisi's Egyptian Restaurant",
+      "googleName": "Campisi's",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5610 E Mockingbird Lane, Dallas, TX 75206",
+          "google": "5610 E Mockingbird Ln, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Gemma",
+      "googleName": "Gemma",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 891-0015",
+          "google": "(214) 370-9426",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Town Hearth",
+      "googleName": "Town Hearth",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 906-9600",
+          "google": "(214) 761-1617",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Fond",
+      "googleName": "Fond",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(972) 803-6045",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Hudson House",
+      "googleName": "Hudson House",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 347-9822",
+          "google": "(214) 894-7874",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Monarch",
+      "googleName": "Monarch Restaurant",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 400-8098",
+          "google": "(214) 945-2222",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "name": "Oddfellows",
+      "googleName": "Oddfellows",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 944-5765",
+          "google": "(214) 944-5958",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "name": "Bob's Steak & Chop House",
+      "googleName": "Bob's Steak & Chop House",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 528-9446",
+          "google": "(214) 652-4800",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "name": "Asian Mint",
+      "googleName": "Asian Mint",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 363-6655",
+          "google": "(214) 219-6468",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "name": "Jeng Chi",
+      "googleName": "Jeng Chi Restaurant Bar and Bakery",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "400 N Greenville Ave Ste 11, Richardson TX 75081",
+          "google": "400 N Greenville Ave #11, Richardson, TX 75081",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(972) 669-9988",
+          "google": "(972) 669-9094",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "name": "Velvet Taco",
+      "googleName": "Velvet Taco",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 823-8358",
+          "google": "(214) 329-0663",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "name": "Emporium Pies",
+      "googleName": "Emporium Pies",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 942-7437",
+          "google": "(972) 982-2757",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "name": "The Charles",
+      "googleName": "The Charles",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 779-7590",
+          "google": "(469) 917-9000",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "name": "Mister Charles",
+      "googleName": "Mister Charles",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 468-4099",
+          "google": "(972) 920-9471",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "name": "Darna",
+      "googleName": "Darna Mediterranean Eatery",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "7700 Windrose Ave #G-170, Plano TX 75024",
+          "google": "7700 Windrose Ave., Plano, TX 75024",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "name": "Terry Black's Barbecue",
+      "googleName": "Terry Black's Barbecue",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(972) 895-9155",
+          "google": "(469) 399-0081",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "name": "Mercat Bistro",
+      "googleName": "Mercat Bistro",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2501 N Harwood St Ste 225, Dallas TX 75201",
+          "google": "2501 N Harwood St Suite 225, Dallas, TX 75201",
+          "confidence": "low"
+        },
+        {
+          "field": "phone",
+          "ours": "(214) 764-1840",
+          "google": "(214) 953-0917",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "name": "Mi Cocina",
+      "googleName": "Mi Cocina",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 521-6426",
+          "google": "(214) 531-6061",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 190,
+      "name": "La La Land Kind Cafe",
+      "googleName": "La La Land",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 399-7949",
+          "google": "(214) 579-9550",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "name": "The Mexican",
+      "googleName": "The Mexican",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 930-3399",
+          "google": "(214) 210-5700",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 220,
+      "name": "Two Hands",
+      "googleName": "Two Hands",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2681 Howell St, Dallas TX 75201",
+          "google": "2681 Howell St, Dallas, TX 75204",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 221,
+      "name": "Haywire",
+      "googleName": "Haywire",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1920 McKinney Ave #100, Dallas TX 75201",
+          "google": "1920 McKinney Ave Ste 100, Dallas, TX 75201",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 230,
+      "name": "Zalat Pizza",
+      "googleName": "Zalat Pizza",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 888-0045",
+          "google": "(214) 484-8368",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 232,
+      "name": "Rudy's BBQ",
+      "googleName": "Rudy's",
+      "diffs": [
+        {
+          "field": "status",
+          "ours": "listed as open",
+          "google": "CLOSED_PERMANENTLY",
+          "confidence": "critical"
+        }
+      ]
+    },
+    {
+      "id": 234,
+      "name": "Hopdoddy Burger Bar",
+      "googleName": "Hopdoddy Burger Bar",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 219-5600",
+          "google": "(214) 871-2337",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 247,
+      "name": "Vector Brewing",
+      "googleName": "Vector Brewing + Pizza + Coffee",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "9850 Walnut Hill Ln Suite 405, Dallas TX 75238",
+          "google": "9850 Walnut Hill Ln #405, Dallas, TX 75238",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 248,
+      "name": "Texas Ale Project",
+      "googleName": "Texas Ale Project",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 257-0666",
+          "google": "(214) 965-0606",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "name": "Manhattan Project Beer Company",
+      "googleName": "Manhattan Project Beer Co.",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 484-6555",
+          "google": "(469) 678-8870",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 253,
+      "name": "Birdies Golf Lounge",
+      "googleName": "Birdies Golf Lounge",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2401 Victory Park Ln #100, Dallas TX 75219",
+          "google": "2401 Victory Park Ln Suite 100, Dallas, TX 75219",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 255,
+      "name": "Punch Bowl Social",
+      "googleName": "Punch Bowl Social",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2714 Elm St, Dallas, TX 75226",
+          "google": "2600 Main St, Dallas, TX 75226",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 260,
+      "name": "Alamo Drafthouse",
+      "googleName": "Alamo Drafthouse Cinema Cedars",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 914-4200",
+          "google": "(469) 701-4679",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 267,
+      "name": "Armoury D.E.",
+      "googleName": "Armoury D.E.",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2600 Main St, Dallas, TX 75226",
+          "google": "2714 Elm St, Dallas, TX 75226",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 278,
+      "name": "Three Links",
+      "googleName": "Three Links Deep Ellum",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 927-0033",
+          "google": "(214) 484-6011",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 280,
+      "name": "Sons of Hermann Hall",
+      "googleName": "Sons of Hermann Hall",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 747-4422",
+          "google": "(972) 834-6899",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 283,
+      "name": "Puerto Cocina",
+      "googleName": "Puerto Cocina & Bar",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "155 Riveredge Dr Suite 119, Dallas TX 75207",
+          "google": "155 Riveredge Dr Ste 119, Dallas, TX 75207",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "Angelika Film Center",
+      "googleName": "Angelika Film Center & Café - Dallas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5321 E Mockingbird Ln, Dallas TX 75206",
+          "google": "5321 E Mockingbird Ln #230, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 291,
+      "name": "Ruins",
+      "googleName": "Ruins",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 749-5501",
+          "google": "(972) 707-0607",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 294,
+      "name": "Off the Record",
+      "googleName": "Off the Record Craft Beer & Vinyl",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.facebook.com/OTRDallas/",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 297,
+      "name": "Carbone Vino",
+      "googleName": "Vino",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 972-6944",
+          "google": "(469) 290-6009",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 302,
+      "name": "Barcelona Wine Bar",
+      "googleName": "Barcelona Wine Bar",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 219-2710",
+          "google": "(469) 862-8500",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 303,
+      "name": "Rose Café",
+      "googleName": "Rose Café",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "4205 Buena Vista St, Dallas TX 75205",
+          "google": "4205 Buena Vista St Suite 160, Dallas, TX 75205",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 306,
+      "name": "True Food Kitchen",
+      "googleName": "True Food Kitchen",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "8383 Preston Center Plaza, Dallas TX 75225",
+          "google": "8383 Preston Center Plaza #100, Dallas, TX 75225",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 312,
+      "name": "E Bar Tex-Mex",
+      "googleName": "E Bar Tex-Mex",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 823-2822",
+          "google": "(214) 824-3227",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 313,
+      "name": "El Fenix",
+      "googleName": "El Fenix",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1601 McKinney Ave, Dallas TX 75202",
+          "google": "1601 McKinney Ave Downtown #1, Dallas, TX 75202",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 316,
+      "name": "Urban Italia",
+      "googleName": "Urban Italia",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "3030 Nowitzki Way, Dallas TX 75201",
+          "google": "3030 Nowitzki Way, Dallas, TX 75219",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 319,
+      "name": "Yard House",
+      "googleName": "Yard House",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5100 Belt Line Rd, Addison, TX 75254",
+          "google": "5100 Belt Line Rd, Dallas, TX 75254",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 336,
+      "name": "Brick & Bones",
+      "googleName": "Brick & Bones",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2624 Commerce St, Dallas TX 75226",
+          "google": "2651 Commerce St, Dallas, TX 75226",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 345,
+      "name": "Gus's World Famous Fried Chicken",
+      "googleName": "Gus's World Famous Fried Chicken",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 776-9072",
+          "google": "(469) 709-8294",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 349,
+      "name": "Greenville Avenue Pizza Company",
+      "googleName": "Greenville Avenue Pizza Company",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 827-4722",
+          "google": "(214) 826-5404",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 362,
+      "name": "Sky Rocket Burger",
+      "googleName": "Sky Rocket Burger",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 372-6122",
+          "google": "(469) 863-7090",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 365,
+      "name": "Village Burger Bar",
+      "googleName": "Village Burger Bar",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 855-5543",
+          "google": "(214) 443-9998",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 376,
+      "name": "Ascension Coffee",
+      "googleName": "Ascension Coffee - Crescent Court",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 741-3040",
+          "google": "(469) 941-4542",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 385,
+      "name": "Trova Wine + Market",
+      "googleName": "Trova Wine + Market",
+      "diffs": [
+        {
+          "field": "status",
+          "ours": "listed as open",
+          "google": "CLOSED_PERMANENTLY",
+          "confidence": "critical"
+        }
+      ]
+    },
+    {
+      "id": 406,
+      "name": "Columbian Country Club",
+      "googleName": "Columbian Country Club",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(214) 484-1555",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 409,
+      "name": "Ella",
+      "googleName": "The Ella Beauty Studio",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(469) 679-1021",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 410,
+      "name": "III Forks",
+      "googleName": "III Forks",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(972) 267-1776",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 411,
+      "name": "Taqueria La Ventana",
+      "googleName": "Taqueria La Ventana",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(214) 484-6803",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 412,
+      "name": "Donde los Tacos",
+      "googleName": "Donde Los Tacos",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(214) 258-6689",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 419,
+      "name": "Lucky Dog Saloon",
+      "googleName": "Lucky Dog Saloon",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(214) 985-8811",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 420,
+      "name": "Sixty Vines",
+      "googleName": "Sixty Vines",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 694-8463",
+          "google": "(214) 814-8463",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 421,
+      "name": "Whiskey Cake Kitchen & Bar",
+      "googleName": "Whiskey Cake Kitchen & Bar",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 890-2253",
+          "google": "(972) 993-2253",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 423,
+      "name": "East Hampton Sandwich Co.",
+      "googleName": "East Hampton Sandwich Co.",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 443-7925",
+          "google": "(214) 698-5108",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 426,
+      "name": "The Finch",
+      "googleName": "The Finch",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5307 E Mockingbird Ln, Ste 150, Dallas, TX 75206",
+          "google": "5307 E Mockingbird Ln #150, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 433,
+      "name": "Tango Room",
+      "googleName": "Tango Room",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(972) 685-0395",
+          "google": "(214) 252-8595",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 434,
+      "name": "Besos Day & Night",
+      "googleName": "Besos Day & Night",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.luxxgrouphospitality.com/copy-of-jv-marketing",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 437,
+      "name": "Bowen House",
+      "googleName": "Bowen House",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 250-6263",
+          "google": "(214) 484-1385",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 456,
+      "name": "Boxcar",
+      "googleName": "Boxcar",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "4509 Greenville Ave Ste B, Dallas TX 75206",
+          "google": "4509 Greenville Ave, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 463,
+      "name": "Eataly Dallas",
+      "googleName": "Eataly Dallas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "8687 N Central Expy, Dallas TX 75225",
+          "google": "8687 N Central Expy #2172, Dallas, TX 75225",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 472,
+      "name": "Malai Kitchen",
+      "googleName": "Malai Kitchen",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "3699 McKinney Ave, Dallas TX 75204",
+          "google": "3699 McKinney Ave #319, Dallas, TX 75204",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 478,
+      "name": "Hutchins BBQ",
+      "googleName": "Hutchins BBQ",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(972) 548-2629",
+          "google": "(972) 377-2046",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 497,
+      "name": "Cosmic Cafe",
+      "googleName": "Cosmic Cafe",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 521-6157",
+          "google": "(214) 377-8486",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 500,
+      "name": "Medieval Times",
+      "googleName": "Medieval Times Dinner & Tournament",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 761-1801",
+          "google": "(888) 935-6878",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 512,
+      "name": "Piada Italian Street Food",
+      "googleName": "Piada Italian Street Food",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "6333 E Mockingbird Ln Ste 101, Dallas TX 75214",
+          "google": "6333 E Mockingbird Ln Suite 101, Dallas, TX 75214",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 513,
+      "name": "Original ChopShop",
+      "googleName": "Original ChopShop",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "6401 Hillcrest Ave Ste 100, Dallas TX 75205",
+          "google": "6401 Hillcrest Ave #100, Dallas, TX 75205",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 516,
+      "name": "Snarf's Sandwiches",
+      "googleName": "Snarf's Sandwiches",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2337 W Mockingbird Ln Ste 150, Dallas TX 75235",
+          "google": "2337 W Mockingbird Ln #150, Dallas, TX 75235",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 505,
+      "name": "AllGood Cafe",
+      "googleName": "AllGood Cafe",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 742-5362",
+          "google": "(469) 251-7706",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 506,
+      "name": "Easy Slider",
+      "googleName": "Easy Slider",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 668-1910",
+          "google": "(469) 917-7111",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 507,
+      "name": "Herby's Burgers",
+      "googleName": "Herby's Burgers",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://cash.app/order/$herbysburgers",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 503,
+      "name": "Open Sesame Lebanese Grill",
+      "googleName": "Open Sesame Lebanese Grill",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 489-5767",
+          "google": "(469) 726-2825",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 522,
+      "name": "Chilangos",
+      "googleName": "Chilangos Tacos",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 200-3869",
+          "google": "(469) 399-0322",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 533,
+      "name": "Monkey Bar",
+      "googleName": "Monkey Bar on 9",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 521-6426",
+          "google": "(972) 992-9993",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 534,
+      "name": "Via Triozzi",
+      "googleName": "Via Triozzi",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1806 Greenville Ave, Dallas, TX 75206",
+          "google": "1806 Greenville Ave Suite 120, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 535,
+      "name": "Green Light Social",
+      "googleName": "Green Light Social",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 928-4430",
+          "google": "(469) 871-0111",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 538,
+      "name": "Sidecar Social",
+      "googleName": "Sidecar Social Addison",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5100 Belt Line Rd, Dallas, TX 75254",
+          "google": "5100 Belt Line Rd, Addison, TX 75254",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 539,
+      "name": "Shug's Bagels",
+      "googleName": "Shug's Bagels",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(469) 526-5050",
+          "google": "(214) 466-8200",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 540,
+      "name": "Blues Burgers",
+      "googleName": "Blues Burgers",
+      "diffs": [
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: 11:00 AM – 9:00 PM; Tuesday: 11:00 AM – 9:00 PM; Wednesday: 11:00 AM – 9:00 PM; Thursday: 11:00 AM – 9:00 PM; Friday: 11:00 AM – 9:00 PM; Saturday: 11:00 AM – 9:00 PM; Sunday: 11:00 AM – 9:00 PM",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 541,
+      "name": "The Reserve at The Highland",
+      "googleName": "The Reserve at The Highland",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5300 E. Mockingbird Ln., Dallas, TX",
+          "google": "5300 E Mockingbird Ln, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 542,
+      "name": "Meridian",
+      "googleName": "Meridian",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "5650 Village Glen Dr., Dallas, TX",
+          "google": "5650 Village Glen Dr, Dallas, TX 75206",
+          "confidence": "low"
+        },
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: Closed; Tuesday: Closed; Wednesday: 4:30 – 10:00 PM; Thursday: 4:30 – 10:00 PM; Friday: 4:30 – 11:00 PM; Saturday: 4:30 – 11:00 PM; Sunday: 4:30 – 10:00 PM",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 544,
+      "name": "Toca Madera",
+      "googleName": "Toca Madera Houston",
+      "diffs": [
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: 5:00 PM – 12:00 AM; Tuesday: 5:00 PM – 12:00 AM; Wednesday: 5:00 PM – 12:00 AM; Thursday: 5:00 PM – 12:00 AM; Friday: 5:00 PM – 1:00 AM; Saturday: 11:00 AM – 1:00 AM; Sunday: 11:00 AM – 12:00 AM",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 545,
+      "name": "Élephante",
+      "googleName": "Elephant East",
+      "diffs": [
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: Closed; Tuesday: Closed; Wednesday: 5:00 – 9:00 PM; Thursday: 5:00 – 9:00 PM; Friday: 5:00 PM – 12:00 AM; Saturday: 5:00 PM – 12:00 AM; Sunday: 5:00 – 9:00 PM",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 546,
+      "name": "Clark's Oyster Bar",
+      "googleName": "Clark's Oyster Bar",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "4155 Buena Vista St, Dallas TX",
+          "google": "4155 Buena Vista St, Dallas, TX 75204",
+          "confidence": "low"
+        },
+        {
+          "field": "status",
+          "ours": "listed as open",
+          "google": "CLOSED_PERMANENTLY",
+          "confidence": "critical"
+        }
+      ]
+    },
+    {
+      "id": 549,
+      "name": "Serritella Prime Italian",
+      "googleName": "Serritella Prime Italian",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1904 Skillman St, Dallas TX",
+          "google": "1904 Skillman St, Dallas, TX 75206",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 555,
+      "name": "Ospi",
+      "googleName": "Ospi Venice",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://ospi.com/venice",
+          "confidence": "medium"
+        },
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: 8:00 AM – 9:30 PM; Tuesday: 8:00 AM – 9:30 PM; Wednesday: 8:00 AM – 9:30 PM; Thursday: 8:00 AM – 9:30 PM; Friday: 8:00 AM – 10:30 PM; Saturday: 8:00 AM – 10:30 PM; Sunday: 8:00 AM – 9:30 PM",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 556,
+      "name": "Alara",
+      "googleName": "Alara Uptown Luxury Apartments",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2025 Pacific Ave, Venice, CA 90291",
+          "google": "2990 Blackburn St, Dallas, TX 75204",
+          "confidence": "high"
+        },
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(844) 786-1723",
+          "confidence": "high"
+        },
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.alarauptown.com/?utm_source=gmb&utm_medium=organic",
+          "confidence": "medium"
+        },
+        {
+          "field": "hours",
+          "ours": "(missing)",
+          "google": "Monday: 10:00 AM – 6:00 PM; Tuesday: 10:00 AM – 6:00 PM; Wednesday: 10:00 AM – 6:00 PM; Thursday: 10:00 AM – 6:00 PM; Friday: 10:00 AM – 6:00 PM; Saturday: 10:00 AM – 5:00 PM; Sunday: Closed",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 558,
+      "name": "Night Rooster",
+      "googleName": "Night Rooster",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1000 N Riverfront Blvd, Dallas TX",
+          "google": "1000 N Riverfront Blvd, Dallas, TX 75207",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 559,
+      "name": "Little Ruby's",
+      "googleName": "Little Ruby's Dallas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "2305 Cedar Springs Rd, Dallas TX",
+          "google": "2305 Cedar Springs Rd suite 150, Dallas, TX 75201",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 560,
+      "name": "Seegar's Deli",
+      "googleName": "Seegars Deli",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "1910 S Harwood St, Dallas TX",
+          "google": "1910 S Harwood St, Dallas, TX 75215",
+          "confidence": "low"
+        },
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.seegarsdeli.com/",
+          "confidence": "medium"
+        },
+        {
+          "field": "status",
+          "ours": "listed as open",
+          "google": "CLOSED_TEMPORARILY",
+          "confidence": "critical"
+        }
+      ]
+    },
+    {
+      "id": 567,
+      "name": "Gilley's Dallas",
+      "googleName": "Gilley's Dallas",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(214) 421-2021",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 569,
+      "name": "Ka Thai",
+      "googleName": "Ka Thai Uptown",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "3220 McKinney Ave #120, Dallas TX 75204",
+          "google": "3220 McKinney Ave Suite 120, Dallas, TX 75204",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 1059,
+      "name": "Bowlounge",
+      "googleName": "Bowlounge",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "167 Turtle Creek Blvd, Ste 103, Dallas, TX 75207",
+          "google": "167 Turtle Creek Blvd #103, Dallas, TX 75207",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 1070,
+      "name": "White Rhino Coffee",
+      "googleName": "White Rhino Coffee",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(214) 774-2406",
+          "google": "(214) 980-1150",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 1076,
+      "name": "Ayat",
+      "googleName": "Ayat Dallas",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "200 W Spring Valley Rd, Richardson, TX",
+          "google": "200 W Spring Valley Rd, Richardson, TX 75081",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 1077,
+      "name": "La Comida Mexican Kitchen",
+      "googleName": "La Comida Mexican Kitchen and Cocktails",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(945) 206-2323",
+          "google": "(214) 272-7437",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": 1080,
+      "name": "Pan Pa' Vos",
+      "googleName": "Pan Pa’ Vos",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "3855 Frankford Rd, Ste 100, Dallas, TX 75287",
+          "google": "3855 Frankford Rd, Dallas, TX 75287",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 1085,
+      "name": "Lawnie's",
+      "googleName": "Lawnie's",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://www.instagram.com/lawniesbar",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 1092,
+      "name": "Kendall Karsen's Upscale Soul Food",
+      "googleName": "Kendall Karsen’s Upscale Soul Food",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://sites.google.com/view/kendallkarsensupscalesoulfood/",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 1093,
+      "name": "Taqueria El Si Hay",
+      "googleName": "Taqueria El Si Hay",
+      "diffs": [
+        {
+          "field": "website",
+          "ours": "(missing)",
+          "google": "https://taqueria-el-si-hay.shop/",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": 1096,
+      "name": "Velvet Taco (Addison)",
+      "googleName": "Velvet Taco",
+      "diffs": [
+        {
+          "field": "address",
+          "ours": "15104 Dallas Pkwy, Addison TX 75248",
+          "google": "15104 Dallas Pkwy, Dallas, TX 75248",
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "id": 1116,
+      "name": "STK Steakhouse",
+      "googleName": "STK Steakhouse",
+      "diffs": [
+        {
+          "field": "phone",
+          "ours": "(missing)",
+          "google": "(972) 842-9450",
+          "confidence": "high"
+        }
+      ]
+    }
+  ]
+}

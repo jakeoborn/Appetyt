@@ -97,7 +97,7 @@ async function searchPlace(name, address, city) {
       locationBias: {
         circle: {
           center: { latitude: 32.78, longitude: -96.80 }, // Dallas center
-          radius: 80000 // 80km covers DFW
+          radius: 50000 // 50km covers DFW
         }
       },
       maxResultCount: 3
