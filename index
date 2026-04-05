@@ -3656,7 +3656,7 @@ const CITY_COORDS = {
     'New York':{
       'East Village':{emoji:'🎸',vibe:'NYC\'s most eclectic dining neighborhood. Punk history meets Michelin stars, izakayas, and the best dive bars.',bestFor:'Late Night, Cocktails, Japanese',knownFor:'St Marks Place, Death & Co, Veselka, ramen shops',mustVisit:'Death & Co, Veselka, Momofuku Ssäm Bar, Lil Frankie\'s',tip:'St Marks Place between 2nd and 3rd Ave is the wildest block.'},
       'Williamsburg':{emoji:'🎨',vibe:'Brooklyn\'s dining powerhouse. Former warehouses now house world-class restaurants, rooftop bars, and waterfront views.',bestFor:'Brunch, Rooftops, Italian, Craft Beer',knownFor:'Peter Luger, Smorgasburg, Bedford Ave, waterfront',mustVisit:'Peter Luger, Lilia, Sunday in Brooklyn, Smorgasburg',tip:'Peter Luger is cash only. Lilia does walk-ins at the bar -- arrive at 5PM.'},
-      'Lower East Side':{emoji:'🎵',vibe:'Gritty-turned-trendy with NYC\'s most exciting new restaurants. Late-night cocktail bars and speakeasies everywhere.',bestFor:'Late Night, Cocktails, Speakeasies',knownFor:'Katz\'s Deli, cocktail bars, live music, vintage shops',mustVisit:'Katz\'s Deli, Attaboy, Beauty & Essex, Wildair',tip:'Attaboy has no sign -- unmarked door on Eldridge. Katz\'s is cash only at the counter.'},
+      'Lower East Side':{emoji:'🎵',vibe:'Gritty-turned-trendy with NYC\'s most exciting new restaurants. Late-night cocktail bars and speakeasies everywhere.',bestFor:'Late Night, Cocktails, Speakeasies',knownFor:'Katz's Deli, cocktail bars, live music, vintage shops',mustVisit:'Katz\'s Deli, Attaboy, Beauty & Essex, Wildair',tip:'Attaboy has no sign -- unmarked door on Eldridge. Katz\'s is cash only at the counter.'},
       'West Village':{emoji:'🌿',vibe:'Cobblestone streets, intimate restaurants, and the best date night dining in NYC.',bestFor:'Date Night, Italian, Cocktails, Brunch',knownFor:'Via Carota, Dante, jazz clubs, charming brownstones',mustVisit:'Via Carota, I Sodi, Buvette, Employees Only',tip:'Bleecker between 6th and 7th has the densest concentration of excellent restaurants.'},
       'SoHo':{emoji:'👗',vibe:'Cast-iron architecture meets world-class shopping and dining. Celebrity-magnet restaurants on every block.',bestFor:'Brunch, Shopping, Upscale Casual',knownFor:'Balthazar, cobblestones, luxury shopping, galleries',mustVisit:'Balthazar, The Dutch, Charlie Bird, Fanelli\'s',tip:'Weekdays are much calmer than weekends. Fanelli\'s is one of NYC\'s oldest bars.'},
       'Flatiron / NoMad':{emoji:'🏛',vibe:'The Flatiron Building anchors upscale restaurants, cocktail bars, and some of NYC\'s best Korean food.',bestFor:'Date Night, Korean, Cocktails, Fine Dining',knownFor:'Eataly, COTE, Eleven Madison Park, Madison Square Park',mustVisit:'COTE, Eleven Madison Park, Eataly, Raines Law Room',tip:'Shake Shack in Madison Square Park facing the Flatiron is a classic NYC moment.'},
@@ -3669,7 +3669,7 @@ const CITY_COORDS = {
       'Upper East Side':{emoji:'💎',vibe:'Museum Mile, old money, and classic NYC dining. The Met, Bemelmans Bar, and Madison Avenue boutiques.',bestFor:'Museums, Classic Dining, Afternoon Tea',knownFor:'The Met, Guggenheim, Bemelmans Bar, Madison Ave',mustVisit:'The Met, Bemelmans Bar, Cafe Boulud, The Mark',tip:'Museum Mile is free on Friday evenings at several museums.'},
       'Upper West Side':{emoji:'🌳',vibe:'Central Park, Lincoln Center, and real neighborhood dining. Family-friendly with a lived-in charm.',bestFor:'Family, Central Park, Brunch, Bagels',knownFor:'Central Park, Lincoln Center, Zabar\'s, Absolute Bagels',mustVisit:'Zabar\'s, Absolute Bagels, Jacob\'s Pickles',tip:'Sunday brunch then Central Park is peak UWS living.'},
       'Greenpoint':{emoji:'🇵🇱',vibe:'Polish heritage meets Brooklyn cool. Artisan coffee, natural wine bars, and some of the best new restaurants.',bestFor:'Coffee, Natural Wine, New Openings',knownFor:'Polish bakeries, Cafe Grumpy, McCarren Park',mustVisit:'Chez Ma Tante, Peter Pan Donut, Paulie Gee\'s',tip:'Peter Pan Donut has made doughnuts since 1953. Cash only.'},
-      'DUMBO':{emoji:'📸',vibe:'The most photographed spot in Brooklyn. Manhattan Bridge views, waterfront parks, and curated dining.',bestFor:'Views, Photography, Family, Waterfront',knownFor:'Manhattan Bridge frame, Jane\'s Carousel, Brooklyn Bridge Park',mustVisit:'Time Out Market, Juliana\'s Pizza, Celestine, River Cafe',tip:'Washington St for the iconic Manhattan Bridge photo. Go at sunrise.'},
+      'DUMBO':{emoji:'📸',vibe:'The most photographed spot in Brooklyn. Manhattan Bridge views, waterfront parks, and curated dining.',bestFor:'Views, Photography, Family, Waterfront',knownFor:'Manhattan Bridge frame, Jane\'s Carousel, Brooklyn Bridge Park',mustVisit:'Time Out Market, Juliana's Pizza, Celestine, River Cafe',tip:'Washington St for the iconic Manhattan Bridge photo. Go at sunrise.'},
       'Meatpacking District':{emoji:'🪩',vibe:'Nightlife central. Rooftop bars, clubs, and see-and-be-seen restaurants in converted warehouses.',bestFor:'Nightlife, Rooftops, Clubs, Late Night',knownFor:'Le Bain, Catch, The Standard, Whitney Museum',mustVisit:'Catch, Pastis, Le Bain, Whitney terrace',tip:'Whitney terrace at sunset, Pastis for dinner, Le Bain late night.'},
       'Hell\'s Kitchen':{emoji:'🎭',vibe:'Pre-theater dining and authentic global cuisine. 9th Avenue is a food corridor spanning every cuisine.',bestFor:'Pre-Theater, International, Cheap Eats',knownFor:'9th Ave food corridor, Theater District',mustVisit:'Sky Pavilion, Kochi, Amy\'s Bread, Don Antonio',tip:'9th Ave between 42nd-56th beats anything near Times Square.'},
       'Nolita':{emoji:'☕',vibe:'Little Italy\'s cooler sibling. Tiny cafes, boutiques, and effortlessly stylish restaurants.',bestFor:'Cafes, Shopping, Casual',knownFor:'Prince St Pizza, Rubirosa, Elizabeth St boutiques',mustVisit:'Prince Street Pizza, Rubirosa, Eileen\'s Cheesecake',tip:'Prince Street pepperoni square is worth any line.'},
@@ -7167,26 +7167,26 @@ upcomingHTML(){
         {id:'nyc-first-timer',creator:'Appetyt Guide',handle:'@appetyt',platform:'Appetyt',avatar:'🗽',title:'NYC First Timer Weekend',subtitle:'Hit the icons plus hidden gems',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
             {time:'6:00 PM',spot:'Walk Brooklyn Bridge at sunset',id:1680,note:'Start Manhattan, end DUMBO — stunning views'},
-            {time:'7:30 PM',spot:'Pizza at Juliana\\'s',id:1171,note:'Coal-fired perfection under the bridge'},
+            {time:'7:30 PM',spot:'Pizza at Juliana\'s',id:1171,note:'Coal-fired perfection under the bridge'},
             {time:'9:30 PM',spot:'Cocktails at Westlight',id:1469,note:'22nd floor rooftop — Manhattan skyline'}
           ]},
           {label:'Saturday',emoji:'☀️',slots:[
             {time:'9:00 AM',spot:'Bagels at Absolute Bagels',id:1344,note:'Hand-rolled, kettle-boiled. The real deal.'},
-            {time:'1:00 PM',spot:'Lunch at Katz\\'s Deli',id:1010,note:'Pastrami on rye. Cash at counter.'},
+            {time:'1:00 PM',spot:'Lunch at Katz\'s Deli',id:1010,note:'Pastrami on rye. Cash at counter.'},
             {time:'3:00 PM',spot:'Walk the High Line',id:null,note:'Elevated park — Gansevoort to Hudson Yards'},
             {time:'7:00 PM',spot:'Dinner at Via Carota',id:1005,note:'West Village Italian — arrive early for walk-in'},
             {time:'10:00 PM',spot:'Cocktails at Death & Co',id:1605,note:'The bar that started the cocktail renaissance'}
           ]},
           {label:'Sunday',emoji:'🌅',slots:[
             {time:'10:00 AM',spot:'Brunch at Balthazar',id:1007,note:'SoHo brasserie — the quintessential NYC brunch'},
-            {time:'3:00 PM',spot:'Joe\\'s Pizza slice',id:1011,note:'The classic fold-and-walk experience'},
+            {time:'3:00 PM',spot:'Joe\'s Pizza slice',id:1011,note:'The classic fold-and-walk experience'},
             {time:'5:00 PM',spot:'Sunset from Top of the Rock',id:1675,note:'Best view of the Empire State Building'}
           ]}
         ]},
         {id:'nyc-foodie-deep-dive',creator:'Appetyt Guide',handle:'@appetyt',platform:'Appetyt',avatar:'🍽',title:'NYC Serious Foodie Weekend',subtitle:'Michelin stars, tasting menus & cult favorites',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
             {time:'5:30 PM',spot:'Cocktails at Attaboy',id:1071,note:'No menu — tell the bartender what you like'},
-            {time:'7:30 PM',spot:'Dinner at Dhamaka',id:1028,note:'Indian food like you\\'ve never had — fiery, bold'},
+            {time:'7:30 PM',spot:'Dinner at Dhamaka',id:1028,note:'Indian food like you\'ve never had — fiery, bold'},
             {time:'10:00 PM',spot:'Dessert at Lysee',id:1116,note:'Korean-French pastry genius'}
           ]},
           {label:'Saturday',emoji:'☀️',slots:[
@@ -13757,7 +13757,7 @@ Return ONLY the JSON object, nothing else.`,
          {name:'Washington Square Park',note:'Hitch, Enchanted, The Godfather Part III, August Rush'},
          {name:'Brooklyn Bridge',note:'Spider-Man, I Am Legend, Godzilla, Once Upon a Time in America'},
        ],
-       food:'Katz\'s pastrami · Peter Luger steak · Russ & Daughters smoked salmon · Joe\'s Pizza'},
+       food:'Katz\'s pastrami · Peter Luger steak · Russ & Daughters smoked salmon · Joe's Pizza'},
       {city:'Los Angeles',country:'USA',flag:'🇺🇸',emoji:'🌴',
        title:'Hollywood & Beyond',
        desc:'The birthplace of the film industry. Real locations and studio backlots sit side by side -- Griffith Observatory to the Bradbury Building.',
