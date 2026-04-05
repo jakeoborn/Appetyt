@@ -6999,7 +6999,7 @@ const A = {
       ${guides.length ? `
       <div style="margin-bottom:20px">
         <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">📋 Weekend Guides</div>
-        <div style="font-size:11px;color:var(--text2);margin:-4px 0 12px">Curated itineraries inspired by Dallas creators</div>
+        <div style="font-size:11px;color:var(--text2);margin:-4px 0 12px">Curated itineraries inspired by ${S.city} creators</div>
         <div style="display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch">
           ${guides.map(g=>`
             <div onclick="A.openWeekendGuide('${g.id}')" style="min-width:220px;max-width:220px;border-radius:14px;padding:16px;cursor:pointer;background:linear-gradient(135deg,#2a1f3d,#1a1528);border:1px solid rgba(200,169,110,.2);flex-shrink:0">
@@ -7186,6 +7186,44 @@ const A = {
             {time:'1:00 PM',spot:'Hot chicken at Hattie B\'s',id:335,note:'Nashville hot chicken — pick your heat level'},
             {time:'3:30 PM',spot:'Twisted Root Burger',id:42,note:'Weekly exotic burger — bison, elk, gator'},
             {time:'5:30 PM',spot:'Sunset at The Rustic',id:41,note:'Live music + Pat Green vibes'}
+          ]}
+        ]}
+      ],'New York':[
+        {id:'nyc-first-timer',creator:'Appetyt Guide',handle:'@appetyt',platform:'Appetyt',avatar:'🗽',title:'NYC First Timer Weekend',subtitle:'Hit the icons plus hidden gems',days:[
+          {label:'Friday Night',emoji:'🌙',slots:[
+            {time:'6:00 PM',spot:'Walk Brooklyn Bridge at sunset',id:1680,note:'Start Manhattan, end DUMBO — stunning views'},
+            {time:'7:30 PM',spot:'Pizza at Juliana's',id:1171,note:'Coal-fired perfection under the bridge'},
+            {time:'9:30 PM',spot:'Cocktails at Westlight',id:1469,note:'22nd floor rooftop — Manhattan skyline'}
+          ]},
+          {label:'Saturday',emoji:'☀️',slots:[
+            {time:'9:00 AM',spot:'Bagels at Absolute Bagels',id:1344,note:'Hand-rolled, kettle-boiled. The real deal.'},
+            {time:'1:00 PM',spot:'Lunch at Katz's Deli',id:1010,note:'Pastrami on rye. Cash at counter.'},
+            {time:'3:00 PM',spot:'Walk the High Line',id:null,note:'Elevated park — Gansevoort to Hudson Yards'},
+            {time:'7:00 PM',spot:'Dinner at Via Carota',id:1005,note:'West Village Italian — arrive early for walk-in'},
+            {time:'10:00 PM',spot:'Cocktails at Death & Co',id:1605,note:'The bar that started the cocktail renaissance'}
+          ]},
+          {label:'Sunday',emoji:'🌅',slots:[
+            {time:'10:00 AM',spot:'Brunch at Balthazar',id:1007,note:'SoHo brasserie — the quintessential NYC brunch'},
+            {time:'3:00 PM',spot:'Joe's Pizza slice',id:1011,note:'The classic fold-and-walk experience'},
+            {time:'5:00 PM',spot:'Sunset from Top of the Rock',id:1675,note:'Best view of the Empire State Building'}
+          ]}
+        ]},
+        {id:'nyc-foodie-deep-dive',creator:'Appetyt Guide',handle:'@appetyt',platform:'Appetyt',avatar:'🍽',title:'NYC Serious Foodie Weekend',subtitle:'Michelin stars, tasting menus & cult favorites',days:[
+          {label:'Friday Night',emoji:'🌙',slots:[
+            {time:'5:30 PM',spot:'Cocktails at Attaboy',id:1071,note:'No menu — tell the bartender what you like'},
+            {time:'7:30 PM',spot:'Dinner at Dhamaka',id:1028,note:'Indian food like you've never had — fiery, bold'},
+            {time:'10:00 PM',spot:'Dessert at Lysee',id:1116,note:'Korean-French pastry genius'}
+          ]},
+          {label:'Saturday',emoji:'☀️',slots:[
+            {time:'9:00 AM',spot:'Russ & Daughters',id:1018,note:'Smoked fish since 1914. Get the Super Heebster.'},
+            {time:'11:00 AM',spot:'Smorgasburg',id:1670,note:'100+ vendors on the Williamsburg waterfront'},
+            {time:'5:30 PM',spot:'Omakase at Sushi Nakazawa',id:1021,note:'Jiro-trained chef — book the counter'},
+            {time:'9:00 PM',spot:'PDT speakeasy',id:1362,note:'Phone booth inside Crif Dogs — the OG'}
+          ]},
+          {label:'Sunday',emoji:'🌅',slots:[
+            {time:'10:00 AM',spot:'Dim Sum at Nom Wah',id:1053,note:'Chinatown oldest dim sum house — 100 years'},
+            {time:'1:00 PM',spot:'Chelsea Market food crawl',id:null,note:'Los Tacos, Lobster Place, Li-Lac Chocolates'},
+            {time:'4:00 PM',spot:'Apotheke nightcap',id:1584,note:'Chinatown speakeasy — lab coat bartenders'}
           ]}
         ]}
       ]
