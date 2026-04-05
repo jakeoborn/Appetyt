@@ -14692,10 +14692,12 @@ function buildNotesHTML(id){
   const hasAny = n.dishes||n.cocktails||n.occasion||n.client;
   return `
   <div class="notes-panel">
-    <div style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px">
-      📝 My Notes ${hasAny?'<span style="color:var(--green);font-weight:400">● Saved</span>':''}
+    <div onclick="const body=this.nextElementSibling;const arrow=this.querySelector('.notes-arrow');if(body.style.display==='none'){body.style.display='block';arrow.textContent='▾';}else{body.style.display='none';arrow.textContent='▸';}" style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:.06em;text-transform:uppercase;margin-bottom:0;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:4px 0">
+      <span>📝 My Notes ${hasAny?'<span style="color:var(--green);font-weight:400">● Saved</span>':''}</span>
+      <span class="notes-arrow" style="font-size:14px;color:var(--text3)">${hasAny?'▾':'▸'}</span>
     </div>
-    <div class="notes-tabs">
+    <div style="display:${hasAny?'block':'none'}">
+    <div class="notes-tabs" style="margin-top:8px">
       <div class="ntab active" onclick="switchNoteTab(this,'dishes-pane')">🍽️ Fav Dishes</div>
       <div class="ntab" onclick="switchNoteTab(this,'cocktails-pane')">🍸 Cocktails</div>
       <div class="ntab" onclick="switchNoteTab(this,'occasion-pane')">🎉 Occasion</div>
@@ -14728,6 +14730,7 @@ function buildNotesHTML(id){
         ${['Client is vegetarian','Prefers quiet tables -- ask for back room','Client allergic to shellfish','They love wine -- let sommelier guide','Expense account -- splurge','Book private dining room'].map(s=>`<span class="nquick" onclick="appendNote('client-note','${s}')">${s}</span>`).join('')}
       </div>
       <textarea id="client-note" class="notes-textarea" placeholder="e.g. Smith prefers window seats, allergic to nuts, loves Italian reds..." oninput="autoSaveNote(${id},'client',this.value)">${n.client}</textarea>
+    </div>
     </div>
   </div>`;
 }
