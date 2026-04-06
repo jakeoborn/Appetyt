@@ -7980,6 +7980,18 @@ upcomingHTML(){
       Grubhub:`https://www.grubhub.com/search?orderMethod=delivery&locationMode=DELIVERY&query=${enc(r.name)}&utm_source=appetyt&utm_medium=referral`,
     };
 
+    // Experience & drink delivery links (for activities/bars)
+    const isActivity = (r.cuisine||'').toLowerCase().match(/entertainment|club|jazz|comedy|live music|museum|activity/);
+    const isBar = (r.cuisine||'').toLowerCase().match(/bar|cocktail|wine|whiskey|brewery|tiki/)||(r.tags||[]).some(t=>/cocktail|bar|wine|late night/i.test(t));
+    const EXPERIENCE_URLS = isActivity ? {
+      Viator:`https://www.viator.com/searchResults/all?text=${enc(r.name+' '+S.city)}&utm_source=appetyt&utm_medium=referral`,
+      GetYourGuide:`https://www.getyourguide.com/s/?q=${enc(r.name+' '+S.city)}&utm_source=appetyt&utm_medium=referral`,
+    } : {};
+    const DRINK_URLS = isBar ? {
+      Drizly:`https://drizly.com/search?q=${enc(r.name)}&utm_source=appetyt`,
+      Minibar:`https://minibardelivery.com/search?q=${enc(S.city+' spirits')}&utm_source=appetyt`,
+    } : {};
+
     // Determine primary platform + show all options
     const primary=r.reservation&&r.reservation!=='walk-in'?r.reservation:'OpenTable';
     const primaryUrl=BOOK_URLS[primary]||BOOK_URLS.OpenTable;
@@ -8150,6 +8162,22 @@ upcomingHTML(){
           </div>
           ${r.phone ? `<div style="margin-top:8px"><a href="tel:${r.phone}" style="display:flex;width:100%;padding:11px;border-radius:10px;border:1px solid rgba(76,154,110,.4);background:rgba(76,154,110,.1);color:#4c9a6e;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;align-items:center;justify-content:center;gap:6px;text-decoration:none;box-sizing:border-box">📞 Call for Pickup or Delivery</a></div>` : ''}
           </details>`;
+        }
+        // Experience booking links (activities/entertainment)
+        if(isActivity){
+          _h+=`<details style="margin:0 0 14px"><summary style="font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:5px;-webkit-user-select:none;user-select:none"><span>🎟️ Book Experience</span><span style="font-size:8px;opacity:.6">▼</span></summary>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px">
+          <a href="${EXPERIENCE_URLS.Viator}" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px 6px;border-radius:10px;background:#2a8547;color:#fff;text-decoration:none;font-size:11px;font-weight:600;text-align:center"><span style="font-size:18px">🎭</span><span>Viator</span></a>
+          <a href="${EXPERIENCE_URLS.GetYourGuide}" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px 6px;border-radius:10px;background:#ff5533;color:#fff;text-decoration:none;font-size:11px;font-weight:600;text-align:center"><span style="font-size:18px">🗺️</span><span>GetYourGuide</span></a>
+          </div></details>`;
+        }
+        // Drink delivery links (bars/cocktail spots)
+        if(isBar){
+          _h+=`<details style="margin:0 0 14px"><summary style="font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:5px;-webkit-user-select:none;user-select:none"><span>🍸 Order Drinks</span><span style="font-size:8px;opacity:.6">▼</span></summary>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px">
+          <a href="${DRINK_URLS.Drizly}" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px 6px;border-radius:10px;background:#2b5ea7;color:#fff;text-decoration:none;font-size:11px;font-weight:600;text-align:center"><span style="font-size:18px">🍷</span><span>Drizly</span></a>
+          <a href="${DRINK_URLS.Minibar}" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px 6px;border-radius:10px;background:#1a1a2e;color:#fff;text-decoration:none;font-size:11px;font-weight:600;text-align:center"><span style="font-size:18px">🥃</span><span>Minibar</span></a>
+          </div></details>`;
         }
         return _h;
       })()}
@@ -11885,6 +11913,7 @@ upcomingHTML(){
       <!-- Book Now — affiliate-ready links -->
       <div style="margin-bottom:10px">
         <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Book a Room</div>
+        <a href="https://www.google.com/travel/hotels/${encodeURIComponent(h.name+' '+(S.city||'Dallas'))}" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px;border-radius:12px;background:var(--gold);color:var(--dark);font-weight:800;font-size:14px;margin-bottom:8px;text-decoration:none">🔍 Compare Prices on Google Hotels</a>
         <a href="https://www.booking.com/searchresults.html?ss=${encodeURIComponent(h.name+' '+(S.city||'Dallas'))}&aid=2837370&utm_source=appetyt&utm_medium=referral&utm_campaign=${encodeURIComponent(h.name.toLowerCase().replace(/[^a-z0-9]+/g,'-'))}" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px;border-radius:12px;background:#003580;color:#fff;font-weight:800;font-size:14px;margin-bottom:8px;text-decoration:none">🏨 Book on Booking.com</a>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
           <a href="https://www.hotels.com/search.do?q-destination=${encodeURIComponent(h.name+' '+(S.city||'Dallas'))}&utm_source=appetyt&utm_medium=referral" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px;border-radius:10px;background:#d32f2f;color:#fff;text-decoration:none;font-size:11px;font-weight:600"><span style="font-size:16px">🏩</span>Hotels.com</a>
