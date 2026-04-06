@@ -4132,6 +4132,9 @@ const FILTERS = [
   {id:'bakery',label:'Bakery/Coffee',emoji:'☕'},
   {id:'dessert',label:'Dessert',emoji:'🍦'},
   {id:'unique',label:'Unique Combos',emoji:'🔀'},
+  {id:'tourist-attraction',label:'Tourist Attractions',emoji:'🗽'},
+  {id:'pizza',label:'Pizza',emoji:'🍕'},
+  {id:'seafood',label:'Seafood',emoji:'🦞'},
 ];
 
 // Smart Combos (dual-filter)
@@ -4445,16 +4448,46 @@ const A = {
     }catch(e){}
     try{const d=localStorage.getItem('appetyt_data');if(d){const p=JSON.parse(d);S.userData={favs:p.favs||[],visited:p.visited||[],want:p.want||[],bills:p.bills||[],notes:p.notes||{},trips:p.trips||[],claimedDrops:p.claimedDrops||[],checkins:p.checkins||[],guestProfile:p.guestProfile||{},customLists:p.customLists||[],pinnedLists:p.pinnedLists||[],reminders:p.reminders||[]};}}catch(e){}
     try{const k=localStorage.getItem('appetyt_key');if(k)S.apiKey=k;}catch(e){}
-    // Restore active trip
+    // Restore active trip from localStorage OR fetch from Supabase for logged-in user
     try{
       const savedTrip=localStorage.getItem('appetyt_active_trip');
-      if(savedTrip){
-        TRIPS.current=JSON.parse(savedTrip);
-        // Reload trip data in background
-        if(TRIPS.current?.id) TRIPS.load(TRIPS.current.id).then(()=>{
-          const dot=document.getElementById('trips-nav-dot');
-          if(dot) dot.style.display='block';
-        }).catch(()=>{});
+      if(savedTrip && savedTrip!=='null'){
+        const parsed=JSON.parse(savedTrip);
+        TRIPS.current=parsed;
+        if(!parsed.cities && parsed.city) parsed.cities=parsed.city.split(',').map(x=>x.trim()).filter(Boolean);
+        if(!parsed.owner_id && parsed.created_by) parsed.owner_id=parsed.created_by;
+        TRIPS._loadLocal();
+        if(parsed.members && Array.isArray(parsed.members)){
+          TRIPS.members=parsed.members.map(m=>({...m,device_id:m.id||m.device_id,avatar_emoji:m.avatar_emoji||'👑'}));
+        }
+        // Re-fetch latest from Supabase in background
+        if(TRIPS.current?.id && !String(TRIPS.current.id).startsWith('local_')){
+          TRIPS.load(TRIPS.current.id).then(()=>{
+            localStorage.setItem('appetyt_active_trip',JSON.stringify(TRIPS.current));
+          }).catch(()=>{});
+        }
+        const dot=document.getElementById('trips-nav-dot');
+        if(dot) dot.style.display='block';
+      } else {
+        // No local trip — check Supabase for user's trips
+        const sb=getSB();
+        const deviceId=getDeviceId();
+        if(sb){
+          sb.from('trips').select('*').or('created_by.eq.'+deviceId+',members.cs.[{"id":"'+deviceId+'"}]').order('created_at',{ascending:false}).limit(1).then(({data})=>{
+            if(data && data.length>0){
+              const trip=data[0];
+              trip.cities=(trip.city||'').split(',').map(x=>x.trim()).filter(Boolean);
+              trip.owner_id=trip.created_by;
+              TRIPS.current=trip;
+              localStorage.setItem('appetyt_active_trip',JSON.stringify(trip));
+              TRIPS.load(trip.id).then(()=>{
+                const dot=document.getElementById('trips-nav-dot');
+                if(dot) dot.style.display='block';
+                A.showToast('Trip restored: '+trip.name);
+              });
+            }
+          }).catch(()=>{});
+        }
       }
     }catch(e){}
     try{const u=localStorage.getItem('appetyt_user');if(u){S.user=JSON.parse(u);document.getElementById('auth-btn').classList.add('on');
