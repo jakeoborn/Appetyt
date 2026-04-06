@@ -12293,15 +12293,43 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     if(!el) return;
     const trip=TRIPS.current;
     const cities=trip?Array.isArray(trip.cities)?trip.cities:(trip.cities||'').split(',').map(x=>x.trim()).filter(Boolean):[];
-    const city=cities[0]||'Dallas';
-    document.getElementById('trip-ai-input').value='';
-    const enc=encodeURIComponent;
-    const searchQ=prompt+' restaurants '+city;
-    el.innerHTML='<div style="font-size:12px;color:var(--text2);line-height:1.7;padding:8px;background:var(--card);border-radius:10px;border:1px solid var(--border)">'+
-      '<div style="margin-bottom:8px">Search for <b style="color:var(--gold)">'+prompt+'</b> in '+city+':</div>'+
-      '<a href="https://www.google.com/search?q='+enc(searchQ)+'" target="_blank" style="display:block;padding:8px 12px;background:var(--card2);border:1px solid var(--border);border-radius:8px;color:var(--text);text-decoration:none;margin-bottom:5px;font-weight:600;font-size:12px">🔍 Google: '+prompt+'</a>'+
-      '<a href="https://www.yelp.com/search?find_desc='+enc(prompt)+'&find_loc='+enc(city)+'" target="_blank" style="display:block;padding:8px 12px;background:var(--card2);border:1px solid var(--border);border-radius:8px;color:var(--text);text-decoration:none;font-weight:600;font-size:12px">⭐ Yelp: '+prompt+' in '+city+'</a>'+
-      '</div>';
+    const city=cities[0]||S.city||'New York';
+    const allData = (city==='New York'||city==='NYC') ? (window.NYC_DATA||[]) : (city==='Dallas' ? (window.DALLAS_DATA||[]) : []);
+    const q = prompt.toLowerCase();
+
+    // Smart filter based on chip text
+    let results = [];
+    if(q.includes('date')) results = allData.filter(r=>(r.tags||[]).some(t=>/date/i.test(t)));
+    else if(q.includes('casual')) results = allData.filter(r=>(r.tags||[]).some(t=>/casual|local/i.test(t))&&r.price<=2);
+    else if(q.includes('brunch')) results = allData.filter(r=>(r.tags||[]).some(t=>/brunch/i.test(t)));
+    else if(q.includes('late night')) results = allData.filter(r=>(r.tags||[]).some(t=>/late/i.test(t)));
+    else if(q.includes('splurge')) results = allData.filter(r=>r.price>=3&&r.score>=90);
+    else if(q.includes('must-try')||q.includes('local')) results = allData.filter(r=>(r.tags||[]).some(t=>/local|critics/i.test(t)));
+    else if(q.includes('group')||q.includes('best')) results = allData.filter(r=>r.score>=88);
+    else {
+      // General search
+      results = allData.filter(r=>{
+        const hay=[r.name,r.cuisine,r.neighborhood,...(r.tags||[]),...(r.dishes||[])].join(' ').toLowerCase();
+        return hay.includes(q);
+      });
+    }
+
+    // Filter out already saved restaurants and sort
+    const savedNames = new Set((TRIPS.restaurants||[]).map(r=>(r.restaurant_name||r.name||'').toLowerCase()));
+    results = results.filter(r=>!savedNames.has(r.name.toLowerCase())).sort((a,b)=>b.score-a.score).slice(0,6);
+
+    if(!results.length){
+      el.innerHTML='<div style="padding:10px;font-size:11px;color:var(--text3);text-align:center">No matches for "'+prompt+'" in '+city+'</div>';
+      return;
+    }
+
+    el.innerHTML='<div style="font-size:11px;font-weight:700;color:#3eb8a8;margin-bottom:6px">🤖 '+prompt+' in '+city+'</div>'+
+      results.map(r=>'<div style="background:var(--card);border:1px solid rgba(62,184,168,.2);border-radius:10px;padding:10px 12px;margin-bottom:5px;display:flex;align-items:center;gap:10px">'+
+        '<div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:700;color:var(--text)">'+r.name+' <span style="color:var(--gold);font-size:10px">'+r.score+'</span></div>'+
+        '<div style="font-size:10px;color:var(--text3)">'+r.cuisine+' · '+r.neighborhood+' · '+'$'.repeat(r.price||1)+'</div>'+
+        (r.dishes?'<div style="font-size:10px;color:var(--text2);margin-top:2px">Try: '+r.dishes.slice(0,2).join(', ')+'</div>':'')+'</div>'+
+        '<button onclick="A.addGuideItemToDay(0,'+r.id+')" style="background:rgba(62,184,168,.1);border:1px solid rgba(62,184,168,.3);color:#3eb8a8;font-size:10px;font-weight:700;padding:6px 10px;border-radius:8px;cursor:pointer;flex-shrink:0;font-family:inherit">+ Add</button>'+
+      '</div>').join('');
   },
 
   showTripRestaurantPicker(){
@@ -12748,7 +12776,6 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
             <button onclick="A.tripAISuggestDay(${di})" style="margin-left:36px;margin-top:4px;font-size:10px;color:#3eb8a8;background:rgba(62,184,168,.06);border:1px solid rgba(62,184,168,.2);padding:5px 12px;border-radius:8px;cursor:pointer;font-family:inherit;font-weight:600">🤖 AI Suggest for this day</button>
           </div>`;
         }).join('')}
-        <div id="trip-ai-day-suggestions" style="display:none;margin-top:10px"></div>
       ` : ''}
 
       <!-- TAB: DINING -->
@@ -12891,11 +12918,116 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
 
 // --- TRIP DASHBOARD HELPERS ---
   tripAddItemPrompt(dayIndex){
-    const name = prompt('Item name (e.g. Carbone dinner):');
-    if(!name) return;
-    const type = prompt('Type: restaurant, activity, or bar','restaurant') || 'restaurant';
-    const time = prompt('Time (e.g. 19:00):','') || '';
-    TRIPS.addItineraryItem(dayIndex, {name, type, time, neighborhood:'', notes:'', cost:null});
+    const m = document.getElementById('event-detail-modal');
+    if(!m) return;
+    // Get restaurants from current trip cities
+    const trip = TRIPS.current;
+    const cities = Array.isArray(trip?.cities)?trip.cities:(trip?.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
+    const city = cities[0]||S.city||'New York';
+    const allData = (city==='New York'||city==='NYC') ? (window.NYC_DATA||[]) : (city==='Dallas' ? (window.DALLAS_DATA||[]) : []);
+    const existing = new Set(TRIPS.itinerary.flatMap(d=>d.items.map(i=>i.name.toLowerCase())));
+    const topPicks = allData.filter(r=>!existing.has(r.name.toLowerCase())).sort((a,b)=>b.score-a.score).slice(0,20);
+
+    m.innerHTML = `
+      <div style="position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:2000;display:flex;align-items:flex-end" onclick="if(event.target===this)this.style.display='none'">
+        <div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:85vh;overflow-y:auto;padding:20px 16px 40px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+            <div style="font-size:16px;font-weight:700;color:var(--gold)">+ Add to Day ${dayIndex+1}</div>
+            <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
+          </div>
+
+          <!-- Quick add types -->
+          <div style="display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap">
+            <button onclick="A._addItemType='restaurant';document.getElementById('trip-add-search').focus()" style="padding:8px 14px;border-radius:10px;border:1px solid rgba(201,168,76,.3);background:rgba(201,168,76,.08);color:var(--gold);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🍽️ Restaurant</button>
+            <button onclick="A._addItemType='activity';document.getElementById('trip-add-manual-name').focus()" style="padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🎭 Activity</button>
+            <button onclick="A._addItemType='bar';document.getElementById('trip-add-search').focus()" style="padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🍸 Bar</button>
+            <button onclick="A._addItemType='hotel';document.getElementById('trip-add-manual-name').focus()" style="padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🏨 Hotel</button>
+          </div>
+
+          <!-- Search from guide -->
+          <div style="margin-bottom:14px">
+            <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Search from ${city} Guide</div>
+            <input id="trip-add-search" placeholder="Search restaurants, bars, activities..." oninput="A.tripAddSearch(${dayIndex})" style="width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:10px 14px;border-radius:10px;font-size:13px;font-family:inherit;outline:none">
+            <div id="trip-add-search-results" style="margin-top:6px;max-height:200px;overflow-y:auto"></div>
+          </div>
+
+          <!-- Top picks -->
+          <div style="margin-bottom:14px">
+            <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Top Picks</div>
+            <div style="display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px">
+              ${topPicks.slice(0,8).map(r=>`<div onclick="A.addGuideItemToDay(${dayIndex},${r.id})" style="flex-shrink:0;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:8px 12px;cursor:pointer;min-width:120px">
+                <div style="font-size:11px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${r.name}</div>
+                <div style="font-size:9px;color:var(--text3)">${r.cuisine} · ${r.score}</div>
+              </div>`).join('')}
+            </div>
+          </div>
+
+          <!-- Manual add -->
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px">
+            <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Or Add Manually</div>
+            <input id="trip-add-manual-name" placeholder="Name (e.g. Central Park walk)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:10px;font-size:13px;margin-bottom:6px;font-family:inherit;outline:none">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px">
+              <input id="trip-add-manual-time" placeholder="Time (e.g. 14:00)" style="background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:10px;font-size:13px;font-family:inherit;outline:none">
+              <input id="trip-add-manual-notes" placeholder="Notes (optional)" style="background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:10px;font-size:13px;font-family:inherit;outline:none">
+            </div>
+            <button onclick="A.addManualItemToDay(${dayIndex})" style="width:100%;background:var(--gold);color:var(--dark);font-weight:800;font-size:13px;padding:11px;border-radius:10px;border:none;cursor:pointer">Add to Itinerary</button>
+          </div>
+        </div>
+      </div>`;
+    m.style.display='block';
+    this._addItemType = 'restaurant';
+  },
+
+  tripAddSearch(dayIndex){
+    const q = (document.getElementById('trip-add-search')?.value||'').toLowerCase().trim();
+    const el = document.getElementById('trip-add-search-results');
+    if(!el || q.length < 2){ if(el) el.innerHTML=''; return; }
+    const trip = TRIPS.current;
+    const cities = Array.isArray(trip?.cities)?trip.cities:(trip?.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
+    const city = cities[0]||S.city||'New York';
+    const allData = (city==='New York'||city==='NYC') ? (window.NYC_DATA||[]) : (city==='Dallas' ? (window.DALLAS_DATA||[]) : []);
+    const results = allData.filter(r=>{
+      const hay = [r.name,r.cuisine,r.neighborhood,...(r.tags||[]),...(r.dishes||[])].join(' ').toLowerCase();
+      return hay.includes(q);
+    }).sort((a,b)=>b.score-a.score).slice(0,6);
+    el.innerHTML = results.map(r=>`<div onclick="A.addGuideItemToDay(${dayIndex},${r.id})" style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:10px;cursor:pointer;margin-bottom:4px">
+      <div style="font-size:13px;font-weight:800;color:var(--gold);flex-shrink:0">${r.score}</div>
+      <div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:700;color:var(--text)">${r.name}</div><div style="font-size:10px;color:var(--text3)">${r.cuisine} · ${r.neighborhood}</div></div>
+      <span style="font-size:10px;color:#4c9a6a;font-weight:700">+ Add</span>
+    </div>`).join('') || '<div style="font-size:11px;color:var(--text3);padding:8px">No results</div>';
+  },
+
+  addGuideItemToDay(dayIndex, restaurantId){
+    const trip = TRIPS.current;
+    const cities = Array.isArray(trip?.cities)?trip.cities:(trip?.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
+    const city = cities[0]||S.city||'New York';
+    const allData = (city==='New York'||city==='NYC') ? (window.NYC_DATA||[]) : (city==='Dallas' ? (window.DALLAS_DATA||[]) : []);
+    const r = allData.find(x=>x.id===restaurantId);
+    if(!r) return;
+    const type = (r.cuisine||'').toLowerCase().includes('bar')||(r.tags||[]).some(t=>/bar|cocktail/i.test(t)) ? 'bar' : (r.cuisine||'').toLowerCase().match(/entertainment|club|jazz|comedy/) ? 'activity' : 'restaurant';
+    TRIPS.addItineraryItem(dayIndex, {
+      name: r.name,
+      type: type,
+      time: '',
+      neighborhood: r.neighborhood||'',
+      notes: r.cuisine + ' · ' + (r.dishes||[]).slice(0,2).join(', '),
+      status: 'planned',
+      cost: null
+    });
+    document.getElementById('event-detail-modal').style.display='none';
+    this.showToast('Added ' + r.name);
+    this.renderTrips();
+  },
+
+  addManualItemToDay(dayIndex){
+    const name = document.getElementById('trip-add-manual-name')?.value?.trim();
+    if(!name){ this.showToast('Enter a name'); return; }
+    const time = document.getElementById('trip-add-manual-time')?.value?.trim()||'';
+    const notes = document.getElementById('trip-add-manual-notes')?.value?.trim()||'';
+    const type = this._addItemType || 'restaurant';
+    TRIPS.addItineraryItem(dayIndex, {name, type, time, neighborhood:'', notes, status:'planned', cost:null});
+    document.getElementById('event-detail-modal').style.display='none';
+    this.showToast('Added ' + name);
     this.renderTrips();
   },
 
@@ -12936,59 +13068,80 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const day = TRIPS.itinerary[dayIndex];
     if(!day) return;
 
-    // Try to get suggestions from our restaurant data first
     const allData = (city === 'New York' || city === 'NYC') ? (window.NYC_DATA||[]) : (city === 'Dallas' ? (window.DALLAS_DATA||[]) : []);
-    if(allData.length > 0){
-      // Smart suggestions based on time of day
-      const breakfast = allData.filter(r=>(r.tags||[]).some(t=>/brunch|bakery|coffee/i.test(t))).sort((a,b)=>b.score-a.score);
-      const lunch = allData.filter(r=>(r.tags||[]).some(t=>/casual|local/i.test(t))&&r.price<=2).sort((a,b)=>b.score-a.score);
-      const dinner = allData.filter(r=>(r.tags||[]).some(t=>/date|fine|italian|japanese|french/i.test(t))).sort((a,b)=>b.score-a.score);
-      const bars = allData.filter(r=>(r.tags||[]).some(t=>/cocktail|bar|late/i.test(t))||(r.cuisine||'').toLowerCase().includes('bar')).sort((a,b)=>b.score-a.score);
+    if(!allData.length){ this.showToast('AI suggestions work best for NYC and Dallas'); return; }
 
-      // Pick unique suggestions not already in itinerary
-      const existing = new Set(TRIPS.itinerary.flatMap(d=>d.items.map(i=>i.name.toLowerCase())));
-      const pick = (arr) => arr.find(r=>!existing.has(r.name.toLowerCase()));
+    // Smart suggestions based on meal time
+    const existing = new Set(TRIPS.itinerary.flatMap(d=>d.items.map(i=>i.name.toLowerCase())));
+    const pick = (arr) => arr.find(r=>!existing.has(r.name.toLowerCase()));
+    const picked = new Set();
+    const pickUnique = (arr) => { const r=arr.find(x=>!existing.has(x.name.toLowerCase())&&!picked.has(x.id)); if(r)picked.add(r.id); return r; };
 
-      const suggestions = [];
-      const bPick = pick(breakfast);
-      if(bPick) suggestions.push({name:bPick.name, type:'restaurant', time:'09:00', neighborhood:bPick.neighborhood||'', notes:bPick.cuisine+' · '+(bPick.dishes||[]).slice(0,2).join(', '), status:'planned'});
-      const lPick = pick(lunch.filter(r=>r.name!==(bPick||{}).name));
-      if(lPick) suggestions.push({name:lPick.name, type:'restaurant', time:'12:30', neighborhood:lPick.neighborhood||'', notes:lPick.cuisine+' · '+(lPick.dishes||[]).slice(0,2).join(', '), status:'planned'});
-      const dPick = pick(dinner.filter(r=>r.name!==(bPick||{}).name && r.name!==(lPick||{}).name));
-      if(dPick) suggestions.push({name:dPick.name, type:'restaurant', time:'19:30', neighborhood:dPick.neighborhood||'', notes:dPick.cuisine+' · '+(dPick.dishes||[]).slice(0,2).join(', '), status:'planned'});
-      const barPick = pick(bars.filter(r=>![bPick,lPick,dPick].some(p=>p&&p.name===r.name)));
-      if(barPick) suggestions.push({name:barPick.name, type:'bar', time:'21:30', neighborhood:barPick.neighborhood||'', notes:(barPick.dishes||[]).slice(0,2).join(', '), status:'planned'});
+    const breakfast = allData.filter(r=>(r.tags||[]).some(t=>/brunch|bakery|coffee/i.test(t))).sort((a,b)=>b.score-a.score);
+    const lunch = allData.filter(r=>(r.tags||[]).some(t=>/casual|local/i.test(t))&&r.price<=2).sort((a,b)=>b.score-a.score);
+    const dinner = allData.filter(r=>r.score>=85).sort((a,b)=>b.score-a.score);
+    const bars = allData.filter(r=>(r.tags||[]).some(t=>/cocktail|bar|late/i.test(t))||(r.cuisine||'').toLowerCase().includes('bar')).sort((a,b)=>b.score-a.score);
 
-      // Show suggestions as selectable cards
-      const el = document.getElementById('trip-ai-day-suggestions');
-      if(el){
-        el.style.display = 'block';
-        el.innerHTML = '<div style="font-size:12px;font-weight:700;color:#3eb8a8;margin-bottom:8px">🤖 Suggestions for ' + day.title + '</div>' +
-          suggestions.map((s,si) =>
-            '<div onclick="A.acceptSuggestion('+dayIndex+','+si+')" style="background:var(--card);border:1px solid rgba(62,184,168,.2);border-radius:10px;padding:10px 12px;margin-bottom:6px;cursor:pointer;display:flex;align-items:center;gap:10px">' +
-              '<span style="font-size:16px">'+(s.type==='bar'?'🍸':'🍽️')+'</span>' +
-              '<div style="flex:1"><div style="font-size:12px;font-weight:700;color:var(--text)">' + s.name + '</div>' +
-              '<div style="font-size:10px;color:var(--text3)">' + s.time + ' · ' + s.neighborhood + '</div></div>' +
-              '<span style="font-size:11px;color:#3eb8a8;font-weight:700">+ Add</span>' +
-            '</div>'
-          ).join('') +
-          '<div style="font-size:10px;color:var(--text3);text-align:center;margin-top:6px">Tap to add to your itinerary</div>';
-        // Store suggestions temporarily
-        window._tripSuggestions = suggestions;
-      }
-    } else {
-      this.showToast('AI suggestions work best for NYC and Dallas');
-    }
+    const suggestions = [];
+    const b=pickUnique(breakfast); if(b) suggestions.push({srcId:b.id,name:b.name,type:'restaurant',time:'09:00',neighborhood:b.neighborhood,notes:b.cuisine+' -- '+(b.dishes||[]).slice(0,2).join(', '),score:b.score});
+    const l=pickUnique(lunch); if(l) suggestions.push({srcId:l.id,name:l.name,type:'restaurant',time:'12:30',neighborhood:l.neighborhood,notes:l.cuisine+' -- '+(l.dishes||[]).slice(0,2).join(', '),score:l.score});
+    const d=pickUnique(dinner); if(d) suggestions.push({srcId:d.id,name:d.name,type:'restaurant',time:'19:30',neighborhood:d.neighborhood,notes:d.cuisine+' -- '+(d.dishes||[]).slice(0,2).join(', '),score:d.score});
+    const bar=pickUnique(bars); if(bar) suggestions.push({srcId:bar.id,name:bar.name,type:'bar',time:'21:30',neighborhood:bar.neighborhood,notes:(bar.dishes||[]).slice(0,2).join(', '),score:bar.score});
+
+    if(!suggestions.length){ this.showToast('No more suggestions available'); return; }
+    window._tripSuggestions = suggestions;
+    window._tripSuggestDay = dayIndex;
+
+    // Show in a modal
+    const m = document.getElementById('event-detail-modal');
+    if(!m) return;
+    m.innerHTML = '<div style="position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:2000;display:flex;align-items:flex-end" onclick="if(event.target===this)this.style.display=\'none\'">' +
+      '<div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:80vh;overflow-y:auto;padding:20px 16px 40px">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">' +
+          '<div style="font-size:16px;font-weight:700;color:#3eb8a8">🤖 AI Suggestions for Day '+(dayIndex+1)+'</div>' +
+          '<button onclick="document.getElementById(\'event-detail-modal\').style.display=\'none\'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>' +
+        '</div>' +
+        '<div style="font-size:11px;color:var(--text3);margin-bottom:12px">Tap any suggestion to add it to your itinerary</div>' +
+        suggestions.map((s,si) =>
+          '<div onclick="A.acceptSuggestion('+si+')" style="background:var(--card);border:1px solid rgba(62,184,168,.2);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer;display:flex;align-items:center;gap:12px">' +
+            '<div style="width:36px;height:36px;border-radius:10px;background:rgba(62,184,168,.1);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0">'+(s.type==='bar'?'🍸':'🍽️')+'</div>' +
+            '<div style="flex:1;min-width:0">' +
+              '<div style="display:flex;align-items:center;gap:6px;margin-bottom:2px"><span style="font-size:13px;font-weight:700;color:var(--text)">'+s.name+'</span><span style="font-size:11px;font-weight:700;color:var(--gold)">'+s.score+'</span></div>' +
+              '<div style="font-size:10px;color:var(--text3)">'+s.time+' · '+s.neighborhood+'</div>' +
+              (s.notes?'<div style="font-size:10px;color:var(--text2);margin-top:2px">'+s.notes+'</div>':'') +
+            '</div>' +
+            '<div style="background:rgba(62,184,168,.12);border:1px solid rgba(62,184,168,.3);border-radius:8px;padding:6px 10px;flex-shrink:0"><span style="font-size:11px;font-weight:700;color:#3eb8a8">+ Add</span></div>' +
+          '</div>'
+        ).join('') +
+        '<button onclick="A.acceptAllSuggestions()" style="width:100%;background:#3eb8a8;color:var(--dark);font-weight:800;font-size:13px;padding:12px;border-radius:10px;border:none;cursor:pointer;margin-top:4px">Add All '+suggestions.length+' Suggestions</button>' +
+      '</div></div>';
+    m.style.display='block';
   },
 
-  acceptSuggestion(dayIndex, suggestionIndex){
+  acceptSuggestion(suggestionIndex){
     const suggestions = window._tripSuggestions || [];
+    const dayIndex = window._tripSuggestDay || 0;
     const s = suggestions[suggestionIndex];
     if(!s) return;
-    TRIPS.addItineraryItem(dayIndex, {...s});
+    TRIPS.addItineraryItem(dayIndex, {name:s.name,type:s.type,time:s.time,neighborhood:s.neighborhood,notes:s.notes,status:'planned',cost:null});
     suggestions.splice(suggestionIndex, 1);
     window._tripSuggestions = suggestions;
     this.showToast('Added ' + s.name);
+    if(!suggestions.length) document.getElementById('event-detail-modal').style.display='none';
+    this.renderTrips();
+    // Re-open modal if more suggestions
+    if(suggestions.length) this.tripAISuggestDay(dayIndex);
+  },
+
+  acceptAllSuggestions(){
+    const suggestions = window._tripSuggestions || [];
+    const dayIndex = window._tripSuggestDay || 0;
+    suggestions.forEach(s => {
+      TRIPS.addItineraryItem(dayIndex, {name:s.name,type:s.type,time:s.time,neighborhood:s.neighborhood,notes:s.notes,status:'planned',cost:null});
+    });
+    window._tripSuggestions = [];
+    document.getElementById('event-detail-modal').style.display='none';
+    this.showToast('Added ' + suggestions.length + ' items');
     this.renderTrips();
   },
 
