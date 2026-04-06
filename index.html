@@ -6725,15 +6725,9 @@ upcomingHTML(){
 
     document.getElementById('discover-content').innerHTML=`
       <div style="padding:14px 14px 100px">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
-          <div>
-            <div style="font-size:16px;font-weight:800;color:var(--gold);margin-bottom:2px">✨ Discover ${S.city}</div>
-            <div style="font-size:12px;color:var(--text2)">${hasData ? restaurants.length+' verified restaurants' : 'Curating restaurants'}</div>
-          </div>
-          ${hasActivities?`<div onclick="A.openActivitiesPage()" style="padding:8px 14px;border-radius:10px;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.3);cursor:pointer;text-align:center">
-            <div style="font-size:11px;font-weight:700;color:var(--gold)">📋 Guides</div>
-            <div style="font-size:9px;color:var(--text3)">& Weekends</div>
-          </div>`:''}
+        <div style="margin-bottom:16px">
+          <div style="font-size:16px;font-weight:800;color:var(--gold);margin-bottom:2px">✨ Discover ${S.city}</div>
+          <div style="font-size:12px;color:var(--text2)">${hasData ? restaurants.length+' verified restaurants' : 'Curating restaurants'}</div>
         </div>
 
         ${hasActivities ? `
