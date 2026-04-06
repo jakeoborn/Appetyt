@@ -2366,9 +2366,10 @@ const TRIPS = {
   <!-- BOTTOM NAV -->
   <nav id="bottom-nav" aria-label="Quick navigation">
     <button class="bn-item active" id="bn-home" onclick="A.tab('home')"><span class="bn-icon">🍽</span>Guide</button>
-    <button class="bn-item" id="bn-feed" onclick="A.tab('feed')"><span class="bn-icon">💬</span>Social</button>
+    <button class="bn-item" id="bn-discover" onclick="A.tab('discover')"><span class="bn-icon">✨</span>Discover</button>
     <button class="bn-item" id="bn-trips" onclick="A.tab('trips')" style="position:relative"><span class="bn-icon">🌍</span>Trips<span id="trips-nav-dot" style="display:none;position:absolute;top:6px;right:14px;width:7px;height:7px;background:#c9a84c;border-radius:50%"></span></button>
     <button class="bn-item" id="bn-travel" onclick="A.tab('travel')"><span class="bn-icon">✈️</span>Travel</button>
+    <button class="bn-item" id="bn-feed" onclick="A.tab('feed')"><span class="bn-icon">💬</span>Social</button>
   </nav>
 
   </div>
@@ -5851,10 +5852,10 @@ const A = {
             <span style="font-size:12px;font-weight:700;color:var(--gold)">Under Construction</span>
           </div>
           <div style="font-size:13px;color:var(--text2);line-height:1.7;max-width:280px;margin:0 auto 16px">
-            We're curating verified restaurants for <b style="color:var(--text)">${S.city}</b>. Dallas is fully live -- explore while we build out more cities.
+            We're curating verified restaurants for <b style="color:var(--text)">${S.city}</b>. New York and Dallas are fully live.
           </div>
           <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
-            <button onclick="A.selectCity('Dallas');A.tab('home')" style="background:var(--gold);color:var(--dark);font-weight:700;font-size:12px;padding:10px 20px;border-radius:10px;border:none;cursor:pointer;font-family:inherit">🍽 Dallas Guide</button>
+            <button onclick="A.selectCity('New York');A.tab('home')" style="background:var(--gold);color:var(--dark);font-weight:700;font-size:12px;padding:10px 20px;border-radius:10px;border:none;cursor:pointer;font-family:inherit">🍽 New York Guide</button>
             <button onclick="A.tab('discover')" style="background:var(--card);color:var(--text2);font-size:12px;padding:10px 20px;border-radius:10px;border:1px solid var(--border);cursor:pointer;font-family:inherit">✨ Discover</button>
           </div>
         </div>`;
@@ -11670,7 +11671,7 @@ upcomingHTML(){
 
   hotelsHTML(){
     const city = (S.city||'Dallas');
-    const hotels = (HOTEL_DATA[(city).toLowerCase()] || HOTEL_DATA['dallas'] || []);
+    const hotels = (HOTEL_DATA[(city).toLowerCase()] || HOTEL_DATA[(S.city||'Dallas').toLowerCase()] || []);
     if(!hotels.length) return '<div class="empty-state"><div class="empty-icon">🏨</div><div class="empty-title">No Hotel Guide Yet</div><div class="empty-desc">Coming soon for '+city+'</div></div>';
     const tiers = ['Ultra Luxury','Luxury','Mid-Range','Boutique','Budget'];
     const tierColor = {'Ultra Luxury':'#c9a84c','Luxury':'#c9a84c','Mid-Range':'#7eb8a4','Boutique':'#b09ec9','Budget':'#8fa8c8'};
@@ -11726,7 +11727,7 @@ upcomingHTML(){
 
   openHotel(id){
     const city = (S.city||'Dallas');
-    const hotels = HOTEL_DATA[(city).toLowerCase()] || HOTEL_DATA['dallas'] || [];
+    const hotels = HOTEL_DATA[(city).toLowerCase()] || HOTEL_DATA[(S.city||'Dallas').toLowerCase()] || [];
     const h = hotels.find(x=>x.id===id);
     if(!h) return;
     const tierColor = {'Ultra Luxury':'#c9a84c','Luxury':'#c9a84c','Mid-Range':'#7eb8a4','Boutique':'#b09ec9','Budget':'#8fa8c8'};
@@ -11796,7 +11797,7 @@ upcomingHTML(){
 
   mallsHTML(){
     const city = (S.city||'Dallas');
-    const malls = (MALL_DATA[(city).toLowerCase()] || MALL_DATA['dallas'] || []);
+    const malls = (MALL_DATA[(city).toLowerCase()] || MALL_DATA[(S.city||'Dallas').toLowerCase()] || []);
     if(!malls.length) return '<div class="empty-state"><div class="empty-icon">🏬</div><div class="empty-title">No Mall Guide Yet</div><div class="empty-desc">Coming soon for '+city+'</div></div>';
     const tierColor = {'Ultra Luxury':'#c9a84c','Luxury':'#c9a84c','Upscale':'#7eb8a4','Mid-Luxury':'#8fa8c8','Specialty':'#b09ec9'};
     const mallCard = (m) => `
@@ -11851,7 +11852,7 @@ upcomingHTML(){
 
   localParksHTML(){
     const city = (S.city||'Dallas');
-    const parks = (typeof PARK_DATA!=='undefined' && PARK_DATA[(city).toLowerCase()]) || (typeof PARK_DATA!=='undefined' && PARK_DATA['dallas']) || [];
+    const parks = (typeof PARK_DATA!=='undefined' && PARK_DATA[(city).toLowerCase()]) || (typeof PARK_DATA!=='undefined' && PARK_DATA[(S.city||'Dallas').toLowerCase()]) || [];
     if(!parks.length) return '<div class="empty-state"><div class="empty-icon">🌳</div><div class="empty-title">No Park Guide Yet</div><div class="empty-desc">Coming soon for '+city+'</div></div>';
     const parkCard = (p) => `
       <div onclick="A.openPark(${p.id})" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
@@ -11879,7 +11880,7 @@ upcomingHTML(){
 
   openPark(id){
     const city = (S.city||'Dallas');
-    const parks = (typeof PARK_DATA!=='undefined' && PARK_DATA[(city).toLowerCase()]) || (typeof PARK_DATA!=='undefined' && PARK_DATA['dallas']) || [];
+    const parks = (typeof PARK_DATA!=='undefined' && PARK_DATA[(city).toLowerCase()]) || (typeof PARK_DATA!=='undefined' && PARK_DATA[(S.city||'Dallas').toLowerCase()]) || [];
     const p = parks.find(x=>x.id===id);
     if(!p) return;
     const el = document.getElementById('detail');
@@ -11906,7 +11907,7 @@ upcomingHTML(){
 
   localMuseumsHTML(){
     const city = (S.city||'Dallas');
-    const museums = (typeof MUSEUM_DATA!=='undefined' && MUSEUM_DATA[(city).toLowerCase()]) || (typeof MUSEUM_DATA!=='undefined' && MUSEUM_DATA['dallas']) || [];
+    const museums = (typeof MUSEUM_DATA!=='undefined' && MUSEUM_DATA[(city).toLowerCase()]) || (typeof MUSEUM_DATA!=='undefined' && MUSEUM_DATA[(S.city||'Dallas').toLowerCase()]) || [];
     if(!museums.length) return '<div class="empty-state"><div class="empty-icon">🏛</div><div class="empty-title">No Museum Guide Yet</div><div class="empty-desc">Coming soon for '+city+'</div></div>';
     const museumCard = (m) => `
       <div onclick="A.openMuseum(${m.id})" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
@@ -11934,7 +11935,7 @@ upcomingHTML(){
 
   openMuseum(id){
     const city = (S.city||'Dallas');
-    const museums = (typeof MUSEUM_DATA!=='undefined' && MUSEUM_DATA[(city).toLowerCase()]) || (typeof MUSEUM_DATA!=='undefined' && MUSEUM_DATA['dallas']) || [];
+    const museums = (typeof MUSEUM_DATA!=='undefined' && MUSEUM_DATA[(city).toLowerCase()]) || (typeof MUSEUM_DATA!=='undefined' && MUSEUM_DATA[(S.city||'Dallas').toLowerCase()]) || [];
     const m = museums.find(x=>x.id===id);
     if(!m) return;
     const el = document.getElementById('detail');
@@ -11962,7 +11963,7 @@ upcomingHTML(){
 
   openMall(id){
     const city = (S.city||'Dallas');
-    const malls = MALL_DATA[(city).toLowerCase()] || MALL_DATA['dallas'] || [];
+    const malls = MALL_DATA[(city).toLowerCase()] || MALL_DATA[(S.city||'Dallas').toLowerCase()] || [];
     const m = malls.find(x=>x.id===id);
     if(!m) return;
     const tierColor = {'Ultra Luxury':'#c9a84c','Luxury':'#c9a84c','Upscale':'#7eb8a4','Mid-Luxury':'#8fa8c8','Specialty':'#b09ec9'};
