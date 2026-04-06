@@ -2275,7 +2275,10 @@ const TRIPS = {
       <!-- Lists panel -->
       <div id="lt-lists-panel" style="flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:14px 14px 100px;display:none">
         <div class="list-section">
-          <div class="list-section-title">❤️ Favorites</div>
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div class="list-section-title">❤️ Favorites</div>
+            <button onclick="A.emailFavorites()" style="font-size:10px;color:var(--gold);background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);padding:4px 10px;border-radius:8px;cursor:pointer;font-family:inherit;font-weight:600">📧 Share</button>
+          </div>
           <div id="list-favs"></div>
         </div>
         <div class="list-section">
@@ -12536,6 +12539,13 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         </div>
       </div>
 
+      <!-- QUICK ACTIONS -->
+      <div style="display:flex;gap:6px;margin-bottom:12px;overflow-x:auto;scrollbar-width:none">
+        <button onclick="A.emailItinerary()" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid rgba(201,168,76,.25);background:rgba(201,168,76,.06);color:var(--gold);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">📧 Email Itinerary</button>
+        <button onclick="A.emailItineraryTo()" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">📨 Send to...</button>
+        <button onclick="A.openShareModal()" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">📤 Share</button>
+      </div>
+
       <!-- KPI CARDS -->
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px">
         <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px">
@@ -13052,6 +13062,117 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     return `${hr}:${String(m).padStart(2,'0')} ${ampm}`;
   },
 
+  // Build formatted itinerary text from TRIPS.itinerary
+  buildItinerarySummary(){
+    const trip = TRIPS.current;
+    if(!trip) return '';
+    const itinerary = TRIPS.itinerary || [];
+    const members = TRIPS.members || [];
+    const budget = TRIPS.budget || {total:0,spent:0};
+    const bills = TRIPS.bills || [];
+    const totalSpend = bills.reduce((s,b)=>s+parseFloat(b.total||0),0);
+    const cities = Array.isArray(trip.cities)?trip.cities:(trip.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
+    const statusEmoji = {planned:'⬜',booked:'✅',visited:'🏁'};
+
+    let txt = '';
+    txt += `🌍 ${trip.name}\n`;
+    if(cities.length) txt += `📍 ${cities.join(' → ')}\n`;
+    if(trip.start_date) txt += `📅 ${trip.start_date}${trip.end_date?' → '+trip.end_date:''}\n`;
+    if(members.length) txt += `👥 ${members.map(m=>m.nickname).join(', ')}\n`;
+    txt += `🔑 Trip Code: ${trip.code}\n`;
+    if(budget.total>0) txt += `💰 Budget: $${totalSpend.toFixed(0)} / $${budget.total}\n`;
+    txt += `${'─'.repeat(30)}\n\n`;
+
+    if(itinerary.length > 0){
+      itinerary.forEach(day => {
+        const dateStr = day.date ? new Date(day.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric'}) : '';
+        txt += `📆 DAY ${day.day} — ${day.title}${dateStr?' ('+dateStr+')':''}\n`;
+        if(day.items.length === 0){
+          txt += `   No plans yet\n`;
+        } else {
+          day.items.forEach(item => {
+            const emoji = item.type==='restaurant'?'🍽️':item.type==='activity'?'🎭':item.type==='bar'?'🍸':'📌';
+            const time = item.time ? this._formatTime(item.time) : '';
+            txt += `   ${statusEmoji[item.status]||'⬜'} ${time?time+' • ':''}${emoji} ${item.name}`;
+            if(item.neighborhood) txt += ` (${item.neighborhood})`;
+            txt += `\n`;
+            if(item.notes) txt += `      💬 ${item.notes}\n`;
+          });
+        }
+        txt += `\n`;
+      });
+    }
+
+    // Also include reservations if any
+    const reservations = TRIPS.reservations || [];
+    if(reservations.length > 0){
+      txt += `${'─'.repeat(30)}\n`;
+      txt += `📋 RESERVATIONS\n`;
+      reservations.forEach(r => {
+        const catEmoji = {hotel:'🏨',flight:'✈️',activity:'🎭',restaurant:'🍽️',car:'🚗'}[r.category]||'📌';
+        txt += `   ${catEmoji} ${r.name}`;
+        if(r.date) txt += ` — ${r.date}`;
+        if(r.time) txt += ` ${this._formatTime(r.time)}`;
+        if(r.confirmation) txt += ` (#${r.confirmation})`;
+        txt += `\n`;
+      });
+      txt += `\n`;
+    }
+
+    txt += `${'─'.repeat(30)}\n`;
+    txt += `Sent via Appetyt • appetyt.app\n`;
+    txt += `Join this trip: appetyt.app → Trips → Code: ${trip.code}`;
+    return txt;
+  },
+
+  // Email the full trip itinerary
+  emailItinerary(){
+    const trip = TRIPS.current;
+    if(!trip) return;
+    const subject = encodeURIComponent(`${trip.name} — Trip Itinerary from Appetyt`);
+    const body = encodeURIComponent(this.buildItinerarySummary());
+    window.open(`mailto:?subject=${subject}&body=${body}`, '_self');
+  },
+
+  // Email itinerary to a specific address
+  emailItineraryTo(){
+    const email = prompt('Send itinerary to email address:');
+    if(!email || !email.includes('@')) return;
+    const trip = TRIPS.current;
+    if(!trip) return;
+    const subject = encodeURIComponent(`${trip.name} — Trip Itinerary from Appetyt`);
+    const body = encodeURIComponent(this.buildItinerarySummary());
+    window.open(`mailto:${email}?subject=${subject}&body=${body}`, '_self');
+  },
+
+  // Share a restaurant list via email
+  emailList(listName, restaurants){
+    if(!restaurants || !restaurants.length) return;
+    let body = `🍽️ ${listName}\n`;
+    body += `Curated on Appetyt • appetyt.app\n`;
+    body += `${'─'.repeat(30)}\n\n`;
+    restaurants.forEach((r, i) => {
+      body += `${i+1}. ${r.name} — ${r.score}/100\n`;
+      body += `   ${r.cuisine} • ${r.neighborhood}\n`;
+      if(r.dishes && r.dishes.length) body += `   Must try: ${r.dishes.slice(0,3).join(', ')}\n`;
+      if(r.description) body += `   ${r.description.split('.')[0]}.\n`;
+      body += `\n`;
+    });
+    body += `${'─'.repeat(30)}\n`;
+    body += `Explore more at appetyt.app`;
+    const subject = encodeURIComponent(`${listName} — from Appetyt`);
+    window.open(`mailto:?subject=${subject}&body=${encodeURIComponent(body)}`, '_self');
+  },
+
+  // Open email share for current favorites
+  emailFavorites(){
+    const favIds = S.userData.favs || [];
+    const all = this.getRestaurants();
+    const favs = favIds.map(id => all.find(r=>r.id===id)).filter(Boolean);
+    if(!favs.length){ this.showToast('No saved favorites yet'); return; }
+    this.emailList(`My ${S.city} Favorites (${favs.length} spots)`, favs);
+  },
+
   openShareModal(){
     const trip = TRIPS.current;
     if(!trip) return;
@@ -13072,7 +13193,10 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         <div style="margin-bottom:16px">
           <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">${label}</div>
           <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-size:10px;color:var(--text3);line-height:1.6;margin-bottom:8px;max-height:80px;overflow:hidden;font-family:monospace;white-space:pre-wrap">${text.slice(0,200)}${text.length>200?'...':''}</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px">
+            <a href="mailto:?subject=${encodeURIComponent((TRIPS.current?.name||'Trip')+' Itinerary')}&body=${encoded}" style="display:block;text-align:center;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.25);color:var(--gold);font-weight:700;font-size:11px;padding:10px 6px;border-radius:10px;text-decoration:none">
+              📧 Email
+            </a>
             <a href="sms:?body=${encoded}" style="display:block;text-align:center;background:var(--card);border:1px solid var(--border);color:var(--text);font-weight:700;font-size:11px;padding:10px 6px;border-radius:10px;text-decoration:none">
               💬 SMS
             </a>
