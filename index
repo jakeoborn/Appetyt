@@ -6327,9 +6327,9 @@ const A = {
         +'<div class="r-footer">'
           +'<div class="r-meta">'+(r.reservation||'TBD')+'</div>'
           +'<div class="r-actions" onclick="event.stopPropagation()">'
-            +'<button class="r-btn'+(isFav?' on':'')+'" onclick="A.toggleList(\'favs\','+r.id+',this)">❤️</button>'
-            +'<button class="r-btn'+(isVisited?' on':'')+'" onclick="A.toggleList(\'visited\','+r.id+',this)">✅</button>'
-            +'<button class="r-btn'+(isWant?' on':'')+'" onclick="A.toggleList(\'want\','+r.id+',this)">🔖</button>'
+            +'<button class="r-btn'+(isFav?' on':'')+'" onclick="A.toggleList(&apos;favs&apos;,'+r.id+',this)">❤️</button>'
+            +'<button class="r-btn'+(isVisited?' on':'')+'" onclick="A.toggleList(&apos;visited&apos;,'+r.id+',this)">✅</button>'
+            +'<button class="r-btn'+(isWant?' on':'')+'" onclick="A.toggleList(&apos;want&apos;,'+r.id+',this)">🔖</button>'
             +'<button class="r-btn" onclick="A.shareRestaurant(\''+safeName+'\',\''+r.cuisine.replace(/'/g,"&#39;")+'\',\''+r.neighborhood.replace(/'/g,"&#39;")+'\','+r.score+')">↗️</button>'
           +'</div>'
         +'</div>'
@@ -6754,6 +6754,17 @@ upcomingHTML(){
             <div style="font-size:18px;color:var(--gold)">›</div>
           </div>
         </div>
+        
+          <!-- Weekend Guides & Events gold card -->
+          <div class="discover-section" style="margin-top:6px">
+            <div onclick="A.openActivitiesPage()" style="background:linear-gradient(145deg,var(--card2),var(--card));border:2px solid var(--gold);border-radius:14px;padding:18px 16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;box-shadow:0 0 8px rgba(200,169,110,.2)">
+              <div>
+                <div style="font-size:16px;font-weight:800;color:var(--gold)">📋 Weekend Guides & Events</div>
+                <div style="font-size:12px;color:var(--text2);margin-top:3px">Curated itineraries · Events · Insider tips</div>
+              </div>
+              <div style="font-size:22px;color:var(--gold)">›</div>
+            </div>
+          </div>
         ` : `
         <!-- ACTIVITIES & GUIDES — compact link for non-NYC -->
         <div class="discover-section" style="margin-top:-4px">
@@ -7711,9 +7722,9 @@ upcomingHTML(){
       _aH+='</div>';
       // Action buttons
       _aH+='<div style="display:flex;gap:8px;margin-bottom:14px">'
-        +'<button class="r-btn'+(isFav?' on':'')+'" onclick="A.toggleList(\'favs\','+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1px solid var(--border);font-size:12px;cursor:pointer;font-family:inherit">\u2764\uFE0F '+(isFav?'Saved':'Save')+'</button>'
-        +'<button class="r-btn'+(isVisited?' on':'')+'" onclick="A.toggleList(\'visited\','+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1px solid var(--border);font-size:12px;cursor:pointer;font-family:inherit">\u2705 '+(isVisited?'Visited':'Been Here')+'</button>'
-        +'<button class="r-btn'+(isWant?' on':'')+'" onclick="A.toggleList(\'want\','+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1px solid var(--border);font-size:12px;cursor:pointer;font-family:inherit">\u{1F516} '+(isWant?'Saved':'Want to Go')+'</button>'
+        +'<button class="r-btn'+(isFav?' on':'')+'" onclick="A.toggleList(&apos;favs&apos;,'+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1px solid var(--border);font-size:12px;cursor:pointer;font-family:inherit">\u2764\uFE0F '+(isFav?'Saved':'Save')+'</button>'
+        +'<button class="r-btn'+(isVisited?' on':'')+'" onclick="A.toggleList(&apos;visited&apos;,'+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1px solid var(--border);font-size:12px;cursor:pointer;font-family:inherit">\u2705 '+(isVisited?'Visited':'Been Here')+'</button>'
+        +'<button class="r-btn'+(isWant?' on':'')+'" onclick="A.toggleList(&apos;want&apos;,'+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1px solid var(--border);font-size:12px;cursor:pointer;font-family:inherit">\u{1F516} '+(isWant?'Saved':'Want to Go')+'</button>'
         +'</div>';
       // Notes
       _aH+=buildNotesHTML(id);
