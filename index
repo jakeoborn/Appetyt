@@ -8490,6 +8490,61 @@ upcomingHTML(){
     this.editProfile();
   },
 
+  // Push Notifications
+  async requestNotifications(){
+    if(!('Notification' in window)){ this.showToast('Notifications not supported on this browser'); return false; }
+    if(Notification.permission === 'granted') return true;
+    if(Notification.permission === 'denied'){ this.showToast('Notifications blocked — enable in browser settings'); return false; }
+    const perm = await Notification.requestPermission();
+    if(perm === 'granted'){
+      this.showToast('Notifications enabled!');
+      return true;
+    }
+    return false;
+  },
+
+  async scheduleTripReminder(itemName, time, dayDate){
+    const granted = await this.requestNotifications();
+    if(!granted) return;
+    // Calculate ms until the reminder (2 hours before)
+    const eventTime = new Date(dayDate+'T'+time+':00');
+    const reminderTime = new Date(eventTime.getTime() - 2*60*60*1000); // 2 hours before
+    const now = new Date();
+    const delay = reminderTime.getTime() - now.getTime();
+    if(delay <= 0){
+      this.showToast('This event is in the past or too soon for a reminder');
+      return;
+    }
+    // Use setTimeout for local notifications (no server needed)
+    setTimeout(()=>{
+      if(Notification.permission === 'granted'){
+        new Notification('Appetyt — Coming Up!', {
+          body: itemName + ' in 2 hours. Time to get ready!',
+          icon: '/icons/icon-192.png',
+          tag: 'trip-reminder-'+Date.now()
+        });
+      }
+    }, delay);
+    const hoursUntil = Math.round(delay/3600000);
+    this.showToast('Reminder set for ' + itemName + ' (' + (hoursUntil>0?hoursUntil+'h before':'soon') + ')');
+  },
+
+  async enableTripNotifications(){
+    const granted = await this.requestNotifications();
+    if(!granted) return;
+    const itinerary = TRIPS.itinerary || [];
+    let count = 0;
+    itinerary.forEach(day => {
+      if(!day.date) return;
+      day.items.forEach(item => {
+        if(!item.time || item.status === 'visited') return;
+        this.scheduleTripReminder(item.name, item.time, day.date);
+        count++;
+      });
+    });
+    this.showToast('Set ' + count + ' reminders for your trip');
+  },
+
   signOut(){
     S.user = null;
     localStorage.removeItem('appetyt_user');
@@ -14366,12 +14421,7 @@ Return ONLY the JSON object, nothing else.`,
     this.tab('trips');
   },
 
-  joinTrip(){
-    const code = document.getElementById('trip-code-input')?.value?.trim().toUpperCase();
-    if(!code) { A.showToast('Enter a trip code'); return; }
-    // In full version this would look up via Supabase
-    A.showToast(`Looking up trip "${code}"... (Supabase sync coming soon)`);
-  },
+  // joinTrip is defined earlier in the concierge dashboard section
 
   openTrip(idx){
     const trip = (S.userData.trips||[])[idx];

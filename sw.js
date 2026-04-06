@@ -77,7 +77,42 @@ self.addEventListener('fetch', function(event) {
     return;
   }
 
-  /* Network-first for navigation / HTML (handles the large index.html) */
+  /* Push notification handler */
+self.addEventListener('push', function(event) {
+  var data = event.data ? event.data.json() : {};
+  var title = data.title || 'Appetyt';
+  var options = {
+    body: data.body || 'Check your trip itinerary',
+    icon: '/icons/icon-192.png',
+    badge: '/icons/icon-72.png',
+    tag: data.tag || 'appetyt-notification',
+    data: { url: data.url || '/', action: data.action || 'open' },
+    actions: [
+      { action: 'open', title: 'View' },
+      { action: 'dismiss', title: 'Dismiss' }
+    ],
+    vibrate: [100, 50, 100]
+  };
+  event.waitUntil(self.registration.showNotification(title, options));
+});
+
+/* Notification click handler */
+self.addEventListener('notificationclick', function(event) {
+  event.notification.close();
+  var url = event.notification.data && event.notification.data.url ? event.notification.data.url : '/';
+  event.waitUntil(
+    self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(function(windowClients) {
+      for (var i = 0; i < windowClients.length; i++) {
+        if (windowClients[i].url.indexOf('appetyt.app') > -1 && 'focus' in windowClients[i]) {
+          return windowClients[i].focus();
+        }
+      }
+      return self.clients.openWindow(url);
+    })
+  );
+});
+
+/* Network-first for navigation / HTML (handles the large index.html) */
   event.respondWith(
     fetch(event.request).then(function(response) {
       /* Only cache successful same-origin responses */
