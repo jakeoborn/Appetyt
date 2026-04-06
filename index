@@ -1667,27 +1667,38 @@ const TRIPS = {
     const nickname = localStorage.getItem('appetyt_nickname') || 'Traveler';
 
     if(sb){
-      const {data, error} = await sb.from('trips').insert({
-        code, name, owner_id: deviceId,
-        cities, start_date: startDate, end_date: endDate,
-        ...(cruiseItinerary ? {cruise_itinerary: cruiseItinerary} : {})
-      }).select().single();
-      if(error) throw error;
+      try{
+        const {data, error} = await sb.from('trips').insert({
+          code, name, owner_id: deviceId,
+          cities, start_date: startDate, end_date: endDate,
+          ...(cruiseItinerary ? {cruise_itinerary: cruiseItinerary} : {})
+        }).select().single();
+        if(error) throw error;
 
-      // Auto-join as owner
-      await sb.from('trip_members').insert({
-        trip_id: data.id, nickname, device_id: deviceId,
-        avatar_emoji: '👑'
-      });
+        // Auto-join as owner
+        await sb.from('trip_members').insert({
+          trip_id: data.id, nickname, device_id: deviceId,
+          avatar_emoji: '👑'
+        });
 
-      this.current = data;
-      localStorage.setItem('appetyt_active_trip', JSON.stringify(data));
-      await this.subscribe(data.id);
-      return data;
+        this.current = data;
+        localStorage.setItem('appetyt_active_trip', JSON.stringify(data));
+        await this.subscribe(data.id);
+        return data;
+      } catch(sbErr){
+        // Supabase failed (paused/offline) — fall back to local
+        console.log('Supabase unavailable, creating trip locally:', sbErr.message||sbErr);
+        const trip = {id: 'local_'+Date.now(), code, name, cities, start_date: startDate, end_date: endDate, owner_id: deviceId};
+        this.current = trip;
+        this.members = [{nickname, device_id: deviceId, avatar_emoji: '👑'}];
+        localStorage.setItem('appetyt_active_trip', JSON.stringify(trip));
+        return trip;
+      }
     } else {
       // Local fallback (no Supabase configured)
       const trip = {id: 'local_'+Date.now(), code, name, cities, start_date: startDate, end_date: endDate, owner_id: deviceId};
       this.current = trip;
+      this.members = [{nickname, device_id: deviceId, avatar_emoji: '👑'}];
       localStorage.setItem('appetyt_active_trip', JSON.stringify(trip));
       return trip;
     }
