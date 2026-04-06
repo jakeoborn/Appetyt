@@ -7057,7 +7057,7 @@ upcomingHTML(){
           </div>`).join('')}
       </div>` : ''}
 
-      <!-- NEIGHBORHOOD SPOTLIGHT -->
+      ${S.city==="New York"?`<!-- NEIGHBORHOOD SPOTLIGHT -->
       <div style="margin-bottom:20px">
         <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">🏘️ Neighborhood Spotlight</div>
         <div style="font-size:11px;color:var(--text2);margin:-4px 0 12px">Where to eat, drink, and explore</div>
@@ -7328,7 +7328,7 @@ upcomingHTML(){
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
           <button onclick="document.getElementById('weekend-guide-overlay').remove()" style="background:none;border:none;color:var(--text3);font-size:22px;cursor:pointer;padding:4px">←</button>
           <div style="font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase">Weekend Guide</div>
-          <div style="width:30px"></div>
+          <div style="width:30px"></div>`:""}
         </div>
 
         <div style="text-align:center;margin-bottom:20px">
