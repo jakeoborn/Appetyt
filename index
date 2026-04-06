@@ -5377,6 +5377,7 @@ const A = {
     if(!S.filters.size){const all=document.getElementById('qf-all');if(all)all.classList.add('active');}
     this.closeFilterModal();
     this.renderHome();
+    document.getElementById('home-view').scrollTop=0;
   },
   setFilter(f,fromModal=false){
     S.filters.clear();
@@ -5396,6 +5397,7 @@ const A = {
     document.querySelectorAll('.combo-chip').forEach(b=>b.classList.remove('active'));
     if(fromModal) this.closeFilterModal();
     this.renderHome();
+    document.getElementById('home-view').scrollTop=0;
   },
 
   setCombo(f1,f2,fromModal=false){
@@ -5411,6 +5413,7 @@ const A = {
     document.querySelectorAll('.combo-chip').forEach(b=>b.classList.remove('active'));
     if(fromModal) this.closeComboModal();
     this.renderHome();
+    document.getElementById('home-view').scrollTop=0;
   },
 
   setNeighborhood(n,btn){
@@ -8181,6 +8184,15 @@ upcomingHTML(){
       if(q2.includes('date')) recs=all.filter(r=>(r.tags||[]).some(t=>t.includes('Date'))).slice(0,2);
       else if(q2.includes('happy')) recs=all.filter(r=>r.hh).slice(0,2);
       else if(q2.includes('cheap')||q2.includes('budget')) recs=all.filter(r=>r.price<=2).sort((a,b)=>b.score-a.score).slice(0,2);
+      else if(q2.includes('cocktail')||q2.includes('mezcal')||q2.includes('bar')||q2.includes('drink')) recs=all.filter(r=>(r.tags||[]).some(t=>/cocktail|bar|late night/i.test(t))||(r.cuisine||'').toLowerCase().includes('bar')).sort((a,b)=>b.score-a.score).slice(0,2);
+      else if(q2.includes('brunch')) recs=all.filter(r=>(r.tags||[]).some(t=>t.includes('Brunch'))).sort((a,b)=>b.score-a.score).slice(0,2);
+      else if(q2.includes('pizza')) recs=all.filter(r=>(r.cuisine||'').toLowerCase().includes('pizza')).sort((a,b)=>b.score-a.score).slice(0,2);
+      else if(q2.includes('coffee')) recs=all.filter(r=>(r.cuisine||'').toLowerCase().includes('coffee')).sort((a,b)=>b.score-a.score).slice(0,2);
+      else if(q2.includes('sushi')||q2.includes('japanese')) recs=all.filter(r=>(r.cuisine||'').toLowerCase().includes('japanese')||(r.tags||[]).some(t=>t.includes('Sushi'))).sort((a,b)=>b.score-a.score).slice(0,2);
+      else if(q2.includes('italian')) recs=all.filter(r=>(r.cuisine||'').toLowerCase().includes('italian')).sort((a,b)=>b.score-a.score).slice(0,2);
+      else if(q2.includes('rooftop')) recs=all.filter(r=>(r.tags||[]).some(t=>t.includes('Rooftop'))).sort((a,b)=>b.score-a.score).slice(0,2);
+      else if(q2.includes('dessert')||q2.includes('ice cream')||q2.includes('sweet')) recs=all.filter(r=>(r.tags||[]).some(t=>t.includes('Dessert'))||(r.cuisine||'').toLowerCase().includes('dessert')).sort((a,b)=>b.score-a.score).slice(0,2);
+      else if(q2.includes('hidden')||q2.includes('gem')) recs=all.filter(r=>(r.tags||[]).some(t=>t.includes('Local Favorites'))||(r.indicators||[]).includes('hole-in-the-wall')).sort((a,b)=>b.score-a.score).slice(0,2);
       else recs=all.sort((a,b)=>b.score-a.score).slice(0,2);
       let reply;
       if(recs.length){
