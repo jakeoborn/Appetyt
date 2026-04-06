@@ -1940,14 +1940,24 @@ const TRIPS = {
     if(isNaN(start.getTime()) || isNaN(end.getTime())) return;
     const days = Math.max(1, Math.min(30, Math.round((end-start)/(1000*60*60*24))+1));
     const titles = ['Arrival Day','Exploring','Deep Dive','Adventure','Local Gems','Hidden Spots','Grand Finale','Departure'];
+    // Multi-city: distribute cities across days
+    const trip = this.current;
+    const cities = Array.isArray(trip?.cities)?trip.cities:(trip?.city||'').split(',').map(x=>x.trim()).filter(Boolean);
+    const daysPerCity = cities.length>1 ? Math.max(1,Math.floor(days/cities.length)) : days;
     this.itinerary = [];
     for(let i=0;i<days;i++){
       const d = new Date(start);
       d.setDate(d.getDate()+i);
+      const cityIdx = cities.length>1 ? Math.min(Math.floor(i/daysPerCity), cities.length-1) : 0;
+      const dayCity = cities[cityIdx] || cities[0] || '';
+      const isFirst = i===0 || (cities.length>1 && i===cityIdx*daysPerCity);
+      const isLast = i===days-1;
+      let title = isFirst&&i===0?'Arrival in '+(dayCity||''):isFirst?'Arrive in '+dayCity:isLast?'Departure':titles[Math.min(i%titles.length,titles.length-1)];
       this.itinerary.push({
         day: i+1,
         date: d.toISOString().split('T')[0],
-        title: i===0?'Arrival Day':i===days-1?'Departure':titles[Math.min(i,titles.length-1)],
+        title: title,
+        city: dayCity,
         items: []
       });
     }
@@ -12855,7 +12865,8 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
               return `<button onclick="A._selectedDay=${di};A.renderTrips()" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:2px solid ${isSelected?'var(--gold)':'var(--border)'};background:${isSelected?'rgba(201,168,76,.12)':'var(--card)'};cursor:pointer;font-family:inherit;text-align:left;min-width:80px">
                 <div style="font-size:11px;font-weight:700;color:${isSelected?'var(--gold)':'var(--text)'}">Day ${day.day}</div>
                 <div style="font-size:9px;color:var(--text3);margin-top:1px">${dateLabel}</div>
-                ${itemCount?'<div style="font-size:8px;color:var(--text3);margin-top:2px">'+itemCount+' items</div>':''}
+                ${day.city&&cities.length>1?'<div style="font-size:8px;color:var(--gold2);margin-top:1px">📍 '+day.city+'</div>':''}
+                ${itemCount?'<div style="font-size:8px;color:var(--text3);margin-top:1px">'+itemCount+' items</div>':''}
               </button>`;
             }).join('')}
           </div>
@@ -12863,7 +12874,10 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
           <!-- Selected Day Items -->
           <div style="margin-bottom:8px">
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
-              <div style="font-size:13px;font-weight:700;color:var(--text)">${itinerary[selectedDay]?.title||'Day '+(selectedDay+1)}</div>
+              <div>
+                <div style="font-size:13px;font-weight:700;color:var(--text)">${itinerary[selectedDay]?.title||'Day '+(selectedDay+1)}</div>
+                <div id="trip-weather" style="font-size:10px;color:var(--text3);margin-top:2px"></div>
+              </div>
               <button onclick="A.tripAddItemPrompt(${selectedDay})" style="font-size:10px;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.25);padding:5px 12px;border-radius:8px;cursor:pointer;font-family:inherit;font-weight:700">+ Add</button>
             </div>
             ${(itinerary[selectedDay]?.items||[]).length === 0 ?
@@ -12885,10 +12899,14 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
                   </div>
                   <button onclick="TRIPS.cycleItemStatus(${selectedDay},&quot;${item.id}&quot;);A.renderTrips()" style="background:${statusBg};border:1px solid ${statusColor};color:${statusColor};font-size:8px;font-weight:700;padding:4px 8px;border-radius:6px;cursor:pointer;white-space:nowrap;font-family:inherit;letter-spacing:.3px">${statusLabel}</button>
                 </div>
+                ${(item.photos&&item.photos.length)?`<div style="display:flex;gap:4px;margin-top:6px;overflow-x:auto;scrollbar-width:none">${item.photos.map(p=>`<img src="${p.url}" style="width:48px;height:48px;border-radius:6px;object-fit:cover;flex-shrink:0">`).join('')}</div>`:''}
                 <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
                   <a href="https://www.google.com/maps/search/${encodeURIComponent(item.name+' '+(cities[0]||''))}" target="_blank" style="font-size:10px;color:var(--text3);text-decoration:none;padding:4px 8px;background:var(--card2);border-radius:6px">📍 Map</a>
                   ${item.reserveLink?`<a href="${item.reserveLink}" target="_blank" style="font-size:10px;color:#4c9a6a;text-decoration:none;padding:4px 8px;background:rgba(76,154,106,.08);border-radius:6px;font-weight:600">📅 Reserve</a>`:''}
-                  <button onclick="TRIPS.removeItineraryItem(${selectedDay},&quot;${item.id}&quot;);A.renderTrips()" style="font-size:10px;color:var(--text3);background:var(--card2);border:none;border-radius:6px;padding:4px 8px;cursor:pointer;font-family:inherit">✕ Remove</button>
+                  <button onclick="A.tripAddPhoto(${selectedDay},&quot;${item.id}&quot;)" style="font-size:10px;color:var(--text3);background:var(--card2);border:none;border-radius:6px;padding:4px 8px;cursor:pointer;font-family:inherit">📷 Photo</button>
+                  <button onclick="A.moveItineraryItem(${selectedDay},&quot;${item.id}&quot;,-1)" style="font-size:10px;color:var(--text3);background:var(--card2);border:none;border-radius:6px;padding:4px 8px;cursor:pointer;font-family:inherit">↑</button>
+                  <button onclick="A.moveItineraryItem(${selectedDay},&quot;${item.id}&quot;,1)" style="font-size:10px;color:var(--text3);background:var(--card2);border:none;border-radius:6px;padding:4px 8px;cursor:pointer;font-family:inherit">↓</button>
+                  <button onclick="TRIPS.removeItineraryItem(${selectedDay},&quot;${item.id}&quot;);A.renderTrips()" style="font-size:10px;color:var(--text3);background:var(--card2);border:none;border-radius:6px;padding:4px 8px;cursor:pointer;font-family:inherit">✕</button>
                 </div>
               </div>`;
             }).join('')}
@@ -12969,6 +12987,8 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         </div>
       ` : ''}
     `;
+    // Auto-fetch weather for the selected day
+    if(tripTab==='today' && itinerary.length>0) setTimeout(()=>this.fetchTripWeather(),100);
   },
 
   // Concierge "Find" - smart category search
@@ -13014,6 +13034,108 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
   },
 
 // --- TRIP DASHBOARD HELPERS ---
+  // Move item up/down within a day
+  moveItineraryItem(dayIndex, itemId, direction){
+    const day = TRIPS.itinerary[dayIndex];
+    if(!day) return;
+    const items = day.items;
+    const idx = items.findIndex(i=>i.id===itemId);
+    if(idx===-1) return;
+    const newIdx = idx + direction;
+    if(newIdx < 0 || newIdx >= items.length) return;
+    [items[idx], items[newIdx]] = [items[newIdx], items[idx]];
+    TRIPS._saveLocal();
+    this.renderTrips();
+  },
+
+  // Photo journal — add photos to trip items
+  tripAddPhoto(dayIndex, itemId){
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    input.capture = 'environment';
+    input.onchange = (e) => {
+      const file = e.target.files[0];
+      if(!file) return;
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        const dataUrl = ev.target.result;
+        // Save photo to trip item
+        const day = TRIPS.itinerary[dayIndex];
+        if(!day) return;
+        const item = day.items.find(i=>i.id===itemId);
+        if(!item) return;
+        if(!item.photos) item.photos = [];
+        item.photos.push({url: dataUrl, date: new Date().toISOString()});
+        TRIPS._saveLocal();
+        this.showToast('Photo added!');
+        this.renderTrips();
+      };
+      // Compress to save localStorage space
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        const maxW = 400;
+        const scale = Math.min(1, maxW/img.width);
+        canvas.width = img.width*scale;
+        canvas.height = img.height*scale;
+        canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+        const compressed = canvas.toDataURL('image/jpeg', 0.6);
+        const day = TRIPS.itinerary[dayIndex];
+        if(!day) return;
+        const item = day.items.find(i=>i.id===itemId);
+        if(!item) return;
+        if(!item.photos) item.photos = [];
+        item.photos.push({url: compressed, date: new Date().toISOString()});
+        TRIPS._saveLocal();
+        this.showToast('Photo added!');
+        this.renderTrips();
+      };
+      img.src = URL.createObjectURL(file);
+    };
+    input.click();
+  },
+
+  // Weather for trip days (free Open-Meteo API, no key needed)
+  async fetchTripWeather(){
+    const trip = TRIPS.current;
+    if(!trip) return;
+    const day = TRIPS.itinerary[this._selectedDay||0];
+    if(!day?.date) return;
+    const el = document.getElementById('trip-weather');
+    if(!el) return;
+
+    // City coordinates
+    const cityCoords = {'New York':{lat:40.7128,lng:-74.0060},'Dallas':{lat:32.7767,lng:-96.7970},'Austin':{lat:30.2672,lng:-97.7431},'Houston':{lat:29.7604,lng:-95.3698},'Chicago':{lat:41.8781,lng:-87.6298},'Los Angeles':{lat:34.0522,lng:-118.2437},'Miami':{lat:25.7617,lng:-80.1918},'London':{lat:51.5074,lng:-0.1278},'Paris':{lat:48.8566,lng:2.3522},'Tokyo':{lat:35.6762,lng:139.6503}};
+    const cities = Array.isArray(trip.cities)?trip.cities:(trip.city||'').split(',').map(x=>x.trim()).filter(Boolean);
+    const city = cities[0]||'New York';
+    const coords = cityCoords[city];
+    if(!coords){ el.textContent=''; return; }
+
+    // Check cache
+    const cacheKey = 'weather_'+city+'_'+day.date;
+    const cached = sessionStorage.getItem(cacheKey);
+    if(cached){
+      el.innerHTML = cached;
+      return;
+    }
+
+    try{
+      const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude='+coords.lat+'&longitude='+coords.lng+'&daily=temperature_2m_max,temperature_2m_min,weathercode&temperature_unit=fahrenheit&timezone=auto&start_date='+day.date+'&end_date='+day.date);
+      const data = await res.json();
+      if(data.daily){
+        const hi = Math.round(data.daily.temperature_2m_max[0]);
+        const lo = Math.round(data.daily.temperature_2m_min[0]);
+        const code = data.daily.weathercode[0];
+        const emoji = code<=1?'☀️':code<=3?'⛅':code<=48?'🌫️':code<=67?'🌧️':code<=77?'❄️':code<=82?'🌧️':'⛈️';
+        const desc = code<=1?'Clear':code<=3?'Partly cloudy':code<=48?'Foggy':code<=67?'Rain':code<=77?'Snow':code<=82?'Showers':'Thunderstorm';
+        const html = emoji+' '+desc+' · '+hi+'°F / '+lo+'°F';
+        el.innerHTML = html;
+        sessionStorage.setItem(cacheKey, html);
+      }
+    }catch(e){ el.textContent=''; }
+  },
+
   tripAddItemPrompt(dayIndex){
     const m = document.getElementById('event-detail-modal');
     if(!m) return;
