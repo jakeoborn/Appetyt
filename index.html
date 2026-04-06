@@ -6715,7 +6715,7 @@ upcomingHTML(){
     const _actMini=(r)=>`<div onclick="A.openDetail(${r.id})" style="flex-shrink:0;width:135px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer"><div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${r.name}</div><div style="font-size:10px;color:var(--text3);margin-bottom:2px">${r.neighborhood}</div><div style="font-size:10px;color:var(--gold);font-weight:600">${r.score}</div></div>`;
     const _actRow=(items)=>`<div style="display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:0 14px 4px;margin:0 -14px;-ms-overflow-style:none">${items.map(r=>_actMini(r)).join('')}</div>`;
     const _rooftops=hasData?restaurants.filter(r=>(r.tags||[]).includes('Rooftop')).sort((a,b)=>b.score-a.score).slice(0,8):[];
-    const _water=hasData?restaurants.filter(r=>(r.description||'').toLowerCase().match(/cruise|ferry|kayak|sail|schooner|harbor|boat|floating/)).slice(0,8):[];
+    const _water=hasData?restaurants.filter(r=>r.cuisine!=='Entertainment'&&(r.description||'').toLowerCase().match(/cruise|ferry|kayak|sail|schooner|harbor|boat|floating/)).slice(0,8):[];
     const _music=hasData?restaurants.filter(r=>r.cuisine==='Live Music'||r.cuisine==='Jazz Club').sort((a,b)=>b.score-a.score).slice(0,8):[];
     const _clubs=hasData?restaurants.filter(r=>r.cuisine==='Club').sort((a,b)=>b.score-a.score).slice(0,8):[];
     const _comedy=hasData?restaurants.filter(r=>r.cuisine==='Comedy Club').sort((a,b)=>b.score-a.score).slice(0,6):[];
