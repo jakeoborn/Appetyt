@@ -4429,6 +4429,9 @@ const A = {
           TRIPS.current = null;
         } else {
           TRIPS.current = parsed;
+          // Normalize cities
+          if(!parsed.cities && parsed.city) parsed.cities = parsed.city.split(',').map(x=>x.trim()).filter(Boolean);
+          TRIPS._loadLocal();
           const dot = document.getElementById('trips-nav-dot');
           if(dot) dot.style.display = 'block';
         }
