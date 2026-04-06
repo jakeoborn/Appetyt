@@ -1,0 +1,1098 @@
+[
+  {
+    "id": 1,
+    "name": "Lucia",
+    "cuisine": "Italian",
+    "neighborhood": "Bishop Arts",
+    "descLen": 162,
+    "mismatch": false
+  },
+  {
+    "id": 4,
+    "name": "Midnight Rambler",
+    "cuisine": "Craft Cocktails",
+    "neighborhood": "Downtown Dallas",
+    "descLen": 257,
+    "mismatch": true
+  },
+  {
+    "id": 6,
+    "name": "Namo",
+    "cuisine": "Japanese",
+    "neighborhood": "West Village",
+    "descLen": 172,
+    "mismatch": false
+  },
+  {
+    "id": 9,
+    "name": "Culinary Dropout",
+    "cuisine": "American Gastropub",
+    "neighborhood": "Design District",
+    "descLen": 156,
+    "mismatch": false
+  },
+  {
+    "id": 10,
+    "name": "Rodeo Bar",
+    "cuisine": "American Dive",
+    "neighborhood": "Deep Ellum",
+    "descLen": 194,
+    "mismatch": false
+  },
+  {
+    "id": 16,
+    "name": "Village Baking Co.",
+    "cuisine": "Artisan Bakery",
+    "neighborhood": "Knox-Henderson",
+    "descLen": 199,
+    "mismatch": false
+  },
+  {
+    "id": 18,
+    "name": "The Henry",
+    "cuisine": "All-Day American",
+    "neighborhood": "Uptown",
+    "descLen": 175,
+    "mismatch": false
+  },
+  {
+    "id": 21,
+    "name": "Rainbowcat",
+    "cuisine": "Vietnamese-French",
+    "neighborhood": "East Dallas / Lakewood",
+    "descLen": 255,
+    "mismatch": true
+  },
+  {
+    "id": 23,
+    "name": "Al Biernat's",
+    "cuisine": "Classic Steakhouse",
+    "neighborhood": "Oak Lawn",
+    "descLen": 197,
+    "mismatch": false
+  },
+  {
+    "id": 35,
+    "name": "Breadwinners Cafe & Bakery",
+    "cuisine": "Bakery & Brunch",
+    "neighborhood": "West Village",
+    "descLen": 186,
+    "mismatch": false
+  },
+  {
+    "id": 36,
+    "name": "Monica Aca y Alla",
+    "cuisine": "Spanish Tapas",
+    "neighborhood": "Uptown",
+    "descLen": 191,
+    "mismatch": false
+  },
+  {
+    "id": 41,
+    "name": "The Rustic",
+    "cuisine": "American/Steakhouse",
+    "neighborhood": "West Village",
+    "descLen": 197,
+    "mismatch": false
+  },
+  {
+    "id": 42,
+    "name": "Twisted Root Burger Co.",
+    "cuisine": "Burgers/American",
+    "neighborhood": "Deep Ellum",
+    "descLen": 183,
+    "mismatch": false
+  },
+  {
+    "id": 56,
+    "name": "Lakewood Brewing Company",
+    "cuisine": "American",
+    "neighborhood": "Garland",
+    "descLen": 192,
+    "mismatch": false
+  },
+  {
+    "id": 57,
+    "name": "Pecan Lodge",
+    "cuisine": "Barbecue",
+    "neighborhood": "Deep Ellum",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 58,
+    "name": "Chengdu Taste",
+    "cuisine": "Chinese",
+    "neighborhood": "Richardson",
+    "descLen": 198,
+    "mismatch": false
+  },
+  {
+    "id": 63,
+    "name": "Pappasito's Cantina",
+    "cuisine": "Mexican Fine Dining",
+    "neighborhood": "Northwest Dallas",
+    "descLen": 159,
+    "mismatch": false
+  },
+  {
+    "id": 64,
+    "name": "Ramen Tatsu Yokocho",
+    "cuisine": "Japanese Ramen",
+    "neighborhood": "Deep Ellum",
+    "descLen": 196,
+    "mismatch": false
+  },
+  {
+    "id": 89,
+    "name": "Lockhart Smokehouse",
+    "cuisine": "BBQ",
+    "neighborhood": "Bishop Arts",
+    "descLen": 158,
+    "mismatch": false
+  },
+  {
+    "id": 90,
+    "name": "Oddfellows",
+    "cuisine": "American",
+    "neighborhood": "Bishop Arts",
+    "descLen": 159,
+    "mismatch": false
+  },
+  {
+    "id": 93,
+    "name": "The Libertine",
+    "cuisine": "American Comfort",
+    "neighborhood": "Lower Greenville",
+    "descLen": 143,
+    "mismatch": false
+  },
+  {
+    "id": 97,
+    "name": "The Capital Grille",
+    "cuisine": "Steakhouse",
+    "neighborhood": "Downtown Dallas",
+    "descLen": 197,
+    "mismatch": false
+  },
+  {
+    "id": 109,
+    "name": "Wild Salsa",
+    "cuisine": "Mexican",
+    "neighborhood": "Downtown",
+    "descLen": 177,
+    "mismatch": false
+  },
+  {
+    "id": 118,
+    "name": "Flamant",
+    "cuisine": "French",
+    "neighborhood": "Plano",
+    "descLen": 280,
+    "mismatch": true
+  },
+  {
+    "id": 120,
+    "name": "Deli News",
+    "cuisine": "Mediterranean/Deli",
+    "neighborhood": "North Dallas",
+    "descLen": 178,
+    "mismatch": false
+  },
+  {
+    "id": 121,
+    "name": "Milagro Cantina",
+    "cuisine": "Mexican",
+    "neighborhood": "West Dallas",
+    "descLen": 181,
+    "mismatch": false
+  },
+  {
+    "id": 122,
+    "name": "Cafe Brazil",
+    "cuisine": "Brazilian",
+    "neighborhood": "Deep Ellum",
+    "descLen": 199,
+    "mismatch": false
+  },
+  {
+    "id": 133,
+    "name": "Domodomo Ko",
+    "cuisine": "Korean Tasting Menu",
+    "neighborhood": "West Village",
+    "descLen": 199,
+    "mismatch": false
+  },
+  {
+    "id": 158,
+    "name": "The Mansion on Turtle Creek",
+    "cuisine": "Modern American",
+    "neighborhood": "Turtle Creek",
+    "descLen": 342,
+    "mismatch": true
+  },
+  {
+    "id": 186,
+    "name": "Quarter Acre",
+    "cuisine": "Contemporary Global",
+    "neighborhood": "Lower Greenville",
+    "descLen": 391,
+    "mismatch": true
+  },
+  {
+    "id": 192,
+    "name": "Postino Wine Cafe",
+    "cuisine": "Wine Bar",
+    "neighborhood": "Addison",
+    "descLen": 297,
+    "mismatch": true
+  },
+  {
+    "id": 219,
+    "name": "Casa Brasa",
+    "cuisine": "Latin American/Open Fire",
+    "neighborhood": "Preston Center",
+    "descLen": 322,
+    "mismatch": true
+  },
+  {
+    "id": 241,
+    "name": "Boogies",
+    "cuisine": "Discotheque / Cocktail Lounge",
+    "neighborhood": "Knox Henderson",
+    "descLen": 362,
+    "mismatch": true
+  },
+  {
+    "id": 275,
+    "name": "Inwood Tavern",
+    "cuisine": "American Pub",
+    "neighborhood": "Dallas",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 283,
+    "name": "Puerto Cocina",
+    "cuisine": "Coastal Mexican / Baja Seafood",
+    "neighborhood": "Design District",
+    "descLen": 391,
+    "mismatch": true
+  },
+  {
+    "id": 287,
+    "name": "Culpepper Cattle Co.",
+    "cuisine": "Steakhouse / Tex-Mex",
+    "neighborhood": "Trinity Groves",
+    "descLen": 173,
+    "mismatch": false
+  },
+  {
+    "id": 288,
+    "name": "Fachini",
+    "cuisine": "Italian-American",
+    "neighborhood": "Highland Park",
+    "descLen": 276,
+    "mismatch": true
+  },
+  {
+    "id": 289,
+    "name": "Sadelle's",
+    "cuisine": "New York Deli / Brunch",
+    "neighborhood": "Highland Park",
+    "descLen": 244,
+    "mismatch": true
+  },
+  {
+    "id": 290,
+    "name": "The Ranch at Las Colinas",
+    "cuisine": "Texas Steakhouse",
+    "neighborhood": "Las Colinas",
+    "descLen": 234,
+    "mismatch": true
+  },
+  {
+    "id": 291,
+    "name": "Ruins",
+    "cuisine": "Oaxacan Mexican / Cocktail Bar",
+    "neighborhood": "Deep Ellum",
+    "descLen": 197,
+    "mismatch": false
+  },
+  {
+    "id": 296,
+    "name": "Hello Dumpling",
+    "cuisine": "Chinese / Dumplings",
+    "neighborhood": "East Dallas / Lakewood",
+    "descLen": 171,
+    "mismatch": false
+  },
+  {
+    "id": 299,
+    "name": "Legacy Hall",
+    "cuisine": "Food Hall / Live Music",
+    "neighborhood": "Plano",
+    "descLen": 197,
+    "mismatch": false
+  },
+  {
+    "id": 302,
+    "name": "Barcelona Wine Bar",
+    "cuisine": "Spanish Tapas / Wine Bar",
+    "neighborhood": "Knox Henderson",
+    "descLen": 447,
+    "mismatch": true
+  },
+  {
+    "id": 310,
+    "name": "Los Charros Tex-Mex Smokehouse",
+    "cuisine": "Tex-Mex / BBQ Smokehouse",
+    "neighborhood": "University Park",
+    "descLen": 345,
+    "mismatch": true
+  },
+  {
+    "id": 316,
+    "name": "Urban Italia",
+    "cuisine": "Italian-American",
+    "neighborhood": "Victory Park",
+    "descLen": 405,
+    "mismatch": true
+  },
+  {
+    "id": 317,
+    "name": "Bistro 31",
+    "cuisine": "American Bistro",
+    "neighborhood": "Highland Park Village",
+    "descLen": 192,
+    "mismatch": false
+  },
+  {
+    "id": 318,
+    "name": "Shake Shack",
+    "cuisine": "Burgers / Fast Casual",
+    "neighborhood": "Galleria Dallas",
+    "descLen": 157,
+    "mismatch": false
+  },
+  {
+    "id": 319,
+    "name": "Yard House",
+    "cuisine": "American Gastropub",
+    "neighborhood": "Addison",
+    "descLen": 166,
+    "mismatch": false
+  },
+  {
+    "id": 320,
+    "name": "The Cheesecake Factory",
+    "cuisine": "American / Casual Dining",
+    "neighborhood": "Grapevine",
+    "descLen": 163,
+    "mismatch": false
+  },
+  {
+    "id": 322,
+    "name": "Blue Mesa Grill",
+    "cuisine": "Southwestern / New Mexican",
+    "neighborhood": "Addison",
+    "descLen": 172,
+    "mismatch": false
+  },
+  {
+    "id": 352,
+    "name": "Fortunate Son",
+    "cuisine": "American Bar / Live Music",
+    "neighborhood": "Garland",
+    "descLen": 247,
+    "mismatch": true
+  },
+  {
+    "id": 389,
+    "name": "The Alcove",
+    "cuisine": "Wine Bar / American",
+    "neighborhood": "Oak Lawn",
+    "descLen": 265,
+    "mismatch": true
+  },
+  {
+    "id": 399,
+    "name": "Miriam Cocina Latina",
+    "cuisine": "Mexican / Latin",
+    "neighborhood": "Arts District",
+    "descLen": 182,
+    "mismatch": false
+  },
+  {
+    "id": 401,
+    "name": "Pillar",
+    "cuisine": "American Bistro",
+    "neighborhood": "Bishop Arts",
+    "descLen": 227,
+    "mismatch": true
+  },
+  {
+    "id": 411,
+    "name": "Taqueria La Ventana",
+    "cuisine": "Mexican / Tacos",
+    "neighborhood": "Uptown",
+    "descLen": 205,
+    "mismatch": true
+  },
+  {
+    "id": 413,
+    "name": "Sandoitchi",
+    "cuisine": "Japanese",
+    "neighborhood": "Downtown Dallas",
+    "descLen": 201,
+    "mismatch": true
+  },
+  {
+    "id": 416,
+    "name": "Creamy Seoul",
+    "cuisine": "Korean Dessert / Cafe",
+    "neighborhood": "Flower Mound",
+    "descLen": 191,
+    "mismatch": false
+  },
+  {
+    "id": 419,
+    "name": "Lucky Dog Saloon",
+    "cuisine": "American / Bar",
+    "neighborhood": "Uptown",
+    "descLen": 181,
+    "mismatch": true
+  },
+  {
+    "id": 420,
+    "name": "Sixty Vines",
+    "cuisine": "Wine Bar / American",
+    "neighborhood": "Uptown",
+    "descLen": 179,
+    "mismatch": false
+  },
+  {
+    "id": 421,
+    "name": "Whiskey Cake Kitchen & Bar",
+    "cuisine": "American / Gastropub",
+    "neighborhood": "Plano",
+    "descLen": 188,
+    "mismatch": false
+  },
+  {
+    "id": 422,
+    "name": "Slider and Blues",
+    "cuisine": "American / Bar",
+    "neighborhood": "SMU / University Park",
+    "descLen": 183,
+    "mismatch": false
+  },
+  {
+    "id": 424,
+    "name": "Son of a Butcher",
+    "cuisine": "Burgers / Fast Casual",
+    "neighborhood": "Lower Greenville",
+    "descLen": 166,
+    "mismatch": true
+  },
+  {
+    "id": 425,
+    "name": "Vidorra",
+    "cuisine": "Mexican / Rooftop Bar",
+    "neighborhood": "Deep Ellum",
+    "descLen": 195,
+    "mismatch": false
+  },
+  {
+    "id": 427,
+    "name": "Saaya",
+    "cuisine": "Indian",
+    "neighborhood": "Deep Ellum",
+    "descLen": 186,
+    "mismatch": false
+  },
+  {
+    "id": 440,
+    "name": "Bar Charles",
+    "cuisine": "Italian / Champagne Bar",
+    "neighborhood": "Design District",
+    "descLen": 498,
+    "mismatch": true
+  },
+  {
+    "id": 441,
+    "name": "Caché",
+    "cuisine": "New Orleans-Inspired Cocktail Lounge",
+    "neighborhood": "Uptown",
+    "descLen": 605,
+    "mismatch": true
+  },
+  {
+    "id": 443,
+    "name": "AM/FM",
+    "cuisine": "All-Day Diner, Lounge & Live Music",
+    "neighborhood": "Design District",
+    "descLen": 514,
+    "mismatch": true
+  },
+  {
+    "id": 448,
+    "name": "Rose Cafe",
+    "cuisine": "French-Southeast Asian Cafe",
+    "neighborhood": "Knox Henderson",
+    "descLen": 565,
+    "mismatch": true
+  },
+  {
+    "id": 449,
+    "name": "The Old Crow",
+    "cuisine": "Dive Bar",
+    "neighborhood": "Lower Greenville",
+    "descLen": 171,
+    "mismatch": true
+  },
+  {
+    "id": 450,
+    "name": "Saint Valentine",
+    "cuisine": "Cocktail Bar",
+    "neighborhood": "East Dallas / Lakewood",
+    "descLen": 179,
+    "mismatch": true
+  },
+  {
+    "id": 451,
+    "name": "Single Wide",
+    "cuisine": "Dive Bar",
+    "neighborhood": "Lower Greenville",
+    "descLen": 153,
+    "mismatch": true
+  },
+  {
+    "id": 462,
+    "name": "Terry Black's BBQ",
+    "cuisine": "Texas BBQ",
+    "neighborhood": "Deep Ellum",
+    "descLen": 171,
+    "mismatch": false
+  },
+  {
+    "id": 463,
+    "name": "Eataly Dallas",
+    "cuisine": "Italian Food Hall",
+    "neighborhood": "NorthPark",
+    "descLen": 179,
+    "mismatch": false
+  },
+  {
+    "id": 464,
+    "name": "Ellie's",
+    "cuisine": "New American",
+    "neighborhood": "Uptown",
+    "descLen": 189,
+    "mismatch": false
+  },
+  {
+    "id": 465,
+    "name": "Del Frisco's Double Eagle",
+    "cuisine": "Classic Steakhouse",
+    "neighborhood": "Uptown",
+    "descLen": 184,
+    "mismatch": false
+  },
+  {
+    "id": 466,
+    "name": "Rise Soufflé",
+    "cuisine": "French",
+    "neighborhood": "West Village",
+    "descLen": 190,
+    "mismatch": false
+  },
+  {
+    "id": 469,
+    "name": "S&D Oyster Company",
+    "cuisine": "Seafood",
+    "neighborhood": "Uptown",
+    "descLen": 173,
+    "mismatch": false
+  },
+  {
+    "id": 471,
+    "name": "Resident Taqueria",
+    "cuisine": "Mexican",
+    "neighborhood": "Oak Cliff",
+    "descLen": 188,
+    "mismatch": false
+  },
+  {
+    "id": 472,
+    "name": "Malai Kitchen",
+    "cuisine": "Thai-Vietnamese",
+    "neighborhood": "West Village",
+    "descLen": 182,
+    "mismatch": false
+  },
+  {
+    "id": 473,
+    "name": "Whistle Britches",
+    "cuisine": "Southern Fried Chicken",
+    "neighborhood": "Plano",
+    "descLen": 196,
+    "mismatch": false
+  },
+  {
+    "id": 474,
+    "name": "Sonny Bryan's",
+    "cuisine": "Texas BBQ",
+    "neighborhood": "Downtown",
+    "descLen": 179,
+    "mismatch": false
+  },
+  {
+    "id": 475,
+    "name": "Pepe & Mito's",
+    "cuisine": "Mexican",
+    "neighborhood": "Northwest Dallas",
+    "descLen": 185,
+    "mismatch": false
+  },
+  {
+    "id": 480,
+    "name": "Whataburger",
+    "cuisine": "Fast Food",
+    "neighborhood": "Multiple Locations",
+    "descLen": 184,
+    "mismatch": false
+  },
+  {
+    "id": 461,
+    "name": "Standard Pour",
+    "cuisine": "American Bar & Grill",
+    "neighborhood": "West Village",
+    "descLen": 259,
+    "mismatch": true
+  },
+  {
+    "id": 513,
+    "name": "Original ChopShop",
+    "cuisine": "Bowls & Salads / Fast Casual",
+    "neighborhood": "Park Cities",
+    "descLen": 158,
+    "mismatch": false
+  },
+  {
+    "id": 514,
+    "name": "CrushCraft Thai Eats",
+    "cuisine": "Thai / Fast Casual",
+    "neighborhood": "Uptown",
+    "descLen": 147,
+    "mismatch": false
+  },
+  {
+    "id": 515,
+    "name": "Mendocino Farms",
+    "cuisine": "Sandwiches & Salads / Fast Casual",
+    "neighborhood": "Arts District",
+    "descLen": 152,
+    "mismatch": false
+  },
+  {
+    "id": 516,
+    "name": "Snarf's Sandwiches",
+    "cuisine": "Sandwiches / Fast Casual",
+    "neighborhood": "Mockingbird Station",
+    "descLen": 141,
+    "mismatch": false
+  },
+  {
+    "id": 517,
+    "name": "Flower Child",
+    "cuisine": "Healthy / Fast Casual",
+    "neighborhood": "Park Cities",
+    "descLen": 143,
+    "mismatch": false
+  },
+  {
+    "id": 519,
+    "name": "Dillas Quesadillas",
+    "cuisine": "Tex-Mex / Fast Casual",
+    "neighborhood": "Multiple Dallas Locations",
+    "descLen": 144,
+    "mismatch": false
+  },
+  {
+    "id": 504,
+    "name": "Odelay Tex-Mex",
+    "cuisine": "Tex-Mex",
+    "neighborhood": "Lovers Lane",
+    "descLen": 146,
+    "mismatch": false
+  },
+  {
+    "id": 505,
+    "name": "AllGood Cafe",
+    "cuisine": "American / Home Cooking",
+    "neighborhood": "Deep Ellum",
+    "descLen": 176,
+    "mismatch": false
+  },
+  {
+    "id": 506,
+    "name": "Easy Slider",
+    "cuisine": "Burgers / Sliders",
+    "neighborhood": "Deep Ellum",
+    "descLen": 147,
+    "mismatch": false
+  },
+  {
+    "id": 509,
+    "name": "Zoli's",
+    "cuisine": "New York-Style Pizza",
+    "neighborhood": "Addison",
+    "descLen": 147,
+    "mismatch": true
+  },
+  {
+    "id": 510,
+    "name": "Tacos Juancho",
+    "cuisine": "Mexican / Street Tacos",
+    "neighborhood": "Oak Lawn",
+    "descLen": 147,
+    "mismatch": false
+  },
+  {
+    "id": 522,
+    "name": "Chilangos",
+    "cuisine": "Mexican",
+    "neighborhood": "Multiple Dallas Locations",
+    "descLen": 152,
+    "mismatch": false
+  },
+  {
+    "id": 523,
+    "name": "Craft Restaurant & Beer Market",
+    "cuisine": "American / Craft Beer",
+    "neighborhood": "Preston Center",
+    "descLen": 186,
+    "mismatch": false
+  },
+  {
+    "id": 525,
+    "name": "Burrito Bellas",
+    "cuisine": "Mexican / Burritos",
+    "neighborhood": "Uptown",
+    "descLen": 192,
+    "mismatch": false
+  },
+  {
+    "id": 527,
+    "name": "Cafe Olivia",
+    "cuisine": "Mediterranean / Cafe",
+    "neighborhood": "North Dallas",
+    "descLen": 158,
+    "mismatch": false
+  },
+  {
+    "id": 529,
+    "name": "Getcha Roll On",
+    "cuisine": "Sushi / Rolls",
+    "neighborhood": "West Dallas",
+    "descLen": 180,
+    "mismatch": false
+  },
+  {
+    "id": 530,
+    "name": "Plomo",
+    "cuisine": "Mexican / Mezcal Bar",
+    "neighborhood": "Lower Greenville",
+    "descLen": 230,
+    "mismatch": true
+  },
+  {
+    "id": 532,
+    "name": "Sauce'd Pizza & Smashburgers",
+    "cuisine": "Pizza / Smash Burgers",
+    "neighborhood": "Grapevine",
+    "descLen": 137,
+    "mismatch": false
+  },
+  {
+    "id": 533,
+    "name": "Monkey Bar",
+    "cuisine": "Cocktail Bar / American",
+    "neighborhood": "Highland Park",
+    "descLen": 195,
+    "mismatch": true
+  },
+  {
+    "id": 535,
+    "name": "Green Light Social",
+    "cuisine": "American / Bar",
+    "neighborhood": "Deep Ellum",
+    "descLen": 189,
+    "mismatch": true
+  },
+  {
+    "id": 538,
+    "name": "Sidecar Social",
+    "cuisine": "American / Sports Bar",
+    "neighborhood": "Addison",
+    "descLen": 154,
+    "mismatch": false
+  },
+  {
+    "id": 539,
+    "name": "Shug's Bagels",
+    "cuisine": "Bagels / Breakfast",
+    "neighborhood": "Mockingbird Station",
+    "descLen": 164,
+    "mismatch": false
+  },
+  {
+    "id": 540,
+    "name": "Blues Burgers",
+    "cuisine": "Burgers",
+    "neighborhood": "Forney",
+    "descLen": 193,
+    "mismatch": false
+  },
+  {
+    "id": 544,
+    "name": "Toca Madera",
+    "cuisine": "Modern Mexican Steakhouse",
+    "neighborhood": "East Quarter",
+    "descLen": 186,
+    "mismatch": false
+  },
+  {
+    "id": 552,
+    "name": "Brazamar",
+    "cuisine": "Mexican Grill",
+    "neighborhood": "Lower Greenville",
+    "descLen": 190,
+    "mismatch": true
+  },
+  {
+    "id": 554,
+    "name": "La Lupita Taco & Mezcal",
+    "cuisine": "Mexican Taqueria & Mezcaleria",
+    "neighborhood": "Design District",
+    "descLen": 189,
+    "mismatch": false
+  },
+  {
+    "id": 557,
+    "name": "Delilah Dallas",
+    "cuisine": "Supper Club / Steakhouse",
+    "neighborhood": "Design District",
+    "descLen": 194,
+    "mismatch": false
+  },
+  {
+    "id": 560,
+    "name": "Seegar's Deli",
+    "cuisine": "Deli / All-Day Cafe",
+    "neighborhood": "Harwood District",
+    "descLen": 209,
+    "mismatch": true
+  },
+  {
+    "id": 562,
+    "name": "Toyota Music Factory",
+    "cuisine": "Entertainment Complex",
+    "neighborhood": "Irving / Las Colinas",
+    "descLen": 191,
+    "mismatch": false
+  },
+  {
+    "id": 564,
+    "name": "House of Blues Dallas",
+    "cuisine": "Live Music Venue & Restaurant",
+    "neighborhood": "Downtown",
+    "descLen": 186,
+    "mismatch": false
+  },
+  {
+    "id": 566,
+    "name": "South Side Music Hall",
+    "cuisine": "Live Music Venue",
+    "neighborhood": "South Lamar",
+    "descLen": 199,
+    "mismatch": true
+  },
+  {
+    "id": 1056,
+    "name": "Clifton Club",
+    "cuisine": "Cocktail Bar / American",
+    "neighborhood": "Knox-Henderson",
+    "descLen": 424,
+    "mismatch": true
+  },
+  {
+    "id": 1057,
+    "name": "Astra Kitchen + Lounge",
+    "cuisine": "American",
+    "neighborhood": "Arts District",
+    "descLen": 438,
+    "mismatch": true
+  },
+  {
+    "id": 1066,
+    "name": "Thomas Avenue Beverage Company",
+    "cuisine": "Cocktail Bar / American",
+    "neighborhood": "Uptown",
+    "descLen": 345,
+    "mismatch": true
+  },
+  {
+    "id": 1096,
+    "name": "Velvet Taco (Addison)",
+    "cuisine": "Mexican",
+    "neighborhood": "Addison",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1097,
+    "name": "Velvet Taco (Preston Forest)",
+    "cuisine": "Mexican",
+    "neighborhood": "North Dallas",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1098,
+    "name": "Velvet Taco (Deep Ellum)",
+    "cuisine": "Mexican",
+    "neighborhood": "Deep Ellum",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1099,
+    "name": "Velvet Taco (Greenville)",
+    "cuisine": "Mexican",
+    "neighborhood": "Lower Greenville",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1100,
+    "name": "Velvet Taco (Fort Worth)",
+    "cuisine": "Mexican",
+    "neighborhood": "Fort Worth",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1101,
+    "name": "Velvet Taco (Plano)",
+    "cuisine": "Mexican",
+    "neighborhood": "Plano",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1102,
+    "name": "Velvet Taco (Richardson)",
+    "cuisine": "Mexican",
+    "neighborhood": "Richardson",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1103,
+    "name": "Velvet Taco (Frisco)",
+    "cuisine": "Mexican",
+    "neighborhood": "Frisco",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1104,
+    "name": "Velvet Taco (McKinney)",
+    "cuisine": "Mexican",
+    "neighborhood": "McKinney",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1105,
+    "name": "Velvet Taco (Allen)",
+    "cuisine": "Mexican",
+    "neighborhood": "Allen",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1106,
+    "name": "Velvet Taco (Grapevine)",
+    "cuisine": "Mexican",
+    "neighborhood": "Grapevine",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1107,
+    "name": "Velvet Taco (Rockwall)",
+    "cuisine": "Mexican",
+    "neighborhood": "Rockwall",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1108,
+    "name": "Velvet Taco (Grandscape)",
+    "cuisine": "Mexican",
+    "neighborhood": "The Colony",
+    "descLen": 187,
+    "mismatch": false
+  },
+  {
+    "id": 1110,
+    "name": "Cenzo's Pizza & Deli",
+    "cuisine": "Pizza / Italian Deli",
+    "neighborhood": "Oak Cliff",
+    "descLen": 173,
+    "mismatch": false
+  },
+  {
+    "id": 1112,
+    "name": "Doughbird",
+    "cuisine": "Pizza / Rotisserie Chicken",
+    "neighborhood": "Inwood Village",
+    "descLen": 166,
+    "mismatch": false
+  },
+  {
+    "id": 1113,
+    "name": "Neony Pizza Works",
+    "cuisine": "Pizza",
+    "neighborhood": "Oak Cliff",
+    "descLen": 172,
+    "mismatch": false
+  },
+  {
+    "id": 1114,
+    "name": "SauceBros",
+    "cuisine": "Pizza",
+    "neighborhood": "Plano",
+    "descLen": 192,
+    "mismatch": false
+  },
+  {
+    "id": 1116,
+    "name": "STK Steakhouse",
+    "cuisine": "Modern Steakhouse",
+    "neighborhood": "Uptown",
+    "descLen": 198,
+    "mismatch": false
+  },
+  {
+    "id": 9052,
+    "name": "Louie's",
+    "cuisine": "Italian",
+    "neighborhood": "Knox-Henderson",
+    "descLen": 134,
+    "mismatch": false
+  }
+]
