@@ -4720,10 +4720,7 @@ const A = {
           <select class="planner-select" id="plan-days" style="width:100%">${[1,2,3,4,5,7,10,14].map(d=>`<option value="${d}">${d} day${d>1?'s':''}</option>`).join('')}</select>
         </div>
         <button class="planner-btn" onclick="A.generatePlan()" style="width:100%">✨ Generate My Itinerary</button>
-        <div id="plan-result" style="display:none;margin-top:10px;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:12px">
-          <div style="font-size:10px;color:var(--text3);margin-bottom:6px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">AI-Generated Itinerary</div>
-          <div id="plan-content" style="font-size:12px;color:var(--text);line-height:1.7;white-space:pre-wrap"></div>
-        </div>
+        <div id="plan-result" style="display:none;margin-top:14px"></div>
       </div>
 
       <!-- Flight Price Explorer -->
@@ -5265,35 +5262,140 @@ const A = {
   async generatePlan(){
     const from=document.getElementById('plan-from')?.value||'Dallas';
     const vibe=document.getElementById('plan-vibe')?.value||'Foodie Deep Dive';
-    const days=document.getElementById('plan-days')?.value||'2';
+    const numDays=parseInt(document.getElementById('plan-days')?.value||'2');
     const isRoad=vibe==='Road Trip';
     const to=isRoad?(document.getElementById('plan-to')?.value||'Houston'):null;
     const result=document.getElementById('plan-result');
-    const content=document.getElementById('plan-content');
-    if(!result||!content) return;
+    if(!result) return;
     result.style.display='block';
-    content.textContent='✨ Generating your itinerary...';
-    const prompt=isRoad
-      ?`Create a ${days}-day road trip food itinerary from ${from} to ${to}. List the best food stops along the route with specific restaurant names, what to order, and driving distances. Include one insider tip per stop.`
-      :`Create a ${days}-day ${vibe} food itinerary in ${from}. Include specific restaurant names, must-try dishes, and one insider tip per day.`;
-    try{
-      const res=await fetch('https://api.anthropic.com/v1/messages',{
-        method:'POST',
-        headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true',...(S.apiKey?{'x-api-key':S.apiKey}:{})},
-        body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:600,
-          system:'You are Appetyt, a world-class food travel guide. Create concise, specific itineraries with real restaurant names and insider tips. Format as numbered days with emoji.',
-          messages:[{role:'user',content:prompt}]
-        })
+    result.innerHTML='<div style="text-align:center;padding:20px;color:var(--gold);font-weight:700">✨ Generating suggestions...</div>';
+
+    // Build day-by-day suggestions from our restaurant data
+    const allData = (from==='New York'||from==='NYC') ? (window.NYC_DATA||[]) : (from==='Dallas' ? (window.DALLAS_DATA||[]) : []);
+    const vibeFilters = {
+      'Foodie Deep Dive': r => r.score >= 85,
+      'Fine Dining': r => r.price >= 3 || (r.tags||[]).some(t=>/fine|michelin|tasting/i.test(t)),
+      'Date Night': r => (r.tags||[]).some(t=>/date/i.test(t)),
+      'Budget Street Food': r => r.price <= 1,
+      'Bar Crawl': r => (r.tags||[]).some(t=>/cocktail|bar|late/i.test(t)) || (r.cuisine||'').toLowerCase().includes('bar'),
+      'Wine & Culture': r => (r.tags||[]).some(t=>/wine|italian|french/i.test(t)),
+      'Family': r => (r.tags||[]).some(t=>/family|casual/i.test(t)) && r.price <= 2,
+      'Road Trip': r => r.score >= 80,
+    };
+    const vibeFilter = vibeFilters[vibe] || (r => r.score >= 80);
+    const filtered = allData.filter(vibeFilter).sort((a,b)=>b.score-a.score);
+    const used = new Set();
+
+    const pick = (pool) => {
+      const r = pool.find(x => !used.has(x.id));
+      if(r) used.add(r.id);
+      return r;
+    };
+
+    // Generate suggestions for each day
+    const days = [];
+    const titles = ['Arrival Day','Exploring','Deep Dive','Adventure','Local Gems','Hidden Spots','Grand Finale','Departure'];
+    const brunchPool = filtered.filter(r=>(r.tags||[]).some(t=>/brunch|bakery|coffee/i.test(t)));
+    const lunchPool = filtered.filter(r=>(r.tags||[]).some(t=>/casual|local/i.test(t)) && r.price<=2);
+    const dinnerPool = filtered.filter(r=>r.score>=85);
+    const barPool = filtered.filter(r=>(r.tags||[]).some(t=>/cocktail|bar|late/i.test(t))||(r.cuisine||'').toLowerCase().includes('bar'));
+    const activityPool = filtered.filter(r=>(r.cuisine||'').toLowerCase().match(/entertainment|club|jazz|comedy|live music/));
+
+    for(let i=0;i<numDays;i++){
+      const dayItems = [];
+      const b=pick(brunchPool); if(b) dayItems.push({name:b.name,type:'restaurant',time:'09:00',neighborhood:b.neighborhood,notes:b.cuisine+' -- '+(b.dishes||[]).slice(0,2).join(', '),status:'planned',score:b.score,selected:true,srcId:b.id});
+      const l=pick(lunchPool.length?lunchPool:filtered); if(l) dayItems.push({name:l.name,type:'restaurant',time:'12:30',neighborhood:l.neighborhood,notes:l.cuisine+' -- '+(l.dishes||[]).slice(0,2).join(', '),status:'planned',score:l.score,selected:true,srcId:l.id});
+      const d=pick(dinnerPool.length?dinnerPool:filtered); if(d) dayItems.push({name:d.name,type:'restaurant',time:'19:30',neighborhood:d.neighborhood,notes:d.cuisine+' -- '+(d.dishes||[]).slice(0,2).join(', '),status:'planned',score:d.score,selected:true,srcId:d.id});
+      const bar=pick(barPool); if(bar) dayItems.push({name:bar.name,type:'bar',time:'21:30',neighborhood:bar.neighborhood,notes:(bar.dishes||[]).slice(0,2).join(', '),status:'planned',score:bar.score,selected:true,srcId:bar.id});
+      if(i===0||i===numDays-1){ const act=pick(activityPool); if(act) dayItems.push({name:act.name,type:'activity',time:'15:00',neighborhood:act.neighborhood,notes:act.cuisine,status:'planned',score:act.score||80,selected:true,srcId:act.id}); }
+      days.push({day:i+1,title:i===0?'Arrival Day':i===numDays-1?'Departure':titles[Math.min(i,titles.length-1)],items:dayItems});
+    }
+
+    // Store for later save
+    window._generatedTrip = {city:from,vibe,days,numDays};
+
+    // Render selectable cards
+    let html = '<div style="font-size:14px;font-weight:800;color:var(--gold);margin-bottom:4px">🗺️ '+numDays+'-Day '+vibe+' in '+from+'</div>';
+    html += '<div style="font-size:11px;color:var(--text3);margin-bottom:14px">Tap items to include or exclude, then save as a trip</div>';
+
+    days.forEach((day,di) => {
+      html += '<div style="margin-bottom:12px">';
+      html += '<div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px">📆 Day '+day.day+' — '+day.title+'</div>';
+      day.items.forEach((item,ii) => {
+        const emoji = item.type==='restaurant'?'🍽️':item.type==='bar'?'🍸':'🎭';
+        html += '<div id="gen-'+di+'-'+ii+'" onclick="A.toggleGenItem('+di+','+ii+')" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--card);border:2px solid rgba(76,154,106,.4);border-radius:10px;cursor:pointer;margin-bottom:5px;transition:all .15s">';
+        html += '<div style="width:20px;height:20px;border-radius:6px;background:rgba(76,154,106,.15);border:2px solid #4c9a6a;display:flex;align-items:center;justify-content:center;font-size:11px;color:#4c9a6a;flex-shrink:0">✓</div>';
+        html += '<div style="flex:1;min-width:0">';
+        html += '<div style="display:flex;align-items:center;gap:6px"><span style="font-size:12px">'+emoji+'</span><span style="font-size:12px;font-weight:700;color:var(--text)">'+item.name+'</span><span style="font-size:10px;color:var(--gold);font-weight:700">'+item.score+'</span></div>';
+        html += '<div style="font-size:10px;color:var(--text3)">'+item.time+' · '+item.neighborhood+(item.notes?' · '+item.notes:'')+'</div>';
+        html += '</div></div>';
       });
-      const data=await res.json();
-      content.textContent=data.content?.[0]?.text||'Could not generate plan.';
-    } catch(e){
-      if(isRoad){
-        content.textContent=`🚗 ${from} → ${to} (${days} days)\n\nStop 1 -- ${from}: Start with the citys best breakfast. Fuel up before the drive.\n\nStop 2 -- En Route: Look for a local BBQ joint or taco stand. Best spots are never on the interstate.\n\nStop 3 -- ${to}: Hit the top-rated restaurant on arrival. Book ahead if you can.\n\n💡 Tip: Best road trip food is always off the highway.`;
-      } else {
-        content.textContent=`🗺️ ${days}-Day ${vibe} in ${from}\n\nDay 1: Start with the citys best breakfast spot, explore the food market, dinner at the #1 rated restaurant.\n\nDay 2: Morning coffee culture, lunch at a local institution, afternoon food walk, farewell dinner.\n\n💡 Tip: Book top restaurants at least 2 weeks ahead.`;
+      html += '</div>';
+    });
+
+    html += '<button onclick="A.saveGeneratedTrip()" style="width:100%;background:var(--gold);color:var(--dark);font-weight:800;font-size:14px;padding:14px;border-radius:12px;border:none;cursor:pointer;margin-top:8px">✨ Save as Trip →</button>';
+    html += '<div style="font-size:10px;color:var(--text3);text-align:center;margin-top:6px">Creates a trip with your selected items in the Trip Dashboard</div>';
+
+    result.innerHTML = html;
+  },
+
+  toggleGenItem(dayIdx, itemIdx){
+    const trip = window._generatedTrip;
+    if(!trip) return;
+    const item = trip.days[dayIdx]?.items[itemIdx];
+    if(!item) return;
+    item.selected = !item.selected;
+    const el = document.getElementById('gen-'+dayIdx+'-'+itemIdx);
+    if(el){
+      el.style.borderColor = item.selected ? 'rgba(76,154,106,.4)' : 'var(--border)';
+      el.style.opacity = item.selected ? '1' : '0.5';
+      const check = el.querySelector('div');
+      if(check){
+        check.style.background = item.selected ? 'rgba(76,154,106,.15)' : 'transparent';
+        check.style.borderColor = item.selected ? '#4c9a6a' : 'var(--border)';
+        check.style.color = item.selected ? '#4c9a6a' : 'transparent';
       }
     }
+  },
+
+  async saveGeneratedTrip(){
+    const gen = window._generatedTrip;
+    if(!gen) return;
+    const name = gen.vibe + ' in ' + gen.city;
+    const today = new Date();
+    const start = new Date(today); start.setDate(start.getDate()+7);
+    const end = new Date(start); end.setDate(end.getDate()+gen.numDays-1);
+    const startStr = start.toISOString().split('T')[0];
+    const endStr = end.toISOString().split('T')[0];
+
+    try{
+      this.showToast('Creating trip...');
+      const nickname = localStorage.getItem('appetyt_nickname') || 'Traveler';
+      localStorage.setItem('appetyt_nickname', nickname);
+      await TRIPS.create(name, [gen.city], startStr, endStr);
+      await TRIPS.load(TRIPS.current.id);
+      TRIPS.buildItinerary(startStr, endStr);
+
+      // Add selected items to itinerary days
+      gen.days.forEach((day,di) => {
+        day.items.filter(item=>item.selected).forEach(item => {
+          TRIPS.addItineraryItem(di, {
+            name: item.name,
+            type: item.type,
+            time: item.time,
+            neighborhood: item.neighborhood,
+            notes: item.notes,
+            status: 'planned',
+            cost: null
+          });
+        });
+      });
+
+      window._generatedTrip = null;
+      this._tripTab = 'timeline';
+      this.tab('trips');
+      this.showToast('🌍 Trip created with '+TRIPS.itinerary.reduce((s,d)=>s+d.items.length,0)+' items!');
+    } catch(e){ this.showToast('Error: '+e.message); }
   },
 
 
