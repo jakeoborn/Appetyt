@@ -4429,9 +4429,15 @@ const A = {
           TRIPS.current = null;
         } else {
           TRIPS.current = parsed;
-          // Normalize cities
+          // Normalize fields
           if(!parsed.cities && parsed.city) parsed.cities = parsed.city.split(',').map(x=>x.trim()).filter(Boolean);
+          if(!parsed.owner_id && parsed.created_by) parsed.owner_id = parsed.created_by;
+          // Load trip data from localStorage
           TRIPS._loadLocal();
+          // Set members if embedded in trip
+          if(parsed.members && Array.isArray(parsed.members)){
+            TRIPS.members = parsed.members.map(m=>({...m, device_id:m.id||m.device_id, avatar_emoji:m.avatar_emoji||'👑'}));
+          }
           const dot = document.getElementById('trips-nav-dot');
           if(dot) dot.style.display = 'block';
         }
@@ -5925,9 +5931,10 @@ const A = {
 
     if(remaining.length){
       html+=`<button id="expand-results-btn" onclick="A.expandResults()" style="width:100%;padding:12px;margin:4px 0;background:var(--card2);border:1px solid var(--border);border-radius:12px;color:var(--gold);font-size:13px;font-weight:700;cursor:pointer">▼ Show all ${remaining.length} more</button>`;
-      html+=`<div id="expanded-results" style="display:none">`;
-      remaining.forEach((r,i)=>{ html+=this.cardHTML(r,i+11,nowMins); });
-      html+=`</div>`;
+      html+=`<div id="expanded-results" style="display:none"></div>`;
+      // Store remaining for deferred render (performance: don't generate 750+ cards upfront)
+      window._expandRemaining = remaining;
+      window._expandNowMins = nowMins;
     }
 
         // Best Of section - only show when no active filters
@@ -6122,6 +6129,23 @@ const A = {
     const btn=document.getElementById('expand-results-btn');
     const exp=document.getElementById('expanded-results');
     if(!exp) return;
+    // Deferred render: only generate cards when user clicks expand
+    if(!exp.innerHTML && window._expandRemaining){
+      const remaining = window._expandRemaining;
+      const nowMins = window._expandNowMins||0;
+      // Render in batches for performance
+      const batchSize = 50;
+      let rendered = 0;
+      const renderBatch = () => {
+        const batch = remaining.slice(rendered, rendered + batchSize);
+        let batchHtml = '';
+        batch.forEach((r,i) => { batchHtml += this.cardHTML(r, rendered+i+11, nowMins); });
+        exp.innerHTML += batchHtml;
+        rendered += batchSize;
+        if(rendered < remaining.length) setTimeout(renderBatch, 16); // next frame
+      };
+      renderBatch();
+    }
     exp.style.display='block';
     if(btn) btn.style.display='none';
   },
