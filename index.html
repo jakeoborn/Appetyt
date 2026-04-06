@@ -6933,7 +6933,7 @@ const A = {
         <div style="font-size:20px;font-weight:700;color:var(--gold);margin-bottom:4px">🔮 Coming Soon to New York</div>
         <div style="font-size:12px;color:var(--text2);margin-bottom:12px">${nycItems.length} verified upcoming openings</div>
         ${nycItems.map((r,idx)=>`
-          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:8px">
+          <div onclick="${r.ig?`window.open('https://instagram.com/${r.ig.replace('@','')}','_blank')`:''}" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;margin-bottom:8px;${r.ig?'cursor:pointer':''}">
             <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
               <div style="flex:1">
                 <div style="font-size:14px;font-weight:700;color:var(--text)">${r.name}</div>
@@ -13377,7 +13377,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
       const el=document.getElementById('trip-find-results');
       const selDay=this._selectedDay||0;
       if(el){
-        el.innerHTML=results.length?results.map(r=>'<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:6px;display:flex;align-items:center;gap:10px"><div style="flex:1;min-width:0"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:13px;font-weight:700;color:var(--text)">'+r.name+'</span><span style="font-size:11px;font-weight:700;color:var(--gold)">'+r.score+'</span></div><div style="font-size:10px;color:var(--text3)">'+r.cuisine+' · '+r.neighborhood+'</div>'+(r.dishes?'<div style="font-size:10px;color:var(--text2);margin-top:2px">Try: '+r.dishes.slice(0,2).join(', ')+'</div>':'')+'</div><button onclick="A.addGuideItemToDay('+selDay+','+r.id+')" style="background:rgba(76,154,106,.1);border:1px solid rgba(76,154,106,.2);color:#4c9a6a;font-size:10px;font-weight:700;padding:6px 10px;border-radius:8px;cursor:pointer;flex-shrink:0;font-family:inherit;white-space:nowrap">+ Day '+(selDay+1)+'</button></div>').join(''):'<div style="padding:16px;text-align:center;font-size:12px;color:var(--text3)">No results for "'+category+'"</div>';
+        el.innerHTML=results.length?results.map(r=>'<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;margin-bottom:6px;display:flex;align-items:center;gap:10px;cursor:pointer" onclick="A.openDetail('+r.id+')"><div style="flex:1;min-width:0"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:13px;font-weight:700;color:var(--text)">'+r.name+'</span><span style="font-size:11px;font-weight:700;color:var(--gold)">'+r.score+'</span></div><div style="font-size:10px;color:var(--text3)">'+r.cuisine+' · '+r.neighborhood+'</div>'+(r.dishes?'<div style="font-size:10px;color:var(--text2);margin-top:2px">Try: '+r.dishes.slice(0,2).join(', ')+'</div>':'')+'</div><button onclick="event.stopPropagation();A.addGuideItemToDay('+selDay+','+r.id+')" style="background:rgba(76,154,106,.1);border:1px solid rgba(76,154,106,.2);color:#4c9a6a;font-size:10px;font-weight:700;padding:6px 10px;border-radius:8px;cursor:pointer;flex-shrink:0;font-family:inherit;white-space:nowrap">+ Day '+(selDay+1)+'</button></div>').join(''):'<div style="padding:16px;text-align:center;font-size:12px;color:var(--text3)">No results for "'+category+'"</div>';
       }
     },50);
   },
