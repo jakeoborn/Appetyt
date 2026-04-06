@@ -13431,81 +13431,130 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
   tripAddItemPrompt(dayIndex){
     const m = document.getElementById('event-detail-modal');
     if(!m) return;
-    // Get restaurants from current trip cities
+    this._addItemType = 'restaurant';
+    this._addDayIndex = dayIndex;
     const trip = TRIPS.current;
     const cities = Array.isArray(trip?.cities)?trip.cities:(trip?.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
     const city = cities[0]||S.city||'New York';
-    const allData = (city==='New York'||city==='NYC') ? (typeof NYC_DATA!=='undefined'?NYC_DATA:[]) : (city==='Dallas' ? (typeof DALLAS_DATA!=='undefined'?DALLAS_DATA:[]) : []);
-    const existing = new Set(TRIPS.itinerary.flatMap(d=>d.items.map(i=>i.name.toLowerCase())));
-    const topPicks = allData.filter(r=>!existing.has(r.name.toLowerCase())).sort((a,b)=>b.score-a.score).slice(0,20);
 
     m.innerHTML = `
       <div style="position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:2000;display:flex;align-items:flex-end" onclick="if(event.target===this)this.style.display='none'">
-        <div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:85vh;overflow-y:auto;padding:20px 16px 40px">
+        <div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:90vh;overflow-y:auto;padding:20px 16px 40px">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
             <div style="font-size:16px;font-weight:700;color:var(--gold)">+ Add to Day ${dayIndex+1}</div>
             <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
           </div>
 
-          <!-- Quick add types -->
-          <div style="display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap">
-            <button onclick="A._addItemType='restaurant';document.getElementById('trip-add-search').focus()" style="padding:8px 14px;border-radius:10px;border:1px solid rgba(201,168,76,.3);background:rgba(201,168,76,.08);color:var(--gold);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🍽️ Restaurant</button>
-            <button onclick="A._addItemType='activity';document.getElementById('trip-add-manual-name').focus()" style="padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🎭 Activity</button>
-            <button onclick="A._addItemType='bar';document.getElementById('trip-add-search').focus()" style="padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🍸 Bar</button>
-            <button onclick="A._addItemType='hotel';document.getElementById('trip-add-manual-name').focus()" style="padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🏨 Hotel</button>
+          <!-- Type filter buttons — filter search results -->
+          <div style="display:flex;gap:6px;margin-bottom:14px;overflow-x:auto;scrollbar-width:none">
+            <button id="add-type-restaurant" onclick="A._setAddType('restaurant')" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:2px solid var(--gold);background:rgba(201,168,76,.12);color:var(--gold);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🍽️ Restaurant</button>
+            <button id="add-type-bar" onclick="A._setAddType('bar')" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🍸 Bar / Cocktails</button>
+            <button id="add-type-activity" onclick="A._setAddType('activity')" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🎭 Activity</button>
+            <button id="add-type-hotel" onclick="A._setAddType('hotel')" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🏨 Hotel</button>
           </div>
 
-          <!-- Search from guide -->
-          <div style="margin-bottom:14px">
-            <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Search from ${city} Guide</div>
-            <input id="trip-add-search" placeholder="Search restaurants, bars, activities..." oninput="A.tripAddSearch(${dayIndex})" style="width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:10px 14px;border-radius:10px;font-size:13px;font-family:inherit;outline:none">
-            <div id="trip-add-search-results" style="margin-top:6px;max-height:200px;overflow-y:auto"></div>
-          </div>
-
-          <!-- Top picks -->
-          <div style="margin-bottom:14px">
-            <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Top Picks</div>
-            <div style="display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px">
-              ${topPicks.slice(0,8).map(r=>`<div onclick="A.addGuideItemToDay(${dayIndex},${r.id})" style="flex-shrink:0;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:8px 12px;cursor:pointer;min-width:120px">
-                <div style="font-size:11px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${r.name}</div>
-                <div style="font-size:9px;color:var(--text3)">${r.cuisine} · ${r.score}</div>
-              </div>`).join('')}
+          <!-- Search -->
+          <div style="margin-bottom:10px">
+            <div style="display:flex;gap:6px">
+              <input id="trip-add-search" placeholder="Search ${city} guide..." oninput="A.tripAddSearch()" onkeydown="if(event.key==='Enter')A.tripAddSearch()" style="flex:1;background:var(--card);border:1px solid var(--border);color:var(--text);padding:10px 14px;border-radius:10px;font-size:13px;font-family:inherit;outline:none" autofocus>
+              <button onclick="A.tripAddSearch()" style="background:var(--gold);color:var(--dark);font-weight:800;padding:10px 16px;border-radius:10px;border:none;cursor:pointer;font-size:13px">Go</button>
             </div>
           </div>
 
-          <!-- Manual add -->
-          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px">
-            <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Or Add Manually</div>
-            <input id="trip-add-manual-name" placeholder="Name (e.g. Central Park walk)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:10px;font-size:13px;margin-bottom:6px;font-family:inherit;outline:none">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px">
-              <input id="trip-add-manual-time" placeholder="Time (e.g. 14:00)" style="background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:10px;font-size:13px;font-family:inherit;outline:none">
-              <input id="trip-add-manual-notes" placeholder="Notes (optional)" style="background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:10px;font-size:13px;font-family:inherit;outline:none">
+          <!-- Results area -->
+          <div id="trip-add-search-results" style="margin-bottom:14px;max-height:50vh;overflow-y:auto"></div>
+
+          <!-- Manual add (collapsible) -->
+          <details style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px">
+            <summary style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;cursor:pointer;list-style:none;display:flex;align-items:center;gap:5px"><span>Add Something Not in Guide</span><span style="font-size:8px;opacity:.6">▼</span></summary>
+            <div style="margin-top:10px">
+              <input id="trip-add-manual-name" placeholder="Name (e.g. Central Park walk, Airbnb check-in)" style="width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:10px;font-size:13px;margin-bottom:6px;font-family:inherit;outline:none">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px">
+                <select id="trip-add-manual-time" style="background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:10px;font-size:13px;font-family:inherit;outline:none">
+                  <option value="">Time</option>
+                  ${['08:00','09:00','10:00','11:00','12:00','12:30','13:00','14:00','15:00','16:00','17:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30','22:00','23:00'].map(t=>'<option value="'+t+'">'+(parseInt(t)%12||12)+':'+t.split(':')[1]+' '+(parseInt(t)>=12?'PM':'AM')+'</option>').join('')}
+                </select>
+                <input id="trip-add-manual-notes" placeholder="Notes" style="background:var(--card2);border:1px solid var(--border);color:var(--text);padding:9px 12px;border-radius:10px;font-size:13px;font-family:inherit;outline:none">
+              </div>
+              <button onclick="A.addManualItemToDay(${dayIndex})" style="width:100%;background:var(--gold);color:var(--dark);font-weight:800;font-size:13px;padding:11px;border-radius:10px;border:none;cursor:pointer">Add to Itinerary</button>
             </div>
-            <button onclick="A.addManualItemToDay(${dayIndex})" style="width:100%;background:var(--gold);color:var(--dark);font-weight:800;font-size:13px;padding:11px;border-radius:10px;border:none;cursor:pointer">Add to Itinerary</button>
-          </div>
+          </details>
         </div>
       </div>`;
     m.style.display='block';
-    this._addItemType = 'restaurant';
+    // Auto-show top picks for the selected type
+    this.tripAddSearch();
   },
 
-  tripAddSearch(dayIndex){
+  _setAddType(type){
+    this._addItemType = type;
+    // Update button styles
+    ['restaurant','bar','activity','hotel'].forEach(t=>{
+      const btn = document.getElementById('add-type-'+t);
+      if(!btn) return;
+      if(t===type){
+        btn.style.borderColor='var(--gold)';btn.style.borderWidth='2px';
+        btn.style.background='rgba(201,168,76,.12)';btn.style.color='var(--gold)';
+      } else {
+        btn.style.borderColor='var(--border)';btn.style.borderWidth='1px';
+        btn.style.background='var(--card)';btn.style.color='var(--text2)';
+      }
+    });
+    // Clear search and show filtered results
+    const searchEl = document.getElementById('trip-add-search');
+    if(searchEl) searchEl.value = '';
+    this.tripAddSearch();
+  },
+
+  tripAddSearch(){
     const q = (document.getElementById('trip-add-search')?.value||'').toLowerCase().trim();
     const el = document.getElementById('trip-add-search-results');
-    if(!el || q.length < 2){ if(el) el.innerHTML=''; return; }
+    if(!el) return;
+    const dayIndex = this._addDayIndex||0;
     const trip = TRIPS.current;
     const cities = Array.isArray(trip?.cities)?trip.cities:(trip?.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
     const city = cities[0]||S.city||'New York';
     const allData = (city==='New York'||city==='NYC') ? (typeof NYC_DATA!=='undefined'?NYC_DATA:[]) : (city==='Dallas' ? (typeof DALLAS_DATA!=='undefined'?DALLAS_DATA:[]) : []);
-    const results = allData.filter(r=>{
-      const hay = [r.name,r.cuisine,r.neighborhood,...(r.tags||[]),...(r.dishes||[])].join(' ').toLowerCase();
-      return hay.includes(q);
-    }).sort((a,b)=>b.score-a.score).slice(0,6);
-    el.innerHTML = results.map(r=>`<div onclick="A.addGuideItemToDay(${dayIndex},${r.id})" style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:10px;cursor:pointer;margin-bottom:4px">
-      <div style="font-size:13px;font-weight:800;color:var(--gold);flex-shrink:0">${r.score}</div>
-      <div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:700;color:var(--text)">${r.name}</div><div style="font-size:10px;color:var(--text3)">${r.cuisine} · ${r.neighborhood}</div></div>
-      <span style="font-size:10px;color:#4c9a6a;font-weight:700">+ Add</span>
-    </div>`).join('') || '<div style="font-size:11px;color:var(--text3);padding:8px">No results</div>';
+    const existing = new Set(TRIPS.itinerary.flatMap(d=>d.items.map(i=>i.name.toLowerCase())));
+    const type = this._addItemType||'restaurant';
+
+    // Filter by type first
+    let pool = allData;
+    if(type==='bar') pool=allData.filter(r=>(r.cuisine||'').toLowerCase().match(/bar|cocktail|wine|whiskey|brewery|tiki|rooftop bar/)||(r.tags||[]).some(t=>/cocktail|bar|wine|late night|rooftop/i.test(t)));
+    else if(type==='activity') pool=allData.filter(r=>(r.cuisine||'').toLowerCase().match(/entertainment|club|jazz|comedy|live music|museum|food market/));
+    else if(type==='hotel') pool=[]; // Hotels are separate data
+    else pool=allData.filter(r=>!(r.cuisine||'').toLowerCase().match(/entertainment|club/)); // Restaurants (exclude entertainment)
+
+    // Then filter by search query
+    let results;
+    if(q.length >= 2){
+      results = pool.filter(r=>{
+        const hay = [r.name,r.cuisine,r.neighborhood,...(r.tags||[]),...(r.dishes||[]),r.description||''].join(' ').toLowerCase();
+        return q.split(/\s+/).every(w=>hay.includes(w));
+      });
+    } else {
+      // No search query — show top picks for this type, excluding already added
+      results = pool.filter(r=>!existing.has(r.name.toLowerCase()));
+    }
+
+    results = results.sort((a,b)=>b.score-a.score).slice(0,20);
+
+    if(!results.length && type==='hotel'){
+      el.innerHTML='<div style="padding:12px;text-align:center;font-size:11px;color:var(--text3)">Hotels are not in the restaurant guide. Use "Add Something Not in Guide" below to add your hotel manually.</div>';
+      return;
+    }
+
+    const label = q ? 'Results for "'+q+'"' : (type==='bar'?'Top Bars & Cocktails':type==='activity'?'Top Activities & Entertainment':'Top Restaurants');
+    el.innerHTML = (results.length ? '<div style="font-size:10px;font-weight:600;color:var(--text3);margin-bottom:6px">'+label+' ('+results.length+')</div>' : '') +
+      (results.length ? results.map(r=>`<div onclick="A.addGuideItemToDay(${dayIndex},${r.id})" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--card);border:1px solid var(--border);border-radius:10px;cursor:pointer;margin-bottom:5px">
+        <div style="font-size:14px;font-weight:800;color:var(--gold);flex-shrink:0;min-width:28px;text-align:center">${r.score}</div>
+        <div style="flex:1;min-width:0">
+          <div style="font-size:12px;font-weight:700;color:var(--text)">${r.name}</div>
+          <div style="font-size:10px;color:var(--text3)">${r.cuisine} · ${r.neighborhood} · ${'$'.repeat(r.price||1)}</div>
+          ${r.dishes?'<div style="font-size:10px;color:var(--text2);margin-top:1px">Try: '+r.dishes.slice(0,2).join(', ')+'</div>':''}
+        </div>
+        <div style="background:rgba(76,154,106,.1);border:1px solid rgba(76,154,106,.2);color:#4c9a6a;font-size:10px;font-weight:700;padding:5px 10px;border-radius:8px;flex-shrink:0;white-space:nowrap">+ Add</div>
+      </div>`).join('') : '<div style="padding:16px;text-align:center;font-size:12px;color:var(--text3)">No matches'+(q?' for "'+q+'"':'')+'. Try a different search or add manually below.</div>');
   },
 
   addGuideItemToDay(dayIndex, restaurantId, time){
