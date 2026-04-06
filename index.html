@@ -1742,14 +1742,21 @@ const TRIPS = {
     this.restaurants = restaurants || [];
     this.bills = bills || [];
     this.reservations = reservations || [];
-    // Load itinerary/budget/checklist from localStorage (not in Supabase schema)
-    try{
-      const key = 'appetyt_trip_'+tripId;
-      const saved = JSON.parse(localStorage.getItem(key)||'{}');
-      this.itinerary = saved.itinerary || [];
-      this.budget = saved.budget || {total:0,spent:0};
-      this.checklist = saved.checklist || [];
-    }catch(e){}
+    // Load itinerary/budget/checklist from Supabase trip_data or localStorage
+    const td = this.current?.trip_data;
+    if(td && typeof td === 'object'){
+      this.itinerary = td.itinerary || [];
+      this.budget = td.budget || {total:0,spent:0};
+      this.checklist = td.checklist || [];
+    } else {
+      try{
+        const key = 'appetyt_trip_'+tripId;
+        const saved = JSON.parse(localStorage.getItem(key)||'{}');
+        this.itinerary = saved.itinerary || [];
+        this.budget = saved.budget || {total:0,spent:0};
+        this.checklist = saved.checklist || [];
+      }catch(e){}
+    }
   },
 
   // Subscribe to real-time changes
@@ -1854,15 +1861,19 @@ const TRIPS = {
 
   _saveLocal(){
     try{
+      const tripData = {itinerary:this.itinerary, budget:this.budget, checklist:this.checklist};
       const key = 'appetyt_trip_'+this.current?.id;
       localStorage.setItem(key, JSON.stringify({
         reservations: this.reservations,
         restaurants: this.restaurants,
         bills: this.bills,
-        itinerary: this.itinerary,
-        budget: this.budget,
-        checklist: this.checklist
+        ...tripData
       }));
+      // Also persist to Supabase trip_data column if available
+      const sb = getSB();
+      if(sb && this.current?.id && !String(this.current.id).startsWith('local_')){
+        sb.from('trips').update({trip_data:tripData}).eq('id',this.current.id).then(()=>{}).catch(()=>{});
+      }
     }catch(e){}
   },
 
