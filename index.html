@@ -4499,10 +4499,12 @@ const A = {
         if(parsed.members && Array.isArray(parsed.members)){
           TRIPS.members=parsed.members.map(m=>({...m,device_id:m.id||m.device_id,avatar_emoji:m.avatar_emoji||'👑'}));
         }
-        // Re-fetch latest from Supabase in background
+        // Re-fetch latest from Supabase in background and re-save locally
         if(TRIPS.current?.id && !String(TRIPS.current.id).startsWith('local_')){
           TRIPS.load(TRIPS.current.id).then(()=>{
             localStorage.setItem('appetyt_active_trip',JSON.stringify(TRIPS.current));
+            TRIPS._saveLocal(); // Save fetched data to localStorage
+            if(S.activeTab==='trips') A.renderTrips(); // Re-render if on trips tab
           }).catch(()=>{});
         }
         const dot=document.getElementById('trips-nav-dot');
@@ -5919,10 +5921,14 @@ const A = {
 
   // -- DATA --------------------------------------------------
   getRestaurants(){
-    // Only return data for cities we have verified restaurants
-    // Other cities return empty array (no fake data)
+    // Check CITY_DATA first, then fall back to dedicated city arrays
     const data = CITY_DATA[S.city];
     if(data && data.length > 0) return data;
+    // Legacy city data arrays
+    if(S.city==='New York' && typeof NYC_DATA!=='undefined' && NYC_DATA.length) return NYC_DATA;
+    if(S.city==='Dallas' && typeof DALLAS_DATA!=='undefined' && DALLAS_DATA.length) return DALLAS_DATA;
+    if(S.city==='Houston' && typeof HOUSTON_DATA!=='undefined' && HOUSTON_DATA.length) return HOUSTON_DATA;
+    if(S.city==='Austin' && typeof AUSTIN_DATA!=='undefined' && AUSTIN_DATA.length) return AUSTIN_DATA;
     return [];
   },
 
