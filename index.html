@@ -5273,7 +5273,7 @@ const A = {
     result.innerHTML='<div style="text-align:center;padding:20px;color:var(--gold);font-weight:700">✨ Generating suggestions...</div>';
 
     // Build day-by-day suggestions from our restaurant data
-    const allData = (from==='New York'||from==='NYC') ? (window.NYC_DATA||[]) : (from==='Dallas' ? (window.DALLAS_DATA||[]) : []);
+    const allData = (from==='New York'||from==='NYC') ? (typeof NYC_DATA!=='undefined'?NYC_DATA:[]) : (from==='Dallas' ? (typeof DALLAS_DATA!=='undefined'?DALLAS_DATA:[]) : []);
     const vibeFilters = {
       'Foodie Deep Dive': r => r.score >= 85,
       'Fine Dining': r => r.price >= 3 || (r.tags||[]).some(t=>/fine|michelin|tasting/i.test(t)),
@@ -12274,7 +12274,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const trip=TRIPS.current;
     const cities=trip?Array.isArray(trip.cities)?trip.cities:(trip.cities||'').split(',').map(x=>x.trim()).filter(Boolean):[];
     const city=cities[0]||S.city||'New York';
-    const allData = (city==='New York'||city==='NYC') ? (window.NYC_DATA||[]) : (city==='Dallas' ? (window.DALLAS_DATA||[]) : []);
+    const allData = (city==='New York'||city==='NYC') ? (typeof NYC_DATA!=='undefined'?NYC_DATA:[]) : (city==='Dallas' ? (typeof DALLAS_DATA!=='undefined'?DALLAS_DATA:[]) : []);
     const q = prompt.toLowerCase();
 
     // Smart filter based on chip text
@@ -12904,7 +12904,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const trip = TRIPS.current;
     const cities = Array.isArray(trip?.cities)?trip.cities:(trip?.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
     const city = cities[0]||S.city||'New York';
-    const allData = (city==='New York'||city==='NYC') ? (window.NYC_DATA||[]) : (city==='Dallas' ? (window.DALLAS_DATA||[]) : []);
+    const allData = (city==='New York'||city==='NYC') ? (typeof NYC_DATA!=='undefined'?NYC_DATA:[]) : (city==='Dallas' ? (typeof DALLAS_DATA!=='undefined'?DALLAS_DATA:[]) : []);
     const existing = new Set(TRIPS.itinerary.flatMap(d=>d.items.map(i=>i.name.toLowerCase())));
     const topPicks = allData.filter(r=>!existing.has(r.name.toLowerCase())).sort((a,b)=>b.score-a.score).slice(0,20);
 
@@ -12965,7 +12965,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const trip = TRIPS.current;
     const cities = Array.isArray(trip?.cities)?trip.cities:(trip?.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
     const city = cities[0]||S.city||'New York';
-    const allData = (city==='New York'||city==='NYC') ? (window.NYC_DATA||[]) : (city==='Dallas' ? (window.DALLAS_DATA||[]) : []);
+    const allData = (city==='New York'||city==='NYC') ? (typeof NYC_DATA!=='undefined'?NYC_DATA:[]) : (city==='Dallas' ? (typeof DALLAS_DATA!=='undefined'?DALLAS_DATA:[]) : []);
     const results = allData.filter(r=>{
       const hay = [r.name,r.cuisine,r.neighborhood,...(r.tags||[]),...(r.dishes||[])].join(' ').toLowerCase();
       return hay.includes(q);
@@ -12981,7 +12981,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const trip = TRIPS.current;
     const cities = Array.isArray(trip?.cities)?trip.cities:(trip?.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
     const city = cities[0]||S.city||'New York';
-    const allData = (city==='New York'||city==='NYC') ? (window.NYC_DATA||[]) : (city==='Dallas' ? (window.DALLAS_DATA||[]) : []);
+    const allData = (city==='New York'||city==='NYC') ? (typeof NYC_DATA!=='undefined'?NYC_DATA:[]) : (city==='Dallas' ? (typeof DALLAS_DATA!=='undefined'?DALLAS_DATA:[]) : []);
     const r = allData.find(x=>x.id===restaurantId);
     if(!r) return;
     const type = (r.cuisine||'').toLowerCase().includes('bar')||(r.tags||[]).some(t=>/bar|cocktail/i.test(t)) ? 'bar' : (r.cuisine||'').toLowerCase().match(/entertainment|club|jazz|comedy/) ? 'activity' : 'restaurant';
@@ -13048,7 +13048,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const day = TRIPS.itinerary[dayIndex];
     if(!day) return;
 
-    const allData = (city === 'New York' || city === 'NYC') ? (window.NYC_DATA||[]) : (city === 'Dallas' ? (window.DALLAS_DATA||[]) : []);
+    const allData = (city === 'New York' || city === 'NYC') ? (typeof NYC_DATA!=='undefined'?NYC_DATA:[]) : (city === 'Dallas' ? (typeof DALLAS_DATA!=='undefined'?DALLAS_DATA:[]) : []);
     if(!allData.length){ this.showToast('AI suggestions work best for NYC and Dallas'); return; }
 
     // Smart suggestions based on meal time
