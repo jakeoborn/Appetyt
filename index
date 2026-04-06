@@ -6591,54 +6591,74 @@ const A = {
 upcomingHTML(){
     const items = [
       {
+            "name": "CRAFT Restaurant & Beer Market",
+            "hood": "Preston Center",
+            "address": "5974 W Northwest Hwy, Dallas",
+            "eta": "Opened April 2026",
+            "cuisine": "Gastropub / Craft Beer",
+            "desc": "NOW OPEN. Canadian restaurant company first U.S. location. 500-seat mega venue with 100+ taps, rooftop patio, chef-driven menu including Miso Salmon and Korean Sticky Ribs. Open late with weekend brunch.",
+            "group": "CRAFT Restaurants",
+            "ig": "@craftbeermarket"
+      },
+      {
             "name": "Ctrl Room",
             "hood": "Deep Ellum",
             "address": "Deep Ellum",
-            "eta": "April 2026",
-            "cuisine": "Bar/Entertainment",
-            "desc": "Immersive gaming bar and restaurant concept coming to Deep Ellum. Craft cocktails, elevated bar food, state-of-the-art gaming experiences.",
+            "eta": "Opened 2026",
+            "cuisine": "Nightclub / Events",
+            "desc": "NOW OPEN. Premier nightclub and event venue in Deep Ellum hosting world-class DJs, live performances, and themed events. One of the hottest new nightlife additions to the neighborhood.",
             "group": "Independent",
             "ig": "@ctrlroomdallas"
       },
       {
-            "name": "Pop Up Bagels",
-            "hood": "Uptown",
-            "address": "TBD Dallas",
-            "eta": "2026",
-            "cuisine": "NYC Bagels",
-            "desc": "Viral NYC bagel shop coming to Dallas. Known for massive chewy hand-rolled bagels with creative schmear combinations.",
-            "group": "Pop Up Bagels",
-            "ig": "@popupbagels"
-      },
-      {
-            "name": "Aba Dallas",
-            "hood": "Design District",
-            "address": "1444 Oak Lawn Blvd",
-            "eta": "Late 2026",
-            "cuisine": "Mediterranean",
-            "desc": "Chicago-born Mediterranean from Lettuce Entertain You. Chef CJ Jacobson leads creative mezze including smoky garlic hummus, pistachio-crusted halibut, shawarma steak frites.",
-            "group": "Lettuce Entertain You",
-            "ig": "@abachicago"
-      },
-      {
-            "name": "Sueno",
-            "hood": "Park Cities / Snider Plaza",
-            "address": "6600 Snider Plaza, Dallas TX 75205",
-            "eta": "Early 2026",
-            "cuisine": "Live-Fire Mexican",
-            "desc": "Richardson-based elevated Mexican concept (founded 2021, partnered with Bellomy Hospitality -- S&D Oyster Co., Rex's Seafood) opening its second location in Snider Plaza. Live-fire kitchen as centerpiece. Mexico City-inspired cuisine plus a speakeasy bar.",
+            "name": "Kilmac's",
+            "hood": "Oak Cliff",
+            "address": "814 W Davis St, Dallas",
+            "eta": "Opened March 2026",
+            "cuisine": "Cocktail Pub / Pizza",
+            "desc": "NOW OPEN. Moody Irish pub from the owners of Old Monk, Spider Murphy and Skellig. Former mechanic garage transformed into a snug bar with a bright garden and Airstream trailer bar. Pizza, cocktails ($9 happy hour), open Wed-Sun 5PM-2AM.",
             "group": "Independent",
-            "ig": "@sueno_dallas"
+            "ig": "@kilmacsoakcliff"
+      },
+      {
+            "name": "Seegar's Deli",
+            "hood": "Cedars",
+            "address": "1910 S Harwood St, Dallas",
+            "eta": "Opened Early 2026",
+            "cuisine": "Deli / All-Day Cafe",
+            "desc": "NOW OPEN. Anticipated for over two years from Olivia Genthe (Fount Board + Table, Little Blue Bistro). Nondenominational deli serving sandwiches on freshly baked bread in an all-day cafe setting in the Cedars.",
+            "group": "Independent",
+            "ig": "@seegarsdeli"
       },
       {
             "name": "Palladino's Steak and Seafood",
             "hood": "Preston Royal",
             "address": "5959 Royal Ln, Dallas TX 75225",
-            "eta": "Early 2026",
-            "cuisine": "Italian Steakhouse/Seafood",
-            "desc": "From Joseph Palladino (co-founder of Nick and Sam's), already the toast of New York at Grand Central Terminal. NY Post called it NYC's hottest new restaurant. Steakhouse classics, large sushi selection, Italian specials, caviar service. Dallas is location 2.",
+            "eta": "April 2026",
+            "cuisine": "Italian Steakhouse / Seafood",
+            "desc": "OPENING NOW. From Joseph Palladino (co-founder of Nick and Sam), already a hit at Grand Central Terminal in NYC. Steakhouse classics, large sushi selection, Italian specials, caviar service. Chef de Cuisine Henry Johnson leads the kitchen.",
             "group": "Palladino Hospitality",
             "ig": "@palladinosdallas"
+      },
+      {
+            "name": "Sueno",
+            "hood": "Park Cities / Snider Plaza",
+            "address": "6600 Snider Plaza, Dallas TX 75205",
+            "eta": "Spring 2026",
+            "cuisine": "Live-Fire Mexican",
+            "desc": "OPENING SOON. Richardson-based elevated Mexican concept (partnered with Bellomy Hospitality -- S&D Oyster Co., Rex Seafood) opening its second location. Live-fire kitchen as centerpiece, Mexico City-inspired cuisine, and a speakeasy bar. 6,259 sq ft with patio.",
+            "group": "Bellomy Hospitality",
+            "ig": "@sueno_dallas"
+      },
+      {
+            "name": "Pop Up Bagels",
+            "hood": "Inwood Village",
+            "address": "5450 W Lovers Ln, Dallas",
+            "eta": "Spring 2026",
+            "cuisine": "NYC Bagels",
+            "desc": "OPENING SOON. Viral NYC bagel shop bringing massive chewy hand-rolled bagels to Inwood Village (next to Inwood Theatre). Creative schmear combinations. Signage already up -- opening imminent.",
+            "group": "Pop Up Bagels",
+            "ig": "@popupbagels"
       },
       {
             "name": "Docent Steak & Lounge",
@@ -6646,19 +6666,9 @@ upcomingHTML(){
             "address": "2801 N. Harwood St, Dallas TX 75201",
             "eta": "2026",
             "cuisine": "Japanese Steakhouse",
-            "desc": "Harwood Hospitality's Japanese-style steakhouse celebrating samurai heritage with custom fabrics, armor artifacts, and Wagyu cuts. Long-anticipated concept inside the Harwood District. Expected to open in 2026.",
+            "desc": "Long-anticipated Harwood Hospitality Japanese-style steakhouse celebrating samurai heritage with custom fabrics, armor artifacts, and HWD Akaushi wagyu and Kobe beef. Two-floor immersive dining experience inside Harwood No. 14.",
             "group": "Harwood Hospitality",
             "ig": "@docentsteak"
-      },
-      {
-            "name": "Romy",
-            "hood": "Henderson East",
-            "address": "TBD Henderson East",
-            "eta": "Dec 2026",
-            "cuisine": "New Concept",
-            "desc": "Elevated bakery-cafe and modern American from Tristan Simon (The Porch, Victor Tangos) -- the first restaurant at Dallas Henderson East development. Handmade pastas, wood-roasted meats, wine program. Named after co-owner Taryn Anderson's daughter.",
-            "group": "",
-            "ig": ""
       },
       {
             "name": "Le Petit Chef",
@@ -6666,37 +6676,27 @@ upcomingHTML(){
             "address": "Various Dallas event venues",
             "eta": "2026",
             "cuisine": "Immersive Dining Experience",
-            "desc": "The world-famous 3D projection dining experience -- tiny animated chefs appear to cook your meal on your plate. Dinner theatre meets fine dining in a Michelin-quality tasting menu. The most shared dining experience on social media. Coming to Dallas in 2026.",
+            "desc": "The world-famous 3D projection dining experience -- tiny animated chefs appear to cook your meal on your plate. Dinner theatre meets fine dining in a Michelin-quality tasting menu. The most shared dining experience on social media.",
             "group": "Skullmapping",
             "ig": "@lepetitchef_official"
       },
       {
-            "name": "CRAFT Restaurant & Beer Market",
-            "hood": "Preston Center",
-            "address": "Preston Center, Dallas",
-            "eta": "Early 2026",
-            "cuisine": "Gastropub / Craft Beer",
-            "desc": "Canadian restaurant company making its U.S. debut at Dallas Preston Center. Craft beer market meets elevated gastropub dining.",
-            "group": "CRAFT Restaurants",
-            "ig": ""
+            "name": "Aba Dallas",
+            "hood": "Design District",
+            "address": "1444 Oak Lawn Blvd, The Seam",
+            "eta": "Late 2026",
+            "cuisine": "Mediterranean",
+            "desc": "Chicago-born Mediterranean from Lettuce Entertain You opening at The Seam in the Design District. Indoor-outdoor dining with olive trees, Moroccan lanterns, and vintage chandeliers. Smoky garlic hummus, pistachio-crusted halibut, shawarma steak frites.",
+            "group": "Lettuce Entertain You",
+            "ig": "@abarestaurants"
       },
       {
-            "name": "Kilmac's",
-            "hood": "Oak Cliff",
-            "address": "814 W Davis St, Dallas",
-            "eta": "Early 2026",
-            "cuisine": "Cocktail Pub",
-            "desc": "Cocktail-focused pub on Davis Street from the owners of Spider Murphy's and Skellig. Irish-inspired neighborhood bar with elevated cocktails.",
-            "group": "Independent",
-            "ig": ""
-      },
-      {
-            "name": "Seegar's Deli",
-            "hood": "Harwood District",
-            "address": "1910 S Harwood St, Dallas",
-            "eta": "January 2026",
-            "cuisine": "Deli / All-Day Cafe",
-            "desc": "Anticipated for over two years, this nondenominational deli serves sandwiches on freshly baked bread in an all-day cafe setting. One of the Harwood District's most exciting new additions.",
+            "name": "Romy",
+            "hood": "Henderson East",
+            "address": "TBD Henderson East",
+            "eta": "Late 2026",
+            "cuisine": "Bakery-Cafe / Modern American",
+            "desc": "Elevated bakery-cafe and modern American from Tristan Simon (The Porch, Victor Tangos) -- the first restaurant at Dallas Henderson East development. Handmade pastas, wood-roasted meats, wine program.",
             "group": "Independent",
             "ig": ""
       }
@@ -6738,11 +6738,11 @@ upcomingHTML(){
       'Molino Oloyo':'2026-06-01','Brazamar':'2026-07-01','Toca Madera':'2026-09-01',
       "Clark's Oyster Bar":'2026-10-01','Sant Ambroeus':'2026-11-01',
       // Items array ETAs
-      'Sueno':'2026-03-01','Palladino\'s Steak and Seafood':'2026-03-01',
-      'CRAFT Restaurant & Beer Market':'2026-03-01','Kilmac\'s':'2026-03-01',
-      'Seegar\'s Deli':'2026-01-15','Ctrl Room':'2026-04-05','Pop Up Bagels':'2026-09-01',
-      'Aba Dallas':'2026-10-01','Docent Steak & Lounge':'2026-09-01',
-      'Romy':'2026-12-01','Le Petit Chef':'2026-09-01'
+      'CRAFT Restaurant & Beer Market':'2026-04-01','Ctrl Room':'2026-03-01',
+      'Kilmac\'s':'2026-03-01','Seegar\'s Deli':'2026-02-01',
+      'Palladino\'s Steak and Seafood':'2026-04-15','Sueno':'2026-04-15',
+      'Pop Up Bagels':'2026-04-15','Docent Steak & Lounge':'2026-06-01',
+      'Le Petit Chef':'2026-09-01','Aba Dallas':'2026-10-01','Romy':'2026-12-01'
     };
     const _csGetDate = (name) => _csOpenDates[name] || '2026-12-31';
 
