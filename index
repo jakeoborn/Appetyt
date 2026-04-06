@@ -1668,22 +1668,28 @@ const TRIPS = {
 
     if(sb){
       try{
-        const {data, error} = await sb.from('trips').insert({
-          code, name, owner_id: deviceId,
-          cities, start_date: startDate, end_date: endDate,
-          ...(cruiseItinerary ? {cruise_itinerary: cruiseItinerary} : {})
-        }).select().single();
+        // Use existing schema: city (string), created_by, members (jsonb)
+        const cityStr = Array.isArray(cities) ? cities.join(', ') : (cities||'');
+        const memberData = [{id:deviceId, role:'owner', nickname}];
+        const insertObj = {
+          code, name,
+          city: cityStr,
+          created_by: deviceId,
+          members: memberData,
+          restaurants: [],
+          bills: []
+        };
+        const {data, error} = await sb.from('trips').insert(insertObj).select().single();
         if(error) throw error;
 
-        // Auto-join as owner
-        await sb.from('trip_members').insert({
-          trip_id: data.id, nickname, device_id: deviceId,
-          avatar_emoji: '👑'
-        });
-
+        // Normalize the returned data for our app
+        data.cities = cityStr.split(',').map(x=>x.trim()).filter(Boolean);
+        data.start_date = startDate;
+        data.end_date = endDate;
+        data.owner_id = deviceId;
         this.current = data;
+        this.members = memberData.map(m=>({...m, device_id:m.id, avatar_emoji:'👑'}));
         localStorage.setItem('appetyt_active_trip', JSON.stringify(data));
-        await this.subscribe(data.id);
         return data;
       } catch(sbErr){
         // Supabase failed (paused/offline) — fall back to local
@@ -1729,45 +1735,47 @@ const TRIPS = {
       }catch(e){}
     }
     if(!trip) throw new Error('Trip not found. Check the code and try again.');
+    // Normalize
+    trip.cities = (trip.city||'').split(',').map(x=>x.trim()).filter(Boolean);
+    trip.owner_id = trip.created_by || trip.owner_id;
     this.current = trip;
     localStorage.setItem('appetyt_active_trip', JSON.stringify(trip));
     return trip;
   },
 
-  // Load trip data
+  // Load trip data — embedded in trips row (members, restaurants, bills are jsonb columns)
   async load(tripId){
     const sb = getSB();
     if(!sb){ this._loadLocal(); return; }
-    const [
-      {data: members},
-      {data: restaurants},
-      {data: bills},
-      {data: reservations}
-    ] = await Promise.all([
-      sb.from('trip_members').select().eq('trip_id', tripId),
-      sb.from('trip_restaurants').select().eq('trip_id', tripId),
-      sb.from('trip_bills').select().eq('trip_id', tripId).order('created_at', {ascending:false}),
-      sb.from('trip_reservations').select().eq('trip_id', tripId).order('date').order('time')
-    ]);
-    this.members = members || [];
-    this.restaurants = restaurants || [];
-    this.bills = bills || [];
-    this.reservations = reservations || [];
-    // Load itinerary/budget/checklist from Supabase trip_data or localStorage
-    const td = this.current?.trip_data;
-    if(td && typeof td === 'object'){
-      this.itinerary = td.itinerary || [];
-      this.budget = td.budget || {total:0,spent:0};
-      this.checklist = td.checklist || [];
-    } else {
-      try{
-        const key = 'appetyt_trip_'+tripId;
-        const saved = JSON.parse(localStorage.getItem(key)||'{}');
-        this.itinerary = saved.itinerary || [];
-        this.budget = saved.budget || {total:0,spent:0};
-        this.checklist = saved.checklist || [];
-      }catch(e){}
-    }
+    try{
+      // Re-fetch the trip to get latest data
+      const {data: trip, error} = await sb.from('trips').select('*').eq('id', tripId).single();
+      if(error || !trip){ this._loadLocal(); return; }
+      // Normalize
+      trip.cities = (trip.city||'').split(',').map(x=>x.trim()).filter(Boolean);
+      trip.owner_id = trip.created_by || trip.owner_id;
+      this.current = trip;
+      // Data is embedded in the trip row
+      this.members = (trip.members||[]).map(m=>({...m, device_id:m.id||m.device_id, avatar_emoji:m.avatar_emoji||'👑'}));
+      this.restaurants = trip.restaurants || [];
+      this.bills = trip.bills || [];
+      this.reservations = [];
+      // Load itinerary/budget/checklist from trip_data or localStorage
+      const td = trip.trip_data;
+      if(td && typeof td === 'object'){
+        this.itinerary = td.itinerary || [];
+        this.budget = td.budget || {total:0,spent:0};
+        this.checklist = td.checklist || [];
+      } else {
+        try{
+          const key = 'appetyt_trip_'+tripId;
+          const saved = JSON.parse(localStorage.getItem(key)||'{}');
+          this.itinerary = saved.itinerary || [];
+          this.budget = saved.budget || {total:0,spent:0};
+          this.checklist = saved.checklist || [];
+        }catch(e){}
+      }
+    }catch(e){ this._loadLocal(); }
   },
 
   // Subscribe to real-time changes
@@ -1775,17 +1783,9 @@ const TRIPS = {
     const sb = getSB();
     if(!sb) return;
     if(this._channel) sb.removeChannel(this._channel);
+    // Listen for changes on the trips row itself (all data is embedded)
     this._channel = sb.channel('trip:'+tripId)
-      .on('postgres_changes', {event:'*', schema:'public', table:'trip_bills', filter:`trip_id=eq.${tripId}`}, ()=>{
-        this.load(tripId).then(()=>A.renderTrips());
-      })
-      .on('postgres_changes', {event:'*', schema:'public', table:'trip_restaurants', filter:`trip_id=eq.${tripId}`}, ()=>{
-        this.load(tripId).then(()=>A.renderTrips());
-      })
-      .on('postgres_changes', {event:'*', schema:'public', table:'trip_members', filter:`trip_id=eq.${tripId}`}, ()=>{
-        this.load(tripId).then(()=>A.renderTrips());
-      })
-      .on('postgres_changes', {event:'*', schema:'public', table:'trip_reservations', filter:`trip_id=eq.${tripId}`}, ()=>{
+      .on('postgres_changes', {event:'UPDATE', schema:'public', table:'trips', filter:`id=eq.${tripId}`}, ()=>{
         this.load(tripId).then(()=>A.renderTrips());
       })
       .subscribe();
@@ -1793,80 +1793,51 @@ const TRIPS = {
 
   // Add a bill
   async addBill(restaurant, city, total, paidBy, splitBetween, notes){
-    const sb = getSB();
     const bill = {
-      trip_id: this.current.id, restaurant, city,
+      id: 'bill_'+Date.now(), restaurant, city,
       total: parseFloat(total), paid_by: paidBy,
       split_between: splitBetween, notes, date: new Date().toISOString().split('T')[0]
     };
-    if(sb){
-      const {data, error} = await sb.from('trip_bills').insert(bill).select().single();
-      if(error) throw error;
-      this.bills.unshift(data);
-    } else {
-      bill.id = 'local_'+Date.now();
-      this.bills.unshift(bill);
-    }
+    this.bills.unshift(bill);
+    this._saveLocal();
     return bill;
   },
 
   // Add restaurant to group wishlist
   async addRestaurant(restaurantId, restaurantName, city){
-    const sb = getSB();
     const deviceId = getDeviceId();
     const entry = {
-      trip_id: this.current.id, restaurant_id: restaurantId,
+      id: 'rest_'+Date.now(), restaurant_id: restaurantId,
       restaurant_name: restaurantName, city, added_by: deviceId,
       votes: {[deviceId]: 1}, status: 'want'
     };
-    if(sb){
-      const {data, error} = await sb.from('trip_restaurants').insert(entry).select().single();
-      if(error) throw error;
-      this.restaurants.push(data);
-    } else {
-      entry.id = 'local_'+Date.now();
-      this.restaurants.push(entry);
-    }
+    this.restaurants.push(entry);
+    this._saveLocal();
   },
 
   // Vote on a restaurant
   async vote(restId, vote){
-    const sb = getSB();
     const deviceId = getDeviceId();
     const item = this.restaurants.find(r=>r.id===restId);
     if(!item) return;
     item.votes = item.votes || {};
     item.votes[deviceId] = vote;
-    if(sb){
-      await sb.from('trip_restaurants').update({votes: item.votes}).eq('id', restId);
-    }
+    this._saveLocal();
     A.renderTrips();
   },
 
-  // Add a reservation (hotel/flight/activity/restaurant/other)
+  // Add a reservation
   async addReservation(item){
-    const sb = getSB();
-    const entry = {...item, trip_id: this.current.id, added_by: getDeviceId(), created_at: new Date().toISOString()};
-    if(sb){
-      const {data, error} = await sb.from('trip_reservations').insert(entry).select().single();
-      if(error) throw error;
-      if(!this.reservations) this.reservations = [];
-      this.reservations.push(data);
-      return data;
-    } else {
-      entry.id = 'local_'+Date.now();
-      if(!this.reservations) this.reservations = [];
-      this.reservations.push(entry);
-      this._saveLocal();
-      return entry;
-    }
+    const entry = {...item, id: 'res_'+Date.now(), added_by: getDeviceId(), created_at: new Date().toISOString()};
+    if(!this.reservations) this.reservations = [];
+    this.reservations.push(entry);
+    this._saveLocal();
+    return entry;
   },
 
   async deleteReservation(id){
-    const sb = getSB();
     this.reservations = (this.reservations||[]).filter(r=>r.id!==id);
-    if(sb) await sb.from('trip_reservations').delete().eq('id', id);
-    else this._saveLocal();
+    this._saveLocal();
     A.renderTrips();
   },
 
@@ -1880,10 +1851,19 @@ const TRIPS = {
         bills: this.bills,
         ...tripData
       }));
-      // Also persist to Supabase trip_data column if available
+      // Also persist to Supabase if available
       const sb = getSB();
       if(sb && this.current?.id && !String(this.current.id).startsWith('local_')){
-        sb.from('trips').update({trip_data:tripData}).eq('id',this.current.id).then(()=>{}).catch(()=>{});
+        const updateObj = {
+          restaurants: this.restaurants,
+          bills: this.bills,
+          members: (this.members||[]).map(m=>({id:m.device_id||m.id,role:m.role||'member',nickname:m.nickname||'Traveler'}))
+        };
+        // Try trip_data column (may not exist yet)
+        sb.from('trips').update({...updateObj,trip_data:tripData}).eq('id',this.current.id).then(()=>{}).catch(()=>{
+          // Fallback: update without trip_data if column doesn't exist
+          sb.from('trips').update(updateObj).eq('id',this.current.id).catch(()=>{});
+        });
       }
     }catch(e){}
   },
