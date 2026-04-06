@@ -6719,14 +6719,47 @@ upcomingHTML(){
       }
 ];
     // City-aware coming soon
+    if((S.city||'Dallas')==='New York'){
+      const nycItems = [
+        {name:"Pacha New York",hood:"East Williamsburg",address:"Brooklyn Mirage complex",eta:"June 2026",cuisine:"Nightclub / Music Venue",desc:"The legendary Ibiza nightclub returns to NYC at the former Brooklyn Mirage. 80,000 sq ft outdoor venue rebuilt from scratch. Seasonal June-October with the Great Hall operating year-round. Global DJs and local artists.",group:"FIVE Holdings",ig:"@pachanyc"},
+        {name:"Dishoom",hood:"Lower Manhattan",address:"TBD Lower Manhattan",eta:"2026",cuisine:"Indian / Bombay Cafe",desc:"London iconic Bombay cafe finally comes to NYC after a 2024 pop-up at Pastis. Known for black daal, bacon naan rolls, and chai. One of the most anticipated international imports in years.",group:"Dishoom",ig:"@dishoom"},
+        {name:"Pizza Studio Tamaki",hood:"TBD",address:"TBD NYC",eta:"2026",cuisine:"Tokyo-Neapolitan Pizza",desc:"The Tokyo restaurant credited with making Japan a pizza destination brings its Tokyo-Neapolitan style to NYC. Expect perfectly charred, pillowy pies with Japanese precision and Italian soul.",group:"Independent",ig:""},
+        {name:"COTE 550 Madison",hood:"Midtown",address:"550 Madison Ave",eta:"Spring 2026",cuisine:"Korean Steakhouse",desc:"COTE second NYC location in the iconic 550 Madison building (former Sony/AT&T HQ). Part of a bigger complex including Bar Chimera and an omakase from Sushi Yoshitake chef.",group:"COTE",ig:"@cotenyc"},
+        {name:"Gymkhana",hood:"NoMad",address:"TBD NoMad",eta:"Winter 2026",cuisine:"Upscale Punjabi",desc:"First US location of the acclaimed London Punjabi restaurant. Colonial-era Indian club aesthetic with refined tandoor dishes and an extensive gin program. Multiple Michelin stars in London.",group:"JKS Restaurants",ig:"@gymkhanalondon"},
+        {name:"Ugly Baby",hood:"Williamsburg",address:"Grand St, Williamsburg",eta:"Summer 2026",cuisine:"Thai",desc:"The beloved Thai institution returns in a new 2,500 sq ft Williamsburg space with an even more risk-taking menu. Emphasis on lemongrass, galangal, chili, and makrut lime. One of the most fearless Thai kitchens in America.",group:"Independent",ig:"@uglybabyny"},
+        {name:"Oriana",hood:"Nolita",address:"TBD Nolita",eta:"2026",cuisine:"American / Live-Fire",desc:"From The Noortwyck team. American live-fire cooking in Nolita with seafood, vegetables, and large-format meats over a wood-fired grill. Wine list with thousands of options.",group:"Independent",ig:""},
+        {name:"Cleo Downtown",hood:"West Village",address:"Former Piccolo Angolo space",eta:"Spring 2026",cuisine:"French Rotisserie",desc:"40-seat West Village rotisserie spot from the Margot and Montague Diner team. Rotisserie chicken, fries, salads, cocktails, and natural wine. Paris-London-Montreal inspired.",group:"Independent",ig:""},
+        {name:"Dean's",hood:"TBD",address:"TBD NYC",eta:"Spring 2026",cuisine:"British Seafood",desc:"From the King team. Coastal British food including fish pie, roasted Scottish langoustines, and potted shrimp on hot buttered crumpets. Plus Guinness and cocktails.",group:"Independent",ig:""},
+        {name:"Oyatte",hood:"Midtown",address:"39th St & Lexington Ave",eta:"Spring 2026",cuisine:"Japanese Tasting Menu",desc:"30-seat tasting menu from Chef Hasung Lee (Atomix, French Laundry, Geranium). One of the most pedigreed kitchen resumes in the city opening his first solo restaurant.",group:"Independent",ig:""},
+        {name:"Ambassadors Clubhouse",hood:"NoMad",address:"TBD NoMad",eta:"Summer 2026",cuisine:"Punjabi Social Dining",desc:"Elevated Punjabi social dining in NoMad with high-energy flavors and impeccable cocktail craft. A new kind of Indian dining experience for New York.",group:"Independent",ig:""},
+        {name:"Carver 48",hood:"Midtown",address:"TBD Midtown",eta:"Spring 2026",cuisine:"Modern Steakhouse",desc:"Modern steakhouse with shareable small plates like Wagyu Cheesesteak Bites and Everything Bagel Wedge Salad alongside a robust prime steak program.",group:"Independent",ig:""}
+      ];
+      window._csItems = nycItems;
+      return `<div style="margin-bottom:16px">
+        <div style="font-size:20px;font-weight:700;color:var(--gold);margin-bottom:4px">🔮 Coming Soon to New York</div>
+        <div style="font-size:12px;color:var(--text2);margin-bottom:12px">${nycItems.length} verified upcoming openings</div>
+        ${nycItems.map((r,idx)=>`
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:8px">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+              <div style="flex:1">
+                <div style="font-size:14px;font-weight:700;color:var(--text)">${r.name}</div>
+                <div style="font-size:11px;color:var(--text3)">${r.cuisine} · ${r.hood}</div>
+              </div>
+              <span style="font-size:10px;padding:3px 10px;border-radius:8px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.2);color:var(--gold);font-weight:600;white-space:nowrap">${r.eta}</span>
+            </div>
+            <div style="font-size:11px;color:var(--text2);line-height:1.5">${r.desc}</div>
+            ${r.group?'<div style="font-size:10px;color:var(--text3);margin-top:4px">'+r.group+'</div>':''}
+          </div>`).join('')}
+      </div>`;
+    }
     if((S.city||'Dallas')!=='Dallas'){
       return `<div style="margin-bottom:16px">
         <div style="font-size:20px;font-weight:700;color:var(--gold);margin-bottom:4px">🔮 Coming Soon to ${S.city}</div>
         <div style="font-size:12px;color:var(--text2);margin-bottom:12px">Verified upcoming openings</div>
         <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center">
           <div style="font-size:32px;margin-bottom:8px">🏗</div>
-          <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">Coming Soon Data In Progress</div>
-          <div style="font-size:12px;color:var(--text2);line-height:1.6">We're compiling verified upcoming restaurant openings for <b style="color:var(--gold)">${S.city}</b>. Check back soon for the latest openings and confirmed dates.</div>
+          <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">Coming Soon</div>
+          <div style="font-size:12px;color:var(--text2);line-height:1.6">We are compiling verified upcoming restaurant openings for <b style="color:var(--gold)">${S.city}</b>. Check back soon.</div>
         </div>
       </div>`;
     }
