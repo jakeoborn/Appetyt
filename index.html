@@ -7956,11 +7956,20 @@ upcomingHTML(){
         +'<button class="r-btn'+(isVisited?' on':'')+'" onclick="A.toggleList(&apos;visited&apos;,'+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1px solid var(--border);font-size:12px;cursor:pointer;font-family:inherit">\u2705 '+(isVisited?'Visited':'Been Here')+'</button>'
         +'<button class="r-btn'+(isWant?' on':'')+'" onclick="A.toggleList(&apos;want&apos;,'+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1px solid var(--border);font-size:12px;cursor:pointer;font-family:inherit">\u{1F516} '+(isWant?'Saved':'Want to Go')+'</button>'
         +'</div>';
-      // Add to Trip button (if trip is active)
+      // Add to Trip button with day picker (if trip is active)
       if(TRIPS.current && TRIPS.itinerary.length>0){
         var _selDay = A._selectedDay||0;
-        var _dayLabel = TRIPS.itinerary[_selDay]?'Day '+TRIPS.itinerary[_selDay].day:'Trip';
-        _aH+='<button onclick="A.addGuideItemToDay('+_selDay+','+id+')" style="width:100%;padding:12px;margin-bottom:14px;background:linear-gradient(135deg,rgba(62,184,168,.12),rgba(62,184,168,.04));border:1.5px solid rgba(62,184,168,.3);border-radius:12px;color:#3eb8a8;font-size:13px;font-weight:800;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:8px">📌 Add to '+_dayLabel+' of '+TRIPS.current.name+'</button>';
+        _aH+='<div style="margin-bottom:14px;background:linear-gradient(135deg,rgba(62,184,168,.08),rgba(62,184,168,.02));border:1.5px solid rgba(62,184,168,.25);border-radius:12px;padding:12px">';
+        _aH+='<div style="font-size:11px;font-weight:700;color:#3eb8a8;margin-bottom:8px">📌 Add to '+TRIPS.current.name+'</div>';
+        _aH+='<div style="display:flex;gap:6px;align-items:center">';
+        _aH+='<select id="add-trip-day" style="flex:1;background:var(--card);border:1px solid var(--border);color:var(--text);padding:8px 10px;border-radius:8px;font-size:12px;font-family:inherit;outline:none">';
+        TRIPS.itinerary.forEach(function(d,di){ _aH+='<option value="'+di+'"'+(di===_selDay?' selected':'')+'>Day '+d.day+(d.date?' - '+new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}):'')+'</option>'; });
+        _aH+='</select>';
+        _aH+='<select id="add-trip-time" style="width:90px;background:var(--card);border:1px solid var(--border);color:var(--text);padding:8px 10px;border-radius:8px;font-size:12px;font-family:inherit;outline:none">';
+        ['09:00','10:00','11:00','12:00','12:30','13:00','14:00','15:00','17:00','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30','22:00'].forEach(function(t){ _aH+='<option value="'+t+'">'+((parseInt(t)%12||12)+':'+t.split(':')[1]+' '+(parseInt(t)>=12?'PM':'AM'))+'</option>'; });
+        _aH+='</select>';
+        _aH+='<button onclick="A.addGuideItemToDay(parseInt(document.getElementById(&apos;add-trip-day&apos;).value),'+id+',document.getElementById(&apos;add-trip-time&apos;).value)" style="padding:8px 14px;background:#3eb8a8;color:var(--dark);font-weight:800;font-size:12px;border-radius:8px;border:none;cursor:pointer;white-space:nowrap">+ Add</button>';
+        _aH+='</div></div>';
       }
       // Notes
       _aH+=buildNotesHTML(id);
@@ -12873,8 +12882,9 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
                   </div>
                   <button onclick="TRIPS.cycleItemStatus(${selectedDay},&quot;${item.id}&quot;);A.renderTrips()" style="background:${statusBg};border:1px solid ${statusColor};color:${statusColor};font-size:8px;font-weight:700;padding:4px 8px;border-radius:6px;cursor:pointer;white-space:nowrap;font-family:inherit;letter-spacing:.3px">${statusLabel}</button>
                 </div>
-                <div style="display:flex;gap:6px;margin-top:8px">
+                <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
                   <a href="https://www.google.com/maps/search/${encodeURIComponent(item.name+' '+(cities[0]||''))}" target="_blank" style="font-size:10px;color:var(--text3);text-decoration:none;padding:4px 8px;background:var(--card2);border-radius:6px">📍 Map</a>
+                  ${item.reserveLink?`<a href="${item.reserveLink}" target="_blank" style="font-size:10px;color:#4c9a6a;text-decoration:none;padding:4px 8px;background:rgba(76,154,106,.08);border-radius:6px;font-weight:600">📅 Reserve</a>`:''}
                   <button onclick="TRIPS.removeItineraryItem(${selectedDay},&quot;${item.id}&quot;);A.renderTrips()" style="font-size:10px;color:var(--text3);background:var(--card2);border:none;border-radius:6px;padding:4px 8px;cursor:pointer;font-family:inherit">✕ Remove</button>
                 </div>
               </div>`;
@@ -13081,7 +13091,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     </div>`).join('') || '<div style="font-size:11px;color:var(--text3);padding:8px">No results</div>';
   },
 
-  addGuideItemToDay(dayIndex, restaurantId){
+  addGuideItemToDay(dayIndex, restaurantId, time){
     const trip = TRIPS.current;
     const cities = Array.isArray(trip?.cities)?trip.cities:(trip?.cities||'').split(',').map(x=>x.trim()).filter(Boolean);
     const city = cities[0]||S.city||'New York';
@@ -13089,17 +13099,34 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const r = allData.find(x=>x.id===restaurantId);
     if(!r) return;
     const type = (r.cuisine||'').toLowerCase().includes('bar')||(r.tags||[]).some(t=>/bar|cocktail/i.test(t)) ? 'bar' : (r.cuisine||'').toLowerCase().match(/entertainment|club|jazz|comedy/) ? 'activity' : 'restaurant';
+    // Auto-suggest time if not provided
+    const autoTime = time || (type==='bar'?'21:30':(r.tags||[]).some(t=>/brunch|coffee|bakery/i.test(t))?'10:00':'19:00');
+    // Build reservation link
+    const enc = encodeURIComponent;
+    const resPlatform = r.reservation && r.reservation !== 'walk-in' ? r.reservation : '';
+    const resLink = resPlatform === 'Resy' ? 'https://resy.com/?q='+enc(r.name) :
+                    resPlatform === 'Tock' ? 'https://www.exploretock.com/search?q='+enc(r.name) :
+                    resPlatform === 'OpenTable' ? 'https://www.opentable.com/s/?term='+enc(r.name) :
+                    r.reserveUrl || '';
     TRIPS.addItineraryItem(dayIndex, {
       name: r.name,
       type: type,
-      time: '',
+      time: autoTime,
       neighborhood: r.neighborhood||'',
       notes: r.cuisine + ' · ' + (r.dishes||[]).slice(0,2).join(', '),
       status: 'planned',
-      cost: null
+      cost: null,
+      reserveLink: resLink,
+      address: r.address||''
     });
-    document.getElementById('event-detail-modal').style.display='none';
-    this.showToast('Added ' + r.name);
+    // Close any open modals
+    const modal = document.getElementById('event-detail-modal');
+    if(modal) modal.style.display='none';
+    // Close detail sheet if open
+    const detail = document.getElementById('detail');
+    if(detail && detail.classList.contains('open')) detail.classList.remove('open');
+    this.showToast('Added ' + r.name + ' to Day ' + (dayIndex+1));
+    this._selectedDay = dayIndex;
     this.renderTrips();
   },
 
