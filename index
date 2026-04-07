@@ -2021,7 +2021,7 @@ const TRIPS = {
     <div class="sidebar-logo">Appetyt</div>
     <div class="sidebar-city">
       <button id="sidebar-city-btn" onclick="A.openCityPicker()" aria-label="Change city">
-        📍 <span class="city-name" id="sidebar-city-label">Dallas</span> ▾
+        📍 <span class="city-name" id="sidebar-city-label">New York</span> ▾
       </button>
     </div>
     <nav class="sidebar-nav" aria-label="Sidebar navigation">
@@ -2055,7 +2055,7 @@ const TRIPS = {
   <div id="topbar">
     <div id="logo">Appetyt</div>
     <button id="city-btn" onclick="A.openCityPicker()" aria-label="Change city">
-      📍 <span id="city-label">Dallas</span> ▾
+      📍 <span id="city-label">New York</span> ▾
     </button>
     <button id="auth-btn" onclick="S.user?A.showProfile():A.openAuth()" title="Profile" aria-label="Profile">👤</button>
   </div>
@@ -4555,6 +4555,11 @@ const A = {
         }).catch(()=>{});
       }
     }catch(e){}
+    // Update city label from saved preference
+    document.getElementById('city-label').textContent=S.city;
+    const _scl=document.getElementById('sidebar-city-label');
+    if(_scl) _scl.textContent=S.city;
+    this.buildNeighborhoodChips();
     this.buildCityList();
     this.renderHome();
     // Load saved trip if any
@@ -7044,8 +7049,7 @@ const A = {
   renderUpcoming(){
     const el = document.getElementById('upcoming-content');
     if(!el) return;
-    el.innerHTML = this.upcomingHTML();
-      html += this.curatedActivitiesHTML();
+    el.innerHTML = this.upcomingHTML() + this.curatedActivitiesHTML();
   },
 
   renderDiscover(){
@@ -11976,8 +11980,9 @@ const A = {
       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:20px;overflow:hidden">
         ${subTabs.map(t=>`
           <button onclick="A._localSub='${t.id}';A.renderLocal()" style="
-            padding:12px 8px;border-radius:12px;border:none;cursor:pointer;
+            padding:12px 8px;border-radius:12px;cursor:pointer;
             font-size:12px;font-weight:700;text-align:center;
+            border:1.5px solid ${sub===t.id?'var(--gold)':'var(--border)'};
             background:${sub===t.id?'rgba(201,168,76,.15)':'var(--card2)'};
             color:${sub===t.id?'var(--gold)':'var(--text2)'};
             border:1px solid ${sub===t.id?'rgba(201,168,76,.4)':'var(--border)'};
