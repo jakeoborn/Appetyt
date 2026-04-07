@@ -7292,7 +7292,24 @@ const A = {
       {name:'West Village',emoji:'\ud83c\udfba',desc:'Jazz, cocktail bars, intimate'},
       {name:'East Village',emoji:'\ud83c\udfd9\ufe0f',desc:'Dive bars, sake bars, late night'},
       {name:'Bushwick',emoji:'\ud83c\udf06',desc:'Warehouse parties, House of Yes'}
-    ] : [];
+    ] : city==='Dallas' ? [
+      {name:'Deep Ellum',emoji:'\ud83c\udfb5',desc:'Live music, dive bars, late night'},
+      {name:'Uptown',emoji:'\ud83c\udf78',desc:'Rooftop bars, cocktails, nightclubs'},
+      {name:'Knox Henderson',emoji:'\ud83c\udf7a',desc:'Craft cocktails, wine bars, lounges'},
+      {name:'Bishop Arts',emoji:'\ud83c\udfa8',desc:'Cozy bars, live music, artsy vibes'},
+      {name:'Design District',emoji:'\ud83e\udea9',desc:'Speakeasies, champagne bars, clubs'},
+      {name:'Lower Greenville',emoji:'\ud83c\udf1d',desc:'Dive bars, tacos at 2 AM, karaoke'}
+    ] : city==='Chicago' ? [
+      {name:'Wicker Park',emoji:'\ud83c\udfa8',desc:'Cocktail bars, live music, late night'},
+      {name:'River North',emoji:'\ud83e\udea9',desc:'Nightclubs, steakhouses, rooftops'},
+      {name:'West Loop',emoji:'\ud83c\udf78',desc:'Craft cocktails, after-dinner drinks'},
+      {name:'Logan Square',emoji:'\ud83c\udf1d',desc:'Tiki bars, dive bars, mezcal'}
+    ] : city==='Houston' ? [
+      {name:'Montrose',emoji:'\ud83c\udf08',desc:'Dive bars, cocktail lounges, eclectic'},
+      {name:'Midtown',emoji:'\ud83c\udfb5',desc:'Bar crawl central, live music'},
+      {name:'Heights',emoji:'\ud83c\udf7a',desc:'Craft beer, patio bars, laid back'},
+      {name:'East Downtown / EaDo',emoji:'\u26be',desc:'Breweries, game day, late night'}
+    ] : []
 
     var html='<div style="position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:2000;display:flex;align-items:flex-end" onclick="if(event.target===this)this.style.display=&apos;none&apos;">';
     html+='<div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:90vh;overflow-y:auto;padding:20px 16px 40px">';
