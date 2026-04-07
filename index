@@ -3727,6 +3727,21 @@ const CITY_DATA = {'New York':NYC_DATA,'Dallas':DALLAS_DATA,'Seattle':SEATTLE_DA
   'Houston': HOUSTON_DATA,
 };
 
+const CITY_GROUPS = {
+  '🤠 Texas':['Dallas','Austin','Houston','San Antonio'],
+  '🗽 US Northeast':['New York','Boston','Philadelphia'],
+  '🌾 US Midwest':['Chicago','Kansas City'],
+  '☀️ US West':['Los Angeles','San Francisco','San Diego','Denver','Las Vegas','Portland','Seattle'],
+  '🌴 US South':['Atlanta','Nashville','New Orleans','Miami','Charlotte'],
+  '🇲🇽 Mexico':['Mexico City','Guadalajara','Cancun','Playa del Carmen','Tulum'],
+  '🇬🇧 Europe':['London','Paris','Barcelona','Rome','Amsterdam','Lisbon','Berlin','Dublin','Copenhagen','Prague'],
+  '🌏 Asia':['Tokyo','Singapore','Bangkok','Bali','Seoul','Hong Kong','Shanghai'],
+  '🌍 Middle East':['Dubai','Istanbul','Tel Aviv'],
+  '🌎 Latin America':['Buenos Aires','Lima','Bogota','Sao Paulo','Cartagena'],
+  '🏖️ Caribbean':['San Juan','Nassau','Turks & Caicos'],
+  '🇦🇺 Pacific':['Sydney','Melbourne','Auckland'],
+};
+
 const CITY_COORDS = {
   'Dallas':[32.7767,-96.7970],'Houston':[29.7604,-95.3698],
   'New York':[40.7128,-74.0060],'Boston':[42.3601,-71.0589],'Philadelphia':[39.9526,-75.1652],
