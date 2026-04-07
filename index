@@ -197,7 +197,7 @@ details>summary::-webkit-details-marker{display:none}
 #travel-view{padding:14px 14px 100px}
 .travel-section{margin-bottom:20px}
 .travel-section-title{font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
-.trip-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
+.trip-card{background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
 .trip-card:hover{border-color:var(--gold)}
 .trip-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:3px}
 .trip-sub{font-size:11px;color:var(--text2);line-height:1.4}
@@ -5315,7 +5315,7 @@ const A = {
         {name:'Istanbul, Turkey', flag:'🇹🇷', why:'A crossroads of continents on the plate. Meze culture, fresh Bosphorus fish, and some of the world\'s best street food at every turn.', must:['Mikla','Ciya Sofrasi','Karakoy Gulluoglu baklava','Kapalicarsi spice market'], best:'Apr-June, Sept-Oct'},
       ];
       return cities.map(c=>`
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:10px">
+        <div style="background:var(--card);border:1.5px solid var(--gold);border-radius:14px;padding:14px;margin-bottom:10px">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
             <span style="font-size:22px">${c.flag}</span>
             <div>
@@ -6959,7 +6959,7 @@ const A = {
         <div style="font-size:20px;font-weight:700;color:var(--gold);margin-bottom:4px">🔮 Coming Soon to New York</div>
         <div style="font-size:12px;color:var(--text2);margin-bottom:12px">${nycItems.length} verified upcoming openings</div>
         ${nycItems.map((r,idx)=>`
-          <div onclick="${r.ig?`window.open('https://instagram.com/${r.ig.replace('@','')}','_blank')`:''}" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;margin-bottom:8px;${r.ig?'cursor:pointer':''}">
+          <div onclick="A.openComingSoonDetail(${idx},'nyc')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;margin-bottom:8px;cursor:pointer">
             <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
               <div style="flex:1">
                 <div style="font-size:14px;font-weight:700;color:var(--text)">${r.name}</div>
@@ -7359,7 +7359,7 @@ const A = {
               const rest=c.id?restaurants.find(r=>r.id===c.id):null;
               const clickAttr=rest?'onclick="A.openDetail('+rest.id+')"':'';
               const score=rest?rest.score:'';
-              return '<div '+clickAttr+' style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor=\'var(--gold)\'" onmouseleave="this.style.borderColor=\'var(--border)\'">'
+              return '<div '+clickAttr+' style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor=\'var(--gold)\'" onmouseleave="this.style.borderColor=\'var(--border)\'">'
                 +'<div style="display:flex;align-items:flex-start;gap:10px">'
                 +'<div style="font-size:24px;flex-shrink:0">'+c.icon+'</div>'
                 +'<div style="flex:1;min-width:0">'
@@ -10018,7 +10018,7 @@ const A = {
         const timeStr=d.toLocaleTimeString([],{hour:'numeric',minute:'2-digit'});
         const dateStr=d.toLocaleDateString([],{month:'short',day:'numeric'});
         const visitCount=checkins.filter(x=>x.id===c.id).length;
-        return `<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:10px">
+        return `<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:14px;padding:14px;margin-bottom:10px">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
             <div style="width:36px;height:36px;border-radius:50%;background:${tier.vip?'linear-gradient(135deg,var(--gold),#b8922e)':'rgba(76,154,110,.15)'};display:flex;align-items:center;justify-content:center;font-size:16px">${tier.vip?'⭐':'📍'}</div>
             <div style="flex:1">
@@ -10969,7 +10969,7 @@ const A = {
       groups.forEach(([name,g])=>{
         const oc=g.score>=90?'var(--gold)':g.score>=80?'#4c9a6a':'var(--text3)';
         const sb=g.scoreBreakdown;
-        html+='<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:10px">';
+        html+='<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;margin-bottom:10px">';
         html+='<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
         html+='<div><div style="font-size:14px;font-weight:800;color:var(--text)">'+name+'</div>';
         html+='<div style="font-size:10px;color:var(--text3);margin-top:2px">Founded '+g.founded+' &middot; '+g.concepts+' concepts &middot; Flagship: '+g.flagship+'</div>';
@@ -12028,7 +12028,7 @@ const A = {
     const tierColor = {'Ultra Luxury':'#c9a84c','Luxury':'#c9a84c','Mid-Range':'#7eb8a4','Boutique':'#b09ec9','Budget':'#8fa8c8'};
     const tierDesc = {'Ultra Luxury':'$400-$1,500+/night · Forbes Five-Star · World-class','Luxury':'$200-$700/night · Premium amenities · Top-rated','Mid-Range':'$150-$400/night · Full-service · Great value','Boutique':'$150-$700/night · Unique character · Intimate','Budget':'Under $250/night · Brand-name quality · Smart picks'};
     const hotelCard = (h) => `
-      <div onclick="A.openHotel(${h.id})" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:9px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
+      <div onclick="A.openHotel(${h.id})" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;margin-bottom:9px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
         <div style="display:flex;align-items:flex-start;gap:10px">
           <div style="flex:1">
             <div style="font-size:14px;font-weight:800;color:var(--text);margin-bottom:2px">${h.name}</div>
@@ -12153,7 +12153,7 @@ const A = {
     if(!malls.length) return '<div class="empty-state"><div class="empty-icon">🏬</div><div class="empty-title">No Mall Guide Yet</div><div class="empty-desc">Coming soon for '+city+'</div></div>';
     const tierColor = {'Ultra Luxury':'#c9a84c','Luxury':'#c9a84c','Upscale':'#7eb8a4','Mid-Luxury':'#8fa8c8','Specialty':'#b09ec9'};
     const mallCard = (m) => `
-      <div onclick="A.openMall(${m.id})" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
+      <div onclick="A.openMall(${m.id})" style="background:var(--card);border:1.5px solid var(--gold);border-radius:14px;padding:14px;margin-bottom:12px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:8px">
           <div style="flex:1">
             <div style="display:flex;align-items:center;gap:7px;margin-bottom:3px">
@@ -12185,15 +12185,15 @@ const A = {
         <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Quick Pick</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px">
           ${city==='New York'?`
-          <div onclick="A.openMall(1)" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">🍽</div><div style="font-size:12px;font-weight:700;color:var(--text)">Best Food Hall</div><div style="font-size:11px;color:var(--gold)">Chelsea Market</div></div>
-          <div onclick="A.openMall(2)" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">👑</div><div style="font-size:12px;font-weight:700;color:var(--text)">Luxury Shopping</div><div style="font-size:11px;color:var(--gold)">Hudson Yards</div></div>
-          <div onclick="A.openMall(4)" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">🥑</div><div style="font-size:12px;font-weight:700;color:var(--text)">Most Authentic</div><div style="font-size:11px;color:var(--gold)">Essex Market</div></div>
-          <div onclick="A.openMall(5)" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">🍔</div><div style="font-size:12px;font-weight:700;color:var(--text)">Outdoor Market</div><div style="font-size:11px;color:var(--gold)">Smorgasburg</div></div>
+          <div onclick="A.openMall(1)" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">🍽</div><div style="font-size:12px;font-weight:700;color:var(--text)">Best Food Hall</div><div style="font-size:11px;color:var(--gold)">Chelsea Market</div></div>
+          <div onclick="A.openMall(2)" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">👑</div><div style="font-size:12px;font-weight:700;color:var(--text)">Luxury Shopping</div><div style="font-size:11px;color:var(--gold)">Hudson Yards</div></div>
+          <div onclick="A.openMall(4)" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">🥑</div><div style="font-size:12px;font-weight:700;color:var(--text)">Most Authentic</div><div style="font-size:11px;color:var(--gold)">Essex Market</div></div>
+          <div onclick="A.openMall(5)" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">🍔</div><div style="font-size:12px;font-weight:700;color:var(--text)">Outdoor Market</div><div style="font-size:11px;color:var(--gold)">Smorgasburg</div></div>
           `:`
-          <div onclick="A.openMall(1)" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">🏛</div><div style="font-size:12px;font-weight:700;color:var(--text)">Best Overall</div><div style="font-size:11px;color:var(--gold)">NorthPark</div></div>
-          <div onclick="A.openMall(2)" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">👑</div><div style="font-size:12px;font-weight:700;color:var(--text)">Ultra Luxury</div><div style="font-size:11px;color:var(--gold)">HP Village</div></div>
-          <div onclick="A.openMall(3)" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">🌿</div><div style="font-size:12px;font-weight:700;color:var(--text)">Best Dining</div><div style="font-size:11px;color:var(--gold)">Shops at Legacy</div></div>
-          <div onclick="A.openMall(6)" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">🚊</div><div style="font-size:12px;font-weight:700;color:var(--text)">DART Access</div><div style="font-size:11px;color:var(--gold)">Mockingbird</div></div>
+          <div onclick="A.openMall(1)" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">🏛</div><div style="font-size:12px;font-weight:700;color:var(--text)">Best Overall</div><div style="font-size:11px;color:var(--gold)">NorthPark</div></div>
+          <div onclick="A.openMall(2)" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">👑</div><div style="font-size:12px;font-weight:700;color:var(--text)">Ultra Luxury</div><div style="font-size:11px;color:var(--gold)">HP Village</div></div>
+          <div onclick="A.openMall(3)" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">🌿</div><div style="font-size:12px;font-weight:700;color:var(--text)">Best Dining</div><div style="font-size:11px;color:var(--gold)">Shops at Legacy</div></div>
+          <div onclick="A.openMall(6)" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:18px;margin-bottom:3px">🚊</div><div style="font-size:12px;font-weight:700;color:var(--text)">DART Access</div><div style="font-size:11px;color:var(--gold)">Mockingbird</div></div>
           `}
         </div>
       </div>
@@ -15153,7 +15153,7 @@ Return ONLY the JSON object, nothing else.`,
       <div id="bcf-${cat.id}" class="bcf-section" style="display:${ci===0?'block':'none'}">
         <div style="font-size:13px;color:var(--text2);margin-bottom:14px;line-height:1.5">${cat.desc}</div>
         ${cat.cities.map((city, i) => `
-          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:10px;cursor:pointer;transition:border-color .2s" 
+          <div style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;margin-bottom:10px;cursor:pointer;transition:border-color .2s" 
                onclick="this.querySelector('.bcf-expand').style.display=this.querySelector('.bcf-expand').style.display==='none'?'block':'none'">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
               <div style="font-size:28px">${city.flag}</div>
@@ -16681,7 +16681,7 @@ function renderDrops() {
       ${lockedDrops.map(drop => {
         const dropTier = LOYALTY.TIERS.find(t => t.id === drop.minTier);
         return `
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:8px;opacity:.5;filter:blur(.5px)">
+        <div style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;margin-bottom:8px;opacity:.5;filter:blur(.5px)">
           <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:2px">${drop.title}</div>
           <div style="font-size:11px;color:var(--text2)">${drop.restaurant}</div>
           <div style="margin-top:6px">
