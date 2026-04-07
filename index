@@ -5865,6 +5865,24 @@ const A = {
               </div>`;
             }).join('')}</div>
           </div>`:''}
+          <!-- Tourist Attractions in Neighborhood -->
+          ${(()=>{
+            const attractions=nbhdR.filter(r=>(r.cuisine||'').includes('Tourist Attraction'));
+            if(!attractions.length) return '';
+            return '<div style="padding:10px 14px;border-bottom:1px solid var(--border)"><div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px">🗽 Attractions</div><div style="display:flex;flex-direction:column;gap:5px">'+attractions.map(r=>'<div onclick="A.openDetail('+r.id+')" style="display:flex;align-items:center;gap:8px;padding:7px 10px;background:var(--card);border:1.5px solid var(--gold);border-radius:8px;cursor:pointer"><span style="font-size:12px;font-weight:700;color:var(--text)">'+r.name+'</span><span style="font-size:10px;color:var(--gold);margin-left:auto">'+r.score+'</span></div>').join('')+'</div></div>';
+          })()}
+          <!-- Best Bars & Drinks -->
+          ${(()=>{
+            const bars=nbhdR.filter(r=>(r.tags||[]).some(t=>/cocktail|bar|rooftop|wine|late night/i.test(t))||(r.cuisine||'').toLowerCase().match(/bar|cocktail|wine/)).slice(0,4);
+            if(!bars.length) return '';
+            return '<div style="padding:10px 14px;border-bottom:1px solid var(--border)"><div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px">🍸 Best Bars & Drinks</div><div style="display:flex;gap:6px;overflow-x:auto;scrollbar-width:none">'+bars.map(r=>'<div onclick="A.openDetail('+r.id+')" style="flex-shrink:0;background:var(--card);border:1.5px solid var(--gold);border-radius:8px;padding:8px 10px;cursor:pointer;min-width:120px"><div style="font-size:11px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+r.name+'</div><div style="font-size:9px;color:var(--text3)">'+r.cuisine+' · '+r.score+'</div></div>').join('')+'</div></div>';
+          })()}
+          <!-- Activities & Entertainment -->
+          ${(()=>{
+            const acts=nbhdR.filter(r=>(r.cuisine||'').toLowerCase().match(/entertainment|club|jazz|comedy|live music|museum/)).slice(0,4);
+            if(!acts.length) return '';
+            return '<div style="padding:10px 14px;border-bottom:1px solid var(--border)"><div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px">🎭 Activities</div><div style="display:flex;gap:6px;overflow-x:auto;scrollbar-width:none">'+acts.map(r=>'<div onclick="A.openDetail('+r.id+')" style="flex-shrink:0;background:var(--card);border:1.5px solid var(--gold);border-radius:8px;padding:8px 10px;cursor:pointer;min-width:120px"><div style="font-size:11px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+r.name+'</div><div style="font-size:9px;color:var(--text3)">'+r.cuisine+'</div></div>').join('')+'</div></div>';
+          })()}
           <!-- Must Visit -->
           <div style="padding:10px 14px;border-bottom:1px solid var(--border)">
             <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px">Must Visit</div>
