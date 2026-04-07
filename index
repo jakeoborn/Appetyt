@@ -389,7 +389,7 @@ details>summary::-webkit-details-marker{display:none}
 .checkin-pulse-ring{animation:checkinPulse 1.5s ease infinite}
 
 /* -- CHECK-IN STATS DASHBOARD -- */
-.ci-stats-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px}
+.ci-stats-card{background:var(--card);border:1.5px solid var(--gold);border-radius:14px;overflow:hidden;margin-bottom:12px}
 .ci-stats-header{padding:14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
 .ci-stat-box{flex:1;text-align:center;padding:10px 6px}
 .ci-stat-num{font-size:20px;font-weight:800;color:var(--text)}
@@ -7290,6 +7290,34 @@ const A = {
     m.style.display='block';
   },
 
+    openComingSoonDetail(idx,city){
+    var items=window._csItems||[];
+    var r=items[idx];
+    if(!r)return;
+    var m=document.getElementById('event-detail-modal');
+    if(!m)return;
+    var html='<div style="position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:2000;display:flex;align-items:flex-end" onclick="if(event.target===this)this.style.display=&apos;none&apos;">';
+    html+='<div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:85vh;overflow-y:auto;padding:20px 16px 40px">';
+    html+='<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">';
+    html+='<div style="font-size:16px;font-weight:700;color:var(--gold)">\ud83d\udd2e Coming Soon</div>';
+    html+='<button onclick="document.getElementById(&apos;event-detail-modal&apos;).style.display=&apos;none&apos;" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">\u2715</button></div>';
+    html+='<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:14px;padding:16px;margin-bottom:14px">';
+    html+='<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
+    html+='<div><div style="font-size:20px;font-weight:800;color:var(--text)">'+r.name+'</div>';
+    html+='<div style="font-size:12px;color:var(--text3);margin-top:2px">'+r.cuisine+' \u00b7 '+(r.hood||r.address||'')+'</div></div>';
+    html+='<span style="font-size:11px;padding:4px 12px;border-radius:8px;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.25);color:var(--gold);font-weight:700">'+r.eta+'</span></div>';
+    html+='<div style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:12px">'+r.desc+'</div>';
+    if(r.group) html+='<div style="font-size:11px;color:var(--text3);margin-bottom:8px">\ud83c\udfe2 '+r.group+'</div>';
+    if(r.address&&r.address!=='TBD') html+='<div style="font-size:11px;color:var(--text3);margin-bottom:8px">\ud83d\udccd '+r.address+'</div>';
+    html+='</div>';
+    html+='<div style="display:flex;gap:8px">';
+    if(r.ig) html+='<a href="https://instagram.com/'+r.ig.replace('@','')+'" target="_blank" style="flex:1;text-align:center;padding:12px;background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);border-radius:10px;color:#fff;text-decoration:none;font-size:12px;font-weight:700">\ud83d\udcf8 Follow on Instagram</a>';
+    html+='<button onclick="A.showToast(&apos;We will notify you when '+r.name.replace(/'/g,'')+' opens!&apos;)" style="flex:1;padding:12px;background:var(--gold);color:var(--dark);font-weight:800;font-size:12px;border-radius:10px;border:none;cursor:pointer">\ud83d\udd14 Notify Me</button>';
+    html+='</div></div></div>';
+    m.innerHTML=html;
+    m.style.display='block';
+  },
+
     renderUpcoming(){
     const el = document.getElementById('upcoming-content');
     if(!el) return;
@@ -11685,7 +11713,7 @@ const A = {
         ${multiGroups.map(([name, rests]) => {
           const avg = Math.round(rests.reduce((s,r) => s+r.score, 0) / rests.length);
           const color = avg >= 90 ? 'var(--gold)' : avg >= 80 ? '#4c9a6a' : 'var(--text3)';
-          return `<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px">
+          return `<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:14px;overflow:hidden;margin-bottom:12px">
             <div style="padding:14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between">
               <div>
                 <div style="font-size:15px;font-weight:700;color:var(--text)">${name}</div>
@@ -16302,7 +16330,7 @@ Return ONLY the JSON object, nothing else.`,
         </div>
 
         <!-- Guest Card (what restaurant staff sees) -->
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px">
+        <div style="background:var(--card);border:1.5px solid var(--gold);border-radius:14px;overflow:hidden;margin-bottom:12px">
           <div style="padding:14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px">
             <div class="guest-avatar" style="background:${guest.isVIP?'linear-gradient(135deg,var(--gold),#b8922e)':'var(--card2)'};border:${guest.isVIP?'2px solid var(--gold)':'1px solid var(--border)'}">
               ${guest.isVIP?'⭐':'👤'}
