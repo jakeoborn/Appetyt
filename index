@@ -7061,6 +7061,138 @@ const A = {
     `;
   },
 
+  openCelebHotspots(){
+    const m = document.getElementById('event-detail-modal');
+    if(!m) return;
+    const city = S.city || 'New York';
+    const CELEB_DATA = {
+      'Dallas':[{name:"Al Biernat's",note:"Power lunch -- Mark Cuban, Jerry Jones regulars",who:"🏈 Cowboys · 🏀 Mavs",icon:"🥩"},{name:"Carbone",note:"A-list celebrities on game nights",who:"🌟 A-List · 🏀 NBA",icon:"🍝"},{name:"Nick & Sam's",note:"Cowboys postgame favorite",who:"🏈 Dallas Cowboys",icon:"🥩"},{name:"Town Hearth",note:"Exotic cars, VIP bottle service",who:"🏈 NFL · 🎤 Music",icon:"🍖"},{name:"Nobu Dallas",note:"Visiting NBA teams and Hollywood",who:"🏀 NBA · 🎬 Hollywood",icon:"🍣"},{name:"Midnight Rambler",note:"Underground bar -- athletes after hours",who:"🎤 Musicians · 🏀 Athletes",icon:"🍹"}],
+      'New York':[{name:"Carbone",note:"Hardest reservation in NYC -- Jay-Z, Drake, Kim K",who:"🌟 A-List · 🎤 Music royalty",icon:"🍝"},{name:"Rao's",note:"Tables passed down like heirlooms. You need to know someone.",who:"🌟 NYC elite · 🎬 Hollywood",icon:"🍝"},{name:"Polo Bar",note:"Ralph Lauren's -- models, media moguls, old money",who:"💼 Fashion · 📺 Media",icon:"🥃"},{name:"The Grill",note:"Power lunch -- Wall Street titans and billionaires",who:"💼 Wall Street · 🏛️ Power brokers",icon:"🥩"},{name:"Nobu Downtown",note:"De Niro's landmark -- global celebrities nightly",who:"🎬 Hollywood · 🏀 NBA",icon:"🍣"},{name:"TAO Downtown",note:"Celebrities, athletes, models on the mezzanine",who:"🏀 NBA · 🎤 Music · 📱 Influencers",icon:"🍜"},{name:"Catch",note:"Paparazzi camp outside -- Hadid, Bieber, Kardashians",who:"📱 Influencers · 🎬 Reality TV",icon:"🦞"},{name:"Peter Luger",note:"Cash only. Jay-Z filmed here. Porterhouse unmatched.",who:"🏀 Nets · 🎤 Hip-hop",icon:"🥩"}],
+    };
+    const celebs = CELEB_DATA[city] || CELEB_DATA['New York'] || [];
+
+    m.innerHTML = '<div style="position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:2000;display:flex;align-items:flex-end" onclick="if(event.target===this)this.style.display=\\'none\\'">'+
+      '<div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:90vh;overflow-y:auto;padding:20px 16px 40px">'+
+        '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">'+
+          '<div style="font-size:18px;font-weight:800;color:var(--gold)">🌟 '+city+' Celebrity Hotspots</div>'+
+          '<button onclick="document.getElementById(\\'event-detail-modal\\').style.display=\\'none\\'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>'+
+        '</div>'+
+        '<div style="font-size:11px;color:var(--text3);margin-bottom:14px">Where celebrities, athletes, and power players eat in '+city+'</div>'+
+        celebs.map(c=>
+          '<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;margin-bottom:8px;display:flex;align-items:center;gap:12px">'+
+            '<div style="font-size:28px;flex-shrink:0">'+c.icon+'</div>'+
+            '<div style="flex:1;min-width:0">'+
+              '<div style="font-size:14px;font-weight:700;color:var(--text)">'+c.name+'</div>'+
+              '<div style="font-size:11px;color:var(--text2);margin-top:2px">'+c.note+'</div>'+
+              '<div style="font-size:10px;color:var(--gold);margin-top:3px;font-weight:600">'+c.who+'</div>'+
+            '</div>'+
+          '</div>'
+        ).join('')+
+      '</div></div>';
+    m.style.display='block';
+  },
+
+  openDiningTrends(){
+    const m = document.getElementById('event-detail-modal');
+    if(!m) return;
+    const city = S.city || 'New York';
+    const restaurants = this.getRestaurants();
+    const DINING_TRENDS = {
+      'New York':[
+        {emoji:'🍕',trend:'Neo-Pizza Renaissance',desc:'NYC pizza is in a golden age. Una Pizza Napoletana, Lucali, and newcomers like Scarr\\'s are pushing the craft to new heights.',spots:['Una Pizza Napoletana','Lucali','Scarr\\'s Pizza','Prince Street Pizza']},
+        {emoji:'🌮',trend:'Elevated Taco Culture',desc:'Tacos went from $2 street food to $18 fine dining. Los Tacos No. 1 still leads the casual game.',spots:['Los Tacos No. 1','Cosme','Oxomoco','Los Mariscos']},
+        {emoji:'🍸',trend:'Zero-Proof Cocktails',desc:'Non-alcoholic cocktail programs are everywhere. Bars are investing in NA spirits and creative mocktails.',spots:['Existing Conditions','The Violet Hour','Katana Kitten']},
+        {emoji:'🌱',trend:'Plant-Forward Fine Dining',desc:'Eleven Madison Park went vegan. Dirt Candy has a Michelin star. Vegetables are the new protein.',spots:['Eleven Madison Park','Dirt Candy','ABCV','Superiority Burger']},
+        {emoji:'🔥',trend:'Live Fire Everything',desc:'Open-flame cooking is the hottest technique in NYC. Wood-fired, charcoal-grilled, ember-roasted.',spots:['Frenchette','St. Anselm','Oriana']},
+        {emoji:'🥟',trend:'Asian Fusion 2.0',desc:'Korean, Filipino, and Japanese influences are everywhere -- not fusion, but respectful cross-pollination.',spots:['Kasama','Dhamaka','Bonnie\\'s','COTE']},
+      ],
+      'Dallas':[
+        {emoji:'🍖',trend:'BBQ Goes Upscale',desc:'Terry Black\\'s brought Austin energy. New wave BBQ combines craft cocktails with prime brisket.',spots:['Terry Black\\'s','Pecan Lodge','Cattleack','Goldee\\'s']},
+        {emoji:'🌮',trend:'Interior Mexican Surge',desc:'Beyond Tex-Mex: Oaxacan moles, Yucatan cochinita, Mexico City street food.',spots:['Xochi','Sueno','Resident Taqueria']},
+        {emoji:'🍸',trend:'Cocktail Bar Boom',desc:'Dallas cocktail scene rivals NYC. Speakeasies, mezcal bars, and Japanese-style bars.',spots:['Midnight Rambler','Tiny Victories','Saint Valentine','Clifton Club']},
+        {emoji:'🏗️',trend:'Design District Dining',desc:'Former warehouses becoming chef-driven restaurants. The hottest new restaurant corridor in Texas.',spots:['The Charles','Bar Charles','AM/FM','Bullion']},
+      ],
+      'default':[{emoji:'🌍',trend:'Global Flavors',desc:'Cuisines from every continent converging in American cities.',spots:[]}],
+    };
+    const trends = DINING_TRENDS[city] || DINING_TRENDS['default'];
+
+    m.innerHTML = '<div style="position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:2000;display:flex;align-items:flex-end" onclick="if(event.target===this)this.style.display=\\'none\\'">'+
+      '<div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:90vh;overflow-y:auto;padding:20px 16px 40px">'+
+        '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">'+
+          '<div style="font-size:18px;font-weight:800;color:#e06b3c">🔥 '+city+' Dining Trends</div>'+
+          '<button onclick="document.getElementById(\\'event-detail-modal\\').style.display=\\'none\\'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>'+
+        '</div>'+
+        trends.map(t=>{
+          const spotLinks = (t.spots||[]).map(s=>{
+            const match=restaurants.find(r=>r.name===s||r.name.includes(s)||s.includes(r.name));
+            return match?'<span onclick="event.stopPropagation();A.openDetail('+match.id+');document.getElementById(\\'event-detail-modal\\').style.display=\\'none\\'" style="font-size:10px;background:rgba(201,168,76,.08);color:var(--gold);padding:3px 9px;border-radius:12px;border:1px solid rgba(201,168,76,.2);cursor:pointer;font-weight:600">'+s+' →</span>':'<span style="font-size:10px;background:var(--card2);color:var(--text3);padding:3px 8px;border-radius:12px;border:1px solid var(--border)">'+s+'</span>';
+          }).join('');
+          return '<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;overflow:hidden;margin-bottom:10px">'+
+            '<div style="background:linear-gradient(135deg,rgba(224,107,60,.07),rgba(224,107,60,.02));padding:12px;border-bottom:1px solid var(--border)">'+
+              '<div style="display:flex;align-items:center;gap:10px">'+
+                '<span style="font-size:24px">'+t.emoji+'</span>'+
+                '<div style="font-size:14px;font-weight:800;color:var(--text)">'+t.trend+'</div>'+
+                '<span style="margin-left:auto;font-size:9px;font-weight:800;color:var(--gold);background:rgba(201,168,76,.12);padding:2px 8px;border-radius:6px;border:1px solid rgba(201,168,76,.25)">TRENDING</span>'+
+              '</div>'+
+            '</div>'+
+            '<div style="padding:10px 12px">'+
+              '<div style="font-size:11px;color:var(--text2);line-height:1.6;margin-bottom:'+(spotLinks?'8px':'0')+'">'+t.desc+'</div>'+
+              (spotLinks?'<div style="display:flex;flex-wrap:wrap;gap:4px">'+spotLinks+'</div>':'')+
+            '</div>'+
+          '</div>';
+        }).join('')+
+      '</div></div>';
+    m.style.display='block';
+  },
+
+  openNightlifeHood(hood){
+    const restaurants = this.getRestaurants();
+    const nightlifeSpots = restaurants.filter(r=>{
+      if(!r.neighborhood || !r.neighborhood.toLowerCase().includes(hood.toLowerCase().split(' ')[0])) return false;
+      return (r.tags||[]).some(t=>/cocktail|bar|late night|rooftop|club|jazz|live music|comedy|dive/i.test(t)) || (r.cuisine||'').toLowerCase().match(/bar|cocktail|club|jazz|comedy|live music|wine|brewery|tiki/);
+    }).sort((a,b)=>b.score-a.score);
+
+    const hoodTips = {
+      'Meatpacking District':'The scene peaks Thu-Sat after 11 PM. Le Bain at The Standard is the anchor. Dress up -- door policies are real. Catch rooftop for dinner then Le Bain or Marquee for dancing.',
+      'Lower East Side':'The best dive-to-cocktail ratio in the city. Start at Welcome to the Johnsons (dive), graduate to Attaboy (cocktail), end at Beauty & Essex (speakeasy). Rivington and Ludlow are the main drags.',
+      'Williamsburg':'Rooftops in summer (Westlight, Bar Blondeau), warehouses for parties (Elsewhere, Brooklyn Mirage). Bedford Ave for the crawl. The vibe is dressed down -- leave the heels at home.',
+      'West Village':'Jazz capital of America. Village Vanguard and Blue Note are legendary. Cocktails at Katana Kitten or Employees Only. The streets are beautiful at night. Most intimate nightlife neighborhood.',
+      'East Village':'The most packed square mile of bars in NYC. St. Marks Place is the tourist strip -- go one block north or south for the real spots. Sake bars, dive bars, and late-night ramen. Death & Co started a revolution here.',
+      'Bushwick':'Warehouse parties and DIY venues. House of Yes requires costumes for many events. Elsewhere has the best sound system in Brooklyn. The scene starts late -- nothing happens before midnight.'
+    };
+
+    const m = document.getElementById('event-detail-modal');
+    if(!m) return;
+    m.innerHTML = `
+      <div style="position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:2000;display:flex;align-items:flex-end" onclick="if(event.target===this)this.style.display='none'">
+        <div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:85vh;overflow-y:auto;padding:20px 16px 40px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+            <div>
+              <div style="font-size:18px;font-weight:800;color:#b09ec9">🪩 ${hood} Nightlife</div>
+              <div style="font-size:11px;color:var(--text3);margin-top:2px">${nightlifeSpots.length} spots in our guide</div>
+            </div>
+            <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
+          </div>
+
+          ${hoodTips[hood]?`<div style="background:linear-gradient(135deg,rgba(180,58,180,.08),rgba(100,20,120,.04));border:1px solid rgba(176,158,201,.2);border-radius:10px;padding:12px;margin-bottom:14px">
+            <div style="font-size:11px;font-weight:700;color:#b09ec9;margin-bottom:4px">💡 Insider Guide</div>
+            <div style="font-size:11px;color:var(--text2);line-height:1.6">${hoodTips[hood]}</div>
+          </div>`:''}
+
+          ${nightlifeSpots.length ? nightlifeSpots.map(r=>`
+            <div onclick="A.openDetail(${r.id});document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;margin-bottom:8px;cursor:pointer;display:flex;align-items:center;gap:12px">
+              <div style="font-size:16px;font-weight:800;color:var(--gold);flex-shrink:0;min-width:32px;text-align:center">${r.score}</div>
+              <div style="flex:1;min-width:0">
+                <div style="font-size:13px;font-weight:700;color:var(--text)">${r.name}</div>
+                <div style="font-size:10px;color:var(--text3)">${r.cuisine}${r.hh?' · 🍸 Happy Hour':''}</div>
+                ${r.dishes?`<div style="font-size:10px;color:var(--text2);margin-top:2px">Try: ${r.dishes.slice(0,2).join(', ')}</div>`:''}
+              </div>
+            </div>`).join('') : '<div style="padding:20px;text-align:center;font-size:12px;color:var(--text3)">No nightlife spots in our guide for this neighborhood yet</div>'}
+        </div>
+      </div>`;
+    m.style.display='block';
+  },
+
   openNightlifeGuide(){
     const m = document.getElementById('event-detail-modal');
     if(!m) return;
@@ -7075,6 +7207,8 @@ const A = {
     const diveBars = restaurants.filter(r=>(r.indicators||[]).includes('dive-bar')||(r.tags||[]).some(t=>/dive/i.test(t))).sort((a,b)=>b.score-a.score).slice(0,6);
     const jazz = restaurants.filter(r=>(r.cuisine||'').toLowerCase().includes('jazz')||(r.tags||[]).some(t=>/jazz/i.test(t))).sort((a,b)=>b.score-a.score).slice(0,6);
     const liveMusic = restaurants.filter(r=>(r.cuisine||'').toLowerCase().includes('live music')||(r.tags||[]).some(t=>/live music/i.test(t))).sort((a,b)=>b.score-a.score).slice(0,6);
+    const comedy = restaurants.filter(r=>(r.cuisine||'').toLowerCase().includes('comedy')||(r.tags||[]).some(t=>/comedy/i.test(t))).sort((a,b)=>b.score-a.score).slice(0,6);
+    const speakeasy = restaurants.filter(r=>(r.tags||[]).some(t=>/speakeasy|hidden|exclusive/i.test(t))&&(r.tags||[]).some(t=>/cocktail|bar/i.test(t))).sort((a,b)=>b.score-a.score).slice(0,6);
 
     const cardRow = (spots, emoji) => spots.map(r=>
       '<div onclick="A.openDetail('+r.id+');document.getElementById(\'event-detail-modal\').style.display=\'none\'" style="flex-shrink:0;background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px 12px;cursor:pointer;min-width:140px;max-width:160px">'+
@@ -7086,12 +7220,12 @@ const A = {
     const nycNeighborhoods = city === 'New York' ? '<div style="margin-bottom:16px">'+
       '<div style="font-size:14px;font-weight:800;color:var(--text);margin-bottom:8px">📍 Nightlife Neighborhoods</div>'+
       '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">'+
-        '<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px"><div style="font-size:12px;font-weight:700;color:var(--gold)">🪩 Meatpacking</div><div style="font-size:10px;color:var(--text3)">Clubs, rooftops, see-and-be-seen</div></div>'+
-        '<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px"><div style="font-size:12px;font-weight:700;color:var(--gold)">🎵 Lower East Side</div><div style="font-size:10px;color:var(--text3)">Dive bars, live music, cocktails</div></div>'+
-        '<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px"><div style="font-size:12px;font-weight:700;color:var(--gold)">🎨 Williamsburg</div><div style="font-size:10px;color:var(--text3)">Rooftops, warehouses, DJ sets</div></div>'+
-        '<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px"><div style="font-size:12px;font-weight:700;color:var(--gold)">🎺 West Village</div><div style="font-size:10px;color:var(--text3)">Jazz, cocktail bars, intimate</div></div>'+
-        '<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px"><div style="font-size:12px;font-weight:700;color:var(--gold)">🏙️ East Village</div><div style="font-size:10px;color:var(--text3)">Dive bars, sake bars, late night</div></div>'+
-        '<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px"><div style="font-size:12px;font-weight:700;color:var(--gold)">🌆 Bushwick</div><div style="font-size:10px;color:var(--text3)">Warehouse parties, House of Yes</div></div>'+
+        '<div onclick="A.openNightlifeHood(\\'Meatpacking District\\')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer"><div style="font-size:12px;font-weight:700;color:var(--gold)">🪩 Meatpacking</div><div style="font-size:10px;color:var(--text3)">Clubs, rooftops, see-and-be-seen</div></div>'+
+        '<div onclick="A.openNightlifeHood(\\'Lower East Side\\')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer"><div style="font-size:12px;font-weight:700;color:var(--gold)">🎵 Lower East Side</div><div style="font-size:10px;color:var(--text3)">Dive bars, live music, cocktails</div></div>'+
+        '<div onclick="A.openNightlifeHood(\\'Williamsburg\\')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer"><div style="font-size:12px;font-weight:700;color:var(--gold)">🎨 Williamsburg</div><div style="font-size:10px;color:var(--text3)">Rooftops, warehouses, DJ sets</div></div>'+
+        '<div onclick="A.openNightlifeHood(\\'West Village\\')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer"><div style="font-size:12px;font-weight:700;color:var(--gold)">🎺 West Village</div><div style="font-size:10px;color:var(--text3)">Jazz, cocktail bars, intimate</div></div>'+
+        '<div onclick="A.openNightlifeHood(\\'East Village\\')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer"><div style="font-size:12px;font-weight:700;color:var(--gold)">🏙️ East Village</div><div style="font-size:10px;color:var(--text3)">Dive bars, sake bars, late night</div></div>'+
+        '<div onclick="A.openNightlifeHood(\\'Bushwick\\')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer"><div style="font-size:12px;font-weight:700;color:var(--gold)">🌆 Bushwick</div><div style="font-size:10px;color:var(--text3)">Warehouse parties, House of Yes</div></div>'+
       '</div></div>' : '';
 
     m.innerHTML = '<div style="position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:2000;display:flex;align-items:flex-end" onclick="if(event.target===this)this.style.display=\'none\'">'+
@@ -7110,6 +7244,8 @@ const A = {
         (liveMusic.length?'<div style="margin-bottom:16px"><div style="font-size:14px;font-weight:800;color:var(--text);margin-bottom:8px">🎵 Live Music Venues</div><div style="display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px">'+cardRow(liveMusic,'🎵')+'</div></div>':'')+
         (lateNight.length?'<div style="margin-bottom:16px"><div style="font-size:14px;font-weight:800;color:var(--text);margin-bottom:8px">🌙 Late Night Eats</div><div style="display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px">'+cardRow(lateNight,'🌙')+'</div></div>':'')+
         (diveBars.length?'<div style="margin-bottom:16px"><div style="font-size:14px;font-weight:800;color:var(--text);margin-bottom:8px">🍺 Dive Bars</div><div style="display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px">'+cardRow(diveBars,'🍺')+'</div></div>':'')+
+        (comedy.length?'<div style="margin-bottom:16px"><div style="font-size:14px;font-weight:800;color:var(--text);margin-bottom:8px">😂 Comedy Clubs</div><div style="display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px">'+cardRow(comedy,'😂')+'</div></div>':'')+
+        (speakeasy.length?'<div style="margin-bottom:16px"><div style="font-size:14px;font-weight:800;color:var(--text);margin-bottom:8px">🔑 Speakeasies & Hidden Bars</div><div style="display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px">'+cardRow(speakeasy,'🔑')+'</div></div>':'')+
 
         '<div style="background:linear-gradient(135deg,rgba(180,58,180,.1),rgba(100,20,120,.05));border:1px solid rgba(176,158,201,.25);border-radius:12px;padding:14px;margin-top:8px">'+
           '<div style="font-size:13px;font-weight:700;color:#b09ec9;margin-bottom:6px">💡 Pro Tips</div>'+
@@ -7309,19 +7445,7 @@ const A = {
           </div>
         </div>
 
-        ${hasActivities ? `
-        <!-- NYC ACTIVITIES ROWS -->
-        <div class="discover-section">
-          <div class="discover-title">🗽 NYC Activities</div>
-          ${_landmarks.length?`<div style="margin-bottom:14px"><div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px">🏙 Landmarks & Experiences</div>${_actRow(_landmarks)}</div>`:''}
-          ${_rooftops.length?`<div style="margin-bottom:14px"><div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px">🌆 Best Rooftops</div>${_actRow(_rooftops)}</div>`:''}
-          ${_water.length?`<div style="margin-bottom:14px"><div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px">🚢 Water Tours & Sunset Cruises</div>${_actRow(_water)}</div>`:''}
-          ${_music.length?`<div style="margin-bottom:14px"><div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px">🎵 Live Music & Jazz</div>${_actRow(_music)}</div>`:''}
-          ${_clubs.length?`<div style="margin-bottom:14px"><div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px">🪩 Clubs & Nightlife</div>${_actRow(_clubs)}</div>`:''}
-          ${_comedy.length?`<div style="margin-bottom:14px"><div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px">😂 Comedy</div>${_actRow(_comedy)}</div>`:''}
-          ${_speakeasy.length?`<div style="margin-bottom:14px"><div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px">🔑 Speakeasies & Hidden Gems</div>${_actRow(_speakeasy)}</div>`:''}
-        </div>
-        ` : ''}
+        <!-- Activities moved to Nightlife Guide and Weekend Guides -->
 
         ${hasData ? `
         <!-- BEST OF -->
@@ -7337,12 +7461,7 @@ const A = {
           </div>
         </div>
 
-        <!-- TOP RATED -->
-        <div class="discover-section">
-          <div class="discover-title">⭐ Top Rated</div>
-          ${top5.map((r,i)=>forYouCard(r,`#${i+1} · Score ${r.score}`)).join('')}
-          <button onclick="A.tab('top50')" style="width:100%;margin-top:8px;padding:9px;border-radius:8px;background:var(--card2);border:1px solid var(--border);color:var(--gold);font-size:12px;font-weight:600">See Full Top 50 →</button>
-        </div>
+        <!-- Top Rated removed — use Top 50 tab instead -->
 
         ${dateNight.length?`
         <div class="discover-section">
@@ -7376,7 +7495,31 @@ const A = {
         </div>
         `}
 
-        <!-- CELEBRITY & ATHLETE HOTSPOTS (Multi-City) — always visible -->
+        <!-- CELEBRITY HOTSPOTS CARD -->
+        <div class="discover-section" style="margin-top:8px">
+          <div onclick="A.openCelebHotspots()" style="background:linear-gradient(145deg,rgba(201,168,76,.12),rgba(201,168,76,.04));border:2px solid var(--gold);border-radius:14px;padding:18px 16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;box-shadow:0 0 8px rgba(200,169,110,.15)">
+            <div>
+              <div style="font-size:16px;font-weight:800;color:var(--gold)">🌟 Celebrity & Athlete Hotspots</div>
+              <div style="font-size:12px;color:var(--text2);margin-top:3px">Where the famous eat · Power dining · Scene spots</div>
+            </div>
+            <div style="font-size:22px;color:var(--gold)">›</div>
+          </div>
+        </div>
+
+        <!-- DINING TRENDS CARD -->
+        <div class="discover-section" style="margin-top:8px">
+          <div onclick="A.openDiningTrends()" style="background:linear-gradient(145deg,rgba(224,107,60,.1),rgba(224,107,60,.03));border:2px solid #e06b3c;border-radius:14px;padding:18px 16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;box-shadow:0 0 8px rgba(224,107,60,.12)">
+            <div>
+              <div style="font-size:16px;font-weight:800;color:#e06b3c">🔥 Dining Trends</div>
+              <div style="font-size:12px;color:var(--text2);margin-top:3px">What's hot now · ${S.city} food scene · New movements</div>
+            </div>
+            <div style="font-size:22px;color:#e06b3c">›</div>
+          </div>
+        </div>
+
+        <!-- Old inline sections hidden — now open in modals -->
+        <div style="display:none">
+        <!-- CELEBRITY & ATHLETE HOTSPOTS (Multi-City) — hidden, opens in modal -->
         ${(()=>{
           const CELEB_DATA = {
             'Dallas':[
@@ -7468,6 +7611,8 @@ const A = {
               </div>
             </div>`).join('')}
         </div>
+
+        </div><!-- /hidden celeb+trends sections -->
 
         <!-- CITY EXPLORER -->
         <div class="discover-section">
