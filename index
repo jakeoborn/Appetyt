@@ -7419,7 +7419,27 @@ const A = {
           </div>
         </div>
 
-        <!-- Activities moved to Nightlife Guide and Weekend Guides -->
+        <!-- CELEBRITY HOTSPOTS CARD -->
+        <div class="discover-section" style="margin-top:8px">
+          <div onclick="A.openCelebHotspots()" style="background:linear-gradient(145deg,rgba(201,168,76,.12),rgba(201,168,76,.04));border:2px solid var(--gold);border-radius:14px;padding:18px 16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;box-shadow:0 0 8px rgba(200,169,110,.15)">
+            <div>
+              <div style="font-size:16px;font-weight:800;color:var(--gold)">🌟 Celebrity & Athlete Hotspots</div>
+              <div style="font-size:12px;color:var(--text2);margin-top:3px">Where the famous eat · Power dining · Scene spots</div>
+            </div>
+            <div style="font-size:22px;color:var(--gold)">›</div>
+          </div>
+        </div>
+
+        <!-- DINING TRENDS CARD -->
+        <div class="discover-section" style="margin-top:8px">
+          <div onclick="A.openDiningTrends()" style="background:linear-gradient(145deg,rgba(224,107,60,.1),rgba(224,107,60,.03));border:2px solid #e06b3c;border-radius:14px;padding:18px 16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;box-shadow:0 0 8px rgba(224,107,60,.12)">
+            <div>
+              <div style="font-size:16px;font-weight:800;color:#e06b3c">🔥 Dining Trends</div>
+              <div style="font-size:12px;color:var(--text2);margin-top:3px">What's hot now · ${S.city} food scene · New movements</div>
+            </div>
+            <div style="font-size:22px;color:#e06b3c">›</div>
+          </div>
+        </div>
 
         ${hasData ? `
         <!-- BEST OF -->
@@ -7468,28 +7488,6 @@ const A = {
           <div class="empty-desc">Full restaurant data is being curated for ${S.city}. Celebrity hotspots, events, and trends are available below.</div>
         </div>
         `}
-
-        <!-- CELEBRITY HOTSPOTS CARD -->
-        <div class="discover-section" style="margin-top:8px">
-          <div onclick="A.openCelebHotspots()" style="background:linear-gradient(145deg,rgba(201,168,76,.12),rgba(201,168,76,.04));border:2px solid var(--gold);border-radius:14px;padding:18px 16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;box-shadow:0 0 8px rgba(200,169,110,.15)">
-            <div>
-              <div style="font-size:16px;font-weight:800;color:var(--gold)">🌟 Celebrity & Athlete Hotspots</div>
-              <div style="font-size:12px;color:var(--text2);margin-top:3px">Where the famous eat · Power dining · Scene spots</div>
-            </div>
-            <div style="font-size:22px;color:var(--gold)">›</div>
-          </div>
-        </div>
-
-        <!-- DINING TRENDS CARD -->
-        <div class="discover-section" style="margin-top:8px">
-          <div onclick="A.openDiningTrends()" style="background:linear-gradient(145deg,rgba(224,107,60,.1),rgba(224,107,60,.03));border:2px solid #e06b3c;border-radius:14px;padding:18px 16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;box-shadow:0 0 8px rgba(224,107,60,.12)">
-            <div>
-              <div style="font-size:16px;font-weight:800;color:#e06b3c">🔥 Dining Trends</div>
-              <div style="font-size:12px;color:var(--text2);margin-top:3px">What's hot now · ${S.city} food scene · New movements</div>
-            </div>
-            <div style="font-size:22px;color:#e06b3c">›</div>
-          </div>
-        </div>
 
         <!-- Old inline sections hidden — now open in modals -->
         <div style="display:none">
