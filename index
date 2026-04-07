@@ -3916,7 +3916,8 @@ const CITY_COORDS = {
       weakness:'Inconsistent execution across concepts -- some feel more tourist-adjacent',
       restaurants:['Happiest Hour','Mercat Bistro','Saint Ann Restaurant & Bar','Te Deseo','Elephant East','Marie Gabrielle','Poco Fiasco','NDA Brasserie','Sassetta','Dolce Riviera','Tequila Social','Harwood Arms'],
       scoreBreakdown:{foodQuality:86,service:85,ambiance:94,value:80,consistency:82,innovation:88},
-    },
+      website:'https://www.harwoodhospitality.com',
+      instagram:'harwooddistrict'},
     'Vandelay Hospitality':{
       score:85,
       founded:2012,
@@ -3928,7 +3929,8 @@ const CITY_COORDS = {
       weakness:'Not chef-driven by design -- food is polished but rarely adventurous',
       restaurants:['Hudson House','Drake\'s Hollywood','Anchor Sushi Bar','Brentwood','D.L. Mack\'s','Jack & Harry\'s','Le Bistrot Bar Sardine','El Molino','Ten Ramen','Tei-An','Slider and Blues','East Hampton Sandwich Co.'],
       scoreBreakdown:{foodQuality:82,service:92,ambiance:87,value:85,consistency:90,innovation:72},
-    },
+      website:'https://www.vandelayhospitality.com',
+      instagram:'vandelayhospitality'},
     'Duro Hospitality':{
       score:92,
       founded:2018,
@@ -3940,7 +3942,8 @@ const CITY_COORDS = {
       weakness:'Small portfolio -- limited reach outside core audience',
       restaurants:['Mister Charles','El Carlos Elegante','Norman\'s Japanese Grill','The Charles','Sister','Café Duro'],
       scoreBreakdown:{foodQuality:95,service:88,ambiance:90,value:80,consistency:85,innovation:95},
-    },
+      website:'https://www.durohospitality.com',
+      instagram:'durohospitality'},
     'Travis Street Hospitality':{
       score:87,
       founded:2015,
@@ -3952,7 +3955,8 @@ const CITY_COORDS = {
       weakness:'Lower profile than peers -- flies under the radar',
       restaurants:['Le Bilboquet','Knox Bistro','Rose Café','Frenchie','Georgie'],
       scoreBreakdown:{foodQuality:90,service:87,ambiance:88,value:82,consistency:88,innovation:82},
-    },
+      website:'https://www.travisstreethospitality.com',
+      instagram:'travisstreethospitality'},
     'FB Society':{
       score:83,
       founded:2009,
@@ -3964,7 +3968,8 @@ const CITY_COORDS = {
       weakness:'Formulaic approach -- concepts feel similar in DNA',
       restaurants:['Haywire','The Ranch at Las Colinas','Mexican Sugar','Legacy Hall','Ida Claire','Sixty Vines','Whiskey Cake Kitchen & Bar','Son of a Butcher'],
       scoreBreakdown:{foodQuality:80,service:84,ambiance:83,value:88,consistency:87,innovation:68},
-    },
+      website:'https://www.fbsociety.com',
+      instagram:'fbsociety'},
     'Milkshake Concepts':{
       score:83,
       founded:2013,
@@ -3976,7 +3981,8 @@ const CITY_COORDS = {
       weakness:'Food can play second fiddle to the vibe',
       restaurants:['Vidorra','The Finch','Saaya','Serious Pizza Deep Ellum','Serious Sliders'],
       scoreBreakdown:{foodQuality:80,service:82,ambiance:90,value:81,consistency:79,innovation:86},
-    },
+      website:'https://www.milkshakeconcepts.com',
+      instagram:'milkshakeconcepts'},
     'Fox Restaurant Concepts':{
       score:83,
       founded:1998,
@@ -3988,7 +3994,8 @@ const CITY_COORDS = {
       weakness:'National chain feel -- lacks local Dallas character',
       restaurants:['Culinary Dropout','The Henry','Flower Child','Doughbird'],
       scoreBreakdown:{foodQuality:82,service:85,ambiance:84,value:81,consistency:87,innovation:74},
-    },
+      website:'https://www.foxrc.com',
+      instagram:'foxrestaurantconcepts'},
     'Major Food Group':{
       score:93,
       founded:2012,
@@ -4000,7 +4007,8 @@ const CITY_COORDS = {
       weakness:'Price point limits accessibility -- Carbone is a special occasion only',
       restaurants:['Carbone','Carbone Vino','Sadelle\'s'],
       scoreBreakdown:{foodQuality:95,service:91,ambiance:94,value:65,consistency:90,innovation:88},
-    },
+      website:'https://www.majorfoodgroup.com',
+      instagram:'majorfoodgroup'},
     'M Crowd Restaurant Group':{
       score:79,
       founded:1991,
@@ -4012,7 +4020,8 @@ const CITY_COORDS = {
       weakness:'Not innovating -- concepts have remained static for years',
       restaurants:['Mi Cocina','The Mercury'],
       scoreBreakdown:{foodQuality:78,service:80,ambiance:76,value:84,consistency:88,innovation:58},
-    },
+      website:'https://www.mcrowdrestaurantgroup.com',
+      instagram:'mcrowdrestaurants'},
 
     // NYC Hospitality Groups
     'Major Food Group':{
@@ -4030,7 +4039,8 @@ const CITY_COORDS = {
       weakness:'Some concepts have become so popular they feel institutional',
       restaurants:['Gramercy Tavern','The Modern','Manhatta','Daily Provisions','Ci Siamo'],
       scoreBreakdown:{foodQuality:92,service:98,ambiance:90,value:82,consistency:95,innovation:88},
-    },
+      website:'https://www.ushgnyc.com',
+      instagram:'ushgnyc'},
     'Keith McNally':{
       score:90,founded:1980,concepts:5,flagship:'Balthazar',michelinCount:0,
       description:'The king of NYC brasseries. Balthazar, Pastis, Minetta Tavern, and Morandi are cultural institutions -- more scene than restaurant, and that\'s exactly the point.',
@@ -4038,7 +4048,7 @@ const CITY_COORDS = {
       weakness:'Food is secondary to the scene -- you come for the energy, not innovation',
       restaurants:['Balthazar','Pastis','Minetta Tavern','Morandi','Le Rock'],
       scoreBreakdown:{foodQuality:86,service:85,ambiance:96,value:78,consistency:88,innovation:75},
-    },
+      instagram:'keithmcnally'},
     'Unapologetic Foods':{
       score:92,founded:2019,concepts:5,flagship:'Dhamaka',michelinCount:1,
       description:'The most exciting restaurant group in NYC right now. Chintan Pandya\'s Dhamaka, Semma, and Adda are redefining Indian cuisine in America with Michelin recognition.',
@@ -4046,7 +4056,8 @@ const CITY_COORDS = {
       weakness:'Can be very spicy -- not for the faint of heart',
       restaurants:['Dhamaka','Semma','Adda','Dhamaka Kitchen','Rowdy Rooster'],
       scoreBreakdown:{foodQuality:95,service:86,ambiance:85,value:88,consistency:87,innovation:97},
-    },
+      website:'https://www.unapologeticfoods.com',
+      instagram:'unapologeticfoods'},
     'Rita Sodi & Jody Williams':{
       score:91,founded:2014,concepts:4,flagship:'Via Carota',michelinCount:0,
       description:'The Italian queens of the West Village. Via Carota is the most impossible reservation in NYC. Every concept feels like a neighborhood in Florence transplanted to Greenwich Village.',
@@ -4062,7 +4073,8 @@ const CITY_COORDS = {
       weakness:'Some original concepts have lost their edge -- Kabawa is the fresh energy',
       restaurants:['Momofuku Noodle Bar','Momofuku Ssäm Bar','Kabawa','Bar Kabawa'],
       scoreBreakdown:{foodQuality:88,service:82,ambiance:83,value:78,consistency:80,innovation:95},
-    },
+      website:'https://www.momofuku.com',
+      instagram:'momofuku'},
     'NoHo Hospitality (Andrew Carmellini)':{
       score:88,founded:2010,concepts:5,flagship:'Locanda Verde',michelinCount:0,
       description:'Andrew Carmellini\'s downtown empire. Locanda Verde, The Dutch, and Café Carmellini deliver polished Italian-American cooking across Tribeca and SoHo.',
@@ -4070,7 +4082,8 @@ const CITY_COORDS = {
       weakness:'Can feel formulaic -- the group has a recognizable template',
       restaurants:['Locanda Verde','The Dutch','Lafayette','Café Carmellini'],
       scoreBreakdown:{foodQuality:87,service:87,ambiance:88,value:82,consistency:90,innovation:78},
-    },
+      website:'https://www.nohohospitality.com',
+      instagram:'nohohospitality'},
     'Quality Branded':{
       score:85,founded:2012,concepts:5,flagship:'Don Angie',michelinCount:0,
       description:'Behind Don Angie, Quality Meats, Quality Italian, and the new Bad Roman. The group excels at crowd-pleasing theatrical dining with strong cocktail programs.',
@@ -4078,7 +4091,8 @@ const CITY_COORDS = {
       weakness:'Can lean into spectacle over substance -- portions are generous though',
       restaurants:['Don Angie','Quality Meats','Quality Italian','Bad Roman'],
       scoreBreakdown:{foodQuality:84,service:86,ambiance:88,value:80,consistency:85,innovation:82},
-    },
+      website:'https://www.qualitybranded.com',
+      instagram:'qualitybranded'},
   
     'Tao Group Hospitality':{
       score:84,founded:2000,concepts:15,flagship:'Tao Downtown',michelinCount:0,
@@ -4087,7 +4101,8 @@ const CITY_COORDS = {
       weakness:'Spectacle over substance -- food is secondary to the experience at most venues',
       restaurants:['Tao Downtown','Lavo Italian Restaurant','Marquee New York','Beauty & Essex','Catch','Marquee Skydeck at Edge'],
       scoreBreakdown:{foodQuality:78,service:80,ambiance:92,value:70,consistency:82,innovation:76},
-    },
+      website:'https://www.taogroup.com',
+      instagram:'taogrouphospitality'},
     'Stephen Starr':{
       score:87,founded:1995,concepts:5,flagship:'Le Coucou',michelinCount:1,
       description:'Philly-born restaurateur who commands NYC fine dining with Le Coucou and Buddakan. Every concept is a visual spectacle with serious culinary chops behind it.',
@@ -4095,7 +4110,8 @@ const CITY_COORDS = {
       weakness:'Some concepts prioritize design over warmth',
       restaurants:['Le Coucou','Buddakan','Morimoto'],
       scoreBreakdown:{foodQuality:90,service:86,ambiance:95,value:75,consistency:87,innovation:85},
-    },
+      website:'https://www.starr-restaurants.com',
+      instagram:'starrrestaurants'},
     'Ignacio Mattos':{
       score:91,founded:2013,concepts:4,flagship:'Estela',michelinCount:1,
       description:'Uruguayan-born chef behind some of NYC\'s most critically acclaimed restaurants. Estela, Flora Bar, and Lodi are all must-visits for serious food lovers.',
@@ -4135,7 +4151,8 @@ const CITY_COORDS = {
       weakness:'Empire is so large some concepts feel less personal',
       restaurants:['Jean-Georges','ABCV','ABC Kitchen','The Mark'],
       scoreBreakdown:{foodQuality:92,service:90,ambiance:88,value:75,consistency:88,innovation:90},
-    },
+      website:'https://www.jean-georges.com',
+      instagram:'jgvongerichten'},
     'Simon Kim (COTE)':{
       score:89,founded:2017,concepts:3,flagship:'COTE Korean Steakhouse',michelinCount:1,
       description:'Korean-American restaurateur behind Michelin-starred COTE and the acclaimed Atoboy. Redefining Korean dining in America with precision and creativity.',
@@ -4143,7 +4160,8 @@ const CITY_COORDS = {
       weakness:'High price point -- COTE is a splurge',
       restaurants:['COTE Korean Steakhouse','Atoboy'],
       scoreBreakdown:{foodQuality:93,service:89,ambiance:91,value:72,consistency:90,innovation:92},
-    },
+      website:'https://www.cotekoreansteakhouse.com',
+      instagram:'cotenyc'},
     'Ellia & Junghyun Park (Atomix)':{
       score:94,founded:2016,concepts:2,flagship:'Atomix',michelinCount:2,
       description:'The most acclaimed Korean fine dining in America. Atomix (2 Michelin stars) is a 14-seat counter experience ranked among the World\'s 50 Best Restaurants.',
@@ -7600,28 +7618,9 @@ const A = {
 
         <!-- Top Rated removed — use Top 50 tab instead -->
 
-        ${dateNight.length?`
-        <div class="discover-section">
-          <div class="discover-title">💕 Date Night</div>
-          <div class="discover-cards">${dateNight.map(r=>miniCard(r,'💕')).join('')}</div>
-        </div>`:''}
+        <!-- Date Night, Happy Hour, Critics Pick removed — use Guide tab filters -->
 
-        ${hhSpots.length?`
-        <div class="discover-section">
-          <div class="discover-title">🍸 Happy Hour Right Now</div>
-          <div class="discover-cards">${hhSpots.map(r=>`
-            <div class="d-card" onclick="A.openDetail(${r.id})">
-              <div class="d-card-icon">🍸</div>
-              <div class="d-card-name">${r.name}</div>
-              <div class="d-card-sub">${r.hh}</div>
-            </div>`).join('')}</div>
-        </div>`:''}
-
-        ${critics.length?`
-        <div class="discover-section">
-          <div class="discover-title">📰 Critics Picks</div>
-          <div class="discover-cards">${critics.map(r=>miniCard(r,'📰')).join('')}</div>
-        </div>`:''}
+        <!-- Happy Hour and Critics Picks removed — use Guide tab filters -->
 
 
         ` : `
@@ -11779,6 +11778,7 @@ const A = {
               <div>
                 <div style="font-size:15px;font-weight:700;color:var(--text)">${name}</div>
                 <div style="font-size:11px;color:var(--text3)">${rests.length} concepts in ${S.city}</div>
+                ${(()=>{const gd=HOSPITALITY_GROUPS[name];return gd&&gd.website?'<a href="'+gd.website+'" target="_blank" style="font-size:10px;color:var(--gold);text-decoration:none;margin-top:3px;display:block">🌐 Website →</a>':'';})()}
               </div>
               <div style="text-align:center">
                 <div style="font-size:24px;font-weight:700;color:${color}">${avg}</div>
