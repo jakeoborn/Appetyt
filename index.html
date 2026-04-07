@@ -7229,7 +7229,61 @@ const A = {
     m.style.display='block';
   },
 
-    openNightlifeHood(hood){
+    openSeasonalDetail(season){
+    var m=document.getElementById('event-detail-modal');
+    if(!m)return;
+    var city=S.city||'New York';
+    var restaurants=this.getRestaurants();
+    var seasons={
+      spring:{emoji:'\ud83c\udf38',title:'Spring in '+city,subtitle:'Mar-May',
+        activities:['Cherry blossoms at Central Park and Riverside Park','Outdoor dining opens citywide','Smorgasburg returns (Williamsburg waterfront)','Governors Island ferry season starts','Rooftop bars reopen','Earth Day events and farmers markets'],
+        vibes:['patio','rooftop','brunch','outdoor'],
+        tip:'Book rooftop reservations early — everyone emerges from hibernation at once. Westlight and Bar Blondeau fill up fast.'},
+      summer:{emoji:'\u2600\ufe0f',title:'Summer in '+city,subtitle:'Jun-Aug',
+        activities:['SummerStage free concerts in Central Park','Governors Ball music festival','Rockaway Beach (A train to the ocean)','Free kayaking at Pier 26 (Hudson River)','Shakespeare in the Park (free tickets via lottery)','Bryant Park outdoor movie nights','Rooftop pools at The William Vale and 1 Hotel'],
+        vibes:['rooftop','late-night','patio','seafood'],
+        tip:'NYC is hot and humid Jun-Aug. Eat late, drink cold, and chase rooftops and AC. The best restaurants have outdoor seating.'},
+      fall:{emoji:'\ud83c\udf42',title:'Fall in '+city,subtitle:'Sep-Nov',
+        activities:['NYC Restaurant Week (prix fixe menus at top spots)','US Open tennis in Queens','Village Halloween Parade (Oct 31)','Hudson Valley foliage day trip','NYC Marathon (first Sunday in November)','Rockefeller Center tree lighting (late Nov)'],
+        vibes:['fine-dining','date-night','cocktails','italian'],
+        tip:'October is the best month to visit NYC — perfect weather, Restaurant Week deals, and the city is electric. Book ahead.'},
+      winter:{emoji:'\u2744\ufe0f',title:'Winter in '+city,subtitle:'Dec-Feb',
+        activities:['Holiday windows at Saks, Bergdorf, Bloomingdales','Bryant Park ice skating (free with skate rental!)','Union Square and Columbus Circle holiday markets','NY Botanical Garden Holiday Train Show','Broadway shows (best availability Jan-Feb)','Cozy cocktail bars and speakeasies'],
+        vibes:['cocktails','fine-dining','casual','bakery'],
+        tip:'January and February are the best months for reservations at hot restaurants — everyone is recovering from the holidays.'}
+    };
+    var s=seasons[season];
+    if(!s)return;
+    // Get restaurants matching this season's vibes
+    var vibeSpots=restaurants.filter(function(r){return(r.tags||[]).some(function(t){return s.vibes.some(function(v){return t.toLowerCase().includes(v)})})}).sort(function(a,b){return b.score-a.score}).slice(0,8);
+    var html='<div style="position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:2000;display:flex;align-items:flex-end" onclick="if(event.target===this)this.style.display=&apos;none&apos;">';
+    html+='<div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:90vh;overflow-y:auto;padding:20px 16px 40px">';
+    html+='<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px"><div><div style="font-size:18px;font-weight:800;color:var(--gold)">'+s.emoji+' '+s.title+'</div><div style="font-size:11px;color:var(--text3)">'+s.subtitle+'</div></div>';
+    html+='<button onclick="document.getElementById(&apos;event-detail-modal&apos;).style.display=&apos;none&apos;" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">\u2715</button></div>';
+    // Activities
+    html+='<div style="margin-bottom:16px"><div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:8px">\ud83c\udfaf Things to Do</div>';
+    s.activities.forEach(function(a){html+='<div style="display:flex;gap:8px;margin-bottom:6px;align-items:flex-start"><span style="color:var(--gold);font-size:10px;margin-top:2px">\u2022</span><span style="font-size:11px;color:var(--text2);line-height:1.5">'+a+'</span></div>';});
+    html+='</div>';
+    // Best spots for this season
+    if(vibeSpots.length){
+      html+='<div style="margin-bottom:16px"><div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:8px">\ud83c\udf7d\ufe0f Best Spots This Season</div>';
+      vibeSpots.forEach(function(r){
+        html+='<div onclick="A.openDetail('+r.id+');document.getElementById(&apos;event-detail-modal&apos;).style.display=&apos;none&apos;" style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px 12px;margin-bottom:6px;cursor:pointer;display:flex;align-items:center;gap:10px">';
+        html+='<div style="font-size:14px;font-weight:800;color:var(--gold);flex-shrink:0">'+r.score+'</div>';
+        html+='<div style="flex:1"><div style="font-size:12px;font-weight:700;color:var(--text)">'+r.name+'</div><div style="font-size:10px;color:var(--text3)">'+r.cuisine+' \u00b7 '+r.neighborhood+'</div></div>';
+        if(TRIPS.current) html+='<button onclick="event.stopPropagation();A.addGuideItemToDay(A._selectedDay||0,'+r.id+')" style="font-size:9px;background:rgba(62,184,168,.1);border:1px solid rgba(62,184,168,.2);color:#3eb8a8;padding:3px 8px;border-radius:6px;cursor:pointer;font-family:inherit;font-weight:700">+ Trip</button>';
+        html+='</div>';
+      });
+      html+='</div>';
+    }
+    // Insider tip
+    html+='<div style="background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.15);border-radius:10px;padding:12px"><div style="display:flex;gap:8px;align-items:flex-start"><span style="font-size:14px">\ud83d\udca1</span><div style="font-size:11px;color:var(--text2);line-height:1.6;font-style:italic">'+s.tip+'</div></div></div>';
+    html+='</div></div>';
+    m.innerHTML=html;
+    m.style.display='block';
+  },
+
+  openNightlifeHood(hood){
     const restaurants = this.getRestaurants();
     const nightlifeSpots = restaurants.filter(r=>{
       if(!r.neighborhood || !r.neighborhood.toLowerCase().includes(hood.toLowerCase().split(' ')[0])) return false;
@@ -7916,21 +7970,21 @@ const A = {
       <div style="margin-bottom:20px">
         <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">🗓️ Seasonal Picks</div>
         <div style="display:flex;flex-direction:column;gap:8px">
-          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px">
+          <div onclick="A.openSeasonalDetail('spring')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;cursor:pointer">
             <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px">🌸 Spring (Mar-May)</div>
-            <div style="font-size:11px;color:var(--text2);line-height:1.5">Cherry blossoms at Riverside Park · Outdoor dining opens citywide · Smorgasburg returns · Governors Island ferry starts · Rooftop season begins</div>
+            <div style="font-size:11px;color:var(--text2);line-height:1.5">Cherry blossoms · Outdoor dining opens · Smorgasburg returns · Rooftop season begins</div>
           </div>
-          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px">
+          <div onclick="A.openSeasonalDetail('summer')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;cursor:pointer">
             <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px">☀️ Summer (Jun-Aug)</div>
-            <div style="font-size:11px;color:var(--text2);line-height:1.5">SummerStage free concerts · Governors Ball · Rockaway Beach · Free kayaking Pier 26 · Rooftop pools · Shakespeare in the Park · Bryant Park movies</div>
+            <div style="font-size:11px;color:var(--text2);line-height:1.5">SummerStage concerts · Governors Ball · Rooftop pools · Shakespeare in the Park</div>
           </div>
-          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px">
+          <div onclick="A.openSeasonalDetail('fall')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;cursor:pointer">
             <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px">🍂 Fall (Sep-Nov)</div>
-            <div style="font-size:11px;color:var(--text2);line-height:1.5">NYC Restaurant Week · US Open · Village Halloween Parade · Hudson Valley foliage · NYC Marathon · Rockefeller tree lighting</div>
+            <div style="font-size:11px;color:var(--text2);line-height:1.5">Restaurant Week · US Open · Village Halloween · Hudson Valley foliage</div>
           </div>
-          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px">
+          <div onclick="A.openSeasonalDetail('winter')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;cursor:pointer">
             <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px">❄️ Winter (Dec-Feb)</div>
-            <div style="font-size:11px;color:var(--text2);line-height:1.5">Holiday windows at Saks & Bergdorf · Bryant Park ice skating (free!) · Holiday markets · NY Botanical Garden train show · Broadway · Cozy cocktail bars</div>
+            <div style="font-size:11px;color:var(--text2);line-height:1.5">Holiday windows · Bryant Park ice skating · Holiday markets · Cozy cocktail bars</div>
           </div>
         </div>
       </div>
@@ -8127,6 +8181,31 @@ const A = {
             {time:'10:00 AM',spot:'Brunch at Balthazar',id:1007,note:'SoHo brasserie — the quintessential NYC brunch'},
             {time:'3:00 PM',spot:'Joe\'s Pizza slice',id:1011,note:'The classic fold-and-walk experience'},
             {time:'5:00 PM',spot:'Sunset from Top of the Rock',id:1675,note:'Best view of the Empire State Building'}
+          ]}
+        ]},
+        {id:'nyc-sightseeing-food',creator:'Appetyt Guide',handle:'@appetyt',platform:'Appetyt',avatar:'🗽',title:'NYC Sightseeing + Food Weekend',subtitle:'See everything AND eat everything',days:[
+          {label:'Friday Night',emoji:'🌙',slots:[
+            {time:'4:00 PM',spot:'SUMMIT One Vanderbilt',id:1674,note:'Immersive art + observation deck. Book sunset tickets.'},
+            {time:'6:00 PM',spot:'Walk through Times Square',id:null,note:'See it at dusk when the lights blaze. TKTS for Broadway tickets.'},
+            {time:'7:30 PM',spot:'Dinner at Quality Italian',id:1690,note:'Midtown Italian with huge portions and the chicken parm for 2'},
+            {time:'10:00 PM',spot:'Broadway Show',id:null,note:'Hamilton, Wicked, Lion King — book ahead on Telecharge or TodayTix'}
+          ]},
+          {label:'Saturday',emoji:'☀️',slots:[
+            {time:'8:30 AM',spot:'Ferry to Statue of Liberty',id:null,note:'First ferry from Battery Park. Book pedestal access weeks ahead.'},
+            {time:'12:00 PM',spot:'Lunch in Chinatown',id:null,note:'Nom Wah for dim sum or Joe Shanghai for soup dumplings'},
+            {time:'2:00 PM',spot:'Walk Brooklyn Bridge to DUMBO',id:null,note:'1.1 miles. Best skyline views. End at Washington St photo spot.'},
+            {time:'3:30 PM',spot:'Ice cream at Brooklyn Ice Cream Factory',id:null,note:'Right under the bridge in DUMBO. Classic.'},
+            {time:'5:00 PM',spot:'9/11 Memorial (pools are free)',id:null,note:'Two reflecting pools. Powerful and essential. Museum needs tickets.'},
+            {time:'7:30 PM',spot:'Dinner at Balthazar',id:1007,note:'SoHo brasserie institution. Steak frites and raw bar.'},
+            {time:'10:00 PM',spot:'Cocktails at Employees Only',id:1363,note:'West Village speakeasy. Late night kitchen too.'}
+          ]},
+          {label:'Sunday',emoji:'🌅',slots:[
+            {time:'9:00 AM',spot:'Bagels at Russ & Daughters',id:1018,note:'Smoked fish since 1914. Get the Super Heebster.'},
+            {time:'11:00 AM',spot:'Central Park walk',id:null,note:'Enter at 72nd St. Bethesda Fountain, Bow Bridge, Strawberry Fields.'},
+            {time:'1:00 PM',spot:'MET Museum',id:null,note:'Pay what you wish. Egyptian Temple, European paintings, rooftop bar (summer).'},
+            {time:'3:30 PM',spot:'Walk The High Line',id:null,note:'Elevated park from Gansevoort to Hudson Yards. Art + architecture.'},
+            {time:'5:00 PM',spot:'Chelsea Market food crawl',id:null,note:'Los Tacos No. 1, Lobster Place, Li-Lac Chocolates'},
+            {time:'7:00 PM',spot:'Top of the Rock at sunset',id:1675,note:'Empire State Building in your photo. Book sunset time.'}
           ]}
         ]},
         {id:'nyc-instagram-eats',creator:'NYC Food Influencers',handle:'@nycfoodinfluencers',platform:'Instagram/TikTok',avatar:'📱',title:'The Viral NYC Food Weekend',subtitle:'Every spot TikTok and Instagram are obsessed with',days:[
