@@ -2393,19 +2393,19 @@ const TRIPS = {
     <div style="margin-bottom:14px">
       <div style="font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">🔗 Link to Reservation</div>
       <div style="display:flex;gap:7px">
-        <button onclick="A.billLinkResy()" style="flex:1;padding:10px 8px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:11px;color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .2s" onmouseenter="this.style.borderColor='rgba(200,169,110,.3)'" onmouseleave="this.style.borderColor='var(--border)'">
+        <button onclick="A.billLinkResy()" style="flex:1;padding:10px 8px;background:rgba(255,255,255,.03);border:1.5px solid var(--gold);border-radius:11px;color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .2s" onmouseenter="this.style.borderColor='rgba(200,169,110,.3)'" onmouseleave="this.style.borderColor='var(--border)'">
           <span style="font-size:20px">📅</span>
           <span>Resy</span>
         </button>
-        <button onclick="A.billLinkOpenTable()" style="flex:1;padding:10px 8px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:11px;color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .2s" onmouseenter="this.style.borderColor='rgba(200,169,110,.3)'" onmouseleave="this.style.borderColor='var(--border)'">
+        <button onclick="A.billLinkOpenTable()" style="flex:1;padding:10px 8px;background:rgba(255,255,255,.03);border:1.5px solid var(--gold);border-radius:11px;color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .2s" onmouseenter="this.style.borderColor='rgba(200,169,110,.3)'" onmouseleave="this.style.borderColor='var(--border)'">
           <span style="font-size:20px">🍽️</span>
           <span>OpenTable</span>
         </button>
-        <button onclick="A.billLinkEmail()" style="flex:1;padding:10px 8px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:11px;color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .2s" onmouseenter="this.style.borderColor='rgba(200,169,110,.3)'" onmouseleave="this.style.borderColor='var(--border)'">
+        <button onclick="A.billLinkEmail()" style="flex:1;padding:10px 8px;background:rgba(255,255,255,.03);border:1.5px solid var(--gold);border-radius:11px;color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .2s" onmouseenter="this.style.borderColor='rgba(200,169,110,.3)'" onmouseleave="this.style.borderColor='var(--border)'">
           <span style="font-size:20px">📧</span>
           <span>Email</span>
         </button>
-        <button onclick="A.billLinkManual()" style="flex:1;padding:10px 8px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:11px;color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .2s" onmouseenter="this.style.borderColor='rgba(200,169,110,.3)'" onmouseleave="this.style.borderColor='var(--border)'">
+        <button onclick="A.billLinkManual()" style="flex:1;padding:10px 8px;background:rgba(255,255,255,.03);border:1.5px solid var(--gold);border-radius:11px;color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation;display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .2s" onmouseenter="this.style.borderColor='rgba(200,169,110,.3)'" onmouseleave="this.style.borderColor='var(--border)'">
           <span style="font-size:20px">🔗</span>
           <span>Paste URL</span>
         </button>
@@ -4773,7 +4773,7 @@ const A = {
     // Render results as clickable cards
     if(recs.length){
       resultEl.innerHTML=(label?'<div style="font-size:10px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">'+label+'</div>':'')+
-        recs.map(r=>'<div onclick="A.openDetail('+r.id+')" style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:10px;cursor:pointer;margin-bottom:6px;touch-action:manipulation">'+
+        recs.map(r=>'<div onclick="A.openDetail('+r.id+')" style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--card);border:1.5px solid var(--gold);border-radius:10px;cursor:pointer;margin-bottom:6px;touch-action:manipulation">'+
           '<div style="min-width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,rgba(201,168,76,.2),rgba(201,168,76,.05));display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--gold)">'+r.score+'</div>'+
           '<div style="flex:1;min-width:0"><div style="font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+r.name+'</div>'+
           '<div style="font-size:11px;color:var(--text3)">'+r.cuisine+' · '+r.neighborhood+' · '+'$'.repeat(r.price||2)+(r.hh?' · 🍸 HH':'')+'</div></div></div>').join('');
@@ -5599,7 +5599,7 @@ const A = {
     if(matches.length){
       html += '<div style="font-size:12px;font-weight:700;color:var(--gold);margin-bottom:8px">Results for "'+q+'" in '+S.city+'</div>';
       html += matches.map(r=>
-        '<div onclick="A.openDetail('+r.id+')" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--card);border:1px solid var(--border);border-radius:10px;cursor:pointer;margin-bottom:5px">'+
+        '<div onclick="A.openDetail('+r.id+')" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--card);border:1.5px solid var(--gold);border-radius:10px;cursor:pointer;margin-bottom:5px">'+
         '<div style="font-size:14px;font-weight:800;color:var(--gold);flex-shrink:0">'+r.score+'</div>'+
         '<div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:700;color:var(--text)">'+r.name+'</div>'+
         '<div style="font-size:10px;color:var(--text3)">'+r.cuisine+' · '+r.neighborhood+' · '+'$'.repeat(r.price||1)+'</div>'+
@@ -5650,7 +5650,7 @@ const A = {
                 <div style="font-size:11px;color:var(--text3);margin-top:4px">📍 ${ev.venue||'Dallas, TX'}</div>
               </div>
               <button onclick="document.getElementById('event-detail-modal').style.display='none'"
-                style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:32px;height:32px;border-radius:50%;font-size:16px;flex-shrink:0;cursor:pointer">✕</button>
+                style="background:var(--card2);border:1.5px solid var(--gold);color:var(--text2);width:32px;height:32px;border-radius:50%;font-size:16px;flex-shrink:0;cursor:pointer">✕</button>
             </div>
             <div style="display:flex;gap:6px;flex-wrap:wrap">
               <span style="font-size:11px;background:var(--card2);color:var(--text2);padding:3px 9px;border-radius:8px;border:1px solid var(--border)">📅 ${ev.date}</span>
@@ -5855,7 +5855,7 @@ const A = {
             <div style="font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Top Rated</div>
             <div style="display:flex;flex-direction:column;gap:6px">${topR.map((r,i)=>{
               const sc=r.score;const color=sc>=90?'var(--green)':sc>=80?'var(--gold)':'var(--text2)';
-              return `<div onclick="A.openDetail(${r.id})" style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:10px;cursor:pointer;touch-action:manipulation">
+              return `<div onclick="A.openDetail(${r.id})" style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--card);border:1.5px solid var(--gold);border-radius:10px;cursor:pointer;touch-action:manipulation">
                 <div style="font-size:11px;color:var(--text3);font-weight:700;width:16px;text-align:center">${i+1}</div>
                 <div style="flex:1;min-width:0">
                   <div style="font-size:12px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${r.name}</div>
@@ -6036,7 +6036,7 @@ const A = {
           </div>
           <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
             <button onclick="A.selectCity('New York');A.tab('home')" style="background:var(--gold);color:var(--dark);font-weight:700;font-size:12px;padding:10px 20px;border-radius:10px;border:none;cursor:pointer;font-family:inherit">🍽 New York Guide</button>
-            <button onclick="A.tab('discover')" style="background:var(--card);color:var(--text2);font-size:12px;padding:10px 20px;border-radius:10px;border:1px solid var(--border);cursor:pointer;font-family:inherit">✨ Discover</button>
+            <button onclick="A.tab('discover')" style="background:var(--card);color:var(--text2);font-size:12px;padding:10px 20px;border-radius:10px;border:1.5px solid var(--gold);cursor:pointer;font-family:inherit">✨ Discover</button>
           </div>
         </div>`;
       } else {
@@ -6121,7 +6121,7 @@ const A = {
     html+=`</div>`;
 
     if(remaining.length){
-      html+=`<button id="expand-results-btn" onclick="A.expandResults()" style="width:100%;padding:12px;margin:4px 0;background:var(--card2);border:1px solid var(--border);border-radius:12px;color:var(--gold);font-size:13px;font-weight:700;cursor:pointer">▼ Show all ${remaining.length} more</button>`;
+      html+=`<button id="expand-results-btn" onclick="A.expandResults()" style="width:100%;padding:12px;margin:4px 0;background:var(--card2);border:1.5px solid var(--gold);border-radius:12px;color:var(--gold);font-size:13px;font-weight:700;cursor:pointer">▼ Show all ${remaining.length} more</button>`;
       html+=`<div id="expanded-results" style="display:none"></div>`;
       // Store remaining for deferred render (performance: don't generate 750+ cards upfront)
       window._expandRemaining = remaining;
@@ -6784,7 +6784,7 @@ const A = {
         +'<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">'
           +igLink
           +groupBadge
-          +'<button onclick="event.stopPropagation();A.toggleNotifyMe(\''+safeName+'\')" class="notify-me-btn'+(notified?' notified':'')+'" style="margin-left:auto;padding:4px 10px;font-size:10px;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text3);cursor:pointer;font-family:inherit">'+(notified?'\u2705 Notified':'\u{1F514} Notify Me')+'</button>'
+          +'<button onclick="event.stopPropagation();A.toggleNotifyMe(\''+safeName+'\')" class="notify-me-btn'+(notified?' notified':'')+'" style="margin-left:auto;padding:4px 10px;font-size:10px;border-radius:8px;border:1.5px solid var(--gold);background:var(--card2);color:var(--text3);cursor:pointer;font-family:inherit">'+(notified?'\u2705 Notified':'\u{1F514} Notify Me')+'</button>'
         +'</div>'
       +'</div>'
     +'</div>';
@@ -6804,7 +6804,7 @@ const A = {
         '<button onclick="A._actFilter=\'\';A.renderDiscover()" style="flex-shrink:0;padding:6px 12px;border-radius:8px;border:1px solid '+(!(this._actFilter)?'var(--gold)':'var(--border)')+';background:'+(!(this._actFilter)?'rgba(201,168,76,.12)':'var(--card)')+';color:'+(!(this._actFilter)?'var(--gold)':'var(--text3)')+';font-size:11px;font-weight:600;cursor:pointer;font-family:inherit">All</button>'+
       '</div>'+
       activities.filter(a=>!this._actFilter || a.category===this._actFilter).map(a=>
-        '<a href="'+a.url+'" target="_blank" style="display:block;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:13px;margin-bottom:8px;text-decoration:none;cursor:pointer" onmouseenter="this.style.borderColor=\'var(--gold)\'" onmouseleave="this.style.borderColor=\'var(--border)\'">'+
+        '<a href="'+a.url+'" target="_blank" style="display:block;background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:13px;margin-bottom:8px;text-decoration:none;cursor:pointer" onmouseenter="this.style.borderColor=\'var(--gold)\'" onmouseleave="this.style.borderColor=\'var(--border)\'">'+
           '<div style="display:flex;align-items:flex-start;gap:12px">'+
             '<div style="font-size:28px;flex-shrink:0">'+a.emoji+'</div>'+
             '<div style="flex:1;min-width:0">'+
@@ -7204,7 +7204,7 @@ const A = {
     const cityTrends = DINING_TRENDS[S.city] || DINING_TRENDS['default'];
 
     // Build activities rows for NYC
-    const _actMini=(r)=>`<div onclick="A.openDetail(${r.id})" style="flex-shrink:0;width:135px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer"><div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${r.name}</div><div style="font-size:10px;color:var(--text3);margin-bottom:2px">${r.neighborhood}</div><div style="font-size:10px;color:var(--gold);font-weight:600">${r.score}</div></div>`;
+    const _actMini=(r)=>`<div onclick="A.openDetail(${r.id})" style="flex-shrink:0;width:135px;background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer"><div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${r.name}</div><div style="font-size:10px;color:var(--text3);margin-bottom:2px">${r.neighborhood}</div><div style="font-size:10px;color:var(--gold);font-weight:600">${r.score}</div></div>`;
     const _actRow=(items)=>`<div style="display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:0 14px 4px;margin:0 -14px;-ms-overflow-style:none">${items.map(r=>_actMini(r)).join('')}</div>`;
     const _rooftops=hasData?restaurants.filter(r=>(r.tags||[]).includes('Rooftop')).sort((a,b)=>b.score-a.score).slice(0,8):[];
     const _water=hasData?restaurants.filter(r=>r.cuisine==='Entertainment'&&(r.description||'').toLowerCase().match(/cruise|kayak|sail|paddleboard|harbor cruise|ferry/)&&!(r.name||'').match(/Bridge|Statue|Staten Island Ferry|Governors Island|Little Island/)).slice(0,8):[];
@@ -7520,7 +7520,7 @@ const A = {
       <div style="margin-bottom:20px">
         <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">🎟️ Events in ${S.city}</div>
         ${cityEvents.map((ev,ei)=>`
-          <div onclick="A.openEventDetail(window._cityEventsCache[${ei}])" style="background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:8px;cursor:pointer">
+          <div onclick="A.openEventDetail(window._cityEventsCache[${ei}])" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;overflow:hidden;margin-bottom:8px;cursor:pointer">
             <div style="background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.02));padding:11px 12px 9px;border-bottom:1px solid var(--border)">
               <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px">
                 <div style="flex:1">
@@ -7543,22 +7543,22 @@ const A = {
         <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">🎯 Things to Do</div>
         <div style="font-size:11px;color:var(--text2);margin:-4px 0 12px">Beyond restaurants — the best NYC experiences</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-          <div onclick="A.openDetail(1671)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🏝</div><div style="font-size:12px;font-weight:700;color:var(--text)">Little Island</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Floating park on the Hudson</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Free · amphitheater · gardens</div></div>
-          <div onclick="A.openDetail(1674)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🌆</div><div style="font-size:12px;font-weight:700;color:var(--text)">SUMMIT One Vanderbilt</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Immersive sky experience</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Mirrored rooms · glass sky boxes</div></div>
-          <div onclick="A.openDetail(1680)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🌉</div><div style="font-size:12px;font-weight:700;color:var(--text)">Brooklyn Bridge Walk</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Iconic sunset walk</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Free · 1.1 miles · end in DUMBO</div></div>
-          <div onclick="A.openDetail(1685)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🗽</div><div style="font-size:12px;font-weight:700;color:var(--text)">Staten Island Ferry</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Best free activity in NYC</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Free · Statue of Liberty views</div></div>
-          <div onclick="A.openDetail(1673)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🏙</div><div style="font-size:12px;font-weight:700;color:var(--text)">Edge Observation Deck</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Highest outdoor deck in West</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Glass floor · champagne bar</div></div>
-          <div onclick="A.openDetail(1714)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🚲</div><div style="font-size:12px;font-weight:700;color:var(--text)">Governors Island</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Car-free island escape</div><div style="font-size:9px;color:var(--text3);margin-top:4px">$4 ferry · bikes · art · slides</div></div>
-          <div onclick="A.openDetail(1679)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🕯</div><div style="font-size:12px;font-weight:700;color:var(--text)">9/11 Memorial</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Moving memorial & museum</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Memorial free · museum $26</div></div>
-          <div onclick="A.openDetail(1642)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎭</div><div style="font-size:12px;font-weight:700;color:var(--text)">Sleep No More</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Immersive theater</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Masks · 100 rooms · 3 hours</div></div>
-          <div onclick="A.openDetail(1684)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎡</div><div style="font-size:12px;font-weight:700;color:var(--text)">Coney Island</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Boardwalk & rides</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Cyclone · Nathan's · beach</div></div>
-          <div onclick="A.openDetail(1641)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎨</div><div style="font-size:12px;font-weight:700;color:var(--text)">Meow Wolf</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Immersive art experience</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Surreal portals · interactive</div></div>
-          <div onclick="A.openDetail(1712)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🚣</div><div style="font-size:12px;font-weight:700;color:var(--text)">Free Kayaking</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Pier 26 on the Hudson</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Free · weekends · walk-up</div></div>
-          <div onclick="A.openDetail(1726)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎭</div><div style="font-size:12px;font-weight:700;color:var(--text)">Broadway</div><div style="font-size:10px;color:var(--gold);margin-top:2px">40+ theaters</div><div style="font-size:9px;color:var(--text3);margin-top:4px">TKTS booth · 50% off same-day</div></div>
+          <div onclick="A.openDetail(1671)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🏝</div><div style="font-size:12px;font-weight:700;color:var(--text)">Little Island</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Floating park on the Hudson</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Free · amphitheater · gardens</div></div>
+          <div onclick="A.openDetail(1674)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🌆</div><div style="font-size:12px;font-weight:700;color:var(--text)">SUMMIT One Vanderbilt</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Immersive sky experience</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Mirrored rooms · glass sky boxes</div></div>
+          <div onclick="A.openDetail(1680)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🌉</div><div style="font-size:12px;font-weight:700;color:var(--text)">Brooklyn Bridge Walk</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Iconic sunset walk</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Free · 1.1 miles · end in DUMBO</div></div>
+          <div onclick="A.openDetail(1685)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🗽</div><div style="font-size:12px;font-weight:700;color:var(--text)">Staten Island Ferry</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Best free activity in NYC</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Free · Statue of Liberty views</div></div>
+          <div onclick="A.openDetail(1673)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🏙</div><div style="font-size:12px;font-weight:700;color:var(--text)">Edge Observation Deck</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Highest outdoor deck in West</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Glass floor · champagne bar</div></div>
+          <div onclick="A.openDetail(1714)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🚲</div><div style="font-size:12px;font-weight:700;color:var(--text)">Governors Island</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Car-free island escape</div><div style="font-size:9px;color:var(--text3);margin-top:4px">$4 ferry · bikes · art · slides</div></div>
+          <div onclick="A.openDetail(1679)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🕯</div><div style="font-size:12px;font-weight:700;color:var(--text)">9/11 Memorial</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Moving memorial & museum</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Memorial free · museum $26</div></div>
+          <div onclick="A.openDetail(1642)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎭</div><div style="font-size:12px;font-weight:700;color:var(--text)">Sleep No More</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Immersive theater</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Masks · 100 rooms · 3 hours</div></div>
+          <div onclick="A.openDetail(1684)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎡</div><div style="font-size:12px;font-weight:700;color:var(--text)">Coney Island</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Boardwalk & rides</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Cyclone · Nathan's · beach</div></div>
+          <div onclick="A.openDetail(1641)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎨</div><div style="font-size:12px;font-weight:700;color:var(--text)">Meow Wolf</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Immersive art experience</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Surreal portals · interactive</div></div>
+          <div onclick="A.openDetail(1712)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🚣</div><div style="font-size:12px;font-weight:700;color:var(--text)">Free Kayaking</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Pier 26 on the Hudson</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Free · weekends · walk-up</div></div>
+          <div onclick="A.openDetail(1726)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎭</div><div style="font-size:12px;font-weight:700;color:var(--text)">Broadway</div><div style="font-size:10px;color:var(--gold);margin-top:2px">40+ theaters</div><div style="font-size:9px;color:var(--text3);margin-top:4px">TKTS booth · 50% off same-day</div></div>
         </div>
       
-          <div onclick="A.openDetail(1710)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">⛵</div><div style="font-size:12px;font-weight:700;color:var(--text)">Grand Banks</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Cocktails on a 1942 schooner</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Oysters · rose · Hudson River</div></div>
-          <div onclick="A.openDetail(1709)" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🚢</div><div style="font-size:12px;font-weight:700;color:var(--text)">Pilot Brooklyn</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Oyster bar on a 1924 boat</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Brooklyn Bridge Park · seasonal</div></div>
+          <div onclick="A.openDetail(1710)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">⛵</div><div style="font-size:12px;font-weight:700;color:var(--text)">Grand Banks</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Cocktails on a 1942 schooner</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Oysters · rose · Hudson River</div></div>
+          <div onclick="A.openDetail(1709)" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🚢</div><div style="font-size:12px;font-weight:700;color:var(--text)">Pilot Brooklyn</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Oyster bar on a 1924 boat</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Brooklyn Bridge Park · seasonal</div></div>
         </div>
 
       <!-- NEIGHBORHOOD SPOTLIGHT -->
@@ -7566,14 +7566,14 @@ const A = {
         <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">🏘️ Neighborhood Spotlight</div>
         <div style="font-size:11px;color:var(--text2);margin:-4px 0 12px">Where to eat, drink, and explore</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-          <div onclick="S.neighborhood='East Village';A.tab('home')" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎸</div><div style="font-size:12px;font-weight:700;color:var(--text)">East Village</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Punk meets Michelin</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Death & Co, Veselka, Momofuku</div></div>
-          <div onclick="S.neighborhood='West Village';A.tab('home')" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🌿</div><div style="font-size:12px;font-weight:700;color:var(--text)">West Village</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Cobblestones & date nights</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Via Carota, Dante, Buvette</div></div>
-          <div onclick="S.neighborhood='Williamsburg';A.tab('home')" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎨</div><div style="font-size:12px;font-weight:700;color:var(--text)">Williamsburg</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Brooklyn dining capital</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Peter Luger, Lilia, Smorgasburg</div></div>
-          <div onclick="S.neighborhood='Lower East Side';A.tab('home')" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎵</div><div style="font-size:12px;font-weight:700;color:var(--text)">Lower East Side</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Late night & speakeasies</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Attaboy, Beauty & Essex, Wildair</div></div>
-          <div onclick="S.neighborhood='SoHo';A.tab('home')" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">👗</div><div style="font-size:12px;font-weight:700;color:var(--text)">SoHo</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Brunch & shopping</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Balthazar, The Dutch, Charlie Bird</div></div>
-          <div onclick="S.neighborhood='Chinatown';A.tab('home')" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🥟</div><div style="font-size:12px;font-weight:700;color:var(--text)">Chinatown</div><div style="font-size:10px;color:var(--gold);margin-top:2px">$5 meals & hidden bars</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Nom Wah, Apotheke, Joe Shanghai</div></div>
-          <div onclick="S.neighborhood='Harlem';A.tab('home')" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎷</div><div style="font-size:12px;font-weight:700;color:var(--text)">Harlem</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Soul food & jazz</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Red Rooster, Melba, Sylvia</div></div>
-          <div onclick="S.neighborhood='Bronx';A.tab('home')" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🐻</div><div style="font-size:12px;font-weight:700;color:var(--text)">Bronx</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Real Little Italy</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Roberto, Mike Deli, Full Moon</div></div>
+          <div onclick="S.neighborhood='East Village';A.tab('home')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎸</div><div style="font-size:12px;font-weight:700;color:var(--text)">East Village</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Punk meets Michelin</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Death & Co, Veselka, Momofuku</div></div>
+          <div onclick="S.neighborhood='West Village';A.tab('home')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🌿</div><div style="font-size:12px;font-weight:700;color:var(--text)">West Village</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Cobblestones & date nights</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Via Carota, Dante, Buvette</div></div>
+          <div onclick="S.neighborhood='Williamsburg';A.tab('home')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎨</div><div style="font-size:12px;font-weight:700;color:var(--text)">Williamsburg</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Brooklyn dining capital</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Peter Luger, Lilia, Smorgasburg</div></div>
+          <div onclick="S.neighborhood='Lower East Side';A.tab('home')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎵</div><div style="font-size:12px;font-weight:700;color:var(--text)">Lower East Side</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Late night & speakeasies</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Attaboy, Beauty & Essex, Wildair</div></div>
+          <div onclick="S.neighborhood='SoHo';A.tab('home')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">👗</div><div style="font-size:12px;font-weight:700;color:var(--text)">SoHo</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Brunch & shopping</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Balthazar, The Dutch, Charlie Bird</div></div>
+          <div onclick="S.neighborhood='Chinatown';A.tab('home')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🥟</div><div style="font-size:12px;font-weight:700;color:var(--text)">Chinatown</div><div style="font-size:10px;color:var(--gold);margin-top:2px">$5 meals & hidden bars</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Nom Wah, Apotheke, Joe Shanghai</div></div>
+          <div onclick="S.neighborhood='Harlem';A.tab('home')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🎷</div><div style="font-size:12px;font-weight:700;color:var(--text)">Harlem</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Soul food & jazz</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Red Rooster, Melba, Sylvia</div></div>
+          <div onclick="S.neighborhood='Bronx';A.tab('home')" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px;cursor:pointer"><div style="font-size:16px;margin-bottom:4px">🐻</div><div style="font-size:12px;font-weight:700;color:var(--text)">Bronx</div><div style="font-size:10px;color:var(--gold);margin-top:2px">Real Little Italy</div><div style="font-size:9px;color:var(--text3);margin-top:4px">Roberto, Mike Deli, Full Moon</div></div>
         </div>
       </div>
 
@@ -7604,11 +7604,11 @@ const A = {
       <div style="margin-bottom:20px">
         <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:10px">🚗 Day Trips from NYC</div>
         <div style="display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:4px">
-          <div onclick="window.open('https://www.google.com/search?q=Hudson%20Valley%20NY%20day%20trip%20restaurants','_blank')" style="flex-shrink:0;width:160px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;cursor:pointer"><div style="font-size:24px;margin-bottom:6px">🍂</div><div style="font-size:13px;font-weight:700;color:var(--text)">Hudson Valley</div><div style="font-size:10px;color:var(--gold);margin-top:2px">1.5hr drive</div><div style="font-size:10px;color:var(--text3);margin-top:4px;line-height:1.4">DIA Beacon, farm-to-table, wineries</div></div>
-          <div onclick="window.open('https://www.google.com/search?q=Montauk%20NY%20restaurants%20things%20to%20do','_blank')" style="flex-shrink:0;width:160px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;cursor:pointer"><div style="font-size:24px;margin-bottom:6px">🏖️</div><div style="font-size:13px;font-weight:700;color:var(--text)">Montauk</div><div style="font-size:10px;color:var(--gold);margin-top:2px">2.5hr drive</div><div style="font-size:10px;color:var(--text3);margin-top:4px;line-height:1.4">Surf, lobster rolls, sunset</div></div>
-          <div onclick="window.open('https://www.google.com/search?q=New%20Haven%20CT%20pizza%20Frank%20Pepe%20Sally','_blank')" style="flex-shrink:0;width:160px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;cursor:pointer"><div style="font-size:24px;margin-bottom:6px">🍕</div><div style="font-size:13px;font-weight:700;color:var(--text)">New Haven</div><div style="font-size:10px;color:var(--gold);margin-top:2px">1.5hr drive</div><div style="font-size:10px;color:var(--text3);margin-top:4px;line-height:1.4">Pizza pilgrimage: Pepe vs Sally</div></div>
-          <div onclick="window.open('https://www.google.com/search?q=Philadelphia%20restaurants%20Zahav%20Reading%20Terminal','_blank')" style="flex-shrink:0;width:160px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;cursor:pointer"><div style="font-size:24px;margin-bottom:6px">🔔</div><div style="font-size:13px;font-weight:700;color:var(--text)">Philadelphia</div><div style="font-size:10px;color:var(--gold);margin-top:2px">2hr Amtrak</div><div style="font-size:10px;color:var(--text3);margin-top:4px;line-height:1.4">Zahav, Reading Terminal</div></div>
-          <div onclick="window.open('https://www.google.com/search?q=Catskills%20NY%20restaurants%20hiking%20Phoenicia','_blank')" style="flex-shrink:0;width:160px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;cursor:pointer"><div style="font-size:24px;margin-bottom:6px">🏕️</div><div style="font-size:13px;font-weight:700;color:var(--text)">Catskills</div><div style="font-size:10px;color:var(--gold);margin-top:2px">2hr drive</div><div style="font-size:10px;color:var(--text3);margin-top:4px;line-height:1.4">Hiking, Phoenicia Diner, cabins</div></div>
+          <div onclick="window.open('https://www.google.com/search?q=Hudson%20Valley%20NY%20day%20trip%20restaurants','_blank')" style="flex-shrink:0;width:160px;background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;cursor:pointer"><div style="font-size:24px;margin-bottom:6px">🍂</div><div style="font-size:13px;font-weight:700;color:var(--text)">Hudson Valley</div><div style="font-size:10px;color:var(--gold);margin-top:2px">1.5hr drive</div><div style="font-size:10px;color:var(--text3);margin-top:4px;line-height:1.4">DIA Beacon, farm-to-table, wineries</div></div>
+          <div onclick="window.open('https://www.google.com/search?q=Montauk%20NY%20restaurants%20things%20to%20do','_blank')" style="flex-shrink:0;width:160px;background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;cursor:pointer"><div style="font-size:24px;margin-bottom:6px">🏖️</div><div style="font-size:13px;font-weight:700;color:var(--text)">Montauk</div><div style="font-size:10px;color:var(--gold);margin-top:2px">2.5hr drive</div><div style="font-size:10px;color:var(--text3);margin-top:4px;line-height:1.4">Surf, lobster rolls, sunset</div></div>
+          <div onclick="window.open('https://www.google.com/search?q=New%20Haven%20CT%20pizza%20Frank%20Pepe%20Sally','_blank')" style="flex-shrink:0;width:160px;background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;cursor:pointer"><div style="font-size:24px;margin-bottom:6px">🍕</div><div style="font-size:13px;font-weight:700;color:var(--text)">New Haven</div><div style="font-size:10px;color:var(--gold);margin-top:2px">1.5hr drive</div><div style="font-size:10px;color:var(--text3);margin-top:4px;line-height:1.4">Pizza pilgrimage: Pepe vs Sally</div></div>
+          <div onclick="window.open('https://www.google.com/search?q=Philadelphia%20restaurants%20Zahav%20Reading%20Terminal','_blank')" style="flex-shrink:0;width:160px;background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;cursor:pointer"><div style="font-size:24px;margin-bottom:6px">🔔</div><div style="font-size:13px;font-weight:700;color:var(--text)">Philadelphia</div><div style="font-size:10px;color:var(--gold);margin-top:2px">2hr Amtrak</div><div style="font-size:10px;color:var(--text3);margin-top:4px;line-height:1.4">Zahav, Reading Terminal</div></div>
+          <div onclick="window.open('https://www.google.com/search?q=Catskills%20NY%20restaurants%20hiking%20Phoenicia','_blank')" style="flex-shrink:0;width:160px;background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;cursor:pointer"><div style="font-size:24px;margin-bottom:6px">🏕️</div><div style="font-size:13px;font-weight:700;color:var(--text)">Catskills</div><div style="font-size:10px;color:var(--gold);margin-top:2px">2hr drive</div><div style="font-size:10px;color:var(--text3);margin-top:4px;line-height:1.4">Hiking, Phoenicia Diner, cabins</div></div>
         </div>
       </div>
 
@@ -7927,7 +7927,7 @@ const A = {
                 <div style="font-size:11px;color:var(--text3);margin-top:2px">🤖 AI Travel Planner · ${country}</div>
               </div>
               <button onclick="document.getElementById('event-detail-modal').style.display='none'"
-                style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:32px;height:32px;border-radius:50%;font-size:16px;flex-shrink:0;cursor:pointer">✕</button>
+                style="background:var(--card2);border:1.5px solid var(--gold);color:var(--text2);width:32px;height:32px;border-radius:50%;font-size:16px;flex-shrink:0;cursor:pointer">✕</button>
             </div>
           </div>
           <div style="padding:14px 16px">
@@ -7943,7 +7943,7 @@ const A = {
               <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px">
                 ${['Best time to visit','Where to stay','Where to eat','Getting there','Skip the crowds','How many days'].map(q=>`
                   <button onclick="document.getElementById('ai-plan-q').value='${q} at ${siteName}';A.runAIPlan('${siteName}','${country}','${category}')"
-                    style="font-size:11px;background:var(--card2);border:1px solid var(--border);color:var(--text2);padding:5px 11px;border-radius:10px;cursor:pointer;font-family:inherit">${q}</button>`).join('')}
+                    style="font-size:11px;background:var(--card2);border:1.5px solid var(--gold);color:var(--text2);padding:5px 11px;border-radius:10px;cursor:pointer;font-family:inherit">${q}</button>`).join('')}
               </div>
               <div id="ai-plan-result" style="font-size:13px;color:var(--text2);line-height:1.7;min-height:80px">
                 <div style="color:var(--text3);font-size:12px">Tap a question or type your own to get an instant AI travel plan for ${siteName}.</div>
@@ -8008,7 +8008,7 @@ const A = {
                 <div style="font-size:18px;font-weight:700;color:var(--text);line-height:1.2">${s.place}</div>
               </div>
               <button onclick="document.getElementById('event-detail-modal').style.display='none'"
-                style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:32px;height:32px;border-radius:50%;font-size:16px;flex-shrink:0;cursor:pointer">✕</button>
+                style="background:var(--card2);border:1.5px solid var(--gold);color:var(--text2);width:32px;height:32px;border-radius:50%;font-size:16px;flex-shrink:0;cursor:pointer">✕</button>
             </div>
             <div style="font-size:12px;color:var(--text2);line-height:1.5">${s.note}</div>
           </div>
@@ -8227,9 +8227,9 @@ const A = {
       _aH+='</div>';
       // Action buttons
       _aH+='<div style="display:flex;gap:8px;margin-bottom:14px">'
-        +'<button class="r-btn'+(isFav?' on':'')+'" onclick="A.toggleList(&apos;favs&apos;,'+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1px solid var(--border);font-size:12px;cursor:pointer;font-family:inherit">\u2764\uFE0F '+(isFav?'Saved':'Save')+'</button>'
-        +'<button class="r-btn'+(isVisited?' on':'')+'" onclick="A.toggleList(&apos;visited&apos;,'+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1px solid var(--border);font-size:12px;cursor:pointer;font-family:inherit">\u2705 '+(isVisited?'Visited':'Been Here')+'</button>'
-        +'<button class="r-btn'+(isWant?' on':'')+'" onclick="A.toggleList(&apos;want&apos;,'+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1px solid var(--border);font-size:12px;cursor:pointer;font-family:inherit">\u{1F516} '+(isWant?'Saved':'Want to Go')+'</button>'
+        +'<button class="r-btn'+(isFav?' on':'')+'" onclick="A.toggleList(&apos;favs&apos;,'+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1.5px solid var(--gold);font-size:12px;cursor:pointer;font-family:inherit">\u2764\uFE0F '+(isFav?'Saved':'Save')+'</button>'
+        +'<button class="r-btn'+(isVisited?' on':'')+'" onclick="A.toggleList(&apos;visited&apos;,'+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1.5px solid var(--gold);font-size:12px;cursor:pointer;font-family:inherit">\u2705 '+(isVisited?'Visited':'Been Here')+'</button>'
+        +'<button class="r-btn'+(isWant?' on':'')+'" onclick="A.toggleList(&apos;want&apos;,'+id+',this)" style="flex:1;padding:10px;border-radius:10px;background:var(--card);border:1.5px solid var(--gold);font-size:12px;cursor:pointer;font-family:inherit">\u{1F516} '+(isWant?'Saved':'Want to Go')+'</button>'
         +'</div>';
       // Add to Trip button with day picker (if trip is active)
       if(TRIPS.current && TRIPS.itinerary.length>0){
@@ -8544,7 +8544,7 @@ const A = {
       listEl.style.display='none';
       resultsEl.innerHTML=`<div style="font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 0 8px">Quick Results</div>`+
         matches.map(city=>`
-          <div onclick="A.selectCity('${city}');A.closeCityPicker()" style="padding:10px 12px;background:var(--card2);border:1px solid var(--border);border-radius:10px;margin-bottom:6px;cursor:pointer;display:flex;align-items:center;justify-content:space-between">
+          <div onclick="A.selectCity('${city}');A.closeCityPicker()" style="padding:10px 12px;background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;margin-bottom:6px;cursor:pointer;display:flex;align-items:center;justify-content:space-between">
             <div>
               <div style="font-size:14px;font-weight:700;color:var(--text)">${city}</div>
               <div style="font-size:10px;color:var(--text3);margin-top:1px">${Object.entries(CITY_GROUPS).find(([g,cs])=>cs.includes(city))?.[0]||''}</div>
@@ -8581,7 +8581,7 @@ const A = {
         <div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:85vh;overflow-y:auto;padding:20px 16px 40px">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
             <div style="font-size:16px;font-weight:700;color:var(--gold)">Edit Profile</div>
-            <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
+            <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1.5px solid var(--gold);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
           </div>
 
           <!-- Avatar picker -->
@@ -9963,7 +9963,7 @@ const A = {
       </div>
       <div style="font-size:13px;font-weight:700;color:var(--text2);margin-bottom:10px">Top Rated</div>
       ${top5.map((r,i)=>`
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:8px;cursor:pointer" onclick="A.selectCity('${city}');A.openDetail(${r.id})">
+        <div style="background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:12px;margin-bottom:8px;cursor:pointer" onclick="A.selectCity('${city}');A.openDetail(${r.id})">
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px">
             <div>
               <div style="font-size:10px;color:var(--text3);font-weight:700;margin-bottom:2px">#${i+1}</div>
@@ -10027,7 +10027,7 @@ const A = {
             </div>
             <span class="tier-badge tier-${tier.name.toLowerCase()}" style="font-size:9px">${tier.icon} ${tier.name}</span>
           </div>
-          <div onclick="A.openDetail(${c.id})" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
+          <div onclick="A.openDetail(${c.id})" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:10px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
             <div style="display:flex;align-items:center;justify-content:space-between">
               <div>
                 <div style="font-size:14px;font-weight:700;color:var(--text)">${c.name}</div>
@@ -10183,7 +10183,7 @@ const A = {
       const isHH=r.hh&&this.isHHActive?.(r.hh,new Date().getHours()*60+new Date().getMinutes());
       const action=isHH?'has happy hour right now':actions[i%actions.length];
       const rankBadge=i<3?`<div style="width:22px;height:22px;border-radius:50%;background:${i===0?'var(--gold)':i===1?'rgba(201,168,76,.5)':'rgba(201,168,76,.25)'};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:${i===0?'var(--dark)':'var(--text)'};flex-shrink:0">${i+1}</div>`:`<div style="width:22px;text-align:center;font-size:12px;font-weight:700;color:var(--text3);flex-shrink:0">${i+1}</div>`;
-      return `<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin-bottom:10px;transition:border-color .2s;cursor:pointer" onclick="A.openDetail(${r.id})" onmouseover="this.style.borderColor='rgba(201,168,76,.3)'" onmouseout="this.style.borderColor='var(--border)'">
+      return `<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:14px;padding:14px 16px;margin-bottom:10px;transition:border-color .2s;cursor:pointer" onclick="A.openDetail(${r.id})" onmouseover="this.style.borderColor='rgba(201,168,76,.3)'" onmouseout="this.style.borderColor='var(--border)'">
         <div style="display:flex;align-items:center;gap:12px">
           ${rankBadge}
           <div style="flex:1;min-width:0">
@@ -10451,7 +10451,7 @@ const A = {
         </div>
 
         ${listRestaurants.length?listRestaurants.map((r,i)=>`
-          <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin-bottom:8px;display:flex;align-items:center;gap:12px;cursor:pointer" onclick="A.openDetail(${r.id})">
+          <div style="background:var(--card);border:1.5px solid var(--gold);border-radius:14px;padding:14px 16px;margin-bottom:8px;display:flex;align-items:center;gap:12px;cursor:pointer" onclick="A.openDetail(${r.id})">
             <div style="font-size:14px;font-weight:800;color:var(--text3);width:20px;text-align:center">${i+1}</div>
             <div style="flex:1;min-width:0">
               <div style="font-size:13.5px;font-weight:800;color:var(--text)">${r.name}</div>
@@ -10495,7 +10495,7 @@ const A = {
       </div>
       <input type="text" id="list-search-input" placeholder="Search restaurants..." oninput="A.filterListAddResults('${listId}')" style="width:100%;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;color:var(--text);font-size:13px;font-family:inherit;outline:none;box-sizing:border-box;margin-bottom:12px">
       <div id="list-add-results">${available.slice(0,20).map(r=>`
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:6px;display:flex;align-items:center;gap:10px;cursor:pointer" onclick="A.addRestaurantToList('${listId}',${r.id})">
+        <div style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px 14px;margin-bottom:6px;display:flex;align-items:center;gap:10px;cursor:pointer" onclick="A.addRestaurantToList('${listId}',${r.id})">
           <div style="flex:1;min-width:0">
             <div style="font-size:13px;font-weight:700;color:var(--text)">${r.name}</div>
             <div style="font-size:10.5px;color:var(--text3)">${r.cuisine} · ${r.neighborhood}</div>
@@ -10519,7 +10519,7 @@ const A = {
     if(!list) return;
     const available=restaurants.filter(r=>!list.ids.includes(r.id)&&(!q||r.name.toLowerCase().includes(q))).sort((a,b)=>b.score-a.score).slice(0,20);
     document.getElementById('list-add-results').innerHTML=available.map(r=>`
-      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:6px;display:flex;align-items:center;gap:10px;cursor:pointer" onclick="A.addRestaurantToList('${listId}',${r.id})">
+      <div style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px 14px;margin-bottom:6px;display:flex;align-items:center;gap:10px;cursor:pointer" onclick="A.addRestaurantToList('${listId}',${r.id})">
         <div style="flex:1;min-width:0">
           <div style="font-size:13px;font-weight:700;color:var(--text)">${r.name}</div>
           <div style="font-size:10.5px;color:var(--text3)">${r.cuisine} · ${r.neighborhood}</div>
@@ -10932,7 +10932,7 @@ const A = {
             </div>
             <div style="margin-bottom:8px">
               <div style="font-size:10px;color:var(--text3);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Districts</div>
-              <div style="display:flex;flex-wrap:wrap;gap:4px">${city.districts.map(d=>`<a href="https://www.google.com/search?q=${encodeURIComponent(d+' '+city.city+' nightlife bars')}" target="_blank" rel="noopener" style="font-size:11px;background:var(--card2);border:1px solid var(--border);padding:3px 9px;border-radius:12px;color:var(--blue);text-decoration:none;cursor:pointer">📍 ${d} ↗</a>`).join('')}</div>
+              <div style="display:flex;flex-wrap:wrap;gap:4px">${city.districts.map(d=>`<a href="https://www.google.com/search?q=${encodeURIComponent(d+' '+city.city+' nightlife bars')}" target="_blank" rel="noopener" style="font-size:11px;background:var(--card2);border:1.5px solid var(--gold);padding:3px 9px;border-radius:12px;color:var(--blue);text-decoration:none;cursor:pointer">📍 ${d} ↗</a>`).join('')}</div>
             </div>
             <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
               <div style="font-size:11px;color:var(--text2)">⏰ <b>Closes:</b> ${city.closingTime}</div>
@@ -12052,10 +12052,10 @@ const A = {
       <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:16px">
         <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Quick Pick by Vibe</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px">
-          <div onclick="A.openHotel((S.city||'Dallas')==='New York'?1:12)" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:9px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:16px;margin-bottom:2px">💍</div><div style="font-size:11px;font-weight:700;color:var(--text)">For a Proposal</div><div style="font-size:10px;color:var(--gold)">${(S.city||'Dallas')==='New York'?'Aman New York':'Hotel St. Germain'}</div></div>
-          <div onclick="A.openHotel((S.city||'Dallas')==='New York'?2:1)" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:9px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:16px;margin-bottom:2px">👑</div><div style="font-size:11px;font-weight:700;color:var(--text)">Best Overall</div><div style="font-size:10px;color:var(--gold)">${(S.city||'Dallas')==='New York'?'The Plaza':'Rosewood Mansion'}</div></div>
-          <div onclick="A.openHotel((S.city||'Dallas')==='New York'?8:5)" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:9px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:16px;margin-bottom:2px">🎨</div><div style="font-size:11px;font-weight:700;color:var(--text)">Cool Factor</div><div style="font-size:10px;color:var(--gold)">${(S.city||'Dallas')==='New York'?'The Bowery Hotel':'The Joule'}</div></div>
-          <div onclick="A.openHotel(13)" style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:9px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:16px;margin-bottom:2px">🌿</div><div style="font-size:11px;font-weight:700;color:var(--text)">Neighborhood Feel</div><div style="font-size:10px;color:var(--gold)">The Beeman</div></div>
+          <div onclick="A.openHotel((S.city||'Dallas')==='New York'?1:12)" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:9px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:16px;margin-bottom:2px">💍</div><div style="font-size:11px;font-weight:700;color:var(--text)">For a Proposal</div><div style="font-size:10px;color:var(--gold)">${(S.city||'Dallas')==='New York'?'Aman New York':'Hotel St. Germain'}</div></div>
+          <div onclick="A.openHotel((S.city||'Dallas')==='New York'?2:1)" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:9px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:16px;margin-bottom:2px">👑</div><div style="font-size:11px;font-weight:700;color:var(--text)">Best Overall</div><div style="font-size:10px;color:var(--gold)">${(S.city||'Dallas')==='New York'?'The Plaza':'Rosewood Mansion'}</div></div>
+          <div onclick="A.openHotel((S.city||'Dallas')==='New York'?8:5)" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:9px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:16px;margin-bottom:2px">🎨</div><div style="font-size:11px;font-weight:700;color:var(--text)">Cool Factor</div><div style="font-size:10px;color:var(--gold)">${(S.city||'Dallas')==='New York'?'The Bowery Hotel':'The Joule'}</div></div>
+          <div onclick="A.openHotel(13)" style="background:var(--card2);border:1.5px solid var(--gold);border-radius:10px;padding:9px;cursor:pointer;touch-action:manipulation;text-align:center"><div style="font-size:16px;margin-bottom:2px">🌿</div><div style="font-size:11px;font-weight:700;color:var(--text)">Neighborhood Feel</div><div style="font-size:10px;color:var(--gold)">The Beeman</div></div>
         </div>
       </div>`;
     tiers.forEach(tier => {
@@ -12207,7 +12207,7 @@ const A = {
     const parks = (typeof PARK_DATA!=='undefined' && PARK_DATA[(city).toLowerCase()]) || (typeof PARK_DATA!=='undefined' && PARK_DATA[(S.city||'Dallas').toLowerCase()]) || [];
     if(!parks.length) return '<div class="empty-state"><div class="empty-icon">🌳</div><div class="empty-title">No Park Guide Yet</div><div class="empty-desc">Coming soon for '+city+'</div></div>';
     const parkCard = (p) => `
-      <div onclick="A.openPark(${p.id})" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
+      <div onclick="A.openPark(${p.id})" style="background:var(--card);border:1.5px solid var(--gold);border-radius:14px;padding:14px;margin-bottom:12px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
         <div style="display:flex;align-items:flex-start;gap:10px">
           <div style="font-size:28px;flex-shrink:0">${p.emoji}</div>
           <div style="flex:1">
@@ -12262,7 +12262,7 @@ const A = {
     const museums = (typeof MUSEUM_DATA!=='undefined' && MUSEUM_DATA[(city).toLowerCase()]) || (typeof MUSEUM_DATA!=='undefined' && MUSEUM_DATA[(S.city||'Dallas').toLowerCase()]) || [];
     if(!museums.length) return '<div class="empty-state"><div class="empty-icon">🏛</div><div class="empty-title">No Museum Guide Yet</div><div class="empty-desc">Coming soon for '+city+'</div></div>';
     const museumCard = (m) => `
-      <div onclick="A.openMuseum(${m.id})" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
+      <div onclick="A.openMuseum(${m.id})" style="background:var(--card);border:1.5px solid var(--gold);border-radius:14px;padding:14px;margin-bottom:12px;cursor:pointer;touch-action:manipulation" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
         <div style="display:flex;align-items:flex-start;gap:10px">
           <div style="font-size:28px;flex-shrink:0">${m.emoji}</div>
           <div style="flex:1">
@@ -12532,7 +12532,7 @@ const A = {
           </div>
           <div style="display:flex;gap:8px;margin-bottom:12px">
             <button id="import-tab-text" onclick="A.switchImportTab('text')" style="flex:1;padding:8px;border-radius:8px;border:1px solid var(--gold);background:rgba(200,169,110,.15);color:var(--gold);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">📧 Paste Email</button>
-            <button id="import-tab-photo" onclick="A.switchImportTab('photo')" style="flex:1;padding:8px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">📸 Screenshot</button>
+            <button id="import-tab-photo" onclick="A.switchImportTab('photo')" style="flex:1;padding:8px;border-radius:8px;border:1.5px solid var(--gold);background:transparent;color:var(--text3);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">📸 Screenshot</button>
           </div>
           <div id="import-text-panel">
             <textarea id="email-paste-input" placeholder="Paste your confirmation email here...&#10;&#10;Example:&#10;Your reservation at Tatsu Dallas is confirmed.&#10;Date: Saturday, March 22, 2026&#10;Time: 7:45 PM · Party of 2&#10;Confirmation: TK-482991" style="width:100%;height:180px;background:var(--dark);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;outline:none;font-size:12px;line-height:1.6;resize:none;font-family:inherit"></textarea>
@@ -12988,7 +12988,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
       '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px">' +
       types.map(t =>
         '<button onclick="document.querySelectorAll(\'.td-type-btn\').forEach(b=>b.style.background=\'var(--card)\');this.style.background=\'rgba(200,169,110,.2)\';document.getElementById(\'td-type\').value=\''+t.value+'\'" '+
-        'class="td-type-btn" style="padding:6px 12px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);font-size:12px;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">'+t.label+'</button>'
+        'class="td-type-btn" style="padding:6px 12px;border:1.5px solid var(--gold);border-radius:8px;background:var(--card);color:var(--text);font-size:12px;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">'+t.label+'</button>'
       ).join('') +
       '<input type="hidden" id="td-type" value="flight"></div>' +
 
@@ -13012,7 +13012,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
       '<textarea id="td-notes" placeholder="Gate info, check-in details, special instructions..." style="width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:14px;font-family:inherit;outline:none;box-sizing:border-box;resize:none;height:70px"></textarea>' +
 
       '<div style="display:flex;gap:8px">' +
-      '<button onclick="document.getElementById(\'travel-detail-modal\').remove()" style="flex:1;padding:12px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text3);font-size:13px;cursor:pointer;font-family:var(--sans)">Cancel</button>' +
+      '<button onclick="document.getElementById(\'travel-detail-modal\').remove()" style="flex:1;padding:12px;background:var(--card);border:1.5px solid var(--gold);border-radius:10px;color:var(--text3);font-size:13px;cursor:pointer;font-family:var(--sans)">Cancel</button>' +
       '<button onclick="A.saveTravelDetail(\''+tripId+'\')" style="flex:2;padding:12px;background:var(--gold);border:none;border-radius:10px;color:var(--dark);font-size:13px;font-weight:700;cursor:pointer;touch-action:manipulation;font-family:var(--sans)">Save Detail</button>' +
       '</div>' +
       '</div>';
@@ -13300,7 +13300,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
           <div style="display:flex;gap:6px">
             <button onclick="A.tripAISuggestDay(${selectedDay})" style="flex:1;padding:10px;background:rgba(62,184,168,.06);border:1px solid rgba(62,184,168,.2);border-radius:10px;color:#3eb8a8;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🤖 AI Suggest</button>
             <button onclick="A.tripAddItemPrompt(${selectedDay})" style="flex:1;padding:10px;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);border-radius:10px;color:var(--gold);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">+ Add Item</button>
-            <button onclick="A.emailItinerary()" style="padding:10px 14px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text3);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">📧</button>
+            <button onclick="A.emailItinerary()" style="padding:10px 14px;background:var(--card);border:1.5px solid var(--gold);border-radius:10px;color:var(--text3);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">📧</button>
           </div>
         `}
       ` : ''}
@@ -13311,7 +13311,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
           <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:8px">What are you looking for?</div>
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
             ${[['🍽️ Dinner','dinner'],['🥂 Brunch','brunch'],['🍸 Drinks','drinks'],['☕ Coffee','coffee'],['🍕 Pizza','pizza'],['🎭 Activity','activity'],['🌆 Rooftop','rooftop'],['💕 Date Night','date-night']].map(([label,cat])=>
-              '<button onclick="A.tripFind(\''+cat+'\')" style="padding:8px 14px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">'+label+'</button>'
+              '<button onclick="A.tripFind(\''+cat+'\')" style="padding:8px 14px;background:var(--card);border:1.5px solid var(--gold);border-radius:10px;color:var(--text);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">'+label+'</button>'
             ).join('')}
           </div>
           <div style="display:flex;gap:6px;margin-bottom:10px">
@@ -13351,7 +13351,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
             ${members.map(m=>`<div style="background:var(--card);border:1px solid ${m.device_id===deviceId?'rgba(201,168,76,.3)':'var(--border)'};border-radius:10px;padding:6px 12px;display:flex;align-items:center;gap:6px"><span style="font-size:16px">${m.avatar_emoji||'👤'}</span><span style="font-size:11px;font-weight:700;color:${m.device_id===deviceId?'var(--gold)':'var(--text)'}">${m.nickname}${m.device_id===deviceId?' (you)':''}</span></div>`).join('')}
           </div>
           <div style="display:flex;gap:6px;margin-bottom:14px">
-            <button onclick="navigator.clipboard?.writeText('${trip.code}');A.showToast('Code copied!')" style="flex:1;background:none;border:1px solid var(--border);color:var(--text2);font-size:11px;font-weight:700;padding:9px;border-radius:10px;cursor:pointer;font-family:inherit">📋 Copy Code</button>
+            <button onclick="navigator.clipboard?.writeText('${trip.code}');A.showToast('Code copied!')" style="flex:1;background:none;border:1.5px solid var(--gold);color:var(--text2);font-size:11px;font-weight:700;padding:9px;border-radius:10px;cursor:pointer;font-family:inherit">📋 Copy Code</button>
             <button onclick="A.emailItinerary()" style="flex:1;background:var(--gold);color:var(--dark);font-size:11px;font-weight:800;padding:9px;border-radius:10px;border:none;cursor:pointer;font-family:inherit">📧 Email Plan</button>
           </div>
         </div>
@@ -13536,15 +13536,15 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         <div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:90vh;overflow-y:auto;padding:20px 16px 40px">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
             <div style="font-size:16px;font-weight:700;color:var(--gold)">+ Add to Day ${dayIndex+1}</div>
-            <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
+            <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1.5px solid var(--gold);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
           </div>
 
           <!-- Type filter buttons — filter search results -->
           <div style="display:flex;gap:6px;margin-bottom:14px;overflow-x:auto;scrollbar-width:none">
             <button id="add-type-restaurant" onclick="A._setAddType('restaurant')" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:2px solid var(--gold);background:rgba(201,168,76,.12);color:var(--gold);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🍽️ Restaurant</button>
-            <button id="add-type-bar" onclick="A._setAddType('bar')" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🍸 Bar / Cocktails</button>
-            <button id="add-type-activity" onclick="A._setAddType('activity')" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🎭 Activity</button>
-            <button id="add-type-hotel" onclick="A._setAddType('hotel')" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🏨 Hotel</button>
+            <button id="add-type-bar" onclick="A._setAddType('bar')" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1.5px solid var(--gold);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🍸 Bar / Cocktails</button>
+            <button id="add-type-activity" onclick="A._setAddType('activity')" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1.5px solid var(--gold);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🎭 Activity</button>
+            <button id="add-type-hotel" onclick="A._setAddType('hotel')" style="flex-shrink:0;padding:8px 14px;border-radius:10px;border:1.5px solid var(--gold);background:var(--card);color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">🏨 Hotel</button>
           </div>
 
           <!-- Search -->
@@ -13640,7 +13640,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
 
     const label = q ? 'Results for "'+q+'"' : (type==='bar'?'Top Bars & Cocktails':type==='activity'?'Top Activities & Entertainment':'Top Restaurants');
     el.innerHTML = (results.length ? '<div style="font-size:10px;font-weight:600;color:var(--text3);margin-bottom:6px">'+label+' ('+results.length+')</div>' : '') +
-      (results.length ? results.map(r=>`<div onclick="A.addGuideItemToDay(${dayIndex},${r.id})" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--card);border:1px solid var(--border);border-radius:10px;cursor:pointer;margin-bottom:5px">
+      (results.length ? results.map(r=>`<div onclick="A.addGuideItemToDay(${dayIndex},${r.id})" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--card);border:1.5px solid var(--gold);border-radius:10px;cursor:pointer;margin-bottom:5px">
         <div style="font-size:14px;font-weight:800;color:var(--gold);flex-shrink:0;min-width:28px;text-align:center">${r.score}</div>
         <div style="flex:1;min-width:0">
           <div style="font-size:12px;font-weight:700;color:var(--text)">${r.name}</div>
@@ -13770,7 +13770,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
       '<div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:80vh;overflow-y:auto;padding:20px 16px 40px">' +
         '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">' +
           '<div style="font-size:16px;font-weight:700;color:#3eb8a8">🤖 AI Suggestions for Day '+(dayIndex+1)+'</div>' +
-          '<button onclick="document.getElementById(\'event-detail-modal\').style.display=\'none\'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>' +
+          '<button onclick="document.getElementById(\'event-detail-modal\').style.display=\'none\'" style="background:var(--card2);border:1.5px solid var(--gold);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>' +
         '</div>' +
         '<div style="font-size:11px;color:var(--text3);margin-bottom:12px">Tap any suggestion to add it to your itinerary</div>' +
         suggestions.map((s,si) =>
@@ -14151,7 +14151,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
             <a href="https://wa.me/?text=${encoded}" target="_blank" style="display:block;text-align:center;background:rgba(37,211,102,.1);border:1px solid rgba(37,211,102,.3);color:#25D366;font-weight:700;font-size:11px;padding:10px 6px;border-radius:10px;text-decoration:none">
               WhatsApp
             </a>
-            <button onclick="navigator.clipboard?.writeText(${JSON.stringify(text)});A.showToast('Copied!')" style="background:var(--card);border:1px solid var(--border);color:var(--text);font-weight:700;font-size:11px;padding:10px 6px;border-radius:10px;cursor:pointer;font-family:inherit">
+            <button onclick="navigator.clipboard?.writeText(${JSON.stringify(text)});A.showToast('Copied!')" style="background:var(--card);border:1.5px solid var(--gold);color:var(--text);font-weight:700;font-size:11px;padding:10px 6px;border-radius:10px;cursor:pointer;font-family:inherit">
               📋 Copy
             </button>
           </div>
@@ -14163,7 +14163,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         <div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:90vh;overflow-y:auto;padding:20px 16px 40px">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
             <div style="font-size:16px;font-weight:700;color:var(--gold)">📤 Share Trip Plan</div>
-            <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
+            <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1.5px solid var(--gold);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
           </div>
 
           ${makeShareBtns(todaySummary, "📅 Today's Schedule")}
@@ -14247,7 +14247,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
           <div id="tb-split" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px">
             ${members.map(m=>`
               <button id="split-${m.device_id}" onclick="this.classList.toggle('split-active');this.style.borderColor=this.classList.contains('split-active')?'var(--gold)':'var(--border)';this.style.color=this.classList.contains('split-active')?'var(--gold)':'var(--text2)'"
-                style="font-size:11px;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:var(--card2);color:var(--text2);cursor:pointer;font-family:inherit" class="split-active">
+                style="font-size:11px;padding:5px 12px;border-radius:20px;border:1.5px solid var(--gold);background:var(--card2);color:var(--text2);cursor:pointer;font-family:inherit" class="split-active">
                 ${m.avatar_emoji||'👤'} ${m.nickname}
               </button>`).join('')}
           </div>
@@ -14271,7 +14271,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         <div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:90vh;overflow-y:auto;padding:20px 16px 40px">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
             <div style="font-size:16px;font-weight:700;color:var(--gold)">${catIcon[category]} Add ${catLabel[category]||'Item'}</div>
-            <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
+            <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1.5px solid var(--gold);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
           </div>
 
           <!-- Category selector -->
@@ -14351,7 +14351,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
         <div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:92vh;overflow-y:auto;padding:20px 16px 40px">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
             <div style="font-size:16px;font-weight:700;color:var(--gold)">📧 Paste Confirmation Email</div>
-            <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
+            <button onclick="document.getElementById('event-detail-modal').style.display='none'" style="background:var(--card2);border:1.5px solid var(--gold);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>
           </div>
           <div style="font-size:11px;color:var(--text3);margin-bottom:12px;line-height:1.5">Paste any booking confirmation -- hotel, flight, Airbnb, Resy, Viator, OpenTable -- and AI will extract all the details automatically.</div>
 
@@ -14655,7 +14655,7 @@ Return ONLY the JSON object, nothing else.`,
     el.innerHTML = `
       <!-- Header -->
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px">
-        <button onclick="A.renderTrips()" style="background:var(--card);border:1px solid var(--border);color:var(--text2);padding:8px 14px;border-radius:10px;font-size:13px;cursor:pointer;flex-shrink:0">← Back</button>
+        <button onclick="A.renderTrips()" style="background:var(--card);border:1.5px solid var(--gold);color:var(--text2);padding:8px 14px;border-radius:10px;font-size:13px;cursor:pointer;flex-shrink:0">← Back</button>
         <div style="flex:1;min-width:0">
           <div style="font-size:18px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${trip.name}</div>
           <div style="font-size:11px;color:var(--text3)">${trip.cities||''} ${trip.start_date?'· '+trip.start_date:''}</div>
@@ -14668,7 +14668,7 @@ Return ONLY the JSON object, nothing else.`,
         <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
           <div style="font-size:30px;font-weight:700;color:var(--gold);letter-spacing:5px">${trip.code}</div>
           <div style="display:flex;gap:6px">
-            <button onclick="navigator.clipboard?.writeText('${trip.code}');A.showToast('Code copied!')" style="background:var(--card);border:1px solid var(--border);color:var(--text2);padding:8px 12px;border-radius:8px;font-size:12px;cursor:pointer">📋 Copy</button>
+            <button onclick="navigator.clipboard?.writeText('${trip.code}');A.showToast('Code copied!')" style="background:var(--card);border:1.5px solid var(--gold);color:var(--text2);padding:8px 12px;border-radius:8px;font-size:12px;cursor:pointer">📋 Copy</button>
             <button onclick="navigator.share?.({title:'Join ${trip.name} on Appetyt',text:'Use code ${trip.code} to join our trip!',url:'https://appetyt.app'}).catch(()=>{})" style="background:var(--gold);border:none;color:var(--dark);font-weight:700;padding:8px 12px;border-radius:8px;font-size:12px;cursor:pointer">📤 Share</button>
           </div>
         </div>
@@ -14755,8 +14755,8 @@ Return ONLY the JSON object, nothing else.`,
               <div style="font-size:11px;color:var(--text3)">${r.city||''} · ${r.status||'want to go'}</div>
             </div>
             <div style="display:flex;gap:4px;align-items:center">
-              <button onclick="TRIPS.vote('${r.id}',${myVote===1?0:1})" style="background:${myVote===1?'var(--green)':'var(--card2)'};border:1px solid var(--border);color:${myVote===1?'#fff':'var(--text2)'};padding:4px 8px;border-radius:6px;font-size:12px;cursor:pointer">👍 ${upvotes}</button>
-              <button onclick="TRIPS.vote('${r.id}',${myVote===-1?0:-1})" style="background:${myVote===-1?'#c94c4c':'var(--card2)'};border:1px solid var(--border);color:${myVote===-1?'#fff':'var(--text2)'};padding:4px 8px;border-radius:6px;font-size:12px;cursor:pointer">👎 ${downvotes}</button>
+              <button onclick="TRIPS.vote('${r.id}',${myVote===1?0:1})" style="background:${myVote===1?'var(--green)':'var(--card2)'};border:1.5px solid var(--gold);color:${myVote===1?'#fff':'var(--text2)'};padding:4px 8px;border-radius:6px;font-size:12px;cursor:pointer">👍 ${upvotes}</button>
+              <button onclick="TRIPS.vote('${r.id}',${myVote===-1?0:-1})" style="background:${myVote===-1?'#c94c4c':'var(--card2)'};border:1.5px solid var(--gold);color:${myVote===-1?'#fff':'var(--text2)'};padding:4px 8px;border-radius:6px;font-size:12px;cursor:pointer">👎 ${downvotes}</button>
             </div>
           </div>`;}).join('') : `<div style="font-size:12px;color:var(--text3)">No restaurants yet -- tap + Add to save places for your trip</div>`}
       </div>
@@ -14781,7 +14781,7 @@ Return ONLY the JSON object, nothing else.`,
           <div style="font-size:13px;font-weight:700;color:var(--text)">💰 Bills (${bills.length})</div>
           <div style="display:flex;gap:6px">
             <button onclick="A.openBillModal()" style="display:flex;align-items:center;gap:5px;padding:6px 11px;background:rgba(200,169,110,.1);border:1px solid rgba(200,169,110,.25);border-radius:9px;color:var(--gold2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation">📸 Scan</button>
-            <button onclick="A.openBillModal()" style="display:flex;align-items:center;gap:5px;padding:6px 11px;background:var(--card2);border:1px solid var(--border);border-radius:9px;color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation">＋ Add</button>
+            <button onclick="A.openBillModal()" style="display:flex;align-items:center;gap:5px;padding:6px 11px;background:var(--card2);border:1.5px solid var(--gold);border-radius:9px;color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;touch-action:manipulation">＋ Add</button>
           </div>
         </div>
         ${bills.length ? bills.map(b => {
@@ -15003,8 +15003,8 @@ Return ONLY the JSON object, nothing else.`,
 
       <!-- Profile Actions -->
       <div style="display:flex;gap:8px;margin-top:12px;margin-bottom:12px">
-        <button onclick="A.editProfile()" style="flex:1;padding:10px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">✏️ Edit Profile</button>
-        <button onclick="A.emailFavorites()" style="flex:1;padding:10px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">📧 Share Lists</button>
+        <button onclick="A.editProfile()" style="flex:1;padding:10px;background:var(--card);border:1.5px solid var(--gold);border-radius:10px;color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">✏️ Edit Profile</button>
+        <button onclick="A.emailFavorites()" style="flex:1;padding:10px;background:var(--card);border:1.5px solid var(--gold);border-radius:10px;color:var(--text2);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit">📧 Share Lists</button>
       </div>
 
       <!-- Account Info -->
@@ -15143,7 +15143,7 @@ Return ONLY the JSON object, nothing else.`,
     // Render category pills
     const cats = CATEGORIES.map(cat => `
       <button onclick="document.querySelectorAll('.bcf-section').forEach(s=>s.style.display='none');document.getElementById('bcf-${cat.id}').style.display='block';document.querySelectorAll('.bcf-pill').forEach(p=>p.classList.remove('active'));this.classList.add('active')"
-        class="bcf-pill" style="flex-shrink:0;background:var(--card);border:1px solid var(--border);color:var(--text2);font-size:12px;padding:7px 14px;border-radius:16px;cursor:pointer;white-space:nowrap;transition:all .15s;font-family:inherit">
+        class="bcf-pill" style="flex-shrink:0;background:var(--card);border:1.5px solid var(--gold);color:var(--text2);font-size:12px;padding:7px 14px;border-radius:16px;cursor:pointer;white-space:nowrap;transition:all .15s;font-family:inherit">
         ${cat.emoji} ${cat.title}
       </button>
     `).join('');
@@ -15899,7 +15899,7 @@ Return ONLY the JSON object, nothing else.`,
           <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:6px">Dietary <span style="color:var(--text3);font-weight:400">(optional)</span></label>
           <div style="display:flex;flex-wrap:wrap;gap:5px" id="ci-dietary">
             ${['Vegetarian','Vegan','Gluten-Free','Dairy-Free','Halal','Kosher'].map(d=>
-              `<button onclick="this.classList.toggle('on');this.style.borderColor=this.classList.contains('on')?'rgba(76,154,110,.5)':'var(--border)';this.style.background=this.classList.contains('on')?'rgba(76,154,110,.12)':'var(--card2)';this.style.color=this.classList.contains('on')?'#4c9a6e':'var(--text3)'" data-diet="${d}" style="font-size:11px;padding:6px 10px;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text3);cursor:pointer;font-family:inherit">${d}</button>`
+              `<button onclick="this.classList.toggle('on');this.style.borderColor=this.classList.contains('on')?'rgba(76,154,110,.5)':'var(--border)';this.style.background=this.classList.contains('on')?'rgba(76,154,110,.12)':'var(--card2)';this.style.color=this.classList.contains('on')?'#4c9a6e':'var(--text3)'" data-diet="${d}" style="font-size:11px;padding:6px 10px;border-radius:8px;border:1.5px solid var(--gold);background:var(--card2);color:var(--text3);cursor:pointer;font-family:inherit">${d}</button>`
             ).join('')}
           </div>
         </div>
@@ -15907,7 +15907,7 @@ Return ONLY the JSON object, nothing else.`,
           <label style="font-size:11px;color:var(--text3);display:block;margin-bottom:6px">Allergies <span style="color:var(--text3);font-weight:400">(optional)</span></label>
           <div style="display:flex;flex-wrap:wrap;gap:5px" id="ci-allergies">
             ${['Nuts','Shellfish','Gluten','Dairy','None'].map(a=>
-              `<button onclick="this.classList.toggle('on');this.style.borderColor=this.classList.contains('on')?'rgba(220,70,70,.4)':'var(--border)';this.style.background=this.classList.contains('on')?'rgba(220,70,70,.1)':'var(--card2)';this.style.color=this.classList.contains('on')?'#dc4646':'var(--text3)'" data-allergy="${a}" style="font-size:11px;padding:6px 10px;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text3);cursor:pointer;font-family:inherit">${a}</button>`
+              `<button onclick="this.classList.toggle('on');this.style.borderColor=this.classList.contains('on')?'rgba(220,70,70,.4)':'var(--border)';this.style.background=this.classList.contains('on')?'rgba(220,70,70,.1)':'var(--card2)';this.style.color=this.classList.contains('on')?'#dc4646':'var(--text3)'" data-allergy="${a}" style="font-size:11px;padding:6px 10px;border-radius:8px;border:1.5px solid var(--gold);background:var(--card2);color:var(--text3);cursor:pointer;font-family:inherit">${a}</button>`
             ).join('')}
           </div>
         </div>
@@ -16127,7 +16127,7 @@ Return ONLY the JSON object, nothing else.`,
           <button onclick="document.getElementById('restaurant-alert-modal').classList.remove('open');A.showToast('Table assigned -- guest notified')"
             style="padding:12px;border-radius:10px;border:none;background:var(--gold);color:var(--dark);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">🪑 Seat Guest</button>
           <button onclick="document.getElementById('restaurant-alert-modal').classList.remove('open');A.showToast('Added to waitlist')"
-            style="padding:12px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">⏳ Waitlist</button>
+            style="padding:12px;border-radius:10px;border:1.5px solid var(--gold);background:var(--card);color:var(--text2);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">⏳ Waitlist</button>
         </div>
 
         <div style="text-align:center;font-size:10px;color:var(--text3);padding:4px">
@@ -17192,7 +17192,7 @@ function sendMorningBriefTest(){
     '<div style="background:var(--dark);border-radius:20px 20px 0 0;width:100%;max-height:92vh;overflow-y:scroll;-webkit-overflow-scrolling:touch;padding:20px 16px 40px">' +
       '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">' +
         '<div style="font-size:16px;font-weight:700;color:#3eb8a8">🌅 Morning Cruise Briefing</div>' +
-        '<button onclick="document.getElementById(\'event-detail-modal\').style.display=\'none\'" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>' +
+        '<button onclick="document.getElementById(\'event-detail-modal\').style.display=\'none\'" style="background:var(--card2);border:1.5px solid var(--gold);color:var(--text2);width:30px;height:30px;border-radius:50%;font-size:16px;cursor:pointer">✕</button>' +
       '</div>' +
       '<div style="font-size:11px;color:var(--text3);margin-bottom:16px;line-height:1.6">Get a personalised briefing each morning of your cruise -- arrival times, top picks, and what not to miss. Enter your email below.</div>' +
       '<input id="brief-name" type="text" placeholder="Your name (optional)" autocomplete="given-name" style="width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(200,169,110,.1);color:var(--text);padding:10px 12px;border-radius:10px;font-size:13px;margin-bottom:8px;font-family:inherit;outline:none">' +
