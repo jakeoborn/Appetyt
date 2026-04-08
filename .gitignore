@@ -8,3 +8,6 @@ ios/App/Pods/
 ios/App/App/public/
 ios/App/build/
 ios/DerivedData/
+
+# Clicky (standalone clone, not part of this project)
+clicky/
