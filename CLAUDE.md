@@ -37,6 +37,16 @@ npm run cap:build      # Build + sync + open Xcode
 - The app uses Supabase for backend, OpenStreetMap for maps
 - Dark theme with gold accents (`#c9a84c` primary, `#0a0d14` background)
 
+## Accuracy & Anti-Hallucination Rules
+
+- NEVER fabricate restaurant names, addresses, hours, coordinates, or menu items
+- NEVER invent city support, neighborhoods, or trending status — check `index.html` data arrays
+- NEVER guess lat/lng coordinates or reservation platforms — verify or ask
+- When adding restaurant data, every field must come from verified sources — flag anything unverified
+- When uncertain, say "I'm not sure" — never fill gaps with plausible-sounding guesses
+- Always read existing code/data before modifying — never assume file contents
+- See `.claude/rules/no-hallucination.md` and `.claude/rules/data-integrity.md` for full policies
+
 ## Conventions
 
 - No test framework or linter currently configured
