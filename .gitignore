@@ -8,3 +8,6 @@ ios/App/Pods/
 ios/App/App/public/
 ios/App/build/
 ios/DerivedData/
+
+# Caliber transient logs
+.caliber/refresh-hook.log
