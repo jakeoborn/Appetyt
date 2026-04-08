@@ -27,7 +27,8 @@ All restaurant entries in `index.html` follow this structure. Do not add fields 
   group: string,        // Restaurant group if applicable
   instagram: string,    // Real handle or empty
   website: string,      // Real URL or empty
-  res_tier: number      // 0-5 reservation difficulty
+  res_tier: number,     // 0-5 reservation difficulty
+  photoUrl: string      // URL to venue photo (Google Places, Supabase, or empty)
 }
 ```
 
