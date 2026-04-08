@@ -84,11 +84,46 @@ details>summary::-webkit-details-marker{display:none}
 #restaurant-list{padding:0 14px 100px;display:flex;flex-direction:column;gap:0}
 .section-head{font-size:11px;font-weight:700;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;padding:14px 0 8px;display:flex;align-items:center;justify-content:space-between}
 .section-head span{font-size:10px;color:var(--text3);font-weight:400;letter-spacing:0}
-.r-card{background:linear-gradient(145deg,var(--card2),var(--card));border:2px solid var(--gold);border-radius:14px;margin-bottom:8px;position:relative;overflow:hidden;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:rgba(200,169,110,.1);box-shadow:0 0 8px rgba(200,169,110,.2)}
-.r-card-inner{background:transparent;border-radius:12px;overflow:hidden}
-.r-card:hover{border-color:var(--gold);box-shadow:0 0 12px rgba(200,169,110,.25)}
-.r-card.featured,.r-card.rank1{border-color:var(--gold);box-shadow:0 0 12px rgba(200,169,110,.3)}
-/* Top action bar */
+.r-card{background:linear-gradient(145deg,var(--card2),var(--card));border:1.5px solid rgba(200,169,110,.25);border-radius:16px;margin-bottom:10px;position:relative;overflow:hidden;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:rgba(200,169,110,.1);box-shadow:0 2px 12px rgba(0,0,0,.3)}
+.r-card-inner{background:transparent;border-radius:14px;overflow:hidden}
+.r-card:hover{border-color:var(--gold);box-shadow:0 4px 16px rgba(0,0,0,.4)}
+.r-card.featured,.r-card.rank1{border-color:var(--gold);box-shadow:0 4px 16px rgba(200,169,110,.2)}
+/* Photo hero section */
+.r-photo{position:relative;width:100%;height:180px;overflow:hidden;background:var(--card2)}
+.r-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.r-photo-gradient{position:absolute;bottom:0;left:0;right:0;height:100%;background:linear-gradient(to top,rgba(10,13,20,.95) 0%,rgba(10,13,20,.5) 40%,rgba(10,13,20,.1) 70%,transparent 100%)}
+.r-photo-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:48px;opacity:.4}
+.r-photo-overlay{position:absolute;bottom:0;left:0;right:0;padding:12px 14px 10px}
+.r-photo-name{font-family:var(--serif);font-size:20px;font-weight:700;color:#fff;line-height:1.2;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.r-photo-score{position:absolute;bottom:12px;right:14px;background:var(--gold);color:var(--dark);font-family:var(--serif);font-size:15px;font-weight:800;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.r-photo-badges{position:absolute;top:10px;left:10px;display:flex;gap:5px;flex-wrap:wrap}
+.r-photo-badge{font-size:10px;font-weight:700;padding:4px 10px;border-radius:20px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.r-photo-badge.diff-legendary{background:rgba(201,168,76,.85);color:var(--dark)}
+.r-photo-badge.diff-hard{background:rgba(220,80,80,.8);color:#fff}
+.r-photo-badge.diff-moderate{background:rgba(76,122,201,.8);color:#fff}
+.r-photo-badge.hh-active{background:rgba(76,154,106,.85);color:#fff}
+.r-photo-actions{position:absolute;top:10px;right:10px;display:flex;gap:6px}
+.r-photo-action{width:34px;height:34px;border-radius:50%;background:rgba(10,13,20,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer;transition:all .15s}
+.r-photo-action:hover,.r-photo-action.on{background:rgba(200,169,110,.3);border-color:var(--gold)}
+/* Card info section below photo */
+.r-info{padding:10px 14px 12px}
+.r-info-row{display:flex;align-items:center;gap:6px;margin-bottom:6px}
+.r-info-location{font-size:12px;color:var(--text2);display:flex;align-items:center;gap:4px}
+.r-info-location .pin{color:var(--gold);font-size:11px}
+.r-info-cuisine{font-size:12px;color:var(--text2)}
+.r-info-price{font-size:12px;color:var(--text3)}
+.r-info-tags{display:flex;gap:5px;flex-wrap:wrap;margin:6px 0}
+.r-info-tag{font-size:10px;padding:3px 9px;border-radius:12px;background:rgba(200,169,110,.08);border:1px solid rgba(200,169,110,.12);color:var(--text2)}
+.r-info-hh{display:flex;align-items:center;gap:6px;padding:7px 10px;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.15);border-radius:10px;margin:6px 0}
+.r-info-hh-label{font-size:11px;font-weight:700;color:var(--gold)}
+.r-info-hh-time{font-size:11px;color:var(--text2)}
+.r-info-desc{font-size:12px;color:var(--text2);line-height:1.5;margin:4px 0}
+.r-info-footer{display:flex;align-items:center;justify-content:space-between;margin-top:8px;padding-top:8px;border-top:1px solid rgba(200,169,110,.1)}
+.r-info-reserve{font-size:11px;font-weight:700;color:var(--gold);background:rgba(201,168,76,.1);padding:5px 12px;border-radius:8px;border:1px solid rgba(201,168,76,.2);text-decoration:none;letter-spacing:.02em}
+.r-info-reserve:hover{background:rgba(201,168,76,.2)}
+.r-info-reserve.walkin{color:var(--text3);background:transparent;border-color:var(--border)}
+.r-info-order{font-size:11px;font-weight:700;color:#fff;background:#ff3008;padding:5px 12px;border-radius:8px;text-decoration:none;letter-spacing:.02em}
+/* Legacy card styles kept for compatibility */
 .r-topbar{display:flex;align-items:center;justify-content:space-between;padding:8px 10px 6px;border-bottom:1px solid rgba(42,35,24,.6)}
 .r-reserve-btn{background:var(--gold);color:var(--dark);font-size:10px;font-weight:800;padding:4px 10px;border-radius:6px;letter-spacing:.04em;flex-shrink:0}
 .r-order-btn{background:#ff3008;color:#fff;font-size:10px;font-weight:800;padding:4px 10px;border-radius:6px;letter-spacing:.04em;flex-shrink:0;text-decoration:none}
@@ -6177,17 +6212,21 @@ const A = {
     first10.forEach((r,i)=>{
       const hhActive=r.hh&&this.isHHActive(r.hh,nowMins);
       const diffLabel=r.score>=95?'⭐ Legendary':r.score>=92&&r.reservation!=='walk-in'?'🔥 Hard':r.score>=88&&r.reservation!=='walk-in'?'📅 Book Ahead':'';
-      const shortDesc=(r.description||'').split('.')[0];
-      html+=`<div onclick="A.openDetail(${r.id})" style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:11px;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:rgba(201,168,76,.15)">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:6px;margin-bottom:4px">
+      const miniPhoto=r.photoUrl
+        ?`<div style="width:100%;height:100px;border-radius:10px 10px 0 0;overflow:hidden"><img src="${r.photoUrl}" alt="${r.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>`
+        :`<div style="width:100%;height:100px;border-radius:10px 10px 0 0;overflow:hidden;background:${this._cuisineGradient(r.cuisine)};display:flex;align-items:center;justify-content:center;font-size:32px;opacity:.5">${this._cuisineEmoji(r.cuisine)}</div>`;
+      html+=`<div onclick="A.openDetail(${r.id})" style="background:var(--card);border:1.5px solid rgba(200,169,110,.2);border-radius:12px;overflow:hidden;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:rgba(201,168,76,.15)">
+        ${miniPhoto}
+        <div style="padding:9px 10px 10px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:6px;margin-bottom:3px">
           <div style="font-size:13px;font-weight:700;color:var(--text);line-height:1.3;flex:1">${r.name}</div>
-          <div style="font-size:16px;font-weight:700;color:var(--gold);flex-shrink:0;line-height:1">${r.score}</div>
+          <div style="font-size:14px;font-weight:800;color:var(--dark);background:var(--gold);width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">${r.score}</div>
         </div>
         <div style="font-size:11px;color:var(--text2);margin-bottom:1px">${r.cuisine}</div>
-        <div style="font-size:10px;color:var(--text3);margin-bottom:5px">${r.neighborhood}</div>
-        <div style="font-size:10px;color:var(--text2);line-height:1.4;opacity:.85">${shortDesc}</div>
+        <div style="font-size:10px;color:var(--text3)">${r.neighborhood}</div>
         ${diffLabel?`<div style="font-size:9px;color:var(--gold);margin-top:5px;font-weight:600">${diffLabel}</div>`:''}
         ${hhActive?`<div style="font-size:9px;color:var(--green);margin-top:3px;font-weight:600">🍸 HH Active</div>`:''}
+        </div>
       </div>`;
     });
     html+=`</div>`;
@@ -6413,6 +6452,45 @@ const A = {
     if(btn) btn.style.display='none';
   },
 
+  // Cuisine-based fallback gradients for cards without photos
+  _cuisineGradient(cuisine){
+    const c=(cuisine||'').toLowerCase();
+    if(c.includes('sushi')||c.includes('japanese')||c.includes('ramen')) return 'linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)';
+    if(c.includes('italian')||c.includes('pizza')||c.includes('pasta')) return 'linear-gradient(135deg,#2d1810,#4a2520,#6b3a30)';
+    if(c.includes('mexican')||c.includes('taco')||c.includes('tex-mex')) return 'linear-gradient(135deg,#1a2e1a,#2d4a20,#3d6b30)';
+    if(c.includes('steakhouse')||c.includes('steak')||c.includes('bbq')||c.includes('barbecue')) return 'linear-gradient(135deg,#2e1a1a,#4a2020,#6b3030)';
+    if(c.includes('seafood')||c.includes('oyster')||c.includes('fish')) return 'linear-gradient(135deg,#0f2027,#203a43,#2c5364)';
+    if(c.includes('french')||c.includes('bistro')) return 'linear-gradient(135deg,#1a1a2e,#2e1a3a,#3d2050)';
+    if(c.includes('indian')||c.includes('thai')||c.includes('asian')) return 'linear-gradient(135deg,#2e2a1a,#4a3a20,#6b5030)';
+    if(c.includes('coffee')||c.includes('bakery')||c.includes('cafe')) return 'linear-gradient(135deg,#2a2018,#3d3020,#504028)';
+    if(c.includes('bar')||c.includes('cocktail')||c.includes('brewery')) return 'linear-gradient(135deg,#1a0a2e,#2d1550,#401a6b)';
+    if(c.includes('mediterranean')||c.includes('greek')||c.includes('turkish')) return 'linear-gradient(135deg,#1a2a2e,#204a4a,#306b6b)';
+    return 'linear-gradient(135deg,#1a1d28,#252a38,#2f3548)';
+  },
+  _cuisineEmoji(cuisine){
+    const c=(cuisine||'').toLowerCase();
+    if(c.includes('sushi')||c.includes('japanese')) return '🍣';
+    if(c.includes('italian')||c.includes('pizza')) return '🍝';
+    if(c.includes('mexican')||c.includes('taco')) return '🌮';
+    if(c.includes('steakhouse')||c.includes('steak')) return '🥩';
+    if(c.includes('bbq')||c.includes('barbecue')) return '🍖';
+    if(c.includes('seafood')||c.includes('oyster')) return '🦪';
+    if(c.includes('french')||c.includes('bistro')) return '🥐';
+    if(c.includes('indian')) return '🍛';
+    if(c.includes('thai')||c.includes('asian')) return '🍜';
+    if(c.includes('coffee')||c.includes('cafe')) return '☕';
+    if(c.includes('bakery')||c.includes('donut')) return '🧁';
+    if(c.includes('bar')||c.includes('cocktail')) return '🍸';
+    if(c.includes('brewery')||c.includes('beer')) return '🍺';
+    if(c.includes('burger')) return '🍔';
+    if(c.includes('chicken')||c.includes('wing')) return '🍗';
+    if(c.includes('mediterranean')||c.includes('greek')) return '🫒';
+    if(c.includes('chinese')||c.includes('dim sum')) return '🥟';
+    if(c.includes('korean')) return '🍖';
+    if(c.includes('brunch')||c.includes('breakfast')) return '🥂';
+    return '🍽️';
+  },
+
   cardHTML(r,rank,nowMins){
     const isFav=S.userData.favs.includes(r.id);
     const isVisited=S.userData.visited.includes(r.id);
@@ -6420,30 +6498,20 @@ const A = {
     const price='$'.repeat(r.price||2);
     const hhActive=r.hh&&this.isHHActive(r.hh,nowMins);
 
-    // Filter icons for top bar
-    const FILTER_ICON_MAP={'Date Night':'💕','Happy Hour':'🍸','Brunch':'🥂','Patio':'🌳','Rooftop':'🌆','Late Night':'🌙','Cocktails':'🍹','Critics Pick':'📰','Fine Dining':'🎖️','Casual':'😎','Dog Friendly':'🐕','Live Music':'🎵','Sports':'🏈','Celebrations':'🎂','Viral':'📱','Hotel':'🏨','Exclusive':'🔒','Awards':'🏆','Local Favorites':'🤠','Sushi':'🍣','BBQ':'🍖','Steakhouse':'🥩','Italian':'🍝','Mexican':'🌮','Eat & Play':'🏓','Healthy':'🥗','Unique Combos':'🔀'};
-    const filterIcons=(r.tags||[]).slice(0,5).map(t=>FILTER_ICON_MAP[t]||'').filter(Boolean).map(e=>`<span class="r-filter-icon">${e}</span>`).join('');
-
-    // Reservation difficulty
+    // Reservation difficulty badges for photo overlay
     let diffBadge='';
-    if(r.score>=95) diffBadge=`<span class="r-diff-badge legendary">⭐ Legendary</span>`;
-    else if(r.score>=92&&r.reservation!=='walk-in') diffBadge=`<span class="r-diff-badge hard">🔥 Hard to Get</span>`;
-    else if(r.score>=88&&r.reservation!=='walk-in') diffBadge=`<span class="r-diff-badge moderate">📅 Res Rec</span>`;
-    // Hospitality group badge
-    let groupBadge='';
-    if(r.group){
-      const gd=HOSPITALITY_GROUPS[r.group];
-      if(gd) groupBadge=`<span style="font-size:9px;color:var(--text3);background:var(--card2);border:1px solid var(--border);padding:1px 6px;border-radius:8px">🏢 ${r.group.replace(' Group','').replace(' Hospitality','')}</span>`;
-    }
+    if(r.score>=95) diffBadge=`<span class="r-photo-badge diff-legendary">Legendary</span>`;
+    else if(r.score>=92&&r.reservation!=='walk-in') diffBadge=`<span class="r-photo-badge diff-hard">Hard to Get</span>`;
+    else if(r.score>=88&&r.reservation!=='walk-in') diffBadge=`<span class="r-photo-badge diff-moderate">Book Ahead</span>`;
 
-    // Book URL -- use direct reserveUrl if available, otherwise fall back to search
+    // Book URL
     const bookUrl=r.reserveUrl?r.reserveUrl
       :r.reservation==='OpenTable'?`https://www.opentable.com/s/?term=${encodeURIComponent(r.name)}`
       :r.reservation==='Resy'?`https://resy.com/?q=${encodeURIComponent(r.name)}`
       :r.reservation==='Tock'?`https://www.exploretock.com/search?q=${encodeURIComponent(r.name)}`:'#';
     const orderUrl=`https://www.doordash.com/search/store/${encodeURIComponent(r.name)}/`;
 
-    // Restaurant type detection (matches detail view smart links logic)
+    // Restaurant type detection
     const _ctags=(r.tags||[]).map(t=>t.toLowerCase());
     const _ccuisine=(r.cuisine||'').toLowerCase();
     const _cIsWalkIn=r.reservation==='walk-in'||r.reservation==='Recommended';
@@ -6455,73 +6523,62 @@ const A = {
     const _cShowReserve=!_cIsWalkIn&&!_cIsFastCasual&&!_cIsCoffee;
     const _cShowOrder=!_cIsFineDining&&!_cIsBar&&!_cIsEntertainment;
 
-    const reserveBtn=_cShowReserve
-      ?`<a href="${bookUrl}" target="_blank" class="r-reserve-btn">RESERVE</a>`
-      :`<span class="r-reserve-btn" style="opacity:.45;pointer-events:none;cursor:default">WALK IN</span>`;
-    const orderBtn=_cShowOrder
-      ?`<a href="${orderUrl}" target="_blank" class="r-order-btn">ORDER</a>`
-      :'';
-
     const bestOfLine=r.bestOf?.length?`<div class="r-bestof">${r.bestOf.map(b=>`<span class="r-bestof-item">${b}</span>`).join('')}</div>`:'';
-    const hhLine=r.hh?`<span class="${hhActive?'badge green':'badge'}">🍸 HH ${hhActive?'ACTIVE NOW':r.hh}</span>`:'';
     const hotBadge=(typeof HOTSPOT!=='undefined')?HOTSPOT.cardBadge(r):'';
 
-    // Gold highlight — pick the most relevant highlight for this restaurant
-    const _hlTags=(r.tags||[]);const _hlDishes=(r.dishes||[]);
-    let goldHL='';
-    let goldShowsAward=false;
-    if(r.awards){ goldHL=`🏆 ${r.awards}`; goldShowsAward=true; }
-    else if(_hlDishes.length) goldHL=`🍽️ Must Try: ${_hlDishes.slice(0,2).join(' · ')}`;
-    else if(r.hh) goldHL=`🍸 Happy Hour: ${r.hh}`;
-    else if(_hlTags.includes('Date Night')) goldHL='💕 Great for Date Night';
-    else if(_hlTags.includes('Brunch')) goldHL='🥂 Popular Brunch Spot';
-    else if(_hlTags.includes('Patio')) goldHL='🌳 Great Patio';
-    else if(_hlTags.includes('Late Night')) goldHL='🌙 Late Night Favorite';
-    else if(_hlTags.includes('Local Favorites')) goldHL='🤠 Local Favorite';
-    else if(r.score>=90) goldHL='⭐ Top Rated in '+(S.city||'Dallas');
-    else goldHL=`📍 ${r.neighborhood}`;
+    // Photo section — real photo or cuisine-themed fallback
+    const photoSection=r.photoUrl
+      ?`<div class="r-photo"><img src="${r.photoUrl}" alt="${r.name}" loading="lazy"><div class="r-photo-gradient"></div></div>`
+      :`<div class="r-photo" style="background:${this._cuisineGradient(r.cuisine)}"><div class="r-photo-fallback">${this._cuisineEmoji(r.cuisine)}</div><div class="r-photo-gradient"></div></div>`;
+
+    // Top-left badges on photo
+    let photoBadges=diffBadge;
+    if(hhActive) photoBadges+=`<span class="r-photo-badge hh-active">Happy Hour Now</span>`;
+
+    // Vibe tags (show top 3 relevant tags)
+    const vibeTags=(r.tags||[]).slice(0,3).map(t=>`<span class="r-info-tag">${t}</span>`).join('');
+
+    // Must-try dishes
+    const dishLine=(r.dishes||[]).length?`<div style="font-size:11px;color:var(--text2);margin:4px 0"><span style="color:var(--gold);font-weight:700">Must Try:</span> ${(r.dishes||[]).slice(0,2).join(' · ')}</div>`:'';
 
     return `<div class="r-card${rank===1?' rank1':''}" onclick="A.openDetail(${r.id})">
       <div class="r-card-inner">
-      <div class="r-topbar" onclick="event.stopPropagation()">
-        ${reserveBtn}
-        ${orderBtn}
-        <div class="r-filter-icons">${filterIcons}</div>
-        ${diffBadge}
+      ${photoSection}
+      <div class="r-photo-overlay">
+        <div class="r-photo-name">${r.name}</div>
       </div>
-      <div class="r-gold-hl"><span>${goldHL}</span></div>
-      <div class="r-body">
-        <div class="r-top">
-          <div class="r-rank">${rank}</div>
-          <div style="flex:1">
-            <div class="r-name">${r.name}</div>
-            <div class="r-sub">
-              <span>${r.cuisine}</span><span style="color:var(--text3)">·</span>
-              <span>${r.neighborhood}</span><span style="color:var(--text3)">·</span>
-              <span>${price}</span>
-              ${hotBadge}
-            </div>
-          </div>
-          <div class="r-score">${r.score}</div>
+      <div class="r-photo-score">${r.score}</div>
+      <div class="r-photo-badges">${photoBadges}</div>
+      <div class="r-photo-actions" onclick="event.stopPropagation()">
+        <button class="r-photo-action${isFav?' on':''}" onclick="A.toggleList('favs',${r.id},this)">❤️</button>
+        <button class="r-photo-action${isWant?' on':''}" onclick="A.toggleList('want',${r.id},this)">🔖</button>
+        <button class="r-photo-action" onclick="A.shareRestaurant('${r.name.replace(/'/g,"\\'")}','${r.cuisine}','${r.neighborhood}',${r.score})">↗️</button>
+      </div>
+      <div class="r-info">
+        <div class="r-info-row">
+          <span class="r-info-location"><span class="pin">📍</span> ${r.neighborhood}</span>
+          <span class="r-info-price" style="margin-left:auto">${price}</span>
         </div>
-        ${!goldShowsAward&&r.awards?`<div class="r-award">🏆 ${r.awards}</div>`:''}
+        <div class="r-info-cuisine">${r.cuisine}${hotBadge?` ${hotBadge}`:''}</div>
+        ${r.awards?`<div class="r-award">🏆 ${r.awards}</div>`:''}
         ${bestOfLine}
-        <div class="r-desc">${(r.description||'').slice(0,105)}...</div>
-        ${r.hh?`<div style="display:flex;align-items:center;gap:5px;margin:5px 0;padding:5px 8px;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.15);border-radius:8px">
-          <span style="font-size:11px">🍸</span>
-          <span style="font-size:10px;font-weight:700;color:var(--gold)">Happy Hour</span>
-          <span style="font-size:10px;color:var(--text3)">${r.hh}</span>
+        <div class="r-info-desc">${(r.description||'').slice(0,120)}${(r.description||'').length>120?'...':''}</div>
+        ${dishLine}
+        ${vibeTags?`<div class="r-info-tags">${vibeTags}</div>`:''}
+        ${r.hh?`<div class="r-info-hh">
+          <span>🍸</span>
+          <span class="r-info-hh-label">${hhActive?'Happy Hour Active':'Happy Hour'}</span>
+          <span class="r-info-hh-time">${r.hh}</span>
         </div>`:''}
-        <div class="r-footer">
-          <div class="r-meta">${r.reservation||'Walk-in'}</div>
-          <div class="r-actions" onclick="event.stopPropagation()">
-            <button class="r-btn${isFav?' on':''}" onclick="A.toggleList('favs',${r.id},this)">❤️</button>
+        <div class="r-info-footer" onclick="event.stopPropagation()">
+          ${_cShowReserve
+            ?`<a href="${bookUrl}" target="_blank" class="r-info-reserve">${r.reservation||'Reserve'}</a>`
+            :`<span class="r-info-reserve walkin">Walk-in</span>`}
+          ${_cShowOrder?`<a href="${orderUrl}" target="_blank" class="r-info-order">Order</a>`:''}
+          <div style="margin-left:auto;display:flex;gap:4px">
             <button class="r-btn${isVisited?' on':''}" onclick="A.toggleList('visited',${r.id},this)">✅</button>
-            <button class="r-btn${isWant?' on':''}" onclick="A.toggleList('want',${r.id},this)">🔖</button>
-            <button class="r-btn" onclick="A.shareRestaurant('${r.name}','${r.cuisine}','${r.neighborhood}',${r.score})">↗️</button>
           </div>
         </div>
-        <div onclick="event.stopPropagation();A.openDetail(${r.id})" style="margin:8px 0 4px;padding:10px;text-align:center;background:var(--gold);color:var(--dark);font-size:12px;font-weight:800;border-radius:8px;cursor:pointer;letter-spacing:.03em">View Restaurant →</div>
       </div>
       </div>
     </div>`;
