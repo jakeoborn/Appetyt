@@ -1,0 +1,86 @@
+# Appetyt
+
+Restaurant discovery app for iOS and web. Helps users find the best restaurants across 248+ cities worldwide.
+
+## Tech Stack
+
+- **Frontend**: Vanilla HTML/CSS/JavaScript (single-page app in `index.html`)
+- **Mobile**: Capacitor v6 for iOS (app ID: `app.appetyt.ios`)
+- **AI**: Anthropic Claude API for restaurant concierge chatbot ([concierge.js](concierge.js))
+- **Hosting**: Static site at appetyt.app (GitHub Pages via [CNAME](CNAME))
+- **CI/CD**: GitHub Actions ([.github/workflows/ios-build.yml](.github/workflows/ios-build.yml)) + CodeMagic ([codemagic.yaml](codemagic.yaml))
+
+## Commands
+
+```bash
+npm run build          # Copy index.html → dist/
+npm run cap:sync       # Build + sync to iOS project
+npm run cap:open       # Open Xcode
+npm run cap:build      # Build + sync + open Xcode
+```
+
+## Architecture
+
+- `index.html` — Main app (single-file SPA, ~3.5MB minified)
+- `concierge.js` — Netlify/Lambda function for Claude AI chatbot endpoint
+- `sw.js` — Service Worker for offline PWA support
+- `capacitor.config.ts` — iOS app configuration (Capacitor)
+- `ios/` — Capacitor-generated iOS project (Xcode workspace)
+- `scripts/` — Data ingestion scripts (city data, restaurant descriptions, audits)
+- `icons/` — PWA icons
+
+## Key Patterns
+
+- The app is a monolithic SPA — all UI logic is in `index.html`
+- Data scripts in `scripts/` are standalone Node.js scripts for batch operations
+- iOS builds use CocoaPods for Capacitor plugin dependencies
+- The app uses Supabase for backend, OpenStreetMap for maps
+- Dark theme with gold accents (`#c9a84c` primary, `#0a0d14` background)
+
+## Conventions
+
+- No test framework or linter currently configured
+- Build is a simple file copy (`index.html` → `dist/`)
+- Node.js >= 18 required
+- Universal Links configured for `appetyt.app` domain
+
+## Important Files
+
+- [.github/workflows/ios-build.yml](.github/workflows/ios-build.yml) — iOS CI pipeline (requires Apple signing secrets)
+- [codemagic.yaml](codemagic.yaml) — Alternative CI for TestFlight/App Store builds
+- [manifest.json](manifest.json) — PWA manifest
+- [privacy.html](privacy.html) — Privacy policy page
+
+<!-- caliber:managed:pre-commit -->
+## Before Committing
+
+**IMPORTANT:** Before every git commit, you MUST ensure Caliber syncs agent configs with the latest code changes.
+
+First, check if the pre-commit hook is already installed:
+```bash
+grep -q "caliber" .git/hooks/pre-commit 2>/dev/null && echo "hook-active" || echo "no-hook"
+```
+
+- If **hook-active**: the hook handles sync automatically — just commit normally. Tell the user: "Caliber will sync your agent configs automatically via the pre-commit hook."
+- If **no-hook**: run Caliber manually before committing:
+  1. Tell the user: "Caliber: Syncing agent configs with your latest changes..."
+  2. Run: `caliber refresh && git add CLAUDE.md .claude/ .cursor/ .cursorrules .github/copilot-instructions.md .github/instructions/ AGENTS.md CALIBER_LEARNINGS.md .agents/ .opencode/ 2>/dev/null`
+  3. After it completes, briefly tell the user what Caliber updated. Then proceed with the commit.
+
+If `caliber` is not found, tell the user: "This project uses Caliber for agent config sync. Run /setup-caliber to get set up."
+<!-- /caliber:managed:pre-commit -->
+
+<!-- caliber:managed:learnings -->
+## Session Learnings
+
+Read `CALIBER_LEARNINGS.md` for patterns and anti-patterns learned from previous sessions.
+These are auto-extracted from real tool usage — treat them as project-specific rules.
+<!-- /caliber:managed:learnings -->
+
+<!-- caliber:managed:sync -->
+## Context Sync
+
+This project uses [Caliber](https://github.com/caliber-ai-org/ai-setup) to keep AI agent configs in sync across Claude Code, Cursor, Copilot, and Codex.
+Configs update automatically before each commit via `caliber refresh`.
+If the pre-commit hook is not set up, run `/setup-caliber` to configure everything automatically.
+<!-- /caliber:managed:sync -->
