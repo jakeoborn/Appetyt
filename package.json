@@ -5,7 +5,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "mkdir -p dist && cp index.html dist/",
+    "build": "mkdir -p dist && cp index.html robots.txt sitemap.xml 404.html _headers dist/ && cp -r dallas chicago nyc houston austin los-angeles seattle san-antonio dist/",
     "cap:sync": "npm run build && npx cap sync ios",
     "cap:open": "npx cap open ios",
     "cap:build": "npm run build && npx cap sync ios && npx cap open ios"
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@capacitor/cli": "^6.0.0",
+    "jsonwebtoken": "^9.0.3",
     "typescript": "^6.0.2"
   }
 }

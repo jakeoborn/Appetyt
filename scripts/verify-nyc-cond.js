@@ -1,0 +1,15 @@
+const fs = require('fs');
+const html = fs.readFileSync(require('path').join(__dirname,'..','index.html'),'utf8');
+const condOpen = html.indexOf("${(S.city||'Dallas')==='New York' ? `", 2700000);
+console.log('Conditional opens at:', condOpen);
+const condClose = html.indexOf("` : ''}", condOpen + 100);
+console.log('Conditional closes at:', condClose);
+const block = html.substring(condOpen, condClose + 7);
+console.log('Block length:', block.length);
+console.log('Contains Things to Do:', block.includes('Things to Do'));
+console.log('Contains Neighborhood Spotlight:', block.includes('Neighborhood Spotlight'));
+console.log('Contains Seasonal Picks:', block.includes('Seasonal Picks'));
+console.log('Contains Day Trips:', block.includes('Day Trips'));
+console.log('Contains Insider Tips:', block.includes('Insider Tips'));
+const after = html.substring(condClose + 7, condClose + 100);
+console.log('\nAfter conditional:', JSON.stringify(after));
