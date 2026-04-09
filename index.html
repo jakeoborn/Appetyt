@@ -9030,6 +9030,19 @@ const A = {
     S.city=city;
     localStorage.setItem('appetyt_city',city);
     document.getElementById('city-label').textContent=city;
+    // Dynamic SEO meta tags per city
+    var count=((this.getRestaurants&&this.getRestaurants())||[]).length||'';
+    document.title='Best Restaurants in '+city+' 2026 | Appetyt';
+    var metaDesc=document.querySelector('meta[name="description"]');
+    if(metaDesc) metaDesc.content='Discover the best restaurants in '+city+(count?' — '+count+'+ restaurants scored and reviewed.':' — curated dining guide with scores and reviews.');
+    var ogTitle=document.querySelector('meta[property="og:title"]');
+    if(ogTitle) ogTitle.content='Best Restaurants in '+city+' 2026 — Appetyt';
+    var ogDesc=document.querySelector('meta[property="og:description"]');
+    if(ogDesc) ogDesc.content='Curated restaurant guide for '+city+'. Brunch, patio, date night, fine dining and more.';
+    var twTitle=document.querySelector('meta[name="twitter:title"]');
+    if(twTitle) twTitle.content='Best Restaurants in '+city+' 2026 — Appetyt';
+    var twDesc=document.querySelector('meta[name="twitter:description"]');
+    if(twDesc) twDesc.content='Curated restaurant guide for '+city+'. Brunch, patio, date night, fine dining and more.';
     const scl=document.getElementById('sidebar-city-label');
     if(scl) scl.textContent=city;
     S.filter='all'; S.combo=null; S.filters.clear(); S.indicators.clear(); S.searchQ=''; S.neighborhood='all';
