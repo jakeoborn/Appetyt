@@ -11484,39 +11484,49 @@ const A = {
     setTimeout(()=>{
       const el=document.getElementById('discover-content');
       if(!el) return;
-      const groups=Object.entries(HOSPITALITY_GROUPS).sort((a,b)=>b[1].score-a[1].score);
-      const barColor=sc=>sc>=90?'var(--gold)':sc>=80?'#4c9a6a':'var(--text3)';
-      const bar=(label,sc)=>[
-        '<div style="margin-bottom:5px">',
-        '<div style="display:flex;justify-content:space-between;margin-bottom:2px">',
-        '<span style="font-size:10px;color:var(--text3)">'+label+'</span>',
-        '<span style="font-size:10px;font-weight:700;color:'+barColor(sc)+'">'+sc+'</span></div>',
-        '<div style="height:4px;background:var(--border);border-radius:2px">',
-        '<div style="width:'+sc+'%;height:100%;background:'+barColor(sc)+';border-radius:2px"></div></div></div>'
-      ].join('');
+      const allRests = this.getRestaurants();
+      const groupMap = {};
+      allRests.filter(r => r.group).forEach(r => {
+        if(!groupMap[r.group]) groupMap[r.group] = [];
+        groupMap[r.group].push(r);
+      });
+      const multiGroups = Object.entries(groupMap).filter(([k,v]) => v.length >= 2).sort((a,b) => {
+        const scoreA = HOSPITALITY_GROUPS[a[0]] ? HOSPITALITY_GROUPS[a[0]].score : Math.round(a[1].reduce((s,r) => s+r.score, 0) / a[1].length);
+        const scoreB = HOSPITALITY_GROUPS[b[0]] ? HOSPITALITY_GROUPS[b[0]].score : Math.round(b[1].reduce((s,r) => s+r.score, 0) / b[1].length);
+        return scoreB - scoreA;
+      });
       let html='<div style="padding:14px 14px 100px">';
       html+='<button onclick="A.renderDiscover()" style="background:none;border:none;color:var(--gold);font-size:13px;padding:0 0 14px;cursor:pointer">← Back</button>';
-      html+='<div style="font-size:16px;font-weight:800;color:var(--gold);margin-bottom:4px">🏢 Dallas Hospitality Groups</div>';
-      html+='<div style="font-size:11px;color:var(--text2);margin-bottom:14px">Scored across food quality, service, ambiance, value, consistency and innovation. Verified data only.</div>';
-      groups.forEach(([name,g])=>{
-        const oc=g.score>=90?'var(--gold)':g.score>=80?'#4c9a6a':'var(--text3)';
-        const sb=g.scoreBreakdown;
-        html+='<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:14px;margin-bottom:10px">';
-        html+='<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">';
-        html+='<div><div style="font-size:14px;font-weight:800;color:var(--text)">'+name+'</div>';
-        html+='<div style="font-size:10px;color:var(--text3);margin-top:2px">Founded '+g.founded+' &middot; '+g.concepts+' concepts &middot; Flagship: '+g.flagship+'</div>';
-        if(g.michelinCount>0) html+='<div style="font-size:10px;color:var(--gold);margin-top:2px">⭐ '+g.michelinCount+' Michelin Recommended</div>';
+      html+='<div style="font-size:16px;font-weight:800;color:var(--gold);margin-bottom:4px">🏢 '+(S.city||'Dallas')+' Hospitality Groups</div>';
+      html+='<div style="font-size:11px;color:var(--text2);margin-bottom:14px">Multi-concept groups operating in '+(S.city||'Dallas')+'</div>';
+      multiGroups.forEach(([name,rests])=>{
+        const gd=HOSPITALITY_GROUPS[name];
+        const avg=gd?gd.score:Math.round(rests.reduce((s,r)=>s+r.score,0)/rests.length);
+        const oc=avg>=90?'var(--gold)':avg>=80?'#4c9a6a':'var(--text3)';
+        const metaLine=gd?'Est. '+gd.founded+' &middot; '+gd.concepts+' concepts &middot; '+gd.flagship:rests.length+' concepts in '+(S.city||'Dallas');
+        const desc=gd?gd.description:'';
+        const website=gd&&gd.website?gd.website:'';
+        const michelinCount=gd?(gd.michelinCount||0):0;
+        html+='<div style="background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:14px">';
+        html+='<div style="background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.02));padding:14px 14px 11px;border-bottom:1px solid var(--border)">';
+        html+='<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px">';
+        html+='<div style="flex:1"><div style="font-size:15px;font-weight:700;color:var(--text);line-height:1.2">'+name+'</div>';
+        html+='<div style="font-size:11px;color:var(--text3);margin-top:3px">'+metaLine+'</div>';
+        if(michelinCount>0) html+='<div style="font-size:10px;color:var(--gold);margin-top:2px">⭐ '+michelinCount+' Michelin Recommended</div>';
+        if(website) html+='<a href="'+website+'" target="_blank" style="font-size:10px;color:var(--gold);text-decoration:none;margin-top:3px;display:inline-block">🌐 Website →</a>';
         html+='</div>';
-        html+='<div style="text-align:right;flex-shrink:0;margin-left:12px"><div style="font-size:28px;font-weight:700;color:'+oc+';line-height:1">'+g.score+'</div>';
-        html+='<div style="font-size:9px;color:var(--text3)">Overall</div></div></div>';
-        html+='<div style="font-size:11px;color:var(--text2);line-height:1.5;margin-bottom:10px">'+g.description+'</div>';
-        html+=bar('Food Quality',sb.foodQuality)+bar('Service',sb.service)+bar('Ambiance',sb.ambiance);
-        html+=bar('Value',sb.value)+bar('Consistency',sb.consistency)+bar('Innovation',sb.innovation);
-        html+='<div style="font-size:10px;color:var(--text3);margin:8px 0 3px"><b style="color:var(--green)">Strengths:</b> '+g.strengths+'</div>';
-        html+='<div style="font-size:10px;color:var(--text3);margin-bottom:10px"><b style="color:var(--text)">Watch:</b> '+g.weakness+'</div>';
-        html+='<div style="display:flex;flex-wrap:wrap;gap:4px">';
-        g.restaurants.forEach(r=>{html+='<span style="font-size:10px;background:var(--card2);border:1px solid var(--border);padding:2px 8px;border-radius:8px;color:var(--text2)">'+r+'</span>';});
-        html+='</div></div>';
+        html+='<div style="text-align:center;flex-shrink:0"><div style="font-size:28px;font-weight:700;color:'+oc+';line-height:1">'+avg+'</div>';
+        html+='<div style="font-size:9px;color:var(--text3)">Overall</div></div></div></div>';
+        html+='<div style="padding:12px 14px">';
+        if(desc) html+='<div style="font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:12px">'+desc+'</div>';
+        html+='<div>';
+        rests.sort((a,b)=>b.score-a.score).forEach(r=>{
+          html+='<div onclick="A.openDetailFromGroup('+r.id+',\'groups\')" style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);cursor:pointer">';
+          html+='<div><div style="font-size:13px;font-weight:600;color:var(--text)">'+r.name+'</div>';
+          html+='<div style="font-size:11px;color:var(--text2)">'+r.cuisine+' · '+r.neighborhood+'</div></div>';
+          html+='<div style="font-size:16px;font-weight:700;color:var(--gold)">'+r.score+'</div></div>';
+        });
+        html+='</div></div></div>';
       });
       html+='</div>';
       el.innerHTML=html;
@@ -11937,54 +11947,59 @@ const A = {
   },
 
   hospitalityGroupsHTML(){
-    // NYC groups
-    const nycGroupNames = ['Major Food Group','Union Square Hospitality (Danny Meyer)','Keith McNally','Unapologetic Foods','Rita Sodi & Jody Williams','Momofuku (David Chang)','NoHo Hospitality (Andrew Carmellini)','Quality Branded','Tao Group Hospitality','Stephen Starr','Ignacio Mattos','Gabriel Stulman','Missy Robbins','Jean-Georges Vongerichten','Simon Kim (COTE)','Ellia & Junghyun Park (Atomix)','Billy Durney','Frenchette (Lee Hanson & Riad Nasr)','Olmsted Hospitality (Greg Baxtrom)'];
-    const dallasGroupNames = ['Harwood Hospitality Group','Vandelay Hospitality','Duro Hospitality','Travis Street Hospitality','FB Society','Milkshake Concepts','Fox Restaurant Concepts','Major Food Group','M Crowd Restaurant Group'];
-    const cityGroups = (S.city||'Dallas')==='New York' ? nycGroupNames : dallasGroupNames;
-    const filteredGroups = {};
-    for(const name of cityGroups) {
-      if(HOSPITALITY_GROUPS[name]) filteredGroups[name] = HOSPITALITY_GROUPS[name];
-    }
-    const _HG = filteredGroups;
-    // Original function continues but uses _HG instead of HOSPITALITY_GROUPS
-    // For non-Dallas cities, build groups dynamically from restaurant data
-    if(S.city && S.city !== 'Dallas'){
-      const restaurants = this.getRestaurants();
-      const groupMap = {};
-      restaurants.filter(r => r.group).forEach(r => {
-        if(!groupMap[r.group]) groupMap[r.group] = [];
-        groupMap[r.group].push(r);
-      });
-      // Only show groups with 2+ restaurants
-      const multiGroups = Object.entries(groupMap).filter(([k,v]) => v.length >= 2).sort((a,b) => {
-        const avgA = a[1].reduce((s,r) => s+r.score, 0) / a[1].length;
-        const avgB = b[1].reduce((s,r) => s+r.score, 0) / b[1].length;
-        return avgB - avgA;
-      });
-      if(multiGroups.length === 0) return '<div class="empty-state"><div class="empty-icon">🏢</div><div class="empty-title">Hospitality Groups</div><div class="empty-desc">Group data coming soon for '+S.city+'</div></div>';
-      return `
-        <div style="margin-bottom:16px">
-          <div style="font-size:20px;font-weight:700;color:var(--text);margin-bottom:4px">🏢 ${S.city} Restaurant Groups</div>
-          <div style="font-size:12px;color:var(--text3)">Multi-concept groups operating in ${S.city}</div>
-        </div>
-        ${multiGroups.map(([name, rests]) => {
-          const avg = Math.round(rests.reduce((s,r) => s+r.score, 0) / rests.length);
-          const color = avg >= 90 ? 'var(--gold)' : avg >= 80 ? '#4c9a6a' : 'var(--text3)';
-          return `<div style="background:var(--card);border:1.5px solid var(--gold);border-radius:14px;overflow:hidden;margin-bottom:12px">
-            <div style="padding:14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between">
-              <div>
-                <div style="font-size:15px;font-weight:700;color:var(--text)">${name}</div>
-                <div style="font-size:11px;color:var(--text3)">${rests.length} concepts in ${S.city}</div>
-                ${(()=>{const gd=HOSPITALITY_GROUPS[name];return gd&&gd.website?'<a href="'+gd.website+'" target="_blank" style="font-size:10px;color:var(--gold);text-decoration:none;margin-top:3px;display:block">🌐 Website →</a>':'';})()}
+    // Build groups from restaurant data for current city
+    const restaurants = this.getRestaurants();
+    const groupMap = {};
+    restaurants.filter(r => r.group).forEach(r => {
+      if(!groupMap[r.group]) groupMap[r.group] = [];
+      groupMap[r.group].push(r);
+    });
+    // Only show groups with 2+ restaurants
+    const multiGroups = Object.entries(groupMap).filter(([k,v]) => v.length >= 2).sort((a,b) => {
+      // If HOSPITALITY_GROUPS data exists, sort by overall score; otherwise by avg restaurant score
+      const scoreA = HOSPITALITY_GROUPS[a[0]] ? HOSPITALITY_GROUPS[a[0]].score : Math.round(a[1].reduce((s,r) => s+r.score, 0) / a[1].length);
+      const scoreB = HOSPITALITY_GROUPS[b[0]] ? HOSPITALITY_GROUPS[b[0]].score : Math.round(b[1].reduce((s,r) => s+r.score, 0) / b[1].length);
+      return scoreB - scoreA;
+    });
+    if(multiGroups.length === 0) return '<div class="empty-state"><div class="empty-icon">🏢</div><div class="empty-title">Hospitality Groups</div><div class="empty-desc">Group data coming soon for '+S.city+'</div></div>';
+
+    return `
+      <div style="margin-bottom:16px">
+        <div style="font-size:20px;font-weight:700;color:var(--text);margin-bottom:4px">🏢 ${S.city||'Dallas'} Hospitality Groups</div>
+        <div style="font-size:12px;color:var(--text3)">Multi-concept groups operating in ${S.city||'Dallas'}</div>
+      </div>
+      ${multiGroups.map(([name, rests]) => {
+        const gd = HOSPITALITY_GROUPS[name];
+        const avg = gd ? gd.score : Math.round(rests.reduce((s,r) => s+r.score, 0) / rests.length);
+        const color = avg >= 90 ? 'var(--gold)' : avg >= 80 ? '#4c9a6a' : 'var(--text3)';
+        const metaLine = gd ? `Est. ${gd.founded} · ${gd.concepts} concepts · ${gd.flagship}` : `${rests.length} concepts in ${S.city}`;
+        const desc = gd ? gd.description : '';
+        const website = gd && gd.website ? gd.website : '';
+        const michelinCount = gd ? (gd.michelinCount||0) : 0;
+        return `
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:14px">
+          <!-- Header -->
+          <div style="background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.02));padding:14px 14px 11px;border-bottom:1px solid var(--border)">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px">
+              <div style="flex:1">
+                <div style="font-size:15px;font-weight:700;color:var(--text);line-height:1.2">${name}</div>
+                <div style="font-size:11px;color:var(--text3);margin-top:3px">${metaLine}</div>
+                ${michelinCount>0?`<div style="font-size:10px;color:var(--gold);margin-top:2px">⭐ ${michelinCount} Michelin Recommended</div>`:''}
+                ${website?`<a href="${website}" target="_blank" style="font-size:10px;color:var(--gold);text-decoration:none;margin-top:3px;display:inline-block">🌐 Website →</a>`:''}
               </div>
-              <div style="text-align:center">
-                <div style="font-size:24px;font-weight:700;color:${color}">${avg}</div>
-                <div style="font-size:9px;color:var(--text3)">avg score</div>
+              <div style="text-align:center;flex-shrink:0">
+                <div style="font-size:28px;font-weight:700;color:${color};line-height:1">${avg}</div>
+                <div style="font-size:9px;color:var(--text3)">Overall</div>
               </div>
             </div>
-            <div style="padding:10px 14px">
+          </div>
+          <!-- Body -->
+          <div style="padding:12px 14px">
+            ${desc?`<div style="font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:12px">${desc}</div>`:''}
+            <!-- Restaurant list -->
+            <div>
               ${rests.sort((a,b) => b.score - a.score).map(r => `
-                <div onclick="A.openDetail(${r.id})" style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);cursor:pointer">
+                <div onclick="A.openDetailFromGroup(${r.id},'groups')" style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);cursor:pointer">
                   <div>
                     <div style="font-size:13px;font-weight:600;color:var(--text)">${r.name}</div>
                     <div style="font-size:11px;color:var(--text2)">${r.cuisine} · ${r.neighborhood}</div>
@@ -11992,81 +12007,6 @@ const A = {
                   <div style="font-size:16px;font-weight:700;color:var(--gold)">${r.score}</div>
                 </div>
               `).join('')}
-            </div>
-          </div>`;
-        }).join('')}`;
-    }
-    const HG_LOOKUP = {'Lucia':1,'Tatsu Dallas':2,'Written by the Seasons':3,'Midnight Rambler':4,'Frenchie':5,'Namo':6,'Sachet':7,'Petra & the Beast':8,'Culinary Dropout':9,'Flower Child':66,'Doughbird':1112,'Rodeo Bar':10,'Dot\'s Hop House':11,'Shyboy HiFi':12,'Uchi Dallas':13,'Cattleack Barbeque':14,'Tei-An':15,'Village Baking Co.':16,'Sassetta':17,'The Henry':18,'HG Sply Co.':19,'Mamani':20,'Rainbowcat':21,'Happiest Hour':22,'Al Biernat\'s':23,'Katy Trail Ice House':24,'Truck Yard':25,'Jonathon\'s Oak Cliff':26,'Meso Maya':27,'Las Palmas':28,'The Salty Donut':29,'La Rue Doughnuts':30,'Fogo de Chao':31,'Nobu Dallas':32,'Knife':33,'Truluck\'s':34,'Breadwinners Cafe & Bakery':35,'Monica Aca y Alla':36,'Adair\'s':38,'The Joule':39,'The Rustic':41,'Twisted Root Burger Co.':42,'Pappas Bros. Steakhouse':43,'The Zodiac Room at Neiman Marcus':44,'Loro':45,'Highland Park Pharmacy':46,'Reunion Tower Restaurant':47,'Eataly':48,'Nick & Sam\'s Steakhouse':49,'Pappadeaux Seafood Kitchen':50,'Whiskey Cake Kitchen & Bar':51,'Rodeo Goat':52,'Café Brazil':53,'Oak Cliff Coffee Roasters':54,'Fuel City Tacos':55,'Lakewood Brewing Company':56,'Pecan Lodge':57,'Chengdu Taste':58,'Sixty Vines':420,'Pluckers Wing Bar':60,'Texas De Brazil Churrascaria':61,'Stoneleigh P':62,'Pappasito\'s Cantina':63,'Ramen Tatsu Yokocho':64,'Sushi Toro':65,'Flower Child':66,'Campisi\'s Egyptian Restaurant':67,'Purépecha':68,'Gemma':69,'Partenope Ristorante':70,'Ngon Vietnamese Kitchen':71,'Smokey Joe\'s BBQ':72,'Town Hearth':73,'Sushi Kozy':74,'Far Out':75,'Fond':76,'Beatrice':77,'Beverley\'s Bistro & Bar':78,'il Bracco':79,'Hudson House':80,'Goodwin\'s':81,'Monarch':82,'Norman\'s Japanese Grill':83,'Wicked Butcher':84,'Casa Pollastro':85,'Georgie':86,'Uchiba':87,'Cane Rosso':88,'Lockhart Smokehouse':89,'Oddfellows':90,'Goodfriend Beer Garden':91,'The Libertine':93,'CBD Provisions':94,'Salum':95,'Toulouse Cafe and Bar':96,'The Capital Grille':97,'Tei Tei Robata Bar':98,'Bob\'s Steak & Chop House':99,'Rise No 1':100,'Norma\'s Cafe':101,'Beto & Son':102,'Nuri Steakhouse':103,'Roots Southern Table':104,'Asian Mint':105,'Baboush Mediterranean':106,'Jeng Chi':107,'Velvet Taco':108,'Wild Salsa':109,'Empire Baking Company':110,'Emporium Pies':111,'Ziziki\'s':112,'Maple & Motor':113,'Javier\'s':114,'Shinsei':115,'Hugo\'s Seafood':116,'Pesca Coastal Classics':117,'Flamant':118,'Nonna':119,'Deli News':120,'Milagro Cantina':121,'Cafe Brazil':122,'RH Rooftop Restaurant at RH Dallas':123,'Crown Block':124,'EVELYN':125,'Mot Hai Ba':126,'Cafe Momentum':127,'The Charles':128,'Kessaku':129,'Shoyo':130,'Bharat Bhavan':132,'Domodomo Ko':133,'Vaqueros Texas Bar-B-Q':134,'Pillar':135,'The Heritage Table':136,'The Charlotte':137,'Sanjh':138,'Mabo':139,'Tacos El Metro':140,'Kitchen + Kocktails':141,'Meridian':142,'Kafi BBQ':143,'Nori Handroll Bar':144,'Nikki Greek Bistro & Lounge':145,'Turan Uyghur Kitchen':146,'Baby Back Shak':147,'Mister Charles':148,'Mirador':149,'Jose':150,'Darna':151,'Zon Zon':152,'Le Bilboquet':153,'Knox Bistro':154,'Harwood Arms':155,'Avra Dallas':156,'Cris and John':157,'The Mansion on Turtle Creek':158,'Terry Black\'s Barbecue':159,'Hillstone':160,'Chamberlain\'s Steak and Fish':161,'Encina':162,'Sister':163,'Mercat Bistro':164,'Marie Gabrielle':165,'Saint Ann Restaurant & Bar':166,'Te Deseo':167,'Dolce Riviera':168,'Elephant East':169,'Docent Steak & Lounge':170,'El Carlos Elegante':171,'Café Duro':172,'Drake\'s Hollywood':173,'Anchor Sushi Bar':174,'Brentwood':175,'D.L. Mack\'s':176,'Jack & Harry\'s':177,'Le Bistrot Bar Sardine':178,'El Molino':179,'Mi Cocina':180,'The Mercury':181,'North Italia':182,'Bar Colette':183,'Delilah Dallas':184,'Kenny\'s Italian Kitchen':185,'Quarter Acre':186,'The Blue Fish':187,'Leela\'s Wine Bar':188,'Mister O1 Extraordinary Pizza':189,'La La Land Kind Cafe':190,'Merit Coffee':191,'Postino Wine Cafe':192,'Bird Bakery':193,'Apothecary':194,'Ginger\'s Dallas':195,'Paradiso':196,'Catbird':197,'Sky Blossom':198,'Eatzi\'s Market & Bakery':199,'Wayward Coffee Co.':200,'Goldie\'s':201,'The Mexican':202,'Izkina':203,'The Wild Detectives':204,'The Slow Bone':205,'Café Madrid':206,'Cafe Izmir':207,'S&D Oyster Co.':208,'CATCH Dallas':209,'Ten Ramen':210,'Serious Pizza Deep Ellum':211,'Kate Weiser Chocolate':212,'Bulla Gastrobar Dallas':213,'Honor Bar Dallas':214,'Maman':215,'Little Ruby\'s':216,'Sant Ambroeus Dallas':217,'Rex\'s Seafood & Market':218,'Casa Brasa':219,'Two Hands':220,'Haywire':221,'Mābo':222,'Rye':223,'Fearing\'s':224,'Stillwell\'s':225,'Barsotti\'s':226,'Stock & Barrel':227,'Torchy\'s Tacos':228,'Taco Deli':229,'Zalat Pizza':230,'Fadi\'s Mediterranean Grill':231,'Rudy\'s BBQ':232,'Revolver Taco Lounge':233,'Hopdoddy Burger Bar':234,'Kenny\'s Wood Fired Grill':235,'Harvest McKinney':236,'Patina Green':237,'Terilli\'s':238,'Stan\'s Blue Note':239,'SILO Dallas':240,'Boogies':241,'It\'ll Do Club':242,'AKAI at Musume':243,'Community Beer Company':244,'Four Corners Brewing Co.':245,'Peticolas Brewing Company':246,'Vector Brewing':247,'Texas Ale Project':248,'Oak Cliff Brewing Co.':249,'Manhattan Project Beer Company':250,'Twilite Lounge':251,'Topgolf Dallas':252,'Birdies Golf Lounge':253,'Electric Shuffle':254,'Punch Bowl Social':255,'Puttery':256,'BowlGames Dallas':257,'Chicken N Pickle':258,'Cinépolis Luxury Cinemas':259,'Alamo Drafthouse':260,'Violet Crown Dallas':261,'TOCA Social':262,'Batbox':263,'Night Rooster Dallas':264,'Maroma Dallas':265,'Hawthorn':266,'Armoury D.E.':267,'Perry\'s Steakhouse':268,'Jasper\'s':269,'Local Yocal BBQ':270,'Best Thai Signature':271,'Royal China':272,'Lee Harvey\'s':273,'Double Wide':274,'Inwood Tavern':275,'Mama Tried':276,'Studio Movie Grill Dallas':277,'Three Links':278,'Trees':279,'Sons of Hermann Hall':280,'The Old Monk':281,'Puerto Cocina':283,'PopStroke':284,'Immersive Gamebox':285,'Angelika Film Center':286,'Culpepper Cattle Co.':287,'Fachini':288,'Sadelle\'s':289,'The Ranch at Las Colinas':290,'Ruins':291,'The Free Man':292,'Milo Butterfingers':293,'Off the Record':294,'Fowling Warehouse':295,'Hello Dumpling':296,'Carbone Vino':297,'Mexican Sugar':298,'Legacy Hall':299,'Ida Claire':300,'Sundown at Granada':301,'Barcelona Wine Bar':302,'Rose Café':303,'Carbone':304,'Cosm Dallas':305,'True Food Kitchen':306,'Poco Fiasco':307,'Tequila Social':308,'NDA Brasserie':309,'Los Charros Tex-Mex Smokehouse':310,'Mariano\'s Hacienda':311,'E Bar Tex-Mex':312,'El Fenix':313,'Uncle Julio\'s':314,'Domodomo':315,'Urban Italia':316,'Vidorra':425,'The Finch':426,'Saaya':427,'Serious Sliders':428,'Slider and Blues':422,'East Hampton Sandwich Co.':423,'Son of a Butcher':424};
-    const groups = Object.entries(_HG).sort((a,b)=>b[1].score-a[1].score);
-    const barColor = sc => sc>=90?'var(--gold)':sc>=80?'#4c9a6a':'var(--text3)';
-    const bar = (label, sc) => `
-      <div style="margin-bottom:6px">
-        <div style="display:flex;justify-content:space-between;margin-bottom:2px">
-          <span style="font-size:10px;color:var(--text3)">${label}</span>
-          <span style="font-size:10px;font-weight:700;color:${barColor(sc)}">${sc}</span>
-        </div>
-        <div style="height:4px;background:var(--border);border-radius:2px">
-          <div style="width:${sc}%;height:100%;background:${barColor(sc)};border-radius:2px;transition:width .4s ease"></div>
-        </div>
-      </div>`;
-
-    return `
-      <div style="margin-bottom:16px">
-        <div style="font-size:20px;font-weight:700;color:var(--text);margin-bottom:4px">🏢 ${S.city||'Dallas'} Hospitality Groups</div>
-        <div style="font-size:12px;color:var(--text3)">Scored across food quality, service, ambiance, value, consistency & innovation</div>
-      </div>
-      ${groups.map(([name,g])=>{
-        const oc = g.score>=90?'var(--gold)':g.score>=80?'#4c9a6a':'#9e8e6e';
-        const sb = g.scoreBreakdown;
-        return `
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:14px">
-          <!-- Header -->
-          <div style="background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.02));padding:14px 14px 11px;border-bottom:1px solid var(--border)">
-            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:6px">
-              <div style="flex:1">
-                <div style="font-size:15px;font-weight:700;color:var(--text);line-height:1.2">${name}</div>
-                <div style="font-size:11px;color:var(--text3);margin-top:3px">Est. ${g.founded} · ${g.concepts} concepts · ${g.flagship}</div>
-                ${g.michelinCount>0?`<div style="font-size:10px;color:var(--gold);margin-top:2px">⭐ ${g.michelinCount} Michelin Recommended</div>`:''}
-              </div>
-              <div style="text-align:center;flex-shrink:0">
-                <div style="font-size:28px;font-weight:700;color:${oc};line-height:1">${g.score}</div>
-                <div style="font-size:9px;color:var(--text3)">Overall</div>
-              </div>
-            </div>
-          </div>
-          <!-- Body -->
-          <div style="padding:12px 14px">
-            <div style="font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:12px">${g.description}</div>
-            <!-- Score bars -->
-            <div style="margin-bottom:12px">
-              ${bar('Food Quality', sb.foodQuality)}
-              ${bar('Service', sb.service)}
-              ${bar('Ambiance', sb.ambiance)}
-              ${bar('Value', sb.value)}
-              ${bar('Consistency', sb.consistency)}
-              ${bar('Innovation', sb.innovation)}
-            </div>
-            <!-- Strengths / Watch -->
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:12px">
-              <div style="padding:8px 10px;background:rgba(76,154,110,.07);border-radius:8px;border:1px solid rgba(76,154,110,.2)">
-                <div style="font-size:9px;font-weight:800;color:#4c9a6e;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px">✅ Strengths</div>
-                <div style="font-size:10px;color:var(--text2);line-height:1.4">${g.strengths}</div>
-              </div>
-              <div style="padding:8px 10px;background:rgba(201,107,76,.07);border-radius:8px;border:1px solid rgba(201,107,76,.2)">
-                <div style="font-size:9px;font-weight:800;color:#c96b4c;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px">👀 Watch</div>
-                <div style="font-size:10px;color:var(--text2);line-height:1.4">${g.weakness}</div>
-              </div>
-            </div>
-            <!-- Concepts -- clickable if in guide -->
-            <div style="font-size:10px;font-weight:800;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px">Concepts</div>
-            <div style="display:flex;flex-wrap:wrap;gap:5px">
-              ${g.restaurants.map(r=>{
-                const rid = HG_LOOKUP[r];
-                return rid
-                  ? `<button onclick="A.openDetailFromGroup(${rid},'groups')"
-                       style="font-size:11px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.35);padding:4px 11px;border-radius:12px;color:var(--gold);font-weight:700;cursor:pointer;touch-action:manipulation;font-family:inherit">${r} ↗</button>`
-                  : `<span style="font-size:11px;background:var(--card2);border:1px solid var(--border);padding:4px 11px;border-radius:12px;color:var(--text3)">${r}</span>`;
-              }).join('')}
             </div>
           </div>
         </div>`;
