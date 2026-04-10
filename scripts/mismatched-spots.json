@@ -1,0 +1,1691 @@
+[
+  {
+    "id": 1002,
+    "name": "Eleven Madison Park",
+    "cuisine": "American Tasting Menu",
+    "neighborhood": "Flatiron / NoMad",
+    "instagram": "@elevenmadisonpark",
+    "website": "https://www.elevenmadisonpark.com",
+    "dishes": [
+      "Roasted Beet Wellington",
+      "Sunflower Butter",
+      "Lavender Honey Dessert"
+    ],
+    "descStart": "Daniel Humm's Madison Square Park monument to ambition reope"
+  },
+  {
+    "id": 1017,
+    "name": "Los Tacos No. 1",
+    "cuisine": "Mexican",
+    "neighborhood": "Chelsea",
+    "instagram": "@lostacos1",
+    "website": "https://www.lostacos1.com",
+    "dishes": [
+      "Taco de Adobada",
+      "Taco de Carne Asada",
+      "Quesadilla de Chicharron"
+    ],
+    "descStart": "The best tacos in Midtown, possibly in Manhattan, definitely"
+  },
+  {
+    "id": 1020,
+    "name": "Le Coucou",
+    "cuisine": "French",
+    "neighborhood": "SoHo",
+    "instagram": "@lecoucou_nyc",
+    "website": "https://www.lecoucou.com",
+    "dishes": [
+      "Quenelle de Brochet",
+      "Dover Sole Meuniere",
+      "Grand Marnier Souffle"
+    ],
+    "descStart": "Daniel Rose and Stephen Starr's SoHo French restaurant occup"
+  },
+  {
+    "id": 1040,
+    "name": "Le Pavillon",
+    "cuisine": "French / Seafood",
+    "neighborhood": "Midtown East",
+    "instagram": "@lepavillonnyc",
+    "website": "https://www.lepavillonnyc.com/",
+    "dishes": [
+      "Dover Sole",
+      "Vegetable Terrine",
+      "Lobster a l'Americaine"
+    ],
+    "descStart": "Daniel Boulud's soaring seafood-and-vegetable restaurant in "
+  },
+  {
+    "id": 1058,
+    "name": "Xi'an Famous Foods",
+    "cuisine": "Chinese Noodles",
+    "neighborhood": "Midtown",
+    "instagram": "https://www.instagram.com/xianfoods",
+    "website": "https://www.xianfoods.com",
+    "dishes": [
+      "Spicy Cumin Lamb Noodles",
+      "Liang Pi",
+      "Lamb Burger"
+    ],
+    "descStart": "Jason Wang turned his father's Flushing food stall into a ha"
+  },
+  {
+    "id": 1077,
+    "name": "Sunken Harbor Club",
+    "cuisine": "Tiki Bar",
+    "neighborhood": "Brooklyn Heights",
+    "instagram": "https://www.instagram.com/sunkenharborclub",
+    "website": "",
+    "dishes": [
+      "Mai Tai",
+      "Rum Flight",
+      "Tiki Cocktails"
+    ],
+    "descStart": "A tiki bar hidden inside the Gage & Tollner building in Broo"
+  },
+  {
+    "id": 1093,
+    "name": "Misi",
+    "cuisine": "Italian Pasta",
+    "neighborhood": "Williamsburg",
+    "instagram": "https://www.instagram.com/misibk",
+    "website": "https://www.misiwilliamsburg.com",
+    "dishes": [
+      "Cacio e Pepe",
+      "Mafaldini",
+      "Focaccia"
+    ],
+    "descStart": "Missy Robbins's pasta-focused sibling to Lilia in Williamsbu"
+  },
+  {
+    "id": 1109,
+    "name": "Dera Restaurant",
+    "cuisine": "South Asian",
+    "neighborhood": "Jackson Heights / Elmhurst",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "Chicken Karahi",
+      "Biryani",
+      "Seekh Kebab"
+    ],
+    "descStart": "Dera on the LES is a Pakistani hole-in-the-wall that serves "
+  },
+  {
+    "id": 1112,
+    "name": "A&A Bake and Doubles Shop",
+    "cuisine": "Trinidadian",
+    "neighborhood": "Bed-Stuy",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "Doubles",
+      "Aloo Pie",
+      "Fish Bake"
+    ],
+    "descStart": "Haenyeo in Park Slope is a Korean-American restaurant from t"
+  },
+  {
+    "id": 1113,
+    "name": "Haenyeo",
+    "cuisine": "Korean",
+    "neighborhood": "Park Slope / Prospect Heights",
+    "instagram": "https://www.instagram.com/haenyeobk",
+    "website": "https://www.haenyeobk.com",
+    "dishes": [
+      "Tteokbokki",
+      "Galbi Short Ribs",
+      "Jeon Pancakes"
+    ],
+    "descStart": "Winner in Williamsburg is the kind of neighborhood spot ever"
+  },
+  {
+    "id": 1117,
+    "name": "Veniero's Pasticceria",
+    "cuisine": "Italian Bakery",
+    "neighborhood": "East Village",
+    "instagram": "https://www.instagram.com/venieros",
+    "website": "https://www.venierospastry.com",
+    "dishes": [
+      "Cannoli",
+      "Sfogliatelle",
+      "Italian Cheesecake"
+    ],
+    "descStart": "Mah-Ze-Dahr in the West Village makes one thing better than "
+  },
+  {
+    "id": 1120,
+    "name": "Morgenstern's Finest Ice Cream",
+    "cuisine": "Artisan Ice Cream",
+    "neighborhood": "Lower East Side",
+    "instagram": "https://www.instagram.com/morgensternsnyc",
+    "website": "https://www.morgensternsnyc.com",
+    "dishes": [
+      "Burnt Honey Vanilla",
+      "Black Coconut Ash",
+      "Seasonal Flavors"
+    ],
+    "descStart": "Mustang Harry's near Penn Station is the kind of sports bar "
+  },
+  {
+    "id": 1121,
+    "name": "Mustang Harry's",
+    "cuisine": "Sports Bar & Grill",
+    "neighborhood": "Midtown",
+    "instagram": "",
+    "website": "https://www.mustangharrys.com",
+    "dishes": [
+      "Spicy Wings",
+      "Tavern Burger",
+      "Loaded Nachos",
+      "Draft Beer Selection"
+    ],
+    "descStart": "Bowery Ballroom is the gold standard for mid-size live music"
+  },
+  {
+    "id": 1123,
+    "name": "Birdland Jazz Club",
+    "cuisine": "Jazz Club",
+    "neighborhood": "Midtown West",
+    "instagram": "https://www.instagram.com/birdlandjazzclub",
+    "website": "https://www.birdlandjazz.com",
+    "dishes": [
+      "Cocktails",
+      "2-Drink Minimum",
+      "Bar Menu"
+    ],
+    "descStart": "Union Hall in Park Slope combines a bocce court, a library l"
+  },
+  {
+    "id": 1125,
+    "name": "Blue Note Jazz Club",
+    "cuisine": "Jazz Club",
+    "neighborhood": "Greenwich Village",
+    "instagram": "https://www.instagram.com/bluenotenyc",
+    "website": "https://www.bluenotejazz.com",
+    "dishes": [
+      "Dinner Show",
+      "Cocktails",
+      "Late-Night Jam"
+    ],
+    "descStart": "Empanada Mama in Hell's Kitchen is open 24 hours and serves "
+  },
+  {
+    "id": 1126,
+    "name": "Empanada Mama",
+    "cuisine": "Latin American Empanadas",
+    "neighborhood": "Hell's Kitchen",
+    "instagram": "",
+    "website": "https://www.empanadamama.com",
+    "dishes": [
+      "Chicken Empanada",
+      "Beef Empanada",
+      "Plantain"
+    ],
+    "descStart": "Spicy Village on Forsyth Street in Chinatown serves the big "
+  },
+  {
+    "id": 1127,
+    "name": "Spicy Village",
+    "cuisine": "Chinese / Henan",
+    "neighborhood": "Chinatown",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "Big Tray Chicken",
+      "Cumin Lamb",
+      "Hand-Pulled Noodles"
+    ],
+    "descStart": "Sugarfish brought its LA omakase-for-the-people concept to N"
+  },
+  {
+    "id": 1129,
+    "name": "Taqueria Al Pastor",
+    "cuisine": "Mexican Tacos",
+    "neighborhood": "Harlem",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "Tacos Al Pastor",
+      "Suadero",
+      "Horchata"
+    ],
+    "descStart": "Wo Hop has been serving chow mein in a Chinatown basement si"
+  },
+  {
+    "id": 1131,
+    "name": "Los Mariscos",
+    "cuisine": "Mexican Seafood",
+    "neighborhood": "Chelsea",
+    "instagram": "losmariscosnyc",
+    "website": "",
+    "dishes": [
+      "Fish Ceviche Tostada",
+      "Shrimp Taco",
+      "Agua Fresca"
+    ],
+    "descStart": "Maison Premiere in Williamsburg turned an oyster bar into an"
+  },
+  {
+    "id": 1132,
+    "name": "Lau Pa Sat",
+    "cuisine": "Singaporean Hawker",
+    "neighborhood": "Financial District",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "Hainanese Chicken Rice",
+      "Laksa",
+      "Char Kway Teow"
+    ],
+    "descStart": "Jacob's Pickles on the Upper West Side serves buttermilk bis"
+  },
+  {
+    "id": 1133,
+    "name": "Maison Premiere",
+    "cuisine": "Oyster Bar & Cocktails",
+    "neighborhood": "Williamsburg",
+    "instagram": "https://www.instagram.com/maisonpremiere",
+    "website": "https://www.maisonpremiere.com",
+    "dishes": [
+      "Oyster Selection",
+      "Absinthe Drip",
+      "Cocktails"
+    ],
+    "descStart": "Totto Ramen on West 52nd Street serves paitan broth — a rich"
+  },
+  {
+    "id": 1135,
+    "name": "Kopitiam",
+    "cuisine": "Malaysian Coffee Shop",
+    "neighborhood": "Chinatown",
+    "instagram": "https://www.instagram.com/kopitiamnyc",
+    "website": "https://www.kopitiamnyc.com",
+    "dishes": [
+      "Kaya Toast",
+      "Nasi Lemak",
+      "Pandan Waffle"
+    ],
+    "descStart": "Ai Fiori at the Langham hotel is Michael White's Michelin-st"
+  },
+  {
+    "id": 1136,
+    "name": "Una Pizza Napoletana",
+    "cuisine": "Neapolitan Pizza",
+    "neighborhood": "Lower East Side",
+    "instagram": "https://www.instagram.com/unapizzanapoletana",
+    "website": "https://www.unapizza.com",
+    "dishes": [
+      "Margherita",
+      "Marinara",
+      "Filetti"
+    ],
+    "descStart": "Marea on Central Park South serves some of the best Italian "
+  },
+  {
+    "id": 1137,
+    "name": "Jacob's Pickles",
+    "cuisine": "Southern Comfort",
+    "neighborhood": "Upper West Side",
+    "instagram": "https://www.instagram.com/jacobspickles",
+    "website": "https://www.jacobspickles.com",
+    "dishes": [
+      "Fried Chicken Biscuit",
+      "Cat Head Biscuit",
+      "Pickles"
+    ],
+    "descStart": "Una Pizza Napoletana on the Lower East Side earned #1 pizza "
+  },
+  {
+    "id": 1138,
+    "name": "Totto Ramen",
+    "cuisine": "Ramen",
+    "neighborhood": "Midtown West",
+    "instagram": "",
+    "website": "https://www.tottoramen.com",
+    "dishes": [
+      "Miso Ramen",
+      "Extra Chashu",
+      "Spicy Ramen"
+    ],
+    "descStart": "JG Melon on the Upper East Side has been serving the best pu"
+  },
+  {
+    "id": 1139,
+    "name": "Margon",
+    "cuisine": "Cuban Diner",
+    "neighborhood": "Midtown",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "Cubano",
+      "Roast Pork Plate",
+      "Rice & Beans"
+    ],
+    "descStart": "Cafe Sabarsky inside the Neue Galerie is what happens when a"
+  },
+  {
+    "id": 1140,
+    "name": "Ai Fiori",
+    "cuisine": "Italian Fine Dining",
+    "neighborhood": "Midtown",
+    "instagram": "https://www.instagram.com/aifiori",
+    "website": "https://www.aifiori.com",
+    "dishes": [
+      "Lobster with Burrata",
+      "Cacio e Pepe",
+      "Tasting Menu"
+    ],
+    "descStart": "Barney Greengrass on Amsterdam Avenue has been the Sturgeon "
+  },
+  {
+    "id": 1141,
+    "name": "Marea",
+    "cuisine": "Italian Seafood",
+    "neighborhood": "Upper West Side",
+    "instagram": "https://www.instagram.com/mareanyc",
+    "website": "https://www.marea-nyc.com",
+    "dishes": [
+      "Fusilli Bone Marrow",
+      "Branzino",
+      "Crudo"
+    ],
+    "descStart": "Sandro's on the Upper East Side is the kind of old-school It"
+  },
+  {
+    "id": 1142,
+    "name": "Ace's Pizza",
+    "cuisine": "Detroit-Style Pizza",
+    "neighborhood": "Midtown",
+    "instagram": "https://www.instagram.com/acespizzanyc",
+    "website": "",
+    "dishes": [
+      "Detroit Square",
+      "Vegan Pie",
+      "Pepperoni"
+    ],
+    "descStart": "Jones Wood Foundry is a British gastropub on the UES that so"
+  },
+  {
+    "id": 1143,
+    "name": "JG Melon",
+    "cuisine": "Burgers & Bar",
+    "neighborhood": "Upper East Side",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "Cottage Burger",
+      "Bloody Mary",
+      "Fries"
+    ],
+    "descStart": "Zabar's is not a restaurant — it's a religion. This Upper We"
+  },
+  {
+    "id": 1144,
+    "name": "Cafe Sabarsky",
+    "cuisine": "Viennese Cafe",
+    "neighborhood": "Upper East Side",
+    "instagram": "",
+    "website": "https://www.neuegalerie.org/cafes/cafe-sabarsky",
+    "dishes": [
+      "Wiener Schnitzel",
+      "Sachertorte",
+      "Viennese Coffee"
+    ],
+    "descStart": "Kefi on the UWS serves Greek food that makes you forget you'"
+  },
+  {
+    "id": 1145,
+    "name": "Sandro's",
+    "cuisine": "Italian-American",
+    "neighborhood": "Upper East Side",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "Veal Parm",
+      "Rigatoni Bolognese",
+      "Tiramisu"
+    ],
+    "descStart": "Kabawa in the East Village is David Chang's most exciting re"
+  },
+  {
+    "id": 1147,
+    "name": "Barney Greengrass",
+    "cuisine": "Jewish Deli / Appetizing",
+    "neighborhood": "Upper West Side",
+    "instagram": "",
+    "website": "https://www.barneygreengrass.com",
+    "dishes": [
+      "Eggs with Nova & Onions",
+      "Sturgeon",
+      "Bagels & Lox"
+    ],
+    "descStart": "Superbueno in the East Village comes from the team behind Su"
+  },
+  {
+    "id": 1148,
+    "name": "Zabar's",
+    "cuisine": "Deli & Market",
+    "neighborhood": "Upper West Side",
+    "instagram": "https://www.instagram.com/zabars",
+    "website": "https://www.zabars.com",
+    "dishes": [
+      "Babka",
+      "Smoked Fish",
+      "Rugelach"
+    ],
+    "descStart": "Wolfgang's Steakhouse occupies a stunning former dining hall"
+  },
+  {
+    "id": 1149,
+    "name": "Kefi",
+    "cuisine": "Greek",
+    "neighborhood": "Upper West Side",
+    "instagram": "",
+    "website": "https://www.kefirestaurant.com",
+    "dishes": [
+      "Lamb Chops",
+      "Grilled Octopus",
+      "Mezze Spread"
+    ],
+    "descStart": "Smith & Wollensky on 3rd Avenue is a Midtown steakhouse inst"
+  },
+  {
+    "id": 1150,
+    "name": "Kabawa",
+    "cuisine": "Caribbean Fine Dining",
+    "neighborhood": "East Village",
+    "instagram": "https://www.instagram.com/kabawanyc",
+    "website": "https://www.kabawanyc.com",
+    "dishes": [
+      "Prix Fixe Tasting",
+      "Caribbean Cocktails"
+    ],
+    "descStart": "Russ & Daughters Cafe on Orchard Street is the sit-down exte"
+  },
+  {
+    "id": 1151,
+    "name": "Cuerno",
+    "cuisine": "Mexican Steakhouse",
+    "neighborhood": "Midtown",
+    "instagram": "https://www.instagram.com/cuernonyc",
+    "website": "https://www.cuernonyc.com",
+    "dishes": [
+      "Bone-In Ribeye",
+      "Salsa Macha",
+      "Mezcal Cocktails"
+    ],
+    "descStart": "Spice Thai Kitchen in the East Village has been the neighbor"
+  },
+  {
+    "id": 1152,
+    "name": "Superbueno",
+    "cuisine": "Mexican Cocktail Bar",
+    "neighborhood": "East Village",
+    "instagram": "https://www.instagram.com/superbuenobar",
+    "website": "https://www.superbuenobar.com",
+    "dishes": [
+      "Mole Negroni",
+      "Salted Plum Tamarind",
+      "Mezcal Flights"
+    ],
+    "descStart": "Eisenberg's Sandwich Shop on 5th Avenue has been a Flatiron "
+  },
+  {
+    "id": 1153,
+    "name": "Wolfgang's Steakhouse",
+    "cuisine": "Steakhouse",
+    "neighborhood": "Midtown East",
+    "instagram": "https://www.instagram.com/wolfgangssteakhouse",
+    "website": "https://www.wolfgangssteakhouse.net",
+    "dishes": [
+      "Porterhouse for Two",
+      "Creamed Spinach",
+      "German Potatoes"
+    ],
+    "descStart": "Alidoro on Sullivan Street has been making Italian sandwiche"
+  },
+  {
+    "id": 1154,
+    "name": "Smith & Wollensky",
+    "cuisine": "Steakhouse",
+    "neighborhood": "Midtown East",
+    "instagram": "https://www.instagram.com/smithandwollensky",
+    "website": "https://www.smithandwollensky.com",
+    "dishes": [
+      "Double-Cut Rib Eye",
+      "Lobster Tail",
+      "Key Lime Pie"
+    ],
+    "descStart": "Ha's Dac Biet is the Vietnamese restaurant from the team beh"
+  },
+  {
+    "id": 1155,
+    "name": "Russ & Daughters Cafe",
+    "cuisine": "Jewish Appetizing",
+    "neighborhood": "Lower East Side",
+    "instagram": "https://www.instagram.com/russanddaughters",
+    "website": "https://www.russanddaughterscafe.com",
+    "dishes": [
+      "Latkes",
+      "Super Heebster",
+      "Egg Cream"
+    ],
+    "descStart": "Momofuku Noodle Bar on 1st Avenue started a revolution. Davi"
+  },
+  {
+    "id": 1156,
+    "name": "Spice Thai Kitchen",
+    "cuisine": "Thai",
+    "neighborhood": "East Village",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "Pad See Ew",
+      "Green Curry",
+      "Tom Kha"
+    ],
+    "descStart": "Emmy Squared started as a Detroit-style pizza pop-up and gre"
+  },
+  {
+    "id": 1157,
+    "name": "Eisenberg's Sandwich Shop",
+    "cuisine": "Classic Diner",
+    "neighborhood": "Flatiron / NoMad",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "Tuna Melt",
+      "Egg Cream",
+      "Matzo Ball Soup"
+    ],
+    "descStart": "Miss Ada in Fort Greene serves Middle Eastern food with a wa"
+  },
+  {
+    "id": 1158,
+    "name": "Alidoro",
+    "cuisine": "Italian Sandwiches",
+    "neighborhood": "SoHo",
+    "instagram": "",
+    "website": "https://www.alidoronyc.com",
+    "dishes": [
+      "Christopher Columbus",
+      "Alidoro Special",
+      "Sopressata"
+    ],
+    "descStart": "Court Street Grocers in Carroll Gardens makes some of the be"
+  },
+  {
+    "id": 1159,
+    "name": "Ha's Đặc Biệt",
+    "cuisine": "French-Vietnamese",
+    "neighborhood": "Lower East Side",
+    "instagram": "https://www.instagram.com/hasdacbiet",
+    "website": "",
+    "dishes": [
+      "Tasting Menu",
+      "Vietnamese Cocktails"
+    ],
+    "descStart": "Bar Kabawa is the front-room cocktail bar at David Chang's K"
+  },
+  {
+    "id": 1160,
+    "name": "Momofuku Noodle Bar",
+    "cuisine": "Asian Noodles",
+    "neighborhood": "East Village",
+    "instagram": "https://www.instagram.com/momofuku",
+    "website": "https://www.momofuku.com",
+    "dishes": [
+      "Pork Buns",
+      "Ramen",
+      "Bo Ssam"
+    ],
+    "descStart": "Dhamaka Kitchen is the fast-casual sibling to the Michelin-s"
+  },
+  {
+    "id": 1161,
+    "name": "Emmy Squared",
+    "cuisine": "Detroit-Style Pizza & Burgers",
+    "neighborhood": "Williamsburg",
+    "instagram": "https://www.instagram.com/emmysquared",
+    "website": "https://www.emmysquared.com",
+    "dishes": [
+      "The Colony",
+      "Le Big Matt Burger",
+      "Emmy Squared"
+    ],
+    "descStart": "Sweetgreen took the salad and turned it into a lifestyle bra"
+  },
+  {
+    "id": 1163,
+    "name": "Court Street Grocers",
+    "cuisine": "Deli & Sandwiches",
+    "neighborhood": "Carroll Gardens / Cobble Hill",
+    "instagram": "https://www.instagram.com/courtstreetgrocers",
+    "website": "https://www.courtstreetgrocers.com",
+    "dishes": [
+      "Turkey Brie & Chutney",
+      "Italian Hero",
+      "Breakfast Sandwich"
+    ],
+    "descStart": "Le Crocodile at the Wythe Hotel in Williamsburg is the Frenc"
+  },
+  {
+    "id": 1164,
+    "name": "Bar Kabawa",
+    "cuisine": "Caribbean Bar",
+    "neighborhood": "East Village",
+    "instagram": "https://www.instagram.com/barkabawa",
+    "website": "",
+    "dishes": [
+      "Daiquiri Variations",
+      "Jamaican Patties"
+    ],
+    "descStart": "Llama Inn in Williamsburg serves Peruvian food with a New Yo"
+  },
+  {
+    "id": 1165,
+    "name": "Dhamaka Kitchen",
+    "cuisine": "Indian Street Food",
+    "neighborhood": "Lower East Side",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "Chaat",
+      "Tandoori Chicken",
+      "Biryani"
+    ],
+    "descStart": "Juliana's Pizza under the Brooklyn Bridge is Patsy Grimaldi'"
+  },
+  {
+    "id": 1169,
+    "name": "Le Crocodile",
+    "cuisine": "French Brasserie",
+    "neighborhood": "Williamsburg",
+    "instagram": "https://www.instagram.com/lecrocodilenyc",
+    "website": "https://www.lecrocodilenyc.com",
+    "dishes": [
+      "Steak Frites",
+      "Raw Bar",
+      "Croque Monsieur"
+    ],
+    "descStart": "The Frenchette team's casual Williamsburg bistro inside the "
+  },
+  {
+    "id": 1179,
+    "name": "César",
+    "cuisine": "French",
+    "neighborhood": "SoHo",
+    "instagram": "cesarnyc",
+    "website": "https://www.cesarnyc.com",
+    "dishes": [
+      "Chef's Tasting",
+      "Seafood Course",
+      "Foie Gras"
+    ],
+    "descStart": "Two Michelin stars for a 13-course tasting menu ($368) from "
+  },
+  {
+    "id": 1185,
+    "name": "Cafe Boulud",
+    "cuisine": "French",
+    "neighborhood": "Upper East Side",
+    "instagram": "cafeboulud",
+    "website": "https://www.cafeboulud.com",
+    "dishes": [
+      "Tuna Tartare",
+      "Duck Confit",
+      "Chocolate Fondant"
+    ],
+    "descStart": "Daniel Boulud's Upper East Side French restaurant earned a M"
+  },
+  {
+    "id": 1192,
+    "name": "Noz 17",
+    "cuisine": "Japanese",
+    "neighborhood": "Chelsea",
+    "instagram": "noz17nyc",
+    "website": "https://www.noz17.com",
+    "dishes": [
+      "Omakase",
+      "Nigiri",
+      "Seasonal Fish"
+    ],
+    "descStart": "One Michelin star for an Edomae omakase in Chelsea from the "
+  },
+  {
+    "id": 1196,
+    "name": "Bōm",
+    "cuisine": "Korean",
+    "neighborhood": "Flatiron / NoMad",
+    "instagram": "bom_nyc",
+    "website": "https://www.bomnyc.com",
+    "dishes": [
+      "12-Course Tasting",
+      "Seasonal Banchan",
+      "Dessert Course"
+    ],
+    "descStart": "One Michelin star for a Korean tasting menu hidden inside Oi"
+  },
+  {
+    "id": 1198,
+    "name": "Kosaka",
+    "cuisine": "Japanese",
+    "neighborhood": "West Village",
+    "instagram": "kosakanyc",
+    "website": "https://www.kosakanyc.com",
+    "dishes": [
+      "Omakase Nigiri",
+      "Toro",
+      "Sea Bream"
+    ],
+    "descStart": "One Michelin star for an intimate West Village omakase from "
+  },
+  {
+    "id": 1216,
+    "name": "Bridges",
+    "cuisine": "New American",
+    "neighborhood": "Chinatown",
+    "instagram": "bridgesnyc",
+    "website": "https://www.bridgesnyc.com",
+    "dishes": [
+      "Comté Tart",
+      "Seasonal Fish",
+      "Pasta Course"
+    ],
+    "descStart": "One Michelin star for eclectic New American cooking in China"
+  },
+  {
+    "id": 1220,
+    "name": "Le Veau d'Or",
+    "cuisine": "French",
+    "neighborhood": "Upper East Side",
+    "instagram": "leveaudornyc",
+    "website": "https://www.leveaudornyc.com",
+    "dishes": [
+      "Frog Legs",
+      "Oeuf en Gelée",
+      "Île Flottante"
+    ],
+    "descStart": "The Frenchette team brought a 1930s Upper East Side bistro b"
+  },
+  {
+    "id": 1231,
+    "name": "Rolo's",
+    "cuisine": "Italian",
+    "neighborhood": "Bushwick",
+    "instagram": "rolosridgewood",
+    "website": "https://www.rolosnyc.com",
+    "dishes": [
+      "Double Cheeseburger",
+      "Lasagna Verde",
+      "Crispy Potatoes"
+    ],
+    "descStart": "Four Gramercy Tavern vets opened this Ridgewood restaurant, "
+  },
+  {
+    "id": 1232,
+    "name": "Al Badawi",
+    "cuisine": "Palestinian",
+    "neighborhood": "Brooklyn Heights",
+    "instagram": "albadawinyc",
+    "website": "https://www.albadawi.com",
+    "dishes": [
+      "Mansaf",
+      "Ouzi Beef",
+      "Flatbread"
+    ],
+    "descStart": "Palestinian family-style dining in Brooklyn Heights from the"
+  },
+  {
+    "id": 1233,
+    "name": "Noz Market",
+    "cuisine": "Japanese",
+    "neighborhood": "Upper East Side",
+    "instagram": "nozmarket",
+    "website": "https://www.nozmarket.com",
+    "dishes": [
+      "Temaki Set",
+      "A La Carte Nigiri",
+      "Omakase"
+    ],
+    "descStart": "The walk-in hand roll bar from the Sushi Noz team serves the"
+  },
+  {
+    "id": 1238,
+    "name": "La Mercerie",
+    "cuisine": "French",
+    "neighborhood": "SoHo",
+    "instagram": "la_mercerie",
+    "website": "https://www.lamercerienyc.com",
+    "dishes": [
+      "Croque Monsieur",
+      "Duck Leg Confit",
+      "Madeleines"
+    ],
+    "descStart": "Marie-Aude Rose's French cafe inside the Roman and Williams "
+  },
+  {
+    "id": 1239,
+    "name": "Dame",
+    "cuisine": "Seafood",
+    "neighborhood": "West Village",
+    "instagram": "damenyc",
+    "website": "https://www.damenyc.com",
+    "dishes": [
+      "Dover Sole",
+      "Lobster Toast",
+      "Chocolate Pot de Crème"
+    ],
+    "descStart": "Ed Szymanski's tiny West Village seafood restaurant serves s"
+  },
+  {
+    "id": 1242,
+    "name": "Le Rock",
+    "cuisine": "French",
+    "neighborhood": "Midtown",
+    "instagram": "lerocknyc",
+    "website": "https://www.lerocknyc.com",
+    "dishes": [
+      "Steak Frites",
+      "Oysters",
+      "Crème Brûlée"
+    ],
+    "descStart": "The Frenchette team at Rockefeller Center serves the most ac"
+  },
+  {
+    "id": 1254,
+    "name": "Celestine",
+    "cuisine": "Mediterranean",
+    "neighborhood": "DUMBO",
+    "instagram": "celestinebk",
+    "website": "https://www.celestinebk.com",
+    "dishes": [
+      "Wood-Grilled Branzino",
+      "Lamb Chops",
+      "Hummus"
+    ],
+    "descStart": "DUMBO Mediterranean with floor-to-ceiling windows framing th"
+  },
+  {
+    "id": 1261,
+    "name": "Cecconi's Dumbo",
+    "cuisine": "Italian",
+    "neighborhood": "DUMBO",
+    "instagram": "cecconisdumbo",
+    "website": "https://www.cecconisdumbo.com",
+    "dishes": [
+      "Burrata",
+      "Cacio e Pepe",
+      "Branzino"
+    ],
+    "descStart": "Soho House's DUMBO Italian has the best waterfront views of "
+  },
+  {
+    "id": 1266,
+    "name": "Sky Pavilion",
+    "cuisine": "Chinese",
+    "neighborhood": "Midtown West",
+    "instagram": "skypavilionnyc",
+    "website": "https://www.skypavilionnyc.com",
+    "dishes": [
+      "Whole Steamed Fish",
+      "Spicy Rabbit",
+      "Tofu Pudding"
+    ],
+    "descStart": "One of the best Sichuan restaurants in Manhattan, hiding nea"
+  },
+  {
+    "id": 1270,
+    "name": "Confidant",
+    "cuisine": "New American",
+    "neighborhood": "Brooklyn Heights",
+    "instagram": "confidantbk",
+    "website": "https://www.confidantbk.com",
+    "dishes": [
+      "Pot Prawn Pie",
+      "Dry-Aged Steak",
+      "Dessert"
+    ],
+    "descStart": "Chefs Brendan Kelley and Daniel Grossman relocated their New"
+  },
+  {
+    "id": 1273,
+    "name": "Vato",
+    "cuisine": "Mexican",
+    "neighborhood": "Park Slope / Prospect Heights",
+    "instagram": "vato_bk",
+    "website": "https://www.vatobk.com",
+    "dishes": [
+      "Breakfast Burrito",
+      "Conchas",
+      "Churro"
+    ],
+    "descStart": "All-day tortilleria and bakery in Park Slope from Corima che"
+  },
+  {
+    "id": 1293,
+    "name": "Casa Enrique",
+    "cuisine": "Mexican",
+    "neighborhood": "Long Island City",
+    "instagram": "casaenriquelic",
+    "website": "https://www.casaenrique.com",
+    "dishes": [
+      "Mole Poblano",
+      "Enchiladas Suizas",
+      "Churros"
+    ],
+    "descStart": "The only Michelin-starred Mexican restaurant in New York (wh"
+  },
+  {
+    "id": 1302,
+    "name": "Arthur Avenue Retail Market",
+    "cuisine": "Italian",
+    "neighborhood": "Bronx",
+    "instagram": "",
+    "website": "https://www.arthuravenue.com",
+    "dishes": [
+      "Fresh Mozzarella",
+      "Italian Hero",
+      "Cannoli"
+    ],
+    "descStart": "The Bronx's real Little Italy — skip Manhattan's tourist tra"
+  },
+  {
+    "id": 1303,
+    "name": "Roberto's",
+    "cuisine": "Italian",
+    "neighborhood": "Bronx",
+    "instagram": "robertosbx",
+    "website": "https://www.roberto089.com",
+    "dishes": [
+      "Rigatoni",
+      "Grilled Octopus",
+      "Veal Chop"
+    ],
+    "descStart": "Arthur Avenue Italian institution serving Salernitan cuisine"
+  },
+  {
+    "id": 1310,
+    "name": "Samosa Shack",
+    "cuisine": "Indian",
+    "neighborhood": "Jackson Heights / Elmhurst",
+    "instagram": "samosashack",
+    "website": "",
+    "dishes": [
+      "Samosa Chaat",
+      "Dosa",
+      "Chai"
+    ],
+    "descStart": "Jackson Heights street food stall with crispy samosas, chaat"
+  },
+  {
+    "id": 1316,
+    "name": "Nom Wah Nolita",
+    "cuisine": "Chinese",
+    "neighborhood": "Nolita",
+    "instagram": "nomwahnolita",
+    "website": "https://www.nomwah.com",
+    "dishes": [
+      "Shrimp Dumplings",
+      "BBQ Pork Buns",
+      "Dan Dan Noodles"
+    ],
+    "descStart": "The modern offshoot of Chinatown's legendary Nom Wah Tea Par"
+  },
+  {
+    "id": 1337,
+    "name": "Taqueria Ramirez",
+    "cuisine": "Mexican",
+    "neighborhood": "Greenpoint",
+    "instagram": "taqueriaramirez",
+    "website": "",
+    "dishes": [
+      "Tacos de Guisados",
+      "Quesadilla",
+      "Agua Fresca"
+    ],
+    "descStart": "Greenpoint taqueria from the Border Town team with handmade "
+  },
+  {
+    "id": 1361,
+    "name": "Govinda's",
+    "cuisine": "Indian",
+    "neighborhood": "SoHo",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "Veggie Buffet",
+      "Dal",
+      "Pakora"
+    ],
+    "descStart": "Vegetarian lunch buffet in a Hare Krishna temple setting wit"
+  },
+  {
+    "id": 1374,
+    "name": "Pier 17 Rooftop",
+    "cuisine": "Entertainment",
+    "neighborhood": "Financial District",
+    "instagram": "theseaport",
+    "website": "https://www.pier17ny.com",
+    "dishes": [
+      "Cocktails",
+      "Bar Food"
+    ],
+    "descStart": "South Street Seaport's rooftop concert venue with stunning E"
+  },
+  {
+    "id": 1381,
+    "name": "Le Bain",
+    "cuisine": "Rooftop Bar",
+    "neighborhood": "Meatpacking District",
+    "instagram": "lebainnyc",
+    "website": "https://www.standardhotels.com/new-york/features/le-bain",
+    "dishes": [
+      "Cocktails",
+      "DJ Cover"
+    ],
+    "descStart": "The rooftop at The Standard in the Meatpacking District that"
+  },
+  {
+    "id": 1403,
+    "name": "Mighty Quinn's BBQ",
+    "cuisine": "BBQ",
+    "neighborhood": "East Village",
+    "instagram": "mightyquinnsbbq",
+    "website": "https://www.mightyquinnsbbq.com",
+    "dishes": [
+      "Brisket",
+      "Burnt Ends",
+      "Mac & Cheese"
+    ],
+    "descStart": "Texas-inspired East Village BBQ that came out of Smorgasburg"
+  },
+  {
+    "id": 1409,
+    "name": "ABCV",
+    "cuisine": "Vegetarian",
+    "neighborhood": "Flatiron / NoMad",
+    "instagram": "abcvnyc",
+    "website": "https://www.abcvnyc.com",
+    "dishes": [
+      "Beet Tartare",
+      "Mushroom Bowl",
+      "Seasonal Vegetables"
+    ],
+    "descStart": "Jean-Georges Vongerichten's plant-based restaurant in Flatir"
+  },
+  {
+    "id": 1418,
+    "name": "Ippudo",
+    "cuisine": "Japanese",
+    "neighborhood": "East Village",
+    "instagram": "ippudony",
+    "website": "https://www.ippudony.com",
+    "dishes": [
+      "Shiromaru Classic",
+      "Akamaru Modern",
+      "Hirata Buns"
+    ],
+    "descStart": "Tokyo's famous tonkotsu ramen chain brought properly rich, m"
+  },
+  {
+    "id": 1429,
+    "name": "Totonno's Pizzeria Napolitana",
+    "cuisine": "Pizza",
+    "neighborhood": "Coney Island / South Brooklyn",
+    "instagram": "totonnoscoaloven",
+    "website": "https://www.totonnosbk.com",
+    "dishes": [
+      "Margherita Pizza",
+      "Fresh Mozzarella Pie"
+    ],
+    "descStart": "Coney Island coal-fired pizzeria since 1924 — one of NYC's o"
+  },
+  {
+    "id": 1434,
+    "name": "Dekalb Market Hall",
+    "cuisine": "Food Hall",
+    "neighborhood": "Brooklyn Heights",
+    "instagram": "dekalbmarkethall",
+    "website": "https://www.dekalbmarkethall.com",
+    "dishes": [
+      "Katz's Pastrami",
+      "Arepas",
+      "Ramen"
+    ],
+    "descStart": "Downtown Brooklyn food hall beneath City Point with 40+ vend"
+  },
+  {
+    "id": 1437,
+    "name": "Arepa Lady",
+    "cuisine": "Colombian",
+    "neighborhood": "Jackson Heights / Elmhurst",
+    "instagram": "arepalady1",
+    "website": "https://www.arepalady.com",
+    "dishes": [
+      "Arepa de Choclo",
+      "Arepa de Queso",
+      "Chorizo"
+    ],
+    "descStart": "Maria Piedad Cano went from Jackson Heights street cart to J"
+  },
+  {
+    "id": 1455,
+    "name": "Delmonico's",
+    "cuisine": "Steakhouse",
+    "neighborhood": "Financial District",
+    "instagram": "delmonicosnyc",
+    "website": "https://www.delmonicosrestaurant.com",
+    "dishes": [
+      "Delmonico Steak",
+      "Eggs Benedict",
+      "Baked Alaska"
+    ],
+    "descStart": "NYC's oldest steakhouse since 1837 — credited with inventing"
+  },
+  {
+    "id": 1464,
+    "name": "Nami Nori",
+    "cuisine": "Japanese",
+    "neighborhood": "West Village",
+    "instagram": "naminori",
+    "website": "https://www.naminori.nyc",
+    "dishes": [
+      "Toro Hand Roll",
+      "Lobster Hand Roll",
+      "Uni Hand Roll"
+    ],
+    "descStart": "West Village hand roll bar from Masa alumni serving creative"
+  },
+  {
+    "id": 1468,
+    "name": "Bar Blondeau",
+    "cuisine": "Rooftop Bar",
+    "neighborhood": "Williamsburg",
+    "instagram": "barblondeau",
+    "website": "https://www.wythehotel.com/bar-blondeau",
+    "dishes": [
+      "Aperol Spritz",
+      "Manhattan Skyline View",
+      "Seasonal Cocktail"
+    ],
+    "descStart": "Williamsburg rooftop bar atop the Wythe Hotel with sweeping "
+  },
+  {
+    "id": 1472,
+    "name": "St. Anselm",
+    "cuisine": "Steakhouse",
+    "neighborhood": "Williamsburg",
+    "instagram": "stanselmbk",
+    "website": "https://www.stanselm.net",
+    "dishes": [
+      "Hanger Steak",
+      "Lamb Chops",
+      "Grilled Vegetables"
+    ],
+    "descStart": "Williamsburg grill with butcher-quality meats at neighborhoo"
+  },
+  {
+    "id": 1473,
+    "name": "Bien Cuit",
+    "cuisine": "Bakery",
+    "neighborhood": "Carroll Gardens / Cobble Hill",
+    "instagram": "biencuit",
+    "website": "https://www.biencuit.com",
+    "dishes": [
+      "Miche Sourdough",
+      "Chocolate Babka",
+      "Croissant"
+    ],
+    "descStart": "Cobble Hill bakery making some of the best bread in New York"
+  },
+  {
+    "id": 1479,
+    "name": "Eataly NYC Flatiron",
+    "cuisine": "Italian",
+    "neighborhood": "Flatiron / NoMad",
+    "instagram": "eatalyny",
+    "website": "https://www.eataly.com/us_en/stores/nyc-flatiron",
+    "dishes": [
+      "Fresh Pasta",
+      "Neapolitan Pizza",
+      "Gelato"
+    ],
+    "descStart": "Mario Batali founded it, but the massive Flatiron Italian fo"
+  },
+  {
+    "id": 1481,
+    "name": "Mokbar",
+    "cuisine": "Korean",
+    "neighborhood": "Chelsea",
+    "instagram": "mokbar",
+    "website": "https://www.mokbar.com",
+    "dishes": [
+      "Kimchi Ramen",
+      "Bulgogi Ramen",
+      "Dumplings"
+    ],
+    "descStart": "Korean ramen fusion at Chelsea Market with rich bone broth, "
+  },
+  {
+    "id": 1487,
+    "name": "La Vara",
+    "cuisine": "Spanish",
+    "neighborhood": "Carroll Gardens / Cobble Hill",
+    "instagram": "lavaranyc",
+    "website": "https://www.lavarany.com",
+    "dishes": [
+      "Croquetas",
+      "Arroz Negro",
+      "Tortilla Española"
+    ],
+    "descStart": "Cobble Hill Spanish tapas from Alex Raij (also behind Txikit"
+  },
+  {
+    "id": 1497,
+    "name": "Laliko",
+    "cuisine": "Georgian",
+    "neighborhood": "West Village",
+    "instagram": "lalikonyc",
+    "website": "https://www.lalikonyc.com",
+    "dishes": [
+      "Khachapuri",
+      "Khinkali",
+      "Georgian Wine"
+    ],
+    "descStart": "West Village Georgian restaurant with khachapuri that rivals"
+  },
+  {
+    "id": 1501,
+    "name": "Ayat",
+    "cuisine": "Palestinian",
+    "neighborhood": "Coney Island / South Brooklyn",
+    "instagram": "ayatnyc",
+    "website": "https://www.ayatnyc.com",
+    "dishes": [
+      "Mansaf",
+      "Musakhan",
+      "Lamb Kebab"
+    ],
+    "descStart": "Bay Ridge Palestinian restaurant and sibling to Al Badawi in"
+  },
+  {
+    "id": 1504,
+    "name": "Leo",
+    "cuisine": "Italian",
+    "neighborhood": "Williamsburg",
+    "instagram": "leobk",
+    "website": "https://www.leobk.com",
+    "dishes": [
+      "Cacio e Pepe",
+      "Seasonal Pasta",
+      "Tiramisu"
+    ],
+    "descStart": "Williamsburg Italian from a Lilia alum with handmade pastas "
+  },
+  {
+    "id": 1520,
+    "name": "ABC Kitchen",
+    "cuisine": "New American",
+    "neighborhood": "Flatiron / NoMad",
+    "instagram": "abckitchennyc",
+    "website": "https://www.abckitchennyc.com",
+    "dishes": [
+      "Whole Wheat Pizza",
+      "Crab Toast",
+      "Sundae"
+    ],
+    "descStart": "Jean-Georges Vongerichten's farm-to-table Flatiron restauran"
+  },
+  {
+    "id": 1522,
+    "name": "Wildair",
+    "cuisine": "Wine Bar",
+    "neighborhood": "Lower East Side",
+    "instagram": "wildairnyc",
+    "website": "https://www.wildairnyc.com",
+    "dishes": [
+      "Seasonal Small Plates",
+      "Natural Wine",
+      "Beef Tartare"
+    ],
+    "descStart": "Natural wine bar on the LES from the Contra team with invent"
+  },
+  {
+    "id": 1528,
+    "name": "Nathan's Famous",
+    "cuisine": "Hot Dogs",
+    "neighborhood": "Coney Island / South Brooklyn",
+    "instagram": "nathansfamous",
+    "website": "https://www.nathansfamous.com",
+    "dishes": [
+      "Hot Dog",
+      "Crinkle-Cut Fries",
+      "Corn Dog"
+    ],
+    "descStart": "The Coney Island hot dog stand since 1916 — home of the annu"
+  },
+  {
+    "id": 1537,
+    "name": "The Smith",
+    "cuisine": "American",
+    "neighborhood": "East Village",
+    "instagram": "thesmithrestaurant",
+    "website": "https://www.thesmithnyc.com",
+    "dishes": [
+      "Mac & Cheese",
+      "Brunch Burger",
+      "Ricotta Toast"
+    ],
+    "descStart": "Bustling all-day American brasserie with a crowd-pleasing me"
+  },
+  {
+    "id": 1541,
+    "name": "Katana Kitten",
+    "cuisine": "Cocktail Bar",
+    "neighborhood": "West Village",
+    "instagram": "katanakitten",
+    "website": "https://www.katanakitten.com",
+    "dishes": [
+      "Japanese Highball",
+      "Shochu Cocktails",
+      "Karaage"
+    ],
+    "descStart": "Japanese-inspired West Village cocktail bar from Masahiro Ur"
+  },
+  {
+    "id": 1566,
+    "name": "Basement",
+    "cuisine": "Club",
+    "neighborhood": "Chinatown",
+    "instagram": "basementnyc",
+    "website": "https://www.basementnyc.com",
+    "dishes": [
+      "Techno Night",
+      "Underground DJ Set",
+      "Warehouse Party"
+    ],
+    "descStart": "Underground Chinatown club beneath Knockdown Center with a s"
+  },
+  {
+    "id": 1571,
+    "name": "Jimmy",
+    "cuisine": "Rooftop Bar",
+    "neighborhood": "SoHo",
+    "instagram": "jimmysoho",
+    "website": "https://www.jimmysoho.com",
+    "dishes": [
+      "Cocktails",
+      "Frozen Drinks",
+      "Bar Snacks"
+    ],
+    "descStart": "Rooftop pool bar atop the James Hotel in SoHo with a retract"
+  },
+  {
+    "id": 1573,
+    "name": "The Ides at Wythe Hotel",
+    "cuisine": "Rooftop Bar",
+    "neighborhood": "Williamsburg",
+    "instagram": "theides_wythe",
+    "website": "https://www.wythehotel.com",
+    "dishes": [
+      "Sunset Spritz",
+      "Skyline Martini",
+      "Rooftop Snack Plate"
+    ],
+    "descStart": "Iconic Williamsburg rooftop at the Wythe Hotel with stunning"
+  },
+  {
+    "id": 1579,
+    "name": "Spring Lounge",
+    "cuisine": "Bar",
+    "neighborhood": "Nolita",
+    "instagram": "",
+    "website": "",
+    "dishes": [
+      "PBR",
+      "Shot & Beer",
+      "Jukebox"
+    ],
+    "descStart": "Nolita dive known as the Shark Bar for its neon shark sign —"
+  },
+  {
+    "id": 1610,
+    "name": "Panorama Room",
+    "cuisine": "Rooftop Bar",
+    "neighborhood": "Midtown East",
+    "instagram": "panoramaroom",
+    "website": "https://www.panoramaroom.com",
+    "dishes": [
+      "Cocktails",
+      "Latin Small Plates",
+      "Wine"
+    ],
+    "descStart": "Sleek rooftop at the Graduate Hotel on Roosevelt Island with"
+  },
+  {
+    "id": 1614,
+    "name": "Berry Park",
+    "cuisine": "Rooftop Bar",
+    "neighborhood": "Williamsburg",
+    "instagram": "berryparkbk",
+    "website": "https://www.berryparkbk.com",
+    "dishes": [
+      "Craft Beer",
+      "Bar Food",
+      "Frozen Drinks"
+    ],
+    "descStart": "Chill Williamsburg rooftop with Manhattan skyline views, che"
+  },
+  {
+    "id": 1652,
+    "name": "Avant Gardner",
+    "cuisine": "Club",
+    "neighborhood": "Williamsburg",
+    "instagram": "avantgardner",
+    "website": "https://www.avant-gardner.com",
+    "dishes": [
+      "Brooklyn Mirage Open Air",
+      "Kings Hall Indoor",
+      "Great Hall Concert"
+    ],
+    "descStart": "Multi-venue complex housing Brooklyn Mirage, Kings Hall, and"
+  },
+  {
+    "id": 1678,
+    "name": "One World Observatory",
+    "cuisine": "Entertainment",
+    "neighborhood": "Financial District",
+    "instagram": "oneworldobs",
+    "website": "https://www.oneworldobservatory.com",
+    "dishes": [
+      "One Dine Restaurant",
+      "Cocktails",
+      "Views"
+    ],
+    "descStart": "Observation deck on floors 100-102 of One World Trade Center"
+  },
+  {
+    "id": 1685,
+    "name": "Staten Island Ferry",
+    "cuisine": "Entertainment",
+    "neighborhood": "Financial District",
+    "instagram": "",
+    "website": "https://www.siferry.com",
+    "dishes": [
+      "Free Ride",
+      "Statue of Liberty Views",
+      "Snack Bar"
+    ],
+    "descStart": "The best free activity in New York City — a 25-minute ferry "
+  },
+  {
+    "id": 1691,
+    "name": "Zona de Cuba",
+    "cuisine": "Rooftop Bar",
+    "neighborhood": "SoHo",
+    "instagram": "zonadecuba",
+    "website": "",
+    "dishes": [
+      "Mojitos",
+      "Cuban Sandwiches",
+      "Salsa Dancing"
+    ],
+    "descStart": "Cuban-themed SoHo rooftop with live Latin music, salsa danci"
+  },
+  {
+    "id": 1692,
+    "name": "The Heights Bar & Grill",
+    "cuisine": "Rooftop Bar",
+    "neighborhood": "Upper West Side",
+    "instagram": "theheightsbar",
+    "website": "https://www.theheightsbarandgrill.com",
+    "dishes": [
+      "Burgers",
+      "Wings",
+      "Draft Beer"
+    ],
+    "descStart": "Casual Morningside Heights rooftop with Manhattan views, che"
+  },
+  {
+    "id": 1706,
+    "name": "NYC Ferry",
+    "cuisine": "Entertainment",
+    "neighborhood": "Midtown",
+    "instagram": "nycferry",
+    "website": "https://www.ferry.nyc",
+    "dishes": [
+      "$4 Rides",
+      "Snack Bar",
+      "Multiple Routes"
+    ],
+    "descStart": "NYC's commuter ferry system doubles as a scenic waterfront e"
+  },
+  {
+    "id": 1707,
+    "name": "Bateaux New York Dinner Cruise",
+    "cuisine": "Entertainment",
+    "neighborhood": "Chelsea",
+    "instagram": "babornyc",
+    "website": "https://www.bateauxnewyork.com",
+    "dishes": [
+      "3-Course Dinner",
+      "Live Music",
+      "Champagne"
+    ],
+    "descStart": "Glass-enclosed luxury dinner cruise around Manhattan with a "
+  },
+  {
+    "id": 1719,
+    "name": "Mike's Deli at Arthur Avenue",
+    "cuisine": "Italian",
+    "neighborhood": "Bronx",
+    "instagram": "mikesdeliarthur",
+    "website": "",
+    "dishes": [
+      "Italian Hero",
+      "Fresh Mozzarella",
+      "Pasta Salad"
+    ],
+    "descStart": "Legendary Italian deli inside the Arthur Avenue Retail Marke"
+  },
+  {
+    "id": 1728,
+    "name": "2nd Ave Deli",
+    "cuisine": "Jewish Deli",
+    "neighborhood": "Midtown East",
+    "instagram": "2ndavedeli",
+    "website": "https://www.2ndavedeli.com",
+    "dishes": [
+      "Pastrami Sandwich",
+      "Matzo Ball Soup",
+      "Chopped Liver"
+    ],
+    "descStart": "The last great Jewish deli in Manhattan since the original c"
+  },
+  {
+    "id": 1737,
+    "name": "The Eighty Six",
+    "cuisine": "Steakhouse",
+    "neighborhood": "West Village",
+    "instagram": "the86nyc",
+    "website": "",
+    "dishes": [
+      "Dry-Aged Ribeye",
+      "Oysters",
+      "Smoked Dirty Martini"
+    ],
+    "descStart": "Tilman Fertitta and Catch Hospitality Group take over the st"
+  },
+  {
+    "id": 1739,
+    "name": "Wild Cherry",
+    "cuisine": "New American",
+    "neighborhood": "West Village",
+    "instagram": "wildcherrynyc",
+    "website": "https://www.wildcherrynyc.com",
+    "dishes": [
+      "Frogs Legs Kiev",
+      "Cheeseburger",
+      "Steak Frites"
+    ],
+    "descStart": "The buzziest downtown opening of 2025 — Frenchette's Riad Na"
+  },
+  {
+    "id": 1740,
+    "name": "Or'esh",
+    "cuisine": "Mediterranean",
+    "neighborhood": "SoHo",
+    "instagram": "oreshnyc",
+    "website": "",
+    "dishes": [
+      "Jerusalem Bagel",
+      "Wagyu Strip",
+      "Wood-Fired Dorade"
+    ],
+    "descStart": "Eastern Mediterranean from the Corner Store team (Catch Hosp"
+  },
+  {
+    "id": 1743,
+    "name": "Bistrot Ha",
+    "cuisine": "French-Vietnamese",
+    "neighborhood": "Lower East Side",
+    "instagram": "bistrothanyc",
+    "website": "",
+    "dishes": [
+      "Crab Yuba",
+      "Curried Lobster",
+      "Steak Frites"
+    ],
+    "descStart": "The hotly anticipated sibling to Ha's Snack Bar — bigger, wi"
+  },
+  {
+    "id": 1786,
+    "name": "Jongro BBQ",
+    "cuisine": "Korean",
+    "neighborhood": "Midtown",
+    "instagram": "jongrobbq",
+    "website": "https://www.jongrobbq.com",
+    "dishes": [
+      "Gopchang",
+      "Beef Brisket",
+      "Galbi"
+    ],
+    "descStart": "24-hour Koreatown BBQ that serious KBBQ fans argue is better"
+  },
+  {
+    "id": 1799,
+    "name": "Torrisi Sandwich Shop",
+    "cuisine": "Italian Sandwiches",
+    "neighborhood": "Nolita",
+    "instagram": "torrisinyc",
+    "website": "",
+    "dishes": [
+      "Chicken Parm Hero",
+      "Turkey Hero",
+      "Italian Combo"
+    ],
+    "descStart": "The Italian sandwich counter from the Torrisi team (yes, the"
+  }
+]
