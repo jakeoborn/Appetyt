@@ -1,140 +1,159 @@
 #!/usr/bin/env node
-/**
- * Appetyt Restaurant Link Auditor
- * Run: node scripts/audit-links.js
- *
- * Checks all restaurant URLs (website, Instagram, reserveUrl) for broken links.
- * Outputs a report of failures to scripts/audit-report-links.json
- */
+// Audit all Instagram handles and website URLs across all cities
+// Tests each link and reports broken ones
+// Run: node scripts/audit-links.js
+// Output: scripts/broken-links-report.json
 
 const fs = require('fs');
-const path = require('path');
+const https = require('https');
+const http = require('http');
 
-// Extract DALLAS_DATA from index.html
-const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
-const match = html.match(/const DALLAS_DATA\s*=\s*(\[[\s\S]*?\]);\s*(?:const|let|var|\/\/)/);
-if (!match) { console.error('Could not find DALLAS_DATA'); process.exit(1); }
+const indexHtml = fs.readFileSync('index.html', 'utf8');
 
-let restaurants;
-try {
-  restaurants = eval(match[1]);
-} catch(e) {
-  console.error('Could not parse DALLAS_DATA:', e.message);
-  process.exit(1);
+function parseArray(tag) {
+  const s = indexHtml.indexOf(tag); if (s === -1) return [];
+  const a = indexHtml.indexOf('[', s); let d = 0, e = a;
+  for (let i = a; i < indexHtml.length; i++) { if (indexHtml[i] === '[') d++; if (indexHtml[i] === ']') d--; if (d === 0) { e = i + 1; break; } }
+  try { return JSON.parse(indexHtml.slice(a, e)); } catch(e) { return []; }
+}
+function parseChicago() {
+  const ci = indexHtml.indexOf("'Chicago': [", indexHtml.indexOf('const CITY_DATA'));
+  if (ci === -1) return [];
+  const ca = indexHtml.indexOf('[', ci + 10); let d = 0, e = ca;
+  for (let i = ca; i < indexHtml.length; i++) { if (indexHtml[i] === '[') d++; if (indexHtml[i] === ']') d--; if (d === 0) { e = i + 1; break; } }
+  try { return JSON.parse(indexHtml.slice(ca, e)); } catch(e) { return []; }
 }
 
-console.log(`Found ${restaurants.length} restaurants. Checking links...\n`);
+const cities = [
+  { name: 'Dallas', data: parseArray('const DALLAS_DATA') },
+  { name: 'NYC', data: parseArray('const NYC_DATA') },
+  { name: 'Houston', data: parseArray('const HOUSTON_DATA') },
+  { name: 'Austin', data: parseArray('const AUSTIN_DATA') },
+  { name: 'Chicago', data: parseChicago() },
+  { name: 'SLC', data: parseArray('const SLC_DATA=') },
+];
 
-const results = { total: restaurants.length, checked: 0, broken: [], noWebsite: [], noPhone: [], noAddress: [], noHours: [] };
-
-// Check for missing data
-restaurants.forEach(r => {
-  if (!r.website) results.noWebsite.push({ id: r.id, name: r.name });
-  if (!r.phone) results.noPhone.push({ id: r.id, name: r.name });
-  if (!r.address) results.noAddress.push({ id: r.id, name: r.name });
-  if (!r.hours) results.noHours.push({ id: r.id, name: r.name });
-});
-
-// Collect all URLs to check
-const urlChecks = [];
-restaurants.forEach(r => {
-  if (r.website) {
-    const url = r.website.startsWith('http') ? r.website : 'https://' + r.website;
-    urlChecks.push({ id: r.id, name: r.name, field: 'website', url });
-  }
-  if (r.instagram) {
-    const handle = r.instagram.replace('@', '');
-    urlChecks.push({ id: r.id, name: r.name, field: 'instagram', url: `https://instagram.com/${handle}` });
-  }
-  if (r.reserveUrl) {
-    urlChecks.push({ id: r.id, name: r.name, field: 'reserveUrl', url: r.reserveUrl });
-  }
-});
-
-console.log(`Checking ${urlChecks.length} URLs...\n`);
-
-// Rate-limited fetch with timeout
-async function checkUrl(item) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 10000);
-  try {
-    const res = await fetch(item.url, {
-      method: 'HEAD',
-      signal: controller.signal,
-      redirect: 'follow',
-      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; AppetytAudit/1.0)' }
-    });
-    clearTimeout(timeout);
-    if (res.status >= 400) {
-      return { ...item, status: res.status, error: `HTTP ${res.status}` };
-    }
-    return null; // OK
-  } catch(e) {
-    clearTimeout(timeout);
-    // Try GET if HEAD fails
+function checkUrl(url, timeout = 8000) {
+  return new Promise((resolve) => {
     try {
-      const controller2 = new AbortController();
-      const timeout2 = setTimeout(() => controller2.abort(), 10000);
-      const res2 = await fetch(item.url, {
-        method: 'GET',
-        signal: controller2.signal,
-        redirect: 'follow',
-        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; AppetytAudit/1.0)' }
+      const mod = url.startsWith('https') ? https : http;
+      const req = mod.get(url, { timeout, headers: { 'User-Agent': 'Mozilla/5.0 (compatible; AppetytAudit/1.0)' } }, (res) => {
+        if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+          resolve({ status: res.statusCode, redirect: res.headers.location, ok: true });
+        } else {
+          resolve({ status: res.statusCode, ok: res.statusCode >= 200 && res.statusCode < 400 });
+        }
+        res.resume();
       });
-      clearTimeout(timeout2);
-      if (res2.status >= 400) {
-        return { ...item, status: res2.status, error: `HTTP ${res2.status}` };
+      req.on('error', (err) => resolve({ status: 0, error: err.message, ok: false }));
+      req.on('timeout', () => { req.destroy(); resolve({ status: 0, error: 'timeout', ok: false }); });
+    } catch(e) {
+      resolve({ status: 0, error: e.message, ok: false });
+    }
+  });
+}
+
+async function auditCity(cityName, data) {
+  const issues = [];
+  let igChecked = 0, igBroken = 0, webChecked = 0, webBroken = 0;
+
+  for (let idx = 0; idx < data.length; idx++) {
+    const r = data[idx];
+    if (idx % 50 === 0 && idx > 0) {
+      process.stdout.write(`  ...${idx}/${data.length}\n`);
+    }
+
+    // Check Website (faster, less rate-limited than Instagram)
+    const web = (r.website || '').trim();
+    if (web && web.length > 5 && web.startsWith('http')) {
+      const result = await checkUrl(web);
+      webChecked++;
+      if (!result.ok) {
+        webBroken++;
+        issues.push({
+          type: 'website',
+          name: r.name,
+          score: r.score,
+          url: web,
+          status: result.status,
+          error: result.error || '',
+        });
       }
-      return null; // OK on GET
-    } catch(e2) {
-      return { ...item, status: 0, error: e2.message || 'Connection failed' };
+      await new Promise(resolve => setTimeout(resolve, 50));
     }
   }
+
+  // Instagram check — sample top 50 per city (IG rate limits aggressively)
+  const igSample = data.filter(r => r.instagram && r.instagram.replace('@','').trim().length > 1)
+    .sort((a,b) => b.score - a.score)
+    .slice(0, 50);
+
+  for (const r of igSample) {
+    const ig = r.instagram.replace('@', '').trim();
+    const igUrl = `https://www.instagram.com/${ig}/`;
+    const result = await checkUrl(igUrl);
+    igChecked++;
+    if (!result.ok && result.status !== 0) { // ignore timeouts for IG (rate limiting)
+      igBroken++;
+      issues.push({
+        type: 'instagram',
+        name: r.name,
+        score: r.score,
+        handle: ig,
+        url: igUrl,
+        status: result.status,
+        error: result.error || '',
+      });
+    }
+    await new Promise(resolve => setTimeout(resolve, 300));
+  }
+
+  return { cityName, total: data.length, igChecked, igBroken, webChecked, webBroken, issues };
 }
 
-// Process in batches of 10
-async function run() {
-  const batchSize = 10;
-  let completed = 0;
+async function main() {
+  console.log('=== APPETYT LINK AUDIT ===\n');
+  console.log('Testing website URLs for all restaurants + Instagram for top 50 per city...\n');
 
-  for (let i = 0; i < urlChecks.length; i += batchSize) {
-    const batch = urlChecks.slice(i, i + batchSize);
-    const batchResults = await Promise.all(batch.map(checkUrl));
-    batchResults.forEach(r => { if (r) results.broken.push(r); });
-    completed += batch.length;
-    process.stdout.write(`\r  Checked ${completed}/${urlChecks.length} URLs | ${results.broken.length} broken`);
+  const allResults = [];
+  let totalIssues = 0;
+
+  for (const city of cities) {
+    console.log(`Checking ${city.name} (${city.data.length} restaurants)...`);
+    const result = await auditCity(city.name, city.data);
+    allResults.push(result);
+    totalIssues += result.issues.length;
+
+    console.log(`  Website: ${result.webChecked} checked, ${result.webBroken} broken`);
+    console.log(`  Instagram: ${result.igChecked} checked, ${result.igBroken} broken`);
+    if (result.issues.length > 0) {
+      result.issues.slice(0, 10).forEach(i => {
+        console.log(`    ${i.type}: ${i.name} (${i.score}) — ${i.url} [${i.status || i.error}]`);
+      });
+      if (result.issues.length > 10) console.log(`    ... and ${result.issues.length - 10} more`);
+    }
+    console.log('');
   }
 
-  results.checked = urlChecks.length;
-  console.log('\n');
+  const report = {
+    date: new Date().toISOString(),
+    summary: {
+      totalRestaurants: cities.reduce((s, c) => s + c.data.length, 0),
+      totalIssues,
+      byCity: allResults.map(r => ({
+        city: r.cityName, total: r.total,
+        igChecked: r.igChecked, igBroken: r.igBroken,
+        webChecked: r.webChecked, webBroken: r.webBroken,
+      })),
+    },
+    issues: allResults.flatMap(r => r.issues),
+  };
 
-  // Summary
-  console.log('=== AUDIT SUMMARY ===');
-  console.log(`Total restaurants: ${results.total}`);
-  console.log(`URLs checked: ${results.checked}`);
-  console.log(`Broken links: ${results.broken.length}`);
-  console.log(`Missing website: ${results.noWebsite.length}`);
-  console.log(`Missing phone: ${results.noPhone.length}`);
-  console.log(`Missing address: ${results.noAddress.length}`);
-  console.log(`Missing hours: ${results.noHours.length}`);
-
-  if (results.broken.length) {
-    console.log('\n--- BROKEN LINKS ---');
-    results.broken.forEach(b => {
-      console.log(`  ${b.name} [${b.field}] ${b.url} => ${b.error}`);
-    });
-  }
-
-  if (results.noWebsite.length) {
-    console.log(`\n--- NO WEBSITE (${results.noWebsite.length}) ---`);
-    results.noWebsite.slice(0, 20).forEach(r => console.log(`  ${r.name}`));
-    if (results.noWebsite.length > 20) console.log(`  ... and ${results.noWebsite.length - 20} more`);
-  }
-
-  // Save full report
-  const reportPath = path.join(__dirname, 'audit-report-links.json');
-  fs.writeFileSync(reportPath, JSON.stringify(results, null, 2));
-  console.log(`\nFull report saved to: ${reportPath}`);
+  fs.writeFileSync('scripts/broken-links-report.json', JSON.stringify(report, null, 2));
+  console.log('=== SUMMARY ===');
+  console.log(`Total restaurants: ${report.summary.totalRestaurants}`);
+  console.log(`Total broken links: ${totalIssues}`);
+  console.log(`Report: scripts/broken-links-report.json`);
 }
 
-run().catch(e => console.error(e));
+main().catch(console.error);

@@ -1,0 +1,4139 @@
+{
+  "date": "2026-04-10T02:48:53.025Z",
+  "summary": {
+    "totalRestaurants": 2399,
+    "totalIssues": 510,
+    "byCity": [
+      {
+        "city": "Dallas",
+        "total": 609,
+        "igChecked": 50,
+        "igBroken": 0,
+        "webChecked": 591,
+        "webBroken": 114
+      },
+      {
+        "city": "NYC",
+        "total": 774,
+        "igChecked": 50,
+        "igBroken": 0,
+        "webChecked": 698,
+        "webBroken": 151
+      },
+      {
+        "city": "Houston",
+        "total": 256,
+        "igChecked": 50,
+        "igBroken": 0,
+        "webChecked": 240,
+        "webBroken": 75
+      },
+      {
+        "city": "Austin",
+        "total": 258,
+        "igChecked": 50,
+        "igBroken": 0,
+        "webChecked": 252,
+        "webBroken": 66
+      },
+      {
+        "city": "Chicago",
+        "total": 248,
+        "igChecked": 50,
+        "igBroken": 0,
+        "webChecked": 232,
+        "webBroken": 44
+      },
+      {
+        "city": "SLC",
+        "total": 254,
+        "igChecked": 50,
+        "igBroken": 0,
+        "webChecked": 227,
+        "webBroken": 60
+      }
+    ]
+  },
+  "issues": [
+    {
+      "type": "website",
+      "name": "Sassetta",
+      "score": 88,
+      "url": "https://www.sassettadallas.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Katy Trail Ice House",
+      "score": 81,
+      "url": "https://www.katytrailicehouse.com",
+      "status": 0,
+      "error": "read ECONNRESET"
+    },
+    {
+      "type": "website",
+      "name": "Truck Yard",
+      "score": 79,
+      "url": "https://www.truckyarddallas.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Meso Maya",
+      "score": 85,
+      "url": "https://www.mesomaya.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "The Salty Donut",
+      "score": 90,
+      "url": "https://www.thesaltydonut.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.thesaltydonut.com. is not in the cert's altnames: DNS:*.secureserversites.net, DNS:secureserversites.net"
+    },
+    {
+      "type": "website",
+      "name": "Nobu Dallas",
+      "score": 92,
+      "url": "https://www.noburestaurants.com/dallas",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Monica Aca y Alla",
+      "score": 87,
+      "url": "https://www.monicaacayalla.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.monicaacayalla.com"
+    },
+    {
+      "type": "website",
+      "name": "The Zodiac Room at Neiman Marcus",
+      "score": 86,
+      "url": "https://www.neimanmarcus.com/restaurants/zodiac",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Nick & Sam's Steakhouse",
+      "score": 94,
+      "url": "https://www.nickandsamsdallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.nickandsamsdallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Fuel City Tacos",
+      "score": 85,
+      "url": "https://www.fuelcitydallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.fuelcitydallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Chengdu Taste",
+      "score": 87,
+      "url": "https://www.chengdutaste.net",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.chengdutaste.net"
+    },
+    {
+      "type": "website",
+      "name": "Stoneleigh P",
+      "score": 92,
+      "url": "https://www.thestoneleighp.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Ramen Tatsu Yokocho",
+      "score": 85,
+      "url": "https://www.ramentatsu.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.ramentatsu.com"
+    },
+    {
+      "type": "website",
+      "name": "Purépecha",
+      "score": 88,
+      "url": "https://www.purepechadallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.purepechadallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Ngon Vietnamese Kitchen",
+      "score": 86,
+      "url": "https://www.ngonkitchen.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.ngonkitchen.com"
+    },
+    {
+      "type": "website",
+      "name": "Sushi Kozy",
+      "score": 85,
+      "url": "https://sushikozy.com",
+      "status": 0,
+      "error": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+    },
+    {
+      "type": "website",
+      "name": "Beverly's Bistro & Bar",
+      "score": 85,
+      "url": "https://www.beverlysdallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.beverlysdallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Norman's Japanese Grill",
+      "score": 89,
+      "url": "https://www.normansjapanesegrill.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.normansjapanesegrill.com"
+    },
+    {
+      "type": "website",
+      "name": "The Libertine",
+      "score": 82,
+      "url": "https://www.thelibertinebar.com",
+      "status": 0,
+      "error": "self-signed certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+    },
+    {
+      "type": "website",
+      "name": "Jeng Chi",
+      "score": 83,
+      "url": "https://www.jengchi.com",
+      "status": 0,
+      "error": "Client network socket disconnected before secure TLS connection was established"
+    },
+    {
+      "type": "website",
+      "name": "Wild Salsa",
+      "score": 82,
+      "url": "https://www.wildsalsa.com",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Ziziki's",
+      "score": 85,
+      "url": "https://www.zizikis.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Javier's",
+      "score": 93,
+      "url": "https://www.javiersdallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.javiersdallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Pesca Coastal Classics",
+      "score": 85,
+      "url": "https://www.pescadallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.pescadallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Milagro Cantina",
+      "score": 86,
+      "url": "https://www.milagrotacocantina.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Cafe Brazil",
+      "score": 79,
+      "url": "https://www.cafebrazil.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Mot Hai Ba",
+      "score": 88,
+      "url": "https://www.mothaibadallas.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "The Charlotte",
+      "score": 87,
+      "url": "https://www.thecharlottedallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thecharlottedallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Sanjh",
+      "score": 85,
+      "url": "https://www.sanjhdallas.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Tacos El Metro",
+      "score": 82,
+      "url": "https://www.tacoselmetro.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.tacoselmetro.com"
+    },
+    {
+      "type": "website",
+      "name": "Turan Uyghur Kitchen",
+      "score": 88,
+      "url": "https://www.turankitchen.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.turankitchen.com"
+    },
+    {
+      "type": "website",
+      "name": "Hillstone",
+      "score": 82,
+      "url": "https://hillstonerestaurant.com",
+      "status": 0,
+      "error": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+    },
+    {
+      "type": "website",
+      "name": "Elephant East",
+      "score": 85,
+      "url": "https://www.elephanteast.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.elephanteast.com"
+    },
+    {
+      "type": "website",
+      "name": "Café Duro",
+      "score": 84,
+      "url": "https://www.cafeduro.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.cafeduro.com"
+    },
+    {
+      "type": "website",
+      "name": "Anchor Sushi Bar",
+      "score": 87,
+      "url": "https://www.anchorsushibar.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.anchorsushibar.com"
+    },
+    {
+      "type": "website",
+      "name": "El Molino",
+      "score": 85,
+      "url": "https://www.elmolinodallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.elmolinodallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Kenny's Italian Kitchen",
+      "score": 88,
+      "url": "https://www.kennys.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Quarter Acre",
+      "score": 92,
+      "url": "https://www.quarteracredallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.quarteracredallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Bird Bakery",
+      "score": 87,
+      "url": "https://www.birdbakery.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Sky Blossom",
+      "score": 86,
+      "url": "https://www.skyblossom.com",
+      "status": 500,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Izkina",
+      "score": 85,
+      "url": "https://www.izkinadallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.izkinadallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Café Madrid",
+      "score": 88,
+      "url": "https://www.cafemadriddallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.cafemadriddallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Honor Bar Dallas",
+      "score": 85,
+      "url": "https://www.honorbar.com",
+      "status": 0,
+      "error": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+    },
+    {
+      "type": "website",
+      "name": "Two Hands",
+      "score": 86,
+      "url": "https://www.twohandsnyc.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Barsotti's",
+      "score": 92,
+      "url": "https://www.barsottis.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Kenny's Wood Fired Grill",
+      "score": 85,
+      "url": "https://www.kennyswoodfired.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.kennyswoodfired.com"
+    },
+    {
+      "type": "website",
+      "name": "AKAI at Musume",
+      "score": 91,
+      "url": "https://www.musumedallas.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Four Corners Brewing Co.",
+      "score": 87,
+      "url": "https://www.fourcornersbrewing.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.fourcornersbrewing.com"
+    },
+    {
+      "type": "website",
+      "name": "Peticolas Brewing Company",
+      "score": 88,
+      "url": "https://www.peticolas.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Manhattan Project Beer Company",
+      "score": 87,
+      "url": "https://www.manhattanprojectbeer.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.manhattanprojectbeer.com. is not in the cert's altnames: DNS:nxcli.net, DNS:*.au-south-1.nxcli.net, DNS:*.mynexcess.site, DNS:*.nl-west-1.nxcli.net, DNS:*.nxcli.io, DNS:*.nxcli.net, DNS:*.uk-south-2.nxcli.net, DNS:*.us-midwest-1.nxcli.net, DNS:*.us-midwest-2.nxcli.net, DNS:*.us-south-1.nxcli.net, DNS:*.us-west-1.nxcli.net, DNS:*.us-west-2.nxcli.net"
+    },
+    {
+      "type": "website",
+      "name": "BowlGames Dallas",
+      "score": 84,
+      "url": "https://www.bowlgamesdallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.bowlgamesdallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Maroma Dallas",
+      "score": 86,
+      "url": "https://www.maromadallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.maromadallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Royal China (Richardson)",
+      "score": 83,
+      "url": "https://www.royalchinarichardson.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.royalchinarichardson.com"
+    },
+    {
+      "type": "website",
+      "name": "Studio Movie Grill Dallas",
+      "score": 78,
+      "url": "https://www.studiomoviegrill.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Ruins",
+      "score": 91,
+      "url": "https://www.ruinsdallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.ruinsdallas.com"
+    },
+    {
+      "type": "website",
+      "name": "The Free Man",
+      "score": 87,
+      "url": "https://www.thefreemandallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thefreemandallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Mexican Sugar",
+      "score": 87,
+      "url": "https://www.mexicansugar.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A0000C6:SSL routines:tls_get_more_records:packet length too long:openssl\\ssl\\record\\methods\\tls_common.c:661:\n"
+    },
+    {
+      "type": "website",
+      "name": "Ida Claire",
+      "score": 87,
+      "url": "https://www.idaclaire.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Mariano's Hacienda",
+      "score": 86,
+      "url": "https://laharanch.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Bistro 31",
+      "score": 78,
+      "url": "https://www.bistro31.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.bistro31.com"
+    },
+    {
+      "type": "website",
+      "name": "Pizza Leila",
+      "score": 86,
+      "url": "https://www.pizzaleila.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Cava",
+      "score": 76,
+      "url": "https://www.cava.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Bread Zeppelin",
+      "score": 80,
+      "url": "https://www.eatzeppelin.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.eatzeppelin.com"
+    },
+    {
+      "type": "website",
+      "name": "Bad Chicken",
+      "score": 80,
+      "url": "https://www.eatbadchicken.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.eatbadchicken.com"
+    },
+    {
+      "type": "website",
+      "name": "Milk Cream",
+      "score": 83,
+      "url": "https://www.milkcreamdallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.milkcreamdallas.com"
+    },
+    {
+      "type": "website",
+      "name": "IFKYK Mochi Churro",
+      "score": 80,
+      "url": "https://www.ifkykmochichurro.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.ifkykmochichurro.com"
+    },
+    {
+      "type": "website",
+      "name": "Mochio Mochi Donut",
+      "score": 79,
+      "url": "https://www.mochiodonut.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Raising Cane's",
+      "score": 80,
+      "url": "https://www.raisingcanes.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Liberty Burger",
+      "score": 82,
+      "url": "https://www.libertyburger.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Keller's Drive-In",
+      "score": 81,
+      "url": "https://www.kellersdrivein.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.kellersdrivein.com"
+    },
+    {
+      "type": "website",
+      "name": "Claremont Neighborhood Grill",
+      "score": 79,
+      "url": "https://www.claremontgrill.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.claremontgrill.com"
+    },
+    {
+      "type": "website",
+      "name": "JG Old Fashioned Hamburgers",
+      "score": 80,
+      "url": "https://www.jgburgers.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.jgburgers.com"
+    },
+    {
+      "type": "website",
+      "name": "Angry Dog",
+      "score": 81,
+      "url": "https://www.angrydogdallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.angrydogdallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Maison Chinoise",
+      "score": 88,
+      "url": "https://www.maisonchinoise.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.maisonchinoise.com"
+    },
+    {
+      "type": "website",
+      "name": "Miya Chinese Cuisine",
+      "score": 83,
+      "url": "https://www.miyacuisine.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.miyacuisine.com"
+    },
+    {
+      "type": "website",
+      "name": "Royal China (Preston)",
+      "score": 82,
+      "url": "https://www.royalchinarestaurant.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.royalchinarestaurant.com"
+    },
+    {
+      "type": "website",
+      "name": "Oishii",
+      "score": 85,
+      "url": "https://www.oishiidallas.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 80\n"
+    },
+    {
+      "type": "website",
+      "name": "Slow & Steady Coffee",
+      "score": 85,
+      "url": "https://www.slowandsteadycoffee.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.slowandsteadycoffee.com"
+    },
+    {
+      "type": "website",
+      "name": "Triumvir Coffee",
+      "score": 82,
+      "url": "https://www.triumvircoffee.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.triumvircoffee.com"
+    },
+    {
+      "type": "website",
+      "name": "Union Coffee",
+      "score": 82,
+      "url": "https://www.unioncoffeedallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.unioncoffeedallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Trova Wine + Market",
+      "score": 86,
+      "url": "https://www.trovawine.com",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Bodega Wine Bar",
+      "score": 83,
+      "url": "https://www.bodegawinebar.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "The Alcove",
+      "score": 82,
+      "url": "https://www.thealcovedallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thealcovedallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Moodaepo Korean BBQ",
+      "score": 87,
+      "url": "https://moodaepotx.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Pillar",
+      "score": 89,
+      "url": "https://pillardallas.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A0000C6:SSL routines:tls_get_more_records:packet length too long:openssl\\ssl\\record\\methods\\tls_common.c:661:\n"
+    },
+    {
+      "type": "website",
+      "name": "Ella",
+      "score": 82,
+      "url": "https://www.elladallas.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Taqueria La Ventana",
+      "score": 79,
+      "url": "https://www.taqueriaventanadallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.taqueriaventanadallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Creamy Seoul",
+      "score": 80,
+      "url": "https://www.creamyseoul.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.creamyseoul.com"
+    },
+    {
+      "type": "website",
+      "name": "Whiskey Cake Kitchen & Bar",
+      "score": 84,
+      "url": "https://www.whiskeycakekitchen.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.whiskeycakekitchen.com"
+    },
+    {
+      "type": "website",
+      "name": "Shorty's Coneys & Cocktails",
+      "score": 84,
+      "url": "https://eatdrinkshortys.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Lounge Here",
+      "score": 91,
+      "url": "https://www.loungehere.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Olivella's Pizza and Wine",
+      "score": 90,
+      "url": "https://www.olivellaspizza.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.olivellaspizza.com"
+    },
+    {
+      "type": "website",
+      "name": "Bowen House",
+      "score": 90,
+      "url": "https://bowenhousetx.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 80\n"
+    },
+    {
+      "type": "website",
+      "name": "The Old Crow",
+      "score": 80,
+      "url": "https://www.theoldcrowdallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.theoldcrowdallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Single Wide",
+      "score": 81,
+      "url": "https://www.singlewidedallas.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.singlewidedallas.com. is not in the cert's altnames: DNS:*.websitewelcome.com, DNS:websitewelcome.com"
+    },
+    {
+      "type": "website",
+      "name": "Standard Pour",
+      "score": 86,
+      "url": "https://www.standardpour.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "The Common Table",
+      "score": 82,
+      "url": "https://www.thecommontable.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "AllGood Cafe",
+      "score": 84,
+      "url": "https://www.allgoodcafe.com",
+      "status": 525,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Open Sesame Lebanese Grill",
+      "score": 83,
+      "url": "https://www.opensesametx.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Monkey Bar",
+      "score": 83,
+      "url": "https://www.monkeybardallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.monkeybardallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Élephante",
+      "score": 89,
+      "url": "https://www.elephantedallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.elephantedallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Corsaire",
+      "score": 88,
+      "url": "https://www.corsairedallas.com",
+      "status": 401,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Serritella Prime Italian",
+      "score": 87,
+      "url": "https://www.serritelladallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.serritelladallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Delilah Dallas",
+      "score": 87,
+      "url": "https://thedelilah.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND thedelilah.com"
+    },
+    {
+      "type": "website",
+      "name": "Dos Equis Pavilion",
+      "score": 87,
+      "url": "https://www.dfrocks.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.dfrocks.com"
+    },
+    {
+      "type": "website",
+      "name": "South Side Music Hall",
+      "score": 86,
+      "url": "https://www.southsidemh.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.southsidemh.com"
+    },
+    {
+      "type": "website",
+      "name": "Enoteca Italia",
+      "score": 87,
+      "url": "https://www.enotecaitaliadallas.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Muchacho",
+      "score": 88,
+      "url": "https://muchachotexmex.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "SauceBros",
+      "score": 85,
+      "url": "https://saucebrospizza.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Le Bon Temps",
+      "score": 87,
+      "url": "https://www.lebontempsdallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lebontempsdallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Botolino Gelato Artigianale",
+      "score": 88,
+      "url": "https://www.botolinogelato.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.botolinogelato.com"
+    },
+    {
+      "type": "website",
+      "name": "Moreish Donuts",
+      "score": 85,
+      "url": "https://www.moreishdonuts.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.moreishdonuts.com"
+    },
+    {
+      "type": "website",
+      "name": "Le Reve Patisserie",
+      "score": 86,
+      "url": "https://www.lereve-dallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lereve-dallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Lyla",
+      "score": 86,
+      "url": "https://www.lyladallas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lyladallas.com"
+    },
+    {
+      "type": "website",
+      "name": "Raoul's",
+      "score": 92,
+      "url": "https://raoulrestaurant.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND raoulrestaurant.com"
+    },
+    {
+      "type": "website",
+      "name": "Olmsted",
+      "score": 99,
+      "url": "https://www.olmstednyc.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Prince Street Pizza",
+      "score": 89,
+      "url": "https://www.princestreetpizzanyc.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Halal Guys",
+      "score": 83,
+      "url": "https://www.thehalalguys.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "The Dead Rabbit",
+      "score": 90,
+      "url": "https://www.deadrabbitnyc.com",
+      "status": 401,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Sunken Harbor Club",
+      "score": 87,
+      "url": "https://www.sunkenharborclub.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "McSorley's Old Ale House",
+      "score": 86,
+      "url": "https://www.mcsorleysnewyork.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Jack's Wife Freda",
+      "score": 87,
+      "url": "https://www.jackswifefreda.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.jackswifefreda.com"
+    },
+    {
+      "type": "website",
+      "name": "Misi",
+      "score": 90,
+      "url": "https://www.misiwilliamsburg.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.misiwilliamsburg.com"
+    },
+    {
+      "type": "website",
+      "name": "Bonnie's",
+      "score": 89,
+      "url": "https://www.bonniebrooklyn.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.bonniebrooklyn.com"
+    },
+    {
+      "type": "website",
+      "name": "Yonah Schimmel Knish Bakery",
+      "score": 84,
+      "url": "https://www.knishery.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Amy Ruth's",
+      "score": 87,
+      "url": "https://www.amyruthsharlem.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Winner",
+      "score": 87,
+      "url": "https://www.winnerbk.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.winnerbk.com"
+    },
+    {
+      "type": "website",
+      "name": "Dominique Ansel Bakery",
+      "score": 89,
+      "url": "https://www.dominiqueanselbakery.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Lysée",
+      "score": 90,
+      "url": "https://www.lysee.nyc",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lysee.nyc"
+    },
+    {
+      "type": "website",
+      "name": "Veniero's Pasticceria",
+      "score": 86,
+      "url": "https://www.venierospastry.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Lau Pa Sat",
+      "score": 84,
+      "url": "https://www.laupasatnyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.laupasatnyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Cafe Sabarsky",
+      "score": 88,
+      "url": "https://www.neuegalerie.org/cafes/sabarsky",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Sandro's",
+      "score": 84,
+      "url": "https://www.sandrosnyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.sandrosnyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Kabawa",
+      "score": 91,
+      "url": "https://www.kabawanyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.kabawanyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Cuerno",
+      "score": 88,
+      "url": "https://www.cuernonyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.cuernonyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Superbueno",
+      "score": 90,
+      "url": "https://www.superbuenobar.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.superbuenobar.com"
+    },
+    {
+      "type": "website",
+      "name": "Ha's Đặc Biệt",
+      "score": 89,
+      "url": "https://www.hasdacbiet.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.hasdacbiet.com"
+    },
+    {
+      "type": "website",
+      "name": "Le Crocodile",
+      "score": 89,
+      "url": "https://www.lecrocodilenyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lecrocodilenyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Llama Inn",
+      "score": 88,
+      "url": "https://www.llamainnnyc.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Odo",
+      "score": 96,
+      "url": "https://www.odonyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.odonyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Joo Ok",
+      "score": 96,
+      "url": "https://www.joooknyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.joooknyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Jōji",
+      "score": 94,
+      "url": "https://www.jojinyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.jojinyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Noz 17",
+      "score": 93,
+      "url": "https://www.noz17.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.noz17.com"
+    },
+    {
+      "type": "website",
+      "name": "Noda",
+      "score": 93,
+      "url": "https://www.nodanyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.nodanyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Rezdôra",
+      "score": 93,
+      "url": "https://www.rabornyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.rabornyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Yoshino",
+      "score": 94,
+      "url": "https://www.yoshinonyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.yoshinonyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Torien",
+      "score": 93,
+      "url": "https://www.toriennyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.toriennyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Bar Miller",
+      "score": 93,
+      "url": "https://www.barmillernyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.barmillernyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Restaurant Yuu",
+      "score": 93,
+      "url": "https://www.restaurantyuu.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.restaurantyuu.com"
+    },
+    {
+      "type": "website",
+      "name": "L'Abeille",
+      "score": 93,
+      "url": "https://www.labeillenyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.labeillenyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Muku",
+      "score": 93,
+      "url": "https://www.mukurestaurant.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.mukurestaurant.com"
+    },
+    {
+      "type": "website",
+      "name": "Shion 69 Leonard",
+      "score": 94,
+      "url": "https://www.shion69leonard.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.shion69leonard.com"
+    },
+    {
+      "type": "website",
+      "name": "Huso",
+      "score": 93,
+      "url": "https://www.husonyc.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 80\n"
+    },
+    {
+      "type": "website",
+      "name": "Icca",
+      "score": 94,
+      "url": "https://www.iccanyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.iccanyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Meju",
+      "score": 92,
+      "url": "https://www.mejulic.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.mejulic.com"
+    },
+    {
+      "type": "website",
+      "name": "Le Veau d'Or",
+      "score": 91,
+      "url": "https://www.leveaudornyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.leveaudornyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Sailor",
+      "score": 89,
+      "url": "https://www.sailorbk.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.sailorbk.com"
+    },
+    {
+      "type": "website",
+      "name": "Bong",
+      "score": 90,
+      "url": "https://www.bongrestaurant.com",
+      "status": 0,
+      "error": "read ECONNRESET"
+    },
+    {
+      "type": "website",
+      "name": "Al Badawi",
+      "score": 87,
+      "url": "https://www.albadawi.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Dame",
+      "score": 90,
+      "url": "https://www.damenyc.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 80\n"
+    },
+    {
+      "type": "website",
+      "name": "Nobu Downtown",
+      "score": 88,
+      "url": "https://www.noburestaurants.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Laser Wolf",
+      "score": 88,
+      "url": "https://www.laserwolfbk.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.laserwolfbk.com"
+    },
+    {
+      "type": "website",
+      "name": "Santina",
+      "score": 86,
+      "url": "https://www.santinanyc.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.santinanyc.com. is not in the cert's altnames: DNS:*.bizland.com, DNS:bizland.com"
+    },
+    {
+      "type": "website",
+      "name": "Raf's",
+      "score": 88,
+      "url": "https://www.rafsnyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.rafsnyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Kelang",
+      "score": 85,
+      "url": "https://www.kelangbk.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.kelangbk.com"
+    },
+    {
+      "type": "website",
+      "name": "Border Town",
+      "score": 86,
+      "url": "https://www.bordertownbk.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 40\n"
+    },
+    {
+      "type": "website",
+      "name": "Confidant",
+      "score": 87,
+      "url": "https://www.confidantbk.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.confidantbk.com"
+    },
+    {
+      "type": "website",
+      "name": "Vato",
+      "score": 84,
+      "url": "https://www.vatobk.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.vatobk.com"
+    },
+    {
+      "type": "website",
+      "name": "Ho Foods",
+      "score": 85,
+      "url": "https://www.hofoods.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Golden Diner",
+      "score": 86,
+      "url": "https://www.goldendinernyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.goldendinernyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Nepali Bhanchha Ghar",
+      "score": 85,
+      "url": "https://www.nepalibhanchha.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.nepalibhanchha.com"
+    },
+    {
+      "type": "website",
+      "name": "Casa Enrique",
+      "score": 87,
+      "url": "https://www.casaenrique.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A0000C6:SSL routines:tls_get_more_records:packet length too long:openssl\\ssl\\record\\methods\\tls_common.c:661:\n"
+    },
+    {
+      "type": "website",
+      "name": "Osakana",
+      "score": 85,
+      "url": "https://www.osakananyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.osakananyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Roberto's",
+      "score": 86,
+      "url": "https://www.robertosofarthurave.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.robertosofarthurave.com"
+    },
+    {
+      "type": "website",
+      "name": "Madcap Cafe",
+      "score": 82,
+      "url": "https://www.madcapcafe.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.madcapcafe.com"
+    },
+    {
+      "type": "website",
+      "name": "Maison Kayser",
+      "score": 82,
+      "url": "https://www.maisonkayserusa.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 40\n"
+    },
+    {
+      "type": "website",
+      "name": "Ops",
+      "score": 84,
+      "url": "https://www.opsbushwick.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.opsbushwick.com"
+    },
+    {
+      "type": "website",
+      "name": "Tanoreen",
+      "score": 86,
+      "url": "https://www.tanoreen.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.tanoreen.com. is not in the cert's altnames: DNS:tanoreen.com"
+    },
+    {
+      "type": "website",
+      "name": "Charles Pan-Fried Chicken",
+      "score": 85,
+      "url": "https://www.charlespanfried.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.charlespanfried.com"
+    },
+    {
+      "type": "website",
+      "name": "Diljān",
+      "score": 83,
+      "url": "https://www.diljannyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.diljannyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Taco Mix",
+      "score": 82,
+      "url": "https://tacomix.com/",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Cheeky Sandwiches",
+      "score": 82,
+      "url": "https://www.cheekysandwiches.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 40\n"
+    },
+    {
+      "type": "website",
+      "name": "Mei Lai Wah",
+      "score": 81,
+      "url": "https://meilaiwahnyc.com/",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "El Atoradero",
+      "score": 83,
+      "url": "https://www.elatoraderonyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.elatoraderonyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Bunna Cafe",
+      "score": 83,
+      "url": "https://www.bunnacafe.net",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.bunnacafe.net"
+    },
+    {
+      "type": "website",
+      "name": "Rockwood Music Hall",
+      "score": 83,
+      "url": "https://www.rockwoodmusichall.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Le Bain",
+      "score": 84,
+      "url": "https://www.standardhotels.com/new-york/features/le-bain",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Patisserie Chanson",
+      "score": 84,
+      "url": "https://www.patisseriechanson.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Budin",
+      "score": 82,
+      "url": "https://www.budinbrooklyn.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.budinbrooklyn.com"
+    },
+    {
+      "type": "website",
+      "name": "Ladybird",
+      "score": 83,
+      "url": "https://www.ladybirdnyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.ladybirdnyc.com"
+    },
+    {
+      "type": "website",
+      "name": "By Chloe",
+      "score": 80,
+      "url": "https://www.eatbychloe.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.eatbychloe.com"
+    },
+    {
+      "type": "website",
+      "name": "Gazala's",
+      "score": 83,
+      "url": "https://www.gazalas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.gazalas.com"
+    },
+    {
+      "type": "website",
+      "name": "Soothr",
+      "score": 83,
+      "url": "https://www.soothr.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Baohaus",
+      "score": 82,
+      "url": "https://www.baohausnyc.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.baohausnyc.com. is not in the cert's altnames: DNS:*.squarespace.com, DNS:squarespace.com, DNS:*.campaign-preferences.com, DNS:campaign-preferences.com, DNS:*.sqsp.net, DNS:sqsp.net, DNS:*.sqspcdn.com, DNS:static1.1.sqspcdn.com, DNS:static2.1.sqspcdn.com, DNS:static1.2.sqspcdn.com, DNS:cdn1.1.sqspcdn.com, DNS:sqspcdn.com, DNS:*.engage.squarespace-mail.com, DNS:engage.squarespace-mail.com"
+    },
+    {
+      "type": "website",
+      "name": "Rahi",
+      "score": 85,
+      "url": "https://www.rahinyc.com",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Patsy's Pizzeria",
+      "score": 84,
+      "url": "https://www.thepatsyspizza.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A0000C6:SSL routines:tls_get_more_records:packet length too long:openssl\\ssl\\record\\methods\\tls_common.c:661:\n"
+    },
+    {
+      "type": "website",
+      "name": "Arepa Lady",
+      "score": 84,
+      "url": "https://www.arepalady.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Mokyo",
+      "score": 84,
+      "url": "https://www.mokyonyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.mokyonyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Teranga",
+      "score": 83,
+      "url": "https://www.teranga.nyc",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.teranga.nyc"
+    },
+    {
+      "type": "website",
+      "name": "Thai Market",
+      "score": 82,
+      "url": "https://www.thaimarketuws.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thaimarketuws.com"
+    },
+    {
+      "type": "website",
+      "name": "Huertas",
+      "score": 86,
+      "url": "https://www.huertasnyc.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Okonomi",
+      "score": 84,
+      "url": "https://www.okonomibk.com",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Roscioli NYC",
+      "score": 87,
+      "url": "https://www.roscioli-nyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.roscioli-nyc.com"
+    },
+    {
+      "type": "website",
+      "name": "K'Far",
+      "score": 85,
+      "url": "https://www.kfarnyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.kfarnyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Place des Fêtes",
+      "score": 86,
+      "url": "https://www.placedesfetes.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.placedesfetes.com. is not in the cert's altnames: DNS:cluster111.hosting.ovh.net"
+    },
+    {
+      "type": "website",
+      "name": "Dept of Culture",
+      "score": 85,
+      "url": "https://www.deptofculture.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.deptofculture.com"
+    },
+    {
+      "type": "website",
+      "name": "Ha's Snack Bar",
+      "score": 87,
+      "url": "https://www.hassnackbar.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.hassnackbar.com"
+    },
+    {
+      "type": "website",
+      "name": "Rule of Thirds",
+      "score": 85,
+      "url": "https://www.ruleofthirdsnyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.ruleofthirdsnyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Bangkok Supper Club",
+      "score": 85,
+      "url": "https://www.bangkoksupperclub.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.bangkoksupperclub.com"
+    },
+    {
+      "type": "website",
+      "name": "Shuka",
+      "score": 85,
+      "url": "https://www.shukanyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.shukanyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Cafe Spaghetti",
+      "score": 84,
+      "url": "https://www.cafespaghetti.nyc",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.cafespaghetti.nyc"
+    },
+    {
+      "type": "website",
+      "name": "Chez Ma Tante",
+      "score": 86,
+      "url": "https://www.chezmatante.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Ophelia",
+      "score": 83,
+      "url": "https://www.ophelianyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.ophelianyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Leland Eating and Drinking House",
+      "score": 85,
+      "url": "https://www.lelandbk.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lelandbk.com"
+    },
+    {
+      "type": "website",
+      "name": "CheLi",
+      "score": 85,
+      "url": "https://www.chelinyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.chelinyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Little Alley",
+      "score": 83,
+      "url": "https://www.littlealleynyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.littlealleynyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Laliko",
+      "score": 84,
+      "url": "https://www.lalikonyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lalikonyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Uluh",
+      "score": 84,
+      "url": "https://www.uluhnyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.uluhnyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Leo",
+      "score": 85,
+      "url": "https://www.leobk.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.leobk.com"
+    },
+    {
+      "type": "website",
+      "name": "Nyonya",
+      "score": 83,
+      "url": "https://www.nyonyanyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.nyonyanyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Nubeluz",
+      "score": 84,
+      "url": "https://www.nubeluz.com",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Magic Hour Rooftop",
+      "score": 82,
+      "url": "https://www.magichourrooftop.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.magichourrooftop.com"
+    },
+    {
+      "type": "website",
+      "name": "Alma",
+      "score": 84,
+      "url": "https://www.almanyc.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "The Smith",
+      "score": 82,
+      "url": "https://www.thesmithnyc.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Robataya",
+      "score": 84,
+      "url": "https://www.robataya-ny.com",
+      "status": 522,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Sugar Monk",
+      "score": 84,
+      "url": "https://www.sugarmonknyc.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.sugarmonknyc.com. is not in the cert's altnames: DNS:*.secureserversites.net, DNS:secureserversites.net"
+    },
+    {
+      "type": "website",
+      "name": "Martiny's",
+      "score": 83,
+      "url": "https://www.martinysnyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.martinysnyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Midnight Blue",
+      "score": 83,
+      "url": "https://www.midnightbluenyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.midnightbluenyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Seed Library",
+      "score": 83,
+      "url": "https://www.seedlibrarybar.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.seedlibrarybar.com"
+    },
+    {
+      "type": "website",
+      "name": "Bar Maeda",
+      "score": 83,
+      "url": "https://www.barmaeda.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.barmaeda.com"
+    },
+    {
+      "type": "website",
+      "name": "Skinny Dennis",
+      "score": 82,
+      "url": "https://www.skinnydennis.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.skinnydennis.com. is not in the cert's altnames: DNS:skinnydennis.com"
+    },
+    {
+      "type": "website",
+      "name": "LunÀtico",
+      "score": 83,
+      "url": "https://www.lunaticobk.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lunaticobk.com"
+    },
+    {
+      "type": "website",
+      "name": "Harlem Nights",
+      "score": 82,
+      "url": "https://www.harlemnightsnyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.harlemnightsnyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Good Room",
+      "score": 83,
+      "url": "https://www.goodroombk.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Mood Ring",
+      "score": 81,
+      "url": "https://www.moodringbk.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.moodringbk.com"
+    },
+    {
+      "type": "website",
+      "name": "Apothéke",
+      "score": 85,
+      "url": "https://www.apothekenyc.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "King Cole Bar",
+      "score": 84,
+      "url": "https://www.kingcolebar.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Spritzenhaus33",
+      "score": 82,
+      "url": "https://www.spritzenhaus.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.spritzenhaus.com"
+    },
+    {
+      "type": "website",
+      "name": "Lullaby",
+      "score": 83,
+      "url": "https://www.lullabynyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lullabynyc.com"
+    },
+    {
+      "type": "website",
+      "name": "St. Cloud",
+      "score": 81,
+      "url": "https://www.stcloudnyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.stcloudnyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Public Records",
+      "score": 84,
+      "url": "https://www.publicrecords.nyc",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.publicrecords.nyc. is not in the cert's altnames: DNS:publicrecords.nyc"
+    },
+    {
+      "type": "website",
+      "name": "Mezzrow",
+      "score": 83,
+      "url": "https://www.mezzrow.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Leyenda",
+      "score": 84,
+      "url": "https://www.leyendabk.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.leyendabk.com"
+    },
+    {
+      "type": "website",
+      "name": "Donna",
+      "score": 82,
+      "url": "https://www.donnabk.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.donnabk.com"
+    },
+    {
+      "type": "website",
+      "name": "Sleep No More",
+      "score": 86,
+      "url": "https://www.sleepnomoreimmersive.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.sleepnomoreimmersive.com"
+    },
+    {
+      "type": "website",
+      "name": "DUMBO Boulders",
+      "score": 82,
+      "url": "https://www.dumboboulders.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.dumboboulders.com"
+    },
+    {
+      "type": "website",
+      "name": "Knockdown Center",
+      "score": 83,
+      "url": "https://www.knockdown.center",
+      "status": 429,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "PHD Terrace at Dream Downtown",
+      "score": 82,
+      "url": "https://www.phdterrace.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.phdterrace.com. is not in the cert's altnames: DNS:avrabeverlyhills.com, DNS:www.avrabeverlyhills.com"
+    },
+    {
+      "type": "website",
+      "name": "Up&Down",
+      "score": 82,
+      "url": "https://www.upanddownnyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.upanddownnyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Brooklyn Steel",
+      "score": 84,
+      "url": "https://www.bfrooklyn-steel.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.bfrooklyn-steel.com"
+    },
+    {
+      "type": "website",
+      "name": "Somewhere Nowhere",
+      "score": 83,
+      "url": "https://www.somewherenowherenya.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.somewherenowherenya.com"
+    },
+    {
+      "type": "website",
+      "name": "Top of the Rock",
+      "score": 84,
+      "url": "https://www.topoftherocknyc.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Zona de Cuba",
+      "score": 82,
+      "url": "https://www.zonadecuba.com",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Castell Rooftop Lounge",
+      "score": 81,
+      "url": "https://www.castellrooftop.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.castellrooftop.com"
+    },
+    {
+      "type": "website",
+      "name": "Kjun",
+      "score": 85,
+      "url": "https://www.kjunnyc.com",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Golden Steer",
+      "score": 85,
+      "url": "https://www.goldensteersteak.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.goldensteersteak.com"
+    },
+    {
+      "type": "website",
+      "name": "Best Pizza",
+      "score": 84,
+      "url": "https://www.best.pizza",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.best.pizza"
+    },
+    {
+      "type": "website",
+      "name": "The Press Lounge",
+      "score": 83,
+      "url": "https://www.thepresslounge.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 40\n"
+    },
+    {
+      "type": "website",
+      "name": "Toby's Estate Coffee",
+      "score": 83,
+      "url": "https://www.tobysestatecoffee.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.tobysestatecoffee.com"
+    },
+    {
+      "type": "website",
+      "name": "Remi Flower & Coffee",
+      "score": 82,
+      "url": "https://www.remiflowerandcoffee.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.remiflowerandcoffee.com"
+    },
+    {
+      "type": "website",
+      "name": "Cafe Panna",
+      "score": 86,
+      "url": "https://www.cafepanna.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.cafepanna.com"
+    },
+    {
+      "type": "website",
+      "name": "Claw Daddy",
+      "score": 82,
+      "url": "https://www.clawdaddynyc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.clawdaddynyc.com"
+    },
+    {
+      "type": "website",
+      "name": "Defonte's of Brooklyn",
+      "score": 85,
+      "url": "https://www.defontes.com",
+      "status": 0,
+      "error": "read ECONNRESET"
+    },
+    {
+      "type": "website",
+      "name": "Pisillo Italian Panini",
+      "score": 85,
+      "url": "https://www.pisillo.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.pisillo.com"
+    },
+    {
+      "type": "website",
+      "name": "High Street on Hudson",
+      "score": 85,
+      "url": "https://www.highstreetonhudson.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A0000C6:SSL routines:tls_get_more_records:packet length too long:openssl\\ssl\\record\\methods\\tls_common.c:661:\n"
+    },
+    {
+      "type": "website",
+      "name": "Theodore Rex",
+      "score": 94,
+      "url": "https://trexhouston.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Blood Bros. BBQ",
+      "score": 94,
+      "url": "https://bloodbrosbbq.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Underbelly Hospitality / Georgia James",
+      "score": 94,
+      "url": "https://www.georgiajamesbbq.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.georgiajamesbbq.com"
+    },
+    {
+      "type": "website",
+      "name": "Killen's BBQ",
+      "score": 95,
+      "url": "https://www.killensbbq.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Houston Museum District",
+      "score": 93,
+      "url": "https://www.houmuse.org",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.houmuse.org"
+    },
+    {
+      "type": "website",
+      "name": "State of Grace",
+      "score": 91,
+      "url": "https://www.stateofgracehtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.stateofgracehtx.com"
+    },
+    {
+      "type": "website",
+      "name": "Nobie's",
+      "score": 90,
+      "url": "https://www.nobieshouston.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.nobieshouston.com"
+    },
+    {
+      "type": "website",
+      "name": "Underbelly Hospitality / Wild Oats",
+      "score": 91,
+      "url": "https://www.wildoatshouston.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Trattoria Sofia",
+      "score": 89,
+      "url": "https://www.trattoriasofia.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Himalaya",
+      "score": 91,
+      "url": "https://www.himalayarestauranthouston.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 80\n"
+    },
+    {
+      "type": "website",
+      "name": "Vietopia",
+      "score": 87,
+      "url": "https://www.vietopiarestaurant.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.vietopiarestaurant.com"
+    },
+    {
+      "type": "website",
+      "name": "Roostar Vietnamese Grill",
+      "score": 87,
+      "url": "https://www.roostarvietgrill.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.roostarvietgrill.com"
+    },
+    {
+      "type": "website",
+      "name": "Riel",
+      "score": 90,
+      "url": "https://www.rielrestaurant.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.rielrestaurant.com"
+    },
+    {
+      "type": "website",
+      "name": "The Pass & Provisions",
+      "score": 91,
+      "url": "https://www.thepassandprovisions.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thepassandprovisions.com"
+    },
+    {
+      "type": "website",
+      "name": "Roost",
+      "score": 88,
+      "url": "https://www.iloveroost.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "The Toasted Coconut",
+      "score": 87,
+      "url": "https://www.thetoastedcoconuthtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thetoastedcoconuthtx.com"
+    },
+    {
+      "type": "website",
+      "name": "Oporto Fooding House",
+      "score": 88,
+      "url": "https://www.oportofoodinghouse.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.oportofoodinghouse.com"
+    },
+    {
+      "type": "website",
+      "name": "One Fifth",
+      "score": 91,
+      "url": "https://www.onefifthhouston.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.onefifthhouston.com"
+    },
+    {
+      "type": "website",
+      "name": "Squable",
+      "score": 89,
+      "url": "https://www.squablehtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.squablehtx.com"
+    },
+    {
+      "type": "website",
+      "name": "The Pass and Provisions",
+      "score": 91,
+      "url": "https://www.thepassandprovisions.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thepassandprovisions.com"
+    },
+    {
+      "type": "website",
+      "name": "B and B Butchers",
+      "score": 91,
+      "url": "https://www.bbbutchers.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Wild Oats",
+      "score": 86,
+      "url": "https://www.wildoatshouston.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Pastore",
+      "score": 87,
+      "url": "https://www.pastorehouston.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "NoPo Cafe, Market & Bar",
+      "score": 83,
+      "url": "https://www.nopocafe.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 40\n"
+    },
+    {
+      "type": "website",
+      "name": "Rado Coffee",
+      "score": 82,
+      "url": "https://www.radocoffee.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Coppa Osteria",
+      "score": 87,
+      "url": "https://www.coppaosteria.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.coppaosteria.com"
+    },
+    {
+      "type": "website",
+      "name": "Flora Mexican Kitchen",
+      "score": 86,
+      "url": "https://www.floramexicankitchen.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Graffiti Raw",
+      "score": 85,
+      "url": "https://www.graffitiraw.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 40\n"
+    },
+    {
+      "type": "website",
+      "name": "Gratify",
+      "score": 85,
+      "url": "https://www.gratifyhouston.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Prospect Park",
+      "score": 83,
+      "url": "https://www.prospectparkhouston.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.prospectparkhouston.com"
+    },
+    {
+      "type": "website",
+      "name": "FRNDS",
+      "score": 82,
+      "url": "https://alifehospitalitygroup.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Kira",
+      "score": 87,
+      "url": "https://kirahtx.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "East Side King",
+      "score": 85,
+      "url": "https://www.eskstreats.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.eskstreats.com"
+    },
+    {
+      "type": "website",
+      "name": "Mayahuel",
+      "score": 87,
+      "url": "https://www.mayahuelrestaurant.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Maximo",
+      "score": 87,
+      "url": "https://www.maximohouston.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.maximohouston.com"
+    },
+    {
+      "type": "website",
+      "name": "Killen's Steakhouse",
+      "score": 90,
+      "url": "https://www.killenssteakhouse.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Papalo Taqueria",
+      "score": 87,
+      "url": "https://www.papalotaqueria.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 40\n"
+    },
+    {
+      "type": "website",
+      "name": "Giacomo's Cibo e Vino",
+      "score": 87,
+      "url": "https://www.giacomosciboevino.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Underbelly Hospitality / Comalito",
+      "score": 86,
+      "url": "https://www.comalitohtx.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Le Petit Chef",
+      "score": 86,
+      "url": "https://www.lepetitchefhtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lepetitchefhtx.com"
+    },
+    {
+      "type": "website",
+      "name": "Xin Chao",
+      "score": 90,
+      "url": "https://www.xinchaohouston.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.xinchaohouston.com"
+    },
+    {
+      "type": "website",
+      "name": "Emmaline",
+      "score": 87,
+      "url": "https://www.emmalinehouston.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.emmalinehouston.com"
+    },
+    {
+      "type": "website",
+      "name": "Underbelly Hospitality / GJ Tavern",
+      "score": 85,
+      "url": "https://www.gjtavern.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.gjtavern.com"
+    },
+    {
+      "type": "website",
+      "name": "Perseid",
+      "score": 88,
+      "url": "https://www.bunkhousehotels.com/hotel-saint-augustine/eat-drink/perseid",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Teotihuacan Mexican Cafe",
+      "score": 85,
+      "url": "https://www.teotihuacanmexicancafe.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Poison Girl",
+      "score": 83,
+      "url": "https://www.poisongirlbar.com",
+      "status": 0,
+      "error": "self-signed certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+    },
+    {
+      "type": "website",
+      "name": "Amrina",
+      "score": 89,
+      "url": "https://www.amrinahouston.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.amrinahouston.com"
+    },
+    {
+      "type": "website",
+      "name": "Clarkwood",
+      "score": 86,
+      "url": "https://www.clarkwoodbar.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.clarkwoodbar.com"
+    },
+    {
+      "type": "website",
+      "name": "Lee's",
+      "score": 86,
+      "url": "https://www.leeshouston.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.leeshouston.com"
+    },
+    {
+      "type": "website",
+      "name": "Weights + Measures",
+      "score": 87,
+      "url": "https://weights-measures.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Boo's Burgers",
+      "score": 85,
+      "url": "https://www.boosburgers.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.boosburgers.com"
+    },
+    {
+      "type": "website",
+      "name": "13 Celsius",
+      "score": 85,
+      "url": "https://www.13celsius.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 112\n"
+    },
+    {
+      "type": "website",
+      "name": "Ramen Tatsu-Ya",
+      "score": 88,
+      "url": "https://ramentatsuyahtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND ramentatsuyahtx.com"
+    },
+    {
+      "type": "website",
+      "name": "Indianola",
+      "score": 87,
+      "url": "https://www.indianolahtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.indianolahtx.com"
+    },
+    {
+      "type": "website",
+      "name": "Ramen Tatsu-Ya EaDo",
+      "score": 86,
+      "url": "https://ramentatsuyahtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND ramentatsuyahtx.com"
+    },
+    {
+      "type": "website",
+      "name": "Local Foods",
+      "score": 85,
+      "url": "https://www.houstonlocalfoods.com",
+      "status": 520,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Helen Greek Food and Wine",
+      "score": 88,
+      "url": "https://www.helengreekfoodandwine.com",
+      "status": 0,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "FM Kitchen & Bar",
+      "score": 85,
+      "url": "https://www.fmkitchenandbar.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Ostia",
+      "score": 87,
+      "url": "https://www.ostiahtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.ostiahtx.com"
+    },
+    {
+      "type": "website",
+      "name": "La Lucha",
+      "score": 88,
+      "url": "https://www.laluchahtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.laluchahtx.com"
+    },
+    {
+      "type": "website",
+      "name": "Soma Sushi",
+      "score": 86,
+      "url": "https://www.somasushihtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.somasushihtx.com"
+    },
+    {
+      "type": "website",
+      "name": "Chardon",
+      "score": 87,
+      "url": "https://www.chardonhtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.chardonhtx.com"
+    },
+    {
+      "type": "website",
+      "name": "Dak & Bop",
+      "score": 85,
+      "url": "https://www.dakbop.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.dakbop.com"
+    },
+    {
+      "type": "website",
+      "name": "Cafe Abyssinia",
+      "score": 85,
+      "url": "https://www.cafeabyssinia.com",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "The Woodlands Waterway District",
+      "score": 83,
+      "url": "https://www.thewoodlandscvb.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thewoodlandscvb.com"
+    },
+    {
+      "type": "website",
+      "name": "Le Ciel de Paris",
+      "score": 86,
+      "url": "https://www.lecielparis.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lecielparis.com"
+    },
+    {
+      "type": "website",
+      "name": "Ritual",
+      "score": 87,
+      "url": "https://www.ritualhtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.ritualhtx.com"
+    },
+    {
+      "type": "website",
+      "name": "Enoteca Rossa",
+      "score": 85,
+      "url": "https://www.enotecarossa.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Double Trouble Caffeine & Cocktails",
+      "score": 84,
+      "url": "https://www.doubletroublecafe.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.doubletroublecafe.com"
+    },
+    {
+      "type": "website",
+      "name": "B.B. Italia",
+      "score": 85,
+      "url": "https://www.bbitaliahouston.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.bbitaliahouston.com"
+    },
+    {
+      "type": "website",
+      "name": "Cuchara",
+      "score": 87,
+      "url": "https://www.cuchara-restaurant.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.cuchara-restaurant.com"
+    },
+    {
+      "type": "website",
+      "name": "Le Petit Cochon",
+      "score": 85,
+      "url": "https://www.lepetitcochonhtx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lepetitcochonhtx.com"
+    },
+    {
+      "type": "website",
+      "name": "Stanton City Bites",
+      "score": 84,
+      "url": "https://www.stantoncitybites.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.stantoncitybites.com"
+    },
+    {
+      "type": "website",
+      "name": "Spicy Girl",
+      "score": 84,
+      "url": "https://www.spicygirlusa.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.spicygirlusa.com"
+    },
+    {
+      "type": "website",
+      "name": "Houston Museum of Fine Arts",
+      "score": 90,
+      "url": "https://www.mfah.org",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Suerte",
+      "score": 98,
+      "url": "https://suerteatx.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Kemuri Tatsu-ya",
+      "score": 96,
+      "url": "https://kemuritatsuya.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND kemuritatsuya.com"
+    },
+    {
+      "type": "website",
+      "name": "Ramen Tatsu-ya",
+      "score": 93,
+      "url": "https://ramentatsuya.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND ramentatsuya.com"
+    },
+    {
+      "type": "website",
+      "name": "Paperboy",
+      "score": 87,
+      "url": "https://paperboy-atx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND paperboy-atx.com"
+    },
+    {
+      "type": "website",
+      "name": "Juniper",
+      "score": 87,
+      "url": "https://juniperatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND juniperatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Comedor",
+      "score": 88,
+      "url": "https://comedoraustin.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND comedoraustin.com"
+    },
+    {
+      "type": "website",
+      "name": "Cuantos Tacos",
+      "score": 87,
+      "url": "https://www.cuantostacos.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.cuantostacos.com"
+    },
+    {
+      "type": "website",
+      "name": "Small Victory",
+      "score": 86,
+      "url": "https://www.smallvictorybar.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Sway",
+      "score": 88,
+      "url": "https://www.swayaustin.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Cafe No Sé",
+      "score": 87,
+      "url": "https://www.cafenoseatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.cafenoseatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Elizabeth Street Cafe",
+      "score": 87,
+      "url": "https://www.elizabethstreetcafe.com",
+      "status": 526,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Lady Bird Lake",
+      "score": 88,
+      "url": "https://www.austintexas.org/things-to-do/outdoors/lady-bird-lake/",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Lucky Robot",
+      "score": 86,
+      "url": "https://luckyrobotrestaurant.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND luckyrobotrestaurant.com"
+    },
+    {
+      "type": "website",
+      "name": "Casa Colombia",
+      "score": 85,
+      "url": "https://www.casacolombia.net",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.casacolombia.net"
+    },
+    {
+      "type": "website",
+      "name": "Foreign & Domestic",
+      "score": 91,
+      "url": "https://www.foreignanddomestic.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Cosmic Coffee + Beer Garden",
+      "score": 85,
+      "url": "https://www.cosmiccoffee.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.cosmiccoffee.com"
+    },
+    {
+      "type": "website",
+      "name": "Clay Pit",
+      "score": 87,
+      "url": "https://claypit.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Thai Kun",
+      "score": 88,
+      "url": "https://www.thaikunaustin.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thaikunaustin.com"
+    },
+    {
+      "type": "website",
+      "name": "Garrison",
+      "score": 89,
+      "url": "https://www.garrisonaustin.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 40\n"
+    },
+    {
+      "type": "website",
+      "name": "Tiki Tatsu-Ya",
+      "score": 87,
+      "url": "https://www.tikitatsuyaatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.tikitatsuyaatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Tsuke Edomae",
+      "score": 91,
+      "url": "https://www.tsukeedomae.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.tsukeedomae.com"
+    },
+    {
+      "type": "website",
+      "name": "Joe's Bakery & Coffee Shop",
+      "score": 86,
+      "url": "https://www.joesbakery.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Discada",
+      "score": 86,
+      "url": "https://www.discadaatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.discadaatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Apt 115",
+      "score": 86,
+      "url": "https://www.apt115atx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.apt115atx.com"
+    },
+    {
+      "type": "website",
+      "name": "Tare",
+      "score": 87,
+      "url": "https://www.tareatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.tareatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Ling Wu",
+      "score": 87,
+      "url": "https://lingwulantana.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Ezov",
+      "score": 88,
+      "url": "https://www.ezovatx.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Ling Kitchen",
+      "score": 87,
+      "url": "https://www.lingkitchenatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lingkitchenatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Mexta",
+      "score": 86,
+      "url": "https://www.mextaatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.mextaatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Este Pizza",
+      "score": 86,
+      "url": "https://www.estepizzaatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.estepizzaatx.com"
+    },
+    {
+      "type": "website",
+      "name": "G'Raj Mahal",
+      "score": 85,
+      "url": "https://www.grajmahalatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.grajmahalatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Bombay Express",
+      "score": 84,
+      "url": "https://www.bombayexpressonline.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.bombayexpressonline.com"
+    },
+    {
+      "type": "website",
+      "name": "The Driskill Bar",
+      "score": 87,
+      "url": "https://www.driskillhotel.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Vixen's Wedding",
+      "score": 86,
+      "url": "https://www.vixenswedding.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.vixenswedding.com"
+    },
+    {
+      "type": "website",
+      "name": "La Pâtisserie",
+      "score": 86,
+      "url": "https://www.lapatisserieatx.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Smitty's Market",
+      "score": 89,
+      "url": "https://www.smittysmarket.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 40\n"
+    },
+    {
+      "type": "website",
+      "name": "Mum Foods Smokehouse & Deli",
+      "score": 87,
+      "url": "https://www.mumfoods.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.mumfoods.com"
+    },
+    {
+      "type": "website",
+      "name": "Poet's",
+      "score": 87,
+      "url": "https://www.poetsatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.poetsatx.com"
+    },
+    {
+      "type": "website",
+      "name": "The Mighty Cone",
+      "score": 84,
+      "url": "https://www.themightycone.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.themightycone.com"
+    },
+    {
+      "type": "website",
+      "name": "East Side King",
+      "score": 86,
+      "url": "https://www.eskstreats.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.eskstreats.com"
+    },
+    {
+      "type": "website",
+      "name": "Lucille Patio Lounge",
+      "score": 84,
+      "url": "https://www.lucillerainey.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lucillerainey.com"
+    },
+    {
+      "type": "website",
+      "name": "Container Bar",
+      "score": 84,
+      "url": "https://www.containerbar.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 40\n"
+    },
+    {
+      "type": "website",
+      "name": "Infinite Monkey Theorem",
+      "score": 84,
+      "url": "https://www.theinfinitemonkeytheorem.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.theinfinitemonkeytheorem.com"
+    },
+    {
+      "type": "website",
+      "name": "Better Half Coffee & Cocktails",
+      "score": 85,
+      "url": "https://www.betterhalfatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.betterhalfatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Anthem",
+      "score": 86,
+      "url": "https://www.antheaustin.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.antheaustin.com"
+    },
+    {
+      "type": "website",
+      "name": "Sandy's Hamburgers",
+      "score": 85,
+      "url": "https://www.sandyshamburgers.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.sandyshamburgers.com"
+    },
+    {
+      "type": "website",
+      "name": "Dan's Hamburgers",
+      "score": 84,
+      "url": "https://www.danshamburgersatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.danshamburgersatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Thai Cuisine",
+      "score": 85,
+      "url": "https://www.thaicuisineatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thaicuisineatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Phoebe's Diner",
+      "score": 85,
+      "url": "https://www.phoebesdiner.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Polvos",
+      "score": 85,
+      "url": "https://www.polvosmexicanfood.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.polvosmexicanfood.com"
+    },
+    {
+      "type": "website",
+      "name": "Counter 3.Five.VII",
+      "score": 88,
+      "url": "https://www.counter357.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.counter357.com"
+    },
+    {
+      "type": "website",
+      "name": "Cru Food & Wine Bar",
+      "score": 85,
+      "url": "https://www.cruawinebar.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Monger's Market + Kitchen",
+      "score": 86,
+      "url": "https://www.mongersatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.mongersatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Asiana Indian Cuisine",
+      "score": 84,
+      "url": "https://www.asianaindiancuisine.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Hyde Park Bar & Grill",
+      "score": 84,
+      "url": "https://www.hydeparkbarandgrill.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "The Hideaway on Lake Travis",
+      "score": 83,
+      "url": "https://www.thehideawayonthelake.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thehideawayonthelake.com"
+    },
+    {
+      "type": "website",
+      "name": "Mount Bonnell",
+      "score": 87,
+      "url": "https://www.austintexas.gov/department/mount-bonnell",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Polvos Mexican Restaurant",
+      "score": 85,
+      "url": "https://www.polvosmexicanfood.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.polvosmexicanfood.com"
+    },
+    {
+      "type": "website",
+      "name": "La Patisserie",
+      "score": 86,
+      "url": "https://www.lapatisserieatx.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Pho Please",
+      "score": 84,
+      "url": "https://www.phopleaseatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.phopleaseatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Rosen + Sage",
+      "score": 87,
+      "url": "https://www.rosenandsage.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.rosenandsage.com"
+    },
+    {
+      "type": "website",
+      "name": "Revelry Kitchen + Bar",
+      "score": 85,
+      "url": "https://www.revelrykitchenandbar.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.revelrykitchenandbar.com"
+    },
+    {
+      "type": "website",
+      "name": "The Hightower",
+      "score": 85,
+      "url": "https://www.thehightoweratx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thehightoweratx.com"
+    },
+    {
+      "type": "website",
+      "name": "Hotel Vegas",
+      "score": 85,
+      "url": "https://www.hotelvegasaustin.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.hotelvegasaustin.com. is not in the cert's altnames: DNS:*.turbifysites.com, DNS:turbifysites.com"
+    },
+    {
+      "type": "website",
+      "name": "Violet Crown Social Club",
+      "score": 84,
+      "url": "https://www.violetcrownsocialclub.com",
+      "status": 0,
+      "error": "read ECONNRESET"
+    },
+    {
+      "type": "website",
+      "name": "Spokesman",
+      "score": 84,
+      "url": "https://www.spokesmanatx.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.spokesmanatx.com"
+    },
+    {
+      "type": "website",
+      "name": "Ever",
+      "score": 96,
+      "url": "https://www.everrestaurant.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Au Cheval",
+      "score": 93,
+      "url": "https://www.auchevalchicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.auchevalchicago.com"
+    },
+    {
+      "type": "website",
+      "name": "Bavette's Bar & Boeuf",
+      "score": 92,
+      "url": "https://www.bavetteschicago.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.bavetteschicago.com. is not in the cert's altnames: DNS:autodiscover.brendansodikoff.com, DNS:brendansodikoff.com, DNS:cpanel.brendansodikoff.com, DNS:cpcalendars.brendansodikoff.com, DNS:cpcontacts.brendansodikoff.com, DNS:webdisk.brendansodikoff.com, DNS:webmail.brendansodikoff.com, DNS:www.brendansodikoff.com"
+    },
+    {
+      "type": "website",
+      "name": "Jim's Original",
+      "score": 86,
+      "url": "https://www.jimsoriginal.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.jimsoriginal.com. is not in the cert's altnames: DNS:*.azurewebsites.net, DNS:*.scm.azurewebsites.net, DNS:*.sso.azurewebsites.net, DNS:*.centralus-01.azurewebsites.net, DNS:*.scm.centralus-01.azurewebsites.net, DNS:*.sso.centralus-01.azurewebsites.net, DNS:*.centralus.c.azurewebsites.net, DNS:*.scm.centralus.c.azurewebsites.net, DNS:*.sso.centralus.c.azurewebsites.net, DNS:*.azure-mobile.net, DNS:*.scm.azure-mobile.net"
+    },
+    {
+      "type": "website",
+      "name": "Lost Lake",
+      "score": 89,
+      "url": "https://www.lostlaketiki.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lostlaketiki.com"
+    },
+    {
+      "type": "website",
+      "name": "Topolobampo",
+      "score": 93,
+      "url": "https://www.rickbayless.com/restaurants/topolobampo",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Dusek's",
+      "score": 89,
+      "url": "https://www.dusekschicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.dusekschicago.com"
+    },
+    {
+      "type": "website",
+      "name": "Ema",
+      "score": 88,
+      "url": "https://www.emachicago.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Best Intentions",
+      "score": 88,
+      "url": "https://www.bestintentionsbar.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.bestintentionsbar.com"
+    },
+    {
+      "type": "website",
+      "name": "Batter & Berries",
+      "score": 87,
+      "url": "https://www.batterandberries.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Xoco",
+      "score": 88,
+      "url": "https://www.rickbayless.com/restaurants/xoco",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Robert's Pizza & Dough Company",
+      "score": 88,
+      "url": "https://www.robertspizzaco.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.robertspizzaco.com"
+    },
+    {
+      "type": "website",
+      "name": "Geja's Cafe",
+      "score": 87,
+      "url": "https://www.gejascafe.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Summer House Santa Monica",
+      "score": 85,
+      "url": "https://www.summerhousesm.com",
+      "status": 0,
+      "error": "read ECONNRESET"
+    },
+    {
+      "type": "website",
+      "name": "Cafecito",
+      "score": 87,
+      "url": "https://www.cafecitochicago.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 80\n"
+    },
+    {
+      "type": "website",
+      "name": "Kai Zan",
+      "score": 91,
+      "url": "https://www.kaizanrestaurant.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.kaizanrestaurant.com"
+    },
+    {
+      "type": "website",
+      "name": "Proxi",
+      "score": 89,
+      "url": "https://www.proxichicago.com",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Where Roots Reside",
+      "score": 87,
+      "url": "https://www.whererootsreside.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.whererootsreside.com"
+    },
+    {
+      "type": "website",
+      "name": "Calumet Fisheries",
+      "score": 88,
+      "url": "https://www.calumetfisheries.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Handlebar",
+      "score": 85,
+      "url": "https://www.handlebarchi.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.handlebarchi.com"
+    },
+    {
+      "type": "website",
+      "name": "Spinning J",
+      "score": 86,
+      "url": "https://www.spinningjchicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.spinningjchicago.com"
+    },
+    {
+      "type": "website",
+      "name": "Kitsune",
+      "score": 87,
+      "url": "https://www.kitsunechicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.kitsunechicago.com"
+    },
+    {
+      "type": "website",
+      "name": "Cafe Marie-Jeanne",
+      "score": 88,
+      "url": "https://www.cafe-marie-jeanne.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.cafe-marie-jeanne.com"
+    },
+    {
+      "type": "website",
+      "name": "Table, Donkey and Stick",
+      "score": 88,
+      "url": "https://www.tabledonkeyandstick.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.tabledonkeyandstick.com"
+    },
+    {
+      "type": "website",
+      "name": "Atelier",
+      "score": 90,
+      "url": "https://www.atelierchicago.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Taqueria Chingón",
+      "score": 86,
+      "url": "https://www.taqueriachingon.com",
+      "status": 0,
+      "error": "read ECONNRESET"
+    },
+    {
+      "type": "website",
+      "name": "Sochi",
+      "score": 86,
+      "url": "https://www.sochichicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.sochichicago.com"
+    },
+    {
+      "type": "website",
+      "name": "Ciccio Mio",
+      "score": 86,
+      "url": "https://www.cicciomiochicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.cicciomiochicago.com"
+    },
+    {
+      "type": "website",
+      "name": "Kie-Gol-Lanee",
+      "score": 86,
+      "url": "https://www.kiegollanee.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.kiegollanee.com"
+    },
+    {
+      "type": "website",
+      "name": "Smoke Daddy",
+      "score": 84,
+      "url": "https://www.smokedaddychicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.smokedaddychicago.com"
+    },
+    {
+      "type": "website",
+      "name": "The Alston",
+      "score": 89,
+      "url": "https://www.thealstonchicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thealstonchicago.com"
+    },
+    {
+      "type": "website",
+      "name": "San Soo Gab San",
+      "score": 87,
+      "url": "https://www.sansosgabsan.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.sansosgabsan.com"
+    },
+    {
+      "type": "website",
+      "name": "GT Fish & Oyster",
+      "score": 87,
+      "url": "https://www.gtfishandoyster.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.gtfishandoyster.com"
+    },
+    {
+      "type": "website",
+      "name": "Marz Community Brewing",
+      "score": 86,
+      "url": "https://www.marzbrewing.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.marzbrewing.com"
+    },
+    {
+      "type": "website",
+      "name": "Immm Rice & Beyond",
+      "score": 86,
+      "url": "https://www.immmthai.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.immmthai.com"
+    },
+    {
+      "type": "website",
+      "name": "Bongo Room",
+      "score": 86,
+      "url": "https://www.bongoroomchicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.bongoroomchicago.com"
+    },
+    {
+      "type": "website",
+      "name": "Jam",
+      "score": 86,
+      "url": "https://www.jamrestaurant.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Coda di Volpe",
+      "score": 86,
+      "url": "https://www.codadivolpechicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.codadivolpechicago.com"
+    },
+    {
+      "type": "website",
+      "name": "The J. Parker",
+      "score": 86,
+      "url": "https://www.thejparkerchicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.thejparkerchicago.com"
+    },
+    {
+      "type": "website",
+      "name": "The Laugh Factory Chicago",
+      "score": 85,
+      "url": "https://www.laughfactory.com/clubs/chicago",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Pretty Cool Ice Cream",
+      "score": 86,
+      "url": "https://www.prettycoolchicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.prettycoolchicago.com"
+    },
+    {
+      "type": "website",
+      "name": "Boonie's",
+      "score": 86,
+      "url": "https://www.boonieschicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.boonieschicago.com"
+    },
+    {
+      "type": "website",
+      "name": "Munno Pizzeria & Bistro",
+      "score": 86,
+      "url": "https://www.munnopizzeria.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.munnopizzeria.com"
+    },
+    {
+      "type": "website",
+      "name": "Shedd Aquarium",
+      "score": 89,
+      "url": "https://www.sheddaquarium.org",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "HSL",
+      "score": 93,
+      "url": "https://www.hslrestaurant.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Handle",
+      "score": 94,
+      "url": "https://www.handleparkcity.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Kaze Sushi Bar & Grill",
+      "score": 87,
+      "url": "https://kazesushiut.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND kazesushiut.com"
+    },
+    {
+      "type": "website",
+      "name": "Este Pizzeria",
+      "score": 87,
+      "url": "https://www.estepizzaslc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.estepizzaslc.com"
+    },
+    {
+      "type": "website",
+      "name": "Market Street Grill",
+      "score": 87,
+      "url": "https://www.marketstreetgrill.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Arlo",
+      "score": 91,
+      "url": "https://www.arloslc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.arloslc.com"
+    },
+    {
+      "type": "website",
+      "name": "Eating Establishment",
+      "score": 84,
+      "url": "https://www.theeatingestablishment.com",
+      "status": 0,
+      "error": "timeout"
+    },
+    {
+      "type": "website",
+      "name": "Manoli's",
+      "score": 89,
+      "url": "https://www.manolisslc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.manolisslc.com"
+    },
+    {
+      "type": "website",
+      "name": "Yoko Ramen",
+      "score": 86,
+      "url": "https://www.yokoslc.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Tosh's Ramen",
+      "score": 86,
+      "url": "https://www.toshsramen.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Bombay House",
+      "score": 86,
+      "url": "https://www.bombayhouse.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Halgatteok",
+      "score": 85,
+      "url": "https://www.halgatteokusa.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.halgatteokusa.com"
+    },
+    {
+      "type": "website",
+      "name": "Repeal",
+      "score": 87,
+      "url": "https://www.repealslc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.repealslc.com"
+    },
+    {
+      "type": "website",
+      "name": "Wasatch Brewery",
+      "score": 85,
+      "url": "https://www.wasatchbeers.com",
+      "status": 0,
+      "error": "write EPROTO 641A0000:error:0A000410:SSL routines:ssl3_read_bytes:ssl/tls alert handshake failure:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 40\n"
+    },
+    {
+      "type": "website",
+      "name": "Communal",
+      "score": 88,
+      "url": "https://www.communalrestaurant.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Black Sheep Cafe",
+      "score": 87,
+      "url": "https://www.blacksheepcafe.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Block Restaurant",
+      "score": 87,
+      "url": "https://www.blockrestaurantprovo.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.blockrestaurantprovo.com"
+    },
+    {
+      "type": "website",
+      "name": "La Vaca Steakhouse",
+      "score": 86,
+      "url": "https://www.lavacasteakhouse.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lavacasteakhouse.com"
+    },
+    {
+      "type": "website",
+      "name": "Station 22 Cafe",
+      "score": 84,
+      "url": "https://www.station22cafe.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "RIME Seafood & Raw Bar",
+      "score": 88,
+      "url": "https://www.rimeslc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.rimeslc.com"
+    },
+    {
+      "type": "website",
+      "name": "Boltcutter",
+      "score": 86,
+      "url": "https://www.boltcutterbar.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.boltcutterbar.com"
+    },
+    {
+      "type": "website",
+      "name": "Via Veneto Pizzarium",
+      "score": 86,
+      "url": "https://www.viavenetopizzarium.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Mazza Middle Eastern",
+      "score": 86,
+      "url": "https://www.mazza9th.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.mazza9th.com"
+    },
+    {
+      "type": "website",
+      "name": "Encanto Colombian",
+      "score": 85,
+      "url": "https://www.encantoslc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.encantoslc.com"
+    },
+    {
+      "type": "website",
+      "name": "Tradition",
+      "score": 86,
+      "url": "https://www.traditionslc.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.traditionslc.com. is not in the cert's altnames: DNS:1111nightclub.com"
+    },
+    {
+      "type": "website",
+      "name": "Proper Burger",
+      "score": 84,
+      "url": "https://www.properburgerco.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.properburgerco.com"
+    },
+    {
+      "type": "website",
+      "name": "Gourmandise",
+      "score": 87,
+      "url": "https://www.gourmandisethebakery.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.gourmandisethebakery.com"
+    },
+    {
+      "type": "website",
+      "name": "Sawadee Thai",
+      "score": 85,
+      "url": "https://www.sawadeeslc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.sawadeeslc.com"
+    },
+    {
+      "type": "website",
+      "name": "Tsunami Sushi",
+      "score": 85,
+      "url": "https://www.tsunamiutah.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Tuk Tuk Thai",
+      "score": 85,
+      "url": "https://www.tuktukslc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.tuktukslc.com"
+    },
+    {
+      "type": "website",
+      "name": "Mint Tapas & Sushi",
+      "score": 85,
+      "url": "https://www.minttapas.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.minttapas.com"
+    },
+    {
+      "type": "website",
+      "name": "Union Patisserie",
+      "score": 85,
+      "url": "https://www.unionpatisserie.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.unionpatisserie.com"
+    },
+    {
+      "type": "website",
+      "name": "The Continental",
+      "score": 87,
+      "url": "https://www.thecontinentalprovo.com",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Taste 117",
+      "score": 85,
+      "url": "https://www.taste117provo.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.taste117provo.com"
+    },
+    {
+      "type": "website",
+      "name": "Backdoor BRGR",
+      "score": 84,
+      "url": "https://www.backdoorbrgr.com",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.backdoorbrgr.com. is not in the cert's altnames: DNS:1111nightclub.com"
+    },
+    {
+      "type": "website",
+      "name": "Strap Tank Brewery",
+      "score": 84,
+      "url": "https://www.straptankbrewery.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Freshies Lobster Co.",
+      "score": 85,
+      "url": "https://www.freshieslobster.com",
+      "status": 404,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Nomad East",
+      "score": 85,
+      "url": "https://www.nomadeastslc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.nomadeastslc.com"
+    },
+    {
+      "type": "website",
+      "name": "Enrico's Deli",
+      "score": 84,
+      "url": "https://www.enricosutah.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.enricosutah.com"
+    },
+    {
+      "type": "website",
+      "name": "Tsunami Sandy",
+      "score": 84,
+      "url": "https://www.tsunamiutah.com",
+      "status": 403,
+      "error": ""
+    },
+    {
+      "type": "website",
+      "name": "Cubby's",
+      "score": 84,
+      "url": "https://www.cubbyschicago.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.cubbyschicago.com"
+    },
+    {
+      "type": "website",
+      "name": "Fat Jack's Tap House",
+      "score": 83,
+      "url": "https://www.fatjacksslc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.fatjacksslc.com"
+    },
+    {
+      "type": "website",
+      "name": "Slackwater (Ogden)",
+      "score": 85,
+      "url": "https://www.slackwaterpizza.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.slackwaterpizza.com"
+    },
+    {
+      "type": "website",
+      "name": "Stratford Proper",
+      "score": 85,
+      "url": "https://www.stratfordproper.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.stratfordproper.com"
+    },
+    {
+      "type": "website",
+      "name": "Copper Kitchen",
+      "score": 84,
+      "url": "https://www.copperkitchenut.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.copperkitchenut.com"
+    },
+    {
+      "type": "website",
+      "name": "Rusted Sun Pizzeria",
+      "score": 85,
+      "url": "https://www.rustedsunpizzeria.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.rustedsunpizzeria.com"
+    },
+    {
+      "type": "website",
+      "name": "Vinto",
+      "score": 85,
+      "url": "https://www.vintorestaurant.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.vintorestaurant.com"
+    },
+    {
+      "type": "website",
+      "name": "Provisions",
+      "score": 86,
+      "url": "https://www.provisionsslc.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.provisionsslc.com"
+    },
+    {
+      "type": "website",
+      "name": "Eggs in the City",
+      "score": 84,
+      "url": "https://www.eggsinthecity.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Monkeywrench",
+      "score": 85,
+      "url": "https://www.monkeywrenchicecream.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.monkeywrenchicecream.com"
+    },
+    {
+      "type": "website",
+      "name": "Lil Lotus",
+      "score": 85,
+      "url": "https://www.lillotus.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.lillotus.com"
+    },
+    {
+      "type": "website",
+      "name": "Spencer's for Steaks & Chops",
+      "score": 86,
+      "url": "https://www.spencersforsteaks.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.spencersforsteaks.com"
+    },
+    {
+      "type": "website",
+      "name": "Cucina Toscana",
+      "score": 87,
+      "url": "https://www.tfrg.net",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.tfrg.net"
+    },
+    {
+      "type": "website",
+      "name": "Garage on Beck",
+      "score": 84,
+      "url": "https://www.garageonbeck.com",
+      "status": 0,
+      "error": "certificate has expired"
+    },
+    {
+      "type": "website",
+      "name": "Sweet Lake Biscuits & Limeade",
+      "score": 84,
+      "url": "https://www.sweetlake.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.sweetlake.com"
+    },
+    {
+      "type": "website",
+      "name": "Clark Planetarium",
+      "score": 85,
+      "url": "https://www.clarkplanetarium.org",
+      "status": 0,
+      "error": "Hostname/IP does not match certificate's altnames: Host: www.clarkplanetarium.org. is not in the cert's altnames: DNS:*.slco.org, DNS:slco.org"
+    },
+    {
+      "type": "website",
+      "name": "The Mighty Baker",
+      "score": 84,
+      "url": "https://www.themightybaker.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.themightybaker.com"
+    },
+    {
+      "type": "website",
+      "name": "Slackwater (Provo)",
+      "score": 85,
+      "url": "https://www.slackwaterpizza.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.slackwaterpizza.com"
+    },
+    {
+      "type": "website",
+      "name": "Wayla Thai",
+      "score": 84,
+      "url": "https://www.waylathai.com",
+      "status": 0,
+      "error": "getaddrinfo ENOTFOUND www.waylathai.com"
+    },
+    {
+      "type": "website",
+      "name": "Ave Bakery",
+      "score": 84,
+      "url": "https://www.avebakery.com",
+      "status": 0,
+      "error": "timeout"
+    }
+  ]
+}
