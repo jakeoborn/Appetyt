@@ -25,7 +25,7 @@ const newRenderTrips = `  renderTrips(){
 
     if(!trip){
       // --- NO ACTIVE TRIP: Show create/join ---
-      const tripHistory = JSON.parse(localStorage.getItem('appetyt_trip_history')||'[]');
+      const tripHistory = JSON.parse(localStorage.getItem('dimhour_trip_history')||'[]');
       el.innerHTML = \`
         \${tripHistory.length ? \`
         <div style="margin-bottom:16px">

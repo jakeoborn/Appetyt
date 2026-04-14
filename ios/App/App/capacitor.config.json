@@ -1,11 +1,11 @@
 {
-	"appId": "app.appetyt.ios",
-	"appName": "Appetyt",
+	"appId": "app.dimhour.ios",
+	"appName": "Dim Hour",
 	"webDir": "dist",
 	"server": {
 		"iosScheme": "https",
 		"allowNavigation": [
-			"appetyt.app",
+			"dimhour.com",
 			"cdn.jsdelivr.net",
 			"*.supabase.co",
 			"*.tile.openstreetmap.org",
@@ -34,9 +34,9 @@
 		"contentInset": "automatic",
 		"backgroundColor": "#0a0d14",
 		"preferredContentMode": "mobile",
-		"scheme": "Appetyt",
+		"scheme": "Dim Hour",
 		"associatedDomains": [
-			"applinks:appetyt.app"
+			"applinks:dimhour.com"
 		]
 	},
 	"packageClassList": [

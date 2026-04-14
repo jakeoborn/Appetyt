@@ -18,7 +18,7 @@ const newRenderTrips = `  renderTrips(){
 
     // --- NO ACTIVE TRIP: Create/Join ---
     if(!trip){
-      const tripHistory = JSON.parse(localStorage.getItem('appetyt_trip_history')||'[]');
+      const tripHistory = JSON.parse(localStorage.getItem('dimhour_trip_history')||'[]');
       el.innerHTML = \`
         \${tripHistory.length ? \`<div style="margin-bottom:16px">
           <div style="font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);margin-bottom:10px">📁 Past Trips</div>

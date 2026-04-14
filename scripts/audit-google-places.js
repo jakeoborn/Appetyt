@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Appetyt Google Places Auditor
+ * Dim Hour Google Places Auditor
  *
  * Verifies restaurant data against Google Places API.
  * Checks: address, phone, hours, website, lat/lng, open/closed status.

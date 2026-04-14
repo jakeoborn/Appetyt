@@ -15,13 +15,13 @@ let indexHtml = fs.readFileSync('index.html', 'utf8');
 
 // Upgrade title
 indexHtml = indexHtml.replace(
-  '<title>Appetyt</title>',
-  '<title>Appetyt — Best Restaurants in NYC, Dallas, Austin, Chicago, Houston, Salt Lake City | 2026 Guide</title>'
+  '<title>Dim Hour</title>',
+  '<title>Dim Hour — Best Restaurants in NYC, Dallas, Austin, Chicago, Houston, Salt Lake City | 2026 Guide</title>'
 );
 
 // Upgrade meta description
 indexHtml = indexHtml.replace(
-  '<meta name="description" content="Appetyt — Discover the best restaurants in 248 cities worldwide.">',
+  '<meta name="description" content="Dim Hour — Discover the best restaurants in 248 cities worldwide.">',
   '<meta name="description" content="Discover the best restaurants in NYC, Dallas, Austin, Chicago, Houston, and Salt Lake City. 2,400+ curated restaurants with scores, reviews, and reservations. Your ultimate dining guide for 2026.">'
 );
 
@@ -30,19 +30,19 @@ const ogTags = `
 <meta name="keywords" content="best restaurants, restaurant guide, where to eat, NYC restaurants, Dallas restaurants, Austin restaurants, Chicago restaurants, Houston restaurants, Salt Lake City restaurants, brunch, fine dining, date night, happy hour, 2026">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Appetyt">
-<meta property="og:title" content="Appetyt — Discover the Best Restaurants in 2,400+ Curated Spots">
+<meta property="og:site_name" content="Dim Hour">
+<meta property="og:title" content="Dim Hour — Discover the Best Restaurants in 2,400+ Curated Spots">
 <meta property="og:description" content="2,400+ restaurants scored and reviewed across NYC, Dallas, Austin, Chicago, Houston, and Salt Lake City. Find brunch, date night, happy hour, and fine dining spots.">
-<meta property="og:url" content="https://appetyt.app/">
-<meta property="og:image" content="https://appetyt.app/icons/icon-512.png">
+<meta property="og:url" content="https://dimhour.com/">
+<meta property="og:image" content="https://dimhour.com/icons/icon-512.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Appetyt — Best Restaurants in NYC, Dallas, Austin, Chicago, Houston, SLC">
+<meta name="twitter:title" content="Dim Hour — Best Restaurants in NYC, Dallas, Austin, Chicago, Houston, SLC">
 <meta name="twitter:description" content="2,400+ restaurants scored and reviewed. Your ultimate dining guide for 2026.">`;
 
 if (!indexHtml.includes('og:type')) {
   indexHtml = indexHtml.replace(
-    '<link rel="canonical" href="https://appetyt.app/">',
-    '<link rel="canonical" href="https://appetyt.app/">' + ogTags
+    '<link rel="canonical" href="https://dimhour.com/">',
+    '<link rel="canonical" href="https://dimhour.com/">' + ogTags
   );
   console.log('✓ Added Open Graph, Twitter, keywords meta tags to homepage');
 }
@@ -50,16 +50,16 @@ if (!indexHtml.includes('og:type')) {
 // Add structured data for the homepage (WebSite + ItemList schema)
 const homepageSchema = `
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Appetyt","url":"https://appetyt.app/","description":"Discover the best restaurants across America. 2,400+ curated spots with scores, reviews, and reservations.","potentialAction":{"@type":"SearchAction","target":"https://appetyt.app/?q={search_term_string}","query-input":"required name=search_term_string"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"Dim Hour","url":"https://dimhour.com/","description":"Discover the best restaurants across America. 2,400+ curated spots with scores, reviews, and reservations.","potentialAction":{"@type":"SearchAction","target":"https://dimhour.com/?q={search_term_string}","query-input":"required name=search_term_string"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"Best Restaurant Cities on Appetyt","description":"Explore curated restaurant guides for top US cities","numberOfItems":6,"itemListElement":[
-{"@type":"ListItem","position":1,"item":{"@type":"City","name":"New York City","url":"https://appetyt.app/nyc/"}},
-{"@type":"ListItem","position":2,"item":{"@type":"City","name":"Dallas","url":"https://appetyt.app/dallas/"}},
-{"@type":"ListItem","position":3,"item":{"@type":"City","name":"Houston","url":"https://appetyt.app/houston/"}},
-{"@type":"ListItem","position":4,"item":{"@type":"City","name":"Chicago","url":"https://appetyt.app/chicago/"}},
-{"@type":"ListItem","position":5,"item":{"@type":"City","name":"Austin","url":"https://appetyt.app/austin/"}},
-{"@type":"ListItem","position":6,"item":{"@type":"City","name":"Salt Lake City","url":"https://appetyt.app/salt-lake-city/"}}
+{"@context":"https://schema.org","@type":"ItemList","name":"Best Restaurant Cities on Dim Hour","description":"Explore curated restaurant guides for top US cities","numberOfItems":6,"itemListElement":[
+{"@type":"ListItem","position":1,"item":{"@type":"City","name":"New York City","url":"https://dimhour.com/nyc/"}},
+{"@type":"ListItem","position":2,"item":{"@type":"City","name":"Dallas","url":"https://dimhour.com/dallas/"}},
+{"@type":"ListItem","position":3,"item":{"@type":"City","name":"Houston","url":"https://dimhour.com/houston/"}},
+{"@type":"ListItem","position":4,"item":{"@type":"City","name":"Chicago","url":"https://dimhour.com/chicago/"}},
+{"@type":"ListItem","position":5,"item":{"@type":"City","name":"Austin","url":"https://dimhour.com/austin/"}},
+{"@type":"ListItem","position":6,"item":{"@type":"City","name":"Salt Lake City","url":"https://dimhour.com/salt-lake-city/"}}
 ]}
 </script>`;
 
@@ -72,7 +72,7 @@ if (!indexHtml.includes('WebSite')) {
 const noscriptContent = `
 <noscript>
 <div style="max-width:700px;margin:0 auto;padding:40px 16px;font-family:sans-serif;color:#e8dfc8;background:#0a0d14">
-<h1 style="color:#c8a96e;font-size:28px">Appetyt — Discover the Best Restaurants</h1>
+<h1 style="color:#c8a96e;font-size:28px">Dim Hour — Discover the Best Restaurants</h1>
 <p>2,400+ curated restaurants across America's top dining cities.</p>
 <h2 style="color:#c8a96e">Cities</h2>
 <ul>
@@ -85,7 +85,7 @@ const noscriptContent = `
 </ul>
 <h2 style="color:#c8a96e">Popular Categories</h2>
 <p>Fine Dining · Date Night · Brunch · Happy Hour · BBQ · Tacos · Sushi · Pizza · Cocktail Bars · Breweries · Rooftop · Patio · Live Music · Food Trucks</p>
-<p>Download the app or browse online at <a href="https://appetyt.app" style="color:#c8a96e">appetyt.app</a></p>
+<p>Download the app or browse online at <a href="https://dimhour.com" style="color:#c8a96e">dimhour.com</a></p>
 </div>
 </noscript>`;
 
@@ -124,7 +124,7 @@ function createCityPage(city, slug, data, state) {
   };
 
   const faqQuestions = [
-    {q:`What are the best restaurants in ${city}?`, a:`Top restaurants in ${city} include ${top5.map(r=>r.name+' ('+r.cuisine+', score '+r.score+')').join(', ')}. Appetyt curates ${data.length}+ ${city} restaurants with scores and reviews.`},
+    {q:`What are the best restaurants in ${city}?`, a:`Top restaurants in ${city} include ${top5.map(r=>r.name+' ('+r.cuisine+', score '+r.score+')').join(', ')}. Dim Hour curates ${data.length}+ ${city} restaurants with scores and reviews.`},
     {q:`What are the best brunch spots in ${city}?`, a:`Best brunch in ${city} includes ${(categories['Brunch']||[]).map(r=>r.name).join(', ')}. ${city} has ${data.filter(r=>(r.tags||[]).includes('Brunch')).length}+ restaurants with excellent brunch options.`},
     {q:`What are the best date night restaurants in ${city}?`, a:`Top date night spots in ${city} include ${(categories['Date Night']||[]).map(r=>r.name).join(', ')}. With ${data.filter(r=>(r.tags||[]).includes('Date Night')).length}+ date night options, ${city} is a top dining destination.`},
     {q:`What are the best BBQ restaurants in ${city}?`, a:`Best BBQ in ${city} includes ${(categories['BBQ']||[]).map(r=>r.name).join(', ')}. ${city} has ${data.filter(r=>(r.tags||[]).includes('BBQ')).length}+ BBQ spots scored and reviewed.`},
@@ -143,17 +143,17 @@ function createCityPage(city, slug, data, state) {
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y37FGSEPXR"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Y37FGSEPXR');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best Restaurants in ${city} 2026 | Brunch, Patio, Date Night | Appetyt</title>
+<title>Best Restaurants in ${city} 2026 | Brunch, Patio, Date Night | Dim Hour</title>
 <meta name="description" content="Discover the best restaurants in ${city} — top brunch spots, patio dining, date night, happy hour, and fine dining. Curated guide to ${data.length}+ ${city} restaurants with scores and reviews.">
 <meta name="keywords" content="best restaurants ${city}, best brunch ${city}, best patio ${city}, best date night ${city}, best happy hour ${city}, fine dining ${city}, ${city} restaurant guide, where to eat ${city}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-<link rel="canonical" href="https://appetyt.app/${slug}/">
+<link rel="canonical" href="https://dimhour.com/${slug}/">
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="Appetyt">
+<meta property="og:site_name" content="Dim Hour">
 <meta property="og:title" content="Best Restaurants in ${city} 2026 — Curated Guide">
 <meta property="og:description" content="${data.length}+ ${city} restaurants scored and reviewed. Find the best brunch, patio, date night, and fine dining spots.">
-<meta property="og:url" content="https://appetyt.app/${slug}/">
-<meta property="og:image" content="https://appetyt.app/icons/icon-512.png">
+<meta property="og:url" content="https://dimhour.com/${slug}/">
+<meta property="og:image" content="https://dimhour.com/icons/icon-512.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Best Restaurants in ${city} 2026 — Curated Guide">
 <meta name="twitter:description" content="${data.length}+ ${city} restaurants scored and reviewed. Find the best brunch, patio, date night, and fine dining spots.">
@@ -162,8 +162,8 @@ function createCityPage(city, slug, data, state) {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Best Restaurants in ${city} 2026",
-  "description": "Curated guide to the best restaurants in ${city}, scored and reviewed by Appetyt.",
-  "url": "https://appetyt.app/${slug}/",
+  "description": "Curated guide to the best restaurants in ${city}, scored and reviewed by Dim Hour.",
+  "url": "https://dimhour.com/${slug}/",
   "numberOfItems": ${data.length},
   "itemListElement": [
     ${top5.map((r,i) => `{"@type":"ListItem","position":${i+1},"item":{"@type":"Restaurant","name":"${r.name.replace(/"/g,'\\"')}","servesCuisine":"${r.cuisine}","address":{"@type":"PostalAddress","addressLocality":"${city}","addressRegion":"${state}"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"${r.score}","bestRating":"100"}}}`).join(',\n    ')}
@@ -180,7 +180,7 @@ function createCityPage(city, slug, data, state) {
 }
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Appetyt","item":"https://appetyt.app/"},{"@type":"ListItem","position":2,"name":"${city} Restaurants","item":"https://appetyt.app/${slug}/"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Dim Hour","item":"https://dimhour.com/"},{"@type":"ListItem","position":2,"name":"${city} Restaurants","item":"https://dimhour.com/${slug}/"}]}
 </script>
 <style>
 :root{--gold:#c8a96e;--dark:#0a0d14;--card:#11151f;--text:#e8dfc8;--text2:#9a8e72;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif}
@@ -212,13 +212,13 @@ a{color:var(--gold)}
 </head>
 <body>
 <div class="wrap">
-<a href="/" class="back">← Back to Appetyt</a>
+<a href="/" class="back">← Back to Dim Hour</a>
 <h1>Best Restaurants in ${city} 2026</h1>
 <p class="subtitle">${data.length}+ curated restaurants · Scored & reviewed · Updated weekly</p>
-<a href="https://appetyt.app" class="cta">🍽️ Open Full Guide</a>
+<a href="https://dimhour.com" class="cta">🍽️ Open Full Guide</a>
 
 <div class="tags">
-${topTags.map(([t,c]) => `<a href="https://appetyt.app" class="tag">${t} (${c})</a>`).join('\n')}
+${topTags.map(([t,c]) => `<a href="https://dimhour.com" class="tag">${t} (${c})</a>`).join('\n')}
 </div>
 
 ${Object.entries(categories).map(([cat, items]) => items.length > 0 ? `
@@ -232,7 +232,7 @@ ${items.map(r => `<div class="r"><div><div class="rn">${r.name}</div><div class=
 ${otherCities.map(c => `<a href="/${c.slug}/" class="city-link">${c.name}</a>`).join('\n')}
 </div>
 
-<p style="margin-top:32px;font-size:13px;color:var(--text2)">Appetyt curates the best restaurants across America. Every restaurant is scored based on food quality, service, ambiance, and value. <a href="https://appetyt.app">Explore the full guide →</a></p>
+<p style="margin-top:32px;font-size:13px;color:var(--text2)">Dim Hour curates the best restaurants across America. Every restaurant is scored based on food quality, service, ambiance, and value. <a href="https://dimhour.com">Explore the full guide →</a></p>
 </div>
 </body>
 </html>`;
@@ -262,61 +262,61 @@ const today = new Date().toISOString().split('T')[0];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://appetyt.app/</loc>
+    <loc>https://dimhour.com/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://appetyt.app/dallas/</loc>
+    <loc>https://dimhour.com/dallas/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://appetyt.app/nyc/</loc>
+    <loc>https://dimhour.com/nyc/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://appetyt.app/chicago/</loc>
+    <loc>https://dimhour.com/chicago/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://appetyt.app/houston/</loc>
+    <loc>https://dimhour.com/houston/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://appetyt.app/austin/</loc>
+    <loc>https://dimhour.com/austin/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://appetyt.app/salt-lake-city/</loc>
+    <loc>https://dimhour.com/salt-lake-city/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://appetyt.app/seattle/</loc>
+    <loc>https://dimhour.com/seattle/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://appetyt.app/los-angeles/</loc>
+    <loc>https://dimhour.com/los-angeles/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://appetyt.app/san-antonio/</loc>
+    <loc>https://dimhour.com/san-antonio/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

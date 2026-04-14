@@ -1,9 +1,9 @@
 /**
- * fetch-city-data.js — Appetyt Restaurant Data Pipeline
+ * fetch-city-data.js — Dim Hour Restaurant Data Pipeline
  * ======================================================
  *
  * Fetches real restaurant data for 2026 FIFA World Cup host cities
- * using the Google Places API (New), then maps it to the Appetyt schema.
+ * using the Google Places API (New), then maps it to the Dim Hour schema.
  *
  * ── Prerequisites ──────────────────────────────────────────────────
  *
@@ -187,7 +187,7 @@ function mapCuisine(types, name) {
 }
 
 /**
- * Convert Google 1-5 rating to Appetyt 80-99 score.
+ * Convert Google 1-5 rating to Dim Hour 80-99 score.
  * 4.0 -> ~86, 4.5 -> ~92, 5.0 -> 99
  */
 function ratingToScore(rating) {
@@ -198,7 +198,7 @@ function ratingToScore(rating) {
 }
 
 /**
- * Map Google price_level (0-4) to Appetyt price (1-4).
+ * Map Google price_level (0-4) to Dim Hour price (1-4).
  */
 function mapPrice(priceLevel) {
   if (priceLevel === undefined || priceLevel === null) return 2;
@@ -386,9 +386,9 @@ async function yelpSearch(name, city) {
 // ─── Main pipeline ──────────────────────────────────────────────────────────
 
 /**
- * Map a Google Place object to the Appetyt restaurant schema.
+ * Map a Google Place object to the Dim Hour restaurant schema.
  */
-function mapToAppetytSchema(place, id, cityConfig) {
+function mapToDim HourSchema(place, id, cityConfig) {
   const name = place.displayName?.text || 'Unknown';
   const address = place.formattedAddress || '';
   const cuisine = mapCuisine(place.types, name);
@@ -480,7 +480,7 @@ async function fetchCity(cityConfig) {
         );
         if (!isRestaurant) continue;
 
-        const restaurant = mapToAppetytSchema(place, nextId++, cityConfig);
+        const restaurant = mapToDim HourSchema(place, nextId++, cityConfig);
         restaurants.push(restaurant);
 
         // Cross-reference with Yelp if available
@@ -627,7 +627,7 @@ async function main() {
   }
 
   const totalTarget = citiesToFetch.reduce((sum, c) => sum + c.target, 0);
-  console.log(`Appetyt Data Pipeline — Fetching ${citiesToFetch.length} cities (${totalTarget} total restaurants)`);
+  console.log(`Dim Hour Data Pipeline — Fetching ${citiesToFetch.length} cities (${totalTarget} total restaurants)`);
   console.log(`Tier 1 (500): ${citiesToFetch.filter(c=>c.tier===1).map(c=>c.name).join(', ') || 'none'}`);
   console.log(`Tier 2 (300): ${citiesToFetch.filter(c=>c.tier===2).map(c=>c.name).join(', ') || 'none'}`);
   console.log(`Tier 3 (150): ${citiesToFetch.filter(c=>c.tier===3).map(c=>c.name).join(', ') || 'none'}\n`);

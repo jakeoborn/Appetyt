@@ -1,13 +1,13 @@
-# Appetyt
+# Dim Hour
 
 Restaurant discovery app for iOS and web. Helps users find the best restaurants across 248+ cities worldwide.
 
 ## Tech Stack
 
 - **Frontend**: Vanilla HTML/CSS/JavaScript (single-page app in `index.html`)
-- **Mobile**: Capacitor v6 for iOS (app ID: `app.appetyt.ios`)
+- **Mobile**: Capacitor v6 for iOS (app ID: `app.dimhour.ios`)
 - **AI**: Anthropic Claude API for restaurant concierge chatbot ([concierge.js](concierge.js))
-- **Hosting**: Static site at appetyt.app (GitHub Pages via [CNAME](CNAME))
+- **Hosting**: Static site at dimhour.com (GitHub Pages via [CNAME](CNAME))
 - **CI/CD**: GitHub Actions ([.github/workflows/ios-build.yml](.github/workflows/ios-build.yml)) + CodeMagic ([codemagic.yaml](codemagic.yaml))
 
 ## Commands
@@ -100,7 +100,7 @@ For multi-step tasks, state a brief plan with a verification check for each step
 - No test framework or linter currently configured
 - Build is a simple file copy (`index.html` → `dist/`)
 - Node.js >= 18 required
-- Universal Links configured for `appetyt.app` domain
+- Universal Links configured for `dimhour.com` domain
 
 ## Important Files
 

@@ -40,13 +40,13 @@ console.log('Added profile actions and account section');
 const oldProfileHeader = `<div style="text-align:center;padding:20px 0 16px">
         <div style="width:70px;height:70px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 10px">🍽️</div>
         <div style="font-size:17px;font-weight:800;color:var(--text)">Your Profile</div>
-        <div style="font-size:11px;color:var(--text2);margin-top:3px">Appetyt Food Passport</div>
+        <div style="font-size:11px;color:var(--text2);margin-top:3px">Dim Hour Food Passport</div>
       </div>`;
 
 const newProfileHeader = `<div style="text-align:center;padding:20px 0 16px">
         <div onclick="A.changeAvatar()" style="width:70px;height:70px;border-radius:50%;background:linear-gradient(135deg,rgba(201,168,76,.3),rgba(201,168,76,.1));border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 10px;cursor:pointer">\${S.userData.avatar||'🍽️'}</div>
         <div style="font-size:17px;font-weight:800;color:var(--text)">\${S.userData.displayName||S.user?.email?.split('@')[0]||'Foodie'}</div>
-        <div style="font-size:11px;color:var(--text2);margin-top:3px">\${S.user?.email||'Appetyt Food Passport'}</div>
+        <div style="font-size:11px;color:var(--text2);margin-top:3px">\${S.user?.email||'Dim Hour Food Passport'}</div>
         <div style="margin-top:6px;display:flex;gap:6px;justify-content:center">
           <span style="font-size:10px;padding:3px 10px;border-radius:8px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.2);color:var(--gold);font-weight:600">\${S.city} Explorer</span>
           \${TRIPS.current?'<span style="font-size:10px;padding:3px 10px;border-radius:8px;background:rgba(62,184,168,.1);border:1px solid rgba(62,184,168,.2);color:#3eb8a8;font-weight:600">On Trip</span>':''}
@@ -133,10 +133,10 @@ if(closeAuthIdx !== -1){
     if(city) S.userData.homeCity = city;
     if(avatar) S.userData.avatar = avatar;
     S.userData.foodPrefs = prefs;
-    localStorage.setItem('appetyt_data', JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data', JSON.stringify(S.userData));
 
     // Update nickname for trips
-    if(name) localStorage.setItem('appetyt_nickname', name);
+    if(name) localStorage.setItem('dimhour_nickname', name);
 
     document.getElementById('event-detail-modal').style.display='none';
     this.showToast('Profile updated!');
@@ -153,7 +153,7 @@ if(closeAuthIdx !== -1){
 
   signOut(){
     S.user = null;
-    localStorage.removeItem('appetyt_user');
+    localStorage.removeItem('dimhour_user');
     document.getElementById('auth-btn').classList.remove('on');
     document.getElementById('auth-btn').textContent = '👤';
     const _sab = document.getElementById('sidebar-auth-btn');
@@ -175,7 +175,7 @@ html = html.replace(oldAuthInit, newAuthInit);
 console.log('Updated auth init to show avatar');
 
 // 7. Initialize userData fields if missing
-const userDataInit = "S.userData=JSON.parse(localStorage.getItem('appetyt_data')||'{}');";
+const userDataInit = "S.userData=JSON.parse(localStorage.getItem('dimhour_data')||'{}');";
 if(html.includes(userDataInit)){
   const afterInit = html.indexOf(userDataInit) + userDataInit.length;
   const defaults = "\nif(!S.userData.favs)S.userData.favs=[];if(!S.userData.visited)S.userData.visited=[];if(!S.userData.want)S.userData.want=[];if(!S.userData.avatar)S.userData.avatar='🍽️';if(!S.userData.displayName)S.userData.displayName='';if(!S.userData.foodPrefs)S.userData.foodPrefs=[];if(!S.userData.homeCity)S.userData.homeCity='';";

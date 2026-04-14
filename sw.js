@@ -1,4 +1,4 @@
-var CACHE_VERSION = 'appetyt-v1';
+var CACHE_VERSION = 'dimhour-v1';
 var STATIC_CACHE = CACHE_VERSION + '-static';
 var DYNAMIC_CACHE = CACHE_VERSION + '-dynamic';
 
@@ -80,12 +80,12 @@ self.addEventListener('fetch', function(event) {
   /* Push notification handler */
 self.addEventListener('push', function(event) {
   var data = event.data ? event.data.json() : {};
-  var title = data.title || 'Appetyt';
+  var title = data.title || 'Dim Hour';
   var options = {
     body: data.body || 'Check your trip itinerary',
     icon: '/icons/icon-192.png',
     badge: '/icons/icon-72.png',
-    tag: data.tag || 'appetyt-notification',
+    tag: data.tag || 'dimhour-notification',
     data: { url: data.url || '/', action: data.action || 'open' },
     actions: [
       { action: 'open', title: 'View' },
@@ -103,7 +103,7 @@ self.addEventListener('notificationclick', function(event) {
   event.waitUntil(
     self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(function(windowClients) {
       for (var i = 0; i < windowClients.length; i++) {
-        if (windowClients[i].url.indexOf('appetyt.app') > -1 && 'focus' in windowClients[i]) {
+        if (windowClients[i].url.indexOf('dimhour.com') > -1 && 'focus' in windowClients[i]) {
           return windowClients[i].focus();
         }
       }
