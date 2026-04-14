@@ -37,7 +37,7 @@ function checkUrl(url, timeout = 8000) {
   return new Promise((resolve) => {
     try {
       const mod = url.startsWith('https') ? https : http;
-      const req = mod.get(url, { timeout, headers: { 'User-Agent': 'Mozilla/5.0 (compatible; AppetytAudit/1.0)' } }, (res) => {
+      const req = mod.get(url, { timeout, headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Dim HourAudit/1.0)' } }, (res) => {
         if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
           resolve({ status: res.statusCode, redirect: res.headers.location, ok: true });
         } else {
@@ -112,7 +112,7 @@ async function auditCity(cityName, data) {
 }
 
 async function main() {
-  console.log('=== APPETYT LINK AUDIT ===\n');
+  console.log('=== DIM HOUR LINK AUDIT ===\n');
   console.log('Testing website URLs for all restaurants + Instagram for top 50 per city...\n');
 
   const allResults = [];

@@ -1,14 +1,14 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'app.appetyt.ios',
-  appName: 'Appetyt',
+  appId: 'app.dimhour.ios',
+  appName: 'Dim Hour',
   webDir: 'dist',
 
   server: {
     iosScheme: 'https',
     allowNavigation: [
-      'appetyt.app',
+      'dimhour.com',
       'cdn.jsdelivr.net',
       '*.supabase.co',
       '*.tile.openstreetmap.org',
@@ -39,9 +39,9 @@ const config: CapacitorConfig = {
     contentInset: 'automatic',
     backgroundColor: '#0a0d14',
     preferredContentMode: 'mobile',
-    scheme: 'Appetyt',
-    // Universal Links (for https://appetyt.app links to open the app)
-    associatedDomains: ['applinks:appetyt.app']
+    scheme: 'DimHour',
+    // Universal Links (for https://dimhour.com links to open the app)
+    associatedDomains: ['applinks:dimhour.com']
   }
 };
 

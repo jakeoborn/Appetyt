@@ -13,7 +13,7 @@ exports.handler = async function(event) {
 
   const { messages, city, system } = JSON.parse(event.body || '{}');
 
-  const defaultSystem = `You are the Appetyt concierge — a knowledgeable local food guide for ${city || 'Dallas'}.
+  const defaultSystem = `You are the Dim Hour concierge — a knowledgeable local food guide for ${city || 'Dallas'}.
 You know every great restaurant, which ones need reservations weeks ahead, where happy hour is, and what to order.
 Be warm, confident, and specific — like a well-connected local friend.
 Keep responses concise (under 150 words). Use line breaks for readability.

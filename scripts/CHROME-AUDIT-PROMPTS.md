@@ -1,4 +1,4 @@
-# Appetyt Chrome Audit Prompts
+# Dim Hour Chrome Audit Prompts
 
 Copy and paste these prompts into your local `claude --chrome` session.
 Run them one at a time. Each builds on the previous.
@@ -42,25 +42,25 @@ Open index.html and find all restaurants that have a reservation field (Resy, To
 ### All tabs
 
 ```
-Open appetyt.app in Chrome. Take a screenshot of each main tab: Guide, Top 50, Local, Feed, Travel. For each tab, note any visual issues: broken layouts, overlapping text, missing gold borders, cards not rendering, blank sections.
+Open dimhour.com in Chrome. Take a screenshot of each main tab: Guide, Top 50, Local, Feed, Travel. For each tab, note any visual issues: broken layouts, overlapping text, missing gold borders, cards not rendering, blank sections.
 ```
 
 ### Restaurant detail view
 
 ```
-Open appetyt.app, tap on the #1 ranked restaurant, and screenshot the full detail view. Check: score displays correctly, cuisine/neighborhood/price shows, reservation widget works, action buttons (Favorite/Visited/Save) are visible, Add to List button appears, notes section loads, tags display.
+Open dimhour.com, tap on the #1 ranked restaurant, and screenshot the full detail view. Check: score displays correctly, cuisine/neighborhood/price shows, reservation widget works, action buttons (Favorite/Visited/Save) are visible, Add to List button appears, notes section loads, tags display.
 ```
 
 ### Coming Soon cards
 
 ```
-Open appetyt.app, go to the Local tab, scroll to the Coming Soon section. Screenshot the cards. Verify: countdown badges show correct days, gold borders display, View Restaurant button is visible, TBD cards show "Date TBD" badge.
+Open dimhour.com, go to the Local tab, scroll to the Coming Soon section. Screenshot the cards. Verify: countdown badges show correct days, gold borders display, View Restaurant button is visible, TBD cards show "Date TBD" badge.
 ```
 
 ### Filter chips
 
 ```
-Open appetyt.app on the Guide tab. Screenshot the filter area. Click a few filter chips (cuisine, neighborhood, combo) and verify they filter correctly. Check that gold borders show on all chip types.
+Open dimhour.com on the Guide tab. Screenshot the filter area. Click a few filter chips (cuisine, neighborhood, combo) and verify they filter correctly. Check that gold borders show on all chip types.
 ```
 
 ---
@@ -70,19 +70,19 @@ Open appetyt.app on the Guide tab. Screenshot the filter area. Click a few filte
 ### Search flow
 
 ```
-Open appetyt.app. Type "date night" in the search bar and press Enter. Screenshot the results. Then type "happy hour" and press Enter. Then type "sushi" and press Enter. Verify results are relevant and clickable.
+Open dimhour.com. Type "date night" in the search bar and press Enter. Screenshot the results. Then type "happy hour" and press Enter. Then type "sushi" and press Enter. Verify results are relevant and clickable.
 ```
 
 ### Add to List flow
 
 ```
-Open appetyt.app. Create a custom list: go to Feed tab, find the lists section, create a new list called "Test Audit List". Then go back to Guide tab, open any restaurant, scroll down to the "Add to List" button, tap it, and add it to "Test Audit List". Then go back to Feed and verify the restaurant appears in the list.
+Open dimhour.com. Create a custom list: go to Feed tab, find the lists section, create a new list called "Test Audit List". Then go back to Guide tab, open any restaurant, scroll down to the "Add to List" button, tap it, and add it to "Test Audit List". Then go back to Feed and verify the restaurant appears in the list.
 ```
 
 ### Reservation flow
 
 ```
-Open appetyt.app. Open a restaurant that uses Resy. In the reservation widget, change the date and time, then click "Find a Table on Resy". Verify it opens Resy with the correct restaurant. Go back and try one that uses OpenTable. Verify it opens OpenTable correctly.
+Open dimhour.com. Open a restaurant that uses Resy. In the reservation widget, change the date and time, then click "Find a Table on Resy". Verify it opens Resy with the correct restaurant. Go back and try one that uses OpenTable. Verify it opens OpenTable correctly.
 ```
 
 ---

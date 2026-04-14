@@ -1,4 +1,4 @@
-# Appetyt — iOS App Feasibility Assessment
+# Dim Hour — iOS App Feasibility Assessment
 
 **Date:** 2026-03-20
 **Current Stack:** Vanilla HTML/CSS/JS, Netlify Functions, Claude API
@@ -53,7 +53,7 @@
 
 **Cons:**
 - Requires Xcode and macOS for building
-- WKWebView performance (fine for content apps like Appetyt)
+- WKWebView performance (fine for content apps like Dim Hour)
 - App Store review process
 
 **Estimated effort:** 1-2 weeks
@@ -80,7 +80,7 @@
 
 ## Recommendation
 
-**Start with PWA** (Option 1) for immediate results — your app already looks and feels native on mobile. Then move to **Capacitor** (Option 2) when you want App Store distribution and push notifications. A full native rewrite (Option 3) is unnecessary given Appetyt is a content-driven app where WebView performance is more than sufficient.
+**Start with PWA** (Option 1) for immediate results — your app already looks and feels native on mobile. Then move to **Capacitor** (Option 2) when you want App Store distribution and push notifications. A full native rewrite (Option 3) is unnecessary given Dim Hour is a content-driven app where WebView performance is more than sufficient.
 
 ---
 

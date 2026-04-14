@@ -33,7 +33,7 @@ console.log('Added NYC events to Activities page');
 // =====================================================
 const nycGuides = `
       'New York':[
-        {id:'nyc-first-timer',creator:'Appetyt Guide',handle:'@appetyt',platform:'Appetyt',avatar:'🗽',title:'NYC First Timer Weekend',subtitle:'Hit the icons plus the hidden gems',days:[
+        {id:'nyc-first-timer',creator:'Dim Hour Guide',handle:'@dimhour',platform:'Dim Hour',avatar:'🗽',title:'NYC First Timer Weekend',subtitle:'Hit the icons plus the hidden gems',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
             {time:'6:00 PM',spot:'Walk the Brooklyn Bridge at sunset',id:1680,note:'Start in Manhattan, end in DUMBO — stunning views'},
             {time:'7:30 PM',spot:'Pizza at Juliana\\'s',id:1171,note:'Coal-fired perfection under the Brooklyn Bridge'},
@@ -54,7 +54,7 @@ const nycGuides = `
             {time:'5:00 PM',spot:'Sunset from Top of the Rock',id:1675,note:'Best view of the Empire State Building'}
           ]}
         ]},
-        {id:'nyc-foodies-deep-dive',creator:'Appetyt Guide',handle:'@appetyt',platform:'Appetyt',avatar:'🍽',title:'NYC Serious Foodie Weekend',subtitle:'Michelin stars, tasting menus & cult favorites',days:[
+        {id:'nyc-foodies-deep-dive',creator:'Dim Hour Guide',handle:'@dimhour',platform:'Dim Hour',avatar:'🍽',title:'NYC Serious Foodie Weekend',subtitle:'Michelin stars, tasting menus & cult favorites',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
             {time:'5:30 PM',spot:'Cocktails at Attaboy',id:1071,note:'No menu — tell the bartender what you like'},
             {time:'7:30 PM',spot:'Dinner at Dhamaka',id:1028,note:'Indian food like you\\'ve never had — fiery, bold, Michelin'},

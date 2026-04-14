@@ -70,22 +70,22 @@ function buildCategoryPage(city, cat, spots) {
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y37FGSEPXR"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Y37FGSEPXR');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${cat.searchTerm} in ${name} 2026 | Top ${spots.length} Spots | Appetyt</title>
+<title>${cat.searchTerm} in ${name} 2026 | Top ${spots.length} Spots | Dim Hour</title>
 <meta name="description" content="${cat.searchTerm} in ${name} — ${spots.length} curated ${cat.title.toLowerCase()} spots scored and reviewed. ${top5.map(r => r.name).join(', ')}, and more.">
 <meta name="keywords" content="${cat.searchTerm} ${name}, ${cat.searchTerm} ${short}, ${cat.title.toLowerCase()} ${name}, where to eat ${name}, ${name} restaurant guide 2026">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-<link rel="canonical" href="https://appetyt.app/${citySlug}/${cat.slug}/">
+<link rel="canonical" href="https://dimhour.com/${citySlug}/${cat.slug}/">
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="Appetyt">
+<meta property="og:site_name" content="Dim Hour">
 <meta property="og:title" content="${cat.searchTerm} in ${name} 2026 — Top ${spots.length} Spots">
 <meta property="og:description" content="${spots.length} curated ${cat.title.toLowerCase()} spots in ${name}. ${top5.map(r => r.name).join(', ')}.">
-<meta property="og:url" content="https://appetyt.app/${citySlug}/${cat.slug}/">
-<meta property="og:image" content="https://appetyt.app/icons/icon-512.png">
+<meta property="og:url" content="https://dimhour.com/${citySlug}/${cat.slug}/">
+<meta property="og:image" content="https://dimhour.com/icons/icon-512.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"${cat.searchTerm} in ${name} 2026","description":"${spots.length} curated ${cat.title.toLowerCase()} spots in ${name}.","url":"https://appetyt.app/${citySlug}/${cat.slug}/","numberOfItems":${spots.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"${r.score}","bestRating":"100"}}}`).join(',')}]}
+{"@context":"https://schema.org","@type":"ItemList","name":"${cat.searchTerm} in ${name} 2026","description":"${spots.length} curated ${cat.title.toLowerCase()} spots in ${name}.","url":"https://dimhour.com/${citySlug}/${cat.slug}/","numberOfItems":${spots.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"${r.score}","bestRating":"100"}}}`).join(',')}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Appetyt","item":"https://appetyt.app/"},{"@type":"ListItem","position":2,"name":"${name}","item":"https://appetyt.app/${citySlug}/"},{"@type":"ListItem","position":3,"name":"${cat.title}","item":"https://appetyt.app/${citySlug}/${cat.slug}/"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Dim Hour","item":"https://dimhour.com/"},{"@type":"ListItem","position":2,"name":"${name}","item":"https://dimhour.com/${citySlug}/"},{"@type":"ListItem","position":3,"name":"${cat.title}","item":"https://dimhour.com/${citySlug}/${cat.slug}/"}]}
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -122,7 +122,7 @@ a{color:var(--gold)}
 <a href="/${citySlug}/" class="back">← ${name} Restaurants</a>
 <h1>${cat.icon} Best ${cat.title} in ${name}</h1>
 <p>${spots.length} curated ${cat.title.toLowerCase()} spots, scored and reviewed for 2026.</p>
-<a href="https://appetyt.app" class="cta">🍽️ Open Interactive Guide</a>
+<a href="https://dimhour.com" class="cta">🍽️ Open Interactive Guide</a>
 
 <h2>Top ${Math.min(10, spots.length)} ${cat.title} Spots</h2>
 
@@ -146,7 +146,7 @@ ${spots.slice(10).map(r => `
 </div>`).join('\n')}` : ''}
 
 <div style="text-align:center;margin:28px 0">
-<a href="https://appetyt.app" class="cta">🍽️ Explore All ${name} Restaurants</a>
+<a href="https://dimhour.com" class="cta">🍽️ Explore All ${name} Restaurants</a>
 </div>
 
 <h2>More ${name} Categories</h2>
@@ -159,7 +159,7 @@ ${categories.filter(c => c.slug !== cat.slug).map(c => `<a href="/${citySlug}/${
 ${cities.filter(c => c.slug !== citySlug).map(c => `<a href="/${c.slug}/${cat.slug}/" class="city-link">${c.short}</a>`).join('\n')}
 </div>
 
-<p style="margin-top:24px;font-size:12px;color:var(--text3)">Appetyt curates the best restaurants across America. Updated weekly. <a href="https://appetyt.app">Full guide →</a> · <a href="/${citySlug}/">All ${name} restaurants →</a></p>
+<p style="margin-top:24px;font-size:12px;color:var(--text3)">Dim Hour curates the best restaurants across America. Updated weekly. <a href="https://dimhour.com">Full guide →</a> · <a href="/${citySlug}/">All ${name} restaurants →</a></p>
 </div>
 </body>
 </html>`;
@@ -177,7 +177,7 @@ for (const city of cities) {
     const dir = path.join(city.slug, cat.slug);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), buildCategoryPage(city, cat, spots));
-    sitemapUrls.push(`https://appetyt.app/${city.slug}/${cat.slug}/`);
+    sitemapUrls.push(`https://dimhour.com/${city.slug}/${cat.slug}/`);
     totalPages++;
   }
   console.log(`  ✓ ${city.name}: ${categories.length} category pages`);

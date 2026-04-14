@@ -1,5 +1,5 @@
 # =============================================================================
-# Appetyt iOS Build Workflow
+# Dim Hour iOS Build Workflow
 # =============================================================================
 #
 # This workflow builds the Capacitor iOS app using GitHub Actions' macOS runners,
@@ -179,7 +179,7 @@ jobs:
         env:
           APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
         run: |
-          ARCHIVE_PATH=$RUNNER_TEMP/Appetyt.xcarchive
+          ARCHIVE_PATH=$RUNNER_TEMP/Dim Hour.xcarchive
 
           xcodebuild archive \
             -workspace ios/App/App.xcworkspace \
@@ -206,7 +206,7 @@ jobs:
         env:
           APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
         run: |
-          ARCHIVE_PATH=$RUNNER_TEMP/Appetyt.xcarchive
+          ARCHIVE_PATH=$RUNNER_TEMP/Dim Hour.xcarchive
           EXPORT_PATH=$RUNNER_TEMP/ipa-output
 
           # Create an ExportOptions.plist for the export
@@ -244,7 +244,7 @@ jobs:
       - name: Upload .ipa artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Appetyt-iOS
+          name: Dim Hour-iOS
           path: ${{ runner.temp }}/ipa-output/*.ipa
           if-no-files-found: error
           retention-days: 30

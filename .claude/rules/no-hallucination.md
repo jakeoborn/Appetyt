@@ -10,7 +10,7 @@
 
 ## City & Location Data
 
-- NEVER claim Appetyt supports a city unless that city's data array exists in `index.html`
+- NEVER claim Dim Hour supports a city unless that city's data array exists in `index.html`
 - NEVER fabricate neighborhood names — use neighborhoods already present in the city's data
 - NEVER invent "popular" or "trending" restaurants — the `trending` flag is set deliberately
 

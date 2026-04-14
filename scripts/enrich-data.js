@@ -1,5 +1,5 @@
 /**
- * enrich-data.js — Appetyt Restaurant Data Enrichment
+ * enrich-data.js — Dim Hour Restaurant Data Enrichment
  * ====================================================
  *
  * Reads raw Google Places data from data/cities/ and uses the
@@ -45,7 +45,7 @@ const MAX_RETRIES = 3;
 
 // ─── System prompt for Claude ───────────────────────────────────────────────
 
-const SYSTEM_PROMPT = `You are a restaurant research assistant for Appetyt, a premium dining guide app. Your job is to enrich restaurant data with REAL, VERIFIABLE information sourced from premium food publications and platforms.
+const SYSTEM_PROMPT = `You are a restaurant research assistant for Dim Hour, a premium dining guide app. Your job is to enrich restaurant data with REAL, VERIFIABLE information sourced from premium food publications and platforms.
 
 YOUR SOURCES (prioritize in this order):
 1. Michelin Guide — stars, Bib Gourmand, recommended
@@ -416,7 +416,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Appetyt Data Enrichment — Processing ${files.length} cities`);
+  console.log(`Dim Hour Data Enrichment — Processing ${files.length} cities`);
   if (dryRun) console.log('(DRY RUN — no files will be saved)\n');
   else console.log('');
 

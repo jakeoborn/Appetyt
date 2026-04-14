@@ -10,15 +10,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-<meta name="description" content="Appetyt — Discover the best restaurants in 248 cities worldwide.">
+<meta name="description" content="Dim Hour — Discover the best restaurants in 248 cities worldwide.">
 <meta name="theme-color" content="#c9a84c">
 <link rel="manifest" href="/manifest.json">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Appetyt">
+<meta name="apple-mobile-web-app-title" content="Dim Hour">
 <link rel="apple-touch-icon" href="/icons/icon-180.png">
-<link rel="canonical" href="https://appetyt.app/">
-<title>Appetyt</title>
+<link rel="canonical" href="https://dimhour.com/">
+<title>Dim Hour</title>
 
 
 <style>
@@ -1637,10 +1637,10 @@ function getSupabase(){ return getSB(); }
 
 // -- Device ID (anonymous identity) ------------------------------------------
 function getDeviceId(){
-  let id = localStorage.getItem('appetyt_device_id');
+  let id = localStorage.getItem('dimhour_device_id');
   if(!id){
     id = 'dev_' + Math.random().toString(36).slice(2,10) + Date.now().toString(36);
-    localStorage.setItem('appetyt_device_id', id);
+    localStorage.setItem('dimhour_device_id', id);
   }
   return id;
 }
@@ -1664,7 +1664,7 @@ const TRIPS = {
     const sb = getSB();
     const code = this.genCode();
     const deviceId = getDeviceId();
-    const nickname = localStorage.getItem('appetyt_nickname') || 'Traveler';
+    const nickname = localStorage.getItem('dimhour_nickname') || 'Traveler';
 
     if(sb){
       try{
@@ -1689,7 +1689,7 @@ const TRIPS = {
         data.owner_id = deviceId;
         this.current = data;
         this.members = memberData.map(m=>({...m, device_id:m.id, avatar_emoji:'👑'}));
-        localStorage.setItem('appetyt_active_trip', JSON.stringify(data));
+        localStorage.setItem('dimhour_active_trip', JSON.stringify(data));
         return data;
       } catch(sbErr){
         // Supabase failed (paused/offline) — fall back to local
@@ -1697,7 +1697,7 @@ const TRIPS = {
         const trip = {id: 'local_'+Date.now(), code, name, cities, start_date: startDate, end_date: endDate, owner_id: deviceId};
         this.current = trip;
         this.members = [{nickname, device_id: deviceId, avatar_emoji: '👑'}];
-        localStorage.setItem('appetyt_active_trip', JSON.stringify(trip));
+        localStorage.setItem('dimhour_active_trip', JSON.stringify(trip));
         return trip;
       }
     } else {
@@ -1705,7 +1705,7 @@ const TRIPS = {
       const trip = {id: 'local_'+Date.now(), code, name, cities, start_date: startDate, end_date: endDate, owner_id: deviceId};
       this.current = trip;
       this.members = [{nickname, device_id: deviceId, avatar_emoji: '👑'}];
-      localStorage.setItem('appetyt_active_trip', JSON.stringify(trip));
+      localStorage.setItem('dimhour_active_trip', JSON.stringify(trip));
       return trip;
     }
   },
@@ -1713,7 +1713,7 @@ const TRIPS = {
   // Join an existing trip by code
   async join(code){
     const sb = getSB();
-    const nickname = localStorage.getItem('appetyt_nickname') || 'Traveler';
+    const nickname = localStorage.getItem('dimhour_nickname') || 'Traveler';
     const deviceId = getDeviceId();
     const emojis = ['🧳','🗺️','📸','🍕','🍜','🥂','🎒','🌴','⛷️','🏖️'];
     const emoji = emojis[Math.floor(Math.random()*emojis.length)];
@@ -1739,7 +1739,7 @@ const TRIPS = {
     trip.cities = (trip.city||'').split(',').map(x=>x.trim()).filter(Boolean);
     trip.owner_id = trip.created_by || trip.owner_id;
     this.current = trip;
-    localStorage.setItem('appetyt_active_trip', JSON.stringify(trip));
+    localStorage.setItem('dimhour_active_trip', JSON.stringify(trip));
     return trip;
   },
 
@@ -1768,7 +1768,7 @@ const TRIPS = {
         this.checklist = td.checklist || [];
       } else {
         try{
-          const key = 'appetyt_trip_'+tripId;
+          const key = 'dimhour_trip_'+tripId;
           const saved = JSON.parse(localStorage.getItem(key)||'{}');
           this.itinerary = saved.itinerary || [];
           this.budget = saved.budget || {total:0,spent:0};
@@ -1844,7 +1844,7 @@ const TRIPS = {
   _saveLocal(){
     try{
       const tripData = {itinerary:this.itinerary, budget:this.budget, checklist:this.checklist};
-      const key = 'appetyt_trip_'+this.current?.id;
+      const key = 'dimhour_trip_'+this.current?.id;
       localStorage.setItem(key, JSON.stringify({
         reservations: this.reservations,
         restaurants: this.restaurants,
@@ -1870,7 +1870,7 @@ const TRIPS = {
 
   _loadLocal(){
     try{
-      const key = 'appetyt_trip_'+this.current?.id;
+      const key = 'dimhour_trip_'+this.current?.id;
       const saved = JSON.parse(localStorage.getItem(key)||'{}');
       this.reservations = saved.reservations || [];
       this.restaurants = saved.restaurants || [];
@@ -2018,7 +2018,7 @@ const TRIPS = {
 
   <!-- DESKTOP SIDEBAR (hidden on mobile via CSS) -->
   <div id="desktop-sidebar" style="display:none">
-    <div class="sidebar-logo">Appetyt</div>
+    <div class="sidebar-logo">Dim Hour</div>
     <div class="sidebar-city">
       <button id="sidebar-city-btn" onclick="A.openCityPicker()" aria-label="Change city">
         📍 <span class="city-name" id="sidebar-city-label">New York</span> ▾
@@ -2053,7 +2053,7 @@ const TRIPS = {
 
   <!-- TOP BAR -->
   <div id="topbar">
-    <div id="logo">Appetyt</div>
+    <div id="logo">Dim Hour</div>
     <button id="city-btn" onclick="A.openCityPicker()" aria-label="Change city">
       📍 <span id="city-label">New York</span> ▾
     </button>
@@ -4250,48 +4250,48 @@ const TRAVEL_PLANS = [
 // Curated city activities with verified Viator/GetYourGuide links
 const CURATED_ACTIVITIES = {
   'new york': [
-    {name:'Statue of Liberty & Ellis Island Guided Tour',category:'Landmark',price:'From $45',rating:'4.7',reviews:'15K+',emoji:'🗽',url:'https://www.viator.com/tours/New-York-City/Statue-of-Liberty-and-Ellis-Island-Guided-Tour/d687-5250LIBERTYELLIS?utm_source=appetyt&utm_medium=referral',desc:'Skip-the-line ferry access with guided tour of both islands. Book pedestal access weeks ahead.'},
-    {name:'SUMMIT One Vanderbilt Experience',category:'Observation',price:'From $42',rating:'4.8',reviews:'12K+',emoji:'🏙️',url:'https://www.viator.com/New-York-City-attractions/SUMMIT-One-Vanderbilt/d687-a30647?utm_source=appetyt&utm_medium=referral',desc:'Three floors of immersive art installations in Midtown tallest skyscraper. The mirror rooms are unreal.'},
-    {name:'Greenwich Village Pizza Walking Tour',category:'Food Tour',price:'From $50',rating:'4.9',reviews:'3K+',emoji:'🍕',url:'https://www.viator.com/tours/New-York-City/Pizza-Walking-Tour-of-Manhattan/d687-5579PIZZAMAN?utm_source=appetyt&utm_medium=referral',desc:'Three iconic Village pizzerias with slices at each stop. Learn why NYC pizza is different from everywhere else.'},
-    {name:'Greenwich Village Food & Culture Tour',category:'Food Tour',price:'From $65',rating:'4.8',reviews:'5K+',emoji:'🍽️',url:'https://www.viator.com/tours/New-York-City/The-Original-Greenwich-Village-Food-and-Cultural-Tour/d687-420790P1?utm_source=appetyt&utm_medium=referral',desc:'Six tastings across the Village from tacos to pizza to cupcakes with local history and culture.'},
-    {name:'NYC Helicopter Tour',category:'Adventure',price:'From $200',rating:'4.8',reviews:'8K+',emoji:'🚁',url:'https://www.viator.com/New-York-City-tours/Helicopter-Tours/d687-g4-c23?utm_source=appetyt&utm_medium=referral',desc:'See Manhattan skyline, Statue of Liberty, and Brooklyn Bridge from the air. Best at sunset.'},
-    {name:'Broadway Show Tickets',category:'Entertainment',price:'From $75',rating:'4.7',reviews:'20K+',emoji:'🎭',url:'https://www.viator.com/New-York-City-tours/Theater-Shows-and-Musicals/d687-g20-c26?utm_source=appetyt&utm_medium=referral',desc:'Hamilton, Wicked, Lion King and more. Book 2-4 weeks ahead for best seats.'},
-    {name:'Central Park Bike Tour',category:'Outdoor',price:'From $40',rating:'4.8',reviews:'6K+',emoji:'🚲',url:'https://www.viator.com/New-York-City-tours/Bike-Tours/d687-g6-c7?utm_source=appetyt&utm_medium=referral',desc:'Two-hour guided ride through Central Park hitting all the highlights -- Bethesda Fountain, Strawberry Fields, The Mall.'},
-    {name:'Chinatown & Little Italy Food Tour',category:'Food Tour',price:'From $55',rating:'4.9',reviews:'4K+',emoji:'🥟',url:'https://www.viator.com/tours/New-York-City/3-Hour-Greenwich-Village-Food-Tour/d687-428219P5?utm_source=appetyt&utm_medium=referral',desc:'Dumplings, hand-pulled noodles, cannoli, and fresh mozzarella. Two neighborhoods, one incredible food crawl.'},
-    {name:'Brooklyn Bridge Walking Tour',category:'Landmark',price:'From $35',rating:'4.7',reviews:'7K+',emoji:'🌉',url:'https://www.viator.com/New-York-City-attractions/Brooklyn-Bridge/d687-a614?utm_source=appetyt&utm_medium=referral',desc:'Walk across one of the most iconic bridges in the world with a guide who knows every story.'},
-    {name:'Speakeasy & Cocktail Tour',category:'Nightlife',price:'From $85',rating:'4.8',reviews:'2K+',emoji:'🍸',url:'https://www.viator.com/New-York-City-tours/Nightlife/d687-g12-c20?utm_source=appetyt&utm_medium=referral',desc:'Visit 3 hidden bars you would never find on your own. Includes a cocktail at each stop.'},
-    {name:'9/11 Memorial & Museum',category:'Museum',price:'From $30',rating:'4.9',reviews:'25K+',emoji:'🏛️',url:'https://www.viator.com/New-York-City-attractions/9-11-Memorial/d687-a20970?utm_source=appetyt&utm_medium=referral',desc:'Powerful, essential visit. The museum is emotionally intense. Allow 2-3 hours.'},
-    {name:'NYC Sunset Cruise',category:'Cruise',price:'From $40',rating:'4.7',reviews:'5K+',emoji:'🚢',url:'https://www.viator.com/New-York-City-tours/Sunset-Cruises/d687-g6-c78?utm_source=appetyt&utm_medium=referral',desc:'Circle Manhattan at golden hour with skyline views and drinks on board. Best NYC photo op.'},
+    {name:'Statue of Liberty & Ellis Island Guided Tour',category:'Landmark',price:'From $45',rating:'4.7',reviews:'15K+',emoji:'🗽',url:'https://www.viator.com/tours/New-York-City/Statue-of-Liberty-and-Ellis-Island-Guided-Tour/d687-5250LIBERTYELLIS?utm_source=dimhour&utm_medium=referral',desc:'Skip-the-line ferry access with guided tour of both islands. Book pedestal access weeks ahead.'},
+    {name:'SUMMIT One Vanderbilt Experience',category:'Observation',price:'From $42',rating:'4.8',reviews:'12K+',emoji:'🏙️',url:'https://www.viator.com/New-York-City-attractions/SUMMIT-One-Vanderbilt/d687-a30647?utm_source=dimhour&utm_medium=referral',desc:'Three floors of immersive art installations in Midtown tallest skyscraper. The mirror rooms are unreal.'},
+    {name:'Greenwich Village Pizza Walking Tour',category:'Food Tour',price:'From $50',rating:'4.9',reviews:'3K+',emoji:'🍕',url:'https://www.viator.com/tours/New-York-City/Pizza-Walking-Tour-of-Manhattan/d687-5579PIZZAMAN?utm_source=dimhour&utm_medium=referral',desc:'Three iconic Village pizzerias with slices at each stop. Learn why NYC pizza is different from everywhere else.'},
+    {name:'Greenwich Village Food & Culture Tour',category:'Food Tour',price:'From $65',rating:'4.8',reviews:'5K+',emoji:'🍽️',url:'https://www.viator.com/tours/New-York-City/The-Original-Greenwich-Village-Food-and-Cultural-Tour/d687-420790P1?utm_source=dimhour&utm_medium=referral',desc:'Six tastings across the Village from tacos to pizza to cupcakes with local history and culture.'},
+    {name:'NYC Helicopter Tour',category:'Adventure',price:'From $200',rating:'4.8',reviews:'8K+',emoji:'🚁',url:'https://www.viator.com/New-York-City-tours/Helicopter-Tours/d687-g4-c23?utm_source=dimhour&utm_medium=referral',desc:'See Manhattan skyline, Statue of Liberty, and Brooklyn Bridge from the air. Best at sunset.'},
+    {name:'Broadway Show Tickets',category:'Entertainment',price:'From $75',rating:'4.7',reviews:'20K+',emoji:'🎭',url:'https://www.viator.com/New-York-City-tours/Theater-Shows-and-Musicals/d687-g20-c26?utm_source=dimhour&utm_medium=referral',desc:'Hamilton, Wicked, Lion King and more. Book 2-4 weeks ahead for best seats.'},
+    {name:'Central Park Bike Tour',category:'Outdoor',price:'From $40',rating:'4.8',reviews:'6K+',emoji:'🚲',url:'https://www.viator.com/New-York-City-tours/Bike-Tours/d687-g6-c7?utm_source=dimhour&utm_medium=referral',desc:'Two-hour guided ride through Central Park hitting all the highlights -- Bethesda Fountain, Strawberry Fields, The Mall.'},
+    {name:'Chinatown & Little Italy Food Tour',category:'Food Tour',price:'From $55',rating:'4.9',reviews:'4K+',emoji:'🥟',url:'https://www.viator.com/tours/New-York-City/3-Hour-Greenwich-Village-Food-Tour/d687-428219P5?utm_source=dimhour&utm_medium=referral',desc:'Dumplings, hand-pulled noodles, cannoli, and fresh mozzarella. Two neighborhoods, one incredible food crawl.'},
+    {name:'Brooklyn Bridge Walking Tour',category:'Landmark',price:'From $35',rating:'4.7',reviews:'7K+',emoji:'🌉',url:'https://www.viator.com/New-York-City-attractions/Brooklyn-Bridge/d687-a614?utm_source=dimhour&utm_medium=referral',desc:'Walk across one of the most iconic bridges in the world with a guide who knows every story.'},
+    {name:'Speakeasy & Cocktail Tour',category:'Nightlife',price:'From $85',rating:'4.8',reviews:'2K+',emoji:'🍸',url:'https://www.viator.com/New-York-City-tours/Nightlife/d687-g12-c20?utm_source=dimhour&utm_medium=referral',desc:'Visit 3 hidden bars you would never find on your own. Includes a cocktail at each stop.'},
+    {name:'9/11 Memorial & Museum',category:'Museum',price:'From $30',rating:'4.9',reviews:'25K+',emoji:'🏛️',url:'https://www.viator.com/New-York-City-attractions/9-11-Memorial/d687-a20970?utm_source=dimhour&utm_medium=referral',desc:'Powerful, essential visit. The museum is emotionally intense. Allow 2-3 hours.'},
+    {name:'NYC Sunset Cruise',category:'Cruise',price:'From $40',rating:'4.7',reviews:'5K+',emoji:'🚢',url:'https://www.viator.com/New-York-City-tours/Sunset-Cruises/d687-g6-c78?utm_source=dimhour&utm_medium=referral',desc:'Circle Manhattan at golden hour with skyline views and drinks on board. Best NYC photo op.'},
   ],
   'dallas': [
-    {name:'JFK Assassination Walking Tour',category:'History',price:'From $25',rating:'4.9',reviews:'3K+',emoji:'🏛️',url:'https://www.viator.com/Dallas-attractions/Dealey-Plaza-National-Historic-Landmark-District/d918-a12093?utm_source=appetyt&utm_medium=referral',desc:'Walk the motorcade route at Dealey Plaza with an expert guide. Includes Sixth Floor Museum context.'},
-    {name:'Dallas Sightseeing Tour',category:'City Tour',price:'From $45',rating:'4.7',reviews:'2K+',emoji:'🏙️',url:'https://www.viator.com/tours/Dallas/3-Hours-Welcome-to-Dallas-Tour/d918-11593P2?utm_source=appetyt&utm_medium=referral',desc:'Small group tour hitting Pioneer Plaza, Dallas Arts District, Dealey Plaza, and the skyline views.'},
-    {name:'Deep Ellum Food & Culture Tour',category:'Food Tour',price:'From $65',rating:'4.8',reviews:'1K+',emoji:'🍖',url:'https://www.viator.com/Dallas-tours/Food-Tours/d918-g6-c80?utm_source=appetyt&utm_medium=referral',desc:'Taste BBQ, Tex-Mex, and craft beer in Dallas most creative neighborhood. 3 hours, 5+ tastings.'},
-    {name:'Southfork Ranch & Dallas TV Tour',category:'Pop Culture',price:'From $55',rating:'4.6',reviews:'2K+',emoji:'🤠',url:'https://www.viator.com/tours/Dallas/Southfork-Ranch-Tour/d918-3763SOUTHFORK?utm_source=appetyt&utm_medium=referral',desc:'Visit the real Southfork Ranch from the TV show Dallas. See longhorns, the mansion, and memorabilia.'},
-    {name:'Fort Worth Stockyards Day Trip',category:'Day Trip',price:'From $50',rating:'4.7',reviews:'1.5K+',emoji:'🐂',url:'https://www.viator.com/Dallas-tours/Day-Trips-and-Excursions/d918-g5?utm_source=appetyt&utm_medium=referral',desc:'Longhorn cattle drive, honky-tonk bars, and rodeo culture. 30 min from Dallas, feels like another world.'},
-    {name:'Reunion Tower Observation Deck',category:'Observation',price:'From $25',rating:'4.5',reviews:'3K+',emoji:'🗼',url:'https://www.viator.com/Dallas-attractions/Reunion-Tower/d918-a12095?utm_source=appetyt&utm_medium=referral',desc:'560 feet up with 360-degree views of the Dallas skyline. Go at sunset for the best photos.'},
-    {name:'Dallas Brewery Tour',category:'Drinks',price:'From $75',rating:'4.7',reviews:'500+',emoji:'🍺',url:'https://www.viator.com/Dallas-tours/Beer-and-Brewery-Tours/d918-g6-c74?utm_source=appetyt&utm_medium=referral',desc:'Visit 3 Dallas craft breweries with tastings at each. Deep Ellum and Design District spots.'},
-    {name:'Dallas Cowboys AT&T Stadium Tour',category:'Sports',price:'From $30',rating:'4.8',reviews:'4K+',emoji:'🏈',url:'https://www.viator.com/Dallas-attractions/AT-T-Stadium/d918-a18683?utm_source=appetyt&utm_medium=referral',desc:'Behind-the-scenes of the $1.2 billion stadium. Walk the field, see the locker rooms, stand on the star.'},
+    {name:'JFK Assassination Walking Tour',category:'History',price:'From $25',rating:'4.9',reviews:'3K+',emoji:'🏛️',url:'https://www.viator.com/Dallas-attractions/Dealey-Plaza-National-Historic-Landmark-District/d918-a12093?utm_source=dimhour&utm_medium=referral',desc:'Walk the motorcade route at Dealey Plaza with an expert guide. Includes Sixth Floor Museum context.'},
+    {name:'Dallas Sightseeing Tour',category:'City Tour',price:'From $45',rating:'4.7',reviews:'2K+',emoji:'🏙️',url:'https://www.viator.com/tours/Dallas/3-Hours-Welcome-to-Dallas-Tour/d918-11593P2?utm_source=dimhour&utm_medium=referral',desc:'Small group tour hitting Pioneer Plaza, Dallas Arts District, Dealey Plaza, and the skyline views.'},
+    {name:'Deep Ellum Food & Culture Tour',category:'Food Tour',price:'From $65',rating:'4.8',reviews:'1K+',emoji:'🍖',url:'https://www.viator.com/Dallas-tours/Food-Tours/d918-g6-c80?utm_source=dimhour&utm_medium=referral',desc:'Taste BBQ, Tex-Mex, and craft beer in Dallas most creative neighborhood. 3 hours, 5+ tastings.'},
+    {name:'Southfork Ranch & Dallas TV Tour',category:'Pop Culture',price:'From $55',rating:'4.6',reviews:'2K+',emoji:'🤠',url:'https://www.viator.com/tours/Dallas/Southfork-Ranch-Tour/d918-3763SOUTHFORK?utm_source=dimhour&utm_medium=referral',desc:'Visit the real Southfork Ranch from the TV show Dallas. See longhorns, the mansion, and memorabilia.'},
+    {name:'Fort Worth Stockyards Day Trip',category:'Day Trip',price:'From $50',rating:'4.7',reviews:'1.5K+',emoji:'🐂',url:'https://www.viator.com/Dallas-tours/Day-Trips-and-Excursions/d918-g5?utm_source=dimhour&utm_medium=referral',desc:'Longhorn cattle drive, honky-tonk bars, and rodeo culture. 30 min from Dallas, feels like another world.'},
+    {name:'Reunion Tower Observation Deck',category:'Observation',price:'From $25',rating:'4.5',reviews:'3K+',emoji:'🗼',url:'https://www.viator.com/Dallas-attractions/Reunion-Tower/d918-a12095?utm_source=dimhour&utm_medium=referral',desc:'560 feet up with 360-degree views of the Dallas skyline. Go at sunset for the best photos.'},
+    {name:'Dallas Brewery Tour',category:'Drinks',price:'From $75',rating:'4.7',reviews:'500+',emoji:'🍺',url:'https://www.viator.com/Dallas-tours/Beer-and-Brewery-Tours/d918-g6-c74?utm_source=dimhour&utm_medium=referral',desc:'Visit 3 Dallas craft breweries with tastings at each. Deep Ellum and Design District spots.'},
+    {name:'Dallas Cowboys AT&T Stadium Tour',category:'Sports',price:'From $30',rating:'4.8',reviews:'4K+',emoji:'🏈',url:'https://www.viator.com/Dallas-attractions/AT-T-Stadium/d918-a18683?utm_source=dimhour&utm_medium=referral',desc:'Behind-the-scenes of the $1.2 billion stadium. Walk the field, see the locker rooms, stand on the star.'},
   ],
 
   'chicago': [
-    {name:'Chicago Architecture River Cruise',category:'Landmark',price:'From $45',rating:'4.9',reviews:'20K+',emoji:'🏙️',url:'https://www.viator.com/Chicago-tours/Architecture-Tours/d673-g4-c26967?utm_source=appetyt&utm_medium=referral',desc:'The #1 thing to do in Chicago. 90-minute cruise with expert guides on 130+ years of architectural history.'},
-    {name:'Skydeck Chicago at Willis Tower',category:'Observation',price:'From $35',rating:'4.7',reviews:'15K+',emoji:'🏢',url:'https://www.viator.com/Chicago-attractions/Skydeck-Chicago-Willis-Tower/d673-a834?utm_source=appetyt&utm_medium=referral',desc:'103rd floor with The Ledge glass box extending 4.3 feet out. See four states on a clear day.'},
-    {name:'Art Institute of Chicago',category:'Museum',price:'From $35',rating:'4.9',reviews:'25K+',emoji:'🎨',url:'https://www.viator.com/Chicago-attractions/Art-Institute-of-Chicago/d673-a833?utm_source=appetyt&utm_medium=referral',desc:'World-class museum with Nighthawks, American Gothic, and A Sunday on La Grande Jatte. Allow 3+ hours.'},
-    {name:'Chicago Deep Dish Pizza Tour',category:'Food Tour',price:'From $65',rating:'4.8',reviews:'3K+',emoji:'🍕',url:'https://www.viator.com/Chicago-tours/Food-Tours/d673-g6-c80?utm_source=appetyt&utm_medium=referral',desc:'Taste deep dish from multiple legendary spots and settle the Lou vs Giordano debate once and for all.'},
-    {name:'Chicago Gangster & Crime Tour',category:'History',price:'From $35',rating:'4.7',reviews:'5K+',emoji:'🔫',url:'https://www.viator.com/Chicago-tours/Historical-and-Heritage-Tours/d673-g4-c12?utm_source=appetyt&utm_medium=referral',desc:'Al Capone, John Dillinger, and the Valentine Day Massacre. Drive to real crime sites with expert narration.'},
-    {name:'Wrigley Field Tour',category:'Sports',price:'From $30',rating:'4.8',reviews:'4K+',emoji:'⚾',url:'https://www.viator.com/Chicago-attractions/Wrigley-Field/d673-a12133?utm_source=appetyt&utm_medium=referral',desc:'Behind-the-scenes of the Friendly Confines. Walk the dugout, see the press box, touch the ivy.'},
-    {name:'Navy Pier Centennial Wheel',category:'Entertainment',price:'From $18',rating:'4.6',reviews:'8K+',emoji:'🎡',url:'https://www.viator.com/Chicago-attractions/Navy-Pier/d673-a835?utm_source=appetyt&utm_medium=referral',desc:'200-foot Ferris wheel with enclosed gondolas and stunning Lake Michigan views. Best at sunset.'},
-    {name:'Chicago Speakeasy & Cocktail Tour',category:'Nightlife',price:'From $85',rating:'4.8',reviews:'2K+',emoji:'🍸',url:'https://www.viator.com/Chicago-tours/Nightlife/d673-g12-c20?utm_source=appetyt&utm_medium=referral',desc:'Visit hidden bars including The Violet Hour. Includes cocktails at 3 stops with Prohibition history.'},
+    {name:'Chicago Architecture River Cruise',category:'Landmark',price:'From $45',rating:'4.9',reviews:'20K+',emoji:'🏙️',url:'https://www.viator.com/Chicago-tours/Architecture-Tours/d673-g4-c26967?utm_source=dimhour&utm_medium=referral',desc:'The #1 thing to do in Chicago. 90-minute cruise with expert guides on 130+ years of architectural history.'},
+    {name:'Skydeck Chicago at Willis Tower',category:'Observation',price:'From $35',rating:'4.7',reviews:'15K+',emoji:'🏢',url:'https://www.viator.com/Chicago-attractions/Skydeck-Chicago-Willis-Tower/d673-a834?utm_source=dimhour&utm_medium=referral',desc:'103rd floor with The Ledge glass box extending 4.3 feet out. See four states on a clear day.'},
+    {name:'Art Institute of Chicago',category:'Museum',price:'From $35',rating:'4.9',reviews:'25K+',emoji:'🎨',url:'https://www.viator.com/Chicago-attractions/Art-Institute-of-Chicago/d673-a833?utm_source=dimhour&utm_medium=referral',desc:'World-class museum with Nighthawks, American Gothic, and A Sunday on La Grande Jatte. Allow 3+ hours.'},
+    {name:'Chicago Deep Dish Pizza Tour',category:'Food Tour',price:'From $65',rating:'4.8',reviews:'3K+',emoji:'🍕',url:'https://www.viator.com/Chicago-tours/Food-Tours/d673-g6-c80?utm_source=dimhour&utm_medium=referral',desc:'Taste deep dish from multiple legendary spots and settle the Lou vs Giordano debate once and for all.'},
+    {name:'Chicago Gangster & Crime Tour',category:'History',price:'From $35',rating:'4.7',reviews:'5K+',emoji:'🔫',url:'https://www.viator.com/Chicago-tours/Historical-and-Heritage-Tours/d673-g4-c12?utm_source=dimhour&utm_medium=referral',desc:'Al Capone, John Dillinger, and the Valentine Day Massacre. Drive to real crime sites with expert narration.'},
+    {name:'Wrigley Field Tour',category:'Sports',price:'From $30',rating:'4.8',reviews:'4K+',emoji:'⚾',url:'https://www.viator.com/Chicago-attractions/Wrigley-Field/d673-a12133?utm_source=dimhour&utm_medium=referral',desc:'Behind-the-scenes of the Friendly Confines. Walk the dugout, see the press box, touch the ivy.'},
+    {name:'Navy Pier Centennial Wheel',category:'Entertainment',price:'From $18',rating:'4.6',reviews:'8K+',emoji:'🎡',url:'https://www.viator.com/Chicago-attractions/Navy-Pier/d673-a835?utm_source=dimhour&utm_medium=referral',desc:'200-foot Ferris wheel with enclosed gondolas and stunning Lake Michigan views. Best at sunset.'},
+    {name:'Chicago Speakeasy & Cocktail Tour',category:'Nightlife',price:'From $85',rating:'4.8',reviews:'2K+',emoji:'🍸',url:'https://www.viator.com/Chicago-tours/Nightlife/d673-g12-c20?utm_source=dimhour&utm_medium=referral',desc:'Visit hidden bars including The Violet Hour. Includes cocktails at 3 stops with Prohibition history.'},
   ],
 
   'houston': [
-    {name:'Space Center Houston',category:'Museum',price:'From $30',rating:'4.7',reviews:'20K+',emoji:'🚀',url:'https://www.viator.com/Houston-attractions/Space-Center-Houston/d765-a12122?utm_source=appetyt&utm_medium=referral',desc:'Touch a moon rock, see Mission Control, tour NASA. Allow a full day.'},
-    {name:'Houston Museum District Pass',category:'Museum',price:'From $25',rating:'4.8',reviews:'5K+',emoji:'🎨',url:'https://www.viator.com/Houston-tours/Museum-Tickets-and-Passes/d765-g25?utm_source=appetyt&utm_medium=referral',desc:'19 museums including MFAH and Natural Science. The Menil Collection is free.'},
-    {name:'Houston Food Tour',category:'Food Tour',price:'From $65',rating:'4.8',reviews:'2K+',emoji:'🍖',url:'https://www.viator.com/Houston-tours/Food-Tours/d765-g6-c80?utm_source=appetyt&utm_medium=referral',desc:'BBQ, Tex-Mex, Vietnamese, and Gulf Coast seafood. Houston is America most diverse food city.'},
-    {name:'Buffalo Bayou Kayak Tour',category:'Outdoor',price:'From $35',rating:'4.6',reviews:'1K+',emoji:'🛶',url:'https://www.viator.com/Houston-tours/Kayaking-Tours/d765-g61?utm_source=appetyt&utm_medium=referral',desc:'Paddle through downtown Houston on the bayou. Sunset tours are magical with skyline reflections.'},
-    {name:'Galveston Island Day Trip',category:'Day Trip',price:'From $50',rating:'4.5',reviews:'3K+',emoji:'🏖️',url:'https://www.viator.com/Houston-tours/Day-Trips-and-Excursions/d765-g5?utm_source=appetyt&utm_medium=referral',desc:'Beach, Strand historic district, and seafood. 50 miles from Houston. The closest beach to the city.'},
-    {name:'Houston Astros Game at Minute Maid Park',category:'Sports',price:'From $25',rating:'4.8',reviews:'10K+',emoji:'⚾',url:'https://www.viator.com/Houston-attractions/Minute-Maid-Park/d765-a17791?utm_source=appetyt&utm_medium=referral',desc:'Retractable roof stadium with a train on the outfield wall. The 2022 World Champs play here.'},
+    {name:'Space Center Houston',category:'Museum',price:'From $30',rating:'4.7',reviews:'20K+',emoji:'🚀',url:'https://www.viator.com/Houston-attractions/Space-Center-Houston/d765-a12122?utm_source=dimhour&utm_medium=referral',desc:'Touch a moon rock, see Mission Control, tour NASA. Allow a full day.'},
+    {name:'Houston Museum District Pass',category:'Museum',price:'From $25',rating:'4.8',reviews:'5K+',emoji:'🎨',url:'https://www.viator.com/Houston-tours/Museum-Tickets-and-Passes/d765-g25?utm_source=dimhour&utm_medium=referral',desc:'19 museums including MFAH and Natural Science. The Menil Collection is free.'},
+    {name:'Houston Food Tour',category:'Food Tour',price:'From $65',rating:'4.8',reviews:'2K+',emoji:'🍖',url:'https://www.viator.com/Houston-tours/Food-Tours/d765-g6-c80?utm_source=dimhour&utm_medium=referral',desc:'BBQ, Tex-Mex, Vietnamese, and Gulf Coast seafood. Houston is America most diverse food city.'},
+    {name:'Buffalo Bayou Kayak Tour',category:'Outdoor',price:'From $35',rating:'4.6',reviews:'1K+',emoji:'🛶',url:'https://www.viator.com/Houston-tours/Kayaking-Tours/d765-g61?utm_source=dimhour&utm_medium=referral',desc:'Paddle through downtown Houston on the bayou. Sunset tours are magical with skyline reflections.'},
+    {name:'Galveston Island Day Trip',category:'Day Trip',price:'From $50',rating:'4.5',reviews:'3K+',emoji:'🏖️',url:'https://www.viator.com/Houston-tours/Day-Trips-and-Excursions/d765-g5?utm_source=dimhour&utm_medium=referral',desc:'Beach, Strand historic district, and seafood. 50 miles from Houston. The closest beach to the city.'},
+    {name:'Houston Astros Game at Minute Maid Park',category:'Sports',price:'From $25',rating:'4.8',reviews:'10K+',emoji:'⚾',url:'https://www.viator.com/Houston-attractions/Minute-Maid-Park/d765-a17791?utm_source=dimhour&utm_medium=referral',desc:'Retractable roof stadium with a train on the outfield wall. The 2022 World Champs play here.'},
   ],
 };
 
@@ -4465,7 +4465,7 @@ function getEditorialBoost(restaurantName, activeFilter, activeCombo, activeIndi
 }
 
 const S = {
-  city: localStorage.getItem('appetyt_city')||'New York',
+  city: localStorage.getItem('dimhour_city')||'New York',
   activeTab: 'home',
   apiKey: '',
   filter: 'all', filters: new Set(),
@@ -4502,9 +4502,9 @@ const A = {
   init(){
     try{
       // Version gate: clear corrupted state from older versions
-      const appVer = localStorage.getItem('appetyt_ver');
+      const appVer = localStorage.getItem('dimhour_ver');
       if(appVer !== '2.2') {
-        const oldData = localStorage.getItem('appetyt_data');
+        const oldData = localStorage.getItem('dimhour_data');
         let savedData = null;
         if(oldData){
           try{
@@ -4516,15 +4516,15 @@ const A = {
           }catch(e){}
         }
         localStorage.clear();
-        if(savedData) localStorage.setItem('appetyt_data', savedData);
-        localStorage.setItem('appetyt_ver', '2.1');
+        if(savedData) localStorage.setItem('dimhour_data', savedData);
+        localStorage.setItem('dimhour_ver', '2.1');
       }
     }catch(e){}
-    try{const d=localStorage.getItem('appetyt_data');if(d){const p=JSON.parse(d);S.userData={favs:p.favs||[],visited:p.visited||[],want:p.want||[],bills:p.bills||[],notes:p.notes||{},trips:p.trips||[],claimedDrops:p.claimedDrops||[],checkins:p.checkins||[],guestProfile:p.guestProfile||{},customLists:p.customLists||[],pinnedLists:p.pinnedLists||[],reminders:p.reminders||[]};}}catch(e){}
-    try{const k=localStorage.getItem('appetyt_key');if(k)S.apiKey=k;}catch(e){}
+    try{const d=localStorage.getItem('dimhour_data');if(d){const p=JSON.parse(d);S.userData={favs:p.favs||[],visited:p.visited||[],want:p.want||[],bills:p.bills||[],notes:p.notes||{},trips:p.trips||[],claimedDrops:p.claimedDrops||[],checkins:p.checkins||[],guestProfile:p.guestProfile||{},customLists:p.customLists||[],pinnedLists:p.pinnedLists||[],reminders:p.reminders||[]};}}catch(e){}
+    try{const k=localStorage.getItem('dimhour_key');if(k)S.apiKey=k;}catch(e){}
     // Restore active trip from localStorage OR fetch from Supabase for logged-in user
     try{
-      const savedTrip=localStorage.getItem('appetyt_active_trip');
+      const savedTrip=localStorage.getItem('dimhour_active_trip');
       if(savedTrip && savedTrip!=='null'){
         const parsed=JSON.parse(savedTrip);
         TRIPS.current=parsed;
@@ -4537,7 +4537,7 @@ const A = {
         // Re-fetch latest from Supabase in background and re-save locally
         if(TRIPS.current?.id && !String(TRIPS.current.id).startsWith('local_')){
           TRIPS.load(TRIPS.current.id).then(()=>{
-            localStorage.setItem('appetyt_active_trip',JSON.stringify(TRIPS.current));
+            localStorage.setItem('dimhour_active_trip',JSON.stringify(TRIPS.current));
             TRIPS._saveLocal(); // Save fetched data to localStorage
             if(S.activeTab==='trips') A.renderTrips(); // Re-render if on trips tab
           }).catch(()=>{});
@@ -4555,7 +4555,7 @@ const A = {
               trip.cities=(trip.city||'').split(',').map(x=>x.trim()).filter(Boolean);
               trip.owner_id=trip.created_by;
               TRIPS.current=trip;
-              localStorage.setItem('appetyt_active_trip',JSON.stringify(trip));
+              localStorage.setItem('dimhour_active_trip',JSON.stringify(trip));
               TRIPS.load(trip.id).then(()=>{
                 const dot=document.getElementById('trips-nav-dot');
                 if(dot) dot.style.display='block';
@@ -4566,7 +4566,7 @@ const A = {
         }
       }
     }catch(e){}
-    try{const u=localStorage.getItem('appetyt_user');if(u){S.user=JSON.parse(u);document.getElementById('auth-btn').classList.add('on');
+    try{const u=localStorage.getItem('dimhour_user');if(u){S.user=JSON.parse(u);document.getElementById('auth-btn').classList.add('on');
     const _sab=document.getElementById('sidebar-auth-btn');
     const _sal=document.getElementById('sidebar-auth-label');
     if(_sab) _sab.classList.toggle('signed-in',!!S.user);
@@ -4579,8 +4579,8 @@ const A = {
           if(data?.session?.user && !S.user){
             const u=data.session.user;
             S.user={email:u.email,token:data.session.access_token,name:u.user_metadata?.full_name||u.user_metadata?.name||'',avatar_url:u.user_metadata?.avatar_url||''};
-            localStorage.setItem('appetyt_user',JSON.stringify(S.user));
-            if(S.user.name && !S.userData.displayName){ S.userData.displayName=S.user.name; localStorage.setItem('appetyt_data',JSON.stringify(S.userData)); }
+            localStorage.setItem('dimhour_user',JSON.stringify(S.user));
+            if(S.user.name && !S.userData.displayName){ S.userData.displayName=S.user.name; localStorage.setItem('dimhour_data',JSON.stringify(S.userData)); }
             document.getElementById('auth-btn').classList.add('on');
             document.getElementById('auth-btn').textContent=S.userData.avatar||'✓';
             const _sal2=document.getElementById('sidebar-auth-label');
@@ -4599,12 +4599,12 @@ const A = {
     this.renderHome();
     // Load saved trip if any
     try{
-      const savedTrip = localStorage.getItem('appetyt_active_trip');
+      const savedTrip = localStorage.getItem('dimhour_active_trip');
       if(savedTrip && savedTrip !== 'null'){
         const parsed = JSON.parse(savedTrip);
         // Remove old cruise trip if it exists
         if(parsed.name === 'Virgin Voyages Caribbean Cruise'){
-          localStorage.removeItem('appetyt_active_trip');
+          localStorage.removeItem('dimhour_active_trip');
           TRIPS.current = null;
         } else {
           TRIPS.current = parsed;
@@ -5560,8 +5560,8 @@ const A = {
 
     try{
       this.showToast('Creating trip...');
-      const nickname = localStorage.getItem('appetyt_nickname') || 'Traveler';
-      localStorage.setItem('appetyt_nickname', nickname);
+      const nickname = localStorage.getItem('dimhour_nickname') || 'Traveler';
+      localStorage.setItem('dimhour_nickname', nickname);
       await TRIPS.create(name, [gen.city], startStr, endStr);
       await TRIPS.load(TRIPS.current.id);
       TRIPS.buildItinerary(startStr, endStr);
@@ -8130,7 +8130,7 @@ const A = {
           ]}
         ]}
       ],'New York':[
-        {id:'nyc-first-timer',creator:'Appetyt Guide',handle:'@appetyt',platform:'Appetyt',avatar:'🗽',title:'NYC First Timer Weekend',subtitle:'Hit the icons plus hidden gems',days:[
+        {id:'nyc-first-timer',creator:'Dim Hour Guide',handle:'@dimhour',platform:'Dim Hour',avatar:'🗽',title:'NYC First Timer Weekend',subtitle:'Hit the icons plus hidden gems',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
             {time:'6:00 PM',spot:'Walk Brooklyn Bridge at sunset',id:1680,note:'Start Manhattan, end DUMBO — stunning views'},
             {time:'7:30 PM',spot:'Pizza at Juliana\'s',id:1171,note:'Coal-fired perfection under the bridge'},
@@ -8149,7 +8149,7 @@ const A = {
             {time:'5:00 PM',spot:'Sunset from Top of the Rock',id:1675,note:'Best view of the Empire State Building'}
           ]}
         ]},
-        {id:'nyc-sightseeing-food',creator:'Appetyt Guide',handle:'@appetyt',platform:'Appetyt',avatar:'🗽',title:'NYC Sightseeing + Food Weekend',subtitle:'See everything AND eat everything',days:[
+        {id:'nyc-sightseeing-food',creator:'Dim Hour Guide',handle:'@dimhour',platform:'Dim Hour',avatar:'🗽',title:'NYC Sightseeing + Food Weekend',subtitle:'See everything AND eat everything',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
             {time:'4:00 PM',spot:'SUMMIT One Vanderbilt',id:1674,note:'Immersive art + observation deck. Book sunset tickets.'},
             {time:'6:00 PM',spot:'Walk through Times Square',id:null,note:'See it at dusk when the lights blaze. TKTS for Broadway tickets.'},
@@ -8236,7 +8236,7 @@ const A = {
             {time:'5:00 PM',spot:'Sunset from Brooklyn Bridge Park',id:null,note:'Skyline turns gold. Free. Perfect ending.'}
           ]}
         ]},
-        {id:'nyc-foodie-deep-dive',creator:'Appetyt Guide',handle:'@appetyt',platform:'Appetyt',avatar:'🍽',title:'NYC Serious Foodie Weekend',subtitle:'Michelin stars, tasting menus & cult favorites',days:[
+        {id:'nyc-foodie-deep-dive',creator:'Dim Hour Guide',handle:'@dimhour',platform:'Dim Hour',avatar:'🍽',title:'NYC Serious Foodie Weekend',subtitle:'Michelin stars, tasting menus & cult favorites',days:[
           {label:'Friday Night',emoji:'🌙',slots:[
             {time:'5:30 PM',spot:'Cocktails at Attaboy',id:1071,note:'No menu — tell the bartender what you like'},
             {time:'7:30 PM',spot:'Dinner at Dhamaka',id:1028,note:'Indian food like you\'ve never had — fiery, bold'},
@@ -8347,7 +8347,7 @@ const A = {
     const arr=S.userData[k];
     const i=arr.indexOf(id);
     if(i===-1) arr.push(id); else arr.splice(i,1);
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     if(btn) btn.classList.toggle('on',arr.includes(id));
     A.showToast(arr.includes(id)?'Saved!':'Removed');
   },
@@ -8557,15 +8557,15 @@ const A = {
     const isWant=S.userData.want.includes(id);
 
     // All reservation platform URLs -- use direct reserveUrl when available, otherwise search fallback
-    // Affiliate tracking: OpenTable ref=appetyt, Resy/Tock utm_source=appetyt
+    // Affiliate tracking: OpenTable ref=dimhour, Resy/Tock utm_source=dimhour
     const enc=encodeURIComponent;
     const citySlug=(S.city||'Dallas').toLowerCase().replace(/ /g,'-');
     const nameSlug=r.name.toLowerCase().replace(/[^a-z0-9]+/g,'-');
     const BOOK_URLS={
-      OpenTable:r.reserveUrl||`https://www.opentable.com/s/?term=${enc(r.name)}&covers=2&dateTime=${new Date().toISOString().split('T')[0]}T19:00&ref=appetyt&utm_source=appetyt&utm_medium=referral&utm_campaign=${nameSlug}`,
-      Resy:r.reserveUrl||`https://resy.com/cities/${citySlug}?query=${enc(r.name)}&utm_source=appetyt&utm_medium=referral&utm_campaign=${nameSlug}`,
-      Tock:r.reserveUrl||`https://www.exploretock.com/search?q=${enc(r.name)}&utm_source=appetyt&utm_medium=referral&utm_campaign=${nameSlug}`,
-      SevenRooms:r.reserveUrl||`https://www.sevenrooms.com/search?q=${enc(r.name)}&utm_source=appetyt`,
+      OpenTable:r.reserveUrl||`https://www.opentable.com/s/?term=${enc(r.name)}&covers=2&dateTime=${new Date().toISOString().split('T')[0]}T19:00&ref=dimhour&utm_source=dimhour&utm_medium=referral&utm_campaign=${nameSlug}`,
+      Resy:r.reserveUrl||`https://resy.com/cities/${citySlug}?query=${enc(r.name)}&utm_source=dimhour&utm_medium=referral&utm_campaign=${nameSlug}`,
+      Tock:r.reserveUrl||`https://www.exploretock.com/search?q=${enc(r.name)}&utm_source=dimhour&utm_medium=referral&utm_campaign=${nameSlug}`,
+      SevenRooms:r.reserveUrl||`https://www.sevenrooms.com/search?q=${enc(r.name)}&utm_source=dimhour`,
       Yelp:`https://www.yelp.com/search?find_desc=${enc(r.name)}&find_loc=${enc(S.city)}`,
       Directions:`https://www.google.com/maps/search/${enc(r.name+' '+r.address)}`,
       Google:`https://www.google.com/search?q=${enc(r.name+' '+S.city+' reservations')}`,
@@ -8573,21 +8573,21 @@ const A = {
 
     // Delivery platform deep-links
     const DELIVERY_URLS={
-      DoorDash:`https://www.doordash.com/search/store/${enc(r.name)}/?utm_source=appetyt&utm_medium=referral`,
-      UberEats:`https://www.ubereats.com/search?q=${enc(r.name)}&utm_source=appetyt&utm_medium=referral`,
-      Grubhub:`https://www.grubhub.com/search?orderMethod=delivery&locationMode=DELIVERY&query=${enc(r.name)}&utm_source=appetyt&utm_medium=referral`,
+      DoorDash:`https://www.doordash.com/search/store/${enc(r.name)}/?utm_source=dimhour&utm_medium=referral`,
+      UberEats:`https://www.ubereats.com/search?q=${enc(r.name)}&utm_source=dimhour&utm_medium=referral`,
+      Grubhub:`https://www.grubhub.com/search?orderMethod=delivery&locationMode=DELIVERY&query=${enc(r.name)}&utm_source=dimhour&utm_medium=referral`,
     };
 
     // Experience & drink delivery links (for activities/bars)
     const isActivity = (r.cuisine||'').toLowerCase().match(/entertainment|club|jazz|comedy|live music|museum|activity/);
     const isBar = (r.cuisine||'').toLowerCase().match(/bar|cocktail|wine|whiskey|brewery|tiki/)||(r.tags||[]).some(t=>/cocktail|bar|wine|late night/i.test(t));
     const EXPERIENCE_URLS = isActivity ? {
-      Viator:`https://www.viator.com/searchResults/all?text=${enc(r.name+' '+S.city)}&utm_source=appetyt&utm_medium=referral`,
-      GetYourGuide:`https://www.getyourguide.com/s/?q=${enc(r.name+' '+S.city)}&utm_source=appetyt&utm_medium=referral`,
+      Viator:`https://www.viator.com/searchResults/all?text=${enc(r.name+' '+S.city)}&utm_source=dimhour&utm_medium=referral`,
+      GetYourGuide:`https://www.getyourguide.com/s/?q=${enc(r.name+' '+S.city)}&utm_source=dimhour&utm_medium=referral`,
     } : {};
     const DRINK_URLS = isBar ? {
-      Drizly:`https://drizly.com/search?q=${enc(r.name)}&utm_source=appetyt`,
-      Minibar:`https://minibardelivery.com/search?q=${enc(S.city+' spirits')}&utm_source=appetyt`,
+      Drizly:`https://drizly.com/search?q=${enc(r.name)}&utm_source=dimhour`,
+      Minibar:`https://minibardelivery.com/search?q=${enc(S.city+' spirits')}&utm_source=dimhour`,
     } : {};
 
     // Determine primary platform + show all options
@@ -8789,7 +8789,7 @@ const A = {
       <div style="display:flex;gap:7px;margin-bottom:14px;flex-wrap:wrap">
         <button class="da-btn" onclick="A.openBillModal('${r.name}')" style="flex:1;background:rgba(201,168,76,.1);border-color:var(--gold);color:var(--gold)">💰 Track Bill</button>
         ${TRIPS.current ? `<button class="da-btn" onclick="TRIPS.addRestaurant(${id},'${r.name.replace(/'/g,"\\'")}','${r.neighborhood||'Dallas'}');A.showToast('Added to '+TRIPS.current.name+' ✈️')" style="flex:1;background:rgba(201,168,76,.1);border-color:var(--gold);color:var(--gold)">✈️ Trip</button>` : ''}
-        <button class="da-btn" onclick="navigator.share?.({title:'${r.name}',text:'Check out ${r.name} on Appetyt -- scored ${r.score}/100',url:'https://appetyt.app?r=${id}'}).catch(()=>{navigator.clipboard?.writeText('https://appetyt.app?r=${id}');A.showToast('Link copied!')})" style="flex:1">📤 Share</button>
+        <button class="da-btn" onclick="navigator.share?.({title:'${r.name}',text:'Check out ${r.name} on Dim Hour -- scored ${r.score}/100',url:'https://dimhour.com?r=${id}'}).catch(()=>{navigator.clipboard?.writeText('https://dimhour.com?r=${id}');A.showToast('Link copied!')})" style="flex:1">📤 Share</button>
         ${r.phone ? `<button class="da-btn" onclick="window.location.href='tel:${r.phone}'" style="flex:1">📞 Call</button>` : ''}
       </div>
       ${(S.userData.customLists||[]).length?`<button onclick="A.showAddToListPicker(${id})" style="width:100%;padding:12px;border-radius:10px;border:1px solid var(--gold);background:rgba(201,168,76,.08);color:var(--gold);font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;margin-bottom:14px;display:flex;align-items:center;justify-content:center;gap:8px">📋 Add to List</button>`:''}
@@ -8874,9 +8874,9 @@ const A = {
     const time24=String(h).padStart(2,'0')+':'+m;
     let url='';
     if(r.reserveUrl) url=r.reserveUrl;
-    else if(platform==='OpenTable') url=`https://www.opentable.com/s/?term=${name}&covers=${party}&dateTime=${date}T${time24}&ref=appetyt&utm_source=appetyt&utm_medium=referral`;
-    else if(platform==='Resy') url=`https://resy.com/cities/${citySlug}?query=${name}&date=${date}&seats=${party}&utm_source=appetyt&utm_medium=referral`;
-    else if(platform==='Tock') url=`https://www.exploretock.com/search?q=${name}&date=${date}&size=${party}&utm_source=appetyt&utm_medium=referral`;
+    else if(platform==='OpenTable') url=`https://www.opentable.com/s/?term=${name}&covers=${party}&dateTime=${date}T${time24}&ref=dimhour&utm_source=dimhour&utm_medium=referral`;
+    else if(platform==='Resy') url=`https://resy.com/cities/${citySlug}?query=${name}&date=${date}&seats=${party}&utm_source=dimhour&utm_medium=referral`;
+    else if(platform==='Tock') url=`https://www.exploretock.com/search?q=${name}&date=${date}&size=${party}&utm_source=dimhour&utm_medium=referral`;
     else url=`https://www.google.com/search?q=${name}+${city}+reservations+${date}`;
     window.open(url,'_blank');
   },
@@ -8899,7 +8899,7 @@ const A = {
     A.showToast('Reminder set for '+name+' -- check Tock on the 1st & 15th at 8AM');
     if(!S.userData.reminders) S.userData.reminders=[];
     S.userData.reminders.push({name,set:new Date().toISOString()});
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
   },
 
   // -- CITY PICKER -------------------------------------------
@@ -8919,7 +8919,7 @@ const A = {
   selectCity(city){
     if(typeof gtag==='function') gtag('event','select_city',{city:city});
     S.city=city;
-    localStorage.setItem('appetyt_city',city);
+    localStorage.setItem('dimhour_city',city);
     document.getElementById('city-label').textContent=city;
     const scl=document.getElementById('sidebar-city-label');
     if(scl) scl.textContent=city;
@@ -9071,10 +9071,10 @@ const A = {
     if(city) S.userData.homeCity = city;
     if(avatar) S.userData.avatar = avatar;
     S.userData.foodPrefs = prefs;
-    localStorage.setItem('appetyt_data', JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data', JSON.stringify(S.userData));
 
     // Update nickname for trips
-    if(name) localStorage.setItem('appetyt_nickname', name);
+    if(name) localStorage.setItem('dimhour_nickname', name);
 
     document.getElementById('event-detail-modal').style.display='none';
     this.showToast('Profile updated!');
@@ -9117,7 +9117,7 @@ const A = {
     // Use setTimeout for local notifications (no server needed)
     setTimeout(()=>{
       if(Notification.permission === 'granted'){
-        new Notification('Appetyt — Coming Up!', {
+        new Notification('Dim Hour — Coming Up!', {
           body: itemName + ' in 2 hours. Time to get ready!',
           icon: '/icons/icon-192.png',
           tag: 'trip-reminder-'+Date.now()
@@ -9146,7 +9146,7 @@ const A = {
 
   signOut(){
     S.user = null;
-    localStorage.removeItem('appetyt_user');
+    localStorage.removeItem('dimhour_user');
     document.getElementById('auth-btn').classList.remove('on');
     document.getElementById('auth-btn').textContent = '👤';
     const _sab = document.getElementById('sidebar-auth-btn');
@@ -9191,7 +9191,7 @@ const A = {
     try{
       const {data, error} = await sb.auth.signInWithOAuth({
         provider: 'google',
-        options: { redirectTo: 'https://appetyt.app' }
+        options: { redirectTo: 'https://dimhour.com' }
       });
       if(error) throw error;
       // Redirect happens automatically
@@ -9207,7 +9207,7 @@ const A = {
     try{
       const {data, error} = await sb.auth.signInWithOAuth({
         provider: 'apple',
-        options: { redirectTo: 'https://appetyt.app' }
+        options: { redirectTo: 'https://dimhour.com' }
       });
       if(error) throw error;
     } catch(e){
@@ -9245,7 +9245,7 @@ const A = {
           'Content-Type': 'application/json',
           'apikey': SUPABASE_ANON_KEY,
         },
-        body: JSON.stringify({ email, redirect_to: 'https://appetyt.app' })
+        body: JSON.stringify({ email, redirect_to: 'https://dimhour.com' })
       });
       const data = await res.json();
       if(res.ok){
@@ -9277,7 +9277,7 @@ const A = {
       const data=await sbReq(path,'POST',{email,password:pw});
       if(data?.access_token){
         S.user={email,token:data.access_token};
-        localStorage.setItem('appetyt_user',JSON.stringify(S.user));
+        localStorage.setItem('dimhour_user',JSON.stringify(S.user));
         document.getElementById('auth-btn').classList.add('on');
         document.getElementById('auth-btn').textContent='✓';
         this.closeAuth();
@@ -9337,7 +9337,7 @@ const A = {
         body:JSON.stringify({
           model:'claude-sonnet-4-20250514',
           max_tokens:250,
-          system:`You are Appetyt's AI concierge for ${S.city}. Be concise, specific, and enthusiastic. Reference actual restaurants. Max 100 words.\n\nWhen recommending a restaurant, ALWAYS include a booking link at the end using this format:\n- For Resy restaurants: [Reserve on Resy](https://resy.com/?q=RESTAURANT_NAME)\n- For Tock restaurants: [Reserve on Tock](https://www.exploretock.com/search?q=RESTAURANT_NAME)\n- For OpenTable restaurants: [Reserve on OpenTable](https://www.opentable.com/s/?term=RESTAURANT_NAME)\n- Also include: [Order on DoorDash](https://www.doordash.com/search/store/RESTAURANT_NAME/)\n\nUse the restaurant's reservation field to pick the right platform. If empty, default to OpenTable.\n\nRestaurants: ${JSON.stringify(restaurants)}`,
+          system:`You are Dim Hour's AI concierge for ${S.city}. Be concise, specific, and enthusiastic. Reference actual restaurants. Max 100 words.\n\nWhen recommending a restaurant, ALWAYS include a booking link at the end using this format:\n- For Resy restaurants: [Reserve on Resy](https://resy.com/?q=RESTAURANT_NAME)\n- For Tock restaurants: [Reserve on Tock](https://www.exploretock.com/search?q=RESTAURANT_NAME)\n- For OpenTable restaurants: [Reserve on OpenTable](https://www.opentable.com/s/?term=RESTAURANT_NAME)\n- Also include: [Order on DoorDash](https://www.doordash.com/search/store/RESTAURANT_NAME/)\n\nUse the restaurant's reservation field to pick the right platform. If empty, default to OpenTable.\n\nRestaurants: ${JSON.stringify(restaurants)}`,
           messages:[{role:'user',content:q}]
         })
       });
@@ -10589,7 +10589,7 @@ const A = {
           <button class="social-action" onclick="A.socialToggleComments('${p.id}')">
             💬 <span>${(p.comments||[]).length}</span>
           </button>
-          <button class="social-action" onclick="navigator.share?.({title:'Appetyt',text:'${(p.text||'').replace(/'/g,"\\'")}',url:'https://appetyt.app'}).catch(()=>{})">
+          <button class="social-action" onclick="navigator.share?.({title:'Dim Hour',text:'${(p.text||'').replace(/'/g,"\\'")}',url:'https://dimhour.com'}).catch(()=>{})">
             📤 Share
           </button>
         </div>
@@ -10676,7 +10676,7 @@ const A = {
     };
 
     S.userData.socialPosts.unshift(post);
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
 
     // Reset compose
     S._socialPhotoData=null;
@@ -10756,7 +10756,7 @@ const A = {
     } else {
       S.userData.socialLikes.splice(idx,1);
     }
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     this.renderFeed();
   },
 
@@ -10777,7 +10777,7 @@ const A = {
     if(userPost){
       if(!userPost.comments) userPost.comments=[];
       userPost.comments.push({author,text});
-      localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+      localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     }
 
     input.value='';
@@ -10857,7 +10857,7 @@ const A = {
       ids:[],
       createdAt:Date.now(),
     });
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     this.showToast('List created!');
     this.renderFeed();
   },
@@ -10984,7 +10984,7 @@ const A = {
       const list=(S.userData.customLists||[]).find(l=>l.id===listId);
       if(list&&!list.ids.includes(restaurantId)) list.ids.push(restaurantId);
     }
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     this.showToast('Added!');
     document.getElementById('list-add-overlay')?.remove();
     this.openListDetail(listId);
@@ -10994,7 +10994,7 @@ const A = {
     const list=(S.userData.customLists||[]).find(l=>l.id===listId);
     if(list){
       list.ids=list.ids.filter(id=>id!==restaurantId);
-      localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+      localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
       this.showToast('Removed');
       this.openListDetail(listId);
     }
@@ -11023,7 +11023,7 @@ const A = {
     if(!list.ids) list.ids=[];
     if(list.ids.includes(restId)){this.showToast('Already in '+list.name);return;}
     list.ids.push(restId);
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     this.showToast('Added to '+list.name+' '+list.emoji);
     const overlay=document.getElementById('add-to-list-overlay');
     if(overlay) overlay.remove();
@@ -11033,7 +11033,7 @@ const A = {
     if(!confirm('Delete this list?')) return;
     S.userData.customLists=(S.userData.customLists||[]).filter(l=>l.id!==listId);
     S.userData.pinnedLists=(S.userData.pinnedLists||[]).filter(id=>id!==listId);
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     this.showToast('List deleted');
     S._feedSub='lists';
     this.renderFeed();
@@ -11049,7 +11049,7 @@ const A = {
       S.userData.pinnedLists.splice(idx,1);
       this.showToast('Unpinned');
     }
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     this.renderFeed();
   },
 
@@ -11082,7 +11082,7 @@ const A = {
       btn.style.color='var(--dark)';
       btn.style.borderColor='var(--gold)';
     }
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
   },
 
   showProfile(){
@@ -12316,7 +12316,7 @@ const A = {
       drinks: (A._receiptData?.drinks||[]),
       receipt_people: (A._receiptData?.people||null)
     });
-    localStorage.setItem('appetyt_data', JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data', JSON.stringify(S.userData));
     
     A._receiptData = null;
     this.closeBillModal();
@@ -12386,7 +12386,7 @@ const A = {
       +'Total: '+fmt(b.total)+' (incl. '+b.tipPct+'% tip)\n'
       +'Split '+b.split+' ways -- '+fmt(b.perPerson)+' each\n'
       +b.people.map(p=>'• '+p+': '+fmt(b.perPerson)).join('\n')
-      +'\n\nTracked on Appetyt 🍽️';
+      +'\n\nTracked on Dim Hour 🍽️';
     if(navigator.share){
       navigator.share({title:'Bill Split -- '+b.restaurant, text}).catch(()=>{});
     } else {
@@ -12570,10 +12570,10 @@ const A = {
       <div style="margin-bottom:10px">
         <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Book a Room</div>
         <a href="https://www.google.com/travel/hotels/${encodeURIComponent(h.name+' '+(S.city||'Dallas'))}" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px;border-radius:12px;background:var(--gold);color:var(--dark);font-weight:800;font-size:14px;margin-bottom:8px;text-decoration:none">🔍 Compare Prices on Google Hotels</a>
-        <a href="https://www.booking.com/searchresults.html?ss=${encodeURIComponent(h.name+' '+(S.city||'Dallas'))}&aid=2837370&utm_source=appetyt&utm_medium=referral&utm_campaign=${encodeURIComponent(h.name.toLowerCase().replace(/[^a-z0-9]+/g,'-'))}" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px;border-radius:12px;background:#003580;color:#fff;font-weight:800;font-size:14px;margin-bottom:8px;text-decoration:none">🏨 Book on Booking.com</a>
+        <a href="https://www.booking.com/searchresults.html?ss=${encodeURIComponent(h.name+' '+(S.city||'Dallas'))}&aid=2837370&utm_source=dimhour&utm_medium=referral&utm_campaign=${encodeURIComponent(h.name.toLowerCase().replace(/[^a-z0-9]+/g,'-'))}" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px;border-radius:12px;background:#003580;color:#fff;font-weight:800;font-size:14px;margin-bottom:8px;text-decoration:none">🏨 Book on Booking.com</a>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-          <a href="https://www.hotels.com/search.do?q-destination=${encodeURIComponent(h.name+' '+(S.city||'Dallas'))}&utm_source=appetyt&utm_medium=referral" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px;border-radius:10px;background:#d32f2f;color:#fff;text-decoration:none;font-size:11px;font-weight:600"><span style="font-size:16px">🏩</span>Hotels.com</a>
-          <a href="https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(h.name+' '+(S.city||'Dallas'))}&utm_source=appetyt&utm_medium=referral" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px;border-radius:10px;background:#00355f;color:#fff;text-decoration:none;font-size:11px;font-weight:600"><span style="font-size:16px">✈️</span>Expedia</a>
+          <a href="https://www.hotels.com/search.do?q-destination=${encodeURIComponent(h.name+' '+(S.city||'Dallas'))}&utm_source=dimhour&utm_medium=referral" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px;border-radius:10px;background:#d32f2f;color:#fff;text-decoration:none;font-size:11px;font-weight:600"><span style="font-size:16px">🏩</span>Hotels.com</a>
+          <a href="https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(h.name+' '+(S.city||'Dallas'))}&utm_source=dimhour&utm_medium=referral" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:10px;border-radius:10px;background:#00355f;color:#fff;text-decoration:none;font-size:11px;font-weight:600"><span style="font-size:16px">✈️</span>Expedia</a>
         </div>
       </div>
       ${h.website?'<a href="'+h.website+'" target="_blank" style="display:block;text-align:center;background:rgba(201,168,76,.15);border:1px solid var(--gold);border-radius:10px;padding:12px;color:var(--gold);text-decoration:none;font-size:13px;font-weight:700;margin-bottom:8px">🌐 Hotel Website →</a>':''}
@@ -12813,7 +12813,7 @@ const A = {
                   +'<div style="font-size:10px;color:var(--gold);font-weight:600;margin-bottom:2px">'+d.type+'</div>'
                   +'<div style="font-size:11px;color:var(--text2)">'+d.note+'</div></div>';
             }).join('')}
-        ${areaRests.length?'<div style="font-size:11px;color:var(--text3);margin:8px 0 6px;font-weight:600">Also in the Appetyt guide:</div>'+areaRests.map(r=>'<div onclick="A.openDetail('+r.id+')" style="display:flex;align-items:center;justify-content:space-between;background:var(--card);border:1px solid var(--gold);border-radius:10px;padding:10px;margin-bottom:6px;cursor:pointer;touch-action:manipulation"><div><div style="font-size:13px;font-weight:700;color:var(--text)">'+r.name+'</div><div style="font-size:11px;color:var(--text2)">'+r.cuisine+' · '+r.neighborhood+'</div></div><div style="font-size:18px;font-weight:700;color:var(--gold)">'+r.score+'</div></div>').join(''):''}
+        ${areaRests.length?'<div style="font-size:11px;color:var(--text3);margin:8px 0 6px;font-weight:600">Also in the Dim Hour guide:</div>'+areaRests.map(r=>'<div onclick="A.openDetail('+r.id+')" style="display:flex;align-items:center;justify-content:space-between;background:var(--card);border:1px solid var(--gold);border-radius:10px;padding:10px;margin-bottom:6px;cursor:pointer;touch-action:manipulation"><div><div style="font-size:13px;font-weight:700;color:var(--text)">'+r.name+'</div><div style="font-size:11px;color:var(--text2)">'+r.cuisine+' · '+r.neighborhood+'</div></div><div style="font-size:18px;font-weight:700;color:var(--gold)">'+r.score+'</div></div>').join(''):''}
       </div>
       <div style="margin-bottom:14px">
         <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Insider Tips</div>
@@ -12849,7 +12849,7 @@ const A = {
   deleteBill(idx){
     if(!confirm('Delete this bill?')) return;
     S.userData.bills.splice(idx,1);
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     this.renderBills();
   },
 
@@ -13164,7 +13164,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     if(!this._parsedEmailData) return;
     if(!S.userData.travelItems) S.userData.travelItems=[];
     S.userData.travelItems.push({...this._parsedEmailData, addedAt:new Date().toISOString()});
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     document.getElementById('email-parser-overlay').style.display='none';
     this.renderInbox();
     A.showToast('Added to Travel Wallet ✅');
@@ -13186,14 +13186,14 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const notes=prompt('Notes (optional):','');
     if(!S.userData.travelItems) S.userData.travelItems=[];
     S.userData.travelItems.push({type,title,date,time,location,confirmationCode,notes,addedAt:new Date().toISOString()});
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     this.renderInbox();
     A.showToast('Added to Travel Wallet');
   },
 
   deleteTravelItem(idx){
     S.userData.travelItems.splice(idx,1);
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     this.renderInbox();
   },
 
@@ -13518,7 +13518,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
 
     // --- NO ACTIVE TRIP: Create/Join ---
     if(!trip){
-      const tripHistory = JSON.parse(localStorage.getItem('appetyt_trip_history')||'[]');
+      const tripHistory = JSON.parse(localStorage.getItem('dimhour_trip_history')||'[]');
       el.innerHTML = `
         ${tripHistory.length ? `<div style="margin-bottom:16px">
           <div style="font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);margin-bottom:10px">📁 Past Trips</div>
@@ -14267,7 +14267,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const end = document.getElementById('trip-end')?.value;
     const nickname = document.getElementById('trip-nickname')?.value?.trim() || 'Traveler';
     if(!name){ this.showToast('Please enter a trip name'); return; }
-    localStorage.setItem('appetyt_nickname', nickname);
+    localStorage.setItem('dimhour_nickname', nickname);
     try{
       this.showToast('Creating trip...');
       const tripInfo = window._extractedTripInfo || null;
@@ -14290,7 +14290,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     const code = document.getElementById('trip-code')?.value?.trim();
     const nickname = document.getElementById('trip-join-nickname')?.value?.trim() || 'Traveler';
     if(!code || code.length<6){ this.showToast('Enter the 6-digit trip code'); return; }
-    localStorage.setItem('appetyt_nickname', nickname);
+    localStorage.setItem('dimhour_nickname', nickname);
     try{
       this.showToast('Joining trip...');
       await TRIPS.join(code);
@@ -14363,7 +14363,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     }
 
     txt += `${'-'.repeat(28)}\n`;
-    txt += `Sent via Appetyt • appetyt.app`;
+    txt += `Sent via Dim Hour • dimhour.com`;
     return txt;
   },
 
@@ -14440,7 +14440,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     }
 
     txt += `${'-'.repeat(28)}\n`;
-    txt += `Sent via Appetyt • appetyt.app`;
+    txt += `Sent via Dim Hour • dimhour.com`;
     return txt;
   },
 
@@ -14510,8 +14510,8 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     }
 
     txt += `${'─'.repeat(30)}\n`;
-    txt += `Sent via Appetyt • appetyt.app\n`;
-    txt += `Join this trip: appetyt.app → Trips → Code: ${trip.code}`;
+    txt += `Sent via Dim Hour • dimhour.com\n`;
+    txt += `Join this trip: dimhour.com → Trips → Code: ${trip.code}`;
     return txt;
   },
 
@@ -14519,7 +14519,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
   emailItinerary(){
     const trip = TRIPS.current;
     if(!trip) return;
-    const subject = encodeURIComponent(`${trip.name} — Trip Itinerary from Appetyt`);
+    const subject = encodeURIComponent(`${trip.name} — Trip Itinerary from Dim Hour`);
     const body = encodeURIComponent(this.buildItinerarySummary());
     window.open(`mailto:?subject=${subject}&body=${body}`, '_self');
   },
@@ -14530,7 +14530,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     if(!email || !email.includes('@')) return;
     const trip = TRIPS.current;
     if(!trip) return;
-    const subject = encodeURIComponent(`${trip.name} — Trip Itinerary from Appetyt`);
+    const subject = encodeURIComponent(`${trip.name} — Trip Itinerary from Dim Hour`);
     const body = encodeURIComponent(this.buildItinerarySummary());
     window.open(`mailto:${email}?subject=${subject}&body=${body}`, '_self');
   },
@@ -14539,7 +14539,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
   emailList(listName, restaurants){
     if(!restaurants || !restaurants.length) return;
     let body = `🍽️ ${listName}\n`;
-    body += `Curated on Appetyt • appetyt.app\n`;
+    body += `Curated on Dim Hour • dimhour.com\n`;
     body += `${'─'.repeat(30)}\n\n`;
     restaurants.forEach((r, i) => {
       body += `${i+1}. ${r.name} — ${r.score}/100\n`;
@@ -14549,8 +14549,8 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
       body += `\n`;
     });
     body += `${'─'.repeat(30)}\n`;
-    body += `Explore more at appetyt.app`;
-    const subject = encodeURIComponent(`${listName} — from Appetyt`);
+    body += `Explore more at dimhour.com`;
+    const subject = encodeURIComponent(`${listName} — from Dim Hour`);
     window.open(`mailto:?subject=${subject}&body=${encodeURIComponent(body)}`, '_self');
   },
 
@@ -14625,29 +14625,29 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     if(!confirm('End this trip and move it to history?')) return;
     const trip = TRIPS.current;
     if(trip){
-      const history = JSON.parse(localStorage.getItem('appetyt_trip_history')||'[]');
+      const history = JSON.parse(localStorage.getItem('dimhour_trip_history')||'[]');
       history.unshift({
         name: trip.name,
         code: trip.code,
         cities: Array.isArray(trip.cities)?trip.cities.join(', '):(trip.cities||''),
         endedAt: new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})
       });
-      localStorage.setItem('appetyt_trip_history', JSON.stringify(history.slice(0,20)));
+      localStorage.setItem('dimhour_trip_history', JSON.stringify(history.slice(0,20)));
     }
     TRIPS.current = null;
     TRIPS.members = [];
     TRIPS.restaurants = [];
     TRIPS.bills = [];
     if(TRIPS._channel) TRIPS._channel.unsubscribe?.();
-    localStorage.removeItem('appetyt_active_trip');
+    localStorage.removeItem('dimhour_active_trip');
     this.renderTrips();
     this.showToast('Trip ended and saved to history');
   },
 
   removeFromHistory(index){
-    const history = JSON.parse(localStorage.getItem('appetyt_trip_history')||'[]');
+    const history = JSON.parse(localStorage.getItem('dimhour_trip_history')||'[]');
     history.splice(index,1);
-    localStorage.setItem('appetyt_trip_history', JSON.stringify(history));
+    localStorage.setItem('dimhour_trip_history', JSON.stringify(history));
     this.renderTrips();
   },
 
@@ -14658,7 +14658,7 @@ If a field is not found, use null. For type: reservation=restaurant booking, fli
     TRIPS.restaurants = [];
     TRIPS.bills = [];
     if(TRIPS._channel) TRIPS._channel.unsubscribe?.();
-    localStorage.removeItem('appetyt_active_trip');
+    localStorage.removeItem('dimhour_active_trip');
     this.renderTrips();
     this.showToast('Left the trip');
   },
@@ -14937,7 +14937,7 @@ Return ONLY the JSON object, nothing else.`,
       if (error) throw error;
 
       S.briefingEmail = email;
-      try { localStorage.setItem('appetyt_briefing_email', email); } catch(e) {}
+      try { localStorage.setItem('dimhour_briefing_email', email); } catch(e) {}
 
       if(status){ status.textContent = '✅ Subscribed! You will receive your first briefing on March 21st at 8AM.'; status.style.color='#3eb8a8'; status.style.display='block'; }
       A.showToast('🌅 Subscribed to morning briefings!');
@@ -14957,7 +14957,7 @@ Return ONLY the JSON object, nothing else.`,
       const sb = getSB();
       if (sb) await sb.from('briefing_subscribers').update({ active: false }).eq('email', email);
       S.briefingEmail = null;
-      try { localStorage.removeItem('appetyt_briefing_email'); } catch(e) {}
+      try { localStorage.removeItem('dimhour_briefing_email'); } catch(e) {}
       A.showToast('Unsubscribed from morning briefings');
       A.renderProfile();
     } catch(err) { console.error('Unsubscribe error:', err); }
@@ -14980,7 +14980,7 @@ Return ONLY the JSON object, nothing else.`,
       const {error}=await sb.from('briefing_subscribers').upsert({email,name,active:true,updated_at:new Date().toISOString()},{onConflict:'email'});
       if(error) throw error;
       S.briefingEmail=email;
-      try{localStorage.setItem('appetyt_briefing_email',email);}catch(e){}
+      try{localStorage.setItem('dimhour_briefing_email',email);}catch(e){}
       if(status){status.textContent='✅ Subscribed! First briefing arrives March 21st at 8AM.';status.style.color='#3eb8a8';status.style.display='block';}
       A.showToast('🌅 Subscribed to morning briefings!');
       setTimeout(()=>A.renderProfile(),2000);
@@ -14998,7 +14998,7 @@ Return ONLY the JSON object, nothing else.`,
       const sb=getSB();
       if(sb) await sb.from('briefing_subscribers').update({active:false}).eq('email',email);
       S.briefingEmail=null;
-      try{localStorage.removeItem('appetyt_briefing_email');}catch(e){}
+      try{localStorage.removeItem('dimhour_briefing_email');}catch(e){}
       A.showToast('Unsubscribed from morning briefings');
       A.renderProfile();
     }catch(err){console.error(err);}
@@ -15008,7 +15008,7 @@ Return ONLY the JSON object, nothing else.`,
     const input = document.getElementById('api-key-input');
     const key = input?.value?.trim() || '';
     S.apiKey = key;
-    try{ localStorage.setItem('appetyt_key', key); } catch(e){}
+    try{ localStorage.setItem('dimhour_key', key); } catch(e){}
     A.showToast(key ? '✅ API key saved -- AI features active' : '🔑 API key cleared');
     this.renderProfile();
   },
@@ -15061,12 +15061,12 @@ Return ONLY the JSON object, nothing else.`,
     };
     if(!S.userData.trips) S.userData.trips = [];
     S.userData.trips.push(trip);
-    try { localStorage.setItem('appetyt_data', JSON.stringify(S.userData)); } catch(e){}
+    try { localStorage.setItem('dimhour_data', JSON.stringify(S.userData)); } catch(e){}
     document.getElementById('create-trip-modal').style.display = 'none';
     A.showToast(`🌍 "${name}" created! Code: ${trip.code}`);
     // Share invite
-    const msg = `Join my trip "${name}" on Appetyt! Code: ${trip.code} -- appetyt.app`;
-    if(navigator.share) navigator.share({title:'Join my Appetyt trip', text:msg}).catch(()=>{});
+    const msg = `Join my trip "${name}" on Dim Hour! Code: ${trip.code} -- dimhour.com`;
+    if(navigator.share) navigator.share({title:'Join my Dim Hour trip', text:msg}).catch(()=>{});
     else if(navigator.clipboard) navigator.clipboard.writeText(msg);
     this.tab('trips');
   },
@@ -15111,7 +15111,7 @@ Return ONLY the JSON object, nothing else.`,
           <div style="font-size:30px;font-weight:700;color:var(--gold);letter-spacing:5px">${trip.code}</div>
           <div style="display:flex;gap:6px">
             <button onclick="navigator.clipboard?.writeText('${trip.code}');A.showToast('Code copied!')" style="background:var(--card);border:1.5px solid var(--gold);color:var(--text2);padding:8px 12px;border-radius:8px;font-size:12px;cursor:pointer">📋 Copy</button>
-            <button onclick="navigator.share?.({title:'Join ${trip.name} on Appetyt',text:'Use code ${trip.code} to join our trip!',url:'https://appetyt.app'}).catch(()=>{})" style="background:var(--gold);border:none;color:var(--dark);font-weight:700;padding:8px 12px;border-radius:8px;font-size:12px;cursor:pointer">📤 Share</button>
+            <button onclick="navigator.share?.({title:'Join ${trip.name} on Dim Hour',text:'Use code ${trip.code} to join our trip!',url:'https://dimhour.com'}).catch(()=>{})" style="background:var(--gold);border:none;color:var(--dark);font-weight:700;padding:8px 12px;border-radius:8px;font-size:12px;cursor:pointer">📤 Share</button>
           </div>
         </div>
       </div>
@@ -15272,7 +15272,7 @@ Return ONLY the JSON object, nothing else.`,
       <div style="text-align:center;padding:20px 0 16px">
         <div style="width:70px;height:70px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 10px">🍽️</div>
         <div style="font-size:17px;font-weight:800;color:var(--text)">Your Profile</div>
-        <div style="font-size:11px;color:var(--text2);margin-top:3px">Appetyt Food Passport</div>
+        <div style="font-size:11px;color:var(--text2);margin-top:3px">Dim Hour Food Passport</div>
       </div>
       <!-- Stats grid -->
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px">
@@ -16279,9 +16279,9 @@ Return ONLY the JSON object, nothing else.`,
 
   // -- UTILS -------------------------------------------------
   shareRestaurant(name,cuisine,neighborhood,score){
-    const text=`${name} -- ${cuisine} in ${neighborhood} (Score: ${score}/100)\nDiscover it on Appetyt: https://appetyt.app`;
+    const text=`${name} -- ${cuisine} in ${neighborhood} (Score: ${score}/100)\nDiscover it on Dim Hour: https://dimhour.com`;
     if(navigator.share){
-      navigator.share({title:'Appetyt: '+name,text,url:'https://appetyt.app'}).catch(()=>{});
+      navigator.share({title:'Dim Hour: '+name,text,url:'https://dimhour.com'}).catch(()=>{});
     } else {
       navigator.clipboard.writeText(text).then(()=>A.showToast('Link copied! 📋')).catch(()=>A.showToast(name+' -- Score: '+score));
     }
@@ -16305,7 +16305,7 @@ Return ONLY the JSON object, nothing else.`,
     if(!S.userData.checkins) S.userData.checkins = [];
     S.userData.checkins.push({ id, name, time: Date.now(), party: gp.defaultParty||2, dietary: gp.dietary||[], allergies: gp.allergies||[], notes: gp.lastNotes||'' });
     if(!S.userData.visited.includes(id)) S.userData.visited.push(id);
-    localStorage.setItem('appetyt_data', JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data', JSON.stringify(S.userData));
 
     // Toast + restaurant alert
     this.showToast('Checked in at ' + name + '!');
@@ -16369,7 +16369,7 @@ Return ONLY the JSON object, nothing else.`,
     const dietary = [...document.querySelectorAll('#ci-dietary button.on')].map(b=>b.dataset.diet);
     const allergies = [...document.querySelectorAll('#ci-allergies button.on')].map(b=>b.dataset.allergy).filter(a=>a!=='None');
     S.userData.guestProfile = { name: guestName, dietary, allergies, defaultParty: 2, lastNotes: '' };
-    localStorage.setItem('appetyt_data', JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data', JSON.stringify(S.userData));
     this.closeCheckIn();
     this._instantCheckIn(id, name, S.userData.guestProfile);
   },
@@ -16471,7 +16471,7 @@ Return ONLY the JSON object, nothing else.`,
       S.userData.reminders.push(name);
       this.showToast('🔔 You\'ll be notified when '+name+' opens!');
     }
-    localStorage.setItem('appetyt_data',JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data',JSON.stringify(S.userData));
     // Re-render the local tab if visible
     if(this._localSub==='coming'||S.activeTab==='local') this.renderLocal();
   },
@@ -16573,7 +16573,7 @@ Return ONLY the JSON object, nothing else.`,
         </div>
 
         <div style="text-align:center;font-size:10px;color:var(--text3);padding:4px">
-          This is a preview of what restaurant partners see via the Appetyt Partner Dashboard
+          This is a preview of what restaurant partners see via the Dim Hour Partner Dashboard
         </div>
       </div>
     `;
@@ -16600,7 +16600,7 @@ function getNotes(id){
 function saveNotes(id, field, value){
   if(!S.userData.notes[noteKey(id)]) S.userData.notes[noteKey(id)] = {dishes:'',cocktails:'',occasion:'',client:''};
   S.userData.notes[noteKey(id)][field] = value;
-  localStorage.setItem('appetyt_data', JSON.stringify(S.userData));
+  localStorage.setItem('dimhour_data', JSON.stringify(S.userData));
 }
 
 function buildNotesHTML(id){
@@ -16937,7 +16937,7 @@ const DROPS = [
     restaurant: 'Midnight Rambler',
     type: 'promo',
     title: '🥂 Happy Hour Extended -- Tonight Only',
-    detail: 'Extended to 9 PM for Appetyt loyalty members · All cocktails $2 off',
+    detail: 'Extended to 9 PM for Dim Hour loyalty members · All cocktails $2 off',
     expires: Date.now() + 8 * 60 * 60 * 1000,
     minTier: 'bronze',
     bookUrl: 'https://www.midnightrambler.com',
@@ -17000,7 +17000,7 @@ function renderDrops() {
       <div style="font-size:13px;font-weight:800;color:var(--gold);margin-bottom:4px">Perks & Rewards -- Coming Soon</div>
       <div style="font-size:11px;color:var(--text2);line-height:1.6">Real-time reservation drops and loyalty rewards are launching soon. Partner restaurants will push last-minute tables and exclusive promos directly to their top spenders.<br><br>
       <b style="color:var(--text)">Start tracking your spend now</b> -- your tier status will be ready when we go live.</div>
-      <a href="mailto:hello@appetyt.app?subject=Drops Early Access" target="_blank" style="display:inline-block;margin-top:10px;background:none;border:1px solid var(--gold);color:var(--gold);font-weight:600;font-size:11px;padding:7px 16px;border-radius:8px;text-decoration:none">📩 Request Early Access</a>
+      <a href="mailto:hello@dimhour.com?subject=Drops Early Access" target="_blank" style="display:inline-block;margin-top:10px;background:none;border:1px solid var(--gold);color:var(--gold);font-weight:600;font-size:11px;padding:7px 16px;border-radius:8px;text-decoration:none">📩 Request Early Access</a>
     </div>`;
 
   const totalSpend = LOYALTY.getTotalSpend();
@@ -17168,9 +17168,9 @@ function renderDrops() {
     <div style="margin-top:20px;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:14px">
       <div style="font-size:12px;font-weight:700;color:var(--gold);margin-bottom:6px">🏢 Are you a restaurant?</div>
       <div style="font-size:11px;color:var(--text2);line-height:1.6;margin-bottom:8px">
-        Partner with Appetyt to push last-minute reservation slots and exclusive promos directly to your most loyal high-spend guests. Your Black and Gold tier regulars get notified first.
+        Partner with Dim Hour to push last-minute reservation slots and exclusive promos directly to your most loyal high-spend guests. Your Black and Gold tier regulars get notified first.
       </div>
-      <a href="mailto:hello@appetyt.app?subject=Restaurant Partner Drops" style="display:block;text-align:center;background:none;border:1px solid var(--gold);color:var(--gold);font-weight:600;font-size:12px;padding:9px;border-radius:8px;text-decoration:none">
+      <a href="mailto:hello@dimhour.com?subject=Restaurant Partner Drops" style="display:block;text-align:center;background:none;border:1px solid var(--gold);color:var(--gold);font-weight:600;font-size:12px;padding:9px;border-radius:8px;text-decoration:none">
         📩 Become a Partner Restaurant
       </a>
     </div>
@@ -17181,7 +17181,7 @@ function claimDrop(id) {
   if (!S.userData.claimedDrops) S.userData.claimedDrops = [];
   if (!S.userData.claimedDrops.includes(id)) {
     S.userData.claimedDrops.push(id);
-    localStorage.setItem('appetyt_data', JSON.stringify(S.userData));
+    localStorage.setItem('dimhour_data', JSON.stringify(S.userData));
     A.showToast('✅ Reserved! Check your email for confirmation.');
   }
 }
@@ -17217,11 +17217,11 @@ window.receiptPhotoHandler = function(input) {
       const email = params.get('email') || '';
       if(token){
         S.user = { email, token };
-        localStorage.setItem('appetyt_user', JSON.stringify(S.user));
+        localStorage.setItem('dimhour_user', JSON.stringify(S.user));
         // Clean up URL
         history.replaceState(null, '', window.location.pathname);
         setTimeout(() => {
-          A.showToast('✅ Signed in! Welcome to Appetyt 🎉');
+          A.showToast('✅ Signed in! Welcome to Dim Hour 🎉');
           // Update auth button UI
           const authBtn = document.getElementById('auth-btn');
           if(authBtn){ authBtn.classList.add('on'); authBtn.textContent = '✓'; }
@@ -17236,7 +17236,7 @@ window.receiptPhotoHandler = function(input) {
 try{A.init();}catch(e){console.error('Init error:',e);}
 
 // Deep linking — open restaurant from shared URL
-// Supports: appetyt.app?r=123 or appetyt.app#r=123
+// Supports: dimhour.com?r=123 or dimhour.com#r=123
 try{
   const _dlParams = new URLSearchParams(window.location.search);
   const _dlHash = window.location.hash;
@@ -17665,7 +17665,7 @@ function showCruisePortList() {
       </div>
       <div style="padding:0 14px">
         ${CRUISE_PORTS.map(p => {
-          const saved = JSON.parse(localStorage.getItem('appetyt_port_saves')||'{}');
+          const saved = JSON.parse(localStorage.getItem('dimhour_port_saves')||'{}');
           const eatSaved = (saved[p.code]||[]).length;
           const doSaved = (saved[p.code+'_do']||[]).length;
           const totalSaved = eatSaved + doSaved;
@@ -17776,7 +17776,7 @@ function pgShowTab(tab, code) {
     content.innerHTML = buildPicksHTML(p) + '<div style="height:60px"></div>';
   } else if (tab === 'eat') {
     const rests = PORT_RESTAURANTS[code] || [];
-    const saved = JSON.parse(localStorage.getItem('appetyt_port_saves')||'{}');
+    const saved = JSON.parse(localStorage.getItem('dimhour_port_saves')||'{}');
     const portSaved = saved[code] || [];
     content.innerHTML = `
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
@@ -17805,7 +17805,7 @@ function pgShowTab(tab, code) {
     <div style="height:60px"></div>`;
   } else {
     const acts = PORT_ACTIVITIES[code] || [];
-    const saved = JSON.parse(localStorage.getItem('appetyt_port_saves')||'{}');
+    const saved = JSON.parse(localStorage.getItem('dimhour_port_saves')||'{}');
     const portSaved = saved[code+'_do'] || [];
     content.innerHTML = `
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
@@ -17841,12 +17841,12 @@ function pgShowTab(tab, code) {
 
 
 function togglePortSave(portKey, name) {
-  const saved = JSON.parse(localStorage.getItem('appetyt_port_saves')||'{}');
+  const saved = JSON.parse(localStorage.getItem('dimhour_port_saves')||'{}');
   if (!saved[portKey]) saved[portKey] = [];
   const idx = saved[portKey].indexOf(name);
   if (idx >= 0) saved[portKey].splice(idx, 1);
   else saved[portKey].push(name);
-  localStorage.setItem('appetyt_port_saves', JSON.stringify(saved));
+  localStorage.setItem('dimhour_port_saves', JSON.stringify(saved));
 }
 
 /* ----------------------------------------------------
@@ -18100,7 +18100,7 @@ window.addEventListener('load', function() {
     if (App) {
       App.addListener('appUrlOpen', function(data) {
         var url = data.url || '';
-        // Handle appetyt://city/dallas or https://appetyt.app/city/dallas
+        // Handle dimhour://city/dallas or https://dimhour.com/city/dallas
         var cityMatch = url.match(/city\/([a-z-]+)/i);
         if (cityMatch && cityMatch[1]) {
           var cityName = cityMatch[1].replace(/-/g, ' ').replace(/\b\w/g, function(l) { return l.toUpperCase(); });
@@ -18313,12 +18313,12 @@ window.addEventListener('load', function() {
     if(em>=60){eh++;em-=60;}
     var ed=parseInt(dy,10); if(eh>=24){eh-=24;ed++;}
     var dtEnd = yr+mo+String(ed).padStart(2,'0')+'T'+String(eh).padStart(2,'0')+String(em).padStart(2,'0')+'00';
-    var uid = 'appetyt-'+Date.now()+'-'+Math.random().toString(36).slice(2,9)+'@appetyt.app';
+    var uid = 'dimhour-'+Date.now()+'-'+Math.random().toString(36).slice(2,9)+'@dimhour.com';
     var stamp = new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
-    var desc = 'Party size: '+(partySize||'N/A')+'\\nReserved for '+guestName+' via Appetyt';
+    var desc = 'Party size: '+(partySize||'N/A')+'\\nReserved for '+guestName+' via Dim Hour';
     var escICS = function(s){return s.replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n');};
 
-    var ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Appetyt//Reservation//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH',
+    var ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Dim Hour//Reservation//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH',
       'BEGIN:VEVENT','UID:'+uid,'DTSTAMP:'+stamp,'DTSTART:'+dtStart,'DTEND:'+dtEnd,
       'SUMMARY:Dinner at '+rName, address?'LOCATION:'+escICS(address):'','DESCRIPTION:'+escICS(desc),'STATUS:CONFIRMED',
       'BEGIN:VALARM','TRIGGER:-PT60M','ACTION:DISPLAY','DESCRIPTION:Reminder: Dinner at '+rName+' in 1 hour','END:VALARM',
@@ -18355,7 +18355,7 @@ window.addEventListener('load', function() {
     const dtEnd = dateParts.join('') + 'T' + String(endH).padStart(2,'0') + String(endM).padStart(2,'0') + '00';
 
     const title = 'Dinner at ' + _arRestaurant.name;
-    const details = 'Party size: ' + partySize + '\\nGuest: ' + guestName + '\\nBooked via Appetyt AI';
+    const details = 'Party size: ' + partySize + '\\nGuest: ' + guestName + '\\nBooked via Dim Hour AI';
     const enc = encodeURIComponent;
 
     const url = 'https://calendar.google.com/calendar/render?action=TEMPLATE'

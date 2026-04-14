@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 // Your Apple credentials
 const TEAM_ID = 'X54Q9P743S';
 const KEY_ID = 'K6U288D8KD';
-const CLIENT_ID = 'com.appetyt.web';
+const CLIENT_ID = 'com.dimhour.web';
 
 // Your .p8 private key - paste the FULL contents between the quotes
 const PRIVATE_KEY = `-----BEGIN PRIVATE KEY-----

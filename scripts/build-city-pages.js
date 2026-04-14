@@ -80,10 +80,10 @@ function buildCityPage(city) {
 
   // FAQ
   const faqs = [
-    { q: `What are the best restaurants in ${name}?`, a: `Top restaurants in ${name} include ${top5.map(r => r.name).join(', ')}. Appetyt curates ${data.length}+ ${name} restaurants with scores and reviews.` },
+    { q: `What are the best restaurants in ${name}?`, a: `Top restaurants in ${name} include ${top5.map(r => r.name).join(', ')}. Dim Hour curates ${data.length}+ ${name} restaurants with scores and reviews.` },
     { q: `What are the best brunch spots in ${name}?`, a: `Best brunch in ${name} includes ${(cats['Brunch'] || []).slice(0, 5).map(r => r.name).join(', ')}.` },
     { q: `What are the best date night restaurants in ${name}?`, a: `Top date night spots include ${(cats['Date Night'] || []).slice(0, 5).map(r => r.name).join(', ')}.` },
-    { q: `How many restaurants does Appetyt have in ${name}?`, a: `Appetyt features ${data.length}+ curated restaurants in ${name}, organized by neighborhood, cuisine, and occasion.` },
+    { q: `How many restaurants does Dim Hour have in ${name}?`, a: `Dim Hour features ${data.length}+ curated restaurants in ${name}, organized by neighborhood, cuisine, and occasion.` },
   ];
 
   const otherCities = allCityLinks.filter(c => c.slug !== slug);
@@ -95,28 +95,28 @@ function buildCityPage(city) {
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y37FGSEPXR"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Y37FGSEPXR');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best Restaurants in ${name} 2026 | ${data.length}+ Curated Spots | Appetyt</title>
+<title>Best Restaurants in ${name} 2026 | ${data.length}+ Curated Spots | Dim Hour</title>
 <meta name="description" content="Discover ${data.length}+ best restaurants in ${name} — curated guide with scores, neighborhoods, and categories. Brunch, date night, fine dining, BBQ, bars, and more.">
 <meta name="keywords" content="best restaurants ${name}, ${name} restaurant guide, where to eat ${name}, best brunch ${name}, best date night ${name}, fine dining ${name}, ${name} food guide 2026">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-<link rel="canonical" href="https://appetyt.app/${slug}/">
+<link rel="canonical" href="https://dimhour.com/${slug}/">
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="Appetyt">
-<meta property="og:title" content="${data.length}+ Best Restaurants in ${name} 2026 — Appetyt">
+<meta property="og:site_name" content="Dim Hour">
+<meta property="og:title" content="${data.length}+ Best Restaurants in ${name} 2026 — Dim Hour">
 <meta property="og:description" content="Curated guide to ${data.length}+ ${name} restaurants. Scored, reviewed, organized by neighborhood.">
-<meta property="og:url" content="https://appetyt.app/${slug}/">
-<meta property="og:image" content="https://appetyt.app/icons/icon-512.png">
+<meta property="og:url" content="https://dimhour.com/${slug}/">
+<meta property="og:image" content="https://dimhour.com/icons/icon-512.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${data.length}+ Best Restaurants in ${name} 2026">
-<meta name="twitter:description" content="Curated guide to ${name} restaurants. Scored & reviewed by Appetyt.">
+<meta name="twitter:description" content="Curated guide to ${name} restaurants. Scored & reviewed by Dim Hour.">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"Best Restaurants in ${name} 2026","description":"${data.length}+ curated restaurants in ${name}, scored and reviewed.","url":"https://appetyt.app/${slug}/","numberOfItems":${data.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"${r.score}","bestRating":"100"}}}`).join(',')}]}
+{"@context":"https://schema.org","@type":"ItemList","name":"Best Restaurants in ${name} 2026","description":"${data.length}+ curated restaurants in ${name}, scored and reviewed.","url":"https://dimhour.com/${slug}/","numberOfItems":${data.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"${r.score}","bestRating":"100"}}}`).join(',')}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[${faqs.map(f => `{"@type":"Question","name":"${esc(f.q)}","acceptedAnswer":{"@type":"Answer","text":"${esc(f.a)}"}}`).join(',')}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Appetyt","item":"https://appetyt.app/"},{"@type":"ListItem","position":2,"name":"${name} Restaurants","item":"https://appetyt.app/${slug}/"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Dim Hour","item":"https://dimhour.com/"},{"@type":"ListItem","position":2,"name":"${name} Restaurants","item":"https://dimhour.com/${slug}/"}]}
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -156,7 +156,7 @@ a{color:var(--gold)}
 </head>
 <body>
 <div class="wrap">
-<a href="/" class="back">← Back to Appetyt</a>
+<a href="/" class="back">← Back to Dim Hour</a>
 <h1>Best Restaurants in ${name}</h1>
 <p class="subtitle">${data.length} curated restaurants · Scored & reviewed · 2026 Guide</p>
 
@@ -166,7 +166,7 @@ a{color:var(--gold)}
 <span class="stat">⭐ Avg Score ${Math.round(data.reduce((s, r) => s + r.score, 0) / data.length)}</span>
 </div>
 
-<a href="https://appetyt.app" class="cta">🍽️ Open Interactive Guide</a>
+<a href="https://dimhour.com" class="cta">🍽️ Open Interactive Guide</a>
 
 <div class="tags">
 ${topTags.map(([t, c]) => `<span class="tag">${t} (${c})</span>`).join('\n')}
@@ -190,7 +190,7 @@ ${spots.map(r => `<div class="r"><div><div class="rn">${esc(r.name)}</div><div c
 </details>`).join('\n')}
 
 <div style="text-align:center;margin:32px 0">
-<a href="https://appetyt.app" class="cta">🍽️ Explore the Full Interactive Guide</a>
+<a href="https://dimhour.com" class="cta">🍽️ Explore the Full Interactive Guide</a>
 </div>
 
 <h2>Explore More Cities</h2>
@@ -198,7 +198,7 @@ ${spots.map(r => `<div class="r"><div><div class="rn">${esc(r.name)}</div><div c
 ${otherCities.map(c => `<a href="/${c.slug}/" class="city-link">${c.name}</a>`).join('\n')}
 </div>
 
-<p style="margin-top:32px;font-size:13px;color:var(--text3)">Appetyt curates the best restaurants across America. Every restaurant is scored based on food quality, service, ambiance, and value. Updated weekly. <a href="https://appetyt.app">Explore the full guide →</a></p>
+<p style="margin-top:32px;font-size:13px;color:var(--text3)">Dim Hour curates the best restaurants across America. Every restaurant is scored based on food quality, service, ambiance, and value. Updated weekly. <a href="https://dimhour.com">Explore the full guide →</a></p>
 </div>
 </body>
 </html>`;

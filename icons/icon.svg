@@ -14,7 +14,7 @@
   <!-- Dark background (iOS masks to squircle automatically) -->
   <rect width="1024" height="1024" fill="url(#bg)"/>
 
-  <!-- Bold italic "A" lettermark — matches the Appetyt brand wordmark -->
+  <!-- Bold italic "A" lettermark — matches the Dim Hour brand wordmark -->
   <text x="512" y="540" text-anchor="middle" dominant-baseline="central"
         font-family="Georgia, 'Times New Roman', serif"
         font-size="680" font-weight="bold" font-style="italic"
