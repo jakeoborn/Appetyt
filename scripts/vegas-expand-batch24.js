@@ -1,0 +1,49 @@
+// Vegas Batch 24 — Per-casino dining gaps (verified via Yelp/official sites April 2026)
+const fs = require('fs');
+let html = fs.readFileSync('index.html','utf8');
+const marker = 'const LV_DATA=';
+const p = html.indexOf(marker);
+const arrS = html.indexOf('[', p);
+let d=0, arrE=arrS;
+for(let j=arrS;j<html.length;j++){if(html[j]==='[')d++;if(html[j]===']'){d--;if(d===0){arrE=j+1;break;}}}
+let arr = JSON.parse(html.substring(arrS, arrE));
+console.log('Starting Vegas:', arr.length);
+const maxId = Math.max(...arr.map(r=>r.id));
+let nextId = maxId + 1;
+const existing = new Set(arr.map(r=>r.name.toLowerCase()));
+let added = 0;
+
+function add(s){
+  if(existing.has(s.name.toLowerCase())){ console.log('SKIP:', s.name); return; }
+  s.id=nextId++;s.bestOf=[];s.busyness=null;s.waitTime=null;s.popularTimes=null;s.lastUpdated=null;s.trending=s.trending||false;s.group=s.group||'';s.suburb=s.suburb||false;s.menuUrl='';s.res_tier=s.price>=3?4:2;s.indicators=s.indicators||[];s.awards=s.awards||'';s.phone=s.phone||'';s.reserveUrl='';s.hh='';s.verified=true;s.hours=s.hours||'';
+  arr.push(s);existing.add(s.name.toLowerCase());added++;
+}
+
+add({name:"Bugsy & Meyer's Steakhouse",cuisine:"Steakhouse",neighborhood:"The Strip (Flamingo)",score:89,price:4,tags:["Steakhouse","Date Night","Iconic","Celebrations","Cocktails"],description:"Vintage-glam steakhouse paying tribute to Flamingo founders Bugsy Siegel and Meyer Lansky. Hidden rum room speakeasy, dry-aged prime cuts, and an old-school Vegas supper-club vibe. A rare Strip steakhouse with a real story.",dishes:["Dry-Aged Ribeye","Rum Room Speakeasy","Seafood Tower"],address:"3555 Las Vegas Blvd S, Las Vegas, NV 89109",lat:36.1162,lng:-115.1722,instagram:"bugsymeyerslv",website:"https://www.caesars.com/flamingo-las-vegas/restaurants/bugsy-and-meyers-steakhouse",reservation:"OpenTable",phone:"(702) 733-3111",hours:"Wed-Sun 4PM-10PM, Closed Mon-Tue"});
+
+add({name:"Primrose",cuisine:"New American / French",neighborhood:"The Strip (Park MGM)",score:89,price:3,tags:["New American","Brunch","Date Night","Scenic","Patio"],description:"Park MGM's Provence-inspired all-day restaurant. Pastel patio with fire features and a lush garden. Big wood-fired pizza menu, strong brunch, and one of the Strip's most photogenic outdoor dining rooms.",dishes:["Wood-Fired Pizza","Brunch Plateau","Rosé on Tap"],address:"3770 Las Vegas Blvd S, Las Vegas, NV 89109",lat:36.1057,lng:-115.1758,instagram:"primroselv",website:"https://parkmgm.mgmresorts.com/en/restaurants/primrose.html",reservation:"OpenTable",phone:"(702) 730-6600",hours:"Daily 7AM-2PM"});
+
+add({name:"Best Friend by Roy Choi",cuisine:"Korean / Korean-Mexican",neighborhood:"The Strip (Park MGM)",score:90,price:3,tags:["Korean","Critics Pick","Date Night","Iconic","Celebrations"],description:"Roy Choi's Vegas concept at Park MGM — part restaurant, part speakeasy bodega. Korean BBQ, ssam platters, Kogi short-rib tacos, and a hidden mini-market entry. A nightly bucket-list for Koreatown LA fans.",dishes:["Kogi Short Rib Tacos","Ssam Platters","Hidden Bodega Bar"],address:"3770 S Las Vegas Blvd, Las Vegas, NV 89109",lat:36.1057,lng:-115.1758,instagram:"bestfriendvegas",website:"https://bestfriendrestaurant.com",reservation:"OpenTable",phone:"(702) 730-6770",hours:"Mon-Thu,Sun 4PM-11PM, Fri-Sat 4PM-12AM"});
+
+add({name:"Eataly Las Vegas",cuisine:"Italian / Food Hall",neighborhood:"The Strip (Park MGM)",score:88,price:2,tags:["Italian","Food Hall","Casual","Family Friendly","Brunch","Critics Pick"],description:"Eataly's Vegas flagship at Park MGM — 40,000 sq ft of Italian market, counters, sit-down restaurants (La Pizza & La Pasta, Manzo), fresh pasta, espresso, gelato, and a wine shop. All day, every day.",dishes:["La Pizza & La Pasta","Fresh Mozzarella Bar","Manzo Steakhouse"],address:"3770 S Las Vegas Blvd, Las Vegas, NV 89109",lat:36.1057,lng:-115.1758,instagram:"eatalylasvegas",website:"https://www.eataly.com/us_en/stores/las-vegas",reservation:"OpenTable",phone:"(702) 730-7777",hours:"Daily 7AM-11PM"});
+
+add({name:"Momofuku",cuisine:"Asian / New American",neighborhood:"The Strip (The Cosmopolitan)",score:90,price:3,tags:["Asian","Critics Pick","Date Night","Celebrations","Cocktails"],description:"David Chang's Vegas outpost at The Cosmopolitan. Signature pork buns, spicy ramen, Korean-inspired rice bowls, and a robust cocktail program. Level 2 dining with great bar seating for walk-ins.",dishes:["Pork Buns","Spicy Noodles","Fried Chicken"],address:"3708 Las Vegas Blvd S Level 2, Las Vegas, NV 89109",lat:36.1099,lng:-115.1738,instagram:"momofukulv",website:"https://www.momofuku.com/restaurants/las-vegas",reservation:"Resy",phone:"(702) 698-2663",hours:"Mon-Thu 11AM-3PM & 5PM-10PM, Fri-Sat til 11PM, Sun til 10PM"});
+
+add({name:"é by José Andrés",cuisine:"Spanish / Tasting Menu",neighborhood:"The Strip (The Cosmopolitan)",score:95,price:4,tags:["Spanish","Fine Dining","Critics Pick","Date Night","Celebrations","Iconic","Chef Table"],description:"José Andrés's 8-seat hidden counter inside Jaleo — a Forbes 5-star, AAA 5-Diamond, Michelin-historic tasting-menu experience. 20+ courses of modernist Spanish cuisine served twice nightly. Reservations weeks out.",dishes:["Modernist Tasting Menu","Liquid Olives","Hand-Carved Iberico"],address:"3708 Las Vegas Blvd S, Las Vegas, NV 89109",lat:36.1099,lng:-115.1738,instagram:"ebyjoseandres",website:"https://www.ebyjoseandres.com",reservation:"Tock",phone:"(702) 698-7950",hours:"Tue-Sun 5:30PM & 8:30PM seatings, Closed Mon",awards:"Forbes 5-Star, AAA 5-Diamond"});
+
+add({name:"Strip House",cuisine:"Steakhouse",neighborhood:"The Strip (Planet Hollywood)",score:88,price:4,tags:["Steakhouse","Date Night","Iconic","Celebrations","Cocktails"],description:"Bold red-flocked bordello-inspired steakhouse on the Planet Hollywood Mezzanine. Dry-aged prime steaks, goose-fat potatoes, and the iconic 24-layer chocolate cake. A longtime Strip classic.",dishes:["24-Layer Chocolate Cake","Goose-Fat Potatoes","Dry-Aged Ribeye"],address:"3667 Las Vegas Blvd S, Las Vegas, NV 89109",lat:36.1094,lng:-115.1708,instagram:"striphouselv",website:"https://www.striphouse.com/location/striphouse-las-vegas",reservation:"OpenTable",phone:"(702) 737-5200",hours:"Mon-Thu,Sun 5PM-10PM, Fri-Sat 5PM-11PM"});
+
+add({name:"Phil's Italian Steak House",cuisine:"Italian / Steakhouse",neighborhood:"The Strip (Treasure Island)",score:87,price:3,tags:["Italian","Steakhouse","Date Night","Local Favorites"],description:"Treasure Island's Italian-steakhouse hybrid — Phil Ruffin's family restaurant serving classic chops, veal, and red-sauce staples. A Strip alternative for old-school Italian-American comfort.",dishes:["Veal Parmigiana","Bone-In Ribeye","Classic Red Sauce"],address:"3300 Las Vegas Blvd S, Las Vegas, NV 89109",lat:36.1243,lng:-115.1677,instagram:"",website:"https://treasureisland.com/restaurants/phils-steak-house",reservation:"OpenTable",phone:"(702) 894-7351",hours:"Daily 5PM-10PM"});
+
+add({name:"Gilley's Saloon, Dance Hall & Bar-B-Que",cuisine:"BBQ / Saloon",neighborhood:"The Strip (Treasure Island)",score:85,price:2,tags:["BBQ","Live Music","Casual","Late Night","Iconic"],description:"Treasure Island's honky-tonk saloon — mechanical bull, line dancing, country bands, and a full smoked BBQ menu. A slice of Texas on the Strip.",dishes:["Smoked Brisket","Mechanical Bull","Line Dancing"],address:"3300 Las Vegas Blvd S, Las Vegas, NV 89109",lat:36.1243,lng:-115.1677,instagram:"gilleysvegas",website:"https://gilleyslasvegas.com",reservation:"walk-in",phone:"(702) 894-7111",hours:"Sun-Thu 12PM-12AM, Fri-Sat 12PM-2AM"});
+
+add({name:"Tender Steakhouse",cuisine:"Steakhouse / Seafood",neighborhood:"The Strip (Luxor)",score:85,price:3,tags:["Steakhouse","Seafood","Date Night","Celebrations"],description:"Luxor's classic steakhouse and lounge — USDA prime cuts, fresh seafood, and a full lounge with live music. An under-the-radar mid-Strip steakhouse option.",dishes:["Prime Ribeye","Seafood Tower","Live Lounge Music"],address:"3900 Las Vegas Blvd S, Las Vegas, NV 89119",lat:36.0955,lng:-115.1761,instagram:"tenderluxor",website:"https://luxor.mgmresorts.com/en/restaurants/tender-steakhouse-lounge.html",reservation:"OpenTable",phone:"(702) 262-4778",hours:"Tue-Sat 5PM-10PM, Closed Sun-Mon"});
+
+add({name:"Hugo's Cellar",cuisine:"American / Classic",neighborhood:"Downtown (Four Queens)",score:89,price:3,tags:["American","Iconic","Date Night","Celebrations"],description:"Downtown's time-capsule basement steakhouse — since 1976 at Four Queens. Tableside Caesar, ladies receive a rose at the door, and a cellar that still feels like 1970s Vegas. A pilgrimage for old-Vegas romantics.",dishes:["Tableside Caesar","Rose for Ladies","Classic Beef Wellington"],address:"202 Fremont St, Las Vegas, NV 89101",lat:36.1693,lng:-115.1445,instagram:"hugoscellar",website:"https://www.fourqueens.com/dining/hugos_cellar",reservation:"OpenTable",phone:"(702) 385-4011",hours:"Daily 5PM-10PM"});
+
+add({name:"Oscar's Steakhouse",cuisine:"Steakhouse",neighborhood:"Downtown (Plaza Hotel)",score:88,price:3,tags:["Steakhouse","Iconic","Date Night","Scenic","Celebrations"],description:"Named for former Vegas mayor Oscar Goodman. Glass-domed dining room overlooking Fremont Street, classic martinis, and prime steaks. A Downtown Vegas landmark with a real Mob-era hook.",dishes:["Dry-Aged Ribeye","Oscar's Martini","Glass Dome Views"],address:"1 Main St, Las Vegas, NV 89101",lat:36.1717,lng:-115.1465,instagram:"oscarssteakhouse",website:"https://www.oscarslv.com",reservation:"OpenTable",phone:"(702) 386-7227",hours:"Daily 5PM-10PM"});
+
+console.log('Added', added, 'new Vegas spots. Total:', arr.length);
+html = html.substring(0, arrS) + JSON.stringify(arr) + html.substring(arrE);
+fs.writeFileSync('index.html', html, 'utf8');
+console.log('Vegas batch 24 complete!');

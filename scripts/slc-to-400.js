@@ -1,0 +1,97 @@
+// SLC → 400
+const fs = require('fs');
+let html = fs.readFileSync('index.html','utf8');
+const m = 'const SLC_DATA=';
+const p = html.indexOf(m);
+const arrS = html.indexOf('[', p);
+let d=0, arrE=arrS;
+for(let j=arrS;j<html.length;j++){if(html[j]==='[')d++;if(html[j]===']'){d--;if(d===0){arrE=j+1;break;}}}
+let arr = JSON.parse(html.substring(arrS, arrE));
+console.log('Starting SLC:', arr.length);
+const maxId = Math.max(...arr.map(r=>r.id));
+let nextId = maxId + 1;
+const existing = new Set(arr.map(r=>r.name.toLowerCase()));
+let added = 0;
+function add(s){
+  if(existing.has(s.name.toLowerCase())){return;}
+  s.id=nextId++;s.bestOf=[];s.busyness=null;s.waitTime=null;s.popularTimes=null;s.lastUpdated=null;s.trending=s.trending||false;s.group=s.group||'';s.suburb=s.suburb||false;s.menuUrl='';s.res_tier=s.price>=3?4:2;s.indicators=s.indicators||[];s.awards=s.awards||'';s.phone=s.phone||'';s.reserveUrl=s.reserveUrl||'';s.hh=s.hh||'';s.verified=true;
+  arr.push(s);existing.add(s.name.toLowerCase());added++;
+}
+
+// More SLC area restaurants sourced from Gastronomic SLC, City Weekly, Salt Lake Magazine
+add({name:"La Caille",cuisine:"French Fine Dining",neighborhood:"Sandy (Little Cottonwood Canyon)",score:90,price:4,tags:["French","Fine Dining","Celebrations","Scenic","Iconic"],description:"Utah Best French Restaurant celebrating its 50th anniversary at the mouth of Little Cottonwood Canyon. Over-the-top elegance with French cuisine in a chateau-like setting with gardens and ponds.",dishes:["French Tasting Menu","Chateaubriand","Garden Views"],address:"9565 Wasatch Blvd, Sandy, UT 84092",hours:"",lat:40.5732,lng:-111.7838,instagram:"lacailleslc",website:"https://www.lacaille.com",reservation:"OpenTable",phone:"(801) 942-1751",suburb:true});
+
+add({name:"Franck's",cuisine:"French Fine Dining",neighborhood:"Cottonwood Heights",score:89,price:3,tags:["French","Fine Dining","Date Night","Celebrations"],description:"Fine dining in Cottonwood Heights with creative and innovative menu under chefs Adam Vickers and Robert Perkins. One of Utah most refined French restaurants.",dishes:["French Tasting","Seasonal Menu","Wine Pairing"],address:"6263 S Highland Dr, Cottonwood Heights, UT 84121",hours:"",lat:40.6264,lng:-111.8609,instagram:"francksslc",website:"",reservation:"OpenTable",phone:"",suburb:true});
+
+add({name:"R&R BBQ",cuisine:"BBQ",neighborhood:"Multiple Locations",score:87,price:1,tags:["BBQ","Casual","Local Favorites","Family"],description:"Masters of slow-smoked meats. Brisket, pork, and ribs that melt in every bite plus soul-comforting sides. Multiple Utah locations.",dishes:["Brisket","Ribs","Pulled Pork"],address:"2125 S State St, Salt Lake City, UT 84115",hours:"",lat:40.7217,lng:-111.8881,instagram:"randrbbq",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Basta Pasteria",cuisine:"Italian / Fresh Pasta",neighborhood:"Murray",score:86,price:1,tags:["Italian","Casual","Local Favorites"],description:"Fresh handcrafted Italian pasta in a fast-casual setting. Locations in Murray and Draper. Quality pasta at accessible prices.",dishes:["Fresh Pasta","Italian Sauces","Quick Italian"],address:"5300 S Murray Park Ln, Murray, UT 84107",hours:"",lat:40.6506,lng:-111.8900,instagram:"bastapasteria",website:"https://www.bastapasteriaut.com",reservation:"walk-in",phone:"",suburb:true});
+
+add({name:"Aroon Thai",cuisine:"Thai",neighborhood:"Cottonwood Heights",score:87,price:1,tags:["Thai","Local Favorites","Casual"],description:"Thai restaurant with a new location in Cottonwood Heights, well-regarded with excellent reviews. Authentic Thai curries and noodle dishes.",dishes:["Green Curry","Pad Thai","Thai Noodles"],address:"6405 S 3000 E, Cottonwood Heights, UT 84121",hours:"",lat:40.6264,lng:-111.8123,instagram:"aroonthaiut",website:"",reservation:"walk-in",phone:"",suburb:true});
+
+add({name:"Tuk Tuks Thai",cuisine:"Thai",neighborhood:"Marmalade",score:86,price:1,tags:["Thai","Local Favorites","Casual"],description:"Thai food with deeply aromatic curries and bold flavors. Multiple locations including Marmalade, West Valley, and Draper.",dishes:["Thai Curry","Pad See Ew","Som Tum"],address:"445 N 300 W, Salt Lake City, UT 84103",hours:"",lat:40.7726,lng:-111.8970,instagram:"tuktuksut",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Protein Foundry",cuisine:"Health-Focused",neighborhood:"Cottonwood Heights",score:85,price:1,tags:["Healthy","Casual","Local Favorites"],description:"Healthy food alternatives in Cottonwood Heights. Gourmet toasts, protein shakes, acai and pitaya bowls. A fitness-focused dining option.",dishes:["Gourmet Toasts","Protein Shakes","Acai Bowls"],address:"6949 S Highland Dr, Cottonwood Heights, UT 84121",hours:"",lat:40.6156,lng:-111.8609,instagram:"proteinfoundry",website:"",reservation:"walk-in",phone:"",suburb:true});
+
+add({name:"Kouklas Greek Eatery",cuisine:"Greek",neighborhood:"Niles (Suburban)",score:86,price:1,tags:["Greek","Casual","Local Favorites"],description:"Contemporary Greek dishes crafted with open-fire cooking techniques. Fresh pita, kebabs, and Greek salads.",dishes:["Greek Kebabs","Fresh Pita","Open-Fire Dishes"],address:"950 E 3300 S, Salt Lake City, UT 84106",hours:"",lat:40.7003,lng:-111.8663,instagram:"kouklasgreek",website:"",reservation:"walk-in",phone:"",suburb:true});
+
+add({name:"Copper Common Bar",cuisine:"Cocktail Bar",neighborhood:"Downtown",score:87,price:2,tags:["Cocktails","Date Night","Local Favorites"],description:"Cozy cocktail bar in downtown SLC with some of the best mixologists in town. Intimate, warm, and perfect for pre-dinner cocktails.",dishes:["Craft Cocktails","Whiskey","Bar Snacks"],address:"111 E Broadway, Salt Lake City, UT 84111",hours:"",lat:40.7585,lng:-111.8873,instagram:"coppercommon",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Prohibition Bar",cuisine:"Speakeasy / Cocktail Bar",neighborhood:"Downtown",score:86,price:2,tags:["Cocktails","Speakeasy","Date Night","Live Music"],description:"Prohibition-era themed speakeasy in downtown SLC with live jazz, craft cocktails, and a hidden entrance. One of SLC original craft cocktail bars.",dishes:["Speakeasy Cocktails","Live Jazz","Vintage Vibes"],address:"151 E 6100 S, Murray, UT 84107",hours:"",lat:40.6437,lng:-111.8856,instagram:"prohibitionut",website:"",reservation:"walk-in",phone:"",suburb:true});
+
+add({name:"Nohm",cuisine:"Japanese Izakaya",neighborhood:"Downtown",score:88,price:2,tags:["Japanese","Cocktails","Date Night","Local Favorites"],description:"Chef David Chon izakaya in downtown SLC. Creative small plates, craft cocktails, and Japanese-inspired dishes. 21+ only. One of SLC most exciting dining spots.",dishes:["Izakaya Small Plates","Sake","Japanese Cocktails"],address:"171 E 200 S, Salt Lake City, UT 84111",hours:"",lat:40.7637,lng:-111.8856,instagram:"barnohmslc",website:"",reservation:"Resy",phone:""});
+
+add({name:"Caffe Niche Avenues",cuisine:"New American / Cafe",neighborhood:"The Avenues",score:86,price:2,tags:["New American","Brunch","Local Favorites"],description:"Avenues location of the popular Cafe Niche. Seasonal New American with a neighborhood feel in the historic Avenues district.",dishes:["Seasonal Menu","Weekend Brunch","Small Plates"],address:"1327 S 1700 E, Salt Lake City, UT 84108",hours:"",lat:40.7378,lng:-111.8483,instagram:"cafeniche",website:"",reservation:"OpenTable",phone:""});
+
+add({name:"Garage on Beck",cuisine:"New American / Bar",neighborhood:"Marmalade",score:86,price:2,tags:["New American","Cocktails","Local Favorites","Patio"],description:"Converted garage in the Marmalade neighborhood turned restaurant and bar. Creative New American food and cocktails with a fun, eclectic atmosphere.",dishes:["New American Plates","Craft Cocktails","Patio"],address:"1199 Beck St, Salt Lake City, UT 84103",hours:"",lat:40.7834,lng:-111.9001,instagram:"garageonbeck",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Tradition",cuisine:"New American",neighborhood:"Downtown",score:87,price:2,tags:["New American","Date Night","Local Favorites"],description:"New American restaurant downtown with creative seasonal dishes and a thoughtful cocktail program. Quality ingredients and refined technique.",dishes:["Seasonal American","Craft Cocktails","Wine Selection"],address:"135 S State St, Salt Lake City, UT 84111",hours:"",lat:40.7645,lng:-111.8881,instagram:"traditionslc",website:"",reservation:"Resy",phone:""});
+
+add({name:"Ivy and the Wren",cuisine:"Cocktail Bar / Small Plates",neighborhood:"Downtown",score:86,price:2,tags:["Cocktails","Date Night","Local Favorites"],description:"Cocktail bar with creative small plates in downtown SLC. Intimate atmosphere and inventive drinks.",dishes:["Creative Cocktails","Small Plates","Wine"],address:"170 S West Temple, Salt Lake City, UT 84101",hours:"",lat:40.7641,lng:-111.8914,instagram:"ivyandthewren",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Whiskey Street",cuisine:"American / Whiskey Bar",neighborhood:"Downtown",score:85,price:2,tags:["Cocktails","Casual","Local Favorites","Late Night"],description:"Downtown whiskey bar with over 300 whiskeys and elevated American bar food. One of the busiest bars on Main Street.",dishes:["Whiskey Selection","Bar Food","Late Night"],address:"323 S Main St, Salt Lake City, UT 84111",hours:"",lat:40.7617,lng:-111.8910,instagram:"whiskeystreet",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Gracie's",cuisine:"American / Bar",neighborhood:"Downtown",score:85,price:1,tags:["Casual","Live Music","Local Favorites","Late Night"],description:"Downtown bar with live music, cocktails, and a rooftop patio. One of SLC most popular nightlife spots with a fun energy.",dishes:["Bar Food","Cocktails","Rooftop Patio"],address:"326 S West Temple, Salt Lake City, UT 84101",hours:"",lat:40.7614,lng:-111.8914,instagram:"graciesslc",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Pago Downtown",cuisine:"New American / Farm-to-Table",neighborhood:"Downtown",score:88,price:2,tags:["New American","Farm-to-Table","Date Night","Brunch","Critics Pick"],description:"Downtown location of the acclaimed Pago featuring farm-to-table New American with local sourcing. Fresh oysters, seasonal mains, and an excellent wine program.",dishes:["Farm-to-Table","Fresh Oysters","Seasonal Menu"],address:"51 S Main St, Salt Lake City, UT 84111",hours:"",lat:40.7668,lng:-111.8910,instagram:"pagoslc",website:"",reservation:"Resy",phone:""});
+
+add({name:"Tsunami",cuisine:"Sushi / Asian Fusion",neighborhood:"Sugar House",score:86,price:2,tags:["Sushi","Asian Fusion","Local Favorites","Casual"],description:"Sushi and Asian fusion in Sugar House with creative rolls and a fun atmosphere. Multiple Utah locations. The specialty rolls are inventive.",dishes:["Specialty Sushi Rolls","Asian Fusion","Sake"],address:"1429 S 1500 E, Salt Lake City, UT 84105",hours:"",lat:40.7396,lng:-111.8542,instagram:"tsunamirestaurant",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Bruges Holladay",cuisine:"Belgian / Waffles",neighborhood:"Holladay",score:85,price:1,tags:["Belgian","Casual","Local Favorites"],description:"Holladay location of the beloved Belgian waffle and frites spot. Same great Liege waffles and double-fried frites.",dishes:["Liege Waffle","Belgian Frites","Dipping Sauces"],address:"4594 S Highland Dr, Holladay, UT 84117",hours:"",lat:40.6810,lng:-111.8609,instagram:"brugesslc",website:"",reservation:"walk-in",phone:"",suburb:true});
+
+add({name:"Rye Avenues",cuisine:"American Bistro",neighborhood:"The Avenues",score:87,price:2,tags:["New American","Cocktails","Date Night","Local Favorites"],description:"Avenues location of the popular American bistro. Refined comfort food and strong cocktails in a cozy neighborhood setting.",dishes:["Fried Chicken","Rye Burger","Craft Cocktails"],address:"274 E 2nd Ave, Salt Lake City, UT 84103",hours:"",lat:40.7727,lng:-111.8825,instagram:"ryeslc",website:"",reservation:"OpenTable",phone:""});
+
+add({name:"The Dodo",cuisine:"American / Family",neighborhood:"Sugar House",score:85,price:2,tags:["American","Family","Brunch","Local Favorites"],description:"Sugar House family restaurant institution. Great for Sunday brunch and family dinners. Classic American fare in a comfortable setting.",dishes:["Brunch","American Comfort","Family Plates"],address:"1355 E 2100 S, Salt Lake City, UT 84105",hours:"",lat:40.7217,lng:-111.8596,instagram:"thedodoslc",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Skewered Thai",cuisine:"Thai",neighborhood:"Downtown",score:86,price:1,tags:["Thai","Casual","Local Favorites"],description:"Thai restaurant in downtown SLC with satay skewers and traditional Thai dishes. Quick lunch option with quality thai food.",dishes:["Satay Skewers","Pad Thai","Thai Curry"],address:"247 S State St, Salt Lake City, UT 84111",hours:"",lat:40.7625,lng:-111.8881,instagram:"",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Pretty Bird Trolley Square",cuisine:"Fried Chicken",neighborhood:"Trolley Square",score:87,price:1,tags:["Fried Chicken","Casual","Local Favorites"],description:"Trolley Square location of the popular Nashville hot chicken concept. Same crispy, juicy, properly spicy hot chicken sandwich.",dishes:["Nashville Hot Chicken","Fried Chicken Sandwich","Coleslaw"],address:"600 S 700 E, Salt Lake City, UT 84102",hours:"",lat:40.7544,lng:-111.8716,instagram:"prettybirdchicken",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Red Rock Brewing Co.",cuisine:"Brewpub",neighborhood:"Downtown",score:85,price:1,tags:["Craft Beer","Casual","Local Favorites","Family"],description:"Downtown SLC brewpub with award-winning house beers and a solid pub food menu. One of Utah original craft brewing pioneers.",dishes:["House-Brewed Beer","Pub Food","Beer Flights"],address:"254 S 200 W, Salt Lake City, UT 84101",hours:"",lat:40.7635,lng:-111.8937,instagram:"redrockbrewing",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Horn of the Moon",cuisine:"American / Coffee",neighborhood:"Central 9th",score:85,price:1,tags:["Bakery/Coffee","Casual","Local Favorites"],description:"Coffeehouse and cafe in the Central 9th district. Good coffee, light bites, and a neighborhood hangout vibe.",dishes:["Coffee","Light Bites","Pastries"],address:"900 S 200 W, Salt Lake City, UT 84101",hours:"",lat:40.7479,lng:-111.8937,instagram:"hornofthemoon",website:"",reservation:"walk-in",phone:""});
+
+add({name:"SLC Farmhouse Market",cuisine:"Market / Cafe",neighborhood:"Downtown",score:85,price:1,tags:["Bakery/Coffee","Healthy","Local Favorites"],description:"Farm-focused market and cafe in downtown SLC with local produce, artisan goods, and prepared foods. Great for picking up quality ingredients or a quick healthy meal.",dishes:["Farm-Fresh Lunch","Local Produce","Artisan Goods"],address:"455 S 300 E, Salt Lake City, UT 84111",hours:"",lat:40.7594,lng:-111.8814,instagram:"slcfarmhouse",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Sawadee Thai",cuisine:"Thai",neighborhood:"Downtown",score:86,price:1,tags:["Thai","Casual","Local Favorites"],description:"Downtown Thai with authentic dishes and great lunch specials. Reliable and consistent Thai food at fair prices.",dishes:["Pad Thai","Green Curry","Lunch Specials"],address:"56 E 1300 S, Salt Lake City, UT 84115",hours:"",lat:40.7389,lng:-111.8877,instagram:"",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Via Veneto Draper",cuisine:"Roman Pizza",neighborhood:"Draper",score:85,price:1,tags:["Pizza","Italian","Casual","Local Favorites"],description:"Draper location of the Roman-style pizza al taglio. Same rectangular slices sold by weight.",dishes:["Pizza al Taglio","Roman Slices","Italian Sodas"],address:"12300 Draper Trail Dr, Draper, UT 84020",hours:"",lat:40.5247,lng:-111.8638,instagram:"viaveneto.slc",website:"",reservation:"walk-in",phone:"",suburb:true});
+
+add({name:"Caputo's Holladay",cuisine:"Italian Deli / Market",neighborhood:"Holladay",score:87,price:1,tags:["Italian","Deli","Local Favorites"],description:"Holladay location of the beloved Italian deli. Same great muffuletta and specialty Italian products.",dishes:["Muffuletta","Italian Specialty Items","Charcuterie"],address:"4699 S Holladay Blvd, Holladay, UT 84117",hours:"",lat:40.6810,lng:-111.8225,instagram:"caputosdeli",website:"",reservation:"walk-in",phone:"",suburb:true});
+
+add({name:"Feldman's Cottonwood",cuisine:"Jewish Deli",neighborhood:"Cottonwood Heights",score:86,price:1,tags:["Deli","Brunch","Local Favorites"],description:"Cottonwood Heights location of Feldman's with the same towering sandwiches and matzo ball soup.",dishes:["Pastrami Sandwich","Matzo Ball Soup","Latkes"],address:"6916 S Highland Dr, Cottonwood Heights, UT 84121",hours:"",lat:40.6156,lng:-111.8609,instagram:"feldmansdeli",website:"",reservation:"walk-in",phone:"",suburb:true});
+
+add({name:"Even Stevens South",cuisine:"Sandwiches",neighborhood:"Sugar House",score:85,price:1,tags:["Casual","Local Favorites","Family"],description:"Sugar House location of the Utah sandwich chain that donates a sandwich for every one purchased.",dishes:["Signature Sandwiches","Soups","Salads"],address:"2109 S 700 E, Salt Lake City, UT 84106",hours:"",lat:40.7217,lng:-111.8716,instagram:"evenstevens",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Squatter's Airport",cuisine:"Brewpub",neighborhood:"SLC Airport",score:85,price:1,tags:["Craft Beer","Casual"],description:"Airport location of the Utah craft beer pioneer. Perfect for a pre-flight beer and pub meal.",dishes:["Craft Beer","Pub Food","Airport Dining"],address:"SLC International Airport, Salt Lake City, UT 84116",hours:"",lat:40.7884,lng:-111.9788,instagram:"squatterspub",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Cafe Madrid",cuisine:"Spanish",neighborhood:"Downtown",score:86,price:2,tags:["Spanish","Tapas","Date Night","Local Favorites"],description:"Spanish tapas and paella in downtown SLC. Authentic Spanish dishes with a good wine list. One of the few Spanish restaurants in Utah.",dishes:["Paella","Tapas","Spanish Wine"],address:"2080 E 3900 S, Salt Lake City, UT 84124",hours:"",lat:40.6869,lng:-111.8536,instagram:"cafemadridutah",website:"",reservation:"OpenTable",phone:"",suburb:true});
+
+add({name:"Nomad Eatery",cuisine:"Mediterranean",neighborhood:"9th & 9th",score:86,price:2,tags:["Mediterranean","Date Night","Local Favorites"],description:"Mediterranean restaurant in the 9th and 9th area with quality shawarma, hummus, and kebabs.",dishes:["Shawarma","Hummus","Kebabs"],address:"1675 E 1300 S, Salt Lake City, UT 84105",hours:"",lat:40.7389,lng:-111.8563,instagram:"nomadeatery",website:"",reservation:"walk-in",phone:""});
+
+add({name:"Copper Kitchen",cuisine:"American / Brunch",neighborhood:"Downtown",score:86,price:1,tags:["Brunch","Casual","Local Favorites"],description:"Downtown breakfast and brunch spot with hearty morning dishes. The chilaquiles and breakfast burritos are excellent.",dishes:["Chilaquiles","Breakfast Burrito","Brunch Plates"],address:"51 S Main St, Salt Lake City, UT 84111",hours:"",lat:40.7668,lng:-111.8910,instagram:"copperkitchenslc",website:"",reservation:"walk-in",phone:""});
+
+console.log('Added', added, 'new SLC spots. Total:', arr.length);
+html = html.substring(0, arrS) + JSON.stringify(arr) + html.substring(arrE);
+fs.writeFileSync('index.html', html, 'utf8');
+console.log('SLC to 400 complete!');
