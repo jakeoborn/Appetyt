@@ -69,7 +69,7 @@ addEntry('LV_DATA', makeEntry({
   id: 12523,
   name: 'Orla',
   cuisine: 'Mediterranean',
-  neighborhood: 'Mandalay Bay',
+  neighborhood: 'The Strip (Mandalay Bay)',
   score: 87,
   price: 4,
   tags: ['Mediterranean', 'Seafood', 'Date Night', 'Celebrity Chef', 'New'],
