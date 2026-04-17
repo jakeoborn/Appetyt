@@ -492,7 +492,7 @@
     },
     {
       "name": "Downtown",
-      "count": 78
+      "count": 62
     },
     {
       "name": "North Austin",
@@ -523,6 +523,10 @@
       "count": 14
     },
     {
+      "name": "6th Street",
+      "count": 11
+    },
+    {
       "name": "Zilker",
       "count": 10
     },
@@ -549,6 +553,10 @@
     {
       "name": "Clarksville",
       "count": 6
+    },
+    {
+      "name": "Red River",
+      "count": 5
     },
     {
       "name": "Lockhart",
