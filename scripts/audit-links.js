@@ -14,23 +14,22 @@ function parseArray(tag) {
   const s = indexHtml.indexOf(tag); if (s === -1) return [];
   const a = indexHtml.indexOf('[', s); let d = 0, e = a;
   for (let i = a; i < indexHtml.length; i++) { if (indexHtml[i] === '[') d++; if (indexHtml[i] === ']') d--; if (d === 0) { e = i + 1; break; } }
-  try { return JSON.parse(indexHtml.slice(a, e)); } catch(e) { return []; }
-}
-function parseChicago() {
-  const ci = indexHtml.indexOf("'Chicago': [", indexHtml.indexOf('const CITY_DATA'));
-  if (ci === -1) return [];
-  const ca = indexHtml.indexOf('[', ci + 10); let d = 0, e = ca;
-  for (let i = ca; i < indexHtml.length; i++) { if (indexHtml[i] === '[') d++; if (indexHtml[i] === ']') d--; if (d === 0) { e = i + 1; break; } }
-  try { return JSON.parse(indexHtml.slice(ca, e)); } catch(e) { return []; }
+  const slice = indexHtml.slice(a, e);
+  try { return JSON.parse(slice); } catch (e1) {
+    // Fallback for JS object literal (NYC_DATA with unquoted keys)
+    try { return (new Function('return ' + slice))(); } catch (e2) { return []; }
+  }
 }
 
 const cities = [
-  { name: 'Dallas', data: parseArray('const DALLAS_DATA') },
-  { name: 'NYC', data: parseArray('const NYC_DATA') },
+  { name: 'Dallas',  data: parseArray('const DALLAS_DATA') },
+  { name: 'NYC',     data: parseArray('const NYC_DATA') },
   { name: 'Houston', data: parseArray('const HOUSTON_DATA') },
-  { name: 'Austin', data: parseArray('const AUSTIN_DATA') },
-  { name: 'Chicago', data: parseChicago() },
-  { name: 'SLC', data: parseArray('const SLC_DATA=') },
+  { name: 'Austin',  data: parseArray('const AUSTIN_DATA') },
+  { name: 'Chicago', data: parseArray('const CHICAGO_DATA') },
+  { name: 'SLC',     data: parseArray('const SLC_DATA') },
+  { name: 'Seattle', data: parseArray('const SEATTLE_DATA') },
+  { name: 'Vegas',   data: parseArray('const LV_DATA') },
 ];
 
 function checkUrl(url, timeout = 8000) {
