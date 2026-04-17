@@ -1,8 +1,8 @@
 {
   "totals": {
-    "total": 4546,
-    "weak": 401,
-    "missing": 399,
+    "total": 4576,
+    "weak": 387,
+    "missing": 385,
     "avgDishes": 0,
     "avgDishLen": 0
   },
@@ -17,64 +17,64 @@
       "avgDishLen": 15
     },
     "Houston": {
-      "total": 500,
+      "total": 504,
       "weak": 24,
       "missing": 24,
-      "dishesTotal": 1844,
+      "dishesTotal": 1857,
       "dishesMax": 5,
       "avgDishes": "3.7",
       "avgDishLen": 13
     },
     "Chicago": {
-      "total": 500,
-      "weak": 23,
-      "missing": 21,
-      "dishesTotal": 1484,
+      "total": 510,
+      "weak": 19,
+      "missing": 17,
+      "dishesTotal": 1540,
       "dishesMax": 5,
       "avgDishes": "3.0",
       "avgDishLen": 13
     },
     "Austin": {
       "total": 500,
-      "weak": 104,
-      "missing": 104,
-      "dishesTotal": 1337,
+      "weak": 101,
+      "missing": 101,
+      "dishesTotal": 1350,
       "dishesMax": 5,
       "avgDishes": "2.7",
       "avgDishLen": 12
     },
     "Salt Lake City": {
-      "total": 500,
-      "weak": 91,
-      "missing": 91,
-      "dishesTotal": 1340,
+      "total": 507,
+      "weak": 90,
+      "missing": 90,
+      "dishesTotal": 1372,
       "dishesMax": 4,
       "avgDishes": "2.7",
       "avgDishLen": 12
     },
     "Las Vegas": {
-      "total": 500,
-      "weak": 106,
-      "missing": 106,
-      "dishesTotal": 1271,
+      "total": 501,
+      "weak": 101,
+      "missing": 101,
+      "dishesTotal": 1292,
       "dishesMax": 5,
-      "avgDishes": "2.5",
+      "avgDishes": "2.6",
       "avgDishLen": 14
     },
     "Seattle": {
       "total": 501,
-      "weak": 45,
-      "missing": 45,
-      "dishesTotal": 1535,
+      "weak": 44,
+      "missing": 44,
+      "dishesTotal": 1539,
       "dishesMax": 5,
       "avgDishes": "3.1",
       "avgDishLen": 13
     },
     "New York": {
-      "total": 880,
+      "total": 888,
       "weak": 0,
       "missing": 0,
-      "dishesTotal": 2648,
+      "dishesTotal": 2672,
       "dishesMax": 4,
       "avgDishes": "3.0",
       "avgDishLen": 14
@@ -109,19 +109,6 @@
     },
     {
       "city": "Las Vegas",
-      "id": 12261,
-      "name": "Nobu at Paris",
-      "score": 90,
-      "neighborhood": "The Strip (Paris Las Vegas)",
-      "cuisine": "Japanese / Sushi",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Las Vegas",
       "id": 12287,
       "name": "Cantina Contramar",
       "score": 90,
@@ -140,84 +127,6 @@
       "score": 90,
       "neighborhood": "The Strip (The Venetian)",
       "cuisine": "Nightclub",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Las Vegas",
-      "id": 12355,
-      "name": "Aureole",
-      "score": 90,
-      "neighborhood": "The Strip (Mandalay Bay)",
-      "cuisine": "New American Fine Dining",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Las Vegas",
-      "id": 12359,
-      "name": "Bourbon Steak Las Vegas",
-      "score": 90,
-      "neighborhood": "The Strip (Fontainebleau)",
-      "cuisine": "Steakhouse",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Seattle",
-      "id": 9281,
-      "name": "Paseo Caribbean Food",
-      "score": 90,
-      "neighborhood": "Fremont",
-      "cuisine": "Caribbean / Sandwiches",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Chicago",
-      "id": 469,
-      "name": "Hopleaf Bar",
-      "score": 89,
-      "neighborhood": "Andersonville",
-      "cuisine": "Belgian / Gastropub",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Austin",
-      "id": 5483,
-      "name": "Poeta",
-      "score": 89,
-      "neighborhood": "East Austin",
-      "cuisine": "Italian",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Salt Lake City",
-      "id": 11460,
-      "name": "The Tree Room",
-      "score": 89,
-      "neighborhood": "Provo",
-      "cuisine": "New American Fine Dining",
       "dishCount": 0,
       "dishes": [],
       "issues": [
@@ -291,19 +200,6 @@
     },
     {
       "city": "Las Vegas",
-      "id": 12379,
-      "name": "Best Friend",
-      "score": 89,
-      "neighborhood": "The Strip (Park MGM)",
-      "cuisine": "Korean-Mexican Fusion",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Las Vegas",
       "id": 12382,
       "name": "Cleaver",
       "score": 89,
@@ -322,58 +218,6 @@
       "score": 89,
       "neighborhood": "Capitol Hill",
       "cuisine": "Cocktail Bar / American",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Chicago",
-      "id": 461,
-      "name": "The Publican",
-      "score": 88,
-      "neighborhood": "West Loop",
-      "cuisine": "American / Beer Hall",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Chicago",
-      "id": 473,
-      "name": "Sun Wah BBQ",
-      "score": 88,
-      "neighborhood": "Edgewater",
-      "cuisine": "Chinese BBQ",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Austin",
-      "id": 5464,
-      "name": "Bureau de Poste",
-      "score": 88,
-      "neighborhood": "Hyde Park",
-      "cuisine": "French Bistro",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Austin",
-      "id": 5466,
-      "name": "Perla's",
-      "score": 88,
-      "neighborhood": "South Congress",
-      "cuisine": "Seafood",
       "dishCount": 0,
       "dishes": [],
       "issues": [
@@ -465,19 +309,6 @@
       "score": 88,
       "neighborhood": "Chinatown",
       "cuisine": "Japanese / Desserts",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Las Vegas",
-      "id": 12376,
-      "name": "Lawry's The Prime Rib",
-      "score": 88,
-      "neighborhood": "Paradise",
-      "cuisine": "Steakhouse",
       "dishCount": 0,
       "dishes": [],
       "issues": [
@@ -1299,7 +1130,7 @@
       "id": 5469,
       "name": "The Dead Rabbit Austin",
       "score": 86,
-      "neighborhood": "Downtown",
+      "neighborhood": "6th Street",
       "cuisine": "Cocktail Bar / Irish Pub",
       "dishCount": 0,
       "dishes": [],
@@ -1325,7 +1156,7 @@
       "id": 5493,
       "name": "Ruth's Chris Steak House",
       "score": 86,
-      "neighborhood": "Downtown",
+      "neighborhood": "6th Street",
       "cuisine": "Steakhouse",
       "dishCount": 0,
       "dishes": [],
@@ -1949,19 +1780,6 @@
     },
     {
       "city": "Chicago",
-      "id": 462,
-      "name": "Taqueria Chingon",
-      "score": 85,
-      "neighborhood": "West Loop",
-      "cuisine": "Mexican / Tacos",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Chicago",
       "id": 464,
       "name": "Mr. Beef on Orleans",
       "score": 85,
@@ -2004,7 +1822,7 @@
       "id": 5472,
       "name": "POP Champagne Lounge",
       "score": 85,
-      "neighborhood": "Downtown",
+      "neighborhood": "6th Street",
       "cuisine": "Champagne Bar / Cocktails",
       "dishCount": 0,
       "dishes": [],
@@ -2654,7 +2472,7 @@
       "id": 5470,
       "name": "Marlow",
       "score": 84,
-      "neighborhood": "Downtown",
+      "neighborhood": "6th Street",
       "cuisine": "Cocktail Bar",
       "dishCount": 0,
       "dishes": [],
@@ -3174,7 +2992,7 @@
       "id": 5473,
       "name": "Devil May Care",
       "score": 83,
-      "neighborhood": "Downtown",
+      "neighborhood": "6th Street",
       "cuisine": "Cocktail Bar",
       "dishCount": 0,
       "dishes": [],
@@ -4565,7 +4383,7 @@
       "id": 5471,
       "name": "Pete's Dueling Piano Bar",
       "score": 80,
-      "neighborhood": "Downtown",
+      "neighborhood": "6th Street",
       "cuisine": "Bar / Entertainment",
       "dishCount": 0,
       "dishes": [],
@@ -4968,7 +4786,7 @@
       "id": 5467,
       "name": "Maggie Mae's",
       "score": 79,
-      "neighborhood": "Downtown",
+      "neighborhood": "6th Street",
       "cuisine": "Bar / Live Music",
       "dishCount": 0,
       "dishes": [],
@@ -5241,7 +5059,7 @@
       "id": 5574,
       "name": "Black Sheep Coffee",
       "score": 77,
-      "neighborhood": "Downtown",
+      "neighborhood": "6th Street",
       "cuisine": "Specialty Coffee",
       "dishCount": 0,
       "dishes": [],
