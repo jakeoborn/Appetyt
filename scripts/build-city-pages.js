@@ -14,17 +14,15 @@ function parseArray(tag) {
   const a = indexHtml.indexOf('[', s);
   let d = 0, e = a;
   for (let i = a; i < indexHtml.length; i++) { if (indexHtml[i] === '[') d++; if (indexHtml[i] === ']') d--; if (d === 0) { e = i + 1; break; } }
-  try { return JSON.parse(indexHtml.slice(a, e)); } catch(e) { return []; }
+  const slice = indexHtml.slice(a, e);
+  // Strict JSON first; fall back to JS-object literal (NYC_DATA uses unquoted keys).
+  try { return JSON.parse(slice); } catch (e1) {
+    try { return (new Function('return ' + slice))(); } catch (e2) { return []; }
+  }
 }
 
-function parseChicago() {
-  const ci = indexHtml.indexOf("'Chicago': [", indexHtml.indexOf('const CITY_DATA'));
-  if (ci === -1) return [];
-  const ca = indexHtml.indexOf('[', ci + 10);
-  let d = 0, e = ca;
-  for (let i = ca; i < indexHtml.length; i++) { if (indexHtml[i] === '[') d++; if (indexHtml[i] === ']') d--; if (d === 0) { e = i + 1; break; } }
-  try { return JSON.parse(indexHtml.slice(ca, e)); } catch(e) { return []; }
-}
+// Chicago is its own const now (CHICAGO_DATA); kept for backwards compat.
+function parseChicago() { return parseArray('const CHICAGO_DATA'); }
 
 const cities = [
   { name: 'New York City', slug: 'nyc', state: 'NY', data: parseArray('const NYC_DATA') },
@@ -33,6 +31,8 @@ const cities = [
   { name: 'Austin', slug: 'austin', state: 'TX', data: parseArray('const AUSTIN_DATA') },
   { name: 'Chicago', slug: 'chicago', state: 'IL', data: parseChicago() },
   { name: 'Salt Lake City', slug: 'salt-lake-city', state: 'UT', data: parseArray('const SLC_DATA=') },
+  { name: 'Seattle', slug: 'seattle', state: 'WA', data: parseArray('const SEATTLE_DATA') },
+  { name: 'Las Vegas', slug: 'las-vegas', state: 'NV', data: parseArray('const LV_DATA') },
 ];
 
 const allCityLinks = cities.map(c => ({ name: c.name, slug: c.slug }));

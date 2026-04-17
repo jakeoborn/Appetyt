@@ -1,0 +1,67 @@
+const fs = require('fs');
+let h = fs.readFileSync('index.html','utf8');
+const m = 'const LV_DATA=';
+const p = h.indexOf(m); const s = h.indexOf('[', p);
+let d=0, e=s;
+for(let j=s;j<h.length;j++){if(h[j]==='[')d++;if(h[j]===']'){d--;if(d===0){e=j+1;break;}}}
+let arr = JSON.parse(h.substring(s, e));
+const maxId = Math.max(...arr.map(r=>r.id));
+let nextId = maxId + 1;
+const existing = new Set(arr.map(r=>r.name.toLowerCase()));
+let count = 0;
+
+function add(s){
+  const lower = s.name.toLowerCase();
+  if(existing.has(lower)) { console.log('SKIP:', s.name); return; }
+  s.id=nextId++; s.bestOf=[]; s.busyness=null; s.waitTime=null;
+  s.popularTimes=null; s.lastUpdated=null; s.trending=false;
+  s.group=s.group||''; s.suburb=s.suburb||false; s.menuUrl='';
+  s.res_tier=s.price>=3?4:2; s.indicators=s.indicators||[];
+  s.awards=s.awards||''; s.phone=''; s.reserveUrl=''; s.hh='';
+  s.verified=true; s.hours=''; s.dishes=s.dishes||[];
+  s.reservation=s.reservation||'walk-in'; s.photoUrl='';
+  arr.push(s); existing.add(lower); count++;
+  console.log('ADDED:', s.name, '(id:', s.id, ')');
+}
+
+// Strip casinos
+add({name:'Tao Nightclub',cuisine:'Nightclub',neighborhood:'The Strip (The Venetian)',score:90,price:4,tags:['Nightlife','Late Night','Celebrations','Cocktails'],description:'Legendary nightclub above Tao Asian Bistro with a giant Buddha, 50-foot ceilings, and world-class DJs since 2005.',address:'3377 S Las Vegas Blvd, Las Vegas, NV 89109',lat:36.1214,lng:-115.1686,instagram:'@taogroup',website:'https://taogroup.com/venues/tao-nightclub-las-vegas'});
+add({name:'Jewel Nightclub',cuisine:'Nightclub',neighborhood:'The Strip (Aria)',score:89,price:4,tags:['Nightlife','Late Night','Celebrations','Cocktails'],description:'Aria intimate 24,000 sq ft nightclub with custom LED ceiling and hip-hop/pop programming.',address:'3730 S Las Vegas Blvd, Las Vegas, NV 89109',lat:36.1073,lng:-115.1726,instagram:'@jewelnightclub',website:'https://www.jewelnightclub.com'});
+add({name:'Aureole',cuisine:'New American Fine Dining',neighborhood:'The Strip (Mandalay Bay)',score:90,price:4,tags:['Fine Dining','Date Night','Celebrations','Scenic'],indicators:['iconic'],description:'Charlie Palmer landmark with a four-story glass wine tower and acrobatic wine angels retrieving bottles.',address:'3950 S Las Vegas Blvd, Las Vegas, NV 89119',lat:36.0930,lng:-115.1762,instagram:'@aureolerestaurant',website:''});
+add({name:'House of Blues Las Vegas',cuisine:'Southern / Live Music',neighborhood:'The Strip (Mandalay Bay)',score:83,price:2,tags:['Live Music','Southern','Brunch','Casual'],indicators:['iconic'],description:'Mandalay Bay live-music venue with legendary Sunday Gospel Brunch and a full concert hall.',address:'3950 S Las Vegas Blvd, Las Vegas, NV 89119',lat:36.0931,lng:-115.1761,instagram:'@hobllasvegas',website:'https://www.houseofblues.com/lasvegas'});
+add({name:'Genting Palace',cuisine:'Chinese / Cantonese',neighborhood:'The Strip (Resorts World)',score:88,price:3,tags:['Chinese','Fine Dining','Date Night','Celebrations'],description:'Resorts World upscale Cantonese with weekend dim sum, whole Peking duck, and live steamed seafood.',address:'3000 S Las Vegas Blvd, Las Vegas, NV 89109',lat:36.1318,lng:-115.1614,instagram:'@rwlasvegas',website:'https://www.rwlasvegas.com/dining/genting-palace'});
+add({name:'The Buffet at Wynn',cuisine:'Buffet / Global',neighborhood:'The Strip (Wynn)',score:86,price:3,tags:['Casual','Brunch','Family Friendly'],description:'Wynn upscale buffet with live-action cooking stations and house-made charcuterie in a sunlit garden setting.',address:'3131 S Las Vegas Blvd, Las Vegas, NV 89109',lat:36.1268,lng:-115.1643,instagram:'@wynnlasvegas',website:''});
+add({name:'Bourbon Steak Las Vegas',cuisine:'Steakhouse',neighborhood:'The Strip (Fontainebleau)',score:90,price:4,tags:['Steakhouse','Fine Dining','Date Night','Celebrations','Critics Pick'],description:'Michael Mina premium steakhouse with duck-fat-poached-then-grilled beef technique and famous duck fat fries.',address:'2777 S Las Vegas Blvd, Las Vegas, NV 89109',lat:36.1436,lng:-115.1624,instagram:'@bourbonsteak',website:''});
+add({name:'Lupo by Wolfgang Puck',cuisine:'Italian',neighborhood:'The Strip (Mandalay Bay)',score:85,price:3,tags:['Italian','Casual','Date Night','Family Friendly'],description:'Wolfgang Puck approachable Italian trattoria with wood-fired pizzas and handmade pasta.',address:'3950 S Las Vegas Blvd, Las Vegas, NV 89119',lat:36.0929,lng:-115.1763,instagram:'@wolfgangpuck',website:''});
+add({name:'Mon Ami Gabi',cuisine:'French Brasserie',neighborhood:'The Strip (Paris Las Vegas)',score:88,price:3,tags:['French','Date Night','Scenic','Patio','Brunch'],indicators:['iconic'],description:'Classic Parisian brasserie with the most coveted patio in Vegas — directly opposite the Bellagio Fountains.',address:'3655 S Las Vegas Blvd, Las Vegas, NV 89109',lat:36.1130,lng:-115.1720,instagram:'@monamigatilv',website:''});
+add({name:'Sushisamba Las Vegas',cuisine:'Japanese / Brazilian / Peruvian',neighborhood:'The Strip (The Palazzo)',score:87,price:3,tags:['Sushi','Cocktails','Date Night','Scenic'],description:'Nikkei fusion blending Japanese technique with Brazilian and Peruvian flavors at the Grand Canal.',address:'3377 S Las Vegas Blvd, Las Vegas, NV 89109',lat:36.1231,lng:-115.1696,instagram:'@sushisamba',website:'https://www.sushisamba.com/locations/usa/las-vegas'});
+add({name:'Noodles Bellagio',cuisine:'Asian / Pan-Asian',neighborhood:'The Strip (Bellagio)',score:82,price:2,tags:['Asian Fusion','Casual','Late Night','Family Friendly'],description:'Bellagio 24-hour Pan-Asian with Hong Kong congee, wonton noodle soup, and dim sum at any hour.',address:'3600 S Las Vegas Blvd, Las Vegas, NV 89109',lat:36.1128,lng:-115.1753,instagram:'@bellagio',website:''});
+add({name:'Vetri Cucina',cuisine:'Italian Fine Dining',neighborhood:'West of Strip',score:92,price:4,tags:['Italian','Fine Dining','Date Night','Celebrations','Scenic'],indicators:['iconic'],description:'Marc Vetri Italian tasting menu atop the Palms Casino — 56th floor panoramic views and James Beard Award pedigree.',address:'4321 W Flamingo Rd, Las Vegas, NV 89103',lat:36.1155,lng:-115.2196,instagram:'@vetricucinalv',website:''});
+add({name:'Tap Sports Bar',cuisine:'Sports Bar',neighborhood:'The Strip (MGM Grand)',score:79,price:2,tags:['Sports','Casual','Late Night','Family Friendly'],description:'MGM Grand 14,000 sq ft sports bar with 100+ TVs and the Strip premier sports-watching destination.',address:'3799 S Las Vegas Blvd, Las Vegas, NV 89109',lat:36.1024,lng:-115.1713,instagram:'@tapsportsbarlv',website:''});
+
+// Chinatown
+add({name:'Ohjah Japanese Steakhouse',cuisine:'Japanese / Teppanyaki',neighborhood:'Chinatown',score:82,price:2,tags:['Japanese','Family Friendly','Casual','Local Favorites'],description:'Chinatown teppanyaki steakhouse with hibachi tableside cooking and sushi.',address:'4055 Spring Mountain Rd, Las Vegas, NV 89102',lat:36.1267,lng:-115.1970,instagram:'@ohjahlv',website:'https://www.ohjah.com'});
+add({name:'Pin Kaow Thai',cuisine:'Thai',neighborhood:'Chinatown',score:84,price:1,tags:['Thai','Casual','Local Favorites','Late Night'],indicators:['hole-in-wall'],description:'No-frills Thai with authentic northern dishes — larb, khao soi, and crispy pork basil until late.',address:'3620 Spring Mountain Rd Ste 4, Las Vegas, NV 89102',lat:36.1265,lng:-115.1892,instagram:'@pinkaowlv',website:''});
+add({name:'Hobak Korean BBQ',cuisine:'Korean BBQ',neighborhood:'Chinatown',score:85,price:2,tags:['Korean','BBQ','Casual','Late Night','Local Favorites'],description:'Spring Mountain AYCE Korean BBQ with quality cuts and solid banchan — go-to for late-night grilling.',address:'4480 Spring Mountain Rd Ste 200, Las Vegas, NV 89102',lat:36.1268,lng:-115.2050,instagram:'@hobaklv',website:'https://hobakkoreanbbq.com'});
+add({name:'Sweets Raku',cuisine:'Japanese / Desserts',neighborhood:'Chinatown',score:88,price:2,tags:['Japanese','Casual','Date Night','Critics Pick'],indicators:['hidden-gem'],description:'Chef Mitsuo Endo dessert companion to Raku — elaborate Japanese desserts, souffle pancakes, and seasonal kakigori.',address:'5030 Spring Mountain Rd Ste 3, Las Vegas, NV 89146',lat:36.1262,lng:-115.1967,instagram:'@sweetsraku',website:'https://raku-grill.com/sweets-raku'});
+add({name:'Sen of Japan',cuisine:'Japanese / Sushi',neighborhood:'Chinatown',score:87,price:2,tags:['Sushi','Casual','Local Favorites','Date Night'],indicators:['hidden-gem'],description:'Chinatown Japanese beloved for fresh nigiri, soba, and traditional cooking — a locals alternative to Strip prices.',address:'8480 W Desert Inn Rd, Las Vegas, NV 89117',lat:36.1282,lng:-115.2663,instagram:'@senofjapanlv',website:'https://www.senofjapan.com'});
+
+// Cheap eats
+add({name:'In-N-Out Burger',cuisine:'Burgers / Fast Food',neighborhood:'Paradise',score:82,price:1,tags:['Casual','Late Night','Local Favorites'],indicators:['iconic'],description:'California cult burger chain near the Strip — Double-Double, Animal Style, and fresh-cut fries until 1:30 AM.',address:'4888 Industrial Rd, Las Vegas, NV 89103',lat:36.1104,lng:-115.1835,instagram:'@innoutburger',website:'https://www.in-n-out.com'});
+add({name:'White Castle Las Vegas',cuisine:'Burgers / Fast Food',neighborhood:'The Strip',score:76,price:1,tags:['Casual','Late Night'],indicators:['iconic'],description:'The iconic slider chain only Las Vegas location — 24-hour sliders on the LINQ Promenade.',address:'3545 S Las Vegas Blvd, Las Vegas, NV 89109',lat:36.1175,lng:-115.1708,instagram:'@whitecastle',website:'https://www.whitecastle.com'});
+add({name:"Roberto's Taco Shop",cuisine:'Mexican / Tacos',neighborhood:'Paradise',score:80,price:1,tags:['Mexican','Late Night','Casual','Local Favorites'],indicators:['iconic'],description:'San Diego-born taco chain — carne asada burritos and rolled tacos at 2 AM. A Nevada institution since the 1980s.',address:'1318 S Las Vegas Blvd, Las Vegas, NV 89104',lat:36.1553,lng:-115.1549,instagram:'@robertostacoshop',website:'https://www.roberto-restaurants.com'});
+
+// More Henderson
+add({name:'Boom Bang Restaurant',cuisine:'New American',neighborhood:'Henderson',score:87,price:3,tags:['Date Night','Cocktails','Critics Pick','Local Favorites'],indicators:['hidden-gem'],description:'Chef-owned Henderson brasserie with season-driven small plates praised for creativity.',address:'585 N Stephanie St Ste 110, Henderson, NV 89014',lat:36.0425,lng:-115.0612,instagram:'@boombangrestaurant',website:'https://boombangrestaurant.com'});
+add({name:'Hearthstone Kitchen',cuisine:'New American',neighborhood:'Summerlin (Red Rock Resort)',score:87,price:3,tags:['Date Night','Wine Bar','Patio','Local Favorites'],description:'Red Rock Resort wood-fire kitchen with a 200-label wine list and Spring Mountain terrace views.',address:'11011 W Charleston Blvd, Las Vegas, NV 89135',lat:36.1588,lng:-115.3328,instagram:'@hearthstonelv',website:'https://www.hearthstonelv.com'});
+add({name:'Andiron Steak & Sea',cuisine:'Steakhouse / Seafood',neighborhood:'Summerlin (Downtown Summerlin)',score:86,price:3,tags:['Steakhouse','Seafood','Date Night','Local Favorites'],description:'Downtown Summerlin casual-upscale steakhouse with daily oyster happy hour.',address:'1085 S Rampart Blvd Ste 210, Las Vegas, NV 89145',lat:36.1580,lng:-115.3056,instagram:'@andiron_lv',website:'https://www.andironlv.com'});
+
+// More bars/local
+add({name:'Paymon Mediterranean Cafe',cuisine:'Mediterranean / Persian',neighborhood:'Paradise',score:85,price:1,tags:['Mediterranean','Casual','Late Night','Local Favorites'],indicators:['iconic'],description:'Beloved Persian-Mediterranean cafe since 1988 with hummus, gyro, lamb kebabs, and hookah lounge.',address:'4147 S Maryland Pkwy, Las Vegas, NV 89119',lat:36.1152,lng:-115.1367,instagram:'@paymons',website:'https://www.paymons.com'});
+add({name:"Lawry's The Prime Rib",cuisine:'Steakhouse',neighborhood:'Paradise',score:88,price:3,tags:['Steakhouse','Date Night','Celebrations','Local Favorites'],indicators:['iconic'],description:'Iconic spinning-salad-bowl chain — silver cart tableside service and slow-roasted prime rib since 1997.',address:'4043 Howard Hughes Pkwy, Las Vegas, NV 89169',lat:36.1094,lng:-115.1608,instagram:'@lawrysonline',website:'https://www.lawrysonline.com/las-vegas'});
+add({name:'Cornish Pasty Co.',cuisine:'British / Pub',neighborhood:'Arts District',score:82,price:1,tags:['Casual','Late Night','Local Favorites'],description:'Arts District pub serving Cornish-style hand-held pastry pies with creative fillings and craft beers.',address:'1112 S Casino Center Blvd, Las Vegas, NV 89104',lat:36.1561,lng:-115.1533,instagram:'@cornishpastycolk',website:'https://www.cornishpastyco.com'});
+add({name:'Distrito Federal',cuisine:'Mexican / Street Food',neighborhood:'Paradise',score:85,price:1,tags:['Mexican','Late Night','Casual','Local Favorites'],indicators:['hidden-gem'],description:'Off-Strip Mexican street food with tacos al pastor from a vertical trompo and Mexico City antojitos.',address:'8345 W Sunset Rd Ste 190, Las Vegas, NV 89113',lat:36.0697,lng:-115.2494,instagram:'@dfmexicanstreetfood',website:'https://distritofederallv.com'});
+
+h = h.substring(0, s) + JSON.stringify(arr) + h.substring(e);
+fs.writeFileSync('index.html', h, 'utf8');
+console.log('\nAdded:', count, '| Vegas total:', arr.length);
