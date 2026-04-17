@@ -1,8 +1,8 @@
 {
   "totals": {
     "total": 4576,
-    "weak": 387,
-    "missing": 385,
+    "weak": 380,
+    "missing": 378,
     "avgDishes": 0,
     "avgDishLen": 0
   },
@@ -45,27 +45,27 @@
     },
     "Salt Lake City": {
       "total": 507,
-      "weak": 90,
-      "missing": 90,
-      "dishesTotal": 1372,
+      "weak": 89,
+      "missing": 89,
+      "dishesTotal": 1376,
       "dishesMax": 4,
       "avgDishes": "2.7",
       "avgDishLen": 12
     },
     "Las Vegas": {
       "total": 501,
-      "weak": 101,
-      "missing": 101,
-      "dishesTotal": 1292,
+      "weak": 99,
+      "missing": 99,
+      "dishesTotal": 1300,
       "dishesMax": 5,
       "avgDishes": "2.6",
       "avgDishLen": 14
     },
     "Seattle": {
       "total": 501,
-      "weak": 44,
-      "missing": 44,
-      "dishesTotal": 1539,
+      "weak": 40,
+      "missing": 40,
+      "dishesTotal": 1555,
       "dishesMax": 5,
       "avgDishes": "3.1",
       "avgDishLen": 13
@@ -82,38 +82,12 @@
   },
   "weakList": [
     {
-      "city": "Seattle",
-      "id": 9273,
-      "name": "Takai By Kashiba",
-      "score": 91,
-      "neighborhood": "Bellevue",
-      "cuisine": "Japanese / Sushi",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
       "city": "Dallas",
       "id": 543,
       "name": "SILO Dallas",
       "score": 90,
       "neighborhood": "Design District",
       "cuisine": "Nightclub & Live Music",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Las Vegas",
-      "id": 12287,
-      "name": "Cantina Contramar",
-      "score": 90,
-      "neighborhood": "The Strip (Fontainebleau)",
-      "cuisine": "Mexican / Seafood",
       "dishCount": 0,
       "dishes": [],
       "issues": [
@@ -199,19 +173,6 @@
       ]
     },
     {
-      "city": "Las Vegas",
-      "id": 12382,
-      "name": "Cleaver",
-      "score": 89,
-      "neighborhood": "Paradise",
-      "cuisine": "Steakhouse / Cocktail Bar",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
       "city": "Seattle",
       "id": 9252,
       "name": "Tavern Law",
@@ -231,19 +192,6 @@
       "score": 88,
       "neighborhood": "East Austin",
       "cuisine": "Italian / Tasting Menu",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Salt Lake City",
-      "id": 11489,
-      "name": "Tiburon Fine Dining",
-      "score": 88,
-      "neighborhood": "Sandy",
-      "cuisine": "New American",
       "dishCount": 0,
       "dishes": [],
       "issues": [
@@ -382,32 +330,6 @@
     },
     {
       "city": "Seattle",
-      "id": 9262,
-      "name": "Thai Tom",
-      "score": 88,
-      "neighborhood": "University District",
-      "cuisine": "Thai",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Seattle",
-      "id": 9266,
-      "name": "Tavolàta",
-      "score": 88,
-      "neighborhood": "Belltown",
-      "cuisine": "Italian",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Seattle",
       "id": 9274,
       "name": "Monsoon East",
       "score": 88,
@@ -426,19 +348,6 @@
       "score": 88,
       "neighborhood": "Ballard",
       "cuisine": "Coffee",
-      "dishCount": 0,
-      "dishes": [],
-      "issues": [
-        "missing"
-      ]
-    },
-    {
-      "city": "Seattle",
-      "id": 9280,
-      "name": "Revel",
-      "score": 88,
-      "neighborhood": "Fremont",
-      "cuisine": "Korean / American",
       "dishCount": 0,
       "dishes": [],
       "issues": [
