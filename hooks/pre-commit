@@ -1,0 +1,28 @@
+#!/bin/sh
+# Dim Hour pre-commit: run data integrity + vocabulary validation.
+# Only runs when index.html is staged.
+
+set -e
+
+CHANGED=$(git diff --cached --name-only)
+case " $CHANGED " in
+  *" index.html "*)
+    echo "▸ Running JS integrity check..."
+    node scripts/check-js-integrity.js > /tmp/dim_hour_integrity.log 2>&1
+    # Script #9 is main bundle; others 6/7 are JSON-LD false positives per CLAUDE.md.
+    if grep -qE "^Script #9 .*ERROR" /tmp/dim_hour_integrity.log; then
+      cat /tmp/dim_hour_integrity.log
+      echo "❌ JS integrity failed on main bundle (Script #9). Aborting commit."
+      exit 1
+    fi
+    echo "  ✅ JS integrity OK (main bundle)"
+
+    echo "▸ Running vocabulary validation..."
+    if ! node scripts/validate-vocabulary.js; then
+      echo "❌ Vocabulary validation failed. Fix the duplicates above or run scripts/fix-vocabulary-dupes.js."
+      exit 1
+    fi
+    ;;
+  *)
+    ;;
+esac
