@@ -140,7 +140,7 @@
     },
     {
       "name": "Montrose",
-      "count": 67
+      "count": 68
     },
     {
       "name": "Galleria",
@@ -159,16 +159,16 @@
       "count": 25
     },
     {
+      "name": "Upper Kirby",
+      "count": 23
+    },
+    {
       "name": "Spring Branch",
       "count": 22
     },
     {
       "name": "River Oaks",
-      "count": 22
-    },
-    {
-      "name": "Upper Kirby",
-      "count": 22
+      "count": 21
     },
     {
       "name": "EaDo",
@@ -211,12 +211,12 @@
       "count": 11
     },
     {
-      "name": "Southwest Houston",
+      "name": "Pearland",
       "count": 11
     },
     {
-      "name": "Pearland",
-      "count": 10
+      "name": "Southwest Houston",
+      "count": 11
     },
     {
       "name": "Clear Lake",
@@ -249,32 +249,40 @@
     {
       "name": "IAH Airport",
       "count": 1
+    },
+    {
+      "name": "Kemah",
+      "count": 1
     }
   ],
   "Chicago": [
     {
-      "name": "West Loop",
-      "count": 46
+      "name": "River North",
+      "count": 49
     },
     {
-      "name": "River North",
-      "count": 46
+      "name": "West Loop",
+      "count": 44
     },
     {
       "name": "Logan Square",
       "count": 34
     },
     {
-      "name": "Lincoln Park",
-      "count": 28
-    },
-    {
       "name": "Wicker Park",
       "count": 28
     },
     {
+      "name": "Lincoln Park",
+      "count": 27
+    },
+    {
       "name": "Lakeview",
       "count": 26
+    },
+    {
+      "name": "West Town",
+      "count": 16
     },
     {
       "name": "The Loop",
@@ -289,10 +297,6 @@
       "count": 15
     },
     {
-      "name": "West Town",
-      "count": 15
-    },
-    {
       "name": "Chinatown",
       "count": 12
     },
@@ -301,15 +305,11 @@
       "count": 11
     },
     {
-      "name": "Gold Coast",
-      "count": 11
-    },
-    {
       "name": "Bucktown",
       "count": 11
     },
     {
-      "name": "Andersonville",
+      "name": "South Loop",
       "count": 11
     },
     {
@@ -317,15 +317,19 @@
       "count": 11
     },
     {
+      "name": "Streeterville",
+      "count": 10
+    },
+    {
+      "name": "Gold Coast",
+      "count": 10
+    },
+    {
       "name": "Bridgeport",
       "count": 10
     },
     {
-      "name": "South Loop",
-      "count": 10
-    },
-    {
-      "name": "Streeterville",
+      "name": "Andersonville",
       "count": 9
     },
     {
@@ -341,10 +345,6 @@
       "count": 7
     },
     {
-      "name": "Humboldt Park",
-      "count": 7
-    },
-    {
       "name": "Hyde Park",
       "count": 7
     },
@@ -353,11 +353,19 @@
       "count": 7
     },
     {
+      "name": "Fulton Market",
+      "count": 7
+    },
+    {
       "name": "Bronzeville",
       "count": 7
     },
     {
       "name": "Old Town",
+      "count": 6
+    },
+    {
+      "name": "Humboldt Park",
       "count": 6
     },
     {
@@ -389,15 +397,15 @@
       "count": 5
     },
     {
-      "name": "Noble Square",
-      "count": 5
-    },
-    {
-      "name": "Fulton Market",
+      "name": "Greektown",
       "count": 4
     },
     {
-      "name": "Greektown",
+      "name": "Noble Square",
+      "count": 4
+    },
+    {
+      "name": "Hermosa",
       "count": 4
     },
     {
@@ -406,10 +414,6 @@
     },
     {
       "name": "Museum Campus",
-      "count": 3
-    },
-    {
-      "name": "Hermosa",
       "count": 3
     },
     {
@@ -500,7 +504,7 @@
     },
     {
       "name": "South Congress",
-      "count": 37
+      "count": 38
     },
     {
       "name": "South Austin",
@@ -700,7 +704,7 @@
   "Las Vegas": [
     {
       "name": "Chinatown",
-      "count": 46
+      "count": 47
     },
     {
       "name": "Paradise",
@@ -1060,7 +1064,7 @@
   "New York": [
     {
       "name": "East Village",
-      "count": 87
+      "count": 88
     },
     {
       "name": "Williamsburg",
@@ -1072,7 +1076,7 @@
     },
     {
       "name": "West Village",
-      "count": 51
+      "count": 52
     },
     {
       "name": "Lower East Side",
@@ -1091,16 +1095,20 @@
       "count": 36
     },
     {
+      "name": "Midtown East",
+      "count": 32
+    },
+    {
       "name": "Chinatown",
       "count": 32
     },
     {
-      "name": "Midtown East",
-      "count": 30
-    },
-    {
       "name": "Chelsea",
       "count": 24
+    },
+    {
+      "name": "Nolita",
+      "count": 23
     },
     {
       "name": "Upper West Side",
@@ -1108,10 +1116,6 @@
     },
     {
       "name": "Upper East Side",
-      "count": 22
-    },
-    {
-      "name": "Nolita",
       "count": 22
     },
     {
@@ -1171,15 +1175,15 @@
       "count": 9
     },
     {
+      "name": "NoHo",
+      "count": 9
+    },
+    {
       "name": "Meatpacking District",
       "count": 9
     },
     {
       "name": "Jackson Heights / Elmhurst",
-      "count": 8
-    },
-    {
-      "name": "NoHo",
       "count": 8
     },
     {
@@ -1216,6 +1220,10 @@
     },
     {
       "name": "Multiple Locations",
+      "count": 2
+    },
+    {
+      "name": "Park Slope",
       "count": 2
     },
     {
@@ -1271,7 +1279,7 @@
       "count": 1
     },
     {
-      "name": "Park Slope",
+      "name": "Fort Greene",
       "count": 1
     }
   ]
