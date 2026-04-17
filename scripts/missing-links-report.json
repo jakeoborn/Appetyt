@@ -1,9 +1,9 @@
 {
   "totals": {
-    "total": 4546,
-    "missingWeb": 845,
-    "missingIG": 449,
-    "bothMissing": 272,
+    "total": 4542,
+    "missingWeb": 827,
+    "missingIG": 432,
+    "bothMissing": 266,
     "malformedUrls": 0,
     "malformedIGs": 0
   },
@@ -19,25 +19,25 @@
     },
     "Houston": {
       "total": 500,
-      "missingWeb": 98,
-      "missingIG": 120,
+      "missingWeb": 96,
+      "missingIG": 119,
       "bothMissing": 33,
       "malformedUrls": 0,
       "malformedIGs": 0,
       "malformedSamples": []
     },
     "Chicago": {
-      "total": 500,
-      "missingWeb": 181,
-      "missingIG": 135,
-      "bothMissing": 108,
+      "total": 496,
+      "missingWeb": 175,
+      "missingIG": 120,
+      "bothMissing": 103,
       "malformedUrls": 0,
       "malformedIGs": 0,
       "malformedSamples": []
     },
     "Austin": {
       "total": 500,
-      "missingWeb": 164,
+      "missingWeb": 162,
       "missingIG": 13,
       "bothMissing": 13,
       "malformedUrls": 0,
@@ -46,16 +46,16 @@
     },
     "Salt Lake City": {
       "total": 500,
-      "missingWeb": 168,
-      "missingIG": 63,
-      "bothMissing": 56,
+      "missingWeb": 166,
+      "missingIG": 62,
+      "bothMissing": 55,
       "malformedUrls": 0,
       "malformedIGs": 0,
       "malformedSamples": []
     },
     "Las Vegas": {
       "total": 500,
-      "missingWeb": 66,
+      "missingWeb": 62,
       "missingIG": 22,
       "bothMissing": 12,
       "malformedUrls": 0,
@@ -64,7 +64,7 @@
     },
     "Seattle": {
       "total": 501,
-      "missingWeb": 96,
+      "missingWeb": 94,
       "missingIG": 57,
       "bothMissing": 39,
       "malformedUrls": 0,
