@@ -1,0 +1,5305 @@
+{
+  "totals": {
+    "total": 4546,
+    "weak": 401,
+    "missing": 399,
+    "avgDishes": 0,
+    "avgDishLen": 0
+  },
+  "byCity": {
+    "Dallas": {
+      "total": 665,
+      "weak": 8,
+      "missing": 8,
+      "dishesTotal": 2408,
+      "dishesMax": 6,
+      "avgDishes": "3.6",
+      "avgDishLen": 15
+    },
+    "Houston": {
+      "total": 500,
+      "weak": 24,
+      "missing": 24,
+      "dishesTotal": 1844,
+      "dishesMax": 5,
+      "avgDishes": "3.7",
+      "avgDishLen": 13
+    },
+    "Chicago": {
+      "total": 500,
+      "weak": 23,
+      "missing": 21,
+      "dishesTotal": 1484,
+      "dishesMax": 5,
+      "avgDishes": "3.0",
+      "avgDishLen": 13
+    },
+    "Austin": {
+      "total": 500,
+      "weak": 104,
+      "missing": 104,
+      "dishesTotal": 1337,
+      "dishesMax": 5,
+      "avgDishes": "2.7",
+      "avgDishLen": 12
+    },
+    "Salt Lake City": {
+      "total": 500,
+      "weak": 91,
+      "missing": 91,
+      "dishesTotal": 1340,
+      "dishesMax": 4,
+      "avgDishes": "2.7",
+      "avgDishLen": 12
+    },
+    "Las Vegas": {
+      "total": 500,
+      "weak": 106,
+      "missing": 106,
+      "dishesTotal": 1271,
+      "dishesMax": 5,
+      "avgDishes": "2.5",
+      "avgDishLen": 14
+    },
+    "Seattle": {
+      "total": 501,
+      "weak": 45,
+      "missing": 45,
+      "dishesTotal": 1535,
+      "dishesMax": 5,
+      "avgDishes": "3.1",
+      "avgDishLen": 13
+    },
+    "New York": {
+      "total": 880,
+      "weak": 0,
+      "missing": 0,
+      "dishesTotal": 2648,
+      "dishesMax": 4,
+      "avgDishes": "3.0",
+      "avgDishLen": 14
+    }
+  },
+  "weakList": [
+    {
+      "city": "Seattle",
+      "id": 9273,
+      "name": "Takai By Kashiba",
+      "score": 91,
+      "neighborhood": "Bellevue",
+      "cuisine": "Japanese / Sushi",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Dallas",
+      "id": 543,
+      "name": "SILO Dallas",
+      "score": 90,
+      "neighborhood": "Design District",
+      "cuisine": "Nightclub & Live Music",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12261,
+      "name": "Nobu at Paris",
+      "score": 90,
+      "neighborhood": "The Strip (Paris Las Vegas)",
+      "cuisine": "Japanese / Sushi",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12287,
+      "name": "Cantina Contramar",
+      "score": 90,
+      "neighborhood": "The Strip (Fontainebleau)",
+      "cuisine": "Mexican / Seafood",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12353,
+      "name": "Tao Nightclub",
+      "score": 90,
+      "neighborhood": "The Strip (The Venetian)",
+      "cuisine": "Nightclub",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12355,
+      "name": "Aureole",
+      "score": 90,
+      "neighborhood": "The Strip (Mandalay Bay)",
+      "cuisine": "New American Fine Dining",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12359,
+      "name": "Bourbon Steak Las Vegas",
+      "score": 90,
+      "neighborhood": "The Strip (Fontainebleau)",
+      "cuisine": "Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9281,
+      "name": "Paseo Caribbean Food",
+      "score": 90,
+      "neighborhood": "Fremont",
+      "cuisine": "Caribbean / Sandwiches",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 469,
+      "name": "Hopleaf Bar",
+      "score": 89,
+      "neighborhood": "Andersonville",
+      "cuisine": "Belgian / Gastropub",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5483,
+      "name": "Poeta",
+      "score": 89,
+      "neighborhood": "East Austin",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11460,
+      "name": "The Tree Room",
+      "score": 89,
+      "neighborhood": "Provo",
+      "cuisine": "New American Fine Dining",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12288,
+      "name": "Amador",
+      "score": 89,
+      "neighborhood": "Chinatown",
+      "cuisine": "Latin American / Tapas",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12296,
+      "name": "Lindo Michoacan",
+      "score": 89,
+      "neighborhood": "Paradise",
+      "cuisine": "Mexican",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12339,
+      "name": "Nocturno",
+      "score": 89,
+      "neighborhood": "Arts District",
+      "cuisine": "Cocktail Bar / Latin",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12344,
+      "name": "Al Solito Posto",
+      "score": 89,
+      "neighborhood": "Summerlin",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12354,
+      "name": "Jewel Nightclub",
+      "score": 89,
+      "neighborhood": "The Strip (Aria)",
+      "cuisine": "Nightclub",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12379,
+      "name": "Best Friend",
+      "score": 89,
+      "neighborhood": "The Strip (Park MGM)",
+      "cuisine": "Korean-Mexican Fusion",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12382,
+      "name": "Cleaver",
+      "score": 89,
+      "neighborhood": "Paradise",
+      "cuisine": "Steakhouse / Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9252,
+      "name": "Tavern Law",
+      "score": 89,
+      "neighborhood": "Capitol Hill",
+      "cuisine": "Cocktail Bar / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 461,
+      "name": "The Publican",
+      "score": 88,
+      "neighborhood": "West Loop",
+      "cuisine": "American / Beer Hall",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 473,
+      "name": "Sun Wah BBQ",
+      "score": 88,
+      "neighborhood": "Edgewater",
+      "cuisine": "Chinese BBQ",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5464,
+      "name": "Bureau de Poste",
+      "score": 88,
+      "neighborhood": "Hyde Park",
+      "cuisine": "French Bistro",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5466,
+      "name": "Perla's",
+      "score": 88,
+      "neighborhood": "South Congress",
+      "cuisine": "Seafood",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5482,
+      "name": "Pasta|Bar Austin",
+      "score": 88,
+      "neighborhood": "East Austin",
+      "cuisine": "Italian / Tasting Menu",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11489,
+      "name": "Tiburon Fine Dining",
+      "score": 88,
+      "neighborhood": "Sandy",
+      "cuisine": "New American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11504,
+      "name": "Grappa Italian",
+      "score": 88,
+      "neighborhood": "Park City",
+      "cuisine": "Italian Fine Dining",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11511,
+      "name": "Table Twenty Five",
+      "score": 88,
+      "neighborhood": "Ogden",
+      "cuisine": "New American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12336,
+      "name": "Bar Ginza",
+      "score": 88,
+      "neighborhood": "Arts District",
+      "cuisine": "Japanese / Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12357,
+      "name": "Genting Palace",
+      "score": 88,
+      "neighborhood": "The Strip (Resorts World)",
+      "cuisine": "Chinese / Cantonese",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12367,
+      "name": "Sweets Raku",
+      "score": 88,
+      "neighborhood": "Chinatown",
+      "cuisine": "Japanese / Desserts",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12376,
+      "name": "Lawry's The Prime Rib",
+      "score": 88,
+      "neighborhood": "Paradise",
+      "cuisine": "Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12389,
+      "name": "Monzu Italian Oven + Bar",
+      "score": 88,
+      "neighborhood": "Spring Valley",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12390,
+      "name": "Nora Italian Cuisine",
+      "score": 88,
+      "neighborhood": "Spring Valley",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9253,
+      "name": "Maripili Tapas Bar",
+      "score": 88,
+      "neighborhood": "Capitol Hill",
+      "cuisine": "Spanish / Tapas",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9255,
+      "name": "Espresso Vivace Roasteria",
+      "score": 88,
+      "neighborhood": "Capitol Hill",
+      "cuisine": "Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9261,
+      "name": "RockCreek Seafood & Spirits",
+      "score": 88,
+      "neighborhood": "Fremont",
+      "cuisine": "Seafood / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9262,
+      "name": "Thai Tom",
+      "score": 88,
+      "neighborhood": "University District",
+      "cuisine": "Thai",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9266,
+      "name": "Tavolàta",
+      "score": 88,
+      "neighborhood": "Belltown",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9274,
+      "name": "Monsoon East",
+      "score": 88,
+      "neighborhood": "Bellevue",
+      "cuisine": "Vietnamese",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9276,
+      "name": "Slate Coffee Roasters",
+      "score": 88,
+      "neighborhood": "Ballard",
+      "cuisine": "Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9280,
+      "name": "Revel",
+      "score": 88,
+      "neighborhood": "Fremont",
+      "cuisine": "Korean / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9290,
+      "name": "K-BBQ Woobling",
+      "score": 88,
+      "neighborhood": "Bellevue",
+      "cuisine": "Korean BBQ",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Dallas",
+      "id": 9153,
+      "name": "Station 4 (S4)",
+      "score": 87,
+      "neighborhood": "Oak Lawn",
+      "cuisine": "Nightclub / LGBTQ+ Club",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7543,
+      "name": "Che Gaucho",
+      "score": 87,
+      "neighborhood": "Tomball",
+      "cuisine": "Argentine Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7545,
+      "name": "Lomonte's Italian",
+      "score": 87,
+      "neighborhood": "West Houston",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 200,
+      "name": "Smart Bar",
+      "score": 87,
+      "neighborhood": "Lakeview",
+      "cuisine": "Nightclub / Electronic",
+      "dishCount": 2,
+      "dishes": [
+        "Cocktails",
+        "Beer"
+      ],
+      "issues": [
+        "< 3 items",
+        "all generic"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 466,
+      "name": "Taxim",
+      "score": 87,
+      "neighborhood": "Wicker Park",
+      "cuisine": "Greek",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5460,
+      "name": "Ramen Tatsu-Ya",
+      "score": 87,
+      "neighborhood": "North Lamar",
+      "cuisine": "Ramen",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5481,
+      "name": "La Santa Barbacha",
+      "score": 87,
+      "neighborhood": "East Austin",
+      "cuisine": "Mexican / Barbacoa",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5484,
+      "name": "Briscuits",
+      "score": 87,
+      "neighborhood": "South Austin",
+      "cuisine": "BBQ",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5490,
+      "name": "Bob's Steak & Chop House",
+      "score": 87,
+      "neighborhood": "Downtown",
+      "cuisine": "Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5491,
+      "name": "III Forks",
+      "score": 87,
+      "neighborhood": "Downtown",
+      "cuisine": "Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5508,
+      "name": "La Piscina at Austin Proper",
+      "score": 87,
+      "neighborhood": "Downtown",
+      "cuisine": "Rooftop Mexican / Cocktails",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5553,
+      "name": "El Alma Cafe",
+      "score": 87,
+      "neighborhood": "Zilker",
+      "cuisine": "Mexican / Rooftop",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11485,
+      "name": "Veneto Ristorante",
+      "score": 87,
+      "neighborhood": "9th & 9th",
+      "cuisine": "Italian Fine Dining",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11531,
+      "name": "Mar Muntanya",
+      "score": 87,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Spanish / Rooftop",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11556,
+      "name": "Junah",
+      "score": 87,
+      "neighborhood": "9th & 9th",
+      "cuisine": "Japanese / Italian Fusion",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12273,
+      "name": "Settebello Pizzeria",
+      "score": 87,
+      "neighborhood": "Henderson",
+      "cuisine": "Neapolitan Pizza",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12276,
+      "name": "Nittaya's Secret Kitchen",
+      "score": 87,
+      "neighborhood": "Summerlin",
+      "cuisine": "Thai",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12278,
+      "name": "Shang Artisan Noodle",
+      "score": 87,
+      "neighborhood": "Chinatown",
+      "cuisine": "Chinese / Noodles",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12284,
+      "name": "Yardbird Southern Table",
+      "score": 87,
+      "neighborhood": "The Strip (The Venetian)",
+      "cuisine": "Southern",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12295,
+      "name": "La Strega",
+      "score": 87,
+      "neighborhood": "West of Strip",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12330,
+      "name": "Nakamura-Ya",
+      "score": 87,
+      "neighborhood": "Chinatown",
+      "cuisine": "Japanese / Ramen",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12337,
+      "name": "Liquid Diet",
+      "score": 87,
+      "neighborhood": "Arts District",
+      "cuisine": "Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12341,
+      "name": "Boom Bang",
+      "score": 87,
+      "neighborhood": "Henderson",
+      "cuisine": "New American / Brasserie",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12346,
+      "name": "Lola's Louisiana Kitchen",
+      "score": 87,
+      "neighborhood": "Spring Valley",
+      "cuisine": "Cajun / Creole",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12361,
+      "name": "Sushisamba Las Vegas",
+      "score": 87,
+      "neighborhood": "The Strip (The Palazzo)",
+      "cuisine": "Japanese / Brazilian / Peruvian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12368,
+      "name": "Sen of Japan",
+      "score": 87,
+      "neighborhood": "Chinatown",
+      "cuisine": "Japanese / Sushi",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12372,
+      "name": "Boom Bang Restaurant",
+      "score": 87,
+      "neighborhood": "Henderson",
+      "cuisine": "New American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12373,
+      "name": "Hearthstone Kitchen",
+      "score": 87,
+      "neighborhood": "Summerlin (Red Rock Resort)",
+      "cuisine": "New American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12380,
+      "name": "Legacy Club",
+      "score": 87,
+      "neighborhood": "Downtown (Circa)",
+      "cuisine": "Rooftop Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12393,
+      "name": "Tom Colicchio Craftsteak",
+      "score": 87,
+      "neighborhood": "The Strip (MGM Grand)",
+      "cuisine": "Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12398,
+      "name": "Sparrow + Wolf Bar",
+      "score": 87,
+      "neighborhood": "Chinatown",
+      "cuisine": "Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12400,
+      "name": "Wally's Wine & Spirits",
+      "score": 87,
+      "neighborhood": "The Strip (Resorts World)",
+      "cuisine": "Wine Bar / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9254,
+      "name": "Taurus Ox",
+      "score": 87,
+      "neighborhood": "Capitol Hill",
+      "cuisine": "Lao / Southeast Asian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9256,
+      "name": "Victrola Coffee Roasters",
+      "score": 87,
+      "neighborhood": "Capitol Hill",
+      "cuisine": "Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9272,
+      "name": "Georgetown Brewing Company",
+      "score": 87,
+      "neighborhood": "Georgetown",
+      "cuisine": "Brewery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9282,
+      "name": "Le Coin",
+      "score": 87,
+      "neighborhood": "Fremont",
+      "cuisine": "French / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9285,
+      "name": "Raccolto",
+      "score": 87,
+      "neighborhood": "West Seattle",
+      "cuisine": "Italian / Pasta",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9289,
+      "name": "Familyfriend",
+      "score": 87,
+      "neighborhood": "Beacon Hill",
+      "cuisine": "Guamanian / Pacific Islander",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9296,
+      "name": "Gracia",
+      "score": 87,
+      "neighborhood": "Ballard",
+      "cuisine": "Mexican",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9297,
+      "name": "Glo's",
+      "score": 87,
+      "neighborhood": "Capitol Hill",
+      "cuisine": "Diner / Brunch",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Dallas",
+      "id": 9151,
+      "name": "JR's Bar & Grill",
+      "score": 86,
+      "neighborhood": "Oak Lawn",
+      "cuisine": "Bar & Grill / LGBTQ+ Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Dallas",
+      "id": 9154,
+      "name": "CRUSH",
+      "score": 86,
+      "neighborhood": "Oak Lawn",
+      "cuisine": "Nightclub / LGBTQ+ Club",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Dallas",
+      "id": 9160,
+      "name": "Kilo Coffee",
+      "score": 86,
+      "neighborhood": "Design District",
+      "cuisine": "Specialty Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7531,
+      "name": "Nobi Public House",
+      "score": 86,
+      "neighborhood": "Clear Lake",
+      "cuisine": "Vietnamese-American Gastropub",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7536,
+      "name": "Monument Inn",
+      "score": 86,
+      "neighborhood": "La Porte",
+      "cuisine": "Seafood",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7542,
+      "name": "Graze Tomball",
+      "score": 86,
+      "neighborhood": "Tomball",
+      "cuisine": "American / Comfort",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7546,
+      "name": "Resilience Viet Kitchen",
+      "score": 86,
+      "neighborhood": "West Houston",
+      "cuisine": "Vietnamese",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 463,
+      "name": "Metric Coffee",
+      "score": 86,
+      "neighborhood": "West Loop",
+      "cuisine": "Coffee / Roaster",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 468,
+      "name": "Carnitas Uruapan",
+      "score": 86,
+      "neighborhood": "Pilsen",
+      "cuisine": "Mexican / Carnitas",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 481,
+      "name": "Han 202",
+      "score": 86,
+      "neighborhood": "Bridgeport",
+      "cuisine": "Chinese / French Fusion",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5463,
+      "name": "Josephine House",
+      "score": 86,
+      "neighborhood": "Clarksville",
+      "cuisine": "American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5469,
+      "name": "The Dead Rabbit Austin",
+      "score": 86,
+      "neighborhood": "Downtown",
+      "cuisine": "Cocktail Bar / Irish Pub",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5492,
+      "name": "Fleming's Prime Steakhouse",
+      "score": 86,
+      "neighborhood": "North Austin",
+      "cuisine": "Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5493,
+      "name": "Ruth's Chris Steak House",
+      "score": 86,
+      "neighborhood": "Downtown",
+      "cuisine": "Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5504,
+      "name": "Yard Bar",
+      "score": 86,
+      "neighborhood": "North Austin",
+      "cuisine": "American / Dog Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5506,
+      "name": "Garbo's Lobster",
+      "score": 86,
+      "neighborhood": "North Lamar",
+      "cuisine": "Seafood / Lobster",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5509,
+      "name": "Austin Beer Garden Brewing Co.",
+      "score": 86,
+      "neighborhood": "South Austin",
+      "cuisine": "Brewery / Beer Garden",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5545,
+      "name": "The Continental Club",
+      "score": 86,
+      "neighborhood": "South Congress",
+      "cuisine": "Bar / Live Music",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5547,
+      "name": "Sway Thai",
+      "score": 86,
+      "neighborhood": "South Lamar",
+      "cuisine": "Thai",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5554,
+      "name": "Patrizi's",
+      "score": 86,
+      "neighborhood": "East Austin",
+      "cuisine": "Italian / Food Truck",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11210,
+      "name": "Sapa Sushi Bar & Grill",
+      "score": 86,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Japanese / Sushi",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11465,
+      "name": "Roux SLC",
+      "score": 86,
+      "neighborhood": "Trolley Square",
+      "cuisine": "French Fusion",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11470,
+      "name": "Hoof & Vine",
+      "score": 86,
+      "neighborhood": "Midvale",
+      "cuisine": "Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11512,
+      "name": "Tona Sushi Bar & Grill",
+      "score": 86,
+      "neighborhood": "Ogden",
+      "cuisine": "Japanese / Sushi",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11516,
+      "name": "Le Nonne",
+      "score": 86,
+      "neighborhood": "Logan",
+      "cuisine": "Italian Fine Dining",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11525,
+      "name": "Fleming's Prime Steakhouse SLC",
+      "score": 86,
+      "neighborhood": "Gateway",
+      "cuisine": "Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11529,
+      "name": "STK Steakhouse SLC",
+      "score": 86,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11569,
+      "name": "Caputo Deli & Market",
+      "score": 86,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Italian Deli / Market",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12266,
+      "name": "Bound by Salvatore Calabrese",
+      "score": 86,
+      "neighborhood": "The Strip (The Cromwell)",
+      "cuisine": "Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12277,
+      "name": "Hwaro Korean BBQ",
+      "score": 86,
+      "neighborhood": "Chinatown",
+      "cuisine": "Korean BBQ",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12285,
+      "name": "CRAFTkitchen Henderson",
+      "score": 86,
+      "neighborhood": "Henderson",
+      "cuisine": "New American / Brunch",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12297,
+      "name": "Sumo Omakase",
+      "score": 86,
+      "neighborhood": "Chinatown",
+      "cuisine": "Japanese / Omakase",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12331,
+      "name": "Monta Ramen",
+      "score": 86,
+      "neighborhood": "Chinatown",
+      "cuisine": "Japanese / Ramen",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12332,
+      "name": "Honey Pig Korean BBQ",
+      "score": 86,
+      "neighborhood": "Chinatown",
+      "cuisine": "Korean BBQ",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12347,
+      "name": "Naked Fish",
+      "score": 86,
+      "neighborhood": "Spring Valley",
+      "cuisine": "Japanese / Seafood",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12352,
+      "name": "The Skull Bar",
+      "score": 86,
+      "neighborhood": "Chinatown",
+      "cuisine": "Speakeasy / Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12358,
+      "name": "The Buffet at Wynn",
+      "score": 86,
+      "neighborhood": "The Strip (Wynn)",
+      "cuisine": "Buffet / Global",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12374,
+      "name": "Andiron Steak & Sea",
+      "score": 86,
+      "neighborhood": "Summerlin (Downtown Summerlin)",
+      "cuisine": "Steakhouse / Seafood",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12385,
+      "name": "DW Bistro",
+      "score": 86,
+      "neighborhood": "Spring Valley",
+      "cuisine": "Jamaican-New Mexican Fusion",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12387,
+      "name": "Cleo Las Vegas",
+      "score": 86,
+      "neighborhood": "The Strip (The Venetian)",
+      "cuisine": "Mediterranean",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9258,
+      "name": "Fair Isle Brewing",
+      "score": 86,
+      "neighborhood": "Ballard",
+      "cuisine": "Brewery / Bar Food",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9260,
+      "name": "Lighthouse Roasters",
+      "score": 86,
+      "neighborhood": "Fremont",
+      "cuisine": "Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9264,
+      "name": "Korean Tofu House",
+      "score": 86,
+      "neighborhood": "University District",
+      "cuisine": "Korean",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9268,
+      "name": "Phoenecia",
+      "score": 86,
+      "neighborhood": "West Seattle",
+      "cuisine": "Lebanese / Mediterranean",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9270,
+      "name": "Noodle Bar",
+      "score": 86,
+      "neighborhood": "South Lake Union",
+      "cuisine": "Chinese / Sichuan",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9275,
+      "name": "Istanbul Cuisine",
+      "score": 86,
+      "neighborhood": "Bellevue",
+      "cuisine": "Turkish",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9286,
+      "name": "Tutta Bella Neapolitan Pizzeria",
+      "score": 86,
+      "neighborhood": "Columbia City",
+      "cuisine": "Pizza / Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9287,
+      "name": "Deru Market",
+      "score": 86,
+      "neighborhood": "Kirkland",
+      "cuisine": "American / Farm-to-Table",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9291,
+      "name": "Off the Rez Cafe",
+      "score": 86,
+      "neighborhood": "University District",
+      "cuisine": "Native American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9294,
+      "name": "Chiho",
+      "score": 86,
+      "neighborhood": "Belltown",
+      "cuisine": "Chinese / Soup Dumplings",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9298,
+      "name": "Volunteer Park Cafe and Pantry",
+      "score": 86,
+      "neighborhood": "Capitol Hill",
+      "cuisine": "American / Cafe / Brunch",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9300,
+      "name": "Lupo",
+      "score": 86,
+      "neighborhood": "Fremont",
+      "cuisine": "Pizza / Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Dallas",
+      "id": 9152,
+      "name": "Sue Ellen's",
+      "score": 85,
+      "neighborhood": "Oak Lawn",
+      "cuisine": "Bar & Live Music / LGBTQ+ Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Dallas",
+      "id": 9161,
+      "name": "Lumis",
+      "score": 85,
+      "neighborhood": "Design District",
+      "cuisine": "Cocktail Lounge",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7533,
+      "name": "Dumpling World",
+      "score": 85,
+      "neighborhood": "Clear Lake",
+      "cuisine": "Chinese / Dumplings",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7541,
+      "name": "Bonfire Grill",
+      "score": 85,
+      "neighborhood": "Tomball",
+      "cuisine": "Pizza / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7549,
+      "name": "Ba Mien Bistro",
+      "score": 85,
+      "neighborhood": "Northwest Houston",
+      "cuisine": "Vietnamese",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7555,
+      "name": "Star Rover",
+      "score": 85,
+      "neighborhood": "Heights",
+      "cuisine": "American Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7556,
+      "name": "Bravery Chef Hall",
+      "score": 85,
+      "neighborhood": "EaDo",
+      "cuisine": "Food Hall",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7557,
+      "name": "Night Heron",
+      "score": 85,
+      "neighborhood": "Montrose",
+      "cuisine": "American / Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 201,
+      "name": "Spy Bar",
+      "score": 85,
+      "neighborhood": "River North",
+      "cuisine": "Nightclub / House Music",
+      "dishCount": 1,
+      "dishes": [
+        "Cocktails"
+      ],
+      "issues": [
+        "< 3 items",
+        "all generic"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 462,
+      "name": "Taqueria Chingon",
+      "score": 85,
+      "neighborhood": "West Loop",
+      "cuisine": "Mexican / Tacos",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 464,
+      "name": "Mr. Beef on Orleans",
+      "score": 85,
+      "neighborhood": "River North",
+      "cuisine": "Italian Beef",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 467,
+      "name": "Pompette",
+      "score": 85,
+      "neighborhood": "Bucktown",
+      "cuisine": "French / Mediterranean",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 470,
+      "name": "Big Jones",
+      "score": 85,
+      "neighborhood": "Andersonville",
+      "cuisine": "Southern / Lowcountry",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5472,
+      "name": "POP Champagne Lounge",
+      "score": 85,
+      "neighborhood": "Downtown",
+      "cuisine": "Champagne Bar / Cocktails",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5477,
+      "name": "Daydreamer",
+      "score": 85,
+      "neighborhood": "East Austin",
+      "cuisine": "Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5494,
+      "name": "Austin Land & Cattle",
+      "score": 85,
+      "neighborhood": "North Lamar",
+      "cuisine": "Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5505,
+      "name": "Bouldin Acres",
+      "score": 85,
+      "neighborhood": "South Lamar",
+      "cuisine": "American / Food Trucks",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5507,
+      "name": "Azul Rooftop Bar",
+      "score": 85,
+      "neighborhood": "Downtown",
+      "cuisine": "Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5510,
+      "name": "Draught House Pub & Brewery",
+      "score": 85,
+      "neighborhood": "North Loop",
+      "cuisine": "Brewery / Beer Garden",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5511,
+      "name": "Granny's Tacos",
+      "score": 85,
+      "neighborhood": "East Austin",
+      "cuisine": "Mexican / Breakfast Tacos",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5519,
+      "name": "JewBoy Burgers",
+      "score": 85,
+      "neighborhood": "North Austin",
+      "cuisine": "Burgers / Fast Casual",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5524,
+      "name": "Knuckle Sandwich",
+      "score": 85,
+      "neighborhood": "South Austin",
+      "cuisine": "Sandwiches / Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5549,
+      "name": "Corsair",
+      "score": 85,
+      "neighborhood": "Rainey Street",
+      "cuisine": "Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5558,
+      "name": "Kinsho",
+      "score": 85,
+      "neighborhood": "Rainey Street",
+      "cuisine": "Japanese / Sushi",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5566,
+      "name": "Jim's Smokehouse",
+      "score": 85,
+      "neighborhood": "West Austin",
+      "cuisine": "Texas BBQ / Food Truck",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11467,
+      "name": "Saola Restaurant",
+      "score": 85,
+      "neighborhood": "Cottonwood Heights",
+      "cuisine": "Asian Fusion",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11472,
+      "name": "Miyazaki",
+      "score": 85,
+      "neighborhood": "Midvale",
+      "cuisine": "Japanese / Sushi",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11475,
+      "name": "The Angry Korean",
+      "score": 85,
+      "neighborhood": "South Jordan",
+      "cuisine": "Korean / Fusion",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11490,
+      "name": "Sauce Boss Southern Kitchen",
+      "score": 85,
+      "neighborhood": "Draper",
+      "cuisine": "Southern / Soul Food",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11492,
+      "name": "Matilda Park City",
+      "score": 85,
+      "neighborhood": "Park City",
+      "cuisine": "Italian / Pizza",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11508,
+      "name": "Sol Agave American Fork",
+      "score": 85,
+      "neighborhood": "Lehi",
+      "cuisine": "Mexican",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11527,
+      "name": "'mina Ristorante Siciliano",
+      "score": 85,
+      "neighborhood": "University",
+      "cuisine": "Sicilian / Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11568,
+      "name": "Les Madeleines Cafe",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "French Patisserie",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12259,
+      "name": "Via Via Food Hall",
+      "score": 85,
+      "neighborhood": "The Strip (The Palazzo)",
+      "cuisine": "Food Hall",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12267,
+      "name": "Shin Yakiniku",
+      "score": 85,
+      "neighborhood": "Chinatown",
+      "cuisine": "Japanese BBQ",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12283,
+      "name": "Ping Pang Pong",
+      "score": 85,
+      "neighborhood": "West of Strip",
+      "cuisine": "Chinese / Dim Sum",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12293,
+      "name": "Maroon Las Vegas",
+      "score": 85,
+      "neighborhood": "The Strip (The Venetian)",
+      "cuisine": "Italian / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12334,
+      "name": "Fat Choy",
+      "score": 85,
+      "neighborhood": "Chinatown",
+      "cuisine": "Chinese American / Diner",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12345,
+      "name": "Grape Street Cafe",
+      "score": 85,
+      "neighborhood": "Summerlin (Downtown Summerlin)",
+      "cuisine": "California Bistro / Wine Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12348,
+      "name": "Cafe Breizh",
+      "score": 85,
+      "neighborhood": "Summerlin",
+      "cuisine": "French / Creperie",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12349,
+      "name": "Gaetano's Ristorante",
+      "score": 85,
+      "neighborhood": "Spring Valley",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12360,
+      "name": "Lupo by Wolfgang Puck",
+      "score": 85,
+      "neighborhood": "The Strip (Mandalay Bay)",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12375,
+      "name": "Paymon Mediterranean Cafe",
+      "score": 85,
+      "neighborhood": "Paradise",
+      "cuisine": "Mediterranean / Persian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12378,
+      "name": "Distrito Federal",
+      "score": 85,
+      "neighborhood": "Paradise",
+      "cuisine": "Mexican / Street Food",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12392,
+      "name": "Mama Rabbit",
+      "score": 85,
+      "neighborhood": "The Strip (Park MGM)",
+      "cuisine": "Cocktail Bar / Mexican",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12394,
+      "name": "Ferraro's Vino",
+      "score": 85,
+      "neighborhood": "Paradise",
+      "cuisine": "Italian / Wine Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12399,
+      "name": "China Poblano",
+      "score": 85,
+      "neighborhood": "The Strip (The Cosmopolitan)",
+      "cuisine": "Mexican-Chinese Fusion",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9257,
+      "name": "Optimism Brewing Co.",
+      "score": 85,
+      "neighborhood": "Capitol Hill",
+      "cuisine": "Brewery / Bar Food",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9259,
+      "name": "Bale Breaker & Yonder Cider Taproom",
+      "score": 85,
+      "neighborhood": "Ballard",
+      "cuisine": "Brewery / Cidery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9263,
+      "name": "Aladdin Gyro-Cery",
+      "score": 85,
+      "neighborhood": "University District",
+      "cuisine": "Middle Eastern / Falafel",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9265,
+      "name": "Cloudburst Brewing",
+      "score": 85,
+      "neighborhood": "Belltown",
+      "cuisine": "Brewery / Bar Food",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9277,
+      "name": "Voi Ca Phe",
+      "score": 85,
+      "neighborhood": "Georgetown",
+      "cuisine": "Vietnamese / Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9292,
+      "name": "Outsider BBQ",
+      "score": 85,
+      "neighborhood": "Fremont",
+      "cuisine": "BBQ / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9299,
+      "name": "Dreamland Bar and Diner",
+      "score": 85,
+      "neighborhood": "Fremont",
+      "cuisine": "American / Diner / Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Dallas",
+      "id": 9150,
+      "name": "Candleroom",
+      "score": 84,
+      "neighborhood": "Knox-Henderson",
+      "cuisine": "Nightclub / Lounge",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7532,
+      "name": "Masa Sushi",
+      "score": 84,
+      "neighborhood": "Clear Lake",
+      "cuisine": "Japanese / Sushi",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7535,
+      "name": "Luna Restaurant & Bar",
+      "score": 84,
+      "neighborhood": "Clear Lake",
+      "cuisine": "New American / Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7537,
+      "name": "Main 101 Grill & Bar",
+      "score": 84,
+      "neighborhood": "La Porte",
+      "cuisine": "New American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7544,
+      "name": "Tony's Italian Delicatessen",
+      "score": 84,
+      "neighborhood": "Tomball",
+      "cuisine": "Italian Deli / Sandwiches",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7550,
+      "name": "Bluewater Seafood",
+      "score": 84,
+      "neighborhood": "Northwest Houston",
+      "cuisine": "Seafood",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 475,
+      "name": "Greek Islands Restaurant",
+      "score": 84,
+      "neighborhood": "Greektown",
+      "cuisine": "Greek",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 478,
+      "name": "Tacotlan",
+      "score": 84,
+      "neighborhood": "Hermosa",
+      "cuisine": "Mexican / Tacos",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 482,
+      "name": "Phil's Pizza",
+      "score": 84,
+      "neighborhood": "Bridgeport",
+      "cuisine": "Tavern-Style Pizza",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5470,
+      "name": "Marlow",
+      "score": 84,
+      "neighborhood": "Downtown",
+      "cuisine": "Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5486,
+      "name": "Paperboy South",
+      "score": 84,
+      "neighborhood": "South Lamar",
+      "cuisine": "Breakfast / Brunch",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5496,
+      "name": "Donn's Depot",
+      "score": 84,
+      "neighborhood": "Downtown",
+      "cuisine": "Dive Bar / Honky-Tonk",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5498,
+      "name": "Hole in the Wall",
+      "score": 84,
+      "neighborhood": "Downtown",
+      "cuisine": "Dive Bar / Music Venue",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5513,
+      "name": "Fresa's Chicken al Carbon",
+      "score": 84,
+      "neighborhood": "North Lamar",
+      "cuisine": "Mexican / Chicken",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5514,
+      "name": "Poke-Poke",
+      "score": 84,
+      "neighborhood": "South Congress",
+      "cuisine": "Poke / Hawaiian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5520,
+      "name": "Allday Pizza",
+      "score": 84,
+      "neighborhood": "Hyde Park",
+      "cuisine": "Pizza / New York Style",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5522,
+      "name": "Otherside Deli",
+      "score": 84,
+      "neighborhood": "North Loop",
+      "cuisine": "Deli / Sandwiches",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5525,
+      "name": "Saigon On 7th",
+      "score": 84,
+      "neighborhood": "East Austin",
+      "cuisine": "Vietnamese / Banh Mi",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5555,
+      "name": "Blue Owl Brewing",
+      "score": 84,
+      "neighborhood": "East Austin",
+      "cuisine": "Brewery / Sour Beer",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11463,
+      "name": "Rodizio Grill",
+      "score": 84,
+      "neighborhood": "Trolley Square",
+      "cuisine": "Brazilian Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11468,
+      "name": "Zaferan Cafe",
+      "score": 84,
+      "neighborhood": "Cottonwood Heights",
+      "cuisine": "Middle Eastern / Iranian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11473,
+      "name": "Tea Rose Diner",
+      "score": 84,
+      "neighborhood": "Murray",
+      "cuisine": "Thai",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11480,
+      "name": "Melancholy Wine Lounge",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Wine Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11502,
+      "name": "Paradise Biryani Pointe",
+      "score": 84,
+      "neighborhood": "Sandy",
+      "cuisine": "Indian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11509,
+      "name": "Ocotillo Prime",
+      "score": 84,
+      "neighborhood": "Lehi",
+      "cuisine": "Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11522,
+      "name": "North Italia Riverton",
+      "score": 84,
+      "neighborhood": "Riverton",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11528,
+      "name": "HandoSake Sushi",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Japanese / Hand Roll Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11530,
+      "name": "Van Ryder",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Rooftop Bar / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11536,
+      "name": "Arempas",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Venezuelan / Arepas",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11562,
+      "name": "Kaneo",
+      "score": 84,
+      "neighborhood": "Park City",
+      "cuisine": "Mediterranean / Macedonian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11566,
+      "name": "Eva Bakery",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Bakery / French",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12262,
+      "name": "Cheri Rooftop",
+      "score": 84,
+      "neighborhood": "The Strip (Paris Las Vegas)",
+      "cuisine": "French / Rooftop",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12270,
+      "name": "Palate",
+      "score": 84,
+      "neighborhood": "Arts District",
+      "cuisine": "New American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12279,
+      "name": "Milpa",
+      "score": 84,
+      "neighborhood": "Spring Valley",
+      "cuisine": "Mexican / Cafe",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12340,
+      "name": "Eat",
+      "score": 84,
+      "neighborhood": "Downtown",
+      "cuisine": "Brunch / Cafe",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12351,
+      "name": "Hachi",
+      "score": 84,
+      "neighborhood": "Paradise",
+      "cuisine": "Japanese / Yakitori",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12366,
+      "name": "Pin Kaow Thai",
+      "score": 84,
+      "neighborhood": "Chinatown",
+      "cuisine": "Thai",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12396,
+      "name": "Leticia's Cocina",
+      "score": 84,
+      "neighborhood": "Henderson",
+      "cuisine": "Mexican",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9269,
+      "name": "Brave Horse Tavern",
+      "score": 84,
+      "neighborhood": "South Lake Union",
+      "cuisine": "American / Pub",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9271,
+      "name": "Geraldine's Counter",
+      "score": 84,
+      "neighborhood": "Columbia City",
+      "cuisine": "Diner / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9278,
+      "name": "Perihelion Brewery",
+      "score": 84,
+      "neighborhood": "Beacon Hill",
+      "cuisine": "Brewery / Bar Food",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9284,
+      "name": "The White Swan Public House",
+      "score": 84,
+      "neighborhood": "South Lake Union",
+      "cuisine": "American / Seafood",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9293,
+      "name": "Tony's Bakery",
+      "score": 84,
+      "neighborhood": "Hillman City",
+      "cuisine": "Vietnamese / Bakery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9295,
+      "name": "Calozzis Cheesesteaks",
+      "score": 84,
+      "neighborhood": "Georgetown",
+      "cuisine": "American / Cheesesteaks",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7539,
+      "name": "Southern Komfort Kitchen",
+      "score": 83,
+      "neighborhood": "La Porte",
+      "cuisine": "Southern / Soul Food",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7548,
+      "name": "Pecan Creek Grille",
+      "score": 83,
+      "neighborhood": "West Houston",
+      "cuisine": "American / Brunch",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7551,
+      "name": "Cutten Kitchen",
+      "score": 83,
+      "neighborhood": "Northwest Houston",
+      "cuisine": "Southern / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 471,
+      "name": "Bundoo Khan",
+      "score": 83,
+      "neighborhood": "Devon Avenue",
+      "cuisine": "Pakistani BBQ",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5468,
+      "name": "Firehouse Hostel Lounge",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "cuisine": "Cocktail Bar / Speakeasy",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5473,
+      "name": "Devil May Care",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "cuisine": "Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5475,
+      "name": "Clive Bar",
+      "score": 83,
+      "neighborhood": "Rainey Street",
+      "cuisine": "Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5485,
+      "name": "Radio Coffee & Beer",
+      "score": 83,
+      "neighborhood": "South Austin",
+      "cuisine": "Coffee / Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5497,
+      "name": "The Cloak Room",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "cuisine": "Dive Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5499,
+      "name": "Deep Eddy Cabaret",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "cuisine": "Dive Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5502,
+      "name": "Grackle",
+      "score": 83,
+      "neighborhood": "East Austin",
+      "cuisine": "Dive Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5512,
+      "name": "Rosita's Al Pastor",
+      "score": 83,
+      "neighborhood": "South Austin",
+      "cuisine": "Mexican / Tacos",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5515,
+      "name": "Flower Child",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "cuisine": "Healthy / Bowls / Salads",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5516,
+      "name": "Phoenician Resto Cafe",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "cuisine": "Mediterranean / Lebanese",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5521,
+      "name": "Little Deli & Pizzeria",
+      "score": 83,
+      "neighborhood": "North Loop",
+      "cuisine": "Deli / Pizza",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5552,
+      "name": "Anthem Korean",
+      "score": 83,
+      "neighborhood": "East Austin",
+      "cuisine": "Korean Fried Chicken",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5559,
+      "name": "Amaya",
+      "score": 83,
+      "neighborhood": "Rainey Street",
+      "cuisine": "Mediterranean / Rooftop",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5560,
+      "name": "Leona Botanical Cafe",
+      "score": 83,
+      "neighborhood": "South Austin",
+      "cuisine": "Thai / Mexican / Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5565,
+      "name": "Ceviche7",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "cuisine": "Peruvian / Food Truck",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5577,
+      "name": "Juliet Italian Kitchen",
+      "score": 83,
+      "neighborhood": "North Austin",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11466,
+      "name": "The Park Cafe",
+      "score": 83,
+      "neighborhood": "Liberty Park",
+      "cuisine": "Breakfast / Brunch",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11471,
+      "name": "Del Barrio Cafe",
+      "score": 83,
+      "neighborhood": "Midvale",
+      "cuisine": "Mexican / Yucatan",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11476,
+      "name": "Porch Restaurant",
+      "score": 83,
+      "neighborhood": "South Jordan",
+      "cuisine": "Southern American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11477,
+      "name": "Our Kitchen Cafe",
+      "score": 83,
+      "neighborhood": "North Salt Lake",
+      "cuisine": "Breakfast / Brunch",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11479,
+      "name": "Paulino's Contigo Peru",
+      "score": 83,
+      "neighborhood": "West Valley",
+      "cuisine": "Peruvian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11487,
+      "name": "SOMI Vietnamese Bistro",
+      "score": 83,
+      "neighborhood": "Sugar House",
+      "cuisine": "Vietnamese",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11500,
+      "name": "Gurkhas",
+      "score": 83,
+      "neighborhood": "Millcreek",
+      "cuisine": "Indian / Nepali",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11510,
+      "name": "Kitchen Eighty-Eight",
+      "score": 83,
+      "neighborhood": "Lehi",
+      "cuisine": "New American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11514,
+      "name": "Stella's on 25th",
+      "score": 83,
+      "neighborhood": "Ogden",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11519,
+      "name": "Joy Luck Restaurant",
+      "score": 83,
+      "neighborhood": "Bountiful",
+      "cuisine": "Chinese",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11523,
+      "name": "Saffron Circle",
+      "score": 83,
+      "neighborhood": "Riverton",
+      "cuisine": "Indian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11535,
+      "name": "Savage Fish Poke",
+      "score": 83,
+      "neighborhood": "Millcreek",
+      "cuisine": "Poke / Hawaiian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11559,
+      "name": "Vongole Pasta",
+      "score": 83,
+      "neighborhood": "Sugar House",
+      "cuisine": "Italian / Pasta",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11564,
+      "name": "White Horse",
+      "score": 83,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Cocktail Bar / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11567,
+      "name": "Bruges Waffles and Frites",
+      "score": 83,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Belgian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12263,
+      "name": "The Bedford by Martha Stewart",
+      "score": 83,
+      "neighborhood": "The Strip (Paris Las Vegas)",
+      "cuisine": "American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12265,
+      "name": "Pampas Churrascaria",
+      "score": 83,
+      "neighborhood": "The Strip (Planet Hollywood)",
+      "cuisine": "Brazilian Steakhouse",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12280,
+      "name": "Hop Nuts Brewing",
+      "score": 83,
+      "neighborhood": "Arts District",
+      "cuisine": "Brewery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12294,
+      "name": "Rosa Mexicano Las Vegas",
+      "score": 83,
+      "neighborhood": "The Strip (The Venetian)",
+      "cuisine": "Mexican",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12333,
+      "name": "Mekong",
+      "score": 83,
+      "neighborhood": "Chinatown",
+      "cuisine": "Vietnamese / Chinese",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12338,
+      "name": "The Silver Stamp",
+      "score": 83,
+      "neighborhood": "Arts District",
+      "cuisine": "Beer Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12350,
+      "name": "Shokku Ramen",
+      "score": 83,
+      "neighborhood": "Paradise",
+      "cuisine": "Japanese / Ramen",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12356,
+      "name": "House of Blues Las Vegas",
+      "score": 83,
+      "neighborhood": "The Strip (Mandalay Bay)",
+      "cuisine": "Southern / Live Music",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12383,
+      "name": "Rosallie Le French Cafe",
+      "score": 83,
+      "neighborhood": "Spring Valley",
+      "cuisine": "French / Bakery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12401,
+      "name": "The Catamaran",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "cuisine": "Cocktail Bar / Seafood",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7538,
+      "name": "New Orleans Seafood Kitchen",
+      "score": 82,
+      "neighborhood": "La Porte",
+      "cuisine": "Cajun / Seafood",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 472,
+      "name": "Annapurna Indian",
+      "score": 82,
+      "neighborhood": "Devon Avenue",
+      "cuisine": "Indian Vegetarian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 474,
+      "name": "Ethiopian Diamond",
+      "score": 82,
+      "neighborhood": "Edgewater",
+      "cuisine": "Ethiopian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 476,
+      "name": "Athena Restaurant",
+      "score": 82,
+      "neighborhood": "Greektown",
+      "cuisine": "Greek",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 480,
+      "name": "Lagunitas Taproom",
+      "score": 82,
+      "neighborhood": "Douglas Park",
+      "cuisine": "Brewery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5489,
+      "name": "Oddwood Brewing",
+      "score": 82,
+      "neighborhood": "East Austin",
+      "cuisine": "Brewery / Pizza",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5500,
+      "name": "Ego's",
+      "score": 82,
+      "neighborhood": "South Congress",
+      "cuisine": "Dive Bar / Karaoke",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5501,
+      "name": "Barfly's",
+      "score": 82,
+      "neighborhood": "North Loop",
+      "cuisine": "Dive Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5503,
+      "name": "The Volstead Lounge",
+      "score": 82,
+      "neighborhood": "East Austin",
+      "cuisine": "Dive Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5517,
+      "name": "TX Shawarma",
+      "score": 82,
+      "neighborhood": "South Austin",
+      "cuisine": "Mediterranean / Shawarma",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5527,
+      "name": "Cuvee Coffee",
+      "score": 82,
+      "neighborhood": "East Austin",
+      "cuisine": "Specialty Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5556,
+      "name": "Hi Sign Brewing",
+      "score": 82,
+      "neighborhood": "East Austin",
+      "cuisine": "Brewery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5564,
+      "name": "T-Loc's Sonoran Hot Dogs",
+      "score": 82,
+      "neighborhood": "North Loop",
+      "cuisine": "Sonoran / Street Food",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5575,
+      "name": "Rosita's Al Pastor East",
+      "score": 82,
+      "neighborhood": "East Austin",
+      "cuisine": "Mexican / Tacos",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5576,
+      "name": "Haymaker Austin",
+      "score": 82,
+      "neighborhood": "East Austin",
+      "cuisine": "American / Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11461,
+      "name": "Foundry Grill",
+      "score": 82,
+      "neighborhood": "Provo",
+      "cuisine": "American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11469,
+      "name": "Bohemian Brewery",
+      "score": 82,
+      "neighborhood": "Midvale",
+      "cuisine": "Czech / Brewpub",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11481,
+      "name": "Carson Kitchen SLC",
+      "score": 82,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "New American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11491,
+      "name": "Mr. Shabu",
+      "score": 82,
+      "neighborhood": "Gateway",
+      "cuisine": "Japanese / Hot Pot",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11495,
+      "name": "Sushi Groove",
+      "score": 82,
+      "neighborhood": "Sugar House",
+      "cuisine": "Japanese / Sushi",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11497,
+      "name": "Muertos Cantina",
+      "score": 82,
+      "neighborhood": "Sugar House",
+      "cuisine": "Mexican",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11501,
+      "name": "Shahrazad Market",
+      "score": 82,
+      "neighborhood": "West Valley",
+      "cuisine": "Middle Eastern / Iranian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11503,
+      "name": "Hruska's Kolaches",
+      "score": 82,
+      "neighborhood": "Provo",
+      "cuisine": "Bakery / Czech",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11507,
+      "name": "Via 313 Lehi",
+      "score": 82,
+      "neighborhood": "Lehi",
+      "cuisine": "Pizza",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11513,
+      "name": "Roosters Brewing Co.",
+      "score": 82,
+      "neighborhood": "Ogden",
+      "cuisine": "Brewery / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11515,
+      "name": "Weller's Bistro",
+      "score": 82,
+      "neighborhood": "Ogden",
+      "cuisine": "German / European",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11520,
+      "name": "Twigs Bistro & Martini Bar",
+      "score": 82,
+      "neighborhood": "Farmington",
+      "cuisine": "New American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11524,
+      "name": "Slackwater Herriman",
+      "score": 82,
+      "neighborhood": "Herriman",
+      "cuisine": "Pizza / Craft Beer",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11533,
+      "name": "Hanaya Poke",
+      "score": 82,
+      "neighborhood": "Sugar House",
+      "cuisine": "Poke / Hawaiian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11537,
+      "name": "Atomic Biscuit",
+      "score": 82,
+      "neighborhood": "9th & 9th",
+      "cuisine": "Southern / Biscuits",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11539,
+      "name": "ROCTACO",
+      "score": 82,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Mexican / Fusion Tacos",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11557,
+      "name": "Craft by Proper",
+      "score": 82,
+      "neighborhood": "Sugar House",
+      "cuisine": "Beer Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11561,
+      "name": "Sugar House Station",
+      "score": 82,
+      "neighborhood": "Sugar House",
+      "cuisine": "Food Hall",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11565,
+      "name": "Stoneground Italian",
+      "score": 82,
+      "neighborhood": "Provo",
+      "cuisine": "Italian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12271,
+      "name": "18bin",
+      "score": 82,
+      "neighborhood": "Arts District",
+      "cuisine": "American / Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12274,
+      "name": "Lovelady Brewing",
+      "score": 82,
+      "neighborhood": "Henderson",
+      "cuisine": "Brewery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12281,
+      "name": "Banger Brewing",
+      "score": 82,
+      "neighborhood": "Downtown (Fremont East)",
+      "cuisine": "Brewery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12282,
+      "name": "Mothership Coffee Roasters",
+      "score": 82,
+      "neighborhood": "Downtown",
+      "cuisine": "Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12342,
+      "name": "Water Street Grill",
+      "score": 82,
+      "neighborhood": "Henderson",
+      "cuisine": "American / Casual",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12343,
+      "name": "Beerhaus Henderson",
+      "score": 82,
+      "neighborhood": "Henderson",
+      "cuisine": "Beer Hall",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12362,
+      "name": "Noodles Bellagio",
+      "score": 82,
+      "neighborhood": "The Strip (Bellagio)",
+      "cuisine": "Asian / Pan-Asian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12365,
+      "name": "Ohjah Japanese Steakhouse",
+      "score": 82,
+      "neighborhood": "Chinatown",
+      "cuisine": "Japanese / Teppanyaki",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12369,
+      "name": "In-N-Out Burger",
+      "score": 82,
+      "neighborhood": "Paradise",
+      "cuisine": "Burgers / Fast Food",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12377,
+      "name": "Cornish Pasty Co.",
+      "score": 82,
+      "neighborhood": "Arts District",
+      "cuisine": "British / Pub",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12381,
+      "name": "Ghostbar",
+      "score": 82,
+      "neighborhood": "West of Strip",
+      "cuisine": "Rooftop Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12384,
+      "name": "Montecristo Cigar Bar",
+      "score": 82,
+      "neighborhood": "The Strip (Caesars Palace)",
+      "cuisine": "Cigar Bar / Lounge",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12386,
+      "name": "Ellis Island BBQ",
+      "score": 82,
+      "neighborhood": "Paradise",
+      "cuisine": "BBQ / Casino",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12395,
+      "name": "Tacos El Compita",
+      "score": 82,
+      "neighborhood": "North Las Vegas",
+      "cuisine": "Mexican / Tacos",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12402,
+      "name": "Izzy's Bagels",
+      "score": 82,
+      "neighborhood": "Arts District",
+      "cuisine": "Bagels / Deli",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7547,
+      "name": "Poblano's Mexican Grill",
+      "score": 81,
+      "neighborhood": "West Houston",
+      "cuisine": "Mexican",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 479,
+      "name": "Ponce Restaurant",
+      "score": 81,
+      "neighborhood": "Hermosa",
+      "cuisine": "Puerto Rican",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5528,
+      "name": "Fleet Coffee",
+      "score": 81,
+      "neighborhood": "East Austin",
+      "cuisine": "Specialty Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5535,
+      "name": "Independence Brewing Co.",
+      "score": 81,
+      "neighborhood": "South Austin",
+      "cuisine": "Brewery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5551,
+      "name": "Cenote Cafe",
+      "score": 81,
+      "neighborhood": "East Austin",
+      "cuisine": "Coffee / Brunch",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5563,
+      "name": "Bar Fino",
+      "score": 81,
+      "neighborhood": "Rainey Street",
+      "cuisine": "Cocktail Bar / Small Plates",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5572,
+      "name": "Soul Seoul Sol",
+      "score": 81,
+      "neighborhood": "East Austin",
+      "cuisine": "Korean-Soul Fusion",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11496,
+      "name": "Little Saigon",
+      "score": 81,
+      "neighborhood": "Sugar House",
+      "cuisine": "Vietnamese",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11498,
+      "name": "Spitz Mediterranean",
+      "score": 81,
+      "neighborhood": "Sugar House",
+      "cuisine": "Mediterranean",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11517,
+      "name": "Cafe Sabor",
+      "score": 81,
+      "neighborhood": "Logan",
+      "cuisine": "Mexican / Latin",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11534,
+      "name": "LemonShark Poke",
+      "score": 81,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Poke / Hawaiian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11538,
+      "name": "Tamarind",
+      "score": 81,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Vietnamese",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11570,
+      "name": "Cubby's Chicago Beef",
+      "score": 81,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Italian Beef / Chicago Style",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12269,
+      "name": "Bad Beat Brewing",
+      "score": 81,
+      "neighborhood": "Arts District",
+      "cuisine": "Brewery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12289,
+      "name": "Juan's Flaming Fajitas Centennial",
+      "score": 81,
+      "neighborhood": "North Las Vegas",
+      "cuisine": "Mexican / Tex-Mex",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12335,
+      "name": "SkinnyFATS",
+      "score": 81,
+      "neighborhood": "Chinatown",
+      "cuisine": "American / Healthy",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7534,
+      "name": "Pappas Delta Blues Smokehouse",
+      "score": 80,
+      "neighborhood": "Clear Lake",
+      "cuisine": "BBQ / Southern",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5461,
+      "name": "Carnitas El Guero",
+      "score": 80,
+      "neighborhood": "North Lamar",
+      "cuisine": "Mexican / Tacos",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5471,
+      "name": "Pete's Dueling Piano Bar",
+      "score": 80,
+      "neighborhood": "Downtown",
+      "cuisine": "Bar / Entertainment",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5487,
+      "name": "Epoch Coffee",
+      "score": 80,
+      "neighborhood": "North Loop",
+      "cuisine": "Coffee / Cafe",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5488,
+      "name": "Saxon Pub",
+      "score": 80,
+      "neighborhood": "South Lamar",
+      "cuisine": "Bar / Live Music",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5518,
+      "name": "Cabo Bob's Burritos",
+      "score": 80,
+      "neighborhood": "Downtown",
+      "cuisine": "Mexican / Burritos",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5529,
+      "name": "Barrett's Coffee",
+      "score": 80,
+      "neighborhood": "North Loop",
+      "cuisine": "Specialty Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5530,
+      "name": "Spokesman Coffee",
+      "score": 80,
+      "neighborhood": "South Austin",
+      "cuisine": "Specialty Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5533,
+      "name": "Manana",
+      "score": 80,
+      "neighborhood": "South Congress",
+      "cuisine": "Coffee / Bakery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5534,
+      "name": "The Picnic",
+      "score": 80,
+      "neighborhood": "Zilker",
+      "cuisine": "Food Truck Park",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5540,
+      "name": "Sugar Mama's Bakeshop",
+      "score": 80,
+      "neighborhood": "South Congress",
+      "cuisine": "Bakery / Desserts",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5562,
+      "name": "Thoroughfare",
+      "score": 80,
+      "neighborhood": "Mueller",
+      "cuisine": "Bakery / Market / Cafe",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5568,
+      "name": "Plaza Colombian Coffee Bar",
+      "score": 80,
+      "neighborhood": "South Austin",
+      "cuisine": "Colombian Coffee / Cocktails",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5570,
+      "name": "Vacancy Brewing",
+      "score": 80,
+      "neighborhood": "South Austin",
+      "cuisine": "Brewery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11464,
+      "name": "Desert Edge Brewery",
+      "score": 80,
+      "neighborhood": "Trolley Square",
+      "cuisine": "Brewpub",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11499,
+      "name": "Blue Gene's",
+      "score": 80,
+      "neighborhood": "9th & 9th",
+      "cuisine": "Cocktail Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11518,
+      "name": "Cooks Underground",
+      "score": 80,
+      "neighborhood": "Logan",
+      "cuisine": "American / Burgers",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11521,
+      "name": "Royal India Bountiful",
+      "score": 80,
+      "neighborhood": "Bountiful",
+      "cuisine": "Indian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11526,
+      "name": "Seabird Bar & Vinyl Room",
+      "score": 80,
+      "neighborhood": "Gateway",
+      "cuisine": "Cocktail Bar / Seafood",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11532,
+      "name": "Zao Asian Cafe",
+      "score": 80,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Asian Fusion / Bowls",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11540,
+      "name": "HallPass",
+      "score": 80,
+      "neighborhood": "Gateway",
+      "cuisine": "Food Hall",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11542,
+      "name": "Meen Kine Poke & Grindz",
+      "score": 80,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Hawaiian / Poke",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11558,
+      "name": "ACME Bar Company",
+      "score": 80,
+      "neighborhood": "Sugar House",
+      "cuisine": "Tiki / Cocktails",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11560,
+      "name": "Kiitos Brewing Sugar House",
+      "score": 80,
+      "neighborhood": "Sugar House",
+      "cuisine": "Brewery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11571,
+      "name": "Moose Knuckle Donuts",
+      "score": 80,
+      "neighborhood": "Sandy",
+      "cuisine": "Donuts / Bakery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11572,
+      "name": "Waffle Love",
+      "score": 80,
+      "neighborhood": "Provo",
+      "cuisine": "Waffles / Breakfast",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12272,
+      "name": "Taco Escobar",
+      "score": 80,
+      "neighborhood": "Downtown (Fremont East)",
+      "cuisine": "Mexican / Taqueria",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12291,
+      "name": "We All Scream",
+      "score": 80,
+      "neighborhood": "Downtown (Fremont East)",
+      "cuisine": "Bar / Nightclub",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12371,
+      "name": "Roberto's Taco Shop",
+      "score": 80,
+      "neighborhood": "Paradise",
+      "cuisine": "Mexican / Tacos",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12397,
+      "name": "Brewed Awakenings Coffee",
+      "score": 80,
+      "neighborhood": "Henderson",
+      "cuisine": "Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12403,
+      "name": "Du-par's Restaurant & Bakery",
+      "score": 80,
+      "neighborhood": "Downtown",
+      "cuisine": "American Diner",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7540,
+      "name": "El Toro Mexican Restaurant",
+      "score": 79,
+      "neighborhood": "La Porte",
+      "cuisine": "Mexican",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 477,
+      "name": "Artopolis Bakery",
+      "score": 79,
+      "neighborhood": "Greektown",
+      "cuisine": "Greek Bakery",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5467,
+      "name": "Maggie Mae's",
+      "score": 79,
+      "neighborhood": "Downtown",
+      "cuisine": "Bar / Live Music",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5561,
+      "name": "Gourdough's",
+      "score": 79,
+      "neighborhood": "South Austin",
+      "cuisine": "Donuts / Desserts",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5571,
+      "name": "Palomino Coffee",
+      "score": 79,
+      "neighborhood": "East Austin",
+      "cuisine": "Coffee / Cafe",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11493,
+      "name": "Eight Settlers Distillery",
+      "score": 79,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Distillery Bar / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12264,
+      "name": "Gilley's BBQ",
+      "score": 79,
+      "neighborhood": "The Strip (Treasure Island)",
+      "cuisine": "BBQ / Honky-Tonk",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12268,
+      "name": "Do Kkae Bi Kitchen",
+      "score": 79,
+      "neighborhood": "Chinatown",
+      "cuisine": "Korean",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12364,
+      "name": "Tap Sports Bar",
+      "score": 79,
+      "neighborhood": "The Strip (MGM Grand)",
+      "cuisine": "Sports Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12405,
+      "name": "Diablo's Cantina",
+      "score": 79,
+      "neighborhood": "The Strip",
+      "cuisine": "Mexican / Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5478,
+      "name": "Shangri-La",
+      "score": 78,
+      "neighborhood": "East Austin",
+      "cuisine": "Dive Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5523,
+      "name": "Thundercloud Subs",
+      "score": 78,
+      "neighborhood": "South Lamar",
+      "cuisine": "Sandwiches / Subs",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5539,
+      "name": "Counter Cafe",
+      "score": 78,
+      "neighborhood": "Downtown",
+      "cuisine": "American Diner",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5542,
+      "name": "Cherrywood Coffeehouse",
+      "score": 78,
+      "neighborhood": "East Austin",
+      "cuisine": "Coffee / Cafe",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5543,
+      "name": "Voodoo Doughnut",
+      "score": 78,
+      "neighborhood": "East Austin",
+      "cuisine": "Donuts / Dessert",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5557,
+      "name": "Handsome Dan's",
+      "score": 78,
+      "neighborhood": "East Austin",
+      "cuisine": "Sandwiches / Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5567,
+      "name": "Bodhi Viet Vegan",
+      "score": 78,
+      "neighborhood": "North Austin",
+      "cuisine": "Vietnamese / Vegan",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5569,
+      "name": "CaPhe.in Coffee",
+      "score": 78,
+      "neighborhood": "Downtown",
+      "cuisine": "Vietnamese Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5573,
+      "name": "La Vi Coffee",
+      "score": 78,
+      "neighborhood": "Downtown",
+      "cuisine": "Vietnamese Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11462,
+      "name": "Owl Bar",
+      "score": 78,
+      "neighborhood": "Provo",
+      "cuisine": "American Bar",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11541,
+      "name": "Honest Eatery",
+      "score": 78,
+      "neighborhood": "Downtown SLC",
+      "cuisine": "Acai / Healthy Bowls",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11563,
+      "name": "Pitada Brazil",
+      "score": 78,
+      "neighborhood": "Provo",
+      "cuisine": "Brazilian",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5537,
+      "name": "Baby Acapulco",
+      "score": 77,
+      "neighborhood": "Zilker",
+      "cuisine": "Tex-Mex",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5574,
+      "name": "Black Sheep Coffee",
+      "score": 77,
+      "neighborhood": "Downtown",
+      "cuisine": "Specialty Coffee",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5536,
+      "name": "North by Northwest",
+      "score": 76,
+      "neighborhood": "Domain",
+      "cuisine": "Brewery / American",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5538,
+      "name": "Trudy's Texas Star",
+      "score": 76,
+      "neighborhood": "Downtown",
+      "cuisine": "Tex-Mex",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12370,
+      "name": "White Castle Las Vegas",
+      "score": 76,
+      "neighborhood": "The Strip",
+      "cuisine": "Burgers / Fast Food",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5541,
+      "name": "Punch Bowl Social",
+      "score": 75,
+      "neighborhood": "Domain",
+      "cuisine": "American / Entertainment",
+      "dishCount": 0,
+      "dishes": [],
+      "issues": [
+        "missing"
+      ]
+    }
+  ]
+}
