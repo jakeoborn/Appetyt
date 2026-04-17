@@ -1,9 +1,9 @@
 {
   "totals": {
-    "total": 4542,
-    "missingWeb": 827,
-    "missingIG": 432,
-    "bothMissing": 266,
+    "total": 4541,
+    "missingWeb": 815,
+    "missingIG": 426,
+    "bothMissing": 262,
     "malformedUrls": 0,
     "malformedIGs": 0
   },
@@ -27,10 +27,10 @@
       "malformedSamples": []
     },
     "Chicago": {
-      "total": 496,
-      "missingWeb": 175,
-      "missingIG": 120,
-      "bothMissing": 103,
+      "total": 495,
+      "missingWeb": 163,
+      "missingIG": 114,
+      "bothMissing": 99,
       "malformedUrls": 0,
       "malformedIGs": 0,
       "malformedSamples": []
