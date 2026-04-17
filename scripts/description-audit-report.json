@@ -1,0 +1,7574 @@
+{
+  "totals": {
+    "total": 4546,
+    "weak": 593,
+    "verygood": 1817,
+    "avgLen": 232,
+    "totalLen": 1056785,
+    "missing": 55
+  },
+  "byCity": {
+    "Dallas": {
+      "total": 665,
+      "weak": 1,
+      "missing": 0,
+      "verygood": 418,
+      "avgLen": 317
+    },
+    "Houston": {
+      "total": 500,
+      "weak": 87,
+      "missing": 0,
+      "verygood": 223,
+      "avgLen": 226
+    },
+    "Chicago": {
+      "total": 500,
+      "weak": 108,
+      "missing": 0,
+      "verygood": 154,
+      "avgLen": 206
+    },
+    "Austin": {
+      "total": 500,
+      "weak": 121,
+      "missing": 0,
+      "verygood": 120,
+      "avgLen": 172
+    },
+    "Salt Lake City": {
+      "total": 500,
+      "weak": 143,
+      "missing": 55,
+      "verygood": 87,
+      "avgLen": 148
+    },
+    "Las Vegas": {
+      "total": 500,
+      "weak": 108,
+      "missing": 0,
+      "verygood": 230,
+      "avgLen": 177
+    },
+    "Seattle": {
+      "total": 501,
+      "weak": 25,
+      "missing": 0,
+      "verygood": 129,
+      "avgLen": 173
+    },
+    "New York": {
+      "total": 880,
+      "weak": 0,
+      "missing": 0,
+      "verygood": 456,
+      "avgLen": 336
+    }
+  },
+  "weakList": [
+    {
+      "city": "Austin",
+      "id": 5006,
+      "name": "Suerte",
+      "score": 98,
+      "neighborhood": "East Austin",
+      "descLen": 120,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5007,
+      "name": "Emmer & Rye",
+      "score": 98,
+      "neighborhood": "Rainey Street",
+      "descLen": 144,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5013,
+      "name": "Kemuri Tatsu-ya",
+      "score": 96,
+      "neighborhood": "East Austin",
+      "descLen": 153,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7291,
+      "name": "Ouzo Bay",
+      "score": 91,
+      "neighborhood": "River Oaks",
+      "descLen": 140,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 465,
+      "name": "Hawksmoor Chicago",
+      "score": 91,
+      "neighborhood": "River North",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5051,
+      "name": "Lutie's Garden Restaurant",
+      "score": 91,
+      "neighborhood": "Hyde Park",
+      "descLen": 122,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5433,
+      "name": "Uchi Domain",
+      "score": 91,
+      "neighborhood": "Domain",
+      "descLen": 59,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12329,
+      "name": "Other Mama",
+      "score": 91,
+      "neighborhood": "Chinatown",
+      "descLen": 108,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7352,
+      "name": "Tris Restaurant",
+      "score": 90,
+      "neighborhood": "Spring",
+      "descLen": 128,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 512,
+      "name": "Acadia Chicago",
+      "score": 90,
+      "neighborhood": "South Loop",
+      "descLen": 96,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5052,
+      "name": "Soto",
+      "score": 90,
+      "neighborhood": "South Lamar",
+      "descLen": 112,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5462,
+      "name": "L'Oca d'Oro",
+      "score": 90,
+      "neighborhood": "Mueller",
+      "descLen": 116,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12355,
+      "name": "Aureole",
+      "score": 90,
+      "neighborhood": "The Strip (Mandalay Bay)",
+      "descLen": 104,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12388,
+      "name": "Marche Bacchus",
+      "score": 90,
+      "neighborhood": "Summerlin",
+      "descLen": 94,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Dallas",
+      "id": 9157,
+      "name": "Winsome Prime",
+      "score": 89,
+      "neighborhood": "Trinity Groves",
+      "descLen": 152,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7299,
+      "name": "Eddie V's Prime Seafood",
+      "score": 89,
+      "neighborhood": "Memorial",
+      "descLen": 99,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7311,
+      "name": "Dolce Vita Pizzeria Enoteca",
+      "score": 89,
+      "neighborhood": "Rice Village",
+      "descLen": 109,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7322,
+      "name": "Mr. Peeples Shellfish & Steakhouse",
+      "score": 89,
+      "neighborhood": "West University",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7377,
+      "name": "Perry's Steakhouse The Woodlands",
+      "score": 89,
+      "neighborhood": "Spring",
+      "descLen": 74,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7385,
+      "name": "Cafe Rabelais",
+      "score": 89,
+      "neighborhood": "West University",
+      "descLen": 104,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 469,
+      "name": "Hopleaf Bar",
+      "score": 89,
+      "neighborhood": "Andersonville",
+      "descLen": 92,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5430,
+      "name": "Nixta East Side",
+      "score": 89,
+      "neighborhood": "East Austin",
+      "descLen": 95,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5435,
+      "name": "Uchiko Domain North",
+      "score": 89,
+      "neighborhood": "Domain",
+      "descLen": 55,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5452,
+      "name": "Dai Due Butcher",
+      "score": 89,
+      "neighborhood": "East Austin",
+      "descLen": 85,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5483,
+      "name": "Poeta",
+      "score": 89,
+      "neighborhood": "East Austin",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11457,
+      "name": "Table X South",
+      "score": 89,
+      "neighborhood": "South Salt Lake",
+      "descLen": 49,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11460,
+      "name": "The Tree Room",
+      "score": 89,
+      "neighborhood": "Provo",
+      "descLen": 121,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12288,
+      "name": "Amador",
+      "score": 89,
+      "neighborhood": "Chinatown",
+      "descLen": 121,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12339,
+      "name": "Nocturno",
+      "score": 89,
+      "neighborhood": "Arts District",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12344,
+      "name": "Al Solito Posto",
+      "score": 89,
+      "neighborhood": "Summerlin",
+      "descLen": 96,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12354,
+      "name": "Jewel Nightclub",
+      "score": 89,
+      "neighborhood": "The Strip (Aria)",
+      "descLen": 89,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12379,
+      "name": "Best Friend",
+      "score": 89,
+      "neighborhood": "The Strip (Park MGM)",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12382,
+      "name": "Cleaver",
+      "score": 89,
+      "neighborhood": "Paradise",
+      "descLen": 100,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7300,
+      "name": "Perbacco",
+      "score": 88,
+      "neighborhood": "Memorial",
+      "descLen": 104,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7303,
+      "name": "Lucille's EaDo (Bludorn / Navy Blue sibling)",
+      "score": 88,
+      "neighborhood": "EaDo",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7304,
+      "name": "Cherry Block Craft Butcher & Kitchen",
+      "score": 88,
+      "neighborhood": "EaDo",
+      "descLen": 122,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7326,
+      "name": "Korea Garden",
+      "score": 88,
+      "neighborhood": "Spring Branch",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7340,
+      "name": "Hubbell & Hudson Bistro",
+      "score": 88,
+      "neighborhood": "The Woodlands",
+      "descLen": 108,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 409,
+      "name": "Il Carciofo",
+      "score": 88,
+      "neighborhood": "West Loop",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 436,
+      "name": "Adalina",
+      "score": 88,
+      "neighborhood": "Gold Coast",
+      "descLen": 89,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 461,
+      "name": "The Publican",
+      "score": 88,
+      "neighborhood": "West Loop",
+      "descLen": 91,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 473,
+      "name": "Sun Wah BBQ",
+      "score": 88,
+      "neighborhood": "Edgewater",
+      "descLen": 78,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5029,
+      "name": "Comedor",
+      "score": 88,
+      "neighborhood": "Downtown",
+      "descLen": 156,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5053,
+      "name": "Asti Trattoria",
+      "score": 88,
+      "neighborhood": "Hyde Park",
+      "descLen": 99,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5400,
+      "name": "Oseyo North",
+      "score": 88,
+      "neighborhood": "North Austin",
+      "descLen": 66,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5451,
+      "name": "June's SoCo",
+      "score": 88,
+      "neighborhood": "South Congress",
+      "descLen": 93,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5456,
+      "name": "Nixta South",
+      "score": 88,
+      "neighborhood": "South Austin",
+      "descLen": 72,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5464,
+      "name": "Bureau de Poste",
+      "score": 88,
+      "neighborhood": "Hyde Park",
+      "descLen": 111,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5482,
+      "name": "Pasta|Bar Austin",
+      "score": 88,
+      "neighborhood": "East Austin",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11455,
+      "name": "Copper Onion Broadway",
+      "score": 88,
+      "neighborhood": "Downtown SLC",
+      "descLen": 58,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11489,
+      "name": "Tiburon Fine Dining",
+      "score": 88,
+      "neighborhood": "Sandy",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11504,
+      "name": "Grappa Italian",
+      "score": 88,
+      "neighborhood": "Park City",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11511,
+      "name": "Table Twenty Five",
+      "score": 88,
+      "neighborhood": "Ogden",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12250,
+      "name": "Lullabar",
+      "score": 88,
+      "neighborhood": "Chinatown",
+      "descLen": 156,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12336,
+      "name": "Bar Ginza",
+      "score": 88,
+      "neighborhood": "Arts District",
+      "descLen": 89,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12357,
+      "name": "Genting Palace",
+      "score": 88,
+      "neighborhood": "The Strip (Resorts World)",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12367,
+      "name": "Sweets Raku",
+      "score": 88,
+      "neighborhood": "Chinatown",
+      "descLen": 114,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12389,
+      "name": "Monzu Italian Oven + Bar",
+      "score": 88,
+      "neighborhood": "Spring Valley",
+      "descLen": 78,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12390,
+      "name": "Nora Italian Cuisine",
+      "score": 88,
+      "neighborhood": "Spring Valley",
+      "descLen": 89,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9261,
+      "name": "RockCreek Seafood & Spirits",
+      "score": 88,
+      "neighborhood": "Fremont",
+      "descLen": 169,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9274,
+      "name": "Monsoon East",
+      "score": 88,
+      "neighborhood": "Bellevue",
+      "descLen": 178,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9290,
+      "name": "K-BBQ Woobling",
+      "score": 88,
+      "neighborhood": "Bellevue",
+      "descLen": 164,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9490,
+      "name": "Hello Robin",
+      "score": 88,
+      "neighborhood": "Capitol Hill",
+      "descLen": 68,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7328,
+      "name": "Nam Gang Korean Restaurant",
+      "score": 87,
+      "neighborhood": "Spring Branch",
+      "descLen": 109,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7341,
+      "name": "Fleming's Prime Steakhouse Woodlands",
+      "score": 87,
+      "neighborhood": "The Woodlands",
+      "descLen": 82,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7373,
+      "name": "Amerigo's Grille",
+      "score": 87,
+      "neighborhood": "Spring",
+      "descLen": 85,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7396,
+      "name": "Fogo de Chão The Woodlands",
+      "score": 87,
+      "neighborhood": "The Woodlands",
+      "descLen": 89,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7543,
+      "name": "Che Gaucho",
+      "score": 87,
+      "neighborhood": "Tomball",
+      "descLen": 100,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 332,
+      "name": "Gibsons Tavern",
+      "score": 87,
+      "neighborhood": "West Loop",
+      "descLen": 131,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 343,
+      "name": "Qing Xiang Yuan Wicker Park",
+      "score": 87,
+      "neighborhood": "Wicker Park",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 355,
+      "name": "Swift & Sons Tavern",
+      "score": 87,
+      "neighborhood": "Lakeview",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 398,
+      "name": "Chengdu Impression",
+      "score": 87,
+      "neighborhood": "Chinatown",
+      "descLen": 38,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 400,
+      "name": "Table Fifty-Two",
+      "score": 87,
+      "neighborhood": "Gold Coast",
+      "descLen": 45,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 411,
+      "name": "The Radicle",
+      "score": 87,
+      "neighborhood": "Logan Square",
+      "descLen": 114,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 415,
+      "name": "Bad Hunter",
+      "score": 87,
+      "neighborhood": "West Loop",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 420,
+      "name": "Tank Noodle",
+      "score": 87,
+      "neighborhood": "Uptown",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 433,
+      "name": "Etta",
+      "score": 87,
+      "neighborhood": "Bucktown",
+      "descLen": 87,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 438,
+      "name": "Cafe Cancale",
+      "score": 87,
+      "neighborhood": "Logan Square",
+      "descLen": 81,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 439,
+      "name": "Ruxbin",
+      "score": 87,
+      "neighborhood": "Noble Square",
+      "descLen": 75,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 442,
+      "name": "Avli River North",
+      "score": 87,
+      "neighborhood": "River North",
+      "descLen": 76,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 446,
+      "name": "Bayan Ko",
+      "score": 87,
+      "neighborhood": "Ravenswood",
+      "descLen": 77,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 455,
+      "name": "Dear Margaret",
+      "score": 87,
+      "neighborhood": "Lincoln Square",
+      "descLen": 95,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 466,
+      "name": "Taxim",
+      "score": 87,
+      "neighborhood": "Wicker Park",
+      "descLen": 65,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5016,
+      "name": "Paperboy",
+      "score": 87,
+      "neighborhood": "East Austin",
+      "descLen": 143,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5017,
+      "name": "El Alma",
+      "score": 87,
+      "neighborhood": "South Congress",
+      "descLen": 141,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5021,
+      "name": "Juniper",
+      "score": 87,
+      "neighborhood": "East Austin",
+      "descLen": 138,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5025,
+      "name": "Épicerie",
+      "score": 87,
+      "neighborhood": "Mueller",
+      "descLen": 148,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5027,
+      "name": "Bouldin Creek Cafe",
+      "score": 87,
+      "neighborhood": "Zilker",
+      "descLen": 139,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5030,
+      "name": "Péché",
+      "score": 87,
+      "neighborhood": "Downtown",
+      "descLen": 149,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5375,
+      "name": "Loro Westlake",
+      "score": 87,
+      "neighborhood": "West Austin",
+      "descLen": 84,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5381,
+      "name": "Loro Lakeway",
+      "score": 87,
+      "neighborhood": "West Austin",
+      "descLen": 78,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5383,
+      "name": "Loro 35th Street",
+      "score": 87,
+      "neighborhood": "North Loop",
+      "descLen": 83,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5390,
+      "name": "Loro Parmer",
+      "score": 87,
+      "neighborhood": "North Austin",
+      "descLen": 87,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5394,
+      "name": "Loro South Park Meadows",
+      "score": 87,
+      "neighborhood": "South Austin",
+      "descLen": 92,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5399,
+      "name": "Loro Anderson",
+      "score": 87,
+      "neighborhood": "North Austin",
+      "descLen": 62,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5422,
+      "name": "Loro Round Rock",
+      "score": 87,
+      "neighborhood": "North Austin",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5446,
+      "name": "Loro Cedar Park",
+      "score": 87,
+      "neighborhood": "North Austin",
+      "descLen": 52,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5455,
+      "name": "Loro Georgetown",
+      "score": 87,
+      "neighborhood": "North Austin",
+      "descLen": 55,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5490,
+      "name": "Bob's Steak & Chop House",
+      "score": 87,
+      "neighborhood": "Downtown",
+      "descLen": 92,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5491,
+      "name": "III Forks",
+      "score": 87,
+      "neighborhood": "Downtown",
+      "descLen": 102,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5495,
+      "name": "Eddie V's Prime Seafood",
+      "score": 87,
+      "neighborhood": "North Austin",
+      "descLen": 101,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5508,
+      "name": "La Piscina at Austin Proper",
+      "score": 87,
+      "neighborhood": "Downtown",
+      "descLen": 117,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5553,
+      "name": "El Alma Cafe",
+      "score": 87,
+      "neighborhood": "Zilker",
+      "descLen": 82,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11424,
+      "name": "Caputo's Draper",
+      "score": 87,
+      "neighborhood": "Draper",
+      "descLen": 55,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11426,
+      "name": "Settebello Holladay",
+      "score": 87,
+      "neighborhood": "Holladay",
+      "descLen": 52,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11449,
+      "name": "Caffe Molise Eagle",
+      "score": 87,
+      "neighborhood": "Downtown SLC",
+      "descLen": 63,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11454,
+      "name": "Mazza 9th",
+      "score": 87,
+      "neighborhood": "9th & 9th",
+      "descLen": 50,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11485,
+      "name": "Veneto Ristorante",
+      "score": 87,
+      "neighborhood": "9th & 9th",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11531,
+      "name": "Mar Muntanya",
+      "score": 87,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11556,
+      "name": "Junah",
+      "score": 87,
+      "neighborhood": "9th & 9th",
+      "descLen": 99,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12251,
+      "name": "China Mama",
+      "score": 87,
+      "neighborhood": "Chinatown",
+      "descLen": 133,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12273,
+      "name": "Settebello Pizzeria",
+      "score": 87,
+      "neighborhood": "Henderson",
+      "descLen": 102,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12276,
+      "name": "Nittaya's Secret Kitchen",
+      "score": 87,
+      "neighborhood": "Summerlin",
+      "descLen": 117,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12278,
+      "name": "Shang Artisan Noodle",
+      "score": 87,
+      "neighborhood": "Chinatown",
+      "descLen": 83,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12284,
+      "name": "Yardbird Southern Table",
+      "score": 87,
+      "neighborhood": "The Strip (The Venetian)",
+      "descLen": 107,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12295,
+      "name": "La Strega",
+      "score": 87,
+      "neighborhood": "West of Strip",
+      "descLen": 101,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12330,
+      "name": "Nakamura-Ya",
+      "score": 87,
+      "neighborhood": "Chinatown",
+      "descLen": 105,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12337,
+      "name": "Liquid Diet",
+      "score": 87,
+      "neighborhood": "Arts District",
+      "descLen": 79,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12341,
+      "name": "Boom Bang",
+      "score": 87,
+      "neighborhood": "Henderson",
+      "descLen": 107,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12346,
+      "name": "Lola's Louisiana Kitchen",
+      "score": 87,
+      "neighborhood": "Spring Valley",
+      "descLen": 110,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12361,
+      "name": "Sushisamba Las Vegas",
+      "score": 87,
+      "neighborhood": "The Strip (The Palazzo)",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12368,
+      "name": "Sen of Japan",
+      "score": 87,
+      "neighborhood": "Chinatown",
+      "descLen": 114,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12372,
+      "name": "Boom Bang Restaurant",
+      "score": 87,
+      "neighborhood": "Henderson",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12373,
+      "name": "Hearthstone Kitchen",
+      "score": 87,
+      "neighborhood": "Summerlin (Red Rock Resort)",
+      "descLen": 95,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12380,
+      "name": "Legacy Club",
+      "score": 87,
+      "neighborhood": "Downtown (Circa)",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12393,
+      "name": "Tom Colicchio Craftsteak",
+      "score": 87,
+      "neighborhood": "The Strip (MGM Grand)",
+      "descLen": 100,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12398,
+      "name": "Sparrow + Wolf Bar",
+      "score": 87,
+      "neighborhood": "Chinatown",
+      "descLen": 93,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9254,
+      "name": "Taurus Ox",
+      "score": 87,
+      "neighborhood": "Capitol Hill",
+      "descLen": 143,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9282,
+      "name": "Le Coin",
+      "score": 87,
+      "neighborhood": "Fremont",
+      "descLen": 153,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9285,
+      "name": "Raccolto",
+      "score": 87,
+      "neighborhood": "West Seattle",
+      "descLen": 175,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9296,
+      "name": "Gracia",
+      "score": 87,
+      "neighborhood": "Ballard",
+      "descLen": 170,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7302,
+      "name": "The Honeymoon Cafe",
+      "score": 86,
+      "neighborhood": "Museum District",
+      "descLen": 115,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7319,
+      "name": "Prohibition Supperclub & Bar",
+      "score": 86,
+      "neighborhood": "Rice Village",
+      "descLen": 107,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7327,
+      "name": "Jang Guem Tofu & BBQ House",
+      "score": 86,
+      "neighborhood": "Spring Branch",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7332,
+      "name": "The Tasting Room Korean Steakhouse",
+      "score": 86,
+      "neighborhood": "Spring Branch",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7353,
+      "name": "Tony Mandola's (Spring / Woodlands area)",
+      "score": 86,
+      "neighborhood": "Spring",
+      "descLen": 71,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7382,
+      "name": "Pappadeaux Seafood Kitchen Pearland",
+      "score": 86,
+      "neighborhood": "Pearland",
+      "descLen": 96,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7386,
+      "name": "Ciao Bello",
+      "score": 86,
+      "neighborhood": "West University",
+      "descLen": 95,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7388,
+      "name": "Corner Table",
+      "score": 86,
+      "neighborhood": "West University",
+      "descLen": 94,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7402,
+      "name": "Robard's Steakhouse",
+      "score": 86,
+      "neighborhood": "The Woodlands",
+      "descLen": 105,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7403,
+      "name": "Gorditas Aguascalientes",
+      "score": 86,
+      "neighborhood": "Spring Branch",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7542,
+      "name": "Graze Tomball",
+      "score": 86,
+      "neighborhood": "Tomball",
+      "descLen": 103,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7546,
+      "name": "Resilience Viet Kitchen",
+      "score": 86,
+      "neighborhood": "West Houston",
+      "descLen": 113,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 338,
+      "name": "Oooh Wee! It Is!",
+      "score": 86,
+      "neighborhood": "Chatham",
+      "descLen": 99,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 357,
+      "name": "Cowabunga Pizza Pies",
+      "score": 86,
+      "neighborhood": "Bridgeport",
+      "descLen": 85,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 382,
+      "name": "Cebu Filipino",
+      "score": 86,
+      "neighborhood": "Lakeview",
+      "descLen": 81,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 385,
+      "name": "Brasero",
+      "score": 86,
+      "neighborhood": "Ukrainian Village",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 401,
+      "name": "Bohemian House",
+      "score": 86,
+      "neighborhood": "River North",
+      "descLen": 51,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 410,
+      "name": "Roll Up by Oui",
+      "score": 86,
+      "neighborhood": "River North",
+      "descLen": 105,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 418,
+      "name": "Mango Pickle",
+      "score": 86,
+      "neighborhood": "Edgewater",
+      "descLen": 74,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 425,
+      "name": "Luella's Southern Kitchen",
+      "score": 86,
+      "neighborhood": "Lincoln Square",
+      "descLen": 89,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 426,
+      "name": "The Dawson",
+      "score": 86,
+      "neighborhood": "West Town",
+      "descLen": 81,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 428,
+      "name": "Nando Milano Trattoria",
+      "score": 86,
+      "neighborhood": "River North",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 429,
+      "name": "Lupo Pizzeria",
+      "score": 86,
+      "neighborhood": "Wicker Park",
+      "descLen": 80,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 437,
+      "name": "Split-Rail",
+      "score": 86,
+      "neighborhood": "Humboldt Park",
+      "descLen": 82,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 440,
+      "name": "Arbella",
+      "score": 86,
+      "neighborhood": "River North",
+      "descLen": 70,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 443,
+      "name": "Porto",
+      "score": 86,
+      "neighborhood": "Bucktown",
+      "descLen": 95,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 449,
+      "name": "Traspasada",
+      "score": 86,
+      "neighborhood": "Hermosa",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 454,
+      "name": "Yusho Logan Square",
+      "score": 86,
+      "neighborhood": "Logan Square",
+      "descLen": 81,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 456,
+      "name": "Cafe Orchid",
+      "score": 86,
+      "neighborhood": "Bucktown",
+      "descLen": 69,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 457,
+      "name": "Herb",
+      "score": 86,
+      "neighborhood": "Lakeview",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 459,
+      "name": "Terzo Piano",
+      "score": 86,
+      "neighborhood": "The Loop",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 463,
+      "name": "Metric Coffee",
+      "score": 86,
+      "neighborhood": "West Loop",
+      "descLen": 76,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 468,
+      "name": "Carnitas Uruapan",
+      "score": 86,
+      "neighborhood": "Pilsen",
+      "descLen": 102,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 481,
+      "name": "Han 202",
+      "score": 86,
+      "neighborhood": "Bridgeport",
+      "descLen": 78,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5409,
+      "name": "Forthright",
+      "score": 86,
+      "neighborhood": "East Austin",
+      "descLen": 34,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5424,
+      "name": "Licha's Cantina",
+      "score": 86,
+      "neighborhood": "East Austin",
+      "descLen": 91,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5432,
+      "name": "Colleen's South Congress",
+      "score": 86,
+      "neighborhood": "South Congress",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5437,
+      "name": "Tacodeli Burnet",
+      "score": 86,
+      "neighborhood": "North Loop",
+      "descLen": 67,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5442,
+      "name": "Hopdoddy South Lamar",
+      "score": 86,
+      "neighborhood": "South Lamar",
+      "descLen": 51,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5463,
+      "name": "Josephine House",
+      "score": 86,
+      "neighborhood": "Clarksville",
+      "descLen": 100,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5492,
+      "name": "Fleming's Prime Steakhouse",
+      "score": 86,
+      "neighborhood": "North Austin",
+      "descLen": 92,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5504,
+      "name": "Yard Bar",
+      "score": 86,
+      "neighborhood": "North Austin",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5506,
+      "name": "Garbo's Lobster",
+      "score": 86,
+      "neighborhood": "North Lamar",
+      "descLen": 116,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5509,
+      "name": "Austin Beer Garden Brewing Co.",
+      "score": 86,
+      "neighborhood": "South Austin",
+      "descLen": 118,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5547,
+      "name": "Sway Thai",
+      "score": 86,
+      "neighborhood": "South Lamar",
+      "descLen": 121,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5554,
+      "name": "Patrizi's",
+      "score": 86,
+      "neighborhood": "East Austin",
+      "descLen": 81,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11210,
+      "name": "Sapa Sushi Bar & Grill",
+      "score": 86,
+      "neighborhood": "Downtown SLC",
+      "descLen": 19,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11366,
+      "name": "Ivy and the Wren",
+      "score": 86,
+      "neighborhood": "Downtown SLC",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11379,
+      "name": "Feldman's Cottonwood",
+      "score": 86,
+      "neighborhood": "Cottonwood Heights",
+      "descLen": 95,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11383,
+      "name": "Nomad Eatery",
+      "score": 86,
+      "neighborhood": "9th & 9th",
+      "descLen": 91,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11384,
+      "name": "OAK Wood Fire Kitchen SLC",
+      "score": 86,
+      "neighborhood": "Sugar House",
+      "descLen": 112,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11410,
+      "name": "Old Tbilisi Kitchen",
+      "score": 86,
+      "neighborhood": "Downtown SLC",
+      "descLen": 36,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11413,
+      "name": "Oh Mai Downtown",
+      "score": 86,
+      "neighborhood": "Downtown SLC",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11414,
+      "name": "Oh Mai South",
+      "score": 86,
+      "neighborhood": "South Salt Lake",
+      "descLen": 57,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11421,
+      "name": "OAK Draper",
+      "score": 86,
+      "neighborhood": "Draper",
+      "descLen": 65,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11428,
+      "name": "Fratelli Ristorante",
+      "score": 86,
+      "neighborhood": "Downtown SLC",
+      "descLen": 68,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11430,
+      "name": "Pallet Bistro",
+      "score": 86,
+      "neighborhood": "Downtown SLC",
+      "descLen": 71,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11436,
+      "name": "Ocean's Grill",
+      "score": 86,
+      "neighborhood": "Westside SLC",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11446,
+      "name": "Tsunami Downtown",
+      "score": 86,
+      "neighborhood": "Downtown SLC",
+      "descLen": 62,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11459,
+      "name": "Aristo's Greek",
+      "score": 86,
+      "neighborhood": "South Salt Lake",
+      "descLen": 67,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11465,
+      "name": "Roux SLC",
+      "score": 86,
+      "neighborhood": "Trolley Square",
+      "descLen": 91,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11470,
+      "name": "Hoof & Vine",
+      "score": 86,
+      "neighborhood": "Midvale",
+      "descLen": 67,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11512,
+      "name": "Tona Sushi Bar & Grill",
+      "score": 86,
+      "neighborhood": "Ogden",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11516,
+      "name": "Le Nonne",
+      "score": 86,
+      "neighborhood": "Logan",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11525,
+      "name": "Fleming's Prime Steakhouse SLC",
+      "score": 86,
+      "neighborhood": "Gateway",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11529,
+      "name": "STK Steakhouse SLC",
+      "score": 86,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11569,
+      "name": "Caputo Deli & Market",
+      "score": 86,
+      "neighborhood": "Downtown SLC",
+      "descLen": 91,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12256,
+      "name": "Ton Shou",
+      "score": 86,
+      "neighborhood": "Chinatown",
+      "descLen": 131,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12266,
+      "name": "Bound by Salvatore Calabrese",
+      "score": 86,
+      "neighborhood": "The Strip (The Cromwell)",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12277,
+      "name": "Hwaro Korean BBQ",
+      "score": 86,
+      "neighborhood": "Chinatown",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12285,
+      "name": "CRAFTkitchen Henderson",
+      "score": 86,
+      "neighborhood": "Henderson",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12297,
+      "name": "Sumo Omakase",
+      "score": 86,
+      "neighborhood": "Chinatown",
+      "descLen": 91,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12331,
+      "name": "Monta Ramen",
+      "score": 86,
+      "neighborhood": "Chinatown",
+      "descLen": 117,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12332,
+      "name": "Honey Pig Korean BBQ",
+      "score": 86,
+      "neighborhood": "Chinatown",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12347,
+      "name": "Naked Fish",
+      "score": 86,
+      "neighborhood": "Spring Valley",
+      "descLen": 74,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12352,
+      "name": "The Skull Bar",
+      "score": 86,
+      "neighborhood": "Chinatown",
+      "descLen": 93,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12358,
+      "name": "The Buffet at Wynn",
+      "score": 86,
+      "neighborhood": "The Strip (Wynn)",
+      "descLen": 108,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12374,
+      "name": "Andiron Steak & Sea",
+      "score": 86,
+      "neighborhood": "Summerlin (Downtown Summerlin)",
+      "descLen": 74,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12385,
+      "name": "DW Bistro",
+      "score": 86,
+      "neighborhood": "Spring Valley",
+      "descLen": 89,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12387,
+      "name": "Cleo Las Vegas",
+      "score": 86,
+      "neighborhood": "The Strip (The Venetian)",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9258,
+      "name": "Fair Isle Brewing",
+      "score": 86,
+      "neighborhood": "Ballard",
+      "descLen": 172,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9264,
+      "name": "Korean Tofu House",
+      "score": 86,
+      "neighborhood": "University District",
+      "descLen": 153,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9275,
+      "name": "Istanbul Cuisine",
+      "score": 86,
+      "neighborhood": "Bellevue",
+      "descLen": 179,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9287,
+      "name": "Deru Market",
+      "score": 86,
+      "neighborhood": "Kirkland",
+      "descLen": 170,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9294,
+      "name": "Chiho",
+      "score": 86,
+      "neighborhood": "Belltown",
+      "descLen": 175,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9298,
+      "name": "Volunteer Park Cafe and Pantry",
+      "score": 86,
+      "neighborhood": "Capitol Hill",
+      "descLen": 159,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9300,
+      "name": "Lupo",
+      "score": 86,
+      "neighborhood": "Fremont",
+      "descLen": 168,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7307,
+      "name": "Chapman & Kirby",
+      "score": 85,
+      "neighborhood": "EaDo",
+      "descLen": 117,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7308,
+      "name": "Goro & Gun",
+      "score": 85,
+      "neighborhood": "Washington Corridor",
+      "descLen": 83,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7312,
+      "name": "Hopdoddy Burger Bar",
+      "score": 85,
+      "neighborhood": "Rice Village",
+      "descLen": 105,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7316,
+      "name": "Island Grill",
+      "score": 85,
+      "neighborhood": "Rice Village",
+      "descLen": 95,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7329,
+      "name": "Seoul Garden",
+      "score": 85,
+      "neighborhood": "Spring Branch",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7336,
+      "name": "Local Table Katy",
+      "score": 85,
+      "neighborhood": "Katy",
+      "descLen": 93,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7339,
+      "name": "Fadi's Mediterranean Grill Katy",
+      "score": 85,
+      "neighborhood": "Katy",
+      "descLen": 103,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7344,
+      "name": "Del Frisco's Grille Woodlands",
+      "score": 85,
+      "neighborhood": "The Woodlands",
+      "descLen": 83,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7348,
+      "name": "Grazia Italian Kitchen",
+      "score": 85,
+      "neighborhood": "Pearland",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7356,
+      "name": "Crisp Wine-Beer-Eatery",
+      "score": 85,
+      "neighborhood": "Spring",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7357,
+      "name": "Goodson's Cafe",
+      "score": 85,
+      "neighborhood": "Spring",
+      "descLen": 95,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7362,
+      "name": "Liberty Kitchen Treehouse (Sawyer Yards)",
+      "score": 85,
+      "neighborhood": "Washington Corridor",
+      "descLen": 96,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7369,
+      "name": "Cafe Tavolino",
+      "score": 85,
+      "neighborhood": "Spring Branch",
+      "descLen": 92,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7372,
+      "name": "Oh My Gogi!",
+      "score": 85,
+      "neighborhood": "Spring Branch",
+      "descLen": 130,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7374,
+      "name": "Crust Pizza Co. The Woodlands",
+      "score": 85,
+      "neighborhood": "Spring",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7383,
+      "name": "Kirby's Prime Steakhouse Pearland",
+      "score": 85,
+      "neighborhood": "Pearland",
+      "descLen": 92,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7392,
+      "name": "Babin's Seafood House Katy",
+      "score": 85,
+      "neighborhood": "Katy",
+      "descLen": 64,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7393,
+      "name": "Zammitti Italian Restaurant",
+      "score": 85,
+      "neighborhood": "Katy",
+      "descLen": 94,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7400,
+      "name": "Crú Food & Wine Bar Woodlands",
+      "score": 85,
+      "neighborhood": "The Woodlands",
+      "descLen": 80,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7533,
+      "name": "Dumpling World",
+      "score": 85,
+      "neighborhood": "Clear Lake",
+      "descLen": 108,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7541,
+      "name": "Bonfire Grill",
+      "score": 85,
+      "neighborhood": "Tomball",
+      "descLen": 105,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7555,
+      "name": "Star Rover",
+      "score": 85,
+      "neighborhood": "Heights",
+      "descLen": 83,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7556,
+      "name": "Bravery Chef Hall",
+      "score": 85,
+      "neighborhood": "EaDo",
+      "descLen": 92,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7557,
+      "name": "Night Heron",
+      "score": 85,
+      "neighborhood": "Montrose",
+      "descLen": 101,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 339,
+      "name": "Fatback",
+      "score": 85,
+      "neighborhood": "The Loop",
+      "descLen": 87,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 342,
+      "name": "Thai Me Up Cafe",
+      "score": 85,
+      "neighborhood": "Lakeview",
+      "descLen": 116,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 394,
+      "name": "Gavin's on Damen",
+      "score": 85,
+      "neighborhood": "Bucktown",
+      "descLen": 79,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 396,
+      "name": "Range",
+      "score": 85,
+      "neighborhood": "Lincoln Square",
+      "descLen": 94,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 402,
+      "name": "Armitage Alehouse",
+      "score": 85,
+      "neighborhood": "Lincoln Park",
+      "descLen": 48,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 413,
+      "name": "Little Lark",
+      "score": 85,
+      "neighborhood": "Avondale",
+      "descLen": 72,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 414,
+      "name": "The Alley Cat",
+      "score": 85,
+      "neighborhood": "Wicker Park",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 419,
+      "name": "Pho Viet",
+      "score": 85,
+      "neighborhood": "Uptown",
+      "descLen": 59,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 421,
+      "name": "Hai Yen",
+      "score": 85,
+      "neighborhood": "Uptown",
+      "descLen": 67,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 427,
+      "name": "Lonesome Rose",
+      "score": 85,
+      "neighborhood": "Wicker Park",
+      "descLen": 74,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 444,
+      "name": "Taste of Lebanon",
+      "score": 85,
+      "neighborhood": "Lincoln Square",
+      "descLen": 84,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 447,
+      "name": "Noodlebird",
+      "score": 85,
+      "neighborhood": "Lakeview",
+      "descLen": 66,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 450,
+      "name": "Doña Naty",
+      "score": 85,
+      "neighborhood": "Humboldt Park",
+      "descLen": 76,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 451,
+      "name": "Ocean's Pizza",
+      "score": 85,
+      "neighborhood": "Albany Park",
+      "descLen": 82,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 452,
+      "name": "Brown Bag Seafood",
+      "score": 85,
+      "neighborhood": "West Loop",
+      "descLen": 87,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 462,
+      "name": "Taqueria Chingon",
+      "score": 85,
+      "neighborhood": "West Loop",
+      "descLen": 87,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 464,
+      "name": "Mr. Beef on Orleans",
+      "score": 85,
+      "neighborhood": "River North",
+      "descLen": 91,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 467,
+      "name": "Pompette",
+      "score": 85,
+      "neighborhood": "Bucktown",
+      "descLen": 77,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 470,
+      "name": "Big Jones",
+      "score": 85,
+      "neighborhood": "Andersonville",
+      "descLen": 85,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 490,
+      "name": "Raisu Chicago",
+      "score": 85,
+      "neighborhood": "Irving Park",
+      "descLen": 103,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 521,
+      "name": "Beatnik West Town",
+      "score": 85,
+      "neighborhood": "Noble Square",
+      "descLen": 130,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 522,
+      "name": "Frontier Noble Square",
+      "score": 85,
+      "neighborhood": "Noble Square",
+      "descLen": 108,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 544,
+      "name": "North Center Prime",
+      "score": 85,
+      "neighborhood": "North Center",
+      "descLen": 102,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5227,
+      "name": "Sawyer & Co.",
+      "score": 85,
+      "neighborhood": "East Austin",
+      "descLen": 93,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5402,
+      "name": "Thai Kitchen",
+      "score": 85,
+      "neighborhood": "North Austin",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5406,
+      "name": "Arlo's East",
+      "score": 85,
+      "neighborhood": "East Austin",
+      "descLen": 51,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5407,
+      "name": "Cosmic Coffee + Beer Garden East",
+      "score": 85,
+      "neighborhood": "East Austin",
+      "descLen": 95,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5408,
+      "name": "Meridian Hive Meadery",
+      "score": 85,
+      "neighborhood": "East Austin",
+      "descLen": 46,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5431,
+      "name": "Wright Bros. Brew & Brew",
+      "score": 85,
+      "neighborhood": "East Austin",
+      "descLen": 89,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5472,
+      "name": "POP Champagne Lounge",
+      "score": 85,
+      "neighborhood": "Downtown",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5477,
+      "name": "Daydreamer",
+      "score": 85,
+      "neighborhood": "East Austin",
+      "descLen": 112,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5494,
+      "name": "Austin Land & Cattle",
+      "score": 85,
+      "neighborhood": "North Lamar",
+      "descLen": 109,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5505,
+      "name": "Bouldin Acres",
+      "score": 85,
+      "neighborhood": "South Lamar",
+      "descLen": 115,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5507,
+      "name": "Azul Rooftop Bar",
+      "score": 85,
+      "neighborhood": "Downtown",
+      "descLen": 111,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5510,
+      "name": "Draught House Pub & Brewery",
+      "score": 85,
+      "neighborhood": "North Loop",
+      "descLen": 117,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5511,
+      "name": "Granny's Tacos",
+      "score": 85,
+      "neighborhood": "East Austin",
+      "descLen": 115,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5519,
+      "name": "JewBoy Burgers",
+      "score": 85,
+      "neighborhood": "North Austin",
+      "descLen": 122,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5549,
+      "name": "Corsair",
+      "score": 85,
+      "neighborhood": "Rainey Street",
+      "descLen": 113,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5558,
+      "name": "Kinsho",
+      "score": 85,
+      "neighborhood": "Rainey Street",
+      "descLen": 83,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5566,
+      "name": "Jim's Smokehouse",
+      "score": 85,
+      "neighborhood": "West Austin",
+      "descLen": 85,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11377,
+      "name": "Via Veneto Draper",
+      "score": 85,
+      "neighborhood": "Draper",
+      "descLen": 91,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11380,
+      "name": "Even Stevens South",
+      "score": 85,
+      "neighborhood": "Sugar House",
+      "descLen": 96,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11385,
+      "name": "Toaster's Deli Holladay",
+      "score": 85,
+      "neighborhood": "Holladay",
+      "descLen": 77,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11388,
+      "name": "Squatters Airport",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 77,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11390,
+      "name": "Em's Restaurant",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 77,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11393,
+      "name": "Vessel Kitchen Sugar House",
+      "score": 85,
+      "neighborhood": "Sugar House",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11395,
+      "name": "Spitz State Street",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 80,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11397,
+      "name": "Big Ed's",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 91,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11399,
+      "name": "SLC Juice Co.",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 91,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11401,
+      "name": "Publik Ed's",
+      "score": 85,
+      "neighborhood": "Central 9th",
+      "descLen": 62,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11402,
+      "name": "Victor's Pizza",
+      "score": 85,
+      "neighborhood": "Millcreek",
+      "descLen": 54,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11403,
+      "name": "Greenhouse Effect Coffee",
+      "score": 85,
+      "neighborhood": "The Avenues",
+      "descLen": 74,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11405,
+      "name": "Ramen Bar SLC",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 57,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11406,
+      "name": "Tea Grotto",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11408,
+      "name": "Red Butte Cafe",
+      "score": 85,
+      "neighborhood": "University",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11409,
+      "name": "Girls Who Smash",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 34,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11411,
+      "name": "Jolly Roger",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 27,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11415,
+      "name": "Localz Bistro",
+      "score": 85,
+      "neighborhood": "Sandy",
+      "descLen": 68,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11416,
+      "name": "Slackwater Sandy",
+      "score": 85,
+      "neighborhood": "Sandy",
+      "descLen": 47,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11427,
+      "name": "Kupros Bistro",
+      "score": 85,
+      "neighborhood": "Millcreek",
+      "descLen": 56,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11438,
+      "name": "Chanon Thai Cafe",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 75,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11439,
+      "name": "Simply Thai",
+      "score": 85,
+      "neighborhood": "Sandy",
+      "descLen": 55,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11443,
+      "name": "Niche Coffee Avenues",
+      "score": 85,
+      "neighborhood": "The Avenues",
+      "descLen": 70,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11444,
+      "name": "Lucky Slice Park City",
+      "score": 85,
+      "neighborhood": "Park City",
+      "descLen": 84,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11445,
+      "name": "Trestle Table Draper",
+      "score": 85,
+      "neighborhood": "Draper",
+      "descLen": 58,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11467,
+      "name": "Saola Restaurant",
+      "score": 85,
+      "neighborhood": "Cottonwood Heights",
+      "descLen": 59,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11472,
+      "name": "Miyazaki",
+      "score": 85,
+      "neighborhood": "Midvale",
+      "descLen": 74,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11490,
+      "name": "Sauce Boss Southern Kitchen",
+      "score": 85,
+      "neighborhood": "Draper",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11492,
+      "name": "Matilda Park City",
+      "score": 85,
+      "neighborhood": "Park City",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11508,
+      "name": "Sol Agave American Fork",
+      "score": 85,
+      "neighborhood": "Lehi",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11527,
+      "name": "'mina Ristorante Siciliano",
+      "score": 85,
+      "neighborhood": "University",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11549,
+      "name": "Meditrina",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 154,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11551,
+      "name": "Popol Vuh",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 163,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11568,
+      "name": "Les Madeleines Cafe",
+      "score": 85,
+      "neighborhood": "Downtown SLC",
+      "descLen": 83,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12253,
+      "name": "Pachi Pachi",
+      "score": 85,
+      "neighborhood": "Downtown",
+      "descLen": 150,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12267,
+      "name": "Shin Yakiniku",
+      "score": 85,
+      "neighborhood": "Chinatown",
+      "descLen": 101,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12283,
+      "name": "Ping Pang Pong",
+      "score": 85,
+      "neighborhood": "West of Strip",
+      "descLen": 107,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12293,
+      "name": "Maroon Las Vegas",
+      "score": 85,
+      "neighborhood": "The Strip (The Venetian)",
+      "descLen": 108,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12334,
+      "name": "Fat Choy",
+      "score": 85,
+      "neighborhood": "Chinatown",
+      "descLen": 95,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12345,
+      "name": "Grape Street Cafe",
+      "score": 85,
+      "neighborhood": "Summerlin (Downtown Summerlin)",
+      "descLen": 92,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12348,
+      "name": "Cafe Breizh",
+      "score": 85,
+      "neighborhood": "Summerlin",
+      "descLen": 77,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12349,
+      "name": "Gaetano's Ristorante",
+      "score": 85,
+      "neighborhood": "Spring Valley",
+      "descLen": 94,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12360,
+      "name": "Lupo by Wolfgang Puck",
+      "score": 85,
+      "neighborhood": "The Strip (Mandalay Bay)",
+      "descLen": 87,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12375,
+      "name": "Paymon Mediterranean Cafe",
+      "score": 85,
+      "neighborhood": "Paradise",
+      "descLen": 96,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12378,
+      "name": "Distrito Federal",
+      "score": 85,
+      "neighborhood": "Paradise",
+      "descLen": 100,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12392,
+      "name": "Mama Rabbit",
+      "score": 85,
+      "neighborhood": "The Strip (Park MGM)",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12394,
+      "name": "Ferraro's Vino",
+      "score": 85,
+      "neighborhood": "Paradise",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12399,
+      "name": "China Poblano",
+      "score": 85,
+      "neighborhood": "The Strip (The Cosmopolitan)",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12506,
+      "name": "Pinkbox Doughnuts Fremont",
+      "score": 85,
+      "neighborhood": "Downtown / Fremont East",
+      "descLen": 155,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9257,
+      "name": "Optimism Brewing Co.",
+      "score": 85,
+      "neighborhood": "Capitol Hill",
+      "descLen": 160,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9263,
+      "name": "Aladdin Gyro-Cery",
+      "score": 85,
+      "neighborhood": "University District",
+      "descLen": 159,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9277,
+      "name": "Voi Ca Phe",
+      "score": 85,
+      "neighborhood": "Georgetown",
+      "descLen": 169,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9292,
+      "name": "Outsider BBQ",
+      "score": 85,
+      "neighborhood": "Fremont",
+      "descLen": 156,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7325,
+      "name": "Ruggles Green",
+      "score": 84,
+      "neighborhood": "West University",
+      "descLen": 110,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7330,
+      "name": "Arirang Korean Restaurant",
+      "score": 84,
+      "neighborhood": "Spring Branch",
+      "descLen": 85,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7333,
+      "name": "Coco Crepes, Waffles & Coffee",
+      "score": 84,
+      "neighborhood": "Spring Branch",
+      "descLen": 91,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7345,
+      "name": "Tommy Bahama Restaurant Woodlands",
+      "score": 84,
+      "neighborhood": "The Woodlands",
+      "descLen": 103,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7349,
+      "name": "Pho Ben",
+      "score": 84,
+      "neighborhood": "Pearland",
+      "descLen": 67,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7361,
+      "name": "El Big Bad",
+      "score": 84,
+      "neighborhood": "Washington Corridor",
+      "descLen": 99,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7364,
+      "name": "Brasil Cafe",
+      "score": 84,
+      "neighborhood": "Museum District",
+      "descLen": 105,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7371,
+      "name": "Shabu House",
+      "score": 84,
+      "neighborhood": "Spring Branch",
+      "descLen": 72,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7375,
+      "name": "Goose's Acre Bistro & Irish Pub",
+      "score": 84,
+      "neighborhood": "Spring",
+      "descLen": 94,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7376,
+      "name": "Escalante's Mexican Grille The Woodlands",
+      "score": 84,
+      "neighborhood": "Spring",
+      "descLen": 94,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7378,
+      "name": "La Finca Restaurant Woodlands",
+      "score": 84,
+      "neighborhood": "Spring",
+      "descLen": 107,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7391,
+      "name": "Gringo's Mexican Kitchen Katy",
+      "score": 84,
+      "neighborhood": "Katy",
+      "descLen": 64,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7532,
+      "name": "Masa Sushi",
+      "score": 84,
+      "neighborhood": "Clear Lake",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7535,
+      "name": "Luna Restaurant & Bar",
+      "score": 84,
+      "neighborhood": "Clear Lake",
+      "descLen": 114,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7537,
+      "name": "Main 101 Grill & Bar",
+      "score": 84,
+      "neighborhood": "La Porte",
+      "descLen": 68,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7544,
+      "name": "Tony's Italian Delicatessen",
+      "score": 84,
+      "neighborhood": "Tomball",
+      "descLen": 102,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7550,
+      "name": "Bluewater Seafood",
+      "score": 84,
+      "neighborhood": "Northwest Houston",
+      "descLen": 106,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 475,
+      "name": "Greek Islands Restaurant",
+      "score": 84,
+      "neighborhood": "Greektown",
+      "descLen": 70,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 478,
+      "name": "Tacotlan",
+      "score": 84,
+      "neighborhood": "Hermosa",
+      "descLen": 74,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 482,
+      "name": "Phil's Pizza",
+      "score": 84,
+      "neighborhood": "Bridgeport",
+      "descLen": 63,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 486,
+      "name": "Lao Der",
+      "score": 84,
+      "neighborhood": "Irving Park",
+      "descLen": 107,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 493,
+      "name": "Chez Joel",
+      "score": 84,
+      "neighborhood": "Little Italy / University Village",
+      "descLen": 114,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 506,
+      "name": "Bronzeville Soul",
+      "score": 84,
+      "neighborhood": "Bronzeville",
+      "descLen": 123,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 518,
+      "name": "Dovetail Brewery",
+      "score": 84,
+      "neighborhood": "Ravenswood",
+      "descLen": 112,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 527,
+      "name": "Ba Le Sandwiches",
+      "score": 84,
+      "neighborhood": "Uptown",
+      "descLen": 127,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 543,
+      "name": "Via Lima",
+      "score": 84,
+      "neighborhood": "North Center",
+      "descLen": 107,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5228,
+      "name": "Fareground",
+      "score": 84,
+      "neighborhood": "Downtown",
+      "descLen": 99,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5470,
+      "name": "Marlow",
+      "score": 84,
+      "neighborhood": "Downtown",
+      "descLen": 106,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5486,
+      "name": "Paperboy South",
+      "score": 84,
+      "neighborhood": "South Lamar",
+      "descLen": 105,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5513,
+      "name": "Fresa's Chicken al Carbon",
+      "score": 84,
+      "neighborhood": "North Lamar",
+      "descLen": 111,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5514,
+      "name": "Poke-Poke",
+      "score": 84,
+      "neighborhood": "South Congress",
+      "descLen": 106,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5520,
+      "name": "Allday Pizza",
+      "score": 84,
+      "neighborhood": "Hyde Park",
+      "descLen": 96,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5522,
+      "name": "Otherside Deli",
+      "score": 84,
+      "neighborhood": "North Loop",
+      "descLen": 103,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5525,
+      "name": "Saigon On 7th",
+      "score": 84,
+      "neighborhood": "East Austin",
+      "descLen": 113,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5555,
+      "name": "Blue Owl Brewing",
+      "score": 84,
+      "neighborhood": "East Austin",
+      "descLen": 75,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11180,
+      "name": "Tsunami Sandy",
+      "score": 84,
+      "neighborhood": "Sandy",
+      "descLen": 89,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11432,
+      "name": "Dee's Family Restaurant",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "descLen": 72,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11435,
+      "name": "Trolley Square Food Court",
+      "score": 84,
+      "neighborhood": "Trolley Square",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11440,
+      "name": "Flavor Burst Frozen Yogurt",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "descLen": 73,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11463,
+      "name": "Rodizio Grill",
+      "score": 84,
+      "neighborhood": "Trolley Square",
+      "descLen": 109,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11468,
+      "name": "Zaferan Cafe",
+      "score": 84,
+      "neighborhood": "Cottonwood Heights",
+      "descLen": 93,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11473,
+      "name": "Tea Rose Diner",
+      "score": 84,
+      "neighborhood": "Murray",
+      "descLen": 83,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11480,
+      "name": "Melancholy Wine Lounge",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11502,
+      "name": "Paradise Biryani Pointe",
+      "score": 84,
+      "neighborhood": "Sandy",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11509,
+      "name": "Ocotillo Prime",
+      "score": 84,
+      "neighborhood": "Lehi",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11522,
+      "name": "North Italia Riverton",
+      "score": 84,
+      "neighborhood": "Riverton",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11528,
+      "name": "HandoSake Sushi",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11530,
+      "name": "Van Ryder",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11536,
+      "name": "Arempas",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11550,
+      "name": "Wild Grape Bistro",
+      "score": 84,
+      "neighborhood": "The Avenues",
+      "descLen": 147,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11553,
+      "name": "Alamexo",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "descLen": 170,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11562,
+      "name": "Kaneo",
+      "score": 84,
+      "neighborhood": "Park City",
+      "descLen": 78,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11566,
+      "name": "Eva Bakery",
+      "score": 84,
+      "neighborhood": "Downtown SLC",
+      "descLen": 80,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12254,
+      "name": "Limoncello",
+      "score": 84,
+      "neighborhood": "Summerlin",
+      "descLen": 137,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12262,
+      "name": "Cheri Rooftop",
+      "score": 84,
+      "neighborhood": "The Strip (Paris Las Vegas)",
+      "descLen": 95,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12270,
+      "name": "Palate",
+      "score": 84,
+      "neighborhood": "Arts District",
+      "descLen": 104,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12279,
+      "name": "Milpa",
+      "score": 84,
+      "neighborhood": "Spring Valley",
+      "descLen": 83,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12340,
+      "name": "Eat",
+      "score": 84,
+      "neighborhood": "Downtown",
+      "descLen": 94,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12351,
+      "name": "Hachi",
+      "score": 84,
+      "neighborhood": "Paradise",
+      "descLen": 104,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12366,
+      "name": "Pin Kaow Thai",
+      "score": 84,
+      "neighborhood": "Chinatown",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12396,
+      "name": "Leticia's Cocina",
+      "score": 84,
+      "neighborhood": "Henderson",
+      "descLen": 93,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9271,
+      "name": "Geraldine's Counter",
+      "score": 84,
+      "neighborhood": "Columbia City",
+      "descLen": 171,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9284,
+      "name": "The White Swan Public House",
+      "score": 84,
+      "neighborhood": "South Lake Union",
+      "descLen": 173,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9293,
+      "name": "Tony's Bakery",
+      "score": 84,
+      "neighborhood": "Hillman City",
+      "descLen": 169,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9424,
+      "name": "Citizen Coffee Queen Anne",
+      "score": 84,
+      "neighborhood": "Queen Anne",
+      "descLen": 120,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7334,
+      "name": "Snappy's Cafe & Grill",
+      "score": 83,
+      "neighborhood": "Katy",
+      "descLen": 99,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7338,
+      "name": "Toasted Yolk Cafe Katy",
+      "score": 83,
+      "neighborhood": "Katy",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7379,
+      "name": "Texas Huddle Grille",
+      "score": 83,
+      "neighborhood": "Pearland",
+      "descLen": 83,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7384,
+      "name": "Dimassi's Mediterranean Buffet Pearland",
+      "score": 83,
+      "neighborhood": "Pearland",
+      "descLen": 104,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7389,
+      "name": "The Honey B Ham Co.",
+      "score": 83,
+      "neighborhood": "West University",
+      "descLen": 101,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7395,
+      "name": "Pho Saigon Katy",
+      "score": 83,
+      "neighborhood": "Katy",
+      "descLen": 84,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7398,
+      "name": "Chuy's The Woodlands",
+      "score": 83,
+      "neighborhood": "The Woodlands",
+      "descLen": 84,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7539,
+      "name": "Southern Komfort Kitchen",
+      "score": 83,
+      "neighborhood": "La Porte",
+      "descLen": 99,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7548,
+      "name": "Pecan Creek Grille",
+      "score": 83,
+      "neighborhood": "West Houston",
+      "descLen": 85,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7551,
+      "name": "Cutten Kitchen",
+      "score": 83,
+      "neighborhood": "Northwest Houston",
+      "descLen": 85,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 471,
+      "name": "Bundoo Khan",
+      "score": 83,
+      "neighborhood": "Devon Avenue",
+      "descLen": 83,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 485,
+      "name": "Cedars Mediterranean Kitchen",
+      "score": 83,
+      "neighborhood": "Hyde Park",
+      "descLen": 113,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 487,
+      "name": "Mis Moles",
+      "score": 83,
+      "neighborhood": "Irving Park",
+      "descLen": 105,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 489,
+      "name": "Taqueria El Asadero",
+      "score": 83,
+      "neighborhood": "Irving Park",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 499,
+      "name": "La Chaparrita",
+      "score": 83,
+      "neighborhood": "Little Village",
+      "descLen": 111,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 500,
+      "name": "Carnitas Don Ruben",
+      "score": 83,
+      "neighborhood": "Little Village",
+      "descLen": 106,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 510,
+      "name": "Soul Vegetarian South",
+      "score": 83,
+      "neighborhood": "Bronzeville",
+      "descLen": 125,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 511,
+      "name": "Eleven City Diner",
+      "score": 83,
+      "neighborhood": "South Loop",
+      "descLen": 124,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 516,
+      "name": "Happy Camper Old Town",
+      "score": 83,
+      "neighborhood": "Old Town",
+      "descLen": 113,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 520,
+      "name": "Cafe Central Puerto Rican",
+      "score": 83,
+      "neighborhood": "Noble Square",
+      "descLen": 115,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 525,
+      "name": "Amano Bistro",
+      "score": 83,
+      "neighborhood": "North Center",
+      "descLen": 102,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 532,
+      "name": "Soul Veg City",
+      "score": 83,
+      "neighborhood": "Chatham",
+      "descLen": 126,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 536,
+      "name": "Uncle John's BBQ",
+      "score": 83,
+      "neighborhood": "Englewood",
+      "descLen": 119,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5468,
+      "name": "Firehouse Hostel Lounge",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5473,
+      "name": "Devil May Care",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "descLen": 89,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5475,
+      "name": "Clive Bar",
+      "score": 83,
+      "neighborhood": "Rainey Street",
+      "descLen": 104,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5485,
+      "name": "Radio Coffee & Beer",
+      "score": 83,
+      "neighborhood": "South Austin",
+      "descLen": 108,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5497,
+      "name": "The Cloak Room",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5502,
+      "name": "Grackle",
+      "score": 83,
+      "neighborhood": "East Austin",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5515,
+      "name": "Flower Child",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "descLen": 120,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5516,
+      "name": "Phoenician Resto Cafe",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "descLen": 103,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5521,
+      "name": "Little Deli & Pizzeria",
+      "score": 83,
+      "neighborhood": "North Loop",
+      "descLen": 115,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5552,
+      "name": "Anthem Korean",
+      "score": 83,
+      "neighborhood": "East Austin",
+      "descLen": 74,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5559,
+      "name": "Amaya",
+      "score": 83,
+      "neighborhood": "Rainey Street",
+      "descLen": 70,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5560,
+      "name": "Leona Botanical Cafe",
+      "score": 83,
+      "neighborhood": "South Austin",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5565,
+      "name": "Ceviche7",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "descLen": 89,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5577,
+      "name": "Juliet Italian Kitchen",
+      "score": 83,
+      "neighborhood": "North Austin",
+      "descLen": 96,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11471,
+      "name": "Del Barrio Cafe",
+      "score": 83,
+      "neighborhood": "Midvale",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11476,
+      "name": "Porch Restaurant",
+      "score": 83,
+      "neighborhood": "South Jordan",
+      "descLen": 79,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11477,
+      "name": "Our Kitchen Cafe",
+      "score": 83,
+      "neighborhood": "North Salt Lake",
+      "descLen": 64,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11479,
+      "name": "Paulino's Contigo Peru",
+      "score": 83,
+      "neighborhood": "West Valley",
+      "descLen": 85,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11487,
+      "name": "SOMI Vietnamese Bistro",
+      "score": 83,
+      "neighborhood": "Sugar House",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11500,
+      "name": "Gurkhas",
+      "score": 83,
+      "neighborhood": "Millcreek",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11510,
+      "name": "Kitchen Eighty-Eight",
+      "score": 83,
+      "neighborhood": "Lehi",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11514,
+      "name": "Stella's on 25th",
+      "score": 83,
+      "neighborhood": "Ogden",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11519,
+      "name": "Joy Luck Restaurant",
+      "score": 83,
+      "neighborhood": "Bountiful",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11523,
+      "name": "Saffron Circle",
+      "score": 83,
+      "neighborhood": "Riverton",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11535,
+      "name": "Savage Fish Poke",
+      "score": 83,
+      "neighborhood": "Millcreek",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11548,
+      "name": "Este Pizza",
+      "score": 83,
+      "neighborhood": "9th & 9th",
+      "descLen": 165,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11555,
+      "name": "Zest Kitchen & Bar",
+      "score": 83,
+      "neighborhood": "Downtown SLC",
+      "descLen": 160,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11559,
+      "name": "Vongole Pasta",
+      "score": 83,
+      "neighborhood": "Sugar House",
+      "descLen": 76,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11564,
+      "name": "White Horse",
+      "score": 83,
+      "neighborhood": "Downtown SLC",
+      "descLen": 69,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11567,
+      "name": "Bruges Waffles and Frites",
+      "score": 83,
+      "neighborhood": "Downtown SLC",
+      "descLen": 85,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12252,
+      "name": "Holsteins",
+      "score": 83,
+      "neighborhood": "Arts District",
+      "descLen": 156,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12255,
+      "name": "Ohlala French Bistro",
+      "score": 83,
+      "neighborhood": "Summerlin",
+      "descLen": 132,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12265,
+      "name": "Pampas Churrascaria",
+      "score": 83,
+      "neighborhood": "The Strip (Planet Hollywood)",
+      "descLen": 96,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12280,
+      "name": "Hop Nuts Brewing",
+      "score": 83,
+      "neighborhood": "Arts District",
+      "descLen": 84,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12333,
+      "name": "Mekong",
+      "score": 83,
+      "neighborhood": "Chinatown",
+      "descLen": 105,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12338,
+      "name": "The Silver Stamp",
+      "score": 83,
+      "neighborhood": "Arts District",
+      "descLen": 73,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12350,
+      "name": "Shokku Ramen",
+      "score": 83,
+      "neighborhood": "Paradise",
+      "descLen": 107,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12356,
+      "name": "House of Blues Las Vegas",
+      "score": 83,
+      "neighborhood": "The Strip (Mandalay Bay)",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12383,
+      "name": "Rosallie Le French Cafe",
+      "score": 83,
+      "neighborhood": "Spring Valley",
+      "descLen": 73,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12401,
+      "name": "The Catamaran",
+      "score": 83,
+      "neighborhood": "Downtown",
+      "descLen": 106,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7363,
+      "name": "Sawyer Park Icehouse",
+      "score": 82,
+      "neighborhood": "Washington Corridor",
+      "descLen": 96,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7401,
+      "name": "Cafe Adobe Woodlands",
+      "score": 82,
+      "neighborhood": "The Woodlands",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7538,
+      "name": "New Orleans Seafood Kitchen",
+      "score": 82,
+      "neighborhood": "La Porte",
+      "descLen": 93,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7554,
+      "name": "Taste of Gold",
+      "score": 82,
+      "neighborhood": "IAH Airport",
+      "descLen": 135,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 472,
+      "name": "Annapurna Indian",
+      "score": 82,
+      "neighborhood": "Devon Avenue",
+      "descLen": 85,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 474,
+      "name": "Ethiopian Diamond",
+      "score": 82,
+      "neighborhood": "Edgewater",
+      "descLen": 84,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 476,
+      "name": "Athena Restaurant",
+      "score": 82,
+      "neighborhood": "Greektown",
+      "descLen": 71,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 480,
+      "name": "Lagunitas Taproom",
+      "score": 82,
+      "neighborhood": "Douglas Park",
+      "descLen": 66,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 488,
+      "name": "Wurst Behavior",
+      "score": 82,
+      "neighborhood": "Irving Park",
+      "descLen": 101,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 498,
+      "name": "Mi Tierra",
+      "score": 82,
+      "neighborhood": "Little Village",
+      "descLen": 116,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 509,
+      "name": "The Sit Down Cafe & Sushi Bar",
+      "score": 82,
+      "neighborhood": "Bronzeville",
+      "descLen": 103,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 513,
+      "name": "Tapas Valencia",
+      "score": 82,
+      "neighborhood": "South Loop",
+      "descLen": 94,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 514,
+      "name": "Siam Rice Thai Cuisine",
+      "score": 82,
+      "neighborhood": "South Loop",
+      "descLen": 103,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 524,
+      "name": "Laschet's Inn",
+      "score": 82,
+      "neighborhood": "North Center",
+      "descLen": 115,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 533,
+      "name": "Jerk It Iz",
+      "score": 82,
+      "neighborhood": "Chatham",
+      "descLen": 105,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 534,
+      "name": "Lalo's on Maxwell",
+      "score": 82,
+      "neighborhood": "Near South Side",
+      "descLen": 122,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5489,
+      "name": "Oddwood Brewing",
+      "score": 82,
+      "neighborhood": "East Austin",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5503,
+      "name": "The Volstead Lounge",
+      "score": 82,
+      "neighborhood": "East Austin",
+      "descLen": 109,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5517,
+      "name": "TX Shawarma",
+      "score": 82,
+      "neighborhood": "South Austin",
+      "descLen": 111,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5556,
+      "name": "Hi Sign Brewing",
+      "score": 82,
+      "neighborhood": "East Austin",
+      "descLen": 78,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5564,
+      "name": "T-Loc's Sonoran Hot Dogs",
+      "score": 82,
+      "neighborhood": "North Loop",
+      "descLen": 89,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5575,
+      "name": "Rosita's Al Pastor East",
+      "score": 82,
+      "neighborhood": "East Austin",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5576,
+      "name": "Haymaker Austin",
+      "score": 82,
+      "neighborhood": "East Austin",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11461,
+      "name": "Foundry Grill",
+      "score": 82,
+      "neighborhood": "Provo",
+      "descLen": 93,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11469,
+      "name": "Bohemian Brewery",
+      "score": 82,
+      "neighborhood": "Midvale",
+      "descLen": 99,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11481,
+      "name": "Carson Kitchen SLC",
+      "score": 82,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11491,
+      "name": "Mr. Shabu",
+      "score": 82,
+      "neighborhood": "Gateway",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11495,
+      "name": "Sushi Groove",
+      "score": 82,
+      "neighborhood": "Sugar House",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11497,
+      "name": "Muertos Cantina",
+      "score": 82,
+      "neighborhood": "Sugar House",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11501,
+      "name": "Shahrazad Market",
+      "score": 82,
+      "neighborhood": "West Valley",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11503,
+      "name": "Hruska's Kolaches",
+      "score": 82,
+      "neighborhood": "Provo",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11507,
+      "name": "Via 313 Lehi",
+      "score": 82,
+      "neighborhood": "Lehi",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11513,
+      "name": "Roosters Brewing Co.",
+      "score": 82,
+      "neighborhood": "Ogden",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11515,
+      "name": "Weller's Bistro",
+      "score": 82,
+      "neighborhood": "Ogden",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11520,
+      "name": "Twigs Bistro & Martini Bar",
+      "score": 82,
+      "neighborhood": "Farmington",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11524,
+      "name": "Slackwater Herriman",
+      "score": 82,
+      "neighborhood": "Herriman",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11533,
+      "name": "Hanaya Poke",
+      "score": 82,
+      "neighborhood": "Sugar House",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11537,
+      "name": "Atomic Biscuit",
+      "score": 82,
+      "neighborhood": "9th & 9th",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11539,
+      "name": "ROCTACO",
+      "score": 82,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11557,
+      "name": "Craft by Proper",
+      "score": 82,
+      "neighborhood": "Sugar House",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11561,
+      "name": "Sugar House Station",
+      "score": 82,
+      "neighborhood": "Sugar House",
+      "descLen": 93,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11565,
+      "name": "Stoneground Italian",
+      "score": 82,
+      "neighborhood": "Provo",
+      "descLen": 73,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12257,
+      "name": "Craft Kitchen",
+      "score": 82,
+      "neighborhood": "Henderson",
+      "descLen": 133,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12271,
+      "name": "18bin",
+      "score": 82,
+      "neighborhood": "Arts District",
+      "descLen": 107,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12274,
+      "name": "Lovelady Brewing",
+      "score": 82,
+      "neighborhood": "Henderson",
+      "descLen": 100,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12281,
+      "name": "Banger Brewing",
+      "score": 82,
+      "neighborhood": "Downtown (Fremont East)",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12282,
+      "name": "Mothership Coffee Roasters",
+      "score": 82,
+      "neighborhood": "Downtown",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12342,
+      "name": "Water Street Grill",
+      "score": 82,
+      "neighborhood": "Henderson",
+      "descLen": 85,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12343,
+      "name": "Beerhaus Henderson",
+      "score": 82,
+      "neighborhood": "Henderson",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12362,
+      "name": "Noodles Bellagio",
+      "score": 82,
+      "neighborhood": "The Strip (Bellagio)",
+      "descLen": 94,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12365,
+      "name": "Ohjah Japanese Steakhouse",
+      "score": 82,
+      "neighborhood": "Chinatown",
+      "descLen": 73,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12369,
+      "name": "In-N-Out Burger",
+      "score": 82,
+      "neighborhood": "Paradise",
+      "descLen": 109,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12377,
+      "name": "Cornish Pasty Co.",
+      "score": 82,
+      "neighborhood": "Arts District",
+      "descLen": 101,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12381,
+      "name": "Ghostbar",
+      "score": 82,
+      "neighborhood": "West of Strip",
+      "descLen": 82,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12384,
+      "name": "Montecristo Cigar Bar",
+      "score": 82,
+      "neighborhood": "The Strip (Caesars Palace)",
+      "descLen": 83,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12386,
+      "name": "Ellis Island BBQ",
+      "score": 82,
+      "neighborhood": "Paradise",
+      "descLen": 99,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12395,
+      "name": "Tacos El Compita",
+      "score": 82,
+      "neighborhood": "North Las Vegas",
+      "descLen": 102,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12402,
+      "name": "Izzy's Bagels",
+      "score": 82,
+      "neighborhood": "Arts District",
+      "descLen": 102,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12517,
+      "name": "BLVD Creamery",
+      "score": 82,
+      "neighborhood": "The Strip (The Cosmopolitan)",
+      "descLen": 141,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9420,
+      "name": "Cafe Cesura",
+      "score": 82,
+      "neighborhood": "Bellevue",
+      "descLen": 92,
+      "issues": [
+        "very short",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Seattle",
+      "id": 9445,
+      "name": "Collins Pub",
+      "score": 82,
+      "neighborhood": "Pioneer Square",
+      "descLen": 112,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 479,
+      "name": "Ponce Restaurant",
+      "score": 81,
+      "neighborhood": "Hermosa",
+      "descLen": 73,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 529,
+      "name": "Tel Aviv Kosher Bakery",
+      "score": 81,
+      "neighborhood": "West Rogers Park",
+      "descLen": 126,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 539,
+      "name": "Reggio's Pizza Chatham",
+      "score": 81,
+      "neighborhood": "Chatham",
+      "descLen": 102,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5551,
+      "name": "Cenote Cafe",
+      "score": 81,
+      "neighborhood": "East Austin",
+      "descLen": 78,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5563,
+      "name": "Bar Fino",
+      "score": 81,
+      "neighborhood": "Rainey Street",
+      "descLen": 78,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5572,
+      "name": "Soul Seoul Sol",
+      "score": 81,
+      "neighborhood": "East Austin",
+      "descLen": 101,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11496,
+      "name": "Little Saigon",
+      "score": 81,
+      "neighborhood": "Sugar House",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11498,
+      "name": "Spitz Mediterranean",
+      "score": 81,
+      "neighborhood": "Sugar House",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11517,
+      "name": "Cafe Sabor",
+      "score": 81,
+      "neighborhood": "Logan",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11534,
+      "name": "LemonShark Poke",
+      "score": 81,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11538,
+      "name": "Tamarind",
+      "score": 81,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11543,
+      "name": "Dirty Bird",
+      "score": 81,
+      "neighborhood": "Downtown SLC",
+      "descLen": 139,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11570,
+      "name": "Cubby's Chicago Beef",
+      "score": 81,
+      "neighborhood": "Downtown SLC",
+      "descLen": 87,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12269,
+      "name": "Bad Beat Brewing",
+      "score": 81,
+      "neighborhood": "Arts District",
+      "descLen": 87,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12289,
+      "name": "Juan's Flaming Fajitas Centennial",
+      "score": 81,
+      "neighborhood": "North Las Vegas",
+      "descLen": 104,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12335,
+      "name": "SkinnyFATS",
+      "score": 81,
+      "neighborhood": "Chinatown",
+      "descLen": 95,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7350,
+      "name": "BJ's Restaurant & Brewhouse Pearland",
+      "score": 80,
+      "neighborhood": "Pearland",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7534,
+      "name": "Pappas Delta Blues Smokehouse",
+      "score": 80,
+      "neighborhood": "Clear Lake",
+      "descLen": 102,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 531,
+      "name": "Zalman's Kosher Fast Food",
+      "score": 80,
+      "neighborhood": "West Rogers Park",
+      "descLen": 116,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 545,
+      "name": "Nuevo Chicago",
+      "score": 80,
+      "neighborhood": "West Rogers Park",
+      "descLen": 110,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5461,
+      "name": "Carnitas El Guero",
+      "score": 80,
+      "neighborhood": "North Lamar",
+      "descLen": 110,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5471,
+      "name": "Pete's Dueling Piano Bar",
+      "score": 80,
+      "neighborhood": "Downtown",
+      "descLen": 105,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5518,
+      "name": "Cabo Bob's Burritos",
+      "score": 80,
+      "neighborhood": "Downtown",
+      "descLen": 110,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5529,
+      "name": "Barrett's Coffee",
+      "score": 80,
+      "neighborhood": "North Loop",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5530,
+      "name": "Spokesman Coffee",
+      "score": 80,
+      "neighborhood": "South Austin",
+      "descLen": 99,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5533,
+      "name": "Manana",
+      "score": 80,
+      "neighborhood": "South Congress",
+      "descLen": 115,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5534,
+      "name": "The Picnic",
+      "score": 80,
+      "neighborhood": "Zilker",
+      "descLen": 114,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5562,
+      "name": "Thoroughfare",
+      "score": 80,
+      "neighborhood": "Mueller",
+      "descLen": 96,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5568,
+      "name": "Plaza Colombian Coffee Bar",
+      "score": 80,
+      "neighborhood": "South Austin",
+      "descLen": 93,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11464,
+      "name": "Desert Edge Brewery",
+      "score": 80,
+      "neighborhood": "Trolley Square",
+      "descLen": 93,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11499,
+      "name": "Blue Gene's",
+      "score": 80,
+      "neighborhood": "9th & 9th",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11518,
+      "name": "Cooks Underground",
+      "score": 80,
+      "neighborhood": "Logan",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11521,
+      "name": "Royal India Bountiful",
+      "score": 80,
+      "neighborhood": "Bountiful",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11526,
+      "name": "Seabird Bar & Vinyl Room",
+      "score": 80,
+      "neighborhood": "Gateway",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11532,
+      "name": "Zao Asian Cafe",
+      "score": 80,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11540,
+      "name": "HallPass",
+      "score": 80,
+      "neighborhood": "Gateway",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11542,
+      "name": "Meen Kine Poke & Grindz",
+      "score": 80,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11558,
+      "name": "ACME Bar Company",
+      "score": 80,
+      "neighborhood": "Sugar House",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11560,
+      "name": "Kiitos Brewing Sugar House",
+      "score": 80,
+      "neighborhood": "Sugar House",
+      "descLen": 68,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11571,
+      "name": "Moose Knuckle Donuts",
+      "score": 80,
+      "neighborhood": "Sandy",
+      "descLen": 87,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11572,
+      "name": "Waffle Love",
+      "score": 80,
+      "neighborhood": "Provo",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12272,
+      "name": "Taco Escobar",
+      "score": 80,
+      "neighborhood": "Downtown (Fremont East)",
+      "descLen": 72,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12291,
+      "name": "We All Scream",
+      "score": 80,
+      "neighborhood": "Downtown (Fremont East)",
+      "descLen": 91,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12397,
+      "name": "Brewed Awakenings Coffee",
+      "score": 80,
+      "neighborhood": "Henderson",
+      "descLen": 102,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12403,
+      "name": "Du-par's Restaurant & Bakery",
+      "score": 80,
+      "neighborhood": "Downtown",
+      "descLen": 103,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Houston",
+      "id": 7540,
+      "name": "El Toro Mexican Restaurant",
+      "score": 79,
+      "neighborhood": "La Porte",
+      "descLen": 80,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 477,
+      "name": "Artopolis Bakery",
+      "score": 79,
+      "neighborhood": "Greektown",
+      "descLen": 70,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Chicago",
+      "id": 503,
+      "name": "Beverly Restaurant",
+      "score": 79,
+      "neighborhood": "Beverly",
+      "descLen": 122,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5561,
+      "name": "Gourdough's",
+      "score": 79,
+      "neighborhood": "South Austin",
+      "descLen": 87,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5571,
+      "name": "Palomino Coffee",
+      "score": 79,
+      "neighborhood": "East Austin",
+      "descLen": 100,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11493,
+      "name": "Eight Settlers Distillery",
+      "score": 79,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12264,
+      "name": "Gilley's BBQ",
+      "score": 79,
+      "neighborhood": "The Strip (Treasure Island)",
+      "descLen": 96,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12268,
+      "name": "Do Kkae Bi Kitchen",
+      "score": 79,
+      "neighborhood": "Chinatown",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12364,
+      "name": "Tap Sports Bar",
+      "score": 79,
+      "neighborhood": "The Strip (MGM Grand)",
+      "descLen": 98,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12405,
+      "name": "Diablo's Cantina",
+      "score": 79,
+      "neighborhood": "The Strip",
+      "descLen": 113,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5478,
+      "name": "Shangri-La",
+      "score": 78,
+      "neighborhood": "East Austin",
+      "descLen": 99,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5539,
+      "name": "Counter Cafe",
+      "score": 78,
+      "neighborhood": "Downtown",
+      "descLen": 111,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5542,
+      "name": "Cherrywood Coffeehouse",
+      "score": 78,
+      "neighborhood": "East Austin",
+      "descLen": 115,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5557,
+      "name": "Handsome Dan's",
+      "score": 78,
+      "neighborhood": "East Austin",
+      "descLen": 68,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5567,
+      "name": "Bodhi Viet Vegan",
+      "score": 78,
+      "neighborhood": "North Austin",
+      "descLen": 84,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5569,
+      "name": "CaPhe.in Coffee",
+      "score": 78,
+      "neighborhood": "Downtown",
+      "descLen": 82,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5573,
+      "name": "La Vi Coffee",
+      "score": 78,
+      "neighborhood": "Downtown",
+      "descLen": 86,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11541,
+      "name": "Honest Eatery",
+      "score": 78,
+      "neighborhood": "Downtown SLC",
+      "descLen": 0,
+      "issues": [
+        "missing"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "id": 11563,
+      "name": "Pitada Brazil",
+      "score": 78,
+      "neighborhood": "Provo",
+      "descLen": 90,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5574,
+      "name": "Black Sheep Coffee",
+      "score": 77,
+      "neighborhood": "Downtown",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5536,
+      "name": "North by Northwest",
+      "score": 76,
+      "neighborhood": "Domain",
+      "descLen": 97,
+      "issues": [
+        "very short",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12370,
+      "name": "White Castle Las Vegas",
+      "score": 76,
+      "neighborhood": "The Strip",
+      "descLen": 88,
+      "issues": [
+        "very short",
+        "< 2 sentences"
+      ]
+    },
+    {
+      "city": "Austin",
+      "id": 5541,
+      "name": "Punch Bowl Social",
+      "score": 75,
+      "neighborhood": "Domain",
+      "descLen": 116,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "id": 12449,
+      "name": "Señor Frog's Las Vegas",
+      "score": 75,
+      "neighborhood": "The Strip (Treasure Island)",
+      "descLen": 161,
+      "issues": [
+        "short (<180ch)",
+        "< 2 sentences",
+        "no concrete cues"
+      ]
+    }
+  ]
+}
