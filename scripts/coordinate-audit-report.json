@@ -1,0 +1,273 @@
+{
+  "total": 4546,
+  "missing": 0,
+  "outOfBbox": 40,
+  "reusedCoords": 206,
+  "byCity": {
+    "DALLAS": {
+      "total": 665,
+      "missing": 0,
+      "outOfBbox": 0,
+      "reusedCoords": 0,
+      "outlierSamples": []
+    },
+    "HOUSTON": {
+      "total": 500,
+      "missing": 0,
+      "outOfBbox": 0,
+      "reusedCoords": 0,
+      "outlierSamples": []
+    },
+    "CHICAGO": {
+      "total": 500,
+      "missing": 0,
+      "outOfBbox": 0,
+      "reusedCoords": 0,
+      "outlierSamples": []
+    },
+    "AUSTIN": {
+      "total": 500,
+      "missing": 0,
+      "outOfBbox": 3,
+      "reusedCoords": 13,
+      "outlierSamples": [
+        {
+          "id": 5162,
+          "name": "Black's Barbecue",
+          "neighborhood": "Lockhart",
+          "lat": 29.885,
+          "lng": -97.67,
+          "address": "215 N Main St, Lockhart, TX 78644"
+        },
+        {
+          "id": 5163,
+          "name": "Kreuz Market",
+          "neighborhood": "Lockhart",
+          "lat": 29.886,
+          "lng": -97.667,
+          "address": "619 N Colorado St, Lockhart, TX 78644"
+        },
+        {
+          "id": 5164,
+          "name": "Smitty's Market",
+          "neighborhood": "Lockhart",
+          "lat": 29.883,
+          "lng": -97.67,
+          "address": "208 S Commerce St, Lockhart, TX 78644"
+        }
+      ],
+      "reusedGroups": [
+        {
+          "coords": "30.2576,-97.7406",
+          "count": 7,
+          "sample": [
+            "Rainey Street | Rainey Street",
+            "Half Step | Rainey Street",
+            "Bangers Sausage House & Beer Garden | Rainey Street",
+            "G'Raj Mahal | Rainey Street"
+          ]
+        },
+        {
+          "coords": "30.3617,-97.7154",
+          "count": 6,
+          "sample": [
+            "House of Three Gorges | North Austin",
+            "Paprika ATX | North Lamar",
+            "Loro North Lamar | North Lamar",
+            "Thai-Kun North Lamar | North Lamar"
+          ]
+        }
+      ]
+    },
+    "SLC": {
+      "total": 500,
+      "missing": 0,
+      "outOfBbox": 37,
+      "reusedCoords": 27,
+      "outlierSamples": [
+        {
+          "id": 11030,
+          "name": "Bam Bam's BBQ",
+          "neighborhood": "Provo",
+          "lat": 40.264,
+          "lng": -111.686,
+          "address": "1708 S State St, Orem, UT 84097"
+        },
+        {
+          "id": 11080,
+          "name": "Bombay House",
+          "neighborhood": "Provo",
+          "lat": 40.235,
+          "lng": -111.658,
+          "address": "463 N University Ave, Provo, UT 84601"
+        },
+        {
+          "id": 11092,
+          "name": "Communal",
+          "neighborhood": "Provo",
+          "lat": 40.234,
+          "lng": -111.658,
+          "address": "102 N University Ave, Provo, UT 84601"
+        },
+        {
+          "id": 11093,
+          "name": "Black Sheep Cafe",
+          "neighborhood": "Provo",
+          "lat": 40.2335,
+          "lng": -111.658,
+          "address": "19 N University Ave, Provo, UT 84601"
+        },
+        {
+          "id": 11094,
+          "name": "Block Restaurant",
+          "neighborhood": "Provo",
+          "lat": 40.233,
+          "lng": -111.66,
+          "address": "36 W Center St, Provo, UT 84601"
+        },
+        {
+          "id": 11095,
+          "name": "Mozz Artisan Pizza",
+          "neighborhood": "Provo",
+          "lat": 40.235,
+          "lng": -111.658,
+          "address": "223 N University Ave, Provo, UT 84601"
+        },
+        {
+          "id": 11096,
+          "name": "J Dawgs",
+          "neighborhood": "Provo",
+          "lat": 40.246,
+          "lng": -111.65,
+          "address": "858 N 700 E, Provo, UT 84606"
+        },
+        {
+          "id": 11097,
+          "name": "Five Sushi Brothers",
+          "neighborhood": "Provo",
+          "lat": 40.233,
+          "lng": -111.657,
+          "address": "63 E Center St, Provo, UT 84601"
+        }
+      ],
+      "reusedGroups": [
+        {
+          "coords": "40.6461,-111.4980",
+          "count": 14,
+          "sample": [
+            "Riverhorse on Main | Park City",
+            "Le Depot | Park City",
+            "Matilda | Park City",
+            "Firewood on Main | Park City"
+          ]
+        },
+        {
+          "coords": "40.7640,-111.8918",
+          "count": 8,
+          "sample": [
+            "Bodega | Downtown SLC",
+            "Whiskey Street | Downtown SLC",
+            "Alibi | Downtown SLC",
+            "Apollo Burger | Downtown SLC"
+          ]
+        },
+        {
+          "coords": "40.6988,-111.8881",
+          "count": 5,
+          "sample": [
+            "9-UP Night Market | South Salt Lake",
+            "Oh Mai Pho | South Salt Lake",
+            "Curry Pizza | Millcreek",
+            "Oh Mai South | South Salt Lake"
+          ]
+        }
+      ]
+    },
+    "LV": {
+      "total": 500,
+      "missing": 0,
+      "outOfBbox": 0,
+      "reusedCoords": 154,
+      "outlierSamples": [],
+      "reusedGroups": [
+        {
+          "coords": "36.1024,-115.1695",
+          "count": 8,
+          "sample": [
+            "Joël Robuchon | The Strip (MGM Grand)",
+            "L'Atelier de Joël Robuchon | The Strip (MGM Grand)",
+            "Morimoto | The Strip (MGM Grand)",
+            "Hakkasan | The Strip (MGM Grand)"
+          ]
+        },
+        {
+          "coords": "36.1162,-115.1750",
+          "count": 12,
+          "sample": [
+            "Restaurant Guy Savoy | The Strip (Caesars Palace)",
+            "Gordon Ramsay Hell's Kitchen | The Strip (Caesars Palace)",
+            "Nobu | The Strip (Caesars Palace)",
+            "Vanderpump Cocktail Garden | The Strip (Caesars Palace)"
+          ]
+        },
+        {
+          "coords": "36.1129,-115.1769",
+          "count": 7,
+          "sample": [
+            "Le Cirque | The Strip (Bellagio)",
+            "Carbone Riviera | The Strip (Bellagio)",
+            "Spago | The Strip (Bellagio)",
+            "Prime Steakhouse | The Strip (Bellagio)"
+          ]
+        },
+        {
+          "coords": "36.1073,-115.1760",
+          "count": 5,
+          "sample": [
+            "Carbone | The Strip (Aria)",
+            "Jean Georges Steakhouse | The Strip (Aria)",
+            "Catch Las Vegas | The Strip (Aria)",
+            "Sage | The Strip (Aria)"
+          ]
+        }
+      ]
+    },
+    "SEATTLE": {
+      "total": 501,
+      "missing": 0,
+      "outOfBbox": 0,
+      "reusedCoords": 12,
+      "outlierSamples": [],
+      "reusedGroups": [
+        {
+          "coords": "47.6677,-122.3838",
+          "count": 5,
+          "sample": [
+            "Bastille Cafe & Bar | Ballard",
+            "Staple & Fancy Mercantile | Ballard",
+            "Bitterroot BBQ | Ballard",
+            "Renee Erickson The Walrus Oyster Saloon | Ballard"
+          ]
+        },
+        {
+          "coords": "47.6143,-122.3240",
+          "count": 7,
+          "sample": [
+            "Mamnoon | Capitol Hill",
+            "Taylor Shellfish Farms Melrose Market | Capitol Hill",
+            "Ayutthaya Thai | Capitol Hill",
+            "Sitka and Spruce | Capitol Hill"
+          ]
+        }
+      ]
+    },
+    "NYC": {
+      "total": 880,
+      "missing": 0,
+      "outOfBbox": 0,
+      "reusedCoords": 0,
+      "outlierSamples": []
+    }
+  },
+  "outliers": []
+}
