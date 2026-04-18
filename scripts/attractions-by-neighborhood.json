@@ -280,18 +280,6 @@
       "names": []
     },
     {
-      "hood": "Rice Village",
-      "total": 12,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "The Woodlands",
-      "total": 12,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Spring",
       "total": 11,
       "attractions": 0,
@@ -394,6 +382,14 @@
       ]
     },
     {
+      "hood": "Rice Village",
+      "total": 13,
+      "attractions": 1,
+      "names": [
+        "Rice Village"
+      ]
+    },
+    {
       "hood": "Clear Lake",
       "total": 6,
       "attractions": 1,
@@ -452,6 +448,15 @@
       "names": [
         "Memorial Park",
         "Houston Arboretum & Nature Center"
+      ]
+    },
+    {
+      "hood": "The Woodlands",
+      "total": 14,
+      "attractions": 2,
+      "names": [
+        "Market Street The Woodlands",
+        "The Woodlands Waterway"
       ]
     },
     {
@@ -1585,12 +1590,6 @@
   ],
   "Seattle": [
     {
-      "hood": "Georgetown",
-      "total": 12,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Kirkland",
       "total": 8,
       "attractions": 0,
@@ -1805,6 +1804,15 @@
       "names": [
         "Northwest African American Museum",
         "Jimi Hendrix Park"
+      ]
+    },
+    {
+      "hood": "Georgetown",
+      "total": 14,
+      "attractions": 2,
+      "names": [
+        "Georgetown Steam Plant",
+        "Oxbow Park (Hat ’n’ Boots)"
       ]
     },
     {
