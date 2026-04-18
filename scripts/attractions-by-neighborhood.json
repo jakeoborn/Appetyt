@@ -905,12 +905,6 @@
       "names": []
     },
     {
-      "hood": "Hyde Park",
-      "total": 7,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Mueller",
       "total": 6,
       "attractions": 0,
@@ -950,6 +944,14 @@
       "attractions": 1,
       "names": [
         "Punch Bowl Social"
+      ]
+    },
+    {
+      "hood": "Hyde Park",
+      "total": 8,
+      "attractions": 1,
+      "names": [
+        "Elisabet Ney Museum"
       ]
     },
     {
@@ -1055,12 +1057,6 @@
     }
   ],
   "Salt Lake City": [
-    {
-      "hood": "The Avenues",
-      "total": 14,
-      "attractions": 0,
-      "names": []
-    },
     {
       "hood": "Millcreek",
       "total": 11,
@@ -1255,6 +1251,15 @@
       "names": [
         "Tower Theatre",
         "9th and 9th Sculpture (Monument to Children)"
+      ]
+    },
+    {
+      "hood": "The Avenues",
+      "total": 16,
+      "attractions": 2,
+      "names": [
+        "Memory Grove Park",
+        "Salt Lake City Cemetery"
       ]
     },
     {
@@ -1942,12 +1947,6 @@
       "names": []
     },
     {
-      "hood": "Fort Greene / Clinton Hill",
-      "total": 7,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Red Hook",
       "total": 7,
       "attractions": 0,
@@ -2230,6 +2229,15 @@
       "names": [
         "Manhattan by Sail",
         "Barclays Center"
+      ]
+    },
+    {
+      "hood": "Fort Greene / Clinton Hill",
+      "total": 9,
+      "attractions": 2,
+      "names": [
+        "Brooklyn Academy of Music (BAM)",
+        "BRIC House"
       ]
     },
     {
