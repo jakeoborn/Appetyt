@@ -1293,18 +1293,6 @@
   ],
   "Las Vegas": [
     {
-      "hood": "Chinatown",
-      "total": 59,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Downtown (Fremont East)",
-      "total": 17,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "The Strip (Aria)",
       "total": 16,
       "attractions": 0,
@@ -1413,6 +1401,14 @@
       "names": []
     },
     {
+      "hood": "Chinatown",
+      "total": 60,
+      "attractions": 1,
+      "names": [
+        "Chinatown Plaza"
+      ]
+    },
+    {
       "hood": "The Strip (The Cosmopolitan)",
       "total": 27,
       "attractions": 1,
@@ -1511,6 +1507,15 @@
       ]
     },
     {
+      "hood": "Downtown (Fremont East)",
+      "total": 19,
+      "attractions": 2,
+      "names": [
+        "Downtown Container Park",
+        "Atomic Liquors"
+      ]
+    },
+    {
       "hood": "The Strip (Park MGM)",
       "total": 15,
       "attractions": 2,
@@ -1579,18 +1584,6 @@
     }
   ],
   "Seattle": [
-    {
-      "hood": "Central District",
-      "total": 15,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Beacon Hill",
-      "total": 13,
-      "attractions": 0,
-      "names": []
-    },
     {
       "hood": "Georgetown",
       "total": 12,
@@ -1738,6 +1731,14 @@
       ]
     },
     {
+      "hood": "Beacon Hill",
+      "total": 14,
+      "attractions": 1,
+      "names": [
+        "Kubota Garden"
+      ]
+    },
+    {
       "hood": "Phinney Ridge",
       "total": 13,
       "attractions": 1,
@@ -1795,6 +1796,15 @@
       "names": [
         "Alki Beach",
         "West Seattle Junction"
+      ]
+    },
+    {
+      "hood": "Central District",
+      "total": 17,
+      "attractions": 2,
+      "names": [
+        "Northwest African American Museum",
+        "Jimi Hendrix Park"
       ]
     },
     {

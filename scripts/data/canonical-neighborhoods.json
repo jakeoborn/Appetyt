@@ -704,7 +704,7 @@
   "Las Vegas": [
     {
       "name": "Chinatown",
-      "count": 59
+      "count": 60
     },
     {
       "name": "Downtown",
@@ -739,11 +739,11 @@
       "count": 19
     },
     {
-      "name": "The Strip (Mandalay Bay)",
-      "count": 17
+      "name": "Downtown (Fremont East)",
+      "count": 19
     },
     {
-      "name": "Downtown (Fremont East)",
+      "name": "The Strip (Mandalay Bay)",
       "count": 17
     },
     {
@@ -905,6 +905,10 @@
       "count": 18
     },
     {
+      "name": "Central District",
+      "count": 17
+    },
+    {
       "name": "Pioneer Square",
       "count": 17
     },
@@ -913,12 +917,8 @@
       "count": 16
     },
     {
-      "name": "Central District",
-      "count": 15
-    },
-    {
       "name": "Beacon Hill",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Phinney Ridge",
