@@ -274,12 +274,6 @@
       "names": []
     },
     {
-      "hood": "Memorial",
-      "total": 14,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Washington Corridor",
       "total": 12,
       "attractions": 0,
@@ -440,6 +434,15 @@
       "names": [
         "The River Oaks Theatre",
         "River Oaks Shopping Center"
+      ]
+    },
+    {
+      "hood": "Memorial",
+      "total": 16,
+      "attractions": 2,
+      "names": [
+        "Memorial Park",
+        "Houston Arboretum & Nature Center"
       ]
     },
     {
@@ -1601,24 +1604,6 @@
   ],
   "Seattle": [
     {
-      "hood": "University District",
-      "total": 21,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "South Lake Union",
-      "total": 21,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Bellevue",
-      "total": 21,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "West Seattle",
       "total": 16,
       "attractions": 0,
@@ -1833,6 +1818,24 @@
       ]
     },
     {
+      "hood": "University District",
+      "total": 23,
+      "attractions": 2,
+      "names": [
+        "Henry Art Gallery",
+        "Burke Museum of Natural History and Culture"
+      ]
+    },
+    {
+      "hood": "Bellevue",
+      "total": 23,
+      "attractions": 2,
+      "names": [
+        "Bellevue Arts Museum",
+        "Bellevue Downtown Park"
+      ]
+    },
+    {
       "hood": "Fremont",
       "total": 32,
       "attractions": 3,
@@ -1850,6 +1853,16 @@
         "Wing Luke Museum",
         "Hing Hay Park",
         "Kobe Terrace Park"
+      ]
+    },
+    {
+      "hood": "South Lake Union",
+      "total": 24,
+      "attractions": 3,
+      "names": [
+        "MOHAI (Museum of History & Industry)",
+        "Amazon Spheres",
+        "Lake Union Park"
       ]
     },
     {
@@ -1910,12 +1923,6 @@
     }
   ],
   "New York": [
-    {
-      "hood": "Park Slope / Prospect Heights",
-      "total": 13,
-      "attractions": 0,
-      "names": []
-    },
     {
       "hood": "NoHo",
       "total": 9,
@@ -2279,6 +2286,16 @@
         "Apollo Theater",
         "Studio Museum in Harlem",
         "Morris-Jumel Mansion"
+      ]
+    },
+    {
+      "hood": "Park Slope / Prospect Heights",
+      "total": 16,
+      "attractions": 3,
+      "names": [
+        "Prospect Park",
+        "Brooklyn Museum",
+        "Brooklyn Botanic Garden"
       ]
     },
     {
