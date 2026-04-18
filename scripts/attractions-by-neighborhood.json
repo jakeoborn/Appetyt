@@ -1,18 +1,6 @@
 {
   "Dallas": [
     {
-      "hood": "Harwood District",
-      "total": 15,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Plano",
-      "total": 13,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Trinity Groves",
       "total": 12,
       "attractions": 0,
@@ -181,6 +169,24 @@
       ]
     },
     {
+      "hood": "Harwood District",
+      "total": 17,
+      "attractions": 2,
+      "names": [
+        "Harwood District",
+        "Saint Ann Court"
+      ]
+    },
+    {
+      "hood": "Plano",
+      "total": 15,
+      "attractions": 2,
+      "names": [
+        "Legacy West",
+        "The Shops at Legacy"
+      ]
+    },
+    {
       "hood": "Cedars",
       "total": 12,
       "attractions": 2,
@@ -264,12 +270,6 @@
     {
       "hood": "Spring Branch",
       "total": 22,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Katy",
-      "total": 14,
       "attractions": 0,
       "names": []
     },
@@ -437,6 +437,15 @@
       ]
     },
     {
+      "hood": "Katy",
+      "total": 16,
+      "attractions": 2,
+      "names": [
+        "Typhoon Texas Waterpark",
+        "Katy Mills"
+      ]
+    },
+    {
       "hood": "Memorial",
       "total": 16,
       "attractions": 2,
@@ -488,18 +497,6 @@
     }
   ],
   "Chicago": [
-    {
-      "hood": "Uptown",
-      "total": 15,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Chinatown",
-      "total": 12,
-      "attractions": 0,
-      "names": []
-    },
     {
       "hood": "Ukrainian Village",
       "total": 11,
@@ -826,6 +823,15 @@
       ]
     },
     {
+      "hood": "Chinatown",
+      "total": 14,
+      "attractions": 2,
+      "names": [
+        "Chinatown Gate",
+        "Ping Tom Memorial Park"
+      ]
+    },
+    {
       "hood": "Streeterville",
       "total": 11,
       "attractions": 2,
@@ -842,6 +848,16 @@
         "The 606 (Bloomingdale Trail)",
         "Polish Museum of America",
         "Flat Iron Arts Building"
+      ]
+    },
+    {
+      "hood": "Uptown",
+      "total": 18,
+      "attractions": 3,
+      "names": [
+        "Green Mill Jazz Club",
+        "Aragon Ballroom",
+        "Uptown Theatre"
       ]
     },
     {
@@ -879,12 +895,6 @@
     }
   ],
   "Austin": [
-    {
-      "hood": "North Loop",
-      "total": 28,
-      "attractions": 0,
-      "names": []
-    },
     {
       "hood": "North Lamar",
       "total": 9,
@@ -952,6 +962,15 @@
       "names": [
         "HOPE Outdoor Gallery",
         "Barton Creek Greenbelt"
+      ]
+    },
+    {
+      "hood": "North Loop",
+      "total": 30,
+      "attractions": 2,
+      "names": [
+        "Breakaway Records",
+        "Monkeywrench Books"
       ]
     },
     {
@@ -1039,18 +1058,6 @@
     }
   ],
   "Salt Lake City": [
-    {
-      "hood": "9th & 9th",
-      "total": 18,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "South Salt Lake",
-      "total": 18,
-      "attractions": 0,
-      "names": []
-    },
     {
       "hood": "The Avenues",
       "total": 14,
@@ -1212,6 +1219,14 @@
       ]
     },
     {
+      "hood": "South Salt Lake",
+      "total": 19,
+      "attractions": 1,
+      "names": [
+        "Columbus Center"
+      ]
+    },
+    {
       "hood": "Gateway",
       "total": 9,
       "attractions": 1,
@@ -1234,6 +1249,15 @@
       "names": [
         "Temple Square",
         "Tabernacle Choir Concert"
+      ]
+    },
+    {
+      "hood": "9th & 9th",
+      "total": 20,
+      "attractions": 2,
+      "names": [
+        "Tower Theatre",
+        "9th and 9th Sculpture (Monument to Children)"
       ]
     },
     {
@@ -1293,38 +1317,8 @@
       "names": []
     },
     {
-      "hood": "Paradise",
-      "total": 29,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "The Strip (The Venetian)",
-      "total": 25,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Henderson",
-      "total": 25,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "The Strip (Caesars Palace)",
       "total": 18,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "The Strip (Bellagio)",
-      "total": 18,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "The Strip (Mandalay Bay)",
-      "total": 16,
       "attractions": 0,
       "names": []
     },
@@ -1337,12 +1331,6 @@
     {
       "hood": "Summerlin",
       "total": 15,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "The Strip (Wynn)",
-      "total": 14,
       "attractions": 0,
       "names": []
     },
@@ -1525,6 +1513,22 @@
       ]
     },
     {
+      "hood": "The Strip (Mandalay Bay)",
+      "total": 17,
+      "attractions": 1,
+      "names": [
+        "Shark Reef Aquarium"
+      ]
+    },
+    {
+      "hood": "The Strip (Wynn)",
+      "total": 15,
+      "attractions": 1,
+      "names": [
+        "Lake of Dreams"
+      ]
+    },
+    {
       "hood": "Downtown (Circa)",
       "total": 6,
       "attractions": 1,
@@ -1557,6 +1561,33 @@
       ]
     },
     {
+      "hood": "Paradise",
+      "total": 31,
+      "attractions": 2,
+      "names": [
+        "Sphere",
+        "UNLV Campus"
+      ]
+    },
+    {
+      "hood": "The Strip (The Venetian)",
+      "total": 27,
+      "attractions": 2,
+      "names": [
+        "Gondola Rides at The Venetian",
+        "Madame Tussauds Las Vegas"
+      ]
+    },
+    {
+      "hood": "Henderson",
+      "total": 27,
+      "attractions": 2,
+      "names": [
+        "Lion Habitat Ranch",
+        "Lake Las Vegas"
+      ]
+    },
+    {
       "hood": "Off-Strip",
       "total": 2,
       "attractions": 2,
@@ -1573,6 +1604,16 @@
         "The Neon Museum",
         "The Mob Museum",
         "Fremont Street Experience"
+      ]
+    },
+    {
+      "hood": "The Strip (Bellagio)",
+      "total": 21,
+      "attractions": 3,
+      "names": [
+        "Fountains of Bellagio",
+        "Bellagio Conservatory & Botanical Gardens",
+        "Bellagio Gallery of Fine Art"
       ]
     },
     {
@@ -1603,12 +1644,6 @@
     }
   ],
   "Seattle": [
-    {
-      "hood": "West Seattle",
-      "total": 16,
-      "attractions": 0,
-      "names": []
-    },
     {
       "hood": "Central District",
       "total": 15,
@@ -1833,6 +1868,15 @@
       "names": [
         "Bellevue Arts Museum",
         "Bellevue Downtown Park"
+      ]
+    },
+    {
+      "hood": "West Seattle",
+      "total": 18,
+      "attractions": 2,
+      "names": [
+        "Alki Beach",
+        "West Seattle Junction"
       ]
     },
     {
