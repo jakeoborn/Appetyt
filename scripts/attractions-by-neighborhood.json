@@ -1,18 +1,6 @@
 {
   "Dallas": [
     {
-      "hood": "Trinity Groves",
-      "total": 12,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Oak Cliff",
-      "total": 12,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Highland Park",
       "total": 11,
       "attractions": 0,
@@ -90,6 +78,14 @@
       "attractions": 1,
       "names": [
         "Pocket Sandwich Theatre"
+      ]
+    },
+    {
+      "hood": "Trinity Groves",
+      "total": 13,
+      "attractions": 1,
+      "names": [
+        "Margaret Hunt Hill Bridge"
       ]
     },
     {
@@ -184,6 +180,15 @@
       "names": [
         "Legacy West",
         "The Shops at Legacy"
+      ]
+    },
+    {
+      "hood": "Oak Cliff",
+      "total": 14,
+      "attractions": 2,
+      "names": [
+        "Kidd Springs Park",
+        "Dallas Zoo"
       ]
     },
     {
@@ -503,18 +508,6 @@
   ],
   "Chicago": [
     {
-      "hood": "Ukrainian Village",
-      "total": 11,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "South Loop",
-      "total": 11,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Lincoln Square",
       "total": 11,
       "attractions": 0,
@@ -751,6 +744,14 @@
       ]
     },
     {
+      "hood": "Ukrainian Village",
+      "total": 12,
+      "attractions": 1,
+      "names": [
+        "Ukrainian National Museum of Chicago"
+      ]
+    },
+    {
       "hood": "Bucktown",
       "total": 12,
       "attractions": 1,
@@ -816,6 +817,15 @@
       "names": [
         "Chinatown Gate",
         "Ping Tom Memorial Park"
+      ]
+    },
+    {
+      "hood": "South Loop",
+      "total": 13,
+      "attractions": 2,
+      "names": [
+        "Museum Campus",
+        "Soldier Field"
       ]
     },
     {
