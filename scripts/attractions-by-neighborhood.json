@@ -1,12 +1,6 @@
 {
   "Dallas": [
     {
-      "hood": "Bishop Arts",
-      "total": 24,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Addison",
       "total": 20,
       "attractions": 0,
@@ -242,6 +236,16 @@
       ]
     },
     {
+      "hood": "Bishop Arts",
+      "total": 27,
+      "attractions": 3,
+      "names": [
+        "Bishop Arts District",
+        "The Kessler Theater",
+        "Tyler Station"
+      ]
+    },
+    {
       "hood": "Arts District",
       "total": 10,
       "attractions": 4,
@@ -255,26 +259,8 @@
   ],
   "Houston": [
     {
-      "hood": "Chinatown / Bellaire",
-      "total": 25,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Upper Kirby",
-      "total": 23,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Spring Branch",
       "total": 22,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "River Oaks",
-      "total": 21,
       "attractions": 0,
       "names": []
     },
@@ -401,6 +387,14 @@
       ]
     },
     {
+      "hood": "Upper Kirby",
+      "total": 24,
+      "attractions": 1,
+      "names": [
+        "Levy Park"
+      ]
+    },
+    {
       "hood": "Clear Lake",
       "total": 6,
       "attractions": 1,
@@ -423,6 +417,24 @@
       "names": [
         "The Improv Houston",
         "Gerald D. Hines Waterwall Park"
+      ]
+    },
+    {
+      "hood": "Chinatown / Bellaire",
+      "total": 27,
+      "attractions": 2,
+      "names": [
+        "Hong Kong City Mall",
+        "Teo Chew Temple"
+      ]
+    },
+    {
+      "hood": "River Oaks",
+      "total": 23,
+      "attractions": 2,
+      "names": [
+        "The River Oaks Theatre",
+        "River Oaks Shopping Center"
       ]
     },
     {
@@ -864,12 +876,6 @@
       "names": []
     },
     {
-      "hood": "Rainey Street",
-      "total": 16,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "North Lamar",
       "total": 9,
       "attractions": 0,
@@ -936,6 +942,15 @@
       "names": [
         "HOPE Outdoor Gallery",
         "Barton Creek Greenbelt"
+      ]
+    },
+    {
+      "hood": "Rainey Street",
+      "total": 18,
+      "attractions": 2,
+      "names": [
+        "Rainey Street Historic District",
+        "Waterloo Greenway"
       ]
     },
     {
