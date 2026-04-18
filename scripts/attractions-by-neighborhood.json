@@ -390,14 +390,6 @@
       "names": []
     },
     {
-      "hood": "Heights",
-      "total": 76,
-      "attractions": 1,
-      "names": [
-        "White Oak Music Hall"
-      ]
-    },
-    {
       "hood": "Downtown",
       "total": 26,
       "attractions": 1,
@@ -449,6 +441,17 @@
         "Hermann Park",
         "Children's Museum Houston"
       ]
+    },
+    {
+      "hood": "Heights",
+      "total": 79,
+      "attractions": 4,
+      "names": [
+        "White Oak Music Hall",
+        "The Heights Theater",
+        "White Oak Music Hall",
+        "Heights Hike and Bike Trail"
+      ]
     }
   ],
   "Chicago": [
@@ -461,12 +464,6 @@
     {
       "hood": "Uptown",
       "total": 15,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Gold Coast",
-      "total": 12,
       "attractions": 0,
       "names": []
     },
@@ -806,6 +803,16 @@
       "names": [
         "Navy Pier",
         "Magnificent Mile"
+      ]
+    },
+    {
+      "hood": "Gold Coast",
+      "total": 15,
+      "attractions": 3,
+      "names": [
+        "International Museum of Surgical Science",
+        "Charnley-Persky House",
+        "Washington Square Park"
       ]
     },
     {
@@ -1541,12 +1548,6 @@
   ],
   "Seattle": [
     {
-      "hood": "Chinatown-International District",
-      "total": 22,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "University District",
       "total": 21,
       "attractions": 0,
@@ -1697,14 +1698,6 @@
       "names": []
     },
     {
-      "hood": "Capitol Hill",
-      "total": 97,
-      "attractions": 1,
-      "names": [
-        "Volunteer Park Conservatory"
-      ]
-    },
-    {
       "hood": "Ballard",
       "total": 42,
       "attractions": 1,
@@ -1797,6 +1790,16 @@
       ]
     },
     {
+      "hood": "Chinatown-International District",
+      "total": 25,
+      "attractions": 3,
+      "names": [
+        "Wing Luke Museum",
+        "Hing Hay Park",
+        "Kobe Terrace Park"
+      ]
+    },
+    {
       "hood": "Seattle Center",
       "total": 4,
       "attractions": 3,
@@ -1814,6 +1817,17 @@
         "Seattle Aquarium",
         "Seattle Great Wheel",
         "Washington State Ferry to Bainbridge Island"
+      ]
+    },
+    {
+      "hood": "Capitol Hill",
+      "total": 100,
+      "attractions": 4,
+      "names": [
+        "Volunteer Park Conservatory",
+        "Volunteer Park",
+        "Seattle Asian Art Museum",
+        "Cal Anderson Park"
       ]
     },
     {
@@ -1843,12 +1857,6 @@
     }
   ],
   "New York": [
-    {
-      "hood": "Chinatown",
-      "total": 32,
-      "attractions": 0,
-      "names": []
-    },
     {
       "hood": "Nolita",
       "total": 23,
@@ -2201,6 +2209,16 @@
         "Tenement Museum",
         "New Museum",
         "Essex Market"
+      ]
+    },
+    {
+      "hood": "Chinatown",
+      "total": 35,
+      "attractions": 3,
+      "names": [
+        "Museum of Chinese in America",
+        "Columbus Park",
+        "Museum at Eldridge Street"
       ]
     },
     {
