@@ -528,6 +528,12 @@
       "names": []
     },
     {
+      "hood": "Little Italy / University Village",
+      "total": 8,
+      "attractions": 0,
+      "names": []
+    },
+    {
       "hood": "Avondale",
       "total": 7,
       "attractions": 0,
@@ -552,12 +558,6 @@
       "names": []
     },
     {
-      "hood": "Fulton Market",
-      "total": 7,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Bronzeville",
       "total": 7,
       "attractions": 0,
@@ -577,12 +577,6 @@
     },
     {
       "hood": "Ravenswood",
-      "total": 6,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Little Italy / University Village",
       "total": 6,
       "attractions": 0,
       "names": []
@@ -684,12 +678,6 @@
       "names": []
     },
     {
-      "hood": "Little Italy",
-      "total": 1,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "South Deering",
       "total": 1,
       "attractions": 0,
@@ -697,12 +685,6 @@
     },
     {
       "hood": "Northwest Side",
-      "total": 1,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "University Village",
       "total": 1,
       "attractions": 0,
       "names": []
@@ -732,8 +714,8 @@
       "names": []
     },
     {
-      "hood": "West Loop",
-      "total": 44,
+      "hood": "West Loop / Fulton Market",
+      "total": 51,
       "attractions": 1,
       "names": [
         "Untitled Supper Club"
@@ -805,7 +787,7 @@
       ]
     },
     {
-      "hood": "Lakeview",
+      "hood": "Lakeview / Wrigleyville",
       "total": 29,
       "attractions": 2,
       "names": [
@@ -1312,61 +1294,25 @@
   "Las Vegas": [
     {
       "hood": "Chinatown",
-      "total": 47,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "The Strip (Caesars Palace)",
-      "total": 18,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "The Strip (Aria)",
-      "total": 15,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Summerlin",
-      "total": 15,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "The Strip (MGM Grand)",
-      "total": 13,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "The Strip (Park MGM)",
-      "total": 13,
+      "total": 59,
       "attractions": 0,
       "names": []
     },
     {
       "hood": "Downtown (Fremont East)",
-      "total": 13,
+      "total": 17,
       "attractions": 0,
       "names": []
     },
     {
-      "hood": "The Strip (Resorts World)",
-      "total": 13,
+      "hood": "The Strip (Aria)",
+      "total": 16,
       "attractions": 0,
       "names": []
     },
     {
       "hood": "The Strip (Fontainebleau)",
       "total": 13,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Spring Valley / Chinatown",
-      "total": 12,
       "attractions": 0,
       "names": []
     },
@@ -1437,26 +1383,8 @@
       "names": []
     },
     {
-      "hood": "Downtown / Fremont East",
-      "total": 4,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "The Strip (The Cromwell)",
       "total": 3,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Henderson / Green Valley Ranch",
-      "total": 3,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Downtown / Arts District",
-      "total": 2,
       "attractions": 0,
       "names": []
     },
@@ -1473,12 +1401,6 @@
       "names": []
     },
     {
-      "hood": "The Strip (Aria / Crystals)",
-      "total": 1,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "The Strip (The STRAT)",
       "total": 1,
       "attractions": 0,
@@ -1486,12 +1408,6 @@
     },
     {
       "hood": "The Strip (The Mirage)",
-      "total": 1,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Downtown / Tivoli Village",
       "total": 1,
       "attractions": 0,
       "names": []
@@ -1513,11 +1429,27 @@
       ]
     },
     {
+      "hood": "The Strip (Caesars Palace)",
+      "total": 19,
+      "attractions": 1,
+      "names": [
+        "The Colosseum at Caesars Palace"
+      ]
+    },
+    {
       "hood": "The Strip (Mandalay Bay)",
       "total": 17,
       "attractions": 1,
       "names": [
         "Shark Reef Aquarium"
+      ]
+    },
+    {
+      "hood": "Summerlin",
+      "total": 17,
+      "attractions": 1,
+      "names": [
+        "Red Rock Canyon National Conservation Area"
       ]
     },
     {
@@ -1529,19 +1461,27 @@
       ]
     },
     {
+      "hood": "The Strip (MGM Grand)",
+      "total": 14,
+      "attractions": 1,
+      "names": [
+        "MGM Grand Garden Arena"
+      ]
+    },
+    {
+      "hood": "The Strip (Resorts World)",
+      "total": 14,
+      "attractions": 1,
+      "names": [
+        "Zouk Nightclub"
+      ]
+    },
+    {
       "hood": "Downtown (Circa)",
       "total": 6,
       "attractions": 1,
       "names": [
         "Stadium Swim"
-      ]
-    },
-    {
-      "hood": "Summerlin / West Vegas",
-      "total": 1,
-      "attractions": 1,
-      "names": [
-        "Red Rock Canyon National Conservation Area"
       ]
     },
     {
@@ -1553,20 +1493,12 @@
       ]
     },
     {
-      "hood": "East Strip / Paradise",
-      "total": 1,
-      "attractions": 1,
-      "names": [
-        "Atomic Museum"
-      ]
-    },
-    {
-      "hood": "Paradise",
-      "total": 31,
+      "hood": "Henderson",
+      "total": 30,
       "attractions": 2,
       "names": [
-        "Sphere",
-        "UNLV Campus"
+        "Lion Habitat Ranch",
+        "Lake Las Vegas"
       ]
     },
     {
@@ -1579,12 +1511,12 @@
       ]
     },
     {
-      "hood": "Henderson",
-      "total": 27,
+      "hood": "The Strip (Park MGM)",
+      "total": 15,
       "attractions": 2,
       "names": [
-        "Lion Habitat Ranch",
-        "Lake Las Vegas"
+        "Dolby Live",
+        "The Park"
       ]
     },
     {
@@ -1597,13 +1529,13 @@
       ]
     },
     {
-      "hood": "Downtown",
-      "total": 30,
+      "hood": "Paradise",
+      "total": 32,
       "attractions": 3,
       "names": [
-        "The Neon Museum",
-        "The Mob Museum",
-        "Fremont Street Experience"
+        "Atomic Museum",
+        "Sphere",
+        "UNLV Campus"
       ]
     },
     {
@@ -1617,14 +1549,17 @@
       ]
     },
     {
-      "hood": "Downtown / Fremont Street",
-      "total": 4,
-      "attractions": 4,
+      "hood": "Downtown",
+      "total": 36,
+      "attractions": 7,
       "names": [
         "Fremont Street Experience",
         "The Mob Museum",
         "The Neon Museum",
-        "SlotZilla Zip Line"
+        "SlotZilla Zip Line",
+        "The Neon Museum",
+        "The Mob Museum",
+        "Fremont Street Experience"
       ]
     },
     {
@@ -1819,14 +1754,6 @@
       ]
     },
     {
-      "hood": "Downtown Seattle",
-      "total": 1,
-      "attractions": 1,
-      "names": [
-        "Seattle Art Museum (SAM)"
-      ]
-    },
-    {
       "hood": "Tukwila",
       "total": 1,
       "attractions": 1,
@@ -1841,15 +1768,6 @@
       "names": [
         "Six Seven",
         "Olympic Sculpture Park"
-      ]
-    },
-    {
-      "hood": "Downtown",
-      "total": 25,
-      "attractions": 2,
-      "names": [
-        "Japonessa Sushi Cocina",
-        "Ben Paris"
       ]
     },
     {
@@ -1887,6 +1805,16 @@
         "Fremont Troll",
         "Fremont Bridge",
         "Waiting for the Interurban"
+      ]
+    },
+    {
+      "hood": "Downtown",
+      "total": 26,
+      "attractions": 3,
+      "names": [
+        "Japonessa Sushi Cocina",
+        "Ben Paris",
+        "Seattle Art Museum (SAM)"
       ]
     },
     {
@@ -1986,6 +1914,12 @@
       "names": []
     },
     {
+      "hood": "Fort Greene / Clinton Hill",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
       "hood": "Red Hook",
       "total": 7,
       "attractions": 0,
@@ -1993,12 +1927,6 @@
     },
     {
       "hood": "Flushing",
-      "total": 5,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Fort Greene / Clinton Hill",
       "total": 5,
       "attractions": 0,
       "names": []
@@ -2070,12 +1998,6 @@
       "names": []
     },
     {
-      "hood": "Clinton Hill",
-      "total": 1,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Roosevelt Island",
       "total": 1,
       "attractions": 0,
@@ -2088,12 +2010,6 @@
       "names": []
     },
     {
-      "hood": "Prospect Heights",
-      "total": 1,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Gramercy",
       "total": 1,
       "attractions": 0,
@@ -2101,12 +2017,6 @@
     },
     {
       "hood": "Queens",
-      "total": 1,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Fort Greene",
       "total": 1,
       "attractions": 0,
       "names": []
@@ -2232,14 +2142,6 @@
       ]
     },
     {
-      "hood": "Park Slope",
-      "total": 2,
-      "attractions": 1,
-      "names": [
-        "Prospect Park"
-      ]
-    },
-    {
       "hood": "Flatiron / NoMad",
       "total": 56,
       "attractions": 2,
@@ -2334,9 +2236,10 @@
     },
     {
       "hood": "Park Slope / Prospect Heights",
-      "total": 16,
-      "attractions": 3,
+      "total": 19,
+      "attractions": 4,
       "names": [
+        "Prospect Park",
         "Prospect Park",
         "Brooklyn Museum",
         "Brooklyn Botanic Garden"

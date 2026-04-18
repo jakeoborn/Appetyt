@@ -704,14 +704,18 @@
   "Las Vegas": [
     {
       "name": "Chinatown",
-      "count": 47
-    },
-    {
-      "name": "Paradise",
-      "count": 31
+      "count": 59
     },
     {
       "name": "Downtown",
+      "count": 36
+    },
+    {
+      "name": "Paradise",
+      "count": 32
+    },
+    {
+      "name": "Henderson",
       "count": 30
     },
     {
@@ -720,10 +724,6 @@
     },
     {
       "name": "The Strip (The Cosmopolitan)",
-      "count": 27
-    },
-    {
-      "name": "Henderson",
       "count": 27
     },
     {
@@ -736,51 +736,47 @@
     },
     {
       "name": "The Strip (Caesars Palace)",
-      "count": 18
+      "count": 19
     },
     {
       "name": "The Strip (Mandalay Bay)",
       "count": 17
     },
     {
+      "name": "Downtown (Fremont East)",
+      "count": 17
+    },
+    {
+      "name": "Summerlin",
+      "count": 17
+    },
+    {
       "name": "The Strip (Aria)",
-      "count": 15
+      "count": 16
     },
     {
       "name": "The Strip (Wynn)",
       "count": 15
     },
     {
-      "name": "Summerlin",
+      "name": "The Strip (Park MGM)",
       "count": 15
+    },
+    {
+      "name": "The Strip (MGM Grand)",
+      "count": 14
     },
     {
       "name": "The Strip",
       "count": 14
     },
     {
-      "name": "The Strip (MGM Grand)",
-      "count": 13
-    },
-    {
-      "name": "The Strip (Park MGM)",
-      "count": 13
-    },
-    {
-      "name": "Downtown (Fremont East)",
-      "count": 13
-    },
-    {
       "name": "The Strip (Resorts World)",
-      "count": 13
+      "count": 14
     },
     {
       "name": "The Strip (Fontainebleau)",
       "count": 13
-    },
-    {
-      "name": "Spring Valley / Chinatown",
-      "count": 12
     },
     {
       "name": "Spring Valley",
@@ -831,19 +827,7 @@
       "count": 4
     },
     {
-      "name": "Downtown / Fremont Street",
-      "count": 4
-    },
-    {
-      "name": "Downtown / Fremont East",
-      "count": 4
-    },
-    {
       "name": "The Strip (The Cromwell)",
-      "count": 3
-    },
-    {
-      "name": "Henderson / Green Valley Ranch",
       "count": 3
     },
     {
@@ -851,15 +835,7 @@
       "count": 2
     },
     {
-      "name": "Downtown / Arts District",
-      "count": 2
-    },
-    {
       "name": "Henderson (M Resort)",
-      "count": 1
-    },
-    {
-      "name": "Summerlin / West Vegas",
       "count": 1
     },
     {
@@ -867,15 +843,7 @@
       "count": 1
     },
     {
-      "name": "East Strip / Paradise",
-      "count": 1
-    },
-    {
       "name": "The Strip (Showcase Mall)",
-      "count": 1
-    },
-    {
-      "name": "The Strip (Aria / Crystals)",
       "count": 1
     },
     {
@@ -884,10 +852,6 @@
     },
     {
       "name": "The Strip (The Mirage)",
-      "count": 1
-    },
-    {
-      "name": "Downtown / Tivoli Village",
       "count": 1
     }
   ],
