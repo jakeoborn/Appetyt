@@ -1,24 +1,6 @@
 {
   "Dallas": [
     {
-      "hood": "Lower Greenville",
-      "total": 41,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Knox-Henderson",
-      "total": 36,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Park Cities",
-      "total": 32,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Bishop Arts",
       "total": 24,
       "attractions": 0,
@@ -103,6 +85,14 @@
       "names": []
     },
     {
+      "hood": "Lower Greenville",
+      "total": 42,
+      "attractions": 1,
+      "names": [
+        "Granada Theater"
+      ]
+    },
+    {
       "hood": "Oak Lawn",
       "total": 32,
       "attractions": 1,
@@ -185,6 +175,15 @@
       ]
     },
     {
+      "hood": "Knox-Henderson",
+      "total": 38,
+      "attractions": 2,
+      "names": [
+        "Katy Trail (Knox Entrance)",
+        "Cole Park"
+      ]
+    },
+    {
       "hood": "Cedars",
       "total": 12,
       "attractions": 2,
@@ -230,6 +229,16 @@
         "BowlGames Dallas",
         "Bishop Cidercade",
         "Medieval Times"
+      ]
+    },
+    {
+      "hood": "Park Cities",
+      "total": 35,
+      "attractions": 3,
+      "names": [
+        "Highland Park Village",
+        "Meadows Museum",
+        "George W. Bush Presidential Center"
       ]
     },
     {
@@ -849,12 +858,6 @@
   ],
   "Austin": [
     {
-      "hood": "South Lamar",
-      "total": 39,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "North Loop",
       "total": 28,
       "attractions": 0,
@@ -970,6 +973,16 @@
         "Texas State Cemetery",
         "George Washington Carver Museum",
         "French Legation State Historic Site"
+      ]
+    },
+    {
+      "hood": "South Lamar",
+      "total": 42,
+      "attractions": 3,
+      "names": [
+        "Alamo Drafthouse South Lamar",
+        "Zach Theatre",
+        "I Love You So Much Mural"
       ]
     },
     {
@@ -1882,12 +1895,6 @@
       "names": []
     },
     {
-      "hood": "Harlem",
-      "total": 20,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Park Slope / Prospect Heights",
       "total": 13,
       "attractions": 0,
@@ -2237,6 +2244,16 @@
         "Museum of Chinese in America",
         "Columbus Park",
         "Museum at Eldridge Street"
+      ]
+    },
+    {
+      "hood": "Harlem",
+      "total": 23,
+      "attractions": 3,
+      "names": [
+        "Apollo Theater",
+        "Studio Museum in Harlem",
+        "Morris-Jumel Mansion"
       ]
     },
     {
