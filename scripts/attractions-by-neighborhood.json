@@ -246,12 +246,6 @@
   ],
   "Houston": [
     {
-      "hood": "Midtown",
-      "total": 29,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Chinatown / Bellaire",
       "total": 25,
       "attractions": 0,
@@ -433,6 +427,16 @@
       ]
     },
     {
+      "hood": "Midtown",
+      "total": 32,
+      "attractions": 3,
+      "names": [
+        "Midtown Park",
+        "Bagby Park",
+        "Baldwin Park"
+      ]
+    },
+    {
       "hood": "Museum District",
       "total": 12,
       "attractions": 3,
@@ -455,12 +459,6 @@
     }
   ],
   "Chicago": [
-    {
-      "hood": "West Town",
-      "total": 16,
-      "attractions": 0,
-      "names": []
-    },
     {
       "hood": "Uptown",
       "total": 15,
@@ -806,6 +804,16 @@
       ]
     },
     {
+      "hood": "West Town",
+      "total": 19,
+      "attractions": 3,
+      "names": [
+        "The 606 (Bloomingdale Trail)",
+        "Polish Museum of America",
+        "Flat Iron Arts Building"
+      ]
+    },
+    {
       "hood": "Gold Coast",
       "total": 15,
       "attractions": 3,
@@ -840,12 +848,6 @@
     }
   ],
   "Austin": [
-    {
-      "hood": "East Austin",
-      "total": 156,
-      "attractions": 0,
-      "names": []
-    },
     {
       "hood": "South Lamar",
       "total": 39,
@@ -958,6 +960,16 @@
       "names": [
         "Stubb's Bar-B-Q",
         "Mohawk"
+      ]
+    },
+    {
+      "hood": "East Austin",
+      "total": 159,
+      "attractions": 3,
+      "names": [
+        "Texas State Cemetery",
+        "George Washington Carver Museum",
+        "French Legation State Historic Site"
       ]
     },
     {
@@ -1249,12 +1261,6 @@
       "names": []
     },
     {
-      "hood": "Downtown",
-      "total": 27,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "The Strip (The Venetian)",
       "total": 25,
       "attractions": 0,
@@ -1263,12 +1269,6 @@
     {
       "hood": "Henderson",
       "total": 25,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Arts District",
-      "total": 23,
       "attractions": 0,
       "names": []
     },
@@ -1479,6 +1479,14 @@
       ]
     },
     {
+      "hood": "Arts District",
+      "total": 24,
+      "attractions": 1,
+      "names": [
+        "The Arts Factory"
+      ]
+    },
+    {
       "hood": "Downtown (Circa)",
       "total": 6,
       "attractions": 1,
@@ -1517,6 +1525,16 @@
       "names": [
         "AREA15",
         "Omega Mart"
+      ]
+    },
+    {
+      "hood": "Downtown",
+      "total": 30,
+      "attractions": 3,
+      "names": [
+        "The Neon Museum",
+        "The Mob Museum",
+        "Fremont Street Experience"
       ]
     },
     {
