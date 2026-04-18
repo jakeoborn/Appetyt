@@ -1,12 +1,6 @@
 {
   "Dallas": [
     {
-      "hood": "Addison",
-      "total": 20,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Harwood District",
       "total": 15,
       "attractions": 0,
@@ -178,6 +172,15 @@
       ]
     },
     {
+      "hood": "Addison",
+      "total": 22,
+      "attractions": 2,
+      "names": [
+        "Addison Circle Park",
+        "Cavanaugh Flight Museum"
+      ]
+    },
+    {
       "hood": "Cedars",
       "total": 12,
       "attractions": 2,
@@ -261,12 +264,6 @@
     {
       "hood": "Spring Branch",
       "total": 22,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "EaDo",
-      "total": 15,
       "attractions": 0,
       "names": []
     },
@@ -395,6 +392,14 @@
       ]
     },
     {
+      "hood": "EaDo",
+      "total": 16,
+      "attractions": 1,
+      "names": [
+        "Shell Energy Stadium"
+      ]
+    },
+    {
       "hood": "Clear Lake",
       "total": 6,
       "attractions": 1,
@@ -494,12 +499,6 @@
     },
     {
       "hood": "Ukrainian Village",
-      "total": 11,
-      "attractions": 0,
-      "names": []
-    },
-    {
-      "hood": "Bucktown",
       "total": 11,
       "attractions": 0,
       "names": []
@@ -762,6 +761,14 @@
       "attractions": 1,
       "names": [
         "Thalia Hall"
+      ]
+    },
+    {
+      "hood": "Bucktown",
+      "total": 12,
+      "attractions": 1,
+      "names": [
+        "Churchill Field Park"
       ]
     },
     {
@@ -1904,12 +1911,6 @@
   ],
   "New York": [
     {
-      "hood": "Nolita",
-      "total": 23,
-      "attractions": 0,
-      "names": []
-    },
-    {
       "hood": "Park Slope / Prospect Heights",
       "total": 13,
       "attractions": 0,
@@ -2212,6 +2213,15 @@
       "names": [
         "Grand Central Terminal",
         "Summit One Vanderbilt"
+      ]
+    },
+    {
+      "hood": "Nolita",
+      "total": 25,
+      "attractions": 2,
+      "names": [
+        "Basilica of St. Patrick’s Old Cathedral",
+        "Elizabeth Street Garden"
       ]
     },
     {
