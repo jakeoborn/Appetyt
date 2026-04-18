@@ -1,0 +1,2262 @@
+{
+  "Dallas": [
+    {
+      "hood": "Lower Greenville",
+      "total": 41,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Knox-Henderson",
+      "total": 36,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Park Cities",
+      "total": 32,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Bishop Arts",
+      "total": 24,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Addison",
+      "total": 20,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Harwood District",
+      "total": 15,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Plano",
+      "total": 13,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Trinity Groves",
+      "total": 12,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Oak Cliff",
+      "total": 12,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Highland Park",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Preston Hollow",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Flower Mound",
+      "total": 10,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Far North Dallas",
+      "total": 9,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Grapevine",
+      "total": 9,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Rockwall",
+      "total": 9,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "McKinney",
+      "total": 8,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Forney",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Oak Lawn",
+      "total": 32,
+      "attractions": 1,
+      "names": [
+        "Roundup Saloon"
+      ]
+    },
+    {
+      "hood": "North Dallas",
+      "total": 21,
+      "attractions": 1,
+      "names": [
+        "Topgolf Dallas"
+      ]
+    },
+    {
+      "hood": "Carrollton",
+      "total": 15,
+      "attractions": 1,
+      "names": [
+        "Pocket Sandwich Theatre"
+      ]
+    },
+    {
+      "hood": "Victory Park",
+      "total": 11,
+      "attractions": 1,
+      "names": [
+        "Cinépolis Luxury Cinemas"
+      ]
+    },
+    {
+      "hood": "West Village",
+      "total": 10,
+      "attractions": 1,
+      "names": [
+        "Violet Crown Dallas"
+      ]
+    },
+    {
+      "hood": "Richardson",
+      "total": 10,
+      "attractions": 1,
+      "names": [
+        "The Golf Ranch"
+      ]
+    },
+    {
+      "hood": "Frisco",
+      "total": 10,
+      "attractions": 1,
+      "names": [
+        "Cosm Dallas"
+      ]
+    },
+    {
+      "hood": "Irving / Las Colinas",
+      "total": 9,
+      "attractions": 1,
+      "names": [
+        "Toyota Music Factory"
+      ]
+    },
+    {
+      "hood": "East Dallas / Lakewood",
+      "total": 52,
+      "attractions": 2,
+      "names": [
+        "Angelika Film Center",
+        "Dallas Arboretum and Botanical Garden"
+      ]
+    },
+    {
+      "hood": "Deep Ellum",
+      "total": 46,
+      "attractions": 2,
+      "names": [
+        "Electric Shuffle",
+        "Immersive Gamebox"
+      ]
+    },
+    {
+      "hood": "Cedars",
+      "total": 12,
+      "attractions": 2,
+      "names": [
+        "Alamo Drafthouse",
+        "Dallas Zoo"
+      ]
+    },
+    {
+      "hood": "Arlington / Mid-Cities",
+      "total": 9,
+      "attractions": 2,
+      "names": [
+        "AT&T Stadium",
+        "Texas Live!"
+      ]
+    },
+    {
+      "hood": "Uptown",
+      "total": 67,
+      "attractions": 3,
+      "names": [
+        "Klyde Warren Park",
+        "McKinney Avenue Trolley (M-Line)",
+        "Reverchon Park"
+      ]
+    },
+    {
+      "hood": "Downtown Dallas",
+      "total": 40,
+      "attractions": 3,
+      "names": [
+        "Reunion Tower GeO-Deck",
+        "The Sixth Floor Museum at Dealey Plaza",
+        "Perot Museum of Nature and Science"
+      ]
+    },
+    {
+      "hood": "Design District",
+      "total": 37,
+      "attractions": 3,
+      "names": [
+        "BowlGames Dallas",
+        "Bishop Cidercade",
+        "Medieval Times"
+      ]
+    },
+    {
+      "hood": "Arts District",
+      "total": 10,
+      "attractions": 4,
+      "names": [
+        "Dallas Museum of Art",
+        "Klyde Warren Park",
+        "Nasher Sculpture Center",
+        "Crow Museum of Asian Art"
+      ]
+    }
+  ],
+  "Houston": [
+    {
+      "hood": "Midtown",
+      "total": 29,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Chinatown / Bellaire",
+      "total": 25,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Upper Kirby",
+      "total": 23,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Spring Branch",
+      "total": 22,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "River Oaks",
+      "total": 21,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "EaDo",
+      "total": 15,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Katy",
+      "total": 14,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Memorial",
+      "total": 14,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Washington Corridor",
+      "total": 12,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Rice Village",
+      "total": 12,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Woodlands",
+      "total": 12,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Spring",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "East End",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Southwest Houston",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "West University",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Pearland",
+      "total": 10,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Tomball",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "West Houston",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Washington",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Northwest Houston",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Multiple Locations",
+      "total": 3,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "IAH Airport",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Kemah",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Energy Corridor",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Heights",
+      "total": 76,
+      "attractions": 1,
+      "names": [
+        "White Oak Music Hall"
+      ]
+    },
+    {
+      "hood": "Downtown",
+      "total": 26,
+      "attractions": 1,
+      "names": [
+        "Downtown Aquarium"
+      ]
+    },
+    {
+      "hood": "Clear Lake",
+      "total": 6,
+      "attractions": 1,
+      "names": [
+        "Space Center Houston"
+      ]
+    },
+    {
+      "hood": "La Porte",
+      "total": 6,
+      "attractions": 1,
+      "names": [
+        "San Jacinto Monument"
+      ]
+    },
+    {
+      "hood": "Galleria",
+      "total": 30,
+      "attractions": 2,
+      "names": [
+        "The Improv Houston",
+        "Gerald D. Hines Waterwall Park"
+      ]
+    },
+    {
+      "hood": "Montrose",
+      "total": 68,
+      "attractions": 3,
+      "names": [
+        "Buffalo Bayou Park",
+        "The Menil Collection",
+        "Rothko Chapel"
+      ]
+    },
+    {
+      "hood": "Museum District",
+      "total": 12,
+      "attractions": 3,
+      "names": [
+        "Houston Museum District",
+        "Hermann Park",
+        "Children's Museum Houston"
+      ]
+    }
+  ],
+  "Chicago": [
+    {
+      "hood": "West Town",
+      "total": 16,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Uptown",
+      "total": 15,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Gold Coast",
+      "total": 12,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Chinatown",
+      "total": 12,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Ukrainian Village",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Bucktown",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "South Loop",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Lincoln Square",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Andersonville",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Bridgeport",
+      "total": 10,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Avondale",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Little Village",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Irving Park",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "North Center",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Fulton Market",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Bronzeville",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Humboldt Park",
+      "total": 6,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Beverly",
+      "total": 6,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Ravenswood",
+      "total": 6,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Little Italy / University Village",
+      "total": 6,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "West Rogers Park",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Edgewater",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Chatham",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Devon Avenue",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Greektown",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Noble Square",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Hermosa",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Multiple Locations",
+      "total": 3,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Archer Heights",
+      "total": 2,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Albany Park",
+      "total": 2,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Douglas Park",
+      "total": 2,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Ashburn (South Side)",
+      "total": 2,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Norwood Park",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Maxwell Street",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Elmwood Park",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "River Grove",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Little Italy",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "South Deering",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Northwest Side",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "University Village",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Niles (Suburban)",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Near South Side",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Pullman",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Englewood",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "West Loop",
+      "total": 44,
+      "attractions": 1,
+      "names": [
+        "Untitled Supper Club"
+      ]
+    },
+    {
+      "hood": "Logan Square",
+      "total": 34,
+      "attractions": 1,
+      "names": [
+        "The Whistler"
+      ]
+    },
+    {
+      "hood": "Wicker Park",
+      "total": 28,
+      "attractions": 1,
+      "names": [
+        "Bordel"
+      ]
+    },
+    {
+      "hood": "Pilsen",
+      "total": 15,
+      "attractions": 1,
+      "names": [
+        "Thalia Hall"
+      ]
+    },
+    {
+      "hood": "Hyde Park",
+      "total": 7,
+      "attractions": 1,
+      "names": [
+        "Museum of Science and Industry"
+      ]
+    },
+    {
+      "hood": "Old Town",
+      "total": 6,
+      "attractions": 1,
+      "names": [
+        "Second City"
+      ]
+    },
+    {
+      "hood": "South Side",
+      "total": 1,
+      "attractions": 1,
+      "names": [
+        "Lem's Bar-B-Q"
+      ]
+    },
+    {
+      "hood": "River North",
+      "total": 50,
+      "attractions": 2,
+      "names": [
+        "Chicago Architecture River Cruise",
+        "House of Blues Chicago"
+      ]
+    },
+    {
+      "hood": "Lakeview",
+      "total": 29,
+      "attractions": 2,
+      "names": [
+        "Wrigley Field",
+        "The Laugh Factory Chicago"
+      ]
+    },
+    {
+      "hood": "Lincoln Park",
+      "total": 27,
+      "attractions": 2,
+      "names": [
+        "Lincoln Park Zoo",
+        "iO Theater"
+      ]
+    },
+    {
+      "hood": "Streeterville",
+      "total": 11,
+      "attractions": 2,
+      "names": [
+        "Navy Pier",
+        "Magnificent Mile"
+      ]
+    },
+    {
+      "hood": "Museum Campus",
+      "total": 3,
+      "attractions": 3,
+      "names": [
+        "Shedd Aquarium",
+        "Adler Planetarium",
+        "Field Museum"
+      ]
+    },
+    {
+      "hood": "The Loop",
+      "total": 15,
+      "attractions": 6,
+      "names": [
+        "Cloud Gate (The Bean)",
+        "Willis Tower Skydeck",
+        "Art Institute of Chicago",
+        "Millennium Park",
+        "Chicago Riverwalk",
+        "Terzo Piano"
+      ]
+    }
+  ],
+  "Austin": [
+    {
+      "hood": "East Austin",
+      "total": 156,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "South Lamar",
+      "total": 39,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "North Loop",
+      "total": 28,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Rainey Street",
+      "total": 16,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "North Lamar",
+      "total": 9,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "South 1st",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Hyde Park",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Mueller",
+      "total": 6,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Clarksville",
+      "total": 6,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Lockhart",
+      "total": 3,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "North Austin",
+      "total": 41,
+      "attractions": 1,
+      "names": [
+        "Austin FC at Q2 Stadium"
+      ]
+    },
+    {
+      "hood": "South Congress",
+      "total": 37,
+      "attractions": 1,
+      "names": [
+        "South Congress Avenue (SoCo)"
+      ]
+    },
+    {
+      "hood": "Domain",
+      "total": 9,
+      "attractions": 1,
+      "names": [
+        "Punch Bowl Social"
+      ]
+    },
+    {
+      "hood": "South Austin",
+      "total": 33,
+      "attractions": 2,
+      "names": [
+        "HOPE Outdoor Gallery",
+        "Barton Creek Greenbelt"
+      ]
+    },
+    {
+      "hood": "West Austin",
+      "total": 14,
+      "attractions": 2,
+      "names": [
+        "Oasis on the Lake",
+        "Mount Bonnell"
+      ]
+    },
+    {
+      "hood": "6th Street",
+      "total": 11,
+      "attractions": 2,
+      "names": [
+        "6th Street Entertainment District",
+        "Pete's Dueling Piano Bar"
+      ]
+    },
+    {
+      "hood": "Red River",
+      "total": 5,
+      "attractions": 2,
+      "names": [
+        "Stubb's Bar-B-Q",
+        "Mohawk"
+      ]
+    },
+    {
+      "hood": "Zilker",
+      "total": 10,
+      "attractions": 3,
+      "names": [
+        "Barton Springs Pool",
+        "Zilker Park",
+        "The Picnic"
+      ]
+    },
+    {
+      "hood": "Downtown",
+      "total": 63,
+      "attractions": 10,
+      "names": [
+        "Lady Bird Lake",
+        "Texas State Capitol",
+        "Empire Control Room",
+        "Antone's Nightclub",
+        "Blanton Museum of Art",
+        "Bullock Texas State History Museum",
+        "Congress Avenue Bridge Bat Colony",
+        "LBJ Presidential Library",
+        "ACL Live at The Moody Theater",
+        "UT Tower & Campus"
+      ]
+    }
+  ],
+  "Salt Lake City": [
+    {
+      "hood": "9th & 9th",
+      "total": 18,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "South Salt Lake",
+      "total": 18,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Avenues",
+      "total": 14,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Millcreek",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Central City",
+      "total": 10,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Granary District",
+      "total": 9,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Sandy",
+      "total": 9,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Central 9th",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Holladay",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Midvale",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "South Jordan",
+      "total": 6,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Murray",
+      "total": 6,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "West Valley",
+      "total": 6,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Draper",
+      "total": 6,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Ogden",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Westside SLC",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Trolley Square",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Lehi",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Marmalade",
+      "total": 3,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Suburban SLC",
+      "total": 3,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Post District",
+      "total": 3,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Logan",
+      "total": 3,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Bountiful",
+      "total": 2,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Riverton",
+      "total": 2,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Farmington",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Herriman",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Park City",
+      "total": 40,
+      "attractions": 1,
+      "names": [
+        "Park City Mountain Resort"
+      ]
+    },
+    {
+      "hood": "Provo",
+      "total": 33,
+      "attractions": 1,
+      "names": [
+        "Sundance Mountain Resort"
+      ]
+    },
+    {
+      "hood": "Gateway",
+      "total": 9,
+      "attractions": 1,
+      "names": [
+        "Clark Planetarium"
+      ]
+    },
+    {
+      "hood": "Liberty Park",
+      "total": 4,
+      "attractions": 1,
+      "names": [
+        "Tracy Aviary & Botanical Garden"
+      ]
+    },
+    {
+      "hood": "Downtown SLC",
+      "total": 176,
+      "attractions": 2,
+      "names": [
+        "Temple Square",
+        "Tabernacle Choir Concert"
+      ]
+    },
+    {
+      "hood": "North Salt Lake",
+      "total": 5,
+      "attractions": 2,
+      "names": [
+        "Great Salt Lake",
+        "Ogden Eccles Dinosaur Park"
+      ]
+    },
+    {
+      "hood": "Emigration Canyon",
+      "total": 3,
+      "attractions": 2,
+      "names": [
+        "This Is The Place Heritage Park",
+        "Hogle Zoo"
+      ]
+    },
+    {
+      "hood": "Sugar House",
+      "total": 53,
+      "attractions": 3,
+      "names": [
+        "Sugar House Park",
+        "Hidden Hollow",
+        "Fairmont Park"
+      ]
+    },
+    {
+      "hood": "Cottonwood Heights",
+      "total": 11,
+      "attractions": 3,
+      "names": [
+        "Big Cottonwood Canyon / Brighton",
+        "Skiing at Alta / Snowbird",
+        "Snowbird Ski & Summer Resort"
+      ]
+    },
+    {
+      "hood": "University",
+      "total": 7,
+      "attractions": 3,
+      "names": [
+        "Natural History Museum of Utah",
+        "Red Butte Garden",
+        "Utah Museum of Fine Arts"
+      ]
+    }
+  ],
+  "Las Vegas": [
+    {
+      "hood": "Chinatown",
+      "total": 47,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Paradise",
+      "total": 29,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Downtown",
+      "total": 27,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (The Venetian)",
+      "total": 25,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Henderson",
+      "total": 25,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Arts District",
+      "total": 23,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Caesars Palace)",
+      "total": 18,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Bellagio)",
+      "total": 18,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Mandalay Bay)",
+      "total": 16,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Aria)",
+      "total": 15,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Summerlin",
+      "total": 15,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Wynn)",
+      "total": 14,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (MGM Grand)",
+      "total": 13,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Park MGM)",
+      "total": 13,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Downtown (Fremont East)",
+      "total": 13,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Resorts World)",
+      "total": 13,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Fontainebleau)",
+      "total": 13,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Spring Valley / Chinatown",
+      "total": 12,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Spring Valley",
+      "total": 11,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Summerlin (Downtown Summerlin)",
+      "total": 9,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (The Palazzo)",
+      "total": 8,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Paris Las Vegas)",
+      "total": 8,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "West of Strip",
+      "total": 8,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Summerlin (Red Rock Resort)",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Grand Canal Shoppes)",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Encore at Wynn)",
+      "total": 6,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Planet Hollywood)",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Treasure Island)",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "North Las Vegas",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Downtown / Fremont East",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (The Cromwell)",
+      "total": 3,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Henderson / Green Valley Ranch",
+      "total": 3,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Downtown / Arts District",
+      "total": 2,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Henderson (M Resort)",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Showcase Mall)",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (Aria / Crystals)",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (The STRAT)",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (The Mirage)",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Downtown / Tivoli Village",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "The Strip (The Cosmopolitan)",
+      "total": 27,
+      "attractions": 1,
+      "names": [
+        "Superfrico"
+      ]
+    },
+    {
+      "hood": "Downtown (Circa)",
+      "total": 6,
+      "attractions": 1,
+      "names": [
+        "Stadium Swim"
+      ]
+    },
+    {
+      "hood": "Summerlin / West Vegas",
+      "total": 1,
+      "attractions": 1,
+      "names": [
+        "Red Rock Canyon National Conservation Area"
+      ]
+    },
+    {
+      "hood": "Boulder City",
+      "total": 1,
+      "attractions": 1,
+      "names": [
+        "Hoover Dam"
+      ]
+    },
+    {
+      "hood": "East Strip / Paradise",
+      "total": 1,
+      "attractions": 1,
+      "names": [
+        "Atomic Museum"
+      ]
+    },
+    {
+      "hood": "Off-Strip",
+      "total": 2,
+      "attractions": 2,
+      "names": [
+        "AREA15",
+        "Omega Mart"
+      ]
+    },
+    {
+      "hood": "Downtown / Fremont Street",
+      "total": 4,
+      "attractions": 4,
+      "names": [
+        "Fremont Street Experience",
+        "The Mob Museum",
+        "The Neon Museum",
+        "SlotZilla Zip Line"
+      ]
+    },
+    {
+      "hood": "The Strip",
+      "total": 14,
+      "attractions": 8,
+      "names": [
+        "Bellagio Fountains",
+        "Sphere",
+        "High Roller Observation Wheel",
+        "Shark Reef Aquarium at Mandalay Bay",
+        "The STRAT SkyPod",
+        "Bellagio Conservatory & Botanical Gardens",
+        "Flamingo Wildlife Habitat",
+        "Madame Tussauds Las Vegas"
+      ]
+    }
+  ],
+  "Seattle": [
+    {
+      "hood": "Chinatown-International District",
+      "total": 22,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "University District",
+      "total": 21,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "South Lake Union",
+      "total": 21,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Bellevue",
+      "total": 21,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "West Seattle",
+      "total": 16,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Central District",
+      "total": 15,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Beacon Hill",
+      "total": 13,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Georgetown",
+      "total": 12,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Kirkland",
+      "total": 8,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "University Village",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Eastlake",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Columbia City",
+      "total": 3,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Greenwood",
+      "total": 2,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "South Seattle",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Hillman City",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Alki Beach",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Madrona",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "SODO",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Green Lake",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Madison Valley",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Lynnwood",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Mount Baker",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Ravenna",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Wedgwood",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Woodinville",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Maple Leaf",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Capitol Hill",
+      "total": 97,
+      "attractions": 1,
+      "names": [
+        "Volunteer Park Conservatory"
+      ]
+    },
+    {
+      "hood": "Ballard",
+      "total": 42,
+      "attractions": 1,
+      "names": [
+        "Ballard Locks (Hiram M. Chittenden Locks)"
+      ]
+    },
+    {
+      "hood": "Queen Anne",
+      "total": 18,
+      "attractions": 1,
+      "names": [
+        "Kerry Park"
+      ]
+    },
+    {
+      "hood": "Pioneer Square",
+      "total": 17,
+      "attractions": 1,
+      "names": [
+        "Smith Tower Observatory"
+      ]
+    },
+    {
+      "hood": "Wallingford",
+      "total": 16,
+      "attractions": 1,
+      "names": [
+        "Gas Works Park"
+      ]
+    },
+    {
+      "hood": "Phinney Ridge",
+      "total": 13,
+      "attractions": 1,
+      "names": [
+        "Woodland Park Zoo"
+      ]
+    },
+    {
+      "hood": "Magnolia",
+      "total": 4,
+      "attractions": 1,
+      "names": [
+        "Discovery Park"
+      ]
+    },
+    {
+      "hood": "Downtown Seattle",
+      "total": 1,
+      "attractions": 1,
+      "names": [
+        "Seattle Art Museum (SAM)"
+      ]
+    },
+    {
+      "hood": "Tukwila",
+      "total": 1,
+      "attractions": 1,
+      "names": [
+        "Museum of Flight"
+      ]
+    },
+    {
+      "hood": "Belltown",
+      "total": 27,
+      "attractions": 2,
+      "names": [
+        "Six Seven",
+        "Olympic Sculpture Park"
+      ]
+    },
+    {
+      "hood": "Downtown",
+      "total": 25,
+      "attractions": 2,
+      "names": [
+        "Japonessa Sushi Cocina",
+        "Ben Paris"
+      ]
+    },
+    {
+      "hood": "Fremont",
+      "total": 32,
+      "attractions": 3,
+      "names": [
+        "Fremont Troll",
+        "Fremont Bridge",
+        "Waiting for the Interurban"
+      ]
+    },
+    {
+      "hood": "Seattle Center",
+      "total": 4,
+      "attractions": 3,
+      "names": [
+        "Space Needle",
+        "Chihuly Garden and Glass",
+        "Museum of Pop Culture (MoPOP)"
+      ]
+    },
+    {
+      "hood": "Waterfront",
+      "total": 4,
+      "attractions": 3,
+      "names": [
+        "Seattle Aquarium",
+        "Seattle Great Wheel",
+        "Washington State Ferry to Bainbridge Island"
+      ]
+    },
+    {
+      "hood": "Downtown Waterfront",
+      "total": 6,
+      "attractions": 5,
+      "names": [
+        "The Fisherman's Restaurant & Bar",
+        "Elliott's Oyster House",
+        "Ivar's Acres of Clams",
+        "Anthony's Pier 66",
+        "The Crab Pot"
+      ]
+    },
+    {
+      "hood": "Pike Place Market",
+      "total": 24,
+      "attractions": 6,
+      "names": [
+        "Beecher's Handmade Cheese",
+        "Rachel's Ginger Beer",
+        "Il Bistro",
+        "The Athenian Seafood Restaurant & Bar",
+        "Piroshky Piroshky",
+        "Pike Place Market"
+      ]
+    }
+  ],
+  "New York": [
+    {
+      "hood": "Chinatown",
+      "total": 32,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Nolita",
+      "total": 23,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Harlem",
+      "total": 20,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Park Slope / Prospect Heights",
+      "total": 13,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "NoHo",
+      "total": 9,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Jackson Heights / Elmhurst",
+      "total": 8,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Bed-Stuy",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Red Hook",
+      "total": 7,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Flushing",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Fort Greene / Clinton Hill",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Long Island City",
+      "total": 5,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Crown Heights",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Staten Island",
+      "total": 4,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Multiple Locations",
+      "total": 2,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Lincoln Center",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "East Harlem",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Central Park South",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Ridgewood",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "East Williamsburg / Ridgewood",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Downtown Brooklyn",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Bay Ridge",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Clinton Hill",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Roosevelt Island",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "East Williamsburg",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Prospect Heights",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Gramercy",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Queens",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "Fort Greene",
+      "total": 1,
+      "attractions": 0,
+      "names": []
+    },
+    {
+      "hood": "East Village",
+      "total": 88,
+      "attractions": 1,
+      "names": [
+        "Batsu!"
+      ]
+    },
+    {
+      "hood": "Williamsburg",
+      "total": 67,
+      "attractions": 1,
+      "names": [
+        "Brooklyn Bowl"
+      ]
+    },
+    {
+      "hood": "Greenwich Village",
+      "total": 37,
+      "attractions": 1,
+      "names": [
+        "Washington Square Park"
+      ]
+    },
+    {
+      "hood": "SoHo",
+      "total": 36,
+      "attractions": 1,
+      "names": [
+        "Color Factory NYC"
+      ]
+    },
+    {
+      "hood": "Midtown West",
+      "total": 21,
+      "attractions": 1,
+      "names": [
+        "Circle Line Sightseeing Cruises"
+      ]
+    },
+    {
+      "hood": "Greenpoint",
+      "total": 20,
+      "attractions": 1,
+      "names": [
+        "Under the K Bridge Park"
+      ]
+    },
+    {
+      "hood": "Tribeca",
+      "total": 17,
+      "attractions": 1,
+      "names": [
+        "Free Kayaking at Pier 26"
+      ]
+    },
+    {
+      "hood": "Carroll Gardens / Cobble Hill",
+      "total": 16,
+      "attractions": 1,
+      "names": [
+        "Royal Palms Shuffleboard Club"
+      ]
+    },
+    {
+      "hood": "Bronx",
+      "total": 14,
+      "attractions": 1,
+      "names": [
+        "Yankee Stadium"
+      ]
+    },
+    {
+      "hood": "Bushwick",
+      "total": 13,
+      "attractions": 1,
+      "names": [
+        "House of Yes"
+      ]
+    },
+    {
+      "hood": "Hell's Kitchen",
+      "total": 13,
+      "attractions": 1,
+      "names": [
+        "Intrepid Sea, Air & Space Museum"
+      ]
+    },
+    {
+      "hood": "Astoria",
+      "total": 10,
+      "attractions": 1,
+      "names": [
+        "Forest Hills Stadium"
+      ]
+    },
+    {
+      "hood": "Coney Island / South Brooklyn",
+      "total": 9,
+      "attractions": 1,
+      "names": [
+        "Coney Island"
+      ]
+    },
+    {
+      "hood": "Meatpacking District",
+      "total": 9,
+      "attractions": 1,
+      "names": [
+        "Whitney Museum of American Art"
+      ]
+    },
+    {
+      "hood": "Hudson Yards",
+      "total": 6,
+      "attractions": 1,
+      "names": [
+        "The Vessel at Hudson Yards"
+      ]
+    },
+    {
+      "hood": "Park Slope",
+      "total": 2,
+      "attractions": 1,
+      "names": [
+        "Prospect Park"
+      ]
+    },
+    {
+      "hood": "Flatiron / NoMad",
+      "total": 56,
+      "attractions": 2,
+      "names": [
+        "SPIN New York",
+        "Fotografiska New York"
+      ]
+    },
+    {
+      "hood": "West Village",
+      "total": 54,
+      "attractions": 2,
+      "names": [
+        "Stonewall Inn National Monument",
+        "Cherry Lane Theatre"
+      ]
+    },
+    {
+      "hood": "Midtown East",
+      "total": 32,
+      "attractions": 2,
+      "names": [
+        "Grand Central Terminal",
+        "Summit One Vanderbilt"
+      ]
+    },
+    {
+      "hood": "Upper West Side",
+      "total": 22,
+      "attractions": 2,
+      "names": [
+        "Central Park",
+        "American Museum of Natural History"
+      ]
+    },
+    {
+      "hood": "Upper East Side",
+      "total": 22,
+      "attractions": 2,
+      "names": [
+        "MET Museum",
+        "Solomon R. Guggenheim Museum"
+      ]
+    },
+    {
+      "hood": "Brooklyn Heights",
+      "total": 14,
+      "attractions": 2,
+      "names": [
+        "Manhattan by Sail",
+        "Barclays Center"
+      ]
+    },
+    {
+      "hood": "Lower East Side",
+      "total": 54,
+      "attractions": 3,
+      "names": [
+        "Tenement Museum",
+        "New Museum",
+        "Essex Market"
+      ]
+    },
+    {
+      "hood": "DUMBO",
+      "total": 10,
+      "attractions": 4,
+      "names": [
+        "Meow Wolf",
+        "DUMBO Boulders",
+        "DUMBO & Brooklyn Bridge Park",
+        "Grimaldi's"
+      ]
+    },
+    {
+      "hood": "Financial District",
+      "total": 19,
+      "attractions": 6,
+      "names": [
+        "Pier 17 Rooftop",
+        "Statue of Liberty & Ellis Island",
+        "One World Observatory",
+        "Hornblower Cruises",
+        "Wall Street & Charging Bull",
+        "9/11 Memorial & Museum"
+      ]
+    },
+    {
+      "hood": "Chelsea",
+      "total": 24,
+      "attractions": 7,
+      "names": [
+        "Sleep No More",
+        "Chelsea Piers",
+        "Artechouse NYC",
+        "Classic Harbor Line",
+        "Bateaux New York Dinner Cruise",
+        "Manhattan Kayak + SUP",
+        "The High Line"
+      ]
+    },
+    {
+      "hood": "Midtown",
+      "total": 50,
+      "attractions": 10,
+      "names": [
+        "Radio City Music Hall",
+        "Top of the Rock",
+        "Empire State Building Observatory",
+        "NYC Ferry",
+        "Madison Square Garden",
+        "Empire State Building",
+        "Times Square",
+        "Museum of Modern Art (MoMA)",
+        "Rockefeller Center",
+        "Bryant Park"
+      ]
+    }
+  ]
+}
