@@ -88,6 +88,48 @@ function instagramHandle(url) {
   return m ? '@' + m[1] : '';
 }
 
+async function fetchImageDims(url) {
+  // Download first 32KB to read image dimensions from JPG/PNG/WEBP headers.
+  try {
+    const res = await fetch(url, {
+      method: 'GET',
+      redirect: 'follow',
+      headers: { Range: 'bytes=0-32767' },
+      signal: AbortSignal.timeout(8000),
+    });
+    if (!res.ok && res.status !== 206) return null;
+    const buf = Buffer.from(await res.arrayBuffer());
+    // JPEG
+    if (buf[0] === 0xFF && buf[1] === 0xD8) {
+      let i = 2;
+      while (i < buf.length - 9) {
+        if (buf[i] !== 0xFF) { i++; continue; }
+        const marker = buf[i + 1];
+        if (marker >= 0xC0 && marker <= 0xC3) {
+          const h = buf.readUInt16BE(i + 5);
+          const w = buf.readUInt16BE(i + 7);
+          return { w, h };
+        }
+        i += 2 + buf.readUInt16BE(i + 2);
+      }
+    }
+    // PNG
+    if (buf[0] === 0x89 && buf[1] === 0x50) {
+      return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
+    }
+    // WEBP VP8
+    if (buf[8] === 0x57 && buf[9] === 0x45 && buf[10] === 0x42 && buf[11] === 0x50) {
+      // try VP8X/VP8/VP8L
+      if (buf[12] === 0x56 && buf[13] === 0x50 && buf[14] === 0x38 && buf[15] === 0x20) {
+        const w = (buf.readUInt16LE(26) & 0x3FFF) + 1;
+        const h = (buf.readUInt16LE(28) & 0x3FFF) + 1;
+        return { w, h };
+      }
+    }
+    return null;
+  } catch { return null; }
+}
+
 async function passesPhotoTest(url) {
   if (!url) return { ok: false, reason: 'empty' };
   if (!isValidUrl(url)) return { ok: false, reason: 'invalid_url' };
@@ -100,18 +142,29 @@ async function passesPhotoTest(url) {
     const lenStr = res.headers.get('content-length');
     if (lenStr) {
       const len = parseInt(lenStr, 10);
-      if (len > 0 && len < 30000) return { ok: false, reason: 'too_small_' + len };
+      if (len > 0 && len < 50000) return { ok: false, reason: 'too_small_' + len };
       if (len > 15000000) return { ok: false, reason: 'too_large_' + len };
+    }
+    // Aspect ratio check: reject near-square (likely logo) and very narrow images.
+    const dims = await fetchImageDims(url);
+    if (dims && dims.w > 0 && dims.h > 0) {
+      if (dims.w < 400 || dims.h < 300) return { ok: false, reason: `too_small_${dims.w}x${dims.h}` };
+      const ar = dims.w / dims.h;
+      if (ar > 0.88 && ar < 1.12) return { ok: false, reason: `near_square_${dims.w}x${dims.h}` };
+      if (ar < 0.5 || ar > 2.5) return { ok: false, reason: `extreme_ratio_${dims.w}x${dims.h}` };
     }
     return { ok: true };
   } catch (e) { return { ok: false, reason: 'fetch_err:' + e.message }; }
 }
 
 async function pickPhoto(ogResult, apifyImageUrls) {
+  // Build candidate list with up to 3 owner photos + 3 curated (not just first of each).
   const candidates = [];
   if (ogResult && ogResult.ok) candidates.push({ url: ogResult.url, source: 'og:image' });
-  for (const u of (apifyImageUrls || [])) if (/\/p\/AF1Q/.test(u)) candidates.push({ url: u, source: 'google-owner' });
-  for (const u of (apifyImageUrls || [])) if (/\/gps-cs-s\//.test(u)) candidates.push({ url: u, source: 'google-curated' });
+  const owners = (apifyImageUrls || []).filter(u => /\/p\/AF1Q/.test(u)).slice(0, 3);
+  for (const u of owners) candidates.push({ url: u, source: 'google-owner' });
+  const curated = (apifyImageUrls || []).filter(u => /\/gps-cs-s\//.test(u)).slice(0, 3);
+  for (const u of curated) candidates.push({ url: u, source: 'google-curated' });
   const tried = [];
   for (const c of candidates) {
     const t = await passesPhotoTest(c.url);

@@ -1,16 +1,21 @@
 {
   "cities": {
     "phx": {
-      "applied_at": "2026-04-19T19:18:45.804Z",
-      "entries_changed": 48,
-      "fields_changed": 18
+      "applied_at": "2026-04-19T19:57:33.167Z",
+      "entries_changed": 39,
+      "fields_changed": 7
     },
     "la": {
-      "applied_at": "2026-04-19T19:43:24.455Z",
-      "entries_changed": 262,
-      "fields_changed": 762
+      "applied_at": "2026-04-19T19:57:45.306Z",
+      "entries_changed": 147,
+      "fields_changed": 33
+    },
+    "dallas": {
+      "applied_at": "2026-04-19T19:58:03.678Z",
+      "entries_changed": 366,
+      "fields_changed": 224
     }
   },
-  "total_changes": 1019,
-  "last_updated": "2026-04-19T19:43:24.455Z"
+  "total_changes": 1283,
+  "last_updated": "2026-04-19T19:58:03.678Z"
 }

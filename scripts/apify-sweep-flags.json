@@ -272,5 +272,2359 @@
         "reason": "too_small_1"
       }
     ]
+  },
+  {
+    "city": "phx",
+    "id": 3002,
+    "name": "Course Restaurant",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3009,
+    "name": "FnB Restaurant",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3034,
+    "name": "The Stone Tofu House",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "fetch_err:fetch failed"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3037,
+    "name": "Feringhee Modern Indian Cuisine",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3047,
+    "name": "Warren's Supper Club",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3035,
+    "name": "Haji-Baba",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_403"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3106,
+    "name": "The Vig",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3107,
+    "name": "Pedal Haus Brewery",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3133,
+    "name": "Joe's Farm Grill",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_12474"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2102,
+    "name": "All Day Baby",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "la",
+    "id": 2177,
+    "name": "Here's Looking at You",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "la",
+    "id": 2061,
+    "name": "Si! Mon",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2084,
+    "name": "Bevel Coffee",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2064,
+    "name": "Vin Folk",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_10668"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2234,
+    "name": "The Grill on the Alley",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2119,
+    "name": "Din Tai Fung",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_405"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2342,
+    "name": "Nate 'n Al",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2348,
+    "name": "Mr. Chow",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_16447"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 7,
+    "name": "Sachet",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 5,
+    "name": "Frenchie",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_37059"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 25,
+    "name": "Truck Yard",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 35,
+    "name": "Breadwinners Cafe & Bakery",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 38,
+    "name": "Adair's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 34,
+    "name": "Truluck's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_47177"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 52,
+    "name": "Rodeo Goat",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 43,
+    "name": "Pappas Bros. Steakhouse",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_401"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 79,
+    "name": "il Bracco",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 118,
+    "name": "Flamant",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_12802"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 61,
+    "name": "Texas De Brazil Churrascaria",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_328x493"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 41,
+    "name": "The Rustic",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_1200x1200"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 134,
+    "name": "Vaqueros Texas Bar-B-Q",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 127,
+    "name": "Cafe Momentum",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_35741"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 143,
+    "name": "Kafi BBQ",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 141,
+    "name": "Kitchen + Kocktails by Kevin Kelley",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "not_image:text/html; charset=UTF-8"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 150,
+    "name": "Jose",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 151,
+    "name": "Darna",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 132,
+    "name": "Bharat Bhavan",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_669x170"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 154,
+    "name": "Knox Bistro",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 136,
+    "name": "The Heritage Table",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_1650x1650"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 153,
+    "name": "Le Bilboquet",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_45808"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 164,
+    "name": "Mercat Bistro",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_39013"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 167,
+    "name": "Te Deseo",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 168,
+    "name": "Dolce Riviera",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 169,
+    "name": "Elephant East",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 144,
+    "name": "Nori Handroll Bar",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_1250x1223"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 166,
+    "name": "Saint Ann Restaurant & Bar",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_28638"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 173,
+    "name": "Drake's Hollywood",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 175,
+    "name": "Brentwood",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 176,
+    "name": "D.L. Mack's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 170,
+    "name": "Docent Steak & Lounge",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_21552"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 174,
+    "name": "Anchor Sushi Bar",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_10442"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 181,
+    "name": "The Mercury",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 179,
+    "name": "El Molino",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_24717"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 186,
+    "name": "Quarter Acre",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_26796"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 196,
+    "name": "Paradiso",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 190,
+    "name": "La La Land Kind Cafe",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_37919"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 192,
+    "name": "Postino Wine Cafe",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_404"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 195,
+    "name": "Ginger's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_1302x1302"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 203,
+    "name": "Izkina",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 204,
+    "name": "The Wild Detectives",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 211,
+    "name": "Serious Pizza Deep Ellum",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 219,
+    "name": "Casa Brasa",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 220,
+    "name": "Two Hands",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 197,
+    "name": "Catbird",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_28789"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 225,
+    "name": "Stillwell's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 205,
+    "name": "The Slow Bone",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_16630"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 215,
+    "name": "Maman",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_11883"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 237,
+    "name": "Patina Green",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_35741"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 242,
+    "name": "It'll Do Club",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_9680"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 246,
+    "name": "Peticolas Brewing Company",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 247,
+    "name": "Vector Brewing",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 249,
+    "name": "Oak Cliff Brewing Co.",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 241,
+    "name": "Boogies",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_404"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 257,
+    "name": "BowlGames Dallas",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_13258"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 230,
+    "name": "Zalat Pizza",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_545x542"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 283,
+    "name": "Puerto Cocina",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_2200x2200"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 296,
+    "name": "Hello Dumpling",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 284,
+    "name": "PopStroke",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_1200x1200"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 307,
+    "name": "Poco Fiasco",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_20917"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 314,
+    "name": "Uncle Julio's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 305,
+    "name": "Cosm Dallas",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_405"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 308,
+    "name": "Tequila Social",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_9007"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 327,
+    "name": "Snappy Salads",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_30265"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 306,
+    "name": "True Food Kitchen",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_17801"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 341,
+    "name": "Jeni's Splendid Ice Creams",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 332,
+    "name": "Mo' Bettahs Hawaiian",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_19890"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 348,
+    "name": "Cane Rosso",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 334,
+    "name": "Lucky's Hot Chicken",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_31501"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 333,
+    "name": "Dave's Hot Chicken",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_1000x1000"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 349,
+    "name": "Greenville Avenue Pizza Company",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_37623"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 351,
+    "name": "Slim Chickens",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_404"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 371,
+    "name": "Medium Rare",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 343,
+    "name": "IYKYK Mochi Churros",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_3544x3544"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 362,
+    "name": "Sky Rocket Burger",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_26792"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 376,
+    "name": "Ascension Coffee",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 379,
+    "name": "Union Coffee",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 383,
+    "name": "Magnolias Sous Le Pont",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 374,
+    "name": "Full City Rooster",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_805x805"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 396,
+    "name": "Gen Korean BBQ House",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 372,
+    "name": "Slow & Steady Coffee",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_3909"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 393,
+    "name": "Ichigoh Ramen",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_1742"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 422,
+    "name": "Slider and Blues",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 423,
+    "name": "East Hampton Sandwich Co.",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 426,
+    "name": "The Finch",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 420,
+    "name": "Sixty Vines",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_13580"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 438,
+    "name": "Babou's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 441,
+    "name": "Caché",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_33376"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 450,
+    "name": "Saint Valentine",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 458,
+    "name": "The Wilfred",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 440,
+    "name": "Bar Charles",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_6151"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 465,
+    "name": "Del Frisco's Double Eagle",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 445,
+    "name": "The Libertine Bar",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_14226"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 418,
+    "name": "Yearby's BBQ",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_512x512"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 463,
+    "name": "Eataly Dallas",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_21868"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 471,
+    "name": "Resident Taqueria",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_3370"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 485,
+    "name": "Pegasus City Brewery",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 489,
+    "name": "The Yard",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 496,
+    "name": "Taco y Vino - Garland",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 478,
+    "name": "Hutchins BBQ",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "extreme_ratio_1277x473"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 501,
+    "name": "The Dinner Detective",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 509,
+    "name": "Zoli's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 494,
+    "name": "Pepper Lunch",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_29423"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 524,
+    "name": "Taco Joint",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_30632"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 537,
+    "name": "Roundup Saloon",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 531,
+    "name": "Birdies Eastside",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_40656"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 539,
+    "name": "Shug's Bagels",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 526,
+    "name": "Urbano Cafe",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_404"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 538,
+    "name": "Sidecar Social",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_28470"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 545,
+    "name": "Élephante",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_16605"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 543,
+    "name": "SILO Dallas",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_14420"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 553,
+    "name": "Neighborhood Sushi",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_33004"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 559,
+    "name": "Little Ruby's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 512,
+    "name": "Piada Italian Street Food",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_403"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 557,
+    "name": "Delilah Dallas",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_22850"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 561,
+    "name": "The Factory in Deep Ellum",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_3744"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1062,
+    "name": "Halcyon",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1065,
+    "name": "Ramble Room",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1064,
+    "name": "Parigi",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_404"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1071,
+    "name": "Parliament",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1072,
+    "name": "State & Allen Kitchen + Bar",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_12942"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1068,
+    "name": "The Nodding Donkey",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_27629"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1079,
+    "name": "Escondido",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1078,
+    "name": "Harumama Noodles + Buns",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_404"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1086,
+    "name": "Walker's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_27953"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1109,
+    "name": "Alamo Club",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1110,
+    "name": "Cenzo's Pizza & Deli",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_10242"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1111,
+    "name": "DeLucca Gaucho Pizza & Wine",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1091,
+    "name": "Phở Xóm",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_2500x2500"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1096,
+    "name": "Velvet Taco",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_1000x940"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1090,
+    "name": "Farina in Grani Pizzeria",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_32481"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9026,
+    "name": "Le Bon Temps",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_6601"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1082,
+    "name": "Moxies",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_525x505"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9028,
+    "name": "Melt Ice Creams",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_8528"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9031,
+    "name": "Voodoo Doughnut",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_1080x1080"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9046,
+    "name": "Thai Thai",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9053,
+    "name": "InSo",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9054,
+    "name": "The Landing",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9032,
+    "name": "Urban Donut & Coffee",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_1024x1024"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9042,
+    "name": "Dallas Farmers Market",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_1080x1080"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9058,
+    "name": "The Sixth Floor Museum at Dealey Plaza",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9033,
+    "name": "San Martin Bakery",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_512x512"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9071,
+    "name": "Bitter Sisters Brewery",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9062,
+    "name": "AT&T Stadium",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "extreme_ratio_1800x610"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 516,
+    "name": "Snarf's Sandwiches",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "fetch_err:fetch failed"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9077,
+    "name": "Bobbie's Airway Grill",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9080,
+    "name": "La Reunion",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9082,
+    "name": "Casablanca",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_2112"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9089,
+    "name": "Billy Can Can",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_30583"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9102,
+    "name": "Sear Steakhouse & Lounge",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9106,
+    "name": "Cotton Patch Cafe (Rockwall)",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9100,
+    "name": "Bin 303",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_39655"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 1080,
+    "name": "Pan Pa' Vos",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "near_square_640x640"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9108,
+    "name": "Esparza's Restaurante Mexicano",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_4846"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9117,
+    "name": "Rio Lerma Mexican Restaurant",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "extreme_ratio_1000x389"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9131,
+    "name": "Babe's Chicken Dinner House",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9124,
+    "name": "Fiori Italian Restaurant & Bar",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_33020"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9146,
+    "name": "Killer Joe",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9150,
+    "name": "Candleroom",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_35449"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9145,
+    "name": "Sylvestro",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_404"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9162,
+    "name": "Klyde Warren Park",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_14332"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9163,
+    "name": "McKinney Avenue Trolley (M-Line)",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "dallas",
+    "id": 9118,
+    "name": "Conti Seafood Eatery",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_404"
+      }
+    ]
   }
 ]
