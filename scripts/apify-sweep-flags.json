@@ -115,5 +115,162 @@
         "reason": "too_small_12474"
       }
     ]
+  },
+  {
+    "city": "la",
+    "id": 2102,
+    "name": "All Day Baby",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "la",
+    "id": 2177,
+    "name": "Here's Looking at You",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "la",
+    "id": 2061,
+    "name": "Si! Mon",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2084,
+    "name": "Bevel Coffee",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2119,
+    "name": "Din Tai Fung",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_405"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2234,
+    "name": "The Grill on the Alley",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2059,
+    "name": "Pasjoli",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_1"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2064,
+    "name": "Vin Folk",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_1"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2342,
+    "name": "Nate 'n Al",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2274,
+    "name": "Pasjoli",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_1"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2348,
+    "name": "Mr. Chow",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_16447"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2129,
+    "name": "Mélisse",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_28419"
+      }
+    ]
+  },
+  {
+    "city": "la",
+    "id": 2243,
+    "name": "Yang's Kitchen",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_1"
+      }
+    ]
   }
 ]
