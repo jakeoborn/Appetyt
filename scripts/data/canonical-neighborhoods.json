@@ -10,7 +10,7 @@
     },
     {
       "name": "Deep Ellum",
-      "count": 46
+      "count": 45
     },
     {
       "name": "Lower Greenville",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Knox-Henderson",
-      "count": 38
+      "count": 39
     },
     {
       "name": "Design District",
@@ -69,11 +69,11 @@
       "count": 13
     },
     {
-      "name": "Cedars",
-      "count": 12
+      "name": "Victory Park",
+      "count": 11
     },
     {
-      "name": "Victory Park",
+      "name": "Cedars",
       "count": 11
     },
     {
@@ -89,10 +89,6 @@
       "count": 10
     },
     {
-      "name": "Arts District",
-      "count": 10
-    },
-    {
       "name": "Richardson",
       "count": 10
     },
@@ -103,6 +99,10 @@
     {
       "name": "Flower Mound",
       "count": 10
+    },
+    {
+      "name": "Arts District",
+      "count": 9
     },
     {
       "name": "Far North Dallas",
@@ -121,11 +121,11 @@
       "count": 9
     },
     {
-      "name": "Rockwall",
-      "count": 9
+      "name": "McKinney",
+      "count": 8
     },
     {
-      "name": "McKinney",
+      "name": "Rockwall",
       "count": 8
     },
     {
@@ -136,7 +136,7 @@
   "Houston": [
     {
       "name": "Heights",
-      "count": 79
+      "count": 74
     },
     {
       "name": "Montrose",
@@ -159,11 +159,11 @@
       "count": 26
     },
     {
-      "name": "Upper Kirby",
-      "count": 24
+      "name": "River Oaks",
+      "count": 23
     },
     {
-      "name": "River Oaks",
+      "name": "Upper Kirby",
       "count": 23
     },
     {
@@ -175,16 +175,16 @@
       "count": 16
     },
     {
-      "name": "Katy",
-      "count": 16
-    },
-    {
       "name": "Memorial",
-      "count": 16
+      "count": 15
     },
     {
       "name": "The Woodlands",
       "count": 14
+    },
+    {
+      "name": "Katy",
+      "count": 13
     },
     {
       "name": "Rice Village",
@@ -216,7 +216,7 @@
     },
     {
       "name": "Pearland",
-      "count": 10
+      "count": 9
     },
     {
       "name": "Clear Lake",
@@ -243,8 +243,8 @@
       "count": 4
     },
     {
-      "name": "Multiple Locations",
-      "count": 3
+      "name": "Friendswood",
+      "count": 1
     },
     {
       "name": "IAH Airport",
@@ -261,11 +261,11 @@
   ],
   "Chicago": [
     {
-      "name": "West Loop / Fulton Market",
-      "count": 51
+      "name": "River North",
+      "count": 52
     },
     {
-      "name": "River North",
+      "name": "West Loop / Fulton Market",
       "count": 50
     },
     {
@@ -302,7 +302,7 @@
     },
     {
       "name": "Gold Coast",
-      "count": 15
+      "count": 14
     },
     {
       "name": "Chinatown",
@@ -409,10 +409,6 @@
       "count": 4
     },
     {
-      "name": "Multiple Locations",
-      "count": 3
-    },
-    {
       "name": "Museum Campus",
       "count": 3
     },
@@ -480,7 +476,7 @@
   "Austin": [
     {
       "name": "East Austin",
-      "count": 159
+      "count": 157
     },
     {
       "name": "Downtown",
@@ -488,15 +484,15 @@
     },
     {
       "name": "South Lamar",
-      "count": 42
+      "count": 40
     },
     {
       "name": "North Austin",
-      "count": 41
+      "count": 39
     },
     {
       "name": "South Congress",
-      "count": 37
+      "count": 36
     },
     {
       "name": "South Austin",
@@ -523,15 +519,11 @@
       "count": 10
     },
     {
-      "name": "North Lamar",
-      "count": 9
-    },
-    {
-      "name": "Domain",
-      "count": 9
-    },
-    {
       "name": "Hyde Park",
+      "count": 8
+    },
+    {
+      "name": "North Lamar",
       "count": 8
     },
     {
@@ -539,16 +531,20 @@
       "count": 7
     },
     {
-      "name": "Mueller",
+      "name": "Clarksville",
       "count": 6
     },
     {
-      "name": "Clarksville",
+      "name": "Domain",
       "count": 6
     },
     {
       "name": "Red River",
       "count": 5
+    },
+    {
+      "name": "Mueller",
+      "count": 4
     },
     {
       "name": "Lockhart",
@@ -558,27 +554,27 @@
   "Salt Lake City": [
     {
       "name": "Downtown SLC",
-      "count": 176
+      "count": 171
     },
     {
       "name": "Sugar House",
-      "count": 53
+      "count": 51
     },
     {
       "name": "Park City",
-      "count": 40
+      "count": 38
     },
     {
       "name": "Provo",
-      "count": 33
+      "count": 31
     },
     {
       "name": "9th & 9th",
-      "count": 20
+      "count": 19
     },
     {
       "name": "South Salt Lake",
-      "count": 19
+      "count": 18
     },
     {
       "name": "The Avenues",
@@ -606,7 +602,7 @@
     },
     {
       "name": "Sandy",
-      "count": 9
+      "count": 7
     },
     {
       "name": "Central 9th",
@@ -625,11 +621,11 @@
       "count": 7
     },
     {
-      "name": "South Jordan",
+      "name": "Murray",
       "count": 6
     },
     {
-      "name": "Murray",
+      "name": "Ogden",
       "count": 6
     },
     {
@@ -638,18 +634,18 @@
     },
     {
       "name": "Draper",
-      "count": 6
+      "count": 5
     },
     {
       "name": "North Salt Lake",
-      "count": 5
-    },
-    {
-      "name": "Ogden",
-      "count": 5
+      "count": 4
     },
     {
       "name": "Liberty Park",
+      "count": 4
+    },
+    {
+      "name": "South Jordan",
       "count": 4
     },
     {
@@ -697,26 +693,26 @@
       "count": 1
     },
     {
-      "name": "Herriman",
+      "name": "Midway (Heber Valley)",
       "count": 1
     }
   ],
   "Las Vegas": [
     {
       "name": "Chinatown",
-      "count": 60
-    },
-    {
-      "name": "Downtown",
-      "count": 36
+      "count": 58
     },
     {
       "name": "Paradise",
       "count": 32
     },
     {
+      "name": "Downtown",
+      "count": 31
+    },
+    {
       "name": "Henderson",
-      "count": 30
+      "count": 29
     },
     {
       "name": "The Strip (The Venetian)",
@@ -724,7 +720,7 @@
     },
     {
       "name": "The Strip (The Cosmopolitan)",
-      "count": 27
+      "count": 26
     },
     {
       "name": "Arts District",
@@ -740,7 +736,7 @@
     },
     {
       "name": "Downtown (Fremont East)",
-      "count": 19
+      "count": 18
     },
     {
       "name": "The Strip (Mandalay Bay)",
@@ -767,20 +763,20 @@
       "count": 14
     },
     {
-      "name": "The Strip",
-      "count": 14
-    },
-    {
       "name": "The Strip (Resorts World)",
-      "count": 14
+      "count": 13
     },
     {
       "name": "The Strip (Fontainebleau)",
       "count": 13
     },
     {
-      "name": "Spring Valley",
+      "name": "The Strip",
       "count": 11
+    },
+    {
+      "name": "Spring Valley",
+      "count": 10
     },
     {
       "name": "Summerlin (Downtown Summerlin)",
@@ -858,19 +854,15 @@
   "Seattle": [
     {
       "name": "Capitol Hill",
-      "count": 100
+      "count": 98
     },
     {
       "name": "Ballard",
-      "count": 42
+      "count": 40
     },
     {
       "name": "Fremont",
-      "count": 32
-    },
-    {
-      "name": "Belltown",
-      "count": 27
+      "count": 30
     },
     {
       "name": "Downtown",
@@ -881,27 +873,27 @@
       "count": 25
     },
     {
+      "name": "Belltown",
+      "count": 24
+    },
+    {
       "name": "Pike Place Market",
       "count": 24
     },
     {
       "name": "South Lake Union",
-      "count": 24
+      "count": 23
     },
     {
       "name": "University District",
-      "count": 23
-    },
-    {
-      "name": "Bellevue",
-      "count": 23
-    },
-    {
-      "name": "Queen Anne",
-      "count": 18
+      "count": 22
     },
     {
       "name": "West Seattle",
+      "count": 18
+    },
+    {
+      "name": "Bellevue",
       "count": 18
     },
     {
@@ -911,6 +903,10 @@
     {
       "name": "Pioneer Square",
       "count": 17
+    },
+    {
+      "name": "Queen Anne",
+      "count": 16
     },
     {
       "name": "Wallingford",
@@ -930,7 +926,7 @@
     },
     {
       "name": "Kirkland",
-      "count": 8
+      "count": 7
     },
     {
       "name": "Downtown Waterfront",
@@ -1040,11 +1036,11 @@
     },
     {
       "name": "Lower East Side",
-      "count": 54
+      "count": 53
     },
     {
       "name": "Midtown",
-      "count": 50
+      "count": 49
     },
     {
       "name": "Greenwich Village",
@@ -1068,7 +1064,7 @@
     },
     {
       "name": "Chelsea",
-      "count": 24
+      "count": 23
     },
     {
       "name": "Harlem",
@@ -1096,7 +1092,7 @@
     },
     {
       "name": "Park Slope / Prospect Heights",
-      "count": 19
+      "count": 18
     },
     {
       "name": "Tribeca",
@@ -1104,7 +1100,7 @@
     },
     {
       "name": "Carroll Gardens / Cobble Hill",
-      "count": 16
+      "count": 15
     },
     {
       "name": "Brooklyn Heights",
@@ -1131,6 +1127,10 @@
       "count": 10
     },
     {
+      "name": "Meatpacking District",
+      "count": 10
+    },
+    {
       "name": "Coney Island / South Brooklyn",
       "count": 9
     },
@@ -1140,10 +1140,6 @@
     },
     {
       "name": "NoHo",
-      "count": 9
-    },
-    {
-      "name": "Meatpacking District",
       "count": 9
     },
     {
@@ -1179,7 +1175,7 @@
       "count": 4
     },
     {
-      "name": "Multiple Locations",
+      "name": "Ridgewood",
       "count": 2
     },
     {
@@ -1192,14 +1188,6 @@
     },
     {
       "name": "Central Park South",
-      "count": 1
-    },
-    {
-      "name": "Ridgewood",
-      "count": 1
-    },
-    {
-      "name": "East Williamsburg / Ridgewood",
       "count": 1
     },
     {
