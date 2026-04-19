@@ -13,29 +13,39 @@ if (!name || !website) {
   process.exit(1);
 }
 
-// Phrases that strongly suggest permanent closure when found on the restaurant's own site
-const CLOSURE_PATTERNS = [
+// HIGH-CONFIDENCE closure patterns — almost always mean the business is closed
+// (not a queue, not an exhibit, not a time-limited thing).
+const HIGH_CONF_PATTERNS = [
   /permanently closed/i,
   /closed\s+(for\s+good|permanently|its?\s+doors)/i,
-  /is\s+now\s+closed/i,                                    // "Birdie G's is now Closed"
   /our\s+last\s+day/i,
-  /(final|last)\s+day\s+of\s+(service|operation)/i,        // "final day of service was Dec 20"
+  /(final|last)\s+day\s+of\s+(service|operation)/i,
   /final\s+service/i,
   /it\s+is\s+with\s+a?\s*heavy\s+heart/i,
   /thank\s+you\s+for\s+\d+\s+(years|great\s+years|memories)/i,
   /thank\s+you\s+(to\s+everyone|for\s+celebrating).{0,80}(last|final|memories)/i,
-  /has\s+closed/i,
-  /have\s+closed/i,
+  /has\s+closed.{0,40}(forever|permanently|doors|final)/i,
+  /have\s+closed.{0,40}(forever|permanently|doors|final|our)/i,
   /closing\s+(our\s+)?doors/i,
   /after\s+\d+\s+(years|wonderful\s+years).{0,80}(closed|closing|shutting|final)/i,
   /we\s+are\s+no\s+longer\s+(open|serving|operating)/i,
   /no\s+longer\s+in\s+operation/i,
   /bidding\s+(you\s+)?farewell/i,
-  /last\s+hurrah/i,                                        // "last hurrah of Birdie G's"
-  /the\s+space\s+will\s+live\s+on/i,                       // common closure memorial phrase
+  /last\s+hurrah/i,
+];
+
+// MEDIUM-CONFIDENCE — could be legit closure OR a fragment about something else
+// (a queue, an exhibit, a menu item). Only count if in title/h1 OR 2+ medium signals.
+const MED_CONF_PATTERNS = [
+  /is\s+now\s+closed/i,            // 'Birdie G's is now Closed' — but can also be 'queue is now closed'
+  /the\s+space\s+will\s+live\s+on/i,
   /lights?\s+out\s+on/i,
   /sad\s+to\s+(share|announce)\s+we/i,
+  /\bhas\s+closed\b/i,             // loose 'has closed' — can match 'form has closed', etc.
+  /\bhave\s+closed\b/i,
 ];
+
+const CLOSURE_PATTERNS = [...HIGH_CONF_PATTERNS, ...MED_CONF_PATTERNS];
 
 (async () => {
   const signals = [];
@@ -68,14 +78,22 @@ const CLOSURE_PATTERNS = [
       const text = body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 30000);
       bodySnippet = text.slice(0, 400);
 
-      CLOSURE_PATTERNS.forEach((re, i) => {
+      // Separate high- and medium-confidence matches. Title hits are always high.
+      let highHits = 0;
+      let medHits = 0;
+      HIGH_CONF_PATTERNS.forEach(re => {
         const m = text.match(re);
-        if (m) signals.push('pattern-match: "' + m[0].trim().slice(0, 80) + '"');
+        if (m) { signals.push('HIGH: "' + m[0].trim().slice(0, 80) + '"'); highHits++; }
+      });
+      MED_CONF_PATTERNS.forEach(re => {
+        const m = text.match(re);
+        if (m) { signals.push('MED: "' + m[0].trim().slice(0, 80) + '"'); medHits++; }
       });
 
-      // Title-level closure indicator
-      if (title && /(closed|shuttered|final)/i.test(title)) {
-        signals.push('title: "' + title + '"');
+      // Title-level closure indicator — very strong signal
+      if (title && /(closed|shuttered|final\s+day)/i.test(title)) {
+        signals.push('TITLE: "' + title + '"');
+        highHits++;
       }
     } else {
       signals.push('non-html-content-type: ' + contentType);
@@ -84,14 +102,18 @@ const CLOSURE_PATTERNS = [
     signals.push('fetch-error: ' + (e.message || e.name));
   }
 
-  // Classify
+  // Classify:
+  //   - closed if any HIGH hit OR 2+ MED hits OR title hit
+  //   - otherwise open (if site served content) or uncertain (if broken)
   let status;
-  if (httpStatus && httpStatus >= 200 && httpStatus < 400 && !signals.some(s => s.startsWith('pattern-match') || s.startsWith('title:'))) {
-    status = 'open';
-  } else if (signals.some(s => s.startsWith('pattern-match') || s.startsWith('title:'))) {
+  const hasHigh = signals.some(s => s.startsWith('HIGH:') || s.startsWith('TITLE:'));
+  const medCount = signals.filter(s => s.startsWith('MED:')).length;
+  if (hasHigh || medCount >= 2) {
     status = 'closed';
-  } else if (httpStatus >= 400 || signals.some(s => s.startsWith('fetch-error') || s.startsWith('http-status'))) {
-    status = 'uncertain'; // website broken could mean anything
+  } else if (httpStatus && httpStatus >= 200 && httpStatus < 400) {
+    status = 'open';
+  } else if ((httpStatus || 0) >= 400 || signals.some(s => s.startsWith('fetch-error') || s.startsWith('http-status'))) {
+    status = 'uncertain';
   } else {
     status = 'uncertain';
   }
