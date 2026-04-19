@@ -1,0 +1,5764 @@
+[
+  {
+    "id": 1,
+    "name": "Alinea",
+    "website": "https://www.alinearestaurant.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/1620244610795-GANI6Y4MZVZK7FGYILVG/20171102_alinea_0280.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/6091adceeec0df416e2b512e/t/6092f760a3df5e0"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/162024432"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_5308",
+        "url": "https://static1.squarespace.com/static/6091adceeec0df416e2b512e/t/6092f760a3df5e"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/162024432"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Smyth",
+    "website": "https://www.smythandtheloyalist.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/2d8a6ac13add390358a9302117d40771/media/acco"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Oriole",
+    "website": "https://www.oriolechicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_14422",
+        "url": "http://static1.squarespace.com/static/5636d03ae4b05d222e994744/t/5645457be4b0d09"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_6022",
+        "url": "https://images.squarespace-cdn.com/content/v1/5636d03ae4b05d222e994744/144738034"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_9168",
+        "url": "https://static1.squarespace.com/static/5636d03ae4b05d222e994744/t/5645457be4b0d0"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Girl & the Goat",
+    "website": "https://www.girlandthegoat.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "srcset",
+        "reason": "too_small_14478",
+        "url": "https://cdn.prod.website-files.com/64542138e0be122910058cd2/646171252bd50f8f9e8f"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Monteverde",
+    "website": "https://www.monteverdechicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "srcset",
+        "reason": "ar0.67_1707x2560",
+        "url": "https://monteverdechicago.com/wp-content/uploads/2025/03/Bailey-Sullivan_Monteve"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Kasama",
+    "website": "https://www.kasamachicago.com",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/5e9cccb8a8875e0b81a1e5ed/t/5e9cccd5f493453494d989be/1775848035636/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5e9cccb8a8875e0b81a1e5ed/t/5e9cccf645f0865"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5e9cccb8a8875e0b81a1e5ed/158733435"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Avec",
+    "website": "https://www.avecrestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_15814",
+        "url": "https://images.getbento.com/accounts/ebd8868d5a1468df664c380099992dfe/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Lou Malnati's Pizzeria",
+    "website": "https://www.loumalnatis.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_7180",
+        "url": "https://www.loumalnatis.com/wp-content/uploads/LM_loyalty_Horiz_Color-1-1.png"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Portillo's",
+    "website": "https://www.portillos.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_12749",
+        "url": "https://www.portillos.com/assets/1/6/Open-graph-new.jpg"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar3.58_4167x1163",
+        "url": "https://www.portillos.com/assets/1/6/Lemon_Cake_and_SLCS_Banners_Higher_Quality_"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar3.42_1920x561",
+        "url": "https://www.portillos.com/assets/1/6/Homepage_Static.jpg"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Giordano's",
+    "website": "https://giordanos.com",
+    "ok": true,
+    "url": "https://giordanos1.wpengine.com/wp-content/uploads/2022/12/bgi__home_sausage.png",
+    "source": "inline-img",
+    "dims": {
+      "w": 650,
+      "h": 530
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://giordanos.com/wp-content/uploads/2025/10/Giordanos-Logo-Chicago-Style-Pi"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar2.40_1440x600",
+        "url": "https://giordanos.com/wp-content/uploads/2026/03/Giordanos-Pizza-Chicago-Meal-De"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar2.40_2560x1067",
+        "url": "https://giordanos.com/wp-content/uploads/2026/03/Club-Gio-Website-Banners_Club-G"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.77_1962x2560",
+        "url": "https://giordanos.com/wp-content/uploads/2026/03/Club-Gio-Website-Banners_Club-G"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar2.40_2560x1066",
+        "url": "https://giordanos.com/wp-content/uploads/2026/03/Club-Gio-Website-Banners_Giorda"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.77_1962x2560",
+        "url": "https://giordanos.com/wp-content/uploads/2026/03/Club-Gio-Website-Banners_Giorda"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar2.40_1440x600",
+        "url": "https://giordanos.com/wp-content/uploads/2025/10/SPIZ4740-WebHeader-Desktop-1440"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar2.40_1440x600",
+        "url": "https://giordanos.com/wp-content/uploads/2026/01/Giordanos-Pizza-Chicago-Shipmen"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar2.40_1440x600",
+        "url": "https://giordanos.com/wp-content/uploads/2025/09/Giordanos-Pizza-Chicago-Game-Da"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar2.40_1440x600",
+        "url": "https://giordanos.com/wp-content/uploads/2025/07/Giordanos-Pizza-Chicago-Lunch-D"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_600x600",
+        "url": "https://giordanos.com/wp-content/uploads/2025/10/Giordanos-Deep-Dish-Pizza.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_600x600",
+        "url": "https://giordanos.com/wp-content/uploads/2026/02/Giordanos-Thin-Crust-Pizza.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_600x600",
+        "url": "https://giordanos.com/wp-content/uploads/2025/10/Giordanos-Chicago-Thin-Crust-Pi"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_29673",
+        "url": "https://giordanos1.wpengine.com/wp-content/uploads/2022/12/bgi__word-cloud-sausa"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Pequod's Pizza",
+    "website": "https://pequodspizza.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "jsonld-image",
+        "reason": "ar1.00_900x900",
+        "url": "https://pequodspizza.com/wp-content/uploads/2017/04/pequods-deep-dish-pizza-chic"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Al's #1 Italian Beef",
+    "website": "https://www.alsbeef.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "dims_409x512",
+        "url": "https://static.wixstatic.com/media/bef3c2_afba35f4f81f4204b78bf4b54f0f8db6%7Emv2"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Superdawg Drive-In",
+    "website": "https://www.superdawg.com",
+    "ok": true,
+    "url": "https://superdawg.com/wp-content/uploads/2021/11/homepage-left.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1600,
+      "h": 1200
+    },
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://superdawg.com/wp-content/uploads/2021/12/superdawg-logo.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_2388",
+        "url": "https://superdawg.com/wp-content/uploads/2021/09/full-video-btn.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_38212",
+        "url": "https://superdawg.com/wp-content/uploads/2024/11/doordash.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_1080x1080",
+        "url": "https://superdawg.com/wp-content/uploads/2024/11/grubhub.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_1080x1080",
+        "url": "https://superdawg.com/wp-content/uploads/2024/11/uber-eats.png"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Big Star",
+    "website": "https://www.bigstarchicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_15213",
+        "url": "https://images.getbento.com/accounts/a3609d8b7598fd053f5300adf7173980/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Lula Cafe",
+    "website": "https://www.lulacafe.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/7ddb4f625c4916181f9d829acbae6562/media/imag"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_404",
+        "url": "https://www.lulacafe.com/format&cs=origin"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Publican",
+    "website": "https://www.thepublicanrestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/5020c7c87850ebfa1dbda1e85b78e891/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Joe's Seafood, Prime Steak & Stone Crab",
+    "website": "https://www.joes.net/chicago",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.joes.net/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fjoes"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.joes.net/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fjoes"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.joes.net/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fjoes"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.joes.net/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fjoes"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.joes.net/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fjoes"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Au Cheval",
+    "website": "https://www.auchevaldiner.com/",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/66e88482bbf8191c95a0db67/t/670ee5f0fe7c597f9f760e41/1729029616495/AuCheval_SocialShar.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 21,
+    "name": "Frontera Grill",
+    "website": "https://www.rickbayless.com",
+    "ok": true,
+    "url": "https://www.rickbayless.com/wp-content/uploads/2021/07/IMG_2428.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1280,
+      "h": 960
+    },
+    "tried": []
+  },
+  {
+    "id": 22,
+    "name": "Bavette's Bar & Boeuf",
+    "website": "https://www.bavettessteakhouse.com/",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/669e9025fce79d4f8c356b3e/t/66d9af001a3d923d872ced00/1725542145054/HOGSALT_SocialShare_Bavettes.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 24,
+    "name": "Intelligentsia Coffee",
+    "website": "https://www.intelligentsia.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://www.intelligentsia.com/cdn/shop/t/397/assets/logo-og.png?v=11020364323403"
+      },
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://www.intelligentsia.com/cdn/shop/t/397/assets/logo-og.png?v=1102036432340"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Cloud Gate (The Bean)",
+    "website": "https://www.chicago.gov/city/en/depts/dca/supp_info/millennium_park.html",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 26,
+    "name": "Willis Tower Skydeck",
+    "website": "https://theskydeck.com",
+    "ok": true,
+    "url": "https://theskydeck.com/wp-content/uploads/2024/10/skydeck-og-image.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 675
+    },
+    "tried": []
+  },
+  {
+    "id": 27,
+    "name": "Art Institute of Chicago",
+    "website": "https://www.artic.edu",
+    "ok": true,
+    "url": "https://artic-web.imgix.net/905abd91-5c0d-451b-9319-f7cd1505bc33/IM026911_002-web.jpg?w=1200&h=800&fit=crop",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 800
+    },
+    "tried": []
+  },
+  {
+    "id": 28,
+    "name": "Navy Pier",
+    "website": "https://navypier.org",
+    "ok": true,
+    "url": "https://navypier.org/wp-content/uploads/2025/01/navy-pier-chicago-night-photo-from-drone.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1920,
+      "h": 1080
+    },
+    "tried": []
+  },
+  {
+    "id": 29,
+    "name": "Magnificent Mile",
+    "website": "https://www.themagnificentmile.com",
+    "ok": true,
+    "url": "https://www.themagnificentmile.com/hs-fs/hubfs/112324_661%20copy%20(3)-2.jpg?width=2040&amp;name=112324_661%20copy%20(3)-2.jpg",
+    "source": "srcset",
+    "dims": {
+      "w": 2040,
+      "h": 1182
+    },
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "ar0.79_840x1070",
+        "url": "https://www.themagnificentmile.com/hs-fs/hubfs/Screenshot%202024-09-02%20at%2010"
+      },
+      {
+        "source": "srcset",
+        "reason": "too_small_11818",
+        "url": "https://www.themagnificentmile.com/hs-fs/hubfs/Magnificent%20Mile%20Logo-01%20(2"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Chicago Architecture River Cruise",
+    "website": "https://www.architecture.org/tours/",
+    "ok": true,
+    "url": "https://cdn.builder.io/api/v1/image/assets%2Fe61abde79d954ddab2b6092044c4b5a1%2F3c4128429fc14c17af0024cd5df169a8",
+    "source": "og:image",
+    "dims": {
+      "w": 2000,
+      "h": 960
+    },
+    "tried": []
+  },
+  {
+    "id": 31,
+    "name": "Millennium Park",
+    "website": "https://www.chicago.gov/city/en/depts/dca/supp_info/millennium_park.html",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 32,
+    "name": "Lincoln Park Zoo",
+    "website": "https://www.lpzoo.org",
+    "ok": true,
+    "url": "https://www.lpzoo.org/wp-content/uploads/2022/11/FP_Landing_Image_Screen-Shot-2020-03-05-at-11.32.37-AM.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1600,
+      "h": 829
+    },
+    "tried": []
+  },
+  {
+    "id": 33,
+    "name": "Wrigley Field",
+    "website": "https://www.mlb.com/cubs/ballpark",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_29258",
+        "url": "https://www.mlbstatic.com/team-logos/share/112.jpg"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Chicago Riverwalk",
+    "website": "https://www.chicagoriverwalk.us",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://www.chicago.gov/content/dam/city/cds/LOGO-Chicago1200x628-TW.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://www.chicago.gov/content/dam/city/sites/chicago-riverwalk/home-images/Chi"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://www.chicago.gov/content/dam/city/sites/chicago-riverwalk/home-images/2FM"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "RPM Italian",
+    "website": "https://www.rpmrestaurants.com/rpm-italian-chicago/",
+    "ok": true,
+    "url": "https://storage.googleapis.com/rpmrestaurants_bucket/wp-content/uploads/c3fb71b2-rpm-italian_tignanello-antinori-sangiovese-cabernet-sauvignon-and-cabernet-franc-wine-by-the-glass-with-spaghetti-meatball-1006.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1600,
+      "h": 1177
+    },
+    "tried": []
+  },
+  {
+    "id": 36,
+    "name": "Maple & Ash",
+    "website": "https://www.mapleandash.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 38,
+    "name": "Elske",
+    "website": "https://www.elskerestaurant.com",
+    "ok": true,
+    "url": "https://elskerestaurant.com/wp-content/uploads/2018/02/elske-facebook.png",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 630
+    },
+    "tried": []
+  },
+  {
+    "id": 39,
+    "name": "Pacific Standard Time",
+    "website": "https://www.pstchicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_15814",
+        "url": "https://images.getbento.com/accounts/ebd8868d5a1468df664c380099992dfe/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Dove's Luncheonette",
+    "website": "https://www.doveschicago.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/54285a68e4b0948d76932ee5/t/5e1e02764110974fbd7f77db/1579025017865/dovesBandwcropped.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 41,
+    "name": "Mi Tocaya Antojeria",
+    "website": "https://www.mitocaya.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/5804f945b3db2bd60e9993c7/t/597de4c24c0dbf2d3c755f6f/1501422787647/opengraph.jpg?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 42,
+    "name": "Longman & Eagle",
+    "website": "https://www.longmanandeagle.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/62ffef918bf8f23989f7dff1/0c46a2f7-9dfd-487b-98a6-f6df32eca97a/2022_10_25_Longman_0451_small.JPG",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/62ffef918bf8f23989f7dff1/t/6324c4265719535"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/62ffef918bf8f23989f7dff1/2d34cb50-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_2120",
+        "url": "https://static1.squarespace.com/static/62ffef918bf8f23989f7dff1/t/6324c426571953"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/62ffef918bf8f23989f7dff1/2d34cb50-"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Mott St",
+    "website": "https://www.mottstreetchicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 44,
+    "name": "MingHin Cuisine",
+    "website": "https://www.minghincuisine.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar3.62_2533x700",
+        "url": "https://www.minghincuisine.com/assets/img/sliders/00.jpg"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Lao Sze Chuan",
+    "website": "https://www.laoszechuanchicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_10012",
+        "url": "https://imagedelivery.net/9lr8zq_Jvl7h6OFWqEi9IA/4a4f3c4b-9175-49d2-2c7f-87bf4d4"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Piece Brewery & Pizzeria",
+    "website": "https://www.piecechicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 47,
+    "name": "Jim's Original",
+    "website": "http://jimsoriginal.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 48,
+    "name": "Johnnie's Beef",
+    "website": "https://johnniesbeef.com/",
+    "ok": false,
+    "reason": "fetch_http_500"
+  },
+  {
+    "id": 49,
+    "name": "Birrieria Zaragoza",
+    "website": "https://www.birrieriazaragoza.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.97_600x620",
+        "url": "https://static.wixstatic.com/media/049699_79f79578f9fd4653ade0426c56938937~mv2.j"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "ar1.10_798x728",
+        "url": "https://static.wixstatic.com/media/049699_4e9b6655381942f680987425c0aab3fa~mv2.j"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_25089",
+        "url": "https://static.wixstatic.com/media/049699_5e3d9caeaf724adfab3ef1cac668b17b~mv2.p"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_34591",
+        "url": "https://static.wixstatic.com/media/049699_18b93207952c4196b0357620e4c14948~mv2.p"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Ricobene's",
+    "website": "https://www.ricobenes.com",
+    "ok": true,
+    "url": "https://static.spotapps.co/spots/af/47157e48bb4478bfd8eea9e53864ff/full",
+    "source": "srcset",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 51,
+    "name": "The Aviary",
+    "website": "https://www.theaviary.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/60916da953171a30a166471b/2cb732f6-eba5-4357-a345-fc401d6128df/20180213_inTheRocks_0003-Edit.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_4504",
+        "url": "http://static1.squarespace.com/static/60916da953171a30a166471b/t/670ebf35ac13051"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_4504",
+        "url": "https://images.squarespace-cdn.com/content/v1/60916da953171a30a166471b/27e235ef-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_4504",
+        "url": "https://static1.squarespace.com/static/60916da953171a30a166471b/t/670ebf35ac1305"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_4504",
+        "url": "https://images.squarespace-cdn.com/content/v1/60916da953171a30a166471b/27e235ef-"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Cindy's Rooftop",
+    "website": "https://www.cindysrooftop.com",
+    "ok": true,
+    "url": "https://cdn.prod.website-files.com/692deee1433d0acae210e525/692dfd00a6951d165395358e_venue_main-dining-room_Cindys56962.avif",
+    "source": "inline-img",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 54,
+    "name": "Three Dots and a Dash",
+    "website": "https://www.threedotschicago.com",
+    "ok": true,
+    "url": "https://storage.googleapis.com/threedots_2023_bucket/wp-content/uploads/677eef49-tiki-bar.jpeg",
+    "source": "og:image",
+    "dims": {
+      "w": 1600,
+      "h": 1067
+    },
+    "tried": []
+  },
+  {
+    "id": 55,
+    "name": "London House Rooftop",
+    "website": "https://www.londonhousechicago.com",
+    "ok": true,
+    "url": "https://londonhousechicago.com/assets/components/phpthumbof/cache/Spacious%20Corner%20Studio%20Suite%20LondonHouse%20Chicago.51d841d65c4b7df0fb1a0bdf6d9b2f51.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1900,
+      "h": 1200
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "not_image:text/html; charset=UTF-8",
+        "url": "https://londonhousechicago.com/"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://londonhousechicago.com/assets/design/images/logo.png"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Metric Coffee Co.",
+    "website": "https://www.metriccoffee.com",
+    "ok": true,
+    "url": "https://cdn.shopify.com/s/files/1/0247/7125/files/metric_story_header_e94fe009-0ece-4b67-91a8-81c4893ab3ee.png?v=1620741965",
+    "source": "og:image",
+    "dims": {
+      "w": 2169,
+      "h": 1735
+    },
+    "tried": []
+  },
+  {
+    "id": 57,
+    "name": "Hoosier Mama Pie Company",
+    "website": "https://www.hoosiermamapie.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 58,
+    "name": "Black Dog Gelato",
+    "website": "https://www.blackdoggelato.com",
+    "ok": true,
+    "url": "https://blackdoggelato.com/wp-content/uploads/2020/09/untitled-design-17.png",
+    "source": "og:image",
+    "dims": {
+      "w": 2048,
+      "h": 1152
+    },
+    "tried": []
+  },
+  {
+    "id": 59,
+    "name": "Kingston Mines",
+    "website": "https://www.kingstonmines.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "too_small_12873",
+        "url": "https://kingstonmines.com/wp-content/uploads/2017/12/ChicagoKingstonMines.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_18548",
+        "url": "https://kingstonmines.com/wp-content/uploads/2019/04/CFA2019_Head_Nightlife-300x"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar1.13_1500x1333",
+        "url": "https://kingstonmines.com/wp-content/uploads/2019/05/2019_HOF_Logos_Green-bkg_tr"
+      },
+      {
+        "source": "srcset",
+        "reason": "too_small_34332",
+        "url": "https://kingstonmines.com/wp-content/uploads/2019/04/CFA2019_Head_Nightlife.png"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar1.02_1278x1258",
+        "url": "https://kingstonmines.com/wp-content/uploads/2021/04/1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Second City",
+    "website": "https://www.secondcity.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_400",
+        "url": "https://www.secondcity.com/_next/image?url=https%3A%2F%2Fplatform.secondcity.com"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.secondcity.com/_next/image?url=https%3A%2F%2Fplatform.secondcity.com"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.secondcity.com/_next/image?url=https%3A%2F%2Fplatform.secondcity.com"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.secondcity.com/_next/image?url=https%3A%2F%2Fplatform.secondcity.com"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.secondcity.com/_next/image?url=https%3A%2F%2Fplatform.secondcity.com"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Green Mill Cocktail Lounge",
+    "website": "https://www.greenmilljazz.com",
+    "ok": true,
+    "url": "https://greenmilljazz.com/wp-content/uploads/2017/10/Foreman.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 743,
+      "h": 453
+    },
+    "tried": []
+  },
+  {
+    "id": 62,
+    "name": "Thalia Hall",
+    "website": "https://www.thaliahallchicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_37572",
+        "url": "http://static1.squarespace.com/static/5b088cce620b85511ff9c68d/t/5e13b9e17ec0a61"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_37572",
+        "url": "https://images.squarespace-cdn.com/content/v1/5b088cce620b85511ff9c68d/157835107"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_36724",
+        "url": "https://static1.squarespace.com/static/5b088cce620b85511ff9c68d/t/5e13b9e17ec0a6"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_27864",
+        "url": "https://images.squarespace-cdn.com/content/v1/5b088cce620b85511ff9c68d/822ee80f-"
+      },
+      {
+        "source": "srcset",
+        "reason": "too_small_37572",
+        "url": "https://images.squarespace-cdn.com/content/v1/5b088cce620b85511ff9c68d/157835107"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Indienne",
+    "website": "https://www.indiennechicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 64,
+    "name": "Feld",
+    "website": "https://www.feldrestaurant.com",
+    "ok": true,
+    "url": "https://framerusercontent.com/assets/FrCzxWH3rtYXBjAkWcYUdkizc3A.png",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 630
+    },
+    "tried": []
+  },
+  {
+    "id": 65,
+    "name": "Boka Restaurant",
+    "website": "https://www.bokachicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "srcset",
+        "reason": "too_small_31096",
+        "url": "https://cdn.prod.website-files.com/5f4d545154c56f0f70b59928/5f62d27b0bb01c2bb6eb"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Gibsons Bar & Steakhouse",
+    "website": "https://www.gibsonssteakhouse.com",
+    "ok": true,
+    "url": "https://gibsonssteakhouse.com/wp-content/uploads/Seafood-Platter1.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1500,
+      "h": 1001
+    },
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "ar0.67_2500x3745",
+        "url": "https://gibsonssteakhouse.com/wp-content/uploads/2017/05/2016_Carrot_Cake2.jpg"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.67_1500x2248",
+        "url": "https://gibsonssteakhouse.com/wp-content/uploads/Ribeye-with-Carving-Fork2.jpg"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.80_1080x1350",
+        "url": "https://gibsonssteakhouse.com/wp-content/uploads/mothers-day.jpg"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Topolobampo",
+    "website": "https://www.rickbayless.com/restaurants/topolobampo",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 68,
+    "name": "Momotaro",
+    "website": "https://www.momotarochicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 69,
+    "name": "J.P. Graziano",
+    "website": "https://www.jpgraziano.com",
+    "ok": true,
+    "url": "https://jpgraziano.com/wp-content/uploads/2025/01/DSC01575-Enhanced-NR-800x666.webp",
+    "source": "inline-img",
+    "dims": {
+      "w": 801,
+      "h": 667
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://jpgraziano.com/wp-content/uploads/2024/06/jpgraziano-logo.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_46762",
+        "url": "https://jpgraziano.com/wp-content/uploads/2025/09/foodandwinemag.webp"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Dusek's",
+    "website": "https://www.dusekschicago.com/",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 71,
+    "name": "Parachute",
+    "website": "https://www.parachuterestaurant.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5318fc47e4b02dddf7587f05/4b742dc8-1e7f-44b4-ba6e-c48e50147c20/E-09236.jpeg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5318fc47e4b02dddf7587f05/t/59a3752dccc5c5e"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5318fc47e4b02dddf7587f05/150388458"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_46060",
+        "url": "https://static1.squarespace.com/static/5318fc47e4b02dddf7587f05/t/59a3752dccc5c5"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Ema",
+    "website": "https://www.emachicago.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 73,
+    "name": "Fat Rice",
+    "website": "https://www.eatfatrice.com",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 74,
+    "name": "S.K.Y.",
+    "website": "https://www.skyrestaurantchicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "dims_619x165",
+        "url": "https://static.wixstatic.com/media/9525c9_b3ba1b9d51e34a6fbc99ed0befa8f215~mv2.p"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "The Loyalist",
+    "website": "https://www.smythandtheloyalist.com/the-loyalist",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/ca4073090570f74a4dcff09115e963bd/media/imag"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_404",
+        "url": "https://www.theloyalistchicago.com/format&cs=origin&crop=focalpoint&fp-x=0.5&fp-"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Carnitas Don Pedro",
+    "website": "https://www.carnitasdonpedro.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 77,
+    "name": "Lawrence Fish Market",
+    "website": "https://lawrencefish.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 78,
+    "name": "La Chaparrita Taqueria",
+    "website": "https://lachaparritataqueriail.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 79,
+    "name": "Sultan's Market",
+    "website": "https://www.sultansmarket.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_35741",
+        "url": "https://static.hugedomains.com/images/hdv3-img/og_hugedomains.png"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Qing Xiang Yuan Dumplings",
+    "website": "https://qxydumpling.com/",
+    "ok": true,
+    "url": "https://i1.wp.com/qxydumpling.com/wp-content/uploads/2014/05/tru-studio-qxy_co-021.jpg?fit=1500%2C894&ssl=1",
+    "source": "inline-img",
+    "dims": {
+      "w": 1500,
+      "h": 894
+    },
+    "tried": []
+  },
+  {
+    "id": 82,
+    "name": "The Drifter",
+    "website": "https://www.thedrifterchicago.com",
+    "ok": true,
+    "url": "https://www.thedrifterchicago.com/wp-content/uploads/2024/08/lua-daiquiri-1-scaled.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 2560,
+      "h": 1707
+    },
+    "tried": []
+  },
+  {
+    "id": 83,
+    "name": "Billy Sunday",
+    "website": "https://www.billy-sunday.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_15949",
+        "url": "https://images.getbento.com/accounts/1ac0e85135e0353440f071925938d0c9/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Best Intentions",
+    "website": "https://www.bestintentionschicago.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/54e51ad9e4b08f11614d1e3e/t/54e56d8ce4b09dd"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/54e51ad9e4b08f11614d1e3e/142432193"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_36232",
+        "url": "https://static1.squarespace.com/static/54e51ad9e4b08f11614d1e3e/t/54e56d8ce4b09d"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/54e51ad9e4b08f11614d1e3e/142432193"
+      },
+      {
+        "source": "srcset",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/54e51ad9e4b08f11614d1e3e/9ba8c3ae-"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Signature Room at the 95th",
+    "website": "https://www.signatureroom.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "jsonld-image",
+        "reason": "http_404",
+        "url": "https://www.signatureroom.com/media/1014/event-gallery-updated_2.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_853",
+        "url": "https://www.signatureroom.com/media/1553/opentable2.png"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Batter & Berries",
+    "website": "https://www.batterandberries.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 87,
+    "name": "Sawada Coffee",
+    "website": "https://www.sawadacoffee.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/668bf6b529c84b0af3f577c5/1720820690679-V6QXB4W4RP1H5IT1APRD/4X5A9301.JPG",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_27766",
+        "url": "http://static1.squarespace.com/static/668bf6b529c84b0af3f577c5/t/66a000bc9be4c14"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/668bf6b529c84b0af3f577c5/2d7b761e-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_9972",
+        "url": "https://static1.squarespace.com/static/668bf6b529c84b0af3f577c5/t/668bf9f3fabe38"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/668bf6b529c84b0af3f577c5/2d7b761e-"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Do-Rite Donuts & Chicken",
+    "website": "https://www.doritedonuts.com",
+    "ok": true,
+    "url": "https://storage.googleapis.com/doritedonuts_bucket/wp-content/uploads/6-Reasons-Why.jpg",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 89,
+    "name": "Xoco",
+    "website": "https://www.rickbayless.com/restaurants/xoco",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 90,
+    "name": "Crisp",
+    "website": "https://www.crisponline.com",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/34dbff_6c39566cb13f427d8c65a7f4812f7f76%7Emv2.png/v1/fit/w_2500,h_1330,al_c/34dbff_6c39566cb13f427d8c65a7f4812f7f76%7Emv2.png",
+    "source": "og:image",
+    "dims": {
+      "w": 1234,
+      "h": 800
+    },
+    "tried": []
+  },
+  {
+    "id": 91,
+    "name": "Gene & Jude's",
+    "website": "https://www.geneandjudes.com",
+    "ok": true,
+    "url": "https://geneandjudes.com/img/stand-before-night.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 2560,
+      "h": 1200
+    },
+    "tried": []
+  },
+  {
+    "id": 92,
+    "name": "Robert's Pizza & Dough Company",
+    "website": "https://robertspizzacompany.com/",
+    "ok": true,
+    "url": "https://robertspizzacompany.com/wp-content/uploads/2023/09/home-hero1.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1400,
+      "h": 740
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://robertspizzacompany.com/wp-content/uploads/2023/09/Roberts_Logo.png"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Irazu",
+    "website": "https://www.irazuchicago.com",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/438d47_e43b6a362ba94f76ba59e1fc887b5358~mv2.jpg/v1/fill/w_2500,h_1999,al_c/438d47_e43b6a362ba94f76ba59e1fc887b5358~mv2.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 2500,
+      "h": 1999
+    },
+    "tried": []
+  },
+  {
+    "id": 94,
+    "name": "Untitled Supper Club",
+    "website": "https://www.untitledsupperclub.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/6855b53bf85566059bc68bc9/t/6855b54df85566059bc68f05/1749829028759/Rece.jpg?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 95,
+    "name": "House of Blues Chicago",
+    "website": "https://www.houseofblues.com/chicago",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "srcset",
+        "reason": "ar2.78_1656x596",
+        "url": "https://assets.livenationcdn.com/uploads/9ee7c2e2-65e6-4cb7-9160-89140e67171a.pn"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "The Purple Pig",
+    "website": "https://www.thepurplepigchicago.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5a559bda0abd0444cba4a056/3d0937f4-e10a-4889-8cc4-68ddb852ba45/The-Purple-Pig-Chicago-Food-2.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_8160",
+        "url": "http://static1.squarespace.com/static/5a559bda0abd0444cba4a056/t/5f87698715cb615"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5a559bda0abd0444cba4a056/6dd02454-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_4506",
+        "url": "https://static1.squarespace.com/static/5a559bda0abd0444cba4a056/t/69a4271411eb91"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5a559bda0abd0444cba4a056/6dd02454-"
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Roister",
+    "website": "https://www.roisterrestaurant.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/6091ad9b03492143935bf8a0/5ec474b6-4966-4960-9c66-bdc02a3195c8/20240628_roister-29.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_3322",
+        "url": "https://images.squarespace-cdn.com/content/v1/6091ad9b03492143935bf8a0/162040106"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_3322",
+        "url": "https://static1.squarespace.com/static/6091ad9b03492143935bf8a0/t/60955ba7925c86"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_3322",
+        "url": "https://images.squarespace-cdn.com/content/v1/6091ad9b03492143935bf8a0/162040106"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "RPM Steak",
+    "website": "https://www.rpmrestaurants.com/rpm-steak",
+    "ok": true,
+    "url": "https://storage.googleapis.com/rpmrestaurants_bucket/wp-content/uploads/steak_home_image.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1280,
+      "h": 800
+    },
+    "tried": []
+  },
+  {
+    "id": 99,
+    "name": "The Warehouse",
+    "website": "https://www.thewarehousechicago.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 100,
+    "name": "Geja's Cafe",
+    "website": "https://www.gejascafe.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 101,
+    "name": "Summer House Santa Monica",
+    "website": "https://www.summerhousesm.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 102,
+    "name": "Cafecito",
+    "website": "https://www.chicafeonline.com/",
+    "ok": true,
+    "url": "https://d15z892a5np5w4.cloudfront.net/production/chi-cafe-chicago-il-3/images/b880e77569bef864f2/mobilemainbg.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 800,
+      "h": 427
+    },
+    "tried": []
+  },
+  {
+    "id": 103,
+    "name": "Nha Hang Viet Nam",
+    "website": "https://chipho.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://chipho.com/images/nha-hang-vietname-logo.png"
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Al's Italian Beef (Original)",
+    "website": "https://www.alsbeef.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "dims_409x512",
+        "url": "https://static.wixstatic.com/media/bef3c2_afba35f4f81f4204b78bf4b54f0f8db6%7Emv2"
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Reno",
+    "website": "https://www.renochicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "jsonld-image",
+        "reason": "ar1.00_800x800",
+        "url": "https://static.spotapps.co/website_images/ab_websites/8681_website_v1/social_sha"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar1.00_800x800",
+        "url": "https://static.spotapps.co/spots/a4/a82d0b5e184eb785dac93108969ea9/full"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar1.00_800x800",
+        "url": "https://static.spotapps.co/spots/9e/77226d842a4b45ac466cf69e4554dc/full"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar1.00_800x800",
+        "url": "https://static.spotapps.co/spots/4e/01471b878e4576aba1db33365dfef3/full"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar1.00_800x800",
+        "url": "https://static.spotapps.co/spots/79/6713cc0f014d3cbac2347c78250079/full"
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Smoque BBQ",
+    "website": "https://www.smoquebbq.com",
+    "ok": true,
+    "url": "https://smoquebbq.com/wp-content/uploads/2026/02/Brisket-for-Menu.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar2.51_2338x930",
+        "url": "https://smoquebbq.com/wp-content/uploads/2017/10/smoque-hero4-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "name": "The Signature Lounge",
+    "website": "https://www.signatureroom.com/the-signature-lounge",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 109,
+    "name": "The Bassment",
+    "website": "https://www.thebassment.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 110,
+    "name": "Bordel",
+    "website": "https://www.bordelchicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 111,
+    "name": "Kai Zan",
+    "website": "http://www.eatatkaizan.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_3084",
+        "url": "http://www.eatatkaizan.com/uploads/8/3/3/2/8332821/logobox2_1.png"
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "name": "HaiSous",
+    "website": "https://www.haisous.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/632b276c09f82e065d3287ae/t/69c211e8a9a6422e968046cd/1774326248488/haisous-monogram-2color-5.75in.jpg?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 113,
+    "name": "Virtue",
+    "website": "https://www.virtuerestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/tDcfNkpRUuO2Lg6uhVOL_virtue-main-logo.png?w=1200&fit"
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Apolonia",
+    "website": "https://www.apoloniachicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 115,
+    "name": "Galit",
+    "website": "https://www.galitrestaurant.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5c6c4e79d7819e08b6282ddd/666ae7ce-7df4-40d6-9350-8d9ec44080eb/Galit+Logos+%281%29.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_22286",
+        "url": "http://static1.squarespace.com/static/5c6c4e79d7819e08b6282ddd/t/5c6c654953450a7"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_22286",
+        "url": "https://images.squarespace-cdn.com/content/v1/5c6c4e79d7819e08b6282ddd/155060768"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_20918",
+        "url": "https://static1.squarespace.com/static/5c6c4e79d7819e08b6282ddd/t/5c6c654953450a"
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Cellar Door Provisions",
+    "website": "https://www.cellardoorprovisions.com",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/5a5a31809f8dce03c814c762/t/5a5bd4c8f9619a9a19005eba/1776461604226/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5a5a31809f8dce03c814c762/t/5a7f08ac24a694e"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5a5a31809f8dce03c814c762/151596769"
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Proxi",
+    "website": "https://www.proxichicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 118,
+    "name": "Lao Peng You",
+    "website": "https://www.oldfriendchicago.com/",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/5e702767e3faaf7c51dfb0d6/t/618c9c5865e2a004ecf935ff/1712713160315/LPY_Google_Cover.jpg?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 119,
+    "name": "Le Bouchon",
+    "website": "http://www.lebouchonofchicago.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_3202",
+        "url": "http://static1.squarespace.com/static/57f439f65016e15c07db069d/t/5805666315d5db7"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_3202",
+        "url": "https://images.squarespace-cdn.com/content/v1/57f439f65016e15c07db069d/147674889"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_3202",
+        "url": "https://static1.squarespace.com/static/57f439f65016e15c07db069d/t/5805666315d5db"
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Forbidden Root",
+    "website": "https://www.forbiddenroot.com",
+    "ok": true,
+    "url": "https://forbiddenroot.com/wp-content/uploads/2024/04/OG-SOCIAL-Forbidden-Root.webp",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 122,
+    "name": "Tzuco",
+    "website": "https://www.tzuco.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_14790",
+        "url": "https://images.getbento.com/accounts/63d3b31ad29b87298fd574555e788bca/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Pizano's Pizza & Pasta",
+    "website": "https://www.pizanos.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 124,
+    "name": "Coalfire Pizza",
+    "website": "https://www.coalfirechicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 125,
+    "name": "Calumet Fisheries",
+    "website": "https://www.calumetfisheries.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 126,
+    "name": "Giant",
+    "website": "https://www.giantrestaurant.com",
+    "ok": true,
+    "url": "https://www.giantrestaurant.com/wp-content/uploads/2016/08/IMG_7486-800x556.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 800,
+      "h": 556
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_9952",
+        "url": "https://www.giantrestaurant.com/wp-content/uploads/2016/05/giant-facebook.png"
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Handlebar",
+    "website": "https://www.handlebarchicago.com/",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5bd8a1a24eddecb150a2a279/1542844337006-MOMVDFUXRGADUQGRQAJL/Artboard+1%404x.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 128,
+    "name": "Arami",
+    "website": "https://www.aramichicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_27850",
+        "url": "http://static1.squarespace.com/static/53c1a404e4b07557fac04c0d/t/61fc1fbe7edb120"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_27850",
+        "url": "https://images.squarespace-cdn.com/content/v1/53c1a404e4b07557fac04c0d/15d7341e-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_27850",
+        "url": "https://static1.squarespace.com/static/53c1a404e4b07557fac04c0d/t/61fc1fbe7edb12"
+      },
+      {
+        "source": "srcset",
+        "reason": "too_small_27850",
+        "url": "https://images.squarespace-cdn.com/content/v1/53c1a404e4b07557fac04c0d/15d7341e-"
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Bang Bang Pie & Biscuits",
+    "website": "https://www.bangbangpie.com",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/51a3b636e4b012a705dd47a4/t/6568425b55baf83232071eee/1776436417013/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/51a3b636e4b012a705dd47a4/t/6935af07ce3d1e2"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/51a3b636e4b012a705dd47a4/a36872e5-"
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Honey Butter Fried Chicken",
+    "website": "https://www.honeybutter.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_7324",
+        "url": "http://static1.squarespace.com/static/5e1d354dfc4e434689e016a0/t/5e1d41f7e3d43f0"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_7324",
+        "url": "https://images.squarespace-cdn.com/content/v1/5e1d354dfc4e434689e016a0/157897573"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_7324",
+        "url": "https://static1.squarespace.com/static/5e1d354dfc4e434689e016a0/t/5e1d41f7e3d43f"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_7378",
+        "url": "https://images.squarespace-cdn.com/content/v1/5e1d354dfc4e434689e016a0/157924001"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_6800",
+        "url": "https://images.squarespace-cdn.com/content/v1/5e1d354dfc4e434689e016a0/157923748"
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Spinning J",
+    "website": "https://www.spinningj.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 133,
+    "name": "Cafe Ba-Ba-Reeba!",
+    "website": "https://www.cafebabareeba.com",
+    "ok": true,
+    "url": "https://storage.googleapis.com/cafebabareeba_bucket/wp-content/uploads/c6cfd608-cbbr_spring-menu_0041-1.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1440,
+      "h": 705
+    },
+    "tried": []
+  },
+  {
+    "id": 134,
+    "name": "The Promontory",
+    "website": "https://www.promontorychicago.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5b083fc896d4552e4e5349f3/c4ec2f3e-c31d-4ab4-91b3-afff36dc75df/The+Promontory.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_14834",
+        "url": "http://static1.squarespace.com/static/5b083fc896d4552e4e5349f3/t/6144cdfb54e49e4"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_22994",
+        "url": "https://images.squarespace-cdn.com/content/v1/5b083fc896d4552e4e5349f3/0f0e9708-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_11054",
+        "url": "https://static1.squarespace.com/static/5b083fc896d4552e4e5349f3/t/6144cdfb54e49e"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_14834",
+        "url": "https://images.squarespace-cdn.com/content/v1/5b083fc896d4552e4e5349f3/0f0e9708-"
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "name": "North Pond",
+    "website": "https://www.northpondrestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.67_1200x1804",
+        "url": "https://northpondrestaurant.com/wp-content/uploads/2024/05/dinner.jpg"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_42696",
+        "url": "https://northpondrestaurant.com/wp-content/uploads/2024/07/thumbnail_image002.pn"
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Pizza Lobo",
+    "website": "https://www.pizzalobo.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/630d4fcc4dd84c42357c7ead/t/6357232bbd5978258ffdd7bf/1763907364869/LOBO-OG.gif?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 138,
+    "name": "Boeufhaus",
+    "website": "https://www.boeufhaus.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/56c78a8df8baf3ae17cecbba/1457472945652-G06VXCW4QG5LQHD3DY85/45+food+kitchen.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_11534",
+        "url": "http://static1.squarespace.com/static/56c78a8df8baf3ae17cecbba/t/67a3f1fdf284d64"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_6308",
+        "url": "https://images.squarespace-cdn.com/content/v1/56c78a8df8baf3ae17cecbba/954b5ecb-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_6308",
+        "url": "https://static1.squarespace.com/static/56c78a8df8baf3ae17cecbba/t/67cf8e2eabc300"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_6308",
+        "url": "https://images.squarespace-cdn.com/content/v1/56c78a8df8baf3ae17cecbba/954b5ecb-"
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Funkenhausen",
+    "website": "https://www.funkenhausen.com",
+    "ok": true,
+    "url": "https://res.cloudinary.com/dymifyxdh/image/upload/v1767114235/gengtoto_albqvx.webp",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 140,
+    "name": "Cafe Marie-Jeanne",
+    "website": "https://cafe-marie-jeanne.com/",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 141,
+    "name": "Owen & Engine",
+    "website": "https://www.owenandengine.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "http_403",
+        "url": "https://api2-bbr.imgnxa.com/images/dgcCWODwNM/id_cbd_d734bcc8-99f1-4f1b-8f38-b77"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_403",
+        "url": "https://api2-bbr.imgnxa.com/images/dgcCWODwNM/id_cbd_2d1afc9c-bcd7-477a-a535-6f5"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_403",
+        "url": "https://api2-bbr.imgnxa.com/images/dgcCWODwNM/id_cbd_163d7d22-81e6-45f4-8548-e24"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_403",
+        "url": "https://api2-bbr.imgnxa.com/images/dgcCWODwNM/id_cbd_80458afe-0627-411f-a77b-15b"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_403",
+        "url": "https://api2-bbr.imgnxa.com/images/dgcCWODwNM/id_cbd_853bfde9-c0a2-46db-8ea9-0c4"
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Table, Donkey and Stick",
+    "website": "http://tabledonkeystick.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 143,
+    "name": "Margie's Candies",
+    "website": "https://www.margiescandies.com",
+    "ok": true,
+    "url": "https://static.spotapps.co/spots/45/11f8032c564c40813f6bdb91cc084e/full",
+    "source": "srcset",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 144,
+    "name": "Half Acre Beer Company",
+    "website": "https://www.halfacrebeer.com",
+    "ok": true,
+    "url": "https://i0.wp.com/halfacrebeer.com/wp-content/uploads/2026/01/HalfAcreLight_Header-scaled.jpg?fit=2560%2C1920&#038;ssl=1",
+    "source": "inline-img",
+    "dims": {
+      "w": 2560,
+      "h": 1920
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.91_1948x2134",
+        "url": "https://i0.wp.com/halfacrebeer.com/wp-content/uploads/2021/08/android-chrome-512"
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Stan's Donuts & Coffee",
+    "website": "https://www.stansdonuts.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_24769",
+        "url": "https://images.getbento.com/accounts/b9a42d46517eb361df8be76e90ffe63f/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Small Cheval",
+    "website": "https://www.smallcheval.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/664b756924d01f2bafa19992/95140c4b-6272-4b45-8b36-bae17aee8def/HomePageMenu_Final.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_404",
+        "url": "http://static1.squarespace.com/static/664b756924d01f2bafa19992/t/666c5f2be436a55"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_10160",
+        "url": "https://images.squarespace-cdn.com/content/v1/664b756924d01f2bafa19992/e2aeb996-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_10160",
+        "url": "https://images.squarespace-cdn.com/content/v1/664b756924d01f2bafa19992/e2aeb996-"
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Revival Food Hall",
+    "website": "https://www.revivalfoodhall.com",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/62684e1fe9da29777be00b0e/t/6268508f9362c96cfbcbcf70/1775239129734/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_13702",
+        "url": "http://static1.squarespace.com/static/62684e1fe9da29777be00b0e/t/6268508f9362c96"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_13702",
+        "url": "https://images.squarespace-cdn.com/content/v1/62684e1fe9da29777be00b0e/6a29897b-"
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "name": "5 Rabanitos",
+    "website": "https://www.5rabanitos.com",
+    "ok": true,
+    "url": "https://static.spotapps.co/spots/48/56c2bdcb7f43919e057290224ecdf7/full",
+    "source": "srcset",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 149,
+    "name": "Bar Siena",
+    "website": "https://www.barsiena.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_30638",
+        "url": "https://images.getbento.com/accounts/b145f5a5f5a038009353e16bd46c1c77/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Schwa",
+    "website": "https://www.schwarestaurant.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/6865b04d97af6534d1d28b54/08db68ac-bdf3-4133-8f48-38ee14a9c44c/Screenshot+2025-06-10+at+7.06.38%E2%80%AFPM.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_15410",
+        "url": "http://static1.squarespace.com/static/6865b04d97af6534d1d28b54/t/6865b117f9dcce4"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_15410",
+        "url": "https://images.squarespace-cdn.com/content/v1/6865b04d97af6534d1d28b54/071403ba-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_15410",
+        "url": "https://static1.squarespace.com/static/6865b04d97af6534d1d28b54/t/6865b117f9dcce"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_15410",
+        "url": "https://images.squarespace-cdn.com/content/v1/6865b04d97af6534d1d28b54/071403ba-"
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Sepia",
+    "website": "https://www.sepiachicago.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/54fb1c14e4b0a61cf908cda9/t/5908f39e20099e3777bd83bb/1493758879127/sepia_social_1200x628_v01.jpg?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 152,
+    "name": "Next",
+    "website": "https://www.nextrestaurant.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/6089e788655ac75560cd937b/7602a112-1e00-4425-962b-43e52cb69faf/NX+Website.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_5434",
+        "url": "http://static1.squarespace.com/static/6089e788655ac75560cd937b/t/65835af6fc49495"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_5434",
+        "url": "https://images.squarespace-cdn.com/content/v1/6089e788655ac75560cd937b/e78975b2-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_5434",
+        "url": "https://static1.squarespace.com/static/6089e788655ac75560cd937b/t/65835af6fc4949"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_5434",
+        "url": "https://images.squarespace-cdn.com/content/v1/6089e788655ac75560cd937b/e78975b2-"
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Moody Tongue",
+    "website": "https://www.moodytongue.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_12215",
+        "url": "https://images.getbento.com/accounts/79fd3434023b8d1e373038a861c015ef/media/imag"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_404",
+        "url": "https://www.moodytongue.com/format&cs=origin"
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Mako",
+    "website": "https://www.makochicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_2298",
+        "url": "http://static1.squarespace.com/static/5b621f125cfd79831a7effc2/t/5b98b523032be4d"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5b621f125cfd79831a7effc2/153315748"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_5456",
+        "url": "https://static1.squarespace.com/static/5b621f125cfd79831a7effc2/t/5b62206bf950b7"
+      },
+      {
+        "source": "srcset",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5b621f125cfd79831a7effc2/153315748"
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Esmé",
+    "website": "https://www.esmechicago.com",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/5fa38d61c504c56f1c29d28c/t/650b41e194336b4c86f1ad0c/1774994899170/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5fa38d61c504c56f1c29d28c/t/650b41e194336b4"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5fa38d61c504c56f1c29d28c/05bcc33e-"
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "name": "Cariño",
+    "website": "https://www.carinochicago.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/65242e410bb72d468102c145/t/65242f66ee7a0978e4548063/1696870246281/Carino_Gold_no+backgrounsd.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 157,
+    "name": "EL Ideas",
+    "website": "https://www.elideas.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/555626fce4b02d69c9a333ea/t/64a0b6c605ee220"
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Atelier",
+    "website": "https://www.atelierchicago.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 159,
+    "name": "Daisies",
+    "website": "https://www.daisieschicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/7sTnzNTqR1KRLs5i4OQg_logo.png?w=1200&fit=fill&auto=c"
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "name": "Gilt Bar",
+    "website": "https://www.giltbarchicago.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/66d86247519ea05910ef4f62/t/66d9b0425b544c5a13d37fe4/1725542466530/HOGSALT_SocialShare_GiltBar.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 161,
+    "name": "Pleasant House Pub",
+    "website": "https://www.pleasanthousepub.com",
+    "ok": true,
+    "url": "https://static.spotapps.co/spots/5a/36509b41b840d89ac201f8c38276e8/full",
+    "source": "srcset",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 162,
+    "name": "Superkhana International",
+    "website": "https://www.superkhanachicago.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/5ec2b36ebdc5cc7044878571/t/60288ad8f1cac742bc9a4e3b/1613269725038/superkhanalogo-recoloredv2-01-2.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 163,
+    "name": "Nadu",
+    "website": "https://www.naduchicago.com",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/a97faf_cd9e7417a91247029f3725ec89f4715e~mv2.png/v1/fill/w_1200,h_630,al_c/a97faf_cd9e7417a91247029f3725ec89f4715e~mv2.png",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 630
+    },
+    "tried": []
+  },
+  {
+    "id": 164,
+    "name": "Mirra",
+    "website": "https://www.mirrachicago.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/66b10b371134b65f4011c438/t/66b20d795283f67d86f2538b/1731704306588/Mirra_PrimaryLogo_DarkGreen.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 165,
+    "name": "Perilla",
+    "website": "https://www.perillachicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_32739",
+        "url": "https://images.getbento.com/accounts/e318d5ca87918a062858115041fb609f/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "name": "Taqueria Chingón",
+    "website": "https://www.taqueriachingon.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 167,
+    "name": "Sochi",
+    "website": "https://www.sochikitchen.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/b4f036d78146aee9618af00c684e7950/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "name": "Sol de Mexico",
+    "website": "https://www.soldemexicochicago.com",
+    "ok": true,
+    "url": "https://static.spotapps.co/spots/b2/738f40227d4583983587670eb4a0e6/full",
+    "source": "srcset",
+    "dims": null,
+    "tried": [
+      {
+        "source": "srcset",
+        "reason": "ar1.00_800x800",
+        "url": "https://static.spotapps.co/spots/68/76482084544043ba704f3bd41a5f6a/full"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar1.00_800x800",
+        "url": "https://static.spotapps.co/spots/98/d10fd1923a4ae1ae23c1d6b257834f/full"
+      }
+    ]
+  },
+  {
+    "id": 170,
+    "name": "Ciccio Mio",
+    "website": "https://www.cicciomio.com/",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/66fb069ad9de6e3340a1bdef/t/672e4d0d145b4f7ad33d1399/1731087629694/CICCIO-socialshare.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 171,
+    "name": "Kie-Gol-Lanee",
+    "website": "https://kiegol.com/",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/57d89966440243ca944a6315/t/66a14ad232041944339300af/1721846482401/KGL_Breakfast+Flatlay.jpg?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 172,
+    "name": "Swift & Sons",
+    "website": "https://www.swiftandsonschicago.com",
+    "ok": true,
+    "url": "https://cdn.prod.website-files.com/60f5d8927f2ab227205ec8e6/6604768e560dbd396ba73517_Swift-Sons-Chicago-08%20(1).avif",
+    "source": "srcset",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 173,
+    "name": "Andros Taverna",
+    "website": "https://www.androstaverna.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_10245",
+        "url": "https://images.getbento.com/accounts/996c172094df0d724b75a79c4e4ffbc7/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 174,
+    "name": "Lardon",
+    "website": "https://www.lardonchicago.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5fff07793643f13da160eea8/bd05215b-8f6a-4f5e-b421-de1be1d78a10/2021_07_11_Lardon_0025.jpg_small.JPG",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_11146",
+        "url": "http://static1.squarespace.com/static/5fff07793643f13da160eea8/t/6076137aaf47d63"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_11146",
+        "url": "https://images.squarespace-cdn.com/content/v1/5fff07793643f13da160eea8/161835097"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_11146",
+        "url": "https://static1.squarespace.com/static/5fff07793643f13da160eea8/t/6076137aaf47d6"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_11146",
+        "url": "https://images.squarespace-cdn.com/content/v1/5fff07793643f13da160eea8/161835097"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_11146",
+        "url": "https://images.squarespace-cdn.com/content/v1/5fff07793643f13da160eea8/161835090"
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "name": "Scofflaw",
+    "website": "https://www.scofflawchicago.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/5a1cb96b0100270ad3da0365/t/5a556ed3c8302598d1874f12/1515548380076/opengraph.jpg?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 176,
+    "name": "Mindy's Bakery",
+    "website": "https://www.mindysbakery.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/5ea9ec8fdd995955ed38dcdd/t/64c46ac59309791693213838/1690593989727/My+project-1+-+2023-06-23T131246.201.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 177,
+    "name": "Smoke Daddy",
+    "website": "https://www.thesmokedaddy.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_19742",
+        "url": "https://images.getbento.com/accounts/27252416f606e1af3b8d4b5642545024/media/imag"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_404",
+        "url": "https://www.thesmokedaddy.com/format&cs=origin"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_404",
+        "url": "https://www.thesmokedaddy.com/format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5"
+      }
+    ]
+  },
+  {
+    "id": 178,
+    "name": "Taqueria Los Comales",
+    "website": "https://www.loscomales.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 179,
+    "name": "RPM Seafood",
+    "website": "https://www.rpmrestaurants.com/rpm-seafood",
+    "ok": false,
+    "reason": "fetch_not_html"
+  },
+  {
+    "id": 180,
+    "name": "Adalina Prime",
+    "website": "https://www.adalinaprime.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_28589",
+        "url": "https://images.getbento.com/accounts/43c82a238897247320ca796a24ae6683/media/imag"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_404",
+        "url": "https://www.adalinaprime.com/format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5"
+      }
+    ]
+  },
+  {
+    "id": 182,
+    "name": "Vito & Nick's",
+    "website": "https://www.vitoandnicks.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 183,
+    "name": "Pat's Pizza",
+    "website": "https://www.patspizzachicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 184,
+    "name": "Kumiko",
+    "website": "https://www.barkumiko.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_22904",
+        "url": "http://static1.squarespace.com/static/5a42cb2b49fc2b33618eef8c/t/5b85f132758d46a"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_2232",
+        "url": "https://images.squarespace-cdn.com/content/v1/5a42cb2b49fc2b33618eef8c/151433252"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_2232",
+        "url": "https://static1.squarespace.com/static/5a42cb2b49fc2b33618eef8c/t/5a42e16cec212d"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_2232",
+        "url": "https://images.squarespace-cdn.com/content/v1/5a42cb2b49fc2b33618eef8c/151433252"
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "name": "The Whistler",
+    "website": "https://www.whistlerchicago.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/61f08416a9cbda13ab76179c/t/62531f1fa8a0b76c12c7bd5e/1649614623406/Whistler_scrape.jpg?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 186,
+    "name": "Gingie",
+    "website": "https://www.gingiechicago.com",
+    "ok": true,
+    "url": "https://cdn.prod.website-files.com/6994ddd40be30a275c84f074/6994e1054e7e699b85e1c2ec_steak-hero_Gingie_NP_16.avif",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 187,
+    "name": "The Alston",
+    "website": "https://thealston.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://thealston.com/wp-content/themes/yootheme/cache/5e/The-Alston-Logo-1-Gold"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.74_580x780",
+        "url": "https://thealston.com/wp-content/themes/yootheme/cache/36/Alston_Chicago_Steakho"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://thealston.com/wp-content/uploads/about-signature.svg"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.67_550x824",
+        "url": "https://thealston.com/wp-content/themes/yootheme/cache/59/Chicagos-Best-Steaks-U"
+      },
+      {
+        "source": "srcset",
+        "reason": "logo_url_pattern",
+        "url": "https://thealston.com/wp-content/themes/yootheme/cache/ba/The-Alston-Logo-1-Gold"
+      }
+    ]
+  },
+  {
+    "id": 188,
+    "name": "Hokkaido Ramen Santouka",
+    "website": "https://www.santouka-usa.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/65b3d011900d3d4d8e22b62d/d6eccf3a-0919-4245-8d4b-6abb3bd50986/santouka+app+page1.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/65b3d011900d3d4d8e22b62d/t/65b7d19ebc8de47"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/65b3d011900d3d4d8e22b62d/c6cad5d9-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_13596",
+        "url": "https://static1.squarespace.com/static/65b3d011900d3d4d8e22b62d/t/65b7d19ebc8de4"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/65b3d011900d3d4d8e22b62d/c6cad5d9-"
+      }
+    ]
+  },
+  {
+    "id": 189,
+    "name": "Little Goat Diner",
+    "website": "https://www.littlegoatchicago.com",
+    "ok": true,
+    "url": "https://cdn.prod.website-files.com/6418714fd50c98a8f3eecfa1/6426515d42b60f0d09c39471_Little%20Goat%20SPC%20logos%20and%20branding-01.webp",
+    "source": "srcset",
+    "dims": null,
+    "tried": [
+      {
+        "source": "srcset",
+        "reason": "too_small_40981",
+        "url": "https://cdn.prod.website-files.com/6418714fd50c98a8f3eecfa1/64221097946181688dd9"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar0.96_634x657",
+        "url": "https://cdn.prod.website-files.com/6418714fd50c98a8f3eecfa1/64221097e1e4fd438ed3"
+      }
+    ]
+  },
+  {
+    "id": 190,
+    "name": "Green Street Smoked Meats",
+    "website": "https://www.greenstreetmeats.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/66796d776badab5315907cae/t/668f008215845677484c3434/1720647811027/GSSM_SocialShare_Cream.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 191,
+    "name": "Lillie's Q",
+    "website": "https://www.lilliesq.com",
+    "ok": true,
+    "url": "https://cdn.shopify.com/s/files/1/0537/8297/0538/files/03_09_20_Lillies_Q10472Pulled_Pork.jpg?v=1624989690",
+    "source": "og:image",
+    "dims": {
+      "w": 2500,
+      "h": 1875
+    },
+    "tried": []
+  },
+  {
+    "id": 193,
+    "name": "Honey 1 BBQ",
+    "website": "https://www.honey1bbq.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 194,
+    "name": "San Soo Gab San",
+    "website": "https://sansoogabsan.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_3308",
+        "url": "https://sansoogabsan.com/wp-content/uploads/2025/07/5615614.jpg"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_11336",
+        "url": "https://sansoogabsan.com/wp-content/uploads/2025/07/saf11fg63g.jpg"
+      }
+    ]
+  },
+  {
+    "id": 195,
+    "name": "Cho Sun Ok",
+    "website": "http://chosunokrestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 196,
+    "name": "Daebak Korean BBQ",
+    "website": "https://www.daebakbbq.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 197,
+    "name": "Shaw's Crab House",
+    "website": "https://www.shawscrabhouse.com",
+    "ok": true,
+    "url": "https://storage.googleapis.com/shawscrabhouse_bucket/wp-content/uploads/d6ce97a3-screen-shot-2022-10-05-at-1.43.51-pm.png",
+    "source": "og:image",
+    "dims": {
+      "w": 742,
+      "h": 497
+    },
+    "tried": []
+  },
+  {
+    "id": 198,
+    "name": "GT Fish & Oyster",
+    "website": "https://gtoyster.com/",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 199,
+    "name": "Oyster Bah",
+    "website": "https://www.oysterbah.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 200,
+    "name": "Smart Bar",
+    "website": "https://smartbarchicago.com",
+    "ok": true,
+    "url": "https://smartbarchicago.com/wp-content/uploads/2024/03/20230225_SMARTBAR-2023-INTERIORS_SS0483WEB-1024x683.jpg",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 201,
+    "name": "Spy Bar",
+    "website": "https://www.spybarchicago.com",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/7b381d_ca574320aa18429e97a7a10cb0e8702c~mv2_d_3076_1730_s_2.jpg/v1/fill/w_2500,h_1406,al_c/7b381d_ca574320aa18429e97a7a10cb0e8702c~mv2_d_3076_1730_s_2.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 2500,
+      "h": 1406
+    },
+    "tried": []
+  },
+  {
+    "id": 202,
+    "name": "PRYSM",
+    "website": "https://www.prysmchicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_403",
+        "url": "https://www.prysmchicago.com/assets/img/default_thumb.jpg"
+      },
+      {
+        "source": "og:image",
+        "reason": "too_small_22389",
+        "url": "https://images.discovery-prod.axs.com/2026/04/uploadedimage-jpg_69de8ac5bc23c.jp"
+      }
+    ]
+  },
+  {
+    "id": 203,
+    "name": "Celeste",
+    "website": "https://celestedisco.com",
+    "ok": true,
+    "url": "https://celestedisco.com/wp-content/uploads/2024/08/Celeste-7578-1.jpg",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 204,
+    "name": "Revolution Brewing",
+    "website": "https://revbrew.com",
+    "ok": true,
+    "url": "https://overwrought-polecat.transforms.svdcdn.com/production/general/home-hero-taps.jpg?w=1200&h=630&q=82&fit=crop&dm=1476879143&s=25d7adb7028234d755e7077fe984d656",
+    "source": "jsonld-image",
+    "dims": {
+      "w": 1200,
+      "h": 630
+    },
+    "tried": [
+      {
+        "source": "twitter:image",
+        "reason": "http_401",
+        "url": "https://overwrought-polecat.transforms.svdcdn.com/production/general/home-hero-t"
+      }
+    ]
+  },
+  {
+    "id": 205,
+    "name": "Goose Island Brewhouse",
+    "website": "https://www.gooseisland.com",
+    "ok": true,
+    "url": "https://cdn.builder.io/api/v1/image/assets%2Fd8b60235cd964da1993cfeed9243adc1%2F54a863c813f84dc981c380d5952fe062?format=webp&amp;width=2000",
+    "source": "srcset",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 206,
+    "name": "Marz Community Brewing",
+    "website": "https://marz.beer/",
+    "ok": true,
+    "url": "https://cdn.sanity.io/images/u21v71nv/production/042a9e3170b7d31e3bb972ac7c456f291ae5bf3e-3000x2002.webp",
+    "source": "og:image",
+    "dims": {
+      "w": 3000,
+      "h": 2002
+    },
+    "tried": []
+  },
+  {
+    "id": 207,
+    "name": "Pilot Project Brewing",
+    "website": "https://www.pilotprojectbrewing.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5cf7dc8c6621770001b9480b/cb0788df-e99d-4c32-a124-2fb178e04921/BeerRainbow-21.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5cf7dc8c6621770001b9480b/t/6710685f776a5f2"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5cf7dc8c6621770001b9480b/18977e03-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_12998",
+        "url": "https://static1.squarespace.com/static/5cf7dc8c6621770001b9480b/t/67c7481ff719af"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5cf7dc8c6621770001b9480b/18977e03-"
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "name": "Mon Ami Gabi",
+    "website": "https://www.monamigabi.com",
+    "ok": true,
+    "url": "https://storage.googleapis.com/monamigabi2023_bucket/wp-content/uploads/6434f036-mag-lp_environment-interior_0876.png",
+    "source": "og:image",
+    "dims": {
+      "w": 1600,
+      "h": 1067
+    },
+    "tried": []
+  },
+  {
+    "id": 209,
+    "name": "Aroy Thai",
+    "website": "http://www.aroythaiatchicago.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 210,
+    "name": "Immm Rice & Beyond",
+    "website": "https://immmchicago.com/",
+    "ok": true,
+    "url": "https://immmchicago.com/wp-content/uploads/2018/10/Tum-Puu-Plah-Rah-1.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 4896,
+      "h": 3264
+    },
+    "tried": []
+  },
+  {
+    "id": 212,
+    "name": "Beatrix",
+    "website": "https://www.beatrixrestaurants.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 213,
+    "name": "Bongo Room",
+    "website": "https://www.thebongoroom.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/HvG4zMEhSQO46OqTke4c_br-logo-1.png?w=1200&fit=fill&a"
+      }
+    ]
+  },
+  {
+    "id": 214,
+    "name": "Jam",
+    "website": "https://www.jamrestaurant.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 215,
+    "name": "Kuma's Corner",
+    "website": "https://www.kumascorner.com",
+    "ok": true,
+    "url": "https://kumascorner.com/wp-content/uploads/2023/02/red-leather-darker.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1920,
+      "h": 1280
+    },
+    "tried": []
+  },
+  {
+    "id": 216,
+    "name": "Coda di Volpe",
+    "website": "https://www.cdvolpe.com/",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/5cd49d5cca525b14f4582fef/t/69c9641ec2f49f1bfc84768d/1774806046238/CodaDiVolpe_Night_081316_874+%284%29.jpg?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 217,
+    "name": "Demera Ethiopian Restaurant",
+    "website": "https://www.demeraethiopian.com",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/625527f786474f46124ba0f7/t/628deebc505742451100a58f/1768067888919/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/625527f786474f46124ba0f7/t/628deebc5057424"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/625527f786474f46124ba0f7/24625147-"
+      }
+    ]
+  },
+  {
+    "id": 218,
+    "name": "Aba",
+    "website": "https://www.abarestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 219,
+    "name": "Dos Urban Cantina",
+    "website": "https://www.dosurbancantina.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 220,
+    "name": "The J. Parker",
+    "website": "https://www.jparkerchicago.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/1accf810ead4604c12e65b075b974415/media/imag"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/1accf810ead4604c12e65b075b974415/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 223,
+    "name": "Chi Cafe",
+    "website": "https://www.chicafeonline.com/",
+    "ok": true,
+    "url": "https://d15z892a5np5w4.cloudfront.net/production/chi-cafe-chicago-il-3/images/b880e77569bef864f2/mobilemainbg.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 800,
+      "h": 427
+    },
+    "tried": []
+  },
+  {
+    "id": 224,
+    "name": "Vajra",
+    "website": "https://www.vajrachicago.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/64580668bdc82b6232c4490e/1741805446931-ZBPXGKJXJZVUXC75SKNG/Vajra_022025_054.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_43794",
+        "url": "http://static1.squarespace.com/static/64580668bdc82b6232c4490e/t/647c7925968c7c5"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_39530",
+        "url": "https://images.squarespace-cdn.com/content/v1/64580668bdc82b6232c4490e/168349053"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_16568",
+        "url": "https://static1.squarespace.com/static/64580668bdc82b6232c4490e/t/645806e4bdc82b"
+      }
+    ]
+  },
+  {
+    "id": 226,
+    "name": "iO Theater",
+    "website": "https://www.ioimprov.com",
+    "ok": true,
+    "url": "https://b2259951.smushcdn.com/2259951/wp-content/uploads/2026/03/2025-07-24_iOFestP_PreviewShots_MikailFaalasli_32.jpg?lossy=2&strip=1&webp=1",
+    "source": "inline-img",
+    "dims": {
+      "w": 1800,
+      "h": 1200
+    },
+    "tried": []
+  },
+  {
+    "id": 227,
+    "name": "The Laugh Factory Chicago",
+    "website": "https://www.laughfactory.com/clubs/chicago",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 228,
+    "name": "Andy's Jazz Club",
+    "website": "https://www.andysjazzclub.com",
+    "ok": true,
+    "url": "http://andysjazzclub.com/wp-content/uploads/2019/11/Andys-Jazz-Club-Gift_card-e1668112217171.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 645,
+      "h": 399
+    },
+    "tried": []
+  },
+  {
+    "id": 229,
+    "name": "Winter's Jazz Club",
+    "website": "https://www.wintersjazzclub.com",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/8ffa2d_83acfda802af415f96c0908ce64046c5%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/8ffa2d_83acfda802af415f96c0908ce64046c5%7Emv2.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 2002,
+      "h": 1330
+    },
+    "tried": []
+  },
+  {
+    "id": 230,
+    "name": "Jeni's Splendid Ice Creams",
+    "website": "https://jenis.com",
+    "ok": true,
+    "url": "https://jenis.com/cdn/shop/files/frostedsugarcookie-featureimage-desktop_1500x.jpg?v=1775159339",
+    "source": "inline-img",
+    "dims": {
+      "w": 1500,
+      "h": 781
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://jenis.com/cdn/shop/files/Logo.png?v=1643963632"
+      },
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://jenis.com/cdn/shop/files/Logo.png?v=1643963632"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://jenis.com/cdn/shop/files/Jenis_Ice_Cream_Logo_300x.png?v=1694546149"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.52_750x1440",
+        "url": "https://jenis.com/cdn/shop/files/frostedsugarcookie-featureimage-mobile_1500x.jp"
+      }
+    ]
+  },
+  {
+    "id": 231,
+    "name": "Pretty Cool Ice Cream",
+    "website": "https://www.prettycoolicecream.com/",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5b437c5f1137a683921fb5e4/1637047081965-XL379ODMX6G21QYI8U93/exterior-pop.jpeg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5b437c5f1137a683921fb5e4/t/62b890eb32964d7"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5b437c5f1137a683921fb5e4/a9eb8ebb-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_20358",
+        "url": "https://images.squarespace-cdn.com/content/v1/5b437c5f1137a683921fb5e4/163704263"
+      }
+    ]
+  },
+  {
+    "id": 232,
+    "name": "Fat Chris's Pizza & Such",
+    "website": "https://www.fatchrispizza.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "too_small_46516",
+        "url": "https://static.wixstatic.com/media/3ace8c_d96240454d8e4119afc948460dc32637~mv2.p"
+      },
+      {
+        "source": "inline-img",
+        "reason": "dims_600x349",
+        "url": "https://static.wixstatic.com/media/ba9299_0fde1582b7e5404d84ac4bbf334aabe8~mv2.j"
+      }
+    ]
+  },
+  {
+    "id": 233,
+    "name": "The Duck Inn",
+    "website": "https://www.theduckinnchicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "ar0.68_600x877",
+        "url": "https://theduckinnchicago.com/homepage_resources/di-mommapalooza-2026_email_600x"
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "name": "Alla Vita",
+    "website": "https://www.allavita.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 235,
+    "name": "Bar Tutto",
+    "website": "https://www.bartutto.com",
+    "ok": true,
+    "url": "https://img1.wsimg.com/isteam/videos/uA41GmyyG8IMaxXdb",
+    "source": "og:image",
+    "dims": {
+      "w": 1080,
+      "h": 608
+    },
+    "tried": []
+  },
+  {
+    "id": 236,
+    "name": "Duck Duck Goat",
+    "website": "https://www.duckduckgoatchicago.com",
+    "ok": true,
+    "url": "https://cdn.prod.website-files.com/62a2136eeda240340c0f48f1/64f2161e4202dbf7fda49013_Untitled%20(2).avif",
+    "source": "srcset",
+    "dims": null,
+    "tried": [
+      {
+        "source": "srcset",
+        "reason": "logo_url_pattern",
+        "url": "https://cdn.prod.website-files.com/62a2136eeda240340c0f48f1/62a2c468527b759ce42b"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar0.67_3000x4500",
+        "url": "https://cdn.prod.website-files.com/62a2136eeda240340c0f48f1/69d3f6660b9ad4e8b6b1"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar0.67_3000x4500",
+        "url": "https://cdn.prod.website-files.com/62a2136eeda240340c0f48f1/69b1c4cdcfdbbc281716"
+      }
+    ]
+  },
+  {
+    "id": 237,
+    "name": "Lost Larson",
+    "website": "https://www.lostlarson.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 238,
+    "name": "Floriole Cafe & Bakery",
+    "website": "https://www.floriole.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 240,
+    "name": "Boonie's",
+    "website": "https://www.booniefoods.com/",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/9d1d48_29af1a69a429494d89499997e88b9fab~mv2.jpg/v1/fill/w_725,h_407,al_c,lg_1,q_80,enc_avif,quality_auto/The%20Farm_edited_edited.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 725,
+      "h": 407
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_16068",
+        "url": "https://static.wixstatic.com/media/9d1d48_f212e47f16694b5eb86bc1aa395d9f96%7Emv2"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_17561",
+        "url": "https://static.wixstatic.com/media/9d1d48_f212e47f16694b5eb86bc1aa395d9f96~mv2.p"
+      }
+    ]
+  },
+  {
+    "id": 241,
+    "name": "Munno Pizzeria & Bistro",
+    "website": "https://www.munnochicago.com/",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5ae68a3c3c3a532c02868a3f/7054d3b7-5fa8-4a87-a36f-6c92cea5618e/MICHELIN+Bib+Gourmand_2025_Round_Red.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5ae68a3c3c3a532c02868a3f/t/66ff0c70132e2e3"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5ae68a3c3c3a532c02868a3f/172799110"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_41710",
+        "url": "https://static1.squarespace.com/static/5ae68a3c3c3a532c02868a3f/t/66ff0d3daa63d1"
+      }
+    ]
+  },
+  {
+    "id": 242,
+    "name": "Chef's Special Cocktail Bar",
+    "website": "https://www.chefsspecialbar.com",
+    "ok": true,
+    "url": "https://chefsspecialbar.com/wp-content/uploads/2020/01/social.png",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 630
+    },
+    "tried": []
+  },
+  {
+    "id": 243,
+    "name": "Tango Sur",
+    "website": "https://www.tangosur.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 244,
+    "name": "Cabra",
+    "website": "https://www.cabrachicago.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5cd2efedfd6793286fbd8050/6bda82a8-f82a-45d1-a2f1-bee47d1619fc/Cabra+Chicago+--01.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5cd2efedfd6793286fbd8050/t/5cdefee50be8c60"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5cd2efedfd6793286fbd8050/155811811"
+      }
+    ]
+  },
+  {
+    "id": 245,
+    "name": "Sound-Bar",
+    "website": "https://sound-bar.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 247,
+    "name": "Lettuce Entertain You RPM Events",
+    "website": "https://www.rpmrestaurants.com",
+    "ok": true,
+    "url": "https://storage.googleapis.com/rpmrestaurants_bucket/wp-content/uploads/fc9403c9-rpm-italian_aperol-spritz-1000.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1600,
+      "h": 1067
+    },
+    "tried": []
+  },
+  {
+    "id": 248,
+    "name": "Divan",
+    "website": "https://www.divanchicago.com",
+    "ok": true,
+    "url": "https://octane.cdn.ing/api/v1/images/transform?url=https://cdn.ing/assets/files/record/280121/b8by9x98z4kwf152kva5qr1u6z4x&amp;w=1200&amp;h=630&amp;q=85&amp;f=webp&amp;fit=cover&amp;apiKey=os-4c7e2808-1b22-41f2-a51a-535e30f3f63d",
+    "source": "og:image",
+    "dims": {
+      "w": 2001,
+      "h": 1338
+    },
+    "tried": []
+  },
+  {
+    "id": 249,
+    "name": "Osaka Nikkei",
+    "website": "https://www.osakanikkei.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://osakanikkei.com/wp-content/uploads/2024/06/icon.png"
+      }
+    ]
+  },
+  {
+    "id": 251,
+    "name": "Shedd Aquarium",
+    "website": "https://www.sheddaquarium.org",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 252,
+    "name": "Museum of Science and Industry",
+    "website": "https://www.msichicago.org",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar2.47_4320x1746",
+        "url": "https://media.impactmit.com/image/upload/v1743086188/msi/Home_Hero_D_11d03c194c."
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_18650",
+        "url": "https://media.impactmit.com/image/upload/f_auto,c_limit,w_500/v1743086188/msi/Ho"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_46408",
+        "url": "https://media.impactmit.com/image/upload/f_auto,c_limit,w_500/v1760023960/msi/U5"
+      }
+    ]
+  },
+  {
+    "id": 253,
+    "name": "Adler Planetarium",
+    "website": "https://www.adlerplanetarium.org",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://www.adlerplanetarium.org/wp-content/uploads/Placeholder_Post-01-scaled.j"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_1080x1080",
+        "url": "https://www.adlerplanetarium.org/wp-content/uploads/Astronomy_Artmis2Moon-Square"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_1081x1081",
+        "url": "https://www.adlerplanetarium.org/wp-content/uploads/260401_LookUp_IG_1080x1080.p"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_1080x1080",
+        "url": "https://www.adlerplanetarium.org/wp-content/uploads/thara-photo-equinox-IG-1350-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_1080x1080",
+        "url": "https://www.adlerplanetarium.org/wp-content/uploads/260331_Dev-Web-Popup-1080x10"
+      }
+    ]
+  },
+  {
+    "id": 254,
+    "name": "Field Museum",
+    "website": "https://www.fieldmuseum.org",
+    "ok": true,
+    "url": "https://www.datocms-assets.com/44232/1762022805-1748958888-barrera-00438.webp?fm=webp",
+    "source": "srcset",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 255,
+    "name": "Pizz'Amici",
+    "website": "https://www.pizz-amici.com",
+    "ok": true,
+    "url": "https://cdn.prod.website-files.com/67322e15da7fd439a848fc60/67eaabab4876e51592700d75_PIZZ_SecLogo_Marinara.webp",
+    "source": "srcset",
+    "dims": null,
+    "tried": [
+      {
+        "source": "srcset",
+        "reason": "too_small_39370",
+        "url": "https://cdn.prod.website-files.com/67322e15da7fd439a848fc60/6734e538990d40a24e20"
+      },
+      {
+        "source": "srcset",
+        "reason": "too_small_5548",
+        "url": "https://cdn.prod.website-files.com/67322e15da7fd439a848fc60/675100e89b9b4ecfb37a"
+      }
+    ]
+  },
+  {
+    "id": 256,
+    "name": "Obelix",
+    "website": "https://www.obelixchicago.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/61a96b052e091368831e2091/t/626b40b39ce2eb2327987e36/1651196083880/Obelix_logos_8.5_wide_BRICK.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 257,
+    "name": "Maxwells Trading",
+    "website": "https://www.maxwellstrading.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/690e3a60d7414b0544740942/36cbc8ce-018e-4a2f-a127-59f86b285c0a/maxwells_august-141.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_14884",
+        "url": "http://static1.squarespace.com/static/690e3a60d7414b0544740942/t/690e3a81d7414b0"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/690e3a60d7414b0544740942/176254016"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/690e3a60d7414b0544740942/176254016"
+      }
+    ]
+  },
+  {
+    "id": 258,
+    "name": "Jeong",
+    "website": "https://www.jeongchicago.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/554feb01e4b01d087a8cd78d/1619451784615-LJ9FZDM31UPRI83S903R/HV-Jeong-211.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/554feb01e4b01d087a8cd78d/t/5bfc8470898583a"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/554feb01e4b01d087a8cd78d/154327560"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_36588",
+        "url": "https://static1.squarespace.com/static/554feb01e4b01d087a8cd78d/t/5bfc8450352f53"
+      }
+    ]
+  },
+  {
+    "id": 259,
+    "name": "Mariscos San Pedro",
+    "website": "https://www.mariscossanpedro.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/65f0c175d8700464cf7f6994/1d33486b-c939-40c8-bba8-eb5856eca6a3/Screenshot+2026-01-31+at+5.09.09+PM.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_31456",
+        "url": "http://static1.squarespace.com/static/65f0c175d8700464cf7f6994/t/6902ae5f22811a6"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_49416",
+        "url": "https://images.squarespace-cdn.com/content/v1/65f0c175d8700464cf7f6994/62cdf5bd-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_21584",
+        "url": "https://static1.squarespace.com/static/65f0c175d8700464cf7f6994/t/6902ae5f22811a"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_31456",
+        "url": "https://images.squarespace-cdn.com/content/v1/65f0c175d8700464cf7f6994/62cdf5bd-"
+      }
+    ]
+  },
+  {
+    "id": 261,
+    "name": "The Momo World",
+    "website": "https://themomoworld.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 263,
+    "name": "Akahoshi Ramen",
+    "website": "https://www.akahoshiramen.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/63bb2ba110cae32a3552aa55/904833d3-e933-42cd-ac9c-dac43b893650/RamenAkahoshi+Inverted.png",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_26812",
+        "url": "http://static1.squarespace.com/static/63bb2ba110cae32a3552aa55/t/65528d2ff0888d2"
+      }
+    ]
+  },
+  {
+    "id": 264,
+    "name": "Atsumeru",
+    "website": "https://www.atsumerurestaurant.com",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/29e876_6d5ea5de5ca34b29869cf7185cbfc24f~mv2.jpg",
+    "source": "jsonld-image",
+    "dims": {
+      "w": 2391,
+      "h": 1647
+    },
+    "tried": []
+  },
+  {
+    "id": 265,
+    "name": "Casa Yari",
+    "website": "https://casayari.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.65_1656x2560",
+        "url": "https://img1.wsimg.com/isteam/ip/15c2031a-a835-41c5-a617-d78ac2fcab1b/1000019886"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "ar0.65_1656x2560",
+        "url": "http://img1.wsimg.com/isteam/ip/15c2031a-a835-41c5-a617-d78ac2fcab1b/1000019886."
+      }
+    ]
+  },
+  {
+    "id": 266,
+    "name": "Anelya",
+    "website": "https://www.anelyarestaurant.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/631250e62d9acd6658752b78/4e2277a7-4785-447a-97f7-bf4bfdad3213/2023-12-21_Entree_Group_Anelya_2122.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/631250e62d9acd6658752b78/t/650dc960a76ea52"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/631250e62d9acd6658752b78/64aa2927-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_49212",
+        "url": "https://static1.squarespace.com/static/631250e62d9acd6658752b78/t/650dc960a76ea5"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/631250e62d9acd6658752b78/64aa2927-"
+      }
+    ]
+  },
+  {
+    "id": 267,
+    "name": "Nettare",
+    "website": "https://www.barnettare.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/66aa5ab17697b57e22c4ab65/e3cc3748-d618-42f5-8527-68c6fcec11b6/Nettare_-27.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/66aa5ab17697b57e22c4ab65/t/66cd0473ac43015"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/66aa5ab17697b57e22c4ab65/5e57286b-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_42098",
+        "url": "https://static1.squarespace.com/static/66aa5ab17697b57e22c4ab65/t/66cd0473ac4301"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/66aa5ab17697b57e22c4ab65/5e57286b-"
+      }
+    ]
+  },
+  {
+    "id": 268,
+    "name": "Dimmi Dimmi",
+    "website": "https://www.dimmidimmiitalian.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_6131",
+        "url": "https://images.getbento.com/accounts/8249a76cce931bb393220fd14b46968a/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 269,
+    "name": "Boonie's Filipino Restaurant",
+    "website": "https://www.booniefoods.com",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/9d1d48_29af1a69a429494d89499997e88b9fab~mv2.jpg/v1/fill/w_725,h_407,al_c,lg_1,q_80,enc_avif,quality_auto/The%20Farm_edited_edited.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 725,
+      "h": 407
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_16068",
+        "url": "https://static.wixstatic.com/media/9d1d48_f212e47f16694b5eb86bc1aa395d9f96%7Emv2"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_17561",
+        "url": "https://static.wixstatic.com/media/9d1d48_f212e47f16694b5eb86bc1aa395d9f96~mv2.p"
+      }
+    ]
+  },
+  {
+    "id": 270,
+    "name": "YooYee",
+    "website": "https://www.yooyeechicago.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 271,
+    "name": "Beity",
+    "website": "https://www.beitychicago.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 273,
+    "name": "Elia",
+    "website": "https://www.eliachicago.com",
+    "ok": true,
+    "url": "https://static.spotapps.co/spots/28/b91601949443c4ad64f6f6d1fabd90/full",
+    "source": "srcset",
+    "dims": null,
+    "tried": [
+      {
+        "source": "srcset",
+        "reason": "ar1.00_800x800",
+        "url": "https://static.spotapps.co/spots/76/444a0f108046a09bfa8783448f3bea/full"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar1.00_800x800",
+        "url": "https://static.spotapps.co/spots/48/518427e27a4aea875d4379cbc63300/full"
+      }
+    ]
+  },
+  {
+    "id": 274,
+    "name": "Sanders BBQ Supply Co.",
+    "website": "https://www.sandersbbqsupply.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 275,
+    "name": "Monster Ramen",
+    "website": "https://www.monsterramenchicago.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 276,
+    "name": "Cafe Yaya",
+    "website": "https://www.cafeyaya.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/66c789a35320ad740ec8d560/t/67bcb9d3d9a0ce125af3a837/1740421587263/cafeyayaFULLlogo+%281%29.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 277,
+    "name": "Gus' Sip & Dip",
+    "website": "https://www.gussipanddip.com",
+    "ok": true,
+    "url": "https://storage.googleapis.com/gus-sip-and-dip_bucket/wp-content/uploads/7f67e41d-backgroundshotflat.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 2200,
+      "h": 1661
+    },
+    "tried": []
+  },
+  {
+    "id": 279,
+    "name": "Chilam Balam",
+    "website": "https://www.chilambalamchicago.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 280,
+    "name": "Ghin Khao Eat Rice",
+    "website": "https://www.ghinkhaochicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 281,
+    "name": "Sifr",
+    "website": "https://www.sifrchicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 284,
+    "name": "Parlor Pizza Bar",
+    "website": "https://www.parlorpizzabar.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 285,
+    "name": "Club Lucky",
+    "website": "https://www.clubluckychicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 286,
+    "name": "Bar Roma",
+    "website": "https://www.barromachicago.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5bcdfd82da50d36ec0596741/31d89454-fa9a-49f5-84d8-e782148947a4/BR-web-BOOK+2025B2.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_17948",
+        "url": "http://static1.squarespace.com/static/5bcdfd82da50d36ec0596741/t/5bcdfe3d24a694b"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_46540",
+        "url": "https://images.squarespace-cdn.com/content/v1/5bcdfd82da50d36ec0596741/154022648"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_46540",
+        "url": "https://static1.squarespace.com/static/5bcdfd82da50d36ec0596741/t/5bcdfdb58165f5"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_13728",
+        "url": "https://images.squarespace-cdn.com/content/v1/5bcdfd82da50d36ec0596741/8e2e6a48-"
+      }
+    ]
+  },
+  {
+    "id": 287,
+    "name": "Hopleaf",
+    "website": "https://www.hopleaf.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 289,
+    "name": "John's Food and Wine",
+    "website": "https://www.johnsfoodandwine.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/d85848e0d659b5a3715ad181e0f7f705/media/imag"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_404",
+        "url": "https://www.johnsfoodandwine.com/format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y="
+      },
+      {
+        "source": "srcset",
+        "reason": "http_404",
+        "url": "https://www.johnsfoodandwine.com/format&cs=origin&crop=focalpoint&fp-x=0.35&fp-y"
+      }
+    ]
+  },
+  {
+    "id": 290,
+    "name": "Ithaki Estiatorio",
+    "website": "https://www.ithakiestiatorio.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 291,
+    "name": "Milly's Pizza in the Pan",
+    "website": "https://www.millyspizzachi.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/80b56401d3dee3807980bc77ea492a71/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 292,
+    "name": "Fiya",
+    "website": "https://www.fiyarestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 293,
+    "name": "Anteprima",
+    "website": "https://www.anteprimachicago.net",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/5b04ad0596d455bcadf5a4f1/t/5fd6b0e172b1137fa9820141/1607905511773/Layer+1.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 294,
+    "name": "m.henry",
+    "website": "https://www.mhenry.net",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/1bf077_3122b95971714e6396bff5c542ecd396%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/1bf077_3122b95971714e6396bff5c542ecd396%7Emv2.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 749,
+      "h": 592
+    },
+    "tried": []
+  },
+  {
+    "id": 296,
+    "name": "Little Bad Wolf",
+    "website": "https://www.littlebadwolfchicago.com",
+    "ok": true,
+    "url": "https://www.littlebadwolfchicago.com/wp-content/uploads/2020/07/photo-lbw-1a.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1665,
+      "h": 1198
+    },
+    "tried": []
+  },
+  {
+    "id": 300,
+    "name": "A Tavola",
+    "website": "https://www.atavolachi.com",
+    "ok": true,
+    "url": "https://www.atavolachi.com/wp-content/uploads/la-terrazza-patio-5.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1024,
+      "h": 576
+    },
+    "tried": []
+  },
+  {
+    "id": 304,
+    "name": "Roux",
+    "website": "https://rouxdiner.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 306,
+    "name": "Brown Sugar Bakery",
+    "website": "https://www.brownsugarbakery.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_35741",
+        "url": "https://static.hugedomains.com/images/hdv3-img/og_hugedomains.png"
+      }
+    ]
+  },
+  {
+    "id": 310,
+    "name": "Z Bar",
+    "website": "https://www.zbarchicago.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/e6d64b0742241b48421ccc6fdc2a4b43/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 312,
+    "name": "Le Colonial",
+    "website": "https://www.lecolonialchicago.com",
+    "ok": true,
+    "url": "https://www.lecolonial.com/wp-content/uploads/2024/01/Chicago_InsetImage_Desktop@2x-scaled.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 2560,
+      "h": 1236
+    },
+    "tried": []
+  },
+  {
+    "id": 313,
+    "name": "Chicago Diner",
+    "website": "https://www.veggiediner.com",
+    "ok": true,
+    "url": "https://veggiediner.com/wp-content/uploads/2023/06/495442-overall-use-for-website-banner-scaled.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 2560,
+      "h": 1707
+    },
+    "tried": []
+  },
+  {
+    "id": 314,
+    "name": "Gene & Georgetti",
+    "website": "https://www.geneandgeorgetti.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "too_small_6125",
+        "url": "https://geneandgeorgetti.com/wp-content/uploads/2015/04/durpetti-events.png"
+      }
+    ]
+  },
+  {
+    "id": 315,
+    "name": "BLVD Steakhouse",
+    "website": "https://www.blvdchicago.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/f6ff01c46a03f776e4903e197ac135d5/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 316,
+    "name": "Bonyeon",
+    "website": "https://www.bonyeonchicago.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "too_small_29480",
+        "url": "https://static.wixstatic.com/media/576e31_91a01c7322f54eaba4da0d3d0968ada3~mv2.p"
+      }
+    ]
+  },
+  {
+    "id": 317,
+    "name": "Mastro's Steakhouse",
+    "website": "https://www.mastrosrestaurants.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/fe5b1106081916de4ffa19294c0812af/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 318,
+    "name": "Spacca Napoli Pizzeria",
+    "website": "https://www.spaccanapolipizzeria.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/66df109a79103c3b13692458/t/6852dc29601072514036d6a9/1750260777649/Asset+21%402x.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 319,
+    "name": "The Bad Apple",
+    "website": "https://www.badapplebar.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 320,
+    "name": "Artango Bar & Steakhouse",
+    "website": "https://www.artangosteakhouse.com/",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 325,
+    "name": "The Gage",
+    "website": "https://www.thegagechicago.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/5c62fca87a1fbd4531111740/t/5c634c10e5e5f06983e06895/1550011411768/gage_white.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 326,
+    "name": "Mercat a la Planxa",
+    "website": "https://www.mercatchicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_28989",
+        "url": "https://images.getbento.com/accounts/f9a136befe8d02961fef463bb3cff522/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 327,
+    "name": "Acanto",
+    "website": "https://www.acantochicago.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5d4d9954f83bdc0001fc516c/1713450515871-58PHX8NBJH4ZVKOQ9F7Y/Assorted+Italian+dishes+on+rustic+table%2C+glasses+of+wine.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_13172",
+        "url": "http://static1.squarespace.com/static/5d4d9954f83bdc0001fc516c/t/5db0b601093adc4"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_13172",
+        "url": "https://images.squarespace-cdn.com/content/v1/5d4d9954f83bdc0001fc516c/157186201"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_13172",
+        "url": "https://static1.squarespace.com/static/5d4d9954f83bdc0001fc516c/t/5db0b601093adc"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_13172",
+        "url": "https://images.squarespace-cdn.com/content/v1/5d4d9954f83bdc0001fc516c/157186201"
+      }
+    ]
+  },
+  {
+    "id": 328,
+    "name": "Connie's Pizza",
+    "website": "https://www.conniespizza.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "twitter:image",
+        "reason": "too_small_8322",
+        "url": "https://conniespizza.com/wp-content/uploads/2024/12/Group-106-Copy@1.5x.png"
+      }
+    ]
+  },
+  {
+    "id": 329,
+    "name": "Spoke & Bird",
+    "website": "https://www.spokeandbird.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 331,
+    "name": "Petite Edith",
+    "website": "https://petiteedith.com/",
+    "ok": true,
+    "url": "https://petiteedith.com/en/opengraph-image?66fbee4c09a189ac",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 630
+    },
+    "tried": []
+  },
+  {
+    "id": 334,
+    "name": "SuSu",
+    "website": "https://www.susuchicago.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar1.00_500x500",
+        "url": "https://static.wixstatic.com/media/35a8af_5afa9015f1064913b8a1f01084c5004a%7Emv2"
+      }
+    ]
+  },
+  {
+    "id": 343,
+    "name": "Qing Xiang Yuan Wicker Park",
+    "website": "https://qxydumpling.com/",
+    "ok": true,
+    "url": "https://i1.wp.com/qxydumpling.com/wp-content/uploads/2014/05/tru-studio-qxy_co-021.jpg?fit=1500%2C894&ssl=1",
+    "source": "inline-img",
+    "dims": {
+      "w": 1500,
+      "h": 894
+    },
+    "tried": []
+  },
+  {
+    "id": 346,
+    "name": "Pizza Friendly Pizza",
+    "website": "https://www.pizzafriendlypizza.com/",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/5efb73366b9e7821d83d9412/t/5efb76ce78add04b4823f04d/1768608864580/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_20926",
+        "url": "http://static1.squarespace.com/static/5efb73366b9e7821d83d9412/t/5efb76ce78add04"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_20926",
+        "url": "https://images.squarespace-cdn.com/content/v1/5efb73366b9e7821d83d9412/159353825"
+      }
+    ]
+  },
+  {
+    "id": 348,
+    "name": "Bungalow by Middle Brow",
+    "website": "https://www.middlebrowbeer.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/535f11d5e4b07fe21eb43574/t/593c0b6dbe65945a2e78e833/1497107312268/subscribe+image+website.JPG?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 354,
+    "name": "Hugo's Frog Bar",
+    "website": "https://hugosfrogbar.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "ar0.66_1702x2560",
+        "url": "https://hugosfrogbar.com/wp-content/uploads/2006_Hugo-256-scaled.jpg"
+      }
+    ]
+  },
+  {
+    "id": 355,
+    "name": "Swift & Sons Tavern",
+    "website": "https://www.swiftandsonstavern.com/",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5e4ac52484e6d079db56603c/d3794c75-ad4f-46f2-bae3-ca5b824f2ff5/04_25_Swift_Tavern_Food_Oysters_NP_50+%281%29.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5e4ac52484e6d079db56603c/t/67c638ae89f5546"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5e4ac52484e6d079db56603c/b1b7dcca-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_6830",
+        "url": "https://static1.squarespace.com/static/5e4ac52484e6d079db56603c/t/67c638ae89f554"
+      }
+    ]
+  },
+  {
+    "id": 393,
+    "name": "Michael Jordan's Steak House",
+    "website": "https://www.michaeljordansteakhouse.com/",
+    "ok": true,
+    "url": "https://www.michaeljordansteakhouse.com/perch/resources/fullspans/steaksmanship-desktop.webp",
+    "source": "inline-img",
+    "dims": {
+      "w": 2401,
+      "h": 1201
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_11054",
+        "url": "https://www.michaeljordansteakhouse.com/assets/img/base/facebook-profile.png"
+      }
+    ]
+  },
+  {
+    "id": 408,
+    "name": "Midōsuji",
+    "website": "https://www.midosujichicago.com/",
+    "ok": true,
+    "url": "https://cdn.prod.website-files.com/68a64a5c02f7d8b7f2d8c929/68ab6b8d15cfbe348dbf3652_07_25_Midosuji_Food_Jonah_Crab_Salad_with_Melon_NP_22.avif",
+    "source": "srcset",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 409,
+    "name": "Il Carciofo",
+    "website": "https://www.ilcarciofochicago.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/22434a7c78eeabc4d921f8b993a166c6/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 411,
+    "name": "The Radicle",
+    "website": "https://radiclechicago.com/",
+    "ok": true,
+    "url": "https://img1.wsimg.com/isteam/ip/00eab3d5-aa1e-418f-b85e-9bba50e7d426/DSCF7504.jpg",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 436,
+    "name": "Adalina",
+    "website": "https://www.adalinachicago.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_20055",
+        "url": "https://images.getbento.com/accounts/4b1252b9904727ceec168b95125ffcfc/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 442,
+    "name": "Avli River North",
+    "website": "https://www.avli.us/avli-river-north",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/69309f77b64105069c3e4c40/t/69c3451cd3c16e79913edd41/1774404892423/2025_Q4_ARN_FW+Menu+Tablespread-Test_00001.jpg?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 463,
+    "name": "Metric Coffee",
+    "website": "https://metriccoffee.com",
+    "ok": true,
+    "url": "https://cdn.shopify.com/s/files/1/0247/7125/files/metric_story_header_e94fe009-0ece-4b67-91a8-81c4893ab3ee.png?v=1620741965",
+    "source": "og:image",
+    "dims": {
+      "w": 2169,
+      "h": 1735
+    },
+    "tried": []
+  },
+  {
+    "id": 464,
+    "name": "Mr. Beef on Orleans",
+    "website": "https://theoriginalmrbeef.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_19186",
+        "url": "https://images.getbento.com/accounts/da517cd6cdb00c12335ad7cec3d3ea1b/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 465,
+    "name": "Hawksmoor Chicago",
+    "website": "https://thehawksmoor.com/locations/chicago",
+    "ok": true,
+    "url": "https://thehawksmoor.com/us/wp-content/uploads/sites/2/build-the-ultimate-hawksmoor-meal.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1279,
+      "h": 853
+    },
+    "tried": []
+  },
+  {
+    "id": 466,
+    "name": "Taxim",
+    "website": "https://taximchicago.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 467,
+    "name": "Pompette",
+    "website": "https://pompettechicago.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/62e6e99085438d69c7c2449e/5d6f770f-5a70-468b-89ba-31ecda621faf/Pompette_Wine-Bottle-Spill.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/62e6e99085438d69c7c2449e/t/640c05132d57376"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/62e6e99085438d69c7c2449e/3c0137f8-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/62e6e99085438d69c7c2449e/3c0137f8-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/62e6e99085438d69c7c2449e/abf8aef3-"
+      }
+    ]
+  },
+  {
+    "id": 468,
+    "name": "Carnitas Uruapan",
+    "website": "https://carnitasuruapan.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 469,
+    "name": "Hopleaf Bar",
+    "website": "https://hopleaf.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 470,
+    "name": "Big Jones",
+    "website": "https://bigjones.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_35741",
+        "url": "https://static.hugedomains.com/images/hdv3-img/og_hugedomains.png"
+      }
+    ]
+  },
+  {
+    "id": 471,
+    "name": "Bundoo Khan",
+    "website": "https://bundookhanchicago.com",
+    "ok": true,
+    "url": "http://www.bundookhanchicago.com/wp-content/uploads/2021/11/homepage.jpg",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 472,
+    "name": "Annapurna Indian",
+    "website": "https://eatannapurna.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 473,
+    "name": "Sun Wah BBQ",
+    "website": "https://sunwahbbq.com",
+    "ok": true,
+    "url": "https://sunwahbbq.com/wp-content/uploads/2018/05/headerbeijingbao.jpg",
+    "source": "srcset",
+    "dims": {
+      "w": 2000,
+      "h": 1200
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_7592",
+        "url": "https://sunwahbbq.com/wp-content/uploads/2018/05/roastducklarge-150x150.jpg"
+      }
+    ]
+  },
+  {
+    "id": 475,
+    "name": "Greek Islands Restaurant",
+    "website": "https://greekislands.net",
+    "ok": true,
+    "url": "https://s3.amazonaws.com/p.assets.lssdev.com/client_images/1/7/5/e/9/4321158/DSC_0143.jpg",
+    "source": "jsonld-image",
+    "dims": {
+      "w": 3000,
+      "h": 1605
+    },
+    "tried": []
+  },
+  {
+    "id": 476,
+    "name": "Athena Restaurant",
+    "website": "https://athenachicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/9dca1a20f3409f83d8b305fcc41a98aa/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 477,
+    "name": "Artopolis Bakery",
+    "website": "https://artopolischicago.com",
+    "ok": true,
+    "url": "https://artopolischicago.com/wp-content/uploads/2025/10/order_back.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1382,
+      "h": 949
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://artopolischicago.com/wp-content/uploads/2025/10/marker-icon.png"
+      }
+    ]
+  },
+  {
+    "id": 478,
+    "name": "Tacotlan",
+    "website": "https://tacotlan.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 479,
+    "name": "Ponce Restaurant",
+    "website": "https://poncerestaurant.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 480,
+    "name": "Lagunitas Taproom",
+    "website": "https://lagunitas.com/taproom/chicago",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.75_1052x1400",
+        "url": "https://lagunitas.com/wp-content/uploads/2021/05/img03.jpg"
+      }
+    ]
+  },
+  {
+    "id": 481,
+    "name": "Han 202",
+    "website": "https://han202.com",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/6ee7c4_4b473961f86342edb55d7e7fd2a7f680~mv2.jpg/v1/fill/w_2500,h_2001,al_c/6ee7c4_4b473961f86342edb55d7e7fd2a7f680~mv2.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 2500,
+      "h": 2001
+    },
+    "tried": []
+  },
+  {
+    "id": 483,
+    "name": "Medici on 57th",
+    "website": "https://medici57.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5eb04541dac8570b6f0dcdb5/1588646224666-UHCTU4X3RAUWMWFT980K/Medici57_photos_030713_0176_website.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_22578",
+        "url": "http://static1.squarespace.com/static/5eb04541dac8570b6f0dcdb5/t/5eb04be3c0e81e7"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_22578",
+        "url": "https://images.squarespace-cdn.com/content/v1/5eb04541dac8570b6f0dcdb5/158861206"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_22578",
+        "url": "https://static1.squarespace.com/static/5eb04541dac8570b6f0dcdb5/t/5eb04be3c0e81e"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_22578",
+        "url": "https://images.squarespace-cdn.com/content/v1/5eb04541dac8570b6f0dcdb5/158861206"
+      }
+    ]
+  },
+  {
+    "id": 484,
+    "name": "Valois Restaurant",
+    "website": "https://valoisrestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "not_image:",
+        "url": "https://valoisrestaurant.com/wp-content/uploads/2025/10/P1100633-scaled.webp"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://valoisrestaurant.com/wp-content/uploads/2025/10/logo.webp"
+      },
+      {
+        "source": "inline-img",
+        "reason": "not_image:",
+        "url": "https://valoisrestaurant.com/wp-content/uploads/2025/10/P1100633-1024x575.webp"
+      },
+      {
+        "source": "inline-img",
+        "reason": "not_image:",
+        "url": "https://valoisrestaurant.com/wp-content/uploads/2025/10/P1100461-819x1024.webp"
+      },
+      {
+        "source": "inline-img",
+        "reason": "not_image:",
+        "url": "https://valoisrestaurant.com/wp-content/uploads/2025/10/P1100404-819x1024.webp"
+      }
+    ]
+  },
+  {
+    "id": 491,
+    "name": "Tuscany on Taylor",
+    "website": "https://www.stefanirestaurants.com/tuscany",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://stefanirestaurants.com/wp-content/themes/pssr/img/logo.png"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_1387",
+        "url": "https://secure.gravatar.com/avatar/a6f2d2f63c98a7cda5c6ac7cc4e9f13d4f9e03f568ad4"
+      }
+    ]
+  },
+  {
+    "id": 492,
+    "name": "Rosebud on Taylor",
+    "website": "https://rosebudrestaurants.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://rosebudrestaurants.com/wp-content/uploads/rosebud-logo-corp-lg-1024x196."
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.82_900x1100",
+        "url": "https://rosebudrestaurants.com/wp-content/uploads/elementor/thumbs/1-2-1-scaled-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.82_900x1100",
+        "url": "https://rosebudrestaurants.com/wp-content/uploads/elementor/thumbs/1-48-2-scaled"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.82_900x1100",
+        "url": "https://rosebudrestaurants.com/wp-content/uploads/elementor/thumbs/1-126-2-scale"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.82_900x1100",
+        "url": "https://rosebudrestaurants.com/wp-content/uploads/elementor/thumbs/alexdana_5-sc"
+      }
+    ]
+  },
+  {
+    "id": 493,
+    "name": "Chez Joel",
+    "website": "https://chezjoelbistro.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 501,
+    "name": "Cork & Kerry",
+    "website": "https://corkandkerrybeverly.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar3.43_1920x560",
+        "url": "https://corkandkerrybeverly.com/wp-content/uploads/2017/08/home-banner-2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 502,
+    "name": "Franconello's",
+    "website": "https://www.franconellochicago.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "dims_851x315",
+        "url": "https://www.franconellochicago.com/wp-content/uploads/2020/07/fb-cover-image.jpg"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_68",
+        "url": "https://www.franconellochicago.com/wp-content/plugins/revslider/public/assets/as"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.09_686x630",
+        "url": "https://www.franconellochicago.com/wp-content/uploads/2020/07/best-beverly-chica"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_624x624",
+        "url": "https://www.franconellochicago.com/wp-content/uploads/2020/07/chicken-giardinier"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_624x624",
+        "url": "https://www.franconellochicago.com/wp-content/uploads/2020/07/chicago-happy-hour"
+      }
+    ]
+  },
+  {
+    "id": 506,
+    "name": "Bronzeville Soul",
+    "website": "https://www.bronzevillesoulrestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/5e108a59121bf6e36a2a07ce67ac5d18/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 511,
+    "name": "Eleven City Diner",
+    "website": "https://www.elevencitydiner.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_13954",
+        "url": "https://images.getbento.com/accounts/e4cebc6d981183a344388b260f480e73/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 515,
+    "name": "Twin Anchors Restaurant & Tavern",
+    "website": "https://www.twinanchorsribs.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_24698",
+        "url": "https://www.twinanchorsribs.com/wp-content/uploads/cropped-Gift-card.jpg"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://www.twinanchorsribs.com/wp-content/uploads/Anchors_Black_LOGO.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.06_822x778",
+        "url": "https://www.twinanchorsribs.com/wp-content/uploads/rack-of-ribs.jpg"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.75_1000x1333",
+        "url": "https://www.twinanchorsribs.com/wp-content/uploads/sauce.jpg"
+      }
+    ]
+  },
+  {
+    "id": 518,
+    "name": "Dovetail Brewery",
+    "website": "https://dovetailbrewery.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/64f10bad04dcd91aaa9a021e/1693518770986-YUFWVJQ2XPEHM9RA1FIL/david-kolsch-tray.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/64f10bad04dcd91aaa9a021e/t/654bfc38179f0a7"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/64f10bad04dcd91aaa9a021e/169351877"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/64f10bad04dcd91aaa9a021e/169351877"
+      }
+    ]
+  },
+  {
+    "id": 519,
+    "name": "Half Acre Balmoral Taproom",
+    "website": "https://halfacrebeer.com",
+    "ok": true,
+    "url": "https://i0.wp.com/halfacrebeer.com/wp-content/uploads/2026/01/HalfAcreLight_Header-scaled.jpg?fit=2560%2C1920&#038;ssl=1",
+    "source": "inline-img",
+    "dims": {
+      "w": 2560,
+      "h": 1920
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.91_1948x2134",
+        "url": "https://i0.wp.com/halfacrebeer.com/wp-content/uploads/2021/08/android-chrome-512"
+      }
+    ]
+  },
+  {
+    "id": 528,
+    "name": "Demera Ethiopian",
+    "website": "https://demerachicago.com",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/625527f786474f46124ba0f7/t/628deebc505742451100a58f/1768067888919/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/625527f786474f46124ba0f7/t/628deebc5057424"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/625527f786474f46124ba0f7/24625147-"
+      }
+    ]
+  },
+  {
+    "id": 532,
+    "name": "Soul Veg City",
+    "website": "https://soulgoodchicago.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 534,
+    "name": "Lalo's on Maxwell",
+    "website": "https://lalosonmaxwell.com",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/595fa3bb6a496373132cb9b5/t/5ed6c9b25366727e03256157/1757948629669/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/595fa3bb6a496373132cb9b5/t/5ed6c9b25366727"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/595fa3bb6a496373132cb9b5/159113464"
+      }
+    ]
+  },
+  {
+    "id": 535,
+    "name": "Lexington Betty Smokehouse",
+    "website": "https://www.lexingtonbetty.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/63697ad000fa6d4b98d86cef/8f899b61-b1d7-4de4-92bf-de13e3b43c04/LBSH+-+WEB+BANNERS+LARGE.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_2010",
+        "url": "http://static1.squarespace.com/static/63697ad000fa6d4b98d86cef/t/63697f32966bc63"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_2010",
+        "url": "https://images.squarespace-cdn.com/content/v1/63697ad000fa6d4b98d86cef/4a21b607-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_2010",
+        "url": "https://static1.squarespace.com/static/63697ad000fa6d4b98d86cef/t/63697f32966bc6"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_2010",
+        "url": "https://images.squarespace-cdn.com/content/v1/63697ad000fa6d4b98d86cef/4a21b607-"
+      }
+    ]
+  },
+  {
+    "id": 537,
+    "name": "Begyle Brewing Company",
+    "website": "https://begylebrewing.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/576d9d01f7e0abe5caf59706/1531164782928-A587GZVQ4CWUNZ15CCN6/Home.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 542,
+    "name": "Kasama Chicago",
+    "website": "https://kasamachicago.com",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/5e9cccb8a8875e0b81a1e5ed/t/5e9cccd5f493453494d989be/1775848035636/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5e9cccb8a8875e0b81a1e5ed/t/5e9cccf645f0865"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5e9cccb8a8875e0b81a1e5ed/158733435"
+      }
+    ]
+  },
+  {
+    "id": 12523,
+    "name": "Dēliz",
+    "website": "https://www.delizitalian.com",
+    "ok": true,
+    "url": "https://cdn.prod.website-files.com/6893500a1f59a5daad0b0c26/6943853e8bebbad0888cc6f6_Deliz-002.webp",
+    "source": "inline-img",
+    "dims": {
+      "w": 1621,
+      "h": 1081
+    },
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "ar0.86_1025x1185",
+        "url": "https://cdn.prod.website-files.com/6893500a1f59a5daad0b0c26/68d9934e714736e29593"
+      }
+    ]
+  },
+  {
+    "id": 12524,
+    "name": "Oliver's",
+    "website": "https://www.eatatolivers.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/6631606efb37ae3e1dd0c694/91ff6b19-a437-4cf7-9853-71e23bc73144/Supper+Club+Design+%26+Branding+Deck+%281%29.pdf+%282%29.png",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_33516",
+        "url": "http://static1.squarespace.com/static/6631606efb37ae3e1dd0c694/t/66317d4fde19017"
+      },
+      {
+        "source": "link-image_src",
+        "reason": "too_small_33516",
+        "url": "https://static1.squarespace.com/static/6631606efb37ae3e1dd0c694/t/66317d4fde1901"
+      }
+    ]
+  },
+  {
+    "id": 12526,
+    "name": "Itoko",
+    "website": "https://www.itokochicago.com/",
+    "ok": true,
+    "url": "https://cdn.prod.website-files.com/62b47ce03bb6c30afbb80eba/64ef846ad63f8e986c014519_Itoko_Lakeview_Chicago%20.webp",
+    "source": "srcset",
+    "dims": {
+      "w": 2930,
+      "h": 2344
+    },
+    "tried": []
+  },
+  {
+    "id": 12527,
+    "name": "The Oakville Grill & Cellar",
+    "website": "https://www.theoakville.com/",
+    "ok": true,
+    "url": "https://storage.googleapis.com/theoakville_bucket/wp-content/uploads/2f3da74f-2024-02-06_oak_vibe-check_1126.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1600,
+      "h": 1066
+    },
+    "tried": []
+  },
+  {
+    "id": 12528,
+    "name": "El Che Steakhouse & Bar",
+    "website": "https://www.elchechicago.com/",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/6729225aee342654e7e8c3da/t/672939152899f937c7a6092e/1730754837237/el-che-social-sharing.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 12529,
+    "name": "Sushi-San",
+    "website": "https://www.sushisanrestaurant.com/",
+    "ok": true,
+    "url": "https://storage.googleapis.com/sushisan2022_bucket/wp-content/uploads/40dd2191-sushisan_san-sets_megatron_placement_2.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1500,
+      "h": 1000
+    },
+    "tried": []
+  },
+  {
+    "id": 12530,
+    "name": "Manny's Cafeteria & Delicatessen",
+    "website": "https://www.mannysdeli.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_46610",
+        "url": "https://images.getbento.com/accounts/62b28e30e764b69dd585c11d2aa1dbc7/media/Ao82"
+      }
+    ]
+  },
+  {
+    "id": 12531,
+    "name": "Rose Mary",
+    "website": "https://www.rosemarychicago.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_8043",
+        "url": "https://images.getbento.com/accounts/187977c791e40a8af4dfec3c4783b8d5/media/imag"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_13223",
+        "url": "https://images.getbento.com/accounts/187977c791e40a8af4dfec3c4783b8d5/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 12532,
+    "name": "Kyōten",
+    "website": "http://kyotenchicago.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_11290",
+        "url": "https://storage.googleapis.com/wzsitethumbnails/site-49110603/800x500.jpg"
+      }
+    ]
+  },
+  {
+    "id": 12533,
+    "name": "Hermosa Restaurant",
+    "website": "https://www.hermosarestaurant.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5865999046c3c4cd44fa3516/t/5865a03a5016e17"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5865999046c3c4cd44fa3516/148305516"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_29400",
+        "url": "https://static1.squarespace.com/static/5865999046c3c4cd44fa3516/t/5865a03a5016e1"
+      }
+    ]
+  },
+  {
+    "id": 12534,
+    "name": "Asador Bastian",
+    "website": "https://www.asadorbastian.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/b108bab4dd035336e490ddca32abbb27/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 12535,
+    "name": "Del Sur Bakery",
+    "website": "https://www.delsurchicago.com/",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/661342c9a60ac079deef4e79/t/673128ab310c452ac0087ac5/1751057357420/_Primary+-+Pandan.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 12536,
+    "name": "Tre Dita",
+    "website": "https://www.treditachicago.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 12537,
+    "name": "Elina's",
+    "website": "https://elinaschicago.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/60fb38e2f2aa0242cad0ba4a/f0b40305-acb2-43b6-b94e-350806cc2bd8/Elina%27s+Final-43.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_24092",
+        "url": "http://static1.squarespace.com/static/60fb38e2f2aa0242cad0ba4a/t/60fb4df48c5c732"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_4718",
+        "url": "https://images.squarespace-cdn.com/content/v1/60fb38e2f2aa0242cad0ba4a/d785fe10-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_4718",
+        "url": "https://images.squarespace-cdn.com/content/v1/60fb38e2f2aa0242cad0ba4a/d785fe10-"
+      }
+    ]
+  },
+  {
+    "id": 12538,
+    "name": "Ever",
+    "website": "https://www.ever-restaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/c04c509cbbfbd8a1ef3526b7609b1cb7/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 12539,
+    "name": "Gino's East",
+    "website": "https://www.ginoseast.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/664532bc932d355a278a9374/ad032ce0-5c70-4aeb-80ee-b2572c221c48/4-web-or-mls-162+E+Superior+St%2C+Chicago%2C+IL+60611+-+8+2024-08-05+04_22_26+%281%29+-+Copy.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/664532bc932d355a278a9374/t/6650f3afd642650"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/664532bc932d355a278a9374/4aab56a1-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_39994",
+        "url": "https://static1.squarespace.com/static/664532bc932d355a278a9374/t/6650f3afd64265"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "http_404",
+        "url": "https://www.ginoseast.com/og-image.jpg"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/664532bc932d355a278a9374/4aab56a1-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_15994",
+        "url": "https://images.squarespace-cdn.com/content/v1/664532bc932d355a278a9374/0abc08ed-"
+      }
+    ]
+  },
+  {
+    "id": 12540,
+    "name": "Art of Pizza",
+    "website": "http://www.artofpizzachicago.com",
+    "ok": false,
+    "reason": "fetch_http_502"
+  },
+  {
+    "id": 12541,
+    "name": "Bartoli's Pizzeria",
+    "website": "https://www.bartolispizzeria.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5df7a45d5415114eaf5e9663/1581960734351-JP2DBH7OCI7S3QMQGIC0/Bartoli%27s-craveable+pizza+sauce.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_12170",
+        "url": "http://static1.squarespace.com/static/5df7a45d5415114eaf5e9663/t/5e2734214547191"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_12170",
+        "url": "https://images.squarespace-cdn.com/content/v1/5df7a45d5415114eaf5e9663/157962755"
+      }
+    ]
+  },
+  {
+    "id": 12542,
+    "name": "Chicago Cut Steakhouse",
+    "website": "https://www.chicagocutsteakhouse.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 12543,
+    "name": "Sparrow",
+    "website": "https://www.sparrowchicago.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/6185459fa15ffb7c51e9e836/29b7d115-9527-455c-a07a-fe431a5f42c1/242593197_1571461396523323_3512650724257002956_n.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_46254",
+        "url": "http://static1.squarespace.com/static/6185459fa15ffb7c51e9e836/t/6216916b6177da4"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_10496",
+        "url": "https://images.squarespace-cdn.com/content/v1/6185459fa15ffb7c51e9e836/5273be40-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_46254",
+        "url": "https://images.squarespace-cdn.com/content/v1/6185459fa15ffb7c51e9e836/5273be40-"
+      }
+    ]
+  },
+  {
+    "id": 12544,
+    "name": "Ann Sather",
+    "website": "http://www.annsather.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 12545,
+    "name": "Kanela Breakfast Club",
+    "website": "https://kanelabreakfastclub.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 12546,
+    "name": "Minyoli",
+    "website": "https://www.minyolichicago.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/65bb0792106f540be6435899/1c4ee56d-9bba-4ec7-bb68-350079bca417/Juancun.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_22398",
+        "url": "http://static1.squarespace.com/static/65bb0792106f540be6435899/t/660d94ec8b7d931"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_22398",
+        "url": "https://images.squarespace-cdn.com/content/v1/65bb0792106f540be6435899/8424de8c-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_22398",
+        "url": "https://static1.squarespace.com/static/65bb0792106f540be6435899/t/660d94ec8b7d93"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_22398",
+        "url": "https://images.squarespace-cdn.com/content/v1/65bb0792106f540be6435899/8424de8c-"
+      }
+    ]
+  },
+  {
+    "id": 12547,
+    "name": "Blue Door Kitchen & Garden",
+    "website": "https://bluedoorkitchenchicago.com",
+    "ok": true,
+    "url": "https://octane.cdn.ing/api/v1/images/transform?url=https://cdn.ing/assets/files/record/198244/x86x1pivizz2cg4sjjofhrb9n9v3&amp;w=1200&amp;h=630&amp;q=85&amp;f=webp&amp;fit=cover&amp;apiKey=os-2358118d-806b-4c90-a110-ab7dfb5e2753",
+    "source": "og:image",
+    "dims": {
+      "w": 1201,
+      "h": 631
+    },
+    "tried": []
+  },
+  {
+    "id": 12548,
+    "name": "The Hand & The Eye",
+    "website": "https://www.thehandandtheeye.com",
+    "ok": true,
+    "url": "https://cdn.prod.website-files.com/69a5c4514098699866bac5f2/69a5c4514098699866bac653_54dd69ecb9b10170ea53decd45bcabce_hm-hero-hq.webp",
+    "source": "inline-img",
+    "dims": {
+      "w": 3201,
+      "h": 1823
+    },
+    "tried": []
+  },
+  {
+    "id": 12549,
+    "name": "International Museum of Surgical Science",
+    "website": "https://imss.org",
+    "ok": true,
+    "url": "https://i0.wp.com/imss.org/wp-content/uploads/2015/10/photo-1_exterior_imss.jpeg?w=2250&amp;ssl=1",
+    "source": "srcset",
+    "dims": {
+      "w": 2250,
+      "h": 1500
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar1.00_511x511",
+        "url": "https://imss.org/wp-content/uploads/2024/06/Best-Chicago-Musuem-Surgical-Science"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar2.50_2560x1024",
+        "url": "https://i0.wp.com/imss.org/wp-content/uploads/2025/10/IMSS-CHICAGO-Museum-Black-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_11333",
+        "url": "https://i0.wp.com/imss.org/wp-content/uploads/2024/04/imssHD.png?fit=301%2C105&a"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_139",
+        "url": "https://i0.wp.com/imss.org/wp-content/themes/woodmart/images/lazy.png?resize=768"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_247",
+        "url": "https://i0.wp.com/imss.org/wp-content/themes/woodmart/images/lazy.png?resize=160"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar2.50_2560x1024",
+        "url": "https://i0.wp.com/imss.org/wp-content/uploads/2025/10/IMSS-CHICAGO-Museum-Black-"
+      }
+    ]
+  },
+  {
+    "id": 12552,
+    "name": "The 606 (Bloomingdale Trail)",
+    "website": "https://www.the606.org",
+    "ok": true,
+    "url": "https://www.the606.org/wp-content/uploads/2015/06/share-image.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 627
+    },
+    "tried": []
+  },
+  {
+    "id": 12553,
+    "name": "Polish Museum of America",
+    "website": "https://www.polishmuseumofamerica.org",
+    "ok": true,
+    "url": "https://www.polishmuseumofamerica.org/wp-content/uploads/2016/02/about-PMA-1.png",
+    "source": "inline-img",
+    "dims": {
+      "w": 600,
+      "h": 400
+    },
+    "tried": [
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_10012",
+        "url": "https://www.polishmuseumofamerica.org/wp-content/uploads/2016/12/226-retina.png"
+      }
+    ]
+  },
+  {
+    "id": 12564,
+    "name": "STK Steakhouse",
+    "website": "https://stksteakhouse.com/en-us/location/chicago/",
+    "ok": true,
+    "url": "https://stksteakhouse.com/wp-content/uploads/2025/05/STK-Chicago-Carpet-Overview_HighRes-4-scaled-1-1024x683.webp",
+    "source": "og:image",
+    "dims": {
+      "w": 1025,
+      "h": 684
+    },
+    "tried": []
+  },
+  {
+    "id": 12565,
+    "name": "TAO Chicago",
+    "website": "https://taogroup.com/venues/tao-chicago/",
+    "ok": true,
+    "url": "https://taogroup.com/wp-content/uploads/2026/04/260300_TAOLA_TAO-MothersDay_SocialPost2026_1200x1000-e1775768266132-970x774.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 970,
+      "h": 774
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "dims_400x500",
+        "url": "https://taogroup.com/wp-content/uploads/2019/09/Chicago-TAO_Restaurant.jpg"
+      }
+    ]
+  },
+  {
+    "id": 12566,
+    "name": "Shake Shack",
+    "website": "https://shakeshack.com/location/river-north-chicago-il",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 12567,
+    "name": "Sweetgreen",
+    "website": "https://www.sweetgreen.com/locations/fulton-market/",
+    "ok": true,
+    "url": "https://images.ctfassets.net/eum7w7yri3zr/MmB021mZ580TXeSEZIWlC/7cf1750aab4e8d17b41689c220e2dac6/39017_1.jpg",
+    "source": "jsonld-image",
+    "dims": {
+      "w": 1080,
+      "h": 725
+    },
+    "tried": []
+  },
+  {
+    "id": 12568,
+    "name": "CAVA",
+    "website": "https://cava.com/locations/Streeterville-IL",
+    "ok": false,
+    "reason": "fetch_http_403"
+  }
+]
