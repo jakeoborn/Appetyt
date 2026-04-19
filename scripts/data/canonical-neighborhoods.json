@@ -136,7 +136,7 @@
   "Houston": [
     {
       "name": "Heights",
-      "count": 74
+      "count": 76
     },
     {
       "name": "Montrose",
@@ -179,15 +179,15 @@
       "count": 15
     },
     {
+      "name": "Rice Village",
+      "count": 14
+    },
+    {
       "name": "The Woodlands",
       "count": 14
     },
     {
       "name": "Katy",
-      "count": 13
-    },
-    {
-      "name": "Rice Village",
       "count": 13
     },
     {
@@ -262,11 +262,11 @@
   "Chicago": [
     {
       "name": "River North",
-      "count": 52
+      "count": 53
     },
     {
       "name": "West Loop / Fulton Market",
-      "count": 50
+      "count": 51
     },
     {
       "name": "Logan Square",
@@ -317,12 +317,12 @@
       "count": 12
     },
     {
-      "name": "Bucktown",
+      "name": "Streeterville",
       "count": 12
     },
     {
-      "name": "Streeterville",
-      "count": 11
+      "name": "Bucktown",
+      "count": 12
     },
     {
       "name": "Lincoln Square",
@@ -480,11 +480,11 @@
     },
     {
       "name": "Downtown",
-      "count": 63
+      "count": 64
     },
     {
       "name": "South Lamar",
-      "count": 40
+      "count": 41
     },
     {
       "name": "North Austin",
@@ -492,7 +492,7 @@
     },
     {
       "name": "South Congress",
-      "count": 36
+      "count": 37
     },
     {
       "name": "South Austin",
@@ -848,6 +848,10 @@
     },
     {
       "name": "The Strip (The Mirage)",
+      "count": 1
+    },
+    {
+      "name": "The Strip (New York-New York)",
       "count": 1
     }
   ],
