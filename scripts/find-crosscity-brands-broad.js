@@ -52,6 +52,7 @@ const cities = {
   'Dallas': 'const DALLAS_DATA','Houston': 'const HOUSTON_DATA','Austin': 'const AUSTIN_DATA',
   'Chicago': 'const CHICAGO_DATA','Salt Lake City': 'const SLC_DATA','Las Vegas': 'const LV_DATA',
   'Seattle': 'const SEATTLE_DATA','New York': 'const NYC_DATA',
+  'Los Angeles': 'const LA_DATA','Phoenix': 'const PHX_DATA',
 };
 
 const brandMap = {};
