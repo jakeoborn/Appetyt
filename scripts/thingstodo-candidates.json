@@ -1,0 +1,5152 @@
+{
+  "Dallas": {
+    "totalAttractions": 47,
+    "existingInThingsToDo": [
+      "Reunion Tower GeO-Deck",
+      "Dallas Museum of Art",
+      "AT&T Stadium",
+      "Klyde Warren Park",
+      "Sixth Floor Museum",
+      "McKinney Avenue Trolley",
+      "White Rock Lake",
+      "Dallas Arboretum"
+    ],
+    "candidateCount": 39,
+    "candidates": [
+      {
+        "id": 9171,
+        "name": "Bishop Arts District",
+        "cuisine": "Landmark / Historic District",
+        "neighborhood": "Bishop Arts",
+        "score": 93,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Historic",
+          "Shopping"
+        ],
+        "address": "W 7th St & Bishop Ave, Dallas, TX 75208",
+        "website": "",
+        "description": "Walkable six-block Oak Cliff district with 60+ locally owned shops, restaurants, and galleries — Dallas’ most concentrated collection of ind"
+      },
+      {
+        "id": 305,
+        "name": "Cosm Dallas",
+        "cuisine": "Immersive Entertainment / Sports Bar",
+        "neighborhood": "Frisco",
+        "score": 92,
+        "tags": [
+          "Eat & Play",
+          "Sports",
+          "Cocktails",
+          "Date Night",
+          "Celebrations",
+          "Viral",
+          "Late Night",
+          "Rooftop"
+        ],
+        "address": "5776 Grandscape Blvd, The Colony TX 75056",
+        "website": "https://www.cosm.com/dallas",
+        "description": "Immersive entertainment venue at Grandscape in The Colony, featuring an 87-foot LED 'Shared Reality' dome and in-seat food and drink service"
+      },
+      {
+        "id": 260,
+        "name": "Alamo Drafthouse",
+        "cuisine": "Dine-In Cinema / Bar",
+        "neighborhood": "Cedars",
+        "score": 91,
+        "tags": [
+          "Eat & Play",
+          "Date Night",
+          "Cocktails",
+          "Casual",
+          "Local Favorites",
+          "Late Night",
+          "Brunch"
+        ],
+        "address": "1005 Botham Jean Blvd, Dallas TX 75215",
+        "website": "https://drafthouse.com/dallas",
+        "description": "The legendary Austin-born dine-in cinema empire's Dallas flagship in the Cedars. No talking, no phones, no kids during R-rated films -- and "
+      },
+      {
+        "id": 9168,
+        "name": "Highland Park Village",
+        "cuisine": "Landmark / Shopping District",
+        "neighborhood": "Park Cities",
+        "score": 91,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Historic",
+          "Shopping"
+        ],
+        "address": "47 Highland Park Village, Dallas, TX 75205",
+        "website": "",
+        "description": "The first self-contained shopping center in America (1931) and a National Historic Landmark. Spanish Colonial Revival architecture and luxur"
+      },
+      {
+        "id": 9169,
+        "name": "Meadows Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Park Cities",
+        "score": 91,
+        "tags": [
+          "Museum",
+          "Arts",
+          "Tourist Attraction",
+          "Landmark"
+        ],
+        "address": "5900 Bishop Blvd, Dallas, TX 75205",
+        "website": "https://www.meadowsmuseumdallas.org",
+        "description": "One of the largest and most comprehensive collections of Spanish art outside Spain, on the SMU campus. Works by Velázquez, Goya, Picasso, an"
+      },
+      {
+        "id": 9166,
+        "name": "Katy Trail (Knox Entrance)",
+        "cuisine": "Park / Trail",
+        "neighborhood": "Knox-Henderson",
+        "score": 90,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Outdoor",
+          "Landmark",
+          "Family Friendly"
+        ],
+        "address": "Abbott Ave & Katy Trail, Dallas, TX 75205",
+        "website": "",
+        "description": "3.5-mile urban rail-to-trail between Uptown and Knox Street. The Knox-Henderson trailhead at Abbott Avenue is the neighborhood’s busiest, su"
+      },
+      {
+        "id": 9182,
+        "name": "Margaret Hunt Hill Bridge",
+        "cuisine": "Landmark",
+        "neighborhood": "Trinity Groves",
+        "score": 90,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Iconic",
+          "Photo Op",
+          "Historic"
+        ],
+        "address": "Singleton Blvd & Beckley Ave, Dallas, TX 75212",
+        "website": "",
+        "description": "Santiago Calatrava-designed 400-foot-tall cable-stayed bridge over the Trinity River, opened 2012. The most photographed architectural icon "
+      },
+      {
+        "id": 9165,
+        "name": "Granada Theater",
+        "cuisine": "Theater / Landmark",
+        "neighborhood": "Lower Greenville",
+        "score": 89,
+        "tags": [
+          "Theater",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Live Music"
+        ],
+        "address": "3524 Greenville Ave, Dallas, TX 75206",
+        "website": "https://granadatheater.com",
+        "description": "Restored 1946 single-screen Art Deco movie palace turned flagship Lower Greenville live-music venue. Hosts 200+ touring acts a year; Sundown"
+      },
+      {
+        "id": 9170,
+        "name": "George W. Bush Presidential Center",
+        "cuisine": "Museum",
+        "neighborhood": "Park Cities",
+        "score": 89,
+        "tags": [
+          "Museum",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "2943 SMU Blvd, Dallas, TX 75205",
+        "website": "https://www.bushcenter.org",
+        "description": "Presidential library and museum on the SMU campus, designed by Robert A.M. Stern. Permanent Decision Points Theater, a full-scale Oval Offic"
+      },
+      {
+        "id": 252,
+        "name": "Topgolf Dallas",
+        "cuisine": "Golf Entertainment / Sports Bar",
+        "neighborhood": "North Dallas",
+        "score": 88,
+        "tags": [
+          "Eat & Play",
+          "Sports",
+          "Casual",
+          "Happy Hour",
+          "Patio",
+          "Celebrations",
+          "Date Night",
+          "Dog Friendly",
+          "Late Night"
+        ],
+        "address": "8787 Park Ln, Dallas TX 75231",
+        "website": "https://topgolf.com/us/dallas/",
+        "description": "Topgolf's flagship Dallas location on Park Lane is a sprawling multi-level driving range with tech-tracked balls, climate-controlled bays, f"
+      },
+      {
+        "id": 259,
+        "name": "Cinépolis Luxury Cinemas",
+        "cuisine": "Luxury Dine-In Cinema",
+        "neighborhood": "Victory Park",
+        "score": 88,
+        "tags": [
+          "Eat & Play",
+          "Date Night",
+          "Cocktails",
+          "Casual",
+          "Celebrations",
+          "Hotel",
+          "Late Night"
+        ],
+        "address": "2365 Victory Park Ln, Dallas, TX 75219",
+        "website": "https://www.cinepolis.com",
+        "description": "Mexico's premier luxury cinema chain making its Dallas splash in Victory Park steps from American Airlines Center. Fully reclining leather s"
+      },
+      {
+        "id": 562,
+        "name": "Toyota Music Factory",
+        "cuisine": "Entertainment Complex",
+        "neighborhood": "Irving / Las Colinas",
+        "score": 88,
+        "tags": [
+          "Live Music",
+          "Nightlife",
+          "Bar",
+          "Eat & Play"
+        ],
+        "address": "300 W Las Colinas Blvd, Irving, TX 75039",
+        "website": "https://www.toyotamusicfactory.com",
+        "description": "17-acre, 410,000-square-foot entertainment complex in Las Colinas developed by ARK Group and the City of Irving. Anchored by The Pavilion at"
+      },
+      {
+        "id": 9060,
+        "name": "Perot Museum of Nature and Science",
+        "cuisine": "Museum",
+        "neighborhood": "Downtown Dallas",
+        "score": 88,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Family",
+          "Interactive"
+        ],
+        "address": "2201 N Field St, Dallas, TX 75201",
+        "website": "https://www.perotmuseum.org",
+        "description": "Thom Mayne-designed science museum in downtown with 11 permanent exhibit halls covering dinosaurs, space, sports, and engineering. The hands"
+      },
+      {
+        "id": 9064,
+        "name": "Nasher Sculpture Center",
+        "cuisine": "Art Museum",
+        "neighborhood": "Arts District",
+        "score": 88,
+        "tags": [
+          "Museum",
+          "Art",
+          "Tourist Attraction",
+          "Outdoor"
+        ],
+        "address": "2001 Flora St, Dallas, TX 75201",
+        "website": "https://www.nashersculpturecenter.org",
+        "description": "Renzo Piano-designed museum housing one of the finest collections of modern and contemporary sculpture in the world. The outdoor garden is a"
+      },
+      {
+        "id": 9181,
+        "name": "Dallas Zoo",
+        "cuisine": "Zoo / Tourist Attraction",
+        "neighborhood": "Oak Cliff",
+        "score": 88,
+        "tags": [
+          "Zoo",
+          "Tourist Attraction",
+          "Landmark",
+          "Family Friendly"
+        ],
+        "address": "650 S R L Thornton Fwy, Dallas, TX 75203",
+        "website": "",
+        "description": "Oldest and largest zoological park in Texas (1888), on 106 acres just south of downtown. The Giants of the Savanna habitat co-houses elephan"
+      },
+      {
+        "id": 261,
+        "name": "Violet Crown Dallas",
+        "cuisine": "Dine-In Cinema / Café",
+        "neighborhood": "West Village",
+        "score": 87,
+        "tags": [
+          "Eat & Play",
+          "Date Night",
+          "Cocktails",
+          "Casual",
+          "Local Favorites",
+          "Brunch",
+          "Patio"
+        ],
+        "address": "3699 McKinney Ave, Dallas, TX 75204",
+        "website": "https://www.violetcrown.com",
+        "description": "Austin-born boutique dine-in cinema that took over the former Magnolia Theater at West Village in December 2022. Five fully renovated audito"
+      },
+      {
+        "id": 9066,
+        "name": "Crow Museum of Asian Art",
+        "cuisine": "Art Museum",
+        "neighborhood": "Arts District",
+        "score": 87,
+        "tags": [
+          "Museum",
+          "Art",
+          "Tourist Attraction",
+          "Free"
+        ],
+        "address": "2010 Flora St, Dallas, TX 75201",
+        "website": "https://www.crowmuseum.org",
+        "description": "Free museum at 2010 Flora Street in the Dallas Arts District, opened in December 1998 by Trammell and Margaret Crow. One of the finest Asian"
+      },
+      {
+        "id": 9172,
+        "name": "The Kessler Theater",
+        "cuisine": "Theater / Landmark",
+        "neighborhood": "Bishop Arts",
+        "score": 87,
+        "tags": [
+          "Theater",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Live Music"
+        ],
+        "address": "1230 W Davis St, Dallas, TX 75208",
+        "website": "https://thekessler.org",
+        "description": "Restored 1941 single-screen movie theater on West Davis Street, reborn in 2010 as a 500-capacity live-music venue. Americana, indie, and jaz"
+      },
+      {
+        "id": 254,
+        "name": "Electric Shuffle",
+        "cuisine": "Bar / Shuffleboard Entertainment",
+        "neighborhood": "Deep Ellum",
+        "score": 86,
+        "tags": [
+          "Eat & Play",
+          "Cocktails",
+          "Date Night",
+          "Celebrations",
+          "Late Night",
+          "Viral",
+          "Happy Hour",
+          "Family Friendly"
+        ],
+        "address": "2615 Elm St, Dallas TX 75226",
+        "website": "https://electricshuffle.com/us/dallas",
+        "description": "First U.S. location of the London-born tech-shuffleboard bar concept (originated in Canary Wharf 2015). A 15,000-sq-ft two-floor Deep Ellum "
+      },
+      {
+        "id": 286,
+        "name": "Angelika Film Center",
+        "cuisine": "Arthouse Cinema / Café",
+        "neighborhood": "East Dallas / Lakewood",
+        "score": 86,
+        "tags": [
+          "Eat & Play",
+          "Date Night",
+          "Casual",
+          "Local Favorites",
+          "Bakery/Coffee",
+          "Happy Hour",
+          "Brunch"
+        ],
+        "address": "5321 E Mockingbird Ln, Dallas TX 75206",
+        "website": "https://www.angelikafilmcenter.com",
+        "description": "Dallas' premier arthouse and independent cinema at Mockingbird Station, running since 2001. Eight screens showing indie films, foreign langu"
+      },
+      {
+        "id": 9065,
+        "name": "Dallas Zoo",
+        "cuisine": "Zoo / Attraction",
+        "neighborhood": "Cedars",
+        "score": 86,
+        "tags": [
+          "Tourist Attraction",
+          "Family",
+          "Outdoor",
+          "Zoo"
+        ],
+        "address": "650 S R.L. Thornton Fwy, Dallas, TX 75203",
+        "website": "https://www.dallaszoo.com",
+        "description": "106-acre zoo in South Dallas -- the largest in Texas -- with a flagship Giants of the Savanna habitat for elephants, giraffes, zebras, and l"
+      },
+      {
+        "id": 285,
+        "name": "Immersive Gamebox",
+        "cuisine": "Immersive Gaming / Bar",
+        "neighborhood": "Deep Ellum",
+        "score": 85,
+        "tags": [
+          "Eat & Play",
+          "Date Night",
+          "Celebrations",
+          "Cocktails",
+          "Casual",
+          "Viral"
+        ],
+        "address": "2525 Elm St Suite 110, Dallas, TX 75226",
+        "website": "https://www.immersivegamebox.com",
+        "description": "High-tech interactive gaming pods in Deep Ellum where groups of 2-6 compete using projection mapping, touch screens, 3D motion tracking, and"
+      },
+      {
+        "id": 459,
+        "name": "The Golf Ranch",
+        "cuisine": "Golf Entertainment",
+        "neighborhood": "Richardson",
+        "score": 85,
+        "tags": [
+          "Eat & Play",
+          "Sports",
+          "Casual",
+          "Family Friendly",
+          "Date Night"
+        ],
+        "address": "3570 Waterview Pkwy, Richardson TX 75080",
+        "website": "https://www.golfranch.com/location/richardson",
+        "description": "High-tech driving range with 53 covered bays featuring Toptracer technology, a lighted par-3 course, putting greens, and a grass range. Food"
+      },
+      {
+        "id": 491,
+        "name": "Bishop Cidercade",
+        "cuisine": "Cidery / Arcade Bar",
+        "neighborhood": "Design District",
+        "score": 85,
+        "tags": [
+          "Casual",
+          "Patio",
+          "Dog Friendly",
+          "Eat & Play",
+          "Local Favorites",
+          "Date Night"
+        ],
+        "address": "2777 Irving Blvd, Dallas TX 75207",
+        "website": "https://www.cidercade.com",
+        "description": "From Bishop Cider Co., Dallas' first cidery -- a massive 15,000 sq ft arcade bar with 100+ free-to-play vintage and modern arcade games, 40+"
+      },
+      {
+        "id": 9174,
+        "name": "Addison Circle Park",
+        "cuisine": "Park",
+        "neighborhood": "Addison",
+        "score": 85,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Landmark",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "4970 Addison Cir, Addison, TX 75001",
+        "website": "",
+        "description": "10-acre urban park anchoring downtown Addison. Water gardens, public sculpture, and the host site of Kaboom Town (one of the largest Fourth-"
+      },
+      {
+        "id": 9178,
+        "name": "Legacy West",
+        "cuisine": "Landmark / Shopping District",
+        "neighborhood": "Plano",
+        "score": 85,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Shopping"
+        ],
+        "address": "5905 Legacy Dr, Plano, TX 75024",
+        "website": "",
+        "description": "Mixed-use live-work-play development on Legacy Drive — anchored by the global HQs of Toyota, JPMorgan, and Liberty Mutual. Upscale dining on"
+      },
+      {
+        "id": 257,
+        "name": "BowlGames Dallas",
+        "cuisine": "Entertainment Bar / PinToss",
+        "neighborhood": "Design District",
+        "score": 84,
+        "tags": [
+          "Eat & Play",
+          "Cocktails",
+          "Date Night",
+          "Celebrations",
+          "Happy Hour",
+          "Sports",
+          "Late Night"
+        ],
+        "address": "139 Turtle Creek Blvd Suite 120, Dallas, TX 75207",
+        "website": "https://bowlgames.us",
+        "description": "Design District entertainment bar from the team behind next-door Bowlounge, featuring their signature PinToss game -- knocking over bowling "
+      },
+      {
+        "id": 9175,
+        "name": "Cavanaugh Flight Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Addison",
+        "score": 84,
+        "tags": [
+          "Museum",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Family Friendly"
+        ],
+        "address": "4572 Claire Chennault Dr, Addison, TX 75001",
+        "website": "https://cavflight.org",
+        "description": "Private aviation museum at Addison Airport with a collection of airworthy World War II and Vietnam-era aircraft. Hands-on cockpit tours and "
+      },
+      {
+        "id": 9164,
+        "name": "Reverchon Park",
+        "cuisine": "Park",
+        "neighborhood": "Uptown",
+        "score": 83,
+        "tags": [
+          "Park",
+          "Outdoor",
+          "Landmark"
+        ],
+        "address": "3505 Maple Ave, Dallas, TX 75219",
+        "website": "",
+        "description": "46-acre park at the western edge of Uptown along the Trinity Strand Trail, named for pioneer botanist Julien Reverchon. Mature oaks, a baseb"
+      },
+      {
+        "id": 9176,
+        "name": "Harwood District",
+        "cuisine": "Landmark / Master-Planned District",
+        "neighborhood": "Harwood District",
+        "score": 83,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Shopping"
+        ],
+        "address": "Harwood St & Woodall Rodgers, Dallas, TX 75201",
+        "website": "https://harwooddistrict.com",
+        "description": "19-city-block master-planned neighborhood developed by Harwood International, bridging Uptown and Downtown. European-inspired architecture, "
+      },
+      {
+        "id": 537,
+        "name": "Roundup Saloon",
+        "cuisine": "Bar / Entertainment",
+        "neighborhood": "Oak Lawn",
+        "score": 82,
+        "tags": [
+          "Bar",
+          "LGBTQ",
+          "Live Music"
+        ],
+        "address": "3912 Cedar Springs Rd, Dallas, TX 75219",
+        "website": "https://www.roundupsaloon.com",
+        "description": "Iconic Dallas LGBTQ+ country western bar on Cedar Springs since 1980. Line dancing lessons, live music, two-stepping, and a welcoming atmosp"
+      },
+      {
+        "id": 9173,
+        "name": "Tyler Station",
+        "cuisine": "Landmark / Market",
+        "neighborhood": "Bishop Arts",
+        "score": 82,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Shopping",
+          "Arts"
+        ],
+        "address": "1300 S Polk St, Dallas, TX 75224",
+        "website": "",
+        "description": "Adaptive-reuse warehouse complex at the Tyler/Vernon DART station, home to 20+ small makers, restaurants, and Oak Cliff Brewing. Monthly mar"
+      },
+      {
+        "id": 9179,
+        "name": "The Shops at Legacy",
+        "cuisine": "Landmark / Shopping District",
+        "neighborhood": "Plano",
+        "score": 82,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Shopping"
+        ],
+        "address": "5741 Legacy Dr, Plano, TX 75024",
+        "website": "",
+        "description": "Walkable European-village-style outdoor retail and dining destination, the original Legacy development (2001). Cobblestone streets, boutique"
+      },
+      {
+        "id": 500,
+        "name": "Medieval Times",
+        "cuisine": "Dinner Theater",
+        "neighborhood": "Design District",
+        "score": 80,
+        "tags": [
+          "Eat & Play",
+          "group dining",
+          "Family Friendly"
+        ],
+        "address": "2021 N Stemmons Fwy, Dallas TX 75207",
+        "website": "https://www.medievaltimes.com/dallas",
+        "description": "A two-hour medieval tournament with jousting, sword fights, and Pure Spanish Horses — plus a four-course feast eaten with your hands. Root f"
+      },
+      {
+        "id": 9144,
+        "name": "Texas Live!",
+        "cuisine": "American / Entertainment",
+        "neighborhood": "Arlington / Mid-Cities",
+        "score": 80,
+        "tags": [
+          "Sports Bar",
+          "Entertainment",
+          "Casual",
+          "Group Friendly"
+        ],
+        "address": "1650 E Randol Mill Rd, Arlington, TX 76011",
+        "website": "https://texas-live.com",
+        "description": "The 200,000-square-foot dining and entertainment complex wedged between Globe Life Field and AT&T Stadium, Texas Live! is the pre- and post-"
+      },
+      {
+        "id": 9167,
+        "name": "Cole Park",
+        "cuisine": "Park",
+        "neighborhood": "Knox-Henderson",
+        "score": 80,
+        "tags": [
+          "Park",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "4400 Bowser Ave, Dallas, TX 75219",
+        "website": "",
+        "description": "Six-acre residential park between Knox-Henderson and Uptown, with mature oaks, a playground, basketball courts, and the historic Cole Park P"
+      },
+      {
+        "id": 9177,
+        "name": "Saint Ann Court",
+        "cuisine": "Landmark / Historic Site",
+        "neighborhood": "Harwood District",
+        "score": 80,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "2501 N Harwood St, Dallas, TX 75201",
+        "website": "",
+        "description": "Restored 1927 Spanish Colonial Revival school building at the corner of Harry Hines and Olive. Now anchors the Saint Ann Restaurant & Bar an"
+      },
+      {
+        "id": 9180,
+        "name": "Kidd Springs Park",
+        "cuisine": "Park",
+        "neighborhood": "Oak Cliff",
+        "score": 80,
+        "tags": [
+          "Park",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "711 W Canty St, Dallas, TX 75208",
+        "website": "",
+        "description": "Historic 16-acre Oak Cliff park with a Japanese-style garden, pond, community rec center, and wooded walking trails. A Dallas park-system la"
+      },
+      {
+        "id": 502,
+        "name": "Pocket Sandwich Theatre",
+        "cuisine": "Dinner Theater",
+        "neighborhood": "Carrollton",
+        "score": 78,
+        "tags": [
+          "Eat & Play",
+          "BYOB",
+          "group dining"
+        ],
+        "address": "1104 S Elm St, Carrollton, TX 75006",
+        "website": "https://www.pocketsandwich.com",
+        "description": "41+ years of audience-interactive dinner theater now in Historic Downtown Carrollton. Melodramas where you boo the villain and throw popcorn"
+      }
+    ]
+  },
+  "Houston": {
+    "totalAttractions": 31,
+    "existingInThingsToDo": [
+      "Space Center Houston",
+      "Museum District",
+      "The Menil Collection",
+      "Hermann Park",
+      "Buffalo Bayou Park",
+      "Houston Zoo",
+      "Discovery Green",
+      "Toyota Center + NRG Stadium"
+    ],
+    "candidateCount": 26,
+    "candidates": [
+      {
+        "id": 7583,
+        "name": "Memorial Park",
+        "cuisine": "Park",
+        "neighborhood": "Memorial",
+        "score": 93,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Landmark",
+          "Outdoor",
+          "Iconic",
+          "Family Friendly"
+        ],
+        "address": "6501 Memorial Dr, Houston, TX 77007",
+        "website": "https://www.memorialparkconservancy.org",
+        "description": "One of the largest urban parks in the United States (1,500+ acres). Memorial Park Conservancy’s 2022 Land Bridge reunited the park over Memo"
+      },
+      {
+        "id": 7055,
+        "name": "White Oak Music Hall",
+        "cuisine": "Live Music Venue",
+        "neighborhood": "Heights",
+        "score": 89,
+        "tags": [
+          "Live Music",
+          "Entertainment",
+          "Local Favorites",
+          "Patio",
+          "Rooftop"
+        ],
+        "address": "2915 N Main St, Houston, TX 77009",
+        "website": "https://www.whiteoakmusichall.com",
+        "description": "Houston premier indie music venue with indoor and outdoor stages, a massive lawn, and a rooftop bar. The outdoor shows in spring and fall ar"
+      },
+      {
+        "id": 7256,
+        "name": "Rothko Chapel",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Montrose",
+        "score": 89,
+        "tags": [
+          "Tourist Attraction",
+          "Art",
+          "Free",
+          "Landmark"
+        ],
+        "address": "3900 Yupon St, Houston, TX 77006",
+        "website": "https://www.rothkochapel.org",
+        "description": "Non-denominational chapel housing 14 monumental paintings by Mark Rothko. A meditative space for contemplation that transcends religion and "
+      },
+      {
+        "id": 7579,
+        "name": "The River Oaks Theatre",
+        "cuisine": "Theater / Cinema",
+        "neighborhood": "River Oaks",
+        "score": 89,
+        "tags": [
+          "Theater",
+          "Cinema",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Iconic"
+        ],
+        "address": "2009 W Gray St, Houston, TX 77019",
+        "website": "https://www.theriveroakstheatre.com",
+        "description": "Historic 1939 Art Deco cinema on West Gray Street, saved from closure by Culinary Khancepts and reopened 2024 as a dine-in theater. Independ"
+      },
+      {
+        "id": 7581,
+        "name": "Levy Park",
+        "cuisine": "Park",
+        "neighborhood": "Upper Kirby",
+        "score": 88,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Landmark",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "3801 Eastside St, Houston, TX 77098",
+        "website": "https://levyparkhouston.org",
+        "description": "Six-acre reimagined neighborhood park that reopened 2017 with a treehouse, performance pavilion, dog park, and year-round programming. The c"
+      },
+      {
+        "id": 7582,
+        "name": "Shell Energy Stadium",
+        "cuisine": "Stadium / Landmark",
+        "neighborhood": "EaDo",
+        "score": 88,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Entertainment",
+          "Iconic",
+          "Family Friendly"
+        ],
+        "address": "2200 Texas Ave, Houston, TX 77003",
+        "website": "https://www.houstondynamofc.com/shell-energy-stadium",
+        "description": "22,000-seat soccer-specific stadium in East Downtown, home to the Houston Dynamo (MLS) and Houston Dash (NWSL). Opened 2012; the orange seat"
+      },
+      {
+        "id": 7033,
+        "name": "San Jacinto Monument",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "La Porte",
+        "score": 87,
+        "tags": [
+          "Tourist Attraction",
+          "Landmark",
+          "Historic"
+        ],
+        "address": "1 Monument Cir, La Porte, TX 77571",
+        "website": "https://www.sanjacinto-museum.org",
+        "description": "The tallest monument column in the world -- 15 feet taller than the Washington Monument -- marking the site of the decisive 1836 battle for "
+      },
+      {
+        "id": 7571,
+        "name": "The Heights Theater",
+        "cuisine": "Theater / Landmark",
+        "neighborhood": "Heights",
+        "score": 87,
+        "tags": [
+          "Theater",
+          "Landmark",
+          "Historic",
+          "Arts",
+          "Tourist Attraction"
+        ],
+        "address": "339 W 19th St, Houston, TX 77008",
+        "website": "https://theheightstheater.com",
+        "description": "Built in the 1920s and restored in 2016 as a 19th-Street live music venue. Intimate standing-room room that has hosted acts from Whitney Ros"
+      },
+      {
+        "id": 7257,
+        "name": "Children's Museum Houston",
+        "cuisine": "Museum",
+        "neighborhood": "Museum District",
+        "score": 86,
+        "tags": [
+          "Museum",
+          "Family",
+          "Tourist Attraction",
+          "Interactive"
+        ],
+        "address": "1500 Binz St, Houston, TX 77004",
+        "website": "https://www.cmhouston.org",
+        "description": "Top-ranked children's museum with interactive exhibits on science, culture, and creativity. The Kidtropolis city where kids run the show, Fl"
+      },
+      {
+        "id": 7572,
+        "name": "White Oak Music Hall",
+        "cuisine": "Concert Venue / Landmark",
+        "neighborhood": "Heights",
+        "score": 86,
+        "tags": [
+          "Theater",
+          "Landmark",
+          "Arts",
+          "Tourist Attraction",
+          "Live Music"
+        ],
+        "address": "2915 N Main St, Houston, TX 77009",
+        "website": "",
+        "description": "Indoor/outdoor concert complex on the edge of the Heights. Two indoor stages plus a lawn amphitheater — one of Houston’s most versatile inde"
+      },
+      {
+        "id": 7584,
+        "name": "Houston Arboretum & Nature Center",
+        "cuisine": "Park / Nature Preserve",
+        "neighborhood": "Memorial",
+        "score": 86,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "4501 Woodway Dr, Houston, TX 77024",
+        "website": "https://houstonarboretum.org",
+        "description": "155-acre nonprofit nature sanctuary on the edge of Memorial Park. Five miles of trails across restored prairie, wetlands, and forest; the Na"
+      },
+      {
+        "id": 7589,
+        "name": "The Woodlands Waterway",
+        "cuisine": "Landmark / Trail",
+        "neighborhood": "The Woodlands",
+        "score": 86,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "Woodlands Waterway, The Woodlands, TX 77380",
+        "website": "",
+        "description": "1.25-mile waterway with a cruiser trolley and paths connecting Market Street, the Cynthia Woods Mitchell Pavilion, and Town Green. The Woodl"
+      },
+      {
+        "id": 7057,
+        "name": "The Improv Houston",
+        "cuisine": "Comedy Club",
+        "neighborhood": "Galleria",
+        "score": 85,
+        "tags": [
+          "Entertainment",
+          "Comedy Club",
+          "Date Night"
+        ],
+        "address": "7620 Katy Fwy, Houston, TX 77024",
+        "website": "https://www.improv.com/houston",
+        "description": "Houston outpost of the national comedy chain booking touring headliners and local rising talent. The showroom is intimate enough that every "
+      },
+      {
+        "id": 7258,
+        "name": "Gerald D. Hines Waterwall Park",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Galleria",
+        "score": 85,
+        "tags": [
+          "Tourist Attraction",
+          "Park",
+          "Free",
+          "Photo Op"
+        ],
+        "address": "2800 Post Oak Blvd, Houston, TX 77056",
+        "website": "https://www.uptown-houston.com/experience/parks/waterwall-park",
+        "description": "64-foot semi-circular waterfall that's one of Houston's most iconic photo spots. 11,000 gallons of water cascade down the curved wall every "
+      },
+      {
+        "id": 7577,
+        "name": "Hong Kong City Mall",
+        "cuisine": "Landmark / Market",
+        "neighborhood": "Chinatown / Bellaire",
+        "score": 85,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Shopping",
+          "Market"
+        ],
+        "address": "11205 Bellaire Blvd, Houston, TX 77072",
+        "website": "https://hkcitymall.website",
+        "description": "The anchor of Houston’s New Chinatown on Bellaire Boulevard. 300,000-square-foot indoor mall with Asian grocery, bakeries, bubble tea, banqu"
+      },
+      {
+        "id": 7585,
+        "name": "Typhoon Texas Waterpark",
+        "cuisine": "Water Park / Tourist Attraction",
+        "neighborhood": "Katy",
+        "score": 85,
+        "tags": [
+          "Tourist Attraction",
+          "Landmark",
+          "Family Friendly",
+          "Outdoor"
+        ],
+        "address": "555 Katy Fort Bend Rd, Katy, TX 77494",
+        "website": "",
+        "description": "25-acre family waterpark on the Katy Mills property — 30+ slides, a wave pool, a lazy river, and a dedicated kids area. The Houston-area’s b"
+      },
+      {
+        "id": 7588,
+        "name": "Market Street The Woodlands",
+        "cuisine": "Landmark / Shopping District",
+        "neighborhood": "The Woodlands",
+        "score": 85,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Shopping",
+          "Family Friendly"
+        ],
+        "address": "9595 Six Pines Dr, The Woodlands, TX 77380",
+        "website": "",
+        "description": "Walkable open-air lifestyle center anchored by Tommy Bahama Restaurant, dozens of boutiques, and a central green that hosts concerts and a s"
+      },
+      {
+        "id": 7254,
+        "name": "Downtown Aquarium",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Downtown",
+        "score": 84,
+        "tags": [
+          "Tourist Attraction",
+          "Family",
+          "Aquarium"
+        ],
+        "address": "410 Bagby St, Houston, TX 77002",
+        "website": "https://www.aquariumrestaurants.com/downtownaquariumhouston",
+        "description": "300+ species of aquatic life in the heart of downtown Houston. Ride the train through the Shark Tunnel, feed stingrays, and see white tigers"
+      },
+      {
+        "id": 7574,
+        "name": "Midtown Park",
+        "cuisine": "Park",
+        "neighborhood": "Midtown",
+        "score": 84,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Tourist Attraction",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "2811 Travis St, Houston, TX 77006",
+        "website": "",
+        "description": "Midtown’s signature urban oasis on Travis Street — a block-sized civic park with a performance pavilion, dog park, seasonal programming, and"
+      },
+      {
+        "id": 7587,
+        "name": "Rice Village",
+        "cuisine": "Landmark / Shopping District",
+        "neighborhood": "Rice Village",
+        "score": 84,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Shopping",
+          "Historic"
+        ],
+        "address": "2500 Rice Blvd, Houston, TX 77005",
+        "website": "",
+        "description": "One of Houston’s oldest open-air shopping districts (1938), a 16-block grid of boutiques, restaurants, and bars next to Rice University. Fre"
+      },
+      {
+        "id": 7573,
+        "name": "Heights Hike and Bike Trail",
+        "cuisine": "Park / Trail",
+        "neighborhood": "Heights",
+        "score": 82,
+        "tags": [
+          "Park",
+          "Outdoor",
+          "Landmark",
+          "Family Friendly"
+        ],
+        "address": "Nicholson St & W 7th St, Houston, TX 77007",
+        "website": "",
+        "description": "Converted MKT rail corridor that runs the length of the Heights, connecting to the White Oak Bayou and Downtown trails. The neighborhood’s c"
+      },
+      {
+        "id": 7578,
+        "name": "Teo Chew Temple",
+        "cuisine": "Landmark / Historic Site",
+        "neighborhood": "Chinatown / Bellaire",
+        "score": 82,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Historic"
+        ],
+        "address": "10599 Turtlewood Ct, Houston, TX 77072",
+        "website": "",
+        "description": "Traditional Chinese temple on Turtlewood Drive with ornate carvings, incense courtyards, and a signature red-and-gold pavilion. Hosts Lunar "
+      },
+      {
+        "id": 7580,
+        "name": "River Oaks Shopping Center",
+        "cuisine": "Landmark / Shopping District",
+        "neighborhood": "River Oaks",
+        "score": 82,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Shopping",
+          "Tourist Attraction"
+        ],
+        "address": "W Gray St & S Shepherd Dr, Houston, TX 77019",
+        "website": "",
+        "description": "The oldest shopping center in Texas (1937), occupying the triangle between West Gray, Shepherd, and the Avalon. Art Deco storefronts, Avalon"
+      },
+      {
+        "id": 7575,
+        "name": "Bagby Park",
+        "cuisine": "Park",
+        "neighborhood": "Midtown",
+        "score": 80,
+        "tags": [
+          "Park",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "508 Gray St, Houston, TX 77002",
+        "website": "",
+        "description": "Neighborhood lifestyle park between Bagby Street restaurants and residential Midtown. Shaded seating, a shade sail-covered lawn, and free Wi"
+      },
+      {
+        "id": 7586,
+        "name": "Katy Mills",
+        "cuisine": "Landmark / Shopping District",
+        "neighborhood": "Katy",
+        "score": 80,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Shopping",
+          "Family Friendly"
+        ],
+        "address": "5000 Katy Mills Cir, Katy, TX 77494",
+        "website": "",
+        "description": "1.3-million-square-foot outlet mall on the west side of Houston — the region’s outlet anchor, with 175+ stores plus an AMC theater, American"
+      },
+      {
+        "id": 7576,
+        "name": "Baldwin Park",
+        "cuisine": "Park",
+        "neighborhood": "Midtown",
+        "score": 79,
+        "tags": [
+          "Park",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "1701 Elgin St, Houston, TX 77004",
+        "website": "",
+        "description": "Compact Midtown green space along Crawford Street with urban forestry plantings under a long-running management plan. Mature live oaks and a"
+      }
+    ]
+  },
+  "Austin": {
+    "totalAttractions": 35,
+    "existingInThingsToDo": [
+      "Congress Ave Bridge Bats",
+      "Texas State Capitol",
+      "Barton Springs Pool",
+      "Zilker Park",
+      "South Congress (SoCo)",
+      "Blanton Museum of Art",
+      "Lady Bird Lake Trail",
+      "Mount Bonnell"
+    ],
+    "candidateCount": 29,
+    "candidates": [
+      {
+        "id": 5169,
+        "name": "Congress Avenue Bridge Bat Colony",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Downtown",
+        "score": 89,
+        "tags": [
+          "Tourist Attraction",
+          "Free",
+          "Iconic",
+          "Outdoor"
+        ],
+        "address": "Congress Ave Bridge, Austin, TX 78704",
+        "website": "https://www.austintexas.org/things-to-do/outdoors/bat-watching/",
+        "description": "1.5 million Mexican free-tail bats emerge from under the Congress Avenue Bridge at sunset from March through November — the largest urban ba"
+      },
+      {
+        "id": 5233,
+        "name": "Barton Creek Greenbelt",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "South Austin",
+        "score": 89,
+        "tags": [
+          "Tourist Attraction",
+          "Outdoor",
+          "Hiking",
+          "Swimming",
+          "Free"
+        ],
+        "address": "3755 Capital of TX Hwy, Austin, TX 78704",
+        "website": "https://www.austintexas.gov/department/barton-creek-greenbelt",
+        "description": "7.9 miles of trails through limestone canyons with swimming holes, rock climbing, and biking. Sculpture Falls and Twin Falls are popular. Fr"
+      },
+      {
+        "id": 5584,
+        "name": "Alamo Drafthouse South Lamar",
+        "cuisine": "Theater / Cinema",
+        "neighborhood": "South Lamar",
+        "score": 89,
+        "tags": [
+          "Theater",
+          "Cinema",
+          "Tourist Attraction",
+          "Landmark",
+          "Date Night"
+        ],
+        "address": "1120 S Lamar Blvd, Austin, TX 78704",
+        "website": "https://drafthouse.com/austin/theater/south-lamar",
+        "description": "Flagship South Austin location of the Austin-born Alamo Drafthouse chain. Nine screens, a craft cocktail bar (The Highball), and the strict-"
+      },
+      {
+        "id": 5084,
+        "name": "South Congress Avenue (SoCo)",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "South Congress",
+        "score": 88,
+        "tags": [
+          "Tourist Attraction",
+          "Shopping",
+          "Free",
+          "Iconic",
+          "Photo Op"
+        ],
+        "address": "South Congress Ave, Austin, TX 78704",
+        "website": "https://www.southcongress.com",
+        "description": "Austin's most famous street for shopping, dining, and people-watching. Vintage shops, local boutiques, food trucks, and the iconic 'I love y"
+      },
+      {
+        "id": 5232,
+        "name": "ACL Live at The Moody Theater",
+        "cuisine": "Entertainment",
+        "neighborhood": "Downtown",
+        "score": 88,
+        "tags": [
+          "Entertainment",
+          "Live Music",
+          "Iconic"
+        ],
+        "address": "310 W Willie Nelson Blvd, Austin, TX 78701",
+        "website": "https://www.acl-live.com",
+        "description": "Home of Austin City Limits PBS show. The 2,750-seat theater hosts tapings and major touring acts. Bucket-list Austin music."
+      },
+      {
+        "id": 5587,
+        "name": "Rainey Street Historic District",
+        "cuisine": "Landmark / Historic District",
+        "neighborhood": "Rainey Street",
+        "score": 88,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Nightlife"
+        ],
+        "address": "Rainey St & Driskill St, Austin, TX 78701",
+        "website": "",
+        "description": "A block of early-20th-century bungalows on the south edge of Downtown, converted since 2008 into one of Austin’s most concentrated bar and r"
+      },
+      {
+        "id": 5133,
+        "name": "Antone's Nightclub",
+        "cuisine": "Live Music Venue / Blues",
+        "neighborhood": "Downtown",
+        "score": 87,
+        "tags": [
+          "Live Music",
+          "Entertainment",
+          "Blues",
+          "Jazz Club",
+          "Iconic"
+        ],
+        "address": "305 E 5th St, Austin, TX 78701",
+        "website": "https://www.antonesnightclub.com",
+        "description": "Austin's legendary blues club since 1975 — the 'Home of the Blues.' Stevie Ray Vaughan, Muddy Waters, and B.B. King all played here. Now on "
+      },
+      {
+        "id": 5167,
+        "name": "Bullock Texas State History Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Downtown",
+        "score": 87,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Family",
+          "Historic"
+        ],
+        "address": "1800 Congress Ave, Austin, TX 78701",
+        "website": "https://www.thestoryoftexas.com",
+        "description": "Three floors of Texas history from prehistoric times to the Space Age, anchored by a 34-foot bronze star at the entrance. Austin's only IMAX"
+      },
+      {
+        "id": 5170,
+        "name": "LBJ Presidential Library",
+        "cuisine": "Museum",
+        "neighborhood": "Downtown",
+        "score": 87,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Historic",
+          "Free"
+        ],
+        "address": "2313 Red River St, Austin, TX 78705",
+        "website": "https://www.lbjlibrary.org",
+        "description": "Free museum on the UT campus documenting the life and presidency of Lyndon B. Johnson — the 36th president who shaped modern America. The Ov"
+      },
+      {
+        "id": 5079,
+        "name": "Stubb's Bar-B-Q",
+        "cuisine": "BBQ / Live Music Venue",
+        "neighborhood": "Red River",
+        "score": 86,
+        "tags": [
+          "BBQ",
+          "Live Music",
+          "Bar",
+          "Entertainment",
+          "Iconic"
+        ],
+        "address": "801 Red River St, Austin, TX 78701",
+        "website": "https://www.stubbsaustin.com",
+        "description": "Iconic Austin BBQ and live music venue on Red River. The outdoor amphitheater hosts major touring acts, while the indoor bar serves BBQ and "
+      },
+      {
+        "id": 5114,
+        "name": "Mohawk",
+        "cuisine": "Live Music Venue",
+        "neighborhood": "Red River",
+        "score": 86,
+        "tags": [
+          "Live Music",
+          "Entertainment",
+          "Bar",
+          "Late Night",
+          "Iconic",
+          "Rooftop",
+          "Patio"
+        ],
+        "address": "912 Red River St, Austin, TX 78701",
+        "website": "https://www.mohawkaustin.com",
+        "description": "Red River Cultural District music venue with indoor and outdoor stages hosting indie, punk, and electronic acts. The rooftop patio has downt"
+      },
+      {
+        "id": 5168,
+        "name": "HOPE Outdoor Gallery",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "South Austin",
+        "score": 86,
+        "tags": [
+          "Tourist Attraction",
+          "Art",
+          "Free",
+          "Photo Op",
+          "Outdoor"
+        ],
+        "address": "5404 Dalton Ln, Austin, TX 78721",
+        "website": "https://www.hopeoutdoorgallery.com",
+        "description": "Austin's iconic graffiti park reopened in late 2025 at a massive 18-acre site near the airport. Spray-painted walls, giant murals, and layer"
+      },
+      {
+        "id": 5234,
+        "name": "Austin FC at Q2 Stadium",
+        "cuisine": "Sports Venue",
+        "neighborhood": "North Austin",
+        "score": 86,
+        "tags": [
+          "Sports",
+          "Entertainment",
+          "Tourist Attraction"
+        ],
+        "address": "10414 McKalla Pl, Austin, TX 78758",
+        "website": "https://www.austinfc.com",
+        "description": "Austin MLS soccer at purpose-built Q2 Stadium. Electric atmosphere with Verde Wall supporters. Game days are a new Austin tradition."
+      },
+      {
+        "id": 5236,
+        "name": "UT Tower & Campus",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Downtown",
+        "score": 86,
+        "tags": [
+          "Tourist Attraction",
+          "Historic",
+          "Free",
+          "Landmark"
+        ],
+        "address": "110 Inner Campus Dr, Austin, TX 78705",
+        "website": "https://www.utexas.edu",
+        "description": "Iconic UT Tower lit orange after Longhorn victories. Free campus tours, observation deck (reservations required), and 40 Acres of historic a"
+      },
+      {
+        "id": 5581,
+        "name": "Texas State Cemetery",
+        "cuisine": "Landmark / Historic Site",
+        "neighborhood": "East Austin",
+        "score": 86,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Outdoor"
+        ],
+        "address": "909 Navasota St, Austin, TX 78702",
+        "website": "",
+        "description": "Final resting place of Texas’ heroes, governors, and cultural figures including Stephen F. Austin. 22 acres of rolling oaks and monuments in"
+      },
+      {
+        "id": 5585,
+        "name": "Zach Theatre",
+        "cuisine": "Theater / Performing Arts",
+        "neighborhood": "South Lamar",
+        "score": 86,
+        "tags": [
+          "Theater",
+          "Arts",
+          "Landmark",
+          "Tourist Attraction"
+        ],
+        "address": "1510 Toomey Rd, Austin, TX 78704",
+        "website": "https://zachtheatre.org",
+        "description": "Austin’s oldest regional theater (founded 1932), on a six-acre campus at Lamar Boulevard and Riverside Drive. Three stages host Broadway-cal"
+      },
+      {
+        "id": 5588,
+        "name": "Waterloo Greenway",
+        "cuisine": "Park / Trail",
+        "neighborhood": "Rainey Street",
+        "score": 86,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Tourist Attraction",
+          "Outdoor"
+        ],
+        "address": "500 E 12th St, Austin, TX 78701",
+        "website": "https://waterloogreenway.org",
+        "description": "1.5-mile chain-of-parks along Waller Creek connecting Lady Bird Lake to 15th Street. The southern Waterloo Park reach — with the Moody Amphi"
+      },
+      {
+        "id": 5132,
+        "name": "Empire Control Room",
+        "cuisine": "Live Music Venue / Club",
+        "neighborhood": "Downtown",
+        "score": 85,
+        "tags": [
+          "Live Music",
+          "Entertainment",
+          "Club",
+          "Late Night",
+          "Nightlife"
+        ],
+        "address": "606 E 7th St, Austin, TX 78701",
+        "website": "https://www.empireatx.com",
+        "description": "Downtown live music venue and nightclub with multiple rooms hosting indie, electronic, hip-hop, and comedy. The Garage and The Control Room "
+      },
+      {
+        "id": 5171,
+        "name": "6th Street Entertainment District",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "6th Street",
+        "score": 85,
+        "tags": [
+          "Tourist Attraction",
+          "Nightlife",
+          "Live Music",
+          "Bar",
+          "Free"
+        ],
+        "address": "E 6th St, Austin, TX 78701",
+        "website": "https://www.austintexas.org/things-to-do/nightlife/",
+        "description": "Austin's famous entertainment strip — six blocks of bars, live music venues, and nightclubs between Congress and I-35. Dirty Sixth is the to"
+      },
+      {
+        "id": 5582,
+        "name": "George Washington Carver Museum",
+        "cuisine": "Museum",
+        "neighborhood": "East Austin",
+        "score": 84,
+        "tags": [
+          "Museum",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Arts"
+        ],
+        "address": "1165 Angelina St, Austin, TX 78702",
+        "website": "",
+        "description": "Museum, cultural, and genealogy center dedicated to African American history and art, in a Carnegie-era library building. Permanent and rota"
+      },
+      {
+        "id": 5583,
+        "name": "French Legation State Historic Site",
+        "cuisine": "Landmark / Historic Site",
+        "neighborhood": "East Austin",
+        "score": 83,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Museum",
+          "Tourist Attraction"
+        ],
+        "address": "802 San Marcos St, Austin, TX 78702",
+        "website": "",
+        "description": "The 1841 home of Alphonse Dubois de Saligny, France’s chargé d’affaires to the Republic of Texas — the oldest frame building in Austin. Reop"
+      },
+      {
+        "id": 5591,
+        "name": "Elisabet Ney Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Hyde Park",
+        "score": 83,
+        "tags": [
+          "Museum",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "304 E 44th St, Austin, TX 78751",
+        "website": "",
+        "description": "Former studio of German-American sculptor Elisabet Ney, preserved in its 1890s limestone castle. Rotating exhibitions and a sculpture collec"
+      },
+      {
+        "id": 5586,
+        "name": "I Love You So Much Mural",
+        "cuisine": "Landmark / Public Art",
+        "neighborhood": "South Lamar",
+        "score": 82,
+        "tags": [
+          "Landmark",
+          "Public Art",
+          "Tourist Attraction",
+          "Photo Op"
+        ],
+        "address": "1300 S Congress Ave, Austin, TX 78704",
+        "website": "",
+        "description": "The four-word love letter painted on the side of Jo’s Coffee on South Congress (at the edge of South Lamar) is one of Austin’s most photogra"
+      },
+      {
+        "id": 5161,
+        "name": "Oasis on the Lake",
+        "cuisine": "Tex-Mex / Views",
+        "neighborhood": "West Austin",
+        "score": 80,
+        "tags": [
+          "Tex-Mex",
+          "Views",
+          "Patio",
+          "Sunset",
+          "Tourist Attraction",
+          "Mexican"
+        ],
+        "address": "6550 Comanche Trail, Austin, TX 78732",
+        "website": "https://www.oasis-austin.com",
+        "description": "The 'Sunset Capital of Texas' — a massive multi-level restaurant complex perched on a cliff overlooking Lake Travis. The food is secondary t"
+      },
+      {
+        "id": 5471,
+        "name": "Pete's Dueling Piano Bar",
+        "cuisine": "Bar / Entertainment",
+        "neighborhood": "6th Street",
+        "score": 80,
+        "tags": [
+          "Live Music",
+          "Bar",
+          "Nightlife",
+          "Late Night",
+          "Casual"
+        ],
+        "address": "421 E 6th St, Austin, TX 78701",
+        "website": "https://petesduelingpiano.com",
+        "description": "High-energy dueling piano bar where talented pianists take requests and keep the crowd singing all night."
+      },
+      {
+        "id": 5534,
+        "name": "The Picnic",
+        "cuisine": "Food Truck Park",
+        "neighborhood": "Zilker",
+        "score": 80,
+        "tags": [
+          "Casual",
+          "Family Friendly",
+          "Patio",
+          "Local Favorites"
+        ],
+        "address": "1720 Barton Springs Rd, Austin, TX 78704",
+        "website": "https://thepicnicaustin.com",
+        "description": "Austin premier food trailer park one block from Zilker Park with rotating acclaimed trucks under shaded pavilions."
+      },
+      {
+        "id": 5589,
+        "name": "Breakaway Records",
+        "cuisine": "Landmark / Record Store",
+        "neighborhood": "North Loop",
+        "score": 80,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Music",
+          "Shopping"
+        ],
+        "address": "211 W North Loop Blvd, Austin, TX 78751",
+        "website": "https://breakawayrecordshop.com",
+        "description": "All-vinyl record shop in a 1950s strip center on North Loop — the neighborhood’s anchor and a frequent stop on Austin music pilgrimages. 60,"
+      },
+      {
+        "id": 5590,
+        "name": "Monkeywrench Books",
+        "cuisine": "Landmark / Bookstore",
+        "neighborhood": "North Loop",
+        "score": 78,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Shopping"
+        ],
+        "address": "110 E North Loop Blvd, Austin, TX 78751",
+        "website": "",
+        "description": "All-volunteer collectively-run radical bookstore on North Loop Boulevard, operating since 2002. Zines, anarchist history, and local-press li"
+      },
+      {
+        "id": 5541,
+        "name": "Punch Bowl Social",
+        "cuisine": "American / Entertainment",
+        "neighborhood": "Domain",
+        "score": 75,
+        "tags": [
+          "Bar",
+          "Late Night",
+          "Casual",
+          "Family Friendly"
+        ],
+        "address": "3205 Palm Way, Austin, TX 78758",
+        "website": "https://www.punchbowlsocial.com/location/austin",
+        "description": "Massive entertainment complex at the Domain with bowling, karaoke, arcade games, craft cocktails, and American food."
+      }
+    ]
+  },
+  "Chicago": {
+    "totalAttractions": 39,
+    "existingInThingsToDo": [
+      "Fountains of Bellagio",
+      "Red Rock Canyon",
+      "The Sphere Exterior Shows",
+      "Area 15 + Meow Wolf",
+      "Fremont Street Experience",
+      "Valley of Fire State Park",
+      "Hoover Dam",
+      "Casino-Hopping on the Strip"
+    ],
+    "candidateCount": 39,
+    "candidates": [
+      {
+        "id": 27,
+        "name": "Art Institute of Chicago",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "The Loop",
+        "score": 97,
+        "tags": [
+          "Tourist Attraction",
+          "Museum",
+          "Art",
+          "Iconic"
+        ],
+        "address": "111 S Michigan Ave, Chicago, IL 60603",
+        "website": "https://www.artic.edu",
+        "description": "One of the oldest and largest art museums in the world with 300,000+ works spanning 5,000 years. Seurat Sunday Afternoon, Hopper Nighthawks,"
+      },
+      {
+        "id": 30,
+        "name": "Chicago Architecture River Cruise",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "River North",
+        "score": 96,
+        "tags": [
+          "Tourist Attraction",
+          "Cruise",
+          "Iconic",
+          "Date Night"
+        ],
+        "address": "112 E Wacker Dr, Chicago, IL 60601",
+        "website": "https://www.architecture.org/tours/",
+        "description": "The single best thing a tourist can do in Chicago -- a 90-minute boat tour down the Chicago River with expert guides explaining 130+ years o"
+      },
+      {
+        "id": 25,
+        "name": "Cloud Gate (The Bean)",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "The Loop",
+        "score": 94,
+        "tags": [
+          "Tourist Attraction",
+          "Landmark",
+          "Iconic",
+          "Free",
+          "Photo Op"
+        ],
+        "address": "201 E Randolph St, Chicago, IL 60602",
+        "website": "https://www.chicago.gov/city/en/depts/dca/supp_info/millennium_park.html",
+        "description": "The most photographed object in Chicago -- Anish Kapoor 33-foot polished steel sculpture in Millennium Park that reflects the skyline like l"
+      },
+      {
+        "id": 12562,
+        "name": "Museum Campus",
+        "cuisine": "Park / Tourist Attraction",
+        "neighborhood": "South Loop",
+        "score": 94,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Landmark",
+          "Iconic",
+          "Outdoor"
+        ],
+        "address": "1200 S Lake Shore Dr, Chicago, IL 60605",
+        "website": "",
+        "description": "Lakefront campus grouping the Field Museum, Shedd Aquarium, and Adler Planetarium on 57 acres, with Soldier Field just south. The largest cl"
+      },
+      {
+        "id": 31,
+        "name": "Millennium Park",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "The Loop",
+        "score": 93,
+        "tags": [
+          "Tourist Attraction",
+          "Park",
+          "Outdoor",
+          "Free",
+          "Art"
+        ],
+        "address": "201 E Randolph St, Chicago, IL 60602",
+        "website": "https://www.chicago.gov/city/en/depts/dca/supp_info/millennium_park.html",
+        "description": "24.5 acres of world-class public art, architecture, and gardens in downtown Chicago. Beyond The Bean, there is Jay Pritzker Pavilion (Frank "
+      },
+      {
+        "id": 33,
+        "name": "Wrigley Field",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Lakeview / Wrigleyville",
+        "score": 92,
+        "tags": [
+          "Tourist Attraction",
+          "Sports",
+          "Landmark",
+          "Iconic"
+        ],
+        "address": "1060 W Addison St, Chicago, IL 60613",
+        "website": "https://www.mlb.com/cubs/ballpark",
+        "description": "The Friendly Confines -- home of the Cubs since 1914 and the second-oldest MLB ballpark in America. The ivy-covered outfield walls, the manu"
+      },
+      {
+        "id": 26,
+        "name": "Willis Tower Skydeck",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "The Loop",
+        "score": 91,
+        "tags": [
+          "Tourist Attraction",
+          "Observation Deck",
+          "Landmark",
+          "Iconic"
+        ],
+        "address": "233 S Wacker Dr, Chicago, IL 60606",
+        "website": "https://theskydeck.com",
+        "description": "103rd floor of the former Sears Tower -- the highest public viewing area in the United States. The Ledge is a glass box extending 4.3 feet o"
+      },
+      {
+        "id": 60,
+        "name": "Second City",
+        "cuisine": "Comedy Club",
+        "neighborhood": "Old Town",
+        "score": 91,
+        "tags": [
+          "Entertainment",
+          "Local Favorites",
+          "Iconic",
+          "Date Night"
+        ],
+        "address": "1616 N Wells St, Chicago, IL 60614",
+        "website": "https://www.secondcity.com",
+        "description": "The comedy institution that launched Tina Fey, Steve Carell, Bill Murray, and basically every funny person in America. The mainstage shows a"
+      },
+      {
+        "id": 34,
+        "name": "Chicago Riverwalk",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "The Loop",
+        "score": 90,
+        "tags": [
+          "Tourist Attraction",
+          "Outdoor",
+          "Free",
+          "Patio",
+          "Drinks"
+        ],
+        "address": "Chicago Riverwalk, Chicago, IL 60601",
+        "website": "https://www.chicagoriverwalk.us",
+        "description": "1.25 miles of waterfront path along the Chicago River with wine bars, kayak rentals, restaurants, and public art. City Winery has a riverfro"
+      },
+      {
+        "id": 254,
+        "name": "Field Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Museum Campus",
+        "score": 90,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Family"
+        ],
+        "address": "1400 S DuSable Lake Shore Dr, Chicago, IL 60605",
+        "website": "https://www.fieldmuseum.org",
+        "description": "Home to SUE the T. rex — the largest and most complete T. rex skeleton ever found. The ancient Egypt exhibit, Evolving Planet hall, and Máxi"
+      },
+      {
+        "id": 12558,
+        "name": "Green Mill Jazz Club",
+        "cuisine": "Theater / Landmark",
+        "neighborhood": "Uptown",
+        "score": 90,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Iconic",
+          "Live Music"
+        ],
+        "address": "4802 N Broadway, Chicago, IL 60640",
+        "website": "",
+        "description": "Al Capone’s favorite speakeasy, still operating on North Broadway since 1907. The booth with the trap door behind the bar is still there. Ja"
+      },
+      {
+        "id": 62,
+        "name": "Thalia Hall",
+        "cuisine": "Live Music Venue",
+        "neighborhood": "Pilsen",
+        "score": 89,
+        "tags": [
+          "Live Music",
+          "Entertainment",
+          "Local Favorites"
+        ],
+        "address": "1807 S Allport St, Chicago, IL 60608",
+        "website": "https://www.thaliahallchicago.com",
+        "description": "A gorgeous 1892 Pilsen theater turned indie music venue with a restaurant (Dusek) and bar (Punch House) in the same building. The 800-capaci"
+      },
+      {
+        "id": 251,
+        "name": "Shedd Aquarium",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Museum Campus",
+        "score": 89,
+        "tags": [
+          "Tourist Attraction",
+          "Family",
+          "Aquarium",
+          "Museum"
+        ],
+        "address": "1200 S DuSable Lake Shore Dr, Chicago, IL 60605",
+        "website": "https://www.sheddaquarium.org",
+        "description": "32,000+ animals from around the world on the Lake Michigan waterfront. The Oceanarium's beluga whales and dolphins are the stars, and the Ca"
+      },
+      {
+        "id": 252,
+        "name": "Museum of Science and Industry",
+        "cuisine": "Museum",
+        "neighborhood": "Hyde Park",
+        "score": 89,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Family",
+          "Interactive"
+        ],
+        "address": "5700 S DuSable Lake Shore Dr, Chicago, IL 60637",
+        "website": "https://www.msichicago.org",
+        "description": "The largest science museum in the Western Hemisphere housed in the only surviving building from the 1893 World's Fair. Walk through a real U"
+      },
+      {
+        "id": 12552,
+        "name": "The 606 (Bloomingdale Trail)",
+        "cuisine": "Park / Trail",
+        "neighborhood": "West Town",
+        "score": 89,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Tourist Attraction",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "1801 N Ridgeway Ave, Chicago, IL 60647",
+        "website": "https://www.the606.org",
+        "description": "2.7-mile elevated rail-to-trail linear park connecting Bucktown, Wicker Park, Humboldt Park, and Logan Square. Opened 2015; art installation"
+      },
+      {
+        "id": 12563,
+        "name": "Soldier Field",
+        "cuisine": "Stadium / Landmark",
+        "neighborhood": "South Loop",
+        "score": 89,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Iconic",
+          "Historic"
+        ],
+        "address": "1410 S Museum Campus Dr, Chicago, IL 60605",
+        "website": "",
+        "description": "Chicago Bears’ home stadium since 1971, built 1924 on the Museum Campus. Neoclassical Doric colonnade is the oldest surviving NFL stadium st"
+      },
+      {
+        "id": 32,
+        "name": "Lincoln Park Zoo",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Lincoln Park",
+        "score": 88,
+        "tags": [
+          "Tourist Attraction",
+          "Family",
+          "Outdoor",
+          "Free"
+        ],
+        "address": "2001 N Clark St, Chicago, IL 60614",
+        "website": "https://www.lpzoo.org",
+        "description": "One of the last free major zoos in the United States, sitting on 35 acres in the heart of Lincoln Park. Gorillas, lions, penguins, and a far"
+      },
+      {
+        "id": 94,
+        "name": "Untitled Supper Club",
+        "cuisine": "Supper Club / Live Music",
+        "neighborhood": "West Loop / Fulton Market",
+        "score": 88,
+        "tags": [
+          "Entertainment",
+          "Date Night",
+          "Live Music",
+          "Cocktails"
+        ],
+        "address": "111 W Kinzie St, Chicago, IL 60654",
+        "website": "https://www.untitledsupperclub.com",
+        "description": "A prohibition-era speakeasy supper club with live jazz, burlesque, and a three-course dinner in a gorgeous subterranean space. The shows cha"
+      },
+      {
+        "id": 110,
+        "name": "Bordel",
+        "cuisine": "Wine Bar / Cabaret",
+        "neighborhood": "Wicker Park",
+        "score": 88,
+        "tags": [
+          "Wine Bar",
+          "Entertainment",
+          "Date Night",
+          "Live Music"
+        ],
+        "address": "1721 W Division St, Chicago, IL 60622",
+        "website": "https://www.bordelchicago.com",
+        "description": "A Parisian-style cabaret wine bar in Wicker Park with velvet curtains, candlelight, and live performances ranging from jazz to burlesque. Th"
+      },
+      {
+        "id": 185,
+        "name": "The Whistler",
+        "cuisine": "Cocktail Bar / Gallery",
+        "neighborhood": "Logan Square",
+        "score": 87,
+        "tags": [
+          "Cocktails",
+          "Bar",
+          "Live Music",
+          "Art Gallery",
+          "Local Favorites"
+        ],
+        "address": "2421 N Milwaukee Ave, Chicago, IL 60647",
+        "website": "https://www.whistlerchicago.com",
+        "description": "Logan Square cocktail bar, art gallery, and live music venue rolled into one. The drinks are creative and affordable, the DJs spin jazz and "
+      },
+      {
+        "id": 192,
+        "name": "Lem's Bar-B-Q",
+        "cuisine": "Chicago BBQ / Aquarium Smoker",
+        "neighborhood": "South Side",
+        "score": 87,
+        "tags": [
+          "BBQ",
+          "Classic",
+          "Cheap Eats",
+          "Local Favorites"
+        ],
+        "address": "311 E 75th St, Chicago, IL 60619",
+        "website": "",
+        "description": "South Side BBQ institution since 1954 famous for rib tips and hot links smoked in an aquarium smoker — a uniquely Chicago BBQ tradition. No-"
+      },
+      {
+        "id": 253,
+        "name": "Adler Planetarium",
+        "cuisine": "Museum",
+        "neighborhood": "Museum Campus",
+        "score": 87,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Family"
+        ],
+        "address": "1300 S DuSable Lake Shore Dr, Chicago, IL 60605",
+        "website": "https://www.adlerplanetarium.org",
+        "description": "America's first planetarium on the Museum Campus lakefront. Sky shows, space exhibitions, and the best skyline view in Chicago from the step"
+      },
+      {
+        "id": 226,
+        "name": "iO Theater",
+        "cuisine": "Comedy / Improv",
+        "neighborhood": "Lincoln Park",
+        "score": 86,
+        "tags": [
+          "Entertainment",
+          "Comedy",
+          "Live Music",
+          "Local Favorites"
+        ],
+        "address": "1501 N Kingsbury St, Chicago, IL 60642",
+        "website": "https://www.ioimprov.com",
+        "description": "Chicago's legendary improv theater where long-form improv was invented. Alumni include Tina Fey, Amy Poehler, Chris Farley, and countless SN"
+      },
+      {
+        "id": 459,
+        "name": "Terzo Piano",
+        "cuisine": "Italian / Museum Dining",
+        "neighborhood": "The Loop",
+        "score": 86,
+        "tags": [
+          "Italian",
+          "Scenic",
+          "Date Night"
+        ],
+        "address": "159 E Monroe St, Chicago, IL 60603",
+        "website": "",
+        "description": "Modern Italian inside the Art Institute Modern Wing. Views of Millennium Park and excellent pasta."
+      },
+      {
+        "id": 12559,
+        "name": "Aragon Ballroom",
+        "cuisine": "Theater / Landmark",
+        "neighborhood": "Uptown",
+        "score": 86,
+        "tags": [
+          "Theater",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Live Music"
+        ],
+        "address": "1106 W Lawrence Ave, Chicago, IL 60640",
+        "website": "",
+        "description": "Moorish-style 1926 ballroom at 1106 W Lawrence — the anchor of Uptown’s historic entertainment district. 4,500-capacity rock venue in a spac"
+      },
+      {
+        "id": 29,
+        "name": "Magnificent Mile",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Streeterville",
+        "score": 85,
+        "tags": [
+          "Tourist Attraction",
+          "Shopping",
+          "Landmark",
+          "Free"
+        ],
+        "address": "N Michigan Ave, Chicago, IL 60611",
+        "website": "https://www.themagnificentmile.com",
+        "description": "13 blocks of Michigan Avenue from the Chicago River to Oak Street -- luxury shopping, landmark architecture, and people-watching. The Water "
+      },
+      {
+        "id": 95,
+        "name": "House of Blues Chicago",
+        "cuisine": "Live Music / Restaurant",
+        "neighborhood": "River North",
+        "score": 85,
+        "tags": [
+          "Live Music",
+          "Entertainment",
+          "Local Favorites",
+          "Brunch"
+        ],
+        "address": "329 N Dearborn St, Chicago, IL 60654",
+        "website": "https://www.houseofblues.com/chicago",
+        "description": "River North live music venue and restaurant booking national touring acts in an ornate blues-inspired space. The Gospel Brunch on Sundays is"
+      },
+      {
+        "id": 227,
+        "name": "The Laugh Factory Chicago",
+        "cuisine": "Comedy Club",
+        "neighborhood": "Lakeview / Wrigleyville",
+        "score": 85,
+        "tags": [
+          "Entertainment",
+          "Comedy",
+          "Late Night"
+        ],
+        "address": "3175 N Broadway, Chicago, IL 60657",
+        "website": "https://www.laughfactory.com/clubs/chicago",
+        "description": "LA's iconic comedy club's Chicago outpost in Lakeview hosting national headliners and local favorites. Multiple shows nightly with a two-dri"
+      },
+      {
+        "id": 12550,
+        "name": "Charnley-Persky House",
+        "cuisine": "Landmark / Historic House",
+        "neighborhood": "Gold Coast",
+        "score": 85,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Architecture"
+        ],
+        "address": "1365 N Astor St, Chicago, IL 60610",
+        "website": "",
+        "description": "Adler & Sullivan 1891 residence with Frank Lloyd Wright’s fingerprints as the young draftsman on the project. Chicago Landmark and the headq"
+      },
+      {
+        "id": 12557,
+        "name": "Ping Tom Memorial Park",
+        "cuisine": "Park",
+        "neighborhood": "Chinatown",
+        "score": 85,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Landmark",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "1700 S Wentworth Ave, Chicago, IL 60616",
+        "website": "",
+        "description": "17-acre riverfront park on a former rail yard — named for civic leader Ping Tom. Chinese-inspired pagoda, boathouse, and some of the best do"
+      },
+      {
+        "id": 12560,
+        "name": "Uptown Theatre",
+        "cuisine": "Theater / Landmark",
+        "neighborhood": "Uptown",
+        "score": 85,
+        "tags": [
+          "Theater",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Iconic"
+        ],
+        "address": "4816 N Broadway, Chicago, IL 60640",
+        "website": "",
+        "description": "Spanish Revival 1925 movie palace, 4,381 seats — one of the largest single-screen theaters ever built. Shuttered since 1981 but a designated"
+      },
+      {
+        "id": 12549,
+        "name": "International Museum of Surgical Science",
+        "cuisine": "Museum",
+        "neighborhood": "Gold Coast",
+        "score": 84,
+        "tags": [
+          "Museum",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "1524 N Lake Shore Dr, Chicago, IL 60610",
+        "website": "https://imss.org",
+        "description": "Only museum in North America dedicated to surgery, housed in a 1917 Howard Van Doren Shaw mansion overlooking Lincoln Park. Antique instrume"
+      },
+      {
+        "id": 12553,
+        "name": "Polish Museum of America",
+        "cuisine": "Museum",
+        "neighborhood": "West Town",
+        "score": 84,
+        "tags": [
+          "Museum",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "984 N Milwaukee Ave, Chicago, IL 60642",
+        "website": "https://www.polishmuseumofamerica.org",
+        "description": "One of the oldest ethnic museums in the United States, founded 1935 in the Polish Roman Catholic Union of America headquarters on Noble Squa"
+      },
+      {
+        "id": 12556,
+        "name": "Chinatown Gate",
+        "cuisine": "Landmark",
+        "neighborhood": "Chinatown",
+        "score": 84,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Historic",
+          "Photo Op",
+          "Iconic"
+        ],
+        "address": "Wentworth Ave & Cermak Rd, Chicago, IL 60616",
+        "website": "",
+        "description": "The arched red-and-gold gate at Wentworth and Cermak, dedicated 1975 — the ceremonial entrance to Chicago’s Chinatown and one of the neighbo"
+      },
+      {
+        "id": 28,
+        "name": "Navy Pier",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Streeterville",
+        "score": 83,
+        "tags": [
+          "Tourist Attraction",
+          "Family",
+          "Outdoor",
+          "Entertainment"
+        ],
+        "address": "600 E Grand Ave, Chicago, IL 60611",
+        "website": "https://navypier.org",
+        "description": "3,300 feet of lakefront entertainment stretching into Lake Michigan with a 200-foot Ferris wheel, restaurants, museums, and boat tours. Tour"
+      },
+      {
+        "id": 12554,
+        "name": "Flat Iron Arts Building",
+        "cuisine": "Landmark / Arts",
+        "neighborhood": "West Town",
+        "score": 82,
+        "tags": [
+          "Landmark",
+          "Arts",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "1579 N Milwaukee Ave, Chicago, IL 60622",
+        "website": "",
+        "description": "Triangular 1913 building at the six-corners intersection of Milwaukee, Damen, and North — Wicker Park’s physical and cultural anchor. 60+ ar"
+      },
+      {
+        "id": 12561,
+        "name": "Ukrainian National Museum of Chicago",
+        "cuisine": "Museum",
+        "neighborhood": "Ukrainian Village",
+        "score": 82,
+        "tags": [
+          "Museum",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "2249 W Superior St, Chicago, IL 60612",
+        "website": "",
+        "description": "Permanent collection of Ukrainian fine and folk art, costumes, and history in the heart of Ukrainian Village. Founded 1952 — a cultural anch"
+      },
+      {
+        "id": 12551,
+        "name": "Washington Square Park",
+        "cuisine": "Park",
+        "neighborhood": "Gold Coast",
+        "score": 80,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Historic",
+          "Outdoor"
+        ],
+        "address": "901 N Clark St, Chicago, IL 60610",
+        "website": "",
+        "description": "Oldest existing park in Chicago (1842) and a designated landmark district, once the city’s premier soapbox forum — famously nicknamed “Bugho"
+      },
+      {
+        "id": 12555,
+        "name": "Churchill Field Park",
+        "cuisine": "Park",
+        "neighborhood": "Bucktown",
+        "score": 80,
+        "tags": [
+          "Park",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "1825 N Damen Ave, Chicago, IL 60647",
+        "website": "",
+        "description": "Bucktown’s beloved neighborhood park and dog park on Damen Avenue, directly beneath The 606 trail’s busiest access point. Community events, "
+      }
+    ]
+  },
+  "Salt Lake City": {
+    "totalAttractions": 24,
+    "existingInThingsToDo": [
+      "Temple Square",
+      "Cottonwood Canyons",
+      "Great Salt Lake + Antelope Island",
+      "Park City + Deer Valley",
+      "Utah State Capitol",
+      "Natural History Museum of Utah",
+      "Red Butte Garden + Arboretum",
+      "Delta Center"
+    ],
+    "candidateCount": 20,
+    "candidates": [
+      {
+        "id": 11112,
+        "name": "Skiing at Alta / Snowbird",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Cottonwood Heights",
+        "score": 91,
+        "tags": [
+          "Tourist Attraction",
+          "Outdoor",
+          "Skiing",
+          "Scenic"
+        ],
+        "address": "Little Cottonwood Canyon, Alta/Snowbird, UT",
+        "website": "https://www.alta.com",
+        "description": "Two world-class ski resorts in Little Cottonwood Canyon — 25 minutes from downtown SLC. Alta is skiers-only (no snowboards) with legendary p"
+      },
+      {
+        "id": 11072,
+        "name": "Park City Mountain Resort",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Park City",
+        "score": 90,
+        "tags": [
+          "Tourist Attraction",
+          "Outdoor",
+          "Skiing",
+          "Scenic"
+        ],
+        "address": "1345 Lowell Ave, Park City, UT 84060",
+        "website": "https://www.parkcitymountain.com",
+        "description": "The largest ski resort in the US with 7,300 acres of skiable terrain across Park City and Canyons Village. Summer brings mountain biking, hi"
+      },
+      {
+        "id": 11236,
+        "name": "Snowbird Ski & Summer Resort",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Cottonwood Heights",
+        "score": 90,
+        "tags": [
+          "Tourist Attraction",
+          "Outdoor",
+          "Skiing",
+          "Scenic"
+        ],
+        "address": "9385 Snowbird Center Dr, Snowbird, UT 84092",
+        "website": "https://www.snowbird.com",
+        "description": "World-class ski resort in Little Cottonwood Canyon, 25 minutes from downtown SLC. The Tram takes you to 11,000 feet for legendary powder ski"
+      },
+      {
+        "id": 11071,
+        "name": "Big Cottonwood Canyon / Brighton",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Cottonwood Heights",
+        "score": 89,
+        "tags": [
+          "Tourist Attraction",
+          "Outdoor",
+          "Scenic",
+          "Skiing",
+          "Free"
+        ],
+        "address": "Big Cottonwood Canyon Rd, Salt Lake City, UT 84121",
+        "website": "https://www.brightonresort.com",
+        "description": "One of the Wasatch Range's premier canyon destinations with Brighton and Solitude ski resorts in winter and world-class hiking in summer. La"
+      },
+      {
+        "id": 11115,
+        "name": "Tabernacle Choir Concert",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Downtown SLC",
+        "score": 88,
+        "tags": [
+          "Tourist Attraction",
+          "Entertainment",
+          "Free",
+          "Iconic"
+        ],
+        "address": "50 E North Temple, Salt Lake City, UT 84150",
+        "website": "https://www.thetabernaclechoir.org",
+        "description": "The world-famous Tabernacle Choir at Temple Square performs free rehearsals (Thursdays) and concerts (Sundays). The acoustics in the Confere"
+      },
+      {
+        "id": 11256,
+        "name": "Sundance Mountain Resort",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Provo",
+        "score": 88,
+        "tags": [
+          "Tourist Attraction",
+          "Outdoor",
+          "Skiing",
+          "Scenic",
+          "Arts"
+        ],
+        "address": "8841 N Alpine Loop Rd, Sundance, UT 84604",
+        "website": "https://www.sundanceresort.com",
+        "description": "Robert Redford's Sundance Mountain Resort in Provo Canyon — skiing, art, film, and nature on 5,000 acres. Home of the Sundance Film Festival"
+      },
+      {
+        "id": 11583,
+        "name": "Sugar House Park",
+        "cuisine": "Park",
+        "neighborhood": "Sugar House",
+        "score": 88,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "1330 E 2100 S, Salt Lake City, UT 84106",
+        "website": "",
+        "description": "The 110-acre crown jewel of the Sugar House neighborhood, on the site of the former Utah State Prison. A favorite for 4th of July fireworks,"
+      },
+      {
+        "id": 11234,
+        "name": "Utah Museum of Fine Arts",
+        "cuisine": "Art Museum",
+        "neighborhood": "University",
+        "score": 86,
+        "tags": [
+          "Museum",
+          "Art",
+          "Tourist Attraction"
+        ],
+        "address": "410 Campus Center Dr, Salt Lake City, UT 84112",
+        "website": "https://umfa.utah.edu",
+        "description": "University of Utah campus museum with global art collections spanning 5,000 years. The building itself is architecturally striking. Free day"
+      },
+      {
+        "id": 11586,
+        "name": "Tower Theatre",
+        "cuisine": "Theater / Cinema",
+        "neighborhood": "9th & 9th",
+        "score": 86,
+        "tags": [
+          "Theater",
+          "Cinema",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "876 E 900 S, Salt Lake City, UT 84105",
+        "website": "",
+        "description": "One of Salt Lake’s two independent film theaters, run by the Salt Lake Film Society. The 1928 Art Deco single-screen is the beating heart of"
+      },
+      {
+        "id": 11232,
+        "name": "Clark Planetarium",
+        "cuisine": "Museum",
+        "neighborhood": "Gateway",
+        "score": 85,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Family",
+          "Free"
+        ],
+        "address": "110 S 400 W, Salt Lake City, UT 84101",
+        "website": "",
+        "description": "Free-admission planetarium at The Gateway with space exhibits, IMAX theater, and a Hansen Dome Theatre. The exhibits are interactive and the"
+      },
+      {
+        "id": 11235,
+        "name": "Hogle Zoo",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Emigration Canyon",
+        "score": 85,
+        "tags": [
+          "Tourist Attraction",
+          "Family",
+          "Outdoor",
+          "Zoo"
+        ],
+        "address": "2600 Sunnyside Ave, Salt Lake City, UT 84108",
+        "website": "https://www.hoglezoo.org",
+        "description": "Salt Lake's 42-acre zoo at the mouth of Emigration Canyon with 800+ animals. The elephant encounter, great apes building, and the Lights Bef"
+      },
+      {
+        "id": 11114,
+        "name": "This Is The Place Heritage Park",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Emigration Canyon",
+        "score": 84,
+        "tags": [
+          "Tourist Attraction",
+          "Historic",
+          "Family"
+        ],
+        "address": "2601 Sunnyside Ave, Salt Lake City, UT 84108",
+        "website": "https://www.thisistheplace.org",
+        "description": "Living history village at the mouth of Emigration Canyon where Brigham Young declared 'This is the place' in 1847. Pioneer buildings, train "
+      },
+      {
+        "id": 11233,
+        "name": "Tracy Aviary & Botanical Garden",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Liberty Park",
+        "score": 84,
+        "tags": [
+          "Tourist Attraction",
+          "Outdoor",
+          "Family",
+          "Park"
+        ],
+        "address": "589 E 1300 S, Salt Lake City, UT 84105",
+        "website": "https://www.tracyaviary.org",
+        "description": "Aviary and botanical garden in Liberty Park with 400+ birds and beautiful gardens. The bird shows are educational and entertaining. Walking "
+      },
+      {
+        "id": 11257,
+        "name": "Ogden Eccles Dinosaur Park",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "North Salt Lake",
+        "score": 84,
+        "tags": [
+          "Tourist Attraction",
+          "Family",
+          "Museum",
+          "Outdoor"
+        ],
+        "address": "1544 E Park Blvd, Ogden, UT 84401",
+        "website": "https://www.dinosaurpark.org",
+        "description": "Outdoor dinosaur park and museum in Ogden with over 100 life-size dinosaur sculptures, fossil exhibits, and a playground. Fun family attract"
+      },
+      {
+        "id": 11584,
+        "name": "Hidden Hollow",
+        "cuisine": "Park / Nature Preserve",
+        "neighborhood": "Sugar House",
+        "score": 84,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Outdoor"
+        ],
+        "address": "1052 E 2100 S, Salt Lake City, UT 84106",
+        "website": "",
+        "description": "A restored riparian nature preserve along Parleys Creek, tucked between Sugarmont Drive and the Sugar House commercial district. Boardwalks "
+      },
+      {
+        "id": 11589,
+        "name": "Memory Grove Park",
+        "cuisine": "Park",
+        "neighborhood": "The Avenues",
+        "score": 84,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Outdoor"
+        ],
+        "address": "485 N Canyon Rd, Salt Lake City, UT 84103",
+        "website": "",
+        "description": "Utah’s memorial park to WWI, WWII, Korean, and Vietnam War dead, tucked into a ravine on the north edge of City Creek Canyon. Wooded trails,"
+      },
+      {
+        "id": 11585,
+        "name": "Fairmont Park",
+        "cuisine": "Park",
+        "neighborhood": "Sugar House",
+        "score": 83,
+        "tags": [
+          "Park",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "1040 E Sugarmont Dr, Salt Lake City, UT 84106",
+        "website": "",
+        "description": "A 28-acre neighborhood park with an aquatic center, skatepark, ball fields, and access to the Parleys Trail. A favorite local gathering spot"
+      },
+      {
+        "id": 11590,
+        "name": "Salt Lake City Cemetery",
+        "cuisine": "Landmark / Historic Site",
+        "neighborhood": "The Avenues",
+        "score": 80,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Outdoor"
+        ],
+        "address": "200 N St, Salt Lake City, UT 84103",
+        "website": "",
+        "description": "One of the largest city-owned cemeteries in the United States (1848) — 250 acres on the bench above the Avenues, with graves of Brigham Youn"
+      },
+      {
+        "id": 11587,
+        "name": "9th and 9th Sculpture (Monument to Children)",
+        "cuisine": "Landmark / Public Art",
+        "neighborhood": "9th & 9th",
+        "score": 79,
+        "tags": [
+          "Landmark",
+          "Public Art",
+          "Photo Op",
+          "Tourist Attraction"
+        ],
+        "address": "900 E & 900 S, Salt Lake City, UT 84105",
+        "website": "",
+        "description": "Stephen Goldsmith’s 1995 bronze sculpture at the corner of 900 East and 900 South — the neighborhood’s namesake landmark. Figures of childre"
+      },
+      {
+        "id": 11588,
+        "name": "Columbus Center",
+        "cuisine": "Landmark / Recreation Center",
+        "neighborhood": "South Salt Lake",
+        "score": 78,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Family Friendly"
+        ],
+        "address": "2531 S 400 E, South Salt Lake, UT 84115",
+        "website": "",
+        "description": "Century-old Spanish Revival former schoolhouse turned recreation center and art space. A South Salt Lake civic landmark listed on the Nation"
+      }
+    ]
+  },
+  "Las Vegas": {
+    "totalAttractions": 42,
+    "existingInThingsToDo": [
+      "Fountains of Bellagio",
+      "Red Rock Canyon",
+      "The Sphere Exterior Shows",
+      "Area 15 + Meow Wolf",
+      "Fremont Street Experience",
+      "Valley of Fire State Park",
+      "Hoover Dam",
+      "Casino-Hopping on the Strip"
+    ],
+    "candidateCount": 35,
+    "candidates": [
+      {
+        "id": 12406,
+        "name": "Bellagio Fountains",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "The Strip",
+        "score": 92,
+        "tags": [
+          "Tourist Attraction",
+          "Free",
+          "Iconic",
+          "Landmark",
+          "Photo Op"
+        ],
+        "address": "3600 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "https://bellagio.mgmresorts.com",
+        "description": "The most famous free show in Las Vegas. Choreographed water ballet on an 8.5-acre lake in front of the Bellagio, performing every 30 minutes"
+      },
+      {
+        "id": 12530,
+        "name": "Bellagio Conservatory & Botanical Gardens",
+        "cuisine": "Botanical Garden / Landmark",
+        "neighborhood": "The Strip (Bellagio)",
+        "score": 92,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Iconic",
+          "Free",
+          "Photo Op"
+        ],
+        "address": "3600 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "",
+        "description": "Seasonal floral installations — rotating 5x a year across Chinese New Year, Spring, Summer, Autumn, and Holiday themes. Massive hand-built d"
+      },
+      {
+        "id": 12540,
+        "name": "The Colosseum at Caesars Palace",
+        "cuisine": "Theater / Tourist Attraction",
+        "neighborhood": "The Strip (Caesars Palace)",
+        "score": 92,
+        "tags": [
+          "Theater",
+          "Tourist Attraction",
+          "Landmark",
+          "Iconic",
+          "Live Music"
+        ],
+        "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "",
+        "description": "4,300-seat concert and residency theater that hosted Celine Dion’s landmark run plus Adele, Rod Stewart, and Usher residencies. One of the S"
+      },
+      {
+        "id": 12177,
+        "name": "Stadium Swim",
+        "cuisine": "Dayclub / Pool Amphitheater",
+        "neighborhood": "Downtown (Circa)",
+        "score": 91,
+        "tags": [
+          "Dayclub",
+          "Scenic",
+          "Iconic",
+          "Casual",
+          "Celebrations"
+        ],
+        "address": "8 Fremont St, Las Vegas, NV 89101",
+        "website": "https://www.circalasvegas.com/stadium-swim",
+        "description": "Circa's 6-pool, stadium-seating pool amphitheater — country's largest pool destination for sports lovers. 143-foot, 14-million-megapixel LED"
+      },
+      {
+        "id": 12410,
+        "name": "The Mob Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Downtown",
+        "score": 90,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Historic",
+          "Landmark"
+        ],
+        "address": "300 Stewart Ave, Las Vegas, NV 89101",
+        "website": "https://themobmuseum.org",
+        "description": "Three floors of organized crime history in the actual former federal courthouse where the Kefauver Hearings were held in 1950. The Speakeasy"
+      },
+      {
+        "id": 12525,
+        "name": "The Neon Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Downtown",
+        "score": 90,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Landmark",
+          "Historic",
+          "Iconic",
+          "Photo Op"
+        ],
+        "address": "770 Las Vegas Blvd N, Las Vegas, NV 89101",
+        "website": "https://www.neonmuseum.org",
+        "description": "The “Boneyard” — an outdoor gallery of rescued mid-century Las Vegas neon signs, the city’s visual memory. Day and night tours (including th"
+      },
+      {
+        "id": 12526,
+        "name": "The Mob Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Downtown",
+        "score": 90,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Historic",
+          "Landmark",
+          "Iconic"
+        ],
+        "address": "300 Stewart Ave, Las Vegas, NV 89101",
+        "website": "https://themobmuseum.org",
+        "description": "National Museum of Organized Crime and Law Enforcement, inside the 1933 former federal courthouse that hosted a Kefauver Committee hearing. "
+      },
+      {
+        "id": 12541,
+        "name": "Dolby Live",
+        "cuisine": "Theater / Tourist Attraction",
+        "neighborhood": "The Strip (Park MGM)",
+        "score": 90,
+        "tags": [
+          "Theater",
+          "Tourist Attraction",
+          "Landmark",
+          "Iconic",
+          "Live Music"
+        ],
+        "address": "3770 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "",
+        "description": "5,200-seat theater at Park MGM designed by Dolby for immersive sound. Home to Lady Gaga’s Jazz & Piano residency and Bruno Mars’s long-runni"
+      },
+      {
+        "id": 12413,
+        "name": "Omega Mart",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Off-Strip",
+        "score": 89,
+        "tags": [
+          "Tourist Attraction",
+          "Immersive",
+          "Art",
+          "Photo Op"
+        ],
+        "address": "3215 S Rancho Dr, Las Vegas, NV 89102",
+        "website": "https://omegamart.com",
+        "description": "Meow Wolf's surreal supermarket art installation inside AREA15. What starts as a quirky grocery store opens into mind-bending portals, alter"
+      },
+      {
+        "id": 12420,
+        "name": "Bellagio Conservatory & Botanical Gardens",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "The Strip",
+        "score": 89,
+        "tags": [
+          "Tourist Attraction",
+          "Free",
+          "Seasonal",
+          "Photo Op"
+        ],
+        "address": "3600 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "https://bellagio.mgmresorts.com/en/amenities/conservatory-botanical-garden.html",
+        "description": "14,000-square-foot atrium inside the Bellagio transformed into elaborate themed floral displays five times a year (Chinese New Year, Spring,"
+      },
+      {
+        "id": 12542,
+        "name": "MGM Grand Garden Arena",
+        "cuisine": "Stadium / Landmark",
+        "neighborhood": "The Strip (MGM Grand)",
+        "score": 89,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Entertainment",
+          "Iconic"
+        ],
+        "address": "3799 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "",
+        "description": "16,800-seat arena inside MGM Grand — the original Vegas championship venue, site of legendary heavyweight title bouts, UFC PPVs, and top-tie"
+      },
+      {
+        "id": 12411,
+        "name": "The Neon Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Downtown",
+        "score": 88,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Iconic",
+          "Photo Op"
+        ],
+        "address": "770 N Las Vegas Blvd, Las Vegas, NV 89101",
+        "website": "https://www.neonmuseum.org",
+        "description": "The Neon Boneyard — outdoor graveyard of vintage Vegas signs dating back to the 1930s. Stardust, Sahara, Moulin Rouge, and Hard Rock signs r"
+      },
+      {
+        "id": 12412,
+        "name": "AREA15",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Off-Strip",
+        "score": 88,
+        "tags": [
+          "Tourist Attraction",
+          "Immersive",
+          "Entertainment",
+          "Art"
+        ],
+        "address": "3215 S Rancho Dr, Las Vegas, NV 89102",
+        "website": "https://area15.com",
+        "description": "Immersive entertainment district with Meow Wolf's Omega Mart (a surreal supermarket art experience), Wink World, Museum Fiasco, virtual real"
+      },
+      {
+        "id": 12532,
+        "name": "Gondola Rides at The Venetian",
+        "cuisine": "Landmark / Tourist Attraction",
+        "neighborhood": "The Strip (The Venetian)",
+        "score": 88,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Iconic",
+          "Photo Op"
+        ],
+        "address": "3355 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "https://www.venetianlasvegas.com/resort/attractions/gondola-rides.html",
+        "description": "Indoor and outdoor gondola rides on the Grand Canal replica, poled by singing gondoliers. The most distinctive experience at the Venetian an"
+      },
+      {
+        "id": 12535,
+        "name": "Shark Reef Aquarium",
+        "cuisine": "Aquarium / Tourist Attraction",
+        "neighborhood": "The Strip (Mandalay Bay)",
+        "score": 88,
+        "tags": [
+          "Aquarium",
+          "Tourist Attraction",
+          "Landmark",
+          "Family Friendly"
+        ],
+        "address": "3950 S Las Vegas Blvd, Las Vegas, NV 89119",
+        "website": "",
+        "description": "1.6-million-gallon aquarium inside Mandalay Bay with 2,000+ marine animals including sharks, sea turtles, stingrays, and a walk-through tunn"
+      },
+      {
+        "id": 12543,
+        "name": "Zouk Nightclub",
+        "cuisine": "Nightclub / Tourist Attraction",
+        "neighborhood": "The Strip (Resorts World)",
+        "score": 88,
+        "tags": [
+          "Tourist Attraction",
+          "Entertainment",
+          "Landmark",
+          "Iconic"
+        ],
+        "address": "3000 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "",
+        "description": "Singapore-import 30,000-sq-ft nightclub at Resorts World with a state-of-the-art sound system and a residency roster including Tiësto and de"
+      },
+      {
+        "id": 12536,
+        "name": "Lion Habitat Ranch",
+        "cuisine": "Zoo / Tourist Attraction",
+        "neighborhood": "Henderson",
+        "score": 87,
+        "tags": [
+          "Zoo",
+          "Tourist Attraction",
+          "Landmark",
+          "Family Friendly"
+        ],
+        "address": "382 Bruner Ave, Henderson, NV 89044",
+        "website": "https://www.lionhabitatranch.org",
+        "description": "Retirement sanctuary for MGM Grand’s former lions, now home to 40+ rescued big cats. Giraffe feeding encounters and a weekend-only visit win"
+      },
+      {
+        "id": 12534,
+        "name": "Lake of Dreams",
+        "cuisine": "Landmark / Tourist Attraction",
+        "neighborhood": "The Strip (Wynn)",
+        "score": 86,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Photo Op",
+          "Iconic"
+        ],
+        "address": "3131 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "",
+        "description": "Steve Wynn’s signature lake-and-mountain backdrop behind the Wynn, with a nightly 3D light-and-music show visible from the Lakeside Restaura"
+      },
+      {
+        "id": 12537,
+        "name": "Lake Las Vegas",
+        "cuisine": "Landmark / Tourist Attraction",
+        "neighborhood": "Henderson",
+        "score": 86,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Outdoor"
+        ],
+        "address": "Lake Las Vegas Pkwy, Henderson, NV 89011",
+        "website": "",
+        "description": "320-acre private lake resort community in Henderson. MonteLago Village, Hilton Lake Las Vegas Resort, paddle sports, and the Reflection Bay "
+      },
+      {
+        "id": 12546,
+        "name": "Downtown Container Park",
+        "cuisine": "Landmark / Tourist Attraction",
+        "neighborhood": "Downtown (Fremont East)",
+        "score": 86,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Shopping",
+          "Entertainment",
+          "Family Friendly"
+        ],
+        "address": "707 Fremont St, Las Vegas, NV 89101",
+        "website": "",
+        "description": "Open-air retail park built from repurposed shipping containers on Fremont East, fronted by a 40-foot fire-breathing praying mantis sculpture"
+      },
+      {
+        "id": 12408,
+        "name": "High Roller Observation Wheel",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "The Strip",
+        "score": 85,
+        "tags": [
+          "Tourist Attraction",
+          "Views",
+          "Photo Op"
+        ],
+        "address": "3545 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "https://www.caesars.com/linq/high-roller",
+        "description": "550-foot observation wheel at The LINQ — the second-tallest in North America. 28 climate-controlled cabins, each holding 40 people, complete"
+      },
+      {
+        "id": 12418,
+        "name": "Atomic Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Paradise",
+        "score": 85,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Historic"
+        ],
+        "address": "755 E Flamingo Rd, Las Vegas, NV 89119",
+        "website": "https://www.atomicmuseum.vegas",
+        "description": "Smithsonian-affiliated museum chronicling the Atomic Age and Nevada Test Site history. Artifacts, films, and interactive exhibits on the Man"
+      },
+      {
+        "id": 12528,
+        "name": "The Arts Factory",
+        "cuisine": "Gallery / Landmark",
+        "neighborhood": "Arts District",
+        "score": 85,
+        "tags": [
+          "Landmark",
+          "Gallery",
+          "Arts",
+          "Tourist Attraction"
+        ],
+        "address": "107 E Charleston Blvd, Las Vegas, NV 89104",
+        "website": "https://www.theartsfactorylv.com",
+        "description": "The anchor building of the 18b Arts District — home to 30+ artist studios, galleries, retail, and 18Bin bar & restaurant. The hub of First F"
+      },
+      {
+        "id": 12531,
+        "name": "Bellagio Gallery of Fine Art",
+        "cuisine": "Museum",
+        "neighborhood": "The Strip (Bellagio)",
+        "score": 85,
+        "tags": [
+          "Museum",
+          "Arts",
+          "Tourist Attraction",
+          "Landmark"
+        ],
+        "address": "3600 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "",
+        "description": "Intimate gallery inside the Bellagio hosting rotating curated exhibitions of major artists — past shows include Warhol, Picasso, and Monet. "
+      },
+      {
+        "id": 12544,
+        "name": "The Park",
+        "cuisine": "Park / Landmark",
+        "neighborhood": "The Strip (Park MGM)",
+        "score": 85,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Tourist Attraction",
+          "Outdoor",
+          "Free",
+          "Photo Op"
+        ],
+        "address": "3782 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "",
+        "description": "Outdoor promenade between T-Mobile Arena and New York-New York, anchored by the 40-foot Bliss Dance sculpture. Public plaza with restaurants"
+      },
+      {
+        "id": 12547,
+        "name": "Atomic Liquors",
+        "cuisine": "Landmark / Historic Site",
+        "neighborhood": "Downtown (Fremont East)",
+        "score": 85,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Historic",
+          "Iconic"
+        ],
+        "address": "917 Fremont St, Las Vegas, NV 89101",
+        "website": "",
+        "description": "Las Vegas’ oldest freestanding bar (1952), where locals watched atomic test blasts from the roof. Sinatra and the Rat Pack drank here; the n"
+      },
+      {
+        "id": 12309,
+        "name": "Superfrico",
+        "cuisine": "Italian / Supper Club",
+        "neighborhood": "The Strip (The Cosmopolitan)",
+        "score": 84,
+        "tags": [
+          "Italian",
+          "Cocktails",
+          "Date Night",
+          "Live Entertainment",
+          "Celebrations",
+          "Late Night"
+        ],
+        "address": "3708 Las Vegas Blvd S, Las Vegas, NV 89109",
+        "website": "https://spiegelworld.com/restaurants/superfrico",
+        "description": "Spiegelworld's psychedelic Italian-American supper club inside the Cosmopolitan. Antipasti, pasta, and absurdist circus entertainment — simu"
+      },
+      {
+        "id": 12545,
+        "name": "Chinatown Plaza",
+        "cuisine": "Landmark / Shopping District",
+        "neighborhood": "Chinatown",
+        "score": 84,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Shopping",
+          "Market"
+        ],
+        "address": "4255 Spring Mountain Rd, Las Vegas, NV 89102",
+        "website": "",
+        "description": "The first commercial development on Spring Mountain Road (1995), anchored by a 24-foot Xi’an terracotta warrior replica and a Monkey King st"
+      },
+      {
+        "id": 12414,
+        "name": "Shark Reef Aquarium at Mandalay Bay",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "The Strip",
+        "score": 83,
+        "tags": [
+          "Tourist Attraction",
+          "Family",
+          "Aquarium"
+        ],
+        "address": "3950 S Las Vegas Blvd, Las Vegas, NV 89119",
+        "website": "https://mandalaybay.mgmresorts.com/en/amenities/shark-reef-aquarium.html",
+        "description": "1.3-million-gallon aquarium inside Mandalay Bay with 2,000+ animals including sharks, sea turtles, a Komodo dragon, and a walk-through acryl"
+      },
+      {
+        "id": 12415,
+        "name": "The STRAT SkyPod",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "The Strip",
+        "score": 83,
+        "tags": [
+          "Tourist Attraction",
+          "Views",
+          "Thrill Rides"
+        ],
+        "address": "2000 S Las Vegas Blvd, Las Vegas, NV 89104",
+        "website": "https://thestrat.com",
+        "description": "1,149-foot observation tower — the tallest in the US — with indoor and outdoor decks offering 360-degree views of the Strip, downtown, and t"
+      },
+      {
+        "id": 12533,
+        "name": "Madame Tussauds Las Vegas",
+        "cuisine": "Museum / Tourist Attraction",
+        "neighborhood": "The Strip (The Venetian)",
+        "score": 82,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Family Friendly",
+          "Photo Op"
+        ],
+        "address": "3377 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "https://www.madametussauds.com/las-vegas/",
+        "description": "Wax museum inside the Venetian with 100+ lifelike figures of celebrities, athletes, and historical figures. Marvel superhero wing and Las Ve"
+      },
+      {
+        "id": 12539,
+        "name": "UNLV Campus",
+        "cuisine": "Landmark / University",
+        "neighborhood": "Paradise",
+        "score": 82,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Outdoor"
+        ],
+        "address": "4505 S Maryland Pkwy, Las Vegas, NV 89154",
+        "website": "https://www.unlv.edu",
+        "description": "University of Nevada, Las Vegas — anchor of the Paradise neighborhood. 358-acre campus with the Marjorie Barrick Museum of Art, the Lied Lib"
+      },
+      {
+        "id": 12419,
+        "name": "SlotZilla Zip Line",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Downtown",
+        "score": 81,
+        "tags": [
+          "Tourist Attraction",
+          "Thrill Ride",
+          "Photo Op"
+        ],
+        "address": "425 Fremont St, Las Vegas, NV 89101",
+        "website": "https://vegasexperience.com/slotzilla-zip-line",
+        "description": "12-story slot machine-shaped tower launching zip lines over Fremont Street Experience. The lower Zipline is seated; the upper Zoomline has y"
+      },
+      {
+        "id": 12421,
+        "name": "Flamingo Wildlife Habitat",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "The Strip",
+        "score": 80,
+        "tags": [
+          "Tourist Attraction",
+          "Free",
+          "Family",
+          "Photo Op"
+        ],
+        "address": "3555 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "https://www.caesars.com/flamingo-las-vegas/things-to-do/wildlife-habitat",
+        "description": "15-acre oasis inside the Flamingo hotel with flamingos (of course), koi, ducks, and turtles. Waterfalls, lagoons, and tropical plants tucked"
+      },
+      {
+        "id": 12422,
+        "name": "Madame Tussauds Las Vegas",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "The Strip",
+        "score": 78,
+        "tags": [
+          "Tourist Attraction",
+          "Photo Op",
+          "Family"
+        ],
+        "address": "3377 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "website": "https://www.madametussauds.com/las-vegas",
+        "description": "Wax museum inside The Venetian with 100+ lifelike celebrity wax figures. Take selfies with Elvis, Lady Gaga, George Clooney, and the Rat Pac"
+      }
+    ]
+  },
+  "Seattle": {
+    "totalAttractions": 53,
+    "existingInThingsToDo": [
+      "Space Needle",
+      "Pike Place Market",
+      "Chihuly Garden + Glass",
+      "Bainbridge Island Ferry",
+      "Kerry Park Viewpoint",
+      "Seattle Center",
+      "Seattle Underground Tour",
+      "Discovery Park"
+    ],
+    "candidateCount": 49,
+    "candidates": [
+      {
+        "id": 9303,
+        "name": "Chihuly Garden and Glass",
+        "cuisine": "Art Museum",
+        "neighborhood": "Seattle Center",
+        "score": 92,
+        "tags": [
+          "Art",
+          "Museum",
+          "Tourist Attraction",
+          "Photo Op"
+        ],
+        "address": "305 Harrison St, Seattle, WA 98109",
+        "website": "https://www.chihulygardenandglass.com",
+        "description": "Dale Chihuly's monumental glass sculptures in eight indoor galleries, a glasshouse with a 100-foot suspended installation, and an outdoor ga"
+      },
+      {
+        "id": 9510,
+        "name": "Fremont Troll",
+        "cuisine": "Landmark / Public Art",
+        "neighborhood": "Fremont",
+        "score": 91,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Public Art",
+          "Photo Op",
+          "Iconic"
+        ],
+        "address": "3405 Troll Ave N, Seattle, WA 98103",
+        "website": "",
+        "description": "Eighteen-foot cement troll clutching a Volkswagen Beetle beneath the north end of the Aurora Bridge, installed 1990 by four local artists. O"
+      },
+      {
+        "id": 9513,
+        "name": "Volunteer Park",
+        "cuisine": "Park",
+        "neighborhood": "Capitol Hill",
+        "score": 91,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Landmark",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "1247 15th Ave E, Seattle, WA 98112",
+        "website": "",
+        "description": "48-acre Olmsted-designed park on the north end of Capitol Hill, home to the Volunteer Park Conservatory, the Seattle Asian Art Museum, and t"
+      },
+      {
+        "id": 9526,
+        "name": "Alki Beach",
+        "cuisine": "Landmark / Beach",
+        "neighborhood": "West Seattle",
+        "score": 91,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Outdoor",
+          "Iconic",
+          "Photo Op"
+        ],
+        "address": "1702 Alki Ave SW, Seattle, WA 98116",
+        "website": "",
+        "description": "2.5-mile sandy beach along Elliott Bay, the historical birthplace of Seattle (the Denny Party landed here in 1851). Skyline-framing views, a"
+      },
+      {
+        "id": 9228,
+        "name": "Piroshky Piroshky",
+        "cuisine": "Russian / Bakery",
+        "neighborhood": "Pike Place Market",
+        "score": 90,
+        "tags": [
+          "Bakery/Coffee",
+          "Iconic",
+          "Tourist Essential",
+          "Casual",
+          "Quick Bite",
+          "Family Friendly"
+        ],
+        "address": "1908 Pike Pl, Seattle, WA 98101",
+        "website": "https://piroshkybakery.com",
+        "description": "The line out the door at Pike Place — authentic hand-made Russian piroshky since 1992. Beef & onion, smoked salmon paté, apple cinnamon roll"
+      },
+      {
+        "id": 9516,
+        "name": "Wing Luke Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Chinatown-International District",
+        "score": 90,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Historic",
+          "Landmark"
+        ],
+        "address": "719 S King St, Seattle, WA 98104",
+        "website": "https://www.wingluke.org",
+        "description": "Smithsonian-affiliated museum of the Asian Pacific American experience inside the landmark East Kong Yick building. Rotating exhibitions and"
+      },
+      {
+        "id": 9521,
+        "name": "MOHAI (Museum of History & Industry)",
+        "cuisine": "Museum",
+        "neighborhood": "South Lake Union",
+        "score": 90,
+        "tags": [
+          "Museum",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "860 Terry Ave N, Seattle, WA 98109",
+        "website": "https://mohai.org",
+        "description": "Seattle’s flagship history museum in the restored 1942 Naval Armory on Lake Union Park. Permanent exhibits on the Great Fire, the Boeing era"
+      },
+      {
+        "id": 9240,
+        "name": "Elliott's Oyster House",
+        "cuisine": "Seafood / Oysters",
+        "neighborhood": "Downtown Waterfront",
+        "score": 89,
+        "tags": [
+          "Seafood",
+          "Oysters",
+          "Iconic",
+          "Date Night",
+          "Celebrations",
+          "Tourist Essential",
+          "Awards"
+        ],
+        "address": "1201 Alaskan Way Pier 56, Seattle, WA 98101",
+        "website": "https://www.elliottsoysterhouse.com",
+        "description": "Pier 56 oyster destination since 1975 — 20+ varieties of Pacific Northwest oysters, Dungeness crab, and a commanding Elliott Bay view. Seatt"
+      },
+      {
+        "id": 9530,
+        "name": "Kubota Garden",
+        "cuisine": "Botanical Garden / Park",
+        "neighborhood": "Beacon Hill",
+        "score": 89,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Tourist Attraction",
+          "Outdoor",
+          "Free"
+        ],
+        "address": "9817 55th Ave S, Seattle, WA 98118",
+        "website": "",
+        "description": "20-acre historic Japanese garden designed by Fujitaro Kubota beginning in 1927. Free admission, a stone landscape, a restored necklace of po"
+      },
+      {
+        "id": 9061,
+        "name": "Beecher's Handmade Cheese",
+        "cuisine": "Cheese / Mac & Cheese",
+        "neighborhood": "Pike Place Market",
+        "score": 88,
+        "tags": [
+          "Casual",
+          "Iconic",
+          "Local Favorites",
+          "Tourist Essential"
+        ],
+        "address": "1600 Pike Pl, Seattle, WA 98101",
+        "website": "https://beechershandmadecheese.com",
+        "description": "Pike Place cheese maker with signature World's Best Mac & Cheese. Watch cheesemaking in real time through glass windows. Grilled cheese, tom"
+      },
+      {
+        "id": 9175,
+        "name": "Il Bistro",
+        "cuisine": "Italian",
+        "neighborhood": "Pike Place Market",
+        "score": 88,
+        "tags": [
+          "Italian",
+          "Date Night",
+          "Iconic",
+          "Late Night",
+          "Cocktails",
+          "Tourist Essential"
+        ],
+        "address": "93 Pike St Ste A, Seattle, WA 98101",
+        "website": "https://www.ilbistro.net",
+        "description": "Cobblestone-alley romantic Italian at Pike Place since 1975. Candlelit dining room, handmade pasta, a 300-bottle Italian wine list, and sign"
+      },
+      {
+        "id": 9306,
+        "name": "Seattle Art Museum (SAM)",
+        "cuisine": "Art Museum",
+        "neighborhood": "Downtown",
+        "score": 88,
+        "tags": [
+          "Museum",
+          "Art",
+          "Tourist Attraction"
+        ],
+        "address": "1300 1st Ave, Seattle, WA 98101",
+        "website": "https://www.seattleartmuseum.org",
+        "description": "The Pacific Northwest's premier art museum with 25,000+ works spanning global cultures. Strong collections of Native American, Asian, and co"
+      },
+      {
+        "id": 9314,
+        "name": "Museum of Flight",
+        "cuisine": "Museum",
+        "neighborhood": "Tukwila",
+        "score": 88,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Family",
+          "Aviation"
+        ],
+        "address": "9404 E Marginal Way S, Seattle, WA 98108",
+        "website": "https://www.museumofflight.org",
+        "description": "One of the largest air and space museums in the world with 175+ aircraft including the original Air Force One, a Concorde, and a Space Shutt"
+      },
+      {
+        "id": 9317,
+        "name": "Washington State Ferry to Bainbridge Island",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Waterfront",
+        "score": 88,
+        "tags": [
+          "Tourist Attraction",
+          "Views",
+          "Ferry",
+          "Photo Op"
+        ],
+        "address": "801 Alaskan Way, Seattle, WA 98104",
+        "website": "https://wsdot.com/travel/washington-state-ferries",
+        "description": "35-minute ferry ride from Colman Dock offering the best skyline views of Seattle in reverse — from the water. Walk on, enjoy a coffee, and e"
+      },
+      {
+        "id": 9514,
+        "name": "Seattle Asian Art Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Capitol Hill",
+        "score": 88,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Arts",
+          "Landmark"
+        ],
+        "address": "1400 E Prospect St, Seattle, WA 98112",
+        "website": "https://seattleasianartmuseum.org",
+        "description": "Seattle Art Museum’s Asian collection housed in an Art Deco landmark inside Volunteer Park. Reopened 2020 after a major renovation that expa"
+      },
+      {
+        "id": 9522,
+        "name": "Amazon Spheres",
+        "cuisine": "Landmark / Tourist Attraction",
+        "neighborhood": "South Lake Union",
+        "score": 88,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Iconic",
+          "Photo Op"
+        ],
+        "address": "2111 7th Ave, Seattle, WA 98121",
+        "website": "",
+        "description": "Three interconnected glass biodomes on Amazon’s downtown campus housing 40,000+ plants from 30+ countries. The public Understory exhibit exp"
+      },
+      {
+        "id": 9525,
+        "name": "Burke Museum of Natural History and Culture",
+        "cuisine": "Museum",
+        "neighborhood": "University District",
+        "score": 88,
+        "tags": [
+          "Museum",
+          "Landmark",
+          "Tourist Attraction",
+          "Family Friendly"
+        ],
+        "address": "4303 Memorial Way NE, Seattle, WA 98195",
+        "website": "https://www.burkemuseum.org",
+        "description": "Washington’s state museum of natural history and culture, reopened 2019 in a dramatic glass-fronted new building on the UW campus. Full dino"
+      },
+      {
+        "id": 9139,
+        "name": "Rachel's Ginger Beer",
+        "cuisine": "Ginger Beer / Casual",
+        "neighborhood": "Pike Place Market",
+        "score": 87,
+        "tags": [
+          "Casual",
+          "Local Favorites",
+          "Iconic",
+          "Tourist Essential"
+        ],
+        "address": "1530 Post Aly, Seattle, WA 98101",
+        "website": "https://rachelsgingerbeer.com",
+        "description": "Handcrafted fresh ginger beer shop in Post Alley at Pike Place Market. Seattle original with creative ginger beer flavors, floats, and spike"
+      },
+      {
+        "id": 9213,
+        "name": "Six Seven",
+        "cuisine": "Seafood / New American",
+        "neighborhood": "Belltown",
+        "score": 87,
+        "tags": [
+          "Seafood",
+          "Date Night",
+          "Scenic",
+          "Celebrations",
+          "Tourist Essential"
+        ],
+        "address": "2411 Alaskan Way Pier 67, Seattle, WA 98121",
+        "website": "https://www.edgewaterhotel.com/dine/six-seven-restaurant",
+        "description": "Edgewater Hotel's signature waterfront restaurant on Pier 67 — over-the-water Elliott Bay views, Pacific Northwest seafood, and the famous D"
+      },
+      {
+        "id": 9304,
+        "name": "Museum of Pop Culture (MoPOP)",
+        "cuisine": "Museum",
+        "neighborhood": "Seattle Center",
+        "score": 87,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Music",
+          "Film"
+        ],
+        "address": "325 5th Ave N, Seattle, WA 98109",
+        "website": "https://www.mopop.org",
+        "description": "Frank Gehry-designed museum dedicated to pop culture, music, science fiction, and film. Permanent exhibits on Nirvana, Jimi Hendrix, horror "
+      },
+      {
+        "id": 9310,
+        "name": "Gas Works Park",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Wallingford",
+        "score": 87,
+        "tags": [
+          "Tourist Attraction",
+          "Free",
+          "Park",
+          "Photo Op",
+          "Views"
+        ],
+        "address": "2101 N Northlake Way, Seattle, WA 98103",
+        "website": "https://www.seattle.gov/parks/find/parks/gas-works-park",
+        "description": "Former coal gasification plant turned public park on the north shore of Lake Union. The rusted industrial towers and towering kite hill offe"
+      },
+      {
+        "id": 9519,
+        "name": "Bellevue Arts Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Bellevue",
+        "score": 87,
+        "tags": [
+          "Museum",
+          "Arts",
+          "Landmark",
+          "Tourist Attraction"
+        ],
+        "address": "510 Bellevue Way NE, Bellevue, WA 98004",
+        "website": "https://bellevuearts.org",
+        "description": "Steven Holl-designed contemporary art, craft, and design museum on Bellevue Way. Rotating exhibitions across three galleries and the annual "
+      },
+      {
+        "id": 9524,
+        "name": "Henry Art Gallery",
+        "cuisine": "Museum",
+        "neighborhood": "University District",
+        "score": 87,
+        "tags": [
+          "Museum",
+          "Arts",
+          "Landmark",
+          "Tourist Attraction"
+        ],
+        "address": "15th Ave NE & NE 41st St, Seattle, WA 98195",
+        "website": "https://henryart.org",
+        "description": "UW campus contemporary art museum, the first public art museum in Washington State (1927). James Turrell’s Light Reign skyspace is the signa"
+      },
+      {
+        "id": 9178,
+        "name": "Japonessa Sushi Cocina",
+        "cuisine": "Japanese / Sushi",
+        "neighborhood": "Downtown",
+        "score": 86,
+        "tags": [
+          "Sushi",
+          "Japanese",
+          "Date Night",
+          "Late Night",
+          "Cocktails",
+          "Local Favorites",
+          "Tourist Essential"
+        ],
+        "address": "1400 1st Ave, Seattle, WA 98101",
+        "website": "https://seattle.japonessa.com",
+        "description": "Latin-Japanese fusion sushi next to Pike Place Market. Creative rolls, sashimi, late-night lounge, and happy hour. A reliable Seattle downto"
+      },
+      {
+        "id": 9207,
+        "name": "Ben Paris",
+        "cuisine": "New American",
+        "neighborhood": "Downtown",
+        "score": 86,
+        "tags": [
+          "New American",
+          "Date Night",
+          "Cocktails",
+          "Brunch",
+          "Local Favorites",
+          "Tourist Essential"
+        ],
+        "address": "130 Pike St, Seattle, WA 98101",
+        "website": "https://benparis.com",
+        "description": "State Hotel lobby restaurant steps from Pike Place. Named after a 1930s Seattle bookmaker; seasonal American menu, vintage-chic dining room,"
+      },
+      {
+        "id": 9305,
+        "name": "Seattle Aquarium",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Waterfront",
+        "score": 86,
+        "tags": [
+          "Tourist Attraction",
+          "Family",
+          "Aquarium"
+        ],
+        "address": "1483 Alaskan Way Pier 59, Seattle, WA 98101",
+        "website": "https://www.seattleaquarium.org",
+        "description": "Waterfront aquarium on Pier 59 showcasing Puget Sound and Pacific Ocean marine life. See Pacific octopuses, sea otters, sharks, and salmon i"
+      },
+      {
+        "id": 9308,
+        "name": "Olympic Sculpture Park",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Belltown",
+        "score": 86,
+        "tags": [
+          "Tourist Attraction",
+          "Free",
+          "Park",
+          "Art",
+          "Outdoor"
+        ],
+        "address": "2901 Western Ave, Seattle, WA 98121",
+        "website": "https://www.seattleartmuseum.org/visit/olympic-sculpture-park",
+        "description": "Free 9-acre outdoor sculpture park on the Seattle waterfront, part of the Seattle Art Museum. Massive works by Alexander Calder, Richard Ser"
+      },
+      {
+        "id": 9312,
+        "name": "Woodland Park Zoo",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Phinney Ridge",
+        "score": 86,
+        "tags": [
+          "Tourist Attraction",
+          "Family",
+          "Zoo",
+          "Outdoor"
+        ],
+        "address": "5500 Phinney Ave N, Seattle, WA 98103",
+        "website": "https://www.zoo.org",
+        "description": "92-acre zoo home to 1,000+ animals from around the world. The Tropical Rain Forest, African Savanna, and the Humboldt Penguin exhibits are h"
+      },
+      {
+        "id": 9511,
+        "name": "Fremont Bridge",
+        "cuisine": "Landmark",
+        "neighborhood": "Fremont",
+        "score": 86,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Historic"
+        ],
+        "address": "Fremont Ave N, Seattle, WA 98103",
+        "website": "",
+        "description": "Bascule drawbridge over the Lake Washington Ship Canal, opened 1917 and still one of the most frequently opened drawbridges in the United St"
+      },
+      {
+        "id": 9520,
+        "name": "Bellevue Downtown Park",
+        "cuisine": "Park",
+        "neighborhood": "Bellevue",
+        "score": 86,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Landmark",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "10201 NE 4th St, Bellevue, WA 98004",
+        "website": "",
+        "description": "21-acre urban oasis with a 240-foot waterfall cascade, a grand promenade, and a circular canal reflecting pool. The civic heart of downtown "
+      },
+      {
+        "id": 9523,
+        "name": "Lake Union Park",
+        "cuisine": "Park",
+        "neighborhood": "South Lake Union",
+        "score": 86,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Landmark",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "860 Terry Ave N, Seattle, WA 98109",
+        "website": "",
+        "description": "12-acre waterfront park at the southern tip of Lake Union. Historic ships at the Center for Wooden Boats, seaplane views, and the launch poi"
+      },
+      {
+        "id": 9528,
+        "name": "Northwest African American Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Central District",
+        "score": 86,
+        "tags": [
+          "Museum",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "2300 S Massachusetts St, Seattle, WA 98144",
+        "website": "",
+        "description": "Museum of Black history and culture in the Pacific Northwest, in the former Colman School. Rotating exhibitions on Seattle’s jazz legacy, Ce"
+      },
+      {
+        "id": 9241,
+        "name": "Ivar's Acres of Clams",
+        "cuisine": "Seafood",
+        "neighborhood": "Downtown Waterfront",
+        "score": 85,
+        "tags": [
+          "Seafood",
+          "Iconic",
+          "Tourist Essential",
+          "Casual",
+          "Family Friendly",
+          "Scenic"
+        ],
+        "address": "1001 Alaskan Way Pier 54, Seattle, WA 98104",
+        "website": "https://www.ivars.com/acres",
+        "description": "Ivar's iconic Pier 54 seafood restaurant since 1938. Clam chowder, fish & chips, and the beloved tradition of feeding the seagulls (and gett"
+      },
+      {
+        "id": 9311,
+        "name": "Ballard Locks (Hiram M. Chittenden Locks)",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Ballard",
+        "score": 85,
+        "tags": [
+          "Tourist Attraction",
+          "Free",
+          "Historic",
+          "Family"
+        ],
+        "address": "3015 NW 54th St, Seattle, WA 98107",
+        "website": "https://ballardlocks.org",
+        "description": "Historic locks connecting Puget Sound to Lake Union and Lake Washington. Watch boats rise and fall between salt and fresh water, then cross "
+      },
+      {
+        "id": 9315,
+        "name": "Smith Tower Observatory",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Pioneer Square",
+        "score": 84,
+        "tags": [
+          "Tourist Attraction",
+          "Historic",
+          "Views",
+          "Landmark"
+        ],
+        "address": "506 2nd Ave, Seattle, WA 98104",
+        "website": "https://www.smithtower.com",
+        "description": "42-story historic tower (completed 1914) with a 35th-floor observatory and speakeasy-style bar. When it opened, it was the tallest building "
+      },
+      {
+        "id": 9512,
+        "name": "Waiting for the Interurban",
+        "cuisine": "Landmark / Public Art",
+        "neighborhood": "Fremont",
+        "score": 84,
+        "tags": [
+          "Landmark",
+          "Public Art",
+          "Photo Op"
+        ],
+        "address": "N 34th St & Fremont Ave N, Seattle, WA 98103",
+        "website": "",
+        "description": "Beloved 1979 aluminum sculpture of six people and a dog waiting for a long-vanished streetcar line. Locals decorate it for holidays, birthda"
+      },
+      {
+        "id": 9515,
+        "name": "Cal Anderson Park",
+        "cuisine": "Park",
+        "neighborhood": "Capitol Hill",
+        "score": 84,
+        "tags": [
+          "Park",
+          "Outdoor",
+          "Landmark",
+          "Family Friendly"
+        ],
+        "address": "1635 11th Ave, Seattle, WA 98122",
+        "website": "",
+        "description": "Capitol Hill’s flagship public green space with a reflecting pool, a restored 1908 reservoir fountain, and the Bobby Morris Playfield. A dai"
+      },
+      {
+        "id": 9517,
+        "name": "Hing Hay Park",
+        "cuisine": "Park",
+        "neighborhood": "Chinatown-International District",
+        "score": 84,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Tourist Attraction",
+          "Outdoor"
+        ],
+        "address": "423 Maynard Ave S, Seattle, WA 98104",
+        "website": "",
+        "description": "The CID’s civic heart — a compact plaza anchored by a traditional Chinese grand pavilion and an LED-paneled stage. Hosts Lunar New Year cele"
+      },
+      {
+        "id": 9529,
+        "name": "Jimi Hendrix Park",
+        "cuisine": "Park",
+        "neighborhood": "Central District",
+        "score": 84,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Tourist Attraction",
+          "Outdoor",
+          "Iconic"
+        ],
+        "address": "2400 S Massachusetts St, Seattle, WA 98144",
+        "website": "",
+        "description": "2.5-acre park dedicated to the Seattle-born guitarist, with a purple audio-wave public-art installation and the Hendrix timeline walkway. Ad"
+      },
+      {
+        "id": 9176,
+        "name": "The Athenian Seafood Restaurant & Bar",
+        "cuisine": "Seafood / American",
+        "neighborhood": "Pike Place Market",
+        "score": 83,
+        "tags": [
+          "Seafood",
+          "Iconic",
+          "Tourist Essential",
+          "Casual",
+          "Family Friendly",
+          "Local Favorites"
+        ],
+        "address": "1517 Pike Pl, Seattle, WA 98101",
+        "website": "https://athenianseattle.com",
+        "description": "Pike Place Market's historic 1909 restaurant — the diner from Sleepless in Seattle. Pacific Northwest seafood, fish and chips, and one of th"
+      },
+      {
+        "id": 9214,
+        "name": "The Fisherman's Restaurant & Bar",
+        "cuisine": "Seafood",
+        "neighborhood": "Downtown Waterfront",
+        "score": 83,
+        "tags": [
+          "Seafood",
+          "Tourist Essential",
+          "Scenic",
+          "Family Friendly",
+          "Casual"
+        ],
+        "address": "1301 Alaskan Way Pier 57, Seattle, WA 98101",
+        "website": "https://www.fishermansrestaurantseattle.com",
+        "description": "Pier 57 waterfront seafood classic at Miner's Landing. Fresh Pacific Northwest fish, chowders, and view of Elliott Bay + Great Wheel. Touris"
+      },
+      {
+        "id": 9316,
+        "name": "Volunteer Park Conservatory",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Capitol Hill",
+        "score": 83,
+        "tags": [
+          "Tourist Attraction",
+          "Free",
+          "Park",
+          "Photo Op"
+        ],
+        "address": "1402 E Galer St, Seattle, WA 98112",
+        "website": "https://www.volunteerparkconservatory.org",
+        "description": "1912 Victorian-era glass conservatory in Volunteer Park with five houses of tropical plants, cacti, ferns, and seasonal flowers. The surroun"
+      },
+      {
+        "id": 9413,
+        "name": "Anthony's Pier 66",
+        "cuisine": "Seafood",
+        "neighborhood": "Downtown Waterfront",
+        "score": 83,
+        "tags": [
+          "Seafood",
+          "Views",
+          "Pier",
+          "Tourist-Friendly"
+        ],
+        "address": "2201 Alaskan Way, Seattle, WA 98121",
+        "website": "https://anthonys.com",
+        "description": "Waterfront Pier 66 Anthony's — local chain outpost with panoramic Elliott Bay views, sustainable fish, and cioppino. Solid tourist-friendly "
+      },
+      {
+        "id": 9527,
+        "name": "West Seattle Junction",
+        "cuisine": "Landmark / Shopping District",
+        "neighborhood": "West Seattle",
+        "score": 83,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Shopping"
+        ],
+        "address": "California Ave SW & SW Alaska St, Seattle, WA 98116",
+        "website": "",
+        "description": "Historic commercial crossroads at California Avenue SW and SW Alaska Street. The Junction’s hand-painted murals, indie shops, and the iconic"
+      },
+      {
+        "id": 9313,
+        "name": "Seattle Great Wheel",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Waterfront",
+        "score": 82,
+        "tags": [
+          "Tourist Attraction",
+          "Views",
+          "Photo Op",
+          "Family"
+        ],
+        "address": "1301 Alaskan Way, Seattle, WA 98101",
+        "website": "https://seattlegreatwheel.com",
+        "description": "175-foot observation wheel at the end of Pier 57 with enclosed climate-controlled gondolas. Three revolutions per ride offering views of Ell"
+      },
+      {
+        "id": 9415,
+        "name": "The Crab Pot",
+        "cuisine": "Seafood",
+        "neighborhood": "Downtown Waterfront",
+        "score": 82,
+        "tags": [
+          "Seafood",
+          "Seafoodboil",
+          "Family Friendly",
+          "Tourist-Friendly"
+        ],
+        "address": "1301 Alaskan Way, Seattle, WA 98101",
+        "website": "https://thecrabpotseattle.com",
+        "description": "Waterfront seafood boil destination. Dump the bag on the table — crab legs, shrimp, clams, corn, sausage. Hands-in-the-food fun for groups."
+      },
+      {
+        "id": 9531,
+        "name": "Georgetown Steam Plant",
+        "cuisine": "Landmark / Historic Site",
+        "neighborhood": "Georgetown",
+        "score": 82,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "6605 13th Ave S, Seattle, WA 98108",
+        "website": "",
+        "description": "National Historic Landmark 1906 steam-electric power plant, now a working museum of industrial technology. Open select Saturdays for tours t"
+      },
+      {
+        "id": 9518,
+        "name": "Kobe Terrace Park",
+        "cuisine": "Park",
+        "neighborhood": "Chinatown-International District",
+        "score": 80,
+        "tags": [
+          "Park",
+          "Outdoor",
+          "Landmark"
+        ],
+        "address": "221 6th Ave S, Seattle, WA 98104",
+        "website": "",
+        "description": "Hillside Japanese-style park named for Seattle’s sister city Kobe. Rows of cherry trees, a 200-year-old stone lantern gifted by Kobe, and pa"
+      },
+      {
+        "id": 9532,
+        "name": "Oxbow Park (Hat ’n’ Boots)",
+        "cuisine": "Park / Landmark",
+        "neighborhood": "Georgetown",
+        "score": 80,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Tourist Attraction",
+          "Photo Op"
+        ],
+        "address": "6430 Corson Ave S, Seattle, WA 98108",
+        "website": "",
+        "description": "Quirky Georgetown park featuring the restored 1954 Hat ’n’ Boots gas-station sculpture — a 44-foot cowboy hat and a pair of 22-foot boots. E"
+      }
+    ]
+  },
+  "New York": {
+    "totalAttractions": 71,
+    "existingInThingsToDo": [
+      "Fountains of Bellagio",
+      "Red Rock Canyon",
+      "The Sphere Exterior Shows",
+      "Area 15 + Meow Wolf",
+      "Fremont Street Experience",
+      "Valley of Fire State Park",
+      "Hoover Dam",
+      "Casino-Hopping on the Strip"
+    ],
+    "candidateCount": 70,
+    "candidates": [
+      {
+        "id": 1803,
+        "name": "Central Park",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Upper West Side",
+        "score": 96,
+        "tags": [
+          "Tourist Attraction",
+          "Park",
+          "Outdoor",
+          "Free",
+          "Iconic"
+        ],
+        "address": "Central Park, New York, NY",
+        "website": "https://www.centralparknyc.org",
+        "description": "843 acres of green in the middle of Manhattan. Bethesda Fountain, Bow Bridge, The Mall, Belvedere Castle, and Strawberry Fields. Enter at 72"
+      },
+      {
+        "id": 1806,
+        "name": "MET Museum",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Upper East Side",
+        "score": 96,
+        "tags": [
+          "Tourist Attraction",
+          "Museum",
+          "Art",
+          "Iconic"
+        ],
+        "address": "1000 5th Ave, New York, NY 10028",
+        "website": "https://www.metmuseum.org",
+        "description": "One of the greatest art museums on Earth with 2 million works spanning 5,000 years. Egyptian Temple of Dendur, European paintings, and seaso"
+      },
+      {
+        "id": 1940,
+        "name": "Apollo Theater",
+        "cuisine": "Theater / Landmark",
+        "neighborhood": "Harlem",
+        "score": 95,
+        "tags": [
+          "Theater",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Iconic",
+          "Live Music"
+        ],
+        "address": "253 W 125th St, New York, NY 10027",
+        "website": "https://www.apollotheater.org",
+        "description": "Harlem’s crown jewel and the cradle of Black American music — Ella Fitzgerald, James Brown, and countless others launched careers here at Am"
+      },
+      {
+        "id": 1945,
+        "name": "Prospect Park",
+        "cuisine": "Park",
+        "neighborhood": "Park Slope / Prospect Heights",
+        "score": 95,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Landmark",
+          "Outdoor",
+          "Iconic",
+          "Family Friendly"
+        ],
+        "address": "95 Prospect Park West, Brooklyn, NY 11215",
+        "website": "https://www.prospectpark.org",
+        "description": "Brooklyn’s 526-acre Olmsted and Vaux masterpiece — the team behind Central Park. The Long Meadow, the Ravine, Prospect Park Lake, and the Le"
+      },
+      {
+        "id": 1805,
+        "name": "The High Line",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Chelsea",
+        "score": 93,
+        "tags": [
+          "Tourist Attraction",
+          "Park",
+          "Outdoor",
+          "Free",
+          "Art"
+        ],
+        "address": "The High Line, New York, NY 10011",
+        "website": "https://www.thehighline.org",
+        "description": "Elevated park built on a former railway running 1.45 miles through Chelsea and Meatpacking. Art installations, gardens, and incredible archi"
+      },
+      {
+        "id": 1808,
+        "name": "DUMBO & Brooklyn Bridge Park",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "DUMBO",
+        "score": 93,
+        "tags": [
+          "Tourist Attraction",
+          "Park",
+          "Photo Op",
+          "Free",
+          "Outdoor"
+        ],
+        "address": "DUMBO, Brooklyn, NY 11201",
+        "website": "https://www.brooklynbridgepark.org",
+        "description": "The most Instagrammed spot in NYC -- Manhattan Bridge framed by Washington Street cobblestones. Brooklyn Bridge Park has jaw-dropping skylin"
+      },
+      {
+        "id": 1917,
+        "name": "9/11 Memorial & Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Financial District",
+        "score": 93,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Landmark",
+          "Historic",
+          "Memorial"
+        ],
+        "address": "180 Greenwich St, New York, NY 10007",
+        "website": "https://www.911memorial.org",
+        "description": "The twin reflecting pools mark the footprints of the original towers; the names of every victim are inscribed in bronze around their edges. "
+      },
+      {
+        "id": 1934,
+        "name": "Tenement Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Lower East Side",
+        "score": 93,
+        "tags": [
+          "Museum",
+          "Historic",
+          "Tourist Attraction",
+          "Landmark"
+        ],
+        "address": "103 Orchard St, New York, NY 10002",
+        "website": "https://www.tenement.org",
+        "description": "Preserved tenement buildings at 97 and 103 Orchard Street telling the stories of the immigrant families who lived there between the 1860s an"
+      },
+      {
+        "id": 1946,
+        "name": "Brooklyn Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Park Slope / Prospect Heights",
+        "score": 93,
+        "tags": [
+          "Museum",
+          "Arts",
+          "Landmark",
+          "Tourist Attraction",
+          "Iconic"
+        ],
+        "address": "200 Eastern Pkwy, Brooklyn, NY 11238",
+        "website": "https://www.brooklynmuseum.org",
+        "description": "Second-largest museum in New York City, with 1.5 million works across ancient Egyptian antiquities, Judy Chicago’s Dinner Party, and a celeb"
+      },
+      {
+        "id": 1802,
+        "name": "Empire State Building",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Midtown",
+        "score": 92,
+        "tags": [
+          "Tourist Attraction",
+          "Observation Deck",
+          "Landmark",
+          "Iconic"
+        ],
+        "address": "20 W 34th St, New York, NY 10001",
+        "website": "https://www.esbnyc.com",
+        "description": "The most iconic skyscraper in the world. 86th floor observation deck has 360-degree open-air views. Go at sunset for magic. Express pass wor"
+      },
+      {
+        "id": 1913,
+        "name": "Museum of Modern Art (MoMA)",
+        "cuisine": "Art Museum",
+        "neighborhood": "Midtown",
+        "score": 92,
+        "tags": [
+          "Museum",
+          "Art",
+          "Tourist Attraction",
+          "Iconic",
+          "Landmark"
+        ],
+        "address": "11 W 53rd St, New York, NY 10019",
+        "website": "https://www.moma.org",
+        "description": "The most influential modern art museum in the world, home to Van Gogh's Starry Night, Monet's Water Lilies, Picasso's Demoiselles d'Avignon,"
+      },
+      {
+        "id": 1932,
+        "name": "Stonewall Inn National Monument",
+        "cuisine": "Landmark / Historic Site",
+        "neighborhood": "West Village",
+        "score": 92,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "LGBTQ+",
+          "National Monument"
+        ],
+        "address": "53 Christopher St, New York, NY 10014",
+        "website": "https://thestonewallinnnyc.com",
+        "description": "Birthplace of the modern LGBTQ+ rights movement. The 1969 Stonewall Uprising transformed this Greenwich Village bar into a pilgrimage site; "
+      },
+      {
+        "id": 1947,
+        "name": "Brooklyn Botanic Garden",
+        "cuisine": "Botanical Garden / Park",
+        "neighborhood": "Park Slope / Prospect Heights",
+        "score": 92,
+        "tags": [
+          "Park",
+          "Tourist Attraction",
+          "Landmark",
+          "Outdoor",
+          "Family Friendly"
+        ],
+        "address": "990 Washington Ave, Brooklyn, NY 11238",
+        "website": "https://www.bbg.org",
+        "description": "52-acre botanical garden wedged between Prospect Park and the Brooklyn Museum. Cherry Esplanade Sakura Matsuri (spring), Shakespeare Garden,"
+      },
+      {
+        "id": 1948,
+        "name": "Brooklyn Academy of Music (BAM)",
+        "cuisine": "Theater / Landmark",
+        "neighborhood": "Fort Greene / Clinton Hill",
+        "score": 91,
+        "tags": [
+          "Theater",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Iconic",
+          "Arts"
+        ],
+        "address": "30 Lafayette Ave, Brooklyn, NY 11217",
+        "website": "",
+        "description": "America’s oldest continuously operating performing-arts center (1861), anchored by the landmark 1908 Peter Jay Sharp Building. The annual Ne"
+      },
+      {
+        "id": 1807,
+        "name": "Grand Central Terminal",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Midtown East",
+        "score": 90,
+        "tags": [
+          "Tourist Attraction",
+          "Landmark",
+          "Historic",
+          "Free",
+          "Iconic"
+        ],
+        "address": "89 E 42nd St, New York, NY 10017",
+        "website": "https://www.grandcentralterminal.com",
+        "description": "The most beautiful train station in the world. Main concourse ceiling painted with zodiac constellations. The Whispering Gallery lets you wh"
+      },
+      {
+        "id": 1916,
+        "name": "American Museum of Natural History",
+        "cuisine": "Museum",
+        "neighborhood": "Upper West Side",
+        "score": 90,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Family",
+          "Landmark"
+        ],
+        "address": "200 Central Park West, New York, NY 10024",
+        "website": "https://www.amnh.org",
+        "description": "34 million specimens across 26 interconnected buildings. The iconic dinosaur halls, the blue whale in the Hall of Ocean Life, the Rose Cente"
+      },
+      {
+        "id": 1935,
+        "name": "New Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Lower East Side",
+        "score": 90,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Contemporary Art",
+          "Arts"
+        ],
+        "address": "235 Bowery, New York, NY 10002",
+        "website": "https://www.newmuseum.org",
+        "description": "Manhattan’s only museum dedicated exclusively to contemporary art, founded 1977. The Sejima + Ryue Nishizawa / SANAA-designed Bowery buildin"
+      },
+      {
+        "id": 1941,
+        "name": "Studio Museum in Harlem",
+        "cuisine": "Museum",
+        "neighborhood": "Harlem",
+        "score": 90,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Arts",
+          "Landmark"
+        ],
+        "address": "144 W 125th St, New York, NY 10027",
+        "website": "https://www.studiomuseum.org",
+        "description": "Premier institution dedicated to artists of African descent. Reopened 2025 in a new David Adjaye-designed building on West 125th Street; the"
+      },
+      {
+        "id": 1915,
+        "name": "Solomon R. Guggenheim Museum",
+        "cuisine": "Art Museum",
+        "neighborhood": "Upper East Side",
+        "score": 89,
+        "tags": [
+          "Museum",
+          "Art",
+          "Tourist Attraction",
+          "Iconic",
+          "Landmark"
+        ],
+        "address": "1071 5th Ave, New York, NY 10128",
+        "website": "https://www.guggenheim.org",
+        "description": "Frank Lloyd Wright's spiraling white rotunda — one of the 20th century's most important architectural landmarks — housing modern and contemp"
+      },
+      {
+        "id": 1919,
+        "name": "Summit One Vanderbilt",
+        "cuisine": "Observation Deck",
+        "neighborhood": "Midtown East",
+        "score": 89,
+        "tags": [
+          "Tourist Attraction",
+          "Views",
+          "Photo Op",
+          "Iconic"
+        ],
+        "address": "45 E 42nd St, New York, NY 10017",
+        "website": "https://summitov.com",
+        "description": "The newest and most immersive observation experience in NYC, rising 1,401 feet above Grand Central. Floor-to-ceiling mirrored rooms (Air), g"
+      },
+      {
+        "id": 1920,
+        "name": "Rockefeller Center",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Midtown",
+        "score": 89,
+        "tags": [
+          "Tourist Attraction",
+          "Iconic",
+          "Landmark",
+          "Free",
+          "Seasonal",
+          "Photo Op"
+        ],
+        "address": "45 Rockefeller Plaza, New York, NY 10111",
+        "website": "https://www.rockefellercenter.com",
+        "description": "The Art Deco complex anchoring midtown: Christmas tree lighting, the Rink at Rockefeller Center in winter, Channel Gardens, Radio City next "
+      },
+      {
+        "id": 1677,
+        "name": "Statue of Liberty & Ellis Island",
+        "cuisine": "Entertainment",
+        "neighborhood": "Financial District",
+        "score": 88,
+        "tags": [
+          "Local Favorites",
+          "Casual",
+          "Family Friendly",
+          "Historic",
+          "Classic"
+        ],
+        "address": "Liberty Island, New York, NY 10004",
+        "website": "https://www.nps.gov/stli",
+        "description": "America's most iconic landmark — take the ferry from Battery Park to Liberty Island for crown access (book months ahead), then Ellis Island "
+      },
+      {
+        "id": 1914,
+        "name": "Whitney Museum of American Art",
+        "cuisine": "Art Museum",
+        "neighborhood": "Meatpacking District",
+        "score": 88,
+        "tags": [
+          "Museum",
+          "Art",
+          "Tourist Attraction"
+        ],
+        "address": "99 Gansevoort St, New York, NY 10014",
+        "website": "https://whitney.org",
+        "description": "Renzo Piano-designed museum dedicated exclusively to 20th and 21st-century American art. Edward Hopper, Georgia O'Keeffe, Jasper Johns, Basq"
+      },
+      {
+        "id": 1923,
+        "name": "Prospect Park",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Park Slope / Prospect Heights",
+        "score": 88,
+        "tags": [
+          "Tourist Attraction",
+          "Park",
+          "Free",
+          "Outdoor",
+          "Family"
+        ],
+        "address": "95 Prospect Park West, Brooklyn, NY 11215",
+        "website": "https://www.prospectpark.org",
+        "description": "Olmsted and Vaux's 526-acre Brooklyn masterpiece — the same team that designed Central Park, and the one they considered their finest work. "
+      },
+      {
+        "id": 1937,
+        "name": "Museum of Chinese in America",
+        "cuisine": "Museum",
+        "neighborhood": "Chinatown",
+        "score": 88,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Historic",
+          "Landmark"
+        ],
+        "address": "215 Centre St, New York, NY 10013",
+        "website": "https://www.mocanyc.org",
+        "description": "Maya Lin-designed museum documenting the history of the Chinese diaspora in the United States. Rotating exhibitions and an extensive archive"
+      },
+      {
+        "id": 1662,
+        "name": "Radio City Music Hall",
+        "cuisine": "Live Music",
+        "neighborhood": "Midtown",
+        "score": 87,
+        "tags": [
+          "Live Music",
+          "Celebrations",
+          "Date Night",
+          "Classic"
+        ],
+        "address": "1260 6th Ave, New York, NY 10020",
+        "website": "https://www.msg.com/radio-city-music-hall",
+        "description": "The most iconic entertainment venue in NYC — 6,000 seats of Art Deco grandeur at Rockefeller Center. Home of the Rockettes, host of the bigg"
+      },
+      {
+        "id": 1724,
+        "name": "Madison Square Garden",
+        "cuisine": "Entertainment",
+        "neighborhood": "Midtown",
+        "score": 87,
+        "tags": [
+          "Live Music",
+          "Sports",
+          "Celebrations",
+          "Eat & Play"
+        ],
+        "address": "4 Pennsylvania Plaza, New York, NY 10001",
+        "website": "https://www.msg.com",
+        "description": "The world's most famous arena — home of the Knicks, Rangers, and the biggest concerts in the world. The energy of 20,000 people at a sold-ou"
+      },
+      {
+        "id": 1921,
+        "name": "Bryant Park",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Midtown",
+        "score": 87,
+        "tags": [
+          "Tourist Attraction",
+          "Park",
+          "Free",
+          "Seasonal",
+          "Iconic"
+        ],
+        "address": "Bryant Park, New York, NY 10018",
+        "website": "https://bryantpark.org",
+        "description": "9.6-acre park behind the NY Public Library, the epicenter of midtown's social life. Free summer movies, fall lawn games, winter Ice Skating "
+      },
+      {
+        "id": 1936,
+        "name": "Essex Market",
+        "cuisine": "Market / Landmark",
+        "neighborhood": "Lower East Side",
+        "score": 87,
+        "tags": [
+          "Landmark",
+          "Tourist Attraction",
+          "Market",
+          "Historic"
+        ],
+        "address": "88 Essex St, New York, NY 10002",
+        "website": "https://www.essexmarket.nyc",
+        "description": "Historic public market founded 1940 under Mayor La Guardia, reborn in 2019 inside Essex Crossing. A vendor hall of specialty grocers, butche"
+      },
+      {
+        "id": 1943,
+        "name": "Basilica of St. Patrick’s Old Cathedral",
+        "cuisine": "Landmark / Historic Site",
+        "neighborhood": "Nolita",
+        "score": 87,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Tourist Attraction",
+          "Religious"
+        ],
+        "address": "263 Mulberry St, New York, NY 10012",
+        "website": "https://oldcathedral.org",
+        "description": "The original St. Patrick’s Cathedral, completed 1815 — the seat of the Archdiocese of New York before the Fifth Avenue cathedral opened. Got"
+      },
+      {
+        "id": 1642,
+        "name": "Sleep No More",
+        "cuisine": "Entertainment",
+        "neighborhood": "Chelsea",
+        "score": 86,
+        "tags": [
+          "Date Night",
+          "Exclusive",
+          "Eat & Play"
+        ],
+        "address": "530 W 27th St, New York, NY 10001",
+        "website": "https://mckittrickhotel.com/events/sleep-no-more/",
+        "description": "Immersive theater experience in a recreated 1930s hotel where you wander through 100 rooms wearing a white mask, following actors performing"
+      },
+      {
+        "id": 1922,
+        "name": "Washington Square Park",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Greenwich Village",
+        "score": 86,
+        "tags": [
+          "Tourist Attraction",
+          "Park",
+          "Free",
+          "Iconic",
+          "Landmark"
+        ],
+        "address": "Washington Square N, New York, NY 10012",
+        "website": "https://www.nycgovparks.org/parks/washington-square-park",
+        "description": "Greenwich Village's living room, anchored by the iconic Washington Arch. Street musicians, chess players, NYU students, and dog-walkers orbi"
+      },
+      {
+        "id": 1933,
+        "name": "Cherry Lane Theatre",
+        "cuisine": "Theater / Landmark",
+        "neighborhood": "West Village",
+        "score": 86,
+        "tags": [
+          "Theater",
+          "Landmark",
+          "Historic",
+          "Arts"
+        ],
+        "address": "38 Commerce St, New York, NY 10014",
+        "website": "",
+        "description": "New York City’s oldest continuously running off-Broadway theater, founded 1924 on a quiet West Village mews. Tucked on Commerce Street, the "
+      },
+      {
+        "id": 1939,
+        "name": "Museum at Eldridge Street",
+        "cuisine": "Museum",
+        "neighborhood": "Chinatown",
+        "score": 86,
+        "tags": [
+          "Museum",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "12 Eldridge St, New York, NY 10002",
+        "website": "",
+        "description": "Restored 1887 synagogue that served Eastern European Jewish immigrants on the Lower East Side’s Chinatown border. A National Historic Landma"
+      },
+      {
+        "id": 1676,
+        "name": "Empire State Building Observatory",
+        "cuisine": "Entertainment",
+        "neighborhood": "Midtown",
+        "score": 85,
+        "tags": [
+          "Date Night",
+          "Viral",
+          "Celebrations",
+          "Classic"
+        ],
+        "address": "20 W 34th St, New York, NY 10001",
+        "website": "https://www.esbnyc.com",
+        "description": "The most iconic observation deck in the world — 86th and 102nd floors with 360-degree open-air views that have appeared in a hundred movies."
+      },
+      {
+        "id": 1704,
+        "name": "Classic Harbor Line",
+        "cuisine": "Entertainment",
+        "neighborhood": "Chelsea",
+        "score": 85,
+        "tags": [
+          "Date Night",
+          "Cocktails",
+          "Exclusive",
+          "Patio",
+          "Celebrations",
+          "Historic"
+        ],
+        "address": "Chelsea Piers, Pier 62, New York, NY 10011",
+        "website": "https://www.sail-nyc.com",
+        "description": "Elegant yacht cruises on vintage 1920s-style schooners with wine, cheese, and craft cocktails. The most romantic way to see the NYC skyline "
+      },
+      {
+        "id": 1715,
+        "name": "Yankee Stadium",
+        "cuisine": "Entertainment",
+        "neighborhood": "Bronx",
+        "score": 85,
+        "tags": [
+          "Eat & Play",
+          "Local Favorites",
+          "Celebrations",
+          "Sports",
+          "Historic",
+          "Classic"
+        ],
+        "address": "1 E 161st St, Bronx, NY 10451",
+        "website": "https://www.mlb.com/yankees",
+        "description": "Home of the New York Yankees since 2009 — 54,000 seats, Monument Park, and the most storied franchise in sports history. The garlic fries ar"
+      },
+      {
+        "id": 1811,
+        "name": "Grimaldi's",
+        "cuisine": "Pizza",
+        "neighborhood": "DUMBO",
+        "score": 85,
+        "tags": [
+          "Pizza",
+          "Classic",
+          "Tourist Attraction",
+          "Family Friendly",
+          "Historic"
+        ],
+        "address": "1 Front St, Brooklyn, NY 11201",
+        "website": "https://www.grimaldis-pizza.com",
+        "description": "The coal-fired Brooklyn pie institution under the Brooklyn Bridge that helped put DUMBO on the map. Lines snake down Old Fulton most weekend"
+      },
+      {
+        "id": 1918,
+        "name": "Intrepid Sea, Air & Space Museum",
+        "cuisine": "Museum",
+        "neighborhood": "Hell's Kitchen",
+        "score": 85,
+        "tags": [
+          "Museum",
+          "Tourist Attraction",
+          "Family",
+          "Historic"
+        ],
+        "address": "Pier 86, W 46th St, New York, NY 10036",
+        "website": "https://intrepidmuseum.org",
+        "description": "The aircraft carrier USS Intrepid docked on the Hudson, now a military and maritime museum. Board the space shuttle Enterprise, walk through"
+      },
+      {
+        "id": 1942,
+        "name": "Morris-Jumel Mansion",
+        "cuisine": "Landmark / Historic House",
+        "neighborhood": "Harlem",
+        "score": 85,
+        "tags": [
+          "Landmark",
+          "Historic",
+          "Museum",
+          "Tourist Attraction"
+        ],
+        "address": "65 Jumel Terrace, New York, NY 10032",
+        "website": "",
+        "description": "Manhattan’s oldest remaining house (1765), where George Washington headquartered during the Battle of Harlem Heights. A hidden gem on a hill"
+      },
+      {
+        "id": 1944,
+        "name": "Elizabeth Street Garden",
+        "cuisine": "Park / Sculpture Garden",
+        "neighborhood": "Nolita",
+        "score": 85,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Tourist Attraction",
+          "Arts",
+          "Outdoor"
+        ],
+        "address": "209 Elizabeth St, New York, NY 10012",
+        "website": "https://www.elizabethstreetgarden.com",
+        "description": "Volunteer-run sculpture and community garden tucked between Prince and Spring Streets. Classical statuary, greenery, and a beloved community"
+      },
+      {
+        "id": 1675,
+        "name": "Top of the Rock",
+        "cuisine": "Entertainment",
+        "neighborhood": "Midtown",
+        "score": 84,
+        "tags": [
+          "Date Night",
+          "Patio",
+          "Late Night"
+        ],
+        "address": "30 Rockefeller Plaza, New York, NY 10112",
+        "website": "https://www.topoftherocknyc.com",
+        "description": "Three-tiered observation deck atop Rockefeller Center with unobstructed views of the Empire State Building and Central Park stretching north"
+      },
+      {
+        "id": 1678,
+        "name": "One World Observatory",
+        "cuisine": "Entertainment",
+        "neighborhood": "Financial District",
+        "score": 84,
+        "tags": [
+          "Date Night",
+          "Viral",
+          "Late Night"
+        ],
+        "address": "117 West St, New York, NY 10007",
+        "website": "https://www.oneworldobservatory.com",
+        "description": "Perched atop the tallest building in the Western Hemisphere, this observation deck delivers genuinely jaw-dropping 360-degree views from the"
+      },
+      {
+        "id": 1684,
+        "name": "Coney Island",
+        "cuisine": "Entertainment",
+        "neighborhood": "Coney Island / South Brooklyn",
+        "score": 84,
+        "tags": [
+          "Eat & Play",
+          "Casual",
+          "Local Favorites",
+          "Patio",
+          "Dog Friendly",
+          "Classic"
+        ],
+        "address": "1000 Surf Ave, Brooklyn, NY 11224",
+        "website": "https://www.lunaparknyc.com",
+        "description": "NYC's legendary beachfront amusement district with Luna Park rides, the 1927 Cyclone roller coaster, Nathan's hot dogs, the boardwalk, and t"
+      },
+      {
+        "id": 1686,
+        "name": "Fotografiska New York",
+        "cuisine": "Entertainment",
+        "neighborhood": "Flatiron / NoMad",
+        "score": 84,
+        "tags": [
+          "Date Night",
+          "Cocktails",
+          "Local Favorites",
+          "Rooftop",
+          "Healthy"
+        ],
+        "address": "281 Park Ave S, New York, NY 10010",
+        "website": "https://www.fotografiska.com/nyc",
+        "description": "Stockholm photography museum's NYC outpost in a stunning Gramercy townhouse with rotating exhibitions, a rooftop bar, and a plant-based rest"
+      },
+      {
+        "id": 1703,
+        "name": "Circle Line Sightseeing Cruises",
+        "cuisine": "Entertainment",
+        "neighborhood": "Midtown West",
+        "score": 84,
+        "tags": [
+          "Date Night",
+          "Local Favorites",
+          "Casual",
+          "Patio",
+          "Historic",
+          "Classic"
+        ],
+        "address": "Pier 83, W 42nd St, New York, NY 10036",
+        "website": "https://www.circleline.com",
+        "description": "NYC's classic harbor cruise since 1945 — full island circumnavigation, sunset cruises, and holiday specials with Statue of Liberty and skyli"
+      },
+      {
+        "id": 1705,
+        "name": "Manhattan by Sail",
+        "cuisine": "Entertainment",
+        "neighborhood": "Brooklyn Heights",
+        "score": 84,
+        "tags": [
+          "Date Night",
+          "Cocktails",
+          "Patio",
+          "Celebrations",
+          "Historic"
+        ],
+        "address": "Pier 6, Brooklyn Bridge Park, Brooklyn, NY 11201",
+        "website": "https://www.manhattanbysail.com",
+        "description": "Sail the harbor on a historic 1885 schooner with BYOB sunset sails, craft beer sails, and daytime Statue of Liberty cruises from Pier 6 in B"
+      },
+      {
+        "id": 1725,
+        "name": "Barclays Center",
+        "cuisine": "Entertainment",
+        "neighborhood": "Brooklyn Heights",
+        "score": 84,
+        "tags": [
+          "Live Music",
+          "Sports",
+          "Celebrations",
+          "Eat & Play"
+        ],
+        "address": "620 Atlantic Ave, Brooklyn, NY 11217",
+        "website": "https://www.barclayscenter.com",
+        "description": "Brooklyn's premier arena at Atlantic Terminal — home of the Nets and Liberty with major concerts, boxing, and events. The location at the in"
+      },
+      {
+        "id": 1938,
+        "name": "Columbus Park",
+        "cuisine": "Park",
+        "neighborhood": "Chinatown",
+        "score": 84,
+        "tags": [
+          "Park",
+          "Landmark",
+          "Historic",
+          "Tourist Attraction"
+        ],
+        "address": "67 Mulberry St, New York, NY 10013",
+        "website": "",
+        "description": "Historic public park carved out of the 19th-century Five Points slum. By day, the playground of choice for Chinatown grandparents — dominoes"
+      },
+      {
+        "id": 1371,
+        "name": "House of Yes",
+        "cuisine": "Entertainment",
+        "neighborhood": "Bushwick",
+        "score": 83,
+        "tags": [
+          "Late Night",
+          "Live Music",
+          "Eat & Play",
+          "Cocktails"
+        ],
+        "address": "2 Wyckoff Ave, Brooklyn, NY 11237",
+        "website": "https://www.houseofyes.org",
+        "description": "Bushwick's wildest nightlife venue — circus performances, immersive dance parties, themed costume nights, and a creative energy that makes e"
+      },
+      {
+        "id": 1373,
+        "name": "Brooklyn Bowl",
+        "cuisine": "Entertainment",
+        "neighborhood": "Williamsburg",
+        "score": 83,
+        "tags": [
+          "Live Music",
+          "Eat & Play",
+          "Late Night",
+          "Casual",
+          "Happy Hour",
+          "Sports"
+        ],
+        "address": "61 Wythe Ave, Brooklyn, NY 11249",
+        "website": "https://www.brooklynbowl.com",
+        "description": "Williamsburg bowling alley, live music venue, and restaurant in one glorious multi-use space. Blue Ribbon fried chicken is served while you "
+      },
+      {
+        "id": 1644,
+        "name": "Batsu!",
+        "cuisine": "Entertainment",
+        "neighborhood": "East Village",
+        "score": 83,
+        "tags": [
+          "Eat & Play",
+          "Date Night",
+          "Late Night",
+          "Viral",
+          "Sports"
+        ],
+        "address": "210 E 5th St, New York, NY 10003",
+        "website": "https://www.batsunyc.com",
+        "description": "Japanese game show-inspired interactive comedy in the East Village where audience members compete in hilarious physical challenges while the"
+      },
+      {
+        "id": 1683,
+        "name": "Forest Hills Stadium",
+        "cuisine": "Live Music",
+        "neighborhood": "Astoria",
+        "score": 83,
+        "tags": [
+          "Live Music",
+          "Patio",
+          "Casual",
+          "Sports",
+          "Historic"
+        ],
+        "address": "1 Tennis Pl, Forest Hills, NY 11375",
+        "website": "https://www.foresthillsstadium.com",
+        "description": "Historic 14,000-seat outdoor stadium in Queens that hosted the US Open until 1977, now reborn as an intimate outdoor concert venue for summe"
+      },
+      {
+        "id": 1706,
+        "name": "NYC Ferry",
+        "cuisine": "Entertainment",
+        "neighborhood": "Midtown",
+        "score": 83,
+        "tags": [
+          "Local Favorites",
+          "Casual",
+          "Patio",
+          "Date Night"
+        ],
+        "address": "Multiple stops (Wall St, DUMBO, Williamsburg, Astoria, etc)",
+        "website": "https://www.ferry.nyc",
+        "description": "Forget the subway -- NYC Ferry lets you cruise between Manhattan, Brooklyn, Queens, and the Bronx on the water for the price of a MetroCard "
+      },
+      {
+        "id": 1712,
+        "name": "Free Kayaking at Pier 26",
+        "cuisine": "Entertainment",
+        "neighborhood": "Tribeca",
+        "score": 83,
+        "tags": [
+          "Local Favorites",
+          "Casual",
+          "Patio"
+        ],
+        "address": "Pier 26, Hudson River Park, New York, NY 10013",
+        "website": "https://www.downtownboathouse.org",
+        "description": "FREE walk-up kayaking on the Hudson at Pier 26 — no experience needed, life jackets provided, 20-minute sessions. Operated by the Downtown B"
+      },
+      {
+        "id": 1374,
+        "name": "Pier 17 Rooftop",
+        "cuisine": "Entertainment",
+        "neighborhood": "Financial District",
+        "score": 82,
+        "tags": [
+          "Rooftop",
+          "Live Music",
+          "Cocktails",
+          "Patio"
+        ],
+        "address": "89 South St, New York, NY 10038",
+        "website": "https://www.pier17ny.com",
+        "description": "The Seaport District crown jewel is this massive rooftop concert venue and hangout space perched above the East River with jaw-dropping Broo"
+      },
+      {
+        "id": 1643,
+        "name": "DUMBO Boulders",
+        "cuisine": "Entertainment",
+        "neighborhood": "DUMBO",
+        "score": 82,
+        "tags": [
+          "Eat & Play",
+          "Casual",
+          "Local Favorites"
+        ],
+        "address": "81 Water St, Brooklyn, NY 11201",
+        "website": "",
+        "description": "Brooklyn's premier bouldering gym in DUMBO with world-class climbing walls, yoga classes, and a community cafe. No ropes needed — just shoes"
+      },
+      {
+        "id": 1646,
+        "name": "Royal Palms Shuffleboard Club",
+        "cuisine": "Entertainment",
+        "neighborhood": "Carroll Gardens / Cobble Hill",
+        "score": 82,
+        "tags": [
+          "Eat & Play",
+          "Casual",
+          "Local Favorites",
+          "Patio",
+          "Dog Friendly"
+        ],
+        "address": "514 Union St, Brooklyn, NY 11215",
+        "website": "https://www.royalpalmsshuffle.com",
+        "description": "Massive Gowanus shuffleboard club with 10 courts, tropical drinks, food pop-ups, and a retro-Florida vibe. The drinks are frozen and fruity."
+      },
+      {
+        "id": 1667,
+        "name": "Under the K Bridge Park",
+        "cuisine": "Entertainment",
+        "neighborhood": "Greenpoint",
+        "score": 82,
+        "tags": [
+          "Live Music",
+          "Patio",
+          "Casual",
+          "Local Favorites",
+          "Eat & Play"
+        ],
+        "address": "Under the Kosciuszko Bridge, Greenpoint, Brooklyn, NY 11222",
+        "website": "",
+        "description": "Outdoor event and community space under the Kosciuszko Bridge in Greenpoint hosting seasonal DJ parties, markets, art installations, and nei"
+      },
+      {
+        "id": 1681,
+        "name": "Chelsea Piers",
+        "cuisine": "Entertainment",
+        "neighborhood": "Chelsea",
+        "score": 82,
+        "tags": [
+          "Eat & Play",
+          "Casual",
+          "Local Favorites",
+          "Sports"
+        ],
+        "address": "62 Chelsea Piers, New York, NY 10011",
+        "website": "https://www.chelseapiers.com",
+        "description": "Massive waterfront sports complex with bowling, rock climbing, ice skating, golf driving range, gymnastics, and fitness facilities — all on "
+      },
+      {
+        "id": 1687,
+        "name": "Artechouse NYC",
+        "cuisine": "Entertainment",
+        "neighborhood": "Chelsea",
+        "score": 82,
+        "tags": [
+          "Date Night",
+          "Viral",
+          "Eat & Play"
+        ],
+        "address": "439 W 15th St, New York, NY 10011",
+        "website": "https://www.artechouse.com",
+        "description": "Immersive digital art experience in Chelsea with large-scale projections, interactive installations, and an XR cocktail bar where drinks com"
+      },
+      {
+        "id": 1707,
+        "name": "Bateaux New York Dinner Cruise",
+        "cuisine": "Entertainment",
+        "neighborhood": "Chelsea",
+        "score": 82,
+        "tags": [
+          "Date Night",
+          "Fine Dining",
+          "Celebrations",
+          "Cocktails",
+          "Exclusive"
+        ],
+        "address": "Chelsea Piers, Pier 61, New York, NY 10011",
+        "website": "https://www.bateauxnewyork.com",
+        "description": "A glass-enclosed luxury dinner cruise that floats you around Manhattan with surprisingly competent prix-fixe dining and live music. Unabashe"
+      },
+      {
+        "id": 1708,
+        "name": "Hornblower Cruises",
+        "cuisine": "Entertainment",
+        "neighborhood": "Financial District",
+        "score": 82,
+        "tags": [
+          "Date Night",
+          "Cocktails",
+          "Celebrations",
+          "Patio",
+          "Brunch"
+        ],
+        "address": "Pier 15, 78 South St, New York, NY 10038",
+        "website": "https://www.cityexperiences.com",
+        "description": "Harbor cruises from Pier 15 with brunch, lunch, dinner, and cocktail options. Live DJs on evening cruises. Statue of Liberty views from ever"
+      },
+      {
+        "id": 1711,
+        "name": "Manhattan Kayak + SUP",
+        "cuisine": "Entertainment",
+        "neighborhood": "Chelsea",
+        "score": 82,
+        "tags": [
+          "Eat & Play",
+          "Casual",
+          "Local Favorites",
+          "Patio"
+        ],
+        "address": "Pier 84, 555 12th Ave, New York, NY 10036",
+        "website": "https://www.manhattankayak.com",
+        "description": "Kayak and paddleboard rentals on the Hudson River at Pier 84. Paddle past the Intrepid with the Midtown skyline as your backdrop. Sunset pad"
+      },
+      {
+        "id": 1809,
+        "name": "Wall Street & Charging Bull",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Financial District",
+        "score": 82,
+        "tags": [
+          "Tourist Attraction",
+          "Landmark",
+          "Historic",
+          "Free"
+        ],
+        "address": "Wall St, New York, NY 10005",
+        "website": "",
+        "description": "The financial capital of the world. Walk past the NYSE, Federal Hall where Washington was inaugurated, and the iconic Charging Bull. Free to"
+      },
+      {
+        "id": 1949,
+        "name": "BRIC House",
+        "cuisine": "Theater / Arts",
+        "neighborhood": "Fort Greene / Clinton Hill",
+        "score": 82,
+        "tags": [
+          "Theater",
+          "Arts",
+          "Landmark",
+          "Tourist Attraction"
+        ],
+        "address": "647 Fulton St, Brooklyn, NY 11217",
+        "website": "",
+        "description": "Nonprofit performing-arts and media center in Fort Greene — the producer of the Celebrate Brooklyn! summer concert series at Prospect Park B"
+      },
+      {
+        "id": 1645,
+        "name": "SPIN New York",
+        "cuisine": "Entertainment",
+        "neighborhood": "Flatiron / NoMad",
+        "score": 81,
+        "tags": [
+          "Eat & Play",
+          "Cocktails",
+          "Date Night",
+          "Casual",
+          "Happy Hour"
+        ],
+        "address": "48 E 23rd St, New York, NY 10010",
+        "website": "https://www.spinny.com",
+        "description": "Susan Sarandon's ping pong lounge in Flatiron with 17 Olympic-quality tables, craft cocktails, and a fun date energy that turns a casual ide"
+      },
+      {
+        "id": 1672,
+        "name": "The Vessel at Hudson Yards",
+        "cuisine": "Entertainment",
+        "neighborhood": "Hudson Yards",
+        "score": 80,
+        "tags": [
+          "Viral",
+          "Casual",
+          "Patio",
+          "Historic"
+        ],
+        "address": "20 Hudson Yards, New York, NY 10001",
+        "website": "https://www.hudsonyardsnewyork.com/discover/vessel",
+        "description": "The honeycomb-like climbable structure at Hudson Yards with 154 interconnecting staircases. Love it or mock it, the experience of climbing t"
+      },
+      {
+        "id": 1688,
+        "name": "Color Factory NYC",
+        "cuisine": "Entertainment",
+        "neighborhood": "SoHo",
+        "score": 80,
+        "tags": [
+          "Viral",
+          "Eat & Play",
+          "Casual"
+        ],
+        "address": "251 Spring St, New York, NY 10013",
+        "website": "https://www.colorfactory.co",
+        "description": "Interactive art experience in SoHo with colorful installations, ball pits, and rooms designed for social media content. The spaces are vibra"
+      },
+      {
+        "id": 1804,
+        "name": "Times Square",
+        "cuisine": "Tourist Attraction",
+        "neighborhood": "Midtown",
+        "score": 80,
+        "tags": [
+          "Tourist Attraction",
+          "Landmark",
+          "Iconic",
+          "Free",
+          "Nightlife"
+        ],
+        "address": "Times Square, Manhattan, NY 10036",
+        "website": "https://www.timessquarenyc.org",
+        "description": "Love it or hate it, you have to see it once. 15 blocks of neon sensory overload and Broadway theaters. Best at night. See it for 10 minutes,"
+      }
+    ]
+  }
+}

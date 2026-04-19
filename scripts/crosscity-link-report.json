@@ -1,0 +1,607 @@
+[
+  {
+    "action": "LINK",
+    "brand": "fogo de chao",
+    "tier": "high-end",
+    "target": "Houston#7518 \"Fogo de Chao Downtown\"",
+    "added": [
+      "Dallas"
+    ],
+    "nowLinked": [
+      "Dallas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "pappadeaux seafood kitchen",
+    "tier": "upper-mid",
+    "target": "Houston#7058 \"Pappadeaux Seafood Kitchen\"",
+    "added": [
+      "Dallas"
+    ],
+    "nowLinked": [
+      "Dallas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "pappasito's cantina",
+    "tier": "high-end",
+    "target": "Dallas#63 \"Pappasito's Cantina\"",
+    "added": [
+      "Houston"
+    ],
+    "nowLinked": [
+      "Houston"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "pappasito's cantina",
+    "tier": "high-end",
+    "target": "Houston#7186 \"Pappasito's Cantina\"",
+    "added": [
+      "Dallas"
+    ],
+    "nowLinked": [
+      "Dallas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "hudson house",
+    "tier": "upper-mid",
+    "target": "Houston#7279 \"Hudson House\"",
+    "added": [
+      "Dallas"
+    ],
+    "nowLinked": [
+      "Dallas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "sadelle's",
+    "tier": "upper-mid",
+    "target": "Dallas#289 \"Sadelle's\"",
+    "added": [
+      "New York"
+    ],
+    "nowLinked": [
+      "New York"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "sadelle's",
+    "tier": "upper-mid",
+    "target": "New York#1082 \"Sadelle's\"",
+    "added": [
+      "Dallas"
+    ],
+    "nowLinked": [
+      "Dallas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "barcelona wine bar",
+    "tier": "upper-mid",
+    "target": "Dallas#302 \"Barcelona Wine Bar\"",
+    "added": [
+      "Houston"
+    ],
+    "nowLinked": [
+      "Houston"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "barcelona wine bar",
+    "tier": "upper-mid",
+    "target": "Houston#7480 \"Barcelona Wine Bar\"",
+    "added": [
+      "Dallas"
+    ],
+    "nowLinked": [
+      "Dallas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "carbone",
+    "tier": "high-end",
+    "target": "Dallas#304 \"Carbone\"",
+    "added": [
+      "New York"
+    ],
+    "nowLinked": [
+      "Las Vegas",
+      "New York"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "carbone",
+    "tier": "high-end",
+    "target": "Las Vegas#12005 \"Carbone\"",
+    "added": [
+      "Dallas",
+      "New York"
+    ],
+    "nowLinked": [
+      "Dallas",
+      "New York"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "carbone",
+    "tier": "high-end",
+    "target": "New York#1004 \"Carbone\"",
+    "added": [
+      "Dallas",
+      "Las Vegas"
+    ],
+    "nowLinked": [
+      "Dallas",
+      "Las Vegas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "iii forks",
+    "tier": "high-end",
+    "target": "Dallas#410 \"III Forks\"",
+    "added": [
+      "Austin"
+    ],
+    "nowLinked": [
+      "Austin"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "iii forks",
+    "tier": "high-end",
+    "target": "Austin#5491 \"III Forks\"",
+    "added": [
+      "Dallas"
+    ],
+    "nowLinked": [
+      "Dallas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "clark's oyster bar",
+    "tier": "upper-mid",
+    "target": "Dallas#546 \"Clark's Oyster Bar\"",
+    "added": [
+      "Houston",
+      "Austin"
+    ],
+    "nowLinked": [
+      "Houston",
+      "Austin"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "clark's oyster bar",
+    "tier": "upper-mid",
+    "target": "Houston#7225 \"Clark's Oyster Bar\"",
+    "added": [
+      "Dallas",
+      "Austin"
+    ],
+    "nowLinked": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "clark's oyster bar",
+    "tier": "upper-mid",
+    "target": "Austin#5125 \"Clark's Oyster Bar\"",
+    "added": [
+      "Dallas",
+      "Houston"
+    ],
+    "nowLinked": [
+      "Dallas",
+      "Houston"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "ayat",
+    "tier": "high-end",
+    "target": "Dallas#1076 \"Ayat\"",
+    "added": [
+      "New York"
+    ],
+    "nowLinked": [
+      "New York"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "ayat",
+    "tier": "high-end",
+    "target": "New York#1501 \"Ayat\"",
+    "added": [
+      "Dallas"
+    ],
+    "nowLinked": [
+      "Dallas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "stk steakhouse",
+    "tier": "upper-mid",
+    "target": "Dallas#1116 \"STK Steakhouse\"",
+    "added": [
+      "Las Vegas"
+    ],
+    "nowLinked": [
+      "Las Vegas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "ghost donkey",
+    "tier": "upper-mid",
+    "target": "Dallas#9149 \"Ghost Donkey\"",
+    "added": [
+      "Las Vegas"
+    ],
+    "nowLinked": [
+      "Las Vegas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "ghost donkey",
+    "tier": "upper-mid",
+    "target": "Las Vegas#12080 \"Ghost Donkey\"",
+    "added": [
+      "Dallas"
+    ],
+    "nowLinked": [
+      "Dallas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "le jardinier",
+    "tier": "high-end",
+    "target": "Houston#7003 \"Le Jardinier\"",
+    "added": [
+      "New York"
+    ],
+    "nowLinked": [
+      "New York"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "le jardinier",
+    "tier": "high-end",
+    "target": "New York#1931 \"Le Jardinier\"",
+    "added": [
+      "Houston"
+    ],
+    "nowLinked": [
+      "Houston"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "mastro's steakhouse",
+    "tier": "high-end",
+    "target": "Houston#7130 \"Mastro's Steakhouse\"",
+    "added": [
+      "Chicago"
+    ],
+    "nowLinked": [
+      "Chicago"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "mastro's steakhouse",
+    "tier": "high-end",
+    "target": "Chicago#317 \"Mastro's Steakhouse\"",
+    "added": [
+      "Houston"
+    ],
+    "nowLinked": [
+      "Houston"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "soto",
+    "tier": "high-end",
+    "target": "Houston#7246 \"Soto\"",
+    "added": [
+      "Austin"
+    ],
+    "nowLinked": [
+      "Austin"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "soto",
+    "tier": "high-end",
+    "target": "Austin#5052 \"Soto\"",
+    "added": [
+      "Houston"
+    ],
+    "nowLinked": [
+      "Houston"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "le colonial",
+    "tier": "upper-mid",
+    "target": "Houston#7268 \"Le Colonial\"",
+    "added": [
+      "Chicago"
+    ],
+    "nowLinked": [
+      "Chicago"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "le colonial",
+    "tier": "upper-mid",
+    "target": "Chicago#312 \"Le Colonial\"",
+    "added": [
+      "Houston"
+    ],
+    "nowLinked": [
+      "Houston"
+    ]
+  },
+  {
+    "action": "SKIP",
+    "brand": "hamsa",
+    "reason": "ambiguous (different concepts)"
+  },
+  {
+    "action": "LINK",
+    "brand": "eddie v's prime seafood",
+    "tier": "high-end",
+    "target": "Houston#7299 \"Eddie V's Prime Seafood\"",
+    "added": [
+      "Austin"
+    ],
+    "nowLinked": [
+      "Austin"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "eddie v's prime seafood",
+    "tier": "high-end",
+    "target": "Austin#5495 \"Eddie V's Prime Seafood\"",
+    "added": [
+      "Houston"
+    ],
+    "nowLinked": [
+      "Dallas",
+      "Houston"
+    ]
+  },
+  {
+    "action": "SKIP",
+    "brand": "este pizza",
+    "reason": "ambiguous (different concepts)"
+  },
+  {
+    "action": "LINK",
+    "brand": "ruth's chris steak house",
+    "tier": "high-end",
+    "target": "Austin#5493 \"Ruth's Chris Steak House\"",
+    "added": [
+      "Salt Lake City"
+    ],
+    "nowLinked": [
+      "Salt Lake City"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "ruth's chris steak house",
+    "tier": "high-end",
+    "target": "Salt Lake City#11208 \"Ruth's Chris Steak House\"",
+    "added": [
+      "Austin"
+    ],
+    "nowLinked": [
+      "Austin"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "mon ami gabi",
+    "tier": "upper-mid",
+    "target": "Chicago#208 \"Mon Ami Gabi\"",
+    "added": [
+      "Las Vegas"
+    ],
+    "nowLinked": [
+      "Las Vegas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "mon ami gabi",
+    "tier": "upper-mid",
+    "target": "Las Vegas#12153 \"Mon Ami Gabi\"",
+    "added": [
+      "Chicago"
+    ],
+    "nowLinked": [
+      "Chicago"
+    ]
+  },
+  {
+    "action": "SKIP",
+    "brand": "takashi",
+    "reason": "ambiguous (different concepts)"
+  },
+  {
+    "action": "LINK",
+    "brand": "scarpetta",
+    "tier": "high-end",
+    "target": "Las Vegas#12022 \"Scarpetta\"",
+    "added": [
+      "New York"
+    ],
+    "nowLinked": [
+      "New York"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "scarpetta",
+    "tier": "high-end",
+    "target": "New York#1888 \"Scarpetta\"",
+    "added": [
+      "Las Vegas"
+    ],
+    "nowLinked": [
+      "Las Vegas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "nobu",
+    "tier": "high-end",
+    "target": "Las Vegas#12023 \"Nobu\"",
+    "added": [
+      "New York"
+    ],
+    "nowLinked": [
+      "Dallas",
+      "Houston",
+      "New York"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "nobu",
+    "tier": "high-end",
+    "target": "New York#1245 \"Nobu Downtown\"",
+    "added": [
+      "Las Vegas"
+    ],
+    "nowLinked": [
+      "Las Vegas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "beauty & essex",
+    "tier": "upper-mid",
+    "target": "Las Vegas#12031 \"Beauty & Essex\"",
+    "added": [
+      "New York"
+    ],
+    "nowLinked": [
+      "New York"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "beauty & essex",
+    "tier": "upper-mid",
+    "target": "New York#1518 \"Beauty & Essex\"",
+    "added": [
+      "Las Vegas"
+    ],
+    "nowLinked": [
+      "Las Vegas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "cote korean steakhouse",
+    "tier": "high-end",
+    "target": "Las Vegas#12129 \"COTE Korean Steakhouse\"",
+    "added": [
+      "New York"
+    ],
+    "nowLinked": [
+      "New York"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "cote korean steakhouse",
+    "tier": "high-end",
+    "target": "New York#1037 \"COTE Korean Steakhouse\"",
+    "added": [
+      "Las Vegas"
+    ],
+    "nowLinked": [
+      "Las Vegas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "gjelina",
+    "tier": "upper-mid",
+    "target": "Las Vegas#12132 \"Gjelina\"",
+    "added": [
+      "New York"
+    ],
+    "nowLinked": [
+      "New York"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "gjelina",
+    "tier": "upper-mid",
+    "target": "New York#1925 \"Gjelina\"",
+    "added": [
+      "Las Vegas"
+    ],
+    "nowLinked": [
+      "Las Vegas"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "peter luger steak house",
+    "tier": "high-end",
+    "target": "Las Vegas#12134 \"Peter Luger Steak House\"",
+    "added": [
+      "New York"
+    ],
+    "nowLinked": [
+      "New York"
+    ]
+  },
+  {
+    "action": "LINK",
+    "brand": "peter luger steak house",
+    "tier": "high-end",
+    "target": "New York#1003 \"Peter Luger Steak House\"",
+    "added": [
+      "Las Vegas"
+    ],
+    "nowLinked": [
+      "Las Vegas"
+    ]
+  }
+]

@@ -1,0 +1,1070 @@
+{
+  "linksAdded": [
+    {
+      "brand": "the henry",
+      "city": "Dallas",
+      "id": 18,
+      "name": "The Henry",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "the henry",
+      "city": "Las Vegas",
+      "id": 12423,
+      "name": "The Henry",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "merit coffee",
+      "city": "Dallas",
+      "id": 191,
+      "name": "Merit Coffee",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "merit coffee",
+      "city": "Austin",
+      "id": 5078,
+      "name": "Merit Coffee",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "postino wine",
+      "city": "Dallas",
+      "id": 192,
+      "name": "Postino Wine Cafe",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "postino wine",
+      "city": "Houston",
+      "id": 7197,
+      "name": "Postino Wine Cafe",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "tacodeli",
+      "city": "Dallas",
+      "id": 229,
+      "name": "Tacodeli",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "tacodeli",
+      "city": "Austin",
+      "id": 5082,
+      "name": "Tacodeli",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "fadi mediterranean",
+      "city": "Dallas",
+      "id": 231,
+      "name": "Fadi's Mediterranean Grill",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "fadi mediterranean",
+      "city": "Houston",
+      "id": 7339,
+      "name": "Fadi's Mediterranean Grill Katy",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "hopdoddy burger bar",
+      "city": "Austin",
+      "id": 5297,
+      "name": "Hopdoddy Burger Bar",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "punch bowl social",
+      "city": "Dallas",
+      "id": 255,
+      "name": "Punch Bowl Social",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "punch bowl social",
+      "city": "Austin",
+      "id": 5541,
+      "name": "Punch Bowl Social",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "alamo drafthouse",
+      "city": "Dallas",
+      "id": 260,
+      "name": "Alamo Drafthouse",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "alamo drafthouse",
+      "city": "Austin",
+      "id": 5584,
+      "name": "Alamo Drafthouse South Lamar",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "perry",
+      "city": "Houston",
+      "id": 7377,
+      "name": "Perry's Steakhouse The Woodlands",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "off the record",
+      "city": "Dallas",
+      "id": 294,
+      "name": "Off the Record",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "off the record",
+      "city": "Houston",
+      "id": 7459,
+      "name": "Off The Record",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "true food",
+      "city": "Houston",
+      "id": 7508,
+      "name": "True Food Kitchen",
+      "added": [
+        "Dallas",
+        "Austin",
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "shake shack",
+      "city": "Dallas",
+      "id": 318,
+      "name": "Shake Shack",
+      "added": [
+        "New York"
+      ]
+    },
+    {
+      "brand": "shake shack",
+      "city": "New York",
+      "id": 1086,
+      "name": "Shake Shack",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "the cheesecake factory",
+      "city": "Dallas",
+      "id": 320,
+      "name": "The Cheesecake Factory",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "the cheesecake factory",
+      "city": "Houston",
+      "id": 7397,
+      "name": "The Cheesecake Factory Woodlands",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "cava",
+      "city": "Dallas",
+      "id": 325,
+      "name": "CAVA",
+      "added": [
+        "New York"
+      ]
+    },
+    {
+      "brand": "cava",
+      "city": "New York",
+      "id": 1788,
+      "name": "CAVA",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "sweetgreen",
+      "city": "Dallas",
+      "id": 329,
+      "name": "Sweetgreen",
+      "added": [
+        "New York"
+      ]
+    },
+    {
+      "brand": "sweetgreen",
+      "city": "New York",
+      "id": 1166,
+      "name": "Sweetgreen",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "mo bettahs hawaiian",
+      "city": "Dallas",
+      "id": 332,
+      "name": "Mo' Bettahs Hawaiian",
+      "added": [
+        "Salt Lake City"
+      ]
+    },
+    {
+      "brand": "mo bettahs hawaiian",
+      "city": "Salt Lake City",
+      "id": 11203,
+      "name": "Mo' Bettahs Hawaiian",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "jeni splendid ice creams",
+      "city": "Dallas",
+      "id": 341,
+      "name": "Jeni's Splendid Ice Creams",
+      "added": [
+        "Chicago"
+      ]
+    },
+    {
+      "brand": "jeni splendid ice creams",
+      "city": "Chicago",
+      "id": 230,
+      "name": "Jeni's Splendid Ice Creams",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "van leeuwen ice cream",
+      "city": "Dallas",
+      "id": 342,
+      "name": "Van Leeuwen Ice Cream",
+      "added": [
+        "New York"
+      ]
+    },
+    {
+      "brand": "van leeuwen ice cream",
+      "city": "New York",
+      "id": 1119,
+      "name": "Van Leeuwen Ice Cream",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "gus world famous fried chicken",
+      "city": "Dallas",
+      "id": 345,
+      "name": "Gus's World Famous Fried Chicken",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "gus world famous fried chicken",
+      "city": "Austin",
+      "id": 5127,
+      "name": "Gus's World Famous Fried Chicken",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "wingstop",
+      "city": "Dallas",
+      "id": 346,
+      "name": "Wingstop",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "wingstop",
+      "city": "Austin",
+      "id": 5175,
+      "name": "Wingstop (Original)",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "cane rosso",
+      "city": "Dallas",
+      "id": 348,
+      "name": "Cane Rosso",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "cane rosso",
+      "city": "Austin",
+      "id": 5339,
+      "name": "Cane Rosso",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "black tap craft burgers & beer",
+      "city": "Dallas",
+      "id": 364,
+      "name": "Black Tap Craft Burgers & Beer",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "black tap craft burgers & beer",
+      "city": "Las Vegas",
+      "id": 12218,
+      "name": "Black Tap Craft Burgers & Beer",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "jinya ramen bar",
+      "city": "Dallas",
+      "id": 392,
+      "name": "Jinya Ramen Bar",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "jinya ramen bar",
+      "city": "Houston",
+      "id": 7490,
+      "name": "JINYA Ramen Bar",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "terry black",
+      "city": "Dallas",
+      "id": 462,
+      "name": "Terry Black's Barbecue",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "terry black",
+      "city": "Austin",
+      "id": 5298,
+      "name": "Terry Black's BBQ",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "whataburger",
+      "city": "Dallas",
+      "id": 480,
+      "name": "Whataburger",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "whataburger",
+      "city": "Houston",
+      "id": 7220,
+      "name": "Whataburger",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "mendocino farms",
+      "city": "Dallas",
+      "id": 515,
+      "name": "Mendocino Farms",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "mendocino farms",
+      "city": "Houston",
+      "id": 7250,
+      "name": "Mendocino Farms",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "flower child",
+      "city": "Dallas",
+      "id": 517,
+      "name": "Flower Child",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "flower child",
+      "city": "Houston",
+      "id": 7507,
+      "name": "Flower Child",
+      "added": [
+        "Dallas",
+        "Austin"
+      ]
+    },
+    {
+      "brand": "taco joint",
+      "city": "Dallas",
+      "id": 524,
+      "name": "Taco Joint",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "taco joint",
+      "city": "Austin",
+      "id": 5393,
+      "name": "Taco Joint",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "halcyon",
+      "city": "Dallas",
+      "id": 1062,
+      "name": "Halcyon",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "halcyon",
+      "city": "Austin",
+      "id": 5336,
+      "name": "Halcyon",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "voodoo doughnut",
+      "city": "Dallas",
+      "id": 9031,
+      "name": "Voodoo Doughnut",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "voodoo doughnut",
+      "city": "Austin",
+      "id": 5543,
+      "name": "Voodoo Doughnut",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "black sheep coffee",
+      "city": "Dallas",
+      "id": 9087,
+      "name": "Black Sheep Coffee",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "black sheep coffee",
+      "city": "Austin",
+      "id": 5574,
+      "name": "Black Sheep Coffee",
+      "added": [
+        "Dallas"
+      ]
+    },
+    {
+      "brand": "bonchon",
+      "city": "Dallas",
+      "id": 9125,
+      "name": "Bonchon",
+      "added": [
+        "Houston",
+        "New York"
+      ]
+    },
+    {
+      "brand": "bonchon",
+      "city": "Houston",
+      "id": 7227,
+      "name": "Bonchon",
+      "added": [
+        "Dallas",
+        "New York"
+      ]
+    },
+    {
+      "brand": "bonchon",
+      "city": "New York",
+      "id": 1843,
+      "name": "Bonchon",
+      "added": [
+        "Dallas",
+        "Houston"
+      ]
+    },
+    {
+      "brand": "east side king",
+      "city": "Houston",
+      "id": 7123,
+      "name": "East Side King",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "east side king",
+      "city": "Austin",
+      "id": 5182,
+      "name": "East Side King",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "shokku ramen",
+      "city": "Houston",
+      "id": 7203,
+      "name": "Shokku Ramen",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "shokku ramen",
+      "city": "Las Vegas",
+      "id": 12350,
+      "name": "Shokku Ramen",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "fleming prime",
+      "city": "Houston",
+      "id": 7341,
+      "name": "Fleming's Prime Steakhouse Woodlands",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "fleming prime",
+      "city": "Austin",
+      "id": 5492,
+      "name": "Fleming's Prime Steakhouse",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "chuy",
+      "city": "Houston",
+      "id": 7398,
+      "name": "Chuy's The Woodlands",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "chuy",
+      "city": "Austin",
+      "id": 5172,
+      "name": "Chuy's",
+      "added": [
+        "Houston"
+      ]
+    },
+    {
+      "brand": "via 313",
+      "city": "Austin",
+      "id": 5068,
+      "name": "Via 313",
+      "added": [
+        "Salt Lake City"
+      ]
+    },
+    {
+      "brand": "via 313",
+      "city": "Salt Lake City",
+      "id": 11507,
+      "name": "Via 313 Lehi",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "aba",
+      "city": "Austin",
+      "id": 5327,
+      "name": "Aba South Congress",
+      "added": [
+        "Chicago"
+      ]
+    },
+    {
+      "brand": "aba",
+      "city": "Austin",
+      "id": 5372,
+      "name": "Aba Domain",
+      "added": [
+        "Chicago"
+      ]
+    },
+    {
+      "brand": "aba",
+      "city": "Chicago",
+      "id": 218,
+      "name": "Aba",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "este",
+      "city": "Austin",
+      "id": 5465,
+      "name": "Este",
+      "added": [
+        "Salt Lake City"
+      ]
+    },
+    {
+      "brand": "este",
+      "city": "Salt Lake City",
+      "id": 11027,
+      "name": "Este Pizzeria",
+      "added": [
+        "Austin"
+      ]
+    },
+    {
+      "brand": "kouklas greek",
+      "city": "Chicago",
+      "id": 333,
+      "name": "Kouklas Greek Eatery",
+      "added": [
+        "Salt Lake City"
+      ]
+    },
+    {
+      "brand": "kouklas greek",
+      "city": "Salt Lake City",
+      "id": 11362,
+      "name": "Kouklas Greek Eatery",
+      "added": [
+        "Chicago"
+      ]
+    },
+    {
+      "brand": "lupo",
+      "city": "Chicago",
+      "id": 429,
+      "name": "Lupo Pizzeria",
+      "added": [
+        "Seattle"
+      ]
+    },
+    {
+      "brand": "lupo",
+      "city": "Seattle",
+      "id": 9300,
+      "name": "Lupo",
+      "added": [
+        "Chicago"
+      ]
+    },
+    {
+      "brand": "washington square park",
+      "city": "Chicago",
+      "id": 12551,
+      "name": "Washington Square Park",
+      "added": [
+        "New York"
+      ]
+    },
+    {
+      "brand": "washington square park",
+      "city": "New York",
+      "id": 1922,
+      "name": "Washington Square Park",
+      "added": [
+        "Chicago"
+      ]
+    },
+    {
+      "brand": "settebello pizzeria napoletana",
+      "city": "Las Vegas",
+      "id": 12497,
+      "name": "Settebello Pizzeria Napoletana",
+      "added": [
+        "Salt Lake City"
+      ]
+    },
+    {
+      "brand": "black sheep",
+      "city": "Salt Lake City",
+      "id": 11093,
+      "name": "Black Sheep Cafe",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "black sheep",
+      "city": "Las Vegas",
+      "id": 12453,
+      "name": "Black Sheep",
+      "added": [
+        "Salt Lake City"
+      ]
+    },
+    {
+      "brand": "oak",
+      "city": "Salt Lake City",
+      "id": 11421,
+      "name": "OAK Draper",
+      "added": [
+        "Seattle"
+      ]
+    },
+    {
+      "brand": "oak",
+      "city": "Seattle",
+      "id": 9237,
+      "name": "Oak",
+      "added": [
+        "Salt Lake City"
+      ]
+    },
+    {
+      "brand": "settebello",
+      "city": "Salt Lake City",
+      "id": 11426,
+      "name": "Settebello Holladay",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "the park",
+      "city": "Salt Lake City",
+      "id": 11466,
+      "name": "The Park Cafe",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "the park",
+      "city": "Las Vegas",
+      "id": 12544,
+      "name": "The Park",
+      "added": [
+        "Salt Lake City"
+      ]
+    },
+    {
+      "brand": "delmonico",
+      "city": "Las Vegas",
+      "id": 12015,
+      "name": "Delmonico Steakhouse",
+      "added": [
+        "New York"
+      ]
+    },
+    {
+      "brand": "delmonico",
+      "city": "New York",
+      "id": 1455,
+      "name": "Delmonico's",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "lavo italian",
+      "city": "Las Vegas",
+      "id": 12030,
+      "name": "LAVO Italian",
+      "added": [
+        "New York"
+      ]
+    },
+    {
+      "brand": "lavo italian",
+      "city": "New York",
+      "id": 1260,
+      "name": "Lavo Italian Restaurant",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "peter luger",
+      "city": "New York",
+      "id": 1907,
+      "name": "Peter Luger",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "golden steer",
+      "city": "Las Vegas",
+      "id": 12245,
+      "name": "Golden Steer Steakhouse",
+      "added": [
+        "New York"
+      ]
+    },
+    {
+      "brand": "golden steer",
+      "city": "New York",
+      "id": 1738,
+      "name": "Golden Steer",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "craft",
+      "city": "Las Vegas",
+      "id": 12257,
+      "name": "Craft Kitchen",
+      "added": [
+        "New York"
+      ]
+    },
+    {
+      "brand": "craft",
+      "city": "New York",
+      "id": 1911,
+      "name": "Craft",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "milk bar",
+      "city": "Las Vegas",
+      "id": 12424,
+      "name": "Milk Bar",
+      "added": [
+        "New York"
+      ]
+    },
+    {
+      "brand": "milk bar",
+      "city": "New York",
+      "id": 1747,
+      "name": "Milk Bar",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "grimaldi",
+      "city": "Las Vegas",
+      "id": 12496,
+      "name": "Grimaldi's Pizzeria Henderson",
+      "added": [
+        "New York"
+      ]
+    },
+    {
+      "brand": "grimaldi",
+      "city": "New York",
+      "id": 1400,
+      "name": "Grimaldi's Pizzeria",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "grimaldi",
+      "city": "New York",
+      "id": 1811,
+      "name": "Grimaldi's",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "dough zone dumpling house",
+      "city": "Las Vegas",
+      "id": 12524,
+      "name": "Dough Zone Dumpling House",
+      "added": [
+        "Seattle"
+      ]
+    },
+    {
+      "brand": "dough zone dumpling house",
+      "city": "Seattle",
+      "id": 9084,
+      "name": "Dough Zone Dumpling House",
+      "added": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "brand": "ramen danbo",
+      "city": "Seattle",
+      "id": 9096,
+      "name": "Ramen Danbo",
+      "added": [
+        "New York"
+      ]
+    },
+    {
+      "brand": "ramen danbo",
+      "city": "New York",
+      "id": 1342,
+      "name": "Ramen Danbo",
+      "added": [
+        "Seattle"
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "brand": "ruins",
+      "cities": [
+        "Dallas",
+        "New York"
+      ]
+    },
+    {
+      "brand": "bar w",
+      "cities": [
+        "Dallas",
+        "Salt Lake City"
+      ]
+    },
+    {
+      "brand": "prospect park",
+      "cities": [
+        "Houston",
+        "New York"
+      ]
+    },
+    {
+      "brand": "hamsa",
+      "cities": [
+        "Houston",
+        "Seattle"
+      ]
+    },
+    {
+      "brand": "leo",
+      "cities": [
+        "Houston",
+        "New York"
+      ]
+    },
+    {
+      "brand": "joey",
+      "cities": [
+        "Houston",
+        "Seattle"
+      ]
+    },
+    {
+      "brand": "market street",
+      "cities": [
+        "Houston",
+        "Salt Lake City"
+      ]
+    },
+    {
+      "brand": "garage",
+      "cities": [
+        "Austin",
+        "New York"
+      ]
+    },
+    {
+      "brand": "este pizza",
+      "cities": [
+        "Austin",
+        "Salt Lake City"
+      ]
+    },
+    {
+      "brand": "arlo",
+      "cities": [
+        "Austin",
+        "Salt Lake City"
+      ]
+    },
+    {
+      "brand": "takashi",
+      "cities": [
+        "Salt Lake City",
+        "New York"
+      ]
+    }
+  ]
+}

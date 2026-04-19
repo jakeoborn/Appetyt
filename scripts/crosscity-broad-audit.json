@@ -1,0 +1,1978 @@
+[
+  {
+    "brand": "true food",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 306,
+        "name": "True Food Kitchen",
+        "neighborhood": "Park Cities",
+        "score": 84,
+        "price": 2,
+        "cuisine": "Health-Forward American",
+        "cityLinks": [
+          "Austin",
+          "Houston",
+          "Las Vegas"
+        ]
+      },
+      {
+        "city": "Houston",
+        "id": 7508,
+        "name": "True Food Kitchen",
+        "neighborhood": "River Oaks",
+        "score": 82,
+        "price": 2,
+        "cuisine": "Healthy / American",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5213,
+        "name": "True Food Kitchen",
+        "neighborhood": "Domain",
+        "score": 84,
+        "price": 2,
+        "cuisine": "Health-Forward American",
+        "cityLinks": [
+          "Dallas",
+          "Houston",
+          "Las Vegas"
+        ]
+      },
+      {
+        "city": "Las Vegas",
+        "id": 12071,
+        "name": "True Food Kitchen",
+        "neighborhood": "Summerlin (Downtown Summerlin)",
+        "score": 85,
+        "price": 2,
+        "cuisine": "Health-focused / New American",
+        "cityLinks": [
+          "Dallas",
+          "Austin",
+          "Houston"
+        ]
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Houston",
+      "Austin",
+      "Las Vegas"
+    ]
+  },
+  {
+    "brand": "hopdoddy burger bar",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 234,
+        "name": "Hopdoddy Burger Bar",
+        "neighborhood": "Uptown",
+        "score": 79,
+        "price": 2,
+        "cuisine": "Burgers",
+        "cityLinks": [
+          "Austin",
+          "Houston"
+        ]
+      },
+      {
+        "city": "Houston",
+        "id": 7312,
+        "name": "Hopdoddy Burger Bar",
+        "neighborhood": "Rice Village",
+        "score": 85,
+        "price": 2,
+        "cuisine": "Burgers",
+        "cityLinks": [
+          "Dallas",
+          "Austin"
+        ]
+      },
+      {
+        "city": "Austin",
+        "id": 5297,
+        "name": "Hopdoddy Burger Bar",
+        "neighborhood": "South Congress",
+        "score": 86,
+        "price": 1,
+        "cuisine": "Burgers",
+        "cityLinks": [
+          "Dallas"
+        ]
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Houston",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "flower child",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 517,
+        "name": "Flower Child",
+        "neighborhood": "Park Cities",
+        "score": 80,
+        "price": 2,
+        "cuisine": "Healthy / Fast Casual",
+        "cityLinks": [
+          "Austin"
+        ]
+      },
+      {
+        "city": "Houston",
+        "id": 7507,
+        "name": "Flower Child",
+        "neighborhood": "River Oaks",
+        "score": 82,
+        "price": 2,
+        "cuisine": "Healthy / American",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5515,
+        "name": "Flower Child",
+        "neighborhood": "Downtown",
+        "score": 83,
+        "price": 2,
+        "cuisine": "Healthy / Bowls / Salads",
+        "cityLinks": [
+          "Dallas",
+          "Houston"
+        ]
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Houston",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "bonchon",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 9125,
+        "name": "Bonchon",
+        "neighborhood": "Flower Mound",
+        "score": 83,
+        "price": 2,
+        "cuisine": "Korean Fried Chicken",
+        "cityLinks": []
+      },
+      {
+        "city": "Houston",
+        "id": 7227,
+        "name": "Bonchon",
+        "neighborhood": "Chinatown / Bellaire",
+        "score": 84,
+        "price": 1,
+        "cuisine": "Korean Fried Chicken",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1843,
+        "name": "Bonchon",
+        "neighborhood": "Midtown West",
+        "score": 84,
+        "price": 2,
+        "cuisine": "Korean Fried Chicken",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Houston",
+      "New York"
+    ]
+  },
+  {
+    "brand": "aba",
+    "entries": [
+      {
+        "city": "Austin",
+        "id": 5327,
+        "name": "Aba South Congress",
+        "neighborhood": "South Congress",
+        "score": 88,
+        "price": 2,
+        "cuisine": "Mediterranean",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5372,
+        "name": "Aba Domain",
+        "neighborhood": "Domain",
+        "score": 87,
+        "price": 2,
+        "cuisine": "Mediterranean",
+        "cityLinks": []
+      },
+      {
+        "city": "Chicago",
+        "id": 218,
+        "name": "Aba",
+        "neighborhood": "West Loop / Fulton Market",
+        "score": 88,
+        "price": 2,
+        "cuisine": "Mediterranean",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Austin",
+      "Chicago"
+    ]
+  },
+  {
+    "brand": "peter luger",
+    "entries": [
+      {
+        "city": "Las Vegas",
+        "id": 12134,
+        "name": "Peter Luger Steak House",
+        "neighborhood": "The Strip (Caesars Palace)",
+        "score": 92,
+        "price": 4,
+        "cuisine": "Steakhouse",
+        "cityLinks": [
+          "New York"
+        ]
+      },
+      {
+        "city": "New York",
+        "id": 1003,
+        "name": "Peter Luger Steak House",
+        "neighborhood": "Williamsburg",
+        "score": 99,
+        "price": 4,
+        "cuisine": "Steakhouse",
+        "cityLinks": [
+          "Las Vegas"
+        ]
+      },
+      {
+        "city": "New York",
+        "id": 1907,
+        "name": "Peter Luger",
+        "neighborhood": "Williamsburg",
+        "score": 90,
+        "price": 4,
+        "cuisine": "Steakhouse",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Las Vegas",
+      "New York"
+    ]
+  },
+  {
+    "brand": "grimaldi",
+    "entries": [
+      {
+        "city": "Las Vegas",
+        "id": 12496,
+        "name": "Grimaldi's Pizzeria Henderson",
+        "neighborhood": "Henderson",
+        "score": 82,
+        "price": 2,
+        "cuisine": "Pizza",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1400,
+        "name": "Grimaldi's Pizzeria",
+        "neighborhood": "DUMBO",
+        "score": 84,
+        "price": 2,
+        "cuisine": "Pizza",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1811,
+        "name": "Grimaldi's",
+        "neighborhood": "DUMBO",
+        "score": 85,
+        "price": 2,
+        "cuisine": "Pizza",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Las Vegas",
+      "New York"
+    ]
+  },
+  {
+    "brand": "the henry",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 18,
+        "name": "The Henry",
+        "neighborhood": "Uptown",
+        "score": 86,
+        "price": 2,
+        "cuisine": "All-Day American",
+        "cityLinks": []
+      },
+      {
+        "city": "Las Vegas",
+        "id": 12423,
+        "name": "The Henry",
+        "neighborhood": "The Strip (The Cosmopolitan)",
+        "score": 83,
+        "price": 2,
+        "cuisine": "American Tavern",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Las Vegas"
+    ]
+  },
+  {
+    "brand": "merit coffee",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 191,
+        "name": "Merit Coffee",
+        "neighborhood": "Oak Lawn",
+        "score": 88,
+        "price": 1,
+        "cuisine": "Specialty Coffee",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5078,
+        "name": "Merit Coffee",
+        "neighborhood": "East Austin",
+        "score": 85,
+        "price": 1,
+        "cuisine": "Specialty Coffee",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "postino wine",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 192,
+        "name": "Postino Wine Cafe",
+        "neighborhood": "Addison",
+        "score": 86,
+        "price": 2,
+        "cuisine": "Wine Bar",
+        "cityLinks": []
+      },
+      {
+        "city": "Houston",
+        "id": 7197,
+        "name": "Postino Wine Cafe",
+        "neighborhood": "Heights",
+        "score": 85,
+        "price": 2,
+        "cuisine": "Wine Bar / Cafe",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Houston"
+    ]
+  },
+  {
+    "brand": "tacodeli",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 229,
+        "name": "Tacodeli",
+        "neighborhood": "Oak Cliff",
+        "score": 83,
+        "price": 2,
+        "cuisine": "Mexican/Tacos",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5082,
+        "name": "Tacodeli",
+        "neighborhood": "North Lamar",
+        "score": 86,
+        "price": 1,
+        "cuisine": "Tacos / Breakfast",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "fadi mediterranean",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 231,
+        "name": "Fadi's Mediterranean Grill",
+        "neighborhood": "Knox-Henderson",
+        "score": 82,
+        "price": 2,
+        "cuisine": "Mediterranean",
+        "cityLinks": []
+      },
+      {
+        "city": "Houston",
+        "id": 7339,
+        "name": "Fadi's Mediterranean Grill Katy",
+        "neighborhood": "Katy",
+        "score": 85,
+        "price": 2,
+        "cuisine": "Mediterranean",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Houston"
+    ]
+  },
+  {
+    "brand": "punch bowl social",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 255,
+        "name": "Punch Bowl Social",
+        "neighborhood": "Deep Ellum",
+        "score": 85,
+        "price": 2,
+        "cuisine": "Bar / Eatertainment",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5541,
+        "name": "Punch Bowl Social",
+        "neighborhood": "Domain",
+        "score": 75,
+        "price": 2,
+        "cuisine": "American / Entertainment",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "alamo drafthouse",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 260,
+        "name": "Alamo Drafthouse",
+        "neighborhood": "Cedars",
+        "score": 91,
+        "price": 2,
+        "cuisine": "Dine-In Cinema / Bar",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5584,
+        "name": "Alamo Drafthouse South Lamar",
+        "neighborhood": "South Lamar",
+        "score": 89,
+        "price": 1,
+        "cuisine": "Theater / Cinema",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "ruins",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 291,
+        "name": "Ruins",
+        "neighborhood": "Deep Ellum",
+        "score": 91,
+        "price": 2,
+        "cuisine": "Latin American / Cocktail Bar",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1668,
+        "name": "Ruins",
+        "neighborhood": "Bushwick",
+        "score": 82,
+        "price": 1,
+        "cuisine": "Bar",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "New York"
+    ]
+  },
+  {
+    "brand": "off the record",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 294,
+        "name": "Off the Record",
+        "neighborhood": "Deep Ellum",
+        "score": 86,
+        "price": 1,
+        "cuisine": "Craft Beer / Vinyl Bar",
+        "cityLinks": []
+      },
+      {
+        "city": "Houston",
+        "id": 7459,
+        "name": "Off The Record",
+        "neighborhood": "Downtown",
+        "score": 84,
+        "price": 2,
+        "cuisine": "Cocktail Bar",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Houston"
+    ]
+  },
+  {
+    "brand": "shake shack",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 318,
+        "name": "Shake Shack",
+        "neighborhood": "Uptown",
+        "score": 75,
+        "price": 2,
+        "cuisine": "Burgers / Fast Casual",
+        "cityLinks": [
+          "Houston"
+        ]
+      },
+      {
+        "city": "New York",
+        "id": 1086,
+        "name": "Shake Shack",
+        "neighborhood": "Flatiron / NoMad",
+        "score": 85,
+        "price": 2,
+        "cuisine": "Burgers",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "New York"
+    ]
+  },
+  {
+    "brand": "cava",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 325,
+        "name": "CAVA",
+        "neighborhood": "Uptown",
+        "score": 76,
+        "price": 1,
+        "cuisine": "Mediterranean / Fast Casual",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1788,
+        "name": "CAVA",
+        "neighborhood": "Multiple Locations",
+        "score": 80,
+        "price": 1,
+        "cuisine": "Mediterranean",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "New York"
+    ]
+  },
+  {
+    "brand": "sweetgreen",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 329,
+        "name": "Sweetgreen",
+        "neighborhood": "West Village",
+        "score": 80,
+        "price": 2,
+        "cuisine": "Salads / Fast Casual",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1166,
+        "name": "Sweetgreen",
+        "neighborhood": "Midtown",
+        "score": 80,
+        "price": 2,
+        "cuisine": "Salads / Fast Casual",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "New York"
+    ]
+  },
+  {
+    "brand": "mo bettahs hawaiian",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 332,
+        "name": "Mo' Bettahs Hawaiian",
+        "neighborhood": "East Dallas / Lakewood",
+        "score": 83,
+        "price": 1,
+        "cuisine": "Hawaiian / Plate Lunch",
+        "cityLinks": []
+      },
+      {
+        "city": "Salt Lake City",
+        "id": 11203,
+        "name": "Mo' Bettahs Hawaiian",
+        "neighborhood": "Downtown SLC",
+        "score": 83,
+        "price": 1,
+        "cuisine": "Hawaiian",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Salt Lake City"
+    ]
+  },
+  {
+    "brand": "jeni splendid ice creams",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 341,
+        "name": "Jeni's Splendid Ice Creams",
+        "neighborhood": "Victory Park",
+        "score": 87,
+        "price": 2,
+        "cuisine": "Artisan Ice Cream",
+        "cityLinks": []
+      },
+      {
+        "city": "Chicago",
+        "id": 230,
+        "name": "Jeni's Splendid Ice Creams",
+        "neighborhood": "Multiple Locations",
+        "score": 85,
+        "price": 1,
+        "cuisine": "Ice Cream",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Chicago"
+    ]
+  },
+  {
+    "brand": "van leeuwen ice cream",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 342,
+        "name": "Van Leeuwen Ice Cream",
+        "neighborhood": "Deep Ellum",
+        "score": 83,
+        "price": 2,
+        "cuisine": "Artisan Ice Cream",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1119,
+        "name": "Van Leeuwen Ice Cream",
+        "neighborhood": "East Village",
+        "score": 85,
+        "price": 1,
+        "cuisine": "Artisan Ice Cream",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "New York"
+    ]
+  },
+  {
+    "brand": "gus world famous fried chicken",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 345,
+        "name": "Gus's World Famous Fried Chicken",
+        "neighborhood": "Deep Ellum",
+        "score": 87,
+        "price": 1,
+        "cuisine": "Southern Fried Chicken",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5127,
+        "name": "Gus's World Famous Fried Chicken",
+        "neighborhood": "Downtown",
+        "score": 86,
+        "price": 1,
+        "cuisine": "Fried Chicken",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "wingstop",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 346,
+        "name": "Wingstop",
+        "neighborhood": "Downtown Dallas",
+        "score": 76,
+        "price": 1,
+        "cuisine": "Wings / Fast Casual",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5175,
+        "name": "Wingstop (Original)",
+        "neighborhood": "South Lamar",
+        "score": 82,
+        "price": 1,
+        "cuisine": "Chicken Wings",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "cane rosso",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 348,
+        "name": "Cane Rosso",
+        "neighborhood": "Deep Ellum",
+        "score": 85,
+        "price": 2,
+        "cuisine": "Neapolitan Pizza",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5339,
+        "name": "Cane Rosso",
+        "neighborhood": "East Austin",
+        "score": 86,
+        "price": 2,
+        "cuisine": "Neapolitan Pizza",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "black tap craft burgers & beer",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 364,
+        "name": "Black Tap Craft Burgers & Beer",
+        "neighborhood": "Victory Park",
+        "score": 80,
+        "price": 2,
+        "cuisine": "Craft Burgers / American",
+        "cityLinks": []
+      },
+      {
+        "city": "Las Vegas",
+        "id": 12218,
+        "name": "Black Tap Craft Burgers & Beer",
+        "neighborhood": "The Strip (Grand Canal Shoppes)",
+        "score": 86,
+        "price": 2,
+        "cuisine": "American / Burgers",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Las Vegas"
+    ]
+  },
+  {
+    "brand": "jinya ramen bar",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 392,
+        "name": "Jinya Ramen Bar",
+        "neighborhood": "Victory Park",
+        "score": 82,
+        "price": 2,
+        "cuisine": "Japanese Ramen",
+        "cityLinks": []
+      },
+      {
+        "city": "Houston",
+        "id": 7490,
+        "name": "JINYA Ramen Bar",
+        "neighborhood": "Montrose",
+        "score": 82,
+        "price": 2,
+        "cuisine": "Japanese Ramen",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Houston"
+    ]
+  },
+  {
+    "brand": "terry black",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 462,
+        "name": "Terry Black's Barbecue",
+        "neighborhood": "Deep Ellum",
+        "score": 91,
+        "price": 2,
+        "cuisine": "Central Texas BBQ",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5298,
+        "name": "Terry Black's BBQ",
+        "neighborhood": "South 1st",
+        "score": 88,
+        "price": 1,
+        "cuisine": "BBQ",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "whataburger",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 480,
+        "name": "Whataburger",
+        "neighborhood": "East Dallas / Lakewood",
+        "score": 83,
+        "price": 1,
+        "cuisine": "Fast Food",
+        "cityLinks": []
+      },
+      {
+        "city": "Houston",
+        "id": 7220,
+        "name": "Whataburger",
+        "neighborhood": "Multiple Locations",
+        "score": 82,
+        "price": 1,
+        "cuisine": "Fast Food / Burgers",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Houston"
+    ]
+  },
+  {
+    "brand": "mendocino farms",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 515,
+        "name": "Mendocino Farms",
+        "neighborhood": "Arts District",
+        "score": 85,
+        "price": 2,
+        "cuisine": "Sandwiches & Salads / Fast Casual",
+        "cityLinks": []
+      },
+      {
+        "city": "Houston",
+        "id": 7250,
+        "name": "Mendocino Farms",
+        "neighborhood": "Galleria",
+        "score": 83,
+        "price": 1,
+        "cuisine": "Sandwiches / Salads",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Houston"
+    ]
+  },
+  {
+    "brand": "taco joint",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 524,
+        "name": "Taco Joint",
+        "neighborhood": "Lower Greenville",
+        "score": 84,
+        "price": 1,
+        "cuisine": "Mexican / Tacos",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5393,
+        "name": "Taco Joint",
+        "neighborhood": "North Loop",
+        "score": 85,
+        "price": 1,
+        "cuisine": "Mexican / Breakfast Tacos",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "halcyon",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 1062,
+        "name": "Halcyon",
+        "neighborhood": "Lower Greenville",
+        "score": 82,
+        "price": 2,
+        "cuisine": "Coffeehouse & Cocktail Bar",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5336,
+        "name": "Halcyon",
+        "neighborhood": "Downtown",
+        "score": 85,
+        "price": 1,
+        "cuisine": "Coffee / Bar",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "bar w",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 1087,
+        "name": "Bar W",
+        "neighborhood": "Uptown",
+        "score": 81,
+        "price": 2,
+        "cuisine": "Sports Bar",
+        "cityLinks": []
+      },
+      {
+        "city": "Salt Lake City",
+        "id": 11179,
+        "name": "Bar W Steakhouse",
+        "neighborhood": "Downtown SLC",
+        "score": 87,
+        "price": 4,
+        "cuisine": "Steakhouse",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Salt Lake City"
+    ]
+  },
+  {
+    "brand": "voodoo doughnut",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 9031,
+        "name": "Voodoo Doughnut",
+        "neighborhood": "Lower Greenville",
+        "score": 83,
+        "price": 1,
+        "cuisine": "Creative Donuts",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5543,
+        "name": "Voodoo Doughnut",
+        "neighborhood": "East Austin",
+        "score": 78,
+        "price": 1,
+        "cuisine": "Donuts / Dessert",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "black sheep coffee",
+    "entries": [
+      {
+        "city": "Dallas",
+        "id": 9087,
+        "name": "Black Sheep Coffee",
+        "neighborhood": "East Dallas / Lakewood",
+        "score": 82,
+        "price": 1,
+        "cuisine": "Coffee",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5574,
+        "name": "Black Sheep Coffee",
+        "neighborhood": "6th Street",
+        "score": 77,
+        "price": 1,
+        "cuisine": "Specialty Coffee",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Dallas",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "prospect park",
+    "entries": [
+      {
+        "city": "Houston",
+        "id": 7115,
+        "name": "Prospect Park",
+        "neighborhood": "Upper Kirby",
+        "score": 83,
+        "price": 2,
+        "cuisine": "American / Sports Bar",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1945,
+        "name": "Prospect Park",
+        "neighborhood": "Park Slope / Prospect Heights",
+        "score": 95,
+        "price": 1,
+        "cuisine": "Park",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Houston",
+      "New York"
+    ]
+  },
+  {
+    "brand": "east side king",
+    "entries": [
+      {
+        "city": "Houston",
+        "id": 7123,
+        "name": "East Side King",
+        "neighborhood": "Downtown",
+        "score": 85,
+        "price": 1,
+        "cuisine": "Japanese Street Food",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5182,
+        "name": "East Side King",
+        "neighborhood": "East Austin",
+        "score": 86,
+        "price": 1,
+        "cuisine": "Asian Street Food / Food Truck",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Houston",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "shokku ramen",
+    "entries": [
+      {
+        "city": "Houston",
+        "id": 7203,
+        "name": "Shokku Ramen",
+        "neighborhood": "Heights",
+        "score": 85,
+        "price": 1,
+        "cuisine": "Japanese Ramen",
+        "cityLinks": []
+      },
+      {
+        "city": "Las Vegas",
+        "id": 12350,
+        "name": "Shokku Ramen",
+        "neighborhood": "Paradise",
+        "score": 83,
+        "price": 1,
+        "cuisine": "Japanese / Ramen",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Houston",
+      "Las Vegas"
+    ]
+  },
+  {
+    "brand": "hamsa",
+    "entries": [
+      {
+        "city": "Houston",
+        "id": 7278,
+        "name": "Hamsa",
+        "neighborhood": "Rice Village",
+        "score": 88,
+        "price": 3,
+        "cuisine": "Israeli / Mediterranean",
+        "cityLinks": []
+      },
+      {
+        "city": "Seattle",
+        "id": 9080,
+        "name": "Hamsa",
+        "neighborhood": "Wallingford",
+        "score": 89,
+        "price": 2,
+        "cuisine": "Palestinian / Middle Eastern",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Houston",
+      "Seattle"
+    ]
+  },
+  {
+    "brand": "chuy",
+    "entries": [
+      {
+        "city": "Houston",
+        "id": 7398,
+        "name": "Chuy's The Woodlands",
+        "neighborhood": "The Woodlands",
+        "score": 83,
+        "price": 2,
+        "cuisine": "Tex-Mex",
+        "cityLinks": []
+      },
+      {
+        "city": "Austin",
+        "id": 5172,
+        "name": "Chuy's",
+        "neighborhood": "Zilker",
+        "score": 84,
+        "price": 1,
+        "cuisine": "Tex-Mex",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Houston",
+      "Austin"
+    ]
+  },
+  {
+    "brand": "leo",
+    "entries": [
+      {
+        "city": "Houston",
+        "id": 7410,
+        "name": "Leo's River Oaks",
+        "neighborhood": "River Oaks",
+        "score": 89,
+        "price": 4,
+        "cuisine": "New American",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1504,
+        "name": "Leo",
+        "neighborhood": "Williamsburg",
+        "score": 85,
+        "price": 2,
+        "cuisine": "Italian",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Houston",
+      "New York"
+    ]
+  },
+  {
+    "brand": "joey",
+    "entries": [
+      {
+        "city": "Houston",
+        "id": 7519,
+        "name": "JOEY Restaurant",
+        "neighborhood": "Galleria",
+        "score": 83,
+        "price": 3,
+        "cuisine": "International",
+        "cityLinks": []
+      },
+      {
+        "city": "Seattle",
+        "id": 9376,
+        "name": "Joey Bellevue",
+        "neighborhood": "Bellevue",
+        "score": 83,
+        "price": 3,
+        "cuisine": "New American",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Houston",
+      "Seattle"
+    ]
+  },
+  {
+    "brand": "market street",
+    "entries": [
+      {
+        "city": "Houston",
+        "id": 7588,
+        "name": "Market Street The Woodlands",
+        "neighborhood": "The Woodlands",
+        "score": 85,
+        "price": 1,
+        "cuisine": "Landmark / Shopping District",
+        "cityLinks": []
+      },
+      {
+        "city": "Salt Lake City",
+        "id": 11033,
+        "name": "Market Street Grill",
+        "neighborhood": "Downtown SLC",
+        "score": 87,
+        "price": 3,
+        "cuisine": "Seafood",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Houston",
+      "Salt Lake City"
+    ]
+  },
+  {
+    "brand": "garage",
+    "entries": [
+      {
+        "city": "Austin",
+        "id": 5063,
+        "name": "Garage",
+        "neighborhood": "Downtown",
+        "score": 86,
+        "price": 2,
+        "cuisine": "Cocktail Bar / Speakeasy",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1657,
+        "name": "Garage",
+        "neighborhood": "SoHo",
+        "score": 81,
+        "price": 2,
+        "cuisine": "Club",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Austin",
+      "New York"
+    ]
+  },
+  {
+    "brand": "via 313",
+    "entries": [
+      {
+        "city": "Austin",
+        "id": 5068,
+        "name": "Via 313",
+        "neighborhood": "East Austin",
+        "score": 88,
+        "price": 1,
+        "cuisine": "Detroit-Style Pizza",
+        "cityLinks": []
+      },
+      {
+        "city": "Salt Lake City",
+        "id": 11507,
+        "name": "Via 313 Lehi",
+        "neighborhood": "Lehi",
+        "score": 82,
+        "price": 2,
+        "cuisine": "Pizza",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Austin",
+      "Salt Lake City"
+    ]
+  },
+  {
+    "brand": "este pizza",
+    "entries": [
+      {
+        "city": "Austin",
+        "id": 5147,
+        "name": "Este Pizza",
+        "neighborhood": "East Austin",
+        "score": 86,
+        "price": 1,
+        "cuisine": "Neapolitan Pizza",
+        "cityLinks": []
+      },
+      {
+        "city": "Salt Lake City",
+        "id": 11548,
+        "name": "Este Pizza",
+        "neighborhood": "9th & 9th",
+        "score": 83,
+        "price": 1,
+        "cuisine": "Pizza",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Austin",
+      "Salt Lake City"
+    ]
+  },
+  {
+    "brand": "arlo",
+    "entries": [
+      {
+        "city": "Austin",
+        "id": 5385,
+        "name": "Arlo's",
+        "neighborhood": "South Congress",
+        "score": 85,
+        "price": 1,
+        "cuisine": "Vegan Burgers",
+        "cityLinks": []
+      },
+      {
+        "city": "Salt Lake City",
+        "id": 11052,
+        "name": "Arlo",
+        "neighborhood": "Downtown SLC",
+        "score": 91,
+        "price": 3,
+        "cuisine": "Modern American",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Austin",
+      "Salt Lake City"
+    ]
+  },
+  {
+    "brand": "este",
+    "entries": [
+      {
+        "city": "Austin",
+        "id": 5465,
+        "name": "Este",
+        "neighborhood": "East Austin",
+        "score": 91,
+        "price": 3,
+        "cuisine": "Mexican / Seafood",
+        "cityLinks": []
+      },
+      {
+        "city": "Salt Lake City",
+        "id": 11027,
+        "name": "Este Pizzeria",
+        "neighborhood": "Sugar House",
+        "score": 87,
+        "price": 1,
+        "cuisine": "New York-Style Pizza",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Austin",
+      "Salt Lake City"
+    ]
+  },
+  {
+    "brand": "kouklas greek",
+    "entries": [
+      {
+        "city": "Chicago",
+        "id": 333,
+        "name": "Kouklas Greek Eatery",
+        "neighborhood": "Niles (Suburban)",
+        "score": 87,
+        "price": 2,
+        "cuisine": "Greek",
+        "cityLinks": []
+      },
+      {
+        "city": "Salt Lake City",
+        "id": 11362,
+        "name": "Kouklas Greek Eatery",
+        "neighborhood": "Suburban SLC",
+        "score": 86,
+        "price": 1,
+        "cuisine": "Greek",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Chicago",
+      "Salt Lake City"
+    ]
+  },
+  {
+    "brand": "lupo",
+    "entries": [
+      {
+        "city": "Chicago",
+        "id": 429,
+        "name": "Lupo Pizzeria",
+        "neighborhood": "Wicker Park",
+        "score": 86,
+        "price": 1,
+        "cuisine": "Neapolitan Pizza",
+        "cityLinks": []
+      },
+      {
+        "city": "Seattle",
+        "id": 9300,
+        "name": "Lupo",
+        "neighborhood": "Fremont",
+        "score": 86,
+        "price": 2,
+        "cuisine": "Pizza / Italian",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Chicago",
+      "Seattle"
+    ]
+  },
+  {
+    "brand": "washington square park",
+    "entries": [
+      {
+        "city": "Chicago",
+        "id": 12551,
+        "name": "Washington Square Park",
+        "neighborhood": "Gold Coast",
+        "score": 80,
+        "price": 1,
+        "cuisine": "Park",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1922,
+        "name": "Washington Square Park",
+        "neighborhood": "Greenwich Village",
+        "score": 86,
+        "price": 0,
+        "cuisine": "Tourist Attraction",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Chicago",
+      "New York"
+    ]
+  },
+  {
+    "brand": "takashi",
+    "entries": [
+      {
+        "city": "Salt Lake City",
+        "id": 11004,
+        "name": "Takashi",
+        "neighborhood": "Downtown SLC",
+        "score": 96,
+        "price": 3,
+        "cuisine": "Japanese / Sushi",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1876,
+        "name": "Takashi",
+        "neighborhood": "West Village",
+        "score": 88,
+        "price": 3,
+        "cuisine": "Japanese BBQ",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Salt Lake City",
+      "New York"
+    ]
+  },
+  {
+    "brand": "settebello pizzeria napoletana",
+    "entries": [
+      {
+        "city": "Salt Lake City",
+        "id": 11025,
+        "name": "Settebello Pizzeria Napoletana",
+        "neighborhood": "Downtown SLC",
+        "score": 90,
+        "price": 2,
+        "cuisine": "Neapolitan Pizza",
+        "cityLinks": [
+          "Las Vegas"
+        ]
+      },
+      {
+        "city": "Las Vegas",
+        "id": 12497,
+        "name": "Settebello Pizzeria Napoletana",
+        "neighborhood": "Henderson",
+        "score": 87,
+        "price": 2,
+        "cuisine": "Neapolitan Pizza",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Salt Lake City",
+      "Las Vegas"
+    ]
+  },
+  {
+    "brand": "black sheep",
+    "entries": [
+      {
+        "city": "Salt Lake City",
+        "id": 11093,
+        "name": "Black Sheep Cafe",
+        "neighborhood": "Provo",
+        "score": 87,
+        "price": 2,
+        "cuisine": "Southwestern / Native American",
+        "cityLinks": []
+      },
+      {
+        "city": "Las Vegas",
+        "id": 12453,
+        "name": "Black Sheep",
+        "neighborhood": "Chinatown",
+        "score": 89,
+        "price": 3,
+        "cuisine": "New American",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Salt Lake City",
+      "Las Vegas"
+    ]
+  },
+  {
+    "brand": "oak",
+    "entries": [
+      {
+        "city": "Salt Lake City",
+        "id": 11421,
+        "name": "OAK Draper",
+        "neighborhood": "Draper",
+        "score": 86,
+        "price": 2,
+        "cuisine": "Wood-Fired Pizza",
+        "cityLinks": []
+      },
+      {
+        "city": "Seattle",
+        "id": 9237,
+        "name": "Oak",
+        "neighborhood": "Beacon Hill",
+        "score": 85,
+        "price": 2,
+        "cuisine": "American / Burgers",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Salt Lake City",
+      "Seattle"
+    ]
+  },
+  {
+    "brand": "settebello",
+    "entries": [
+      {
+        "city": "Salt Lake City",
+        "id": 11426,
+        "name": "Settebello Holladay",
+        "neighborhood": "Holladay",
+        "score": 87,
+        "price": 1,
+        "cuisine": "Neapolitan Pizza",
+        "cityLinks": []
+      },
+      {
+        "city": "Las Vegas",
+        "id": 12273,
+        "name": "Settebello Pizzeria",
+        "neighborhood": "Henderson",
+        "score": 87,
+        "price": 2,
+        "cuisine": "Neapolitan Pizza",
+        "cityLinks": [
+          "Salt Lake City"
+        ]
+      }
+    ],
+    "entryCities": [
+      "Salt Lake City",
+      "Las Vegas"
+    ]
+  },
+  {
+    "brand": "the park",
+    "entries": [
+      {
+        "city": "Salt Lake City",
+        "id": 11466,
+        "name": "The Park Cafe",
+        "neighborhood": "Liberty Park",
+        "score": 83,
+        "price": 1,
+        "cuisine": "Breakfast / Brunch",
+        "cityLinks": []
+      },
+      {
+        "city": "Las Vegas",
+        "id": 12544,
+        "name": "The Park",
+        "neighborhood": "The Strip (Park MGM)",
+        "score": 85,
+        "price": 1,
+        "cuisine": "Park / Landmark",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Salt Lake City",
+      "Las Vegas"
+    ]
+  },
+  {
+    "brand": "delmonico",
+    "entries": [
+      {
+        "city": "Las Vegas",
+        "id": 12015,
+        "name": "Delmonico Steakhouse",
+        "neighborhood": "The Strip (The Venetian)",
+        "score": 90,
+        "price": 4,
+        "cuisine": "Steakhouse / Creole",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1455,
+        "name": "Delmonico's",
+        "neighborhood": "Financial District",
+        "score": 84,
+        "price": 3,
+        "cuisine": "Steakhouse",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Las Vegas",
+      "New York"
+    ]
+  },
+  {
+    "brand": "lavo italian",
+    "entries": [
+      {
+        "city": "Las Vegas",
+        "id": 12030,
+        "name": "LAVO Italian",
+        "neighborhood": "The Strip (The Palazzo)",
+        "score": 87,
+        "price": 3,
+        "cuisine": "Italian",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1260,
+        "name": "Lavo Italian Restaurant",
+        "neighborhood": "Midtown East",
+        "score": 84,
+        "price": 3,
+        "cuisine": "Italian",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Las Vegas",
+      "New York"
+    ]
+  },
+  {
+    "brand": "golden steer",
+    "entries": [
+      {
+        "city": "Las Vegas",
+        "id": 12245,
+        "name": "Golden Steer Steakhouse",
+        "neighborhood": "Paradise",
+        "score": 91,
+        "price": 4,
+        "cuisine": "Steakhouse",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1738,
+        "name": "Golden Steer",
+        "neighborhood": "Greenwich Village",
+        "score": 85,
+        "price": 3,
+        "cuisine": "Steakhouse",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Las Vegas",
+      "New York"
+    ]
+  },
+  {
+    "brand": "craft",
+    "entries": [
+      {
+        "city": "Las Vegas",
+        "id": 12257,
+        "name": "Craft Kitchen",
+        "neighborhood": "Henderson",
+        "score": 82,
+        "price": 2,
+        "cuisine": "New American",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1911,
+        "name": "Craft",
+        "neighborhood": "Flatiron / NoMad",
+        "score": 88,
+        "price": 4,
+        "cuisine": "American",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Las Vegas",
+      "New York"
+    ]
+  },
+  {
+    "brand": "milk bar",
+    "entries": [
+      {
+        "city": "Las Vegas",
+        "id": 12424,
+        "name": "Milk Bar",
+        "neighborhood": "The Strip (The Cosmopolitan)",
+        "score": 85,
+        "price": 1,
+        "cuisine": "Dessert",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1747,
+        "name": "Milk Bar",
+        "neighborhood": "East Village",
+        "score": 85,
+        "price": 1,
+        "cuisine": "Dessert",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Las Vegas",
+      "New York"
+    ]
+  },
+  {
+    "brand": "dough zone dumpling house",
+    "entries": [
+      {
+        "city": "Las Vegas",
+        "id": 12524,
+        "name": "Dough Zone Dumpling House",
+        "neighborhood": "Chinatown",
+        "score": 85,
+        "price": 2,
+        "cuisine": "Chinese / Dumplings",
+        "cityLinks": []
+      },
+      {
+        "city": "Seattle",
+        "id": 9084,
+        "name": "Dough Zone Dumpling House",
+        "neighborhood": "Chinatown-International District",
+        "score": 89,
+        "price": 2,
+        "cuisine": "Chinese / Dumplings",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Las Vegas",
+      "Seattle"
+    ]
+  },
+  {
+    "brand": "ramen danbo",
+    "entries": [
+      {
+        "city": "Seattle",
+        "id": 9096,
+        "name": "Ramen Danbo",
+        "neighborhood": "Capitol Hill",
+        "score": 89,
+        "price": 2,
+        "cuisine": "Japanese / Ramen",
+        "cityLinks": []
+      },
+      {
+        "city": "New York",
+        "id": 1342,
+        "name": "Ramen Danbo",
+        "neighborhood": "Williamsburg",
+        "score": 82,
+        "price": 1,
+        "cuisine": "Japanese",
+        "cityLinks": []
+      }
+    ],
+    "entryCities": [
+      "Seattle",
+      "New York"
+    ]
+  }
+]

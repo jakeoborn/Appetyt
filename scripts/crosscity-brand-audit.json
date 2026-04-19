@@ -1,0 +1,3423 @@
+{
+  "highEndGroups": [
+    {
+      "brand": "loro",
+      "count": 3,
+      "cities": [
+        "Dallas",
+        "Houston",
+        "Austin"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 45,
+          "name": "Loro",
+          "neighborhood": "East Dallas / Lakewood",
+          "score": 93,
+          "price": 3,
+          "cuisine": "Asian Smokehouse / BBQ",
+          "awards": "Michelin Bib Gourmand 2024 & 2025",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": [
+            "Austin",
+            "Houston"
+          ]
+        },
+        {
+          "city": "Houston",
+          "id": 7024,
+          "name": "Loro",
+          "neighborhood": "Heights",
+          "score": 92,
+          "price": 2,
+          "cuisine": "Asian Smokehouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Austin",
+            "Dallas"
+          ]
+        },
+        {
+          "city": "Austin",
+          "id": 5218,
+          "name": "Loro (East 5th)",
+          "neighborhood": "East Austin",
+          "score": 89,
+          "price": 2,
+          "cuisine": "Asian BBQ",
+          "awards": "Michelin Recommended",
+          "indicators": [],
+          "hasLocations": true,
+          "tier": "high-end",
+          "existingCityLinks": [
+            "Dallas",
+            "Houston"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "carbone",
+      "count": 3,
+      "cities": [
+        "Dallas",
+        "Las Vegas",
+        "New York"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 304,
+          "name": "Carbone",
+          "neighborhood": "Design District",
+          "score": 97,
+          "price": 4,
+          "cuisine": "Italian-American",
+          "awards": "Michelin Guide Texas 2024 & 2025 | World's most acclaimed Italian-American restaurant",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": [
+            "Las Vegas"
+          ]
+        },
+        {
+          "city": "Las Vegas",
+          "id": 12005,
+          "name": "Carbone",
+          "neighborhood": "The Strip (Aria)",
+          "score": 93,
+          "price": 4,
+          "cuisine": "Italian",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1004,
+          "name": "Carbone",
+          "neighborhood": "Greenwich Village",
+          "score": 99,
+          "price": 4,
+          "cuisine": "Italian-American",
+          "awards": "Michelin 1-Star",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "clark's oyster bar",
+      "count": 3,
+      "cities": [
+        "Dallas",
+        "Houston",
+        "Austin"
+      ],
+      "tier": "upper-mid",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 546,
+          "name": "Clark's Oyster Bar",
+          "neighborhood": "Knox-Henderson",
+          "score": 87,
+          "price": 3,
+          "cuisine": "Seafood / Raw Bar",
+          "awards": "",
+          "indicators": [
+            "coming-soon"
+          ],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Houston",
+          "id": 7225,
+          "name": "Clark's Oyster Bar",
+          "neighborhood": "Heights",
+          "score": 87,
+          "price": 3,
+          "cuisine": "Seafood / Oyster Bar",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5125,
+          "name": "Clark's Oyster Bar",
+          "neighborhood": "West Austin",
+          "score": 87,
+          "price": 3,
+          "cuisine": "Oyster Bar / Seafood",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "fogo de chao",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 31,
+          "name": "Fogo de Chao",
+          "neighborhood": "Uptown",
+          "score": 89,
+          "price": 4,
+          "cuisine": "Brazilian Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": [
+            "Houston"
+          ]
+        },
+        {
+          "city": "Houston",
+          "id": 7518,
+          "name": "Fogo de Chao Downtown",
+          "neighborhood": "Downtown",
+          "score": 84,
+          "price": 4,
+          "cuisine": "Brazilian Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "pappas bros. steakhouse",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 43,
+          "name": "Pappas Bros. Steakhouse",
+          "neighborhood": "North Dallas",
+          "score": 96,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "Michelin Guide recognition, Wine Spectator Award of Excellence",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": [
+            "Houston"
+          ]
+        },
+        {
+          "city": "Houston",
+          "id": 7016,
+          "name": "Pappas Bros. Steakhouse",
+          "neighborhood": "Galleria",
+          "score": 93,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "Michelin Recommended, Wine Spectator Grand Award",
+          "indicators": [
+            "opentable-icon"
+          ],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": [
+            "Dallas"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "pappadeaux seafood kitchen",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "upper-mid",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 50,
+          "name": "Pappadeaux Seafood Kitchen",
+          "neighborhood": "Oak Lawn",
+          "score": 88,
+          "price": 3,
+          "cuisine": "Seafood",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": [
+            "Houston"
+          ]
+        },
+        {
+          "city": "Houston",
+          "id": 7058,
+          "name": "Pappadeaux Seafood Kitchen",
+          "neighborhood": "Galleria",
+          "score": 86,
+          "price": 2,
+          "cuisine": "Cajun Seafood",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": true,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "pappasito's cantina",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 63,
+          "name": "Pappasito's Cantina",
+          "neighborhood": "North Dallas",
+          "score": 88,
+          "price": 3,
+          "cuisine": "Mexican Fine Dining",
+          "awards": "Best Mexican Restaurant",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Houston",
+          "id": 7186,
+          "name": "Pappasito's Cantina",
+          "neighborhood": "Galleria",
+          "score": 86,
+          "price": 2,
+          "cuisine": "Tex-Mex",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "hudson house",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "upper-mid",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 80,
+          "name": "Hudson House",
+          "neighborhood": "West Village",
+          "score": 91,
+          "price": 3,
+          "cuisine": "East Coast American",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": true,
+          "tier": "upper-mid",
+          "existingCityLinks": [
+            "Houston"
+          ]
+        },
+        {
+          "city": "Houston",
+          "id": 7279,
+          "name": "Hudson House",
+          "neighborhood": "Rice Village",
+          "score": 84,
+          "price": 3,
+          "cuisine": "American / Coastal",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "bob's steak & chop house",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 99,
+          "name": "Bob's Steak & Chop House",
+          "neighborhood": "Oak Lawn",
+          "score": 87,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "",
+          "indicators": [
+            "opentable-icon"
+          ],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": [
+            "Austin"
+          ]
+        },
+        {
+          "city": "Austin",
+          "id": 5490,
+          "name": "Bob's Steak & Chop House",
+          "neighborhood": "Downtown",
+          "score": 87,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": [
+            "Dallas"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "sadelle's",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "New York"
+      ],
+      "tier": "upper-mid",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 289,
+          "name": "Sadelle's",
+          "neighborhood": "Highland Park",
+          "score": 92,
+          "price": 3,
+          "cuisine": "Jewish Deli / All-Day",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1082,
+          "name": "Sadelle's",
+          "neighborhood": "SoHo",
+          "score": 88,
+          "price": 3,
+          "cuisine": "Jewish Deli & Brunch",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "barcelona wine bar",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "upper-mid",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 302,
+          "name": "Barcelona Wine Bar",
+          "neighborhood": "Knox-Henderson",
+          "score": 89,
+          "price": 2,
+          "cuisine": "Spanish Tapas / Wine Bar",
+          "awards": "World's Best Value Wine List 2024 | North America's largest Spanish wine program",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Houston",
+          "id": 7480,
+          "name": "Barcelona Wine Bar",
+          "neighborhood": "Montrose",
+          "score": 84,
+          "price": 3,
+          "cuisine": "Spanish Tapas / Wine Bar",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "iii forks",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 410,
+          "name": "III Forks",
+          "neighborhood": "Addison",
+          "score": 84,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5491,
+          "name": "III Forks",
+          "neighborhood": "Downtown",
+          "score": 87,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "ayat",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "New York"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 1076,
+          "name": "Ayat",
+          "neighborhood": "Richardson",
+          "score": 88,
+          "price": 2,
+          "cuisine": "Palestinian / Middle Eastern",
+          "awards": "Michelin Guide Featured (NYC); Dallas Observer Pick",
+          "indicators": [
+            "halal",
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1501,
+          "name": "Ayat",
+          "neighborhood": "Bay Ridge",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Palestinian",
+          "awards": "",
+          "indicators": [
+            "halal"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "stk steakhouse",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Las Vegas"
+      ],
+      "tier": "upper-mid",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 1116,
+          "name": "STK Steakhouse",
+          "neighborhood": "Uptown",
+          "score": 83,
+          "price": 4,
+          "cuisine": "Modern Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Las Vegas",
+          "id": 12041,
+          "name": "STK Steakhouse",
+          "neighborhood": "The Strip (The Cosmopolitan)",
+          "score": 87,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": [
+            "Dallas",
+            "Salt Lake City"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "ghost donkey",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Las Vegas"
+      ],
+      "tier": "upper-mid",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 9149,
+          "name": "Ghost Donkey",
+          "neighborhood": "Deep Ellum",
+          "score": 88,
+          "price": 2,
+          "cuisine": "Mezcal & Tequila Bar",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Las Vegas",
+          "id": 12080,
+          "name": "Ghost Donkey",
+          "neighborhood": "The Strip (The Cosmopolitan)",
+          "score": 90,
+          "price": 3,
+          "cuisine": "Mexican / Mezcal Bar",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "le jardinier",
+      "count": 2,
+      "cities": [
+        "Houston",
+        "New York"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Houston",
+          "id": 7003,
+          "name": "Le Jardinier",
+          "neighborhood": "Museum District",
+          "score": 96,
+          "price": 4,
+          "cuisine": "French",
+          "awards": "Michelin 1 Star",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1931,
+          "name": "Le Jardinier",
+          "neighborhood": "Midtown East",
+          "score": 90,
+          "price": 4,
+          "cuisine": "French",
+          "awards": "MICHELIN 1 Star",
+          "indicators": [
+            "opentable-icon"
+          ],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "mastro's steakhouse",
+      "count": 2,
+      "cities": [
+        "Houston",
+        "Chicago"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Houston",
+          "id": 7130,
+          "name": "Mastro's Steakhouse",
+          "neighborhood": "Galleria",
+          "score": 91,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Chicago",
+          "id": 317,
+          "name": "Mastro's Steakhouse",
+          "neighborhood": "River North",
+          "score": 89,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "soto",
+      "count": 2,
+      "cities": [
+        "Houston",
+        "Austin"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Houston",
+          "id": 7246,
+          "name": "Soto",
+          "neighborhood": "River Oaks",
+          "score": 89,
+          "price": 4,
+          "cuisine": "Japanese Omakase",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5052,
+          "name": "Soto",
+          "neighborhood": "South Lamar",
+          "score": 90,
+          "price": 4,
+          "cuisine": "Japanese",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "le colonial",
+      "count": 2,
+      "cities": [
+        "Houston",
+        "Chicago"
+      ],
+      "tier": "upper-mid",
+      "entries": [
+        {
+          "city": "Houston",
+          "id": 7268,
+          "name": "Le Colonial",
+          "neighborhood": "River Oaks",
+          "score": 87,
+          "price": 3,
+          "cuisine": "French-Vietnamese",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Chicago",
+          "id": 312,
+          "name": "Le Colonial",
+          "neighborhood": "Gold Coast",
+          "score": 87,
+          "price": 3,
+          "cuisine": "Vietnamese",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "hamsa",
+      "count": 2,
+      "cities": [
+        "Houston",
+        "Seattle"
+      ],
+      "tier": "upper-mid",
+      "entries": [
+        {
+          "city": "Houston",
+          "id": 7278,
+          "name": "Hamsa",
+          "neighborhood": "Rice Village",
+          "score": 88,
+          "price": 3,
+          "cuisine": "Israeli / Mediterranean",
+          "awards": "",
+          "indicators": [
+            "opentable-icon"
+          ],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Seattle",
+          "id": 9080,
+          "name": "Hamsa",
+          "neighborhood": "Wallingford",
+          "score": 89,
+          "price": 2,
+          "cuisine": "Palestinian / Middle Eastern",
+          "awards": "",
+          "indicators": [
+            "hole-in-wall"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "eddie v's prime seafood",
+      "count": 2,
+      "cities": [
+        "Houston",
+        "Austin"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Houston",
+          "id": 7299,
+          "name": "Eddie V's Prime Seafood",
+          "neighborhood": "Memorial",
+          "score": 89,
+          "price": 4,
+          "cuisine": "Seafood / Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5495,
+          "name": "Eddie V's Prime Seafood",
+          "neighborhood": "North Austin",
+          "score": 87,
+          "price": 4,
+          "cuisine": "Steakhouse / Seafood",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": [
+            "Dallas"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "perry's steakhouse & grille",
+      "count": 2,
+      "cities": [
+        "Houston",
+        "Austin"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Houston",
+          "id": 7335,
+          "name": "Perry's Steakhouse & Grille Katy",
+          "neighborhood": "Katy",
+          "score": 89,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": [
+            "Dallas",
+            "Austin"
+          ]
+        },
+        {
+          "city": "Austin",
+          "id": 5139,
+          "name": "Perry's Steakhouse & Grille",
+          "neighborhood": "Domain",
+          "score": 88,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "Wine Spectator Award",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": [
+            "Dallas",
+            "Houston"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "este pizza",
+      "count": 2,
+      "cities": [
+        "Austin",
+        "Salt Lake City"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Austin",
+          "id": 5147,
+          "name": "Este Pizza",
+          "neighborhood": "East Austin",
+          "score": 86,
+          "price": 1,
+          "cuisine": "Neapolitan Pizza",
+          "awards": "Michelin Recommended",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Salt Lake City",
+          "id": 11548,
+          "name": "Este Pizza",
+          "neighborhood": "9th & 9th",
+          "score": 83,
+          "price": 1,
+          "cuisine": "Pizza",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "ruth's chris steak house",
+      "count": 2,
+      "cities": [
+        "Austin",
+        "Salt Lake City"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Austin",
+          "id": 5493,
+          "name": "Ruth's Chris Steak House",
+          "neighborhood": "6th Street",
+          "score": 86,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Salt Lake City",
+          "id": 11208,
+          "name": "Ruth's Chris Steak House",
+          "neighborhood": "Downtown SLC",
+          "score": 87,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "mon ami gabi",
+      "count": 2,
+      "cities": [
+        "Chicago",
+        "Las Vegas"
+      ],
+      "tier": "upper-mid",
+      "entries": [
+        {
+          "city": "Chicago",
+          "id": 208,
+          "name": "Mon Ami Gabi",
+          "neighborhood": "Lincoln Park",
+          "score": 87,
+          "price": 2,
+          "cuisine": "French Bistro",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Las Vegas",
+          "id": 12153,
+          "name": "Mon Ami Gabi",
+          "neighborhood": "The Strip (Paris Las Vegas)",
+          "score": 89,
+          "price": 3,
+          "cuisine": "French / Bistro",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "takashi",
+      "count": 2,
+      "cities": [
+        "Salt Lake City",
+        "New York"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Salt Lake City",
+          "id": 11004,
+          "name": "Takashi",
+          "neighborhood": "Downtown SLC",
+          "score": 96,
+          "price": 3,
+          "cuisine": "Japanese / Sushi",
+          "awards": "James Beard Semifinalist",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1876,
+          "name": "Takashi",
+          "neighborhood": "West Village",
+          "score": 88,
+          "price": 3,
+          "cuisine": "Japanese BBQ",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "scarpetta",
+      "count": 2,
+      "cities": [
+        "Las Vegas",
+        "New York"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Las Vegas",
+          "id": 12022,
+          "name": "Scarpetta",
+          "neighborhood": "The Strip (The Cosmopolitan)",
+          "score": 90,
+          "price": 4,
+          "cuisine": "Italian",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1888,
+          "name": "Scarpetta",
+          "neighborhood": "Meatpacking District",
+          "score": 88,
+          "price": 4,
+          "cuisine": "Italian",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "nobu",
+      "count": 2,
+      "cities": [
+        "Las Vegas",
+        "New York"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Las Vegas",
+          "id": 12023,
+          "name": "Nobu",
+          "neighborhood": "The Strip (Caesars Palace)",
+          "score": 90,
+          "price": 4,
+          "cuisine": "Japanese / Sushi",
+          "awards": "",
+          "indicators": [
+            "opentable-icon"
+          ],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": [
+            "Dallas",
+            "Houston"
+          ]
+        },
+        {
+          "city": "New York",
+          "id": 1245,
+          "name": "Nobu Downtown",
+          "neighborhood": "Financial District",
+          "score": 88,
+          "price": 3,
+          "cuisine": "Japanese",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "beauty & essex",
+      "count": 2,
+      "cities": [
+        "Las Vegas",
+        "New York"
+      ],
+      "tier": "upper-mid",
+      "entries": [
+        {
+          "city": "Las Vegas",
+          "id": 12031,
+          "name": "Beauty & Essex",
+          "neighborhood": "The Strip (The Cosmopolitan)",
+          "score": 89,
+          "price": 3,
+          "cuisine": "New American",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1518,
+          "name": "Beauty & Essex",
+          "neighborhood": "Lower East Side",
+          "score": 84,
+          "price": 2,
+          "cuisine": "New American",
+          "awards": "",
+          "indicators": [
+            "late-night"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "cote korean steakhouse",
+      "count": 2,
+      "cities": [
+        "Las Vegas",
+        "New York"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Las Vegas",
+          "id": 12129,
+          "name": "COTE Korean Steakhouse",
+          "neighborhood": "The Strip (The Venetian)",
+          "score": 93,
+          "price": 4,
+          "cuisine": "Korean / Steakhouse",
+          "awards": "Michelin Star · Best Steakhouse in North America",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1037,
+          "name": "COTE Korean Steakhouse",
+          "neighborhood": "Flatiron / NoMad",
+          "score": 94,
+          "price": 4,
+          "cuisine": "Korean BBQ / Steakhouse",
+          "awards": "Michelin 1-Star, James Beard Best New Restaurant 2018",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "gjelina",
+      "count": 2,
+      "cities": [
+        "Las Vegas",
+        "New York"
+      ],
+      "tier": "upper-mid",
+      "entries": [
+        {
+          "city": "Las Vegas",
+          "id": 12132,
+          "name": "Gjelina",
+          "neighborhood": "The Strip (The Venetian)",
+          "score": 91,
+          "price": 3,
+          "cuisine": "Californian / Mediterranean",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1925,
+          "name": "Gjelina",
+          "neighborhood": "NoHo",
+          "score": 87,
+          "price": 3,
+          "cuisine": "California / New American",
+          "awards": "",
+          "indicators": [
+            "opentable-icon"
+          ],
+          "hasLocations": false,
+          "tier": "upper-mid",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "peter luger steak house",
+      "count": 2,
+      "cities": [
+        "Las Vegas",
+        "New York"
+      ],
+      "tier": "high-end",
+      "entries": [
+        {
+          "city": "Las Vegas",
+          "id": 12134,
+          "name": "Peter Luger Steak House",
+          "neighborhood": "The Strip (Caesars Palace)",
+          "score": 92,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "",
+          "indicators": [
+            "opentable-icon"
+          ],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1003,
+          "name": "Peter Luger Steak House",
+          "neighborhood": "Williamsburg",
+          "score": 99,
+          "price": 4,
+          "cuisine": "Steakhouse",
+          "awards": "Michelin Recommended, James Beard America's Classics",
+          "indicators": [
+            "hole-in-the-wall"
+          ],
+          "hasLocations": false,
+          "tier": "high-end",
+          "existingCityLinks": []
+        }
+      ]
+    }
+  ],
+  "casualGroups": [
+    {
+      "brand": "true food kitchen",
+      "count": 4,
+      "cities": [
+        "Dallas",
+        "Houston",
+        "Austin",
+        "Las Vegas"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 306,
+          "name": "True Food Kitchen",
+          "neighborhood": "Park Cities",
+          "score": 84,
+          "price": 2,
+          "cuisine": "Health-Forward American",
+          "awards": "Fox Restaurant Concepts | Dr. Andrew Weil partnership",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Austin",
+            "Houston",
+            "Las Vegas"
+          ]
+        },
+        {
+          "city": "Houston",
+          "id": 7508,
+          "name": "True Food Kitchen",
+          "neighborhood": "River Oaks",
+          "score": 82,
+          "price": 2,
+          "cuisine": "Healthy / American",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5213,
+          "name": "True Food Kitchen",
+          "neighborhood": "Domain",
+          "score": 84,
+          "price": 2,
+          "cuisine": "Health-Forward American",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Dallas",
+            "Houston",
+            "Las Vegas"
+          ]
+        },
+        {
+          "city": "Las Vegas",
+          "id": 12071,
+          "name": "True Food Kitchen",
+          "neighborhood": "Summerlin (Downtown Summerlin)",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Health-focused / New American",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Dallas",
+            "Austin",
+            "Houston"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "north italia",
+      "count": 3,
+      "cities": [
+        "Dallas",
+        "Austin",
+        "Salt Lake City"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 182,
+          "name": "North Italia",
+          "neighborhood": "Uptown",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Italian",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Austin",
+            "Salt Lake City"
+          ]
+        },
+        {
+          "city": "Austin",
+          "id": 5138,
+          "name": "North Italia",
+          "neighborhood": "Domain",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Italian",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Dallas",
+            "Salt Lake City"
+          ]
+        },
+        {
+          "city": "Salt Lake City",
+          "id": 11522,
+          "name": "North Italia Riverton",
+          "neighborhood": "Riverton",
+          "score": 84,
+          "price": 2,
+          "cuisine": "Italian",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Dallas",
+            "Austin"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "torchy's tacos",
+      "count": 3,
+      "cities": [
+        "Dallas",
+        "Houston",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 228,
+          "name": "Torchy's Tacos",
+          "neighborhood": "Oak Lawn",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Mexican/Tacos",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Austin",
+            "Houston"
+          ]
+        },
+        {
+          "city": "Houston",
+          "id": 7047,
+          "name": "Torchy's Tacos",
+          "neighborhood": "Montrose",
+          "score": 84,
+          "price": 1,
+          "cuisine": "Tex-Mex / Creative Tacos",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": true,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Dallas",
+            "Austin"
+          ]
+        },
+        {
+          "city": "Austin",
+          "id": 5015,
+          "name": "Torchy's Tacos",
+          "neighborhood": "South Congress",
+          "score": 85,
+          "price": 1,
+          "cuisine": "Mexican",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": true,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Dallas",
+            "Houston"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "hopdoddy burger bar",
+      "count": 3,
+      "cities": [
+        "Dallas",
+        "Houston",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 234,
+          "name": "Hopdoddy Burger Bar",
+          "neighborhood": "Uptown",
+          "score": 79,
+          "price": 2,
+          "cuisine": "Burgers",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Austin",
+            "Houston"
+          ]
+        },
+        {
+          "city": "Houston",
+          "id": 7312,
+          "name": "Hopdoddy Burger Bar",
+          "neighborhood": "Rice Village",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Burgers",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Dallas",
+            "Austin"
+          ]
+        },
+        {
+          "city": "Austin",
+          "id": 5297,
+          "name": "Hopdoddy Burger Bar",
+          "neighborhood": "South Congress",
+          "score": 86,
+          "price": 1,
+          "cuisine": "Burgers",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Dallas"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "flower child",
+      "count": 3,
+      "cities": [
+        "Dallas",
+        "Houston",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 517,
+          "name": "Flower Child",
+          "neighborhood": "Park Cities",
+          "score": 80,
+          "price": 2,
+          "cuisine": "Healthy / Fast Casual",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Austin"
+          ]
+        },
+        {
+          "city": "Houston",
+          "id": 7507,
+          "name": "Flower Child",
+          "neighborhood": "River Oaks",
+          "score": 82,
+          "price": 2,
+          "cuisine": "Healthy / American",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5515,
+          "name": "Flower Child",
+          "neighborhood": "Downtown",
+          "score": 83,
+          "price": 2,
+          "cuisine": "Healthy / Bowls / Salads",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Dallas",
+            "Houston"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "bonchon",
+      "count": 3,
+      "cities": [
+        "Dallas",
+        "Houston",
+        "New York"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 9125,
+          "name": "Bonchon",
+          "neighborhood": "Flower Mound",
+          "score": 83,
+          "price": 2,
+          "cuisine": "Korean Fried Chicken",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Houston",
+          "id": 7227,
+          "name": "Bonchon",
+          "neighborhood": "Chinatown / Bellaire",
+          "score": 84,
+          "price": 1,
+          "cuisine": "Korean Fried Chicken",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1843,
+          "name": "Bonchon",
+          "neighborhood": "Midtown West",
+          "score": 84,
+          "price": 2,
+          "cuisine": "Korean Fried Chicken",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "the henry",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Las Vegas"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 18,
+          "name": "The Henry",
+          "neighborhood": "Uptown",
+          "score": 86,
+          "price": 2,
+          "cuisine": "All-Day American",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Las Vegas",
+          "id": 12423,
+          "name": "The Henry",
+          "neighborhood": "The Strip (The Cosmopolitan)",
+          "score": 83,
+          "price": 2,
+          "cuisine": "American Tavern",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "rodeo goat",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 52,
+          "name": "Rodeo Goat",
+          "neighborhood": "Design District",
+          "score": 86,
+          "price": 2,
+          "cuisine": "American Bar & Grill",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": true,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Houston"
+          ]
+        },
+        {
+          "city": "Houston",
+          "id": 7146,
+          "name": "Rodeo Goat",
+          "neighborhood": "Washington Corridor",
+          "score": 84,
+          "price": 2,
+          "cuisine": "Burgers / Craft Beer",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Dallas"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "merit coffee",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 191,
+          "name": "Merit Coffee",
+          "neighborhood": "Oak Lawn",
+          "score": 88,
+          "price": 1,
+          "cuisine": "Specialty Coffee",
+          "awards": "Best Coffee Shop Texas | Dallas 100",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5078,
+          "name": "Merit Coffee",
+          "neighborhood": "East Austin",
+          "score": 85,
+          "price": 1,
+          "cuisine": "Specialty Coffee",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "postino wine cafe",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 192,
+          "name": "Postino Wine Cafe",
+          "neighborhood": "Addison",
+          "score": 86,
+          "price": 2,
+          "cuisine": "Wine Bar",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Houston",
+          "id": 7197,
+          "name": "Postino Wine Cafe",
+          "neighborhood": "Heights",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Wine Bar / Cafe",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "tacodeli",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 229,
+          "name": "Tacodeli",
+          "neighborhood": "Oak Cliff",
+          "score": 83,
+          "price": 2,
+          "cuisine": "Mexican/Tacos",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5082,
+          "name": "Tacodeli",
+          "neighborhood": "North Lamar",
+          "score": 86,
+          "price": 1,
+          "cuisine": "Tacos / Breakfast",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "fadi's mediterranean grill",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 231,
+          "name": "Fadi's Mediterranean Grill",
+          "neighborhood": "Knox-Henderson",
+          "score": 82,
+          "price": 2,
+          "cuisine": "Mediterranean",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Houston",
+          "id": 7339,
+          "name": "Fadi's Mediterranean Grill Katy",
+          "neighborhood": "Katy",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Mediterranean",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "punch bowl social",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 255,
+          "name": "Punch Bowl Social",
+          "neighborhood": "Deep Ellum",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Bar / Eatertainment",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5541,
+          "name": "Punch Bowl Social",
+          "neighborhood": "Domain",
+          "score": 75,
+          "price": 2,
+          "cuisine": "American / Entertainment",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "alamo drafthouse",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 260,
+          "name": "Alamo Drafthouse",
+          "neighborhood": "Cedars",
+          "score": 91,
+          "price": 2,
+          "cuisine": "Dine-In Cinema / Bar",
+          "awards": "Time #1 Theater in America | Entertainment Weekly Coolest Movie Theater in the World",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5584,
+          "name": "Alamo Drafthouse South Lamar",
+          "neighborhood": "South Lamar",
+          "score": 89,
+          "price": 1,
+          "cuisine": "Theater / Cinema",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "ruins",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "New York"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 291,
+          "name": "Ruins",
+          "neighborhood": "Deep Ellum",
+          "score": 91,
+          "price": 2,
+          "cuisine": "Latin American / Cocktail Bar",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1668,
+          "name": "Ruins",
+          "neighborhood": "Bushwick",
+          "score": 82,
+          "price": 1,
+          "cuisine": "Bar",
+          "awards": "",
+          "indicators": [
+            "outdoor-seating",
+            "late-night",
+            "pet-friendly"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "off the record",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 294,
+          "name": "Off the Record",
+          "neighborhood": "Deep Ellum",
+          "score": 86,
+          "price": 1,
+          "cuisine": "Craft Beer / Vinyl Bar",
+          "awards": "",
+          "indicators": [
+            "dive-bar"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Houston",
+          "id": 7459,
+          "name": "Off The Record",
+          "neighborhood": "Downtown",
+          "score": 84,
+          "price": 2,
+          "cuisine": "Cocktail Bar",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "shake shack",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "New York"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 318,
+          "name": "Shake Shack",
+          "neighborhood": "Uptown",
+          "score": 75,
+          "price": 2,
+          "cuisine": "Burgers / Fast Casual",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Houston"
+          ]
+        },
+        {
+          "city": "New York",
+          "id": 1086,
+          "name": "Shake Shack",
+          "neighborhood": "Flatiron / NoMad",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Burgers",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "cava",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "New York"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 325,
+          "name": "CAVA",
+          "neighborhood": "Uptown",
+          "score": 76,
+          "price": 1,
+          "cuisine": "Mediterranean / Fast Casual",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1788,
+          "name": "CAVA",
+          "neighborhood": "Multiple Locations",
+          "score": 80,
+          "price": 1,
+          "cuisine": "Mediterranean",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "sweetgreen",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "New York"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 329,
+          "name": "Sweetgreen",
+          "neighborhood": "West Village",
+          "score": 80,
+          "price": 2,
+          "cuisine": "Salads / Fast Casual",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1166,
+          "name": "Sweetgreen",
+          "neighborhood": "Midtown",
+          "score": 80,
+          "price": 2,
+          "cuisine": "Salads / Fast Casual",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "mo' bettahs hawaiian",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Salt Lake City"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 332,
+          "name": "Mo' Bettahs Hawaiian",
+          "neighborhood": "East Dallas / Lakewood",
+          "score": 83,
+          "price": 1,
+          "cuisine": "Hawaiian / Plate Lunch",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Salt Lake City",
+          "id": 11203,
+          "name": "Mo' Bettahs Hawaiian",
+          "neighborhood": "Downtown SLC",
+          "score": 83,
+          "price": 1,
+          "cuisine": "Hawaiian",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "jeni's splendid ice creams",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Chicago"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 341,
+          "name": "Jeni's Splendid Ice Creams",
+          "neighborhood": "Victory Park",
+          "score": 87,
+          "price": 2,
+          "cuisine": "Artisan Ice Cream",
+          "awards": "Founder's cookbook won a James Beard Award",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Chicago",
+          "id": 230,
+          "name": "Jeni's Splendid Ice Creams",
+          "neighborhood": "Multiple Locations",
+          "score": 85,
+          "price": 1,
+          "cuisine": "Ice Cream",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "van leeuwen ice cream",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "New York"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 342,
+          "name": "Van Leeuwen Ice Cream",
+          "neighborhood": "Deep Ellum",
+          "score": 83,
+          "price": 2,
+          "cuisine": "Artisan Ice Cream",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1119,
+          "name": "Van Leeuwen Ice Cream",
+          "neighborhood": "East Village",
+          "score": 85,
+          "price": 1,
+          "cuisine": "Artisan Ice Cream",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "gus's world famous fried chicken",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 345,
+          "name": "Gus's World Famous Fried Chicken",
+          "neighborhood": "Deep Ellum",
+          "score": 87,
+          "price": 1,
+          "cuisine": "Southern Fried Chicken",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5127,
+          "name": "Gus's World Famous Fried Chicken",
+          "neighborhood": "Downtown",
+          "score": 86,
+          "price": 1,
+          "cuisine": "Fried Chicken",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "wingstop",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 346,
+          "name": "Wingstop",
+          "neighborhood": "Downtown Dallas",
+          "score": 76,
+          "price": 1,
+          "cuisine": "Wings / Fast Casual",
+          "awards": "DFW-founded (Garland, 1994)",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5175,
+          "name": "Wingstop (Original)",
+          "neighborhood": "South Lamar",
+          "score": 82,
+          "price": 1,
+          "cuisine": "Chicken Wings",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "cane rosso",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 348,
+          "name": "Cane Rosso",
+          "neighborhood": "Deep Ellum",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Neapolitan Pizza",
+          "awards": "VPN / AVPN Certified Neapolitan",
+          "indicators": [
+            "vegetarian",
+            "lgbtq-friendly"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5339,
+          "name": "Cane Rosso",
+          "neighborhood": "East Austin",
+          "score": 86,
+          "price": 2,
+          "cuisine": "Neapolitan Pizza",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "black tap craft burgers & beer",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Las Vegas"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 364,
+          "name": "Black Tap Craft Burgers & Beer",
+          "neighborhood": "Victory Park",
+          "score": 80,
+          "price": 2,
+          "cuisine": "Craft Burgers / American",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Las Vegas",
+          "id": 12218,
+          "name": "Black Tap Craft Burgers & Beer",
+          "neighborhood": "The Strip (Grand Canal Shoppes)",
+          "score": 86,
+          "price": 2,
+          "cuisine": "American / Burgers",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "jinya ramen bar",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 392,
+          "name": "Jinya Ramen Bar",
+          "neighborhood": "Victory Park",
+          "score": 82,
+          "price": 2,
+          "cuisine": "Japanese Ramen",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Houston",
+          "id": 7490,
+          "name": "JINYA Ramen Bar",
+          "neighborhood": "Montrose",
+          "score": 82,
+          "price": 2,
+          "cuisine": "Japanese Ramen",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "whataburger",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 480,
+          "name": "Whataburger",
+          "neighborhood": "East Dallas / Lakewood",
+          "score": 83,
+          "price": 1,
+          "cuisine": "Fast Food",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Houston",
+          "id": 7220,
+          "name": "Whataburger",
+          "neighborhood": "Multiple Locations",
+          "score": 82,
+          "price": 1,
+          "cuisine": "Fast Food / Burgers",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "mendocino farms",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Houston"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 515,
+          "name": "Mendocino Farms",
+          "neighborhood": "Arts District",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Sandwiches & Salads / Fast Casual",
+          "awards": "",
+          "indicators": [
+            "vegetarian"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Houston",
+          "id": 7250,
+          "name": "Mendocino Farms",
+          "neighborhood": "Galleria",
+          "score": 83,
+          "price": 1,
+          "cuisine": "Sandwiches / Salads",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "taco joint",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 524,
+          "name": "Taco Joint",
+          "neighborhood": "Lower Greenville",
+          "score": 84,
+          "price": 1,
+          "cuisine": "Mexican / Tacos",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5393,
+          "name": "Taco Joint",
+          "neighborhood": "North Loop",
+          "score": 85,
+          "price": 1,
+          "cuisine": "Mexican / Breakfast Tacos",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "halcyon",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 1062,
+          "name": "Halcyon",
+          "neighborhood": "Lower Greenville",
+          "score": 82,
+          "price": 2,
+          "cuisine": "Coffeehouse & Cocktail Bar",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5336,
+          "name": "Halcyon",
+          "neighborhood": "Downtown",
+          "score": 85,
+          "price": 1,
+          "cuisine": "Coffee / Bar",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "voodoo doughnut",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 9031,
+          "name": "Voodoo Doughnut",
+          "neighborhood": "Lower Greenville",
+          "score": 83,
+          "price": 1,
+          "cuisine": "Creative Donuts",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5543,
+          "name": "Voodoo Doughnut",
+          "neighborhood": "East Austin",
+          "score": 78,
+          "price": 1,
+          "cuisine": "Donuts / Dessert",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "black sheep coffee",
+      "count": 2,
+      "cities": [
+        "Dallas",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Dallas",
+          "id": 9087,
+          "name": "Black Sheep Coffee",
+          "neighborhood": "East Dallas / Lakewood",
+          "score": 82,
+          "price": 1,
+          "cuisine": "Coffee",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5574,
+          "name": "Black Sheep Coffee",
+          "neighborhood": "6th Street",
+          "score": 77,
+          "price": 1,
+          "cuisine": "Specialty Coffee",
+          "awards": "",
+          "indicators": [
+            "new-opening"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "prospect park",
+      "count": 2,
+      "cities": [
+        "Houston",
+        "New York"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Houston",
+          "id": 7115,
+          "name": "Prospect Park",
+          "neighborhood": "Upper Kirby",
+          "score": 83,
+          "price": 2,
+          "cuisine": "American / Sports Bar",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1945,
+          "name": "Prospect Park",
+          "neighborhood": "Park Slope / Prospect Heights",
+          "score": 95,
+          "price": 1,
+          "cuisine": "Park",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "east side king",
+      "count": 2,
+      "cities": [
+        "Houston",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Houston",
+          "id": 7123,
+          "name": "East Side King",
+          "neighborhood": "Downtown",
+          "score": 85,
+          "price": 1,
+          "cuisine": "Japanese Street Food",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5182,
+          "name": "East Side King",
+          "neighborhood": "East Austin",
+          "score": 86,
+          "price": 1,
+          "cuisine": "Asian Street Food / Food Truck",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "ramen tatsu-ya",
+      "count": 2,
+      "cities": [
+        "Houston",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Houston",
+          "id": 7202,
+          "name": "Ramen Tatsu-Ya",
+          "neighborhood": "Montrose",
+          "score": 88,
+          "price": 2,
+          "cuisine": "Japanese Ramen",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": true,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Austin"
+          ]
+        },
+        {
+          "city": "Austin",
+          "id": 5460,
+          "name": "Ramen Tatsu-Ya",
+          "neighborhood": "North Lamar",
+          "score": 87,
+          "price": 2,
+          "cuisine": "Ramen",
+          "awards": "",
+          "indicators": [
+            "iconic"
+          ],
+          "hasLocations": true,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Houston"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "shokku ramen",
+      "count": 2,
+      "cities": [
+        "Houston",
+        "Las Vegas"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Houston",
+          "id": 7203,
+          "name": "Shokku Ramen",
+          "neighborhood": "Heights",
+          "score": 85,
+          "price": 1,
+          "cuisine": "Japanese Ramen",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Las Vegas",
+          "id": 12350,
+          "name": "Shokku Ramen",
+          "neighborhood": "Paradise",
+          "score": 83,
+          "price": 1,
+          "cuisine": "Japanese / Ramen",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "chuy's",
+      "count": 2,
+      "cities": [
+        "Houston",
+        "Austin"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Houston",
+          "id": 7398,
+          "name": "Chuy's The Woodlands",
+          "neighborhood": "The Woodlands",
+          "score": 83,
+          "price": 2,
+          "cuisine": "Tex-Mex",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Austin",
+          "id": 5172,
+          "name": "Chuy's",
+          "neighborhood": "Zilker",
+          "score": 84,
+          "price": 1,
+          "cuisine": "Tex-Mex",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "garage",
+      "count": 2,
+      "cities": [
+        "Austin",
+        "New York"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Austin",
+          "id": 5063,
+          "name": "Garage",
+          "neighborhood": "Downtown",
+          "score": 86,
+          "price": 2,
+          "cuisine": "Cocktail Bar / Speakeasy",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1657,
+          "name": "Garage",
+          "neighborhood": "SoHo",
+          "score": 81,
+          "price": 2,
+          "cuisine": "Club",
+          "awards": "",
+          "indicators": [
+            "late-night"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "via 313",
+      "count": 2,
+      "cities": [
+        "Austin",
+        "Salt Lake City"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Austin",
+          "id": 5068,
+          "name": "Via 313",
+          "neighborhood": "East Austin",
+          "score": 88,
+          "price": 1,
+          "cuisine": "Detroit-Style Pizza",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Salt Lake City",
+          "id": 11507,
+          "name": "Via 313 Lehi",
+          "neighborhood": "Lehi",
+          "score": 82,
+          "price": 2,
+          "cuisine": "Pizza",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "kouklas greek eatery",
+      "count": 2,
+      "cities": [
+        "Chicago",
+        "Salt Lake City"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Chicago",
+          "id": 333,
+          "name": "Kouklas Greek Eatery",
+          "neighborhood": "Niles (Suburban)",
+          "score": 87,
+          "price": 2,
+          "cuisine": "Greek",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Salt Lake City",
+          "id": 11362,
+          "name": "Kouklas Greek Eatery",
+          "neighborhood": "Suburban SLC",
+          "score": 86,
+          "price": 1,
+          "cuisine": "Greek",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "washington square park",
+      "count": 2,
+      "cities": [
+        "Chicago",
+        "New York"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Chicago",
+          "id": 12551,
+          "name": "Washington Square Park",
+          "neighborhood": "Gold Coast",
+          "score": 80,
+          "price": 1,
+          "cuisine": "Park",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1922,
+          "name": "Washington Square Park",
+          "neighborhood": "Greenwich Village",
+          "score": 86,
+          "price": 0,
+          "cuisine": "Tourist Attraction",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "settebello pizzeria napoletana",
+      "count": 2,
+      "cities": [
+        "Salt Lake City",
+        "Las Vegas"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Salt Lake City",
+          "id": 11025,
+          "name": "Settebello Pizzeria Napoletana",
+          "neighborhood": "Downtown SLC",
+          "score": 90,
+          "price": 2,
+          "cuisine": "Neapolitan Pizza",
+          "awards": "VPN Certified (Vera Pizza Napoletana)",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": [
+            "Las Vegas"
+          ]
+        },
+        {
+          "city": "Las Vegas",
+          "id": 12497,
+          "name": "Settebello Pizzeria Napoletana",
+          "neighborhood": "Henderson",
+          "score": 87,
+          "price": 2,
+          "cuisine": "Neapolitan Pizza",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "milk bar",
+      "count": 2,
+      "cities": [
+        "Las Vegas",
+        "New York"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Las Vegas",
+          "id": 12424,
+          "name": "Milk Bar",
+          "neighborhood": "The Strip (The Cosmopolitan)",
+          "score": 85,
+          "price": 1,
+          "cuisine": "Dessert",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1747,
+          "name": "Milk Bar",
+          "neighborhood": "East Village",
+          "score": 85,
+          "price": 1,
+          "cuisine": "Dessert",
+          "awards": "James Beard Award",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "grimaldi's pizzeria",
+      "count": 2,
+      "cities": [
+        "Las Vegas",
+        "New York"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Las Vegas",
+          "id": 12496,
+          "name": "Grimaldi's Pizzeria Henderson",
+          "neighborhood": "Henderson",
+          "score": 82,
+          "price": 2,
+          "cuisine": "Pizza",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1400,
+          "name": "Grimaldi's Pizzeria",
+          "neighborhood": "DUMBO",
+          "score": 84,
+          "price": 2,
+          "cuisine": "Pizza",
+          "awards": "",
+          "indicators": [
+            "hole-in-the-wall"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "dough zone dumpling house",
+      "count": 2,
+      "cities": [
+        "Las Vegas",
+        "Seattle"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Las Vegas",
+          "id": 12524,
+          "name": "Dough Zone Dumpling House",
+          "neighborhood": "Chinatown",
+          "score": 85,
+          "price": 2,
+          "cuisine": "Chinese / Dumplings",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "Seattle",
+          "id": 9084,
+          "name": "Dough Zone Dumpling House",
+          "neighborhood": "Chinatown-International District",
+          "score": 89,
+          "price": 2,
+          "cuisine": "Chinese / Dumplings",
+          "awards": "",
+          "indicators": [
+            "hole-in-wall"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    },
+    {
+      "brand": "ramen danbo",
+      "count": 2,
+      "cities": [
+        "Seattle",
+        "New York"
+      ],
+      "tier": "casual",
+      "entries": [
+        {
+          "city": "Seattle",
+          "id": 9096,
+          "name": "Ramen Danbo",
+          "neighborhood": "Capitol Hill",
+          "score": 89,
+          "price": 2,
+          "cuisine": "Japanese / Ramen",
+          "awards": "",
+          "indicators": [
+            "hole-in-wall"
+          ],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        },
+        {
+          "city": "New York",
+          "id": 1342,
+          "name": "Ramen Danbo",
+          "neighborhood": "Williamsburg",
+          "score": 82,
+          "price": 1,
+          "cuisine": "Japanese",
+          "awards": "",
+          "indicators": [],
+          "hasLocations": false,
+          "tier": "casual",
+          "existingCityLinks": []
+        }
+      ]
+    }
+  ]
+}

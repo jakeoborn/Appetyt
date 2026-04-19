@@ -1,0 +1,154 @@
+{
+  "Seattle": {
+    "existingCount": 8,
+    "candidateCount": 37,
+    "addedCount": 12,
+    "addedList": [
+      "Chihuly Garden and Glass",
+      "Fremont Troll",
+      "Volunteer Park",
+      "Alki Beach",
+      "Wing Luke Museum",
+      "MOHAI (Museum of History & Industry)",
+      "Kubota Garden",
+      "Seattle Art Museum (SAM)",
+      "Museum of Flight",
+      "Washington State Ferry to Bainbridge Island",
+      "Seattle Asian Art Museum",
+      "Amazon Spheres"
+    ]
+  },
+  "Salt Lake City": {
+    "existingCount": 8,
+    "candidateCount": 20,
+    "addedCount": 12,
+    "addedList": [
+      "Skiing at Alta / Snowbird",
+      "Park City Mountain Resort",
+      "Snowbird Ski & Summer Resort",
+      "Big Cottonwood Canyon / Brighton",
+      "Tabernacle Choir Concert",
+      "Sundance Mountain Resort",
+      "Sugar House Park",
+      "Utah Museum of Fine Arts",
+      "Tower Theatre",
+      "Clark Planetarium",
+      "Hogle Zoo",
+      "This Is The Place Heritage Park"
+    ]
+  },
+  "Chicago": {
+    "existingCount": 8,
+    "candidateCount": 32,
+    "addedCount": 12,
+    "addedList": [
+      "Museum Campus",
+      "Millennium Park",
+      "Wrigley Field",
+      "Willis Tower Skydeck",
+      "Chicago Riverwalk",
+      "Green Mill Jazz Club",
+      "Thalia Hall",
+      "Shedd Aquarium",
+      "Museum of Science and Industry",
+      "The 606 (Bloomingdale Trail)",
+      "Soldier Field",
+      "Untitled Supper Club"
+    ]
+  },
+  "Austin": {
+    "existingCount": 8,
+    "candidateCount": 27,
+    "addedCount": 12,
+    "addedList": [
+      "Congress Avenue Bridge Bat Colony",
+      "Barton Creek Greenbelt",
+      "Alamo Drafthouse South Lamar",
+      "South Congress Avenue (SoCo)",
+      "ACL Live at The Moody Theater",
+      "Rainey Street Historic District",
+      "Antone's Nightclub",
+      "Bullock Texas State History Museum",
+      "LBJ Presidential Library",
+      "Mohawk",
+      "HOPE Outdoor Gallery",
+      "Austin FC at Q2 Stadium"
+    ]
+  },
+  "Houston": {
+    "existingCount": 8,
+    "candidateCount": 25,
+    "addedCount": 12,
+    "addedList": [
+      "Memorial Park",
+      "White Oak Music Hall",
+      "Rothko Chapel",
+      "The River Oaks Theatre",
+      "Levy Park",
+      "Shell Energy Stadium",
+      "San Jacinto Monument",
+      "The Heights Theater",
+      "Children's Museum Houston",
+      "Houston Arboretum & Nature Center",
+      "The Woodlands Waterway",
+      "The Improv Houston"
+    ]
+  },
+  "New York": {
+    "existingCount": 8,
+    "candidateCount": 67,
+    "addedCount": 12,
+    "addedList": [
+      "Central Park",
+      "MET Museum",
+      "Prospect Park",
+      "Apollo Theater",
+      "The High Line",
+      "DUMBO & Brooklyn Bridge Park",
+      "Tenement Museum",
+      "Brooklyn Museum",
+      "Empire State Building",
+      "Museum of Modern Art (MoMA)",
+      "Stonewall Inn National Monument",
+      "Brooklyn Botanic Garden"
+    ]
+  },
+  "Dallas": {
+    "existingCount": 8,
+    "candidateCount": 37,
+    "addedCount": 12,
+    "addedList": [
+      "Bishop Arts District",
+      "Cosm Dallas",
+      "Alamo Drafthouse",
+      "Highland Park Village",
+      "Meadows Museum",
+      "Katy Trail (Knox Entrance)",
+      "Margaret Hunt Hill Bridge",
+      "Granada Theater",
+      "George W. Bush Presidential Center",
+      "Topgolf Dallas",
+      "Cinépolis Luxury Cinemas",
+      "Toyota Music Factory"
+    ]
+  },
+  "Las Vegas": {
+    "existingCount": 8,
+    "candidateCount": 31,
+    "addedCount": 12,
+    "addedList": [
+      "Sphere",
+      "Bellagio Fountains",
+      "Bellagio Conservatory & Botanical Gardens",
+      "The Colosseum at Caesars Palace",
+      "Stadium Swim",
+      "The Mob Museum",
+      "The Neon Museum",
+      "Dolby Live",
+      "Omega Mart",
+      "MGM Grand Garden Arena",
+      "AREA15",
+      "Gondola Rides at The Venetian"
+    ]
+  }
+}

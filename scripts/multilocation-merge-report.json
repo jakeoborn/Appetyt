@@ -1,0 +1,1170 @@
+{
+  "Chicago": {
+    "before": 526,
+    "after": 526,
+    "removed": 0,
+    "mergedGroups": 0,
+    "skippedGroups": 0,
+    "merges": []
+  },
+  "Houston": {
+    "before": 521,
+    "after": 511,
+    "removed": 10,
+    "mergedGroups": 10,
+    "skippedGroups": 1,
+    "merges": [
+      {
+        "action": "DEDUPE",
+        "brandKey": "white oak music hall",
+        "kept": {
+          "id": 7055,
+          "name": "White Oak Music Hall",
+          "neighborhood": "Heights",
+          "score": 89
+        },
+        "removed": {
+          "id": 7572,
+          "name": "White Oak Music Hall",
+          "neighborhood": "Heights",
+          "score": 86
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "pappadeaux seafood kitchen",
+        "primary": {
+          "id": 7058,
+          "name": "Pappadeaux Seafood Kitchen",
+          "neighborhood": "Galleria",
+          "score": 86
+        },
+        "merged": {
+          "id": 7382,
+          "name": "Pappadeaux Seafood Kitchen Pearland",
+          "neighborhood": "Pearland",
+          "score": 86
+        }
+      },
+      {
+        "action": "SKIP",
+        "brandKey": "lucille's",
+        "reason": "explicit skip",
+        "ids": [
+          7061,
+          7303
+        ]
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "pho saigon",
+        "primary": {
+          "id": 7077,
+          "name": "Pho Saigon",
+          "neighborhood": "Chinatown / Bellaire",
+          "score": 86
+        },
+        "merged": {
+          "id": 7395,
+          "name": "Pho Saigon Katy",
+          "neighborhood": "Katy",
+          "score": 83
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "the pit room",
+        "primary": {
+          "id": 7162,
+          "name": "The Pit Room",
+          "neighborhood": "Montrose",
+          "score": 88
+        },
+        "merged": {
+          "id": 7276,
+          "name": "The Pit Room (Memorial)",
+          "neighborhood": "Memorial",
+          "score": 87
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "gringo's mexican kitchen",
+        "primary": {
+          "id": 7230,
+          "name": "Gringo's Mexican Kitchen",
+          "neighborhood": "Multiple Locations",
+          "score": 84
+        },
+        "merged": {
+          "id": 7391,
+          "name": "Gringo's Mexican Kitchen Katy",
+          "neighborhood": "Katy",
+          "score": 84
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "becks prime",
+        "primary": {
+          "id": 7275,
+          "name": "Becks Prime (Memorial Park)",
+          "neighborhood": "Memorial",
+          "score": 85
+        },
+        "merged": {
+          "id": 7264,
+          "name": "Becks Prime (Kirby)",
+          "neighborhood": "Upper Kirby",
+          "score": 84
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "dish society",
+        "primary": {
+          "id": 7274,
+          "name": "Dish Society (Memorial)",
+          "neighborhood": "Memorial",
+          "score": 84
+        },
+        "merged": {
+          "id": 7287,
+          "name": "Dish Society (Katy)",
+          "neighborhood": "Katy",
+          "score": 83
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "hypsi",
+        "kept": {
+          "id": 7570,
+          "name": "Hypsi",
+          "neighborhood": "Heights",
+          "score": 88
+        },
+        "removed": {
+          "id": 7406,
+          "name": "Hypsi",
+          "neighborhood": "Heights",
+          "score": 86
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "the green room",
+        "kept": {
+          "id": 7552,
+          "name": "The Green Room",
+          "neighborhood": "Heights",
+          "score": 91
+        },
+        "removed": {
+          "id": 7566,
+          "name": "The Green Room",
+          "neighborhood": "Heights",
+          "score": 90
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "star rover",
+        "kept": {
+          "id": 7567,
+          "name": "Star Rover",
+          "neighborhood": "Heights",
+          "score": 88
+        },
+        "removed": {
+          "id": 7555,
+          "name": "Star Rover",
+          "neighborhood": "Heights",
+          "score": 85
+        }
+      }
+    ]
+  },
+  "Austin": {
+    "before": 511,
+    "after": 498,
+    "removed": 13,
+    "mergedGroups": 13,
+    "skippedGroups": 0,
+    "merges": [
+      {
+        "action": "MERGE",
+        "brandKey": "uchiko",
+        "primary": {
+          "id": 5010,
+          "name": "Uchiko",
+          "neighborhood": "North Loop",
+          "score": 91
+        },
+        "merged": {
+          "id": 5435,
+          "name": "Uchiko Domain North",
+          "neighborhood": "Domain",
+          "score": 89
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "paperboy",
+        "primary": {
+          "id": 5016,
+          "name": "Paperboy",
+          "neighborhood": "East Austin",
+          "score": 87
+        },
+        "merged": {
+          "id": 5486,
+          "name": "Paperboy South",
+          "neighborhood": "South Lamar",
+          "score": 84
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "barley swine",
+        "primary": {
+          "id": 5026,
+          "name": "Barley Swine",
+          "neighborhood": "South Lamar",
+          "score": 96
+        },
+        "merged": {
+          "id": 5454,
+          "name": "Barley Swine North",
+          "neighborhood": "North Austin",
+          "score": 89
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "cosmic coffee + beer garden",
+        "primary": {
+          "id": 5095,
+          "name": "Cosmic Coffee + Beer Garden",
+          "neighborhood": "South Congress",
+          "score": 85
+        },
+        "merged": {
+          "id": 5407,
+          "name": "Cosmic Coffee + Beer Garden East",
+          "neighborhood": "East Austin",
+          "score": 85
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "oseyo",
+        "primary": {
+          "id": 5121,
+          "name": "Oseyo",
+          "neighborhood": "East Austin",
+          "score": 88
+        },
+        "merged": {
+          "id": 5400,
+          "name": "Oseyo North",
+          "neighborhood": "North Austin",
+          "score": 88
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "cenote",
+        "primary": {
+          "id": 5156,
+          "name": "Cenote",
+          "neighborhood": "East Austin",
+          "score": 85
+        },
+        "merged": {
+          "id": 5405,
+          "name": "Cenote Mueller",
+          "neighborhood": "Mueller",
+          "score": 85
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "loro",
+        "primary": {
+          "id": 5218,
+          "name": "Loro (East 5th)",
+          "neighborhood": "East Austin",
+          "score": 89
+        },
+        "merged": {
+          "id": 5302,
+          "name": "Loro South Lamar",
+          "neighborhood": "South Lamar",
+          "score": 88
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "loro",
+        "primary": {
+          "id": 5218,
+          "name": "Loro (East 5th)",
+          "neighborhood": "East Austin",
+          "score": 89
+        },
+        "merged": {
+          "id": 5330,
+          "name": "Loro North Lamar",
+          "neighborhood": "North Lamar",
+          "score": 87
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "loro",
+        "primary": {
+          "id": 5218,
+          "name": "Loro (East 5th)",
+          "neighborhood": "East Austin",
+          "score": 89
+        },
+        "merged": {
+          "id": 5346,
+          "name": "Loro Mueller",
+          "neighborhood": "Mueller",
+          "score": 87
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "loro",
+        "primary": {
+          "id": 5218,
+          "name": "Loro (East 5th)",
+          "neighborhood": "East Austin",
+          "score": 89
+        },
+        "merged": {
+          "id": 5362,
+          "name": "Loro Domain",
+          "neighborhood": "Domain",
+          "score": 87
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "uchi",
+        "primary": {
+          "id": 5244,
+          "name": "Uchi (Lamar)",
+          "neighborhood": "South Lamar",
+          "score": 97
+        },
+        "merged": {
+          "id": 5433,
+          "name": "Uchi Domain",
+          "neighborhood": "Domain",
+          "score": 91
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "arlo's",
+        "primary": {
+          "id": 5385,
+          "name": "Arlo's",
+          "neighborhood": "South Congress",
+          "score": 85
+        },
+        "merged": {
+          "id": 5406,
+          "name": "Arlo's East",
+          "neighborhood": "East Austin",
+          "score": 85
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "rosita's al pastor",
+        "primary": {
+          "id": 5512,
+          "name": "Rosita's Al Pastor",
+          "neighborhood": "South Austin",
+          "score": 83
+        },
+        "merged": {
+          "id": 5575,
+          "name": "Rosita's Al Pastor East",
+          "neighborhood": "East Austin",
+          "score": 82
+        }
+      }
+    ]
+  },
+  "New York": {
+    "before": 906,
+    "after": 905,
+    "removed": 1,
+    "mergedGroups": 1,
+    "skippedGroups": 0,
+    "merges": [
+      {
+        "action": "DEDUPE",
+        "brandKey": "prospect park",
+        "kept": {
+          "id": 1945,
+          "name": "Prospect Park",
+          "neighborhood": "Park Slope / Prospect Heights",
+          "score": 95
+        },
+        "removed": {
+          "id": 1923,
+          "name": "Prospect Park",
+          "neighborhood": "Park Slope / Prospect Heights",
+          "score": 88
+        }
+      }
+    ]
+  },
+  "Dallas": {
+    "before": 686,
+    "after": 683,
+    "removed": 3,
+    "mergedGroups": 3,
+    "skippedGroups": 0,
+    "merges": [
+      {
+        "action": "MERGE",
+        "brandKey": "rodeo goat",
+        "primary": {
+          "id": 52,
+          "name": "Rodeo Goat",
+          "neighborhood": "Design District",
+          "score": 86
+        },
+        "merged": {
+          "id": 9103,
+          "name": "Rodeo Goat (Rockwall)",
+          "neighborhood": "Rockwall",
+          "score": 82
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "klyde warren park",
+        "primary": {
+          "id": 9162,
+          "name": "Klyde Warren Park",
+          "neighborhood": "Uptown",
+          "score": 92
+        },
+        "merged": {
+          "id": 9063,
+          "name": "Klyde Warren Park",
+          "neighborhood": "Arts District",
+          "score": 87
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "dallas zoo",
+        "primary": {
+          "id": 9181,
+          "name": "Dallas Zoo",
+          "neighborhood": "Oak Cliff",
+          "score": 88
+        },
+        "merged": {
+          "id": 9065,
+          "name": "Dallas Zoo",
+          "neighborhood": "Cedars",
+          "score": 86
+        }
+      }
+    ]
+  },
+  "Las Vegas": {
+    "before": 524,
+    "after": 515,
+    "removed": 9,
+    "mergedGroups": 9,
+    "skippedGroups": 0,
+    "merges": [
+      {
+        "action": "MERGE",
+        "brandKey": "beerhaus",
+        "primary": {
+          "id": 12104,
+          "name": "Beerhaus",
+          "neighborhood": "The Strip (Park MGM)",
+          "score": 84
+        },
+        "merged": {
+          "id": 12343,
+          "name": "Beerhaus Henderson",
+          "neighborhood": "Henderson",
+          "score": 82
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "zouk nightclub",
+        "kept": {
+          "id": 12160,
+          "name": "Zouk Nightclub",
+          "neighborhood": "The Strip (Resorts World)",
+          "score": 92
+        },
+        "removed": {
+          "id": 12543,
+          "name": "Zouk Nightclub",
+          "neighborhood": "The Strip (Resorts World)",
+          "score": 88
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "atomic liquors",
+        "kept": {
+          "id": 12167,
+          "name": "Atomic Liquors",
+          "neighborhood": "Downtown (Fremont East)",
+          "score": 90
+        },
+        "removed": {
+          "id": 12547,
+          "name": "Atomic Liquors",
+          "neighborhood": "Downtown (Fremont East)",
+          "score": 85
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "sphere",
+        "primary": {
+          "id": 12538,
+          "name": "Sphere",
+          "neighborhood": "Paradise",
+          "score": 95
+        },
+        "merged": {
+          "id": 12407,
+          "name": "Sphere",
+          "neighborhood": "The Strip",
+          "score": 93
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "fremont street experience",
+        "kept": {
+          "id": 12527,
+          "name": "Fremont Street Experience",
+          "neighborhood": "Downtown",
+          "score": 88
+        },
+        "removed": {
+          "id": 12409,
+          "name": "Fremont Street Experience",
+          "neighborhood": "Downtown",
+          "score": 86
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "the mob museum",
+        "kept": {
+          "id": 12410,
+          "name": "The Mob Museum",
+          "neighborhood": "Downtown",
+          "score": 90
+        },
+        "removed": {
+          "id": 12526,
+          "name": "The Mob Museum",
+          "neighborhood": "Downtown",
+          "score": 90
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "the neon museum",
+        "kept": {
+          "id": 12525,
+          "name": "The Neon Museum",
+          "neighborhood": "Downtown",
+          "score": 90
+        },
+        "removed": {
+          "id": 12411,
+          "name": "The Neon Museum",
+          "neighborhood": "Downtown",
+          "score": 88
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "bellagio conservatory & botanical gardens",
+        "primary": {
+          "id": 12530,
+          "name": "Bellagio Conservatory & Botanical Gardens",
+          "neighborhood": "The Strip (Bellagio)",
+          "score": 92
+        },
+        "merged": {
+          "id": 12420,
+          "name": "Bellagio Conservatory & Botanical Gardens",
+          "neighborhood": "The Strip",
+          "score": 89
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "madame tussauds las vegas",
+        "primary": {
+          "id": 12533,
+          "name": "Madame Tussauds Las Vegas",
+          "neighborhood": "The Strip (The Venetian)",
+          "score": 82
+        },
+        "merged": {
+          "id": 12422,
+          "name": "Madame Tussauds Las Vegas",
+          "neighborhood": "The Strip",
+          "score": 78
+        }
+      }
+    ]
+  },
+  "Seattle": {
+    "before": 526,
+    "after": 513,
+    "removed": 13,
+    "mergedGroups": 13,
+    "skippedGroups": 0,
+    "merges": [
+      {
+        "action": "MERGE",
+        "brandKey": "bakery nouveau",
+        "primary": {
+          "id": 9089,
+          "name": "Bakery Nouveau",
+          "neighborhood": "West Seattle",
+          "score": 92
+        },
+        "merged": {
+          "id": 9502,
+          "name": "Bakery Nouveau Capitol Hill",
+          "neighborhood": "Capitol Hill",
+          "score": 89
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "serious pie",
+        "primary": {
+          "id": 9103,
+          "name": "Serious Pie Downtown",
+          "neighborhood": "Downtown",
+          "score": 88
+        },
+        "merged": {
+          "id": 9318,
+          "name": "Serious Pie",
+          "neighborhood": "Belltown",
+          "score": 88
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "ba bar",
+        "kept": {
+          "id": 9136,
+          "name": "Ba Bar",
+          "neighborhood": "Capitol Hill",
+          "score": 88
+        },
+        "removed": {
+          "id": 9499,
+          "name": "Ba Bar Capitol Hill",
+          "neighborhood": "Capitol Hill",
+          "score": 86
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "monsoon",
+        "kept": {
+          "id": 9158,
+          "name": "Monsoon Bellevue",
+          "neighborhood": "Bellevue",
+          "score": 89
+        },
+        "removed": {
+          "id": 9274,
+          "name": "Monsoon East",
+          "neighborhood": "Bellevue",
+          "score": 88
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "monsoon",
+        "primary": {
+          "id": 9150,
+          "name": "Monsoon",
+          "neighborhood": "Capitol Hill",
+          "score": 90
+        },
+        "merged": {
+          "id": 9158,
+          "name": "Monsoon Bellevue",
+          "neighborhood": "Bellevue",
+          "score": 89
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "daniel's broiler",
+        "primary": {
+          "id": 9157,
+          "name": "Daniel's Broiler Bellevue",
+          "neighborhood": "Bellevue",
+          "score": 90
+        },
+        "merged": {
+          "id": 9489,
+          "name": "Daniel's Broiler South Lake Union",
+          "neighborhood": "South Lake Union",
+          "score": 87
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "japonessa sushi cocina",
+        "primary": {
+          "id": 9178,
+          "name": "Japonessa Sushi Cocina",
+          "neighborhood": "Downtown",
+          "score": 86
+        },
+        "merged": {
+          "id": 9491,
+          "name": "Japonessa Sushi Cocina Belltown",
+          "neighborhood": "Belltown",
+          "score": 85
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "piroshky piroshky",
+        "primary": {
+          "id": 9228,
+          "name": "Piroshky Piroshky",
+          "neighborhood": "Pike Place Market",
+          "score": 90
+        },
+        "merged": {
+          "id": 9446,
+          "name": "Piroshky Piroshky Ballard",
+          "neighborhood": "Ballard",
+          "score": 85
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "tavolàta",
+        "primary": {
+          "id": 9231,
+          "name": "Tavolàta Capitol Hill",
+          "neighborhood": "Capitol Hill",
+          "score": 89
+        },
+        "merged": {
+          "id": 9266,
+          "name": "Tavolàta",
+          "neighborhood": "Belltown",
+          "score": 88
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "wild ginger",
+        "primary": {
+          "id": 9247,
+          "name": "Wild Ginger",
+          "neighborhood": "Downtown",
+          "score": 88
+        },
+        "merged": {
+          "id": 9374,
+          "name": "Wild Ginger Bellevue",
+          "neighborhood": "Bellevue",
+          "score": 84
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "revel",
+        "kept": {
+          "id": 9280,
+          "name": "Revel",
+          "neighborhood": "Fremont",
+          "score": 88
+        },
+        "removed": {
+          "id": 9480,
+          "name": "Revel Fremont",
+          "neighborhood": "Fremont",
+          "score": 87
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "dough zone",
+        "primary": {
+          "id": 9386,
+          "name": "Dough Zone",
+          "neighborhood": "Chinatown-International District",
+          "score": 85
+        },
+        "merged": {
+          "id": 9464,
+          "name": "Dough Zone Bellevue",
+          "neighborhood": "Bellevue",
+          "score": 85
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "pagliacci pizza",
+        "primary": {
+          "id": 9411,
+          "name": "Pagliacci Pizza",
+          "neighborhood": "Capitol Hill",
+          "score": 82
+        },
+        "merged": {
+          "id": 9418,
+          "name": "Pagliacci Pizza Bellevue",
+          "neighborhood": "Bellevue",
+          "score": 82
+        }
+      }
+    ]
+  },
+  "Salt Lake City": {
+    "before": 515,
+    "after": 496,
+    "removed": 19,
+    "mergedGroups": 19,
+    "skippedGroups": 0,
+    "merges": [
+      {
+        "action": "MERGE",
+        "brandKey": "spitz",
+        "primary": {
+          "id": 11015,
+          "name": "Spitz",
+          "neighborhood": "Downtown SLC",
+          "score": 87
+        },
+        "merged": {
+          "id": 11259,
+          "name": "Spitz (Park City)",
+          "neighborhood": "Park City",
+          "score": 84
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "the pie pizzeria",
+        "primary": {
+          "id": 11026,
+          "name": "The Pie Pizzeria",
+          "neighborhood": "The Avenues",
+          "score": 86
+        },
+        "merged": {
+          "id": 11182,
+          "name": "The Pie Pizzeria (South Jordan)",
+          "neighborhood": "South Jordan",
+          "score": 85
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "r&r bbq",
+        "primary": {
+          "id": 11029,
+          "name": "R&R BBQ",
+          "neighborhood": "Granary District",
+          "score": 91
+        },
+        "merged": {
+          "id": 11184,
+          "name": "R&R BBQ (South Jordan)",
+          "neighborhood": "South Jordan",
+          "score": 87
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "kiitos brewing",
+        "primary": {
+          "id": 11037,
+          "name": "Kiitos Brewing",
+          "neighborhood": "Granary District",
+          "score": 86
+        },
+        "merged": {
+          "id": 11560,
+          "name": "Kiitos Brewing Sugar House",
+          "neighborhood": "Sugar House",
+          "score": 80
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "squatters pub brewery",
+        "kept": {
+          "id": 11038,
+          "name": "Squatters Pub Brewery",
+          "neighborhood": "Downtown SLC",
+          "score": 85
+        },
+        "removed": {
+          "id": 11200,
+          "name": "Squatters Pub Brewery (Airport)",
+          "neighborhood": "Downtown SLC",
+          "score": 83
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "pago",
+        "primary": {
+          "id": 11046,
+          "name": "Pago",
+          "neighborhood": "9th & 9th",
+          "score": 92
+        },
+        "merged": {
+          "id": 11367,
+          "name": "Pago Downtown",
+          "neighborhood": "Downtown SLC",
+          "score": 88
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "pig & a jelly jar",
+        "primary": {
+          "id": 11057,
+          "name": "Pig & A Jelly Jar",
+          "neighborhood": "Central City",
+          "score": 85
+        },
+        "merged": {
+          "id": 11202,
+          "name": "Pig & A Jelly Jar (15th & 15th)",
+          "neighborhood": "9th & 9th",
+          "score": 85
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "matilda",
+        "kept": {
+          "id": 11060,
+          "name": "Matilda",
+          "neighborhood": "Park City",
+          "score": 87
+        },
+        "removed": {
+          "id": 11492,
+          "name": "Matilda Park City",
+          "neighborhood": "Park City",
+          "score": 85
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "manoli's",
+        "primary": {
+          "id": 11065,
+          "name": "Manoli's",
+          "neighborhood": "The Avenues",
+          "score": 89
+        },
+        "merged": {
+          "id": 11348,
+          "name": "Manoli's Downtown",
+          "neighborhood": "Downtown SLC",
+          "score": 87
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "hearth and hill",
+        "primary": {
+          "id": 11123,
+          "name": "Hearth and Hill (Sugar House)",
+          "neighborhood": "Sugar House",
+          "score": 87
+        },
+        "merged": {
+          "id": 11238,
+          "name": "Hearth and Hill (Park City)",
+          "neighborhood": "Park City",
+          "score": 87
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "vessel kitchen",
+        "kept": {
+          "id": 11393,
+          "name": "Vessel Kitchen Sugar House",
+          "neighborhood": "Sugar House",
+          "score": 85
+        },
+        "removed": {
+          "id": 11142,
+          "name": "Vessel Kitchen",
+          "neighborhood": "Sugar House",
+          "score": 84
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "table x",
+        "primary": {
+          "id": 11166,
+          "name": "Table X",
+          "neighborhood": "Millcreek",
+          "score": 91
+        },
+        "merged": {
+          "id": 11457,
+          "name": "Table X South",
+          "neighborhood": "South Salt Lake",
+          "score": 89
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "tsunami",
+        "primary": {
+          "id": 11446,
+          "name": "Tsunami Downtown",
+          "neighborhood": "Downtown SLC",
+          "score": 86
+        },
+        "merged": {
+          "id": 11180,
+          "name": "Tsunami Sandy",
+          "neighborhood": "Sandy",
+          "score": 84
+        }
+      },
+      {
+        "action": "DEDUPE",
+        "brandKey": "slackwater",
+        "kept": {
+          "id": 11246,
+          "name": "Slackwater (Provo)",
+          "neighborhood": "Provo",
+          "score": 85
+        },
+        "removed": {
+          "id": 11318,
+          "name": "Slackwater",
+          "neighborhood": "Provo",
+          "score": 85
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "slackwater",
+        "primary": {
+          "id": 11190,
+          "name": "Slackwater (Ogden)",
+          "neighborhood": "North Salt Lake",
+          "score": 85
+        },
+        "merged": {
+          "id": 11246,
+          "name": "Slackwater (Provo)",
+          "neighborhood": "Provo",
+          "score": 85
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "slackwater",
+        "primary": {
+          "id": 11190,
+          "name": "Slackwater (Ogden)",
+          "neighborhood": "North Salt Lake",
+          "score": 85
+        },
+        "merged": {
+          "id": 11416,
+          "name": "Slackwater Sandy",
+          "neighborhood": "Sandy",
+          "score": 85
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "slackwater",
+        "primary": {
+          "id": 11190,
+          "name": "Slackwater (Ogden)",
+          "neighborhood": "North Salt Lake",
+          "score": 85
+        },
+        "merged": {
+          "id": 11524,
+          "name": "Slackwater Herriman",
+          "neighborhood": "Herriman",
+          "score": 82
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "caputo's",
+        "primary": {
+          "id": 11378,
+          "name": "Caputo's Holladay",
+          "neighborhood": "Holladay",
+          "score": 87
+        },
+        "merged": {
+          "id": 11424,
+          "name": "Caputo's Draper",
+          "neighborhood": "Draper",
+          "score": 87
+        }
+      },
+      {
+        "action": "MERGE",
+        "brandKey": "oh mai",
+        "primary": {
+          "id": 11413,
+          "name": "Oh Mai Downtown",
+          "neighborhood": "Downtown SLC",
+          "score": 86
+        },
+        "merged": {
+          "id": 11414,
+          "name": "Oh Mai South",
+          "neighborhood": "South Salt Lake",
+          "score": 86
+        }
+      }
+    ]
+  }
+}

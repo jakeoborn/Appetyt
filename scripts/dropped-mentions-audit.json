@@ -1,0 +1,47 @@
+[
+  {
+    "city": "Houston",
+    "id": 7058,
+    "name": "Pappadeaux Seafood Kitchen",
+    "locationsArr": [
+      "Galleria",
+      "Pearland"
+    ],
+    "dropped": [
+      "Multiple Locations"
+    ],
+    "oldFragment": " Multiple locations across the city.",
+    "newDesc": "Louisiana-style seafood chain known for fried shrimp, crawfish, and stuffed redfish. Large portions, lively atmosphere, and a reliable happy hour across multiple Houston-area locations."
+  },
+  {
+    "city": "Salt Lake City",
+    "id": 11013,
+    "name": "Pretty Bird",
+    "locationsArr": [
+      "Downtown SLC",
+      "Trolley Square",
+      "Sugar House"
+    ],
+    "dropped": [
+      "Park City"
+    ],
+    "oldFragment": " Multiple locations now open including Sugar House and Park City.",
+    "newDesc": "Chef Viet Pham's Nashville-style hot chicken has become a Salt Lake sensation. Perfectly crispy fried chicken at customizable spice levels on a brioche bun, now across multiple SLC-area locations."
+  },
+  {
+    "city": "Salt Lake City",
+    "id": 11190,
+    "name": "Slackwater",
+    "locationsArr": [
+      "North Salt Lake",
+      "Provo",
+      "Sandy",
+      "Herriman"
+    ],
+    "dropped": [
+      "Downtown"
+    ],
+    "oldFragment": "Wood-fired pizza and craft beer in historic downtown Ogden.",
+    "newDesc": "Wood-fired pizza and craft beer from a Utah brewpub chain. The Margherita is excellent and the beer selection spans Utah breweries. Multiple Salt Lake-area locations — the original Ogden taproom is the flagship."
+  }
+]

@@ -1,0 +1,3087 @@
+{
+  "Dallas": {
+    "totalEntries": 686,
+    "alreadyMultiLocation": 3,
+    "candidateGroupCount": 3,
+    "candidateEntryCount": 6,
+    "groups": [
+      {
+        "key": "rodeo goat",
+        "count": 2,
+        "entries": [
+          {
+            "id": 52,
+            "name": "Rodeo Goat",
+            "neighborhood": "Design District",
+            "address": "1926 Market Center Blvd, Dallas TX 75207",
+            "score": 86,
+            "cuisine": "American Bar & Grill",
+            "price": 2,
+            "tags": [
+              "Cocktails",
+              "Local Favorites",
+              "Casual",
+              "Happy Hour"
+            ],
+            "website": "https://www.rodeogoat.com",
+            "instagram": "@rodeogoat",
+            "phone": "(469) 776-1476",
+            "lat": 32.7972,
+            "lng": -96.8239
+          },
+          {
+            "id": 9103,
+            "name": "Rodeo Goat (Rockwall)",
+            "neighborhood": "Rockwall",
+            "address": "2095 Summer Lee Dr Ste 105, Rockwall, TX 75032",
+            "score": 82,
+            "cuisine": "Burgers",
+            "price": 2,
+            "tags": [
+              "Burgers",
+              "Patio",
+              "Craft Beer",
+              "Family Friendly",
+              "Local Favorites"
+            ],
+            "website": "https://www.rodeogoat.com/rockwall",
+            "instagram": "@rodeogoat",
+            "phone": "(469) 769-4628",
+            "lat": 32.8833,
+            "lng": -96.4388
+          }
+        ]
+      },
+      {
+        "key": "klyde warren park",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9162,
+            "name": "Klyde Warren Park",
+            "neighborhood": "Uptown",
+            "address": "2012 Woodall Rodgers Fwy, Dallas, TX 75201",
+            "score": 92,
+            "cuisine": "Park",
+            "price": 1,
+            "tags": [
+              "Park",
+              "Tourist Attraction",
+              "Landmark",
+              "Family Friendly",
+              "Outdoor"
+            ],
+            "website": "https://www.klydewarrenpark.org",
+            "instagram": "",
+            "phone": "",
+            "lat": 32.7894,
+            "lng": -96.8019
+          },
+          {
+            "id": 9063,
+            "name": "Klyde Warren Park",
+            "neighborhood": "Arts District",
+            "address": "2012 Woodall Rodgers Fwy, Dallas, TX 75201",
+            "score": 87,
+            "cuisine": "Tourist Attraction",
+            "price": 0,
+            "tags": [
+              "Tourist Attraction",
+              "Park",
+              "Free",
+              "Family",
+              "Food Trucks",
+              "Live Music"
+            ],
+            "website": "https://www.klydewarrenpark.org",
+            "instagram": "@klydewarrenpark",
+            "phone": "(214) 716-4500",
+            "lat": 32.7893,
+            "lng": -96.8009
+          }
+        ]
+      },
+      {
+        "key": "dallas zoo",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9181,
+            "name": "Dallas Zoo",
+            "neighborhood": "Oak Cliff",
+            "address": "650 S R L Thornton Fwy, Dallas, TX 75203",
+            "score": 88,
+            "cuisine": "Zoo / Tourist Attraction",
+            "price": 1,
+            "tags": [
+              "Zoo",
+              "Tourist Attraction",
+              "Landmark",
+              "Family Friendly"
+            ],
+            "website": "",
+            "instagram": "",
+            "phone": "",
+            "lat": 32.7423,
+            "lng": -96.8155
+          },
+          {
+            "id": 9065,
+            "name": "Dallas Zoo",
+            "neighborhood": "Cedars",
+            "address": "650 S R.L. Thornton Fwy, Dallas, TX 75203",
+            "score": 86,
+            "cuisine": "Zoo / Attraction",
+            "price": 2,
+            "tags": [
+              "Tourist Attraction",
+              "Family",
+              "Outdoor",
+              "Zoo"
+            ],
+            "website": "https://www.dallaszoo.com",
+            "instagram": "@dallaszoo",
+            "phone": "(469) 554-7500",
+            "lat": 32.7412,
+            "lng": -96.8155
+          }
+        ]
+      }
+    ]
+  },
+  "Houston": {
+    "totalEntries": 521,
+    "alreadyMultiLocation": 3,
+    "candidateGroupCount": 11,
+    "candidateEntryCount": 22,
+    "groups": [
+      {
+        "key": "white oak music hall",
+        "count": 2,
+        "entries": [
+          {
+            "id": 7055,
+            "name": "White Oak Music Hall",
+            "neighborhood": "Heights",
+            "address": "2915 N Main St, Houston, TX 77009",
+            "score": 89,
+            "cuisine": "Live Music Venue",
+            "price": 2,
+            "tags": [
+              "Live Music",
+              "Entertainment",
+              "Local Favorites",
+              "Patio",
+              "Rooftop"
+            ],
+            "website": "https://www.whiteoakmusichall.com",
+            "instagram": "@whiteoakmusichall",
+            "phone": "(713) 237-0370",
+            "lat": 29.7838,
+            "lng": -95.3652
+          },
+          {
+            "id": 7572,
+            "name": "White Oak Music Hall",
+            "neighborhood": "Heights",
+            "address": "2915 N Main St, Houston, TX 77009",
+            "score": 86,
+            "cuisine": "Concert Venue / Landmark",
+            "price": 1,
+            "tags": [
+              "Theater",
+              "Landmark",
+              "Arts",
+              "Tourist Attraction",
+              "Live Music"
+            ],
+            "website": "",
+            "instagram": "",
+            "phone": "",
+            "lat": 29.7869,
+            "lng": -95.3625
+          }
+        ]
+      },
+      {
+        "key": "pappadeaux seafood kitchen",
+        "count": 2,
+        "entries": [
+          {
+            "id": 7058,
+            "name": "Pappadeaux Seafood Kitchen",
+            "neighborhood": "Galleria",
+            "address": "6015 Westheimer Rd, Houston, TX 77057",
+            "score": 86,
+            "cuisine": "Cajun Seafood",
+            "price": 2,
+            "tags": [
+              "Seafood",
+              "Local Favorites",
+              "Family",
+              "Casual"
+            ],
+            "website": "https://www.pappadeaux.com",
+            "instagram": "@pappadeaux",
+            "phone": "(713) 782-6310",
+            "lat": 29.7367,
+            "lng": -95.4852
+          },
+          {
+            "id": 7382,
+            "name": "Pappadeaux Seafood Kitchen Pearland",
+            "neighborhood": "Pearland",
+            "address": "8771 W Sam Houston Pkwy S, Houston TX 77099",
+            "score": 86,
+            "cuisine": "Cajun / Seafood",
+            "price": 3,
+            "tags": [
+              "Seafood",
+              "Cajun",
+              "Family",
+              "Date Night"
+            ],
+            "website": "https://www.pappadeaux.com",
+            "instagram": "",
+            "phone": "",
+            "lat": 29.6574,
+            "lng": -95.5797
+          }
+        ]
+      },
+      {
+        "key": "lucille's",
+        "count": 2,
+        "entries": [
+          {
+            "id": 7061,
+            "name": "Lucille's",
+            "neighborhood": "Museum District",
+            "address": "5512 La Branch St, Houston, TX 77004",
+            "score": 89,
+            "cuisine": "Southern / Soul Food",
+            "price": 2,
+            "tags": [
+              "Southern",
+              "Brunch",
+              "Local Favorites",
+              "Critics Pick"
+            ],
+            "website": "https://www.lucilleshouston.com",
+            "instagram": "@lucilleshouston",
+            "phone": "(713) 568-2505",
+            "lat": 29.7288,
+            "lng": -95.377
+          },
+          {
+            "id": 7303,
+            "name": "Lucille's EaDo (Bludorn / Navy Blue sibling)",
+            "neighborhood": "EaDo",
+            "address": "2401 Leeland St, Houston TX 77003",
+            "score": 88,
+            "cuisine": "Southern",
+            "price": 2,
+            "tags": [
+              "Southern",
+              "Casual",
+              "Brunch"
+            ],
+            "website": "https://www.lucilleshouston.net/",
+            "instagram": "@lucilleshouston",
+            "phone": "",
+            "lat": 29.7515,
+            "lng": -95.3497
+          }
+        ]
+      },
+      {
+        "key": "pho saigon",
+        "count": 2,
+        "entries": [
+          {
+            "id": 7077,
+            "name": "Pho Saigon",
+            "neighborhood": "Chinatown / Bellaire",
+            "address": "6938 Wilcrest Dr Ste A, Houston, TX 77072",
+            "score": 86,
+            "cuisine": "Vietnamese / Pho",
+            "price": 1,
+            "tags": [
+              "Vietnamese",
+              "Local Favorites",
+              "Casual"
+            ],
+            "website": "https://www.thephosaigon.com",
+            "instagram": "@phosaigonhtx",
+            "phone": "(713) 339-8070",
+            "lat": 29.7105,
+            "lng": -95.5602
+          },
+          {
+            "id": 7395,
+            "name": "Pho Saigon Katy",
+            "neighborhood": "Katy",
+            "address": "5802 Fry Rd, Katy TX 77449",
+            "score": 83,
+            "cuisine": "Vietnamese",
+            "price": 1,
+            "tags": [
+              "Vietnamese",
+              "Casual",
+              "Cheap Eats",
+              "Family"
+            ],
+            "website": "https://www.thephosaigon.com/",
+            "instagram": "",
+            "phone": "",
+            "lat": 29.7955,
+            "lng": -95.7437
+          }
+        ]
+      },
+      {
+        "key": "the pit room",
+        "count": 2,
+        "entries": [
+          {
+            "id": 7162,
+            "name": "The Pit Room",
+            "neighborhood": "Montrose",
+            "address": "1201 Richmond Ave, Houston, TX 77006",
+            "score": 88,
+            "cuisine": "Texas BBQ",
+            "price": 2,
+            "tags": [
+              "BBQ",
+              "Local Favorites",
+              "Awards",
+              "Brunch",
+              "Patio",
+              "Live Music"
+            ],
+            "website": "https://thepitroombbq.com",
+            "instagram": "@thepitroom",
+            "phone": "(281) 888-1929",
+            "lat": 29.7383,
+            "lng": -95.387
+          },
+          {
+            "id": 7276,
+            "name": "The Pit Room (Memorial)",
+            "neighborhood": "Memorial",
+            "address": "10301 Katy Fwy, Houston, TX 77024",
+            "score": 87,
+            "cuisine": "Texas BBQ / Tacos",
+            "price": 2,
+            "tags": [
+              "BBQ",
+              "Tacos",
+              "Casual",
+              "Local Favorites",
+              "Mexican"
+            ],
+            "website": "https://thepitroombbq.com",
+            "instagram": "@thepitroombbq",
+            "phone": "(346) 741-5550",
+            "lat": 29.7852,
+            "lng": -95.5225
+          }
+        ]
+      },
+      {
+        "key": "gringo's mexican kitchen",
+        "count": 2,
+        "entries": [
+          {
+            "id": 7230,
+            "name": "Gringo's Mexican Kitchen",
+            "neighborhood": "Multiple Locations",
+            "address": "3202 FM 528 Rd, Friendswood, TX 77546",
+            "score": 84,
+            "cuisine": "Tex-Mex",
+            "price": 1,
+            "tags": [
+              "Tex-Mex",
+              "Family",
+              "Casual",
+              "Margaritas",
+              "Suburban",
+              "Mexican"
+            ],
+            "website": "https://www.gringostexmex.com",
+            "instagram": "@gringosmex",
+            "phone": "(281) 648-0400",
+            "lat": 29.5278,
+            "lng": -95.194
+          },
+          {
+            "id": 7391,
+            "name": "Gringo's Mexican Kitchen Katy",
+            "neighborhood": "Katy",
+            "address": "20170 Katy Fwy, Katy TX 77449",
+            "score": 84,
+            "cuisine": "Tex-Mex",
+            "price": 2,
+            "tags": [
+              "Tex-Mex",
+              "Family",
+              "Margaritas",
+              "Casual",
+              "Mexican"
+            ],
+            "website": "https://gringosmexicankitchen.com",
+            "instagram": "",
+            "phone": "",
+            "lat": 29.7863,
+            "lng": -95.7297
+          }
+        ]
+      },
+      {
+        "key": "becks prime",
+        "count": 2,
+        "entries": [
+          {
+            "id": 7275,
+            "name": "Becks Prime (Memorial Park)",
+            "neighborhood": "Memorial",
+            "address": "1001 E Memorial Loop Dr, Houston, TX 77007",
+            "score": 85,
+            "cuisine": "Burgers",
+            "price": 2,
+            "tags": [
+              "Burgers",
+              "Patio",
+              "Local Favorites"
+            ],
+            "website": "https://becksprime.com",
+            "instagram": "@becksprime",
+            "phone": "(713) 863-8188",
+            "lat": 29.764,
+            "lng": -95.4357
+          },
+          {
+            "id": 7264,
+            "name": "Becks Prime (Kirby)",
+            "neighborhood": "Upper Kirby",
+            "address": "2902 Kirby Dr, Houston, TX 77098",
+            "score": 84,
+            "cuisine": "Burgers",
+            "price": 2,
+            "tags": [
+              "Burgers",
+              "Local Favorites",
+              "Casual"
+            ],
+            "website": "https://becksprime.com",
+            "instagram": "@becksprime",
+            "phone": "(713) 524-7085",
+            "lat": 29.7366,
+            "lng": -95.4179
+          }
+        ]
+      },
+      {
+        "key": "dish society",
+        "count": 2,
+        "entries": [
+          {
+            "id": 7274,
+            "name": "Dish Society (Memorial)",
+            "neighborhood": "Memorial",
+            "address": "12525 Memorial Dr, Houston, TX 77024",
+            "score": 84,
+            "cuisine": "American / Farm-to-Table",
+            "price": 2,
+            "tags": [
+              "Farm-to-Table",
+              "Brunch",
+              "Family",
+              "Casual"
+            ],
+            "website": "https://dishsociety.com",
+            "instagram": "@dishsociety",
+            "phone": "(832) 767-2600",
+            "lat": 29.7668,
+            "lng": -95.5487
+          },
+          {
+            "id": 7287,
+            "name": "Dish Society (Katy)",
+            "neighborhood": "Katy",
+            "address": "2643 Commercial Center Blvd, Katy, TX 77494",
+            "score": 83,
+            "cuisine": "American / Farm-to-Table",
+            "price": 2,
+            "tags": [
+              "Farm-to-Table",
+              "Brunch",
+              "Family"
+            ],
+            "website": "https://dishsociety.com",
+            "instagram": "@dishsociety",
+            "phone": "(832) 437-2635",
+            "lat": 29.7837,
+            "lng": -95.7715
+          }
+        ]
+      },
+      {
+        "key": "hypsi",
+        "count": 2,
+        "entries": [
+          {
+            "id": 7570,
+            "name": "Hypsi",
+            "neighborhood": "Heights",
+            "address": "347 W 20th St, Houston, TX 77008",
+            "score": 88,
+            "cuisine": "Italian",
+            "price": 3,
+            "tags": [
+              "Italian",
+              "Date Night",
+              "New Opening",
+              "Hotel Restaurant"
+            ],
+            "website": "https://www.hypsirestaurant.com",
+            "instagram": "",
+            "phone": "(346) 613-1265",
+            "lat": 29.8045,
+            "lng": -95.4057
+          },
+          {
+            "id": 7406,
+            "name": "Hypsi",
+            "neighborhood": "Heights",
+            "address": "347 W 20th St, Houston, TX 77008",
+            "score": 86,
+            "cuisine": "Italian",
+            "price": 3,
+            "tags": [
+              "Date Night",
+              "Brunch",
+              "Happy Hour",
+              "Cocktails",
+              "Patio",
+              "Hotel Bar",
+              "Italian"
+            ],
+            "website": "https://www.hypsirestaurant.com/",
+            "instagram": "@hypsihtx",
+            "phone": "",
+            "lat": 29.7988,
+            "lng": -95.3926
+          }
+        ]
+      },
+      {
+        "key": "the green room",
+        "count": 2,
+        "entries": [
+          {
+            "id": 7552,
+            "name": "The Green Room",
+            "neighborhood": "Heights",
+            "address": "1343 Yale St, Houston, TX 77009",
+            "score": 91,
+            "cuisine": "New American / Fine Dining",
+            "price": 4,
+            "tags": [
+              "Fine Dining",
+              "Date Night",
+              "Cocktails",
+              "Exclusive",
+              "Critics Pick"
+            ],
+            "website": "https://www.thegreenroomhouston.com/",
+            "instagram": "@thegreenroomhouston",
+            "phone": "",
+            "lat": 29.7935,
+            "lng": -95.393
+          },
+          {
+            "id": 7566,
+            "name": "The Green Room",
+            "neighborhood": "Heights",
+            "address": "1343 Yale St, Houston, TX 77008",
+            "score": 90,
+            "cuisine": "New American / Tasting Menu",
+            "price": 4,
+            "tags": [
+              "New American",
+              "Tasting Menu",
+              "Date Night",
+              "New Opening",
+              "Awards"
+            ],
+            "website": "",
+            "instagram": "@thegreenroom_houston",
+            "phone": "",
+            "lat": 29.7931,
+            "lng": -95.3988
+          }
+        ]
+      },
+      {
+        "key": "star rover",
+        "count": 2,
+        "entries": [
+          {
+            "id": 7567,
+            "name": "Star Rover",
+            "neighborhood": "Heights",
+            "address": "1801 N Shepherd Dr, Houston, TX 77008",
+            "score": 88,
+            "cuisine": "Asian / Fusion",
+            "price": 3,
+            "tags": [
+              "Asian",
+              "New American",
+              "Date Night",
+              "New Opening"
+            ],
+            "website": "",
+            "instagram": "",
+            "phone": "",
+            "lat": 29.7926,
+            "lng": -95.4103
+          },
+          {
+            "id": 7555,
+            "name": "Star Rover",
+            "neighborhood": "Heights",
+            "address": "1801 N Shepherd Dr, Houston, TX 77008",
+            "score": 85,
+            "cuisine": "American Steakhouse",
+            "price": 3,
+            "tags": [
+              "Steakhouse",
+              "Date Night",
+              "Local Favorites"
+            ],
+            "website": "https://starroverhtx.com",
+            "instagram": "@starroverhtx",
+            "phone": "",
+            "lat": 29.8031,
+            "lng": -95.4131
+          }
+        ]
+      }
+    ]
+  },
+  "Austin": {
+    "totalEntries": 511,
+    "alreadyMultiLocation": 8,
+    "candidateGroupCount": 10,
+    "candidateEntryCount": 23,
+    "groups": [
+      {
+        "key": "loro",
+        "count": 5,
+        "entries": [
+          {
+            "id": 5218,
+            "name": "Loro (East 5th)",
+            "neighborhood": "East Austin",
+            "address": "2015 E 5th St, Austin, TX 78702",
+            "score": 89,
+            "cuisine": "Asian BBQ",
+            "price": 2,
+            "tags": [
+              "Asian Fusion",
+              "BBQ",
+              "Casual",
+              "Patio",
+              "Awards"
+            ],
+            "website": "https://www.loroaustin.com",
+            "instagram": "@loroaustin",
+            "phone": "(512) 916-4858",
+            "lat": 30.26,
+            "lng": -97.722
+          },
+          {
+            "id": 5302,
+            "name": "Loro South Lamar",
+            "neighborhood": "South Lamar",
+            "address": "2115 S Lamar Blvd, Austin, TX 78704",
+            "score": 88,
+            "cuisine": "Asian-BBQ Fusion",
+            "price": 2,
+            "tags": [
+              "BBQ",
+              "Asian Fusion",
+              "Patio",
+              "Local Favorites"
+            ],
+            "website": "https://www.loroeats.com/locations/austin/south-lamar",
+            "instagram": "@loroaustin",
+            "phone": "",
+            "lat": 30.2413,
+            "lng": -97.7714
+          },
+          {
+            "id": 5330,
+            "name": "Loro North Lamar",
+            "neighborhood": "North Lamar",
+            "address": "8557 Research Blvd, Austin, TX 78758",
+            "score": 87,
+            "cuisine": "Asian-BBQ Fusion",
+            "price": 2,
+            "tags": [
+              "BBQ",
+              "Asian Fusion",
+              "Patio",
+              "Local Favorites"
+            ],
+            "website": "https://www.loroeats.com",
+            "instagram": "@loroaustin",
+            "phone": "",
+            "lat": 30.3617,
+            "lng": -97.7154
+          },
+          {
+            "id": 5346,
+            "name": "Loro Mueller",
+            "neighborhood": "Mueller",
+            "address": "4600 Mueller Blvd, Austin, TX 78723",
+            "score": 87,
+            "cuisine": "Asian-BBQ Fusion",
+            "price": 2,
+            "tags": [
+              "BBQ",
+              "Asian Fusion",
+              "Casual",
+              "Patio"
+            ],
+            "website": "https://www.loroeats.com",
+            "instagram": "@loroaustin",
+            "phone": "",
+            "lat": 30.2985,
+            "lng": -97.7075
+          },
+          {
+            "id": 5362,
+            "name": "Loro Domain",
+            "neighborhood": "Domain",
+            "address": "11601 Domain Dr, Austin, TX 78758",
+            "score": 87,
+            "cuisine": "Asian-BBQ Fusion",
+            "price": 2,
+            "tags": [
+              "BBQ",
+              "Asian Fusion",
+              "Casual",
+              "Patio"
+            ],
+            "website": "",
+            "instagram": "@loroaustin",
+            "phone": "",
+            "lat": 30.4016,
+            "lng": -97.7244
+          }
+        ]
+      },
+      {
+        "key": "uchiko",
+        "count": 2,
+        "entries": [
+          {
+            "id": 5010,
+            "name": "Uchiko",
+            "neighborhood": "North Loop",
+            "address": "4200 N Lamar Blvd, Austin, TX 78756",
+            "score": 91,
+            "cuisine": "Japanese",
+            "price": 4,
+            "tags": [
+              "Sushi",
+              "Fine Dining",
+              "Date Night",
+              "Cocktails"
+            ],
+            "website": "https://uchikoaustin.com",
+            "instagram": "@uchikoaustin",
+            "phone": "",
+            "lat": 30.3076,
+            "lng": -97.7395
+          },
+          {
+            "id": 5435,
+            "name": "Uchiko Domain North",
+            "neighborhood": "Domain",
+            "address": "13420 Galleria Cir, Austin, TX 78738",
+            "score": 89,
+            "cuisine": "Japanese",
+            "price": 3,
+            "tags": [
+              "Japanese",
+              "Sushi",
+              "Fine Dining"
+            ],
+            "website": "https://uchiko.uchirestaurants.com",
+            "instagram": "@uchiko_austin",
+            "phone": "",
+            "lat": 30.3979,
+            "lng": -97.7244
+          }
+        ]
+      },
+      {
+        "key": "paperboy",
+        "count": 2,
+        "entries": [
+          {
+            "id": 5016,
+            "name": "Paperboy",
+            "neighborhood": "East Austin",
+            "address": "1203 E 11th St, Austin, TX 78702",
+            "score": 87,
+            "cuisine": "New American",
+            "price": 2,
+            "tags": [
+              "Brunch",
+              "Casual",
+              "Patio",
+              "Healthy"
+            ],
+            "website": "https://www.paperboyaustin.com/",
+            "instagram": "@paperboyaustin",
+            "phone": "",
+            "lat": 30.2698,
+            "lng": -97.7281
+          },
+          {
+            "id": 5486,
+            "name": "Paperboy South",
+            "neighborhood": "South Lamar",
+            "address": "1401 S Lamar Blvd, Austin, TX 78704",
+            "score": 84,
+            "cuisine": "Breakfast / Brunch",
+            "price": 2,
+            "tags": [
+              "Brunch",
+              "Casual",
+              "Cocktails",
+              "Local Favorites"
+            ],
+            "website": "https://paperboyaustin.com",
+            "instagram": "@paperboyaustin",
+            "phone": "",
+            "lat": 30.2557,
+            "lng": -97.7623
+          }
+        ]
+      },
+      {
+        "key": "barley swine",
+        "count": 2,
+        "entries": [
+          {
+            "id": 5026,
+            "name": "Barley Swine",
+            "neighborhood": "South Lamar",
+            "address": "6555 Burnet Rd #400, Austin, TX 78757",
+            "score": 96,
+            "cuisine": "New American",
+            "price": 3,
+            "tags": [
+              "Fine Dining",
+              "Date Night",
+              "Critics Pick",
+              "Cocktails"
+            ],
+            "website": "https://barleyswine.com",
+            "instagram": "@barleyswine",
+            "phone": "",
+            "lat": 30.3376,
+            "lng": -97.7389
+          },
+          {
+            "id": 5454,
+            "name": "Barley Swine North",
+            "neighborhood": "North Austin",
+            "address": "6555 Burnet Rd, Austin, TX 78757",
+            "score": 89,
+            "cuisine": "New American",
+            "price": 3,
+            "tags": [
+              "New American",
+              "Fine Dining",
+              "Date Night",
+              "Critics Pick"
+            ],
+            "website": "https://www.barleyswine.com",
+            "instagram": "@barleyswine",
+            "phone": "",
+            "lat": 30.3314,
+            "lng": -97.7394
+          }
+        ]
+      },
+      {
+        "key": "cosmic coffee + beer garden",
+        "count": 2,
+        "entries": [
+          {
+            "id": 5095,
+            "name": "Cosmic Coffee + Beer Garden",
+            "neighborhood": "South Congress",
+            "address": "121 Pickle Rd, Austin, TX 78704",
+            "score": 85,
+            "cuisine": "Coffee / Beer Garden",
+            "price": 1,
+            "tags": [
+              "Coffee",
+              "Craft Beer",
+              "Patio",
+              "Food Truck",
+              "Local Favorites",
+              "Live Music"
+            ],
+            "website": "https://cosmichospitalitygroup.com/",
+            "instagram": "@cosmiccoffeebeer",
+            "phone": "(512) 358-8695",
+            "lat": 30.2375,
+            "lng": -97.7678
+          },
+          {
+            "id": 5407,
+            "name": "Cosmic Coffee + Beer Garden East",
+            "neighborhood": "East Austin",
+            "address": "1818 E 6th St, Austin, TX 78702",
+            "score": 85,
+            "cuisine": "Coffee / Beer Garden",
+            "price": 1,
+            "tags": [
+              "Bakery/Coffee",
+              "Craft Beer",
+              "Casual",
+              "Patio"
+            ],
+            "website": "",
+            "instagram": "@cosmiccoffeebeer",
+            "phone": "",
+            "lat": 30.2629,
+            "lng": -97.7258
+          }
+        ]
+      },
+      {
+        "key": "oseyo",
+        "count": 2,
+        "entries": [
+          {
+            "id": 5121,
+            "name": "Oseyo",
+            "neighborhood": "East Austin",
+            "address": "1628 E Cesar Chavez St, Austin, TX 78702",
+            "score": 88,
+            "cuisine": "Korean",
+            "price": 2,
+            "tags": [
+              "Korean",
+              "Date Night",
+              "Cocktails",
+              "Local Favorites"
+            ],
+            "website": "https://www.oseyoaustin.com",
+            "instagram": "@oseyoaustin",
+            "phone": "(512) 920-1388",
+            "lat": 30.2583,
+            "lng": -97.7276
+          },
+          {
+            "id": 5400,
+            "name": "Oseyo North",
+            "neighborhood": "North Austin",
+            "address": "10515 N MoPac Expy, Austin, TX 78759",
+            "score": 88,
+            "cuisine": "Korean Fine Dining",
+            "price": 3,
+            "tags": [
+              "Korean",
+              "Fine Dining",
+              "Date Night"
+            ],
+            "website": "https://www.oseyoaustin.com",
+            "instagram": "@oseyoaustin",
+            "phone": "",
+            "lat": 30.3961,
+            "lng": -97.7363
+          }
+        ]
+      },
+      {
+        "key": "cenote",
+        "count": 2,
+        "entries": [
+          {
+            "id": 5156,
+            "name": "Cenote",
+            "neighborhood": "East Austin",
+            "address": "1010 E Cesar Chavez St, Austin, TX 78702",
+            "score": 85,
+            "cuisine": "Coffee / Cafe",
+            "price": 1,
+            "tags": [
+              "Coffee",
+              "Casual",
+              "Patio",
+              "Local Favorites"
+            ],
+            "website": "https://www.cenoteaustin.com",
+            "instagram": "@cenoteatx",
+            "phone": "(512) 382-0204",
+            "lat": 30.2533,
+            "lng": -97.7303
+          },
+          {
+            "id": 5405,
+            "name": "Cenote Mueller",
+            "neighborhood": "Mueller",
+            "address": "4601 Mueller Blvd, Austin, TX 78723",
+            "score": 85,
+            "cuisine": "Coffee / Cafe",
+            "price": 1,
+            "tags": [
+              "Bakery/Coffee",
+              "Local Favorites",
+              "Patio"
+            ],
+            "website": "",
+            "instagram": "@cenoteatx",
+            "phone": "",
+            "lat": 30.2985,
+            "lng": -97.7075
+          }
+        ]
+      },
+      {
+        "key": "uchi",
+        "count": 2,
+        "entries": [
+          {
+            "id": 5244,
+            "name": "Uchi (Lamar)",
+            "neighborhood": "South Lamar",
+            "address": "801 S Lamar Blvd, Austin, TX 78704",
+            "score": 97,
+            "cuisine": "Japanese / Sushi",
+            "price": 4,
+            "tags": [
+              "Japanese",
+              "Sushi",
+              "Fine Dining",
+              "Date Night",
+              "Awards"
+            ],
+            "website": "https://uchirestaurants.com",
+            "instagram": "@uchiaustin",
+            "phone": "(512) 916-4808",
+            "lat": 30.2556,
+            "lng": -97.7664
+          },
+          {
+            "id": 5433,
+            "name": "Uchi Domain",
+            "neighborhood": "Domain",
+            "address": "11410 Century Oaks Terrace, Austin, TX 78758",
+            "score": 91,
+            "cuisine": "Japanese",
+            "price": 4,
+            "tags": [
+              "Japanese",
+              "Sushi",
+              "Fine Dining",
+              "Date Night"
+            ],
+            "website": "https://uchiaustin.com",
+            "instagram": "@uchirestaurants",
+            "phone": "",
+            "lat": 30.401,
+            "lng": -97.7246
+          }
+        ]
+      },
+      {
+        "key": "arlo's",
+        "count": 2,
+        "entries": [
+          {
+            "id": 5385,
+            "name": "Arlo's",
+            "neighborhood": "South Congress",
+            "address": "1900 E MLK Jr Blvd, Austin, TX 78702",
+            "score": 85,
+            "cuisine": "Vegan Burgers",
+            "price": 1,
+            "tags": [
+              "Vegan",
+              "Casual",
+              "Local Favorites"
+            ],
+            "website": "",
+            "instagram": "@arloscurbside",
+            "phone": "",
+            "lat": 30.2785,
+            "lng": -97.7233
+          },
+          {
+            "id": 5406,
+            "name": "Arlo's East",
+            "neighborhood": "East Austin",
+            "address": "1614 E 6th St, Austin, TX 78702",
+            "score": 85,
+            "cuisine": "Vegan",
+            "price": 1,
+            "tags": [
+              "Vegan",
+              "Casual",
+              "Local Favorites"
+            ],
+            "website": "",
+            "instagram": "@arloscurbside",
+            "phone": "",
+            "lat": 30.2629,
+            "lng": -97.727
+          }
+        ]
+      },
+      {
+        "key": "rosita's al pastor",
+        "count": 2,
+        "entries": [
+          {
+            "id": 5512,
+            "name": "Rosita's Al Pastor",
+            "neighborhood": "South Austin",
+            "address": "1801 E Riverside Dr, Austin, TX 78741",
+            "score": 83,
+            "cuisine": "Mexican / Tacos",
+            "price": 1,
+            "tags": [
+              "Casual",
+              "Mexican",
+              "Local Favorites"
+            ],
+            "website": "",
+            "instagram": "@rositasalpastor",
+            "phone": "",
+            "lat": 30.2374,
+            "lng": -97.7224
+          },
+          {
+            "id": 5575,
+            "name": "Rosita's Al Pastor East",
+            "neighborhood": "East Austin",
+            "address": "2101 E 7th St, Austin, TX 78702",
+            "score": 82,
+            "cuisine": "Mexican / Tacos",
+            "price": 1,
+            "tags": [
+              "Mexican",
+              "Casual",
+              "Local Favorites"
+            ],
+            "website": "",
+            "instagram": "",
+            "phone": "",
+            "lat": 30.26,
+            "lng": -97.72
+          }
+        ]
+      }
+    ]
+  },
+  "Chicago": {
+    "totalEntries": 526,
+    "alreadyMultiLocation": 1,
+    "candidateGroupCount": 0,
+    "candidateEntryCount": 0,
+    "groups": []
+  },
+  "Salt Lake City": {
+    "totalEntries": 515,
+    "alreadyMultiLocation": 5,
+    "candidateGroupCount": 16,
+    "candidateEntryCount": 35,
+    "groups": [
+      {
+        "key": "slackwater",
+        "count": 5,
+        "entries": [
+          {
+            "id": 11190,
+            "name": "Slackwater (Ogden)",
+            "neighborhood": "North Salt Lake",
+            "address": "1895 Washington Blvd, Ogden, UT 84401",
+            "score": 85,
+            "cuisine": "Pizza / Craft Beer",
+            "price": 1,
+            "tags": [
+              "Pizza",
+              "Craft Beer",
+              "Casual",
+              "Patio"
+            ],
+            "website": "https://www.slackwaterpizzeria.com/",
+            "instagram": "@slackwater",
+            "phone": "(801) 399-0637",
+            "lat": 41.227,
+            "lng": -111.972
+          },
+          {
+            "id": 11246,
+            "name": "Slackwater (Provo)",
+            "neighborhood": "Provo",
+            "address": "4801 N University Ave, Suite 610, Provo, UT 84604",
+            "score": 85,
+            "cuisine": "Pizza / Craft Beer",
+            "price": 1,
+            "tags": [
+              "Pizza",
+              "Craft Beer",
+              "Casual",
+              "Family",
+              "Patio"
+            ],
+            "website": "https://www.slackwaterpizzeria.com/",
+            "instagram": "@slackwater",
+            "phone": "(801) 375-5050",
+            "lat": 40.283,
+            "lng": -111.658
+          },
+          {
+            "id": 11318,
+            "name": "Slackwater",
+            "neighborhood": "Provo",
+            "address": "1895 S 1100 E, Salt Lake City, UT 84105",
+            "score": 85,
+            "cuisine": "Pizza / Brewpub",
+            "price": 1,
+            "tags": [
+              "Pizza",
+              "Craft Beer",
+              "Casual",
+              "Local Favorites"
+            ],
+            "website": "",
+            "instagram": "@slackwaterpub",
+            "phone": "",
+            "lat": 40.7232,
+            "lng": -111.8596
+          },
+          {
+            "id": 11416,
+            "name": "Slackwater Sandy",
+            "neighborhood": "Sandy",
+            "address": "10290 S State St, Sandy, UT 84070",
+            "score": 85,
+            "cuisine": "Pizza / Brewpub",
+            "price": 1,
+            "tags": [
+              "Pizza",
+              "Craft Beer",
+              "Casual"
+            ],
+            "website": "",
+            "instagram": "",
+            "phone": "",
+            "lat": 40.5634,
+            "lng": -111.8881
+          },
+          {
+            "id": 11524,
+            "name": "Slackwater Herriman",
+            "neighborhood": "Herriman",
+            "address": "5197 Denali Park Dr, Herriman, UT 84096",
+            "score": 82,
+            "cuisine": "Pizza / Craft Beer",
+            "price": 2,
+            "tags": [
+              "Pizza",
+              "Casual",
+              "Family Friendly"
+            ],
+            "website": "https://www.slackwaterpub.com",
+            "instagram": "@slackwaterherriman",
+            "phone": "",
+            "lat": 40.5159,
+            "lng": -112.0335
+          }
+        ]
+      },
+      {
+        "key": "spitz",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11015,
+            "name": "Spitz",
+            "neighborhood": "Downtown SLC",
+            "address": "35 E Broadway, Salt Lake City, UT 84111",
+            "score": 87,
+            "cuisine": "Mediterranean / Street Food",
+            "price": 1,
+            "tags": [
+              "Mediterranean",
+              "Casual",
+              "Local Favorites",
+              "Late Night",
+              "Happy Hour"
+            ],
+            "website": "https://spitz-restaurant.com",
+            "instagram": "@spitzslc",
+            "phone": "(801) 364-0286",
+            "lat": 40.7631,
+            "lng": -111.89
+          },
+          {
+            "id": 11259,
+            "name": "Spitz (Park City)",
+            "neighborhood": "Park City",
+            "address": "6622 N Landmark Dr Ste B-170, Park City, UT 84098",
+            "score": 84,
+            "cuisine": "Mediterranean / Doner",
+            "price": 1,
+            "tags": [
+              "Mediterranean",
+              "Casual",
+              "Cheap Eats"
+            ],
+            "website": "https://www.spitzrestaurant.com",
+            "instagram": "@spitzslc",
+            "phone": "(435) 248-0100",
+            "lat": 40.7211,
+            "lng": -111.5401
+          }
+        ]
+      },
+      {
+        "key": "the pie pizzeria",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11026,
+            "name": "The Pie Pizzeria",
+            "neighborhood": "The Avenues",
+            "address": "1320 E 200 S, Salt Lake City, UT 84102",
+            "score": 86,
+            "cuisine": "Pizza",
+            "price": 1,
+            "tags": [
+              "Pizza",
+              "Casual",
+              "Local Favorites",
+              "Family Friendly",
+              "Late Night"
+            ],
+            "website": "https://www.thepie.com",
+            "instagram": "@thepiepizzeria",
+            "phone": "(801) 582-5700",
+            "lat": 40.763,
+            "lng": -111.855
+          },
+          {
+            "id": 11182,
+            "name": "The Pie Pizzeria (South Jordan)",
+            "neighborhood": "South Jordan",
+            "address": "1700 W Towne Center Dr, South Jordan, UT 84095",
+            "score": 85,
+            "cuisine": "Pizza",
+            "price": 1,
+            "tags": [
+              "Pizza",
+              "Casual",
+              "Family",
+              "Late Night"
+            ],
+            "website": "https://www.thepie.com",
+            "instagram": "@thepiepizzeria",
+            "phone": "(801) 878-0099",
+            "lat": 40.552,
+            "lng": -111.952
+          }
+        ]
+      },
+      {
+        "key": "r&r bbq",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11029,
+            "name": "R&R BBQ",
+            "neighborhood": "Granary District",
+            "address": "307 W 600 S, Salt Lake City, UT 84101",
+            "score": 91,
+            "cuisine": "Texas-Style BBQ",
+            "price": 2,
+            "tags": [
+              "BBQ",
+              "Casual",
+              "Local Favorites",
+              "Family Friendly"
+            ],
+            "website": "https://randrbbq.com",
+            "instagram": "@randrbbq",
+            "phone": "(801) 364-0443",
+            "lat": 40.757,
+            "lng": -111.897
+          },
+          {
+            "id": 11184,
+            "name": "R&R BBQ (South Jordan)",
+            "neighborhood": "South Jordan",
+            "address": "11624 S 4000 W, South Jordan, UT 84009",
+            "score": 87,
+            "cuisine": "Texas BBQ",
+            "price": 2,
+            "tags": [
+              "BBQ",
+              "Casual",
+              "Family",
+              "Local Favorites"
+            ],
+            "website": "https://www.randrbbq.com",
+            "instagram": "@randrbbq",
+            "phone": "(801) 432-7100",
+            "lat": 40.552,
+            "lng": -111.978
+          }
+        ]
+      },
+      {
+        "key": "kiitos brewing",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11037,
+            "name": "Kiitos Brewing",
+            "neighborhood": "Granary District",
+            "address": "608 W 700 S, Salt Lake City, UT 84104",
+            "score": 86,
+            "cuisine": "Brewery",
+            "price": 2,
+            "tags": [
+              "Brewery",
+              "Casual",
+              "Local Favorites"
+            ],
+            "website": "https://kiitosbrewing.com",
+            "instagram": "@kiitosbrewing",
+            "phone": "(801) 215-9165",
+            "lat": 40.752,
+            "lng": -111.904
+          },
+          {
+            "id": 11560,
+            "name": "Kiitos Brewing Sugar House",
+            "neighborhood": "Sugar House",
+            "address": "1533 S 1100 E, Salt Lake City, UT 84105",
+            "score": 80,
+            "cuisine": "Brewery",
+            "price": 1,
+            "tags": [
+              "Casual",
+              "Local Favorites",
+              "Patio"
+            ],
+            "website": "https://kiitosbrewing.com",
+            "instagram": "@kiitosbrewing",
+            "phone": "",
+            "lat": 40.7212,
+            "lng": -111.859
+          }
+        ]
+      },
+      {
+        "key": "squatters pub brewery",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11038,
+            "name": "Squatters Pub Brewery",
+            "neighborhood": "Downtown SLC",
+            "address": "147 W Broadway, Salt Lake City, UT 84101",
+            "score": 85,
+            "cuisine": "Brewpub",
+            "price": 2,
+            "tags": [
+              "Brewery",
+              "Casual",
+              "Local Favorites",
+              "Family Friendly",
+              "Happy Hour"
+            ],
+            "website": "https://www.squatterspubs.com",
+            "instagram": "@squattersbeers",
+            "phone": "(801) 363-2739",
+            "lat": 40.7625,
+            "lng": -111.8945
+          },
+          {
+            "id": 11200,
+            "name": "Squatters Pub Brewery (Airport)",
+            "neighborhood": "Downtown SLC",
+            "address": "SLC International Airport, Salt Lake City, UT 84122",
+            "score": 83,
+            "cuisine": "Brewery / Pub",
+            "price": 1,
+            "tags": [
+              "Brewery",
+              "Casual",
+              "Airport"
+            ],
+            "website": "https://www.squatters.com",
+            "instagram": "@squattersbeers",
+            "phone": "",
+            "lat": 40.7899,
+            "lng": -111.9791
+          }
+        ]
+      },
+      {
+        "key": "pago",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11046,
+            "name": "Pago",
+            "neighborhood": "9th & 9th",
+            "address": "878 S 900 E, Salt Lake City, UT 84102",
+            "score": 92,
+            "cuisine": "New American / Mediterranean",
+            "price": 3,
+            "tags": [
+              "Date Night",
+              "Farm-to-Table",
+              "Cocktails",
+              "Critics Pick",
+              "Local Favorites"
+            ],
+            "website": "https://pagoslc.com",
+            "instagram": "@pago.slc",
+            "phone": "(801) 532-0777",
+            "lat": 40.7515,
+            "lng": -111.86
+          },
+          {
+            "id": 11367,
+            "name": "Pago Downtown",
+            "neighborhood": "Downtown SLC",
+            "address": "51 S Main St, Salt Lake City, UT 84111",
+            "score": 88,
+            "cuisine": "New American / Farm-to-Table",
+            "price": 2,
+            "tags": [
+              "New American",
+              "Farm-to-Table",
+              "Date Night",
+              "Brunch",
+              "Critics Pick"
+            ],
+            "website": "https://pagoslc.com",
+            "instagram": "@pagoslc",
+            "phone": "",
+            "lat": 40.7668,
+            "lng": -111.891
+          }
+        ]
+      },
+      {
+        "key": "pig & a jelly jar",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11057,
+            "name": "Pig & A Jelly Jar",
+            "neighborhood": "Central City",
+            "address": "401 E 900 S, Salt Lake City, UT 84111",
+            "score": 85,
+            "cuisine": "Southern / Brunch",
+            "price": 1,
+            "tags": [
+              "Southern",
+              "Brunch",
+              "Breakfast",
+              "Casual",
+              "Local Favorites"
+            ],
+            "website": "https://www.pigandajellyjar.com",
+            "instagram": "@pigandajellyjar",
+            "phone": "(385) 202-7366",
+            "lat": 40.7548,
+            "lng": -111.882
+          },
+          {
+            "id": 11202,
+            "name": "Pig & A Jelly Jar (15th & 15th)",
+            "neighborhood": "9th & 9th",
+            "address": "1508 S 1500 E, Salt Lake City, UT 84105",
+            "score": 85,
+            "cuisine": "Southern / Brunch",
+            "price": 1,
+            "tags": [
+              "Southern",
+              "Brunch",
+              "Local Favorites"
+            ],
+            "website": "https://www.pigandajellyjar.com",
+            "instagram": "@pigandajellyjar",
+            "phone": "(801) 679-1116",
+            "lat": 40.738,
+            "lng": -111.853
+          }
+        ]
+      },
+      {
+        "key": "matilda",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11060,
+            "name": "Matilda",
+            "neighborhood": "Park City",
+            "address": "738 Main St, Park City, UT 84060",
+            "score": 87,
+            "cuisine": "Italian / Pizza",
+            "price": 2,
+            "tags": [
+              "Italian",
+              "Pizza",
+              "Casual",
+              "New Opening",
+              "Local Favorites"
+            ],
+            "website": "https://www.matildaparkcity.com",
+            "instagram": "@matildaparkcity",
+            "phone": "(435) 800-5220",
+            "lat": 40.6461,
+            "lng": -111.498
+          },
+          {
+            "id": 11492,
+            "name": "Matilda Park City",
+            "neighborhood": "Park City",
+            "address": "1600 Snow Creek Dr, Park City, UT 84060",
+            "score": 85,
+            "cuisine": "Italian / Pizza",
+            "price": 3,
+            "tags": [
+              "Pizza",
+              "Italian",
+              "Cocktails"
+            ],
+            "website": "https://matildaparkcity.com",
+            "instagram": "@matildaparkcity",
+            "phone": "",
+            "lat": 40.6498,
+            "lng": -111.5059
+          }
+        ]
+      },
+      {
+        "key": "manoli's",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11065,
+            "name": "Manoli's",
+            "neighborhood": "The Avenues",
+            "address": "402 E 900 S, Salt Lake City, UT 84111",
+            "score": 89,
+            "cuisine": "Mediterranean / Greek",
+            "price": 2,
+            "tags": [
+              "Mediterranean",
+              "Greek",
+              "Date Night",
+              "Cocktails",
+              "Awards"
+            ],
+            "website": "https://www.manolison9th.com/",
+            "instagram": "@manolisslc",
+            "phone": "(801) 532-3760",
+            "lat": 40.7548,
+            "lng": -111.882
+          },
+          {
+            "id": 11348,
+            "name": "Manoli's Downtown",
+            "neighborhood": "Downtown SLC",
+            "address": "51 S Main St, Salt Lake City, UT 84111",
+            "score": 87,
+            "cuisine": "Mediterranean",
+            "price": 2,
+            "tags": [
+              "Mediterranean",
+              "Date Night",
+              "Local Favorites",
+              "Tapas"
+            ],
+            "website": "",
+            "instagram": "@manolisdowntown",
+            "phone": "",
+            "lat": 40.7668,
+            "lng": -111.891
+          }
+        ]
+      },
+      {
+        "key": "hearth and hill",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11123,
+            "name": "Hearth and Hill (Sugar House)",
+            "neighborhood": "Sugar House",
+            "address": "2100 S Highland Dr, Salt Lake City, UT 84106",
+            "score": 87,
+            "cuisine": "New American / Brunch",
+            "price": 2,
+            "tags": [
+              "American",
+              "Brunch",
+              "Date Night",
+              "Patio",
+              "New Opening"
+            ],
+            "website": "https://hearth-hill.com/sugar-house/",
+            "instagram": "@hearthandhillslc",
+            "phone": "(801) 890-0540",
+            "lat": 40.723,
+            "lng": -111.855
+          },
+          {
+            "id": 11238,
+            "name": "Hearth and Hill (Park City)",
+            "neighborhood": "Park City",
+            "address": "1153 Center Dr, Park City, UT 84098",
+            "score": 87,
+            "cuisine": "New American",
+            "price": 2,
+            "tags": [
+              "American",
+              "Brunch",
+              "Date Night",
+              "Cocktails",
+              "Après-Ski"
+            ],
+            "website": "https://hearth-hill.com/park-city/",
+            "instagram": "@hearthandhill",
+            "phone": "(435) 200-8840",
+            "lat": 40.658,
+            "lng": -111.505
+          }
+        ]
+      },
+      {
+        "key": "vessel kitchen",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11393,
+            "name": "Vessel Kitchen Sugar House",
+            "neighborhood": "Sugar House",
+            "address": "2144 S Highland Dr, Salt Lake City, UT 84106",
+            "score": 85,
+            "cuisine": "Health-Focused",
+            "price": 1,
+            "tags": [
+              "Healthy",
+              "Casual",
+              "Local Favorites"
+            ],
+            "website": "",
+            "instagram": "@vesselkitchen",
+            "phone": "",
+            "lat": 40.7217,
+            "lng": -111.8609
+          },
+          {
+            "id": 11142,
+            "name": "Vessel Kitchen",
+            "neighborhood": "Sugar House",
+            "address": "131 S 200 W, Salt Lake City, UT 84101",
+            "score": 84,
+            "cuisine": "Health-Forward / American",
+            "price": 1,
+            "tags": [
+              "Healthy",
+              "American",
+              "Casual",
+              "Family",
+              "Quick Bite"
+            ],
+            "website": "https://www.vesselkitchen.com",
+            "instagram": "@vesselkitchen",
+            "phone": "(801) 819-4444",
+            "lat": 40.766,
+            "lng": -111.897
+          }
+        ]
+      },
+      {
+        "key": "table x",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11166,
+            "name": "Table X",
+            "neighborhood": "Millcreek",
+            "address": "1457 E 3350 S, Salt Lake City, UT 84106",
+            "score": 91,
+            "cuisine": "New American / Tasting Menu",
+            "price": 4,
+            "tags": [
+              "Fine Dining",
+              "Tasting Menu",
+              "Celebrations",
+              "Date Night",
+              "Awards"
+            ],
+            "website": "https://www.tablexrestaurant.com",
+            "instagram": "@tablexrestaurant",
+            "phone": "(385) 528-3712",
+            "lat": 40.697,
+            "lng": -111.858
+          },
+          {
+            "id": 11457,
+            "name": "Table X South",
+            "neighborhood": "South Salt Lake",
+            "address": "1457 S 700 W, Salt Lake City, UT 84104",
+            "score": 89,
+            "cuisine": "Fine Dining",
+            "price": 3,
+            "tags": [
+              "Fine Dining",
+              "Farm-to-Table",
+              "Date Night"
+            ],
+            "website": "https://tablexrestaurant.com",
+            "instagram": "@tablexrestaurant",
+            "phone": "",
+            "lat": 40.7396,
+            "lng": -111.9041
+          }
+        ]
+      },
+      {
+        "key": "tsunami",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11446,
+            "name": "Tsunami Downtown",
+            "neighborhood": "Downtown SLC",
+            "address": "307 W 200 S, Salt Lake City, UT 84101",
+            "score": 86,
+            "cuisine": "Sushi / Asian",
+            "price": 2,
+            "tags": [
+              "Sushi",
+              "Asian Fusion"
+            ],
+            "website": "",
+            "instagram": "",
+            "phone": "",
+            "lat": 40.7645,
+            "lng": -111.8958
+          },
+          {
+            "id": 11180,
+            "name": "Tsunami Sandy",
+            "neighborhood": "Sandy",
+            "address": "11459 S State St, Sandy, UT 84070",
+            "score": 84,
+            "cuisine": "Sushi / Japanese",
+            "price": 2,
+            "tags": [
+              "Japanese",
+              "Sushi",
+              "Casual",
+              "Family"
+            ],
+            "website": "https://www.tsunamiutah.com",
+            "instagram": "@tsunamiutah",
+            "phone": "(801) 571-1115",
+            "lat": 40.578,
+            "lng": -111.888
+          }
+        ]
+      },
+      {
+        "key": "caputo's",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11378,
+            "name": "Caputo's Holladay",
+            "neighborhood": "Holladay",
+            "address": "4699 S Holladay Blvd, Holladay, UT 84117",
+            "score": 87,
+            "cuisine": "Italian Deli / Market",
+            "price": 1,
+            "tags": [
+              "Italian",
+              "Deli",
+              "Local Favorites"
+            ],
+            "website": "",
+            "instagram": "@caputosdeli",
+            "phone": "",
+            "lat": 40.681,
+            "lng": -111.8225
+          },
+          {
+            "id": 11424,
+            "name": "Caputo's Draper",
+            "neighborhood": "Draper",
+            "address": "12300 Draper Gate Dr, Draper, UT 84020",
+            "score": 87,
+            "cuisine": "Italian Deli",
+            "price": 1,
+            "tags": [
+              "Italian",
+              "Deli",
+              "Local Favorites"
+            ],
+            "website": "",
+            "instagram": "",
+            "phone": "",
+            "lat": 40.5247,
+            "lng": -111.8638
+          }
+        ]
+      },
+      {
+        "key": "oh mai",
+        "count": 2,
+        "entries": [
+          {
+            "id": 11413,
+            "name": "Oh Mai Downtown",
+            "neighborhood": "Downtown SLC",
+            "address": "190 S State St, Salt Lake City, UT 84111",
+            "score": 86,
+            "cuisine": "Vietnamese",
+            "price": 1,
+            "tags": [
+              "Vietnamese",
+              "Casual",
+              "Local Favorites"
+            ],
+            "website": "",
+            "instagram": "",
+            "phone": "",
+            "lat": 40.7637,
+            "lng": -111.8881
+          },
+          {
+            "id": 11414,
+            "name": "Oh Mai South",
+            "neighborhood": "South Salt Lake",
+            "address": "3425 S State St, South Salt Lake, UT 84115",
+            "score": 86,
+            "cuisine": "Vietnamese",
+            "price": 1,
+            "tags": [
+              "Vietnamese",
+              "Casual",
+              "Local Favorites"
+            ],
+            "website": "",
+            "instagram": "",
+            "phone": "",
+            "lat": 40.6988,
+            "lng": -111.8881
+          }
+        ]
+      }
+    ]
+  },
+  "Las Vegas": {
+    "totalEntries": 524,
+    "alreadyMultiLocation": 2,
+    "candidateGroupCount": 9,
+    "candidateEntryCount": 18,
+    "groups": [
+      {
+        "key": "beerhaus",
+        "count": 2,
+        "entries": [
+          {
+            "id": 12104,
+            "name": "Beerhaus",
+            "neighborhood": "The Strip (Park MGM)",
+            "address": "3782 S Las Vegas Blvd, Las Vegas, NV 89109",
+            "score": 84,
+            "cuisine": "American / Beer Hall",
+            "price": 2,
+            "tags": [
+              "Casual",
+              "Local Favorites",
+              "Late Night",
+              "Patio",
+              "Live Music"
+            ],
+            "website": "",
+            "instagram": "@beerhauslv",
+            "phone": "(702) 692-2337",
+            "lat": 36.1054,
+            "lng": -115.176
+          },
+          {
+            "id": 12343,
+            "name": "Beerhaus Henderson",
+            "neighborhood": "Henderson",
+            "address": "112 Water St, Henderson, NV 89015",
+            "score": 82,
+            "cuisine": "Beer Hall",
+            "price": 2,
+            "tags": [
+              "Bar",
+              "Casual",
+              "Patio",
+              "Live Music",
+              "Family Friendly"
+            ],
+            "website": "https://beerhauslv.com",
+            "instagram": "@beerhaus",
+            "phone": "",
+            "lat": 36.0382,
+            "lng": -115.0825
+          }
+        ]
+      },
+      {
+        "key": "zouk nightclub",
+        "count": 2,
+        "entries": [
+          {
+            "id": 12160,
+            "name": "Zouk Nightclub",
+            "neighborhood": "The Strip (Resorts World)",
+            "address": "3000 S Las Vegas Blvd, Las Vegas, NV 89109",
+            "score": 92,
+            "cuisine": "Nightclub",
+            "price": 4,
+            "tags": [
+              "Nightclub",
+              "Late Night",
+              "Celebrations",
+              "Cocktails"
+            ],
+            "website": "https://www.rwlasvegas.com/entertainment/zouk-nightclub",
+            "instagram": "@zouklv",
+            "phone": "(702) 802-6460",
+            "lat": 36.1317,
+            "lng": -115.1615
+          },
+          {
+            "id": 12543,
+            "name": "Zouk Nightclub",
+            "neighborhood": "The Strip (Resorts World)",
+            "address": "3000 S Las Vegas Blvd, Las Vegas, NV 89109",
+            "score": 88,
+            "cuisine": "Nightclub / Tourist Attraction",
+            "price": 1,
+            "tags": [
+              "Tourist Attraction",
+              "Entertainment",
+              "Landmark",
+              "Iconic"
+            ],
+            "website": "",
+            "instagram": "",
+            "phone": "",
+            "lat": 36.1356,
+            "lng": -115.1655
+          }
+        ]
+      },
+      {
+        "key": "atomic liquors",
+        "count": 2,
+        "entries": [
+          {
+            "id": 12167,
+            "name": "Atomic Liquors",
+            "neighborhood": "Downtown (Fremont East)",
+            "address": "917 E Fremont St, Las Vegas, NV 89101",
+            "score": 90,
+            "cuisine": "Bar / Dive Bar",
+            "price": 1,
+            "tags": [
+              "Cocktails",
+              "Late Night",
+              "Iconic",
+              "Local Favorites",
+              "Casual"
+            ],
+            "website": "https://atomic.vegas",
+            "instagram": "@atomiclasvegas",
+            "phone": "(702) 982-3000",
+            "lat": 36.1693,
+            "lng": -115.1375
+          },
+          {
+            "id": 12547,
+            "name": "Atomic Liquors",
+            "neighborhood": "Downtown (Fremont East)",
+            "address": "917 Fremont St, Las Vegas, NV 89101",
+            "score": 85,
+            "cuisine": "Landmark / Historic Site",
+            "price": 1,
+            "tags": [
+              "Landmark",
+              "Tourist Attraction",
+              "Historic",
+              "Iconic"
+            ],
+            "website": "",
+            "instagram": "",
+            "phone": "",
+            "lat": 36.1698,
+            "lng": -115.1367
+          }
+        ]
+      },
+      {
+        "key": "sphere",
+        "count": 2,
+        "entries": [
+          {
+            "id": 12538,
+            "name": "Sphere",
+            "neighborhood": "Paradise",
+            "address": "255 Sands Ave, Las Vegas, NV 89169",
+            "score": 95,
+            "cuisine": "Landmark / Tourist Attraction",
+            "price": 1,
+            "tags": [
+              "Landmark",
+              "Tourist Attraction",
+              "Iconic",
+              "Photo Op",
+              "Entertainment"
+            ],
+            "website": "https://www.thespherevegas.com",
+            "instagram": "",
+            "phone": "(725) 258-0001",
+            "lat": 36.1215,
+            "lng": -115.1631
+          },
+          {
+            "id": 12407,
+            "name": "Sphere",
+            "neighborhood": "The Strip",
+            "address": "255 Sands Ave, Las Vegas, NV 89169",
+            "score": 93,
+            "cuisine": "Tourist Attraction",
+            "price": 4,
+            "tags": [
+              "Tourist Attraction",
+              "Iconic",
+              "Entertainment",
+              "Music"
+            ],
+            "website": "https://www.thesphere.com",
+            "instagram": "spherevegas",
+            "phone": "(725) 258-8888",
+            "lat": 36.1214,
+            "lng": -115.1642
+          }
+        ]
+      },
+      {
+        "key": "fremont street experience",
+        "count": 2,
+        "entries": [
+          {
+            "id": 12527,
+            "name": "Fremont Street Experience",
+            "neighborhood": "Downtown",
+            "address": "425 Fremont St, Las Vegas, NV 89101",
+            "score": 88,
+            "cuisine": "Landmark / Tourist Attraction",
+            "price": 1,
+            "tags": [
+              "Landmark",
+              "Tourist Attraction",
+              "Entertainment",
+              "Iconic",
+              "Photo Op"
+            ],
+            "website": "https://vegasexperience.com",
+            "instagram": "",
+            "phone": "",
+            "lat": 36.1705,
+            "lng": -115.1428
+          },
+          {
+            "id": 12409,
+            "name": "Fremont Street Experience",
+            "neighborhood": "Downtown",
+            "address": "425 Fremont St, Las Vegas, NV 89101",
+            "score": 86,
+            "cuisine": "Tourist Attraction",
+            "price": 0,
+            "tags": [
+              "Tourist Attraction",
+              "Free",
+              "Iconic",
+              "Entertainment"
+            ],
+            "website": "https://vegasexperience.com",
+            "instagram": "fremontstreet",
+            "phone": "(702) 678-5777",
+            "lat": 36.1705,
+            "lng": -115.1434
+          }
+        ]
+      },
+      {
+        "key": "the mob museum",
+        "count": 2,
+        "entries": [
+          {
+            "id": 12410,
+            "name": "The Mob Museum",
+            "neighborhood": "Downtown",
+            "address": "300 Stewart Ave, Las Vegas, NV 89101",
+            "score": 90,
+            "cuisine": "Museum",
+            "price": 2,
+            "tags": [
+              "Museum",
+              "Tourist Attraction",
+              "Historic",
+              "Landmark"
+            ],
+            "website": "https://themobmuseum.org",
+            "instagram": "themobmuseum",
+            "phone": "(702) 229-2734",
+            "lat": 36.174,
+            "lng": -115.1427
+          },
+          {
+            "id": 12526,
+            "name": "The Mob Museum",
+            "neighborhood": "Downtown",
+            "address": "300 Stewart Ave, Las Vegas, NV 89101",
+            "score": 90,
+            "cuisine": "Museum",
+            "price": 1,
+            "tags": [
+              "Museum",
+              "Tourist Attraction",
+              "Historic",
+              "Landmark",
+              "Iconic"
+            ],
+            "website": "https://themobmuseum.org",
+            "instagram": "",
+            "phone": "",
+            "lat": 36.1725,
+            "lng": -115.1432
+          }
+        ]
+      },
+      {
+        "key": "the neon museum",
+        "count": 2,
+        "entries": [
+          {
+            "id": 12525,
+            "name": "The Neon Museum",
+            "neighborhood": "Downtown",
+            "address": "770 Las Vegas Blvd N, Las Vegas, NV 89101",
+            "score": 90,
+            "cuisine": "Museum",
+            "price": 1,
+            "tags": [
+              "Museum",
+              "Tourist Attraction",
+              "Landmark",
+              "Historic",
+              "Iconic",
+              "Photo Op"
+            ],
+            "website": "https://www.neonmuseum.org",
+            "instagram": "",
+            "phone": "",
+            "lat": 36.177,
+            "lng": -115.1402
+          },
+          {
+            "id": 12411,
+            "name": "The Neon Museum",
+            "neighborhood": "Downtown",
+            "address": "770 N Las Vegas Blvd, Las Vegas, NV 89101",
+            "score": 88,
+            "cuisine": "Museum",
+            "price": 2,
+            "tags": [
+              "Museum",
+              "Tourist Attraction",
+              "Iconic",
+              "Photo Op"
+            ],
+            "website": "https://www.neonmuseum.org",
+            "instagram": "neonmuseumlasvegas",
+            "phone": "(702) 387-6366",
+            "lat": 36.1782,
+            "lng": -115.1361
+          }
+        ]
+      },
+      {
+        "key": "bellagio conservatory & botanical gardens",
+        "count": 2,
+        "entries": [
+          {
+            "id": 12530,
+            "name": "Bellagio Conservatory & Botanical Gardens",
+            "neighborhood": "The Strip (Bellagio)",
+            "address": "3600 S Las Vegas Blvd, Las Vegas, NV 89109",
+            "score": 92,
+            "cuisine": "Botanical Garden / Landmark",
+            "price": 1,
+            "tags": [
+              "Landmark",
+              "Tourist Attraction",
+              "Iconic",
+              "Free",
+              "Photo Op"
+            ],
+            "website": "",
+            "instagram": "",
+            "phone": "",
+            "lat": 36.1128,
+            "lng": -115.1767
+          },
+          {
+            "id": 12420,
+            "name": "Bellagio Conservatory & Botanical Gardens",
+            "neighborhood": "The Strip",
+            "address": "3600 S Las Vegas Blvd, Las Vegas, NV 89109",
+            "score": 89,
+            "cuisine": "Tourist Attraction",
+            "price": 0,
+            "tags": [
+              "Tourist Attraction",
+              "Free",
+              "Seasonal",
+              "Photo Op"
+            ],
+            "website": "https://bellagio.mgmresorts.com/en/amenities/conservatory-botanical-garden.html",
+            "instagram": "bellagio",
+            "phone": "(888) 987-6667",
+            "lat": 36.1126,
+            "lng": -115.1767
+          }
+        ]
+      },
+      {
+        "key": "madame tussauds las vegas",
+        "count": 2,
+        "entries": [
+          {
+            "id": 12533,
+            "name": "Madame Tussauds Las Vegas",
+            "neighborhood": "The Strip (The Venetian)",
+            "address": "3377 S Las Vegas Blvd, Las Vegas, NV 89109",
+            "score": 82,
+            "cuisine": "Museum / Tourist Attraction",
+            "price": 1,
+            "tags": [
+              "Museum",
+              "Tourist Attraction",
+              "Family Friendly",
+              "Photo Op"
+            ],
+            "website": "https://www.madametussauds.com/las-vegas/",
+            "instagram": "",
+            "phone": "",
+            "lat": 36.121,
+            "lng": -115.1705
+          },
+          {
+            "id": 12422,
+            "name": "Madame Tussauds Las Vegas",
+            "neighborhood": "The Strip",
+            "address": "3377 S Las Vegas Blvd, Las Vegas, NV 89109",
+            "score": 78,
+            "cuisine": "Tourist Attraction",
+            "price": 2,
+            "tags": [
+              "Tourist Attraction",
+              "Photo Op",
+              "Family"
+            ],
+            "website": "https://www.madametussauds.com/las-vegas",
+            "instagram": "madametussaudslv",
+            "phone": "(702) 862-7800",
+            "lat": 36.1212,
+            "lng": -115.1707
+          }
+        ]
+      }
+    ]
+  },
+  "Seattle": {
+    "totalEntries": 526,
+    "alreadyMultiLocation": 0,
+    "candidateGroupCount": 12,
+    "candidateEntryCount": 25,
+    "groups": [
+      {
+        "key": "monsoon",
+        "count": 3,
+        "entries": [
+          {
+            "id": 9150,
+            "name": "Monsoon",
+            "neighborhood": "Capitol Hill",
+            "address": "615 19th Ave E, Seattle, WA 98112",
+            "score": 90,
+            "cuisine": "Vietnamese",
+            "price": 3,
+            "tags": [
+              "Vietnamese",
+              "Date Night",
+              "Local Favorites",
+              "Iconic",
+              "Critics Pick",
+              "Rooftop",
+              "Patio"
+            ],
+            "website": "https://www.monsoonrestaurants.com/seattle",
+            "instagram": "@monsoonrestaurants",
+            "phone": "(206) 325-2111",
+            "lat": 47.6283,
+            "lng": -122.3074
+          },
+          {
+            "id": 9158,
+            "name": "Monsoon Bellevue",
+            "neighborhood": "Bellevue",
+            "address": "10245 Main St, Bellevue, WA 98004",
+            "score": 89,
+            "cuisine": "Vietnamese",
+            "price": 3,
+            "tags": [
+              "Vietnamese",
+              "Asian",
+              "Date Night",
+              "Critics Pick",
+              "Brunch",
+              "Local Favorites"
+            ],
+            "website": "https://www.monsoonrestaurants.com/bellevue",
+            "instagram": "@monsoonbellevue",
+            "phone": "(425) 635-1112",
+            "lat": 47.6106,
+            "lng": -122.2062
+          },
+          {
+            "id": 9274,
+            "name": "Monsoon East",
+            "neighborhood": "Bellevue",
+            "address": "10245 Main St, Bellevue, WA 98004",
+            "score": 88,
+            "cuisine": "Vietnamese",
+            "price": 3,
+            "tags": [
+              "Vietnamese",
+              "Date Night",
+              "Eastside",
+              "Critics Pick",
+              "Cocktails"
+            ],
+            "website": "https://www.monsoonrestaurants.com",
+            "instagram": "@monsoonrestaurants",
+            "phone": "(425) 635-1112",
+            "lat": 47.6101,
+            "lng": -122.2049
+          }
+        ]
+      },
+      {
+        "key": "bakery nouveau",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9089,
+            "name": "Bakery Nouveau",
+            "neighborhood": "West Seattle",
+            "address": "4737 California Ave SW, Seattle, WA 98116",
+            "score": 92,
+            "cuisine": "Bakery / French",
+            "price": 1,
+            "tags": [
+              "Bakery/Coffee",
+              "Iconic",
+              "Local Favorites",
+              "Critics Pick"
+            ],
+            "website": "https://bakerynouveau.com",
+            "instagram": "@bakerynouveau",
+            "phone": "(206) 923-0534",
+            "lat": 47.5613,
+            "lng": -122.3866
+          },
+          {
+            "id": 9502,
+            "name": "Bakery Nouveau Capitol Hill",
+            "neighborhood": "Capitol Hill",
+            "address": "1435 11th Ave, Seattle, WA 98122",
+            "score": 89,
+            "cuisine": "Bakery",
+            "price": 1,
+            "tags": [
+              "Bakery",
+              "Pastry",
+              "Critics Pick",
+              "Iconic"
+            ],
+            "website": "https://bakerynouveau.com",
+            "instagram": "bakerynouveau",
+            "phone": "(206) 858-6957",
+            "lat": 47.6145,
+            "lng": -122.32
+          }
+        ]
+      },
+      {
+        "key": "serious pie",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9103,
+            "name": "Serious Pie Downtown",
+            "neighborhood": "Downtown",
+            "address": "2001 4th Ave, Seattle, WA 98121",
+            "score": 88,
+            "cuisine": "Pizza / Italian",
+            "price": 2,
+            "tags": [
+              "Pizza",
+              "Date Night",
+              "Local Favorites",
+              "Iconic"
+            ],
+            "website": "https://www.seriouspieseattle.com",
+            "instagram": "@seriouspieseattle",
+            "phone": "(206) 838-7388",
+            "lat": 47.6126,
+            "lng": -122.3411
+          },
+          {
+            "id": 9318,
+            "name": "Serious Pie",
+            "neighborhood": "Belltown",
+            "address": "316 Virginia St, Seattle, WA 98121",
+            "score": 88,
+            "cuisine": "Wood-Fired Pizza",
+            "price": 2,
+            "tags": [
+              "Pizza",
+              "Wood-Fired",
+              "Iconic",
+              "Tom Douglas"
+            ],
+            "website": "https://tomdouglas.com/restaurants/serious-pie",
+            "instagram": "tomdouglasco",
+            "phone": "(206) 838-7388",
+            "lat": 47.6137,
+            "lng": -122.3432
+          }
+        ]
+      },
+      {
+        "key": "ba bar",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9136,
+            "name": "Ba Bar",
+            "neighborhood": "Capitol Hill",
+            "address": "550 12th Ave, Seattle, WA 98122",
+            "score": 88,
+            "cuisine": "Vietnamese",
+            "price": 2,
+            "tags": [
+              "Vietnamese",
+              "Late Night",
+              "Local Favorites",
+              "Casual"
+            ],
+            "website": "https://www.babarseattle.com",
+            "instagram": "@babarseattle",
+            "phone": "(206) 328-2030",
+            "lat": 47.6094,
+            "lng": -122.3173
+          },
+          {
+            "id": 9499,
+            "name": "Ba Bar Capitol Hill",
+            "neighborhood": "Capitol Hill",
+            "address": "550 12th Ave, Seattle, WA 98102",
+            "score": 86,
+            "cuisine": "Vietnamese",
+            "price": 2,
+            "tags": [
+              "Vietnamese",
+              "Late Night",
+              "Pho",
+              "Critics Pick"
+            ],
+            "website": "https://babarseattle.com",
+            "instagram": "babarvn",
+            "phone": "(206) 328-2030",
+            "lat": 47.6143,
+            "lng": -122.318
+          }
+        ]
+      },
+      {
+        "key": "daniel's broiler",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9157,
+            "name": "Daniel's Broiler Bellevue",
+            "neighborhood": "Bellevue",
+            "address": "10500 NE 8th St Fl 21, Bellevue, WA 98004",
+            "score": 90,
+            "cuisine": "Steakhouse",
+            "price": 4,
+            "tags": [
+              "Steakhouse",
+              "Date Night",
+              "Scenic",
+              "Celebrations",
+              "Cocktails",
+              "Iconic"
+            ],
+            "website": "https://danielsbroiler.com",
+            "instagram": "@danielsbroiler",
+            "phone": "(425) 462-4662",
+            "lat": 47.6169,
+            "lng": -122.2005
+          },
+          {
+            "id": 9489,
+            "name": "Daniel's Broiler South Lake Union",
+            "neighborhood": "South Lake Union",
+            "address": "809 Fairview Pl N, Seattle, WA 98109",
+            "score": 87,
+            "cuisine": "Steakhouse",
+            "price": 4,
+            "tags": [
+              "Steakhouse",
+              "Views",
+              "Date Night"
+            ],
+            "website": "https://schwartzbros.com/daniels-broiler",
+            "instagram": "danielsbroiler",
+            "phone": "(206) 621-8262",
+            "lat": 47.625,
+            "lng": -122.34
+          }
+        ]
+      },
+      {
+        "key": "japonessa sushi cocina",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9178,
+            "name": "Japonessa Sushi Cocina",
+            "neighborhood": "Downtown",
+            "address": "1400 1st Ave, Seattle, WA 98101",
+            "score": 86,
+            "cuisine": "Japanese / Sushi",
+            "price": 3,
+            "tags": [
+              "Sushi",
+              "Japanese",
+              "Date Night",
+              "Late Night",
+              "Cocktails",
+              "Local Favorites",
+              "Tourist Essential"
+            ],
+            "website": "https://seattle.japonessa.com",
+            "instagram": "@japonessasushicocina",
+            "phone": "(206) 971-7979",
+            "lat": 47.6082,
+            "lng": -122.3395
+          },
+          {
+            "id": 9491,
+            "name": "Japonessa Sushi Cocina Belltown",
+            "neighborhood": "Belltown",
+            "address": "2420 1st Ave, Seattle, WA 98121",
+            "score": 85,
+            "cuisine": "Japanese-Peruvian Sushi",
+            "price": 3,
+            "tags": [
+              "Sushi",
+              "Japanese-Peruvian",
+              "Late Night"
+            ],
+            "website": "https://japonessa.com",
+            "instagram": "japonessa",
+            "phone": "(206) 448-8000",
+            "lat": 47.6138,
+            "lng": -122.3455
+          }
+        ]
+      },
+      {
+        "key": "piroshky piroshky",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9228,
+            "name": "Piroshky Piroshky",
+            "neighborhood": "Pike Place Market",
+            "address": "1908 Pike Pl, Seattle, WA 98101",
+            "score": 90,
+            "cuisine": "Russian / Bakery",
+            "price": 1,
+            "tags": [
+              "Bakery/Coffee",
+              "Iconic",
+              "Tourist Essential",
+              "Casual",
+              "Quick Bite",
+              "Family Friendly"
+            ],
+            "website": "https://piroshkybakery.com",
+            "instagram": "@piroshkybakery",
+            "phone": "(206) 764-1000",
+            "lat": 47.6095,
+            "lng": -122.341
+          },
+          {
+            "id": 9446,
+            "name": "Piroshky Piroshky Ballard",
+            "neighborhood": "Ballard",
+            "address": "2022 NW Market St, Seattle, WA 98107",
+            "score": 85,
+            "cuisine": "Russian Bakery",
+            "price": 1,
+            "tags": [
+              "Bakery",
+              "Russian",
+              "Grab-and-Go"
+            ],
+            "website": "https://piroshkybakery.com",
+            "instagram": "piroshkypiroshky",
+            "phone": "(206) 784-4996",
+            "lat": 47.6678,
+            "lng": -122.3838
+          }
+        ]
+      },
+      {
+        "key": "tavolàta",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9231,
+            "name": "Tavolàta Capitol Hill",
+            "neighborhood": "Capitol Hill",
+            "address": "501 E Pike St, Seattle, WA 98122",
+            "score": 89,
+            "cuisine": "Italian",
+            "price": 3,
+            "tags": [
+              "Italian",
+              "Date Night",
+              "Critics Pick",
+              "Local Favorites",
+              "Celebrations"
+            ],
+            "website": "https://tavolata.com/restaurants/capitol-hill-ballard-avenue-seattle",
+            "instagram": "@tavolataseattle",
+            "phone": "(206) 420-4920",
+            "lat": 47.614,
+            "lng": -122.3236
+          },
+          {
+            "id": 9266,
+            "name": "Tavolàta",
+            "neighborhood": "Belltown",
+            "address": "2323 2nd Ave, Seattle, WA 98121",
+            "score": 88,
+            "cuisine": "Italian",
+            "price": 3,
+            "tags": [
+              "Italian",
+              "Pasta",
+              "Date Night",
+              "Belltown",
+              "Critics Pick"
+            ],
+            "website": "https://ethanstowellrestaurants.com/locations/tavolata",
+            "instagram": "@tavolata",
+            "phone": "(206) 838-8008",
+            "lat": 47.6158,
+            "lng": -122.3481
+          }
+        ]
+      },
+      {
+        "key": "wild ginger",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9247,
+            "name": "Wild Ginger",
+            "neighborhood": "Downtown",
+            "address": "1401 3rd Ave, Seattle, WA 98101",
+            "score": 88,
+            "cuisine": "Pan-Asian / Thai",
+            "price": 3,
+            "tags": [
+              "Asian",
+              "Thai",
+              "Chinese",
+              "Date Night",
+              "Iconic",
+              "Celebrations",
+              "Local Favorites",
+              "Awards"
+            ],
+            "website": "https://www.wildginger.net",
+            "instagram": "@wildgingerseattle",
+            "phone": "(206) 623-4450",
+            "lat": 47.6092,
+            "lng": -122.3362
+          },
+          {
+            "id": 9374,
+            "name": "Wild Ginger Bellevue",
+            "neighborhood": "Bellevue",
+            "address": "11020 NE 6th St, Bellevue, WA 98004",
+            "score": 84,
+            "cuisine": "Pan-Asian",
+            "price": 3,
+            "tags": [
+              "Pan-Asian",
+              "Date Night",
+              "Family Friendly"
+            ],
+            "website": "https://wildginger.net",
+            "instagram": "wildgingerseattle",
+            "phone": "(425) 495-8889",
+            "lat": 47.614,
+            "lng": -122.1968
+          }
+        ]
+      },
+      {
+        "key": "revel",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9280,
+            "name": "Revel",
+            "neighborhood": "Fremont",
+            "address": "403 N 36th St, Seattle, WA 98103",
+            "score": 88,
+            "cuisine": "Korean / American",
+            "price": 2,
+            "tags": [
+              "Korean",
+              "Asian Fusion",
+              "Brunch",
+              "Date Night",
+              "Local Favorites",
+              "Critics Pick"
+            ],
+            "website": "https://www.revelseattle.com",
+            "instagram": "@revelseattle",
+            "phone": "(206) 547-2040",
+            "lat": 47.6503,
+            "lng": -122.3502
+          },
+          {
+            "id": 9480,
+            "name": "Revel Fremont",
+            "neighborhood": "Fremont",
+            "address": "403 N 36th St, Seattle, WA 98103",
+            "score": 87,
+            "cuisine": "Korean Fusion",
+            "price": 3,
+            "tags": [
+              "Korean",
+              "Fusion",
+              "Critics Pick"
+            ],
+            "website": "https://revelseattle.com",
+            "instagram": "revelseattle",
+            "phone": "(206) 547-2040",
+            "lat": 47.6505,
+            "lng": -122.35
+          }
+        ]
+      },
+      {
+        "key": "dough zone",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9386,
+            "name": "Dough Zone",
+            "neighborhood": "Chinatown-International District",
+            "address": "504 5th Ave S, Seattle, WA 98104",
+            "score": 85,
+            "cuisine": "Chinese Dumplings",
+            "price": 2,
+            "tags": [
+              "Dumplings",
+              "Xiaolongbao",
+              "Casual",
+              "Family Friendly"
+            ],
+            "website": "https://doughzone.com",
+            "instagram": "doughzone",
+            "phone": "(206) 285-9999",
+            "lat": 47.5984,
+            "lng": -122.326
+          },
+          {
+            "id": 9464,
+            "name": "Dough Zone Bellevue",
+            "neighborhood": "Bellevue",
+            "address": "14339 NE 20th St, Bellevue, WA 98007",
+            "score": 85,
+            "cuisine": "Chinese Dumplings",
+            "price": 2,
+            "tags": [
+              "Dumplings",
+              "Xiaolongbao",
+              "Family Friendly"
+            ],
+            "website": "https://doughzone.com",
+            "instagram": "doughzone",
+            "phone": "(425) 646-2828",
+            "lat": 47.6295,
+            "lng": -122.16
+          }
+        ]
+      },
+      {
+        "key": "pagliacci pizza",
+        "count": 2,
+        "entries": [
+          {
+            "id": 9411,
+            "name": "Pagliacci Pizza",
+            "neighborhood": "Capitol Hill",
+            "address": "426 Broadway E, Seattle, WA 98102",
+            "score": 82,
+            "cuisine": "Pizza",
+            "price": 1,
+            "tags": [
+              "Pizza",
+              "Delivery",
+              "Iconic",
+              "Local"
+            ],
+            "website": "https://pagliacci.com",
+            "instagram": "pagliaccipizza",
+            "phone": "(206) 726-1717",
+            "lat": 47.6215,
+            "lng": -122.3213
+          },
+          {
+            "id": 9418,
+            "name": "Pagliacci Pizza Bellevue",
+            "neighborhood": "Bellevue",
+            "address": "10116 NE 8th St, Bellevue, WA 98004",
+            "score": 82,
+            "cuisine": "Pizza",
+            "price": 1,
+            "tags": [
+              "Pizza",
+              "Delivery",
+              "Family Friendly"
+            ],
+            "website": "https://pagliacci.com",
+            "instagram": "pagliaccipizza",
+            "phone": "(425) 453-1717",
+            "lat": 47.6145,
+            "lng": -122.1978
+          }
+        ]
+      }
+    ]
+  },
+  "New York": {
+    "totalEntries": 906,
+    "alreadyMultiLocation": 0,
+    "candidateGroupCount": 1,
+    "candidateEntryCount": 2,
+    "groups": [
+      {
+        "key": "prospect park",
+        "count": 2,
+        "entries": [
+          {
+            "id": 1945,
+            "name": "Prospect Park",
+            "neighborhood": "Park Slope / Prospect Heights",
+            "address": "95 Prospect Park West, Brooklyn, NY 11215",
+            "score": 95,
+            "cuisine": "Park",
+            "price": 1,
+            "tags": [
+              "Park",
+              "Tourist Attraction",
+              "Landmark",
+              "Outdoor",
+              "Iconic",
+              "Family Friendly"
+            ],
+            "website": "https://www.prospectpark.org",
+            "instagram": "",
+            "phone": "",
+            "lat": 40.6602,
+            "lng": -73.969
+          },
+          {
+            "id": 1923,
+            "name": "Prospect Park",
+            "neighborhood": "Park Slope / Prospect Heights",
+            "address": "95 Prospect Park West, Brooklyn, NY 11215",
+            "score": 88,
+            "cuisine": "Tourist Attraction",
+            "price": 0,
+            "tags": [
+              "Tourist Attraction",
+              "Park",
+              "Free",
+              "Outdoor",
+              "Family"
+            ],
+            "website": "https://www.prospectpark.org",
+            "instagram": "prospect_park",
+            "phone": "(718) 965-8951",
+            "lat": 40.6602,
+            "lng": -73.969
+          }
+        ]
+      }
+    ]
+  }
+}

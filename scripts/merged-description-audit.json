@@ -1,0 +1,103 @@
+[
+  {
+    "city": "Houston",
+    "id": 7275,
+    "name": "Becks Prime",
+    "locationCount": 2,
+    "neighborhoods": [
+      "Memorial",
+      "Upper Kirby"
+    ],
+    "description": "Houston's favorite patio burger. Mesquite-grilled prime burgers, dogs, and milkshakes — a local burger rite of passage. The Memorial Park location sits under giant live oaks and is the classic post-run spot.",
+    "flags": [
+      "mentions only \"Memorial\" of 2 locations"
+    ]
+  },
+  {
+    "city": "Austin",
+    "id": 5218,
+    "name": "Loro",
+    "locationCount": 5,
+    "neighborhoods": [
+      "East Austin",
+      "South Lamar",
+      "North Lamar",
+      "Mueller",
+      "Domain"
+    ],
+    "description": "Tyson Cole + Aaron Franklin's Asian-smokehouse collaboration — smoked brisket with Thai herbs, coconut curry, and a strong bar program. The original East Austin flagship launched the concept; now multiple locations across Austin. Michelin recognized.",
+    "flags": [
+      "mentions only \"East Austin\" of 5 locations"
+    ]
+  },
+  {
+    "city": "Austin",
+    "id": 5262,
+    "name": "Lustre Pearl",
+    "locationCount": 2,
+    "neighborhoods": [
+      "Rainey Street",
+      "East Austin"
+    ],
+    "description": "One of the original Rainey Street bungalow bars that helped transform the neighborhood. Massive patio, cheap beer, and a casual party vibe. The OG Rainey Street experience that started it all.",
+    "flags": [
+      "mentions only \"Rainey Street\" of 2 locations"
+    ]
+  },
+  {
+    "city": "Seattle",
+    "id": 9103,
+    "name": "Serious Pie",
+    "locationCount": 2,
+    "neighborhoods": [
+      "Downtown",
+      "Belltown"
+    ],
+    "description": "Tom Douglas's pizzeria — wood-fired, artisan pizzas with blistered crusts and seasonal toppings. One of the only places in Seattle slinging crisp Connecticut-style pies. Two locations across downtown Seattle.",
+    "flags": [
+      "mentions only \"Downtown\" of 2 locations"
+    ]
+  },
+  {
+    "city": "Seattle",
+    "id": 9178,
+    "name": "Japonessa Sushi Cocina",
+    "locationCount": 2,
+    "neighborhoods": [
+      "Downtown",
+      "Belltown"
+    ],
+    "description": "Latin-Japanese fusion sushi near Pike Place Market. Creative rolls, sashimi, late-night lounge, and happy hour. A reliable Seattle sushi fix with a lively bar scene. Two Seattle locations.",
+    "flags": [
+      "single-neighborhood call-out"
+    ]
+  },
+  {
+    "city": "Seattle",
+    "id": 9228,
+    "name": "Piroshky Piroshky",
+    "locationCount": 2,
+    "neighborhoods": [
+      "Pike Place Market",
+      "Ballard"
+    ],
+    "description": "Authentic hand-made Russian piroshky since 1992 — beef & onion, smoked salmon paté, apple cinnamon roll. The line out the door at Pike Place is legendary; a second Ballard location opens up some breathing room. A Seattle must-do.",
+    "flags": [
+      "mentions only \"Ballard\" of 2 locations"
+    ]
+  },
+  {
+    "city": "Seattle",
+    "id": 9386,
+    "name": "Dough Zone",
+    "locationCount": 2,
+    "neighborhoods": [
+      "Chinatown-International District",
+      "Bellevue"
+    ],
+    "description": "Xiaolongbao specialist with thin-skinned soup dumplings, pan-fried Q-bao pork buns, and handmade noodles. Originally Bellevue, now with a Chinatown-ID location — both are always busy.",
+    "flags": [
+      "mentions only \"Bellevue\" of 2 locations"
+    ]
+  }
+]
