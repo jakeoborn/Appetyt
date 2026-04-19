@@ -1,0 +1,2047 @@
+[
+  {
+    "id": 2007,
+    "name": "Nobu Malibu",
+    "website": "https://www.noburestaurants.com/malibu",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "ar2.32_1110x478",
+        "url": "https://www.noburestaurants.com/assets/article-media-files/hypno-18073-5895035-I"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar2.32_1110x478",
+        "url": "https://www.noburestaurants.com/assets/article-media-files/DAYTIME-CHICAGO-Tanos"
+      }
+    ]
+  },
+  {
+    "id": 2015,
+    "name": "Bay Cities Italian Deli",
+    "website": "https://www.baycitiesitaliandeli.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "ar1.04_660x635",
+        "url": "https://static.wixstatic.com/media/214ec6_040c09daa421afc37015b79b4017a282.jpg/v"
+      }
+    ]
+  },
+  {
+    "id": 2027,
+    "name": "Sushi Park",
+    "website": "https://www.sushiparkla.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2028,
+    "name": "Destroyer",
+    "website": "https://www.yourdestroyerawait.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2034,
+    "name": "Oy Bar",
+    "website": "http://oybarla.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2036,
+    "name": "Bistro Na's",
+    "website": "https://www.bistronas.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_39725",
+        "url": "https://static.wixstatic.com/media/fc74ba_17ba69f27de847fea0a8ce6f22042ded%7Emv2"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_17102",
+        "url": "https://static.wixstatic.com/media/fc74ba_4b2f7e2c7a424930a97018cf191f9eb3~mv2.p"
+      }
+    ]
+  },
+  {
+    "id": 2044,
+    "name": "Pijja Palace",
+    "website": "https://www.pijjapalace.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_24874",
+        "url": "https://images.getbento.com/accounts/4358ae66b4932d6156b1687bd6a206a4/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 2045,
+    "name": "Pho Ngoon",
+    "website": "https://pho-ngoon.restaurants-world.com/",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 2060,
+    "name": "Ray's Texas BBQ",
+    "website": "http://iwantbrisket.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2061,
+    "name": "Si! Mon",
+    "website": "https://www.si-mon.la/",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/65173d601cda84009215299b/ca73d9c3-da8e-411e-9718-91eb154db7e9/si-monHR_134.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/65173d601cda84009215299b/t/65287f054b00d92"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_3134",
+        "url": "https://images.squarespace-cdn.com/content/v1/65173d601cda84009215299b/90e3ccaf-"
+      }
+    ]
+  },
+  {
+    "id": 2063,
+    "name": "Two Hommes",
+    "website": "http://twohommes.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.76_1947x2560",
+        "url": "https://twohommes.com/uploads/home.jpg"
+      },
+      {
+        "source": "srcset",
+        "reason": "too_small_4308",
+        "url": "https://twohommes.com/media/derived/6e/6ee90ed418e1af92d860067c07c35b30f9a711ba."
+      },
+      {
+        "source": "srcset",
+        "reason": "too_small_10098",
+        "url": "https://twohommes.com/media/derived/fc/fc38eb47607c9e17dee33d913c281068373c5d04."
+      },
+      {
+        "source": "srcset",
+        "reason": "logo_url_pattern",
+        "url": "https://twohommes.com/media/site/twohommes-logo.png"
+      }
+    ]
+  },
+  {
+    "id": 2064,
+    "name": "Vin Folk",
+    "website": "https://www.vin-folk.com/",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/6663887523b1fa0240c7ef1a/797631d3-d580-4a75-a1ab-f9beadb8bc49/VinFolk07196-Edit.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_10668",
+        "url": "http://static1.squarespace.com/static/6663887523b1fa0240c7ef1a/t/674e4415f2ff6e1"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_10668",
+        "url": "https://images.squarespace-cdn.com/content/v1/6663887523b1fa0240c7ef1a/8ab2d180-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_32878",
+        "url": "https://static1.squarespace.com/static/6663887523b1fa0240c7ef1a/t/674e4415f2ff6e"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_10668",
+        "url": "https://images.squarespace-cdn.com/content/v1/6663887523b1fa0240c7ef1a/8ab2d180-"
+      }
+    ]
+  },
+  {
+    "id": 2065,
+    "name": "A&J Seafood Shack",
+    "website": "http://ajseafoodshack.com/",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/6a447c_00d9d5bfca33481db8af378580a26433~mv2.png/v1/fill/w_561,h_387,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/AJLogo(1).png",
+    "source": "inline-img",
+    "dims": {
+      "w": 561,
+      "h": 387
+    },
+    "tried": []
+  },
+  {
+    "id": 2066,
+    "name": "San & Wolves",
+    "website": "https://www.sanandwolves.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.80_1440x1800",
+        "url": "https://www.sanandwolves.com/uploads/b/4626a870-4a0d-11ea-b874-6bc8702ab3cf/8FB4"
+      }
+    ]
+  },
+  {
+    "id": 2067,
+    "name": "Holy Basil Santa Monica",
+    "website": "https://holybasil-la.com/santa-monica",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/663d75d25f6d2818eeae4b13/8f8bf898-014f-4c93-a305-59455d167c33/clB5zxRH.jpeg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/663d75d25f6d2818eeae4b13/12aa2621-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_25660",
+        "url": "https://static1.squarespace.com/static/663d75d25f6d2818eeae4b13/t/66a1aeacd40ef0"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/663d75d25f6d2818eeae4b13/12aa2621-"
+      }
+    ]
+  },
+  {
+    "id": 2072,
+    "name": "Lielle",
+    "website": "https://www.lielle.la/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_28182",
+        "url": "https://static.wixstatic.com/media/56e8c5_cb8f8cef049b47a1b030a32870ea4429%7Emv2"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "ar1.00_1199x1199",
+        "url": "https://static.wixstatic.com/media/56e8c5_92d739778944470695852519a0b9b294~mv2.p"
+      }
+    ]
+  },
+  {
+    "id": 2073,
+    "name": "Sushi Samba West Hollywood",
+    "website": "https://www.sushisamba.com/",
+    "ok": true,
+    "url": "https://www.sushisamba.com/wp-content/uploads/2026/01/SS-SG_INTERIOR-006-1.jpg?format=auto",
+    "source": "inline-img",
+    "dims": {
+      "w": 3840,
+      "h": 2160
+    },
+    "tried": []
+  },
+  {
+    "id": 2081,
+    "name": "Le Draq",
+    "website": "http://www.bar-ama.com/",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/55fb052ce4b0844e66128e49/t/6946d050c0ddda434cb28f3e/1766248528167/BLACK+LE+DRAQ.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 2084,
+    "name": "Bevel Coffee",
+    "website": "https://bevelcoffee.com/",
+    "ok": true,
+    "url": "https://bevelcoffee.com/cdn/shop/files/IMG_6532.jpg?v=1710694347&amp;width=1284",
+    "source": "srcset",
+    "dims": {
+      "w": 1920,
+      "h": 1080
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://bevelcoffee.com/cdn/shop/files/LOGO_WHITE_BEVEL_2x_8946fea1-0158-44ef-b5f"
+      },
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://bevelcoffee.com/cdn/shop/files/LOGO_WHITE_BEVEL_2x_8946fea1-0158-44ef-b5"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_533x533",
+        "url": "https://bevelcoffee.com/cdn/shop/files/2026_03_StuartoCoto_Front.png?v=177440722"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_533x533",
+        "url": "https://bevelcoffee.com/cdn/shop/files/Extinction_Burst_TRANSPARENT.png?v=176671"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_533x533",
+        "url": "https://bevelcoffee.com/cdn/shop/files/2026_03_Misael_Ochoa_Front.png?v=17744066"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar0.75_4000x5333",
+        "url": "https://bevelcoffee.com/cdn/shop/files/BREWING_W__BAG_BEVEL_COFFEE-10.jpg?v=1765"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar1.00_3961x3961",
+        "url": "https://bevelcoffee.com/cdn/shop/files/2026_03_StuartoCoto_Front.png?v=177440722"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar1.00_3961x3961",
+        "url": "https://bevelcoffee.com/cdn/shop/files/Extinction_Burst_TRANSPARENT.png?v=176671"
+      },
+      {
+        "source": "srcset",
+        "reason": "ar1.00_3961x3961",
+        "url": "https://bevelcoffee.com/cdn/shop/files/2026_03_Misael_Ochoa_Front.png?v=17744066"
+      }
+    ]
+  },
+  {
+    "id": 2111,
+    "name": "Chengdu Taste",
+    "website": "https://chengdutastes.com/",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2119,
+    "name": "Din Tai Fung",
+    "website": "https://dtf.com/en-us/locations/arcadia",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_405",
+        "url": "https://dtf-cdn.com/images/production/3e7f3ed73e2d01a4c8ec816ab4575e4ad52aafc4-1"
+      },
+      {
+        "source": "twitter:image",
+        "reason": "http_405",
+        "url": "https://dtf-cdn.com/images/production/3e7f3ed73e2d01a4c8ec816ab4575e4ad52aafc4-1"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_405",
+        "url": "https://dtf-cdn.com/images/production/e45b4c3e735c4bcb7cef96158349c7352007edff-2"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_405",
+        "url": "https://dtf-cdn.com/images/production/233618b5e73b086d87b309e03b4e5edfd11c54a6-2"
+      }
+    ]
+  },
+  {
+    "id": 2120,
+    "name": "Hillstone",
+    "website": "https://hillstonerestaurant.com/locations/santamonica/",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2124,
+    "name": "Shake Shack",
+    "website": "https://shakeshack.com/location/west-hollywood-santa-monica-la-cienega-ca",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 2127,
+    "name": "Somni",
+    "website": "https://somnirestaurant.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2135,
+    "name": "Gucci Osteria da Massimo Bottura",
+    "website": "https://www.gucci.com",
+    "ok": true,
+    "url": "https://images.ctfassets.net/mn4osl1rknrf/6YaF4lQpjQAJ0k1bd8yA0D/12ae972fc44cb7e803c42218c6cb2be5/LandscapeXL_874745FAF798547.png",
+    "source": "inline-img",
+    "dims": {
+      "w": 2250,
+      "h": 1500
+    },
+    "tried": []
+  },
+  {
+    "id": 2147,
+    "name": "Yala Coffee",
+    "website": "https://yalacoffee.com/",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/642b34f8d28cbd772ececfd6/809766ac-68f9-4c97-b20b-c310723ce84a/Mask+group+1+%28Traced%29.png",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_12090",
+        "url": "http://static1.squarespace.com/static/642b34f8d28cbd772ececfd6/t/650ca064f929a14"
+      }
+    ]
+  },
+  {
+    "id": 2192,
+    "name": "Newport Seafood Restaurant",
+    "website": "https://newportseafood.com",
+    "ok": false,
+    "reason": "fetch_http_503"
+  },
+  {
+    "id": 2208,
+    "name": "Ixlb Dimsum Eats",
+    "website": "http://www.ixlbdimsumeats.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2234,
+    "name": "The Grill on the Alley",
+    "website": "https://thegrill.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/8c6f27dbe053e2abe5c499ef740f7b00/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 2235,
+    "name": "Avra Beverly Hills Estiatorio",
+    "website": "https://avrabeverlyhills.com",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 2239,
+    "name": "Dulan's Soul Food Kitchen",
+    "website": "https://dulans.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_35741",
+        "url": "https://static.hugedomains.com/images/hdv3-img/og_hugedomains.png"
+      }
+    ]
+  },
+  {
+    "id": 2258,
+    "name": "Accomplice",
+    "website": "http://littlefattyla.com/accomplice",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/581b9b2ef7e0ab7a10dd1aa0/t/60a2d2d53c9af62b4c0d5740/1776464278561/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/581b9b2ef7e0ab7a10dd1aa0/271fe134-"
+      }
+    ]
+  },
+  {
+    "id": 2273,
+    "name": "Citrin",
+    "website": "https://citrinsm.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2279,
+    "name": "Fitoor",
+    "website": "https://fitoor.la",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2307,
+    "name": "LaSorted's",
+    "website": "https://www.lasorteds.com/",
+    "ok": true,
+    "url": "https://cdn.prod.website-files.com/668f0e935cfeeeb972bfa205/671aca2fa5d60725a6d84c3a_LaSorteds%20Chinatown_Interior_Photo%20Credit%20Tommy%20Brockert_16%201.png",
+    "source": "jsonld-image",
+    "dims": {
+      "w": 1638,
+      "h": 1092
+    },
+    "tried": []
+  },
+  {
+    "id": 2313,
+    "name": "The Hummingbird",
+    "website": "https://thehummingbirdla.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://thehummingbirdla.com/wp-content/uploads/2024/10/LOGO-HUMMINGBIRD-PRINCIP"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_989x988",
+        "url": "https://thehummingbirdla.com/wp-content/uploads/2024/11/HUMMINGBIRD-ROUND-ai.png"
+      },
+      {
+        "source": "srcset",
+        "reason": "logo_url_pattern",
+        "url": "https://thehummingbirdla.com/wp-content/uploads/2024/10/LOGO-HUMMINGBIRD-PRINCIP"
+      }
+    ]
+  },
+  {
+    "id": 2323,
+    "name": "Angel's Tijuana Tacos",
+    "website": "http://www.instagram.com/angelstijuanatacos",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_403",
+        "url": "https://scontent-hou1-1.cdninstagram.com/v/t51.2885-19/108138894_268387254419341"
+      }
+    ]
+  },
+  {
+    "id": 2324,
+    "name": "Bone Kettle",
+    "website": "https://bonekettle.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/6531abd5a3c92e0d18746003/1714964d-fcac-45d8-9373-f4af914d17dd/DSC09961.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 2325,
+    "name": "Woon Pasadena",
+    "website": "https://woonla.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2331,
+    "name": "Panda Inn Pasadena",
+    "website": "https://pandainn.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar1.00_800x800",
+        "url": "https://api-pandainn.b-cdn.net/media/misc/social-800x800.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2337,
+    "name": "Howlin' Ray's Pasadena",
+    "website": "https://howlinrays.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2338,
+    "name": "Pie 'n Burger",
+    "website": "https://pienburger.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2341,
+    "name": "Funke",
+    "website": "https://funke.la",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2342,
+    "name": "Nate 'n Al",
+    "website": "https://natenaldeli.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5dc5dbd536a39c4f8c4c6c70/1574114685957-M0TTHTIYS1FBAJ6FW80J/nate-n-al-vintage-edit.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5dc5dbd536a39c4f8c4c6c70/t/605529c388cc9e0"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5dc5dbd536a39c4f8c4c6c70/c27afca7-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_31408",
+        "url": "https://static1.squarespace.com/static/5dc5dbd536a39c4f8c4c6c70/t/605529c388cc9e"
+      }
+    ]
+  },
+  {
+    "id": 2345,
+    "name": "Marea",
+    "website": "https://marea-ristorante.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2347,
+    "name": "The Cheese Store of Beverly Hills",
+    "website": "https://cheesestorebh.com",
+    "ok": true,
+    "url": "https://cheesestore.com/cdn/shop/files/home-hero-cheese-store-interior.jpg?v=1744349790&amp;width=1800",
+    "source": "srcset",
+    "dims": {
+      "w": 1920,
+      "h": 1280
+    },
+    "tried": []
+  },
+  {
+    "id": 2348,
+    "name": "Mr. Chow",
+    "website": "https://mrchow.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_16447",
+        "url": "https://images.getbento.com/accounts/e9468ad3e817c24c27824eb7af7a3e51/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 2353,
+    "name": "Matū",
+    "website": "https://matukaiwaka.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2357,
+    "name": "Polo Lounge",
+    "website": "https://dorchestercollection.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 2358,
+    "name": "Dan Tana's",
+    "website": "https://dantanasrestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2363,
+    "name": "Musso & Frank Grill",
+    "website": "https://mussoandfrank.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2364,
+    "name": "CUT by Wolfgang Puck",
+    "website": "https://wolfgangpuck.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar2.97_1440x485",
+        "url": "https://wolfgangpuck.com/wp-content/uploads/2023/06/hero-slider-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2365,
+    "name": "Craig's",
+    "website": "https://craigs.la",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://craigs.la/wp-content/uploads/2017/06/craigs-logo-solo-cream@2x.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://craigs.la/wp-content/uploads/2017/06/craigs-logo-solo@2x.png"
+      }
+    ]
+  },
+  {
+    "id": 2366,
+    "name": "Cecconi's",
+    "website": "https://cecconisweho.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2368,
+    "name": "Sunset Tower Hotel",
+    "website": "https://sunsettowerhotel.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/59026304197aea3c312133a4/t/5935be08d2b8571"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/59026304197aea3c312133a4/149669428"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_7608",
+        "url": "https://static1.squarespace.com/static/59026304197aea3c312133a4/t/5935be08d2b857"
+      }
+    ]
+  },
+  {
+    "id": 2369,
+    "name": "Chateau Marmont",
+    "website": "https://chateaumarmont.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2370,
+    "name": "STK Los Angeles",
+    "website": "https://stksteakhouse.com",
+    "ok": true,
+    "url": "https://stksteakhouse.com/wp-content/uploads/2024/10/Screenshot-2024-05-09-at-7.07.55-PM.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1950,
+      "h": 1290
+    },
+    "tried": []
+  },
+  {
+    "id": 2371,
+    "name": "Felix Trattoria",
+    "website": "https://felixla.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_39915",
+        "url": "https://imagedelivery.net/aPDHOWLzkdlEAMvg3YLQug/production-3co75fyxkh9a0st4xbfo"
+      },
+      {
+        "source": "srcset",
+        "reason": "not_image:text/html; charset=utf-8",
+        "url": "https://felixla.com/width=2560"
+      },
+      {
+        "source": "srcset",
+        "reason": "not_image:text/html; charset=utf-8",
+        "url": "https://felixla.com/width=1920"
+      },
+      {
+        "source": "srcset",
+        "reason": "not_image:text/html; charset=utf-8",
+        "url": "https://felixla.com/width=1440"
+      }
+    ]
+  },
+  {
+    "id": 2372,
+    "name": "Rustic Canyon",
+    "website": "https://rusticcanyonwinebar.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2374,
+    "name": "No Vacancy",
+    "website": "https://novacancyla.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2376,
+    "name": "Jumbo's Clown Room",
+    "website": "https://jumbos.com",
+    "ok": true,
+    "url": "https://jumbos.com/wp-content/uploads/2022/11/322C7175-1664-4EA8-B13E-C60D15E1B3BF-scaled.jpeg",
+    "source": "inline-img",
+    "dims": {
+      "w": 2560,
+      "h": 1707
+    },
+    "tried": []
+  },
+  {
+    "id": 2377,
+    "name": "Cliff's Edge",
+    "website": "https://cliffsedgecafe.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "too_small_39176",
+        "url": "https://www.osoyoosrailroad.com/images/wcmw_whitedp.png"
+      }
+    ]
+  },
+  {
+    "id": 2378,
+    "name": "Exchange LA",
+    "website": "https://exchangela.com",
+    "ok": true,
+    "url": "https://exchangela.com/wp-content/uploads/2022/04/Exchange-LA-Troy-Acevedo-4-1-1024x683.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1024,
+      "h": 683
+    },
+    "tried": []
+  },
+  {
+    "id": 2379,
+    "name": "Playhouse Hollywood",
+    "website": "https://playhousenightclub.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2380,
+    "name": "Elevate Lounge",
+    "website": "http://www.elevatelounge.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2381,
+    "name": "Crocker Club",
+    "website": "http://www.crockerclub.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 2382,
+    "name": "The Mayan",
+    "website": "http://www.clubmayan.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2383,
+    "name": "Conga Room at L.A. LIVE",
+    "website": "https://www.congaroom.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2384,
+    "name": "The Rooftop at The Standard",
+    "website": "https://www.standardhotels.com",
+    "ok": true,
+    "url": "https://duvx7h32ggrur.cloudfront.net/attachments/bca718a28103cf454439c46aa41963db833a319d/store/fill/1200/630/cf0cb970995c8633a44851b3b5e3c1535eb01a69f11cf0808ee5d9a29815/standard-hotel9624-4-.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 630
+    },
+    "tried": []
+  },
+  {
+    "id": 2385,
+    "name": "The Edison",
+    "website": "https://theneverlands.com/edison/",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 2386,
+    "name": "Library Bar",
+    "website": "https://www.librarybarla.com",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/294a66_19950e2f48834cdc935a2d2a1ae259c4%7Emv2_d_1920_1228_s_2.png/v1/fit/w_2500,h_1330,al_c/294a66_19950e2f48834cdc935a2d2a1ae259c4%7Emv2_d_1920_1228_s_2.png",
+    "source": "og:image",
+    "dims": {
+      "w": 1920,
+      "h": 1228
+    },
+    "tried": []
+  },
+  {
+    "id": 2387,
+    "name": "Skybar at Mondrian",
+    "website": "https://www.morganshotelgroup.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2388,
+    "name": "El Rey Theatre",
+    "website": "https://www.theelrey.com",
+    "ok": true,
+    "url": "https://aegwebprod.blob.core.windows.net/content/seo_images/660/B3D0VutD1wYvk0DNe6pJTKDnGhSycHefyXil2G8f.png",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 628
+    },
+    "tried": []
+  },
+  {
+    "id": 2389,
+    "name": "The Wiltern",
+    "website": "https://www.wiltern.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "srcset",
+        "reason": "too_small_20387",
+        "url": "https://assets.livenationcdn.com/uploads/c29525cf-3d32-4c2c-bb10-bf068976475a.pn"
+      }
+    ]
+  },
+  {
+    "id": 2390,
+    "name": "Laugh Factory",
+    "website": "https://www.laughfactory.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2391,
+    "name": "Hollywood Improv",
+    "website": "https://improv.com/hollywood",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_33613",
+        "url": "https://i.improv.com/wp-content/uploads/2018/05/10185956/location-thumb.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2392,
+    "name": "Yard House at L.A. LIVE",
+    "website": "https://www.yardhouse.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2394,
+    "name": "Connie and Ted's",
+    "website": "https://connieandteds.com",
+    "ok": true,
+    "url": "https://www.connieandteds.com/wp-content/uploads/2013/04/photo-1.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1700,
+      "h": 814
+    },
+    "tried": []
+  },
+  {
+    "id": 2395,
+    "name": "Jones Hollywood",
+    "website": "https://joneshollywood.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2396,
+    "name": "Madre",
+    "website": "https://madrerestaurants.com",
+    "ok": true,
+    "url": "https://madrerestaurants.com/wp-content/uploads/2026/04/Madre_Sat.4.18_WEBSITE-1024x683.png",
+    "source": "inline-img",
+    "dims": {
+      "w": 1024,
+      "h": 683
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://madrerestaurants.com/wp-content/uploads/2023/12/madre-logo-01.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_10869",
+        "url": "https://madrerestaurants.com/wp-content/uploads/2024/01/madre-divider-dark-01.pn"
+      }
+    ]
+  },
+  {
+    "id": 2397,
+    "name": "Petrossian West Hollywood",
+    "website": "https://petrossian.com",
+    "ok": true,
+    "url": "http://petrossian.com/cdn/shop/files/SMImage.jpg?v=1745268228&width=1200",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 682
+    },
+    "tried": []
+  },
+  {
+    "id": 2398,
+    "name": "Katana Robata & Sushi",
+    "website": "https://katanarobata.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_9158",
+        "url": "https://images.getbento.com/accounts/02c694e28ed4cbeb9648896a256b18e1/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 2399,
+    "name": "Breakfast by Salt's Cure",
+    "website": "https://saltscure.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5f0fb8d768af1000985e444b/b99cd89b-ce6f-4222-953d-e158a552e97e/220422_SaltsCure15425+1.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_15436",
+        "url": "http://static1.squarespace.com/static/5f0fb8d768af1000985e444b/t/5f50539b4b42a14"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_15436",
+        "url": "https://images.squarespace-cdn.com/content/v1/5f0fb8d768af1000985e444b/159909980"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_15436",
+        "url": "https://static1.squarespace.com/static/5f0fb8d768af1000985e444b/t/5f50539b4b42a1"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_15436",
+        "url": "https://images.squarespace-cdn.com/content/v1/5f0fb8d768af1000985e444b/159909980"
+      }
+    ]
+  },
+  {
+    "id": 2400,
+    "name": "The Troubadour",
+    "website": "https://troubadour.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2401,
+    "name": "Whisky A Go Go",
+    "website": "https://whiskyagogo.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2402,
+    "name": "Hollywood Bowl",
+    "website": "https://hollywoodbowl.com",
+    "ok": true,
+    "url": "https://ucarecdn.com/fc320d82-8ef1-4378-b8e5-49275c9ea599/webfireworks_1_RGB.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1920,
+      "h": 1277
+    },
+    "tried": []
+  },
+  {
+    "id": 2403,
+    "name": "Orpheum Theatre",
+    "website": "https://laorpheum.com",
+    "ok": true,
+    "url": "https://laorpheum.com/wp-content/uploads/2025/10/Hiromi1_Mitsuru-Nishimura.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://laorpheum.com/wp-content/uploads/2022/02/o-logo-649_wht.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_1080x1080",
+        "url": "https://laorpheum.com/wp-content/uploads/2025/12/lily2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2404,
+    "name": "Hotel Cafe",
+    "website": "https://hotelcafe.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2405,
+    "name": "The Echo",
+    "website": "https://theecho.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.theecho.com/_next/image?url=https%3A%2F%2Fs1.ticketm.net%2Fdam%2Fa%2"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.theecho.com/_next/image?url=https%3A%2F%2Fs1.ticketm.net%2Fdam%2Fa%2"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.theecho.com/_next/image?url=https%3A%2F%2Fs1.ticketm.net%2Fdam%2Fa%2"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.theecho.com/_next/image?url=https%3A%2F%2Fs1.ticketm.net%2Fdam%2Fa%2"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://www.theecho.com/_next/image?url=https%3A%2F%2Fs1.ticketm.net%2Fdam%2Fa%2"
+      }
+    ]
+  },
+  {
+    "id": 2406,
+    "name": "Harvelle's",
+    "website": "https://harvelles.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2407,
+    "name": "La Descarga",
+    "website": "https://ladescargala.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2408,
+    "name": "Seven Grand Los Angeles",
+    "website": "https://sevengrand.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2409,
+    "name": "Saddle Ranch Chop House",
+    "website": "https://srrestaurants.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2410,
+    "name": "Perch LA",
+    "website": "https://perchla.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5c4511380dbda3abea27229a/15a871c1-e075-4ce3-b551-708c93079c21/Perch+448+South+Hill+St+Phone+213-802-1770+an+elevated+resting+place+Rooftop+Restaurant+and+Bar",
+    "source": "inline-img",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 2412,
+    "name": "71 Above",
+    "website": "https://71above.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 2414,
+    "name": "Level 8 / Golden Hour",
+    "website": "https://level8la.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2416,
+    "name": "Bar Clara at Hotel Per La",
+    "website": "https://hotelperla.com",
+    "ok": true,
+    "url": "https://hotelperla.com/assets/2025/06/HotelPerLa_Dining_PerLOra_Gallery_Lifestyle_01-The-1500x948.webp",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_404",
+        "url": "https://www.hotelperla.com/content/uploads/2022/11/HotelPerLa_Dining_PerLOra_Gal"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "ar2.32_1280x552",
+        "url": "https://hotelperla.com/assets/2022/12/PerLa_Bar_Clara_7090_R1-1280x552.jpg"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "ar0.75_1921x2561",
+        "url": "https://hotelperla.com/assets/2022/11/HotelPerLa_Lobby_MirrorTunnel_Lifestyle_01"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_22000",
+        "url": "https://hotelperla.com/assets/2022/12/PerLa_Bar_Clara_7090_R1-scaled-350x200.web"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_10952",
+        "url": "https://hotelperla.com/assets/2022/10/Olive-Suite-II-scaled-350x200.webp"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_18362",
+        "url": "https://hotelperla.com/assets/2022/11/HotelPerLa_Dining_PerLOra_Bar_01-The-Ingal"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_22440",
+        "url": "https://hotelperla.com/assets/2022/11/Cafe_Ora-scaled-350x200.webp"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_23814",
+        "url": "https://hotelperla.com/assets/2022/10/PerLa_Velvet_PDR_15967-scaled-350x200.webp"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_6556",
+        "url": "https://hotelperla.com/assets/2022/10/city-flowers-scaled-350x200.webp"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_17752",
+        "url": "https://hotelperla.com/assets/2022/12/PerLa_Bar_Clara_7700-scaled-350x200.webp"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_21502",
+        "url": "https://hotelperla.com/assets/2022/10/PerLa_Monnette_Room_15891-1-scaled-350x200"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_22068",
+        "url": "https://hotelperla.com/assets/2025/06/Rooftop-pool-scaled-350x200.webp"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_11678",
+        "url": "https://hotelperla.com/assets/2023/10/RM1206BedroomRevised-scaled-350x200.webp"
+      }
+    ]
+  },
+  {
+    "id": 2422,
+    "name": "Tail O' the Pup",
+    "website": "https://tailothepuphotdogs.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2427,
+    "name": "Sassafras Saloon",
+    "website": "https://sassafrassaloon.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/5b36a4f5266c07c978769e35/t/5b36b7702b6a286ca25c49c7/1530312578121/sassafra_2.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 2428,
+    "name": "Duke's Malibu",
+    "website": "https://dukesmalibu.com",
+    "ok": true,
+    "url": "https://www.dukesmalibu.com/wp-content/uploads/2022/01/DM_Roadshow-9975-scaled-e1643225904348.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1875,
+      "h": 1145
+    },
+    "tried": []
+  },
+  {
+    "id": 2430,
+    "name": "Thirsty Crow",
+    "website": "https://thirstycrow.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2433,
+    "name": "Zebulon",
+    "website": "https://zebulon.la",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2435,
+    "name": "The Bellwether",
+    "website": "https://thebellwetherla.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "srcset",
+        "reason": "logo_url_pattern",
+        "url": "https://thebellwetherla.com/wp-content/uploads/sites/6/2018/01/ape-logo-minimal-"
+      }
+    ]
+  },
+  {
+    "id": 2438,
+    "name": "Animal",
+    "website": "https://animalrestaurant.com",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 2440,
+    "name": "Father's Office",
+    "website": "https://fathersoffice.com",
+    "ok": true,
+    "url": "https://fathersoffice.com/wp-content/uploads/2018/09/001-web-1024x664.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1024,
+      "h": 664
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.79_1977x2500",
+        "url": "https://fathersoffice.com/wp-content/uploads/2018/09/culver-city.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2441,
+    "name": "L&E Oyster Bar",
+    "website": "https://leoysterbar.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/68b39499dcf6053c8e04aa04/t/68b396ac50368c0d8af5f124/1756599980995/BlueGreenOyster.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 2443,
+    "name": "Salt & Straw Larchmont",
+    "website": "https://saltandstraw.com",
+    "ok": true,
+    "url": "http://saltandstraw.com/cdn/shop/files/Untitled_design_38_ea0394e7-6b8e-4180-93dc-c316cba1cef2.png?v=1616026349",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 628
+    },
+    "tried": []
+  },
+  {
+    "id": 2444,
+    "name": "Guisados Echo Park",
+    "website": "https://guisados.co",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2445,
+    "name": "Pink's Hot Dogs",
+    "website": "https://pinkshollywood.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2446,
+    "name": "Yamashiro Hollywood",
+    "website": "https://yamashirohollywood.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://yamashirohollywood.com/tokyo_admin/asset/uploads/465/on_page_element/yam"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "ar0.67_2000x2999",
+        "url": "https://yamashirohollywood.com/tokyo_admin/asset/uploads/465/photogallery/169135"
+      }
+    ]
+  },
+  {
+    "id": 2447,
+    "name": "Grand Central Market",
+    "website": "https://grandcentralmarket.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2448,
+    "name": "Eggslut Grand Central Market",
+    "website": "https://eggslut.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5329bda9e4b078ca80379bdb/1481150260339-6P10U142ZOJ6F9VBXVRW/The+Slut",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5329bda9e4b078ca80379bdb/t/533126f3e4b03dd"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5329bda9e4b078ca80379bdb/139573016"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_17490",
+        "url": "https://static1.squarespace.com/static/5329bda9e4b078ca80379bdb/t/533126f3e4b03d"
+      }
+    ]
+  },
+  {
+    "id": 2449,
+    "name": "Philippe the Original",
+    "website": "https://philippes.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_27146",
+        "url": "https://philippes.com/wp-content/uploads/2024/02/Mainpic2.jpg"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://philippes.com/wp-content/uploads/2024/02/cropped-philippes_icon.webp"
+      }
+    ]
+  },
+  {
+    "id": 2450,
+    "name": "Clifton's Republic",
+    "website": "https://cliftonsrepublic.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2451,
+    "name": "Pink Taco Beverly Hills",
+    "website": "https://pinktaco.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2452,
+    "name": "Genghis Cohen",
+    "website": "https://genghiscohen.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5ce4a1a8102826000101f7de/1584495338129-IH9WZVU907QZOMFMLJCB/chifood.gif",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_7326",
+        "url": "http://static1.squarespace.com/static/5ce4a1a8102826000101f7de/t/5e71680a0a88f90"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_7326",
+        "url": "https://images.squarespace-cdn.com/content/v1/5ce4a1a8102826000101f7de/158449050"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_7326",
+        "url": "https://static1.squarespace.com/static/5ce4a1a8102826000101f7de/t/5e71680a0a88f9"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_7680",
+        "url": "https://images.squarespace-cdn.com/content/v1/5ce4a1a8102826000101f7de/158449309"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_7680",
+        "url": "https://images.squarespace-cdn.com/content/v1/5ce4a1a8102826000101f7de/158449315"
+      }
+    ]
+  },
+  {
+    "id": 2454,
+    "name": "Canter's Deli",
+    "website": "https://cantersdeli.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 2456,
+    "name": "Guerrilla Tacos",
+    "website": "https://guerrillatacos.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2458,
+    "name": "Sushi Zo Hollywood",
+    "website": "https://sushizohollywood.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2459,
+    "name": "Zuma Beverly Hills",
+    "website": "https://zumarestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2463,
+    "name": "Ronan",
+    "website": "https://ronanla.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2465,
+    "name": "Little Dom's",
+    "website": "https://littledoms.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/542061f2e4b0462bd0f43b35/89eb5685-b45b-4baa-aac6-394057c52141/IMG_0398.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_8572",
+        "url": "http://static1.squarespace.com/static/542061f2e4b0462bd0f43b35/t/608c3c1ed4e4a30"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_8572",
+        "url": "https://images.squarespace-cdn.com/content/v1/542061f2e4b0462bd0f43b35/d8dd2bec-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_33094",
+        "url": "https://static1.squarespace.com/static/542061f2e4b0462bd0f43b35/t/608c3c1ed4e4a3"
+      }
+    ]
+  },
+  {
+    "id": 2466,
+    "name": "Son of a Gun",
+    "website": "https://sonofagunrestaurant.com",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 2467,
+    "name": "Kali",
+    "website": "https://kalirestaurant.com",
+    "ok": true,
+    "url": "https://static.spotapps.co/website_images/ab_websites/19446_website_v1/cover_new.jpg",
+    "source": "jsonld-image",
+    "dims": {
+      "w": 1920,
+      "h": 1278
+    },
+    "tried": []
+  },
+  {
+    "id": 2468,
+    "name": "The Tasting Kitchen",
+    "website": "https://thetastingkitchen.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2469,
+    "name": "Found Oyster",
+    "website": "https://foundoyster.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/5d0a7eb9f2ac7300011dced9/t/6668be9bd4fa0717483e77dd/1718140571763/FoundLogo_HiRes_SingleLine.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 2471,
+    "name": "Saffy's",
+    "website": "https://saffysla.com",
+    "ok": true,
+    "url": "https://www.saffysla.com/wp-content/uploads/2022/01/Shawarma2a.gif",
+    "source": "inline-img",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 2472,
+    "name": "Morihiro",
+    "website": "https://morihirola.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2474,
+    "name": "Matsuhisa Beverly Hills",
+    "website": "https://matsuhisabeverlyhills.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2475,
+    "name": "Randy's Donuts",
+    "website": "https://randysdonuts.com",
+    "ok": true,
+    "url": "https://randysdonuts.com/wp-content/uploads/2021/03/home-page_chocolate-raised-donuts-coffee.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar5.00_2560x512",
+        "url": "https://randysdonuts.com/wp-content/uploads/2026/04/2026-04-breakfast.jpg"
+      },
+      {
+        "source": "twitter:image",
+        "reason": "too_small_33091",
+        "url": "https://randysdonuts.com/wp-content/uploads/2026/04/2026-04-breakfast.jpg?w=640"
+      },
+      {
+        "source": "inline-img",
+        "reason": "dims_1024x205",
+        "url": "https://randysdonuts.com/wp-content/uploads/2026/04/2026-04-breakfast-1024x205.j"
+      }
+    ]
+  },
+  {
+    "id": 2476,
+    "name": "Tito's Tacos",
+    "website": "https://titostacos.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2478,
+    "name": "Malibu Seafood",
+    "website": "https://malibuseafood.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/6607060aeeac4032b86235a4/eb5616fb-3283-45eb-a39a-a4ea9b71938e/IMG_5374.jpeg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_24664",
+        "url": "http://static1.squarespace.com/static/6607060aeeac4032b86235a4/t/66070cae0f33572"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_24664",
+        "url": "https://images.squarespace-cdn.com/content/v1/6607060aeeac4032b86235a4/c3002f64-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_24664",
+        "url": "https://static1.squarespace.com/static/6607060aeeac4032b86235a4/t/66070cae0f3357"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_24664",
+        "url": "https://images.squarespace-cdn.com/content/v1/6607060aeeac4032b86235a4/c3002f64-"
+      }
+    ]
+  },
+  {
+    "id": 2479,
+    "name": "Harold & Belle's",
+    "website": "https://haroldandbellesrestaurant.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2480,
+    "name": "The Kettle",
+    "website": "https://thekettlerestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2481,
+    "name": "Raffi's Place",
+    "website": "https://raffisplace.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2482,
+    "name": "The Strand House",
+    "website": "https://thestrandhouse.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2484,
+    "name": "M Grill",
+    "website": "https://mgrill.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 2485,
+    "name": "Agnes Restaurant & Cheesery",
+    "website": "https://agnesrestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2486,
+    "name": "The Palm Beverly Hills",
+    "website": "https://thepalm.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_24253",
+        "url": "https://images.getbento.com/accounts/aeb53c8d11e6c8c1cb67dcce0b0356a8/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 2487,
+    "name": "Ago",
+    "website": "https://agorestaurant.com",
+    "ok": true,
+    "url": "https://neogenesisweb.com/wp-content/uploads/2020/04/ago-restaurant-schema-img.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1920,
+      "h": 1080
+    },
+    "tried": []
+  },
+  {
+    "id": 2488,
+    "name": "Tavern",
+    "website": "https://tavernla.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2489,
+    "name": "KazuNori Downtown LA",
+    "website": "https://kazunorisushi.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "too_small_11744",
+        "url": "http://www.handrollbar.com/wp-content/uploads/2019/10/TOHRB®2.png"
+      }
+    ]
+  },
+  {
+    "id": 2490,
+    "name": "The Oinkster",
+    "website": "https://theoinkster.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2491,
+    "name": "Milo & Olive",
+    "website": "https://miloandolive.com",
+    "ok": true,
+    "url": "https://www.miloandolive.com/wp-content/uploads/2022/12/Milo_Olive-1311.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 2032,
+      "h": 1095
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.95_977x1024",
+        "url": "https://www.miloandolive.com/wp-content/uploads/2022/12/Milo-Olive_Creamy-Polent"
+      }
+    ]
+  },
+  {
+    "id": 2492,
+    "name": "Mar'sel at Terranea Resort",
+    "website": "https://terranea.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 2493,
+    "name": "Roscoe's House of Chicken and Waffles",
+    "website": "https://roscoeschickenandwaffles.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/e9436777da8c7b5e8b0256b4388ef183/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 2494,
+    "name": "Bourbon Steak Los Angeles",
+    "website": "https://michaelmina.net",
+    "ok": true,
+    "url": "https://theminagroup.com/wp-content/uploads/2025/01/mina-og-homepage.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 630
+    },
+    "tried": []
+  },
+  {
+    "id": 2495,
+    "name": "The Bungalow Santa Monica",
+    "website": "https://thebungalow.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://thebungalow.com/wp-content/uploads/2025/07/SantaMonicaHero_LargeBlue-1.s"
+      }
+    ]
+  },
+  {
+    "id": 2496,
+    "name": "Jon & Vinny's Fairfax",
+    "website": "https://jonandvinnys.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_13820",
+        "url": "https://images.getbento.com/accounts/3133b7ad5a496f449a4a43d5cf6431fa/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 2498,
+    "name": "Salt's Cure",
+    "website": "https://saltscure.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5f0fb8d768af1000985e444b/b99cd89b-ce6f-4222-953d-e158a552e97e/220422_SaltsCure15425+1.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_15436",
+        "url": "http://static1.squarespace.com/static/5f0fb8d768af1000985e444b/t/5f50539b4b42a14"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_15436",
+        "url": "https://images.squarespace-cdn.com/content/v1/5f0fb8d768af1000985e444b/159909980"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_15436",
+        "url": "https://static1.squarespace.com/static/5f0fb8d768af1000985e444b/t/5f50539b4b42a1"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_15436",
+        "url": "https://images.squarespace-cdn.com/content/v1/5f0fb8d768af1000985e444b/159909980"
+      }
+    ]
+  },
+  {
+    "id": 2499,
+    "name": "Pez Cantina",
+    "website": "https://pezcantina.com",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/5430b6a0e4b014cb85d0d675/t/60738a3d957bbe38451a89bc/1763173460510/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5430b6a0e4b014cb85d0d675/t/60738a3d957bbe3"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5430b6a0e4b014cb85d0d675/2129cfd2-"
+      }
+    ]
+  },
+  {
+    "id": 2500,
+    "name": "Chego!",
+    "website": "https://eatatchego.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 2501,
+    "name": "Kogi Taqueria",
+    "website": "https://kogibbq.com",
+    "ok": true,
+    "url": "https://kogibbq.com/wp-content/uploads/2026/01/Recents-1-of-1-1.jpeg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1375,
+      "h": 868
+    },
+    "tried": []
+  },
+  {
+    "id": 2502,
+    "name": "Mashti Malone's Ice Cream",
+    "website": "https://mashtimalones.com",
+    "ok": true,
+    "url": "https://static.spotapps.co/website_images/ab_websites/611787_website_v1/food_back.jpg",
+    "source": "jsonld-image",
+    "dims": {
+      "w": 1382,
+      "h": 921
+    },
+    "tried": []
+  },
+  {
+    "id": 2503,
+    "name": "In-N-Out Burger Hollywood",
+    "website": "https://in-n-out.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 2504,
+    "name": "Joe's Pizza Hollywood",
+    "website": "https://joespizzala.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  }
+]

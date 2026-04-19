@@ -1,0 +1,1780 @@
+[
+  {
+    "id": 3002,
+    "name": "Course Restaurant",
+    "website": "https://courserestaurantaz.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://courserestaurantaz.com/wp-content/uploads/2023/07/COURSE_logo_dark-lava_"
+      }
+    ]
+  },
+  {
+    "id": 3004,
+    "name": "Indibar",
+    "website": "https://theindibar.com/",
+    "ok": true,
+    "url": "https://theindibar.com/wp-content/uploads/2025/04/banner3-1536x864.webp",
+    "source": "inline-img",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 3009,
+    "name": "FnB Restaurant",
+    "website": "http://www.fnbrestaurant.com/",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/551ae52ae4b07eac17467926/1427834561784-PFIUH6V8U35WEQJXEGBW/image-asset.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/551ae52ae4b07eac17467926/t/551ae5f3e4b0599"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/551ae52ae4b07eac17467926/142782616"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_25416",
+        "url": "https://static1.squarespace.com/static/551ae52ae4b07eac17467926/t/551ae5f3e4b059"
+      }
+    ]
+  },
+  {
+    "id": 3022,
+    "name": "Hai Noon",
+    "website": "https://hainoonaz.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.65_1656x2560",
+        "url": "https://img1.wsimg.com/isteam/ip/f6a64c28-b794-4a36-a642-22b4728d6e8d/HAINOON_WE"
+      }
+    ]
+  },
+  {
+    "id": 3033,
+    "name": "Cafe Lalibela Ethiopian Cuisine",
+    "website": "http://www.cafelalibela.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3034,
+    "name": "The Stone Tofu House",
+    "website": "https://thestonetofuaz.com/",
+    "ok": true,
+    "url": "https://thestonetofuaz.com/static/c9910756b52a854cb38695583bc0dde2/39611/seafood-sundubu-jungle.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 768,
+      "h": 512
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "fetch_err:fetch failed",
+        "url": "https://thestonetofu.com"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_29650",
+        "url": "https://thestonetofuaz.com/static/ec84964a2a51b4dd6b2a50cd121bb379/8c3d5/bibimba"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_41565",
+        "url": "https://thestonetofuaz.com/static/494c7e23488e61860c5c05fc01da76db/cb889/dorsol-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_40615",
+        "url": "https://thestonetofuaz.com/static/c39a5ca8c27937253f992443956df360/81e0f/mandu-s"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_44905",
+        "url": "https://thestonetofuaz.com/static/111496530b0c0fb9a5981cdaa9031b69/81e0f/dwenjan"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_35900",
+        "url": "https://thestonetofuaz.com/static/3a7af831a0e276953feb0117623f260a/36d07/dubu-sa"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_33640",
+        "url": "https://thestonetofuaz.com/static/8ec58dec5c2b8fba6a00fb4b8f77df1c/36d07/gopjang"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_28307",
+        "url": "https://thestonetofuaz.com/static/f8692e55446cbfbb3f15e8637181718e/beb2c/nengkon"
+      }
+    ]
+  },
+  {
+    "id": 3035,
+    "name": "Haji-Baba",
+    "website": "http://hajibabamiddleeasternfood.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar2.40_2643x1102",
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUBaYN6ZctSS-qhC-aw_Q2UrerDRf7shZ0O"
+      }
+    ]
+  },
+  {
+    "id": 3037,
+    "name": "Feringhee Modern Indian Cuisine",
+    "website": "http://feringhee.com/",
+    "ok": true,
+    "url": "https://feringhee.com/wp-content/uploads/2023/01/Brunch-1-1-scaled.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 2560,
+      "h": 1707
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://feringhee.com/wp-content/uploads/2022/06/Feringhee-Modern-Indian-Bistro-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://feringhee.com/wp-content/uploads/2021/10/Feringhee-Logo.png"
+      }
+    ]
+  },
+  {
+    "id": 3038,
+    "name": "Kai Restaurant",
+    "website": "http://www.wildhorsepassresort.com/kai",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 3047,
+    "name": "Warren's Supper Club",
+    "website": "http://www.warrenssupperclub.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/dae8ec0dbc05e3330b80c39efddfecea/media/imag"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_404",
+        "url": "https://www.warrenssupperclub.com/format&cs=origin"
+      }
+    ]
+  },
+  {
+    "id": 3048,
+    "name": "Glenrosa",
+    "website": "https://glenrosarestaurant.com/",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/67ec509efff41c6344380957/t/67ed9409bc29200f62a1b758/1743623177448/Glenrosa+-+Website+Elements.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 3049,
+    "name": "Anhelo",
+    "website": "https://www.anhelorestaurant.com/",
+    "ok": true,
+    "url": "https://static.wixstatic.com/media/3ad46a_5418422de1794f06a2431638f7fd22e9%7Emv2.png/v1/fit/w_2500,h_1330,al_c/3ad46a_5418422de1794f06a2431638f7fd22e9%7Emv2.png",
+    "source": "og:image",
+    "dims": {
+      "w": 2159,
+      "h": 1114
+    },
+    "tried": []
+  },
+  {
+    "id": 3050,
+    "name": "Uchi Scottsdale",
+    "website": "https://www.uchi.uchirestaurants.com/",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3051,
+    "name": "Frybread Lounge",
+    "website": "https://thefrybreadlounge.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3053,
+    "name": "Steadfast Diner",
+    "website": "https://www.steadfast-diner.com/",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3054,
+    "name": "Mastro's Steakhouse",
+    "website": "https://www.mastrosrestaurants.com/location/mastros-steakhouse-scottsdale",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 3055,
+    "name": "Arrowhead Grill",
+    "website": "https://arrowheadgrill.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 3062,
+    "name": "SugarJam Southern Kitchen",
+    "website": "https://sugarjam.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3063,
+    "name": "SumoMaya",
+    "website": "https://sumomayarestaurant.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3065,
+    "name": "Lon's at the Hermosa Inn",
+    "website": "https://www.hermosainn.com/lons",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 3079,
+    "name": "Harlem Coffee House",
+    "website": "https://www.instagram.com/drinkharlem",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_403",
+        "url": "https://scontent-hou1-1.cdninstagram.com/v/t51.82787-19/662625017_18062740958658"
+      }
+    ]
+  },
+  {
+    "id": 3088,
+    "name": "Sphinx Date Co. Palm & Pantry",
+    "website": "https://sphinxdateranch.com",
+    "ok": true,
+    "url": "https://sphinxdateranch.com/cdn/shop/articles/valentines-anniversary-gift-kc1.png?v=1771886585&width=533",
+    "source": "inline-img",
+    "dims": {
+      "w": 533,
+      "h": 355
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.77_1266x1634",
+        "url": "http://sphinxdateranch.com/cdn/shop/files/sdco-hj.png?v=1687629431"
+      },
+      {
+        "source": "og:image",
+        "reason": "ar0.77_1266x1634",
+        "url": "https://sphinxdateranch.com/cdn/shop/files/sdco-hj.png?v=1687629431"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_533x533",
+        "url": "https://sphinxdateranch.com/cdn/shop/files/oatman-farms-pancake-and-waffle-mix-w"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.70_533x763",
+        "url": "https://sphinxdateranch.com/cdn/shop/files/bill-johnsons-bbq-original.jpg?v=1767"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_34630",
+        "url": "https://sphinxdateranch.com/cdn/shop/files/Southwest_taffy_Cactus_Chews_cerreta_"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_41930",
+        "url": "https://sphinxdateranch.com/cdn/shop/files/simple-farm-caramels.jpg?v=1768600254"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.02_533x525",
+        "url": "https://sphinxdateranch.com/cdn/shop/files/wa-trays-2.jpg?v=1770223267&width=533"
+      },
+      {
+        "source": "inline-img",
+        "reason": "dims_533x300",
+        "url": "https://sphinxdateranch.com/cdn/shop/articles/baseball-field.jpg?v=1771885420&wi"
+      }
+    ]
+  },
+  {
+    "id": 3093,
+    "name": "Lupita's Hot Dogs",
+    "website": "https://lupitashotdogs.com/",
+    "ok": true,
+    "url": "https://lupitashotdogs.com/wp-content/uploads/2024/07/cropped-LOGOS-VARIADOS-1-2048x1026.png",
+    "source": "srcset",
+    "dims": {
+      "w": 2048,
+      "h": 1026
+    },
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_1000x1000",
+        "url": "https://lupitashotdogs-com.us.stackstaging.com/wp-content/uploads/2024/06/o-29.j"
+      }
+    ]
+  },
+  {
+    "id": 3106,
+    "name": "The Vig",
+    "website": "https://thevig.us",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/636014c999f070251a3bc161/c3a2f7b7-f2f5-4668-82da-50fc3757ff1a/The-Vig-Website-Hero.gif",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/636014c999f070251a3bc161/t/63618dcd1b90034"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/636014c999f070251a3bc161/343b35c6-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_33780",
+        "url": "https://static1.squarespace.com/static/636014c999f070251a3bc161/t/63618dcd1b9003"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/636014c999f070251a3bc161/343b35c6-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/636014c999f070251a3bc161/db0b438b-"
+      }
+    ]
+  },
+  {
+    "id": 3107,
+    "name": "Pedal Haus Brewery",
+    "website": "https://pedalhausbrewery.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5ea1ef1bd7ab4c454cb93fd8/1729793644231-QLBRZNV8UJSW1LEZQKU2/Screen+Shot+2024-10-24+at+1.13.38+PM.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5ea1ef1bd7ab4c454cb93fd8/t/69ac793df0e4163"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5ea1ef1bd7ab4c454cb93fd8/13feb3dc-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_7390",
+        "url": "https://static1.squarespace.com/static/5ea1ef1bd7ab4c454cb93fd8/t/69ac793df0e416"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5ea1ef1bd7ab4c454cb93fd8/13feb3dc-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_18890",
+        "url": "https://images.squarespace-cdn.com/content/v1/5ea1ef1bd7ab4c454cb93fd8/db1ca515-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_15834",
+        "url": "https://images.squarespace-cdn.com/content/v1/5ea1ef1bd7ab4c454cb93fd8/588d2569-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_15510",
+        "url": "https://images.squarespace-cdn.com/content/v1/5ea1ef1bd7ab4c454cb93fd8/a2d62832-"
+      }
+    ]
+  },
+  {
+    "id": 3113,
+    "name": "Taco Chelo",
+    "website": "https://tacochelo.com",
+    "ok": true,
+    "url": "https://tacochelo.com/wp-content/uploads/2024/07/2024-0524-Taco-Chelo-Tempe-698.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1200,
+      "h": 800
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar0.87_850x974",
+        "url": "https://tacochelo.com/wp-content/uploads/2024/07/Taco-home-image.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.81_874x1080",
+        "url": "https://tacochelo.com/wp-content/uploads/2024/01/Base-2x.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3117,
+    "name": "Cocina Chiwas",
+    "website": "https://cocinachiwas.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3118,
+    "name": "Sottise",
+    "website": "http://www.sottisephx.com/",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/61a6574aa26b58039986a1a2/27fa8887-de1e-49cd-9a34-6ebbf9d26524/01202022_SOTTISE2-118.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_7482",
+        "url": "http://static1.squarespace.com/static/61a6574aa26b58039986a1a2/t/61a7ffe51cbcb16"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/61a6574aa26b58039986a1a2/ea118c75-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/61a6574aa26b58039986a1a2/ea118c75-"
+      }
+    ]
+  },
+  {
+    "id": 3130,
+    "name": "Organ Stop Pizza",
+    "website": "https://organstoppizza.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar2.40_1600x668",
+        "url": "https://organstoppizza.com/wp-content/uploads/2022/12/Transparent-Background-PNG"
+      },
+      {
+        "source": "twitter:image",
+        "reason": "ar2.40_1600x668",
+        "url": "http://organstoppizza.com/wp-content/uploads/2022/12/Transparent-Background-PNG."
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.77_600x783",
+        "url": "https://organstoppizza.com/wp-content/uploads/2023/09/SEPT-DEALS.jpg"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://organstoppizza.com/wp-content/uploads/2023/06/United-Food-Bank-2020-Logo"
+      }
+    ]
+  },
+  {
+    "id": 3132,
+    "name": "O.H.S.O. Brewery — Gilbert",
+    "website": "https://ohsobrewery.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 3133,
+    "name": "Joe's Farm Grill",
+    "website": "https://joesfarmgrill.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_12474",
+        "url": "http://static1.squarespace.com/static/59b4525d197aea58a8035dab/t/59b45a2246c3c49"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_12474",
+        "url": "https://images.squarespace-cdn.com/content/v1/59b4525d197aea58a8035dab/150499177"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_24194",
+        "url": "https://static1.squarespace.com/static/59b4525d197aea58a8035dab/t/59b45a2246c3c4"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_30888",
+        "url": "https://images.squarespace-cdn.com/content/v1/59b4525d197aea58a8035dab/150748891"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_13740",
+        "url": "https://images.squarespace-cdn.com/content/v1/59b4525d197aea58a8035dab/150777756"
+      }
+    ]
+  },
+  {
+    "id": 3134,
+    "name": "Talavera at Four Seasons Scottsdale",
+    "website": "https://fourseasons.com/scottsdale",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://www.fourseasons.com/etc/designs/fourseasons/img/logos/global/FS_Header_L"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_403",
+        "url": "https://www.fourseasons.com/alt/img-opt/~75.701.75,0000-195,4375-2850,0000-1603,"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_403",
+        "url": "https://www.fourseasons.com/alt/img-opt/~75.701.0,0000-110,4739-1918,0000-1078,8"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_403",
+        "url": "https://www.fourseasons.com/alt/img-opt/~75.701.348,4871-828,2285-2408,6262-1354"
+      },
+      {
+        "source": "inline-img",
+        "reason": "http_403",
+        "url": "https://www.fourseasons.com/alt/img-opt/~70.1530.0,0000-250,0000-1000,0000-1250,"
+      }
+    ]
+  },
+  {
+    "id": 3135,
+    "name": "The Mission",
+    "website": "https://themissionaz.com",
+    "ok": true,
+    "url": "https://static1.squarespace.com/static/6877ee70062b0902449e104a/t/68a4dd155c2d6241e36e95fe/1774465354519/",
+    "source": "jsonld-image",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/6877ee70062b0902449e104a/t/68a4dd155c2d624"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/6877ee70062b0902449e104a/3a926acc-"
+      }
+    ]
+  },
+  {
+    "id": 3138,
+    "name": "Hash Kitchen",
+    "website": "https://hashkitchen.com",
+    "ok": true,
+    "url": "https://hashkitchen.com/wp-content/uploads/2024/06/Good-Times-Roll.png.webp",
+    "source": "srcset",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar2.81_2500x891",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/04/HK-Brunch-Me-With-Your-Best-S"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/09/Hash-Kitchen-Main-Logo_Black."
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_522x522",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/05/Group-28.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_522x522",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/05/Group-27.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_522x522",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/05/Group-25.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_522x522",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/05/Group-18.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_522x522",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/05/Group-24.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_522x522",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/06/Good-Times-Roll.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_522x522",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/05/Group-49.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_522x522",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/06/Bomb.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_127",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/03/blue-bar-border.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "dims_3646x34",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/03/gold-bar-border.png"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar4.79_2560x535",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/03/Brunch-Me-With-Your-Best-Shot"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.46_649x1400",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/03/Heart-Hover-Animation.png"
+      },
+      {
+        "source": "srcset",
+        "reason": "too_small_45868",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/05/Group-28.png.webp"
+      },
+      {
+        "source": "srcset",
+        "reason": "too_small_47520",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/05/Group-27.png.webp"
+      },
+      {
+        "source": "srcset",
+        "reason": "too_small_46000",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/05/Group-25.png.webp"
+      },
+      {
+        "source": "srcset",
+        "reason": "too_small_47082",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/05/Group-18.png.webp"
+      },
+      {
+        "source": "srcset",
+        "reason": "too_small_49564",
+        "url": "https://hashkitchen.com/wp-content/uploads/2024/05/Group-24.png.webp"
+      }
+    ]
+  },
+  {
+    "id": 3139,
+    "name": "Craft 64",
+    "website": "https://craft64.net",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3140,
+    "name": "Fat Ox",
+    "website": "https://fatoxrestaurant.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3141,
+    "name": "Maple & Ash Scottsdale",
+    "website": "https://mapleandash.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3142,
+    "name": "Francine",
+    "website": "https://francinerestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "too_small_24370",
+        "url": "https://francinerestaurant.com/wp-content/uploads/2023/03/2-CAM03727-Large-1-300"
+      }
+    ]
+  },
+  {
+    "id": 3143,
+    "name": "Ocean 44",
+    "website": "https://ocean44.com",
+    "ok": true,
+    "url": "https://www.ocean44.com/wp-content/uploads/2025/06/JMH_3608.webp",
+    "source": "og:image",
+    "dims": {
+      "w": 1921,
+      "h": 1225
+    },
+    "tried": []
+  },
+  {
+    "id": 3144,
+    "name": "Citizen Public House",
+    "website": "https://citizenpublichouse.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/63068bb8b0c6865d44da9baa/t/66c51e19718c0a12b66b7956/1724194329900/hh+%287%29.png?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 3145,
+    "name": "Marcellino Ristorante",
+    "website": "https://marcellinoristorante.com",
+    "ok": true,
+    "url": "https://i0.wp.com/marcellinoristorante.com/wp-content/uploads/2021/01/Marcellino-Ristorante_digital-emblem.jpg?fit=781%2C781&amp;ssl=1",
+    "source": "inline-img",
+    "dims": {
+      "w": 781,
+      "h": 650
+    },
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "ar2.71_1023x377",
+        "url": "https://i0.wp.com/marcellinoristorante.com/wp-content/uploads/2021/01/23-years-C"
+      }
+    ]
+  },
+  {
+    "id": 3146,
+    "name": "Nobu Scottsdale",
+    "website": "https://noburestaurants.com/scottsdale",
+    "ok": true,
+    "url": "https://noburestaurants.com/assets/card-media-files/Yellowtail_Sashimi_w_Jalapeno1-Large.webp",
+    "source": "inline-img",
+    "dims": {
+      "w": 2501,
+      "h": 1668
+    },
+    "tried": []
+  },
+  {
+    "id": 3147,
+    "name": "Toca Madera Scottsdale",
+    "website": "https://tocamaderascottsdale.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3149,
+    "name": "Culinary Dropout Scottsdale",
+    "website": "https://culinarydropout.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3150,
+    "name": "Olive & Ivy",
+    "website": "https://oliveandivyrestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3152,
+    "name": "Bottled Blonde",
+    "website": "https://bottledblonde.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_3308",
+        "url": "https://64.media.tumblr.com/avatar_8e85a51760fc_128.pnj"
+      }
+    ]
+  },
+  {
+    "id": 3154,
+    "name": "Hula's Modern Tiki",
+    "website": "https://hulasmoderntiki.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5da0fe10e664f167b7ab6f5f/1576604229001-IKJ7SGFX7U0O1JRUS31Q/Hula%27s+Website+-+LET%27S+LUAU+HOME+2-04.png",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5da0fe10e664f167b7ab6f5f/t/5da0fe97e7deee2"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5da0fe10e664f167b7ab6f5f/157083202"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_33312",
+        "url": "https://images.squarespace-cdn.com/content/v1/5da0fe10e664f167b7ab6f5f/157083643"
+      }
+    ]
+  },
+  {
+    "id": 3155,
+    "name": "Dierks Bentley's Whiskey Row",
+    "website": "https://whiskeyrow.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3156,
+    "name": "Maya Day & Night Club",
+    "website": "https://mayascottsdale.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3158,
+    "name": "Wasted Grain",
+    "website": "https://wastedgrain.com",
+    "ok": true,
+    "url": "https://wastedgrain.com/wp-content/uploads/2023/06/wasted-grain-old-town-scottsdale.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 630
+    },
+    "tried": []
+  },
+  {
+    "id": 3159,
+    "name": "Rusty Spur Saloon",
+    "website": "https://rustyspursaloon.com",
+    "ok": true,
+    "url": "https://cdn.shopify.com/s/files/1/0579/0328/4379/files/unnamed-2.png?v=1746030687",
+    "source": "og:image",
+    "dims": {
+      "w": 854,
+      "h": 480
+    },
+    "tried": []
+  },
+  {
+    "id": 3160,
+    "name": "ZuZu Lounge at Hotel Valley Ho",
+    "website": "https://hotelvalleyho.com",
+    "ok": true,
+    "url": "https://hotelvalleyho.com/wp-content/uploads/2025/09/Hotel-Valley-Ho-Aerial-1-2.jpg",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 3162,
+    "name": "WET Deck at W Scottsdale",
+    "website": "https://marriott.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3163,
+    "name": "Bourbon and Bones Chophouse & Bar",
+    "website": "https://bourbonandbonesaz.com",
+    "ok": true,
+    "url": "https://www.bourbonandbones.com/wp-content/uploads/2022/06/bourbon-and-bones-chophouse-and-bar-feature-1.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 630
+    },
+    "tried": []
+  },
+  {
+    "id": 3165,
+    "name": "Atlas Bistro",
+    "website": "https://atlasbistro.net",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3167,
+    "name": "Matt's Big Breakfast",
+    "website": "https://mattsbigbreakfast.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3168,
+    "name": "Durant's",
+    "website": "https://durantsfinefoods.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3169,
+    "name": "El Chorro",
+    "website": "https://elchorro.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3170,
+    "name": "T. Cook's at Royal Palms Resort",
+    "website": "https://royalpalmshotel.com",
+    "ok": true,
+    "url": "http://royalpalmshotel.com/media_files/images/Andrew_Jade_-_ALL_PHOTOS-0509.max-1900x1900.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1900,
+      "h": 1266
+    },
+    "tried": []
+  },
+  {
+    "id": 3171,
+    "name": "Different Pointe of View",
+    "website": "https://differentpointeofview.com",
+    "ok": true,
+    "url": "https://tapatiocliffshilton.com/wp-content/uploads/PHXTCPR_DPOVPatio4-1024x683.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1024,
+      "h": 683
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "dims_1517x188",
+        "url": "https://tapatiocliffshilton.com/wp-content/uploads/image001-3-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3172,
+    "name": "Tarbell's",
+    "website": "https://tarbells.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/615a1a5905cebb7f586a3d34/4b1b7d0d-3917-42f8-8712-6f60f6ccbf4b/1Z3A5352.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/615a1a5905cebb7f586a3d34/t/61e311abb0a6b32"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/615a1a5905cebb7f586a3d34/765fa06b-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/615a1a5905cebb7f586a3d34/765fa06b-"
+      }
+    ]
+  },
+  {
+    "id": 3173,
+    "name": "The Arrogant Butcher",
+    "website": "https://thearrogantbutcher.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3174,
+    "name": "The Henry",
+    "website": "https://thehenryrestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3175,
+    "name": "Doughbird",
+    "website": "https://doughbird.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3176,
+    "name": "Little Cleo's Seafood Legend",
+    "website": "https://littlecleos.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 3177,
+    "name": "Postino Arcadia",
+    "website": "https://postinowinecafe.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_404",
+        "url": "https://www.postino.com/card.jpg"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/wguhd2dxl74h/4qNQxQhRiFNab5vXA8nhMn/642f1bc60457823"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/wguhd2dxl74h/5voQjRcpQXwf2EGyC3hJvJ/39a6ec517283ef9"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/wguhd2dxl74h/4JA9cYdE1ebg60OvZWKx79/d332f86588f1e2c"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/wguhd2dxl74h/4w1kX4RqB5foeQOBZtL4MC/756bcc57442c6e3"
+      }
+    ]
+  },
+  {
+    "id": 3178,
+    "name": "Windsor",
+    "website": "https://windsor-az.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3179,
+    "name": "Federal Pizza",
+    "website": "https://federalpizza.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/6o18zh0mkt7f/5yJGbdpxHXDA5NVExijoCZ/024b55fd44e7cd4"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/6o18zh0mkt7f/iLCKeOcF5OoG3Ze5Xr6Ti/430c65abdef31ce6"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/6o18zh0mkt7f/1lWc0SsKAyUQ8frwzEcB5c/7c264a5dd7735fc"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/6o18zh0mkt7f/6UdFwZf9vIhBrWrAWzh9qX/5cec33473340507"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/6o18zh0mkt7f/5rZsFvsywY8h5UrOC6n8Zj/e70de1f454ea503"
+      }
+    ]
+  },
+  {
+    "id": 3180,
+    "name": "Binkley's Restaurant",
+    "website": "https://binkleysrestaurant.com",
+    "ok": false,
+    "reason": "fetch_The operation was aborted due to timeout"
+  },
+  {
+    "id": 3181,
+    "name": "Nook Kitchen",
+    "website": "https://nookkitchen.com",
+    "ok": true,
+    "url": "https://nookkitchen.com/wp-content/uploads/2023/04/arcadia-restaurant-1.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 630
+    },
+    "tried": []
+  },
+  {
+    "id": 3182,
+    "name": "The Gladly",
+    "website": "https://thegladly.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/62d0aac3df649314665624d6/f1ef289e-7c02-496b-b538-564b1f5bb634/2026_01_20_TheGladly-34.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/62d0aac3df649314665624d6/t/62d0cf0543cb761"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/62d0aac3df649314665624d6/8c80095f-"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_10550",
+        "url": "https://static1.squarespace.com/static/62d0aac3df649314665624d6/t/62d0cf0543cb76"
+      },
+      {
+        "source": "inline-img",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/62d0aac3df649314665624d6/8c80095f-"
+      }
+    ]
+  },
+  {
+    "id": 3183,
+    "name": "Pomo Pizzeria Napoletana Scottsdale",
+    "website": "https://pomopizzeria.com",
+    "ok": true,
+    "url": "https://octane.cdn.ing/api/v1/images/transform?url=https://cdn.ing/assets/files/record/150544/0r80bhefu8gmrvf35vjz8hh3a0bk&amp;w=1200&amp;h=630&amp;q=85&amp;f=webp&amp;fit=cover&amp;apiKey=os-f7b40e60-381a-49a3-8d30-93cd50e7a6c6",
+    "source": "og:image",
+    "dims": {
+      "w": 1201,
+      "h": 631
+    },
+    "tried": []
+  },
+  {
+    "id": 3184,
+    "name": "Zinc Bistro at Kierland Commons",
+    "website": "https://zincbistroaz.com",
+    "ok": true,
+    "url": "https://www.zincbistroaz.com/wp-content/uploads/2022/09/word-image-73-3.png",
+    "source": "inline-img",
+    "dims": {
+      "w": 760,
+      "h": 398
+    },
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "too_small_35754",
+        "url": "https://www.zincbistroaz.com/wp-content/uploads/2022/09/word-image-67-1-610x343."
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_33289",
+        "url": "https://www.zincbistroaz.com/wp-content/uploads/2022/09/word-image-67-2.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 3185,
+    "name": "Bandera Phoenix",
+    "website": "https://banderarestaurant.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3186,
+    "name": "Eddie V's Prime Seafood Scottsdale",
+    "website": "https://eddiev.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://media.eddiev.com/images/site/responsive/global/ev-logo.svg"
+      }
+    ]
+  },
+  {
+    "id": 3187,
+    "name": "Cibo Urban Pizzeria",
+    "website": "https://cibophoenix.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar1.00_1125x1125",
+        "url": "https://static.wixstatic.com/media/588b27_1d069559e1f74372854950a73277d175%7Emv2"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "ar1.02_869x854",
+        "url": "https://static.wixstatic.com/media/588b27_bbcebefa7daf4b10bc176d0125b96f61~mv2.j"
+      }
+    ]
+  },
+  {
+    "id": 3188,
+    "name": "La Grande Orange Grocery",
+    "website": "https://lagrandeorangegrocery.com",
+    "ok": true,
+    "url": "https://lagrandeorangegrocery.com/wp-content/uploads/2024/08/IMG_3502-1.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1200,
+      "h": 800
+    },
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "ar0.67_600x900",
+        "url": "https://lagrandeorangegrocery.com/wp-content/uploads/2024/08/20180516-DSC05386.j"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.67_600x900",
+        "url": "https://lagrandeorangegrocery.com/wp-content/uploads/2024/08/20180516-DSC05438.j"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.67_800x1200",
+        "url": "https://lagrandeorangegrocery.com/wp-content/uploads/2024/08/Pizza-Avocado-1_443"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.67_600x900",
+        "url": "https://lagrandeorangegrocery.com/wp-content/uploads/2024/08/20180516-DSC05017-1"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.67_600x900",
+        "url": "https://lagrandeorangegrocery.com/wp-content/uploads/2024/08/20180516-DSC05097-1"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.61_2737x4494",
+        "url": "https://lagrandeorangegrocery.com/wp-content/uploads/2024/08/Grocery-Menu-Legal-"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.61_1700x2800",
+        "url": "https://lagrandeorangegrocery.com/wp-content/uploads/2024/08/Pizzeria-Menu-Legal"
+      },
+      {
+        "source": "inline-img",
+        "reason": "too_small_12913",
+        "url": "https://lagrandeorangegrocery.com/wp-content/uploads/2020/04/cake-shop-large-cop"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.77_1700x2200",
+        "url": "https://lagrandeorangegrocery.com/wp-content/uploads/2026/04/cakeshop_menu_1.31."
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar0.77_1700x2200",
+        "url": "https://lagrandeorangegrocery.com/wp-content/uploads/2026/04/cakeshop_menu_1.31."
+      }
+    ]
+  },
+  {
+    "id": 3189,
+    "name": "Grassroots Kitchen & Tap",
+    "website": "https://grassrootskitchenandtap.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3190,
+    "name": "Short Leash Hot Dogs",
+    "website": "https://shortleashhotdogs.com",
+    "ok": false,
+    "reason": "fetch_http_404"
+  },
+  {
+    "id": 3191,
+    "name": "Lo-Lo's Chicken and Waffles",
+    "website": "https://loloschickenandwaffles.com",
+    "ok": true,
+    "url": "https://octane.cdn.ing/api/v1/images/transform?url=https://cdn.ing/assets/files/record/223205/mzh94961rcnog65yuqph0aglj0kr&amp;w=1200&amp;h=630&amp;q=85&amp;f=webp&amp;fit=cover&amp;apiKey=os-24e69194-e2b0-415e-b467-fd595121bb41",
+    "source": "og:image",
+    "dims": {
+      "w": 1201,
+      "h": 631
+    },
+    "tried": []
+  },
+  {
+    "id": 3192,
+    "name": "Richardson's",
+    "website": "https://richardsonsnm.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5b750988ee175999e952e742/1598729112307-FR4APQBD55M83KSP0JR0/thumbnail+%281%29.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 3193,
+    "name": "Rokerij",
+    "website": "https://rokerijphoenix.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3195,
+    "name": "Phoenix City Grille",
+    "website": "https://phoenixcitygrille.com",
+    "ok": true,
+    "url": "https://phoenixcitygrille.com/wp-content/uploads/2026/04/top-home-screen-banner.jpg",
+    "source": "jsonld-image",
+    "dims": {
+      "w": 1920,
+      "h": 900
+    },
+    "tried": [
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_10101",
+        "url": "https://phoenixcitygrille.com/wp-content/uploads/2025/12/BANNER-400-e16649188333"
+      }
+    ]
+  },
+  {
+    "id": 3196,
+    "name": "Cooperstown",
+    "website": "https://alicecooperstown.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": []
+  },
+  {
+    "id": 3197,
+    "name": "The Dhaba Indian Cuisine",
+    "website": "https://thedhabaaz.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3198,
+    "name": "Bobby-Q BBQ",
+    "website": "https://bobbyqrestaurant.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3199,
+    "name": "The Farm Kitchen at South Mountain",
+    "website": "https://thefarmatsouthmountain.com",
+    "ok": true,
+    "url": "https://thefarmatsouthmountain.com/wp-content/uploads/39421_image.png",
+    "source": "jsonld-image",
+    "dims": {
+      "w": 2160,
+      "h": 1080
+    },
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_19257",
+        "url": "https://thefarmatsouthmountain.com/wp-content/uploads/2013/06/TheFarmType.jpg"
+      },
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://thefarmatsouthmountain.com/wp-content/uploads/new-farm-logo-500.png"
+      }
+    ]
+  },
+  {
+    "id": 3200,
+    "name": "Macayo's Mexican Kitchen",
+    "website": "https://macayo.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "jsonld-image",
+        "reason": "ar0.76_1720x2266",
+        "url": "https://static.wixstatic.com/media/6774ba_02cd6500dc204f77ae51161cc2cafa2a~mv2.p"
+      }
+    ]
+  },
+  {
+    "id": 3201,
+    "name": "House of Tricks",
+    "website": "https://houseoftricks.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3202,
+    "name": "Hearth '61 at Mountain Shadows",
+    "website": "https://mountainshadows.com",
+    "ok": true,
+    "url": "https://mountainshadows.com/wp-content/uploads/2024/10/mountain-shadows-resort-hearth-patio-mummy-mountain.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1920,
+      "h": 1150
+    },
+    "tried": []
+  },
+  {
+    "id": 3203,
+    "name": "Prado at Omni Scottsdale Montelucia",
+    "website": "https://omnihotels.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 3204,
+    "name": "Mowry & Cotton at The Phoenician",
+    "website": "https://thephoenician.com",
+    "ok": true,
+    "url": "https://cdn.marriottnetwork.com/uploads/sites/23/2025/12/TLC_PHXPC_canyonvilla1_masterbdrm1_0543-1024x614.jpg",
+    "source": "inline-img",
+    "dims": {
+      "w": 1024,
+      "h": 614
+    },
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "ar1.00_630x630",
+        "url": "https://cdn.marriottnetwork.com/uploads/sites/23/2021/01/the-phoenician-luxury-c"
+      }
+    ]
+  },
+  {
+    "id": 3205,
+    "name": "Pane Bianco",
+    "website": "https://pizzeriabianco.com",
+    "ok": true,
+    "url": "http://static1.squarespace.com/static/6099bdee28fc4e72bd84675b/t/609aeaec551b8f3fdfb7a695/1621870418792/pizzeria-bianco.jpg?format=1500w",
+    "source": "og:image",
+    "dims": null,
+    "tried": []
+  },
+  {
+    "id": 3206,
+    "name": "Beckett's Table",
+    "website": "https://beckettstable.com",
+    "ok": true,
+    "url": "https://beckettstable.com/wp-content/uploads/2015/05/Homepage-header-final-2.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 2000,
+      "h": 1333
+    },
+    "tried": []
+  },
+  {
+    "id": 3207,
+    "name": "Southern Rail",
+    "website": "https://southernrailaz.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3208,
+    "name": "Cafe Monarch",
+    "website": "https://cafemonarch.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 3209,
+    "name": "Social Tap Scottsdale",
+    "website": "https://socialtapscottsdale.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "ar1.00_1019x1019",
+        "url": "https://ampunbang.info/images/loginsitus/pttogel.webp"
+      }
+    ]
+  },
+  {
+    "id": 3214,
+    "name": "Joyride Taco House",
+    "website": "https://joyridetacos.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_26750",
+        "url": "https://images.getbento.com/accounts/c0d781f6709e27a3e89290fa29bb6493/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 3215,
+    "name": "Original ChopShop",
+    "website": "https://originalchopshop.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "jsonld-image",
+        "reason": "too_small_3146",
+        "url": "https://secure.gravatar.com/avatar/d09fc92d3ce773911a232865d778a89f592618fd5937f"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.04_1500x1442",
+        "url": "https://originalchopshop.com/wp-content/uploads/2024/06/IMG_3378-scaled-e1725736"
+      },
+      {
+        "source": "inline-img",
+        "reason": "ar1.01_1466x1451",
+        "url": "https://originalchopshop.com/wp-content/uploads/2024/09/IMG_9843-scaled-e1725736"
+      }
+    ]
+  },
+  {
+    "id": 3216,
+    "name": "Cartel Coffee Lab Tempe",
+    "website": "https://cartelcoffeelab.com",
+    "ok": true,
+    "url": "https://cartelroasting.co/wp-content/uploads/2025/08/chemex-action-shot.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1096,
+      "h": 738
+    },
+    "tried": []
+  },
+  {
+    "id": 3217,
+    "name": "The Americano",
+    "website": "https://theamericanorestaurant.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "not_image:application/octet-stream",
+        "url": "https://cdn.ing/assets/i/r/287110/8azfezhngey6jp98o4le3rq5zll1/americano-og.webp"
+      }
+    ]
+  },
+  {
+    "id": 3218,
+    "name": "Sushi Roku Scottsdale",
+    "website": "https://sushiroku.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.getbento.com/accounts/5d159a18cdd6eba3e818c57ff660ff5d/media/imag"
+      }
+    ]
+  },
+  {
+    "id": 3219,
+    "name": "True Food Kitchen Biltmore",
+    "website": "https://truefoodkitchen.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_17801",
+        "url": "https://www.truefoodkitchen.com/wp-content/uploads/2025/11/TrueFoodLogoSquare.pn"
+      }
+    ]
+  },
+  {
+    "id": 3220,
+    "name": "Houston's Scottsdale",
+    "website": "https://hillstone.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3221,
+    "name": "Hillstone Phoenix",
+    "website": "https://hillstone.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3222,
+    "name": "Fleming's Prime Steakhouse Scottsdale",
+    "website": "https://flemingssteakhouse.com",
+    "ok": true,
+    "url": "https://flemingssteakhouse.b-cdn.net/images/share.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1200,
+      "h": 630
+    },
+    "tried": []
+  },
+  {
+    "id": 3223,
+    "name": "Morning Squeeze",
+    "website": "https://morningsqueeze.com",
+    "ok": true,
+    "url": "https://morningsqueeze.com/wp-content/uploads/2022/06/MS_Door-Sign-2-1-scaled.jpg",
+    "source": "og:image",
+    "dims": {
+      "w": 1624,
+      "h": 1080
+    },
+    "tried": []
+  },
+  {
+    "id": 3224,
+    "name": "Ghost Ranch: Modern Southwest Cuisine",
+    "website": "https://ghostranchaz.com",
+    "ok": false,
+    "reason": "fetch_http_403"
+  },
+  {
+    "id": 3225,
+    "name": "Texaz Grill",
+    "website": "https://texazgrill.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "srcset",
+        "reason": "ar2.42_3598x1484",
+        "url": "https://i0.wp.com/texazgrill.com/wp-content/uploads/2023/11/cropped-TEXASFINAL.p"
+      }
+    ]
+  },
+  {
+    "id": 3226,
+    "name": "Los Sombreros Cafe & Cantina",
+    "website": "https://lossombros.com",
+    "ok": false,
+    "reason": "fetch_fetch failed"
+  },
+  {
+    "id": 3227,
+    "name": "Hanny's",
+    "website": "https://hannys.com",
+    "ok": true,
+    "url": "https://images.squarespace-cdn.com/content/v1/5907807fcd0f6810012ce27c/1711400982999-LR4GQW5M8QWHOY53B2XC/MakC_SoCal_Eclipser+Hoody_SP24_029_large.jpg",
+    "source": "inline-img",
+    "dims": null,
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern",
+        "url": "http://static1.squarespace.com/static/5907807fcd0f6810012ce27c/t/590a561e9f7456e"
+      },
+      {
+        "source": "jsonld-image",
+        "reason": "logo_url_pattern",
+        "url": "https://images.squarespace-cdn.com/content/v1/5907807fcd0f6810012ce27c/149384963"
+      }
+    ]
+  },
+  {
+    "id": 3229,
+    "name": "Churn",
+    "website": "https://churnaz.com",
+    "ok": false,
+    "reason": "no_candidates_passed",
+    "tried": [
+      {
+        "source": "inline-img",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/6o18zh0mkt7f/7GT7n3PqOUQjd2FNtLp33U/63d26304cafdc50"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/6o18zh0mkt7f/3QDyCuHoB2miBrycHzV1iP/a853c0b9a3aa8f5"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/6o18zh0mkt7f/4Vj8R5u26h965nvcyrqkzr/354c832547288c0"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/6o18zh0mkt7f/1cOG44HliYhRpXiAIwdXRJ/2136a5562c2a69a"
+      },
+      {
+        "source": "srcset",
+        "reason": "http_400",
+        "url": "https://images.ctfassets.net/6o18zh0mkt7f/24U3rRdGmIzPHWZAHcZF2r/ca04f6d0ae36ae1"
+      }
+    ]
+  }
+]
