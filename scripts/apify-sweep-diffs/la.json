@@ -4,9 +4,9 @@
     "apify_total": 235,
     "apify_matched": 235,
     "apify_unmatched": 0,
-    "diffs_count": 147,
+    "diffs_count": 163,
     "fields_changed": {
-      "photoUrl": 31,
+      "photoUrl": 62,
       "phone": 0,
       "website": 0,
       "instagram": 0,
@@ -14,10 +14,9 @@
       "address": 0
     },
     "photo_sources": {
-      "google-owner": 17,
-      "google-curated": 10,
-      "og:image": 4,
-      "none_passed_test": 2
+      "google-curated": 48,
+      "google-owner": 14,
+      "none_passed_test": 11
     },
     "conflicts": {
       "phone": 2,
@@ -25,7 +24,7 @@
       "instagram": 78,
       "address": 20
     },
-    "flags": 9
+    "flags": 11
   },
   "diffs": [
     {
@@ -38,6 +37,38 @@
           "apify": "@bestiadtla"
         }
       },
+      "flags": []
+    },
+    {
+      "id": 2002,
+      "name": "Bavel",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH5_RQDUaZP2iweT7XivSy0TUEo-Ay8SpZcVxlm1B7tvsx8kjMuuzVuqityoKDM4rBPFQN0b_lR64kLuHNkMpo3_vAApwed12hxhNgWbp-2Z3u8--1rF8j_LgFTXHesDMnbHNdRZU4I6JzA=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "http_404"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_798x1080_ar0.74"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
+      },
+      "conflicts": {},
       "flags": []
     },
     {
@@ -65,22 +96,6 @@
       "flags": []
     },
     {
-      "id": 2008,
-      "name": "Sqirl",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNb7alCyooqfeFJcApHuY-Txz-QwxhCFeVws67w=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "too_small_34012"
-          }
-        ]
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 2010,
       "name": "Night+Market Song",
       "changes": {},
@@ -95,7 +110,16 @@
     {
       "id": 2011,
       "name": "Guelaguetza",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPvSeunvS-uSPAP80z6KC90JvvDRxfOnXPN1jf8=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_890x1022_ar0.87"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@gaborestaurant",
@@ -131,7 +155,16 @@
     {
       "id": 2014,
       "name": "Musso & Frank Grill",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGuI6s5_F9G1KZm7vlCf9-TaxUt5H5BqI0SrLTMFdPbqHQkdDw39bKrdJN96bODwfHQ6agBmWy9oJCYWAOB_mIhYHNjjMDO59ZbZtB6mzkvFX1w3G_M7ptEYK7UJf9D4W7z23bo9w=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@mussoandfrank",
@@ -144,12 +177,16 @@
       "id": 2018,
       "name": "Sushi Ginza Onodera",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEimLUWnfZCRALAU79Q2tCYxZp5FCZXc6xyUeghscD73bIclvC1wAWAGz5wMIaJrhag_dfPcLwIzETMy2VJFHWKZyznFJS17PbVNTY1bRu6qhhxIcHq2K1Z9uur2_o-GPLHGUIHBBLxaMo5=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEm-1BGYtKiO8kn2n5uOdNuyEr2r-3QJ6jpsGMURDZpLKv12ACYURVIqjUhftC6dqGSpvcGVT9TMGeWrv0y5oppJZndOykihx2r0Q28mB2Jflp4dGwKC_DKumq3JTCRsCaqk6MaHBvv0ww0=w1920-h1080-k-no",
         "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "google-curated",
-            "reason": "near_square_1139x1080"
+            "reason": "too_tall_or_square_1139x1080_ar1.05"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -159,6 +196,22 @@
           "apify": "@ensushiwestla"
         }
       },
+      "flags": []
+    },
+    {
+      "id": 2020,
+      "name": "Park's BBQ",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPL79FuGucAXpBtePDmosyDaYf78JUu5ujQEJSY=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
       "flags": []
     },
     {
@@ -210,6 +263,26 @@
       "flags": []
     },
     {
+      "id": 2026,
+      "name": "Osteria Mozza",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNz0ZQDQFhwwzCp2_nFqqkgoTn9ij1EyhwMvILP=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "too_small_22275"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_819x1080_ar0.76"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
       "id": 2029,
       "name": "Yangban Society",
       "changes": {},
@@ -238,15 +311,35 @@
       "flags": []
     },
     {
-      "id": 2033,
-      "name": "Anajak Thai Cuisine",
+      "id": 2034,
+      "name": "Oy Bar",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOwBD47vEMpStAqQzI5Vn9wk-eFulGuz6tn7D8=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
           {
             "source": "google-owner",
-            "reason": "near_square_1079x1080"
+            "reason": "too_tall_or_square_526x601_ar0.88"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -254,15 +347,23 @@
       "flags": []
     },
     {
-      "id": 2039,
-      "name": "Loreto",
+      "id": 2037,
+      "name": "Goldburger Los Feliz",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNUvvUZZFtJ4ViXS3N25JXSaqliSM3FMgrHL5tO=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFEUPz3o4NbudTUuVojCE3spRsX-pvVHFWQZGkvO021Pc_MhQyeIANISN5ZNnPXZy05dx_qJZRDGNK2t8kLkw57eV63S29uSyTV1QR8MAEHHWI2sRu07YUHfTV-kP4CmyKETc-4gnJdYkGm=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
-            "source": "og:image",
-            "reason": "too_small_39432"
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -270,15 +371,83 @@
       "flags": []
     },
     {
-      "id": 2042,
-      "name": "Carlitos Gardel Argentine Steakhouse",
+      "id": 2040,
+      "name": "Taqueria Frontera",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipMtAIEGh2YGwzoYbPVXcKFUv6SG4bRU8UNOGhTi=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEEgqUEy7vWbLaYzjwitvygzFhZt_3SNF_9LjhVgKxjBem51zqq-1yc1BR6kN_zQ3FljG_Dqkot7r_fF2KyCI8rznAVYvHQ0MQ42yst_Auk7eRuI63-kDxaHTdT2LxYn1uWbGWkJ3jTDimf=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 2041,
+      "name": "Jones Hollywood",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGiSqqndJ4KOJ0MH5vyuFZW0FyEUJFvmSLq7yvb8REZBWsm7DTyQWfmdtQqMd6tx7MEMY03964ESzRCSkvrO-9zu9R780B0FVX_P3B_s55aFfcEm9wZU_DeEhL6Dsub62tDZzqIiWQwXvly=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_1088x1080_ar1.01"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 2044,
+      "name": "Pijja Palace",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
             "source": "og:image",
-            "reason": "too_small_37049"
+            "reason": "too_small_24874"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_1020x1080_ar0.94"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_1107x1080_ar1.02"
           }
         ]
       },
@@ -288,7 +457,20 @@
     {
       "id": 2047,
       "name": "Seong Buk Dong",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHPsQkuWTU7EoJPSHrCZviyQ8ep2Re9lFp8bEm8a9KDYwgJn2XwTnCzRh5phy5CHBzOsoi_g-R7NPRBrgZSOMZ8AwwwcJpbFqBuCdq6YRkj5V_8Yilcy-r0cp_on-5G8fGpZZKtGsbkJPIT=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
+      },
       "conflicts": {
         "website": {
           "current": "http://www.seongbukdongla.com/",
@@ -298,15 +480,19 @@
       "flags": []
     },
     {
-      "id": 2048,
-      "name": "Apollonia's Pizzeria",
+      "id": 2050,
+      "name": "Sonoratown",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipM90dE_9QL210tyJLx8K0HNkom7i39Emk7jpz0f=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGUVLyXXQZJ9V_tVkJJ6ZMPxrH0q9ZHGlFjZN1UNITWoEIfkspXJ3zWKXFO7OClxb4jkFI60rZ95mNKJO3Ht-rD5au8tDArEDOMfUKH91clsorWKsYFZhNbwalGYwzgs6nXsdob=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
-            "source": "og:image",
-            "reason": "too_small_45551"
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
           }
         ]
       },
@@ -326,6 +512,50 @@
       "flags": []
     },
     {
+      "id": 2053,
+      "name": "Mori Nozomi",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGY3MnwzgOAFCHEm_3jbaO_n9t3GBQ8SjOEdpJ1-jufW3CVQvtRvtjCGD1Oc6UTwCBAMjKePQ6iW4dnLCfunjrMOxOlLK_xeyJwbRWmsoA0StHEFOqCLL9hBvG7_-AwoFiBsGc=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_780x1080_ar0.72"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 2055,
+      "name": "Maydan Market",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEcd0zbstN9S52ciMJafmIFo1DzA-SMHNgWUmV6KUPdmb2EkHAPVRwkyB0B5Gl189ZX9oUBwtC9z4g1iKk8P_cbqGqHdFLxWUCeVTMENQX5exZmWr5JcunwlwcaQABEzYTJVyDRkV-4mgv5=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "http_404"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
       "id": 2057,
       "name": "Komal Molino",
       "changes": {},
@@ -338,11 +568,41 @@
       "flags": []
     },
     {
-      "id": 2059,
-      "name": "Pasjoli",
+      "id": 2058,
+      "name": "Tev's & Family Kitchen",
       "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5c480493da02bc7fba537b1f/t/684f11d31ef4b52dec09c0f1/1750012371106/anajak+x+pasjoli-6515.jpg?format=1500w",
-        "_photoSource": "og:image"
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF-6Ov3leFMx7lMNkk64ySUi4febWU9OvIeXZbwAaH4GrlWzLHoJxhECESXEc9fS9ManXi0XFP_ngGJhmLULKbFGvCcHM7BW_b4am5Jj6J-KInJptPkK7p5-jhhJJa4qySQrTA=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_980x1080_ar0.91"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
       },
       "conflicts": {},
       "flags": []
@@ -366,6 +626,22 @@
       ]
     },
     {
+      "id": 2063,
+      "name": "Two Hommes",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_1947x2560_ar0.76"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
       "id": 2064,
       "name": "Vin Folk",
       "changes": {},
@@ -384,6 +660,46 @@
       ]
     },
     {
+      "id": 2066,
+      "name": "San & Wolves",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_1440x1800_ar0.80"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 2070,
+      "name": "Liu's Cafe Westwood",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGHQHMvOIGRD-rCAY8S-Z9mzT4NbaESlkrftxinDK9LNnt7epxDzIvcIvUWWgVsVzJU_bSTJoEBaMldZLGpt25gabnx-bV_IcuU2_BuqWhSlTYZJbXQ-zajLSBwo-a9DMjUg5Qy_eL0Myqc=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
       "id": 2071,
       "name": "Very Thai",
       "changes": {},
@@ -397,6 +713,30 @@
           "apify": "10250 Santa Monica Blvd, Los Angeles, CA 90067"
         }
       },
+      "flags": []
+    },
+    {
+      "id": 2074,
+      "name": "The Night We Met",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFfjlo40MlO1F_8N2blFIgpw7tAVfGInqs5ZmrMznl8vAfV4Z9F21V3d952o4IPMMQvPPmlGbPsdXTlTJCEwen4uZxQncfoc2WREkKDqr_XoKRNG_dNwrTGoS79zDAKGjZVpd8dGKQPRrI=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_732x1080_ar0.68"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_822x1080_ar0.76"
+          }
+        ]
+      },
+      "conflicts": {},
       "flags": []
     },
     {
@@ -426,7 +766,40 @@
     {
       "id": 2081,
       "name": "Le Draq",
-      "changes": {},
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_640x640_ar1.00"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_1185x1080_ar1.10"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_813x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_813x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@ledraq",
@@ -454,9 +827,42 @@
       ]
     },
     {
+      "id": 2085,
+      "name": "A.O.C.",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGbo8NofxY8bTm5OAS4aT-aTcXEKFOH4K9Aif3ICzlACMXBQnubSMSB7kMJwwhengnZRkUwMr7h-hnFd4mfyPFQ37qq8cQ-AguyOw6_ndDCXGENFIuzui3c5D99Ddx-lhWZll0Gfw=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "logo_url_pattern"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
       "id": 2086,
       "name": "Antico Nuovo",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFCJN6VWXaojO6kpAedJX6dQX393NnFhdh30z_1hLewqVdq3evlsQtL4QTWJah-vuLeePex9evaKi2luBYwIfGSgdbRlV0zxVWax14Nj_GlBsnZCUhFDYtsByOUqeAGRFzzJNtc=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_small_28669"
+          }
+        ]
+      },
       "conflicts": {
         "website": {
           "current": "https://anticonuovo.la/",
@@ -468,7 +874,36 @@
     {
       "id": 2089,
       "name": "Camphor",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHtLIiUkwQXi_h0xCt_paX_swkfUdFw7qKuTQydjN9D2UUyfCdS2a0u4LlXkzp5TpLuzSDG7vWF0PB3AnzxFaiXBFpqCKoyv_35K3_XbgHwq2_Kk4aMkW8_ry809Myvd2Tn_usscOV7JOWg=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "too_small_1"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          }
+        ]
+      },
       "conflicts": {
         "address": {
           "current": "923 E 3rd St #109, Los Angeles, CA 90013",
@@ -480,7 +915,16 @@
     {
       "id": 2090,
       "name": "Damian",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNd8n3aA6an2gL0EnacCSbb9rJpcYBzDpEi3hMZ=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "website": {
           "current": "https://www.damianlosangeles.com/",
@@ -490,9 +934,42 @@
       "flags": []
     },
     {
+      "id": 2093,
+      "name": "Courage Bagels",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG13_rs4eT2IXPS-PP0Lg-KazEDsO9Ak73dqwR3e9_YD6V1RQquqXSb_YS8ydTCnVtofDX-qCunGxrecwWj4gQy1lEFfH2r2he1FTedQCFSEmDRD9NqLBLKIQu0K3W3Ae3z7J9GrxrTbLI=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
       "id": 2094,
       "name": "Baroo",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGHRiGQjwDmOidHmAC6mBobEv2y-ZlVLaH6WP-afR5DwxJ4KxfpT71E82XWNuyr2KWL3-y2bf8uIcIc2fpXh7ThkeMcKtQQAcShwLNZNZkF4r5BYIMgcq2PNLjtLUo_M_ZoAOl6=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
+      },
       "conflicts": {
         "website": {
           "current": "https://www.barooarts.com/",
@@ -504,7 +981,28 @@
     {
       "id": 2097,
       "name": "Bar Etoile",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHpTCLqBrdM3lwbnEls27t-3jBFCKlCLZxGvuS601r1coGerBbLR41ZNpxCnInMwwMd7AuMvxhEjd8n_OEDhiU5TjA3IXjnfAY1BbWeMRaDz1PxCH1WQSWlu0iUnsDkJPYvH219kG3jjWo=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "website": {
           "current": "https://www.baretoilela.com/",
@@ -578,22 +1076,6 @@
       "flags": []
     },
     {
-      "id": 2110,
-      "name": "Moo's Craft Barbecue",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNZCocwA0BBEtT6YTd_Ccfnblf2DI_VQPA_ZLJJ=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "too_small_47686"
-          }
-        ]
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 2112,
       "name": "Sichuan Impression",
       "changes": {},
@@ -612,7 +1094,24 @@
     {
       "id": 2114,
       "name": "Chifa",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEUyHyaSn62lysE4_5MU5M2YOqGGCUlHYJEiIgT7Uy5P0tahBfh8n44WD-lgcbTcMmArbqdnkvboqlPVG88SGU9fHfIz5sZeQHbzAAyb-sfcYmruvQNE3Bx6rQtr6uTHHhQJC64wkqctCo=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "website": {
           "current": "https://www.chifala.com/",
@@ -752,25 +1251,19 @@
       "flags": []
     },
     {
-      "id": 2129,
-      "name": "Mélisse",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5dd6fcec102f557c3d9486e1/t/5e6ee29ec3035453bffc0d29/1584325280873/Logos-06.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 2134,
       "name": "Kato Restaurant",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNosE_TAmbv92zWGCeTDwQxoUp2WSGdempK-W_2=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFqsvzobl9SGVunbTz6-r6flJmw_vCp_XZmilBCnkEbpp-0lVZ33UfnWTXHsM_p9DaNprqNPVY7k8xj-pq1I7dAAi4kUXmpQ1Ki6nQLmuUT5jREQ_3U5kXSVURfbOU3YrEetJI=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "og:image",
             "reason": "too_small_48648"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -797,7 +1290,36 @@
     {
       "id": 2137,
       "name": "Cavaretta's Italian Deli",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFMtDIQb21DUTKvACsA-OxgKZyWHJXTfQ6LIgK8Z-bxszUaGMA-RRLiETWTkP-2OQ1PQQG6Uf3OeN6WG4Jo4U4P-dLTJvmYo5CZMmniRPERPHTamSjR7Xr3z8TJDZ_PJhRFVClp=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_961x807_ar1.19"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_813x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@cavarettasdeli",
@@ -839,25 +1361,18 @@
       "flags": []
     },
     {
-      "id": 2140,
-      "name": "Cupid's Hot Dogs",
+      "id": 2144,
+      "name": "Sadaf Restaurant",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOzGQKHaT7EkPY77dV4Ohffc5xSjpH6WJSLdPo8=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE5PeEbiJnLkwYhNp2UqunNPZXPvYVeFJI051GHWeDRSbVRWZhOEYc9pAAraBgkMmTN4GqZOO2tL5ZbO4xuBO1zjt0McGqxPiJ9IdRPU6ZKf2iUzoubhEv79N1IrDP2iZiwleim=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "too_small_39255"
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 2144,
-      "name": "Sadaf Restaurant",
-      "changes": {},
       "conflicts": {
         "instagram": {
           "current": "@sadafencino",
@@ -879,9 +1394,54 @@
       "flags": []
     },
     {
+      "id": 2146,
+      "name": "Sri Siam Cafe",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOUyECTJB4006vRw2WWVdeVEmdwPhahvODQjJh7=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
       "id": 2147,
       "name": "Yala Coffee",
-      "changes": {},
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_811x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@yala.coffee",
@@ -893,7 +1453,24 @@
     {
       "id": 2148,
       "name": "Avi Cue",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipONzTpYH8YTs-jyxoZR67-B-Fe5ZCZLAfLeMCQ7=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_1165x1080_ar1.08"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_panoramic_1920x640_ar3.00"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@avicue",
@@ -930,16 +1507,44 @@
       "id": 2151,
       "name": "Yu Chun",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG7cxgdR5k1P2e_s9MxOJ1sAl_tb-wXWb0YgIivvKUWGbwWEzi_ZxxaZfpVfo-J5J_0L0UShQQ7KnIdBlvZbUZ4Z7d4X5B4U5DMh_RUKZAXKDccNh29ZJCjz5XmUIkN_8vIOHBS3Q=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEk07u9Q2_N1t1Pj7u5DppbogHFf6CTHJsB-px6DMndjUfm_nD4RjwhfuP-VTjsSF4iE3G8_5OZzCxAJbZOvvvIUYO_S8YBenHPxE6-hhC4U-HKoxvnsYOg7WXMPGAs7o_vih7mjBZlG84=w1920-h1080-k-no",
         "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "too_small_1000x289"
+            "reason": "dims_too_small_1000x289"
           },
           {
             "source": "google-owner",
-            "reason": "near_square_1000x1000"
+            "reason": "too_tall_or_square_1000x1000_ar1.00"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 2156,
+      "name": "Soot Bull Jip",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEYx_YNQytwU9uSnIvkom4CdLc8vpodjnDLyb8roOoJDII4xdcAb8JeRkcbJApurzvSRhlCoQHalcxRHli7Zc_1Rl4OuLv2ZcJSq1V9DUz_Y8cTiSEItX-WsonHj_WOYlfdo3tS=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_1210x1080_ar1.12"
           }
         ]
       },
@@ -959,6 +1564,34 @@
       "flags": []
     },
     {
+      "id": 2158,
+      "name": "MDK Noodles (Myung Dong Kyoja)",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHK4M-e7LLDOpQc_cKqp2KLsKlCyuM8DTdiY2PQ-TX2JLkrUTbePjOt3QMU2o1HIHEUSnP83RzaGR4n8tooDFFWwXMWXSFt1UJiGArmoqic8zYLQyTP6bjxkpvxQUd2SNRdDW1Y8DmDYZc=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_722x1080_ar0.67"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
       "id": 2159,
       "name": "Sun Nong Dan",
       "changes": {},
@@ -968,6 +1601,42 @@
           "apify": "@sunnongdan"
         }
       },
+      "flags": []
+    },
+    {
+      "id": 2161,
+      "name": "Han Bat Shul Lung Tang",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHohJNNRe-cIQqySQVZnTS3ObMRkyw9pbMUGqPOOQQlCDHoXnQYZWbZmGWfAMUgeUdFed4U8S7ib4d82cjpQjHVQkTLOVRxxB_WMhF01F3JDufYWXRxHYwh1QDnEHlAsMUwMU_V04oP-bTR=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 2163,
+      "name": "Jinsol Gukbap",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEBsS1r1HDzRQpF_hshtXOKrMjo_Nn-EzTg5_t6qTidqTQdcaXpDXZcBbSYHGSm_eZvba1WRxhZu0lYR0QZz8Vh40Tn5x3_tE0ATIgKH4oxMe5fD4rG4khOVv3M-_cz_ZqOZpU=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_512x512_ar1.00"
+          }
+        ]
+      },
+      "conflicts": {},
       "flags": []
     },
     {
@@ -983,15 +1652,47 @@
       "flags": []
     },
     {
-      "id": 2166,
-      "name": "Lee Ga",
+      "id": 2165,
+      "name": "Lasung House",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFZbp-14aHQPs3gk02UYoYX6fVb6Rhau7Kgo0eZqQfbtpfCqH_i1yaMLyi4X_uBWA7YPR0C5_61nGo4w69bD8RJxpNICTvKNZdhSIK2zJR2k-NG1Fe3OcMC3wflyqelMQSihL1vzA=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH5MUEv14xyf5pNCjfA8xEjLi5yY_SJfnzmujYya2d7tFhfSIbl2p5x4ETcIk0n9nzokNWr5FHLgKngjKMnVzRi3n5u194xriBSlzm-kIs8H_iO-iBRFpKhF0LVS1oE3ivAu6orkg=w1920-h1080-k-no",
         "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
-            "source": "google-owner",
-            "reason": "near_square_1117x1080"
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 2169,
+      "name": "Aunt Yvette's Kitchen",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFr7uvNLwOJlTvkyrTrSNyfl3fmh5_kkYxA5xqhiKce8Yu_bVUKjUnSkOP2LmpXwLNj5NtDahh56vhxml1aQZIVms38gyK7e_040WCwSZvQwfm77OFLCYxaMOc9rXBP_TL5HpxcbNifTHU8=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_813x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_954x1080_ar0.88"
           }
         ]
       },
@@ -1001,7 +1702,24 @@
     {
       "id": 2171,
       "name": "Belle's Delicatessen and Bar",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFFIE2sdu9_rgG-jBWbdk1mA4CYxEpWJUsfo20nb6koqkszH9i4x3z6WVfU8BbjZXjQpqyEAHF4wSoSe4DJj8meP1WOlu7gp-Oaxmy-9xhoKKGzl3gBGv-IB3UcHtpRVj_93VjSMPnBdwfC=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_813x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@belles.delicatessen",
@@ -1014,20 +1732,20 @@
       "id": 2174,
       "name": "Sapp Coffee Shop",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFYIWyBr1Eu0pIpD8xwoNadzp1VbWcLx1UnQ754Ugs3I7XoiNyfTBmoGFQNZ20SSZwRMTtqK9iCbqJBSMuxd5yv5CqQrMI1KxEecmp-Q1SnXtfl2a_wpGdHd0p8h_qYDv_tpDzXKFHln6rJ=w1920-h1080-k-no",
-        "_photoSource": "google-curated",
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPfUoQcDbfBbpAD4HRYylJJSjwxEtJswd_6Eu28=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "near_square_1000x1000"
+            "reason": "too_tall_or_square_1000x1000_ar1.00"
           },
           {
             "source": "google-owner",
-            "reason": "near_square_678x672"
+            "reason": "too_tall_or_square_678x672_ar1.01"
           },
           {
             "source": "google-owner",
-            "reason": "near_square_500x500"
+            "reason": "too_tall_or_square_500x500_ar1.00"
           }
         ]
       },
@@ -1068,19 +1786,80 @@
       ]
     },
     {
-      "id": 2178,
-      "name": "Haemaru Sellutang",
+      "id": 2179,
+      "name": "Cafe 2001",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEix4_mcvuuSoQAEj1z-KOux6Ryq_GRx5KZow7O1rsDu8jPmPHVknCxa2maF-f3tt3ZxUXY8AqxaBoAsILeiBrDQpzwf6pyM0YxePVJ4UInCGdchoFrSLAPzlTtsMm4McrOxhwf=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEqzjQeXDfFOPzb9loDpWoaWUhcib2A30jwF0ELE6OcweHHk1sclDHHoQtACAfOVkm8mDB-Itv_OnEvy2MUiFJv2WcC641io9hJpyt1GO_TjQz37Akt17ly4XkSG_kwGCcXzFilkUy5KBQo=w1920-h1080-k-no",
         "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "near_square_1080x1080"
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           },
           {
             "source": "google-owner",
-            "reason": "near_square_1004x1080"
+            "reason": "too_tall_or_square_961x1033_ar0.93"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_721x1080_ar0.67"
+          }
+        ]
+      },
+      "conflicts": {
+        "address": {
+          "current": "2001 E 7th St, Los Angeles, CA 90021",
+          "apify": "2001 E 7th St North Entrance, Los Angeles, CA 90021"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 2182,
+      "name": "Dan Modern Chinese",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG-FyHxU84z-kEBclyN_Kl3JCCkfUHbfKdxv54XRjZiwxbiAYGvxDV-_xdO81TqdjECYyx1LIZI_tZG9_NLHwsuJFBenTlKsROF8hYPPpAzS3GMqBZwmuiefMXTH_HZWHPG4xc6=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "logo_url_pattern"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
           }
         ]
       },
@@ -1088,15 +1867,23 @@
       "flags": []
     },
     {
-      "id": 2179,
-      "name": "Cafe 2001",
-      "changes": {},
-      "conflicts": {
-        "address": {
-          "current": "2001 E 7th St, Los Angeles, CA 90021",
-          "apify": "2001 E 7th St North Entrance, Los Angeles, CA 90021"
-        }
+      "id": 2186,
+      "name": "Joy on York",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHjYnF99pZEhcvKyEmconDkMNN7pXVmjvEPs7PeqJLCnNyRyBFFIoRWIGh4856dS19fc3a7W4XOQ_kHzKeUZKKHhHP8H_T0YUo4l36LqvveT2kLlz-Bc7ZhtoezfKYb7n9IpL8xiNFcq6sb=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
       },
+      "conflicts": {},
       "flags": []
     },
     {
@@ -1117,22 +1904,6 @@
           "apify": "8500 Beverly Blvd 111 level 1, Los Angeles, CA 90048"
         }
       },
-      "flags": []
-    },
-    {
-      "id": 2197,
-      "name": "Sun Ha Jang",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPeF4uHpG0erJn-Q-DL9Vq084Mk44bVggLrbTZv=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "google-owner",
-            "reason": "too_small_444x250"
-          }
-        ]
-      },
-      "conflicts": {},
       "flags": []
     },
     {
@@ -1190,7 +1961,20 @@
     {
       "id": 2205,
       "name": "Pigya",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH07lNFYu1B1Q7znN8oBuWlgGVK_q38kYdtBZdlX2OZnfSxbsi3LHOKhsvopr9coZUS98rNq2okRlYLHhxZQmky5CfQPj5QdSwmzm5DySDMJ_y7d7XSnnIf-G0oA66Wyg_HDbWIBw=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_726x1080_ar0.67"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@pigya.la",
@@ -1203,12 +1987,44 @@
       "id": 2208,
       "name": "Ixlb Dimsum Eats",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipN5xnZGJw9Dnc8n2hQHX9G70knUnoNJBZ6bpO7l=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
           {
             "source": "google-owner",
-            "reason": "near_square_1080x1080"
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_793x1080_ar0.73"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_500x1080_ar0.46"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -1219,12 +2035,20 @@
       "id": 2223,
       "name": "Holy Basil DTLA",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOeF2-3BUwS7VuCF2EbcwJ7gKBW_EttYHpGAd1N=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOUnX1goQ73mB-i9KIh5YZJia8WtnR7KVVXnR_M=w1920-h1080-k-no",
         "_photoSource": "google-owner",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "too_small_375x500"
+            "reason": "dims_too_small_375x500"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -1271,7 +2095,16 @@
     {
       "id": 2228,
       "name": "Mae Malai Thai House of Noodles",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipN4UpZSG8x3-K2cVz_NepPitAj1g_hlA_aBb62a=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "address": {
           "current": "5445 Hollywood Blvd, Los Angeles, CA 90027",
@@ -1290,6 +2123,26 @@
           "apify": "@orientalgardendenton"
         }
       },
+      "flags": []
+    },
+    {
+      "id": 2233,
+      "name": "Uoichiba Handroll Bar",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAExX5UHFROnZSXlndorEpVhptYC6UCNgMtQw5w-BVT_zquHn0jpwK4LG62fFEH45C64TeIXTXJzpoVoEmTI3XsxVaUL5w4L1ofqpU1uuDWlFo7r4_jf92cenDCR_1gdNInUcprsRwG_MDs=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
+      },
+      "conflicts": {},
       "flags": []
     },
     {
@@ -1313,18 +2166,20 @@
     {
       "id": 2239,
       "name": "Dulan's Soul Food Kitchen",
-      "changes": {
-        "photoUrl": "",
-        "_photoSource": "none_passed_test",
-        "_photoTriedAll": [
-          {
-            "source": "og:image",
-            "reason": "too_small_35741"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {},
-      "flags": []
+      "flags": [
+        {
+          "type": "no_photo_passed_test",
+          "message": "All photo candidates failed quality test",
+          "tried": [
+            {
+              "source": "og:image",
+              "reason": "too_small_35741"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 2240,
@@ -1348,16 +2203,6 @@
           "apify": "@botanicafood"
         }
       },
-      "flags": []
-    },
-    {
-      "id": 2243,
-      "name": "Yang's Kitchen",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5c42b91c697a9873ebf844b8/t/5d6be608e4f17a000198992a/1567352333129/social-img.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
       "flags": []
     },
     {
@@ -1385,18 +2230,33 @@
       "flags": []
     },
     {
-      "id": 2248,
-      "name": "Quarter Sheets Pizza Club",
+      "id": 2246,
+      "name": "Bar Sawa",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHxW7iQiUpe-aM7vRvHRFiNRjDtwd4wT6GwzRS57dX3lY8DP_0Yf39lD9ct-TGPpRBDE3t8h9QjrXbxENhqCQMUfD4xaLFWUWJzpmrzML7jwJXfv5bUi2F8K5G333LPifdyU9zY7Sq5IXks=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHg-dt7KbH0ICI_pV1y1L7SGxZxLXt8h0ocVh64MU55dH_CztQpt5PjLXG-f8nNBzIE8etnufKHulfGcJoz1NNPmVIVjYA8l4haj514377BfKtEJlWWN0av5icgj5xYHzwh8ODD3wLo7qB_=w1920-h1080-k-no",
         "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "near_square_828x828"
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_panoramic_1920x810_ar2.37"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
           }
         ]
       },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 2248,
+      "name": "Quarter Sheets Pizza Club",
+      "changes": {},
       "conflicts": {
         "instagram": {
           "current": "@quartersheets.la",
@@ -1425,7 +2285,7 @@
       "id": 2251,
       "name": "Rossoblu",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHa-_rYNRSZDgj1eoDmCZB_Z21kSjtrjvcd7WUOrbsQ3BTQuXa0aJrJgYB4AIzTQJOpTiDx7_ZKNEtmUmEm2TCKcnpTytcZVb70ez9wD-syx9-9u946IIVltK6BtW-EC5bh0uhH2QEVTtpn=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGdOoZ68naeWpDXBnZh9CJIOIOqn0_0qUNFyRVRcqxNedkCKZKOAuj0GvWHJAvcU1jwr-7jmElU4bqRuV5UtNuqYDl8xMzI3ji14uQB6jT_5LAG2kB-GA10FsXRfjCCB9d227w9sQrwkdP7=w1920-h1080-k-no",
         "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
@@ -1434,15 +2294,19 @@
           },
           {
             "source": "google-owner",
-            "reason": "near_square_1080x1080"
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
           },
           {
             "source": "google-owner",
-            "reason": "near_square_1080x1080"
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
           },
           {
             "source": "google-owner",
-            "reason": "near_square_1086x1080"
+            "reason": "too_tall_or_square_1086x1080_ar1.01"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -1468,16 +2332,7 @@
     {
       "id": 2253,
       "name": "Q Sushi",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH6QHDwJS2oK3JeXC7FpEkgg1FwP3rFMqDBM5Nozpg80JtMynkrg-1F7_U49tN6zVNz46thzjz0XZTXnZIbgMwhK3Bzl9_tPE0B-0jlpLkRlvl0A9ktEwPNsN0rwBLaB_32YFQ-1Q=w1920-h1080-k-no",
-        "_photoSource": "google-curated",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "too_small_43574"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {
         "instagram": {
           "current": "@qsushi.la",
@@ -1505,7 +2360,24 @@
     {
       "id": 2256,
       "name": "San Laurel",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFFD6c80hLZ4VFIfPRlopwINiHUDNfhk98fbreTejlynNcJXAQW52idP7I2-WFnQIx3VlvlvJU4tjacIMHbjjUHExoinauDa3Gi706UqgCH3AI5PE4-I5UFHiGlqFyuTxvmR2TVo6vcWtpj=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "too_small_19281"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@sanlaurel",
@@ -1517,7 +2389,32 @@
     {
       "id": 2258,
       "name": "Accomplice",
-      "changes": {},
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@accomplicemarvista",
@@ -1554,12 +2451,16 @@
       "id": 2263,
       "name": "Night on Earth",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipMXa0Edzok5GDC90bh6b62c0JyzKWWNO1yyO2Mi=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG1LPWnmJyrx0LR9NeGrOQeI6p-nX89u85xrMeronA1t-bAPUkPesKEHXJgLg0q5nDiKuAecIHuEs0iuyD3G9iiy72amkYdomoDrfx4pPisOD5VvWqgqsvrO5ZAICDuIz2KLhG14biok3ne=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "near_square_1091x1080"
+            "reason": "too_tall_or_square_1091x1080_ar1.01"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
           }
         ]
       },
@@ -1586,7 +2487,20 @@
     {
       "id": 2266,
       "name": "Death & Company Los Angeles",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFU-pLt0nyLSa1LY9xyBujRCAfL-kpRBudYU3XAdKKKX5-ygzrAf5BwKtuWzfX130WoMhEzphUGTwG5KgD9VADCpn666DeVRegsYoWBG9k3HzoxQdE2T_LFgl0FTtNDSgcHTnvORw=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "too_small_21581"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "website": {
           "current": "https://deathandcompany.com",
@@ -1614,7 +2528,28 @@
     {
       "id": 2268,
       "name": "The Let's Go Disco & Cocktail Club",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHx3k-aM-pNaU3cwCwLJucYnlWy1B5qjdVOaFcf_lWDnmJ27BCwsjE16T1GpkAety3v11mAM1RnUVH_F2FGyUOYATDVvuPyKHsrAlLwaBLNmlHZWgmbwzRg4Qbp8kWOc6BjY0Iz=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_813x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@letsgodiscoclub",
@@ -1636,11 +2571,17 @@
       "flags": []
     },
     {
-      "id": 2274,
-      "name": "Pasjoli",
+      "id": 2270,
+      "name": "Walt's Bar",
       "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5c480493da02bc7fba537b1f/t/684f11d31ef4b52dec09c0f1/1750012371106/anajak+x+pasjoli-6515.jpg?format=1500w",
-        "_photoSource": "og:image"
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFd7ZXyOSPxWwMPMawaqg1MAgD5F2R6_FVLzVMk5t4IuYF8OTY7l3VEFKAXyaZGmwJvXzYrIjVYBGWd40pCRfrdthCRyZ_0rEZ28OOUgbGoYWg0qpkosMV49syrSGwDwQlwcvNtV51P_Sjp=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
       },
       "conflicts": {},
       "flags": []
@@ -1648,16 +2589,7 @@
     {
       "id": 2289,
       "name": "Dudley Market",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNVBURyqndQPTsKNHrboiScgDGTm2cdpEHvKGyI=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "near_square_1024x1024"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {
         "website": {
           "current": "https://dudleymarket.com",
@@ -1685,16 +2617,7 @@
     {
       "id": 2291,
       "name": "La Isla Bonita",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOe913GQgY6WUP9byinjOjKANcSeLtRHII0Yq6Y=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "google-owner",
-            "reason": "near_square_1207x1080"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {
         "address": {
           "current": "400 Rose Ave, Venice, CA 90291",
@@ -1704,25 +2627,18 @@
       "flags": []
     },
     {
-      "id": 2292,
-      "name": "The Wee Chippy",
+      "id": 2293,
+      "name": "El Huarique",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2s34buLoRmlSr-0DJbKGNAnXemgNAGFhjj2qPzgX32kCbuvsT8CjRvQlDrXDgju_eNLSG4wf0B_1avpli22Xf6rh5e8SBF9hYsQ8AsEdg6Ak__o4-YUXwRf7VCtIlCwzdWbEGuCB6mUjP=w1920-h1080-k-no",
-        "_photoSource": "google-curated",
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipN_iuY322N5R0EaG6CSOu3U5dfgttZwNEHLedNg=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "too_small_395x561"
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 2293,
-      "name": "El Huarique",
-      "changes": {},
       "conflicts": {
         "address": {
           "current": "1301 Ocean Front Walk Ste 10, Venice, CA 90291",
@@ -1798,7 +2714,40 @@
     {
       "id": 2301,
       "name": "La Pharmacie du Vin",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGzspssEk8Z1ZApQTPczI9fhVlPtGgEZQ9344SlaopS05nJZz6-q_lXSyNAgQBIF9PUDbXfCeK53uYKV6bzGnONOBcMFVCxcDCFr5U2R7-tDq5j9Gcuswh7OFNqDTWcYBVsQm0=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@lapharmaciedv",
@@ -1810,7 +2759,16 @@
     {
       "id": 2302,
       "name": "The Black Cat",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNlj1MF9mOpZItjZl4NMQhi_rHP8-RI27cP5Bn4=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_768x1024_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "website": {
           "current": "https://theblackcat.la",
@@ -1826,20 +2784,7 @@
     {
       "id": 2303,
       "name": "Maury's Bagels",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipN7sIruQz39L0fjgkBgigT3Y2QxwshEnQFCeEjh=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "google-owner",
-            "reason": "near_square_640x640"
-          },
-          {
-            "source": "google-owner",
-            "reason": "near_square_1080x1080"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {
         "instagram": {
           "current": "@maurys_la",
@@ -1858,6 +2803,42 @@
           "apify": "@osen_izakaya"
         }
       },
+      "flags": []
+    },
+    {
+      "id": 2307,
+      "name": "LaSorted's",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_923x1080_ar0.85"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "dims_too_small_485x1080"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
       "flags": []
     },
     {
@@ -1887,7 +2868,40 @@
     {
       "id": 2311,
       "name": "Men & Beasts",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEJsJC4SFY_8vaN92z5jIYZS7grQFoMTxgqiwAN26sbbSTVUSOQloNmB_XVmQVlnPYcNV4FpkA3_JFK9hrwlm_YNaL_Xb81zW9IyDenbvN8fBklcDrPtCMw2GdTL-EH4u0d_WBk1MMCqaQe=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@menandbeasts",
@@ -1909,9 +2923,54 @@
       "flags": []
     },
     {
+      "id": 2313,
+      "name": "The Hummingbird",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_844x1080_ar0.78"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
       "id": 2314,
       "name": "Honey Hi",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipORutcMZSqR5ybiaMr0FNkr-ZEZjxxj2nysb6tN=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_750x1027_ar0.73"
+          }
+        ]
+      },
       "conflicts": {
         "website": {
           "current": "https://honey-hi.com",
@@ -1923,7 +2982,20 @@
     {
       "id": 2315,
       "name": "Alejandra's Quesadilla Cart",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE4lndnz_ZYCQ_CsWNFEYlq0XC_ogbMkj0-oArXQsG75OI1goezHYgCVqGK9KoFPtptMTG4E9eouc3kMzF5cQMkcJUyPRslSBfDu-KWVHExB4eAE0QWKPGKvrHMpSzlHssIxiVNDN5Dxms=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "address": {
           "current": "1246 Echo Park Ave, Los Angeles, CA 90026",
@@ -1935,7 +3007,16 @@
     {
       "id": 2316,
       "name": "Bar Flores",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFDsVqvgJ5UJ-6Z69sgjUyucfSLqql6ix8v5T4uZwt3JzrQw-DS1HjpUDb4K-Cjp9TIhhSB5Z8sBikCYIuYn4nEq8yzY8e1rbDqP0MP_BXFIY20XHw8P_W65-7auHJwp7snaQV5dA=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@barfloresla",
@@ -1947,7 +3028,32 @@
     {
       "id": 2317,
       "name": "Donna's",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE99KxPicZJvWoRPOnE1pxv9xacf9cm4kE4pdWq4FzIKE9xvCh_FtgytO16Zm9V0tkC50CcM4i64rIuys_wwsfFEApc349TcS7CR-7Sire0UvLd0dlyWcSePLujh6XKerTQSM7REs-5woed=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "logo_url_pattern"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_small_35165"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_824x1080_ar0.76"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@donnasla",
@@ -1960,12 +3066,16 @@
       "id": 2318,
       "name": "Kien Giang Bakery",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipMC0ixFlftjg59z7jUrDUwqh_-5ffgc6zLjcNjx=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipMYAD2tYRIwqIo26NFjWHuhTaAo_w_SgnQlhlmG=w1920-h1080-k-no",
         "_photoSource": "google-owner",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "near_square_1193x1080"
+            "reason": "too_tall_or_square_1193x1080_ar1.10"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
           }
         ]
       },
@@ -1999,7 +3109,32 @@
     {
       "id": 2323,
       "name": "Angel's Tijuana Tacos",
-      "changes": {},
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "address": {
           "current": "1185 W Sunset Blvd, Los Angeles, CA 90012",
@@ -2011,18 +3146,20 @@
     {
       "id": 2331,
       "name": "Panda Inn Pasadena",
-      "changes": {
-        "photoUrl": "",
-        "_photoSource": "none_passed_test",
-        "_photoTriedAll": [
-          {
-            "source": "og:image",
-            "reason": "near_square_800x800"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {},
-      "flags": []
+      "flags": [
+        {
+          "type": "no_photo_passed_test",
+          "message": "All photo candidates failed quality test",
+          "tried": [
+            {
+              "source": "og:image",
+              "reason": "too_tall_or_square_800x800_ar1.00"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 2342,
@@ -2097,31 +3234,19 @@
       "flags": []
     },
     {
-      "id": 2356,
-      "name": "Casa Vega",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE-XUE84IHdPOpPF1hI6XDMuJR96dyLM6MTf8gl3nrmg4ZVMU2CAjIgTAq-C_FW9QLWQKzP3MVBIFMwaexcex4t1Wh9B4pija43ltyql465CU9l1iykDt3tGu1i0JhTnGhyTVlzCQ=w1920-h1080-k-no",
-        "_photoSource": "google-curated",
-        "_photoTriedFirst": [
-          {
-            "source": "google-owner",
-            "reason": "near_square_1000x1000"
-          }
-        ]
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 2362,
       "name": "Linden",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPaMQTolSqtlyGPH1aEXMGxJK1X3qVRjwoxDYBu=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPXQW3-4BbJF2MPMLd-Zl2lzrnEYQhDY41K6hQC=w1920-h1080-k-no",
         "_photoSource": "google-owner",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "near_square_1150x1080"
+            "reason": "too_tall_or_square_1150x1080_ar1.06"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_1272x1080_ar1.18"
           }
         ]
       },

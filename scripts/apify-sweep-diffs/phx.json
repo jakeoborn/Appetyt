@@ -4,9 +4,9 @@
     "apify_total": 79,
     "apify_matched": 79,
     "apify_unmatched": 0,
-    "diffs_count": 39,
+    "diffs_count": 56,
     "fields_changed": {
-      "photoUrl": 7,
+      "photoUrl": 22,
       "phone": 0,
       "website": 0,
       "instagram": 0,
@@ -14,8 +14,9 @@
       "address": 0
     },
     "photo_sources": {
-      "google-owner": 4,
-      "google-curated": 3
+      "google-curated": 16,
+      "google-owner": 6,
+      "none_passed_test": 8
     },
     "conflicts": {
       "phone": 3,
@@ -48,12 +49,20 @@
       "id": 3006,
       "name": "Hana Japanese Eatery",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOwfFwEQEGFvaa9YBAyDjZBlUjyP0hFasLUR28G=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGxoG2h1y_a69x9x1TjosRe1WMBZ0OnM-Ygk1jKxF-dHJrlvktNeuvcKD-76QHU9FX2uDED_H6cRNqOF8h3B5Wr_h4Ek01y4OJb96kEIIqJeRcOXkdu_9Ew7m8REasfTe-9MCOTfZDS10k5=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "near_square_1080x1080"
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -103,15 +112,15 @@
       "flags": []
     },
     {
-      "id": 3011,
-      "name": "Valentine",
+      "id": 3014,
+      "name": "Kid Sister",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEDJZEuU4DQXokvHwBHLec5s04bbOKK5lCycg8hNxkRBaXRt2UXHvwR6i75rVsXdmhROW1nRCc_5zmZAGfimOU7RSMzaCI3Hs6KehX6QTI-YUi9RwhnIBDJKq520Gbhycvl6gy3=w1920-h1080-k-no",
-        "_photoSource": "google-curated",
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipP4yNWPqGbxdMb7_x92zaXT7m9JQ-Eaybi5PT3g=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "near_square_1165x1080"
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -122,16 +131,108 @@
       "id": 3015,
       "name": "Glai Baan",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH-mAu9Jpw_-H9P44chJOmQg4--XDr6WcYLvj2E3jQIpqBBHBBJIL_MUPftRBl02F4jPu3FOZlW7_s7m5dktc9DqzwMAfqAd1iJYYQm_xKFjxWoXqvgDyWlxEW9rkWZ3aRnY2wnLapzbcCw=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGttRhlgV_j4giVMQ4LEx9h8_A3PcYzdyrkvkKhlCADNesoCEtIt-W9sjHZDUBfIGehGucbVGiUSYlSAStnQwgk72fYTzhfdiEzp-AwQ0bATp6QEMZkAJyZ8bmaRsxt6vYuh1lI_9dshf7E=w1920-h1080-k-no",
         "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "og:image",
-            "reason": "near_square_1522x1522"
+            "reason": "too_tall_or_square_1522x1522_ar1.00"
           },
           {
             "source": "google-curated",
-            "reason": "near_square_1195x1080"
+            "reason": "too_tall_or_square_1195x1080_ar1.11"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3022,
+      "name": "Hai Noon",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_1656x2560_ar0.65"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3023,
+      "name": "Lom Wong",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEvwYI1LLnEY3LkA-MEAL0xv8AMaJOk9VyMKzo6tSLW42PtnmYi62IQItxe2RaFZj1hH2AynGfkXrt4RSkd0uBZ1khPnXI98Xlo1fPDul3YUGZC9vBXlZnHGzE1Cohg71NKgfpw=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "logo_url_pattern"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3025,
+      "name": "Stoop Kid",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF1LU911YtyNzLuw936TWI6foav4DIOiofDiyJyT5Efu6K-_fRz6AEy-EMgz4cYmkYVwL_KaOxRRTtSEw4z8DrB5n8Yh3EeZI6oDKyutfu15C9LxkSQMTeV0utCUNnzN4m3khD4vRIJjuqW=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_927x1080_ar0.86"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3026,
+      "name": "Mariscos Playa Hermosa",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEnLNrJMHau4RocEcXw0h_dUcKgkyuu89IHnVplnE2gHWxwL3uHFO-zEpL7Wit8D8KJ4eSLm3MNb0h9bM5dQRcwkdcY9Ch_Vz8puzl-dSHCiyjeephN-x7cc3sqIHOuaesWbTYw=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -195,7 +296,40 @@
     {
       "id": 3039,
       "name": "Alden",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAExqMsCugWE6wFJwoi1RTZH-dkDqwUWKdLbFWaHKWVNMXV0ilXVr6kxKGXSRu8L_fndLfM2DH7IoMxk792ZLv9MiYPH8BtRIUuTu_89y3VRg9ax5oLJR9IkEzqdPOSIIaYAObRKe9G-l8zz=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_765x1020_ar0.75"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_small_42411"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_765x1020_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "address": {
           "current": "1625 N Central Ave, Phoenix, AZ 85004",
@@ -208,16 +342,36 @@
       "id": 3040,
       "name": "Mr. Baan's Bar and Mookata",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNb8rt8YhbiHkpcesmi0qm6k9x3Q-aYdAFt6GMl=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGV69CA-hjz83ZqSBFBE6e2dI0L2LE0Gl9hJwQbcdHPDTf7G0G09uCP05oWSFtIbN2OOBpo-CTtG-J5R3vhb4eARt-1OgEDbM5zAtBHYgRd4o1G8sA4i6_z1DeZwINBFndtWzanrg=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "og:image",
-            "reason": "too_small_8484"
+            "reason": "too_small_21901"
           },
           {
             "source": "google-owner",
-            "reason": "near_square_1080x1080"
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -248,7 +402,20 @@
     {
       "id": 3043,
       "name": "Marisco Boys",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEEzOL5MSodjqHFWGoYgth1ux9yv4AkvHcBiKBBae8aDYy3p2YVd_36N7320eIdRCoMyLW8e5aJPHnxgpQE_3x9PqRsm-Hdv9k_F7t_ki_k2qVFPC5yZifWVUWJurMOy4DYIGgvq4tQXDa4=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
+      },
       "conflicts": {
         "phone": {
           "current": "(480) 597-5623",
@@ -260,7 +427,32 @@
     {
       "id": 3045,
       "name": "Lydia's Kitchen",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGfwLb5KWFuy4RHK2MJMScRZmJycjUqdz03pb-MHHuaZpVeI_-Ex54Yw3WPrmUAubrY8O5dN4Ey97RRxWfCUmMboSZzs1t1YsRD22-fBrk8HK14Wt26utCtRHG4XbJSvJ69h_qfk43FpUIr=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "http_403"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "website": {
           "current": "https://www.instagram.com/lydiasphx/",
@@ -286,6 +478,22 @@
           ]
         }
       ]
+    },
+    {
+      "id": 3048,
+      "name": "Glenrosa",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_small_24213"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
     },
     {
       "id": 3057,
@@ -356,26 +564,6 @@
       "flags": []
     },
     {
-      "id": 3064,
-      "name": "Otro Cafe",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFDOsWrMFEPf02op1J_EHy1TzVGjMDhamfZXFdZop6AGGJ7v-5BlD1XlEIqtdRijzqVZnoIsG6ETJKyxxvih5H4LlVsWnCR0hXZBo-FQOIl36_zRS4b-KKYEaG9j3UU4vrZjGw_nXxe74s=w1920-h1080-k-no",
-        "_photoSource": "google-curated",
-        "_photoTriedFirst": [
-          {
-            "source": "google-owner",
-            "reason": "near_square_1080x1080"
-          },
-          {
-            "source": "google-owner",
-            "reason": "near_square_1080x1080"
-          }
-        ]
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 3067,
       "name": "Lux Central",
       "changes": {},
@@ -385,6 +573,58 @@
           "apify": "http://www.luxcoffee.com/"
         }
       },
+      "flags": []
+    },
+    {
+      "id": 3070,
+      "name": "Welcome Diner",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipMwHi8AaM_3QNtGM8R7ot-uGpUldrmP2etlcS4F=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_1656x2560_ar0.65"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3071,
+      "name": "Webe Coffee Roasters",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPJ2eT7N86ehtrnoX_ImeVKziWK8z1J4lOXtv5r=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3073,
+      "name": "Satellite Coffee Bar",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_fCs8NrChvS3ZtW8n-4nh1vngHQQC62yUxEV6q6I9xkAk-3N9_wJ8Z7dxOU85U9FTAbLbG27DTzADJbw87MfV0lXpWQmX7a4PlqXZuOwGfIuJvxsfyFrXj8KGIQYTc7VInnLTwRO7_Mk=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_809x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
       "flags": []
     },
     {
@@ -400,6 +640,38 @@
       "flags": []
     },
     {
+      "id": 3079,
+      "name": "Harlem Coffee House",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_813x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
       "id": 3081,
       "name": "Futuro",
       "changes": {},
@@ -409,6 +681,22 @@
           "apify": "@squarespace"
         }
       },
+      "flags": []
+    },
+    {
+      "id": 3082,
+      "name": "aftermarket.",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOfwgUsukn7vpGStcylNVDEie1N4CH65ftZBFoo=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          }
+        ]
+      },
+      "conflicts": {},
       "flags": []
     },
     {
@@ -428,15 +716,131 @@
       "flags": []
     },
     {
-      "id": 3098,
-      "name": "Condesa",
+      "id": 3087,
+      "name": "Kabob Grill N' Go",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipMuGgfsRfAxAQ730QKcCMKQmbvKHNANBPiFBaY9=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipN2QNWJFL9YASw4yoWf57mOC03Ugopq0XR-uVWj=w1920-h1080-k-no",
         "_photoSource": "google-owner",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3088,
+      "name": "Sphinx Date Co. Palm & Pantry",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_1266x1634_ar0.77"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3093,
+      "name": "Lupita's Hot Dogs",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_1087x1080_ar1.01"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3094,
+      "name": "La Pasadita Hot Dogs",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH0MBXeWVlJj5S5m8Wpo4fc77MpMr6bHgpEGs5wjHdWE8qOIMH0oKLwCcWx4XKJzhS4VptcanCgpp8TnA1nfjuG2SDmXBswepoBrmcaPxkIpCTKGwEADIwkq7CHnhCMG8SQqVeW=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_750x1000_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3096,
+      "name": "Nogales Hot Dogs No. 2",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOm2AADkX-dP5pYZnMcnj1AhAs-u2FJAOv8UzZg=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3098,
+      "name": "Condesa",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHeIRq2tbXvoYX1tkFHwAdXcpgysfqesjm04zUSU247izqNgwsi-BalDwcPdHY96rd-X-KK9qwri5Br8wMirrn-coayQGf5cNkVaild7CLHv854aTVLnwSWB34DYxJPG6vFFp7Fdrh2YzMq=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
             "reason": "too_small_48001"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_768x958_ar0.80"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -508,9 +912,70 @@
       ]
     },
     {
+      "id": 3113,
+      "name": "Taco Chelo",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_850x974_ar0.87"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3118,
+      "name": "Sottise",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
       "id": 3121,
       "name": "Lovebite Dumplings",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFDifORHzk1OOIHLQ494GGXdLdELIPTcRszYgOZTfQDIDZul0CS7Ci3UZ9GEEWaPVSUwjF-4i1n4St9Cxbuoq9gA9T4k3PsiaCQ2gwRWiTw2JF9hKG5RvaoAFNDLS6Sj2P5DKLUVA=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@lovebite.dumplings",
@@ -539,12 +1004,32 @@
       "id": 3124,
       "name": "Over Easy",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPjd1cycdqktClSTsI5aoBmx2BaPVgakzdLR-hi=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHTMoMaq1ie8VZ2XXSdmqJLgtHNpCw4L9dVNVZlJtfxd92OYmrJpT6tVsYfbtqhvIhXM8qNdFlmK36vd3MihYq4DY4kF2hoyeXgdoL_jRiBrHzL_EzUYZkNO5WOesggFP3yh5WUk0_Iu8qi=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "near_square_1088x1080"
+            "reason": "too_tall_or_square_1088x1080_ar1.01"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
           }
         ]
       },
@@ -579,7 +1064,20 @@
     {
       "id": 3128,
       "name": "Luci's at the Orchard",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHbMhaMrxdnsd1Y85ONINF3S0rhXPCNKehNAZdbtu2ZlzPq_W2MP_9F9hSWP1R_wDQ50l4QE7ZWx-dVsAzdSpUld72n0pNc3rcWPCqfUhzg76gBGS20V4eIVhenm0x4Ti_DPnFEt9u-Iu6n=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "too_small_15479"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_768x1024_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "website": {
           "current": "https://lucishealthymarketplace.com",
@@ -591,13 +1089,46 @@
     {
       "id": 3129,
       "name": "Chelsea's Kitchen",
-      "changes": {},
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFYTJxlUtbOE1FbkhsdP-xbZgztAg-8PZZpw1Qc5D29cMcEqmjnon8ItKZ-trmMggjTiac6ZC4djITh0EjYNOzqz7u78YJFjljUYapVycCchnvv1bLXQh1NNcm51oUyjWgHyE8TQMoji8VY=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "too_small_8161"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_864x1080_ar0.80"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_712x952_ar0.75"
+          }
+        ]
+      },
       "conflicts": {
         "instagram": {
           "current": "@chelseas_kitchen",
           "apify": "@chelseaskitchen"
         }
       },
+      "flags": []
+    },
+    {
+      "id": 3130,
+      "name": "Organ Stop Pizza",
+      "changes": {
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_panoramic_1600x668_ar2.40"
+          }
+        ]
+      },
+      "conflicts": {},
       "flags": []
     },
     {
@@ -624,7 +1155,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "too_small_12474"
+              "reason": "too_small_26430"
             }
           ]
         }

@@ -4,19 +4,19 @@
     "apify_total": 53,
     "apify_matched": 53,
     "apify_unmatched": 0,
-    "diffs_count": 366,
+    "diffs_count": 204,
     "fields_changed": {
-      "photoUrl": 202,
-      "phone": 5,
-      "website": 1,
+      "photoUrl": 9,
+      "phone": 0,
+      "website": 0,
       "instagram": 0,
-      "coords": 5,
-      "address": 6
+      "coords": 0,
+      "address": 0
     },
     "photo_sources": {
-      "google-curated": 10,
-      "google-owner": 28,
-      "og:image": 164
+      "google-curated": 7,
+      "none_passed_test": 9,
+      "google-owner": 2
     },
     "conflicts": {
       "phone": 9,
@@ -31,12 +31,20 @@
       "id": 1,
       "name": "Lucia",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF59XOau7ACMWc8UJoAo2o_yyJSTLwTuG4Ppng9_vUAc7UplXw45SC34Fdm2_pEcEnvM4n0Ku6aZhh6o6EZtxLfQCXDjbAaNu0MMJBn9khjzekCQXT83TbUp8er2mDgJ5mu9G65=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGerVm6kHqNk6DeQT2dBdaJgvmY5pphdJ8-SZ5qwy3QWMMMV-Pl7DC3BFhEldS2md4ptcLsPNRXeX7vaSqrYtg38UUmDyTzI1QTAx-a-s4JKRVZqT9AQr78A_z4QqZjUTviTFVA3Q=w1920-h1080-k-no",
         "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "og:image",
             "reason": "too_small_39456"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
           }
         ]
       },
@@ -47,8 +55,14 @@
       "id": 2,
       "name": "Tatsu Dallas",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF-c8kQ1SNdJzyKcNMJEKTBG65cYBZM6_tlnxZMU3qJ9jdXC8PgKtCLQw9Vl_eqNOIRn3uYEMF8G1R_0Irr3af4lLX4XwNqTPiL8I0adWKclA03ahO_GvTDeVsw-_YM2mmrJlvwQuw6cJY=w1920-h1080-k-no",
-        "_photoSource": "google-curated"
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFb67auqpgwQfqAzMBYP0DOrSA2_svmg0p-yBdEUZECimOcUax3qmgUmFSQRNCHMMXOmrguy8k-C1yem6znEIJFuxib0S5EvE0WBH3Yoca8FUsqlCDQbJEGt-Bb_TgdD_V5RXnucMf9nqo=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
       },
       "conflicts": {
         "phone": {
@@ -59,22 +73,9 @@
       "flags": []
     },
     {
-      "id": 3,
-      "name": "Written by the Seasons",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipMmtDEbr3hXX71RCubLpUkCyf_MN1zWR_r3NYOk=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 4,
       "name": "Midnight Rambler",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOj4wiOJ8ehlzY833rNfixBMbYWVAMZ1UtsMDR9=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
+      "changes": {},
       "conflicts": {
         "website": {
           "current": "https://midnightramblerbar.com",
@@ -102,16 +103,6 @@
       ]
     },
     {
-      "id": 6,
-      "name": "Namo",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/6345d6b0ba087b15ba22ca4c/t/63475711571e015d3d5d1a46/1665619729814/DB5A7647.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 7,
       "name": "Sachet",
       "changes": {},
@@ -132,21 +123,7 @@
     {
       "id": 9,
       "name": "Culinary Dropout",
-      "changes": {
-        "address": "150 Turtle Creek Blvd # 101, Dallas, TX 75207",
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFuvbhkDCe4QW-xfajSre9aJE8Xsz0Xah4F_qFTKbL_vaKq5HxnRTXdpriNnj6bdtI3enrrkiuIxpz1_8_KTWbC9Ev0z0sooaUg-HM8k-UD5OyKfl-0IydnRBx42G5WZZ2TiKsT=w1920-h1080-k-no",
-        "_photoSource": "google-curated",
-        "_photoTriedFirst": [
-          {
-            "source": "google-owner",
-            "reason": "near_square_960x960"
-          },
-          {
-            "source": "google-curated",
-            "reason": "near_square_1080x1080"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {
         "phone": {
           "current": "(214) 273-7700",
@@ -162,10 +139,7 @@
     {
       "id": 12,
       "name": "Shyboy HiFi",
-      "changes": {
-        "photoUrl": "https://framerusercontent.com/images/XMFOUqT27uD43nsH5BldXfbUA.png",
-        "_photoSource": "og:image"
-      },
+      "changes": {},
       "conflicts": {
         "instagram": {
           "current": "@shyboybar",
@@ -177,16 +151,7 @@
     {
       "id": 13,
       "name": "Uchi Dallas",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFT3zHDlbhL40gmYiJcoxqrrtgRKdOD007DrGpuvSHYLv0nee0W8JBJr3a069kVcYsNpgLaFOfO0Z6AsMdL3f3_NAS8whvls_eKN9aVN54wvQhovZ8W4oyebETBCQeZBsx5QfabBvRQP-Ho=w1920-h1080-k-no",
-        "_photoSource": "google-curated",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "too_small_14585"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {
         "phone": {
           "current": "(214) 855-5554",
@@ -207,22 +172,12 @@
       "id": 14,
       "name": "Cattleack Barbeque",
       "changes": {
-        "photoUrl": "https://cattleackbbq.com/wp-content/uploads/2026/03/preorder-cattleack-bbq.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 15,
-      "name": "Tei-An",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOOj-76VARFFaVQCUNl-lrDVsw5fE39sMVFYj9z=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
           {
             "source": "og:image",
-            "reason": "too_small_22871"
+            "reason": "too_panoramic_1200x500_ar2.40"
           }
         ]
       },
@@ -232,10 +187,7 @@
     {
       "id": 17,
       "name": "Sassetta",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipMN-khyhr5s6bJY-TVSBCQeCkHZDwpUU0sOeT5A=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
+      "changes": {},
       "conflicts": {
         "phone": {
           "current": "(214) 964-0459",
@@ -246,27 +198,6 @@
           "apify": "https://www.thejouledallas.com/sassetta"
         }
       },
-      "flags": []
-    },
-    {
-      "id": 20,
-      "name": "Mamani",
-      "changes": {
-        "address": "2681 Howell St BU4, Dallas, TX 75204",
-        "photoUrl": "https://cdn.sanity.io/images/2gup0440/production/1298cdf518e57eb72f41932810c7d74fe692882d-2048x1458.jpg?rect=0,193,2048,1072&amp;w=1200&amp;h=628&amp;fit=crop&amp;auto=format",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 22,
-      "name": "Happiest Hour",
-      "changes": {
-        "photoUrl": "http://happiesthour.com/cdn/shop/files/Happiest_Hour___Terpene_Infused_Wellness_Shots.png?v=1725577254",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
       "flags": []
     },
     {
@@ -342,16 +273,6 @@
       ]
     },
     {
-      "id": 39,
-      "name": "The Joule",
-      "changes": {
-        "photoUrl": "https://d7udpncdzgr1h.cloudfront.net/thejouledallas.com-1464425583/cms/cache/v2/626107f95b63d.jpeg/1200x630/fit/80/4d9cc97ccfe2d4227313a64334be1371.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 41,
       "name": "The Rustic",
       "changes": {},
@@ -363,21 +284,11 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_1200x1200"
+              "reason": "too_tall_or_square_1200x1200_ar1.00"
             }
           ]
         }
       ]
-    },
-    {
-      "id": 42,
-      "name": "Twisted Root Burger Co.",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/68f809f70d7e3e330a762c95/691e7422b5df8a405e01279d_Screenshot%202025-11-19%20205021.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 43,
@@ -398,36 +309,6 @@
       ]
     },
     {
-      "id": 45,
-      "name": "Loro",
-      "changes": {
-        "photoUrl": "https://www.loroeats.com/wp-content/uploads/2023/03/loro-og-image.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 47,
-      "name": "Crown Block",
-      "changes": {
-        "photoUrl": "https://crownblockdallas.com/wp-content/uploads/2025/11/crown-block-from-the-grill-medley-new-years-dinner-experience-1000.webp",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 50,
-      "name": "Pappadeaux Seafood Kitchen",
-      "changes": {
-        "photoUrl": "https://pappadeaux.com/app/uploads/2024/11/cropped-PDX-SocialShare.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 52,
       "name": "Rodeo Goat",
       "changes": {},
@@ -446,16 +327,6 @@
       ]
     },
     {
-      "id": 60,
-      "name": "Pluckers Wing Bar",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/592740e995c3096bba010fd0/5b9aaff5099d0955dabd569f_meta-image-lrg.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 61,
       "name": "Texas De Brazil Churrascaria",
       "changes": {},
@@ -467,36 +338,34 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "too_small_328x493"
+              "reason": "dims_too_small_328x493"
             }
           ]
         }
       ]
     },
     {
-      "id": 63,
-      "name": "Pappasito's Cantina",
-      "changes": {
-        "photoUrl": "https://pappasitos.com/global/images/PAPP-1200x650-Facebook-Share-Image-SITOS.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 68,
       "name": "Purépecha",
       "changes": {
-        "phone": "(214) 272-7163",
-        "lat": 32.783939,
-        "lng": -96.7841903,
-        "address": "2701 Main St #120, Dallas, TX 75226",
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHyxQA0K6S6FweQKuUQi36bMEatTDr0o-EAhDOk33l2DnYLtt1_0md1Dv_MGr3JhAjIhrP-TxUm4QulqzGj49Xla89QpKxqxRLZIH5Ms73sVwbbymeS-11_xejavRZFqAvd7RaLmg=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGNFQ4QvzNiCLLQH7KfTzYGN79NucDKlY-q7AoraWlFm4TCI29V8gfCdg10dYz79_dP__9_pJ5UG7PYCmqcn73rOGDp8r--8-3vd-6Fdxdnmrixa9cPX4fvV_GkXiv8o1DhpSRz0w=w1920-h1080-k-no",
         "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "google-curated",
-            "reason": "near_square_1042x1080"
+            "reason": "too_tall_or_square_1042x1080_ar0.96"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
           }
         ]
       },
@@ -516,7 +385,7 @@
       "id": 69,
       "name": "Gemma",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipO7hDsHpa6LeQ_NE_2r9a80mFFerMuQCVjnAzUR=w1920-h1080-k-no",
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipMxUQHLG9EaKwioqrK1fazNXNZ7pv_jq7dYCkQ4=w1920-h1080-k-no",
         "_photoSource": "google-owner",
         "_photoTriedFirst": [
           {
@@ -525,7 +394,11 @@
           },
           {
             "source": "google-owner",
-            "reason": "near_square_1079x1080"
+            "reason": "too_tall_or_square_1079x1080_ar1.00"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_880x1080_ar0.81"
           }
         ]
       },
@@ -541,12 +414,28 @@
       "id": 70,
       "name": "Partenope Ristorante",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipP1Y_EYQM4Po8C0Z17p263dAMZBf6lbs3E2HhCH=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH_yLoaqjp0DezdawFMpfv7H0HWpFAj0BmCAsioGkTJWxspwAKmYd-izc1oENXY1afueE6oMZtB74oNcTlJEtSpdrsqsTCJ4hHrfiXqsl3b_KVhXdXoNm30ElEdLGfi3XtZ0YienlLmyso=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "google-owner",
-            "reason": "near_square_526x529"
+            "reason": "too_tall_or_square_526x529_ar0.99"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_604x552_ar1.09"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_750x806_ar0.93"
           }
         ]
       },
@@ -556,10 +445,7 @@
     {
       "id": 71,
       "name": "Ngon Vietnamese Kitchen",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/69af515fa30b374ec90e27c4/t/69af5167a30b374ec90e294a/1595580081050/ngon_thaninphoto_june2020_0352.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
+      "changes": {},
       "conflicts": {
         "instagram": {
           "current": "@ngondallas",
@@ -571,10 +457,7 @@
     {
       "id": 72,
       "name": "Smokey Joe's BBQ",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5d38ef0ba326ac00011e5e58/t/60a53e3f789036589f7d2632/1621442116625/Dessert+candlelit+display+brighter.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
+      "changes": {},
       "conflicts": {
         "website": {
           "current": "https://www.smokeyjoesbbq.com",
@@ -591,8 +474,14 @@
       "id": 73,
       "name": "Town Hearth",
       "changes": {
-        "photoUrl": "https://flavorhookdallas.com/wp-content/uploads/2024/07/Town-Hearth-New-Thumbnail.png",
-        "_photoSource": "og:image"
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH-iJy3srEP7OO2UScM2nRa7Ys8oWOUUi8sneydryEy7RURMhFYGozksK-eR-yzJmMJHHah1LjkifjRlU37N_zDK_3b1wtEa6MTIS0gMkBenGFjvVqZTEQPoqWR8njN-ieXfwDZW84HqgZS=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_537x802_ar0.67"
+          }
+        ]
       },
       "conflicts": {
         "phone": {
@@ -600,61 +489,6 @@
           "apify": "(214) 761-1617"
         }
       },
-      "flags": []
-    },
-    {
-      "id": 74,
-      "name": "Sushi Kozy",
-      "changes": {
-        "website": "https://sushikozy.com/",
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipO34gJ-bmEgajT8drkA9RumqFB-MISt01ZnbTWz=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 75,
-      "name": "Far Out",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/67d067a97b4e027d4870a503/t/67e088a347f9a570406e4f01/1742768291526/Far+Out+Brand+Assets_BirdEye.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 76,
-      "name": "Fond",
-      "changes": {
-        "phone": "(972) 803-6045",
-        "photoUrl": "https://img1.wsimg.com/isteam/ip/5206ed33-0695-4c55-a7fc-b619f4a03389/Soup2.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 77,
-      "name": "Beatrice",
-      "changes": {
-        "photoUrl": "https://restaurantbeatrice.com/wp-content/uploads/2022/03/Texas-Peach-Salad.-Photo-by-Kate-Voskova.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 78,
-      "name": "Beverley's Bistro & Bar",
-      "changes": {
-        "phone": "(214) 915-8840",
-        "lat": 32.8165025,
-        "lng": -96.7934077,
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPmQA_MwOdw4ums5j_mkovi_Fwm12fx0FpYnWsC=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
-      "conflicts": {},
       "flags": []
     },
     {
@@ -679,8 +513,22 @@
       "id": 80,
       "name": "Hudson House",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGadiZRL8fGIEO_rGYmcKs8_yOdvEQCfXlxZWmBM2yE6mcR6vGv-oSSVzd2qomuVGDopmmn9MfK5_-OvS0Liw_VaZcVq6q7OXNG8LLh836wgE6xSAPWqH9cNlNea66Tu85rOcxoov4n3PT7=w1920-h1080-k-no",
-        "_photoSource": "google-curated"
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFe8so6AcFTmh_NZdEvcd67t7qN110MPe4QiBzkM7gPUsHfzPshf_0FmlRSlgBEai-di0xe6WLFJc92Kg7gQohZ3W86LgULc8or-NYxJBtX_xjDIKm_nbWxGYQn5-vGUAJ-r3XtTL9zYxLH=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_503x1080_ar0.47"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          }
+        ]
       },
       "conflicts": {
         "phone": {
@@ -697,11 +545,7 @@
     {
       "id": 82,
       "name": "Monarch",
-      "changes": {
-        "address": "1401 Elm St 49th Floor, Dallas, TX 75201",
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOBAc2EZFrgLsv8ScXUGHBDxaqTxt1pl7EB6TPd=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
+      "changes": {},
       "conflicts": {
         "phone": {
           "current": "(214) 400-8098",
@@ -713,10 +557,7 @@
     {
       "id": 83,
       "name": "Norman's Japanese Grill",
-      "changes": {
-        "photoUrl": "https://normansjapanese.com/wp-content/uploads/2025/11/NORMANSINTERIOREDIT_SREYNOLDS-4-1-WEB.webp",
-        "_photoSource": "og:image"
-      },
+      "changes": {},
       "conflicts": {
         "website": {
           "current": "https://normansjapanese.com",
@@ -726,35 +567,35 @@
       "flags": []
     },
     {
-      "id": 84,
-      "name": "Wicked Butcher",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipMJSJSiTI-CFXfzdAb3WLjNociB6HBqhhnHvcBd=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 85,
-      "name": "Casa Pollastro",
-      "changes": {
-        "photoUrl": "https://i.vimeocdn.com/video/2031154250-002cd57f14ef94ca468f484e9e52ee3d1b37a4e6b6ec1079692330ec8c030882-d_1920x1080?&amp;r=pad&amp;region=us",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 86,
       "name": "Georgie",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEuIhSX7arYHFDaKcUUNxukHa4Bm74Bj5VS8e6P7VKOk8dDhPSO1B5UrDyN5VJTt1m5B4dTqi34z2V8Kmre4YUTj1HBG6CfElHieGthQbK59gaagOBPGo60DmpjTRWC2W9WwC08VowtE-3r=w1920-h1080-k-no",
-        "_photoSource": "google-curated",
-        "_photoTriedFirst": [
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
           {
             "source": "google-owner",
-            "reason": "extreme_ratio_1415x441"
+            "reason": "too_panoramic_1415x441_ar3.21"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_608x1080_ar0.56"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_1080x1080_ar1.00"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_810x1080_ar0.75"
+          },
+          {
+            "source": "google-curated",
+            "reason": "too_tall_or_square_952x1080_ar0.88"
           }
         ]
       },
@@ -764,14 +605,7 @@
     {
       "id": 87,
       "name": "Uchiba",
-      "changes": {
-        "phone": "(214) 855-5454",
-        "lat": 32.7968501,
-        "lng": -96.8065209,
-        "address": "2817 Maple Ave Floor 2, Dallas, TX 75201",
-        "photoUrl": "https://uchiba.uchirestaurants.com/wp-content/uploads/2022/12/uchiba-img-opengraph-sitecover.png",
-        "_photoSource": "og:image"
-      },
+      "changes": {},
       "conflicts": {
         "website": {
           "current": "https://uchiba.uchirestaurants.com",
@@ -785,28 +619,9 @@
       "flags": []
     },
     {
-      "id": 89,
-      "name": "Lockhart Smokehouse",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipMdPy6ZG_x0c48q4Auzczakf_mwkBDgVbqXNa0i=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "logo_url_pattern"
-          }
-        ]
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 90,
       "name": "Oddfellows",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOT7hbdJIm8gDGf8lm8Wd-muD6Td2M0Cr2n4MtD=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
+      "changes": {},
       "conflicts": {
         "instagram": {
           "current": "@oddfellowsdallas",
@@ -816,62 +631,9 @@
       "flags": []
     },
     {
-      "id": 94,
-      "name": "CBD Provisions",
-      "changes": {
-        "photoUrl": "https://d7udpncdzgr1h.cloudfront.net/thejouledallas.com-1464425583/cms/cache/v2/62659781346c5.jpg/1200x630/fit/80/4a381a6227d4527fda01dcf309e63a9a.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 95,
-      "name": "Salum",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNUZ-Y0tcLDVoBqvZt9Ut7cK6orBvgsxkM3ATN_=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "google-owner",
-            "reason": "near_square_1080x1080"
-          },
-          {
-            "source": "google-owner",
-            "reason": "near_square_1080x1080"
-          }
-        ]
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 96,
-      "name": "Toulouse Cafe and Bar",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipN3UWw6fZg1JMZBx-4DJvM758sUmMvb5-Bu23N_=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 97,
       "name": "The Capital Grille",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOsyYjNBphdxttV3-vInZbnkku-KDnY1DqDj6pJ=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "logo_url_pattern"
-          },
-          {
-            "source": "google-owner",
-            "reason": "near_square_1080x1080"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {
         "website": {
           "current": "https://www.thecapitalgrille.com",
@@ -883,16 +645,7 @@
     {
       "id": 98,
       "name": "Tei Tei Robata Bar",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHC9yIvbg_Uy0sQQ4EabGEHEtS6HrVGdPaFgnQnKnQDoxiEeFNPzt8G1gLGZz5OQTiPOTqRlDiecn38ssH19Tdy5gv2-ypByOib1PF4tcGjdSiyq0R8D2GqEIhEOB3oj2QIqwBfA8g0xELb=w1920-h1080-k-no",
-        "_photoSource": "google-curated",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "too_small_25052"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {
         "instagram": {
           "current": "@teiteirobatagrill",
@@ -904,18 +657,7 @@
     {
       "id": 99,
       "name": "Bob's Steak & Chop House",
-      "changes": {
-        "lat": 32.8171653,
-        "lng": -96.8111264,
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPjBJpv_wCXsQfOknQcJTRfRLYZL25Q67_a9EzE=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "too_small_320x250"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {
         "website": {
           "current": "https://www.bobs-steakandchop.com",
@@ -929,33 +671,9 @@
       "flags": []
     },
     {
-      "id": 100,
-      "name": "Rise No 1",
-      "changes": {
-        "address": "5360 W Lovers Ln #220, Dallas, TX 75209",
-        "photoUrl": "https://static.showit.co/1200/AmP3v8RnSQm2Z9ShtO6MeA/88571/jambon_souffle.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 101,
-      "name": "Norma's Cafe",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipMih8yvf4lllmAtXEq1CEXVDbFyv90RJzKUEy3z=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 102,
       "name": "Beto & Son",
-      "changes": {
-        "photoUrl": "https://static.spotapps.co/website_images/ab_websites/62020_website/food_back.jpg",
-        "_photoSource": "og:image"
-      },
+      "changes": {},
       "conflicts": {
         "website": {
           "current": "https://www.betoandson.com",
@@ -969,22 +687,9 @@
       "flags": []
     },
     {
-      "id": 103,
-      "name": "Nuri Steakhouse",
-      "changes": {
-        "photoUrl": "https://www.nuristeakhouse.com/wp-content/uploads/2024/08/Press-Release-13.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 106,
       "name": "Baboush Mediterranean",
-      "changes": {
-        "photoUrl": "https://baboushdallas.com/wp-content/uploads/2020/08/banner1.jpg",
-        "_photoSource": "og:image"
-      },
+      "changes": {},
       "conflicts": {
         "instagram": {
           "current": "@baboushrestaurant",
@@ -997,8 +702,14 @@
       "id": 109,
       "name": "Wild Salsa",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNezfL54SqQzONgvCaozJ-jbwrVmUadeenz7Nnv=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPA24uN8S5a_B_kcqfN4P4C7bTfmcr2TnsxC1HM=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_720x1080_ar0.67"
+          }
+        ]
       },
       "conflicts": {
         "website": {
@@ -1015,16 +726,7 @@
     {
       "id": 111,
       "name": "Emporium Pies",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipM8Ht6qeepKZsZfD0VKLfCYb6vqj9Mm48oXgNIq=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "logo_url_pattern"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {
         "phone": {
           "current": "(214) 942-7437",
@@ -1036,10 +738,7 @@
     {
       "id": 112,
       "name": "Ziziki's",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNNkjwQG8Gn9IIOHQj660bwNZuCBF8yHNYggze0=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
+      "changes": {},
       "conflicts": {
         "instagram": {
           "current": "@zizikis",
@@ -1049,60 +748,15 @@
       "flags": []
     },
     {
-      "id": 114,
-      "name": "Javier's Gourmet Mexicano",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPEydLI0mx4mZoMhM48zMm_1tUtiDj78XDRut0F=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 115,
-      "name": "Shinsei",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipP8NUpPkbxuxHf2Tm4G0L8qhaap8Nr-Y6cXPphv=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 116,
       "name": "Hugo's Seafood",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPIk2dcLP5e6yhzPxualltm2W1qFRxZgisdWzSR=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "too_small_23110"
-          }
-        ]
-      },
+      "changes": {},
       "conflicts": {
         "instagram": {
           "current": "@hugosseafoodbar",
           "apify": "@hugosbishoparts"
         }
       },
-      "flags": []
-    },
-    {
-      "id": 117,
-      "name": "Pesca Coastal Classics",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPx39xPLo9VbsPrhrHIKGpSx_g5-FZqEnF2FTcc=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "logo_url_pattern"
-          }
-        ]
-      },
-      "conflicts": {},
       "flags": []
     },
     {
@@ -1127,12 +781,16 @@
       "id": 119,
       "name": "Nonna",
       "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNZ3pFLOE9irYKfL1xlEwxIlvh4cPmaM201U0Bf=w1920-h1080-k-no",
-        "_photoSource": "google-owner",
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEGxxlXlU2i0PXTGm_dZ0TvlDs3lGYi6GCEZvrXliXt6zI-9K7bZp8DGrx-maRNWZyeoVQTKsGPtzRdRmfjwGpDC53Fh20OzBQae6upz-bczrrG0MJ0h24-iyzKC9jmA9Z1lUPn5Q=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
         "_photoTriedFirst": [
           {
             "source": "og:image",
             "reason": "too_small_13613"
+          },
+          {
+            "source": "google-owner",
+            "reason": "too_tall_or_square_862x1080_ar0.80"
           }
         ]
       },
@@ -1142,10 +800,7 @@
     {
       "id": 120,
       "name": "Deli News",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipPe-2z8kIs8UswEXghZ1wyZ1SDbJZ4twVIEBRmZ=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
+      "changes": {},
       "conflicts": {
         "website": {
           "current": "https://www.delinewsdallas.com",
@@ -1155,25 +810,9 @@
       "flags": []
     },
     {
-      "id": 121,
-      "name": "Milagro Tacos Cantina",
-      "changes": {
-        "phone": "(469) 872-0168",
-        "lat": 32.7784222,
-        "lng": -96.8314543,
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG0UZmEf-0R8VC-EhY5XLYlCCIUGTuiyeX42MuZfJUpYljrzPBNBLOdfIHr2oKvAKqKHKxrNVKMnDRMvZrIkYNJvD86QO44qnIUb2TCQJg0eqZuxVzZkcI7g2G-gwBLe12S6YA-LSJWN5kG=w1920-h1080-k-no",
-        "_photoSource": "google-curated"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 122,
       "name": "Cafe Brazil",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNi1wrbl48g9aSPd-q4eI9vwCw8aG1dlAoft-lr=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
+      "changes": {},
       "conflicts": {
         "website": {
           "current": "https://cafebrazil.com",
@@ -1189,32 +828,13 @@
     {
       "id": 123,
       "name": "RH Rooftop Restaurant at RH Dallas",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNX4GfE7U4RG6DdnVdb3CRs_XkEelCKEAs2E_TI=w1920-h1080-k-no",
-        "_photoSource": "google-owner"
-      },
+      "changes": {},
       "conflicts": {
         "website": {
           "current": "https://www.rh.com/dallas",
           "apify": "https://rh.com/dallas/restaurant"
         }
       },
-      "flags": []
-    },
-    {
-      "id": 125,
-      "name": "EVELYN",
-      "changes": {
-        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEvHQMmPs7Mt_0oFXXo22w-S5NRZ6EGCgbA1I_w_XyjOQx4txqHlKBZXB298Pta-tG1zio5ZsFENcrd5VGZ6tgVj7JI_SGQt8qYCCnw8v6gCotKDh1ngoCOqQDUwDI3dAhRO_SaaLKp0OE=w1920-h1080-k-no",
-        "_photoSource": "google-curated",
-        "_photoTriedFirst": [
-          {
-            "source": "og:image",
-            "reason": "near_square_1860x2017"
-          }
-        ]
-      },
-      "conflicts": {},
       "flags": []
     },
     {
@@ -1236,26 +856,6 @@
       ]
     },
     {
-      "id": 128,
-      "name": "The Charles",
-      "changes": {
-        "photoUrl": "https://thecharlesdallas.com/wp-content/uploads/2026/02/2_7_26_THECHARLES_SREYNOLDS-347copy-scaled.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 130,
-      "name": "Shoyo",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/6058ff8f090f5773f816391d/60d293235ed0bc5c1602443a_fiF4fvyI.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 132,
       "name": "Bharat Bhavan",
       "changes": {},
@@ -1267,7 +867,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "too_small_669x170"
+              "reason": "dims_too_small_669x170"
             }
           ]
         }
@@ -1303,31 +903,11 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_1650x1650"
+              "reason": "too_tall_or_square_1650x1650_ar1.00"
             }
           ]
         }
       ]
-    },
-    {
-      "id": 137,
-      "name": "The Charlotte",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/6706e9c77e06e31c9c11f9b8/t/687fe3fae0a783741a5ed870/1753211898710/The+Charlotte-233.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 140,
-      "name": "Tacos El Metro",
-      "changes": {
-        "photoUrl": "https://img1.wsimg.com/isteam/ip/e5edb60f-3b4b-49e3-857d-64a60235fdf2/banner3-4682a9b.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 141,
@@ -1377,31 +957,11 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_1250x1223"
+              "reason": "too_tall_or_square_1250x1223_ar1.02"
             }
           ]
         }
       ]
-    },
-    {
-      "id": 146,
-      "name": "Turan Uyghur Kitchen",
-      "changes": {
-        "photoUrl": "https://www.turanuyghurkitchentx.com/tg9dv5ea/opengraph-image-959cal/og-image?0b56cf29834ff804",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 148,
-      "name": "Mister Charles",
-      "changes": {
-        "photoUrl": "https://themistercharles.com/wp-content/uploads/2023/07/space.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 150,
@@ -1476,36 +1036,6 @@
       ]
     },
     {
-      "id": 156,
-      "name": "Avra Dallas",
-      "changes": {
-        "photoUrl": "https://framerusercontent.com/assets/v1M4SqUfySlZDw2xPrs94yNSos.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 158,
-      "name": "The Mansion on Turtle Creek",
-      "changes": {
-        "photoUrl": "https://images.rosewoodhotels.com/is/image/rwhg/night-exterior-2",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 162,
-      "name": "Encina",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5f178159e2fd76782379f3af/t/5febe45c5c5b690602bd28d1/1601995323625/Social-image.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 164,
       "name": "Mercat Bistro",
       "changes": {},
@@ -1517,7 +1047,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "too_small_39013"
+              "reason": "too_small_39012"
             }
           ]
         }
@@ -1614,26 +1144,6 @@
       ]
     },
     {
-      "id": 171,
-      "name": "El Carlos Elegante",
-      "changes": {
-        "photoUrl": "https://elcarloselegante.com/wp-content/uploads/2022/12/1-9.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 172,
-      "name": "Café Duro",
-      "changes": {
-        "photoUrl": "https://cafe-duro.com/wp-content/uploads/2023/02/space.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 173,
       "name": "Drake's Hollywood",
       "changes": {},
@@ -1709,8 +1219,14 @@
       "id": 178,
       "name": "Le Bistrot Bar Sardine",
       "changes": {
-        "photoUrl": "https://images.getbento.com/accounts/1f7dec9ee894f03e86ebead431bc0b1c/media/images/74177bar-sardine-assets-01.svg?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=EDEDF1&pad=100",
-        "_photoSource": "og:image"
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_small_4188"
+          }
+        ]
       },
       "conflicts": {},
       "flags": []
@@ -1752,16 +1268,6 @@
       ]
     },
     {
-      "id": 183,
-      "name": "Bar Colette",
-      "changes": {
-        "photoUrl": "https://cdn.sanity.io/images/4i1nkyjw/production/57a84ff2b47302566f2f49535259f557f947a756-1563x1039.png?rect=0,111,1563,818&amp;w=1200&amp;h=628&amp;fit=crop&amp;auto=format",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 186,
       "name": "Quarter Acre",
       "changes": {},
@@ -1778,16 +1284,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 189,
-      "name": "Mister O1 Extraordinary Pizza",
-      "changes": {
-        "photoUrl": "https://www.mistero1.com/wp-content/uploads/2021/05/mister-o1-feature-img.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 190,
@@ -1837,7 +1333,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_1302x1302"
+              "reason": "too_tall_or_square_1302x1302_ar1.00"
             }
           ]
         }
@@ -1878,36 +1374,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 199,
-      "name": "Eatzi's Market & Bakery",
-      "changes": {
-        "photoUrl": "https://eatzis.com/wp-content/uploads/2024/05/Eatzis-In-Store-Photos.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 200,
-      "name": "Wayward Coffee Co.",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5d0fd4e1c73c0b00016fdf22/t/5ec2a8178efcc22fc277ab33/1589815324671/Wayward+Cowboy+Profile+Pic.PNG?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 201,
-      "name": "Goldie's",
-      "changes": {
-        "photoUrl": "https://static.wixstatic.com/media/3098c7_7ae5a84af8ca4c5bbf832a0eb84b23ce%7Emv2.png/v1/fit/w_2500,h_1330,al_c/3098c7_7ae5a84af8ca4c5bbf832a0eb84b23ce%7Emv2.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 203,
@@ -1962,16 +1428,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 209,
-      "name": "CATCH Dallas",
-      "changes": {
-        "photoUrl": "https://images.getbento.com/accounts/725231f634a05302aa9e40b8c2886927/media/images/61369Main_Dining_Room_CATCH_Dallas-47.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&h=600",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 211,
@@ -2046,26 +1502,6 @@
       ]
     },
     {
-      "id": 221,
-      "name": "Haywire",
-      "changes": {
-        "photoUrl": "https://cdn.sanity.io/images/9p1heoig/production/f41fe7e9eea080699b3181b28ae985ad991f48fe-8010x5340.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 224,
-      "name": "Fearing's",
-      "changes": {
-        "photoUrl": "https://www.fearingsrestaurant.com/resourcefiles/homeimages/ot6.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 225,
       "name": "Stillwell's",
       "changes": {},
@@ -2084,16 +1520,6 @@
       ]
     },
     {
-      "id": 229,
-      "name": "Tacodeli",
-      "changes": {
-        "photoUrl": "https://www.tacodeli.com/wp-content/uploads/careers_tacodeli_standard-scaled.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 230,
       "name": "Zalat Pizza",
       "changes": {},
@@ -2105,7 +1531,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_545x542"
+              "reason": "too_tall_or_square_545x542_ar1.01"
             }
           ]
         }
@@ -2115,28 +1541,14 @@
       "id": 231,
       "name": "Fadi's Mediterranean Grill",
       "changes": {
-        "photoUrl": "https://fadiscuisine.com/wp-content/uploads/2025/07/fadi-dimassi-photo.jpeg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 234,
-      "name": "Hopdoddy Burger Bar",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/5fd923d0e6a54cb58ac2acc8/5fe29d74bb0dc07bf05807b3_HD_ShareImage_Homepage%20(1).jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 236,
-      "name": "Harvest at the Masonic",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/64da30a21cf84d376893502c/t/688299919486880762d03915/1753389457204/Harvest-54.jpg?format=1500w",
-        "_photoSource": "og:image"
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_1279x1600_ar0.80"
+          }
+        ]
       },
       "conflicts": {},
       "flags": []
@@ -2196,26 +1608,6 @@
       ]
     },
     {
-      "id": 244,
-      "name": "Community Beer Company",
-      "changes": {
-        "photoUrl": "https://communitybeer.com/wp-content/uploads/2020/04/community-beer-co-schema.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 245,
-      "name": "Four Corners Brewing Co.",
-      "changes": {
-        "photoUrl": "https://fcbrewing.com/wp-content/uploads/2024/05/Brewery-scaled.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 246,
       "name": "Peticolas Brewing Company",
       "changes": {},
@@ -2270,26 +1662,6 @@
       ]
     },
     {
-      "id": 252,
-      "name": "Topgolf Dallas",
-      "changes": {
-        "photoUrl": "https://s3.topgolf.com/uploads/images/cp/day/tg-cpa-bay-day-adult-group-iRjQJcTx-2.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 255,
-      "name": "Punch Bowl Social",
-      "changes": {
-        "photoUrl": "https://cdn.sanity.io/images/37ma4tan/production/9795f4261c6dd9964c6f52c0fd433b25759ff8ce-1682x1121.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 257,
       "name": "BowlGames Dallas",
       "changes": {},
@@ -2308,56 +1680,6 @@
       ]
     },
     {
-      "id": 258,
-      "name": "Chicken N Pickle",
-      "changes": {
-        "photoUrl": "https://chickennpickle.com/wp-content/uploads/2022/11/Grand-Prairie-Property-4-scaled.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 262,
-      "name": "TOCA Social",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/6596d6dcf8e652c372ba5cda/65d605850e989ae961bcf8f6_Opengraph%201200x630px.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 263,
-      "name": "Batbox",
-      "changes": {
-        "photoUrl": "https://www.batbox.com/wp-content/uploads/2026/01/DSC05577-scaled.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 275,
-      "name": "Inwood Tavern",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/53137daee4b03cbb5111b4db/t/5fcc0416c00f007cead44872/1607205930775/61E0D191-94BE-403A-AA48-A9A2F4BD4062.JPG?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 278,
-      "name": "Three Links",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/68a9f31dd5832c7fe0af18b2/t/68a9f31ed5832c7fe0af18de/1727886313125/Tempo_Dance_511853-min.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 283,
       "name": "Puerto Cocina",
       "changes": {},
@@ -2369,7 +1691,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_2200x2200"
+              "reason": "too_tall_or_square_2200x2200_ar1.00"
             }
           ]
         }
@@ -2387,41 +1709,11 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_1200x1200"
+              "reason": "too_tall_or_square_1200x1200_ar1.00"
             }
           ]
         }
       ]
-    },
-    {
-      "id": 290,
-      "name": "The Ranch at Las Colinas",
-      "changes": {
-        "photoUrl": "https://cdn.sanity.io/images/dc34pirf/production/9245b8b79c5768848d0a8e09d44087e050fbeaa1-1366x638.png?rect=258,0,851,638&amp;w=800&amp;h=600",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 292,
-      "name": "The Free Man",
-      "changes": {
-        "photoUrl": "https://static.spotapps.co/website_images/ab_websites/62019_website_v1/social.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 293,
-      "name": "Milo Butterfingers",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/66749fc32cea966ff3c3ddb2/t/6974efaf028f182e8bfd9832/1769271215409/MB55Logo.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 296,
@@ -2440,56 +1732,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 298,
-      "name": "Mexican Sugar",
-      "changes": {
-        "photoUrl": "https://cdn.sanity.io/images/r07buwem/production/012642a0d5db905b6f4347e5c1c34ea449db784b-1026x514.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 299,
-      "name": "Legacy Hall",
-      "changes": {
-        "photoUrl": "https://legacyfoodhall.com/uploads/sites/2/2020/07/DSC_0869-2.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 301,
-      "name": "Sundown at Granada",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/600b3423ebbc9f2117bb31c6/t/67573e97f549e4407e85649c/1733770903641/Assets-07.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 302,
-      "name": "Barcelona Wine Bar",
-      "changes": {
-        "photoUrl": "https://barcelonawinebar.com/media/barcelona_rino_0166-1-EDIT-1000x667.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 304,
-      "name": "Carbone",
-      "changes": {
-        "photoUrl": "https://cdn.sanity.io/images/gb1p0gbj/production/75b1fcbd7cacafe8a4dcc85be30515752df98fc8-1440x695.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 305,
@@ -2539,7 +1781,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "too_small_20917"
+              "reason": "too_small_20916"
             }
           ]
         }
@@ -2567,18 +1809,14 @@
       "id": 309,
       "name": "NDA Brasserie",
       "changes": {
-        "photoUrl": "https://images.getbento.com/accounts/a614bf79fadc5d5de77f3b5b7a8dc853/media/images/397NDA_Logotype_Ecru_CMYK.svg?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=EDEDF1&pad=100",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 310,
-      "name": "Los Charros Tex-Mex Smokehouse",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/67eaeea33828e5f23865a9fa/680d67cf66f6511b23260f92_Opengraph-LC.jpg",
-        "_photoSource": "og:image"
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_small_29621"
+          }
+        ]
       },
       "conflicts": {},
       "flags": []
@@ -2602,26 +1840,6 @@
       ]
     },
     {
-      "id": 322,
-      "name": "Blue Mesa Grill",
-      "changes": {
-        "photoUrl": "https://bluemesagrill.com/wp-content/uploads/2024/11/Catering-Party-Table-with-Margaritas-2X4B1837-2.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 326,
-      "name": "Crispy Cones",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/673d65caa56c4032cf98d7db/t/686da27b96c8480de25ebb18/1752015483614/CRISPY+CONES+LOGOS+cream+transparent-01.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 327,
       "name": "Snappy Salads",
       "changes": {},
@@ -2638,16 +1856,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 330,
-      "name": "CRISP & GREEN",
-      "changes": {
-        "photoUrl": "https://crispandgreen.com/wp-content/uploads/2025/09/09_CG-FW25_Banner_0017-scaled.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 332,
@@ -2679,7 +1887,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_1000x1000"
+              "reason": "too_tall_or_square_1000x1000_ar1.00"
             }
           ]
         }
@@ -2707,18 +1915,14 @@
       "id": 336,
       "name": "Brick & Bones",
       "changes": {
-        "photoUrl": "https://bricknbones.com/wp-content/uploads/2026/02/BRICK-DE-8621_1920.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 339,
-      "name": "Mike's Chicken",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/62a677f8362b8742da5a4fce/t/6758ec23ea3fdd24720213ca/1733880867331/MikesChicken_RGB_Black.png?format=1500w",
-        "_photoSource": "og:image"
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_1920x2400_ar0.80"
+          }
+        ]
       },
       "conflicts": {},
       "flags": []
@@ -2753,7 +1957,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_3544x3544"
+              "reason": "too_tall_or_square_3544x3544_ar1.00"
             }
           ]
         }
@@ -2814,26 +2018,6 @@
       ]
     },
     {
-      "id": 355,
-      "name": "Hendy's on Henderson",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/68770e2e1695fd50bfc99b54/t/68b874bd2dc1bc48f824f5a8/1756918973414/NowOpen.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 360,
-      "name": "Claremont",
-      "changes": {
-        "photoUrl": "https://claremontdallas.com/wp-content/uploads/2024/11/Claremont-OG-Image.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 362,
       "name": "Sky Rocket Burger",
       "changes": {},
@@ -2850,26 +2034,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 368,
-      "name": "MiYa Chinese",
-      "changes": {
-        "photoUrl": "https://img1.wsimg.com/isteam/ip/53e27021-0281-4246-a638-b66091633a6c/Screenshot%202024-05-24%20at%2010.25.48%E2%80%AFPM.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 369,
-      "name": "Royal China (Preston)",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/59b73d692278e789936b4b91/t/6994ad91b267175839b8d4c7/1771351441216/PlateDetail.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 371,
@@ -2919,7 +2083,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_805x805"
+              "reason": "too_tall_or_square_805x805_ar1.00"
             }
           ]
         }
@@ -2944,16 +2108,6 @@
       ]
     },
     {
-      "id": 378,
-      "name": "JuJu's Coffee & Bar",
-      "changes": {
-        "photoUrl": "http://jujuscoffee.com/cdn/shop/files/display_nick_and_ju_a3cd5ab5-1435-42b2-8e3d-319272df91fb.jpg?v=1753034405",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 379,
       "name": "Union Coffee",
       "changes": {},
@@ -2972,16 +2126,6 @@
       ]
     },
     {
-      "id": 380,
-      "name": "LDU Coffee",
-      "changes": {
-        "photoUrl": "https://www.lducoffee.com/assets/bitmaps/social-share.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 383,
       "name": "Magnolias Sous Le Pont",
       "changes": {},
@@ -2998,16 +2142,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 392,
-      "name": "Jinya Ramen Bar",
-      "changes": {
-        "photoUrl": "https://jinyaramenbar.b-cdn.net/cms/wp-content/uploads/2020/03/ogp-img.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 393,
@@ -3046,46 +2180,6 @@
       ]
     },
     {
-      "id": 399,
-      "name": "Miriam Cocina Latina",
-      "changes": {
-        "photoUrl": "https://www.miriamcocina.com/wp-content/uploads/2020/06/MIRIAM_MAIN_DARK_5.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 403,
-      "name": "Goodwins",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/661efc2989a93a0236d2065d/t/6620466076d4f3002bd16edb/1713391200436/Untitled+design.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 411,
-      "name": "Taqueria La Ventana",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/682cd025769f57c5edcbfa40/68c2df89237d81cd4f7efd88_og-tlc-home.avif",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 413,
-      "name": "Sandoitchi",
-      "changes": {
-        "photoUrl": "https://d7udpncdzgr1h.cloudfront.net/thejouledallas.com-1464425583/cms/cache/v2/626107f95b63d.jpeg/1200x630/fit/80/4d9cc97ccfe2d4227313a64334be1371.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 418,
       "name": "Yearby's BBQ",
       "changes": {},
@@ -3097,7 +2191,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_512x512"
+              "reason": "too_tall_or_square_512x512_ar1.00"
             }
           ]
         }
@@ -3120,16 +2214,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 421,
-      "name": "Whiskey Cake Kitchen & Bar",
-      "changes": {
-        "photoUrl": "https://cdn.sanity.io/images/fxysmtbo/production/65a953a38d6fbdebc3749465bc4883c7b0c403d5-1026x514.png?rect=171,0,685,514&amp;w=800&amp;h=600",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 422,
@@ -3184,36 +2268,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 427,
-      "name": "Saaya",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/633140db8266416cae99e935/63485975abb00325f507ca56_Web%20Clip.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 435,
-      "name": "Olivella's Pizza and Wine",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/60ca096b7d077df8076d591d/60ce27eb52531415a63730b9_olivellas_pizza_og_image-min.jpeg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 437,
-      "name": "Bowen House",
-      "changes": {
-        "photoUrl": "https://c-p.rmcdn.net/67a4de612f4bad78447fea43/5547800/Screenshot-82b82963-2348-4247-80dd-8a925dae0068_readyscr_1024.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 438,
@@ -3288,26 +2342,6 @@
       ]
     },
     {
-      "id": 447,
-      "name": "The Stix Icehouse",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/63cadc97846f4a1535b4c163/6979046d2bb7d6440cd9215b_Open%20Graph%20Img%20v2.webp",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 448,
-      "name": "Rose Cafe",
-      "changes": {
-        "photoUrl": "https://rosecafedallas.com/wp-content/uploads/2024/10/rose-cafe.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 450,
       "name": "Saint Valentine",
       "changes": {},
@@ -3342,16 +2376,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 462,
-      "name": "Terry Black's Barbecue",
-      "changes": {
-        "photoUrl": "https://framerusercontent.com/images/r1bGTfqX1k4kpE9AounSy4T1zI.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 463,
@@ -3390,26 +2414,6 @@
       ]
     },
     {
-      "id": 466,
-      "name": "Rise Soufflé",
-      "changes": {
-        "photoUrl": "https://static.showit.co/1200/AmP3v8RnSQm2Z9ShtO6MeA/88571/jambon_souffle.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 469,
-      "name": "S&D Oyster Company",
-      "changes": {
-        "photoUrl": "https://static.spotapps.co/website_images/ab_websites/60718_website/about/about2.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 471,
       "name": "Resident Taqueria",
       "changes": {},
@@ -3428,16 +2432,6 @@
       ]
     },
     {
-      "id": 474,
-      "name": "Sonny Bryan's",
-      "changes": {
-        "photoUrl": "https://sonnybryans.com/wp-content/uploads/2025/05/Background.webp",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 478,
       "name": "Hutchins BBQ",
       "changes": {},
@@ -3449,31 +2443,11 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "extreme_ratio_1277x473"
+              "reason": "too_panoramic_1277x473_ar2.70"
             }
           ]
         }
       ]
-    },
-    {
-      "id": 483,
-      "name": "Celestial Beerworks",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5adcd795af20962b3d9d9ef2/t/649daf079733ed10c98321dd/1688055559280/celestial+sticker+copy.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 484,
-      "name": "On Rotation",
-      "changes": {
-        "photoUrl": "https://i0.wp.com/on-rotation.com/wp-content/uploads/2022/01/Front-of-Building-scaled.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 485,
@@ -3492,16 +2466,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 488,
-      "name": "Intrinsic Smokehouse & Brewery",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/6206c446ce223e42dd7d3397/t/663a3f39e1972b7e7fe5f2b9/1715093305085/social-sharing%402x.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 489,
@@ -3540,16 +2504,6 @@
       ]
     },
     {
-      "id": 495,
-      "name": "The Bread Club",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/69472349fac5dae6e8d699c8/696523fdc9e1302f40957e03_THEBREADCLUB-META_1200x630.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 496,
       "name": "Taco y Vino - Garland",
       "changes": {},
@@ -3568,31 +2522,17 @@
       ]
     },
     {
-      "id": 498,
-      "name": "Luna Roja",
-      "changes": {
-        "photoUrl": "https://www.lunarojadallas.com/site/assets/files/14667/2026-03-07.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 499,
       "name": "Hungry Belly",
       "changes": {
-        "photoUrl": "https://img1.wsimg.com/isteam/ip/a97adb25-0792-4735-85cc-f659801ced45/bulgogi%20dolsot%202.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 500,
-      "name": "Medieval Times",
-      "changes": {
-        "photoUrl": "https://medt-refresh.imgix.net/wp-content/uploads/2020/08/29153944/knights.png",
-        "_photoSource": "og:image"
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_1706x2560_ar0.67"
+          }
+        ]
       },
       "conflicts": {},
       "flags": []
@@ -3614,26 +2554,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 504,
-      "name": "Odelay Tex-Mex",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/61f991c1b89c4222cb7a4ef8/6202c28bbd697ba0f8295462_odelay-preview.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 508,
-      "name": "Eno's Pizza Tavern",
-      "changes": {
-        "photoUrl": "https://enospizza.com/wp-content/uploads/2017/03/IMG_2249.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 509,
@@ -3672,26 +2592,6 @@
       ]
     },
     {
-      "id": 514,
-      "name": "CrushCraft Thai Eats",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5267005fe4b0eea0b50a3555/t/6213d504978cd33ec57ffd1c/1645466884191/OG+Phat+Thai.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 515,
-      "name": "Mendocino Farms",
-      "changes": {
-        "photoUrl": "https://www.mendocinofarms.com/wp-content/uploads/2021/01/mendocino-food-items.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 516,
       "name": "Snarf's Sandwiches",
       "changes": {},
@@ -3708,26 +2608,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 520,
-      "name": "Cafe Lucca",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/68b758891414b762be532019/69cc5e5fee24a5bb912c0c4e_691f7a44204caf7116af5234_Opengraph.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 523,
-      "name": "Craft Restaurant & Beer Market",
-      "changes": {
-        "photoUrl": "https://www.craftbeermarket.com/wp-content/uploads/2025/10/victoria-harbour-craft-beer-market-scaled.jpeg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 524,
@@ -3766,26 +2646,6 @@
       ]
     },
     {
-      "id": 527,
-      "name": "Cafe Olivia",
-      "changes": {
-        "photoUrl": "https://cafeoliviatx.com/wp-content/uploads/2026/02/OLIVIA_DOWNTOWN_v1-7800_1.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 530,
-      "name": "Plomo",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5fdd1e21d163fb13ea7e4da7/t/63debef6519c1b693650dfbd/1675542262430/plomo-27.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 531,
       "name": "Birdies Eastside",
       "changes": {},
@@ -3797,31 +2657,11 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "too_small_40656"
+              "reason": "too_small_40641"
             }
           ]
         }
       ]
-    },
-    {
-      "id": 534,
-      "name": "Via Triozzi",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/641b28769e0dbd4878ac1b5b/t/64dd2a0767a3c848ff399efe/1692215827325/Via+Triozzi+Home+Page.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 535,
-      "name": "Green Light Social",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/65a17d89b0bd7665e465acc7/t/65a7629953000e5a30f534b1/1705468569157/WEBSITE-THUMBNAIL.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 537,
@@ -3878,16 +2718,6 @@
       ]
     },
     {
-      "id": 542,
-      "name": "Meridian",
-      "changes": {
-        "photoUrl": "https://www.thevillagedallas.com/wp-content/uploads/2023/10/Drone-untitled-0016-1-Large.jpeg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 543,
       "name": "SILO Dallas",
       "changes": {},
@@ -3904,16 +2734,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 544,
-      "name": "Toca Madera",
-      "changes": {
-        "photoUrl": "https://cdn.sanity.io/images/kq13uftm/production/53332a0981021f9609e612c5b18ae82ad8b4157f-1920x1346.png?rect=0,172,1920,1003&amp;w=1200&amp;h=627",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 545,
@@ -3934,26 +2754,6 @@
       ]
     },
     {
-      "id": 546,
-      "name": "Clark's Oyster Bar",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/6702675eeba2a42f44027c07/6716d71f5641b289d731e453_clarks_home-OG.jpeg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 550,
-      "name": "Punk Noir",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/65aef7883119d95e07c19b98/t/69bad5f5b439310e854d1b23/1773852149334/Punk+Noir-06.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 553,
       "name": "Neighborhood Sushi",
       "changes": {},
@@ -3970,36 +2770,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 554,
-      "name": "La Lupita Taco & Mezcal",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/689b60657aab31e14d9be36e/689e2f1d89992e57c794a1e8_og.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 555,
-      "name": "Ospi",
-      "changes": {
-        "photoUrl": "https://ospi.com/concept/brentwood.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 556,
-      "name": "Alara",
-      "changes": {
-        "photoUrl": "https://alaradtx.com/opengraph-image?7b074fed933fcc70",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 557,
@@ -4056,51 +2826,17 @@
       ]
     },
     {
-      "id": 562,
-      "name": "Toyota Music Factory",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/66c54e6343eaf22d36c6af9a/t/67f69768927e4602153370d3/1744213864932/TMF-SocialSharing-1080x1080.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 569,
-      "name": "Ka Thai",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/64d4557effdbe64183bda43b/t/664e1e5a6f8c480249c6a3f0/1709760545389/socialImage.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 1056,
-      "name": "Clifton Club",
-      "changes": {
-        "photoUrl": "https://cliftonclubdallas.com/wp-content/uploads/2023/01/clifton-club-og-image.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 1057,
-      "name": "Astra Kitchen + Lounge",
-      "changes": {
-        "photoUrl": "https://www.astradallas.com/resourcefiles/homeimages/astra-kitchen-lounge-bar-dallas-tx.png?version=3282026070848",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 1060,
       "name": "Brass Ram",
       "changes": {
-        "photoUrl": "https://flavorhookdallas.com/wp-content/uploads/2023/11/Brass-Ram-FI.png",
-        "_photoSource": "og:image"
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_535x803_ar0.67"
+          }
+        ]
       },
       "conflicts": {},
       "flags": []
@@ -4160,16 +2896,6 @@
       ]
     },
     {
-      "id": 1067,
-      "name": "Chelsea Corner",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/64aebb1a7e97752a0b104104/t/64ffaa4ef1e0134c4b59d955/1694476887186/Chelsea+Corner-1.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 1068,
       "name": "The Nodding Donkey",
       "changes": {},
@@ -4186,16 +2912,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 1070,
-      "name": "White Rhino Coffee",
-      "changes": {
-        "photoUrl": "http://whiterhinocoffee.com/cdn/shop/files/White_Rhino_Vertical_Dark_7.19.22.png?v=1658253450",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 1071,
@@ -4232,36 +2948,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 1074,
-      "name": "Fortune House - Greenville",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5efd02466f4ef72980031a44/t/60b80e36a8d3156764f9675c/1622674998310/Pork+%26+Crab+Xiao+Long+Bao2.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 1075,
-      "name": "Hawkers Asian Street Food",
-      "changes": {
-        "photoUrl": "https://eathawkers.com/wp-content/uploads/2024/07/2407_Cocktails_Windermere-Shoot-13-scaled.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 1076,
-      "name": "Ayat",
-      "changes": {
-        "photoUrl": "https://images.getbento.com/accounts/9e667495f86f1fa396caeaebb66c4d63/media/images/2936AyatBApr2025-6.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&h=600",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 1078,
@@ -4311,7 +2997,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_640x640"
+              "reason": "too_tall_or_square_640x640_ar1.00"
             }
           ]
         }
@@ -4329,7 +3015,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_525x505"
+              "reason": "too_tall_or_square_525x505_ar1.04"
             }
           ]
         }
@@ -4383,7 +3069,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_2500x2500"
+              "reason": "too_tall_or_square_2500x2500_ar1.00"
             }
           ]
         }
@@ -4401,7 +3087,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_1000x940"
+              "reason": "too_tall_or_square_1000x940_ar1.06"
             }
           ]
         }
@@ -4462,16 +3148,6 @@
       ]
     },
     {
-      "id": 1116,
-      "name": "STK Steakhouse",
-      "changes": {
-        "photoUrl": "https://stksteakhouse.com/wp-content/uploads/2024/10/Screenshot-2024-05-09-at-7.07.55-PM.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 9026,
       "name": "Le Bon Temps",
       "changes": {},
@@ -4488,16 +3164,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 9027,
-      "name": "Botolino Gelato Artigianale",
-      "changes": {
-        "photoUrl": "https://botolino.com/storage/app/media/open-graph/v2/beig_main.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 9028,
@@ -4529,7 +3195,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_1080x1080"
+              "reason": "too_tall_or_square_1080x1080_ar1.00"
             }
           ]
         }
@@ -4547,7 +3213,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_1024x1024"
+              "reason": "too_tall_or_square_1024x1024_ar1.00"
             }
           ]
         }
@@ -4565,7 +3231,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_512x512"
+              "reason": "too_tall_or_square_512x512_ar1.00"
             }
           ]
         }
@@ -4583,7 +3249,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "near_square_1080x1080"
+              "reason": "too_tall_or_square_1080x1080_ar1.00"
             }
           ]
         }
@@ -4644,36 +3310,6 @@
       ]
     },
     {
-      "id": 9055,
-      "name": "Park Bistro",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/6953065b8dec464352dc40f5/t/69581f75fc503c01aa188f6f/1767382901935/Park+Bistro-02.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9056,
-      "name": "Tick Tock Taco X Churro on Top",
-      "changes": {
-        "photoUrl": "https://ticktocktaco.com/wp-content/uploads/2026/01/Home-Page-Featured-Picture.webp",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9057,
-      "name": "Reunion Tower GeO-Deck",
-      "changes": {
-        "photoUrl": "https://reuniontower.com/wp-content/uploads/2023/03/hero-1.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 9058,
       "name": "The Sixth Floor Museum at Dealey Plaza",
       "changes": {},
@@ -4692,16 +3328,6 @@
       ]
     },
     {
-      "id": 9061,
-      "name": "Dallas Arboretum and Botanical Garden",
-      "changes": {
-        "photoUrl": "https://dallasarboretum.imgix.net/wp-content/uploads/2019/01/18143915/Japanese-Cherries-and-tulips-along-the-Paseo1.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 9062,
       "name": "AT&T Stadium",
       "changes": {},
@@ -4713,31 +3339,11 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "extreme_ratio_1800x610"
+              "reason": "too_panoramic_1800x610_ar2.95"
             }
           ]
         }
       ]
-    },
-    {
-      "id": 9066,
-      "name": "Crow Museum of Asian Art",
-      "changes": {
-        "photoUrl": "https://crowmuseum.org/files/2025/04/crow-museum-entrance.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9067,
-      "name": "Smoky Rose",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/621545909066ba3c19244f33/t/6229041fab4b743b1a6a6fa8/1646855199327/IMG_1856.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 9071,
@@ -4758,31 +3364,17 @@
       ]
     },
     {
-      "id": 9073,
-      "name": "At Fault",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/64ef3fe7659334024c70eea3/t/68cdd8a33b9ac37a1aed0081/1758320803178/DSC07684-min.jpeg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 9075,
       "name": "Triumphs Espresso & Whiskey",
       "changes": {
-        "photoUrl": "https://triumphsdallas.com/wp-content/uploads/2025/05/14.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9076,
-      "name": "Joe Leo Fine Tex-Mex",
-      "changes": {
-        "photoUrl": "https://joeleotexmex.com/wp-content/uploads/2023/06/ourVibeHero-scaled-1.png",
-        "_photoSource": "og:image"
+        "photoUrl": "",
+        "_photoSource": "none_passed_test",
+        "_photoTriedAll": [
+          {
+            "source": "og:image",
+            "reason": "too_tall_or_square_1350x1920_ar0.70"
+          }
+        ]
       },
       "conflicts": {},
       "flags": []
@@ -4806,16 +3398,6 @@
       ]
     },
     {
-      "id": 9079,
-      "name": "Atlas",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/67f57402452cb74989356f6b/t/68080f0b7869c808d473bb69/1745358603077/2024_AtlasFW_Interiors-9958+%28wecompress.com%29.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 9080,
       "name": "La Reunion",
       "changes": {},
@@ -4832,16 +3414,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 9081,
-      "name": "Weekend Coffee",
-      "changes": {
-        "photoUrl": "https://d7udpncdzgr1h.cloudfront.net/thejouledallas.com-1464425583/cms/cache/v2/62659781346c5.jpg/1200x630/fit/80/4a381a6227d4527fda01dcf309e63a9a.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 9082,
@@ -4862,26 +3434,6 @@
       ]
     },
     {
-      "id": 9087,
-      "name": "Black Sheep Coffee",
-      "changes": {
-        "photoUrl": "http://blacksheepcoffee.us/cdn/shop/files/social-image.png?v=1692113455",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9088,
-      "name": "Ralph and Rose",
-      "changes": {
-        "photoUrl": "https://cdn.shopify.com/s/files/1/0550/1544/0447/files/rr-web1_9002e986-a15a-463e-8a8c-dca6cb8f9de4.jpg?v=1660603991",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 9089,
       "name": "Billy Can Can",
       "changes": {},
@@ -4898,16 +3450,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 9095,
-      "name": "Knife Italian",
-      "changes": {
-        "photoUrl": "https://cdn.prod.website-files.com/67633188a9c18211d2246bb0/676337485a45b130f2e88028_8c434fa5abf48ad8d1824f77788550c6.webp",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 9100,
@@ -4946,26 +3488,6 @@
       ]
     },
     {
-      "id": 9104,
-      "name": "Giovanni Italian Restaurant",
-      "changes": {
-        "photoUrl": "https://static.spotapps.co/website_images/ab_websites/78878_website_v1/social.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9105,
-      "name": "The Five 01 at the Yacht Club",
-      "changes": {
-        "photoUrl": "https://images.ctfassets.net/zpa3q1hzaiuv/1ob72aLn10EHjFlgFn5vgC/3f2935128052830617f220ffd46ae236/IMG_0038.jpg?fm=webP",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 9106,
       "name": "Cotton Patch Cafe (Rockwall)",
       "changes": {},
@@ -5002,46 +3524,6 @@
       ]
     },
     {
-      "id": 9109,
-      "name": "Main Street Bistro & Bakery",
-      "changes": {
-        "photoUrl": "https://themainbakery.com/wp-content/uploads/2023/03/bakery-social-meta.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9110,
-      "name": "Tolbert's Restaurant & Chili Parlor",
-      "changes": {
-        "photoUrl": "https://tolbertsrestaurant.com/tolberts.webp",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9114,
-      "name": "Big Fish Seafood Grill & Bar",
-      "changes": {
-        "photoUrl": "https://static.spotapps.co/website_images/ab_websites/184280_website_v1/social_share.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9116,
-      "name": "Soulman's Bar-B-Que",
-      "changes": {
-        "photoUrl": "https://soulmans.com/wp-content/uploads/2016/01/Location1.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 9117,
       "name": "Rio Lerma Mexican Restaurant",
       "changes": {},
@@ -5053,7 +3535,7 @@
           "tried": [
             {
               "source": "og:image",
-              "reason": "extreme_ratio_1000x389"
+              "reason": "too_panoramic_1000x389_ar2.57"
             }
           ]
         }
@@ -5078,46 +3560,6 @@
       ]
     },
     {
-      "id": 9119,
-      "name": "Mama's Daughters' Diner",
-      "changes": {
-        "photoUrl": "https://images.getbento.com/accounts/8a185ecc8f50e0e4a8b817dbcae4b9e2/media/images/32837Forney.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&h=600",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9120,
-      "name": "Rustico Wood Fired Grill and Wine Bar",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5ca63f2565a707683c647af0/t/5db76033269906406c9cf8d4/1572298814111/Screen+Shot+2019-10-28+at+5.39.57+PM.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9122,
-      "name": "Bari's Pasta & Pizza",
-      "changes": {
-        "photoUrl": "https://lirp.cdn-website.com/219f339a/dms3rep/multi/opt/Social-Media-Image-Template-1920w.png",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9123,
-      "name": "Cristina's Fine Mexican Restaurant",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/6553f34162a0492c6c0366c2/6553f35062a0492c6c03697d/655bb9118a00a8087c3d1b98/1763583381525/FlowerMound.jpg?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 9124,
       "name": "Fiori Italian Restaurant & Bar",
       "changes": {},
@@ -5136,16 +3578,6 @@
       ]
     },
     {
-      "id": 9126,
-      "name": "1845 Taste Texas",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/5e161a902018632bb85dd466/t/5f5fb0a45dcee615c1688ea1/1600106669144/Screen+Shot+2020-09-14+at+2.04.06+PM.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 9131,
       "name": "Babe's Chicken Dinner House",
       "changes": {},
@@ -5162,46 +3594,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 9133,
-      "name": "Too Thai Street Eats",
-      "changes": {
-        "photoUrl": "https://static.spotapps.co/website_images/ab_websites/76200_website_v1/about_page_left.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9134,
-      "name": "Chinchikurin",
-      "changes": {
-        "photoUrl": "https://www.chinchikurin-usa.com/assets/img/site_imgae.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9136,
-      "name": "Mun Gai Thai Street Food",
-      "changes": {
-        "photoUrl": "https://static.spotapps.co/website_images/ab_websites/700623_website_v1/social_share.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9137,
-      "name": "Han's Noodles & Dumplings",
-      "changes": {
-        "photoUrl": "https://www.hansnoodlesdumplings.com/gs6fyav5/opengraph-image-959cal/og-image?0b56cf29834ff804",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 9145,
@@ -5240,16 +3632,6 @@
       ]
     },
     {
-      "id": 9149,
-      "name": "Ghost Donkey",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/6888d5712e979b4f6f594960/t/6888e9c0d19c5078ea559bad/1753803200643/GhostDonkey_Logotype.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
       "id": 9150,
       "name": "Candleroom",
       "changes": {},
@@ -5266,26 +3648,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 9154,
-      "name": "CRUSH",
-      "changes": {
-        "photoUrl": "https://crushdtx.com/wp-content/uploads/2024/03/Crush-Splash-1.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
-    },
-    {
-      "id": 9156,
-      "name": "Jo'Seon Wagyu Omakase",
-      "changes": {
-        "photoUrl": "https://static.spotapps.co/website_images/ab_websites/587763_website_v1/shared_image.jpg",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     },
     {
       "id": 9162,
@@ -5322,16 +3684,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 9165,
-      "name": "Granada Theater",
-      "changes": {
-        "photoUrl": "http://static1.squarespace.com/static/600a0807f286e15b2ba203ce/t/6791750561336c0f1710a98d/1737585925718/Assets-87.png?format=1500w",
-        "_photoSource": "og:image"
-      },
-      "conflicts": {},
-      "flags": []
     }
   ],
   "unmatched": []

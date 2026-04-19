@@ -130,6 +130,9 @@ async function fetchImageDims(url) {
   } catch { return null; }
 }
 
+// Tier-1 quality bar, calibrated against Mister Charles (475x325, AR 1.46) and
+// Midnight Rambler (808x539, AR 1.50). Both exemplars are professional-grade
+// interior marketing shots. Target: every written photo clears this bar.
 async function passesPhotoTest(url) {
   if (!url) return { ok: false, reason: 'empty' };
   if (!isValidUrl(url)) return { ok: false, reason: 'invalid_url' };
@@ -145,30 +148,30 @@ async function passesPhotoTest(url) {
       if (len > 0 && len < 50000) return { ok: false, reason: 'too_small_' + len };
       if (len > 15000000) return { ok: false, reason: 'too_large_' + len };
     }
-    // Aspect ratio check: reject near-square (likely logo) and very narrow images.
+    // Dimensions + aspect ratio: require landscape 1.2 <= AR <= 2.3 and min 500x350.
     const dims = await fetchImageDims(url);
     if (dims && dims.w > 0 && dims.h > 0) {
-      if (dims.w < 400 || dims.h < 300) return { ok: false, reason: `too_small_${dims.w}x${dims.h}` };
+      if (dims.w < 500 || dims.h < 350) return { ok: false, reason: `dims_too_small_${dims.w}x${dims.h}` };
       const ar = dims.w / dims.h;
-      if (ar > 0.88 && ar < 1.12) return { ok: false, reason: `near_square_${dims.w}x${dims.h}` };
-      if (ar < 0.5 || ar > 2.5) return { ok: false, reason: `extreme_ratio_${dims.w}x${dims.h}` };
+      if (ar < 1.2) return { ok: false, reason: `too_tall_or_square_${dims.w}x${dims.h}_ar${ar.toFixed(2)}` };
+      if (ar > 2.3) return { ok: false, reason: `too_panoramic_${dims.w}x${dims.h}_ar${ar.toFixed(2)}` };
     }
-    return { ok: true };
+    return { ok: true, dims };
   } catch (e) { return { ok: false, reason: 'fetch_err:' + e.message }; }
 }
 
 async function pickPhoto(ogResult, apifyImageUrls) {
-  // Build candidate list with up to 3 owner photos + 3 curated (not just first of each).
+  // Cascade: restaurant-site og:image > owner /p/ (up to 5) > curated /gps-cs-s/ (up to 5).
   const candidates = [];
   if (ogResult && ogResult.ok) candidates.push({ url: ogResult.url, source: 'og:image' });
-  const owners = (apifyImageUrls || []).filter(u => /\/p\/AF1Q/.test(u)).slice(0, 3);
+  const owners = (apifyImageUrls || []).filter(u => /\/p\/AF1Q/.test(u)).slice(0, 5);
   for (const u of owners) candidates.push({ url: u, source: 'google-owner' });
-  const curated = (apifyImageUrls || []).filter(u => /\/gps-cs-s\//.test(u)).slice(0, 3);
+  const curated = (apifyImageUrls || []).filter(u => /\/gps-cs-s\//.test(u)).slice(0, 5);
   for (const u of curated) candidates.push({ url: u, source: 'google-curated' });
   const tried = [];
   for (const c of candidates) {
     const t = await passesPhotoTest(c.url);
-    if (t.ok) return { ...c, tried };
+    if (t.ok) return { ...c, tried, dims: t.dims };
     tried.push({ source: c.source, reason: t.reason });
   }
   return { url: null, source: null, tried };
