@@ -1,0 +1,305 @@
+{
+  "_meta": {
+    "generated": "2026-04-19",
+    "generator": "compass/crawler-google-places (primary) + apify/google-search-scraper (fallback)",
+    "dry_run_batch_size": 20,
+    "total_entries_in_sweep": 4797,
+    "cities_sampled": 10,
+    "entries_per_city": 2,
+    "notes": [
+      "Dry-run only — no writes to index.html, no commits.",
+      "Raw Apify outputs held in conversation; not saved to disk per user rule.",
+      "Phoenix ID 3005 (Christopher's at Wrigley Mansion) has 'Telewa Trl' in our data — verified correct spelling is 'Telawa Trail' (apify match). Keep this in flagged_issues for the full sweep.",
+      "Two Vegas entries (Joël Robuchon, Guy Savoy) returned 0 results from compass/crawler-google-places despite being verified-open via fallback. Indicates casino-resident restaurants are under-indexed in Places — full sweep will need aggressive fallback for Vegas (~515 entries)."
+    ]
+  },
+  "apify_match_summary": {
+    "primary_actor_matches": 18,
+    "primary_actor_no_match": 2,
+    "fallback_actor_used": 2,
+    "fallback_actor_matches": 2,
+    "total_resolved": 20,
+    "entries_unresolvable": 0
+  },
+  "apify_credits_used_this_batch": {
+    "google_places_runs": 23,
+    "google_places_places_scraped": 19,
+    "google_places_usd_estimated": 0.153,
+    "google_search_runs": 2,
+    "google_search_pages_scraped": 2,
+    "google_search_usd_estimated": 0.011,
+    "total_usd_estimated": 0.164,
+    "note": "Estimate based on FREE tier pricing ($0.004/place base + $0.002 detail + $0.002 contacts). Verify actual via Apify console billing page. Pricing drops on higher tiers."
+  },
+  "estimated_total_cost_full_sweep": {
+    "compute": "0.164 / 20 * 4797 = 39.34 USD",
+    "total_usd": 39.34,
+    "breakdown": {
+      "places_base_per_entry_usd": 0.004,
+      "places_detail_page_per_entry_usd": 0.002,
+      "places_contacts_enrichment_per_entry_usd": 0.002,
+      "per_entry_places_usd": 0.008,
+      "entries_expected_to_need_fallback_pct": 8,
+      "fallback_per_entry_usd": 0.006,
+      "total_places_usd": 38.376,
+      "total_fallback_usd": 2.3,
+      "actor_start_fees_usd": 0.2,
+      "projected_total_usd": 40.88,
+      "safety_margin_usd": 2.5,
+      "recommended_budget_usd": 43.4
+    },
+    "__BUDGET_STATUS__": "EXCEEDS_30_USD_LIMIT",
+    "options_to_get_under_30": [
+      "A) Drop scrapeContacts add-on — loses Instagram/email backfill but covers phone/website/coords/hours/photoUrl/closure for 4797 entries at $28.78 base+detail. Instagram backfill for the ~600 missing handles would need a separate, cheaper pass (manual or different actor).",
+      "B) Skip the 509 Vegas entries (they underindex badly in Places anyway — 2/2 failed in dry run). Run the other 4288 entries at $0.008 = $34.30. Still over.",
+      "C) Skip entries already marked closed/removed + skip the ~80 coming-soon entries. Trim list to ~4,700 * $0.008 = $37.60. Still over.",
+      "D) Two-pass strategy: Pass 1 = all 4797 entries with base+detail only ($28.78). Pass 2 = only entries with empty instagram (~650-850) with contacts enrichment ($1.30-$1.70). Total ~$30-30.50. Closest to budget.",
+      "E) Raise budget to $45 and run the full sweep with contacts enrichment baked in."
+    ],
+    "recommendation": "D (two-pass) if the $30 cap is hard. E (raise to $45) if the goal is maximum single-pass truth update."
+  },
+  "entries_would_be_closed": {
+    "count": 0,
+    "entries": [],
+    "note": "None of the 20 test entries show permanentlyClosed=true in Google Places. The 2 Places misses (Joël Robuchon, Guy Savoy) were verified OPEN via fallback — they just don't index well as casino-resident restaurants."
+  },
+  "websites_would_be_backfilled": {
+    "count": 0,
+    "entries": [],
+    "note": "All 20 picks already had websites in our data (expected — we picked top-score entries)."
+  },
+  "websites_would_be_corrected": {
+    "count": 1,
+    "entries": [
+      {
+        "id": 2,
+        "city": "Chicago",
+        "name": "Smyth",
+        "current_website": "https://www.smythandtheloyalist.com",
+        "apify_website": "https://www.smythchicago.com/",
+        "reason": "Smyth split from The Loyalist branding; smythchicago.com is the active standalone site. Verify before committing — could be a parked domain vs. live migration. Needs manual confirmation."
+      }
+    ]
+  },
+  "instagram_would_be_added": {
+    "count": 2,
+    "entries": [
+      {
+        "id": 3005,
+        "city": "Phoenix",
+        "name": "Christopher's at the Wrigley Mansion",
+        "current_instagram": "",
+        "apify_candidate": "@wrigleymansion",
+        "confidence": "medium",
+        "note": "Apify returned two handles: @wrigleymansion (the mansion/venue) and @strollparadisevalleyaz (neighborhood promo). Neither is restaurant-specific. Safer to flag and hand-verify."
+      },
+      {
+        "id": 3031,
+        "city": "Phoenix",
+        "name": "Pizzeria Bianco",
+        "current_instagram": "",
+        "apify_candidate": "@pizzeriabianco",
+        "confidence": "high",
+        "note": "Also saw @biancorestaurants (Chris Bianco's group)."
+      }
+    ]
+  },
+  "instagram_conflicts": {
+    "count": 5,
+    "note": "Apify handle differs from ours. These require human review before bulk-replace — could be a typo we have, an old handle, or Apify picking a sister account.",
+    "entries": [
+      {
+        "id": 1,
+        "city": "Chicago",
+        "name": "Alinea",
+        "current": "aaboroughlinea",
+        "apify": "@thealineagroup",
+        "note": "Current handle is clearly garbage (not a real IG handle). Apify returned the group account. Real Alinea restaurant IG is @alinea_restaurant (unverified here) — recommend manual verification."
+      },
+      {
+        "id": 7001,
+        "city": "Houston",
+        "name": "March",
+        "current": "@marchrestaurant",
+        "apify": "@marchhtx",
+        "note": "Both sound plausible; @marchhtx is more typical for Houston venues."
+      },
+      {
+        "id": 5006,
+        "city": "Austin",
+        "name": "Suerte",
+        "current": "@suerte_atx",
+        "apify": "@suerteatx",
+        "note": "Underscore vs no underscore — either could be right, need live-check."
+      },
+      {
+        "id": 9002,
+        "city": "Seattle",
+        "name": "Archipelago",
+        "current": "@archipelagoseattle",
+        "apify": "@archipelago_pnw",
+        "note": "Restaurant rebrand from 'Archipelago Seattle' to 'Archipelago PNW'? Verify."
+      },
+      {
+        "id": 2003,
+        "city": "Los Angeles",
+        "name": "n/naka",
+        "current": "@nnakala",
+        "apify": "@nnakarestaurant",
+        "note": "Likely both real — chef's personal vs restaurant. Need check."
+      }
+    ]
+  },
+  "coords_would_correct": {
+    "count": 10,
+    "threshold_deg": 0.001,
+    "note": "Entries where either lat or lng diff exceeds 0.001 degrees (~110m). Apify location pins tend to be more precise than our hand-entered coords.",
+    "entries": [
+      {"id": 7002, "city": "Houston", "name": "Tatemó", "current": [29.8178, -95.4497], "apify": [29.8071768, -95.4606369], "delta_lat": 0.0106, "delta_lng": 0.0109},
+      {"id": 7001, "city": "Houston", "name": "March", "current": [29.7437, -95.3932], "apify": [29.7431485, -95.4003814], "delta_lat": 0.0006, "delta_lng": 0.0072},
+      {"id": 5001, "city": "Austin", "name": "Franklin Barbecue", "current": [30.2701, -97.7266], "apify": [30.270125, -97.7313419], "delta_lat": 0.00003, "delta_lng": 0.0047},
+      {"id": 5006, "city": "Austin", "name": "Suerte", "current": [30.261, -97.7226], "apify": [30.2622778, -97.7232758], "delta_lat": 0.0013, "delta_lng": 0.0007},
+      {"id": 2, "city": "Chicago", "name": "Smyth", "current": [41.8856, -87.6554], "apify": [41.8849722, -87.6605593], "delta_lat": 0.0006, "delta_lng": 0.0052},
+      {"id": 11004, "city": "Salt Lake City", "name": "Takashi", "current": [40.7633, -111.893], "apify": [40.7618319, -111.8918702], "delta_lat": 0.0015, "delta_lng": 0.0011},
+      {"id": 2003, "city": "Los Angeles", "name": "n/naka", "current": [34.0258, -118.426], "apify": [34.0251279, -118.4122016], "delta_lat": 0.0007, "delta_lng": 0.0138},
+      {"id": 2004, "city": "Los Angeles", "name": "Providence", "current": [34.0834, -118.3377], "apify": [34.0836697, -118.3300251], "delta_lat": 0.0003, "delta_lng": 0.0077},
+      {"id": 3005, "city": "Phoenix", "name": "Christopher's at the Wrigley Mansion", "current": [33.5133, -112.0253], "apify": [33.5227086, -112.0266779], "delta_lat": 0.0094, "delta_lng": 0.0014},
+      {"id": 3031, "city": "Phoenix", "name": "Pizzeria Bianco", "current": [33.4497, -112.067], "apify": [33.4491524, -112.0656407], "delta_lat": 0.0005, "delta_lng": 0.0014}
+    ]
+  },
+  "phones_would_be_added": {
+    "count": 9,
+    "entries": [
+      {"id": 7001, "city": "Houston", "name": "March", "apify_phone": "(832) 380-2481"},
+      {"id": 5001, "city": "Austin", "name": "Franklin Barbecue", "apify_phone": "(512) 653-1187"},
+      {"id": 5006, "city": "Austin", "name": "Suerte", "apify_phone": "(512) 522-3031"},
+      {"id": 9001, "city": "Seattle", "name": "Canlis", "apify_phone": "(206) 283-3313"},
+      {"id": 2003, "city": "Los Angeles", "name": "n/naka", "apify_phone": "(310) 836-6252"},
+      {"id": 2004, "city": "Los Angeles", "name": "Providence", "apify_phone": "(323) 460-4170"},
+      {"id": 3005, "city": "Phoenix", "name": "Christopher's at the Wrigley Mansion", "apify_phone": "(602) 522-2344"},
+      {"id": 3031, "city": "Phoenix", "name": "Pizzeria Bianco", "apify_phone": "(602) 258-8300"},
+      {"id": 2, "city": "Dallas", "name": "Tatsu Dallas", "apify_phone": "(469) 271-7710", "note": "Current data has (214) 702-7988 — DIFFERENT. This would be a phone CORRECTION not backfill. Needs human verification — two real-looking numbers."}
+    ]
+  },
+  "phones_would_be_corrected": {
+    "count": 1,
+    "note": "Different phone in our data vs Apify — human verify before overwrite.",
+    "entries": [
+      {
+        "id": 2,
+        "city": "Dallas",
+        "name": "Tatsu Dallas",
+        "current": "(214) 702-7988",
+        "apify": "(469) 271-7710",
+        "note": "(469) is a newer Dallas-area code, consistent with a restaurant that opened in 2021. (214) might be an old/placeholder. Verify via tatsu-dallas.com."
+      }
+    ]
+  },
+  "photos_would_be_added": {
+    "count": 18,
+    "note": "All 18 Apify Places matches returned an imageUrl (Google-hosted CDN photo). 100% backfill rate for photoUrl on matched entries. All 20 picks currently have empty photoUrl.",
+    "sample_entries": [
+      {"id": 2, "name": "Tatsu Dallas", "sample_apify_imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF-c8kQ1SNd... (Google CDN URL)"},
+      {"id": 20, "name": "Mamani", "sample_apify_imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHI1iyDpcC0..."}
+    ],
+    "projection_full_sweep": "At 90% Places match rate × 4797 entries = ~4320 photoUrl backfills. Single biggest data-quality win of the sweep."
+  },
+  "addresses_would_be_corrected": {
+    "count": 1,
+    "note": "Typo/wrong address in current data.",
+    "entries": [
+      {
+        "id": 3005,
+        "city": "Phoenix",
+        "name": "Christopher's at the Wrigley Mansion",
+        "current": "2501 E Telewa Trl, Phoenix, AZ 85016",
+        "apify": "2501 E Telawa Trail, Phoenix, AZ 85016",
+        "note": "'Telewa' → 'Telawa' — our data has a typo (Telawa is the real street name)."
+      }
+    ]
+  },
+  "fallback_entries": {
+    "count": 2,
+    "note": "Primary Places actor returned no match. Fallback apify/google-search-scraper confirmed these are OPEN — they just index poorly as casino-resident restaurants. For full sweep, Vegas casino restaurants (~400 entries) may need fallback-first strategy.",
+    "entries": [
+      {
+        "id": 12000,
+        "city": "Las Vegas",
+        "name": "Joël Robuchon",
+        "places_result": "No match (even with alternate queries)",
+        "fallback_verified_open": true,
+        "fallback_source_urls": [
+          "https://mgmgrand.mgmresorts.com/en/restaurants/joel-robuchon-french-restaurant.html",
+          "https://en.wikipedia.org/wiki/Jo%C3%ABl_Robuchon_(Las_Vegas_restaurant)"
+        ]
+      },
+      {
+        "id": 12002,
+        "city": "Las Vegas",
+        "name": "Restaurant Guy Savoy",
+        "places_result": "No match",
+        "fallback_verified_open": true,
+        "fallback_source_urls": [
+          "https://www.opentable.com/r/restaurant-guy-savoy-caesars-palace-las-vegas",
+          "https://www.caesars.com/caesars-palace/restaurants/"
+        ]
+      }
+    ]
+  },
+  "per_city_projections_full_sweep": {
+    "_projection_model": "Same per-entry yield as dry run, scaled by city entry count.",
+    "Dallas":        {"entries": 683, "expected_match_rate": 0.95, "est_cost_usd": 5.46},
+    "Houston":       {"entries": 508, "expected_match_rate": 0.95, "est_cost_usd": 4.06},
+    "Austin":        {"entries": 498, "expected_match_rate": 0.95, "est_cost_usd": 3.98},
+    "Chicago":       {"entries": 523, "expected_match_rate": 0.95, "est_cost_usd": 4.18},
+    "Salt Lake City":{"entries": 497, "expected_match_rate": 0.95, "est_cost_usd": 3.98},
+    "Las Vegas":     {"entries": 509, "expected_match_rate": 0.70, "est_cost_usd": 4.07, "note": "Expect ~30% fallback rate for casino-resident entries"},
+    "Seattle":       {"entries": 507, "expected_match_rate": 0.95, "est_cost_usd": 4.05},
+    "New York":      {"entries": 900, "expected_match_rate": 0.95, "est_cost_usd": 7.20},
+    "Los Angeles":   {"entries": 119, "expected_match_rate": 0.95, "est_cost_usd": 0.95},
+    "Phoenix":       {"entries": 53,  "expected_match_rate": 0.95, "est_cost_usd": 0.42},
+    "grand_total_entries": 4797,
+    "grand_total_cost_estimate_usd": 38.35
+  },
+  "risks_and_open_questions": [
+    {
+      "risk": "Instagram auto-replace risk",
+      "detail": "5 of 20 picks had an Instagram conflict where Apify's handle differs from ours. Blind overwrite would break known-good handles. Recommend: only BACKFILL empty instagram; never OVERWRITE existing non-empty instagram automatically.",
+      "mitigation": "Add guard in sweep-apply script: only write instagram if current field is empty string."
+    },
+    {
+      "risk": "Website-conflict on Smyth suggests rebrand",
+      "detail": "Current smythandtheloyalist.com may still redirect; needs live-check before bulk overwrite.",
+      "mitigation": "For website conflicts, run a HEAD request on both URLs and keep the one that returns 2xx. If both do, prefer the Apify one."
+    },
+    {
+      "risk": "Coord correction may move map pins noticeably",
+      "detail": "10 of 20 picks have >0.001 deg coord drift. Some are trivial (<100m), some are ~1km (Tatemó, n/naka). Worth diffing before bulk apply.",
+      "mitigation": "Apply coord fix only when delta > 0.005 deg, else leave as-is. Everything below 0.001 already filtered."
+    },
+    {
+      "risk": "Vegas fallback rate",
+      "detail": "Dry run showed 2/2 Vegas failures. Casino addresses (3799/3570 S Las Vegas Blvd) resolve to the parent casino, not the restaurant-inside. Full Vegas run may need 30%+ fallback.",
+      "mitigation": "For Vegas, run fallback search-scraper FIRST and cache the website; only use Places to confirm open/closed and pull photo."
+    },
+    {
+      "risk": "Apify imageUrl is time-bounded",
+      "detail": "Google CDN URLs (lh3.googleusercontent.com/gps-cs-s/...) often expire after weeks-months. We should not treat these as permanent — either re-fetch periodically or store locally.",
+      "mitigation": "Add a TODO to either (a) download-and-self-host the photos, or (b) re-run the photo-backfill quarterly. For now, ~$38 of photos is still better than $0 of photos."
+    },
+    {
+      "risk": "BUDGET OVER — projected $38-40 > $30 cap",
+      "detail": "Stated budget is $30 total across sweep. Current projection is $38-40.",
+      "mitigation": "See options_to_get_under_30 above. Waiting on user decision before proceeding."
+    }
+  ],
+  "user_decision_required": [
+    "Q1: Budget — raise to $45, OR use two-pass strategy (Option D) to stay near $30, OR other?",
+    "Q2: Instagram overwrite policy — backfill-only (recommended) vs. always-replace?",
+    "Q3: Coord correction threshold — 0.001 deg (dry run), 0.005 deg (conservative), or replace always?",
+    "Q4: Address typo handling — auto-fix (Christopher's 'Telewa'→'Telawa' style) or flag-for-review?",
+    "Q5: Phone conflict (Tatsu Dallas case) — always replace, or flag-for-review?",
+    "Q6: photoUrl — store the Google CDN URL as-is (free, may expire), or skip (avoid future stale URLs), or queue for self-host (Supabase upload, separate budget)?",
+    "Q7: Vegas strategy — run fallback-first for all 509 Vegas entries, OR accept ~30% miss rate?"
+  ]
+}

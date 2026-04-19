@@ -1,0 +1,119 @@
+[
+  {
+    "city": "phx",
+    "id": 3002,
+    "name": "Course Restaurant",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3009,
+    "name": "FnB Restaurant",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3034,
+    "name": "The Stone Tofu House",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "fetch_err:fetch failed"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3037,
+    "name": "Feringhee Modern Indian Cuisine",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3047,
+    "name": "Warren's Supper Club",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3106,
+    "name": "The Vig",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3107,
+    "name": "Pedal Haus Brewery",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "logo_url_pattern"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3035,
+    "name": "Haji-Baba",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "http_403"
+      }
+    ]
+  },
+  {
+    "city": "phx",
+    "id": 3133,
+    "name": "Joe's Farm Grill",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "og:image",
+        "reason": "too_small_12474"
+      }
+    ]
+  }
+]

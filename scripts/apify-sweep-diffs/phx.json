@@ -1,0 +1,702 @@
+{
+  "summary": {
+    "city": "phx",
+    "apify_total": 79,
+    "apify_matched": 79,
+    "apify_unmatched": 0,
+    "diffs_count": 48,
+    "fields_changed": {
+      "photoUrl": 18,
+      "phone": 0,
+      "website": 0,
+      "instagram": 0,
+      "coords": 0,
+      "address": 0
+    },
+    "photo_sources": {
+      "og:image": 14,
+      "google-owner": 3,
+      "google-curated": 1
+    },
+    "conflicts": {
+      "phone": 3,
+      "website": 13,
+      "instagram": 13,
+      "address": 4
+    },
+    "flags": 9
+  },
+  "diffs": [
+    {
+      "id": 3002,
+      "name": "Course Restaurant",
+      "changes": {},
+      "conflicts": {},
+      "flags": [
+        {
+          "type": "no_photo_passed_test",
+          "message": "All photo candidates failed quality test",
+          "tried": [
+            {
+              "source": "og:image",
+              "reason": "logo_url_pattern"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3003,
+      "name": "Andreoli Italian Grocer",
+      "changes": {
+        "photoUrl": "https://www.andreoli-grocer.com/wp-content/uploads/2024/02/andreoli-italian-grocer-restaurant-dining-room.webp",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3008,
+      "name": "Fry Bread House",
+      "changes": {},
+      "conflicts": {
+        "website": {
+          "current": "https://www.frybreadhouseaz.com/",
+          "apify": "https://www.azfrybreadhouse.com/"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3009,
+      "name": "FnB Restaurant",
+      "changes": {},
+      "conflicts": {},
+      "flags": [
+        {
+          "type": "no_photo_passed_test",
+          "message": "All photo candidates failed quality test",
+          "tried": [
+            {
+              "source": "og:image",
+              "reason": "logo_url_pattern"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3010,
+      "name": "Bad Jimmy's",
+      "changes": {},
+      "conflicts": {
+        "address": {
+          "current": "7620 E Indian School Rd Ste 101, Scottsdale, AZ 85251",
+          "apify": "6101 N 7th St, Phoenix, AZ 85014"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3012,
+      "name": "Tacos Chiwas",
+      "changes": {
+        "photoUrl": "http://static1.squarespace.com/static/5db78da1be792566a2044ff4/t/5db796b664760855ebc120e3/1572312760807/unspecified.png?format=1500w",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3016,
+      "name": "DiMaggio's",
+      "changes": {
+        "photoUrl": "https://static.spotapps.co/website_images/ab_websites/410828_website_v1/share_image.jpg",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3022,
+      "name": "Hai Noon",
+      "changes": {
+        "photoUrl": "https://img1.wsimg.com/isteam/ip/f6a64c28-b794-4a36-a642-22b4728d6e8d/HAINOON_WEB02.28.24.jpg",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3034,
+      "name": "The Stone Tofu House",
+      "changes": {},
+      "conflicts": {},
+      "flags": [
+        {
+          "type": "no_photo_passed_test",
+          "message": "All photo candidates failed quality test",
+          "tried": [
+            {
+              "source": "og:image",
+              "reason": "fetch_err:fetch failed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3035,
+      "name": "Haji-Baba",
+      "changes": {},
+      "conflicts": {},
+      "flags": [
+        {
+          "type": "no_photo_passed_test",
+          "message": "All photo candidates failed quality test",
+          "tried": [
+            {
+              "source": "og:image",
+              "reason": "http_403"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3036,
+      "name": "Ban Chan",
+      "changes": {
+        "photoUrl": "http://static1.squarespace.com/static/682526e1986a5536c3d6c25c/t/682528402e30b67d9c9ad7c8/1747265600079/baboclear.png?format=1500w",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3037,
+      "name": "Feringhee Modern Indian Cuisine",
+      "changes": {},
+      "conflicts": {},
+      "flags": [
+        {
+          "type": "no_photo_passed_test",
+          "message": "All photo candidates failed quality test",
+          "tried": [
+            {
+              "source": "og:image",
+              "reason": "logo_url_pattern"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3039,
+      "name": "Alden",
+      "changes": {},
+      "conflicts": {
+        "address": {
+          "current": "1625 N Central Ave, Phoenix, AZ 85004",
+          "apify": "Restaurant At Phoenix Art Museum, 1625 N Central Ave, Phoenix, AZ 85004"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3040,
+      "name": "Mr. Baan's Bar and Mookata",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipN_SO6QVsPODyHWJYipkzWPRfh37nPT-Z9hfdJV=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "too_small_8484"
+          }
+        ]
+      },
+      "conflicts": {
+        "phone": {
+          "current": "(480) 685-3636",
+          "apify": "(602) 675-0522"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3041,
+      "name": "CP Coffee & Pâtisserie",
+      "changes": {},
+      "conflicts": {
+        "phone": {
+          "current": "(480) 275-2843",
+          "apify": "(602) 334-5788"
+        },
+        "website": {
+          "current": "http://peixotocoffee.com/",
+          "apify": "http://www.chaconnepatisserie.com/"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3043,
+      "name": "Marisco Boys",
+      "changes": {},
+      "conflicts": {
+        "phone": {
+          "current": "(480) 597-5623",
+          "apify": "(480) 275-8326"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3045,
+      "name": "Lydia's Kitchen",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipOy7MujXMxGNkVJhQqFcWxe9kevpF7kj17r57ds=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "http_403"
+          }
+        ]
+      },
+      "conflicts": {
+        "website": {
+          "current": "https://www.instagram.com/lydiasphx/",
+          "apify": "http://www.lydiasphx.com/"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3047,
+      "name": "Warren's Supper Club",
+      "changes": {},
+      "conflicts": {},
+      "flags": [
+        {
+          "type": "no_photo_passed_test",
+          "message": "All photo candidates failed quality test",
+          "tried": [
+            {
+              "source": "og:image",
+              "reason": "logo_url_pattern"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3048,
+      "name": "Glenrosa",
+      "changes": {
+        "photoUrl": "http://static1.squarespace.com/static/67ec509efff41c6344380957/t/67ed9409bc29200f62a1b758/1743623177448/Glenrosa+-+Website+Elements.png?format=1500w",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3052,
+      "name": "Pinyon",
+      "changes": {
+        "photoUrl": "https://pinyonrestaurant.com/wp-content/uploads/2025/02/tree.jpg",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3056,
+      "name": "Dominick's Steakhouse",
+      "changes": {
+        "photoUrl": "https://www.dominickssteakhouse.com/wp-content/uploads/2025/06/JMH_1117-scaled-1.webp",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3057,
+      "name": "Steak 44",
+      "changes": {},
+      "conflicts": {
+        "website": {
+          "current": "https://steak44.com",
+          "apify": "https://www.steak44.com/&utm_medium=organic&utm_campaign=gmb"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3058,
+      "name": "Le Ame",
+      "changes": {},
+      "conflicts": {
+        "instagram": {
+          "current": "@leamephx",
+          "apify": "@theglobalambassadorhotel"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3059,
+      "name": "Buck & Rider",
+      "changes": {},
+      "conflicts": {
+        "website": {
+          "current": "https://buckandrider.com",
+          "apify": "https://www.buckandrider.com/?utm_source=GMB&utm_medium=local"
+        },
+        "instagram": {
+          "current": "@buckandrider",
+          "apify": "@buckandrider_camelback"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3060,
+      "name": "J&G Steakhouse",
+      "changes": {},
+      "conflicts": {
+        "website": {
+          "current": "https://www.thephoenician.com/dining/jg-steakhouse",
+          "apify": "https://www.thephoenician.com/dine/jg-steakhouse/"
+        },
+        "instagram": {
+          "current": "@thephoenician",
+          "apify": "@phoenicianscottsdale"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3061,
+      "name": "The Stockyards Steakhouse",
+      "changes": {},
+      "conflicts": {
+        "instagram": {
+          "current": "@stockyardssteakhouse",
+          "apify": "@stockyards_az"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3067,
+      "name": "Lux Central",
+      "changes": {},
+      "conflicts": {
+        "website": {
+          "current": "https://luxcentral.com",
+          "apify": "http://www.luxcoffee.com/"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3068,
+      "name": "Prep & Pastry",
+      "changes": {
+        "photoUrl": "http://static1.squarespace.com/static/60c78fcc9c2d5c30f8b6c081/t/60d3e01e811004490787bfe3/1733773979271/P%26P-Scottsdale-24.jpg?format=1500w",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3076,
+      "name": "Fourtillfour",
+      "changes": {
+        "photoUrl": "https://cdn.shopify.com/s/files/1/1325/4573/files/Screenshot_2024-02-14_at_4.16.38_PM.png?v=1707956239",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3077,
+      "name": "Strip Mall",
+      "changes": {},
+      "conflicts": {
+        "instagram": {
+          "current": "@stripmallphx",
+          "apify": "@smth.bynico"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3081,
+      "name": "Futuro",
+      "changes": {},
+      "conflicts": {
+        "instagram": {
+          "current": "@futuro.cafe",
+          "apify": "@squarespace"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3084,
+      "name": "Wonderift",
+      "changes": {},
+      "conflicts": {
+        "instagram": {
+          "current": "@wonderift",
+          "apify": "@wonderiftcoffee"
+        },
+        "address": {
+          "current": "12020 S Warner Elliot Loop Ste 115, Phoenix, AZ 85044",
+          "apify": "12020 S Warner Elliot Loop, Phoenix, AZ 85044"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3088,
+      "name": "Sphinx Date Co. Palm & Pantry",
+      "changes": {
+        "photoUrl": "http://sphinxdateranch.com/cdn/shop/files/sdco-hj.png?v=1687629431",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3102,
+      "name": "Zipps Sports Grill",
+      "changes": {},
+      "conflicts": {
+        "website": {
+          "current": "https://zippssportsgrill.com",
+          "apify": "https://www.zippssportsgrills.com/locations/park-central/"
+        },
+        "instagram": {
+          "current": "@zippssportsgrill",
+          "apify": "@zippssportsgrills"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3104,
+      "name": "Cold Beers & Cheeseburgers",
+      "changes": {},
+      "conflicts": {
+        "website": {
+          "current": "https://coldbeers.com",
+          "apify": "https://www.coldbeers.com/cheeseburgers/ahwatukee/"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3106,
+      "name": "The Vig",
+      "changes": {},
+      "conflicts": {},
+      "flags": [
+        {
+          "type": "no_photo_passed_test",
+          "message": "All photo candidates failed quality test",
+          "tried": [
+            {
+              "source": "og:image",
+              "reason": "logo_url_pattern"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3107,
+      "name": "Pedal Haus Brewery",
+      "changes": {},
+      "conflicts": {},
+      "flags": [
+        {
+          "type": "no_photo_passed_test",
+          "message": "All photo candidates failed quality test",
+          "tried": [
+            {
+              "source": "og:image",
+              "reason": "logo_url_pattern"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3111,
+      "name": "Casey Moore's Oyster House",
+      "changes": {
+        "photoUrl": "https://i.vimeocdn.com/video/1629479191-ad153e7b816c880720f8aa067aa929dd8498bfc096ad0fbffdb23852ef8a2976-d_1920x1080?r=pad",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3113,
+      "name": "Taco Chelo",
+      "changes": {
+        "photoUrl": "https://tacochelo.com/wp-content/uploads/2024/07/Taco-home-image.png",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3121,
+      "name": "Lovebite Dumplings",
+      "changes": {},
+      "conflicts": {
+        "instagram": {
+          "current": "@lovebite.dumplings",
+          "apify": "@lovebitedumplings"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3122,
+      "name": "North Italia",
+      "changes": {},
+      "conflicts": {
+        "website": {
+          "current": "https://northitalia.com",
+          "apify": "https://www.northitalia.com/locations/scottsdale-az-kierland-commons/"
+        },
+        "instagram": {
+          "current": "@northitalia",
+          "apify": "@eatnorthitalia"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3124,
+      "name": "Over Easy",
+      "changes": {},
+      "conflicts": {
+        "website": {
+          "current": "https://eatatovereasy.com",
+          "apify": "https://eatatovereasy.com/locations/paradise-valley/?utm_source=Google+Business+Profile&utm_medium=Website+Link&utm_campaign=Local+SEO"
+        },
+        "instagram": {
+          "current": "@overeasyaz",
+          "apify": "@eatatovereasy"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3125,
+      "name": "Pita Jungle",
+      "changes": {},
+      "conflicts": {
+        "website": {
+          "current": "https://pitajungle.com",
+          "apify": "https://pitajungle.com/locations/downtown-phoenix/&utm_medium=organic&utm_campaign=DowntownPhoenix&utm_content=WebsiteLink"
+        },
+        "address": {
+          "current": "7366 E Shea Blvd Ste 106, Scottsdale, AZ 85260",
+          "apify": "1001 N 3rd Ave #4, Phoenix, AZ 85003"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3128,
+      "name": "Luci's at the Orchard",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFXIEiBvUZ29hCRZGdU5T06M3p6wHxce6GLqoiYwbLYIyNdOYpyPHZdvbODMEJtrvHmrcHUFT3iwxAwpHvB_OkinKSWtEzpph5tw8n_4bvyq2etQjCXv35-jyCrdVcE7edtK5q-mWgXvoXC=w1920-h1080-k-no",
+        "_photoSource": "google-curated",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "too_small_15479"
+          }
+        ]
+      },
+      "conflicts": {
+        "website": {
+          "current": "https://lucishealthymarketplace.com",
+          "apify": "http://www.lucisgoodness.com/"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3129,
+      "name": "Chelsea's Kitchen",
+      "changes": {
+        "photoUrl": "https://lh3.googleusercontent.com/p/AF1QipNWQ6QYlTkv2En9iDPtsM8MAjr3qVgrYI8hAhN4=w1920-h1080-k-no",
+        "_photoSource": "google-owner",
+        "_photoTriedFirst": [
+          {
+            "source": "og:image",
+            "reason": "too_small_8161"
+          }
+        ]
+      },
+      "conflicts": {
+        "instagram": {
+          "current": "@chelseas_kitchen",
+          "apify": "@chelseaskitchen"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3130,
+      "name": "Organ Stop Pizza",
+      "changes": {
+        "photoUrl": "https://organstoppizza.com/wp-content/uploads/2022/12/Transparent-Background-PNG.png",
+        "_photoSource": "og:image"
+      },
+      "conflicts": {},
+      "flags": []
+    },
+    {
+      "id": 3131,
+      "name": "Rustler's Rooste",
+      "changes": {},
+      "conflicts": {
+        "instagram": {
+          "current": "@rustlersroostephx",
+          "apify": "@rustlersrooste"
+        }
+      },
+      "flags": []
+    },
+    {
+      "id": 3133,
+      "name": "Joe's Farm Grill",
+      "changes": {},
+      "conflicts": {},
+      "flags": [
+        {
+          "type": "no_photo_passed_test",
+          "message": "All photo candidates failed quality test",
+          "tried": [
+            {
+              "source": "og:image",
+              "reason": "too_small_12474"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "unmatched": []
+}

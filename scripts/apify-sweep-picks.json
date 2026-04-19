@@ -1,0 +1,322 @@
+[
+  {
+    "id": 2,
+    "name": "Tatsu Dallas",
+    "address": "3309 Elm St ste 120, Dallas, TX 75226",
+    "city": "Dallas",
+    "state": "TX",
+    "current": {
+      "phone": "(214) 702-7988",
+      "website": "https://www.tatsu-dallas.com",
+      "instagram": "@tatsu_dallas",
+      "lat": 32.7866473,
+      "lng": -96.7776787,
+      "photoUrl": "",
+      "score": 98
+    }
+  },
+  {
+    "id": 20,
+    "name": "Mamani",
+    "address": "2681 Howell St, Dallas, TX 75204",
+    "city": "Dallas",
+    "state": "TX",
+    "current": {
+      "phone": "(469) 455-1435",
+      "website": "https://www.mamanirestaurant.com",
+      "instagram": "@mamanirestaurant",
+      "lat": 32.7985241,
+      "lng": -96.8038533,
+      "photoUrl": "",
+      "score": 98
+    }
+  },
+  {
+    "id": 7002,
+    "name": "Tatemó",
+    "address": "4740 Dacoma St Ste F, Houston TX 77092",
+    "city": "Houston",
+    "state": "TX",
+    "current": {
+      "phone": "",
+      "website": "https://www.tatemohtx.com",
+      "instagram": "@tatemo_htx",
+      "lat": 29.8178,
+      "lng": -95.4497,
+      "photoUrl": "",
+      "score": 98
+    }
+  },
+  {
+    "id": 7001,
+    "name": "March",
+    "address": "1624 Westheimer Rd, Houston TX 77006",
+    "city": "Houston",
+    "state": "TX",
+    "current": {
+      "phone": "",
+      "website": "https://www.marchrestaurant.com",
+      "instagram": "@marchrestaurant",
+      "lat": 29.7437,
+      "lng": -95.3932,
+      "photoUrl": "",
+      "score": 97
+    }
+  },
+  {
+    "id": 5001,
+    "name": "Franklin Barbecue",
+    "address": "900 E 11th St, Austin, TX 78702",
+    "city": "Austin",
+    "state": "TX",
+    "current": {
+      "phone": "",
+      "website": "https://franklinbbq.com",
+      "instagram": "@franklinbbq",
+      "lat": 30.2701,
+      "lng": -97.7266,
+      "photoUrl": "",
+      "score": 99
+    }
+  },
+  {
+    "id": 5006,
+    "name": "Suerte",
+    "address": "1800 E 6th St, Austin, TX 78702",
+    "city": "Austin",
+    "state": "TX",
+    "current": {
+      "phone": "",
+      "website": "https://suerteatx.com",
+      "instagram": "@suerte_atx",
+      "lat": 30.261,
+      "lng": -97.7226,
+      "photoUrl": "",
+      "score": 98
+    }
+  },
+  {
+    "id": 1,
+    "name": "Alinea",
+    "address": "1723 N Halsted St, Chicago, IL 60614",
+    "city": "Chicago",
+    "state": "IL",
+    "current": {
+      "phone": "(312) 867-0110",
+      "website": "https://www.alinearestaurant.com",
+      "instagram": "aaboroughlinea",
+      "lat": 41.9133,
+      "lng": -87.6483,
+      "photoUrl": "",
+      "score": 99
+    }
+  },
+  {
+    "id": 2,
+    "name": "Smyth",
+    "address": "177 N Ada St, Chicago, IL 60607",
+    "city": "Chicago",
+    "state": "IL",
+    "current": {
+      "phone": "(773) 913-3011",
+      "website": "https://www.smythandtheloyalist.com",
+      "instagram": "smythchicago",
+      "lat": 41.8856,
+      "lng": -87.6554,
+      "photoUrl": "",
+      "score": 97
+    }
+  },
+  {
+    "id": 11004,
+    "name": "Takashi",
+    "address": "18 W Market St, Salt Lake City, UT 84101",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "current": {
+      "phone": "(801) 519-9595",
+      "website": "https://www.takashisushi.com",
+      "instagram": "@takashisushi",
+      "lat": 40.7633,
+      "lng": -111.893,
+      "photoUrl": "",
+      "score": 96
+    }
+  },
+  {
+    "id": 11002,
+    "name": "Valter's Osteria",
+    "address": "173 W Broadway, Salt Lake City, UT 84101",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "current": {
+      "phone": "(801) 521-4563",
+      "website": "https://www.valtersosteria.com",
+      "instagram": "@valtersosteria",
+      "lat": 40.7625,
+      "lng": -111.8962,
+      "photoUrl": "",
+      "score": 95
+    }
+  },
+  {
+    "id": 12000,
+    "name": "Joël Robuchon",
+    "address": "3799 S Las Vegas Blvd, Las Vegas, NV 89109",
+    "city": "Las Vegas",
+    "state": "NV",
+    "current": {
+      "phone": "(702) 891-7925",
+      "website": "https://www.mgmgrand.com/restaurants/joel-robuchon.html",
+      "instagram": "@joelrobuchon",
+      "lat": 36.1024,
+      "lng": -115.1695,
+      "photoUrl": "",
+      "score": 98
+    }
+  },
+  {
+    "id": 12002,
+    "name": "Restaurant Guy Savoy",
+    "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+    "city": "Las Vegas",
+    "state": "NV",
+    "current": {
+      "phone": "(702) 731-7286",
+      "website": "https://www.caesars.com/caesars-palace/restaurants/guy-savoy",
+      "instagram": "@guysavoylv",
+      "lat": 36.1162,
+      "lng": -115.175,
+      "photoUrl": "",
+      "score": 96
+    }
+  },
+  {
+    "id": 9001,
+    "name": "Canlis",
+    "address": "2576 Aurora Ave N, Seattle WA 98109",
+    "city": "Seattle",
+    "state": "WA",
+    "current": {
+      "phone": "",
+      "website": "https://canlis.com",
+      "instagram": "@canlisrestaurant",
+      "lat": 47.6432,
+      "lng": -122.3471,
+      "photoUrl": "",
+      "score": 98
+    }
+  },
+  {
+    "id": 9002,
+    "name": "Archipelago",
+    "address": "5607 Rainier Ave S, Seattle WA 98118",
+    "city": "Seattle",
+    "state": "WA",
+    "current": {
+      "phone": "",
+      "website": "https://www.archipelagoseattle.com",
+      "instagram": "@archipelagoseattle",
+      "lat": 47.5517,
+      "lng": -122.2782,
+      "photoUrl": "",
+      "score": 96
+    }
+  },
+  {
+    "id": 1001,
+    "name": "Le Bernardin",
+    "address": "155 W 51st St, New York NY 10019",
+    "city": "New York",
+    "state": "NY",
+    "current": {
+      "phone": "(212) 554-1515",
+      "website": "https://www.le-bernardin.com/",
+      "instagram": "@lebernardinny",
+      "lat": 40.7619,
+      "lng": -73.9814,
+      "photoUrl": "",
+      "score": 99
+    }
+  },
+  {
+    "id": 1002,
+    "name": "Eleven Madison Park",
+    "address": "11 Madison Ave, New York NY 10010",
+    "city": "New York",
+    "state": "NY",
+    "current": {
+      "phone": "(212) 889-0905",
+      "website": "https://www.elevenmadisonpark.com",
+      "instagram": "@elevenmadisonpark",
+      "lat": 40.7416,
+      "lng": -73.9868,
+      "photoUrl": "",
+      "score": 99
+    }
+  },
+  {
+    "id": 2003,
+    "name": "n/naka",
+    "address": "3455 Overland Ave, Los Angeles, CA 90034",
+    "city": "Los Angeles",
+    "state": "CA",
+    "current": {
+      "phone": "",
+      "website": "https://n-naka.com",
+      "instagram": "@nnakala",
+      "lat": 34.0258,
+      "lng": -118.426,
+      "photoUrl": "",
+      "score": 99
+    }
+  },
+  {
+    "id": 2004,
+    "name": "Providence",
+    "address": "5955 Melrose Ave, Los Angeles, CA 90038",
+    "city": "Los Angeles",
+    "state": "CA",
+    "current": {
+      "phone": "",
+      "website": "https://providencela.com",
+      "instagram": "@providencela",
+      "lat": 34.0834,
+      "lng": -118.3377,
+      "photoUrl": "",
+      "score": 99
+    }
+  },
+  {
+    "id": 3005,
+    "name": "Christopher's at the Wrigley Mansion",
+    "address": "2501 E Telewa Trl, Phoenix, AZ 85016",
+    "city": "Phoenix",
+    "state": "AZ",
+    "current": {
+      "phone": "",
+      "website": "http://wrigleymansion.com/christophers/",
+      "instagram": "",
+      "lat": 33.5133,
+      "lng": -112.0253,
+      "photoUrl": "",
+      "score": 95
+    }
+  },
+  {
+    "id": 3031,
+    "name": "Pizzeria Bianco",
+    "address": "623 E Adams St, Phoenix, AZ 85004",
+    "city": "Phoenix",
+    "state": "AZ",
+    "current": {
+      "phone": "",
+      "website": "http://www.pizzeriabianco.com/",
+      "instagram": "",
+      "lat": 33.4497,
+      "lng": -112.067,
+      "photoUrl": "",
+      "score": 95
+    }
+  }
+]
