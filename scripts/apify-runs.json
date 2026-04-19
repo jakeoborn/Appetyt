@@ -1,0 +1,44 @@
+{
+  "houston": {
+    "runId": "cyljuq6RPkYG6JhkX",
+    "datasetId": "cm8KGWalwz8BLLFMp",
+    "startedAt": "2026-04-19T23:18:05.714Z",
+    "status": "READY"
+  },
+  "austin": {
+    "runId": "3sf7f7ePneVgpFZu8",
+    "datasetId": "1qyC9vbBZAnes4o8m",
+    "startedAt": "2026-04-19T23:18:08.793Z",
+    "status": "READY"
+  },
+  "chicago": {
+    "runId": "0L3MgkVcb2lW1KILf",
+    "datasetId": "vYJquwm64Pf162xEQ",
+    "startedAt": "2026-04-19T23:18:11.755Z",
+    "status": "READY"
+  },
+  "slc": {
+    "runId": "pNthHIxocegLvBCfZ",
+    "datasetId": "UKmmgacPxf963YXFw",
+    "startedAt": "2026-04-19T23:18:14.607Z",
+    "status": "READY"
+  },
+  "lv": {
+    "runId": "5fGeXgNrrm6hgBRMR",
+    "datasetId": "ABcrGFhv8o7Xqwmy0",
+    "startedAt": "2026-04-19T23:18:17.728Z",
+    "status": "READY"
+  },
+  "seattle": {
+    "runId": "KnwvQKUPOOqoNRD6A",
+    "datasetId": "edn1Zi9JJc4B6Nzho",
+    "startedAt": "2026-04-19T23:18:20.578Z",
+    "status": "READY"
+  },
+  "nyc": {
+    "runId": "XiYyGM8tSXA37IV5c",
+    "datasetId": "Y5lNqEIE1gmIVkhUN",
+    "startedAt": "2026-04-19T23:18:24.054Z",
+    "status": "READY"
+  }
+}

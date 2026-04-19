@@ -177,6 +177,24 @@ async function pickPhoto(ogResult, apifyImageUrls) {
   return { url: null, source: null, tried };
 }
 
+// Pick up to `maxCount` passing photos for the detail-page gallery.
+// Same cascade as pickPhoto but collects multiple instead of stopping at first.
+async function pickPhotoGallery(ogResult, apifyImageUrls, maxCount = 5) {
+  const candidates = [];
+  if (ogResult && ogResult.ok) candidates.push({ url: ogResult.url, source: 'og:image' });
+  const owners = (apifyImageUrls || []).filter(u => /\/p\/AF1Q/.test(u)).slice(0, 8);
+  for (const u of owners) candidates.push({ url: u, source: 'google-owner' });
+  const curated = (apifyImageUrls || []).filter(u => /\/gps-cs-s\//.test(u)).slice(0, 8);
+  for (const u of curated) candidates.push({ url: u, source: 'google-curated' });
+  const picked = [];
+  for (const c of candidates) {
+    if (picked.length >= maxCount) break;
+    const t = await passesPhotoTest(c.url);
+    if (t.ok) picked.push(c.url);
+  }
+  return picked;
+}
+
 function extractArrayInfo(html, varDecl) {
   const re = new RegExp('const ' + varDecl + '\\s*=\\s*\\[');
   const m = html.match(re);
@@ -304,6 +322,14 @@ async function diffEntry(current, apify, ogResult, bbox) {
     flags.push({ type: 'closure_candidate', message: 'Apify reports permanentlyClosed=true; needs manual confirm' });
   }
 
+  // menuUrl backfill — Apify `menu` field is the restaurant's menu page link.
+  // Backfill only when current is empty. User directive: link > photo for menus.
+  const apifyMenu = apify.menu && typeof apify.menu === 'string' && isValidUrl(apify.menu) ? apify.menu : '';
+  if (apifyMenu) {
+    const cur = (current.menuUrl || '').trim();
+    if (!cur) changes.menuUrl = apifyMenu;
+  }
+
   // photo (async — only set if at least one candidate passes the quality test)
   const photoChoice = await pickPhoto(ogResult, apify.imageUrls || []);
   if (photoChoice.url) {
@@ -311,6 +337,15 @@ async function diffEntry(current, apify, ogResult, bbox) {
       changes.photoUrl = photoChoice.url;
       changes._photoSource = photoChoice.source;
       if (photoChoice.tried.length) changes._photoTriedFirst = photoChoice.tried;
+    }
+    // Gallery: up to 5 passing photos for detail-page carousel.
+    const gallery = await pickPhotoGallery(ogResult, apify.imageUrls || [], 5);
+    if (gallery.length >= 2) {
+      const curPhotos = Array.isArray(current.photos) ? current.photos : [];
+      // Only write if different from current (avoid churn).
+      if (JSON.stringify(curPhotos) !== JSON.stringify(gallery)) {
+        changes.photos = gallery;
+      }
     }
   } else {
     // No candidate passed. Clear photoUrl if we previously set a bad one; otherwise leave empty.
@@ -403,6 +438,8 @@ async function main() {
       instagram: diffs.filter(d => d.changes.instagram).length,
       coords:    diffs.filter(d => d.changes.lat).length,
       address:   diffs.filter(d => d.changes.address).length,
+      menuUrl:   diffs.filter(d => d.changes.menuUrl).length,
+      photos:    diffs.filter(d => d.changes.photos).length,
     },
     photo_sources: diffs.reduce((acc, d) => {
       if (d.changes._photoSource) acc[d.changes._photoSource] = (acc[d.changes._photoSource]||0) + 1;
