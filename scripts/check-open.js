@@ -17,15 +17,24 @@ if (!name || !website) {
 const CLOSURE_PATTERNS = [
   /permanently closed/i,
   /closed\s+(for\s+good|permanently|its?\s+doors)/i,
+  /is\s+now\s+closed/i,                                    // "Birdie G's is now Closed"
   /our\s+last\s+day/i,
+  /(final|last)\s+day\s+of\s+(service|operation)/i,        // "final day of service was Dec 20"
   /final\s+service/i,
   /it\s+is\s+with\s+a?\s*heavy\s+heart/i,
   /thank\s+you\s+for\s+\d+\s+(years|great\s+years|memories)/i,
+  /thank\s+you\s+(to\s+everyone|for\s+celebrating).{0,80}(last|final|memories)/i,
   /has\s+closed/i,
+  /have\s+closed/i,
   /closing\s+(our\s+)?doors/i,
   /after\s+\d+\s+(years|wonderful\s+years).{0,80}(closed|closing|shutting|final)/i,
   /we\s+are\s+no\s+longer\s+(open|serving|operating)/i,
+  /no\s+longer\s+in\s+operation/i,
   /bidding\s+(you\s+)?farewell/i,
+  /last\s+hurrah/i,                                        // "last hurrah of Birdie G's"
+  /the\s+space\s+will\s+live\s+on/i,                       // common closure memorial phrase
+  /lights?\s+out\s+on/i,
+  /sad\s+to\s+(share|announce)\s+we/i,
 ];
 
 (async () => {
