@@ -1,0 +1,698 @@
+{
+  "city": "Seattle",
+  "checked": 507,
+  "in_bounds": 461,
+  "no_bounds": 0,
+  "severe": [
+    {
+      "id": 9419,
+      "name": "Bamboo Sushi Bellevue",
+      "neighborhood": "Bellevue",
+      "addr_city": "Bellevue",
+      "lat": 47.662074,
+      "lng": -122.2983848,
+      "address": "10000 NE 8th St, Bellevue, WA 98004",
+      "dist_deg": 0.0934,
+      "severity": "severe",
+      "suggested": [
+        "University District",
+        "University Village"
+      ]
+    },
+    {
+      "id": 9422,
+      "name": "Bin on the Lake",
+      "neighborhood": "Kirkland",
+      "addr_city": "Kirkland",
+      "lat": 47.620792,
+      "lng": -122.3599513,
+      "address": "1200 Carillon Point, Kirkland, WA 98033",
+      "dist_deg": 0.142,
+      "severity": "severe",
+      "suggested": [
+        "Queen Anne"
+      ]
+    },
+    {
+      "id": 9449,
+      "name": "Altstadt German Bierhalle",
+      "neighborhood": "Pioneer Square",
+      "addr_city": "Seattle",
+      "lat": 47.6730329,
+      "lng": -122.3172523,
+      "address": "209 1st Ave S, Seattle, WA 98104",
+      "dist_deg": 0.068,
+      "severity": "severe",
+      "suggested": [
+        "University District",
+        "Ravenna"
+      ]
+    },
+    {
+      "id": 9463,
+      "name": "Din Tai Fung Seattle",
+      "neighborhood": "University Village",
+      "addr_city": "Seattle",
+      "lat": 47.6126501,
+      "lng": -122.335168,
+      "address": "2621 NE 46th St #136, Seattle, WA 98105",
+      "dist_deg": 0.0529,
+      "severity": "severe",
+      "suggested": [
+        "Downtown",
+        "Downtown Waterfront",
+        "Waterfront"
+      ]
+    },
+    {
+      "id": 9472,
+      "name": "Szechuan Cuisine",
+      "neighborhood": "University District",
+      "addr_city": "Seattle",
+      "lat": 47.5995055,
+      "lng": -122.3175291,
+      "address": "4560 University Way NE, Seattle, WA 98105",
+      "dist_deg": 0.0505,
+      "severity": "severe",
+      "suggested": [
+        "Pioneer Square",
+        "Chinatown-International District",
+        "Central District",
+        "Beacon Hill",
+        "West Seattle"
+      ]
+    },
+    {
+      "id": 9473,
+      "name": "Monkey Tree Vietnamese",
+      "neighborhood": "University District",
+      "addr_city": "Seattle",
+      "lat": 47.6685077,
+      "lng": -122.3799586,
+      "address": "5000 University Way NE, Seattle, WA 98105",
+      "dist_deg": 0.055,
+      "severity": "severe",
+      "suggested": [
+        "Ballard"
+      ]
+    }
+  ],
+  "moderate": [
+    {
+      "id": 9019,
+      "name": "Communion",
+      "neighborhood": "Georgetown",
+      "addr_city": "Seattle",
+      "lat": 47.6131325,
+      "lng": -122.3016564,
+      "address": "2350 E Union St, Seattle, WA 98122",
+      "dist_deg": 0.0481,
+      "severity": "moderate",
+      "suggested": [
+        "Capitol Hill",
+        "Central District"
+      ]
+    },
+    {
+      "id": 9036,
+      "name": "Majnoon",
+      "neighborhood": "Pioneer Square",
+      "addr_city": "Seattle",
+      "lat": 47.6202577,
+      "lng": -122.3569428,
+      "address": "313 1st Ave S, Seattle, WA 98104",
+      "dist_deg": 0.0243,
+      "severity": "moderate",
+      "suggested": [
+        "Belltown",
+        "Seattle Center",
+        "Queen Anne"
+      ]
+    },
+    {
+      "id": 9044,
+      "name": "Jaded Bagels",
+      "neighborhood": "University District",
+      "addr_city": "Seattle",
+      "lat": 47.7194423,
+      "lng": -122.2948262,
+      "address": "12500 Lake City Way NE, Seattle, WA 98125",
+      "dist_deg": 0.0414,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 9179,
+      "name": "Queen Bee Cafe",
+      "neighborhood": "Bellevue",
+      "addr_city": "Clyde Hill",
+      "lat": 47.6357768,
+      "lng": -122.2221344,
+      "address": "8805 Points Dr NE, Clyde Hill, WA 98004",
+      "dist_deg": 0.0171,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 9223,
+      "name": "Molly Moon's Homemade Ice Cream",
+      "neighborhood": "Wallingford",
+      "addr_city": "Seattle",
+      "lat": 47.6009159,
+      "lng": -122.3361905,
+      "address": "199 Alaskan Wy, Seattle, WA 98104",
+      "dist_deg": 0.0441,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "Pioneer Square",
+        "Downtown Waterfront",
+        "Waterfront",
+        "West Seattle"
+      ]
+    },
+    {
+      "id": 9276,
+      "name": "Slate Coffee Roasters",
+      "neighborhood": "Ballard",
+      "addr_city": "Seattle",
+      "lat": 47.6131742,
+      "lng": -122.3426386,
+      "address": "2103 3rd Ave, Seattle, WA 98121",
+      "dist_deg": 0.0489,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "Belltown",
+        "Pike Place Market",
+        "Downtown Waterfront",
+        "Waterfront"
+      ]
+    },
+    {
+      "id": 9309,
+      "name": "Discovery Park",
+      "neighborhood": "Magnolia",
+      "addr_city": "Seattle",
+      "lat": 47.661979,
+      "lng": -122.4357206,
+      "address": "3801 Discovery Park Blvd, Seattle, WA 98199",
+      "dist_deg": 0.0157,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 9314,
+      "name": "Museum of Flight",
+      "neighborhood": "Tukwila",
+      "addr_city": "Seattle",
+      "lat": 47.5183592,
+      "lng": -122.2964955,
+      "address": "9404 E Marginal Way S, Seattle, WA 98108",
+      "dist_deg": 0.0184,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 9342,
+      "name": "Skyline at Space Needle",
+      "neighborhood": "Seattle Center",
+      "addr_city": "Seattle",
+      "lat": 47.6043639,
+      "lng": -122.3310111,
+      "address": "700 4th Ave, Seattle, WA 98104",
+      "dist_deg": 0.0167,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "Pioneer Square",
+        "Chinatown-International District",
+        "West Seattle"
+      ]
+    },
+    {
+      "id": 9346,
+      "name": "Mae's Phinney Ridge Cafe",
+      "neighborhood": "Phinney Ridge",
+      "addr_city": "Seattle",
+      "lat": 47.6482037,
+      "lng": -122.3346217,
+      "address": "1906 N 34th St, Seattle, WA 98103",
+      "dist_deg": 0.0215,
+      "severity": "moderate",
+      "suggested": [
+        "Wallingford"
+      ]
+    },
+    {
+      "id": 9368,
+      "name": "Kickin Boot Whiskey Kitchen",
+      "neighborhood": "Ballard",
+      "addr_city": "Seattle",
+      "lat": 47.6130928,
+      "lng": -122.3437156,
+      "address": "2122 2nd Ave, Seattle, WA 98121",
+      "dist_deg": 0.0484,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "Belltown",
+        "Pike Place Market",
+        "Downtown Waterfront",
+        "Waterfront"
+      ]
+    },
+    {
+      "id": 9371,
+      "name": "Art of the Table",
+      "neighborhood": "Wallingford",
+      "addr_city": "Seattle",
+      "lat": 47.6150072,
+      "lng": -122.3197875,
+      "address": "3801 Stone Way N, Seattle, WA 98103",
+      "dist_deg": 0.03,
+      "severity": "moderate",
+      "suggested": [
+        "Capitol Hill",
+        "Central District"
+      ]
+    },
+    {
+      "id": 9384,
+      "name": "Blueacre Seafood",
+      "neighborhood": "Downtown",
+      "addr_city": "Seattle",
+      "lat": 47.6124331,
+      "lng": -122.2890402,
+      "address": "1126 34th Ave #101, Seattle, WA 98122",
+      "dist_deg": 0.036,
+      "severity": "moderate",
+      "suggested": [
+        "Central District",
+        "Madrona"
+      ]
+    },
+    {
+      "id": 9392,
+      "name": "Skillet",
+      "neighborhood": "Capitol Hill",
+      "addr_city": "Seattle",
+      "lat": 47.621265,
+      "lng": -122.350539,
+      "address": "305 Harrison St, Seattle, WA 98109",
+      "dist_deg": 0.0205,
+      "severity": "moderate",
+      "suggested": [
+        "Belltown",
+        "Seattle Center",
+        "Queen Anne"
+      ]
+    },
+    {
+      "id": 9434,
+      "name": "Pecos Pit BBQ",
+      "neighborhood": "SODO",
+      "addr_city": "Seattle",
+      "lat": 47.5991337,
+      "lng": -122.2992636,
+      "address": "2513 S Jackson St, Seattle, WA 98144",
+      "dist_deg": 0.0207,
+      "severity": "moderate",
+      "suggested": [
+        "Central District",
+        "Beacon Hill"
+      ]
+    },
+    {
+      "id": 9443,
+      "name": "Hanuman Thai Café",
+      "neighborhood": "Fremont",
+      "addr_city": "Seattle",
+      "lat": 47.6239892,
+      "lng": -122.2963796,
+      "address": "2808 E Madison St, Seattle, WA 98112",
+      "dist_deg": 0.044,
+      "severity": "moderate",
+      "suggested": [
+        "Madison Valley"
+      ]
+    },
+    {
+      "id": 9455,
+      "name": "Cascade Brewing",
+      "neighborhood": "South Lake Union",
+      "addr_city": "Seattle",
+      "lat": 47.5995022,
+      "lng": -122.2997211,
+      "address": "2504 S Jackson St, Seattle, WA 98144",
+      "dist_deg": 0.0297,
+      "severity": "moderate",
+      "suggested": [
+        "Central District",
+        "Beacon Hill"
+      ]
+    },
+    {
+      "id": 9498,
+      "name": "Sushi Maki",
+      "neighborhood": "University Village",
+      "addr_city": "Seattle",
+      "lat": 47.61616,
+      "lng": -122.327102,
+      "address": "2672 NE University Village St, Seattle, WA 98105",
+      "dist_deg": 0.046,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "South Lake Union",
+        "Capitol Hill"
+      ]
+    },
+    {
+      "id": 9530,
+      "name": "Kubota Garden",
+      "neighborhood": "Beacon Hill",
+      "addr_city": "Seattle",
+      "lat": 47.5134676,
+      "lng": -122.2658737,
+      "address": "9817 55th Ave S, Seattle, WA 98118",
+      "dist_deg": 0.0369,
+      "severity": "moderate",
+      "suggested": [
+        "South Seattle"
+      ]
+    }
+  ],
+  "edge": [
+    {
+      "id": 9002,
+      "name": "Archipelago",
+      "neighborhood": "Beacon Hill",
+      "addr_city": null,
+      "lat": 47.5517,
+      "lng": -122.2782,
+      "address": "5607 Rainier Ave S, Seattle WA 98118",
+      "dist_deg": 0.0068,
+      "severity": "edge",
+      "suggested": [
+        "Columbia City",
+        "Hillman City"
+      ]
+    },
+    {
+      "id": 9011,
+      "name": "Le Caviste",
+      "neighborhood": "Capitol Hill",
+      "addr_city": "Seattle",
+      "lat": 47.614718,
+      "lng": -122.337208,
+      "address": "1919 7th Ave, Seattle, WA 98101",
+      "dist_deg": 0.0072,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "Downtown Waterfront",
+        "Waterfront"
+      ]
+    },
+    {
+      "id": 9057,
+      "name": "Brimmer & Heeltap",
+      "neighborhood": "Ballard",
+      "addr_city": "Seattle",
+      "lat": 47.6685389,
+      "lng": -122.3630861,
+      "address": "425 NW Market St, Seattle, WA 98107",
+      "dist_deg": 0.0049,
+      "severity": "edge",
+      "suggested": [
+        "Phinney Ridge"
+      ]
+    },
+    {
+      "id": 9151,
+      "name": "Nishino",
+      "neighborhood": "Central District",
+      "addr_city": "Seattle",
+      "lat": 47.6268666,
+      "lng": -122.2918921,
+      "address": "3130 E Madison St Ste 106, Seattle, WA 98112",
+      "dist_deg": 0.0049,
+      "severity": "edge",
+      "suggested": [
+        "Madison Valley"
+      ]
+    },
+    {
+      "id": 9174,
+      "name": "Chiang's Gourmet",
+      "neighborhood": "University District",
+      "addr_city": "Seattle",
+      "lat": 47.6863319,
+      "lng": -122.3142924,
+      "address": "7845 Lake City Way NE, Seattle, WA 98115",
+      "dist_deg": 0.0083,
+      "severity": "edge",
+      "suggested": [
+        "Wedgwood"
+      ]
+    },
+    {
+      "id": 9204,
+      "name": "Jemil's Big Easy",
+      "neighborhood": "West Seattle",
+      "addr_city": "Seattle",
+      "lat": 47.6149613,
+      "lng": -122.315932,
+      "address": "5406 Delridge Way SW, Seattle, WA 98106",
+      "dist_deg": 0.01,
+      "severity": "edge",
+      "suggested": [
+        "Capitol Hill",
+        "Central District"
+      ]
+    },
+    {
+      "id": 9212,
+      "name": "Palisade",
+      "neighborhood": "Queen Anne",
+      "addr_city": "Seattle",
+      "lat": 47.6303784,
+      "lng": -122.3915819,
+      "address": "2601 W Marina Pl, Seattle, WA 98199",
+      "dist_deg": 0.0136,
+      "severity": "edge",
+      "suggested": [
+        "Magnolia"
+      ]
+    },
+    {
+      "id": 9249,
+      "name": "Sam Choy's Poke to the Max",
+      "neighborhood": "Beacon Hill",
+      "addr_city": "Seattle",
+      "lat": 47.5539897,
+      "lng": -122.2803226,
+      "address": "5300 Rainier Ave S, Seattle, WA 98118",
+      "dist_deg": 0.0047,
+      "severity": "edge",
+      "suggested": [
+        "Columbia City",
+        "Hillman City"
+      ]
+    },
+    {
+      "id": 9269,
+      "name": "Brave Horse Tavern",
+      "neighborhood": "South Lake Union",
+      "addr_city": "Seattle",
+      "lat": 47.6102358,
+      "lng": -122.3419821,
+      "address": "1908 Post Alley, Seattle, WA 98101",
+      "dist_deg": 0.0048,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "Belltown",
+        "Pike Place Market",
+        "Downtown Waterfront",
+        "Waterfront"
+      ]
+    },
+    {
+      "id": 9359,
+      "name": "Nate's Wings & Waffles",
+      "neighborhood": "South Seattle",
+      "addr_city": "Seattle",
+      "lat": 47.5197963,
+      "lng": -122.2618498,
+      "address": "9261 57th Ave S, Seattle, WA 98118",
+      "dist_deg": 0.0048,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 9391,
+      "name": "Mamnoon",
+      "neighborhood": "Capitol Hill",
+      "addr_city": "Seattle",
+      "lat": 47.614838,
+      "lng": -122.3386459,
+      "address": "2020 6th Ave, Seattle, WA 98121",
+      "dist_deg": 0.0086,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "Belltown",
+        "Downtown Waterfront",
+        "Waterfront"
+      ]
+    },
+    {
+      "id": 9395,
+      "name": "Fuji Sushi",
+      "neighborhood": "Capitol Hill",
+      "addr_city": "Seattle",
+      "lat": 47.6001248,
+      "lng": -122.3269166,
+      "address": "520 South Main St, Seattle, WA 98104",
+      "dist_deg": 0.0049,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "Pioneer Square",
+        "Chinatown-International District",
+        "West Seattle"
+      ]
+    },
+    {
+      "id": 9401,
+      "name": "Zoka Coffee Roasters",
+      "neighborhood": "University District",
+      "addr_city": "Seattle",
+      "lat": 47.6688114,
+      "lng": -122.332867,
+      "address": "2200 N 56th St, Seattle, WA 98103",
+      "dist_deg": 0.0079,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 9409,
+      "name": "Flying Squirrel Pizza",
+      "neighborhood": "Wedgwood",
+      "addr_city": "Seattle",
+      "lat": 47.6892767,
+      "lng": -122.3228343,
+      "address": "8310 5th Ave NE, Seattle, WA 98115",
+      "dist_deg": 0.0048,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 9431,
+      "name": "Ludi's Restaurant & Lounge",
+      "neighborhood": "Chinatown-International District",
+      "addr_city": "Seattle",
+      "lat": 47.610944,
+      "lng": -122.3407198,
+      "address": "120 Stewart St, Seattle, WA 98101",
+      "dist_deg": 0.0106,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "Belltown",
+        "Pike Place Market",
+        "Downtown Waterfront",
+        "Waterfront"
+      ]
+    },
+    {
+      "id": 9451,
+      "name": "Gaslamp Grill",
+      "neighborhood": "Downtown",
+      "addr_city": "Seattle",
+      "lat": 47.6172823,
+      "lng": -122.3130528,
+      "address": "1727 15th Ave, Seattle, WA 98122",
+      "dist_deg": 0.0119,
+      "severity": "edge",
+      "suggested": [
+        "Capitol Hill",
+        "Central District"
+      ]
+    },
+    {
+      "id": 9467,
+      "name": "Westman's Bagel & Coffee",
+      "neighborhood": "Capitol Hill",
+      "addr_city": "Seattle",
+      "lat": 47.6063631,
+      "lng": -122.3349842,
+      "address": "1111 3rd Ave PLZ02, Seattle, WA 98101",
+      "dist_deg": 0.005,
+      "severity": "edge",
+      "suggested": [
+        "Downtown"
+      ]
+    },
+    {
+      "id": 9475,
+      "name": "Sambar",
+      "neighborhood": "Ballard",
+      "addr_city": "Seattle",
+      "lat": 47.6685246,
+      "lng": -122.3631292,
+      "address": "425 NW Market St, Seattle, WA 98107",
+      "dist_deg": 0.0049,
+      "severity": "edge",
+      "suggested": [
+        "Phinney Ridge"
+      ]
+    },
+    {
+      "id": 9487,
+      "name": "Raised Doughnuts & Cakes",
+      "neighborhood": "Beacon Hill",
+      "addr_city": "Seattle",
+      "lat": 47.612794,
+      "lng": -122.3018947,
+      "address": "2301 E Union St Suite L, Seattle, WA 98122",
+      "dist_deg": 0.0128,
+      "severity": "edge",
+      "suggested": [
+        "Capitol Hill",
+        "Central District"
+      ]
+    },
+    {
+      "id": 9494,
+      "name": "Chan Cafe Annex",
+      "neighborhood": "Capitol Hill",
+      "addr_city": "Seattle",
+      "lat": 47.5993554,
+      "lng": -122.310012,
+      "address": "1700 S Jackson St, Seattle, WA 98144",
+      "dist_deg": 0.0056,
+      "severity": "edge",
+      "suggested": [
+        "Central District",
+        "Beacon Hill"
+      ]
+    },
+    {
+      "id": 9529,
+      "name": "Jimi Hendrix Park",
+      "neighborhood": "Central District",
+      "addr_city": "Seattle",
+      "lat": 47.588424,
+      "lng": -122.301102,
+      "address": "2400 S Massachusetts St, Seattle, WA 98144",
+      "dist_deg": 0.0066,
+      "severity": "edge",
+      "suggested": [
+        "Beacon Hill"
+      ]
+    }
+  ]
+}

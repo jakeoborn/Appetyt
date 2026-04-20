@@ -1,0 +1,61 @@
+{
+  "applied": [
+    {
+      "id": 9008,
+      "from": "Capitol Hill",
+      "to": "Ballard",
+      "reason": "Rupee Bar: 6307 24th Ave NW 98107 + coords (47.67,-122.39) — Ballard, not Capitol Hill"
+    },
+    {
+      "id": 9359,
+      "from": "Central District",
+      "to": "South Seattle",
+      "reason": "Nate's Wings & Waffles: 9261 57th Ave S 98118 + coords (47.52,-122.26) — Rainier Beach / South Seattle"
+    },
+    {
+      "id": 9409,
+      "from": "Georgetown",
+      "to": "Wedgwood",
+      "reason": "Flying Squirrel Pizza: 8310 5th Ave NE 98115 + coords (47.69,-122.32) — Wedgwood/Maple Leaf edge, not Georgetown"
+    },
+    {
+      "id": 9447,
+      "from": "Lynnwood",
+      "to": "Eastlake",
+      "reason": "Paju Dakgalbi: 2236 Eastlake Ave E 98102 + coords (47.64,-122.33) — Eastlake, not Lynnwood"
+    }
+  ],
+  "skipped": [],
+  "coord_bugs": [
+    {
+      "id": 9419,
+      "name": "Bamboo Sushi Bellevue",
+      "issue": "addr 10000 NE 8th St Bellevue 98004 but coord 47.66,-122.30 is UDist, not Bellevue (~47.62,-122.19)"
+    },
+    {
+      "id": 9422,
+      "name": "Bin on the Lake",
+      "issue": "addr 1200 Carillon Point Kirkland 98033 but coord 47.62,-122.36 is Queen Anne, not Kirkland (~47.67,-122.21)"
+    },
+    {
+      "id": 9449,
+      "name": "Altstadt German Bierhalle",
+      "issue": "addr 209 1st Ave S 98104 (Pioneer Sq) but coord 47.67,-122.32 is UDist, not Pioneer Sq (~47.60,-122.33)"
+    },
+    {
+      "id": 9463,
+      "name": "Din Tai Fung Seattle",
+      "issue": "addr 2621 NE 46th St 98105 (U-Village) but coord 47.61,-122.34 is Downtown, not U-Village (~47.66,-122.30)"
+    },
+    {
+      "id": 9472,
+      "name": "Szechuan Cuisine",
+      "issue": "addr 4560 University Way NE 98105 (UDist) but coord 47.60,-122.32 is Pioneer Sq, not UDist (~47.66,-122.31)"
+    },
+    {
+      "id": 9473,
+      "name": "Monkey Tree Vietnamese",
+      "issue": "addr 5000 University Way NE 98105 (UDist) but coord 47.67,-122.38 is Ballard, not UDist (~47.66,-122.31)"
+    }
+  ]
+}
