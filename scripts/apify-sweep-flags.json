@@ -6438,5 +6438,148 @@
         "reason": "too_tall_or_square_810x1080_ar0.75"
       }
     ]
+  },
+  {
+    "city": "lv",
+    "id": 12204,
+    "name": "Evel Pie",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_813x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1080x1080_ar1.00"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "lv",
+    "id": 12346,
+    "name": "Lola's Louisiana Kitchen",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "lv",
+    "id": 12458,
+    "name": "Eat.",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "lv",
+    "id": 12473,
+    "name": "Chow",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "lv",
+    "id": 12520,
+    "name": "Pierogi Pete's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_1080x1080_ar1.00"
+      },
+      {
+        "source": "google-owner",
+        "reason": "dims_too_small_498x1080"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_999x1080_ar0.93"
+      }
+    ]
+  },
+  {
+    "city": "lv",
+    "id": 12512,
+    "name": "House of Gyros Chinatown",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_800x800_ar1.00"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_800x800_ar1.00"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "lv",
+    "id": 12519,
+    "name": "Pinches Tacos",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "lv",
+    "id": 12461,
+    "name": "Picasso",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
   }
 ]
