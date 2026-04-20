@@ -5753,5 +5753,273 @@
         "reason": "too_tall_or_square_810x1080_ar0.75"
       }
     ]
+  },
+  {
+    "city": "chicago",
+    "id": 31,
+    "name": "Millennium Park",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "chicago",
+    "id": 117,
+    "name": "Proxi",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "chicago",
+    "id": 85,
+    "name": "Signature Room at the 95th",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "chicago",
+    "id": 99,
+    "name": "The Warehouse",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "chicago",
+    "id": 140,
+    "name": "Cafe Marie-Jeanne",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "chicago",
+    "id": 105,
+    "name": "Reno",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_800x800_ar1.00"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_1087x1080_ar1.01"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_800x800_ar1.00"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_800x800_ar1.00"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_800x800_ar1.00"
+      }
+    ]
+  },
+  {
+    "city": "chicago",
+    "id": 237,
+    "name": "Lost Larson",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "chicago",
+    "id": 249,
+    "name": "Osaka Nikkei",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "chicago",
+    "id": 338,
+    "name": "Oooh Wee! It Is!",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "chicago",
+    "id": 335,
+    "name": "Pink Mu",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_1253x1080_ar1.16"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_777x1080_ar0.72"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_813x1080_ar0.75"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_813x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "chicago",
+    "id": 343,
+    "name": "Qing Xiang Yuan Wicker Park",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "chicago",
+    "id": 414,
+    "name": "The Alley Cat",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "chicago",
+    "id": 395,
+    "name": "Kitchen 17",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "chicago",
+    "id": 412,
+    "name": "La Lunita",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "chicago",
+    "id": 418,
+    "name": "Mango Pickle",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "chicago",
+    "id": 505,
+    "name": "Top Notch Beefburgers",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "chicago",
+    "id": 480,
+    "name": "Lagunitas Taproom",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "chicago",
+    "id": 519,
+    "name": "Half Acre Balmoral Taproom",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "chicago",
+    "id": 459,
+    "name": "Terzo Piano",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "chicago",
+    "id": 454,
+    "name": "Yusho Logan Square",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "chicago",
+    "id": 12560,
+    "name": "Uptown Theatre",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
   }
 ]
