@@ -1,0 +1,1148 @@
+{
+  "city": "Las Vegas",
+  "checked": 510,
+  "in_bounds": 429,
+  "no_bounds": 0,
+  "severe": [
+    {
+      "id": 12000,
+      "name": "Joël Robuchon",
+      "neighborhood": "The Strip (MGM Grand)",
+      "addr_city": "Las Vegas",
+      "lat": 36.2078223,
+      "lng": -115.2683509,
+      "address": "2620 Regatta Dr, Las Vegas, NV 89128",
+      "dist_deg": 0.1367,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin"
+      ]
+    },
+    {
+      "id": 12154,
+      "name": "Bouchon Bakery",
+      "neighborhood": "The Strip (The Venetian)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1454186,
+      "lng": -115.3001247,
+      "address": "9440 W Sahara Ave #105, Las Vegas, NV 89117",
+      "dist_deg": 0.1275,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin",
+        "Summerlin (Downtown Summerlin)"
+      ]
+    },
+    {
+      "id": 12216,
+      "name": "Mr BBQ",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.266275,
+      "lng": -115.258925,
+      "address": "5770 Centennial Center Blvd #150, Las Vegas, NV 89149",
+      "dist_deg": 0.1404,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 12217,
+      "name": "Pho Saigonese",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.283084,
+      "lng": -115.3140131,
+      "address": "6710 N Hualapai Way # 125, Las Vegas, NV 89149",
+      "dist_deg": 0.1771,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 12230,
+      "name": "Metro Pizza",
+      "neighborhood": "Paradise",
+      "addr_city": "Las Vegas",
+      "lat": 36.283648,
+      "lng": -115.270267,
+      "address": "6720 Sky Pointe Dr, Las Vegas, NV 89131",
+      "dist_deg": 0.1654,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 12239,
+      "name": "Hussong's Cantina",
+      "neighborhood": "The Strip (Mandalay Bay)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1636642,
+      "lng": -115.2893572,
+      "address": "3930 Las Vegas Blvd S Ste 121B, Las Vegas, NV 89119",
+      "dist_deg": 0.1265,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin",
+        "Summerlin (Downtown Summerlin)",
+        "Summerlin (Red Rock Resort)"
+      ]
+    },
+    {
+      "id": 12267,
+      "name": "Shin Yakiniku",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.2211867,
+      "lng": -115.3286016,
+      "address": "5865 Spring Mountain Rd Ste 145, Las Vegas, NV 89146",
+      "dist_deg": 0.138,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin"
+      ]
+    },
+    {
+      "id": 12277,
+      "name": "Hwaro Korean BBQ",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.1467885,
+      "lng": -115.3008891,
+      "address": "5030 Spring Mountain Rd Ste 3-5, Las Vegas, NV 89146",
+      "dist_deg": 0.0777,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin",
+        "Summerlin (Downtown Summerlin)"
+      ]
+    },
+    {
+      "id": 12295,
+      "name": "La Strega",
+      "neighborhood": "West of Strip",
+      "addr_city": "Las Vegas",
+      "lat": 36.1589723,
+      "lng": -115.3232131,
+      "address": "3555 S Town Center Dr, Las Vegas, NV 89135",
+      "dist_deg": 0.0982,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin",
+        "Summerlin (Downtown Summerlin)",
+        "Summerlin (Red Rock Resort)"
+      ]
+    },
+    {
+      "id": 12297,
+      "name": "Sumo Omakase",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.2915022,
+      "lng": -115.286991,
+      "address": "7160 N Durango Dr Suite 140, Las Vegas, NV 89149",
+      "dist_deg": 0.173,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 12320,
+      "name": "Smokeshow Barbeque",
+      "neighborhood": "Henderson",
+      "addr_city": "Henderson",
+      "lat": 36.1736444,
+      "lng": -115.246112,
+      "address": "601 Carnegie St Ste 110, Henderson, NV 89002",
+      "dist_deg": 0.1274,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 12350,
+      "name": "Shokku Ramen",
+      "neighborhood": "Paradise",
+      "addr_city": "Las Vegas",
+      "lat": 36.1595811,
+      "lng": -115.2330768,
+      "address": "3480 Paradise Rd, Las Vegas, NV 89169",
+      "dist_deg": 0.055,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 12352,
+      "name": "The Skull Bar",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.2777063,
+      "lng": -115.285902,
+      "address": "6430 N Durango Dr, Las Vegas, NV 89149",
+      "dist_deg": 0.1598,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 12365,
+      "name": "Ohjah Japanese Steakhouse",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.2957455,
+      "lng": -115.2887484,
+      "address": "4055 Spring Mountain Rd, Las Vegas, NV 89102",
+      "dist_deg": 0.1776,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 12366,
+      "name": "Pin Kaow Thai",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.195403,
+      "lng": -115.241403,
+      "address": "3620 Spring Mountain Rd Ste 4, Las Vegas, NV 89102",
+      "dist_deg": 0.0674,
+      "severity": "severe",
+      "suggested": [
+        "North Las Vegas"
+      ]
+    },
+    {
+      "id": 12371,
+      "name": "Roberto's Taco Shop",
+      "neighborhood": "Paradise",
+      "addr_city": "Las Vegas",
+      "lat": 36.2188163,
+      "lng": -115.3138553,
+      "address": "10030 W Cheyenne Ave #130, Las Vegas, NV 89129",
+      "dist_deg": 0.1529,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin"
+      ]
+    },
+    {
+      "id": 12375,
+      "name": "Paymon Mediterranean Cafe",
+      "neighborhood": "Paradise",
+      "addr_city": "Las Vegas",
+      "lat": 36.1446816,
+      "lng": -115.2740456,
+      "address": "8380 W Sahara Ave #150, Las Vegas, NV 89117",
+      "dist_deg": 0.094,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin"
+      ]
+    },
+    {
+      "id": 12378,
+      "name": "Distrito Federal",
+      "neighborhood": "Paradise",
+      "addr_city": "Las Vegas",
+      "lat": 36.1445813,
+      "lng": -115.2746367,
+      "address": "8400 W Sahara Ave Suite 4, Las Vegas, NV 89117",
+      "dist_deg": 0.0946,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin"
+      ]
+    },
+    {
+      "id": 12402,
+      "name": "Izzy's Bagels",
+      "neighborhood": "Arts District",
+      "addr_city": "Las Vegas",
+      "lat": 36.201922,
+      "lng": -115.2831261,
+      "address": "1431 S Main St, Las Vegas, NV 89104",
+      "dist_deg": 0.1229,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin"
+      ]
+    },
+    {
+      "id": 12438,
+      "name": "Charlie Palmer Steak Las Vegas",
+      "neighborhood": "The Strip (Mandalay Bay)",
+      "addr_city": "Las Vegas",
+      "lat": 36.2747542,
+      "lng": -115.2457847,
+      "address": "6250 Rio Vista St, Las Vegas, NV 89130",
+      "dist_deg": 0.1867,
+      "severity": "severe",
+      "suggested": [
+        "North Las Vegas"
+      ]
+    },
+    {
+      "id": 12442,
+      "name": "Lakeside",
+      "neighborhood": "The Strip (Wynn)",
+      "addr_city": "Las Vegas",
+      "lat": 36.2075285,
+      "lng": -115.2681455,
+      "address": "2620 Regatta Dr Suite 211, Las Vegas, NV 89128",
+      "dist_deg": 0.1238,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin"
+      ]
+    },
+    {
+      "id": 12451,
+      "name": "Yonaka Modern Japanese",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.2994918,
+      "lng": -115.2791748,
+      "address": "8400 Farm Rd #130, Las Vegas, NV 89131",
+      "dist_deg": 0.1779,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 12454,
+      "name": "District One",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.2385375,
+      "lng": -115.2329956,
+      "address": "3400 S Jones Blvd, Las Vegas, NV 89146",
+      "dist_deg": 0.1088,
+      "severity": "severe",
+      "suggested": [
+        "North Las Vegas"
+      ]
+    },
+    {
+      "id": 12461,
+      "name": "Picasso",
+      "neighborhood": "The Strip (Bellagio)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1757569,
+      "lng": -115.3296002,
+      "address": "222 Emerald Vista Way, Las Vegas, NV 89144",
+      "dist_deg": 0.162,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin",
+        "Summerlin (Downtown Summerlin)"
+      ]
+    },
+    {
+      "id": 12468,
+      "name": "888 Sushi & Robata",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.2399469,
+      "lng": -115.2495579,
+      "address": "5115 Spring Mountain Rd #203, Las Vegas, NV 89146",
+      "dist_deg": 0.1127,
+      "severity": "severe",
+      "suggested": [
+        "North Las Vegas"
+      ]
+    },
+    {
+      "id": 12472,
+      "name": "Therapy",
+      "neighborhood": "Downtown (Fremont East)",
+      "addr_city": "Las Vegas",
+      "lat": 36.2217336,
+      "lng": -115.2600458,
+      "address": "518 Fremont St, Las Vegas, NV 89101",
+      "dist_deg": 0.1177,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin"
+      ]
+    },
+    {
+      "id": 12495,
+      "name": "Todd English P.U.B.",
+      "neighborhood": "The Strip (Aria)",
+      "addr_city": "Las Vegas",
+      "lat": 36.196386,
+      "lng": -115.232235,
+      "address": "6374 W Lake Mead Blvd, Las Vegas, NV 89108",
+      "dist_deg": 0.0962,
+      "severity": "severe",
+      "suggested": [
+        "North Las Vegas"
+      ]
+    },
+    {
+      "id": 12506,
+      "name": "Pinkbox Doughnuts Fremont",
+      "neighborhood": "Downtown (Fremont East)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1957236,
+      "lng": -115.2583111,
+      "address": "450 Fremont St #125, Las Vegas, NV 89101",
+      "dist_deg": 0.1094,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 12510,
+      "name": "Lotus of Siam Summerlin",
+      "neighborhood": "Summerlin",
+      "addr_city": "Las Vegas",
+      "lat": 36.2987762,
+      "lng": -115.2802832,
+      "address": "620 E Flamingo Rd, Las Vegas, NV 89119",
+      "dist_deg": 0.0688,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 12512,
+      "name": "House of Gyros Chinatown",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.2780541,
+      "lng": -115.2873233,
+      "address": "6446 N Durango Dr, Las Vegas, NV 89149",
+      "dist_deg": 0.1606,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 12513,
+      "name": "Lola's A Louisiana Kitchen",
+      "neighborhood": "Henderson",
+      "addr_city": "Las Vegas",
+      "lat": 36.1589836,
+      "lng": -115.1773509,
+      "address": "241 W Charleston Blvd, Las Vegas, NV 89102",
+      "dist_deg": 0.0742,
+      "severity": "severe",
+      "suggested": [
+        "The Strip",
+        "West of Strip"
+      ]
+    },
+    {
+      "id": 12514,
+      "name": "Brennan's of Las Vegas",
+      "neighborhood": "Henderson",
+      "addr_city": "Las Vegas",
+      "lat": 36.1744425,
+      "lng": -115.2923623,
+      "address": "221 S Rampart Blvd, Las Vegas, NV 89145",
+      "dist_deg": 0.1655,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin",
+        "Summerlin (Downtown Summerlin)"
+      ]
+    },
+    {
+      "id": 12515,
+      "name": "Ada's Food + Wine",
+      "neighborhood": "Summerlin",
+      "addr_city": "Las Vegas",
+      "lat": 36.1576528,
+      "lng": -115.1527038,
+      "address": "400 S Rampart Blvd #120, Las Vegas, NV 89145",
+      "dist_deg": 0.1073,
+      "severity": "severe",
+      "suggested": [
+        "Arts District"
+      ]
+    },
+    {
+      "id": 12524,
+      "name": "Dough Zone Dumpling House",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.1439155,
+      "lng": -115.2960829,
+      "address": "9101 W Sahara Ave Suite 109, Las Vegas, NV 89117",
+      "dist_deg": 0.0724,
+      "severity": "severe",
+      "suggested": [
+        "Summerlin"
+      ]
+    }
+  ],
+  "moderate": [
+    {
+      "id": 12002,
+      "name": "Restaurant Guy Savoy",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12008,
+      "name": "Gordon Ramsay Hell's Kitchen",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12023,
+      "name": "Nobu",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12042,
+      "name": "YUI Edomae Sushi",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.1590503,
+      "lng": -115.1997589,
+      "address": "3460 Arville St Ste J, Las Vegas, NV 89102",
+      "dist_deg": 0.0291,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip",
+        "West of Strip"
+      ]
+    },
+    {
+      "id": 12077,
+      "name": "Marssa Steak & Sushi",
+      "neighborhood": "Henderson",
+      "addr_city": "Henderson",
+      "lat": 36.1125,
+      "lng": -114.9419,
+      "address": "101 Montelago Blvd, Henderson, NV 89011",
+      "dist_deg": 0.0225,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 12083,
+      "name": "Vanderpump Cocktail Garden",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12102,
+      "name": "Gordon Ramsay Pub & Grill",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12112,
+      "name": "Pisces",
+      "neighborhood": "The Strip (Wynn)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1699671,
+      "lng": -115.1448235,
+      "address": "129 E Fremont St, Las Vegas, NV 89101",
+      "dist_deg": 0.0409,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "Downtown (Fremont East)",
+        "Downtown (Circa)"
+      ]
+    },
+    {
+      "id": 12117,
+      "name": "Amalfi by Bobby Flay",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12118,
+      "name": "Brioche by Guy Savoy",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12134,
+      "name": "Peter Luger Steak House",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12135,
+      "name": "Bacchanal Buffet",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12136,
+      "name": "Brasserie B by Bobby Flay",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12159,
+      "name": "Omnia Nightclub",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12172,
+      "name": "Skyfall Lounge",
+      "neighborhood": "The Strip (Mandalay Bay)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1436673,
+      "lng": -115.1572939,
+      "address": "3940 S Las Vegas Blvd Fl 64, Las Vegas, NV 89119",
+      "dist_deg": 0.0455,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip",
+        "Paradise"
+      ]
+    },
+    {
+      "id": 12226,
+      "name": "Toridokoro Raku",
+      "neighborhood": "Paradise",
+      "addr_city": "Las Vegas",
+      "lat": 36.1153523,
+      "lng": -115.2003664,
+      "address": "4439 W Flamingo Rd, Las Vegas, NV 89103",
+      "dist_deg": 0.0204,
+      "severity": "moderate",
+      "suggested": [
+        "Chinatown",
+        "West of Strip"
+      ]
+    },
+    {
+      "id": 12243,
+      "name": "Elia Authentic Greek Taverna",
+      "neighborhood": "Spring Valley",
+      "addr_city": "Las Vegas",
+      "lat": 36.1429638,
+      "lng": -115.2801556,
+      "address": "8615 W Sahara Ave, Las Vegas, NV 89117",
+      "dist_deg": 0.028,
+      "severity": "moderate",
+      "suggested": [
+        "Summerlin"
+      ]
+    },
+    {
+      "id": 12244,
+      "name": "Tamba Contemporary Indian",
+      "neighborhood": "Paradise",
+      "addr_city": "Las Vegas",
+      "lat": 36.0627,
+      "lng": -115.1723,
+      "address": "6671 Las Vegas Blvd S Ste A117, Las Vegas, NV 89119",
+      "dist_deg": 0.0173,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 12248,
+      "name": "Beijing Noodle No. 9",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1450702,
+      "lng": -115.1563697,
+      "address": "3570 Las Vegas Blvd S, Las Vegas, NV 89109",
+      "dist_deg": 0.0281,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)",
+        "The Strip"
+      ]
+    },
+    {
+      "id": 12299,
+      "name": "Nobu Caesars Palace",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1450702,
+      "lng": -115.1563697,
+      "address": "3570 Las Vegas Blvd S, Las Vegas, NV 89109",
+      "dist_deg": 0.0281,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)",
+        "The Strip"
+      ]
+    },
+    {
+      "id": 12331,
+      "name": "Monta Ramen",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.1451407,
+      "lng": -115.1761033,
+      "address": "5030 Spring Mountain Rd Ste 2, Las Vegas, NV 89146",
+      "dist_deg": 0.0156,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip",
+        "West of Strip"
+      ]
+    },
+    {
+      "id": 12334,
+      "name": "Fat Choy",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.1419,
+      "lng": -115.1399,
+      "address": "595 E Sahara Ave, Las Vegas, NV 89104",
+      "dist_deg": 0.0418,
+      "severity": "moderate",
+      "suggested": [
+        "Paradise"
+      ]
+    },
+    {
+      "id": 12346,
+      "name": "Lola's Louisiana Kitchen",
+      "neighborhood": "Spring Valley",
+      "addr_city": "Las Vegas",
+      "lat": 36.158561,
+      "lng": -115.157936,
+      "address": "241 N Mojave Rd, Las Vegas, NV 89101",
+      "dist_deg": 0.0488,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip",
+        "Arts District"
+      ]
+    },
+    {
+      "id": 12349,
+      "name": "Gaetano's Ristorante",
+      "neighborhood": "Spring Valley",
+      "addr_city": "Las Vegas",
+      "lat": 36.1584862,
+      "lng": -115.2864369,
+      "address": "8771 W Charleston Blvd, Las Vegas, NV 89117",
+      "dist_deg": 0.0435,
+      "severity": "moderate",
+      "suggested": [
+        "Summerlin",
+        "Summerlin (Downtown Summerlin)",
+        "Summerlin (Red Rock Resort)"
+      ]
+    },
+    {
+      "id": 12368,
+      "name": "Sen of Japan",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.1282,
+      "lng": -115.2663,
+      "address": "8480 W Desert Inn Rd, Las Vegas, NV 89117",
+      "dist_deg": 0.0413,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 12395,
+      "name": "Tacos El Compita",
+      "neighborhood": "North Las Vegas",
+      "addr_city": "Las Vegas",
+      "lat": 36.1600183,
+      "lng": -115.2247297,
+      "address": "6118 W Charleston Blvd, Las Vegas, NV 89146",
+      "dist_deg": 0.035,
+      "severity": "moderate",
+      "suggested": [
+        "West of Strip"
+      ]
+    },
+    {
+      "id": 12416,
+      "name": "Red Rock Canyon National Conservation Area",
+      "neighborhood": "Summerlin",
+      "addr_city": "Las Vegas",
+      "lat": 36.1358,
+      "lng": -115.4267,
+      "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+      "dist_deg": 0.0267,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 12443,
+      "name": "KOI Restaurant Las Vegas",
+      "neighborhood": "The Strip (Planet Hollywood)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1454376,
+      "lng": -115.1563387,
+      "address": "3667 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0351,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)",
+        "The Strip"
+      ]
+    },
+    {
+      "id": 12444,
+      "name": "Earl of Sandwich",
+      "neighborhood": "The Strip (Planet Hollywood)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1454376,
+      "lng": -115.1563387,
+      "address": "3667 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0351,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)",
+        "The Strip"
+      ]
+    },
+    {
+      "id": 12452,
+      "name": "Ocha Thai Cuisine",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.1567331,
+      "lng": -115.1486063,
+      "address": "1201 Las Vegas Blvd N, Las Vegas, NV 89101",
+      "dist_deg": 0.0412,
+      "severity": "moderate",
+      "suggested": [
+        "Arts District"
+      ]
+    },
+    {
+      "id": 12489,
+      "name": "Old Homestead Steakhouse",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12504,
+      "name": "Mr Chow Las Vegas",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12505,
+      "name": "Nobu Hotel Restaurant Caesars",
+      "neighborhood": "The Strip (Caesars Palace)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1473441,
+      "lng": -115.1548642,
+      "address": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0308,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)"
+      ]
+    },
+    {
+      "id": 12507,
+      "name": "China Tang",
+      "neighborhood": "The Strip (MGM Grand)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1434067,
+      "lng": -115.1746622,
+      "address": "2411 W Sahara Ave, Las Vegas, NV 89102",
+      "dist_deg": 0.0354,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip",
+        "Off-Strip",
+        "Paradise"
+      ]
+    },
+    {
+      "id": 12509,
+      "name": "Tom Colicchio's Heritage Steak",
+      "neighborhood": "The Strip (The Mirage)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1454376,
+      "lng": -115.1563387,
+      "address": "3400 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0218,
+      "severity": "moderate",
+      "suggested": [
+        "The Strip (The STRAT)",
+        "The Strip"
+      ]
+    },
+    {
+      "id": 12517,
+      "name": "BLVD Creamery",
+      "neighborhood": "The Strip (The Cosmopolitan)",
+      "addr_city": "Las Vegas",
+      "lat": 36.15931,
+      "lng": -115.153184,
+      "address": "1 E Charleston Blvd #100, Las Vegas, NV 89104",
+      "dist_deg": 0.0493,
+      "severity": "moderate",
+      "suggested": [
+        "Arts District"
+      ]
+    }
+  ],
+  "edge": [
+    {
+      "id": 12044,
+      "name": "Kaiseki Yuzu",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.1443,
+      "lng": -115.2026,
+      "address": "4450 W Sahara Ave Ste 105, Las Vegas, NV 89102",
+      "dist_deg": 0.0143,
+      "severity": "edge",
+      "suggested": [
+        "West of Strip"
+      ]
+    },
+    {
+      "id": 12081,
+      "name": "Frankie's Tiki Room",
+      "neighborhood": "Downtown",
+      "addr_city": "Las Vegas",
+      "lat": 36.1591,
+      "lng": -115.1647,
+      "address": "1712 W Charleston Blvd, Las Vegas, NV 89102",
+      "dist_deg": 0.0048,
+      "severity": "edge",
+      "suggested": [
+        "The Strip",
+        "Arts District"
+      ]
+    },
+    {
+      "id": 12086,
+      "name": "Sunrise Coffee",
+      "neighborhood": "Paradise",
+      "addr_city": "Las Vegas",
+      "lat": 36.0715,
+      "lng": -115.1184,
+      "address": "3130 E Sunset Rd Ste A, Las Vegas, NV 89120",
+      "dist_deg": 0.0085,
+      "severity": "edge",
+      "suggested": [
+        "Henderson"
+      ]
+    },
+    {
+      "id": 12095,
+      "name": "Rollin Smoke Barbeque",
+      "neighborhood": "Paradise",
+      "addr_city": "Las Vegas",
+      "lat": 36.1323,
+      "lng": -115.1865,
+      "address": "3185 S Highland Dr Ste 2, Las Vegas, NV 89109",
+      "dist_deg": 0.0065,
+      "severity": "edge",
+      "suggested": [
+        "The Strip",
+        "West of Strip",
+        "Off-Strip"
+      ]
+    },
+    {
+      "id": 12122,
+      "name": "Weera Thai",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.143955,
+      "lng": -115.193131,
+      "address": "4276 Spring Mountain Rd Ste C-105, Las Vegas, NV 89102",
+      "dist_deg": 0.014,
+      "severity": "edge",
+      "suggested": [
+        "The Strip",
+        "West of Strip",
+        "Off-Strip"
+      ]
+    },
+    {
+      "id": 12268,
+      "name": "Do Kkae Bi Kitchen",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.1439164,
+      "lng": -115.1790399,
+      "address": "4480 Spring Mountain Rd, Las Vegas, NV 89102",
+      "dist_deg": 0.0139,
+      "severity": "edge",
+      "suggested": [
+        "The Strip",
+        "West of Strip",
+        "Off-Strip",
+        "Paradise"
+      ]
+    },
+    {
+      "id": 12281,
+      "name": "Banger Brewing",
+      "neighborhood": "Downtown (Fremont East)",
+      "addr_city": "Las Vegas",
+      "lat": 36.1562602,
+      "lng": -115.1513936,
+      "address": "450 Fremont St Ste 135, Las Vegas, NV 89101",
+      "dist_deg": 0.0069,
+      "severity": "edge",
+      "suggested": [
+        "Arts District"
+      ]
+    },
+    {
+      "id": 12335,
+      "name": "SkinnyFATS",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.1419,
+      "lng": -115.1978,
+      "address": "4095 W Sahara Ave, Las Vegas, NV 89102",
+      "dist_deg": 0.0119,
+      "severity": "edge",
+      "suggested": [
+        "The Strip",
+        "West of Strip"
+      ]
+    },
+    {
+      "id": 12370,
+      "name": "White Castle Las Vegas",
+      "neighborhood": "The Strip",
+      "addr_city": "Las Vegas",
+      "lat": 36.1701026,
+      "lng": -115.1417906,
+      "address": "3545 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "dist_deg": 0.0142,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "Downtown (Fremont East)",
+        "Downtown (Circa)"
+      ]
+    },
+    {
+      "id": 12463,
+      "name": "Lucky Noodle",
+      "neighborhood": "Chinatown",
+      "addr_city": "Las Vegas",
+      "lat": 36.0985,
+      "lng": -115.2303,
+      "address": "6120 W Tropicana Ave, Ste A1, Las Vegas, NV 89103",
+      "dist_deg": 0.0145,
+      "severity": "edge",
+      "suggested": [
+        "Spring Valley"
+      ]
+    },
+    {
+      "id": 12537,
+      "name": "Lake Las Vegas",
+      "neighborhood": "Henderson",
+      "addr_city": "Henderson",
+      "lat": 36.0983,
+      "lng": -114.9443,
+      "address": "Lake Las Vegas Pkwy, Henderson, NV 89011",
+      "dist_deg": 0.0083,
+      "severity": "edge",
+      "suggested": []
+    }
+  ]
+}

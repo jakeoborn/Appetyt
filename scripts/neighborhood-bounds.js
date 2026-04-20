@@ -6,6 +6,60 @@
 // each by ~0.002° (~200m) to tolerate geocoding jitter.
 
 const NBH_BOUNDS = {
+  lv: {
+    // Strip — casino-specific buckets (tight, ~200m each)
+    'The Strip (Mandalay Bay)':     [36.088, 36.100, -115.180, -115.170],
+    'The Strip (New York-New York)':[36.099, 36.107, -115.178, -115.171],
+    'The Strip (Park MGM)':         [36.099, 36.108, -115.178, -115.170],
+    'The Strip (MGM Grand)':        [36.099, 36.108, -115.175, -115.166],
+    'The Strip (Showcase Mall)':    [36.099, 36.106, -115.175, -115.168],
+    'The Strip (The Cosmopolitan)': [36.107, 36.113, -115.177, -115.170],
+    'The Strip (Aria)':             [36.104, 36.115, -115.181, -115.168],
+    'The Strip (Bellagio)':         [36.109, 36.116, -115.179, -115.170],
+    'The Strip (Planet Hollywood)': [36.107, 36.112, -115.175, -115.167],
+    'The Strip (Paris Las Vegas)':  [36.109, 36.113, -115.174, -115.168],
+    'The Strip (Caesars Palace)':   [36.114, 36.120, -115.179, -115.169],
+    'The Strip (The Cromwell)':     [36.113, 36.118, -115.175, -115.170],
+    'The Strip (Grand Canal Shoppes)':[36.119, 36.124, -115.173, -115.167],
+    'The Strip (The Palazzo)':      [36.119, 36.126, -115.174, -115.166],
+    'The Strip (The Venetian)':     [36.119, 36.127, -115.174, -115.166],
+    'The Strip (Treasure Island)':  [36.122, 36.128, -115.175, -115.168],
+    'The Strip (The Mirage)':       [36.122, 36.127, -115.175, -115.168],
+    'The Strip (Wynn)':             [36.124, 36.132, -115.170, -115.160],
+    'The Strip (Encore at Wynn)':   [36.125, 36.131, -115.170, -115.162],
+    'The Strip (Resorts World)':    [36.128, 36.137, -115.170, -115.160],
+    'The Strip (Fontainebleau)':    [36.132, 36.146, -115.172, -115.158],
+    'The Strip (The STRAT)':        [36.144, 36.150, -115.160, -115.152],
+    'The Strip':                    [36.085, 36.165, -115.200, -115.155], // generic-strip catchall
+
+    // Downtown area
+    'Downtown':                     [36.160, 36.185, -115.160, -115.125],
+    'Downtown (Fremont East)':      [36.163, 36.180, -115.150, -115.130],
+    'Downtown (Circa)':             [36.165, 36.178, -115.155, -115.140],
+    'Arts District':                [36.150, 36.168, -115.165, -115.140],
+
+    // West of Strip / Chinatown / Spring Valley
+    'Chinatown':                    [36.112, 36.130, -115.225, -115.180],
+    'West of Strip':                [36.100, 36.165, -115.225, -115.175],
+    'Off-Strip':                    [36.120, 36.145, -115.195, -115.160],
+    'Spring Valley':                [36.055, 36.115, -115.320, -115.180],
+
+    // Summerlin (west / far west)
+    'Summerlin':                    [36.135, 36.230, -115.400, -115.260],
+    'Summerlin (Downtown Summerlin)':[36.145, 36.200, -115.345, -115.280],
+    'Summerlin (Red Rock Resort)':  [36.150, 36.165, -115.345, -115.285],
+
+    // Henderson
+    'Henderson':                    [35.980, 36.090, -115.150, -114.930],
+    'Henderson (M Resort)':         [35.988, 36.010, -115.160, -115.140],
+
+    // North
+    'North Las Vegas':              [36.195, 36.295, -115.250, -115.060],
+    'Paradise':                     [36.080, 36.145, -115.180, -115.110], // east of Strip (UNLV, airport area)
+
+    // Separate city
+    'Boulder City':                 [35.965, 36.025, -114.870, -114.720],
+  },
   austin: {
     // Central core
     'Downtown':       [30.255, 30.285, -97.760, -97.730],
