@@ -1,0 +1,40 @@
+{
+  "city": "San Antonio",
+  "checked": 47,
+  "in_bounds": 45,
+  "no_bounds": 0,
+  "severe": [],
+  "moderate": [],
+  "edge": [
+    {
+      "id": 6038,
+      "name": "La Panaderia",
+      "neighborhood": "Pearl District",
+      "addr_city": null,
+      "lat": 29.4256,
+      "lng": -98.4867,
+      "address": "301 E Houston St, San Antonio TX 78205",
+      "dist_deg": 0.0094,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "River Walk"
+      ]
+    },
+    {
+      "id": 6049,
+      "name": "Range",
+      "neighborhood": "Pearl District",
+      "addr_city": null,
+      "lat": 29.4258,
+      "lng": -98.4873,
+      "address": "125 E Houston St, San Antonio TX 78205",
+      "dist_deg": 0.0092,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "River Walk"
+      ]
+    }
+  ]
+}

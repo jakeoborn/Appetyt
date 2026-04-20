@@ -6,6 +6,35 @@
 // each by ~0.002° (~200m) to tolerate geocoding jitter.
 
 const NBH_BOUNDS = {
+  sa: {
+    // Downtown core
+    'Downtown':           [29.418, 29.445, -98.510, -98.478],
+    'River Walk':         [29.420, 29.432, -98.498, -98.480],
+    'Southtown':          [29.405, 29.425, -98.505, -98.480],
+    'King William':       [29.408, 29.422, -98.500, -98.485],
+
+    // North-central
+    'Pearl District':     [29.435, 29.450, -98.490, -98.475],
+    'Tobin Hill':         [29.435, 29.465, -98.492, -98.475],
+    'Monte Vista':        [29.438, 29.470, -98.498, -98.478],
+    "St. Mary's Strip":   [29.435, 29.450, -98.490, -98.475],
+    'Fredericksburg Road':[29.445, 29.495, -98.540, -98.495],
+
+    // Mid-north
+    'Alamo Heights':      [29.455, 29.500, -98.485, -98.438],
+
+    // Far north
+    'Stone Oak':          [29.575, 29.645, -98.500, -98.420],
+    'North San Antonio':  [29.520, 29.605, -98.560, -98.430],
+    'La Cantera':         [29.595, 29.625, -98.625, -98.580],
+
+    // South
+    'South Side':         [29.380, 29.415, -98.500, -98.380],
+    'Southside':          [29.380, 29.410, -98.460, -98.380],
+
+    // Separate town
+    'Boerne':             [29.780, 29.815, -98.755, -98.720],
+  },
   phx: {
     // Downtown / Central Phoenix core
     'Downtown Phoenix':       [33.430, 33.475, -112.100, -112.060],

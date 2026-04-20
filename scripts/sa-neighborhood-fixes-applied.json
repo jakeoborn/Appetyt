@@ -1,0 +1,41 @@
+{
+  "applied": [
+    {
+      "id": 6016,
+      "from": "Monte Vista",
+      "to": "North San Antonio",
+      "reason": "2Bros BBQ: 12656 West Ave 78216 + coords (29.56,-98.50) — north central SA, not Monte Vista"
+    },
+    {
+      "id": 6026,
+      "from": "Southtown",
+      "to": "North San Antonio",
+      "reason": "Meadow: 555 W Bitters Rd 78216 + coords (29.54,-98.51) — North SA, not Southtown"
+    },
+    {
+      "id": 6027,
+      "from": "Pearl District",
+      "to": "North San Antonio",
+      "reason": "Pinch Boil House: 226 W Bitters Rd 78216 + coords (29.57,-98.49) — North SA, not Pearl"
+    },
+    {
+      "id": 6019,
+      "from": "Alamo Heights",
+      "to": "North San Antonio",
+      "reason": "Dough Pizzeria Napoletana: 6989 Blanco Rd 78216 + coords (29.52,-98.51) — north central, not Alamo Heights"
+    },
+    {
+      "id": 6040,
+      "from": "Pearl District",
+      "to": "Alamo Heights",
+      "reason": "Tre Trattoria: 555 E Basse Rd 78209 + coords (29.50,-98.47) — Alamo Heights, not Pearl"
+    },
+    {
+      "id": 6043,
+      "from": "Southtown",
+      "to": "Alamo Heights",
+      "reason": "Folc: 226 E Olmos Dr 78212 + coords (29.47,-98.48) — Olmos Park / Alamo Heights, not Southtown"
+    }
+  ],
+  "skipped": []
+}
