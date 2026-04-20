@@ -29,8 +29,13 @@
       "applied_at": "2026-04-20T04:53:35.825Z",
       "entries_changed": 508,
       "fields_changed": 1911
+    },
+    "slc": {
+      "applied_at": "2026-04-20T04:57:48.959Z",
+      "entries_changed": 334,
+      "fields_changed": 1496
     }
   },
-  "total_changes": 7286,
-  "last_updated": "2026-04-20T04:53:35.825Z"
+  "total_changes": 8782,
+  "last_updated": "2026-04-20T04:57:48.959Z"
 }

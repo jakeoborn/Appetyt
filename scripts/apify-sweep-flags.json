@@ -6021,5 +6021,422 @@
     "type": "no_photo_passed_test",
     "message": "All photo candidates failed quality test",
     "tried": []
+  },
+  {
+    "city": "slc",
+    "id": 11032,
+    "name": "Oquirrh",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_576x1024_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "slc",
+    "id": 11105,
+    "name": "Boltcutter",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "slc",
+    "id": 11117,
+    "name": "Tacos Don Rafa",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "dims_too_small_478x850"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "slc",
+    "id": 11088,
+    "name": "Alibi",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "slc",
+    "id": 11165,
+    "name": "Cosmica",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_panoramic_1500x471_ar3.18"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_864x1080_ar0.80"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      }
+    ]
+  },
+  {
+    "city": "slc",
+    "id": 11193,
+    "name": "Stratford Proper",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "slc",
+    "id": 11187,
+    "name": "Fat Jack's Tap House",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "slc",
+    "id": 11185,
+    "name": "Sicilia Mia",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "slc",
+    "id": 11315,
+    "name": "TEN Coffee",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_719x1080_ar0.67"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "slc",
+    "id": 11321,
+    "name": "Trestle Tavern",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "slc",
+    "id": 11335,
+    "name": "Curry Up Now",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "slc",
+    "id": 11278,
+    "name": "Pizza Nono",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "slc",
+    "id": 11352,
+    "name": "Vinto",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "slc",
+    "id": 11352,
+    "name": "Vinto",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "slc",
+    "id": 11341,
+    "name": "Sunroom Coffee",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_720x1080_ar0.67"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_720x1080_ar0.67"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_720x1080_ar0.67"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_720x1080_ar0.67"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      }
+    ]
+  },
+  {
+    "city": "slc",
+    "id": 11350,
+    "name": "Sabor Latino",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "slc",
+    "id": 11398,
+    "name": "The Store",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "slc",
+    "id": 11370,
+    "name": "Rye Avenues",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1259x1080_ar1.17"
+      }
+    ]
+  },
+  {
+    "city": "slc",
+    "id": 11454,
+    "name": "Mazza 9th",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "slc",
+    "id": 11587,
+    "name": "9th and 9th Sculpture (Monument to Children)",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      }
+    ]
+  },
+  {
+    "city": "slc",
+    "id": 11558,
+    "name": "ACME Bar Company",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "slc",
+    "id": 11588,
+    "name": "Columbus Center",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      }
+    ]
+  },
+  {
+    "city": "slc",
+    "id": 11427,
+    "name": "Kupros Bistro",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "slc",
+    "id": 11176,
+    "name": "Best Chicken and Ribs",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "slc",
+    "id": 11112,
+    "name": "Skiing at Alta / Snowbird",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "slc",
+    "id": 11242,
+    "name": "The Cabin",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "slc",
+    "id": 11174,
+    "name": "Beirut Cafe",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_880x1080_ar0.81"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
   }
 ]
