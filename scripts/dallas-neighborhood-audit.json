@@ -1,42 +1,11 @@
 {
   "city": "Dallas",
-  "total_checked": 683,
-  "in_bounds": 633,
-  "out_of_bounds": 50,
+  "total_checked": 682,
+  "in_bounds": 634,
+  "out_of_bounds": 48,
   "no_bounds": 0,
   "out_of_state": 0,
-  "severe": [
-    {
-      "id": 409,
-      "name": "Ella",
-      "neighborhood": "Preston Hollow",
-      "addr_city": "Dallas",
-      "lat": 32.7345112,
-      "lng": -96.85592059999999,
-      "address": "7949 Walnut Hill Ln, Dallas, TX 75230",
-      "dist_deg": 0.1223,
-      "severity": "severe",
-      "suggested": [
-        "Oak Cliff"
-      ]
-    },
-    {
-      "id": 410,
-      "name": "III Forks",
-      "neighborhood": "Addison",
-      "addr_city": "Addison",
-      "lat": 33.0886967,
-      "lng": -96.83984099999999,
-      "address": "5100 Belt Line Rd #800, Addison, TX 75254",
-      "dist_deg": 0.0937,
-      "severity": "severe",
-      "suggested": [
-        "Plano",
-        "Frisco",
-        "McKinney"
-      ]
-    }
-  ],
+  "severe": [],
   "moderate": [
     {
       "id": 43,
