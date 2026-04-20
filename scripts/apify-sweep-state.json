@@ -39,8 +39,13 @@
       "applied_at": "2026-04-20T04:59:38.784Z",
       "entries_changed": 140,
       "fields_changed": 599
+    },
+    "seattle": {
+      "applied_at": "2026-04-20T05:03:20.511Z",
+      "entries_changed": 455,
+      "fields_changed": 1570
     }
   },
-  "total_changes": 9381,
-  "last_updated": "2026-04-20T04:59:38.784Z"
+  "total_changes": 10951,
+  "last_updated": "2026-04-20T05:03:20.511Z"
 }

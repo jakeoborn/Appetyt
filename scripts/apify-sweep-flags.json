@@ -6581,5 +6581,439 @@
     "type": "no_photo_passed_test",
     "message": "All photo candidates failed quality test",
     "tried": []
+  },
+  {
+    "city": "seattle",
+    "id": 9022,
+    "name": "Kedai Makan",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "seattle",
+    "id": 9105,
+    "name": "Tacos Chukis",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_765x1080_ar0.71"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "seattle",
+    "id": 9043,
+    "name": "Hey Bagel",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "seattle",
+    "id": 9029,
+    "name": "Un Bien",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1013x1002_ar1.01"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1080x1080_ar1.00"
+      }
+    ]
+  },
+  {
+    "city": "seattle",
+    "id": 9205,
+    "name": "Great State Burger",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1107x1080_ar1.02"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "seattle",
+    "id": 9366,
+    "name": "The Fat Hen",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "seattle",
+    "id": 9325,
+    "name": "London Plane",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_720x1080_ar0.67"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_813x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "seattle",
+    "id": 9320,
+    "name": "Plum Bistro",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "seattle",
+    "id": 9369,
+    "name": "Tilth",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "seattle",
+    "id": 9356,
+    "name": "Counterbalance Brewing Company",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "seattle",
+    "id": 9360,
+    "name": "Catfish Corner",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "seattle",
+    "id": 9380,
+    "name": "Cuoco",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "seattle",
+    "id": 9357,
+    "name": "El Quetzal",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_580x1080_ar0.54"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_813x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1080x1080_ar1.00"
+      }
+    ]
+  },
+  {
+    "city": "seattle",
+    "id": 9394,
+    "name": "Liholiho Yacht Club",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "seattle",
+    "id": 9390,
+    "name": "Etta's",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "seattle",
+    "id": 9409,
+    "name": "Flying Squirrel Pizza",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "seattle",
+    "id": 9406,
+    "name": "Optimism Brewing Company",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "seattle",
+    "id": 9370,
+    "name": "Kabul Afghan Cuisine",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "seattle",
+    "id": 9449,
+    "name": "Altstadt German Bierhalle",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "seattle",
+    "id": 9460,
+    "name": "Tallulah's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "seattle",
+    "id": 9443,
+    "name": "Hanuman Thai Café",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "seattle",
+    "id": 9440,
+    "name": "Mamnoon Street",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "seattle",
+    "id": 9505,
+    "name": "Frankie & Jo's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "seattle",
+    "id": 9321,
+    "name": "Stateside",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "seattle",
+    "id": 9475,
+    "name": "Sambar",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "seattle",
+    "id": 9475,
+    "name": "Sambar",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "seattle",
+    "id": 9478,
+    "name": "General Porpoise Coffee & Doughnuts",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_540x960_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_813x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "seattle",
+    "id": 9473,
+    "name": "Monkey Tree Vietnamese",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "seattle",
+    "id": 9495,
+    "name": "The Gerald",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
   }
 ]
