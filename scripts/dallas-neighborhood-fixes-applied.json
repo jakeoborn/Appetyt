@@ -1,0 +1,35 @@
+{
+  "applied": [
+    {
+      "id": 120,
+      "from": "North Dallas",
+      "to": "Far North Dallas",
+      "reason": "Deli News: 17062 Preston Rd 75248 — zip + coords (32.98,-96.80) are Far North Dallas"
+    },
+    {
+      "id": 1092,
+      "from": "Cedars",
+      "to": "Oak Cliff",
+      "reason": "Kendall Karsen's: 3939 S Polk 75224 — zip + coords (32.70,-96.84) are Oak Cliff, not Cedars"
+    },
+    {
+      "id": 1096,
+      "from": "Deep Ellum",
+      "to": "Addison",
+      "reason": "Velvet Taco: 15104 Dallas Pkwy, Addison TX 75248 — address explicitly says Addison, label was Deep Ellum"
+    }
+  ],
+  "skipped": [],
+  "coord_bugs": [
+    {
+      "id": 409,
+      "name": "Ella",
+      "issue": "Card address \"7949 Walnut Hill Ln 75230\" (Preston Hollow) with coords 32.7345,-96.8559 (Oak Cliff). Other-agent script proposes neighborhood=Oak Cliff based on a different address (\"2306 W Clarendon Dr\"). Need verified source of truth."
+    },
+    {
+      "id": 410,
+      "name": "III Forks",
+      "issue": "Card address \"5100 Belt Line Rd, Addison 75254\" with coords 33.0887,-96.8398 (Plano). Other-agent script proposes neighborhood=Frisco based on \"1303 Legacy Dr, Frisco\". Need verified source."
+    }
+  ]
+}

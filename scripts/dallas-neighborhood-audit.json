@@ -1,0 +1,703 @@
+{
+  "city": "Dallas",
+  "total_checked": 683,
+  "in_bounds": 633,
+  "out_of_bounds": 50,
+  "no_bounds": 0,
+  "out_of_state": 0,
+  "severe": [
+    {
+      "id": 409,
+      "name": "Ella",
+      "neighborhood": "Preston Hollow",
+      "addr_city": "Dallas",
+      "lat": 32.7345112,
+      "lng": -96.85592059999999,
+      "address": "7949 Walnut Hill Ln, Dallas, TX 75230",
+      "dist_deg": 0.1223,
+      "severity": "severe",
+      "suggested": [
+        "Oak Cliff"
+      ]
+    },
+    {
+      "id": 410,
+      "name": "III Forks",
+      "neighborhood": "Addison",
+      "addr_city": "Addison",
+      "lat": 33.0886967,
+      "lng": -96.83984099999999,
+      "address": "5100 Belt Line Rd #800, Addison, TX 75254",
+      "dist_deg": 0.0937,
+      "severity": "severe",
+      "suggested": [
+        "Plano",
+        "Frisco",
+        "McKinney"
+      ]
+    }
+  ],
+  "moderate": [
+    {
+      "id": 43,
+      "name": "Pappas Bros. Steakhouse",
+      "neighborhood": "North Dallas",
+      "addr_city": "Dallas",
+      "lat": 32.8669325,
+      "lng": -96.8975926,
+      "address": "10477 Lombardy Ln, Dallas, TX 75220",
+      "dist_deg": 0.0426,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 45,
+      "name": "Loro",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": null,
+      "lat": 32.8014,
+      "lng": -96.7851,
+      "address": "1812 N Haskell Ave, Dallas TX 75204",
+      "dist_deg": 0.0151,
+      "severity": "moderate",
+      "suggested": [
+        "Uptown",
+        "Knox-Henderson",
+        "Lower Greenville"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Pappasito's Cantina",
+      "neighborhood": "North Dallas",
+      "addr_city": "Dallas",
+      "lat": 32.8659173,
+      "lng": -96.89835790000001,
+      "address": "10433 Lombardy Ln, Dallas, TX 75220",
+      "dist_deg": 0.0434,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 104,
+      "name": "Roots Southern Table",
+      "neighborhood": "Addison",
+      "addr_city": "Farmers Branch",
+      "lat": 32.923321699999995,
+      "lng": -96.8954351,
+      "address": "13050 Bee St Suit 160, Farmers Branch, TX 75234",
+      "dist_deg": 0.0373,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 140,
+      "name": "Tacos El Metro",
+      "neighborhood": "Preston Hollow",
+      "addr_city": "Dallas",
+      "lat": 32.8797777,
+      "lng": -96.8555989,
+      "address": "3720 Walnut Hill Ln #117, Dallas, TX 75229",
+      "dist_deg": 0.0206,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 145,
+      "name": "Nikki Greek Bistro & Lounge",
+      "neighborhood": "Park Cities",
+      "addr_city": null,
+      "lat": 32.8534,
+      "lng": -96.8534,
+      "address": "5757 W Lovers Ln Ste 101, Dallas TX 75209",
+      "dist_deg": 0.0334,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 180,
+      "name": "Mi Cocina",
+      "neighborhood": "Highland Park",
+      "addr_city": "Dallas",
+      "lat": 32.78949730000001,
+      "lng": -96.80185689999999,
+      "address": "77 Highland Park Village, Dallas, TX 75205",
+      "dist_deg": 0.0305,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown Dallas",
+        "Uptown",
+        "Arts District",
+        "Harwood District",
+        "Design District"
+      ]
+    },
+    {
+      "id": 200,
+      "name": "Wayward Coffee Co.",
+      "neighborhood": "Bishop Arts",
+      "addr_city": "Dallas",
+      "lat": 32.7948399,
+      "lng": -96.82943829999999,
+      "address": "1318 W Davis St, Dallas, TX 75208",
+      "dist_deg": 0.0348,
+      "severity": "moderate",
+      "suggested": [
+        "Design District"
+      ]
+    },
+    {
+      "id": 312,
+      "name": "E Bar Tex-Mex",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": null,
+      "lat": 32.8013563,
+      "lng": -96.785778,
+      "address": "1901 N Haskell Ave, Dallas TX 75204",
+      "dist_deg": 0.0158,
+      "severity": "moderate",
+      "suggested": [
+        "Uptown",
+        "Knox-Henderson",
+        "Lower Greenville"
+      ]
+    },
+    {
+      "id": 343,
+      "name": "IYKYK Mochi Churros",
+      "neighborhood": "North Dallas",
+      "addr_city": "Dallas",
+      "lat": 32.8449,
+      "lng": -96.8707,
+      "address": "1499 Regal Row #106, Dallas, TX 75247",
+      "dist_deg": 0.0218,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 351,
+      "name": "Slim Chickens",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.8725452,
+      "lng": -96.7690191,
+      "address": "9100 N Central Expy Suite 141, Dallas, TX 75231",
+      "dist_deg": 0.0275,
+      "severity": "moderate",
+      "suggested": [
+        "Park Cities",
+        "North Dallas",
+        "Preston Hollow"
+      ]
+    },
+    {
+      "id": 359,
+      "name": "Keller's Drive-In",
+      "neighborhood": "North Dallas",
+      "addr_city": "Dallas",
+      "lat": 32.8689661,
+      "lng": -96.8820571,
+      "address": "10554 Harry Hines Blvd, Dallas, TX 75220",
+      "dist_deg": 0.0271,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 372,
+      "name": "Slow & Steady Coffee",
+      "neighborhood": "Design District",
+      "addr_city": null,
+      "lat": 32.7280041,
+      "lng": -96.8447083,
+      "address": "1400 Hi Line Dr, Dallas TX 75207",
+      "dist_deg": 0.047,
+      "severity": "moderate",
+      "suggested": [
+        "Oak Cliff"
+      ]
+    },
+    {
+      "id": 380,
+      "name": "LDU Coffee",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.8144722,
+      "lng": -96.7856509,
+      "address": "2650 N Fitzhugh Ave #100, Dallas, TX 75204",
+      "dist_deg": 0.0157,
+      "severity": "moderate",
+      "suggested": [
+        "Uptown",
+        "Knox-Henderson",
+        "Lower Greenville"
+      ]
+    },
+    {
+      "id": 382,
+      "name": "La Casita Coffee",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.8694,
+      "lng": -96.7611,
+      "address": "5801 E Northwest Hwy, Dallas, TX 75231",
+      "dist_deg": 0.0244,
+      "severity": "moderate",
+      "suggested": [
+        "North Dallas"
+      ]
+    },
+    {
+      "id": 384,
+      "name": "Locals Craft Beer & Fine Wine",
+      "neighborhood": "Addison",
+      "addr_city": "Farmers Branch",
+      "lat": 32.923157599999996,
+      "lng": -96.89543959999999,
+      "address": "13050 Bee St Suite 100, Farmers Branch, TX 75234",
+      "dist_deg": 0.0374,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 452,
+      "name": "Black Swan Saloon",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.7951756,
+      "lng": -96.7889994,
+      "address": "1623 N Hall St Suite 101, Dallas, TX 75204",
+      "dist_deg": 0.019,
+      "severity": "moderate",
+      "suggested": [
+        "Uptown",
+        "Harwood District",
+        "Lower Greenville"
+      ]
+    },
+    {
+      "id": 471,
+      "name": "Resident Taqueria",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.8784535,
+      "lng": -96.7188503,
+      "address": "9661 Audelia Rd #112, Dallas, TX 75238",
+      "dist_deg": 0.0335,
+      "severity": "moderate",
+      "suggested": [
+        "North Dallas"
+      ]
+    },
+    {
+      "id": 480,
+      "name": "Whataburger",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.8050523,
+      "lng": -96.78921919999999,
+      "address": "2428 N Haskell Ave., Dallas, TX 75204",
+      "dist_deg": 0.0192,
+      "severity": "moderate",
+      "suggested": [
+        "Uptown",
+        "Knox-Henderson",
+        "Lower Greenville"
+      ]
+    },
+    {
+      "id": 516,
+      "name": "Snarf's Sandwiches",
+      "neighborhood": "North Dallas",
+      "addr_city": null,
+      "lat": 32.8265027,
+      "lng": -96.8468046,
+      "address": "2337 W Mockingbird Ln Ste 150, Dallas TX 75235",
+      "dist_deg": 0.0335,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 517,
+      "name": "Flower Child",
+      "neighborhood": "Park Cities",
+      "addr_city": "Dallas",
+      "lat": 32.7940761,
+      "lng": -96.8063384,
+      "address": "2101 Cedar Springs Rd, Dallas, TX 75201",
+      "dist_deg": 0.0259,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown Dallas",
+        "Uptown",
+        "Victory Park",
+        "Harwood District",
+        "Oak Lawn",
+        "Design District"
+      ]
+    },
+    {
+      "id": 511,
+      "name": "La Salsa Verde Taqueria",
+      "neighborhood": "North Dallas",
+      "addr_city": null,
+      "lat": 32.857498,
+      "lng": -96.874136,
+      "address": "2728 Community Dr, Dallas TX 75220",
+      "dist_deg": 0.0193,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 527,
+      "name": "Cafe Olivia",
+      "neighborhood": "North Dallas",
+      "addr_city": "Dallas",
+      "lat": 32.9461,
+      "lng": -96.8229,
+      "address": "14551 Dallas Pkwy, Ste 100, Dallas, TX 75254",
+      "dist_deg": 0.0161,
+      "severity": "moderate",
+      "suggested": [
+        "Far North Dallas",
+        "Addison"
+      ]
+    },
+    {
+      "id": 548,
+      "name": "Molino Olōyō",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.7877911,
+      "lng": -96.813605,
+      "address": "4422 Gaston Ave, Dallas, TX 75246",
+      "dist_deg": 0.0442,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown Dallas",
+        "Victory Park",
+        "Harwood District",
+        "Design District"
+      ]
+    },
+    {
+      "id": 565,
+      "name": "Dos Equis Pavilion",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.7750304,
+      "lng": -96.7565534,
+      "address": "1818 1st Ave, Dallas, TX 75210",
+      "dist_deg": 0.02,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 1058,
+      "name": "BoomerJack's Grill & Bar",
+      "neighborhood": "North Dallas",
+      "addr_city": "Dallas",
+      "lat": 32.861777499999995,
+      "lng": -96.8947922,
+      "address": "10250 Technology Blvd E, Dallas, TX 75220",
+      "dist_deg": 0.0398,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 9073,
+      "name": "At Fault",
+      "neighborhood": "Addison",
+      "addr_city": "Farmers Branch",
+      "lat": 32.9246,
+      "lng": -96.8925,
+      "address": "2330 Jett St, Farmers Branch, TX 75234",
+      "dist_deg": 0.0341,
+      "severity": "moderate",
+      "suggested": []
+    }
+  ],
+  "edge": [
+    {
+      "id": 56,
+      "name": "Lakewood Brewing Company",
+      "neighborhood": "Richardson",
+      "addr_city": null,
+      "lat": 32.8897,
+      "lng": -96.6811,
+      "address": "2302 Executive Dr, Garland TX 75041",
+      "dist_deg": 0.0053,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 75,
+      "name": "Far Out",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.7834113,
+      "lng": -96.7479743,
+      "address": "1906 S Haskell Ave, Dallas, TX 75223",
+      "dist_deg": 0.0116,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 150,
+      "name": "Jose",
+      "neighborhood": "Park Cities",
+      "addr_city": null,
+      "lat": 32.8515498,
+      "lng": -96.8255996,
+      "address": "4931 W Lovers Ln, Dallas TX 75209",
+      "dist_deg": 0.0056,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 173,
+      "name": "Drake's Hollywood",
+      "neighborhood": "Park Cities",
+      "addr_city": "Dallas",
+      "lat": 32.8514042,
+      "lng": -96.82500610000001,
+      "address": "5007 W Lovers Ln, Dallas, TX 75209",
+      "dist_deg": 0.005,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 181,
+      "name": "The Mercury",
+      "neighborhood": "Preston Hollow",
+      "addr_city": null,
+      "lat": 32.9114,
+      "lng": -96.8046,
+      "address": "11909 Preston Rd #1418, Dallas TX 75230",
+      "dist_deg": 0.0064,
+      "severity": "edge",
+      "suggested": [
+        "North Dallas",
+        "Far North Dallas"
+      ]
+    },
+    {
+      "id": 275,
+      "name": "Inwood Tavern",
+      "neighborhood": "Preston Hollow",
+      "addr_city": "Dallas",
+      "lat": 32.850113,
+      "lng": -96.82158070000001,
+      "address": "7717 Inwood Rd, Dallas, TX 75209",
+      "dist_deg": 0.0049,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 286,
+      "name": "Angelika Film Center",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": null,
+      "lat": 32.838049,
+      "lng": -96.77572529999999,
+      "address": "5321 E Mockingbird Ln, Dallas TX 75206",
+      "dist_deg": 0.0057,
+      "severity": "edge",
+      "suggested": [
+        "Lower Greenville",
+        "Park Cities"
+      ]
+    },
+    {
+      "id": 331,
+      "name": "Pine Isle",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.8108338,
+      "lng": -96.7821522,
+      "address": "2325 N Fitzhugh Ave Suite 104, Dallas, TX 75204",
+      "dist_deg": 0.0122,
+      "severity": "edge",
+      "suggested": [
+        "Knox-Henderson",
+        "Lower Greenville"
+      ]
+    },
+    {
+      "id": 332,
+      "name": "Mo' Bettahs Hawaiian",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.857462,
+      "lng": -96.74990129999999,
+      "address": "6471 E NW Hwy Ste. 100, Dallas, TX 75231",
+      "dist_deg": 0.0125,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 426,
+      "name": "The Finch",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.8369462,
+      "lng": -96.7774609,
+      "address": "5307 E Mockingbird Ln, Ste 150, Dallas, TX 75206",
+      "dist_deg": 0.0075,
+      "severity": "edge",
+      "suggested": [
+        "Lower Greenville",
+        "Park Cities"
+      ]
+    },
+    {
+      "id": 457,
+      "name": "La Viuda Negra",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": null,
+      "lat": 32.801,
+      "lng": -96.782,
+      "address": "2513 N Fitzhugh Ave, Dallas TX 75204",
+      "dist_deg": 0.012,
+      "severity": "edge",
+      "suggested": [
+        "Knox-Henderson",
+        "Lower Greenville"
+      ]
+    },
+    {
+      "id": 474,
+      "name": "Sonny Bryan's",
+      "neighborhood": "Design District",
+      "addr_city": "Dallas",
+      "lat": 32.817244099999996,
+      "lng": -96.8407563,
+      "address": "2202 Inwood Rd, Dallas, TX 75235",
+      "dist_deg": 0.0072,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 483,
+      "name": "Celestial Beerworks",
+      "neighborhood": "Design District",
+      "addr_city": null,
+      "lat": 32.8196,
+      "lng": -96.8336,
+      "address": "2530 Butler St, Dallas TX 75235",
+      "dist_deg": 0.0096,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 484,
+      "name": "On Rotation",
+      "neighborhood": "North Dallas",
+      "addr_city": "Dallas",
+      "lat": 32.848472,
+      "lng": -96.840402,
+      "address": "7701 Lemmon Ave Suite 200, Dallas, TX 75209",
+      "dist_deg": 0.0115,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 518,
+      "name": "Maple & Motor",
+      "neighborhood": "Design District",
+      "addr_city": null,
+      "lat": 32.8151984,
+      "lng": -96.82706309999999,
+      "address": "4810 Maple Ave, Dallas TX 75219",
+      "dist_deg": 0.0052,
+      "severity": "edge",
+      "suggested": [
+        "Oak Lawn"
+      ]
+    },
+    {
+      "id": 522,
+      "name": "Chilangos",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.799312199999996,
+      "lng": -96.78380390000001,
+      "address": "4012 Ross Ave, Dallas, TX 75204",
+      "dist_deg": 0.0138,
+      "severity": "edge",
+      "suggested": [
+        "Lower Greenville"
+      ]
+    },
+    {
+      "id": 541,
+      "name": "The Reserve at The Highland",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.8359,
+      "lng": -96.7783,
+      "address": "5300 E. Mockingbird Ln., Dallas, TX",
+      "dist_deg": 0.0083,
+      "severity": "edge",
+      "suggested": [
+        "Lower Greenville",
+        "Park Cities"
+      ]
+    },
+    {
+      "id": 544,
+      "name": "Toca Madera",
+      "neighborhood": "Downtown Dallas",
+      "addr_city": "Dallas",
+      "lat": 32.7833,
+      "lng": -96.7826,
+      "address": "2203 Commerce St, Dallas, TX 75201",
+      "dist_deg": 0.0074,
+      "severity": "edge",
+      "suggested": [
+        "Deep Ellum"
+      ]
+    },
+    {
+      "id": 9034,
+      "name": "Moreish Donuts",
+      "neighborhood": "Trinity Groves",
+      "addr_city": "Dallas",
+      "lat": 32.7543,
+      "lng": -96.8456,
+      "address": "2605 Fort Worth Ave, Ste 400, Dallas, TX 75211",
+      "dist_deg": 0.0057,
+      "severity": "edge",
+      "suggested": [
+        "Oak Cliff"
+      ]
+    },
+    {
+      "id": 9145,
+      "name": "Sylvestro",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.7949,
+      "lng": -96.7834,
+      "address": "1412 Fitzhugh Ave, Dallas, TX 75204",
+      "dist_deg": 0.0134,
+      "severity": "edge",
+      "suggested": [
+        "Deep Ellum"
+      ]
+    },
+    {
+      "id": 9146,
+      "name": "Killer Joe",
+      "neighborhood": "East Dallas / Lakewood",
+      "addr_city": "Dallas",
+      "lat": 32.7897,
+      "lng": -96.7829,
+      "address": "108 N Fitzhugh Ave, Dallas, TX 75204",
+      "dist_deg": 0.0139,
+      "severity": "edge",
+      "suggested": [
+        "Deep Ellum"
+      ]
+    }
+  ]
+}
