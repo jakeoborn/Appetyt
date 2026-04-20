@@ -1,0 +1,48 @@
+{
+  "applied": [
+    {
+      "id": 11388,
+      "from": "Downtown SLC",
+      "to": "Westside SLC",
+      "reason": "Squatters Airport is at SLC International, 84116 (NW side, not Downtown)"
+    }
+  ],
+  "skipped": [
+    {
+      "id": 11113,
+      "to": "Suburban SLC",
+      "reason": "Great Salt Lake / Antelope Island is in Davis County (Syracuse), not NSL",
+      "why": "already Suburban SLC"
+    },
+    {
+      "id": 11134,
+      "to": "Sandy",
+      "reason": "Kenny J's BBQ: 9745 S 700 E Sandy",
+      "why": "already Sandy"
+    },
+    {
+      "id": 11257,
+      "to": "Ogden",
+      "reason": "Ogden Eccles Dinosaur Park is in Ogden, not NSL",
+      "why": "already Ogden"
+    },
+    {
+      "id": 11382,
+      "to": "Holladay",
+      "reason": "Cafe Madrid: 2080 E 3900 S, 84124 (Holladay zip)",
+      "why": "already Holladay"
+    },
+    {
+      "id": 11428,
+      "to": "Sandy",
+      "reason": "Fratelli Ristorante: 9236 Village Shop Dr, Sandy",
+      "why": "already Sandy"
+    },
+    {
+      "id": 11433,
+      "to": "Holladay",
+      "reason": "Iceberg Drive Inn: 3900 S 900 E, 84124 (Holladay zip)",
+      "why": "already Holladay"
+    }
+  ]
+}

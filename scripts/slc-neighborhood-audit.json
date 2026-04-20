@@ -1,0 +1,832 @@
+{
+  "city": "Salt Lake City",
+  "total_checked": 497,
+  "in_bounds": 438,
+  "out_of_bounds": 55,
+  "no_bounds_defined": 0,
+  "catchall": 4,
+  "out_of_state": 0,
+  "outliers": [
+    {
+      "id": 11017,
+      "name": "Lone Star Taqueria",
+      "neighborhood": "Sandy",
+      "lat": 40.628,
+      "lng": -111.826,
+      "address": "2265 E Fort Union Blvd, Salt Lake City, UT 84121",
+      "suburb": true,
+      "dist_deg": 0.008,
+      "severity": "edge",
+      "suggested": [
+        "Cottonwood Heights"
+      ]
+    },
+    {
+      "id": 11019,
+      "name": "Chunga's",
+      "neighborhood": "Gateway",
+      "lat": 40.7494239,
+      "lng": -111.9168989,
+      "address": "180 S 900 W, Salt Lake City, UT 84104",
+      "suburb": false,
+      "dist_deg": 0.0106,
+      "severity": "edge",
+      "suggested": [
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11020,
+      "name": "La Barba Coffee",
+      "neighborhood": "9th & 9th",
+      "lat": 40.7497989,
+      "lng": -111.8793685,
+      "address": "155 E 900 S, Salt Lake City, UT 84111",
+      "suburb": false,
+      "dist_deg": 0.0094,
+      "severity": "edge",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Liberty Park"
+      ]
+    },
+    {
+      "id": 11031,
+      "name": "Pat's BBQ",
+      "neighborhood": "Central City",
+      "lat": 40.7245843,
+      "lng": -111.8753967,
+      "address": "155 W Commonwealth Ave, Salt Lake City, UT 84115",
+      "suburb": false,
+      "dist_deg": 0.0204,
+      "severity": "moderate",
+      "suggested": [
+        "Liberty Park",
+        "South Salt Lake"
+      ]
+    },
+    {
+      "id": 11035,
+      "name": "Uinta Brewing Company",
+      "neighborhood": "Gateway",
+      "lat": 40.7327043,
+      "lng": -111.9541896,
+      "address": "1722 S Fremont Dr, Salt Lake City, UT 84104",
+      "suburb": false,
+      "dist_deg": 0.0365,
+      "severity": "moderate",
+      "suggested": [
+        "Westside SLC",
+        "West Valley"
+      ]
+    },
+    {
+      "id": 11037,
+      "name": "Kiitos Brewing",
+      "neighborhood": "Granary District",
+      "lat": 40.7541077,
+      "lng": -111.9294912,
+      "address": "608 W 700 S, Salt Lake City, UT 84104",
+      "suburb": false,
+      "dist_deg": 0.0195,
+      "severity": "moderate",
+      "suggested": [
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11047,
+      "name": "Finca",
+      "neighborhood": "Liberty Park",
+      "lat": 40.7254363,
+      "lng": -111.8479375,
+      "address": "1513 S 1500 E, Salt Lake City, UT 84105",
+      "suburb": false,
+      "dist_deg": 0.0071,
+      "severity": "edge",
+      "suggested": [
+        "Sugar House"
+      ]
+    },
+    {
+      "id": 11065,
+      "name": "Manoli's",
+      "neighborhood": "The Avenues",
+      "lat": 40.7497989,
+      "lng": -111.8793685,
+      "address": "402 E 900 S, Salt Lake City, UT 84111",
+      "suburb": false,
+      "dist_deg": 0.0182,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Liberty Park"
+      ]
+    },
+    {
+      "id": 11068,
+      "name": "Scion Cider Bar",
+      "neighborhood": "The Avenues",
+      "lat": 40.7492005,
+      "lng": -111.8956552,
+      "address": "916 Jefferson St, Salt Lake City, UT 84101",
+      "suburb": false,
+      "dist_deg": 0.0188,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown SLC",
+        "Central 9th",
+        "Granary District",
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11083,
+      "name": "CupBop",
+      "neighborhood": "Downtown SLC",
+      "lat": 40.7387255,
+      "lng": -111.8263952,
+      "address": "Multiple SLC Locations",
+      "suburb": false,
+      "dist_deg": 0.049,
+      "severity": "moderate",
+      "suggested": [
+        "Sugar House"
+      ]
+    },
+    {
+      "id": 11104,
+      "name": "Trio",
+      "neighborhood": "Downtown SLC",
+      "lat": 40.7647705,
+      "lng": -111.8653375,
+      "address": "680 S 900 E, Salt Lake City, UT 84102",
+      "suburb": false,
+      "dist_deg": 0.0097,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 11121,
+      "name": "Publik Coffee Roasters",
+      "neighborhood": "Granary District",
+      "lat": 40.7692505,
+      "lng": -111.9190166,
+      "address": "975 S West Temple, Salt Lake City, UT 84101",
+      "suburb": false,
+      "dist_deg": 0.0129,
+      "severity": "edge",
+      "suggested": [
+        "Gateway",
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11122,
+      "name": "Encanto Colombian",
+      "neighborhood": "9th & 9th",
+      "lat": 40.738,
+      "lng": -111.853,
+      "address": "1524 S 1500 E, Salt Lake City, UT 84105",
+      "suburb": false,
+      "dist_deg": 0.007,
+      "severity": "edge",
+      "suggested": [
+        "Sugar House"
+      ]
+    },
+    {
+      "id": 11147,
+      "name": "Zhu Ting Ji",
+      "neighborhood": "Murray",
+      "lat": 40.653929,
+      "lng": -111.9387397,
+      "address": "5600 S Redwood Rd, Taylorsville, UT 84123",
+      "suburb": true,
+      "dist_deg": 0.0187,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 11149,
+      "name": "Sawadee Thai",
+      "neighborhood": "Downtown SLC",
+      "lat": 40.7693595,
+      "lng": -111.8618266,
+      "address": "754 E South Temple, Salt Lake City, UT 84102",
+      "suburb": false,
+      "dist_deg": 0.0132,
+      "severity": "edge",
+      "suggested": [
+        "The Avenues"
+      ]
+    },
+    {
+      "id": 11151,
+      "name": "Tuk Tuk Thai",
+      "neighborhood": "Sugar House",
+      "lat": 40.7836876,
+      "lng": -111.8995754,
+      "address": "670 N 300 W, Salt Lake City, UT 84103",
+      "suburb": false,
+      "dist_deg": 0.0412,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown SLC",
+        "Westside SLC",
+        "Marmalade"
+      ]
+    },
+    {
+      "id": 11152,
+      "name": "Penny Ann's Cafe",
+      "neighborhood": "Murray",
+      "lat": 40.739113,
+      "lng": -111.8913249,
+      "address": "1810 S Main St, Salt Lake City, UT 84115",
+      "suburb": false,
+      "dist_deg": 0.0491,
+      "severity": "moderate",
+      "suggested": [
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11175,
+      "name": "Curry Fried Chicken",
+      "neighborhood": "South Salt Lake",
+      "lat": 40.7547936,
+      "lng": -111.888548,
+      "address": "2185 S State St, Salt Lake City, UT 84115",
+      "suburb": false,
+      "dist_deg": 0.0248,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Granary District",
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11183,
+      "name": "Cubby's",
+      "neighborhood": "Downtown SLC",
+      "lat": 40.7256293,
+      "lng": -111.869539,
+      "address": "Multiple Utah Locations",
+      "suburb": true,
+      "dist_deg": 0.0201,
+      "severity": "moderate",
+      "suggested": [
+        "Liberty Park",
+        "Sugar House"
+      ]
+    },
+    {
+      "id": 11194,
+      "name": "Litza's Pizza",
+      "neighborhood": "The Avenues",
+      "lat": 40.7605614,
+      "lng": -111.8668652,
+      "address": "716 E 400 S, Salt Lake City, UT 84102",
+      "suburb": false,
+      "dist_deg": 0.0074,
+      "severity": "edge",
+      "suggested": [
+        "Trolley Square"
+      ]
+    },
+    {
+      "id": 11197,
+      "name": "Rusted Sun Pizzeria",
+      "neighborhood": "The Avenues",
+      "lat": 40.7562953,
+      "lng": -111.8746738,
+      "address": "451 E 600 S, Salt Lake City, UT 84102",
+      "suburb": false,
+      "dist_deg": 0.0117,
+      "severity": "edge",
+      "suggested": [
+        "Central City",
+        "Trolley Square"
+      ]
+    },
+    {
+      "id": 11203,
+      "name": "Mo' Bettahs Hawaiian",
+      "neighborhood": "Downtown SLC",
+      "lat": 40.7378727,
+      "lng": -111.8876799,
+      "address": "Multiple Utah Locations",
+      "suburb": false,
+      "dist_deg": 0.0071,
+      "severity": "edge",
+      "suggested": [
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11204,
+      "name": "Mahider Ethiopian Restaurant",
+      "neighborhood": "Downtown SLC",
+      "lat": 40.7378727,
+      "lng": -111.8876799,
+      "address": "1465 S State St, Salt Lake City, UT 84115",
+      "suburb": false,
+      "dist_deg": 0.0071,
+      "severity": "edge",
+      "suggested": [
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11225,
+      "name": "Sweet Lake Biscuits & Limeade",
+      "neighborhood": "Sugar House",
+      "lat": 40.7628383,
+      "lng": -111.8714152,
+      "address": "1749 S 300 E, Salt Lake City, UT 84115",
+      "suburb": false,
+      "dist_deg": 0.008,
+      "severity": "edge",
+      "suggested": [
+        "Central City"
+      ]
+    },
+    {
+      "id": 11230,
+      "name": "Mi Casa Tamales",
+      "neighborhood": "South Salt Lake",
+      "lat": 40.7547936,
+      "lng": -111.888548,
+      "address": "2190 S State St, South Salt Lake, UT 84115",
+      "suburb": true,
+      "dist_deg": 0.0248,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Granary District",
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11253,
+      "name": "Guisado's Homestyle Cooking",
+      "neighborhood": "Murray",
+      "lat": 40.6528938,
+      "lng": -111.9870199,
+      "address": "5415 S 900 E, Taylorsville, UT 84117",
+      "suburb": true,
+      "dist_deg": 0.067,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 11264,
+      "name": "New Golden Dragon",
+      "neighborhood": "Downtown SLC",
+      "lat": 40.739113,
+      "lng": -111.8913249,
+      "address": "1768 S Main St, Salt Lake City, UT 84115",
+      "suburb": false,
+      "dist_deg": 0.0059,
+      "severity": "edge",
+      "suggested": [
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11274,
+      "name": "Engine Room",
+      "neighborhood": "Sugar House",
+      "lat": 40.7392696,
+      "lng": -111.9000574,
+      "address": "2207 S Highland Dr, Salt Lake City, UT 84106",
+      "suburb": false,
+      "dist_deg": 0.0301,
+      "severity": "moderate",
+      "suggested": [
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11276,
+      "name": "Salt Lake Roasting Co.",
+      "neighborhood": "University",
+      "lat": 40.7594,
+      "lng": -111.8814,
+      "address": "320 E 400 S, Salt Lake City, UT 84111",
+      "suburb": false,
+      "dist_deg": 0.0264,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Granary District",
+        "Westside SLC",
+        "Trolley Square"
+      ]
+    },
+    {
+      "id": 11279,
+      "name": "Publik Kitchen",
+      "neighborhood": "9th & 9th",
+      "lat": 40.7479,
+      "lng": -111.8914,
+      "address": "975 S West Temple, Salt Lake City, UT 84101",
+      "suburb": false,
+      "dist_deg": 0.0214,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Central 9th",
+        "Granary District",
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11282,
+      "name": "Ekamai Thai",
+      "neighborhood": "Sugar House",
+      "lat": 40.739113,
+      "lng": -111.8913249,
+      "address": "1609 S Main St, Salt Lake City, UT 84115",
+      "suburb": false,
+      "dist_deg": 0.0213,
+      "severity": "moderate",
+      "suggested": [
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11289,
+      "name": "Red Lotus Bistro",
+      "neighborhood": "Downtown SLC",
+      "lat": 40.7362,
+      "lng": -111.8881,
+      "address": "1685 S State St, Salt Lake City, UT 84115",
+      "suburb": false,
+      "dist_deg": 0.0088,
+      "severity": "edge",
+      "suggested": [
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11306,
+      "name": "Chile-Tepin",
+      "neighborhood": "West Valley",
+      "lat": 40.7645,
+      "lng": -111.8958,
+      "address": "307 W 200 S, Salt Lake City, UT 84101",
+      "suburb": false,
+      "dist_deg": 0.0311,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown SLC",
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11319,
+      "name": "Cucina Deli",
+      "neighborhood": "Downtown SLC",
+      "lat": 40.7715118,
+      "lng": -111.858744,
+      "address": "1026 2nd Ave, Salt Lake City, UT 84103",
+      "suburb": false,
+      "dist_deg": 0.0163,
+      "severity": "moderate",
+      "suggested": [
+        "The Avenues"
+      ]
+    },
+    {
+      "id": 11320,
+      "name": "Rye",
+      "neighborhood": "The Avenues",
+      "lat": 40.759583,
+      "lng": -111.8767745,
+      "address": "239 S 500 E, Salt Lake City, UT 84102",
+      "suburb": false,
+      "dist_deg": 0.0084,
+      "severity": "edge",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Trolley Square"
+      ]
+    },
+    {
+      "id": 11331,
+      "name": "Taqueria 27",
+      "neighborhood": "Sugar House",
+      "lat": 40.7637,
+      "lng": -111.8856,
+      "address": "149 E 200 S, Salt Lake City, UT 84111",
+      "suburb": false,
+      "dist_deg": 0.0179,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11350,
+      "name": "Sabor Latino",
+      "neighborhood": "West Valley",
+      "lat": 40.7515,
+      "lng": -111.9055,
+      "address": "750 W 800 S, Salt Lake City, UT 84104",
+      "suburb": false,
+      "dist_deg": 0.0159,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown SLC",
+        "Central 9th",
+        "Granary District",
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11365,
+      "name": "Caffe Niche Avenues",
+      "neighborhood": "University",
+      "lat": 40.7378,
+      "lng": -111.8483,
+      "address": "1327 S 1700 E, Salt Lake City, UT 84108",
+      "suburb": false,
+      "dist_deg": 0.0172,
+      "severity": "moderate",
+      "suggested": [
+        "Sugar House"
+      ]
+    },
+    {
+      "id": 11383,
+      "name": "Nomad Eatery",
+      "neighborhood": "9th & 9th",
+      "lat": 40.7389,
+      "lng": -111.8563,
+      "address": "1675 E 1300 S, Salt Lake City, UT 84105",
+      "suburb": false,
+      "dist_deg": 0.0061,
+      "severity": "edge",
+      "suggested": [
+        "Liberty Park",
+        "Sugar House"
+      ]
+    },
+    {
+      "id": 11396,
+      "name": "Mountain West Cider",
+      "neighborhood": "South Salt Lake",
+      "lat": 40.7346,
+      "lng": -111.8986,
+      "address": "425 W 1700 S, Salt Lake City, UT 84115",
+      "suburb": false,
+      "dist_deg": 0.0046,
+      "severity": "edge",
+      "suggested": [
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11403,
+      "name": "Greenhouse Effect Coffee",
+      "neighborhood": "The Avenues",
+      "lat": 40.7608,
+      "lng": -111.8814,
+      "address": "312 E 300 S, Salt Lake City, UT 84111",
+      "suburb": false,
+      "dist_deg": 0.0072,
+      "severity": "edge",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Westside SLC",
+        "Trolley Square"
+      ]
+    },
+    {
+      "id": 11439,
+      "name": "Simply Thai",
+      "neighborhood": "Sandy",
+      "lat": 40.5634,
+      "lng": -111.9388,
+      "address": "8816 S Redwood Rd, Sandy, UT 84070",
+      "suburb": true,
+      "dist_deg": 0.0388,
+      "severity": "moderate",
+      "suggested": [
+        "South Jordan"
+      ]
+    },
+    {
+      "id": 11440,
+      "name": "Flavor Burst Frozen Yogurt",
+      "neighborhood": "Downtown SLC",
+      "lat": 40.7217,
+      "lng": -111.8716,
+      "address": "2100 S 700 E, Salt Lake City, UT 84106",
+      "suburb": false,
+      "dist_deg": 0.0235,
+      "severity": "moderate",
+      "suggested": [
+        "Liberty Park",
+        "South Salt Lake"
+      ]
+    },
+    {
+      "id": 11443,
+      "name": "Niche Coffee Avenues",
+      "neighborhood": "The Avenues",
+      "lat": 40.7594,
+      "lng": -111.8724,
+      "address": "779 E 300 S, Salt Lake City, UT 84102",
+      "suburb": false,
+      "dist_deg": 0.0086,
+      "severity": "edge",
+      "suggested": [
+        "Central City",
+        "Trolley Square"
+      ]
+    },
+    {
+      "id": 11459,
+      "name": "Aristo's Greek",
+      "neighborhood": "South Salt Lake",
+      "lat": 40.7637,
+      "lng": -111.8596,
+      "address": "224 S 1300 E, Salt Lake City, UT 84102",
+      "suburb": false,
+      "dist_deg": 0.0353,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 11485,
+      "name": "Veneto Ristorante",
+      "neighborhood": "9th & 9th",
+      "lat": 40.7465,
+      "lng": -111.8821,
+      "address": "370 E 900 S, Salt Lake City, UT 84111",
+      "suburb": false,
+      "dist_deg": 0.0121,
+      "severity": "edge",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Granary District",
+        "Westside SLC",
+        "Liberty Park"
+      ]
+    },
+    {
+      "id": 11499,
+      "name": "Blue Gene's",
+      "neighborhood": "9th & 9th",
+      "lat": 40.7593,
+      "lng": -111.8791,
+      "address": "239 S 500 E, Salt Lake City, UT 84102",
+      "suburb": false,
+      "dist_deg": 0.0101,
+      "severity": "edge",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Trolley Square"
+      ]
+    },
+    {
+      "id": 11527,
+      "name": "'mina Ristorante Siciliano",
+      "neighborhood": "University",
+      "lat": 40.7499,
+      "lng": -111.8775,
+      "address": "439 E 900 S, Salt Lake City, UT 84111",
+      "suburb": false,
+      "dist_deg": 0.0231,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Liberty Park"
+      ]
+    },
+    {
+      "id": 11532,
+      "name": "Zao Asian Cafe",
+      "neighborhood": "Downtown SLC",
+      "lat": 40.7606675,
+      "lng": -111.8610591,
+      "address": "639 E 400 S, Salt Lake City, UT 84102",
+      "suburb": false,
+      "dist_deg": 0.0139,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 11537,
+      "name": "Atomic Biscuit",
+      "neighborhood": "9th & 9th",
+      "lat": 40.7467,
+      "lng": -111.8793,
+      "address": "401 E 900 S, Salt Lake City, UT 84111",
+      "suburb": false,
+      "dist_deg": 0.0093,
+      "severity": "edge",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Liberty Park"
+      ]
+    },
+    {
+      "id": 11548,
+      "name": "Este Pizza",
+      "neighborhood": "9th & 9th",
+      "lat": 40.7199,
+      "lng": -111.8681,
+      "address": "2148 S 900 E, Salt Lake City, UT 84106",
+      "suburb": false,
+      "dist_deg": 0.0251,
+      "severity": "moderate",
+      "suggested": [
+        "Sugar House",
+        "Millcreek"
+      ]
+    },
+    {
+      "id": 11549,
+      "name": "Meditrina",
+      "neighborhood": "Downtown SLC",
+      "lat": 40.7258,
+      "lng": -111.8958,
+      "address": "1394 S West Temple, Salt Lake City, UT 84115",
+      "suburb": false,
+      "dist_deg": 0.0192,
+      "severity": "moderate",
+      "suggested": [
+        "Westside SLC",
+        "South Salt Lake"
+      ]
+    },
+    {
+      "id": 11554,
+      "name": "Oasis Cafe",
+      "neighborhood": "The Avenues",
+      "lat": 40.7606,
+      "lng": -111.8778,
+      "address": "151 S 500 E, Salt Lake City, UT 84102",
+      "suburb": false,
+      "dist_deg": 0.0074,
+      "severity": "edge",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Trolley Square"
+      ]
+    },
+    {
+      "id": 11556,
+      "name": "Junah",
+      "neighborhood": "9th & 9th",
+      "lat": 40.7478,
+      "lng": -111.8912,
+      "address": "916 S Jefferson St, Salt Lake City, UT 84101",
+      "suburb": false,
+      "dist_deg": 0.0212,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown SLC",
+        "Central City",
+        "Central 9th",
+        "Granary District",
+        "Westside SLC"
+      ]
+    },
+    {
+      "id": 11574,
+      "name": "Monte",
+      "neighborhood": "South Salt Lake",
+      "lat": 40.7319297,
+      "lng": -111.8377029,
+      "address": "2245 S W Temple St, South Salt Lake, UT 84115",
+      "suburb": false,
+      "dist_deg": 0.0324,
+      "severity": "moderate",
+      "suggested": [
+        "Sugar House"
+      ]
+    }
+  ],
+  "out_of_state_rows": []
+}
