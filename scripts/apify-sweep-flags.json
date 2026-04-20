@@ -5418,5 +5418,340 @@
     "type": "no_photo_passed_test",
     "message": "All photo candidates failed quality test",
     "tried": []
+  },
+  {
+    "city": "austin",
+    "id": 5116,
+    "name": "Hotel San José",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "austin",
+    "id": 5018,
+    "name": "Valentina's Tex Mex BBQ",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "austin",
+    "id": 5085,
+    "name": "Lady Bird Lake",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "austin",
+    "id": 5072,
+    "name": "Sway",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "austin",
+    "id": 5260,
+    "name": "The Hightower",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "austin",
+    "id": 5235,
+    "name": "Mount Bonnell",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "austin",
+    "id": 5181,
+    "name": "The Mighty Cone",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "austin",
+    "id": 5181,
+    "name": "The Mighty Cone",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "austin",
+    "id": 5296,
+    "name": "Figure 8 Coffee Purveyors",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_813x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "austin",
+    "id": 5314,
+    "name": "Dai Due Taqueria",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "austin",
+    "id": 5321,
+    "name": "Sour Duck Market",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "austin",
+    "id": 5349,
+    "name": "Cru Wine Bar",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_864x1080_ar0.80"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1080x1080_ar1.00"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "austin",
+    "id": 5363,
+    "name": "Shady Grove",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "austin",
+    "id": 5259,
+    "name": "Freedmen's Bar",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "austin",
+    "id": 5381,
+    "name": "Loro Lakeway",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "austin",
+    "id": 5364,
+    "name": "Vespaio",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "austin",
+    "id": 5408,
+    "name": "Meridian Hive Meadery",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "austin",
+    "id": 5326,
+    "name": "Austin's Pizza",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_864x1080_ar0.80"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_small_23788"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "austin",
+    "id": 5343,
+    "name": "Contigo",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "austin",
+    "id": 5368,
+    "name": "Grizzelda's",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "austin",
+    "id": 5402,
+    "name": "Thai Kitchen",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "austin",
+    "id": 5574,
+    "name": "Black Sheep Coffee",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "austin",
+    "id": 5482,
+    "name": "Pasta|Bar Austin",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "austin",
+    "id": 5585,
+    "name": "Zach Theatre",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "austin",
+    "id": 5572,
+    "name": "Soul Seoul Sol",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "austin",
+    "id": 5547,
+    "name": "Sway Thai",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_1080x1080_ar1.00"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
   }
 ]
