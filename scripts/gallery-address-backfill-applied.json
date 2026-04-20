@@ -1,0 +1,1532 @@
+{
+  "timestamp": "2026-04-20T18:26:55.536Z",
+  "cleared": 35,
+  "added": 75,
+  "addedBreakdown": {
+    "exact": 0,
+    "loose": 11,
+    "multiToken": 64,
+    "singleToken": 0
+  },
+  "perCity": {
+    "DALLAS_DATA": {
+      "cleared": 1,
+      "added": 9,
+      "examined": 683,
+      "stillEmpty": 174
+    },
+    "SD_DATA": {
+      "cleared": 6,
+      "added": 12,
+      "examined": 500,
+      "stillEmpty": 240
+    },
+    "PHX_DATA": {
+      "cleared": 11,
+      "added": 18,
+      "examined": 481,
+      "stillEmpty": 201
+    },
+    "LV_DATA": {
+      "cleared": 1,
+      "added": 9,
+      "examined": 510,
+      "stillEmpty": 103
+    },
+    "LA_DATA": {
+      "cleared": 0,
+      "added": 10,
+      "examined": 500,
+      "stillEmpty": 143
+    },
+    "SLC_DATA": {
+      "cleared": 13,
+      "added": 12,
+      "examined": 497,
+      "stillEmpty": 173
+    },
+    "AUSTIN_DATA": {
+      "cleared": 1,
+      "added": 2,
+      "examined": 501,
+      "stillEmpty": 40
+    },
+    "SEATTLE_DATA": {
+      "cleared": 0,
+      "added": 0,
+      "examined": 507,
+      "stillEmpty": 39
+    },
+    "CHICAGO_DATA": {
+      "cleared": 0,
+      "added": 1,
+      "examined": 526,
+      "stillEmpty": 20
+    },
+    "HOUSTON_DATA": {
+      "cleared": 1,
+      "added": 2,
+      "examined": 511,
+      "stillEmpty": 35
+    },
+    "NYC_DATA": {
+      "cleared": 0,
+      "added": 0,
+      "examined": 900,
+      "stillEmpty": 33
+    },
+    "SANANTONIO_DATA": {
+      "cleared": 1,
+      "added": 0,
+      "examined": 47,
+      "stillEmpty": 29
+    }
+  },
+  "added_edits": [
+    {
+      "city": "DALLAS_DATA",
+      "id": 9177,
+      "name": "Saint Ann Court",
+      "cardAddr": "2501 N Harwood St, Dallas, TX 75201",
+      "datasetTitle": "Saint Ann Restaurant & Bar",
+      "datasetAddr": "2501 N Harwood St Suite 225, Dallas, TX 75201",
+      "count": 3,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipM25AbRArIR47ZdVrKLOFzwUrt5VcZjI9ozHET_=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMYNtrR3mQ_iDKm7waAdvzxfoFzOJflZ-zeMhYq=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPeJaXDquSfsFoUsaGLgvQ8OIVBp-DWtDSapS-R=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 9122,
+      "name": "Bari's Pasta & Pizza",
+      "cardAddr": "3472 Long Prairie Rd, Flower Mound, TX 75022",
+      "datasetTitle": "Bari’s Pizza & Pasta",
+      "datasetAddr": "3472 Long Prairie Rd, Flower Mound, TX 75022",
+      "count": 3,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPtspblM_1zB1KWI40_vlugKKFUBmFd0bg25eHF=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNF5R_b0TPdvUSqu_dzQjrCNXsKK12qt1R5ayY2=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNC83jThgsi2BIrlIxABP7l2Ry1j995uetZUmD6=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 9068,
+      "name": "Mar y Sol",
+      "cardAddr": "4511 McKinney Ave, Dallas, TX 75205",
+      "datasetTitle": "MAR Y SOL COCINA LATINA",
+      "datasetAddr": "4511 McKinney Ave, Dallas, TX 75205",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPO0sv_S0FybKbRSYN0sZQ1qiMDmyghbkOc5RD_=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipN35bVnZ2dQX3z049wvNzYyhQcZAcFqBfQPFVrx=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 554,
+      "name": "La Lupita Taco & Mezcal",
+      "cardAddr": "1201 Oak Lawn Ave, Dallas TX",
+      "datasetTitle": "La Lupita Taco y Mezcal USA",
+      "datasetAddr": "1201 Oak Lawn Ave #160, Dallas, TX 75207",
+      "count": 5,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNMIRXZmpulPuRuSvvZuyiVHgcqynx4CnSa9do=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOkkOzmMokcvTAJfxOzFvxEKPRDYXnTzTyoGHs=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNC1AN5Wj7d5_uO65wzFq4jKkNUntes8Lz4k60=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNEzzi93uSvQqOdXUfELGecG6k9nOhTvvYjgTI=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOJ9D0Xg9bExh6bVAn9kPB8mccbouV1H4wmsKk=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "street"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 465,
+      "name": "Del Frisco's Double Eagle",
+      "cardAddr": "2323 Olive St, Dallas, TX 75201",
+      "datasetTitle": "Del Frisco's Double Eagle Steakhouse",
+      "datasetAddr": "2323 Olive St, Dallas, TX 75201",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPOL-WpuKBn23orXlHsWwpHcQtpjhQGpfL5Djp7=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOhHhgWZDxEqXmPfymUeXSvBn8VRWmad6JbQry3=w1920-h1080-k-no"
+      ],
+      "matchKind": "loose",
+      "addrReason": "zip"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 294,
+      "name": "Off the Record",
+      "cardAddr": "2716 Elm St, Dallas TX 75226",
+      "datasetTitle": "Off the Record Craft Beer & Vinyl",
+      "datasetAddr": "2716 Elm St, Dallas, TX 75226",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNdIEQECRv6OvyH4pqljqnj8XnG1ks_xmKsG4FO=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 292,
+      "name": "The Free Man",
+      "cardAddr": "2630 Commerce St, Dallas, TX 75226",
+      "datasetTitle": "The Free Man Cajun Cafe & Lounge",
+      "datasetAddr": "2630 Commerce St, Dallas, TX 75226",
+      "count": 3,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMAZQjIkcp_Dio40usT5yjb3pUSu41ms4M-oVyx=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPC2r2UUbZMhoq5sGeBFvrfP-lgO9ROXgLFH92S=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPe7fq4_nPgU5JjjfWbqRJ2zFPGadW86xforNof=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 198,
+      "name": "Sky Blossom",
+      "cardAddr": "1514 Elm St #611, Dallas TX 75201",
+      "datasetTitle": "Sky Blossom Rooftop Bistro Bar",
+      "datasetAddr": "1514 Elm St #611, Dallas, TX 75201",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipP8q5UTrdLoG6O6ZGUeG7nGf6PzHz3KK1NgxLbz=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNHVehAUyEjRX34OQpVAhTiD6ZiTiOXXIYNlQDD=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 107,
+      "name": "Jeng Chi",
+      "cardAddr": "400 N Greenville Ave Ste 11, Richardson TX 75081",
+      "datasetTitle": "Jeng Chi Restaurant Bar and Bakery",
+      "datasetAddr": "400 N Greenville Ave #11, Richardson, TX 75081",
+      "count": 3,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNQpRmyqaRmFCpun9AvmgOScl4ta9PGpToidYKw=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPf895yaKT3pqMLXFQ1dYWUhUF6wWHS7BK6HOWG=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNh2wT3ziHZ_pdA45jIn8nSEw6s46D_XxqrUEgf=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15410,
+      "name": "Karl Strauss Brewing Co. — Mira Mesa",
+      "cardAddr": "9675 Scranton Rd, San Diego, CA 92121",
+      "datasetTitle": "Karl Strauss Brewing Company",
+      "datasetAddr": "9675 Scranton Rd, San Diego, CA 92121",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNtJwA-3n1Qnfa8yyWOlRfio8SlmsE8NG1dzJfX=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMbNE1wpr21VJASljZYHSjoThqzqUXe05Gp9tSc=w1920-h1080-k-no"
+      ],
+      "matchKind": "loose",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15367,
+      "name": "The Fish Market — Del Mar",
+      "cardAddr": "640 Via de la Valle, Solana Beach, CA 92075",
+      "datasetTitle": "The Fish Market - Solana Beach",
+      "datasetAddr": "640 Via De La Valle, Solana Beach, CA 92075",
+      "count": 3,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipN1kZ9vk7wcp7P1ThRf9CD7llaSsgRyKOtDEUbU=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMsi7Z9guB55ZhQt2pOhZntm8LTTjA-94kFDiaE=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPmwxyaRH97zWO0Sd-9ocVQB_Gpi3eZUof691K9=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15363,
+      "name": "Little Italy Food Hall",
+      "cardAddr": "550 W Date St, San Diego, CA 92101",
+      "datasetTitle": "Little Italy Mercato Farmers' Market",
+      "datasetAddr": "600 W Date St, San Diego, CA 92101",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMJiWp1RHFjo679fdISzR8bwVffzmT68Pt8eFKq=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15360,
+      "name": "Tajima Ramen — Downtown",
+      "cardAddr": "901 E St, San Diego, CA 92101",
+      "datasetTitle": "Tajima Ramen East Village",
+      "datasetAddr": "901 E St, San Diego, CA 92101",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOy2_yt6tM4Cf1wfbXXGEvQzTJrfEBiz6xyb3vE=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNEaK_sRGVnTmbw3qHAmSwJoLB7C1vNV44Jw1WF=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15329,
+      "name": "Mama's Bakery & Lebanese Deli",
+      "cardAddr": "4237 Alabama St, San Diego, CA 92104",
+      "datasetTitle": "Mama's Bakery & Deli",
+      "datasetAddr": "2141 El Cajon Blvd, San Diego, CA 92104",
+      "count": 6,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNpTDlxVI_sZa8bsfHoVg3kQVjRUFoqq43y0euS=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMLIkF_lFzCVNn4fWrbUaKbyEhOuaZPm6onYsaE=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPwOR3_Ek6QtHRc-WnEc6rNFllk23_dZkhu0Ff9=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOkcDY6Jg1jtO4Yu3kbgjGG-ScvJoY41NIVjJX6=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMY6QqVNzdK5XBBe7hKtkdvitkI6grRXv2eU894=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipP_mdkYWKF3wu8mKjkLYXOa5dPUmAD2gdBF1aN2=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15310,
+      "name": "Dumpling Inn",
+      "cardAddr": "4625 Convoy Ct, San Diego, CA 92111",
+      "datasetTitle": "Dumpling Inn & Shanghai Saloon",
+      "datasetAddr": "4625 Convoy St, San Diego, CA 92111",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPSPMRDiJQxliO3Pzp91FW7UJ1J1IzPoAL-VHwL=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOzs3EEY8rkWxz9HGtjSpII17sLFaqCjqgc4Z0R=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15305,
+      "name": "Filippi's Pizza Grotto",
+      "cardAddr": "1747 India St, San Diego, CA 92101",
+      "datasetTitle": "Filippi's Pizza Grotto Little Italy",
+      "datasetAddr": "1747 India St, San Diego, CA 92101",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPcMW0TyBPkUTwrx3V56aTOC_mM-spNzraKV9-Q=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipP7DimekeKL_qUIU15BZFupa67R5sMoBY24VR6w=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15179,
+      "name": "Miguel's Cocina — Coronado",
+      "cardAddr": "1351 Orange Ave, Coronado, CA 92118",
+      "datasetTitle": "Miguel's Cocina",
+      "datasetAddr": "1351 Orange Ave, Coronado, CA 92118",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipP_EzDzkXdyL15Zg2ivpIcLuMj5Dmq3Y2bvbN41=w1920-h1080-k-no"
+      ],
+      "matchKind": "loose",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15164,
+      "name": "Mr. Moto Pizza House",
+      "cardAddr": "3385 30th St, San Diego, CA 92104",
+      "datasetTitle": "Mr. Moto Pizza North Park",
+      "datasetAddr": "3773 30th St, San Diego, CA 92104",
+      "count": 4,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOX2hAUnTy0BGSL4vVxa6MsPrAsbkFo-G7tMXJ7=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPUi-0aGmdX4mo65x1e-RrPSm68xYmw-P2xh1db=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOnbMJEF7OcTOd26ytzqvNaeJe67Nv1kN-HIwXv=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPobLPU-keeF_EfW2qwyJNZ10Xg2EV1Tw8w9fX6=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15146,
+      "name": "Rare Society — Solana Beach",
+      "cardAddr": "230 S Cedros Ave, Solana Beach, CA 92075",
+      "datasetTitle": "Rare Society",
+      "datasetAddr": "330 S Cedros Ave, Solana Beach, CA 92075",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPFoqGll0O-T-pFHOFYoD6Pw7Gf3kXqKVABr4-2=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOMMArQedCi_xb_zogqBnPFC_VsShEEtJk9vfsp=w1920-h1080-k-no"
+      ],
+      "matchKind": "loose",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15042,
+      "name": "Tajima Ramen Kearny Mesa",
+      "cardAddr": "4681 Convoy St, San Diego, CA 92111",
+      "datasetTitle": "Tajima Ramen Convoy",
+      "datasetAddr": "4681 Convoy St STE H, San Diego, CA 92111",
+      "count": 4,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOcVdWPUXnHXGD3mZrdvCQV9rg805gYKhPw3M4e=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOWMjgr7ofeRAQGWr04fp6-cq4Fuln2-RFhfJAN=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMkAFBjB9lPvYzWjbkf4tq4z4u0khGJpcdpfOah=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipM0AT4IcD2e2HJoo5oaqkFdLecLKY_UIO8InqVu=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15034,
+      "name": "Lucha Libre Gourmet Taco Shop",
+      "cardAddr": "1810 W Washington St, San Diego, CA 92103",
+      "datasetTitle": "Lucha Libre Taco Shop",
+      "datasetAddr": "1810 W Washington St, San Diego, CA 92103",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOZ9Sup828lDLZZz57kQZDXG2OF95geYh0qa1Q4=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPNvWIMvsHTZzUsLrFcUnEa_rMuIBwcyJJG9Wjb=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3459,
+      "name": "Coronado Cafe",
+      "cardAddr": "2201 N 7th St, Phoenix, AZ 85006",
+      "datasetTitle": "The Coronado PHX",
+      "datasetAddr": "2245 N 12th St, Phoenix, AZ 85006",
+      "count": 6,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipM0xzZJlx_RFuueWuogKwqP43NRiv7A2_SSwa2J=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOzDE3p6p2qrgsTEhfaUwsp7CbVeFzDGmipcieR=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNxjNiPuXWQsK9FWgqOEJ3AH8STzBPAPSgO16ua=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOQBBW9XKoI_zCBD_tOu8pe3UHA4PEx3lriQsgL=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPxO_mX_MYKdlb66SKVnae9IKErpM0_9tRaZUSx=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOJ0YnxjFTuDgjK0AB0QMkoCA4G708EJwulYhX9=w1920-h1080-k-no"
+      ],
+      "matchKind": "loose",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3455,
+      "name": "Orange Sky at Talking Stick Resort",
+      "cardAddr": "9800 E Talking Stick Way, Scottsdale, AZ 85256",
+      "datasetTitle": "Orange Sky",
+      "datasetAddr": "9800 East E Talking Stick Wy, Scottsdale, AZ 85256",
+      "count": 3,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMY2jKnYLv9lFkJcI7YnWDlWIEQ4eA6-JpoYLhC=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNEzNNuUE7jSBdOuuOHAGwelqvZPB9Uwx4dVEOt=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMKheAEyTlWgu-l5qb3q5M0MaZpuH_zBYpLt7Xp=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3407,
+      "name": "Ingo's Tasty Diner",
+      "cardAddr": "4502 N 40th St, Phoenix, AZ 85018",
+      "datasetTitle": "Ingo’s Tasty Food",
+      "datasetAddr": "4502 N 40th St, Phoenix, AZ 85018",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNEo2wOIELC8C-J73CynET7OsuAoqLzoRKw_SJV=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPBsT_Rlj5I46euQRcKxIdJEwOHqcIXR9L9O01c=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3398,
+      "name": "Cartel Roasting Co. Roosevelt Row",
+      "cardAddr": "225 E Roosevelt St, Phoenix, AZ 85004",
+      "datasetTitle": "Cartel Roasting Co.",
+      "datasetAddr": "1 N 1st St, Phoenix, AZ 85004",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMjlsXPCxb8R21JzmsVf3qdqwrg55bsRXUyOWKN=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3389,
+      "name": "True Food Kitchen Kierland",
+      "cardAddr": "15191 N Scottsdale Rd, Scottsdale, AZ 85254",
+      "datasetTitle": "True Food Kitchen",
+      "datasetAddr": "15191 N Scottsdale Rd #100, Scottsdale, AZ 85254",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMGhBEyebA76yyOCtn-136rl4XyumVOjj2Pq_VB=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipN4CZkZQpnit6X1QyGdDBiM2kZEUTJNnfkROv83=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3380,
+      "name": "Pedal Haus Brewery Tempe",
+      "cardAddr": "730 S Mill Ave, Tempe, AZ 85281",
+      "datasetTitle": "Pedal Haus Brewery",
+      "datasetAddr": "730 S Mill Ave #102, Tempe, AZ 85281",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipN26r88guNQIMAuBJKeVUwjMUmTE2EuPMqGXHXO=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNlZzJp_1joXIBcmB4nPke462ViBVZ79vS6yXRS=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3350,
+      "name": "Rio Mirage Cafe — Surprise",
+      "cardAddr": "13863 W Bell Rd, Surprise, AZ 85379",
+      "datasetTitle": "Rio Mirage Café- Surprise Location",
+      "datasetAddr": "13863 W Bell Rd, Surprise, AZ 85379",
+      "count": 4,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipM6rpZTy0S1ZJJZrvJRlQrkltnTLkyz48kARyUS=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNxh-4CBk8of_Pf90x3XnwdtUx2vaxzsyLMIGOS=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNQOyIt_yCxwLa3F0PS1DNtQQ4KKJucQflvdaGb=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPJKIhIFW6BCKV9KbwsaNRXG5xiWoZk3iqBrxSw=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3313,
+      "name": "Hand Cut Burgers and Chophouse",
+      "cardAddr": "7135 E Camelback Rd Ste 154, Scottsdale, AZ 85251",
+      "datasetTitle": "Hand Cut Chophouse",
+      "datasetAddr": "7135 E Camelback Rd #154, Scottsdale, AZ 85251",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMfeaOoqTuMWZGp638Bi6qGTS32GSOeH96hpXiV=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3306,
+      "name": "Arizona Wilderness Beer Garden — Gilbert",
+      "cardAddr": "721 N Arizona Ave, Gilbert, AZ 85233",
+      "datasetTitle": "Arizona Wilderness Gilbert Brewpub",
+      "datasetAddr": "721 N Arizona Ave, Gilbert, AZ 85233",
+      "count": 3,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOPtZZ_C0T-E2FeylX4RhZPzpC6RjVNmm2_mO8=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNF-IkGCiISvRLsFFuf1urZKIX5tj-y_16b5qs=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMRjvSSu_zC8Fxo_rf9Yz13gF1TKHjBMiTHwJg=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3277,
+      "name": "Caffe Boa",
+      "cardAddr": "398 S Mill Ave #102, Tempe, AZ 85281",
+      "datasetTitle": "Caffe Boa TEMPE",
+      "datasetAddr": "398 S Mill Ave, Tempe, AZ 85281",
+      "count": 7,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNL9zPGmbuEbDHxsx-uNizAaaPz-saIwJKhJ907=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipN9VvICSVX8fLr31mNdADJtlPdb9ermEozq8Xft=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOvhLnVhKC_n8NWqKBqOtSI1C_9RLKnYZOVbfhI=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNAqeqjhuJQComBf56qEyZx6Fm4lpQK10csQtoo=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMKkoH1TQaAPqmlgRSveKOxS5iWIt82o-lhIFKr=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNzNti23VJGxznuGos-Aal8ccagFN_7JnpwA8WD=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPuAeHx1OwlcmT8NnG4YkyRA8UDgVQq1c05JWe8=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3221,
+      "name": "Hillstone Phoenix",
+      "cardAddr": "2650 E Camelback Rd, Phoenix, AZ 85016",
+      "datasetTitle": "Hillstone Restaurant",
+      "datasetAddr": "2650 E Camelback Rd, Phoenix, AZ 85016",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPwL5aRYEhPjNTh-PKwbKsnykdNbDRjHE7jiyGa=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPP-I3q77a9MXtHmAjDEsolGJ_9_dRRdR2ijYsH=w1920-h1080-k-no"
+      ],
+      "matchKind": "loose",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3198,
+      "name": "Bobby-Q BBQ",
+      "cardAddr": "8501 N 27th Ave, Phoenix, AZ 85051",
+      "datasetTitle": "Bobby-Q BBQ Restaurant and Steakhouse",
+      "datasetAddr": "8501 N 27th Ave, Phoenix, AZ 85051",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPyN3dV24V3xtnE3YxGUo2tmaDMKWJBXIVkUPg_=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPAmPFUlsFpuH-xMFhg_P9rY9-aUsKBLiwIKjd-=w1920-h1080-k-no"
+      ],
+      "matchKind": "loose",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3166,
+      "name": "Porter's Saloon",
+      "cardAddr": "3944 N Brown Ave, Scottsdale, AZ 85251",
+      "datasetTitle": "Porters Western Saloon",
+      "datasetAddr": "3944 N Brown Ave, Scottsdale, AZ 85251",
+      "count": 4,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNN8FNoqJvxEH0GDC-IUD2ZPlWhSUj7r-_8D6ex=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMuF5-Q1sRMiSSGJuoD1NwSC-XeE6XmKbyoqOaE=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOvMZnRomfoD5kFY4WeCe1eAXvxHQLQ1TskEaTk=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOsAcscnn0dbIlGZzA2oP1Qm7ehkd5-ktEhIzA6=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3149,
+      "name": "Culinary Dropout Scottsdale",
+      "cardAddr": "7135 E Camelback Rd Ste 125, Scottsdale, AZ 85251",
+      "datasetTitle": "Culinary Dropout",
+      "datasetAddr": "7135 E Camelback Rd, Scottsdale, AZ 85251",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipP4WWZyAREGyYUn3cn4omF3jZ1tUAktN6rfYMba=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNDuRSartZI1f3p3AcOCp9OnlHBS31-TOvMxFk_=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3141,
+      "name": "Maple & Ash Scottsdale",
+      "cardAddr": "7135 E Camelback Rd Ste 130, Scottsdale, AZ 85251",
+      "datasetTitle": "Maple & Ash",
+      "datasetAddr": "7135 E Camelback Rd #130, Scottsdale, AZ 85251",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNrhdykHASxuKnLSWMX4D6fT22uGZbJ3ZdDf2Vu=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNkaR-KS7zWHqeNupn9XibHR4Mwqi24EmUqaxW9=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3038,
+      "name": "Kai Restaurant",
+      "cardAddr": "5594 W Wild Horse Pass Blvd, Chandler, AZ 85226",
+      "datasetTitle": "KAI",
+      "datasetAddr": "5594 W Wild Horse Pass Blvd, Chandler, AZ 85226",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipO65b_p6xt69_pKo2XvEtVYt3-t_yXGBBB1tTVa=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNAI6iurR0VimANXwqbp70ouk1lj1TbAoje7BIc=w1920-h1080-k-no"
+      ],
+      "matchKind": "loose",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3014,
+      "name": "Kid Sister",
+      "cardAddr": "4810 N 7th St, Phoenix, AZ 85014",
+      "datasetTitle": "kid sister A WINE BAR",
+      "datasetAddr": "4810 N 7th St, Phoenix, AZ 85014",
+      "count": 4,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOjNLub-goLbzbfv0Y7vpRhGeY84et9xJswFAsN=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipP4yNWPqGbxdMb7_x92zaXT7m9JQ-Eaybi5PT3g=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipP3M5Z_gx3MejohizV-0nyboZcvX0_sM6TJbk-4=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPAYjVHv_TBXRo4qkInnBrYaYR8VnTwou_mFMpP=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3010,
+      "name": "Bad Jimmy's",
+      "cardAddr": "7620 E Indian School Rd Ste 101, Scottsdale, AZ 85251",
+      "datasetTitle": "Bad Jimmy's Scottsdale",
+      "datasetAddr": "7620 E Indian School Rd #101, Scottsdale, AZ 85251",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipO3gD1Mt0XPZhxFFG6OZyp5G4uiVfNXdCROFgdR=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12540,
+      "name": "The Colosseum at Caesars Palace",
+      "cardAddr": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "datasetTitle": "The Colosseum Theater at Caesars Palace",
+      "datasetAddr": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipN8kbYhm5B7JpLjmHCvnCjojcDpwbCYqP3qlXmB=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12505,
+      "name": "Nobu Hotel Restaurant Caesars",
+      "cardAddr": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "datasetTitle": "Nobu at Paris Hotel",
+      "datasetAddr": "3655 Las Vegas Blvd S, Las Vegas, NV 89109",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOhcWfGSg7MpfuMnYetam1AyQaZzLkSGIuSfvSC=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMRljazzxuS-r-hmqFv8FNvN85uGUrjUwxCWwKb=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12500,
+      "name": "Sparrow + Wolf Second",
+      "cardAddr": "4480 Spring Mountain Rd Unit B, Las Vegas, NV 89102",
+      "datasetTitle": "Sparrow + Wolf",
+      "datasetAddr": "4480 Spring Mountain Rd #100, Las Vegas, NV 89102",
+      "count": 4,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPV27vRr4RIqJKDvvFBFzFinjjm-0q3rT7epkKF=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOWUWv0rMHP7pl-oHHlkMj818yGe0LuKEObgKTd=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOGYnL0ULgVHOXRF3hqdmuv1hil3GIPeZveFlNc=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMkFzCgoMkRTZuwEEm4oZ_olJ3b3p3ykVVmbiJj=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12448,
+      "name": "Gilley's Saloon, Dance Hall & BBQ",
+      "cardAddr": "3300 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "datasetTitle": "Gilley's Saloon, Dance Hall & Bar-B-Que",
+      "datasetAddr": "3300 Las Vegas Blvd S, Las Vegas, NV 89109",
+      "count": 4,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNxTdTV9XWPztSqpaRRcnxLRnA2WwOCwB2M5PT2=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipN0Lf6xaQUpt6AqwUKVV5JYXP3rNncGKOoNqL96=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPR53EM_VhP-eMahGKTATLknBgyfDAaYyFD2W0f=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNwbY4VEpM770o43J6v6ZnT24zX5t2hjhPcKX9n=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12392,
+      "name": "Mama Rabbit",
+      "cardAddr": "3770 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "datasetTitle": "Mama Rabbit Mezcal + Tequila Bar",
+      "datasetAddr": "3770 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMUpo36um2etBztxqcZudmH_f-9fLDSaUlqV7tr=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12307,
+      "name": "Jaleo Las Vegas",
+      "cardAddr": "3708 Las Vegas Blvd S, Las Vegas, NV 89109",
+      "datasetTitle": "Jaleo",
+      "datasetAddr": "Boulevard Tower, 3708 Las Vegas Blvd S Level 3, Las Vegas, NV 89109",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMzLGZCVlK2RNaSL6bSlmaCn-DMIdjM25V8Bt8K=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOxb1rG7-VsEUUKVVf20VKEGYBmaaSX7iC7oq4t=w1920-h1080-k-no"
+      ],
+      "matchKind": "loose",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12284,
+      "name": "Yardbird Southern Table",
+      "cardAddr": "3355 Las Vegas Blvd S, Las Vegas, NV 89109",
+      "datasetTitle": "Yardbird Table & Bar",
+      "datasetAddr": "3355 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMopVWm0S68s3OnMr5l6Cay8sWC5WaKWXMZx5Fv=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12061,
+      "name": "Kung Fu Thai & Chinese",
+      "cardAddr": "3505 S Valley View Blvd, Las Vegas, NV 89103",
+      "datasetTitle": "Kung Fu Thai & Chinese Restaurant",
+      "datasetAddr": "3505 S Valley View Blvd, Las Vegas, NV 89103",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipM4S53Yth_gQkq9pj2jy7-_yBzjbT0KC2ekJrsp=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipN2EQJ_e1rp-Q6Dh8JhdxOg1fZtrXoXXIJssHgE=w1920-h1080-k-no"
+      ],
+      "matchKind": "loose",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12023,
+      "name": "Nobu",
+      "cardAddr": "3570 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "datasetTitle": "Nobu Restaurant Las Vegas",
+      "datasetAddr": "3570 Las Vegas Blvd S, Las Vegas, NV 89109",
+      "count": 3,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNoNxYJ9cvpgJ7pJ8jsWKU1CvlyN6MSkkkBMA5o=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMnZE9Gzz9bewTrF78z-FfT906CZsGCTYdi97xz=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNRR9mH5txBVdfKPKtqvNmg2w4iGh8y0D7xA6_Y=w1920-h1080-k-no"
+      ],
+      "matchKind": "loose",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2503,
+      "name": "In-N-Out Burger Hollywood",
+      "cardAddr": "7009 Sunset Blvd, Los Angeles, CA 90028",
+      "datasetTitle": "In-N-Out Burger",
+      "datasetAddr": "7009 Sunset Blvd, Hollywood, CA 90028",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipM_Ohc8BnCeFUOdoJa_AB_AL9MztsGYeuo5nv5v=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPXS9fSLT7GUr6rxOqXB8OmGYC94TErfUrFNRV0=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2415,
+      "name": "LA Cha Cha Cha",
+      "cardAddr": "812 E 3rd St, Los Angeles, CA 90013",
+      "datasetTitle": "Cha Cha Chá",
+      "datasetAddr": "812 E 3rd St, Los Angeles, CA 90013",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNNn62z69hcE3wPJ4FbNaV96Tv22CoXv_ce2yXx=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipN0ha2UTrAPevqfTcDzEHNoDTZlMeipbUG-LecR=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2337,
+      "name": "Howlin' Ray's Pasadena",
+      "cardAddr": "800 S Arroyo Pkwy, Pasadena, CA 91105",
+      "datasetTitle": "Howlin' Ray's Hot Chicken - Pasadena",
+      "datasetAddr": "800 S Arroyo Pkwy, Pasadena, CA 91105",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOvwlz1Zx6sUOFmrm3y-xBwk45H98JXdBCdwVbF=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2331,
+      "name": "Panda Inn Pasadena",
+      "cardAddr": "3488 E Foothill Blvd, Pasadena, CA 91107",
+      "datasetTitle": "Panda Inn",
+      "datasetAddr": "3488 E Foothill Blvd, Pasadena, CA 91107",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOk1x6ARi_yWQSSx_BWUnMs-eMQ2ISpF_PHmpbC=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2223,
+      "name": "Holy Basil DTLA",
+      "cardAddr": "3170 Glendale Blvd, Los Angeles, CA 90039",
+      "datasetTitle": "Holy Basil Market",
+      "datasetAddr": "3170 Glendale Blvd unit c, Los Angeles, CA 90039",
+      "count": 4,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMrz5C-cBHog7avdnPmtwkICqebHp7pQGK1Uohz=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOeF2-3BUwS7VuCF2EbcwJ7gKBW_EttYHpGAd1N=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMDO5yNSx6AVYdgHWGBdB2KmHZjJNLHpitX4FG6=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOUnX1goQ73mB-i9KIh5YZJia8WtnR7KVVXnR_M=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2196,
+      "name": "ABSteak by Akira Back",
+      "cardAddr": "8500 Beverly Blvd #111, Los Angeles, CA 90048",
+      "datasetTitle": "ABSteak by Chef Akira Back",
+      "datasetAddr": "8500 Beverly Blvd 111 level 1, Los Angeles, CA 90048",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMPdLxP2SgonCIoxebY1_sY5T22GTLt9CrQK4A7=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipP4ZTOG5OZQcydy2vaDy4VYbXTj8W73jNuKHF9o=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2185,
+      "name": "Feng Mao Mutton Kebab",
+      "cardAddr": "3901 W Olympic Blvd, Los Angeles, CA 90019",
+      "datasetTitle": "Feng Mao BBQ Lamb Kebab Olympic",
+      "datasetAddr": "3901 W Olympic Blvd, Los Angeles, CA 90019",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNzmKNoUuBYijlivSI3ep1I9bGGa8n-4-9PE0dP=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPWcJJWSk7URiNmftczhy1fpVOqBFTJ8cNVCIUz=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2162,
+      "name": "Jun Won Dak",
+      "cardAddr": "4254 1/2 W 3rd St, Los Angeles, CA 90020",
+      "datasetTitle": "Jun Won Dak IG @junwon_la",
+      "datasetAddr": "4254 1/2 W 3rd St, Los Angeles, CA 90020",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOZsj5kFmyYP7Bcv-56XchLP22haegPuqULev4e=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMQxBlRSXouvuWmgWahnrLf1KCRsyWsldfyw3ya=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2103,
+      "name": "Jon & Vinny's",
+      "cardAddr": "412 N Fairfax Ave, Los Angeles, CA 90036",
+      "datasetTitle": "Jon & Vinny's Fairfax",
+      "datasetAddr": "412 N Fairfax Ave, Los Angeles, CA 90036",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPIVPhiRF-NolkFyiXFtTHtwazLmXm3jo0MsEaw=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNjRBvkcHYH0UMJWMkhQ6oMA-bgd0VD-rDu0AQr=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2019,
+      "name": "Howlin' Ray's",
+      "cardAddr": "727 N Broadway #128, Los Angeles, CA 90012",
+      "datasetTitle": "Howlin' Ray's Hot Chicken - Chinatown",
+      "datasetAddr": "727 N Broadway #128, Los Angeles, CA 90012",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNZ1jlpUROEC1SU43uKgevvt5X9kicj2nMfM9jR=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11530,
+      "name": "Van Ryder",
+      "cardAddr": "131 S 300 W, Salt Lake City, UT 84101",
+      "datasetTitle": "Van Ryder, a Rooftop Bar",
+      "datasetAddr": "131 S 300 W, Salt Lake City, UT 84101",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOvJ9K7hiSX60xVU639xRey2nklI59za1zmnhz6=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMP3NcyAzbmHVX1ZCkYehsXAAo09k_hPhFdxFr6=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11508,
+      "name": "Sol Agave American Fork",
+      "cardAddr": "591 W 100 S, American Fork, UT 84003",
+      "datasetTitle": "Sol Agave",
+      "datasetAddr": "749 W 100 N Suite CRA8, American Fork, UT 84003",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNxszM4EtawwVYilcgs5q26ARfwiWKfV_ssPI96=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMn7Wivtlcrqqq8dlZNVuonYxo2VMwjkeRXodLW=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11395,
+      "name": "Spitz State Street",
+      "cardAddr": "221 S State St, Salt Lake City, UT 84111",
+      "datasetTitle": "Spitz Mediterranean Street Food",
+      "datasetAddr": "35 E Broadway, Salt Lake City, UT 84111",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPQXabfft4cbiOeQ4PMSENRcRM__IKJqd9AFlTb=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11343,
+      "name": "Deer Valley Grocery Cafe",
+      "cardAddr": "1375 Deer Valley Dr, Park City, UT 84060",
+      "datasetTitle": "Deer Valley Café",
+      "datasetAddr": "1375 Deer Valley Dr, Park City, UT 84060",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMhRgEfJfIGE2ZjtmO7WdhsuORKqvZ4x5e-ikPO=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOAtoEvcwJaowpu6shkmFReTM4txZRWMGILvm5G=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11336,
+      "name": "Caputo's Deli",
+      "cardAddr": "314 W 300 S, Salt Lake City, UT 84101",
+      "datasetTitle": "Caputo's Market & Deli",
+      "datasetAddr": "314 W 300 S, Salt Lake City, UT 84101",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipN3rrDFvWLVQD1lUuAMDlTG9zJkAOSVsQfQSGCt=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipORL_qjPQ8qBvhm0KC2g-bcQ5xvRGZDY8FF_RAd=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11240,
+      "name": "Blind Dog Restaurant",
+      "cardAddr": "1251 Kearns Blvd, Park City, UT 84060",
+      "datasetTitle": "Blind Dog Restaurant & Raw Bar",
+      "datasetAddr": "1251 Kearns Blvd, Park City, UT 84060",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPJv19dk8s8_kIThzvnzYbqHqihurtjFY-Y5Hrz=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMhhmit2XMCYhq356YwjY0oxqUqdYARmpot5Xnn=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11233,
+      "name": "Tracy Aviary & Botanical Garden",
+      "cardAddr": "589 E 1300 S, Salt Lake City, UT 84105",
+      "datasetTitle": "Tracy Aviary at Liberty Park",
+      "datasetAddr": "589 E 1300 S, Salt Lake City, UT 84105",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOhgPFKBAEVtfKNPpSBAcQkaA8v5YTAuvOKzJaC=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipO2fvnno879SpBUQ6lbJSymvw8dJP9PwUOnkKX7=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11211,
+      "name": "Sushi by Bou SLC",
+      "cardAddr": "110 W Broadway, Salt Lake City, UT 84101",
+      "datasetTitle": "Sushi By Bou - Salt Lake City",
+      "datasetAddr": "110 W Broadway, Salt Lake City, UT 84101",
+      "count": 8,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipNcW_K90czdIrMx2g4c_pg4h2BsWrW9KU3Nz0u6=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNVwuPM_EA-AJuL7DndSLAJs5GnzKh4lSsv0V0Z=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNTgWe3MP6wVJaix9YfjBAKLxRLd_rV0RQhIOk5=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNgvgOTUNlj_31I8VljZSn44CytAsDsgRVhQ9er=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPbBm3YU0XpFIgBqz95gMrR1i6Q-eTo4MITT8Xi=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMVH1Q9aBcQ2AUeXybDRRL4JOY4Zn8KoG76sAC9=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNmlV6xD37NlkaPa4c2Hm-TxSoKnGWuA8YGWESD=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPly96IqD-4Qxqeynr_1lnuOfODGVf6dSHagwEj=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11151,
+      "name": "Tuk Tuk Thai",
+      "cardAddr": "670 N 300 W, Salt Lake City, UT 84103",
+      "datasetTitle": "Tuk Tuk's of Marmalade",
+      "datasetAddr": "535 N 300 W Unit H103, Salt Lake City, UT 84103",
+      "count": 6,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipM1plNw0gTCiP568f4UNT9uIq-fXx6WjkbNbMlp=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPzuq3-TJ2_0ao1toqUZlLS-cM3gxl2nUtf-Fk6=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPhocMI7fz0nV5wkKU0hF7esz1U_SOQc1o1mytJ=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPrL_wCRg5uLw_kumwg1HFKrjTnCBpkeeYaaQ-U=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipN3naua5l2z6-uV2uHUl7H3bed1K59eysJe2__p=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPriG-6Zl5vC_Vjz2jWNkTz1OkkITozlselRVFN=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11149,
+      "name": "Sawadee Thai",
+      "cardAddr": "754 E South Temple, Salt Lake City, UT 84102",
+      "datasetTitle": "Sawadee (Utah) Thai Restaurant",
+      "datasetAddr": "754 E S Temple St, Salt Lake City, UT 84102",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipM_YJTS1ySMt347KdBMFTHqSncnveQ-SrAqFKj-=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11109,
+      "name": "Red Rock Brewing Company",
+      "cardAddr": "254 S 200 W, Salt Lake City, UT 84101",
+      "datasetTitle": "Red Rock Brewing - Downtown Salt Lake City",
+      "datasetAddr": "254 S 200 W, Salt Lake City, UT 84101",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPywxS_jSd6Bx6Dr1yBITHwYSXRo20-sHNhT_0=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipPFDpsBESfHm041AtnVLylKSH2W1cYqp3wKS4g=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11043,
+      "name": "High West Distillery & Saloon",
+      "cardAddr": "703 Park Ave, Park City, UT 84060",
+      "datasetTitle": "High West Saloon",
+      "datasetAddr": "703 Park Ave, Park City, UT 84060",
+      "count": 1,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMfv0j7K0QXb9Nh5-5MSqSQATBwr0asNuVlm6tk=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5428,
+      "name": "Desnudo South Lamar",
+      "cardAddr": "1904 S Lamar Blvd, Austin, TX 78704",
+      "datasetTitle": "Desnudo Coffee: South Lamar",
+      "datasetAddr": "1904 S Lamar Blvd, Austin, TX 78704",
+      "count": 4,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMs1NHBvX1Wl0Ii4PZtCRuO2NFOj6kyH4kMyvyE=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipMSyT5CyvcbHYc56dBZ64wGtk32JzT_lxQVuFTZ=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNlBWmpsG1mpaUVdlnzcO7NdcSlmyBxTK6I2p7K=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipP5y3IOEVpX-HP1IyzbBxpbzn6rLqOciXVxMjvS=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5293,
+      "name": "Desnudo Coffee",
+      "cardAddr": "111 Congress Ave., Austin, TX 78701",
+      "datasetTitle": "Desnudo Coffee: Downtown",
+      "datasetAddr": "111 Congress Ave., Austin, TX 78701",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOnYxRxLsEBEzwJI36hhD9Ev-YJDPNRXbqw_c5M=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipM3BAtEXcYj6cm4pNwPwTZT_S4bCZZZZEg5v-_C=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 104,
+      "name": "Al's Italian Beef (Original)",
+      "cardAddr": "1079 W Taylor St, Chicago, IL 60607",
+      "datasetTitle": "Al's #1 Italian Beef",
+      "datasetAddr": "1079 W Taylor St, Chicago, IL 60607",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipPumTppnyjCzNdMfx19E53jlovGjVkf4BTkTicA=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipODcXW2tFXGPVDeE5_G9Tz-KJU1CydmeR_zbN9x=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7374,
+      "name": "Crust Pizza Co. The Woodlands",
+      "cardAddr": "4775 W Panther Creek Dr Ste 530, The Woodlands, TX 77381",
+      "datasetTitle": "Crust Pizza Co. - Panther Creek",
+      "datasetAddr": "4775 W Panther Creek Dr #530, The Woodlands, TX 77381",
+      "count": 2,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOxYXW3_AK4crUrmMezbdpoMsw-v1GUXai1-fNK=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNAnDoDVA9lEJ4WuHHsF9WpIdh4GEcQDm9R4dNR=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7350,
+      "name": "BJ's Restaurant & Brewhouse Pearland",
+      "cardAddr": "11200 Broadway St, Pearland TX 77584",
+      "datasetTitle": "BJ's Restaurant & Brewhouse",
+      "datasetAddr": "11200 W Broadway St Suite 1700, Pearland, TX 77584",
+      "count": 3,
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipOwI1qwYKeIc-y4tkQ0wgn9jgQoHinWvhvRWLuQ=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipNc_m1fwuOB7lxUULX7unDjy1LSRXxlf_3OwRtb=w1920-h1080-k-no",
+        "https://lh3.googleusercontent.com/p/AF1QipOczJeQTv4nPeynLtbeWAnsZcyRD-d4XexzI6Cu=w1920-h1080-k-no"
+      ],
+      "matchKind": "multiToken",
+      "addrReason": "zip"
+    }
+  ],
+  "cleared_edits": [
+    {
+      "city": "DALLAS_DATA",
+      "id": 473,
+      "name": "Whistle Britches",
+      "cardAddr": "6110 Frankford Rd, Dallas, TX 75252",
+      "wrongMatch": "Whistle Britches - Willow Bend",
+      "wrongAddr": "2405 Dallas Pkwy SUITE 4, Plano, TX 75093"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15492,
+      "name": "Aladdin Mediterranean Cafe",
+      "cardAddr": "5365 El Cajon Blvd, San Diego, CA 92115",
+      "wrongMatch": "Aladdin Mediterranean Restaurant",
+      "wrongAddr": "5420 Clairemont Mesa Blvd, San Diego, CA 92117"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15399,
+      "name": "Farmer's Table — La Jolla",
+      "cardAddr": "8799 La Jolla Village Dr, San Diego, CA 92037",
+      "wrongMatch": "Farmer's Table La Mesa",
+      "wrongAddr": "8141 La Mesa Blvd, La Mesa, CA 91942"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15344,
+      "name": "Mastro's Ocean Club — Del Mar",
+      "cardAddr": "11990 El Camino Real, San Diego, CA 92130",
+      "wrongMatch": "Mastro's Ocean Club",
+      "wrongAddr": "901 Bayfront Ct Suite 105, San Diego, CA 92101"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15271,
+      "name": "Spices Thai Cafe",
+      "cardAddr": "3900 Fifth Ave, San Diego, CA 92103",
+      "wrongMatch": "Spices Thai Kitchen",
+      "wrongAddr": "3810 Valley Centre Dr #903, San Diego, CA 92130"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15199,
+      "name": "Bay Park Fish Co.",
+      "cardAddr": "4121 Morena Blvd, San Diego, CA 92117",
+      "wrongMatch": "Bay Park Fish Company",
+      "wrongAddr": "4121 Ashton St, San Diego, CA 92110"
+    },
+    {
+      "city": "SD_DATA",
+      "id": 15027,
+      "name": "Carnitas' Snack Shack — North Park",
+      "cardAddr": "2632 University Ave, San Diego, CA 92104",
+      "wrongMatch": "Carnitas' Snack Shack - Embarcadero",
+      "wrongAddr": "1004 N Harbor Dr, San Diego, CA 92101"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3419,
+      "name": "Mi Patio Mexican Food",
+      "cardAddr": "3347 N 16th St, Phoenix, AZ 85016",
+      "wrongMatch": "Mi Patio Mexican Restaurant",
+      "wrongAddr": "3347 N 7th Ave, Phoenix, AZ 85013"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3409,
+      "name": "Gadzooks Enchiladas + Soup",
+      "cardAddr": "2152 E University Dr, Tempe, AZ 85281",
+      "wrongMatch": "Gadzooks Enchiladas and Soup",
+      "wrongAddr": "3313 N 7th St, Phoenix, AZ 85014"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3379,
+      "name": "North Italia Kierland",
+      "cardAddr": "15031 N Scottsdale Rd, Scottsdale, AZ 85254",
+      "wrongMatch": "North Italia",
+      "wrongAddr": "15024 N Scottsdale Rd, Scottsdale, AZ 85254"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3377,
+      "name": "Pomo Pizzeria Napoletana Downtown",
+      "cardAddr": "705 N 1st St, Phoenix, AZ 85004",
+      "wrongMatch": "Pomo Pizzeria Napoletana",
+      "wrongAddr": "8977 N Scottsdale Rd #504, Scottsdale, AZ 85253"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3366,
+      "name": "Phil's Filling Station Grill",
+      "cardAddr": "4815 E Warner Rd, Phoenix, AZ 85044",
+      "wrongMatch": "Phil's Filling Station",
+      "wrongAddr": "16852 E Parkview Ave, Fountain Hills, AZ 85268"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3314,
+      "name": "El Chullo Peruvian Restaurant",
+      "cardAddr": "1025 E Indian School Rd, Phoenix, AZ 85014",
+      "wrongMatch": "El Chullo Peruvian Restaurant & Bar",
+      "wrongAddr": "4414 N 7th Ave, Phoenix, AZ 85013"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3304,
+      "name": "Flower Child Phoenix",
+      "cardAddr": "5522 N 7th St, Phoenix, AZ 85014",
+      "wrongMatch": "Flower Child",
+      "wrongAddr": "100 E Camelback Rd, Phoenix, AZ 85012"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3274,
+      "name": "Butters Pancakes & Cafe",
+      "cardAddr": "6590 E Thomas Rd, Scottsdale, AZ 85251",
+      "wrongMatch": "Butters Pancakes & Café",
+      "wrongAddr": "8300 Hayden Rd f104, Scottsdale, AZ 85258"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3273,
+      "name": "Crust Simply Italian",
+      "cardAddr": "7133 E Stetson Dr, Scottsdale, AZ 85251",
+      "wrongMatch": "Crust Simply Italian Scottsdale",
+      "wrongAddr": "8300 Hayden Rd Suite F101, Scottsdale, AZ 85258"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3200,
+      "name": "Macayo's Mexican Kitchen",
+      "cardAddr": "4001 N Central Ave, Phoenix, AZ 85012",
+      "wrongMatch": "Macayo's Mexican Food",
+      "wrongAddr": "12637 S 48th St, Phoenix, AZ 85044"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3186,
+      "name": "Eddie V's Prime Seafood Scottsdale",
+      "cardAddr": "20715 N Pima Rd, Scottsdale, AZ 85255",
+      "wrongMatch": "Eddie V's Prime Seafood",
+      "wrongAddr": "15323 N Scottsdale Rd Suite E160, Scottsdale, AZ 85254"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12359,
+      "name": "Bourbon Steak Las Vegas",
+      "cardAddr": "2777 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "wrongMatch": "Bourbon Steak by Michael Mina",
+      "wrongAddr": "3960 S Las Vegas Blvd, Las Vegas, NV 89119"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11545,
+      "name": "Fillings & Emulsions",
+      "cardAddr": "1475 S 900 E, Salt Lake City, UT 84105",
+      "wrongMatch": "Fillings & Emulsions 300 West",
+      "wrongAddr": "1391 S 300 W, Salt Lake City, UT 84115"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11510,
+      "name": "Kitchen Eighty-Eight",
+      "cardAddr": "3200 N Thanksgiving Way, Lehi, UT 84043",
+      "wrongMatch": "Kitchen Eighty Eight - American Fork",
+      "wrongAddr": "513 S 500 E St Ste. B, American Fork, UT 84003"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11433,
+      "name": "Iceberg Drive Inn",
+      "cardAddr": "3900 S 900 E, Salt Lake City, UT 84124",
+      "wrongMatch": "Iceberg Drive Inn 3900 South",
+      "wrongAddr": "3906 900 E, Millcreek, UT 84107"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11403,
+      "name": "Greenhouse Effect Coffee",
+      "cardAddr": "312 E 300 S, Salt Lake City, UT 84111",
+      "wrongMatch": "Greenhouse Effect Coffee and Crepes UT",
+      "wrongAddr": "3231 S 900 E, Millcreek, UT 84106"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11402,
+      "name": "Victor's Pizza",
+      "cardAddr": "3501 S 2300 E, Millcreek, UT 84109",
+      "wrongMatch": "Victor's pizza co",
+      "wrongAddr": "545 W 3900 S, Salt Lake City, UT 84123"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11384,
+      "name": "OAK Wood Fire Kitchen SLC",
+      "cardAddr": "1465 S 700 E, Salt Lake City, UT 84105",
+      "wrongMatch": "OAK Wood Fire Kitchen",
+      "wrongAddr": "715 E 12300 S, Draper, UT 84020"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11364,
+      "name": "Nohm",
+      "cardAddr": "171 E 200 S, Salt Lake City, UT 84111",
+      "wrongMatch": "Bar Nohm",
+      "wrongAddr": "165 W 900 S, Salt Lake City, UT 84101"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11355,
+      "name": "Roots Coffee",
+      "cardAddr": "1950 S 1100 E, Salt Lake City, UT 84106",
+      "wrongMatch": "Roots Coffee Salt Lake City",
+      "wrongAddr": "774 S 300 W, Salt Lake City, UT 84101"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11299,
+      "name": "Early Owl Cafe",
+      "cardAddr": "2100 S 1100 E, Salt Lake City, UT 84106",
+      "wrongMatch": "Early Owl",
+      "wrongAddr": "155 E 900 S, Salt Lake City, UT 84111"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11288,
+      "name": "Sara Thai Kitchen",
+      "cardAddr": "34 E 600 S, Salt Lake City, UT 84111",
+      "wrongMatch": "Sara Thai Kitchen Sugarhouse",
+      "wrongAddr": "609 E 2100 S, Salt Lake City, UT 84106"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11178,
+      "name": "Enrico's Deli",
+      "cardAddr": "11516 S District Main Dr, South Jordan, UT 84095",
+      "wrongMatch": "Enrico's Deli & Pizzeria",
+      "wrongAddr": "3778 Center View Way #130, West Jordan, UT 84084"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11153,
+      "name": "Mint Tapas & Sushi",
+      "cardAddr": "340 W 200 S, Salt Lake City, UT 84101",
+      "wrongMatch": "Mint Tapas and Sushi 4 (Sugar House)",
+      "wrongAddr": "2121 S McClelland St ste 109, Salt Lake City, UT 84106"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11150,
+      "name": "Tsunami Sushi",
+      "cardAddr": "1429 E 2100 S, Salt Lake City, UT 84105",
+      "wrongMatch": "Tsunami Restaurant & Sushi Bar - Tsunami on 9th",
+      "wrongAddr": "1059 E 900 S, Salt Lake City, UT 84102"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5326,
+      "name": "Austin's Pizza",
+      "cardAddr": "3638 S Lamar Blvd, Austin, TX 78704",
+      "wrongMatch": "Austin's Pizza Westlake",
+      "wrongAddr": "3638 Bee Caves Rd, Austin, TX 78746"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7392,
+      "name": "Babin's Seafood House Katy",
+      "cardAddr": "2300 Texmati Dr, Katy TX 77494",
+      "wrongMatch": "Babin's Seafood House",
+      "wrongAddr": "21851 Katy Fwy, Katy, TX 77450"
+    },
+    {
+      "city": "SANANTONIO_DATA",
+      "id": 6048,
+      "name": "Botero Tapas & Wine",
+      "cardAddr": "5862 Broadway St, San Antonio TX 78209",
+      "wrongMatch": "El Botero Tapas + Wine Bar",
+      "wrongAddr": "161 S Main St, Boerne, TX 78006"
+    }
+  ]
+}
