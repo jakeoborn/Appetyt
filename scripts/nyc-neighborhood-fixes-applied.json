@@ -1,0 +1,292 @@
+{
+  "applied": [
+    {
+      "id": 1295,
+      "from": "Williamsburg",
+      "to": "Coney Island / South Brooklyn",
+      "reason": "Pho Hoai: 1906 Avenue U Brooklyn 11229 + coords (40.60,-73.95) — Sheepshead Bay"
+    },
+    {
+      "id": 1312,
+      "from": "Harlem",
+      "to": "Chelsea",
+      "reason": "Lolo's Seafood Shack: 25 11th Ave 10011 + coords (40.74,-74.01) — Chelsea/Meatpacking"
+    },
+    {
+      "id": 1683,
+      "from": "Astoria",
+      "to": "Queens",
+      "reason": "Forest Hills Stadium: Forest Hills 11375 + coords (40.72,-73.85) — Queens"
+    },
+    {
+      "id": 1792,
+      "from": "Midtown West",
+      "to": "Astoria",
+      "reason": "Sal Kris & Charlie's Deli: Astoria 11105 + coords (40.77,-73.91) — Astoria"
+    },
+    {
+      "id": 1852,
+      "from": "Lower East Side",
+      "to": "Upper West Side",
+      "reason": "Pig and Khao: 433 Amsterdam Ave 10024 + coords (40.78,-73.98) — UWS"
+    },
+    {
+      "id": 1058,
+      "from": "Midtown",
+      "to": "Chinatown",
+      "reason": "Xi'an Famous Foods: 45 Bayard St 10013 — Chinatown"
+    },
+    {
+      "id": 1059,
+      "from": "Midtown",
+      "to": "East Village",
+      "reason": "2 Bros Pizza: 32 St Marks Pl 10003 — East Village"
+    },
+    {
+      "id": 1118,
+      "from": "West Village",
+      "to": "Financial District",
+      "reason": "Mah-Ze-Dahr: 225 Liberty St 10281 — FiDi"
+    },
+    {
+      "id": 1170,
+      "from": "Williamsburg",
+      "to": "Greenwich Village",
+      "reason": "Llama Inn card: 359 6th Ave 10014 + coord (40.73,-74.00) — GV"
+    },
+    {
+      "id": 1288,
+      "from": "Brooklyn Heights",
+      "to": "Park Slope / Prospect Heights",
+      "reason": "Hanco's: 354 7th Ave Brooklyn 11215 — Park Slope"
+    },
+    {
+      "id": 1342,
+      "from": "Williamsburg",
+      "to": "Park Slope / Prospect Heights",
+      "reason": "Ramen Danbo: 52 7th Ave Brooklyn 11217 — Park Slope"
+    },
+    {
+      "id": 1358,
+      "from": "Harlem",
+      "to": "Bronx",
+      "reason": "El Atoradero: 800 E 149th St Bronx 10455 — Bronx"
+    },
+    {
+      "id": 1424,
+      "from": "Chinatown",
+      "to": "Flatiron / NoMad",
+      "reason": "S&P Lunch: 174 5th Ave 10010 — Flatiron"
+    },
+    {
+      "id": 1449,
+      "from": "East Village",
+      "to": "Upper East Side",
+      "reason": "Bua Thai: 1611 2nd Ave 10028 — UES"
+    },
+    {
+      "id": 1454,
+      "from": "Flatiron / NoMad",
+      "to": "Williamsburg",
+      "reason": "K'Far: 97 Wythe Ave Brooklyn 11249 — Williamsburg"
+    },
+    {
+      "id": 1466,
+      "from": "Williamsburg",
+      "to": "Carroll Gardens / Cobble Hill",
+      "reason": "Cafe Spaghetti: 126 Union St Brooklyn 11231 — Carroll Gardens"
+    },
+    {
+      "id": 1486,
+      "from": "Brooklyn Heights",
+      "to": "Park Slope / Prospect Heights",
+      "reason": "Leland E&D House: 755 Dean St Brooklyn 11238 — Prospect Heights"
+    },
+    {
+      "id": 1512,
+      "from": "NoHo",
+      "to": "Carroll Gardens / Cobble Hill",
+      "reason": "Mile End Deli: 97 Hoyt St Brooklyn 11217 — Boerum Hill/Carroll Gardens edge"
+    },
+    {
+      "id": 1539,
+      "from": "West Village",
+      "to": "Upper West Side",
+      "reason": "Westville: 2290 Broadway 10024 — UWS"
+    },
+    {
+      "id": 1619,
+      "from": "Williamsburg",
+      "to": "East Williamsburg",
+      "reason": "Pacha NY: 140 Stewart Ave Brooklyn 11237 — East Williamsburg"
+    },
+    {
+      "id": 1643,
+      "from": "DUMBO",
+      "to": "Carroll Gardens / Cobble Hill",
+      "reason": "DUMBO Boulders: 575 Degraw St Brooklyn 11217 — Carroll Gardens, not DUMBO"
+    },
+    {
+      "id": 1650,
+      "from": "Astoria",
+      "to": "Queens",
+      "reason": "Knockdown Center: Maspeth 11378 + coords (40.72,-73.91) — Queens"
+    },
+    {
+      "id": 1659,
+      "from": "Williamsburg",
+      "to": "Midtown",
+      "reason": "Rough Trade NYC: 1250 6th Ave 10112 — Midtown"
+    },
+    {
+      "id": 1666,
+      "from": "Chinatown",
+      "to": "Williamsburg",
+      "reason": "Superior Ingredients: 74 Wythe Ave Brooklyn 11249 — Williamsburg"
+    },
+    {
+      "id": 1698,
+      "from": "Midtown",
+      "to": "SoHo",
+      "reason": "Azul on the Rooftop: 525 Greenwich St 10013 — SoHo/Tribeca edge"
+    },
+    {
+      "id": 1746,
+      "from": "Flatiron / NoMad",
+      "to": "Upper East Side",
+      "reason": "Birch Coffee: 171 E 88th St 10128 — UES"
+    },
+    {
+      "id": 1765,
+      "from": "West Village",
+      "to": "Financial District",
+      "reason": "Remi Flower & Coffee: 130 William St 10038 — FiDi"
+    },
+    {
+      "id": 1785,
+      "from": "Lower East Side",
+      "to": "Downtown Brooklyn",
+      "reason": "Claw Daddy: 31 3rd Ave Brooklyn 11217 — Boerum Hill/DT Brooklyn"
+    },
+    {
+      "id": 1795,
+      "from": "NoHo",
+      "to": "Hell's Kitchen",
+      "reason": "All'Antico Vinaio: 729 8th Ave 10036 — Hell's Kitchen"
+    },
+    {
+      "id": 1818,
+      "from": "West Village",
+      "to": "Financial District",
+      "reason": "Kesté: 77 Fulton St 10038 — FiDi"
+    },
+    {
+      "id": 1833,
+      "from": "Greenpoint",
+      "to": "Williamsburg",
+      "reason": "She Wolf Bakery: 141 Flushing Ave Brooklyn 11205 — Williamsburg"
+    },
+    {
+      "id": 1853,
+      "from": "Williamsburg",
+      "to": "Carroll Gardens / Cobble Hill",
+      "reason": "Ugly Baby: 407 Smith St Brooklyn 11231 — Carroll Gardens"
+    },
+    {
+      "id": 1860,
+      "from": "Park Slope / Prospect Heights",
+      "to": "Coney Island / South Brooklyn",
+      "reason": "Purple Yam: 1314 Cortelyou Rd Brooklyn 11226 — Ditmas Park/S Brooklyn"
+    }
+  ],
+  "skipped": [],
+  "coord_bugs": [
+    {
+      "id": 1040,
+      "name": "Le Pavillon",
+      "issue": "One Vanderbilt Ave 10017 but coord 40.82,-73.95 is Harlem (should be ~40.753,-73.977)"
+    },
+    {
+      "id": 1260,
+      "name": "Lavo Italian Restaurant",
+      "issue": "39 E 58th St 10022 but coord 40.84,-73.85 is Bronx"
+    },
+    {
+      "id": 1426,
+      "name": "Taim",
+      "issue": "222 Waverly Pl 10014 but coord 40.69,-73.99 is Brooklyn"
+    },
+    {
+      "id": 1440,
+      "name": "Don Ceviche",
+      "issue": "321 W 44th St 10036 but coord 40.72,-73.99 is SoHo"
+    },
+    {
+      "id": 1442,
+      "name": "Teranga",
+      "issue": "1280 5th Ave 10029 but coord 40.76,-73.97 is Midtown"
+    },
+    {
+      "id": 1445,
+      "name": "Huertas",
+      "issue": "987 1st Ave 10022 (Sutton Pl) but real venue is 107 E 7th (East Village) — card inconsistent"
+    },
+    {
+      "id": 1506,
+      "name": "Twin Tails",
+      "issue": "85 Spring St 10012 but coord 40.77,-73.98 is Midtown"
+    },
+    {
+      "id": 1570,
+      "name": "Le Dive",
+      "issue": "221 Bedford Ave Brooklyn 11211 but coord 40.71,-73.99 is LES"
+    },
+    {
+      "id": 1574,
+      "name": "Harriet's Rooftop",
+      "issue": "1170 Broadway 10001 but coord 40.70,-74.00 is FiDi"
+    },
+    {
+      "id": 1624,
+      "name": "Desert 5 Spot",
+      "issue": "94 Wythe Ave Brooklyn 11249 but coord 40.66,-73.99 is Park Slope"
+    },
+    {
+      "id": 1838,
+      "name": "Hanjan",
+      "issue": "36 W 26th St 10010 but coord 40.76,-73.81 is Queens"
+    },
+    {
+      "id": 1873,
+      "name": "Shuko",
+      "issue": "47 E 12th St 10003 but coord 40.76,-73.97 is Midtown"
+    }
+  ],
+  "chain_or_no_bucket": [
+    {
+      "id": 1167,
+      "name": "Chick-fil-A",
+      "issue": "address \"Various locations\"; needs a specific location"
+    },
+    {
+      "id": 1166,
+      "name": "Sweetgreen",
+      "issue": "address \"Various locations\"; needs a specific location"
+    },
+    {
+      "id": 1706,
+      "name": "NYC Ferry",
+      "issue": "Multiple stops"
+    },
+    {
+      "id": 1572,
+      "name": "The Roof at The Rockaway Hotel",
+      "issue": "Rockaway Park 11694 — needs a Rockaway bucket"
+    },
+    {
+      "id": 1677,
+      "name": "Statue of Liberty & Ellis Island",
+      "issue": "Liberty Island — offshore"
+    }
+  ]
+}

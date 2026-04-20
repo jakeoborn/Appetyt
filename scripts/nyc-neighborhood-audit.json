@@ -1,0 +1,774 @@
+{
+  "city": "NYC",
+  "checked": 900,
+  "in_bounds": 850,
+  "no_bounds": 0,
+  "severe": [
+    {
+      "id": 1167,
+      "name": "Chick-fil-A",
+      "neighborhood": "Midtown",
+      "addr_city": null,
+      "lat": 40.7545548,
+      "lng": -73.8978073,
+      "address": "Various locations",
+      "dist_deg": 0.0642,
+      "severity": "severe",
+      "suggested": [
+        "Queens"
+      ]
+    },
+    {
+      "id": 1260,
+      "name": "Lavo Italian Restaurant",
+      "neighborhood": "Midtown East",
+      "addr_city": "New York",
+      "lat": 40.8363344,
+      "lng": -73.8543804,
+      "address": "39 E 58th St, New York, NY 10022",
+      "dist_deg": 0.1194,
+      "severity": "severe",
+      "suggested": [
+        "Bronx"
+      ]
+    },
+    {
+      "id": 1572,
+      "name": "The Roof at The Rockaway Hotel",
+      "neighborhood": "Astoria",
+      "addr_city": "Rockaway Park",
+      "lat": 40.581506,
+      "lng": -73.830094,
+      "address": "108-10 Rockaway Beach Dr, Rockaway Park, NY 11694",
+      "dist_deg": 0.189,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 1838,
+      "name": "Hanjan",
+      "neighborhood": "Flatiron / NoMad",
+      "addr_city": "New York",
+      "lat": 40.7646874,
+      "lng": -73.8121653,
+      "address": "36 W 26th St, New York, NY 10010",
+      "dist_deg": 0.1661,
+      "severity": "severe",
+      "suggested": [
+        "Queens"
+      ]
+    }
+  ],
+  "moderate": [
+    {
+      "id": 1040,
+      "name": "Le Pavillon",
+      "neighborhood": "Midtown East",
+      "addr_city": "New York",
+      "lat": 40.8168229,
+      "lng": -73.9460805,
+      "address": "One Vanderbilt Ave, New York, NY 10017",
+      "dist_deg": 0.0457,
+      "severity": "moderate",
+      "suggested": [
+        "Harlem"
+      ]
+    },
+    {
+      "id": 1166,
+      "name": "Sweetgreen",
+      "neighborhood": "Midtown",
+      "addr_city": null,
+      "lat": 40.7473055,
+      "lng": -73.9424334,
+      "address": "Various locations",
+      "dist_deg": 0.0196,
+      "severity": "moderate",
+      "suggested": [
+        "Long Island City",
+        "Queens"
+      ]
+    },
+    {
+      "id": 1426,
+      "name": "Taim",
+      "neighborhood": "West Village",
+      "addr_city": "New York",
+      "lat": 40.6895825,
+      "lng": -73.9852227,
+      "address": "222 Waverly Pl, New York, NY 10014",
+      "dist_deg": 0.0392,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown Brooklyn",
+        "Carroll Gardens / Cobble Hill"
+      ]
+    },
+    {
+      "id": 1440,
+      "name": "Don Ceviche",
+      "neighborhood": "Midtown West",
+      "addr_city": "New York",
+      "lat": 40.7182408,
+      "lng": -73.988107,
+      "address": "321 W 44th St, New York, NY 10036",
+      "dist_deg": 0.0298,
+      "severity": "moderate",
+      "suggested": [
+        "SoHo",
+        "Chinatown",
+        "Lower East Side",
+        "East Village"
+      ]
+    },
+    {
+      "id": 1442,
+      "name": "Teranga",
+      "neighborhood": "Harlem",
+      "addr_city": "New York",
+      "lat": 40.758362,
+      "lng": -73.9698216,
+      "address": "1280 5th Ave, New York, NY 10029",
+      "dist_deg": 0.0375,
+      "severity": "moderate",
+      "suggested": [
+        "Midtown",
+        "Midtown East",
+        "Upper East Side"
+      ]
+    },
+    {
+      "id": 1445,
+      "name": "Huertas",
+      "neighborhood": "East Village",
+      "addr_city": "New York",
+      "lat": 40.7566253,
+      "lng": -73.9644617,
+      "address": "987 1st Ave, New York, NY 10022",
+      "dist_deg": 0.017,
+      "severity": "moderate",
+      "suggested": [
+        "Midtown",
+        "Midtown East",
+        "Roosevelt Island",
+        "Long Island City"
+      ]
+    },
+    {
+      "id": 1506,
+      "name": "Twin Tails",
+      "neighborhood": "SoHo",
+      "addr_city": "New York",
+      "lat": 40.7685526,
+      "lng": -73.9831866,
+      "address": "85 Spring St, New York, NY 10012",
+      "dist_deg": 0.0369,
+      "severity": "moderate",
+      "suggested": [
+        "Hell's Kitchen",
+        "Midtown",
+        "Midtown West",
+        "Central Park South",
+        "Upper West Side",
+        "Lincoln Center",
+        "Upper East Side"
+      ]
+    },
+    {
+      "id": 1570,
+      "name": "Le Dive",
+      "neighborhood": "Williamsburg",
+      "addr_city": "Brooklyn",
+      "lat": 40.71476,
+      "lng": -73.9909434,
+      "address": "221 Bedford Ave, Brooklyn, NY 11211",
+      "dist_deg": 0.0189,
+      "severity": "moderate",
+      "suggested": [
+        "Chinatown",
+        "Lower East Side"
+      ]
+    },
+    {
+      "id": 1574,
+      "name": "Harriet's Rooftop",
+      "neighborhood": "Flatiron / NoMad",
+      "addr_city": "New York",
+      "lat": 40.7023592,
+      "lng": -73.995592,
+      "address": "1170 Broadway, New York, NY 10001",
+      "dist_deg": 0.0326,
+      "severity": "moderate",
+      "suggested": [
+        "Financial District",
+        "Brooklyn Heights",
+        "DUMBO"
+      ]
+    },
+    {
+      "id": 1624,
+      "name": "Desert 5 Spot",
+      "neighborhood": "Williamsburg",
+      "addr_city": "Brooklyn",
+      "lat": 40.6644534,
+      "lng": -73.9852623,
+      "address": "94 Wythe Ave, Brooklyn, NY 11249",
+      "dist_deg": 0.0361,
+      "severity": "moderate",
+      "suggested": [
+        "Park Slope / Prospect Heights"
+      ]
+    },
+    {
+      "id": 1677,
+      "name": "Statue of Liberty & Ellis Island",
+      "neighborhood": "Financial District",
+      "addr_city": "New York",
+      "lat": 40.6892,
+      "lng": -74.0445,
+      "address": "Liberty Island, New York, NY 10004",
+      "dist_deg": 0.0232,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 1706,
+      "name": "NYC Ferry",
+      "neighborhood": "Midtown",
+      "addr_city": null,
+      "lat": 40.7032275,
+      "lng": -74.0062511,
+      "address": "Multiple stops (Wall St, DUMBO, Williamsburg, Astoria, etc)",
+      "dist_deg": 0.0426,
+      "severity": "moderate",
+      "suggested": [
+        "Financial District"
+      ]
+    },
+    {
+      "id": 1873,
+      "name": "Shuko",
+      "neighborhood": "Greenwich Village",
+      "addr_city": "New York",
+      "lat": 40.7562472,
+      "lng": -73.9672816,
+      "address": "47 E 12th St, New York, NY 10003",
+      "dist_deg": 0.0206,
+      "severity": "moderate",
+      "suggested": [
+        "Midtown",
+        "Midtown East"
+      ]
+    }
+  ],
+  "edge": [
+    {
+      "id": 1132,
+      "name": "Lau Pa Sat",
+      "neighborhood": "Financial District",
+      "addr_city": "New York",
+      "lat": 40.7008302,
+      "lng": -73.9883345,
+      "address": "1 John St, New York, NY 10038",
+      "dist_deg": 0.0067,
+      "severity": "edge",
+      "suggested": [
+        "Brooklyn Heights",
+        "DUMBO",
+        "Downtown Brooklyn"
+      ]
+    },
+    {
+      "id": 1298,
+      "name": "SriPraPhai",
+      "neighborhood": "Astoria",
+      "addr_city": "Woodside",
+      "lat": 40.7436,
+      "lng": -73.8991,
+      "address": "64-13 39th Ave, Woodside, NY 11377",
+      "dist_deg": 0.0128,
+      "severity": "edge",
+      "suggested": [
+        "Queens"
+      ]
+    },
+    {
+      "id": 1299,
+      "name": "Osakana",
+      "neighborhood": "West Village",
+      "addr_city": "New York",
+      "lat": 40.7282683,
+      "lng": -73.9872465,
+      "address": "35 W 8th St, New York, NY 10011",
+      "dist_deg": 0.0058,
+      "severity": "edge",
+      "suggested": [
+        "NoHo",
+        "Greenwich Village",
+        "East Village"
+      ]
+    },
+    {
+      "id": 1313,
+      "name": "Madcap Cafe",
+      "neighborhood": "Harlem",
+      "addr_city": "New York",
+      "lat": 40.7876794,
+      "lng": -73.9540001,
+      "address": "2244 Frederick Douglass Blvd, New York, NY 10027",
+      "dist_deg": 0.0073,
+      "severity": "edge",
+      "suggested": [
+        "Upper East Side",
+        "Queens"
+      ]
+    },
+    {
+      "id": 1321,
+      "name": "Tanoreen",
+      "neighborhood": "Coney Island / South Brooklyn",
+      "addr_city": "Brooklyn",
+      "lat": 40.6339,
+      "lng": -74.0258,
+      "address": "7523 3rd Ave, Brooklyn, NY 11209",
+      "dist_deg": 0.0108,
+      "severity": "edge",
+      "suggested": [
+        "Bay Ridge"
+      ]
+    },
+    {
+      "id": 1414,
+      "name": "Gazala's",
+      "neighborhood": "Hell's Kitchen",
+      "addr_city": "New York",
+      "lat": 40.784567,
+      "lng": -73.977056,
+      "address": "709 9th Ave, New York, NY 10019",
+      "dist_deg": 0.0113,
+      "severity": "edge",
+      "suggested": [
+        "Upper West Side",
+        "Upper East Side"
+      ]
+    },
+    {
+      "id": 1416,
+      "name": "Manousheh",
+      "neighborhood": "Greenwich Village",
+      "addr_city": "New York",
+      "lat": 40.7158414,
+      "lng": -73.987356,
+      "address": "403 Grand St, New York, NY 10002",
+      "dist_deg": 0.0082,
+      "severity": "edge",
+      "suggested": [
+        "Lower East Side"
+      ]
+    },
+    {
+      "id": 1448,
+      "name": "Los Hermanos",
+      "neighborhood": "Harlem",
+      "addr_city": "Bronx",
+      "lat": 40.8189192,
+      "lng": -73.9186459,
+      "address": "645 Courtlandt Ave, Bronx, NY 10451",
+      "dist_deg": 0.0064,
+      "severity": "edge",
+      "suggested": [
+        "Bronx"
+      ]
+    },
+    {
+      "id": 1457,
+      "name": "Dept of Culture",
+      "neighborhood": "Williamsburg",
+      "addr_city": "Brooklyn",
+      "lat": 40.6871918,
+      "lng": -73.9507828,
+      "address": "277 S 3rd St, Brooklyn, NY 11211",
+      "dist_deg": 0.0108,
+      "severity": "edge",
+      "suggested": [
+        "Bed-Stuy"
+      ]
+    },
+    {
+      "id": 1484,
+      "name": "Margot",
+      "neighborhood": "Carroll Gardens / Cobble Hill",
+      "addr_city": "Brooklyn",
+      "lat": 40.6873298,
+      "lng": -73.9757753,
+      "address": "69 Lafayette Ave, Brooklyn, NY 11217",
+      "dist_deg": 0.0062,
+      "severity": "edge",
+      "suggested": [
+        "Downtown Brooklyn",
+        "Fort Greene / Clinton Hill",
+        "Park Slope / Prospect Heights"
+      ]
+    },
+    {
+      "id": 1485,
+      "name": "Borgo",
+      "neighborhood": "NoHo",
+      "addr_city": "New York",
+      "lat": 40.742119,
+      "lng": -73.9836069,
+      "address": "124 E 27th St, New York, NY 10016",
+      "dist_deg": 0.0088,
+      "severity": "edge",
+      "suggested": [
+        "Flatiron / NoMad",
+        "Gramercy"
+      ]
+    },
+    {
+      "id": 1492,
+      "name": "Café Carmellini",
+      "neighborhood": "SoHo",
+      "addr_city": "New York",
+      "lat": 40.744913,
+      "lng": -73.9875253,
+      "address": "250 5th Ave, New York, NY 10001",
+      "dist_deg": 0.0129,
+      "severity": "edge",
+      "suggested": [
+        "Chelsea",
+        "Flatiron / NoMad",
+        "Gramercy"
+      ]
+    },
+    {
+      "id": 1542,
+      "name": "Angel's Share",
+      "neighborhood": "East Village",
+      "addr_city": "New York",
+      "lat": 40.7329799,
+      "lng": -74.0042594,
+      "address": "45 Grove St, New York, NY 10014",
+      "dist_deg": 0.0063,
+      "severity": "edge",
+      "suggested": [
+        "West Village",
+        "Greenwich Village"
+      ]
+    },
+    {
+      "id": 1551,
+      "name": "The Portrait Bar",
+      "neighborhood": "Upper East Side",
+      "addr_city": "New York",
+      "lat": 40.7450774,
+      "lng": -73.9877319,
+      "address": "945 Madison Ave, New York, NY 10021",
+      "dist_deg": 0.0132,
+      "severity": "edge",
+      "suggested": [
+        "Chelsea",
+        "Flatiron / NoMad",
+        "Midtown"
+      ]
+    },
+    {
+      "id": 1552,
+      "name": "Midnight Blue",
+      "neighborhood": "Tribeca",
+      "addr_city": "New York",
+      "lat": 40.7371932,
+      "lng": -73.9874844,
+      "address": "106 E 19th St, New York, NY 10003",
+      "dist_deg": 0.014,
+      "severity": "edge",
+      "suggested": [
+        "Greenwich Village",
+        "East Village",
+        "Flatiron / NoMad",
+        "Gramercy"
+      ]
+    },
+    {
+      "id": 1553,
+      "name": "Oddball",
+      "neighborhood": "West Village",
+      "addr_city": "New York",
+      "lat": 40.7279323,
+      "lng": -73.9793478,
+      "address": "188 Avenue B, New York, NY 10009",
+      "dist_deg": 0.0137,
+      "severity": "edge",
+      "suggested": [
+        "East Village"
+      ]
+    },
+    {
+      "id": 1554,
+      "name": "Seed Library",
+      "neighborhood": "West Village",
+      "addr_city": "New York",
+      "lat": 40.7447717,
+      "lng": -73.9834136,
+      "address": "51 E 30th St, New York, NY 10016",
+      "dist_deg": 0.0096,
+      "severity": "edge",
+      "suggested": [
+        "Flatiron / NoMad",
+        "Gramercy"
+      ]
+    },
+    {
+      "id": 1561,
+      "name": "Ornithology Jazz Club",
+      "neighborhood": "Crown Heights",
+      "addr_city": "Brooklyn",
+      "lat": 40.6955888,
+      "lng": -73.9319823,
+      "address": "6 Suydam St, Brooklyn, NY 11221",
+      "dist_deg": 0.0106,
+      "severity": "edge",
+      "suggested": [
+        "Bushwick",
+        "Bed-Stuy"
+      ]
+    },
+    {
+      "id": 1653,
+      "name": "Lavo Party Brunch",
+      "neighborhood": "Midtown East",
+      "addr_city": "New York",
+      "lat": 40.7464653,
+      "lng": -73.9909617,
+      "address": "105 W 28th St, New York, NY 10001",
+      "dist_deg": 0.008,
+      "severity": "edge",
+      "suggested": [
+        "Chelsea",
+        "Flatiron / NoMad",
+        "Midtown"
+      ]
+    },
+    {
+      "id": 1656,
+      "name": "Cielo",
+      "neighborhood": "Meatpacking District",
+      "addr_city": "New York",
+      "lat": 40.7465628,
+      "lng": -73.9888768,
+      "address": "1227 Broadway, New York, NY 10001",
+      "dist_deg": 0.0091,
+      "severity": "edge",
+      "suggested": [
+        "Chelsea",
+        "Flatiron / NoMad",
+        "Midtown"
+      ]
+    },
+    {
+      "id": 1667,
+      "name": "Under the K Bridge Park",
+      "neighborhood": "Greenpoint",
+      "addr_city": "Brooklyn",
+      "lat": 40.7270239,
+      "lng": -73.929761,
+      "address": "Under the Kosciuszko Bridge, Greenpoint, Brooklyn, NY 11222",
+      "dist_deg": 0.0052,
+      "severity": "edge",
+      "suggested": [
+        "Queens"
+      ]
+    },
+    {
+      "id": 1694,
+      "name": "Rooftop Reds",
+      "neighborhood": "Williamsburg",
+      "addr_city": "Brooklyn",
+      "lat": 40.6985601,
+      "lng": -73.97774,
+      "address": "Brooklyn Navy Yard, Building 275, Brooklyn, NY 11205",
+      "dist_deg": 0.0057,
+      "severity": "edge",
+      "suggested": [
+        "Downtown Brooklyn"
+      ]
+    },
+    {
+      "id": 1700,
+      "name": "Vida Verde",
+      "neighborhood": "Flatiron / NoMad",
+      "addr_city": "New York",
+      "lat": 40.7649659,
+      "lng": -73.9829744,
+      "address": "248 W 55th St, New York, NY 10019",
+      "dist_deg": 0.01,
+      "severity": "edge",
+      "suggested": [
+        "Midtown",
+        "Midtown West",
+        "Midtown East",
+        "Central Park South",
+        "Upper East Side"
+      ]
+    },
+    {
+      "id": 1725,
+      "name": "Barclays Center",
+      "neighborhood": "Brooklyn Heights",
+      "addr_city": "Brooklyn",
+      "lat": 40.6826,
+      "lng": -73.9754,
+      "address": "620 Atlantic Ave, Brooklyn, NY 11217",
+      "dist_deg": 0.0128,
+      "severity": "edge",
+      "suggested": [
+        "Fort Greene / Clinton Hill",
+        "Park Slope / Prospect Heights"
+      ]
+    },
+    {
+      "id": 1745,
+      "name": "Stumptown Coffee Roasters",
+      "neighborhood": "Greenwich Village",
+      "addr_city": "New York",
+      "lat": 40.7451,
+      "lng": -73.9886,
+      "address": "18 W 29th St, New York, NY 10001",
+      "dist_deg": 0.0051,
+      "severity": "edge",
+      "suggested": [
+        "Chelsea",
+        "Flatiron / NoMad",
+        "Midtown"
+      ]
+    },
+    {
+      "id": 1747,
+      "name": "Milk Bar",
+      "neighborhood": "East Village",
+      "addr_city": "New York",
+      "lat": 40.7334552,
+      "lng": -74.0032794,
+      "address": "251 E 13th St, New York, NY 10003",
+      "dist_deg": 0.0053,
+      "severity": "edge",
+      "suggested": [
+        "West Village",
+        "Greenwich Village"
+      ]
+    },
+    {
+      "id": 1764,
+      "name": "Blank Street Coffee",
+      "neighborhood": "Williamsburg",
+      "addr_city": "Brooklyn",
+      "lat": 40.6873527,
+      "lng": -73.975325,
+      "address": "75 Lafayette Ave, Brooklyn, NY 11217",
+      "dist_deg": 0.0112,
+      "severity": "edge",
+      "suggested": [
+        "Downtown Brooklyn",
+        "Fort Greene / Clinton Hill",
+        "Park Slope / Prospect Heights"
+      ]
+    },
+    {
+      "id": 1768,
+      "name": "Insomnia Cookies",
+      "neighborhood": "East Village",
+      "addr_city": "New York",
+      "lat": 40.7450005,
+      "lng": -73.978917,
+      "address": "482 3rd Ave, New York, NY 10016",
+      "dist_deg": 0.005,
+      "severity": "edge",
+      "suggested": [
+        "Flatiron / NoMad",
+        "Midtown",
+        "Midtown East"
+      ]
+    },
+    {
+      "id": 1775,
+      "name": "Ichiran Ramen",
+      "neighborhood": "Williamsburg",
+      "addr_city": "Brooklyn",
+      "lat": 40.7073387,
+      "lng": -73.9334306,
+      "address": "374 Johnson Ave, Brooklyn, NY 11206",
+      "dist_deg": 0.0066,
+      "severity": "edge",
+      "suggested": [
+        "East Williamsburg",
+        "Bushwick",
+        "Queens"
+      ]
+    },
+    {
+      "id": 1828,
+      "name": "Fabrique Bakery",
+      "neighborhood": "Nolita",
+      "addr_city": "New York",
+      "lat": 40.7404517,
+      "lng": -74.0047474,
+      "address": "348 W 14th St, New York, NY 10014",
+      "dist_deg": 0.0133,
+      "severity": "edge",
+      "suggested": [
+        "West Village",
+        "Meatpacking District",
+        "Chelsea"
+      ]
+    },
+    {
+      "id": 1871,
+      "name": "Sushi Azabu",
+      "neighborhood": "Tribeca",
+      "addr_city": "New York",
+      "lat": 40.7333936,
+      "lng": -74.0056193,
+      "address": "119 Christopher St, New York, NY 10014",
+      "dist_deg": 0.0054,
+      "severity": "edge",
+      "suggested": [
+        "West Village"
+      ]
+    },
+    {
+      "id": 1877,
+      "name": "Bar Masa",
+      "neighborhood": "Hudson Yards",
+      "addr_city": "New York",
+      "lat": 40.7685,
+      "lng": -73.9826,
+      "address": "10 Columbus Cir, New York, NY 10019",
+      "dist_deg": 0.0064,
+      "severity": "edge",
+      "suggested": [
+        "Midtown",
+        "Midtown West",
+        "Midtown East",
+        "Central Park South",
+        "Upper West Side",
+        "Lincoln Center",
+        "Upper East Side"
+      ]
+    },
+    {
+      "id": 1888,
+      "name": "Scarpetta",
+      "neighborhood": "Meatpacking District",
+      "addr_city": "New York",
+      "lat": 40.7437,
+      "lng": -73.9843,
+      "address": "88 Madison Ave, New York, NY 10016",
+      "dist_deg": 0.0137,
+      "severity": "edge",
+      "suggested": [
+        "Flatiron / NoMad",
+        "Gramercy"
+      ]
+    }
+  ]
+}
