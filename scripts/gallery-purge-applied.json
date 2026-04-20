@@ -1,0 +1,5417 @@
+{
+  "timestamp": "2026-04-20T16:53:49.606Z",
+  "bucketACount": 24,
+  "bucketBCount": 652,
+  "skipped": 0,
+  "missed": [],
+  "edits": [
+    {
+      "city": "PHX_DATA",
+      "id": 3118,
+      "name": "Sottise",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3104,
+      "name": "Cold Beers & Cheeseburgers",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3103,
+      "name": "Majerle's Sports Grill",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3069,
+      "name": "Vovomeena",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3060,
+      "name": "J&G Steakhouse",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3057,
+      "name": "Steak 44",
+      "was": 10,
+      "now": 5,
+      "action": "filter"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3031,
+      "name": "Pizzeria Bianco",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3029,
+      "name": "Chilte",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3020,
+      "name": "Casa Corazon Restaurant",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3017,
+      "name": "Mister Pio",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "PHX_DATA",
+      "id": 3007,
+      "name": "Chula Seafood Uptown",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12567,
+      "name": "Sweetgreen",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12565,
+      "name": "TAO Chicago",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12564,
+      "name": "STK Steakhouse",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12549,
+      "name": "International Museum of Surgical Science",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12548,
+      "name": "The Hand & The Eye",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12547,
+      "name": "Blue Door Kitchen & Garden",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12546,
+      "name": "Minyoli",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12543,
+      "name": "Sparrow",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12541,
+      "name": "Bartoli's Pizzeria",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12537,
+      "name": "Elina's",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12529,
+      "name": "Sushi-San",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12528,
+      "name": "El Che Steakhouse & Bar",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12527,
+      "name": "The Oakville Grill & Cellar",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12526,
+      "name": "Itoko",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 12523,
+      "name": "Dēliz",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 535,
+      "name": "Lexington Betty Smokehouse",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 534,
+      "name": "Lalo's on Maxwell",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 519,
+      "name": "Half Acre Balmoral Taproom",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 518,
+      "name": "Dovetail Brewery",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 477,
+      "name": "Artopolis Bakery",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 471,
+      "name": "Bundoo Khan",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 465,
+      "name": "Hawksmoor Chicago",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 442,
+      "name": "Avli River North",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 393,
+      "name": "Michael Jordan's Steak House",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 355,
+      "name": "Swift & Sons Tavern",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 331,
+      "name": "Petite Edith",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 327,
+      "name": "Acanto",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 325,
+      "name": "The Gage",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 318,
+      "name": "Spacca Napoli Pizzeria",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 312,
+      "name": "Le Colonial",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 300,
+      "name": "A Tavola",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 294,
+      "name": "m.henry",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 286,
+      "name": "Bar Roma",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 277,
+      "name": "Gus' Sip & Dip",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 276,
+      "name": "Cafe Yaya",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 273,
+      "name": "Elia",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 269,
+      "name": "Boonie's Filipino Restaurant",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 267,
+      "name": "Nettare",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 266,
+      "name": "Anelya",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 264,
+      "name": "Atsumeru",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 259,
+      "name": "Mariscos San Pedro",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 258,
+      "name": "Jeong",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 242,
+      "name": "Chef's Special Cocktail Bar",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 240,
+      "name": "Boonie's",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 236,
+      "name": "Duck Duck Goat",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 231,
+      "name": "Pretty Cool Ice Cream",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 230,
+      "name": "Jeni's Splendid Ice Creams",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 229,
+      "name": "Winter's Jazz Club",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 226,
+      "name": "iO Theater",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 223,
+      "name": "Chi Cafe",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 208,
+      "name": "Mon Ami Gabi",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 206,
+      "name": "Marz Community Brewing",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 204,
+      "name": "Revolution Brewing",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 203,
+      "name": "Celeste",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 197,
+      "name": "Shaw's Crab House",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 191,
+      "name": "Lillie's Q",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 190,
+      "name": "Green Street Smoked Meats",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 189,
+      "name": "Little Goat Diner",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 172,
+      "name": "Swift & Sons",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 171,
+      "name": "Kie-Gol-Lanee",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 170,
+      "name": "Ciccio Mio",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 164,
+      "name": "Mirra",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 163,
+      "name": "Nadu",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 160,
+      "name": "Gilt Bar",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 156,
+      "name": "Cariño",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 152,
+      "name": "Next",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 151,
+      "name": "Sepia",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 148,
+      "name": "5 Rabanitos",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 144,
+      "name": "Half Acre Beer Company",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 139,
+      "name": "Funkenhausen",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 133,
+      "name": "Cafe Ba-Ba-Reeba!",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 129,
+      "name": "Bang Bang Pie & Biscuits",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 121,
+      "name": "Forbidden Root",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 115,
+      "name": "Galit",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 98,
+      "name": "RPM Steak",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 97,
+      "name": "Roister",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 96,
+      "name": "The Purple Pig",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 93,
+      "name": "Irazu",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 92,
+      "name": "Robert's Pizza & Dough Company",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 90,
+      "name": "Crisp",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 88,
+      "name": "Do-Rite Donuts & Chicken",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 80,
+      "name": "Qing Xiang Yuan Dumplings",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 66,
+      "name": "Gibsons Bar & Steakhouse",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 58,
+      "name": "Black Dog Gelato",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 56,
+      "name": "Metric Coffee Co.",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 54,
+      "name": "Three Dots and a Dash",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 53,
+      "name": "Cindy's Rooftop",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 51,
+      "name": "The Aviary",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 50,
+      "name": "Ricobene's",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 40,
+      "name": "Dove's Luncheonette",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 35,
+      "name": "RPM Italian",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 30,
+      "name": "Chicago Architecture River Cruise",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 22,
+      "name": "Bavette's Bar & Boeuf",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 20,
+      "name": "Au Cheval",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 14,
+      "name": "Superdawg Drive-In",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 11,
+      "name": "Giordano's",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "id": 1,
+      "name": "Alinea",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7591,
+      "name": "Sweetgreen",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7584,
+      "name": "Houston Arboretum & Nature Center",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7581,
+      "name": "Levy Park",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7570,
+      "name": "Hypsi",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7569,
+      "name": "Château Bellecru",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7533,
+      "name": "Dumpling World",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7506,
+      "name": "Leaf & Grain",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7485,
+      "name": "Silk Road",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7476,
+      "name": "burger-chan",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7453,
+      "name": "Hongdae 33",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7440,
+      "name": "Winnie's",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7439,
+      "name": "Bungalow Downtown Dining",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7427,
+      "name": "Lankford Grocery & Market",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7420,
+      "name": "BBQ Garden",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7419,
+      "name": "BORI",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7415,
+      "name": "Maderas Kitchen & Cantina",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7412,
+      "name": "Eunice",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7408,
+      "name": "Guard & Grace",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7349,
+      "name": "Pho Ben",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7329,
+      "name": "Seoul Garden",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7325,
+      "name": "Ruggles Green",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7323,
+      "name": "Ragin' Cajun",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7321,
+      "name": "Cafe Express",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7312,
+      "name": "Hopdoddy Burger Bar",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7303,
+      "name": "Lucille's EaDo (Bludorn / Navy Blue sibling)",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7293,
+      "name": "Pax Americana",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7290,
+      "name": "Andes Cafe",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7285,
+      "name": "London Sizzler",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7277,
+      "name": "Navy Blue",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7274,
+      "name": "Dish Society",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7273,
+      "name": "The Toasted Yolk Cafe (Washington)",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7269,
+      "name": "Nobu Houston",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7268,
+      "name": "Le Colonial",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7259,
+      "name": "Potente",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7257,
+      "name": "Children's Museum Houston",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7250,
+      "name": "Mendocino Farms",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7249,
+      "name": "Spicy Girl",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7246,
+      "name": "Soto",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7238,
+      "name": "Double Trouble Caffeine & Cocktails",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7233,
+      "name": "MAD Houston",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7230,
+      "name": "Gringo's Mexican Kitchen",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7208,
+      "name": "Kenny & Ziggy's",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7207,
+      "name": "Bosscat Kitchen & Libations",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7205,
+      "name": "Indianola",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7201,
+      "name": "Heights Bier Garten",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7198,
+      "name": "Johnny's Gold Brick",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7195,
+      "name": "Milton's",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7185,
+      "name": "Karbach Brewing Co.",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7180,
+      "name": "Fung's Kitchen",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7169,
+      "name": "J-Bar-M Barbecue",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7167,
+      "name": "Hidden Omakase",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7158,
+      "name": "Aladdin Mediterranean",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7152,
+      "name": "Afuri Ramen",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7149,
+      "name": "Bludorn",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7146,
+      "name": "Rodeo Goat",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7140,
+      "name": "Little's Oyster Bar",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7139,
+      "name": "Underbelly Burger",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7131,
+      "name": "Steak 48",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7127,
+      "name": "Candente",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7117,
+      "name": "Agnes and Sherman",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7109,
+      "name": "Late August",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7107,
+      "name": "The Marigold Club",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7085,
+      "name": "Rainbow Lodge",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7077,
+      "name": "Pho Saigon",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7076,
+      "name": "The Toasted Coconut",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7061,
+      "name": "Lucille's",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7058,
+      "name": "Pappadeaux Seafood Kitchen",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7057,
+      "name": "The Improv Houston",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7056,
+      "name": "8th Wonder Brewery",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7052,
+      "name": "Boomtown Coffee",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7051,
+      "name": "Wooster's Garden",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7048,
+      "name": "Julep",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7039,
+      "name": "El Tiempo Cantina",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7024,
+      "name": "Loro",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7023,
+      "name": "Coltivare",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7022,
+      "name": "Pinkerton's Barbecue",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "id": 7003,
+      "name": "Le Jardinier",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5568,
+      "name": "Plaza Colombian Coffee Bar",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5556,
+      "name": "Hi Sign Brewing",
+      "was": 10,
+      "now": 5,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5555,
+      "name": "Blue Owl Brewing",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5542,
+      "name": "Cherrywood Coffeehouse",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5540,
+      "name": "Sugar Mama's Bakeshop",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5535,
+      "name": "Independence Brewing Co.",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5530,
+      "name": "Spokesman Coffee",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5524,
+      "name": "Knuckle Sandwich",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5517,
+      "name": "TX Shawarma",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5514,
+      "name": "Poke-Poke",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5513,
+      "name": "Fresa's Chicken al Carbon",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5511,
+      "name": "Granny's Tacos",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5492,
+      "name": "Fleming's Prime Steakhouse",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5491,
+      "name": "III Forks",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5489,
+      "name": "Oddwood Brewing",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5483,
+      "name": "Poeta",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5481,
+      "name": "La Santa Barbacha",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5475,
+      "name": "Clive Bar",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5466,
+      "name": "Perla's",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5464,
+      "name": "Bureau de Poste",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5462,
+      "name": "L'Oca d'Oro",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5461,
+      "name": "Carnitas El Guero",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5456,
+      "name": "Nixta South",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5418,
+      "name": "High Road DelicaTexan",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5412,
+      "name": "De Nada Cantina",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5410,
+      "name": "Vic & Al's",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5379,
+      "name": "Fonda San Miguel Brunch",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5376,
+      "name": "Lenoir Hot Weather Food",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5335,
+      "name": "Summer Moon Coffee",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5324,
+      "name": "El Naranjo",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5301,
+      "name": "Via 313 Pizza",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5299,
+      "name": "Micklethwait Craft Meats",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5297,
+      "name": "Hopdoddy Burger Bar",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5281,
+      "name": "Restaurant François",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5274,
+      "name": "VanHorn's",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5269,
+      "name": "P Thai's Khao Man Gai",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5268,
+      "name": "House of Three Gorges",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5266,
+      "name": "Sahara Lounge",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5265,
+      "name": "Spokesman",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5261,
+      "name": "Kitty Cohen's",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5254,
+      "name": "Hops & Grain Brewery",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5253,
+      "name": "Hold Out Brewing",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5252,
+      "name": "Meanwhile Brewing Co.",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5251,
+      "name": "The ABGB (Austin Beer Garden Brewing Co.)",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5248,
+      "name": "Mi Madre's",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5242,
+      "name": "Korea House",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5232,
+      "name": "ACL Live at The Moody Theater",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5212,
+      "name": "Oddwood Ales",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5207,
+      "name": "Quality Seafood Market",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5206,
+      "name": "Monger's Market + Kitchen",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5201,
+      "name": "Polvos",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5198,
+      "name": "Tatsu-Ya Shops (South Lamar)",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5195,
+      "name": "Juan in a Million",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5191,
+      "name": "Anthem",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5190,
+      "name": "Better Half Coffee & Cocktails",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5189,
+      "name": "Jack Allen's Kitchen",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5188,
+      "name": "Lamberts Downtown Barbecue",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5180,
+      "name": "Fabrik",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5178,
+      "name": "Poet's",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5176,
+      "name": "Mum Foods Smokehouse & Deli",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5174,
+      "name": "Salt & Time Butcher Shop",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5173,
+      "name": "Guero's Taco Bar",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5166,
+      "name": "Blanton Museum of Art",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5157,
+      "name": "Jo's Coffee",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5151,
+      "name": "Drink.Well",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5146,
+      "name": "Mexta",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5140,
+      "name": "Salt Traders Coastal Cooking",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5137,
+      "name": "Taqueria Diez",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5134,
+      "name": "Flitch Coffee",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5133,
+      "name": "Antone's Nightclub",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5126,
+      "name": "Hoover's Cooking",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5123,
+      "name": "Ling Wu",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5119,
+      "name": "Magnolia Cafe",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5114,
+      "name": "Mohawk",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5109,
+      "name": "Discada",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5099,
+      "name": "Batch Craft Beer + Kolaches",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5097,
+      "name": "Zilker Brewing Company",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5095,
+      "name": "Cosmic Coffee + Beer Garden",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5073,
+      "name": "Thai Fresh",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5071,
+      "name": "Pueblo Viejo",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5070,
+      "name": "Matt's El Rancho",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5069,
+      "name": "Home Slice Pizza",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5068,
+      "name": "Via 313",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5067,
+      "name": "Lazarus Brewing Co.",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5060,
+      "name": "Roosevelt Room",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5055,
+      "name": "24 Diner",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5054,
+      "name": "The Peached Tortilla",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5053,
+      "name": "Asti Trattoria",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5050,
+      "name": "Eldorado Cafe",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5046,
+      "name": "Aba Austin",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5042,
+      "name": "Le Calamar",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5039,
+      "name": "Veracruz All Natural",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5038,
+      "name": "Red Ash",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5032,
+      "name": "Craft Omakase",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5027,
+      "name": "Bouldin Creek Cafe",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5026,
+      "name": "Barley Swine",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5013,
+      "name": "Kemuri Tatsu-ya",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5011,
+      "name": "Nixta Taqueria",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5005,
+      "name": "Launderette",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5004,
+      "name": "Odd Duck",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "id": 5001,
+      "name": "Franklin Barbecue",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2307,
+      "name": "LaSorted's",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2249,
+      "name": "Manuela",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2224,
+      "name": "Jitlada Restaurant",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2147,
+      "name": "Yala Coffee",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2121,
+      "name": "STK Steakhouse",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2095,
+      "name": "Alta Adams",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "LA_DATA",
+      "id": 2024,
+      "name": "Hatchet Hall",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1950,
+      "name": "STK Steakhouse",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1941,
+      "name": "Studio Museum in Harlem",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1936,
+      "name": "Essex Market",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1927,
+      "name": "Momofuku Noodle Bar",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1915,
+      "name": "Solomon R. Guggenheim Museum",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1914,
+      "name": "Whitney Museum of American Art",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1905,
+      "name": "Café Altro Paradiso",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1886,
+      "name": "Osteria Morini",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1880,
+      "name": "Empellón",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1875,
+      "name": "Hasaki",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1869,
+      "name": "Dim Sum Palace",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1861,
+      "name": "Jeepney",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1856,
+      "name": "Madame Vo",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1852,
+      "name": "Pig and Khao",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1848,
+      "name": "Bungalow",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1844,
+      "name": "Miss Korea BBQ",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1827,
+      "name": "Bluestone Lane",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1824,
+      "name": "Leo's Bagels",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1802,
+      "name": "Empire State Building",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1800,
+      "name": "No. 7 Sub",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1782,
+      "name": "Sant Ambroeus",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1778,
+      "name": "Tiger Sugar",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1777,
+      "name": "T Swirl Crepe",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1774,
+      "name": "Cafe Panna",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1773,
+      "name": "Mochidoki",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1765,
+      "name": "Remi Flower & Coffee",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1764,
+      "name": "Blank Street Coffee",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1762,
+      "name": "Dailies",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1760,
+      "name": "Think Coffee",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1759,
+      "name": "Variety Coffee Roasters",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1753,
+      "name": "Williamsburg Pizza",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1749,
+      "name": "Ample Hills Creamery",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1748,
+      "name": "Magnolia Bakery",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1747,
+      "name": "Milk Bar",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1745,
+      "name": "Stumptown Coffee Roasters",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1742,
+      "name": "Bufón",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1736,
+      "name": "Rulin",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1735,
+      "name": "Seahorse",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1732,
+      "name": "Double Knot",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1727,
+      "name": "Lombardi's Pizza",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1725,
+      "name": "Barclays Center",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1723,
+      "name": "Liebman's Deli",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1718,
+      "name": "Bronx Night Market",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1710,
+      "name": "Grand Banks",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1709,
+      "name": "Pilot Brooklyn",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1707,
+      "name": "Bateaux New York Dinner Cruise",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1705,
+      "name": "Manhattan by Sail",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1704,
+      "name": "Classic Harbor Line",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1703,
+      "name": "Circle Line Sightseeing Cruises",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1699,
+      "name": "The Roof at PUBLIC",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1696,
+      "name": "Refinery Rooftop",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1688,
+      "name": "Color Factory NYC",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1687,
+      "name": "Artechouse NYC",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1686,
+      "name": "Fotografiska New York",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1682,
+      "name": "St. George Theatre",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1669,
+      "name": "SummerStage in Central Park",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1661,
+      "name": "Beacon Theatre",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1654,
+      "name": "PHD Terrace at Dream Downtown",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1646,
+      "name": "Royal Palms Shuffleboard Club",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1645,
+      "name": "SPIN New York",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1644,
+      "name": "Batsu!",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1641,
+      "name": "Meow Wolf",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1630,
+      "name": "Dizzy's Club",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1624,
+      "name": "Desert 5 Spot",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1623,
+      "name": "C'mon Everybody",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1621,
+      "name": "3 Dollar Bill",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1617,
+      "name": "St. Cloud",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1615,
+      "name": "Broken Shaker",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1611,
+      "name": "Gansevoort Rooftop",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1608,
+      "name": "Mace",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1607,
+      "name": "Patent Pending",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1606,
+      "name": "Lullaby",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1602,
+      "name": "La Lanterna di Vittorio",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1601,
+      "name": "Freemans",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1597,
+      "name": "Barcade",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1596,
+      "name": "Spritzenhaus33",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1588,
+      "name": "The Flatiron Room",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1587,
+      "name": "Raines Law Room",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1581,
+      "name": "Terra Blues",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1579,
+      "name": "Spring Lounge",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1571,
+      "name": "Jimmy",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1569,
+      "name": "Mood Ring",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1563,
+      "name": "LunÀtico",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1561,
+      "name": "Ornithology Jazz Club",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1548,
+      "name": "Martiny's",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1547,
+      "name": "Sugar Monk",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1535,
+      "name": "Grand Army",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1527,
+      "name": "Junior's Restaurant",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1524,
+      "name": "Cervo's",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1518,
+      "name": "Beauty & Essex",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1514,
+      "name": "Dear Irving on Hudson",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1510,
+      "name": "Taiyaki NYC",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1509,
+      "name": "Nyonya",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1505,
+      "name": "Brasserie Fouquet",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1496,
+      "name": "Little Alley",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1490,
+      "name": "Paulie Gee's",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1485,
+      "name": "Borgo",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1481,
+      "name": "Mokbar",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1476,
+      "name": "L&B Spumoni Gardens",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1474,
+      "name": "Hart's",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1473,
+      "name": "Bien Cuit",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1468,
+      "name": "Bar Blondeau",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1464,
+      "name": "Nami Nori",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1461,
+      "name": "Coqodaq",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1454,
+      "name": "K'Far",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1453,
+      "name": "Hawksmoor",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1450,
+      "name": "Theodora",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1442,
+      "name": "Teranga",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1439,
+      "name": "Tim Ho Wan",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1418,
+      "name": "Ippudo",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1412,
+      "name": "By Chloe",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1410,
+      "name": "Avant Garden",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1400,
+      "name": "Grimaldi's Pizzeria",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1396,
+      "name": "Partners Coffee",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1381,
+      "name": "Le Bain",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1374,
+      "name": "Pier 17 Rooftop",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1371,
+      "name": "House of Yes",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1367,
+      "name": "Bemelmans Bar",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1364,
+      "name": "Brooklyn Brewery",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1359,
+      "name": "Bunna Cafe",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1353,
+      "name": "The Original Chinatown Ice Cream Factory",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1337,
+      "name": "Taqueria Ramirez",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1326,
+      "name": "Don Antonio",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1325,
+      "name": "Christos Steakhouse",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1320,
+      "name": "Ops",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1319,
+      "name": "Spice Symphony",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1317,
+      "name": "La Morada",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1316,
+      "name": "Nom Wah Nolita",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1315,
+      "name": "Maison Kayser",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1305,
+      "name": "Sahadi's",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1301,
+      "name": "La Gran Uruguaya",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1293,
+      "name": "Casa Enrique",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1288,
+      "name": "Hanco's",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1285,
+      "name": "John's of Bleecker Street",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1272,
+      "name": "Il Leone",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1271,
+      "name": "Gertie",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1267,
+      "name": "Falansai",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1261,
+      "name": "Cecconi's Dumbo",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1260,
+      "name": "Lavo Italian Restaurant",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1259,
+      "name": "Tao Downtown",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1258,
+      "name": "Catch",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1256,
+      "name": "Quality Meats",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1254,
+      "name": "Celestine",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1249,
+      "name": "King",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1247,
+      "name": "Laser Wolf",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1239,
+      "name": "Dame",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1234,
+      "name": "One If By Land, Two If By Sea",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1233,
+      "name": "Noz Market",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1226,
+      "name": "Adda",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1224,
+      "name": "Txikito",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1223,
+      "name": "Grand Central Oyster Bar",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1216,
+      "name": "Bridges",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1210,
+      "name": "Muku",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1198,
+      "name": "Kosaka",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1195,
+      "name": "Oiji Mi",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1194,
+      "name": "Jua",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1190,
+      "name": "Nōksu",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1188,
+      "name": "Mari",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1187,
+      "name": "Kochi",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1180,
+      "name": "Aska",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1172,
+      "name": "Sushi Noz",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1171,
+      "name": "Juliana's Pizza",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1167,
+      "name": "Chick-fil-A",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1166,
+      "name": "Sweetgreen",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1155,
+      "name": "Russ & Daughters Cafe",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1154,
+      "name": "Smith & Wollensky",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1152,
+      "name": "Superbueno",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1151,
+      "name": "Cuerno",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1148,
+      "name": "Zabar's",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1146,
+      "name": "Jones Wood Foundry",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1142,
+      "name": "Ace's Pizza",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1140,
+      "name": "Ai Fiori",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1136,
+      "name": "Una Pizza Napoletana",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1135,
+      "name": "Kopitiam",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1117,
+      "name": "Veniero's Pasticceria",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1116,
+      "name": "Lysée",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1100,
+      "name": "Chelsea Market",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1099,
+      "name": "Levain Bakery",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1097,
+      "name": "Turbo Pizza",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1089,
+      "name": "Veselka",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1088,
+      "name": "Joe's Shanghai",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1080,
+      "name": "Jack's Wife Freda",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1073,
+      "name": "Double Chicken Please",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1068,
+      "name": "787 Coffee",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1067,
+      "name": "Devoción",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1065,
+      "name": "Halal Guys",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1064,
+      "name": "Tacombi",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1058,
+      "name": "Xi'an Famous Foods",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1053,
+      "name": "Nom Wah Tea Parlor",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1052,
+      "name": "Sylvia's",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1044,
+      "name": "Yamada",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1040,
+      "name": "Le Pavillon",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1037,
+      "name": "COTE Korean Steakhouse",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1034,
+      "name": "Gabriel Kreuther",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1033,
+      "name": "Sushi Sho",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1025,
+      "name": "The Red Rooster",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1011,
+      "name": "Joe's Pizza",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1006,
+      "name": "I Sodi",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1005,
+      "name": "Via Carota",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1004,
+      "name": "Carbone",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "NYC_DATA",
+      "id": 1003,
+      "name": "Peter Luger Steak House",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 103,
+      "name": "Nuri Steakhouse",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 102,
+      "name": "Beto & Son",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 94,
+      "name": "CBD Provisions",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 85,
+      "name": "Casa Pollastro",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 83,
+      "name": "Norman's Japanese Grill",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 76,
+      "name": "Fond",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 75,
+      "name": "Far Out",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 72,
+      "name": "Smokey Joe's BBQ",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "id": 71,
+      "name": "Ngon Vietnamese Kitchen",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12524,
+      "name": "Dough Zone Dumpling House",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12510,
+      "name": "Lotus of Siam Summerlin",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12496,
+      "name": "Grimaldi's Pizzeria Henderson",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12419,
+      "name": "SlotZilla Zip Line",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12413,
+      "name": "Omega Mart",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12375,
+      "name": "Paymon Mediterranean Cafe",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12331,
+      "name": "Monta Ramen",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12280,
+      "name": "Hop Nuts Brewing",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12276,
+      "name": "Nittaya's Secret Kitchen",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12270,
+      "name": "Palate",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12245,
+      "name": "Golden Steer Steakhouse",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12243,
+      "name": "Elia Authentic Greek Taverna",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12235,
+      "name": "Soulbelly BBQ",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12224,
+      "name": "Vintner Grill",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12221,
+      "name": "Marché Bacchus",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12214,
+      "name": "The Kitchen at Atomic",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12206,
+      "name": "Park on Fremont",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12202,
+      "name": "Triple George Grill",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12200,
+      "name": "Andiamo Italian Steakhouse",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12199,
+      "name": "Chart House",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12198,
+      "name": "Vic & Anthony's Steakhouse",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12197,
+      "name": "Saginaw's Delicatessen",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12196,
+      "name": "8 East",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12194,
+      "name": "Oscar's Steakhouse",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12170,
+      "name": "The Underground at The Mob Museum",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12167,
+      "name": "Atomic Liquors",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12156,
+      "name": "Hash House A Go Go",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12152,
+      "name": "Honey Salt",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12112,
+      "name": "Pisces",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12092,
+      "name": "Casa Don Juan",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12064,
+      "name": "Echo & Rig Butcher & Steakhouse",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12053,
+      "name": "Velveteen Rabbit",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "LV_DATA",
+      "id": 12049,
+      "name": "Able Baker Brewing",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9516,
+      "name": "Wing Luke Museum",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9481,
+      "name": "The Shambles",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9405,
+      "name": "Elysian Brewing Capitol Hill",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9381,
+      "name": "Re:public",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9364,
+      "name": "Agua Verde Paddle Club & Cafe",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9348,
+      "name": "Miller's Guild",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9332,
+      "name": "Harvest Beat",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9326,
+      "name": "Il Terrazzo Carmine",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9319,
+      "name": "Manolin",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9316,
+      "name": "Volunteer Park Conservatory",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9315,
+      "name": "Smith Tower Observatory",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9305,
+      "name": "Seattle Aquarium",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9297,
+      "name": "Glo's",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9282,
+      "name": "Le Coin",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9280,
+      "name": "Revel",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9265,
+      "name": "Cloudburst Brewing",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9260,
+      "name": "Lighthouse Roasters",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9258,
+      "name": "Fair Isle Brewing",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9252,
+      "name": "Tavern Law",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9251,
+      "name": "Spinasse",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9250,
+      "name": "Serafina",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9247,
+      "name": "Wild Ginger",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9245,
+      "name": "The Triple Door",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9243,
+      "name": "FOB Poke Bar",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9241,
+      "name": "Ivar's Acres of Clams",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9238,
+      "name": "Navy Strength",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9237,
+      "name": "Oak",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9236,
+      "name": "Quinn's Pub",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9215,
+      "name": "Chiho Bistro",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9213,
+      "name": "Six Seven",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9207,
+      "name": "Ben Paris",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9203,
+      "name": "Little Water Cantina",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9199,
+      "name": "Purple Cafe & Wine Bar",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9196,
+      "name": "Pegasus Pizza",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9194,
+      "name": "Smith",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9191,
+      "name": "Damn the Weather",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9189,
+      "name": "Agua Verde Cafe",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9188,
+      "name": "Chan Seattle",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9186,
+      "name": "Kau Kau Barbeque",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9180,
+      "name": "Harry's Fine Foods",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9177,
+      "name": "Ballard Pizza Company",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9173,
+      "name": "Xi'an Noodles",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9167,
+      "name": "Meskel Ethiopian Restaurant",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9152,
+      "name": "The Chicken Supply",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9150,
+      "name": "Monsoon",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9145,
+      "name": "Sushi Kappo Tamura",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9144,
+      "name": "Poquitos",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9139,
+      "name": "Rachel's Ginger Beer",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9135,
+      "name": "Cortina",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9134,
+      "name": "Frelard Tamales",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9133,
+      "name": "Lark",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9128,
+      "name": "Rocco's",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9124,
+      "name": "Annapurna Cafe",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9119,
+      "name": "Li'l Woody's",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9115,
+      "name": "Kin Len Thai Night Bites",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9114,
+      "name": "L'Oursin",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9112,
+      "name": "Rob Roy",
+      "was": 4,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9111,
+      "name": "Canon",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9110,
+      "name": "Shiro's Sushi",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9108,
+      "name": "Deep Sea Sugar & Salt",
+      "was": 3,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9106,
+      "name": "Marination Ma Kai",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9102,
+      "name": "Windy City Pie",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9094,
+      "name": "Oddfellows Cafe + Bar",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9090,
+      "name": "Sea Wolf Bakers",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9084,
+      "name": "Dough Zone Dumpling House",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9076,
+      "name": "Local Tide",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9067,
+      "name": "Anchorhead Coffee",
+      "was": 5,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9065,
+      "name": "Storyville Coffee",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9058,
+      "name": "The Pink Door",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9057,
+      "name": "Brimmer & Heeltap",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9056,
+      "name": "Stoneburner",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9053,
+      "name": "Ray's Boathouse",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9026,
+      "name": "Altura",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9023,
+      "name": "Ma'ono Fried Chicken & Whisky",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9020,
+      "name": "Paseo",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9019,
+      "name": "Communion",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9015,
+      "name": "Pike Place Chowder",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9014,
+      "name": "Dick's Drive-In",
+      "was": 5,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9008,
+      "name": "Rupee Bar",
+      "was": 4,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9002,
+      "name": "Archipelago",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "id": 9001,
+      "name": "Canlis",
+      "was": 5,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11581,
+      "name": "Beer Bar",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11580,
+      "name": "Post Office Place",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11579,
+      "name": "Finn's Cafe",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11575,
+      "name": "Neighbors Bar",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11573,
+      "name": "The Brick",
+      "was": 10,
+      "now": 7,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11554,
+      "name": "Oasis Cafe",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11540,
+      "name": "HallPass",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11539,
+      "name": "ROCTACO",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11537,
+      "name": "Atomic Biscuit",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11531,
+      "name": "Mar Muntanya",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11499,
+      "name": "Blue Gene's",
+      "was": 10,
+      "now": 5,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11497,
+      "name": "Muertos Cantina",
+      "was": 10,
+      "now": 5,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11487,
+      "name": "SOMI Vietnamese Bistro",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11310,
+      "name": "SLC Eatery",
+      "was": 10,
+      "now": 5,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11283,
+      "name": "Harbor Seafood & Steak Co.",
+      "was": 10,
+      "now": 6,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11260,
+      "name": "Felt Bar & Eatery",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11234,
+      "name": "Utah Museum of Fine Arts",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11224,
+      "name": "Red Iguana 2",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11220,
+      "name": "Cucina Toscana",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11194,
+      "name": "Litza's Pizza",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11188,
+      "name": "Gracie's",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11172,
+      "name": "Nomad East",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11168,
+      "name": "Adelaide",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11152,
+      "name": "Penny Ann's Cafe",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11145,
+      "name": "Marcato Kitchen",
+      "was": 10,
+      "now": 5,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11144,
+      "name": "The Dough Miner",
+      "was": 10,
+      "now": 7,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11133,
+      "name": "Feldman's Deli",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11124,
+      "name": "Beijing Restaurant",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11120,
+      "name": "Three Pines Coffee",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11118,
+      "name": "Apollo Burger",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11114,
+      "name": "This Is The Place Heritage Park",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11081,
+      "name": "Star of India",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11079,
+      "name": "Himalayan Kitchen",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11070,
+      "name": "Natural History Museum of Utah",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11069,
+      "name": "Temple Square",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11068,
+      "name": "Scion Cider Bar",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11065,
+      "name": "Manoli's",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11053,
+      "name": "Koyote",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11051,
+      "name": "The Pearl",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11050,
+      "name": "Flanker Kitchen + Sporting Club",
+      "was": 10,
+      "now": 5,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11049,
+      "name": "Franklin Ave. Cocktails & Kitchen",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11048,
+      "name": "Copper Common",
+      "was": 10,
+      "now": 2,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11042,
+      "name": "Lake Effect",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11041,
+      "name": "Bar X",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11040,
+      "name": "White Horse Spirits & Kitchen",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11039,
+      "name": "Water Witch",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11037,
+      "name": "Kiitos Brewing",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11036,
+      "name": "Fisher Brewing Company",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11034,
+      "name": "Epic Brewing Company",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11029,
+      "name": "R&R BBQ",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11025,
+      "name": "Settebello Pizzeria Napoletana",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11024,
+      "name": "Tea Zaanti",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11019,
+      "name": "Chunga's",
+      "was": 10,
+      "now": 6,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11016,
+      "name": "Hub & Spoke Diner",
+      "was": 10,
+      "now": 3,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11012,
+      "name": "The Copper Onion",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11009,
+      "name": "Red Iguana",
+      "was": 10,
+      "now": 4,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11008,
+      "name": "Urban Hill",
+      "was": 10,
+      "now": 1,
+      "action": "filter"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11004,
+      "name": "Takashi",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    },
+    {
+      "city": "SLC_DATA",
+      "id": 11002,
+      "name": "Valter's Osteria",
+      "was": 10,
+      "now": 0,
+      "action": "clear"
+    }
+  ]
+}
