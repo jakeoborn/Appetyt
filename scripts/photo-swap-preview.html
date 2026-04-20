@@ -1,0 +1,93 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Photo swap preview</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; background:#111; color:#eee; padding:20px; }
+  h1 { color:#c8a96e; }
+  table { border-collapse: collapse; width: 100%; }
+  td { border: 1px solid #333; padding: 12px; vertical-align: top; width: 33%; }
+  img { max-width: 100%; max-height: 260px; display:block; background:#222; }
+  .cap { font-size: 11px; color: #888; margin-top: 6px; }
+  .summary { background:#1a1a1a; padding:16px; border-radius:8px; margin-bottom:16px; }
+</style></head><body>
+<h1>Main photo swap preview</h1>
+<div class="summary">
+  <strong>Total detected swaps in current file:</strong> 12<br>
+  <strong>Showing:</strong> evenly-spaced sample of 12 across the full list<br>
+  <em>Left = old photoUrl (now preserved at photos[0]), Right = new photoUrl (promoted from photos[1])</em>
+</div>
+<table>
+  <tr><th>Restaurant</th><th>Before</th><th>After</th></tr>
+  
+<tr>
+  <td><strong>The Corson Building</strong></td>
+  <td><img src="https://static1.squarespace.com/static/65f63ebf7686ab01d9dc9545/t/66fdc7febccaed3b96d3e5a3/1773951460543/" loading="lazy"><div class="cap">BEFORE (was photoUrl, now photos[0])</div></td>
+  <td><img src="https://lh3.googleusercontent.com/p/AF1QipNiNWej_NiTo5mYFdRRwHoeah3nVyF7eeqYW9wS=w1920-h1080-k-no" loading="lazy"><div class="cap">AFTER (new photoUrl)</div></td>
+</tr>
+
+<tr>
+  <td><strong>Eleven Madison Park</strong></td>
+  <td><img src="http://static1.squarespace.com/static/661d75b635d9930903bb9d39/t/661d9c066b6e497945539ccb/1713216518665/ElevenMadisonPark-Leaves_Wordmark.png?format=1500w" loading="lazy"><div class="cap">BEFORE (was photoUrl, now photos[0])</div></td>
+  <td><img src="https://lh3.googleusercontent.com/p/AF1QipORpCE38GEBjvmFeP2fO3yrHfKLjVb_wswX-Y_N=w1920-h1080-k-no" loading="lazy"><div class="cap">AFTER (new photoUrl)</div></td>
+</tr>
+
+<tr>
+  <td><strong>4 Charles Prime Rib</strong></td>
+  <td><img src="http://static1.squarespace.com/static/670e7e21f4dfa31258e4df3b/t/670feda3e3ba2711dccdcf2a/1729097123217/4charles_SocialShare.png?format=1500w" loading="lazy"><div class="cap">BEFORE (was photoUrl, now photos[0])</div></td>
+  <td><img src="https://lh3.googleusercontent.com/p/AF1QipNnULJBcBysaxRjODuXb75cxPK7x8uZS8lzQ2Qz=w1920-h1080-k-no" loading="lazy"><div class="cap">AFTER (new photoUrl)</div></td>
+</tr>
+
+<tr>
+  <td><strong>Sushi Nakazawa</strong></td>
+  <td><img src="https://s3.amazonaws.com/sushinakazawa/matashare-1568932312439.png" loading="lazy"><div class="cap">BEFORE (was photoUrl, now photos[0])</div></td>
+  <td><img src="https://lh3.googleusercontent.com/p/AF1QipMyfYhibAoF8JYUTiKHGzpld3Ug9Oh4-5SkQ5MN=w1920-h1080-k-no" loading="lazy"><div class="cap">AFTER (new photoUrl)</div></td>
+</tr>
+
+<tr>
+  <td><strong>Sadelle's</strong></td>
+  <td><img src="https://static1.squarespace.com/static/5584c6b9e4b0867743016574/t/5584c7f1e4b02d6f0db9a977/1763487911532/" loading="lazy"><div class="cap">BEFORE (was photoUrl, now photos[0])</div></td>
+  <td><img src="https://lh3.googleusercontent.com/p/AF1QipM3KrWsnCnwhd3btLE7atZhY6DCrU4JQqhJx8WY=w1920-h1080-k-no" loading="lazy"><div class="cap">AFTER (new photoUrl)</div></td>
+</tr>
+
+<tr>
+  <td><strong>Charles Pan-Fried Chicken</strong></td>
+  <td><img src="http://static1.squarespace.com/static/6671ec90c301ad0e1d58efce/t/671966923e0ce210d6d87f65/1729717907010/carmela-ramirez-PNG+white.png?format=1500w" loading="lazy"><div class="cap">BEFORE (was photoUrl, now photos[0])</div></td>
+  <td><img src="https://lh3.googleusercontent.com/p/AF1QipOTiCWWGC5PR5s4McZvNF-TmCprbVubYCaF4SRd=w1920-h1080-k-no" loading="lazy"><div class="cap">AFTER (new photoUrl)</div></td>
+</tr>
+
+<tr>
+  <td><strong>South Lamar</strong></td>
+  <td><img src="https://static1.squarespace.com/static/632b4b60bb6a4321d2d1a0a4/t/632b4e226343c623120fc9ba/1770447178508/" loading="lazy"><div class="cap">BEFORE (was photoUrl, now photos[0])</div></td>
+  <td><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEBSZ_Eo_nPqZ6Cq-5Y-Cni6YpQQu0ldpyYOMY4SWv5SVKGui1lBZfyVVhwDPvTBVca8hddGRCi45_6Jmzs9rTvbDUc__lIIIKEedZaHSxlSHlPybqkJJ5NHBO43wEv-nvkJ7eI8OZ9Cnp1=w1920-h1080-k-no" loading="lazy"><div class="cap">AFTER (new photoUrl)</div></td>
+</tr>
+
+<tr>
+  <td><strong>Siti</strong></td>
+  <td><img src="http://static1.squarespace.com/static/64893ee47d328276201cfc34/t/690caf9f86f56c07b9cbbecf/1762439071430/green+teeee.png?format=1500w" loading="lazy"><div class="cap">BEFORE (was photoUrl, now photos[0])</div></td>
+  <td><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEqiKtaR4pr4h0fiAFbruq6R2xIQWPzoFLjrvkwBlKhfPLasZzEFjGfIYyp8t0c9YvIiv_s8JBSUMBGAAUZraesfZFZWganyZoZUf3WA5LmoLnVLhY2TOWno4emZcQUrvdKfL2rwmhsvoz0=w1920-h1080-k-no" loading="lazy"><div class="cap">AFTER (new photoUrl)</div></td>
+</tr>
+
+<tr>
+  <td><strong>Thundercloud Subs</strong></td>
+  <td><img src="https://static1.squarespace.com/static/67eea1fb0cff674f3ff2d7d7/t/67f41b1e39ffa70bb68baac3/1772125801804/" loading="lazy"><div class="cap">BEFORE (was photoUrl, now photos[0])</div></td>
+  <td><img src="https://lh3.googleusercontent.com/p/AF1QipOz3G52foYLT3oAZgfXLrWuwRx1r5RSIt_bzdvv=w1920-h1080-k-no" loading="lazy"><div class="cap">AFTER (new photoUrl)</div></td>
+</tr>
+
+<tr>
+  <td><strong>Monkey's Tail</strong></td>
+  <td><img src="https://static1.squarespace.com/static/65f5dc2ddd95ec2c344f6c27/t/65f6407134ebbe3e90c3cbe3/1765394362361/" loading="lazy"><div class="cap">BEFORE (was photoUrl, now photos[0])</div></td>
+  <td><img src="https://lh3.googleusercontent.com/p/AF1QipPybR8yAruqIiqwjSTrGiRZ5Fjshwxs1pMasYCB=w1920-h1080-k-no" loading="lazy"><div class="cap">AFTER (new photoUrl)</div></td>
+</tr>
+
+<tr>
+  <td><strong>Cochinita & Co.</strong></td>
+  <td><img src="https://static1.squarespace.com/static/65f5dc2ddd95ec2c344f6c27/t/65f6407134ebbe3e90c3cbe3/1765394362361/" loading="lazy"><div class="cap">BEFORE (was photoUrl, now photos[0])</div></td>
+  <td><img src="https://lh3.googleusercontent.com/p/AF1QipO8dAt-wHy3iTwS168_a0MHP9RzukGHjz54JLYX=w1920-h1080-k-no" loading="lazy"><div class="cap">AFTER (new photoUrl)</div></td>
+</tr>
+
+<tr>
+  <td><strong>Mindy's Bakery</strong></td>
+  <td><img src="http://static1.squarespace.com/static/5ea9ec8fdd995955ed38dcdd/t/64c46ac59309791693213838/1690593989727/My+project-1+-+2023-06-23T131246.201.png?format=1500w" loading="lazy"><div class="cap">BEFORE (was photoUrl, now photos[0])</div></td>
+  <td><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEP00uk6_tQxjzRHLBQHqt5cixP8DyAwZgYk4p8hpnquYjIhc19bBKMw_ym3TYmY6hNUClflTPTM2GByJ7wpnv_TDzHw161DesXxoCK9hLA74SFN3YpRAq_fSzQVDTp9b8t807fsiuvyb8T=w1920-h1080-k-no" loading="lazy"><div class="cap">AFTER (new photoUrl)</div></td>
+</tr>
+</table>
+</body></html>
