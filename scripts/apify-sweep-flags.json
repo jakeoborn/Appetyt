@@ -7015,5 +7015,830 @@
     "type": "no_photo_passed_test",
     "message": "All photo candidates failed quality test",
     "tried": []
+  },
+  {
+    "city": "nyc",
+    "id": 1059,
+    "name": "2 Bros. Pizza",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1074,
+    "name": "Sip & Guzzle",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1081,
+    "name": "Egg Shop",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "nyc",
+    "id": 1030,
+    "name": "Olmsted",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "nyc",
+    "id": 1161,
+    "name": "Emmy Squared",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "nyc",
+    "id": 1318,
+    "name": "Achilles Heel",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "nyc",
+    "id": 1333,
+    "name": "Barker Cafeteria",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1007x1080_ar0.93"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1332,
+    "name": "Gigi Curry & Noodle Bar",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_787x1080_ar0.73"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_721x1080_ar0.67"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1379,
+    "name": "Rockwood Music Hall",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "nyc",
+    "id": 1335,
+    "name": "Dollar Slice NYC",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_813x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1432,
+    "name": "Rahi",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "nyc",
+    "id": 1422,
+    "name": "Han Dynasty",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_small_6850"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1280,
+    "name": "Zaab Zaab",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_1080x1080_ar1.00"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_910x910_ar1.00"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_910x910_ar1.00"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1538,
+    "name": "Robataya",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "nyc",
+    "id": 1550,
+    "name": "Tigre",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_978x1080_ar0.91"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_813x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1564,
+    "name": "Saint Vitus Bar",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "nyc",
+    "id": 1530,
+    "name": "P.J. Clarke's",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_1093x1080_ar1.01"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_1089x1080_ar1.01"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_852x1080_ar0.79"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_864x1080_ar0.80"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1080x1080_ar1.00"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1609,
+    "name": "Darling",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_864x1080_ar0.80"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_864x1080_ar0.80"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_864x1080_ar0.80"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_877x1080_ar0.81"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1639,
+    "name": "Donna",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_864x1080_ar0.80"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1620,
+    "name": "Public Records",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_720x1080_ar0.67"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1701,
+    "name": "Salon de Ning",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1686,
+    "name": "Fotografiska New York",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "nyc",
+    "id": 1743,
+    "name": "Bistrot Ha",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_813x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1080x1080_ar1.00"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1519,
+    "name": "Emilio's Ballato",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1024x1046_ar0.98"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_822x1080_ar0.76"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1785,
+    "name": "Claw Daddy",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_864x1080_ar0.80"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1080x1080_ar1.00"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1763,
+    "name": "Felix Roasting Co.",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_864x1080_ar0.80"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1790,
+    "name": "Faicco's Italian Specialties",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1200x1080_ar1.11"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1080x1080_ar1.00"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1823,
+    "name": "PopUp Bagels",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "dims_too_small_278x300"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_813x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1845,
+    "name": "Babu Ji",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": []
+  },
+  {
+    "city": "nyc",
+    "id": 1850,
+    "name": "Pippali",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "nyc",
+    "id": 1901,
+    "name": "Clover Hill",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "nyc",
+    "id": 1853,
+    "name": "Ugly Baby",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_720x1080_ar0.67"
+      },
+      {
+        "source": "google-owner",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1694,
+    "name": "Rooftop Reds",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "nyc",
+    "id": 1886,
+    "name": "Osteria Morini",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
+  },
+  {
+    "city": "nyc",
+    "id": 1895,
+    "name": "Foul Witch",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_small_45578"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_1080x1076_ar1.00"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_720x698_ar1.03"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1912,
+    "name": "Aldo Sohm Wine Bar",
+    "type": "no_photo_passed_test",
+    "message": "All photo candidates failed quality test",
+    "tried": [
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_608x1080_ar0.56"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      },
+      {
+        "source": "google-curated",
+        "reason": "too_tall_or_square_810x1080_ar0.75"
+      }
+    ]
+  },
+  {
+    "city": "nyc",
+    "id": 1841,
+    "name": "Kimika",
+    "type": "closure_candidate",
+    "message": "Apify reports permanentlyClosed=true; needs manual confirm"
   }
 ]

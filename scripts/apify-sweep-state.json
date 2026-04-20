@@ -44,8 +44,13 @@
       "applied_at": "2026-04-20T05:03:20.511Z",
       "entries_changed": 455,
       "fields_changed": 1570
+    },
+    "nyc": {
+      "applied_at": "2026-04-20T05:11:31.785Z",
+      "entries_changed": 880,
+      "fields_changed": 2571
     }
   },
-  "total_changes": 10951,
-  "last_updated": "2026-04-20T05:03:20.511Z"
+  "total_changes": 13522,
+  "last_updated": "2026-04-20T05:11:31.785Z"
 }
