@@ -1,0 +1,52 @@
+{
+  "applied": [
+    {
+      "id": 3262,
+      "from": "North Phoenix",
+      "to": "West Phoenix",
+      "reason": "Tortas El Güero: 3421 N 19th Ave 85015 + coords (33.49,-112.10) — West Phoenix"
+    },
+    {
+      "id": 3138,
+      "from": "North Scottsdale",
+      "to": "Paradise Valley",
+      "reason": "Hash Kitchen: 8777 N Scottsdale Rd 85253 + coords (33.56,-111.93) — Paradise Valley zip 85253"
+    },
+    {
+      "id": 3231,
+      "from": "North Phoenix",
+      "to": "Uptown",
+      "reason": "AZ Wilderness Brewing: 5813 N 7th St 85014 + coords (33.52,-112.06) — Uptown Phoenix"
+    },
+    {
+      "id": 3284,
+      "from": "Downtown Phoenix",
+      "to": "West Phoenix",
+      "reason": "State 48 Brewery: 3063 N 28th Dr 85017 + coords (33.50,-112.12) — West Phoenix"
+    },
+    {
+      "id": 3427,
+      "from": "North Scottsdale",
+      "to": "Scottsdale",
+      "reason": "Hiro Sushi: 9393 N 90th St 85258 + coords (33.57,-111.89) — central Scottsdale (just south of North Scottsdale band)"
+    }
+  ],
+  "skipped": [],
+  "coord_bugs": [
+    {
+      "id": 3010,
+      "name": "Bad Jimmy's",
+      "issue": "7620 E Indian School Rd Scottsdale 85251 but coord 33.53,-112.06 is Central Phoenix, not Scottsdale (should be ~33.49,-111.92)"
+    },
+    {
+      "id": 3125,
+      "name": "Pita Jungle",
+      "issue": "7366 E Shea Blvd Scottsdale 85260 but coord 33.46,-112.08 is Phoenix, not N Scottsdale (should be ~33.58,-111.92)"
+    },
+    {
+      "id": 3265,
+      "name": "AZ/88",
+      "issue": "7353 E Scottsdale Mall 85251 (Old Town) but coord 33.65,-111.93 is far N Scottsdale, not Old Town (should be ~33.495,-111.925)"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "city": "Phoenix",
+  "checked": 500,
+  "in_bounds": 490,
+  "no_bounds": 0,
+  "severe": [
+    {
+      "id": 3010,
+      "name": "Bad Jimmy's",
+      "neighborhood": "Old Town Scottsdale",
+      "addr_city": "Scottsdale",
+      "lat": 33.525627,
+      "lng": -112.0646821,
+      "address": "7620 E Indian School Rd Ste 101, Scottsdale, AZ 85251",
+      "dist_deg": 0.1276,
+      "severity": "severe",
+      "suggested": [
+        "Central Phoenix",
+        "Uptown",
+        "Coronado"
+      ]
+    },
+    {
+      "id": 3125,
+      "name": "Pita Jungle",
+      "neighborhood": "Scottsdale",
+      "addr_city": "Scottsdale",
+      "lat": 33.4588355,
+      "lng": -112.07764,
+      "address": "7366 E Shea Blvd Ste 106, Scottsdale, AZ 85260",
+      "dist_deg": 0.1226,
+      "severity": "severe",
+      "suggested": [
+        "Downtown Phoenix",
+        "Roosevelt Row"
+      ]
+    },
+    {
+      "id": 3265,
+      "name": "AZ/88",
+      "neighborhood": "Old Town Scottsdale",
+      "addr_city": "Scottsdale",
+      "lat": 33.6514766,
+      "lng": -111.9258578,
+      "address": "7353 E Scottsdale Mall, Scottsdale, AZ 85251",
+      "dist_deg": 0.1415,
+      "severity": "severe",
+      "suggested": [
+        "Scottsdale",
+        "North Scottsdale"
+      ]
+    }
+  ],
+  "moderate": [],
+  "edge": [
+    {
+      "id": 3077,
+      "name": "Strip Mall",
+      "neighborhood": "Uptown",
+      "addr_city": "Phoenix",
+      "lat": 33.4887769,
+      "lng": -112.0657212,
+      "address": "3508 N 7th St #100, Phoenix, AZ 85014",
+      "dist_deg": 0.0062,
+      "severity": "edge",
+      "suggested": [
+        "Central Phoenix",
+        "Midtown",
+        "Melrose",
+        "Coronado"
+      ]
+    },
+    {
+      "id": 3102,
+      "name": "Zipps Sports Grill",
+      "neighborhood": "Uptown",
+      "addr_city": "Phoenix",
+      "lat": 33.484294,
+      "lng": -112.075012,
+      "address": "3110 N Central Ave Suite G-103, Phoenix, AZ 85012",
+      "dist_deg": 0.0107,
+      "severity": "edge",
+      "suggested": [
+        "Central Phoenix",
+        "Midtown",
+        "Melrose",
+        "Coronado"
+      ]
+    },
+    {
+      "id": 3226,
+      "name": "Los Sombreros Cafe & Cantina",
+      "neighborhood": "Old Town Scottsdale",
+      "addr_city": "Scottsdale",
+      "lat": 33.476581,
+      "lng": -111.9265355,
+      "address": "2534 N Scottsdale Rd, Scottsdale, AZ 85257",
+      "dist_deg": 0.0084,
+      "severity": "edge",
+      "suggested": [
+        "Scottsdale"
+      ]
+    },
+    {
+      "id": 3448,
+      "name": "Fate Brewing Company — Scottsdale South",
+      "neighborhood": "North Scottsdale",
+      "addr_city": "Scottsdale",
+      "lat": 33.5822202,
+      "lng": -111.9225044,
+      "address": "7337 E Shea Blvd, Scottsdale, AZ 85260",
+      "dist_deg": 0.0128,
+      "severity": "edge",
+      "suggested": [
+        "Paradise Valley",
+        "Scottsdale",
+        "Central Scottsdale"
+      ]
+    },
+    {
+      "id": 3449,
+      "name": "Scottsdale Beer Company",
+      "neighborhood": "North Scottsdale",
+      "addr_city": "Scottsdale",
+      "lat": 33.5831114,
+      "lng": -111.8949157,
+      "address": "8608 E Shea Blvd, Scottsdale, AZ 85260",
+      "dist_deg": 0.0119,
+      "severity": "edge",
+      "suggested": [
+        "Scottsdale"
+      ]
+    },
+    {
+      "id": 3471,
+      "name": "Squid Ink Sushi",
+      "neighborhood": "North Scottsdale",
+      "addr_city": "Scottsdale",
+      "lat": 33.5848173,
+      "lng": -111.8338771,
+      "address": "10855 N Frank Lloyd Wright Blvd, Scottsdale, AZ 85259",
+      "dist_deg": 0.0102,
+      "severity": "edge",
+      "suggested": [
+        "Scottsdale"
+      ]
+    },
+    {
+      "id": 3473,
+      "name": "Handlebar-J",
+      "neighborhood": "North Scottsdale",
+      "addr_city": "Scottsdale",
+      "lat": 33.582996,
+      "lng": -111.9274051,
+      "address": "7116 E Becker Ln, Scottsdale, AZ 85254",
+      "dist_deg": 0.012,
+      "severity": "edge",
+      "suggested": [
+        "Paradise Valley",
+        "Scottsdale",
+        "Central Scottsdale"
+      ]
+    }
+  ]
+}
