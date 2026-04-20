@@ -1,0 +1,1720 @@
+{
+  "city": "Austin",
+  "checked": 501,
+  "in_bounds": 380,
+  "no_bounds": 0,
+  "severe": [
+    {
+      "id": 5015,
+      "name": "Torchy's Tacos",
+      "neighborhood": "South Congress",
+      "addr_city": "Austin",
+      "lat": 30.1723325,
+      "lng": -97.7849309,
+      "address": "1311 S 1st St, Austin, TX 78704",
+      "dist_deg": 0.0606,
+      "severity": "severe",
+      "suggested": [
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5019,
+      "name": "Salt Lick BBQ",
+      "neighborhood": "South Austin",
+      "addr_city": "Driftwood",
+      "lat": 30.1517,
+      "lng": -98.0056,
+      "address": "18300 FM 1826, Driftwood, TX 78619",
+      "dist_deg": 0.1756,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5033,
+      "name": "InterStellar BBQ",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.4614582,
+      "lng": -97.8151755,
+      "address": "12233 Ranch Rd 620 N #105, Austin, TX 78750",
+      "dist_deg": 0.0852,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5064,
+      "name": "Jester King Brewery",
+      "neighborhood": "South Austin",
+      "addr_city": "Austin",
+      "lat": 30.2212,
+      "lng": -98.0143,
+      "address": "13187 Fitzhugh Rd, Austin, TX 78736",
+      "dist_deg": 0.1843,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5092,
+      "name": "Pieous",
+      "neighborhood": "South Austin",
+      "addr_city": "Austin",
+      "lat": 30.2050546,
+      "lng": -97.9791038,
+      "address": "12005 Hwy 290 W, Austin, TX 78737",
+      "dist_deg": 0.1491,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5136,
+      "name": "Dee Dee",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2175771,
+      "lng": -97.8260084,
+      "address": "4200 E Martin Luther King Jr Blvd, Austin, TX 78721",
+      "dist_deg": 0.0937,
+      "severity": "severe",
+      "suggested": [
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5140,
+      "name": "Salt Traders Coastal Cooking",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.2653328,
+      "lng": -97.7809363,
+      "address": "3016 Esperanza Crossing, Austin, TX 78758",
+      "dist_deg": 0.0823,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5161,
+      "name": "Oasis on the Lake",
+      "neighborhood": "West Austin",
+      "addr_city": "Austin",
+      "lat": 30.405535,
+      "lng": -97.874321,
+      "address": "6550 Comanche Trail, Austin, TX 78732",
+      "dist_deg": 0.1031,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5189,
+      "name": "Jack Allen's Kitchen",
+      "neighborhood": "South Lamar",
+      "addr_city": "Austin",
+      "lat": 30.2435734,
+      "lng": -97.8825773,
+      "address": "7720 State Hwy 71 West, Austin, TX 78735",
+      "dist_deg": 0.0926,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5220,
+      "name": "Hai Hospitality / Uchi Round Rock",
+      "neighborhood": "North Austin",
+      "addr_city": "Round Rock",
+      "lat": 30.2461983,
+      "lng": -97.7682839,
+      "address": "3021 S I-35, Round Rock, TX 78664",
+      "dist_deg": 0.0921,
+      "severity": "severe",
+      "suggested": [
+        "South 1st",
+        "South Lamar",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5222,
+      "name": "Tucci's Italian",
+      "neighborhood": "North Austin",
+      "addr_city": "Cedar Park",
+      "lat": 30.1901015,
+      "lng": -97.771985,
+      "address": "701 E Whitestone Blvd, Suite 500, Cedar Park, TX 78613",
+      "dist_deg": 0.1461,
+      "severity": "severe",
+      "suggested": [
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5224,
+      "name": "The Hideaway on Lake Travis",
+      "neighborhood": "West Austin",
+      "addr_city": "Point Venture",
+      "lat": 30.401,
+      "lng": -97.952,
+      "address": "18505 Lakeside Dr, Point Venture, TX 78645",
+      "dist_deg": 0.1611,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5245,
+      "name": "Pho Please",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.2431352,
+      "lng": -97.7281261,
+      "address": "10901 N Lamar Blvd, Suite A114, Austin, TX 78753",
+      "dist_deg": 0.0869,
+      "severity": "severe",
+      "suggested": [
+        "South Congress",
+        "East Austin"
+      ]
+    },
+    {
+      "id": 5271,
+      "name": "Ramen Del Barrio",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.1717151,
+      "lng": -97.7850864,
+      "address": "7858 Shoal Creek Blvd, Austin, TX 78757",
+      "dist_deg": 0.1676,
+      "severity": "severe",
+      "suggested": [
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5307,
+      "name": "Trattoria Lisina",
+      "neighborhood": "South Austin",
+      "addr_city": "Driftwood",
+      "lat": 30.1155,
+      "lng": -98.0206,
+      "address": "13308 FM 150 W, Driftwood, TX 78619",
+      "dist_deg": 0.1937,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5313,
+      "name": "Oink BBQ",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.1546814,
+      "lng": -97.7945001,
+      "address": "1620 E 6th St, Austin, TX 78702",
+      "dist_deg": 0.104,
+      "severity": "severe",
+      "suggested": [
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5315,
+      "name": "Easy Tiger",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2401593,
+      "lng": -97.7884949,
+      "address": "1501 E 7th St, Austin, TX 78702",
+      "dist_deg": 0.0535,
+      "severity": "severe",
+      "suggested": [
+        "South Lamar"
+      ]
+    },
+    {
+      "id": 5326,
+      "name": "Austin's Pizza",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.2146987,
+      "lng": -97.832893,
+      "address": "3638 S Lamar Blvd, Austin, TX 78704",
+      "dist_deg": 0.1298,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5334,
+      "name": "Austin Java",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.2175442,
+      "lng": -97.7966489,
+      "address": "1608 Barton Springs Rd, Austin, TX 78704",
+      "dist_deg": 0.0524,
+      "severity": "severe",
+      "suggested": [
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5341,
+      "name": "Loro Bee Caves",
+      "neighborhood": "West Austin",
+      "addr_city": "Bee Cave",
+      "lat": 30.3144,
+      "lng": -97.9372,
+      "address": "12901 Hill Country Blvd, Bee Cave, TX 78738",
+      "dist_deg": 0.1272,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5352,
+      "name": "Rosedale Kitchen & Bar",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.2020237,
+      "lng": -97.6656766,
+      "address": "5765 Airport Blvd, Austin, TX 78752",
+      "dist_deg": 0.1038,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5366,
+      "name": "Uchi ko North",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.1611058,
+      "lng": -97.7915996,
+      "address": "9600 S I-35 Frontage Rd, Austin, TX 78748",
+      "dist_deg": 0.1798,
+      "severity": "severe",
+      "suggested": [
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5411,
+      "name": "Whip My Soul",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.4321059,
+      "lng": -97.8415413,
+      "address": "11416 N FM 620, Austin, TX 78726",
+      "dist_deg": 0.1115,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5422,
+      "name": "Loro Round Rock",
+      "neighborhood": "North Austin",
+      "addr_city": "Round Rock",
+      "lat": 30.5262,
+      "lng": -97.6836,
+      "address": "4401 N I-35, Round Rock, TX 78681",
+      "dist_deg": 0.0662,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5446,
+      "name": "Loro Cedar Park",
+      "neighborhood": "North Austin",
+      "addr_city": "Cedar Park",
+      "lat": 30.5143,
+      "lng": -97.8002,
+      "address": "1335 E Whitestone Blvd, Cedar Park, TX 78613",
+      "dist_deg": 0.0887,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5455,
+      "name": "Loro Georgetown",
+      "neighborhood": "North Austin",
+      "addr_city": "Georgetown",
+      "lat": 30.6332,
+      "lng": -97.6861,
+      "address": "1019 W University Ave, Georgetown, TX 78628",
+      "dist_deg": 0.1732,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 5566,
+      "name": "Jim's Smokehouse",
+      "neighborhood": "West Austin",
+      "addr_city": "Austin",
+      "lat": 30.4025516,
+      "lng": -97.8551504,
+      "address": "6900 Ranch Rd 620 N, Austin, TX 78732",
+      "dist_deg": 0.0897,
+      "severity": "severe",
+      "suggested": []
+    }
+  ],
+  "moderate": [
+    {
+      "id": 5025,
+      "name": "Épicerie",
+      "neighborhood": "Mueller",
+      "addr_city": "Austin",
+      "lat": 30.3245,
+      "lng": -97.7437,
+      "address": "2307 Hancock Dr, Austin, TX 78756",
+      "dist_deg": 0.0287,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 5050,
+      "name": "Eldorado Cafe",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.3623,
+      "lng": -97.7423,
+      "address": "3300 W Anderson Ln. #303, Austin, TX 78757",
+      "dist_deg": 0.0331,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 5057,
+      "name": "Distant Relatives",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2087516,
+      "lng": -97.7295484,
+      "address": "3901 Promontory Point Dr, Austin, TX 78744",
+      "dist_deg": 0.0312,
+      "severity": "moderate",
+      "suggested": [
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5078,
+      "name": "Merit Coffee",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2675702,
+      "lng": -97.752098,
+      "address": "222 West Ave #120, Austin, TX 78701",
+      "dist_deg": 0.0171,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "Clarksville",
+        "South 1st",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5118,
+      "name": "Kerbey Lane Cafe",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.3080182,
+      "lng": -97.7504833,
+      "address": "3704 Kerbey Ln, Austin, TX 78731",
+      "dist_deg": 0.0155,
+      "severity": "moderate",
+      "suggested": [
+        "West Austin"
+      ]
+    },
+    {
+      "id": 5120,
+      "name": "Chili's Original",
+      "neighborhood": "South Lamar",
+      "addr_city": "Austin",
+      "lat": 30.31332,
+      "lng": -97.738355,
+      "address": "4420 N Lamar Blvd, Austin, TX 78756",
+      "dist_deg": 0.0488,
+      "severity": "moderate",
+      "suggested": [
+        "Hyde Park",
+        "North Lamar"
+      ]
+    },
+    {
+      "id": 5122,
+      "name": "Chi'Lantro BBQ",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2521304,
+      "lng": -97.7637224,
+      "address": "1509 S Lamar Blvd, Suite 575, Austin, TX 78704",
+      "dist_deg": 0.0287,
+      "severity": "moderate",
+      "suggested": [
+        "South 1st",
+        "South Lamar",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5123,
+      "name": "Ling Wu",
+      "neighborhood": "South Austin",
+      "addr_city": "Austin",
+      "lat": 30.2559264,
+      "lng": -97.868608,
+      "address": "7415 Southwest Pkwy, Austin, TX 78735",
+      "dist_deg": 0.0418,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 5168,
+      "name": "HOPE Outdoor Gallery",
+      "neighborhood": "South Austin",
+      "addr_city": "Austin",
+      "lat": 30.2305587,
+      "lng": -97.6702879,
+      "address": "5404 Dalton Ln, Austin, TX 78721",
+      "dist_deg": 0.0397,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 5175,
+      "name": "Wingstop (Original)",
+      "neighborhood": "South Lamar",
+      "addr_city": "Austin",
+      "lat": 30.1967158,
+      "lng": -97.7851591,
+      "address": "500 W William Cannon Dr Ste 422, Austin, TX 78745",
+      "dist_deg": 0.0183,
+      "severity": "moderate",
+      "suggested": [
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5180,
+      "name": "Fabrik",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2965875,
+      "lng": -97.7676557,
+      "address": "3108 Windsor Rd, Austin, TX 78703",
+      "dist_deg": 0.0327,
+      "severity": "moderate",
+      "suggested": [
+        "West Austin"
+      ]
+    },
+    {
+      "id": 5182,
+      "name": "East Side King",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2475307,
+      "lng": -97.7748921,
+      "address": "1618 E 6th St, Austin, TX 78702",
+      "dist_deg": 0.0399,
+      "severity": "moderate",
+      "suggested": [
+        "South Lamar",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5190,
+      "name": "Better Half Coffee & Cocktails",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2712998,
+      "lng": -97.7585932,
+      "address": "406 Walsh St, Austin, TX 78703",
+      "dist_deg": 0.0236,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "Clarksville",
+        "West Austin",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5197,
+      "name": "Phoebe's Diner",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.2740975,
+      "lng": -97.7449381,
+      "address": "408 W 11th St, Austin, TX 78701",
+      "dist_deg": 0.0277,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "6th Street",
+        "Clarksville",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5206,
+      "name": "Monger's Market + Kitchen",
+      "neighborhood": "South Lamar",
+      "addr_city": "Austin",
+      "lat": 30.3068956,
+      "lng": -97.7351563,
+      "address": "2401 S Lamar Blvd, Suite 15, Austin, TX 78704",
+      "dist_deg": 0.043,
+      "severity": "moderate",
+      "suggested": [
+        "Hyde Park",
+        "North Lamar"
+      ]
+    },
+    {
+      "id": 5207,
+      "name": "Quality Seafood Market",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.318313,
+      "lng": -97.712265,
+      "address": "5621 Airport Blvd, Austin, TX 78751",
+      "dist_deg": 0.0183,
+      "severity": "moderate",
+      "suggested": [
+        "Mueller",
+        "North Loop",
+        "North Lamar"
+      ]
+    },
+    {
+      "id": 5208,
+      "name": "Asiana Indian Cuisine",
+      "neighborhood": "South Lamar",
+      "addr_city": "Austin",
+      "lat": 30.1904049,
+      "lng": -97.772346,
+      "address": "2901 S Capital of TX Hwy, Suite E140, Austin, TX 78746",
+      "dist_deg": 0.0246,
+      "severity": "moderate",
+      "suggested": [
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5218,
+      "name": "Loro",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2477396,
+      "lng": -97.7713502,
+      "address": "2115 S Lamar Blvd, Austin, TX 78704",
+      "dist_deg": 0.0364,
+      "severity": "moderate",
+      "suggested": [
+        "South Lamar",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5230,
+      "name": "Irene's",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.300782,
+      "lng": -97.7229587,
+      "address": "4100 Red River St, Austin, TX 78751",
+      "dist_deg": 0.0292,
+      "severity": "moderate",
+      "suggested": [
+        "Hyde Park",
+        "North Loop",
+        "North Lamar"
+      ]
+    },
+    {
+      "id": 5253,
+      "name": "Hold Out Brewing",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2713713,
+      "lng": -97.7589574,
+      "address": "1208 W 4th St, Austin, TX 78703",
+      "dist_deg": 0.024,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "Clarksville",
+        "West Austin",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5255,
+      "name": "Live Oak Brewing",
+      "neighborhood": "South Austin",
+      "addr_city": "Del Valle",
+      "lat": 30.221135,
+      "lng": -97.6612371,
+      "address": "1615 Crozier Ln, Del Valle, TX 78617",
+      "dist_deg": 0.0488,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 5265,
+      "name": "Spokesman",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2155763,
+      "lng": -97.7624548,
+      "address": "440 E St Elmo Rd A2, Austin, TX 78745",
+      "dist_deg": 0.0367,
+      "severity": "moderate",
+      "suggested": [
+        "South Lamar",
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5279,
+      "name": "Kitsu Nori",
+      "neighborhood": "South Lamar",
+      "addr_city": "Austin",
+      "lat": 30.2998671,
+      "lng": -97.7402086,
+      "address": "3208 Guadalupe St B, Austin, TX 78705",
+      "dist_deg": 0.0352,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 5310,
+      "name": "Spicy Boys",
+      "neighborhood": "South Austin",
+      "addr_city": "Austin",
+      "lat": 30.2621847,
+      "lng": -97.7242366,
+      "address": "3301 E Cesar Chavez St, Austin, TX 78702",
+      "dist_deg": 0.0222,
+      "severity": "moderate",
+      "suggested": [
+        "East Austin"
+      ]
+    },
+    {
+      "id": 5314,
+      "name": "Dai Due Taqueria",
+      "neighborhood": "Mueller",
+      "addr_city": "Austin",
+      "lat": 30.2635326,
+      "lng": -97.7435717,
+      "address": "111 Congress Ave., Austin, TX 78701",
+      "dist_deg": 0.0357,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "6th Street",
+        "Rainey Street",
+        "South Congress",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5325,
+      "name": "Tumble 22",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.3479904,
+      "lng": -97.7353198,
+      "address": "7211 Burnet Rd, Austin, TX 78757",
+      "dist_deg": 0.048,
+      "severity": "moderate",
+      "suggested": [
+        "North Lamar"
+      ]
+    },
+    {
+      "id": 5349,
+      "name": "Cru Wine Bar",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.2756426,
+      "lng": -97.7070282,
+      "address": "2907 E 12th St, Austin, TX 78702",
+      "dist_deg": 0.023,
+      "severity": "moderate",
+      "suggested": [
+        "East Austin"
+      ]
+    },
+    {
+      "id": 5353,
+      "name": "Honey Moon Spirit Lounge",
+      "neighborhood": "South Congress",
+      "addr_city": "Austin",
+      "lat": 30.3010289,
+      "lng": -97.7406045,
+      "address": "2101 S Congress Ave, Austin, TX 78704",
+      "dist_deg": 0.036,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 5360,
+      "name": "Fig Italian Kitchen & Bar",
+      "neighborhood": "South Congress",
+      "addr_city": "Austin",
+      "lat": 30.2407046,
+      "lng": -97.7858874,
+      "address": "3403 S Lamar Blvd, Austin, TX 78704",
+      "dist_deg": 0.0309,
+      "severity": "moderate",
+      "suggested": [
+        "South Lamar"
+      ]
+    },
+    {
+      "id": 5361,
+      "name": "Ember Kitchen",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.266876,
+      "lng": -97.7528456,
+      "address": "2012 E 6th St, Austin, TX 78702",
+      "dist_deg": 0.0178,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "Clarksville",
+        "South 1st",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5368,
+      "name": "Grizzelda's",
+      "neighborhood": "Rainey Street",
+      "addr_city": "Austin",
+      "lat": 30.2521607,
+      "lng": -97.7081982,
+      "address": "105 Tillery St, Austin, TX 78702",
+      "dist_deg": 0.0268,
+      "severity": "moderate",
+      "suggested": [
+        "East Austin"
+      ]
+    },
+    {
+      "id": 5378,
+      "name": "Hank's Austin",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.3124201,
+      "lng": -97.6929354,
+      "address": "5811 Berkman Dr, Austin, TX 78723",
+      "dist_deg": 0.0176,
+      "severity": "moderate",
+      "suggested": [
+        "Mueller"
+      ]
+    },
+    {
+      "id": 5383,
+      "name": "Loro 35th Street",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.2555,
+      "lng": -97.7233,
+      "address": "2000 E Cesar Chavez St, Austin, TX 78702",
+      "dist_deg": 0.0445,
+      "severity": "moderate",
+      "suggested": [
+        "East Austin"
+      ]
+    },
+    {
+      "id": 5397,
+      "name": "Tyson's Tacos",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.3098,
+      "lng": -97.7137,
+      "address": "4905 Airport Blvd, Austin, TX 78751",
+      "dist_deg": 0.0202,
+      "severity": "moderate",
+      "suggested": [
+        "Mueller",
+        "North Loop",
+        "North Lamar"
+      ]
+    },
+    {
+      "id": 5398,
+      "name": "Sazan Ramen",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.3366724,
+      "lng": -97.7166287,
+      "address": "2015 E 7th St, Austin, TX 78702",
+      "dist_deg": 0.0367,
+      "severity": "moderate",
+      "suggested": [
+        "North Lamar",
+        "North Austin"
+      ]
+    },
+    {
+      "id": 5402,
+      "name": "Thai Kitchen",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.2967308,
+      "lng": -97.74166,
+      "address": "3009 Guadalupe St, Austin, TX 78705",
+      "dist_deg": 0.0353,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 5414,
+      "name": "Churchrow Tejas BBQ",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.351954,
+      "lng": -97.7228817,
+      "address": "1521 W Anderson Ln, Austin, TX 78757",
+      "dist_deg": 0.022,
+      "severity": "moderate",
+      "suggested": [
+        "North Lamar",
+        "North Austin"
+      ]
+    },
+    {
+      "id": 5417,
+      "name": "Cousin Louie's",
+      "neighborhood": "South Austin",
+      "addr_city": "Austin",
+      "lat": 30.1866,
+      "lng": -97.8733,
+      "address": "165 Hargraves Dr, Ste T100, Austin, TX 78737",
+      "dist_deg": 0.0433,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 5432,
+      "name": "Colleen's South Congress",
+      "neighborhood": "South Congress",
+      "addr_city": "Austin",
+      "lat": 30.1827651,
+      "lng": -97.781525,
+      "address": "7601 S Congress Ave, Austin, TX 78745",
+      "dist_deg": 0.0499,
+      "severity": "moderate",
+      "suggested": [
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5494,
+      "name": "Austin Land & Cattle",
+      "neighborhood": "North Lamar",
+      "addr_city": "Austin",
+      "lat": 30.2757,
+      "lng": -97.7538,
+      "address": "1205 N Lamar Blvd, Austin, TX 78703",
+      "dist_deg": 0.0199,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "Clarksville",
+        "West Austin"
+      ]
+    },
+    {
+      "id": 5495,
+      "name": "Eddie V's Prime Seafood",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.3896052,
+      "lng": -97.7529526,
+      "address": "9400 B Arboretum Blvd, Austin, TX 78759",
+      "dist_deg": 0.023,
+      "severity": "moderate",
+      "suggested": []
+    },
+    {
+      "id": 5506,
+      "name": "Garbo's Lobster",
+      "neighborhood": "North Lamar",
+      "addr_city": "Austin",
+      "lat": 30.2734,
+      "lng": -97.7542,
+      "address": "626 N Lamar Blvd, Austin, TX 78703",
+      "dist_deg": 0.0218,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "Clarksville",
+        "West Austin",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5513,
+      "name": "Fresa's Chicken al Carbon",
+      "neighborhood": "North Lamar",
+      "addr_city": "Austin",
+      "lat": 30.2736,
+      "lng": -97.7538,
+      "address": "915 N Lamar Blvd, Austin, TX 78703",
+      "dist_deg": 0.0214,
+      "severity": "moderate",
+      "suggested": [
+        "Downtown",
+        "Clarksville",
+        "West Austin",
+        "Zilker"
+      ]
+    }
+  ],
+  "edge": [
+    {
+      "id": 5010,
+      "name": "Uchiko",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.3076,
+      "lng": -97.7395,
+      "address": "4200 N Lamar Blvd, Austin, TX 78756",
+      "dist_deg": 0.0045,
+      "severity": "edge",
+      "suggested": [
+        "Hyde Park",
+        "North Lamar"
+      ]
+    },
+    {
+      "id": 5054,
+      "name": "The Peached Tortilla",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.3308157,
+      "lng": -97.7402371,
+      "address": "5520 Burnet Rd #100, Austin, TX 78756",
+      "dist_deg": 0.0053,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5073,
+      "name": "Thai Fresh",
+      "neighborhood": "South Austin",
+      "addr_city": "Austin",
+      "lat": 30.247855,
+      "lng": -97.7617223,
+      "address": "909 W Mary St, Austin, TX 78704",
+      "dist_deg": 0.0079,
+      "severity": "edge",
+      "suggested": [
+        "South 1st",
+        "South Lamar",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5076,
+      "name": "Elizabeth Street Cafe",
+      "neighborhood": "South Austin",
+      "addr_city": "Austin",
+      "lat": 30.2474,
+      "lng": -97.7566,
+      "address": "1501 S 1st St, Austin, TX 78704",
+      "dist_deg": 0.0074,
+      "severity": "edge",
+      "suggested": [
+        "South 1st",
+        "South Lamar",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5087,
+      "name": "Stiles Switch BBQ & Brew",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.334575,
+      "lng": -97.721445,
+      "address": "6610 N Lamar Blvd, Austin, TX 78752",
+      "dist_deg": 0.0046,
+      "severity": "edge",
+      "suggested": [
+        "North Lamar",
+        "North Austin"
+      ]
+    },
+    {
+      "id": 5095,
+      "name": "Cosmic Coffee + Beer Garden",
+      "neighborhood": "South Congress",
+      "addr_city": "Austin",
+      "lat": 30.226957,
+      "lng": -97.7624945,
+      "address": "121 Pickle Rd, Austin, TX 78704",
+      "dist_deg": 0.0075,
+      "severity": "edge",
+      "suggested": [
+        "South Lamar",
+        "South Austin"
+      ]
+    },
+    {
+      "id": 5137,
+      "name": "Taqueria Diez",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2639708,
+      "lng": -97.7408126,
+      "address": "1811 E 7th St, Austin, TX 78702",
+      "dist_deg": 0.0058,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "6th Street",
+        "Rainey Street",
+        "South Congress",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5142,
+      "name": "Lick Honest Ice Creams",
+      "neighborhood": "South Congress",
+      "addr_city": "Austin",
+      "lat": 30.2555639,
+      "lng": -97.7625306,
+      "address": "1100 S Lamar Blvd #1135, Austin, TX 78704",
+      "dist_deg": 0.0075,
+      "severity": "edge",
+      "suggested": [
+        "South 1st",
+        "South Lamar",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5146,
+      "name": "Mexta",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2681573,
+      "lng": -97.7423917,
+      "address": "106 E 6th St Suite #110, Austin, TX 78701",
+      "dist_deg": 0.0074,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "6th Street",
+        "Clarksville",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5176,
+      "name": "Mum Foods Smokehouse & Deli",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.3058633,
+      "lng": -97.6797593,
+      "address": "5811 Manor Rd, Austin, TX 78723",
+      "dist_deg": 0.0059,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5196,
+      "name": "Thai Cuisine",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.3235722,
+      "lng": -97.7273868,
+      "address": "5501 N Lamar Blvd Suite C101, Austin, TX 78751",
+      "dist_deg": 0.0064,
+      "severity": "edge",
+      "suggested": [
+        "Hyde Park",
+        "North Loop",
+        "North Lamar"
+      ]
+    },
+    {
+      "id": 5204,
+      "name": "Cru Food & Wine Bar",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.2477176,
+      "lng": -97.7554453,
+      "address": "239 S Congress Ave, Suite A, Austin, TX 78704",
+      "dist_deg": 0.0073,
+      "severity": "edge",
+      "suggested": [
+        "South 1st",
+        "South Lamar",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5217,
+      "name": "Vinaigrette",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.2412887,
+      "lng": -97.7520283,
+      "address": "2201 College Ave, Austin, TX 78704",
+      "dist_deg": 0.0137,
+      "severity": "edge",
+      "suggested": [
+        "South Congress",
+        "South 1st",
+        "South Lamar"
+      ]
+    },
+    {
+      "id": 5286,
+      "name": "Cajun Barbecue",
+      "neighborhood": "South Austin",
+      "addr_city": "Austin",
+      "lat": 30.2238132,
+      "lng": -97.8389198,
+      "address": "4404 W William Cannon Dr, Austin, TX 78749",
+      "dist_deg": 0.0089,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5290,
+      "name": "Mattie's",
+      "neighborhood": "South Congress",
+      "addr_city": "Austin",
+      "lat": 30.244929,
+      "lng": -97.7623627,
+      "address": "811 W Live Oak St, Austin, TX 78704",
+      "dist_deg": 0.0074,
+      "severity": "edge",
+      "suggested": [
+        "South 1st",
+        "South Lamar"
+      ]
+    },
+    {
+      "id": 5292,
+      "name": "Tzintzuntzan",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.3257025,
+      "lng": -97.7427831,
+      "address": "2302 W N Loop Blvd, Austin, TX 78756",
+      "dist_deg": 0.0078,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5301,
+      "name": "Via 313 Pizza",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2699663,
+      "lng": -97.7485243,
+      "address": "600 W 6th St, Austin, TX 78701",
+      "dist_deg": 0.0135,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "Clarksville",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5339,
+      "name": "Cane Rosso",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2670094,
+      "lng": -97.7404066,
+      "address": "1935 E 7th St, Austin, TX 78702",
+      "dist_deg": 0.0054,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "6th Street",
+        "Rainey Street",
+        "Clarksville",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5345,
+      "name": "Olive & June",
+      "neighborhood": "South Austin",
+      "addr_city": "Austin",
+      "lat": 30.2462863,
+      "lng": -97.751199,
+      "address": "1722 S Congress Ave, Austin, TX 78704",
+      "dist_deg": 0.0063,
+      "severity": "edge",
+      "suggested": [
+        "South Congress",
+        "South 1st",
+        "South Lamar",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5371,
+      "name": "Loro West Lake",
+      "neighborhood": "West Austin",
+      "addr_city": "Austin",
+      "lat": 30.268128,
+      "lng": -97.8179248,
+      "address": "2015 S Capital of Texas Hwy, Austin, TX 78746",
+      "dist_deg": 0.0081,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5375,
+      "name": "Loro Westlake",
+      "neighborhood": "West Austin",
+      "addr_city": "West Lake Hills",
+      "lat": 30.2887,
+      "lng": -97.8204,
+      "address": "3801 Bee Cave Rd, West Lake Hills, TX 78746",
+      "dist_deg": 0.0104,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5379,
+      "name": "Fonda San Miguel Brunch",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.3255835,
+      "lng": -97.7433722,
+      "address": "2330 W N Loop Blvd, Austin, TX 78756",
+      "dist_deg": 0.0141,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5381,
+      "name": "Loro Lakeway",
+      "neighborhood": "West Austin",
+      "addr_city": "Lakeway",
+      "lat": 30.3371695,
+      "lng": -97.8031047,
+      "address": "1905 Ranch Rd 620 S, Lakeway, TX 78734",
+      "dist_deg": 0.0122,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5385,
+      "name": "Arlo's",
+      "neighborhood": "South Congress",
+      "addr_city": "Austin",
+      "lat": 30.2545494,
+      "lng": -97.7179329,
+      "address": "2337 E Cesar Chavez St, Austin, TX 78702",
+      "dist_deg": 0.0071,
+      "severity": "edge",
+      "suggested": [
+        "East Austin"
+      ]
+    },
+    {
+      "id": 5387,
+      "name": "Zanzibar",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2628309,
+      "lng": -97.7415705,
+      "address": "1101 E 5th St, Austin, TX 78702",
+      "dist_deg": 0.0066,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "6th Street",
+        "Rainey Street",
+        "South Congress",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5390,
+      "name": "Loro Parmer",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.3961,
+      "lng": -97.7363,
+      "address": "10515 N MoPac Expy, Austin, TX 78759",
+      "dist_deg": 0.0063,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5393,
+      "name": "Taco Joint",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.2916019,
+      "lng": -97.7349646,
+      "address": "2809 San Jacinto Blvd, Austin, TX 78705",
+      "dist_deg": 0.0084,
+      "severity": "edge",
+      "suggested": [
+        "East Austin",
+        "North Lamar"
+      ]
+    },
+    {
+      "id": 5416,
+      "name": "Moderna Bar & Pizzeria",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.2762154,
+      "lng": -97.7658641,
+      "address": "1717 W 6th St Suite 140R, Austin, TX 78703",
+      "dist_deg": 0.0059,
+      "severity": "edge",
+      "suggested": [
+        "Clarksville",
+        "West Austin"
+      ]
+    },
+    {
+      "id": 5437,
+      "name": "Tacodeli Burnet",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.3145,
+      "lng": -97.7408,
+      "address": "4200 N Lamar Blvd, Austin, TX 78756",
+      "dist_deg": 0.0058,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5442,
+      "name": "Hopdoddy South Lamar",
+      "neighborhood": "South Lamar",
+      "addr_city": "Austin",
+      "lat": 30.2638681,
+      "lng": -97.7326396,
+      "address": "1011 E 5th St. Suite 180, Austin, TX 78702",
+      "dist_deg": 0.0124,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "6th Street",
+        "Red River",
+        "South Congress",
+        "East Austin"
+      ]
+    },
+    {
+      "id": 5498,
+      "name": "Hole in the Wall",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.2900421,
+      "lng": -97.7416172,
+      "address": "2538 Guadalupe St, Austin, TX 78705",
+      "dist_deg": 0.005,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5499,
+      "name": "Deep Eddy Cabaret",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.2778,
+      "lng": -97.7726,
+      "address": "2315 Lake Austin Blvd, Austin, TX 78703",
+      "dist_deg": 0.0126,
+      "severity": "edge",
+      "suggested": [
+        "West Austin"
+      ]
+    },
+    {
+      "id": 5504,
+      "name": "Yard Bar",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.3430338,
+      "lng": -97.7391986,
+      "address": "6700 Burnet Rd, Austin, TX 78757",
+      "dist_deg": 0.0092,
+      "severity": "edge",
+      "suggested": [
+        "North Lamar"
+      ]
+    },
+    {
+      "id": 5509,
+      "name": "Austin Beer Garden Brewing Co.",
+      "neighborhood": "South Austin",
+      "addr_city": "Austin",
+      "lat": 30.2452015,
+      "lng": -97.7688985,
+      "address": "1305 W Oltorf St, Austin, TX 78704",
+      "dist_deg": 0.0052,
+      "severity": "edge",
+      "suggested": [
+        "South 1st",
+        "South Lamar",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5510,
+      "name": "Draught House Pub & Brewery",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.3110705,
+      "lng": -97.7428734,
+      "address": "4112 Medical Pkwy, Austin, TX 78756",
+      "dist_deg": 0.0079,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5516,
+      "name": "Phoenician Resto Cafe",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.2969,
+      "lng": -97.7407,
+      "address": "2909 Guadalupe St, Austin, TX 78705",
+      "dist_deg": 0.0119,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5518,
+      "name": "Cabo Bob's Burritos",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.2937,
+      "lng": -97.7452,
+      "address": "2828 Rio Grande St, Austin, TX 78705",
+      "dist_deg": 0.0087,
+      "severity": "edge",
+      "suggested": [
+        "West Austin"
+      ]
+    },
+    {
+      "id": 5519,
+      "name": "JewBoy Burgers",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.3154,
+      "lng": -97.7103,
+      "address": "5111 Airport Blvd, Austin, TX 78751",
+      "dist_deg": 0.0146,
+      "severity": "edge",
+      "suggested": [
+        "Mueller",
+        "North Loop",
+        "North Lamar"
+      ]
+    },
+    {
+      "id": 5521,
+      "name": "Little Deli & Pizzeria",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.3429,
+      "lng": -97.7253,
+      "address": "7101 Woodrow Ave, Austin, TX 78757",
+      "dist_deg": 0.0129,
+      "severity": "edge",
+      "suggested": [
+        "North Lamar",
+        "North Austin"
+      ]
+    },
+    {
+      "id": 5522,
+      "name": "Otherside Deli",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.303458,
+      "lng": -97.745722,
+      "address": "1104 W 34th St D, Austin, TX 78705",
+      "dist_deg": 0.0107,
+      "severity": "edge",
+      "suggested": [
+        "West Austin"
+      ]
+    },
+    {
+      "id": 5529,
+      "name": "Barrett's Coffee",
+      "neighborhood": "North Loop",
+      "addr_city": "Austin",
+      "lat": 30.3389733,
+      "lng": -97.7174799,
+      "address": "713 W St Johns Ave, Austin, TX 78752",
+      "dist_deg": 0.009,
+      "severity": "edge",
+      "suggested": [
+        "North Lamar",
+        "North Austin"
+      ]
+    },
+    {
+      "id": 5536,
+      "name": "North by Northwest",
+      "neighborhood": "Domain",
+      "addr_city": "Austin",
+      "lat": 30.3911433,
+      "lng": -97.7384026,
+      "address": "10010 N Capital of Texas Hwy, Austin, TX 78759",
+      "dist_deg": 0.0051,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5537,
+      "name": "Baby Acapulco",
+      "neighborhood": "Zilker",
+      "addr_city": "Austin",
+      "lat": 30.244447,
+      "lng": -97.729716,
+      "address": "1705 S Lakeshore Blvd, Austin, TX 78741",
+      "dist_deg": 0.0053,
+      "severity": "edge",
+      "suggested": [
+        "South Congress",
+        "East Austin"
+      ]
+    },
+    {
+      "id": 5538,
+      "name": "Trudy's Texas Star",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.295722,
+      "lng": -97.741075,
+      "address": "409 W 30th St, Austin, TX 78705",
+      "dist_deg": 0.0107,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5539,
+      "name": "Counter Cafe",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.2617088,
+      "lng": -97.721637,
+      "address": "1914 E 6th St, Austin, TX 78702",
+      "dist_deg": 0.0084,
+      "severity": "edge",
+      "suggested": [
+        "East Austin"
+      ]
+    },
+    {
+      "id": 5543,
+      "name": "Voodoo Doughnut",
+      "neighborhood": "East Austin",
+      "addr_city": "Austin",
+      "lat": 30.2674,
+      "lng": -97.7398,
+      "address": "212 E 6th St, Austin, TX 78701",
+      "dist_deg": 0.0048,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "6th Street",
+        "Red River",
+        "Rainey Street",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5561,
+      "name": "Gourdough's",
+      "neighborhood": "South Austin",
+      "addr_city": "Austin",
+      "lat": 30.2493592,
+      "lng": -97.7548691,
+      "address": "1503 S 1st St, Austin, TX 78704",
+      "dist_deg": 0.0094,
+      "severity": "edge",
+      "suggested": [
+        "South Congress",
+        "South 1st",
+        "South Lamar",
+        "Zilker"
+      ]
+    },
+    {
+      "id": 5565,
+      "name": "Ceviche7",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.296383,
+      "lng": -97.7413908,
+      "address": "502 W 30th St, Austin, TX 78705",
+      "dist_deg": 0.0114,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5569,
+      "name": "CaPhe.in Coffee",
+      "neighborhood": "Downtown",
+      "addr_city": "Austin",
+      "lat": 30.2975477,
+      "lng": -97.7417126,
+      "address": "3016 Guadalupe St B175, Austin, TX 78705",
+      "dist_deg": 0.0125,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5580,
+      "name": "Roya",
+      "neighborhood": "North Austin",
+      "addr_city": "Austin",
+      "lat": 30.3608002,
+      "lng": -97.7414581,
+      "address": "7858 Shoal Creek Blvd Suite C, Austin, TX 78757",
+      "dist_deg": 0.0115,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 5588,
+      "name": "Waterloo Greenway",
+      "neighborhood": "Rainey Street",
+      "addr_city": "Austin",
+      "lat": 30.272934,
+      "lng": -97.735763,
+      "address": "500 E 12th St, Austin, TX 78701",
+      "dist_deg": 0.0049,
+      "severity": "edge",
+      "suggested": [
+        "Downtown",
+        "6th Street",
+        "Red River",
+        "Zilker"
+      ]
+    }
+  ]
+}
