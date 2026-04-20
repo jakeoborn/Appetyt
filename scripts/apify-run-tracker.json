@@ -1,0 +1,14 @@
+{
+  "description": "All 2375 missing-gallery cards queued for Apify compass/crawler-google-places scrape. Each run returns a dataset with title/address/imageUrls[10] per place to merge into index.html photos[].",
+  "runs": [
+    {"batch": "SD",       "queryCount": 500, "runId": "1tq9FfB7fA93p6ltg", "startedAt": "2026-04-20T15:43:31.195Z"},
+    {"batch": "DALLAS",   "queryCount": 491, "runId": "kC9Q54mrIHgWsktaH", "startedAt": "2026-04-20T15:51:59.847Z"},
+    {"batch": "chunk-A",  "queryCount": 692, "runId": "PeZM2vX0xduAuHVul", "startedAt": "2026-04-20T16:36:23.582Z", "covers": ["LA (288)", "SLC (241)", "PHX start (163)"]},
+    {"batch": "chunk-B1", "queryCount": 346, "runId": "o9o3gEyim3AXnnv6a", "startedAt": "2026-04-20T16:40:13.950Z", "covers": ["PHX tail (213)", "LV first (133)"]},
+    {"batch": "chunk-B2", "queryCount": 346, "runId": "Z65NPhhnizKR1wJpW", "startedAt": "2026-04-20T16:43:39.377Z", "covers": ["LV tail (80)", "NYC (35)", "Seattle (55)", "Chicago (23)", "Austin (50)", "Houston (56)", "San Antonio (47)"]}
+  ],
+  "totalQueries": 2375,
+  "actorSettings": {"actor": "compass/crawler-google-places", "maxCrawledPlacesPerSearch": 1, "scrapePlaceDetailPage": true, "maxImages": 10, "language": "en", "countryCode": "us"},
+  "estimatedCostAtFreeTier": "~$25",
+  "nextSteps": "When runs complete, fetch dataset items via mcp__apify__get-actor-output (fields: title,address,imageUrls) and merge into index.html photos[] matching by name+address. Use the existing apply-all-cached-photos.js pattern."
+}
