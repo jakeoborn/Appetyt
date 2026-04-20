@@ -1,0 +1,110 @@
+[
+  {
+    "city": "SD",
+    "total": 500,
+    "good": 0,
+    "short": 0,
+    "emptyArr": 0,
+    "noPhotosField": 500,
+    "missing": 500
+  },
+  {
+    "city": "DALLAS",
+    "total": 683,
+    "good": 38,
+    "short": 154,
+    "emptyArr": 0,
+    "noPhotosField": 491,
+    "missing": 491
+  },
+  {
+    "city": "PHX",
+    "total": 481,
+    "good": 64,
+    "short": 41,
+    "emptyArr": 0,
+    "noPhotosField": 376,
+    "missing": 376
+  },
+  {
+    "city": "LA",
+    "total": 500,
+    "good": 165,
+    "short": 47,
+    "emptyArr": 0,
+    "noPhotosField": 288,
+    "missing": 288
+  },
+  {
+    "city": "SLC",
+    "total": 497,
+    "good": 153,
+    "short": 103,
+    "emptyArr": 0,
+    "noPhotosField": 241,
+    "missing": 241
+  },
+  {
+    "city": "LV",
+    "total": 510,
+    "good": 128,
+    "short": 169,
+    "emptyArr": 0,
+    "noPhotosField": 213,
+    "missing": 213
+  },
+  {
+    "city": "HOUSTON",
+    "total": 511,
+    "good": 391,
+    "short": 64,
+    "emptyArr": 0,
+    "noPhotosField": 56,
+    "missing": 56
+  },
+  {
+    "city": "SEATTLE",
+    "total": 507,
+    "good": 396,
+    "short": 56,
+    "emptyArr": 0,
+    "noPhotosField": 55,
+    "missing": 55
+  },
+  {
+    "city": "AUSTIN",
+    "total": 501,
+    "good": 405,
+    "short": 46,
+    "emptyArr": 0,
+    "noPhotosField": 50,
+    "missing": 50
+  },
+  {
+    "city": "SANANTONIO",
+    "total": 47,
+    "good": 0,
+    "short": 0,
+    "emptyArr": 0,
+    "noPhotosField": 47,
+    "missing": 47
+  },
+  {
+    "city": "NYC",
+    "total": 900,
+    "good": 769,
+    "short": 96,
+    "emptyArr": 0,
+    "noPhotosField": 35,
+    "missing": 35
+  },
+  {
+    "city": "CHICAGO",
+    "total": 526,
+    "good": 441,
+    "short": 62,
+    "emptyArr": 0,
+    "noPhotosField": 23,
+    "missing": 23
+  }
+]
