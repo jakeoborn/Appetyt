@@ -129,6 +129,19 @@ function loadProgress() {
 
 function saveProgress(p) { fs.writeFileSync(PROGRESS_PATH, JSON.stringify(p, null, 2)); }
 
+// OneDrive sync can hold a transient write lock on index.html. Retry with backoff.
+function writeFileRetry(p, data, attempts = 8) {
+  for (let i = 0; i < attempts; i++) {
+    try { fs.writeFileSync(p, data); return; }
+    catch (err) {
+      if (i === attempts - 1) throw err;
+      const waitMs = 500 * (i + 1);
+      console.log(`  ⚠️ write retry ${i + 1}/${attempts} after ${waitMs}ms (${err.code})`);
+      const end = Date.now() + waitMs; while (Date.now() < end) {}
+    }
+  }
+}
+
 function log(line) {
   fs.appendFileSync(LOG_PATH, line + '\n');
   console.log(line);
@@ -218,12 +231,12 @@ function log(line) {
 
     // Persist after every 25 fixes (in case of crash, save html + progress)
     if (updated % 25 === 0) {
-      fs.writeFileSync(HTML_PATH, html);
+      writeFileRetry(HTML_PATH, html);
       saveProgress({ fixed, manual });
     }
   }
 
-  fs.writeFileSync(HTML_PATH, html);
+  writeFileRetry(HTML_PATH, html);
   saveProgress({ fixed, manual });
   fs.writeFileSync(MANUAL_PATH, JSON.stringify(manual, null, 2));
 
