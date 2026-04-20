@@ -1,0 +1,57 @@
+{
+  "applied": [
+    {
+      "id": 2018,
+      "from": "West Hollywood",
+      "to": "West LA",
+      "reason": "Sushi Ginza Onodera: 11651 Santa Monica Blvd 90025 + coords (34.04,-118.46) — Sawtelle/West LA"
+    },
+    {
+      "id": 2115,
+      "from": "Beverly Hills",
+      "to": "Downtown LA",
+      "reason": "Mastro's Steakhouse: 1200 S Figueroa 90015 + coords (34.04,-118.27) — DTLA"
+    },
+    {
+      "id": 2223,
+      "from": "Downtown LA",
+      "to": "Los Feliz",
+      "reason": "Holy Basil: 3170 Glendale Blvd 90039 + coords (34.12,-118.26) — Atwater Village / Los Feliz"
+    },
+    {
+      "id": 2246,
+      "from": "Silver Lake",
+      "to": "Little Tokyo",
+      "reason": "Bar Sawa: 111 S San Pedro St 90012 + coords (34.05,-118.24) — Little Tokyo"
+    },
+    {
+      "id": 2351,
+      "from": "Beverly Hills",
+      "to": "Brentwood",
+      "reason": "Pie Room: 11678 San Vicente Blvd 90049 + coords (34.05,-118.46) — Brentwood"
+    }
+  ],
+  "skipped": [],
+  "coord_bugs": [
+    {
+      "id": 2099,
+      "name": "Causita",
+      "issue": "1700 Sunset Blvd 90026 (Echo Park) but coord 34.04,-118.46 is West LA (same coord as Sushi Ginza Onodera — likely swapped)"
+    },
+    {
+      "id": 2112,
+      "name": "Sichuan Impression",
+      "issue": "23 W Valley Blvd Alhambra 91801 but coord 34.05,-118.44 is West LA (should be ~34.09,-118.13)"
+    },
+    {
+      "id": 2402,
+      "name": "Hollywood Bowl",
+      "issue": "2301 N Highland 90068 (Hollywood Hills) but coord 33.89,-118.41 is Manhattan Beach"
+    },
+    {
+      "id": 2013,
+      "name": "Petit Trois",
+      "issue": "718 Highland Ave 90038 (Hollywood) but coord 34.16,-118.28 is Glendale"
+    }
+  ]
+}

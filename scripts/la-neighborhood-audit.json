@@ -1,0 +1,105 @@
+{
+  "city": "LA",
+  "checked": 500,
+  "in_bounds": 493,
+  "no_bounds": 0,
+  "severe": [
+    {
+      "id": 2099,
+      "name": "Causita",
+      "neighborhood": "Echo Park",
+      "addr_city": "Los Angeles",
+      "lat": 34.0444417,
+      "lng": -118.4550278,
+      "address": "1700 Sunset Blvd, Los Angeles, CA 90026",
+      "dist_deg": 0.1885,
+      "severity": "severe",
+      "suggested": [
+        "Brentwood",
+        "West LA"
+      ]
+    },
+    {
+      "id": 2112,
+      "name": "Sichuan Impression",
+      "neighborhood": "Alhambra",
+      "addr_city": "Alhambra",
+      "lat": 34.0481991,
+      "lng": -118.4433111,
+      "address": "23 W Valley Blvd, Alhambra, CA 91801",
+      "dist_deg": 0.2694,
+      "severity": "severe",
+      "suggested": [
+        "West LA"
+      ]
+    },
+    {
+      "id": 2402,
+      "name": "Hollywood Bowl",
+      "neighborhood": "Hollywood",
+      "addr_city": "Los Angeles",
+      "lat": 33.892484,
+      "lng": -118.414022,
+      "address": "2301 N Highland Ave, Los Angeles, CA 90068",
+      "dist_deg": 0.1979,
+      "severity": "severe",
+      "suggested": [
+        "Manhattan Beach"
+      ]
+    }
+  ],
+  "moderate": [
+    {
+      "id": 2013,
+      "name": "Petit Trois",
+      "neighborhood": "Hollywood",
+      "addr_city": "Los Angeles",
+      "lat": 34.1572233,
+      "lng": -118.2769618,
+      "address": "718 Highland Ave, Los Angeles, CA 90038",
+      "dist_deg": 0.0459,
+      "severity": "moderate",
+      "suggested": [
+        "Glendale"
+      ]
+    }
+  ],
+  "edge": [
+    {
+      "id": 2180,
+      "name": "Cosetta",
+      "neighborhood": "Santa Monica",
+      "addr_city": "Santa Monica",
+      "lat": 34.0204698,
+      "lng": -118.4527593,
+      "address": "3150 Ocean Park Blvd, Santa Monica, CA 90405",
+      "dist_deg": 0.0122,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 2263,
+      "name": "Night on Earth",
+      "neighborhood": "Hollywood",
+      "addr_city": "Los Angeles",
+      "lat": 34.1298865,
+      "lng": -118.3491677,
+      "address": "3256 Cahuenga Blvd W, Los Angeles, CA 90068",
+      "dist_deg": 0.0149,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 2284,
+      "name": "Lares Restaurant",
+      "neighborhood": "Santa Monica",
+      "addr_city": "Santa Monica",
+      "lat": 34.0249532,
+      "lng": -118.4592684,
+      "address": "2909 Pico Blvd, Santa Monica, CA 90405",
+      "dist_deg": 0.0057,
+      "severity": "edge",
+      "suggested": []
+    }
+  ]
+}
