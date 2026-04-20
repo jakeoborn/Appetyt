@@ -1,0 +1,661 @@
+{
+  "city": "Chicago",
+  "total_checked": 526,
+  "in_bounds": 483,
+  "out_of_bounds": 43,
+  "no_bounds": 0,
+  "out_of_state": 0,
+  "severe": [
+    {
+      "id": 128,
+      "name": "Arami",
+      "neighborhood": "West Town",
+      "addr_city": "Chicago",
+      "lat": 41.7857604,
+      "lng": -87.7421538,
+      "address": "5700 S Cicero Ave, Chicago, IL 60638",
+      "dist_deg": 0.1206,
+      "severity": "severe",
+      "suggested": []
+    },
+    {
+      "id": 457,
+      "name": "Herb",
+      "neighborhood": "Lakeview / Wrigleyville",
+      "addr_city": "Chicago",
+      "lat": 41.9379534,
+      "lng": -87.7979176,
+      "address": "6857 W Belmont Ave, Chicago, IL 60634",
+      "dist_deg": 0.1179,
+      "severity": "severe",
+      "suggested": []
+    }
+  ],
+  "moderate": [
+    {
+      "id": 109,
+      "name": "The Bassment",
+      "neighborhood": "Wicker Park",
+      "addr_city": "Chicago",
+      "lat": 41.8897738,
+      "lng": -87.6378787,
+      "address": "353 W Hubbard St, Chicago, IL 60654",
+      "dist_deg": 0.0236,
+      "severity": "moderate",
+      "suggested": [
+        "The Loop",
+        "River North",
+        "South Loop"
+      ]
+    },
+    {
+      "id": 118,
+      "name": "Lao Peng You",
+      "neighborhood": "Chinatown",
+      "addr_city": "Chicago",
+      "lat": 41.8960876,
+      "lng": -87.6779098,
+      "address": "2020 W Chicago Ave, Chicago, IL 60622",
+      "dist_deg": 0.0474,
+      "severity": "moderate",
+      "suggested": [
+        "Ukrainian Village",
+        "West Town",
+        "Noble Square"
+      ]
+    },
+    {
+      "id": 120,
+      "name": "Where Roots Reside",
+      "neighborhood": "Humboldt Park",
+      "addr_city": "Chicago",
+      "lat": 41.958806,
+      "lng": -87.681651,
+      "address": "4237 N Lincoln Ave, Chicago, IL 60618",
+      "dist_deg": 0.0429,
+      "severity": "moderate",
+      "suggested": [
+        "North Center",
+        "Ravenswood",
+        "Lincoln Square",
+        "Uptown"
+      ]
+    },
+    {
+      "id": 177,
+      "name": "Smoke Daddy",
+      "neighborhood": "Wicker Park",
+      "addr_city": "Chicago",
+      "lat": 41.9480528,
+      "lng": -87.6574583,
+      "address": "3636 N Clark St, Chicago, IL 60613",
+      "dist_deg": 0.0232,
+      "severity": "moderate",
+      "suggested": [
+        "Lakeview / Wrigleyville"
+      ]
+    },
+    {
+      "id": 178,
+      "name": "Taqueria Los Comales",
+      "neighborhood": "Pilsen",
+      "addr_city": "Chicago",
+      "lat": 41.8441,
+      "lng": -87.7058,
+      "address": "3141 W 26th St, Chicago, IL 60623",
+      "dist_deg": 0.0238,
+      "severity": "moderate",
+      "suggested": [
+        "Little Village"
+      ]
+    },
+    {
+      "id": 189,
+      "name": "Little Goat Diner",
+      "neighborhood": "West Loop / Fulton Market",
+      "addr_city": "Chicago",
+      "lat": 41.9423438,
+      "lng": -87.6635606,
+      "address": "3325 N Southport Ave, Chicago, IL 60657",
+      "dist_deg": 0.0453,
+      "severity": "moderate",
+      "suggested": [
+        "Lakeview / Wrigleyville"
+      ]
+    },
+    {
+      "id": 196,
+      "name": "Daebak Korean BBQ",
+      "neighborhood": "Chinatown",
+      "addr_city": "Chicago",
+      "lat": 41.9046557,
+      "lng": -87.6689609,
+      "address": "230 W Cermak Rd, Chicago, IL 60616",
+      "dist_deg": 0.0489,
+      "severity": "moderate",
+      "suggested": [
+        "Wicker Park",
+        "Ukrainian Village",
+        "West Town",
+        "Noble Square"
+      ]
+    },
+    {
+      "id": 232,
+      "name": "Fat Chris's Pizza & Such",
+      "neighborhood": "Avondale",
+      "addr_city": "Chicago",
+      "lat": 41.9762945,
+      "lng": -87.6725258,
+      "address": "1706 W Foster Ave, Chicago, IL 60640",
+      "dist_deg": 0.031,
+      "severity": "moderate",
+      "suggested": [
+        "Ravenswood",
+        "Uptown",
+        "Edgewater",
+        "Andersonville"
+      ]
+    },
+    {
+      "id": 265,
+      "name": "Casa Yari",
+      "neighborhood": "Logan Square",
+      "addr_city": "Chicago",
+      "lat": 41.902655,
+      "lng": -87.6961522,
+      "address": "2743 W Division St, Chicago, IL 60622",
+      "dist_deg": 0.0153,
+      "severity": "moderate",
+      "suggested": [
+        "Humboldt Park"
+      ]
+    },
+    {
+      "id": 315,
+      "name": "BLVD Steakhouse",
+      "neighborhood": "Streeterville",
+      "addr_city": "Chicago",
+      "lat": 41.8855339,
+      "lng": -87.6483127,
+      "address": "817 W Lake St, Chicago, IL 60607",
+      "dist_deg": 0.0203,
+      "severity": "moderate",
+      "suggested": [
+        "The Loop",
+        "West Loop / Fulton Market",
+        "South Loop",
+        "Greektown"
+      ]
+    },
+    {
+      "id": 316,
+      "name": "Bonyeon",
+      "neighborhood": "Bucktown",
+      "addr_city": "Chicago",
+      "lat": 41.8827771,
+      "lng": -87.6444716,
+      "address": "2023 W North Ave, Chicago, IL 60647",
+      "dist_deg": 0.0286,
+      "severity": "moderate",
+      "suggested": [
+        "The Loop",
+        "West Loop / Fulton Market",
+        "South Loop",
+        "Greektown"
+      ]
+    },
+    {
+      "id": 376,
+      "name": "The Whale",
+      "neighborhood": "West Loop / Fulton Market",
+      "addr_city": "Chicago",
+      "lat": 41.9254885,
+      "lng": -87.7011997,
+      "address": "910 W Lake St, Chicago, IL 60607",
+      "dist_deg": 0.0387,
+      "severity": "moderate",
+      "suggested": [
+        "Logan Square",
+        "Hermosa"
+      ]
+    },
+    {
+      "id": 383,
+      "name": "The Tamale Guy",
+      "neighborhood": "Ukrainian Village",
+      "addr_city": "Chicago",
+      "lat": 41.9322711,
+      "lng": -87.7014615,
+      "address": "2934 W Diversey Ave, Chicago, IL 60647",
+      "dist_deg": 0.0293,
+      "severity": "moderate",
+      "suggested": [
+        "Logan Square",
+        "Hermosa",
+        "Avondale"
+      ]
+    },
+    {
+      "id": 396,
+      "name": "Range",
+      "neighborhood": "Lincoln Square",
+      "addr_city": "Chicago",
+      "lat": 41.9215923,
+      "lng": -87.6567591,
+      "address": "1119 W Webster Ave, Chicago, IL 60614",
+      "dist_deg": 0.0367,
+      "severity": "moderate",
+      "suggested": [
+        "Lincoln Park"
+      ]
+    },
+    {
+      "id": 398,
+      "name": "Chengdu Impression",
+      "neighborhood": "Chinatown",
+      "addr_city": "Chicago",
+      "lat": 41.9052127,
+      "lng": -87.6696531,
+      "address": "1300 N Milwaukee Ave, Chicago, IL 60622",
+      "dist_deg": 0.0498,
+      "severity": "moderate",
+      "suggested": [
+        "Lincoln Park",
+        "Wicker Park",
+        "Ukrainian Village",
+        "West Town"
+      ]
+    },
+    {
+      "id": 429,
+      "name": "Lupo Pizzeria",
+      "neighborhood": "Wicker Park",
+      "addr_city": "Chicago",
+      "lat": 41.8715611,
+      "lng": -87.6272861,
+      "address": "805 S State St, Chicago, IL 60605",
+      "dist_deg": 0.0421,
+      "severity": "moderate",
+      "suggested": [
+        "Near South Side",
+        "South Loop"
+      ]
+    },
+    {
+      "id": 456,
+      "name": "Cafe Orchid",
+      "neighborhood": "Bucktown",
+      "addr_city": "Chicago",
+      "lat": 41.9171969,
+      "lng": -87.7109307,
+      "address": "3315 W Armitage Ave, Chicago, IL 60647",
+      "dist_deg": 0.0259,
+      "severity": "moderate",
+      "suggested": [
+        "Humboldt Park",
+        "Hermosa"
+      ]
+    },
+    {
+      "id": 509,
+      "name": "The Sit Down Cafe & Sushi Bar",
+      "neighborhood": "Bronzeville",
+      "addr_city": "Chicago",
+      "lat": 41.7996239,
+      "lng": -87.594447,
+      "address": "1312 E 53rd St, Chicago, IL 60615",
+      "dist_deg": 0.0186,
+      "severity": "moderate",
+      "suggested": [
+        "Hyde Park"
+      ]
+    },
+    {
+      "id": 536,
+      "name": "Uncle John's BBQ",
+      "neighborhood": "Englewood",
+      "addr_city": "Chicago",
+      "lat": 41.7443491,
+      "lng": -87.6048274,
+      "address": "337 E 69th St, Chicago, IL 60637",
+      "dist_deg": 0.0298,
+      "severity": "moderate",
+      "suggested": [
+        "Chatham",
+        "South Side"
+      ]
+    },
+    {
+      "id": 541,
+      "name": "Nuevo Leon Restaurant",
+      "neighborhood": "Pilsen",
+      "addr_city": "Chicago",
+      "lat": 41.8441667,
+      "lng": -87.7169444,
+      "address": "1515 W 18th St, Chicago, IL 60608",
+      "dist_deg": 0.0349,
+      "severity": "moderate",
+      "suggested": [
+        "Little Village"
+      ]
+    },
+    {
+      "id": 12552,
+      "name": "The 606 (Bloomingdale Trail)",
+      "neighborhood": "West Town",
+      "addr_city": "Chicago",
+      "lat": 41.9136,
+      "lng": -87.7202,
+      "address": "1805 N Ridgeway Ave, Chicago, IL 60647",
+      "dist_deg": 0.0352,
+      "severity": "moderate",
+      "suggested": [
+        "Humboldt Park",
+        "Hermosa"
+      ]
+    }
+  ],
+  "edge": [
+    {
+      "id": 13,
+      "name": "Al's #1 Italian Beef",
+      "neighborhood": "West Loop / Fulton Market",
+      "addr_city": "Chicago",
+      "lat": 41.8695,
+      "lng": -87.6556,
+      "address": "1079 W Taylor St, Chicago, IL 60607",
+      "dist_deg": 0.0055,
+      "severity": "edge",
+      "suggested": [
+        "Little Italy / University Village"
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Untitled Supper Club",
+      "neighborhood": "West Loop / Fulton Market",
+      "addr_city": "Chicago",
+      "lat": 41.8890762,
+      "lng": -87.631681,
+      "address": "111 W Kinzie St, Chicago, IL 60654",
+      "dist_deg": 0.0063,
+      "severity": "edge",
+      "suggested": [
+        "The Loop",
+        "River North",
+        "South Loop"
+      ]
+    },
+    {
+      "id": 111,
+      "name": "Kai Zan",
+      "neighborhood": "Humboldt Park",
+      "addr_city": "Chicago",
+      "lat": 41.8967,
+      "lng": -87.6896,
+      "address": "2557 W Chicago Ave, Chicago, IL 60622",
+      "dist_deg": 0.0054,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 144,
+      "name": "Half Acre Beer Company",
+      "neighborhood": "North Center",
+      "addr_city": "Chicago",
+      "lat": 41.980193,
+      "lng": -87.681371,
+      "address": "2050 W Balmoral Ave, Chicago, IL 60625",
+      "dist_deg": 0.0082,
+      "severity": "edge",
+      "suggested": [
+        "Ravenswood",
+        "Lincoln Square",
+        "Uptown"
+      ]
+    },
+    {
+      "id": 153,
+      "name": "Moody Tongue",
+      "neighborhood": "South Loop",
+      "addr_city": "Chicago",
+      "lat": 41.8491,
+      "lng": -87.6254,
+      "address": "2515 S Wabash Ave, Chicago, IL 60616",
+      "dist_deg": 0.0059,
+      "severity": "edge",
+      "suggested": [
+        "Bridgeport",
+        "Chinatown",
+        "Bronzeville"
+      ]
+    },
+    {
+      "id": 199,
+      "name": "Oyster Bah",
+      "neighborhood": "Lakeview / Wrigleyville",
+      "addr_city": "Chicago",
+      "lat": 41.9168,
+      "lng": -87.6486,
+      "address": "1962 N Halsted St, Chicago, IL 60614",
+      "dist_deg": 0.0132,
+      "severity": "edge",
+      "suggested": [
+        "Lincoln Park",
+        "West Town"
+      ]
+    },
+    {
+      "id": 234,
+      "name": "Alla Vita",
+      "neighborhood": "West Town",
+      "addr_city": "Chicago",
+      "lat": 41.884577,
+      "lng": -87.6425214,
+      "address": "564 W Randolph St, Chicago, IL 60661",
+      "dist_deg": 0.0092,
+      "severity": "edge",
+      "suggested": [
+        "The Loop",
+        "West Loop / Fulton Market",
+        "South Loop",
+        "Greektown"
+      ]
+    },
+    {
+      "id": 336,
+      "name": "Chubby Skewers",
+      "neighborhood": "Chinatown",
+      "addr_city": "Chicago",
+      "lat": 41.8354785,
+      "lng": -87.6328219,
+      "address": "2017b S Wells St, Chicago, IL 60616",
+      "dist_deg": 0.0125,
+      "severity": "edge",
+      "suggested": [
+        "Bridgeport",
+        "Bronzeville"
+      ]
+    },
+    {
+      "id": 343,
+      "name": "Qing Xiang Yuan Wicker Park",
+      "neighborhood": "Wicker Park",
+      "addr_city": "Chicago",
+      "lat": 41.886878,
+      "lng": -87.6504623,
+      "address": "916 W Fulton Market, Chicago, IL 60607",
+      "dist_deg": 0.0147,
+      "severity": "edge",
+      "suggested": [
+        "West Loop / Fulton Market",
+        "Greektown"
+      ]
+    },
+    {
+      "id": 394,
+      "name": "Gavin's on Damen",
+      "neighborhood": "Bucktown",
+      "addr_city": "Chicago",
+      "lat": 41.8943564,
+      "lng": -87.6768442,
+      "address": "701 N Damen Ave, Chicago, IL 60622",
+      "dist_deg": 0.0136,
+      "severity": "edge",
+      "suggested": [
+        "Ukrainian Village",
+        "West Town",
+        "Noble Square"
+      ]
+    },
+    {
+      "id": 395,
+      "name": "Kitchen 17",
+      "neighborhood": "Lakeview / Wrigleyville",
+      "addr_city": "Chicago",
+      "lat": 41.9323139,
+      "lng": -87.6926471,
+      "address": "2554 W Diversey Ave, Chicago, IL 60647",
+      "dist_deg": 0.0126,
+      "severity": "edge",
+      "suggested": [
+        "Logan Square"
+      ]
+    },
+    {
+      "id": 408,
+      "name": "Midōsuji",
+      "neighborhood": "West Loop / Fulton Market",
+      "addr_city": "Chicago",
+      "lat": 41.8816533,
+      "lng": -87.624953,
+      "address": "West Loop, Chicago, IL 60607",
+      "dist_deg": 0.013,
+      "severity": "edge",
+      "suggested": [
+        "The Loop",
+        "South Loop"
+      ]
+    },
+    {
+      "id": 410,
+      "name": "Roll Up by Oui",
+      "neighborhood": "River North",
+      "addr_city": "Chicago",
+      "lat": 41.8711724,
+      "lng": -87.6244019,
+      "address": "River North, Chicago, IL 60654",
+      "dist_deg": 0.0138,
+      "severity": "edge",
+      "suggested": [
+        "Near South Side",
+        "South Loop"
+      ]
+    },
+    {
+      "id": 427,
+      "name": "Lonesome Rose",
+      "neighborhood": "Wicker Park",
+      "addr_city": "Chicago",
+      "lat": 41.9207,
+      "lng": -87.6976,
+      "address": "2101 N California Ave, Chicago, IL 60647",
+      "dist_deg": 0.0106,
+      "severity": "edge",
+      "suggested": [
+        "Logan Square"
+      ]
+    },
+    {
+      "id": 437,
+      "name": "Split-Rail",
+      "neighborhood": "Humboldt Park",
+      "addr_city": "Chicago",
+      "lat": 41.8967,
+      "lng": -87.6884,
+      "address": "2500 W Chicago Ave, Chicago, IL 60622",
+      "dist_deg": 0.0066,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 443,
+      "name": "Porto",
+      "neighborhood": "Bucktown",
+      "addr_city": "Chicago",
+      "lat": 41.8963116,
+      "lng": -87.6675548,
+      "address": "1600 W Chicago Ave, Chicago, IL 60622",
+      "dist_deg": 0.0117,
+      "severity": "edge",
+      "suggested": [
+        "West Loop / Fulton Market",
+        "Ukrainian Village",
+        "West Town",
+        "Noble Square"
+      ]
+    },
+    {
+      "id": 444,
+      "name": "Taste of Lebanon",
+      "neighborhood": "Lincoln Square",
+      "addr_city": "Chicago",
+      "lat": 41.9760037,
+      "lng": -87.6687246,
+      "address": "1509 W Foster Ave, Chicago, IL 60640",
+      "dist_deg": 0.0113,
+      "severity": "edge",
+      "suggested": [
+        "Uptown",
+        "Edgewater",
+        "Andersonville"
+      ]
+    },
+    {
+      "id": 450,
+      "name": "Doña Naty",
+      "neighborhood": "Humboldt Park",
+      "addr_city": "Chicago",
+      "lat": 41.9032242,
+      "lng": -87.690039,
+      "address": "2510 W Division St, Chicago, IL 60622",
+      "dist_deg": 0.005,
+      "severity": "edge",
+      "suggested": []
+    },
+    {
+      "id": 452,
+      "name": "Brown Bag Seafood",
+      "neighborhood": "West Loop / Fulton Market",
+      "addr_city": "Chicago",
+      "lat": 41.9038357,
+      "lng": -87.6288092,
+      "address": "1 W Division St, Chicago, IL 60610",
+      "dist_deg": 0.0115,
+      "severity": "edge",
+      "suggested": [
+        "River North",
+        "Gold Coast",
+        "Old Town"
+      ]
+    },
+    {
+      "id": 489,
+      "name": "Taqueria El Asadero",
+      "neighborhood": "Irving Park",
+      "addr_city": "Chicago",
+      "lat": 41.9612716,
+      "lng": -87.6843339,
+      "address": "3643 W 26th St, Chicago, IL 60623",
+      "dist_deg": 0.0107,
+      "severity": "edge",
+      "suggested": [
+        "North Center",
+        "Ravenswood",
+        "Lincoln Square",
+        "Uptown"
+      ]
+    }
+  ]
+}

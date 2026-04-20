@@ -1,0 +1,53 @@
+{
+  "applied": [
+    {
+      "id": 105,
+      "from": "Pilsen",
+      "to": "Logan Square",
+      "reason": "Reno: 2607 N Milwaukee Ave 60647 + coords (41.93,-87.71) — Logan Square"
+    },
+    {
+      "id": 114,
+      "from": "Logan Square",
+      "to": "South Loop",
+      "reason": "Apolonia: 105 E Cermak Rd 60616 + coords (41.85,-87.62) — South Loop/Motor Row"
+    },
+    {
+      "id": 209,
+      "from": "Chinatown",
+      "to": "Lincoln Square",
+      "reason": "Aroy Thai: 4654 N Damen Ave 60625 + coords (41.97,-87.68) — Lincoln Square"
+    },
+    {
+      "id": 345,
+      "from": "Bridgeport",
+      "to": "Logan Square",
+      "reason": "Bixi Beer: 2515 N Milwaukee Ave 60647 + coords (41.93,-87.70) — Logan Square"
+    },
+    {
+      "id": 510,
+      "from": "Bronzeville",
+      "to": "Chatham",
+      "reason": "Soul Vegetarian South: 203 E 75th St 60619 + coords (41.76,-87.62) — Chatham"
+    },
+    {
+      "id": 539,
+      "from": "Chatham",
+      "to": "Bronzeville",
+      "reason": "Reggio's Chatham: 4438 S Cottage Grove 60653 + coords (41.81,-87.61) — Bronzeville/Kenwood (44th St is Bronzeville territory)"
+    }
+  ],
+  "skipped": [],
+  "no_bucket": [
+    {
+      "id": 128,
+      "name": "Arami",
+      "issue": "5700 S Cicero Ave 60638 — Garfield Ridge (SW side). Labeled West Town. No matching Chicago neighborhood bucket; defer to user (coord may also be wrong)."
+    },
+    {
+      "id": 457,
+      "name": "Herb",
+      "issue": "6857 W Belmont Ave 60634 — Dunning/Belmont Cragin (NW side). Labeled Lakeview. No matching bucket; defer."
+    }
+  ]
+}
