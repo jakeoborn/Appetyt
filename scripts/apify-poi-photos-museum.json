@@ -1,0 +1,247 @@
+[
+  {
+    "city": "new york",
+    "id": 3,
+    "name": "Solomon R. Guggenheim Museum",
+    "source": "og:image",
+    "url": "https://www.guggenheim.org/wp-content/uploads/2024/11/architecture-srgm-exterior-drone-autumn.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 2,
+    "name": "Museum of Modern Art (MoMA)",
+    "source": "og:image",
+    "url": "https://www.moma.org/d/p/sa/maximum/moma_renovation_and_expansion.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 1,
+    "name": "The Metropolitan Museum of Art",
+    "source": "srcset",
+    "url": "https://cdn.sanity.io/images/cctd4ker/production/fdfb099c2035becbb4da5eb6734335b1d4954fc4-3840x2160.jpg?w=3840&amp;q=75&amp;auto=format"
+  },
+  {
+    "city": "new york",
+    "id": 7,
+    "name": "The Frick Collection",
+    "source": "srcset",
+    "url": "https://www.frick.org/sites/default/files/styles/responsive_1650w/public/banner/2025/12/Web-Winter-Video-First-Frame-1920x1080-q3.jpg.webp?itok=iG3Gkp4I"
+  },
+  {
+    "city": "new york",
+    "id": 4,
+    "name": "Whitney Museum of American Art",
+    "source": "inline-img",
+    "url": "https://whitneymedia.org/assets/image/833049/large_WMAA97701_02_251016_GPowell_Whitney_1409_v2_3x2_web.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 11,
+    "name": "Intrepid Sea, Air & Space Museum",
+    "source": "inline-img",
+    "url": "https://intrepidmuseum.org/sites/default/files/styles/card_small/public/2023-08/ASTROLIVE_%20NASA-GSFC_20171208_Archive_e000226~orig.jpeg.webp?itok=Pr67jEd_"
+  },
+  {
+    "city": "new york",
+    "id": 12,
+    "name": "Museum of the City of New York",
+    "source": "og:image",
+    "url": "https://mcny.org/sites/default/files/mcny_default_social.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 10,
+    "name": "The Cloisters",
+    "source": "srcset",
+    "url": "https://cdn.sanity.io/images/cctd4ker/production/362dd4f65145fe84efebf96ba66de7d5db6f8b7f-4096x2326.jpg?w=3840&amp;q=75&amp;fit=clip&amp;auto=format"
+  },
+  {
+    "city": "dallas",
+    "id": 4,
+    "name": "Sixth Floor Museum at Dealey Plaza",
+    "source": "inline-img",
+    "url": "https://www.jfk.org/wp-content/uploads/jfk.org-The-Sixth-Floor-Museum-at-Dealey-Plaza-Exterior-Reunion-Tower.jpg"
+  },
+  {
+    "city": "dallas",
+    "id": 5,
+    "name": "Crow Museum of Asian Art",
+    "source": "og:image",
+    "url": "https://crowmuseum.org/files/2025/04/crow-museum-entrance.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 13,
+    "name": "Museum of Arts and Design (MAD)",
+    "source": "og:image",
+    "url": "https://madmuseum.org/sites/default/files/styles/page_hero/public/2019/11/0K7A9820.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 14,
+    "name": "El Museo del Barrio",
+    "source": "inline-img",
+    "url": "https://elmuseo.org/wp-content/uploads/2025/12/EM0001_Gala_2026_Web_Banner_m.jpg"
+  },
+  {
+    "city": "dallas",
+    "id": 3,
+    "name": "Perot Museum of Nature and Science",
+    "source": "inline-img",
+    "url": "https://perot-m.imgix.net/wp-content/uploads/20250306-Perot-Soccer-Preview-Jacobsohn-full-103-2.jpg?fit=crop&crop=focalpoint&q=60&w=1440&auto=format&fp-x=0.63&fp-y=0.01&fp-z=1"
+  },
+  {
+    "city": "dallas",
+    "id": 8,
+    "name": "Dallas Holocaust and Human Rights Museum",
+    "source": "og:image",
+    "url": "https://www.dhhrm.org/wp-content/uploads/2019/09/20190820-DHHRM-IL-Exteriors-49-1.jpg"
+  },
+  {
+    "city": "dallas",
+    "id": 6,
+    "name": "Dallas Contemporary",
+    "source": "inline-img",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e013b5ea48f3b2a14f3943f/38d804e4-30cc-405d-92ac-996db0620b87/Screenshot+2026-03-25+at+12.03.26%E2%80%AFPM.png"
+  },
+  {
+    "city": "houston",
+    "id": 4,
+    "name": "Space Center Houston",
+    "source": "og:image",
+    "url": "https://spacecenter.org/wp-content/uploads/2023/01/web2023-astronautdays02.jpg"
+  },
+  {
+    "city": "houston",
+    "id": 3,
+    "name": "Houston Museum of Natural Science",
+    "source": "og:image",
+    "url": "https://www.hmns.org/wp-content/uploads/2023/08/facebook-shared-image2.jpg"
+  },
+  {
+    "city": "dallas",
+    "id": 10,
+    "name": "Frontiers of Flight Museum",
+    "source": "inline-img",
+    "url": "https://flightmuseum.com/wp-content/uploads/2024/02/apollo-7-crew-1-768x449.png"
+  },
+  {
+    "city": "houston",
+    "id": 2,
+    "name": "The Menil Collection",
+    "source": "og:image",
+    "url": "https://blob.production.menil.org/images/twill/d3dc1de5-5413-4634-9f55-98b7333f08d5/dsc00799.jpg?format=auto&amp;quality=85&amp;trim=594%2C0%2C396%2C0"
+  },
+  {
+    "city": "austin",
+    "id": 2,
+    "name": "Bullock Texas State History Museum",
+    "source": "og:image",
+    "url": "https://www.thestoryoftexas.com/wp-content/uploads/2025/08/e634846df6ea06f1c30358d4bf298eecea576c99.jpg"
+  },
+  {
+    "city": "austin",
+    "id": 1,
+    "name": "Blanton Museum of Art",
+    "source": "inline-img",
+    "url": "https://blantonmuseum.b-cdn.net/app/uploads/2024/09/Austin-Hero-Image-1-690x400.jpg"
+  },
+  {
+    "city": "houston",
+    "id": 6,
+    "name": "Children's Museum Houston",
+    "source": "srcset",
+    "url": "https://cdn.prod.website-files.com/5d90d752d12b5bcf2d9d8632/66301129f74ce92342a18e26_KultureCity_PRIMARY_WHITEOUT%20(1).png"
+  },
+  {
+    "city": "austin",
+    "id": 4,
+    "name": "UMLAUF Sculpture Garden + Museum",
+    "source": "og:image",
+    "url": "https://static.wixstatic.com/media/dad426_55ae164b725042bc8879fc43d51083d8%7Emv2_d_4272_2848_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/dad426_55ae164b725042bc8879fc43d51083d8%7Emv2_d_4272_2848_s_4_2.jpg"
+  },
+  {
+    "city": "dallas",
+    "id": 9,
+    "name": "Meadows Museum",
+    "source": "jsonld-image",
+    "url": "https://meadowsmuseumdallas.org/wp-content/uploads/2017/07/IntroClip_snapsho1280-720.jpg"
+  },
+  {
+    "city": "austin",
+    "id": 5,
+    "name": "LBJ Presidential Library",
+    "source": "inline-img",
+    "url": "https://lbj-new-assets.s3.amazonaws.com/styles/feature_block_image/s3/heroes/2024-04/lbj-library-center-carousel.jpg?VersionId=1RQlO_vr44O2L8BTLR1PBe.tbAslqx20&amp;itok=ACZtVCAx"
+  },
+  {
+    "city": "salt lake city",
+    "id": 1,
+    "name": "Natural History Museum of Utah",
+    "source": "inline-img",
+    "url": "https://nhmu.utah.edu/sites/default/files/styles/height_660/public/embedded_images/Utah-Museum-of-Natural-History-umnh_august_29_3.jpg?itok=QkwcP781"
+  },
+  {
+    "city": "salt lake city",
+    "id": 4,
+    "name": "Utah Museum of Fine Arts",
+    "source": "og:image",
+    "url": "https://umfa.utah.edu/wp-content/uploads/files/inline-images/UMFA_Building_SouthSide.jpeg"
+  },
+  {
+    "city": "austin",
+    "id": 6,
+    "name": "Mexic-Arte Museum",
+    "source": "inline-img",
+    "url": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2560,h_1413/https://mexic-artemuseum.org/wp-content/uploads/2026/02/RyR-scaled.png"
+  },
+  {
+    "city": "salt lake city",
+    "id": 5,
+    "name": "Utah Museum of Contemporary Art (UMOCA)",
+    "source": "inline-img",
+    "url": "https://utahmoca.org/wp-content/uploads/2026/04/sacred_west_banner.jpg"
+  },
+  {
+    "city": "chicago",
+    "id": 1,
+    "name": "Art Institute of Chicago",
+    "source": "og:image",
+    "url": "https://artic-web.imgix.net/905abd91-5c0d-451b-9319-f7cd1505bc33/IM026911_002-web.jpg?w=1200&h=800&fit=crop"
+  },
+  {
+    "city": "salt lake city",
+    "id": 6,
+    "name": "Discovery Gateway Children's Museum",
+    "source": "inline-img",
+    "url": "https://www.discoverygateway.org/wp-content/uploads/2025/10/Entry_w_clouds-scaled.jpg"
+  },
+  {
+    "city": "salt lake city",
+    "id": 7,
+    "name": "This Is The Place Heritage Park",
+    "source": "og:image",
+    "url": "https://i0.wp.com/www.thisistheplace.org/wp-content/uploads/2024/03/20170710_143022-2048x1536-1.jpg"
+  },
+  {
+    "city": "chicago",
+    "id": 2,
+    "name": "Field Museum",
+    "source": "srcset",
+    "url": "https://www.datocms-assets.com/44232/1762022805-1748958888-barrera-00438.webp?fm=webp"
+  },
+  {
+    "city": "chicago",
+    "id": 6,
+    "name": "MCA Chicago",
+    "source": "og:image",
+    "url": "https://media.mcachicago.org/image/MM9BIRR2/original.jpg"
+  },
+  {
+    "city": "houston",
+    "id": 5,
+    "name": "Contemporary Arts Museum Houston (CAMH)",
+    "source": "inline-img",
+    "url": "https://camh.org/wp-content/uploads/bb-plugin/cache/MidMainFirstThursdays_ThreatofJoy_ClosingReception_PhotoFromOpeningCelebration_PhotoByIsraelAngel_2000x1250-landscape.jpg"
+  }
+]

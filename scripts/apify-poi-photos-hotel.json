@@ -1,0 +1,317 @@
+[
+  {
+    "city": "las vegas",
+    "id": 2,
+    "name": "Wynn Las Vegas & Encore",
+    "source": "jsonld-image",
+    "url": "https://cdn.wynnresorts.com/q_auto,f_auto/Wynn%20Las%20Vegas/Offers/formula1-828x466?h=466&iar=0&w=828"
+  },
+  {
+    "city": "las vegas",
+    "id": 5,
+    "name": "The Venetian Resort & The Palazzo",
+    "source": "og:image",
+    "url": "https://www.venetianlasvegas.com/content/dam/vlvweb/towers/exterior-1_1200x800.jpg"
+  },
+  {
+    "city": "las vegas",
+    "id": 8,
+    "name": "Resorts World Las Vegas",
+    "source": "jsonld-image",
+    "url": "https://www.rwlasvegas.com/wp-content/uploads/2021/10/exterior-2.jpg"
+  },
+  {
+    "city": "las vegas",
+    "id": 1,
+    "name": "Bellagio Las Vegas",
+    "source": "og:image",
+    "url": "https://thelibrary.mgmresorts.com/transform/gDVfq1q8t61/18-BEL-03963-0048---Bellagio-Hero-Shot---Resize-v00PP"
+  },
+  {
+    "city": "las vegas",
+    "id": 10,
+    "name": "MGM Grand",
+    "source": "og:image",
+    "url": "https://thelibrary.mgmresorts.com/transform/M2h6tISLUZ61/MGM103112227.tif"
+  },
+  {
+    "city": "new york",
+    "id": 1,
+    "name": "Aman New York",
+    "source": "og:image",
+    "url": "https://www.aman.com/sites/default/files/2022-08/Correct_Aman%20New%20York_Landscape.jpg"
+  },
+  {
+    "city": "las vegas",
+    "id": 15,
+    "name": "Plaza Hotel & Casino",
+    "source": "og:image",
+    "url": "https://www.plazahotelcasino.com/wp-content/uploads/2019/03/hero_home_gen_pool_mural.jpg"
+  },
+  {
+    "city": "las vegas",
+    "id": 13,
+    "name": "Park MGM",
+    "source": "og:image",
+    "url": "https://thelibrary.mgmresorts.com/transform/F22v6Svf884/Park-MGM-Lobby"
+  },
+  {
+    "city": "new york",
+    "id": 9,
+    "name": "Wythe Hotel",
+    "source": "og:image",
+    "url": "https://image.mux.com/f73021EHdqGrmO7jztvR3wm664FN6fFTLericFaqy00Oc/thumbnail.png?time=0&amp;width=1200&amp;height=630&amp;fit_mode=smartcrop"
+  },
+  {
+    "city": "new york",
+    "id": 4,
+    "name": "The Mark",
+    "source": "og:image",
+    "url": "https://markhotel-production.s3.amazonaws.com/app/uploads/2023/10/MicrosoftTeams-image-8-1.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 10,
+    "name": "The William Vale",
+    "source": "jsonld-image",
+    "url": "https://www.thewilliamvale.com/wp-content/uploads/sites/2/2025/08/2019-08_TWV_Sitting-Area_Read-McKendree.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 7,
+    "name": "The Carlyle, A Rosewood Hotel",
+    "source": "og:image",
+    "url": "https://images.rosewoodhotels.com/is/image/rwhg/h0hlp-119636520-aeriel-shot-justin-bare"
+  },
+  {
+    "city": "new york",
+    "id": 11,
+    "name": "1 Hotel Brooklyn Bridge",
+    "source": "inline-img",
+    "url": "https://www.1hotels.com/sites/1hotels.com/files/styles/card/public/brandfolder/mf9mrn2448twj9ctnz2q2t9t/room_libertystudio_2213_hero1-3w1620.jpg?h=2992ba0a&amp;itok=ysAuPD9s"
+  },
+  {
+    "city": "new york",
+    "id": 6,
+    "name": "Mandarin Oriental New York",
+    "source": "jsonld-image",
+    "url": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/YyqmJvy6M5Eh6KcKJFwg.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 17,
+    "name": "The Langham New York Fifth Avenue",
+    "source": "og:image",
+    "url": "https://www.langhamhotels.com/content/dam/langhamhotels/dynamicmedia/north_america/the-langham-new-york-fifth-avenue-tlnyc/plan/venues/kips-bay-suite/tlnyc-kips-bay-suite-banquet-round-table.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 18,
+    "name": "Ace Hotel Brooklyn",
+    "source": "og:image",
+    "url": "https://acehotel.com/brooklyn/wp-content/uploads/sites/7/2021/09/ace-hotel-brooklyn-header.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 21,
+    "name": "HI New York City Hostel",
+    "source": "og:image",
+    "url": "https://www.hiusa.org/wp-content/uploads/2020/02/HI-New-York-2000x1000-1.jpg"
+  },
+  {
+    "city": "dallas",
+    "id": 1,
+    "name": "Rosewood Mansion on Turtle Creek",
+    "source": "og:image",
+    "url": "https://images.rosewoodhotels.com/is/image/rwhg/night-exterior-2"
+  },
+  {
+    "city": "new york",
+    "id": 20,
+    "name": "The Jane Hotel",
+    "source": "inline-img",
+    "url": "https://images.squarespace-cdn.com/content/v1/68e554a11d43c33d8c2d3e42/c2e7498d-8249-4d9e-97e8-d750137fb5ba/west-village-hostel-lobby.jpg"
+  },
+  {
+    "city": "dallas",
+    "id": 4,
+    "name": "Hôtel Swexan",
+    "source": "og:image",
+    "url": "https://hotelswexan.com/wp-content/uploads/2022/04/Swexan_Hotel_v9-2.jpg"
+  },
+  {
+    "city": "dallas",
+    "id": 7,
+    "name": "The Adolphus",
+    "source": "jsonld-image",
+    "url": "https://cdn.adolphus.com/assets/uploads/2019/09/Adolphus-Spa_Pool.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 12,
+    "name": "The Standard, High Line",
+    "source": "srcset",
+    "url": "https://duvx7h32ggrur.cloudfront.net/attachments/2cb8a621a2cc39e17d919d6803a19c04fab0c274/store/optimize_v1_landscape/1920/1080/70/plane/471fbd7143127fd59a563d862a5d2aaff7d96843610c7afc4823f24f32cf/standard-hotel9838-3-.jpg"
+  },
+  {
+    "city": "new york",
+    "id": 19,
+    "name": "The Hoxton Williamsburg",
+    "source": "srcset",
+    "url": "https://thehoxton.com/wp-content/uploads/sites/5/2021/06/200108_Hoxton_New_York_14192v2_V2a-e1748939734946.jpg?quality=70"
+  },
+  {
+    "city": "chicago",
+    "id": 2,
+    "name": "The Langham Chicago",
+    "source": "og:image",
+    "url": "https://www.langhamhotels.com/content/dam/langhamhotels/dynamicmedia/north_america/the-langham-chicago-tlchi/plan/venues/devonshire-ballroom/tlchi-devonshire-ballroom-wedding.jpg"
+  },
+  {
+    "city": "los angeles",
+    "id": 4,
+    "name": "Shutters on the Beach",
+    "source": "og:image",
+    "url": "https://s3.amazonaws.com/uploads.edwardthomasco.com/uploads/sites/3/2024/11/15145351/2015-05-19-Shutters0166_revisedEXteriorPREFERRED-1.jpg"
+  },
+  {
+    "city": "dallas",
+    "id": 2,
+    "name": "The Ritz-Carlton Dallas",
+    "source": "inline-img",
+    "url": "https://cache.marriott.com/is/image/marriotts7prod/rz-dalrz-exterior-drone-36249:Feature-Hor?wid=1920&amp;fit=constrain"
+  },
+  {
+    "city": "chicago",
+    "id": 4,
+    "name": "The Hoxton Chicago",
+    "source": "og:image",
+    "url": "https://thehoxton.com/wp-content/uploads/sites/5/2020/05/Chicago_Hero.jpg"
+  },
+  {
+    "city": "chicago",
+    "id": 8,
+    "name": "Nobu Hotel Chicago",
+    "source": "og:image",
+    "url": "https://www.nobuhotels.com/chicago/content/uploads/2024/10/nobu-chicago-rooftop.jpg"
+  },
+  {
+    "city": "houston",
+    "id": 1,
+    "name": "The Post Oak Hotel",
+    "source": "og:image",
+    "url": "https://www.thepostoakhotel.com/img/logos/TPO-color.jpg"
+  },
+  {
+    "city": "houston",
+    "id": 2,
+    "name": "Hotel Granduca",
+    "source": "inline-img",
+    "url": "https://image-tc.galaxy.tf/wijpeg-dxzn0kiu5otwzgkllb4n363g3/1972-250306-granduca.jpg?width=910"
+  },
+  {
+    "city": "houston",
+    "id": 3,
+    "name": "La Colombe d'Or",
+    "source": "og:image",
+    "url": "http://static1.squarespace.com/static/5cca11c5d7456248b91a255e/t/6061d9e34f9237430a237844/1746653044609/La+Colombe+d%27Or+Hotel+-+Mansion+Bar+Seating.jpg?format=1500w"
+  },
+  {
+    "city": "houston",
+    "id": 7,
+    "name": "Hotel Granduca Houston",
+    "source": "inline-img",
+    "url": "https://image-tc.galaxy.tf/wijpeg-dxzn0kiu5otwzgkllb4n363g3/1972-250306-granduca.jpg?width=910"
+  },
+  {
+    "city": "houston",
+    "id": 8,
+    "name": "La Colombe d'Or Hotel",
+    "source": "og:image",
+    "url": "http://static1.squarespace.com/static/5cca11c5d7456248b91a255e/t/6061d9e34f9237430a237844/1746653044609/La+Colombe+d%27Or+Hotel+-+Mansion+Bar+Seating.jpg?format=1500w"
+  },
+  {
+    "city": "austin",
+    "id": 3,
+    "name": "South Congress Hotel",
+    "source": "og:image",
+    "url": "https://static.spacecrafted.com/b300ac5c5d7e4724926076df5056c60c/i/f94f0354999b457594c73fb07517b4d8/1/GCuCv726gZycFxatXh9yJ4/south%20congress%20hotel%20lobby_FB.png"
+  },
+  {
+    "city": "austin",
+    "id": 10,
+    "name": "Hotel Van Zandt",
+    "source": "og:image",
+    "url": "https://www.hotelvanzandt.com/content/uploads/2023/05/Hotel_Van_Zandt-2560x1570.jpeg"
+  },
+  {
+    "city": "austin",
+    "id": 12,
+    "name": "Archer Hotel Austin",
+    "source": "jsonld-image",
+    "url": "https://archerhotel.com/images/hotels/austin-alt.jpg"
+  },
+  {
+    "city": "dallas",
+    "id": 9,
+    "name": "Hotel ZaZa Dallas Uptown",
+    "source": "srcset",
+    "url": "https://www.hotelzaza.com/hs-fs/hubfs/Dallas%20Uptown/Dragonfly/ZaZa-DAL-Dragonfly-Interior-3.webp?width=6000&amp;name=ZaZa-DAL-Dragonfly-Interior-3.webp"
+  },
+  {
+    "city": "austin",
+    "id": 15,
+    "name": "East Austin Hotel",
+    "source": "og:image",
+    "url": "https://eastaustinhotel.com/wp-content/uploads/2019/06/Twilight-Exterior.jpg"
+  },
+  {
+    "city": "seattle",
+    "id": 2,
+    "name": "The Edgewater",
+    "source": "og:image",
+    "url": "https://admin.edgewaterhotel.com/content/uploads/2025/12/The-Edgewater-Hotel-Seattle-WA-1.jpg"
+  },
+  {
+    "city": "houston",
+    "id": 9,
+    "name": "Hotel ZaZa Houston",
+    "source": "srcset",
+    "url": "https://www.hotelzaza.com/hs-fs/hubfs/ZaZa-HOU-ZaSpa-BigChill.jpg?width=2700&amp;height=1977&amp;name=ZaZa-HOU-ZaSpa-BigChill.jpg"
+  },
+  {
+    "city": "seattle",
+    "id": 1,
+    "name": "Inn at the Market",
+    "source": "og:image",
+    "url": "https://www.innatthemarket.com/wp-content/uploads/2025/04/IATM-Rooms-2025-801-004-rotated.jpg"
+  },
+  {
+    "city": "houston",
+    "id": 4,
+    "name": "Hotel ZaZa",
+    "source": "srcset",
+    "url": "https://www.hotelzaza.com/hs-fs/hubfs/ZaZa-HOU-ZaSpa-BigChill.jpg?width=2700&amp;height=1977&amp;name=ZaZa-HOU-ZaSpa-BigChill.jpg"
+  },
+  {
+    "city": "salt lake city",
+    "id": 1,
+    "name": "The Grand America Hotel",
+    "source": "og:image",
+    "url": "https://stgalawebprod.blob.core.windows.net/app-grand-strapi-prod-storage/uploads/Grand_America_Spherical_Joe_Thomas_092025_13_e36d1d7fa4.jpg"
+  },
+  {
+    "city": "salt lake city",
+    "id": 9,
+    "name": "Stein Eriksen Lodge",
+    "source": "og:image",
+    "url": "https://image-tc.galaxy.tf/wijpeg-a96djxyiddheb6aytovrtw2i/1-sel-summer-exterior-from-afar.jpg"
+  },
+  {
+    "city": "seattle",
+    "id": 5,
+    "name": "Ace Hotel Seattle",
+    "source": "og:image",
+    "url": "https://acehotel.com/seattle/wp-content/uploads/sites/10/2021/08/ace-hotel-seattle-header-scaled.jpg"
+  }
+]
