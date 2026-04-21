@@ -1,0 +1,439 @@
+{
+  "updated": [
+    {
+      "id": 8091,
+      "name": "Idlewild",
+      "oldLat": 35.248427,
+      "oldLng": -80.8053833,
+      "newLat": 35.248427,
+      "newLng": -80.8053833,
+      "dist": "0.294"
+    },
+    {
+      "id": 8093,
+      "name": "Humbug",
+      "oldLat": 35.2356942,
+      "oldLng": -80.8046173,
+      "newLat": 35.2356942,
+      "newLng": -80.8046173,
+      "dist": "0.518"
+    },
+    {
+      "id": 8094,
+      "name": "Substrate",
+      "oldLat": 35.2326085,
+      "oldLng": -80.8257181,
+      "newLat": 35.2326085,
+      "newLng": -80.8257181,
+      "dist": "0.530"
+    },
+    {
+      "id": 8095,
+      "name": "Super Abari Game Bar",
+      "oldLat": 35.2281733,
+      "oldLng": -80.8229643,
+      "newLat": 35.2281733,
+      "newLng": -80.8229643,
+      "dist": "0.802"
+    },
+    {
+      "id": 8096,
+      "name": "Lorem Ipsum",
+      "oldLat": 35.2217158,
+      "oldLng": -80.8193063,
+      "newLat": 35.2217158,
+      "newLng": -80.8193063,
+      "dist": "0.330"
+    },
+    {
+      "id": 8098,
+      "name": "Moosehead Grill",
+      "oldLat": 35.1710292,
+      "oldLng": -80.8471363,
+      "newLat": 35.1710292,
+      "newLng": -80.8471363,
+      "dist": "0.297"
+    },
+    {
+      "id": 8100,
+      "name": "Fahrenheit",
+      "oldLat": 35.2225828,
+      "oldLng": -80.8410943,
+      "newLat": 35.2225828,
+      "newLng": -80.8410943,
+      "dist": "0.300"
+    },
+    {
+      "id": 8107,
+      "name": "Nuvole Rooftop TwentyTwo",
+      "oldLat": 35.2225828,
+      "oldLng": -80.8410943,
+      "newLat": 35.2225828,
+      "newLng": -80.8410943,
+      "dist": "0.300"
+    },
+    {
+      "id": 8114,
+      "name": "Stable Hand",
+      "oldLat": 35.2025471,
+      "oldLng": -80.8659146,
+      "newLat": 35.2025471,
+      "newLng": -80.8659146,
+      "dist": "0.412"
+    },
+    {
+      "id": 8115,
+      "name": "Dram & Draught",
+      "oldLat": 35.2190743,
+      "oldLng": -80.8541268,
+      "newLat": 35.2190743,
+      "newLng": -80.8541268,
+      "dist": "0.383"
+    },
+    {
+      "id": 8116,
+      "name": "STIR",
+      "oldLat": 35.2170223,
+      "oldLng": -80.8557321,
+      "newLat": 35.2170223,
+      "newLng": -80.8557321,
+      "dist": "0.389"
+    },
+    {
+      "id": 8117,
+      "name": "Henrietta's",
+      "oldLat": 35.1838527,
+      "oldLng": -80.8760855,
+      "newLat": 35.1838527,
+      "newLng": -80.8760855,
+      "dist": "0.366"
+    },
+    {
+      "id": 8118,
+      "name": "Indaco",
+      "oldLat": 35.2090449,
+      "oldLng": -80.8600859,
+      "newLat": 35.2090449,
+      "newLng": -80.8600859,
+      "dist": "0.316"
+    },
+    {
+      "id": 8120,
+      "name": "Superica",
+      "oldLat": 35.2115079,
+      "oldLng": -80.8600267,
+      "newLat": 35.2115079,
+      "newLng": -80.8600267,
+      "dist": "0.274"
+    },
+    {
+      "id": 8121,
+      "name": "Charlotte Beer Garden",
+      "oldLat": 35.218259,
+      "oldLng": -80.854088,
+      "newLat": 35.218259,
+      "newLng": -80.854088,
+      "dist": "0.383"
+    },
+    {
+      "id": 8123,
+      "name": "Wooden Robot Brewery",
+      "oldLat": 35.2163724,
+      "oldLng": -80.8561116,
+      "newLat": 35.2163724,
+      "newLng": -80.8561116,
+      "dist": "0.388"
+    },
+    {
+      "id": 8125,
+      "name": "PIE.ZAA",
+      "oldLat": 35.2163724,
+      "oldLng": -80.8561116,
+      "newLat": 35.2163724,
+      "newLng": -80.8561116,
+      "dist": "0.388"
+    },
+    {
+      "id": 8127,
+      "name": "Catalú",
+      "oldLat": 35.199437,
+      "oldLng": -80.8689112,
+      "newLat": 35.199437,
+      "newLng": -80.8689112,
+      "dist": "1.186"
+    },
+    {
+      "id": 8128,
+      "name": "Folia",
+      "oldLat": 35.2163724,
+      "oldLng": -80.8561116,
+      "newLat": 35.2163724,
+      "newLng": -80.8561116,
+      "dist": "0.388"
+    },
+    {
+      "id": 8130,
+      "name": "Cheat's Cheesesteaks",
+      "oldLat": 35.2091005,
+      "oldLng": -80.8624594,
+      "newLat": 35.2091005,
+      "newLng": -80.8624594,
+      "dist": "0.252"
+    },
+    {
+      "id": 8131,
+      "name": "Seoul Food Meat Co.",
+      "oldLat": 35.2191391,
+      "oldLng": -80.8577349,
+      "newLat": 35.2191391,
+      "newLng": -80.8577349,
+      "dist": "0.358"
+    },
+    {
+      "id": 8132,
+      "name": "Salted Melon Market & Eatery",
+      "oldLat": 35.2120278,
+      "oldLng": -80.8598519,
+      "newLat": 35.2120278,
+      "newLng": -80.8598519,
+      "dist": "0.316"
+    },
+    {
+      "id": 8136,
+      "name": "Shake Shack",
+      "oldLat": 35.2111138,
+      "oldLng": -80.8609636,
+      "newLat": 35.2111138,
+      "newLng": -80.8609636,
+      "dist": "0.413"
+    },
+    {
+      "id": 8137,
+      "name": "North Italia",
+      "oldLat": 35.2174639,
+      "oldLng": -80.8557166,
+      "newLat": 35.2174639,
+      "newLng": -80.8557166,
+      "dist": "0.423"
+    },
+    {
+      "id": 8138,
+      "name": "Velvet Taco",
+      "oldLat": 35.2089812,
+      "oldLng": -80.863075,
+      "newLat": 35.2089812,
+      "newLng": -80.863075,
+      "dist": "0.276"
+    },
+    {
+      "id": 8139,
+      "name": "Hawkers Asian Street Fare",
+      "oldLat": 35.2111138,
+      "oldLng": -80.8609636,
+      "newLat": 35.2111138,
+      "newLng": -80.8609636,
+      "dist": "0.433"
+    },
+    {
+      "id": 8140,
+      "name": "Sixty Vines",
+      "oldLat": 35.2198977,
+      "oldLng": -80.8537762,
+      "newLat": 35.2198977,
+      "newLng": -80.8537762,
+      "dist": "0.345"
+    },
+    {
+      "id": 8141,
+      "name": "The Salty Donut",
+      "oldLat": 35.2152861,
+      "oldLng": -80.8577064,
+      "newLat": 35.2152861,
+      "newLng": -80.8577064,
+      "dist": "0.415"
+    },
+    {
+      "id": 8142,
+      "name": "Snooze, an A.M. Eatery",
+      "oldLat": 35.2090972,
+      "oldLng": -80.859869,
+      "newLat": 35.2090972,
+      "newLng": -80.859869,
+      "dist": "0.317"
+    },
+    {
+      "id": 8144,
+      "name": "Culinary Dropout",
+      "oldLat": 35.2194312,
+      "oldLng": -80.8533233,
+      "newLat": 35.2194312,
+      "newLng": -80.8533233,
+      "dist": "0.286"
+    },
+    {
+      "id": 8145,
+      "name": "The Capital Grille",
+      "oldLat": 35.1529082,
+      "oldLng": -80.8334511,
+      "newLat": 35.1529082,
+      "newLng": -80.8334511,
+      "dist": "0.407"
+    },
+    {
+      "id": 8146,
+      "name": "Del Frisco's Double Eagle Steakhouse",
+      "oldLat": 35.1517183,
+      "oldLng": -80.8396868,
+      "newLat": 35.1517183,
+      "newLng": -80.8396868,
+      "dist": "0.435"
+    },
+    {
+      "id": 8147,
+      "name": "Jeni's Splendid Ice Creams",
+      "oldLat": 35.2110766,
+      "oldLng": -80.8602876,
+      "newLat": 35.2110766,
+      "newLng": -80.8602876,
+      "dist": "0.426"
+    },
+    {
+      "id": 8149,
+      "name": "Ruby Sunshine",
+      "oldLat": 35.2196805,
+      "oldLng": -80.8577501,
+      "newLat": 35.2196805,
+      "newLng": -80.8577501,
+      "dist": "0.482"
+    }
+  ],
+  "confirmed": [
+    {
+      "id": 8092,
+      "name": "Copperhead Social Club",
+      "dist": "0.106"
+    },
+    {
+      "id": 8097,
+      "name": "Frenchy's",
+      "dist": "0.037"
+    },
+    {
+      "id": 8099,
+      "name": "Sophia's Lounge",
+      "dist": "0.078"
+    },
+    {
+      "id": 8101,
+      "name": "Middle C Jazz",
+      "dist": "0.233"
+    },
+    {
+      "id": 8102,
+      "name": "The Cellar at Duckworth's",
+      "dist": "0.098"
+    },
+    {
+      "id": 8103,
+      "name": "Aura Rooftop",
+      "dist": "0.163"
+    },
+    {
+      "id": 8104,
+      "name": "Cloud Bar by David Burke",
+      "dist": "0.209"
+    },
+    {
+      "id": 8105,
+      "name": "Buho",
+      "dist": "0.036"
+    },
+    {
+      "id": 8106,
+      "name": "Merchant & Trade",
+      "dist": "0.171"
+    },
+    {
+      "id": 8108,
+      "name": "Novelty House",
+      "dist": "0.107"
+    },
+    {
+      "id": 8109,
+      "name": "204 North Kitchen & Cocktails",
+      "dist": "0.088"
+    },
+    {
+      "id": 8110,
+      "name": "Cowbell Burger & Whiskey Bar",
+      "dist": "0.058"
+    },
+    {
+      "id": 8111,
+      "name": "Dandelion Market",
+      "dist": "0.108"
+    },
+    {
+      "id": 8112,
+      "name": "The Cotton Room",
+      "dist": "0.214"
+    },
+    {
+      "id": 8113,
+      "name": "Crave Dessert Bar",
+      "dist": "0.202"
+    },
+    {
+      "id": 8119,
+      "name": "O-Ku",
+      "dist": "0.223"
+    },
+    {
+      "id": 8122,
+      "name": "Triple C Brewing Company",
+      "dist": "0.225"
+    },
+    {
+      "id": 8124,
+      "name": "Hi-Wire Brewing",
+      "dist": "0.106"
+    },
+    {
+      "id": 8126,
+      "name": "PARA",
+      "dist": "0.060"
+    },
+    {
+      "id": 8129,
+      "name": "Bang Bang Burgers",
+      "dist": "0.060"
+    },
+    {
+      "id": 8133,
+      "name": "The Waterman Fish Bar",
+      "dist": "0.091"
+    },
+    {
+      "id": 8134,
+      "name": "United House of Prayer for All People Cafeteria",
+      "dist": "0.236"
+    },
+    {
+      "id": 8135,
+      "name": "Cava",
+      "dist": "0.249"
+    },
+    {
+      "id": 8143,
+      "name": "Flower Child",
+      "dist": "0.211"
+    },
+    {
+      "id": 8148,
+      "name": "Mac's Speed Shop",
+      "dist": "0.135"
+    }
+  ],
+  "no_geocode": [],
+  "outside_bbox": []
+}
