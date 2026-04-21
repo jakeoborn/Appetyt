@@ -1,0 +1,109 @@
+{
+  "updated": [
+    {
+      "id": 15500,
+      "name": "Hamilton's Tavern",
+      "dist_mi": 1.2298404629679034
+    },
+    {
+      "id": 15508,
+      "name": "Chart House San Diego",
+      "dist_mi": 0.70684383064077
+    },
+    {
+      "id": 15510,
+      "name": "Ranch 45",
+      "dist_mi": 1.0756776150665954
+    },
+    {
+      "id": 15512,
+      "name": "Puesto Downtown",
+      "dist_mi": 11.307463660835754
+    },
+    {
+      "id": 15515,
+      "name": "Eclipse Chocolate Bar & Bistro",
+      "dist_mi": 0.432910848278939
+    },
+    {
+      "id": 15517,
+      "name": "Cork & Craft",
+      "dist_mi": 0.4956725342945541
+    },
+    {
+      "id": 15518,
+      "name": "Lolita's Mexican Food",
+      "dist_mi": 0.5470717190111101
+    },
+    {
+      "id": 15519,
+      "name": "Javier's La Jolla",
+      "dist_mi": 1.775571027445373
+    },
+    {
+      "id": 15523,
+      "name": "Uptown Tavern",
+      "dist_mi": 0.6387931102226815
+    }
+  ],
+  "confirmed": [
+    {
+      "id": 15501,
+      "name": "Garage Kitchen + Bar"
+    },
+    {
+      "id": 15502,
+      "name": "Feast"
+    },
+    {
+      "id": 15503,
+      "name": "Tartine"
+    },
+    {
+      "id": 15504,
+      "name": "Bice Ristorante San Diego"
+    },
+    {
+      "id": 15505,
+      "name": "Officine Buona Forchetta"
+    },
+    {
+      "id": 15506,
+      "name": "Sally's Fish House & Bar"
+    },
+    {
+      "id": 15507,
+      "name": "Oceanaire Seafood Room"
+    },
+    {
+      "id": 15509,
+      "name": "The Fish Market"
+    },
+    {
+      "id": 15511,
+      "name": "Candor Thai Kitchen"
+    },
+    {
+      "id": 15514,
+      "name": "Il Fornaio — Del Mar"
+    },
+    {
+      "id": 15516,
+      "name": "Cafe Chloe"
+    },
+    {
+      "id": 15520,
+      "name": "Roy's La Jolla"
+    },
+    {
+      "id": 15521,
+      "name": "Kous Kous Moroccan"
+    },
+    {
+      "id": 15522,
+      "name": "Whaling Bar & Grill at La Valencia"
+    }
+  ],
+  "no_geocode": [],
+  "outside_bbox": []
+}
