@@ -1,0 +1,86 @@
+{
+  "updated": [
+    {
+      "id": 3502,
+      "name": "Taggia",
+      "dist_mi": 0.3036901716669432
+    },
+    {
+      "id": 3503,
+      "name": "The Stockyards",
+      "dist_mi": 2.6958790764060407
+    },
+    {
+      "id": 3509,
+      "name": "Second Chance Tavern",
+      "dist_mi": 0.7727394376250253
+    },
+    {
+      "id": 3514,
+      "name": "AZ88",
+      "dist_mi": 10.991208351552908
+    },
+    {
+      "id": 3517,
+      "name": "Salt Cellar Restaurant",
+      "dist_mi": 0.565720193715974
+    }
+  ],
+  "confirmed": [
+    {
+      "id": 3501,
+      "name": "Steak 48"
+    },
+    {
+      "id": 3504,
+      "name": "Merkin Vineyards Osteria"
+    },
+    {
+      "id": 3505,
+      "name": "Sing High Chop Suey House"
+    },
+    {
+      "id": 3506,
+      "name": "Miracle Mile Deli"
+    },
+    {
+      "id": 3507,
+      "name": "Tommy V's Urban Grill"
+    },
+    {
+      "id": 3510,
+      "name": "Postino Gilbert"
+    },
+    {
+      "id": 3511,
+      "name": "Postino Highland"
+    },
+    {
+      "id": 3512,
+      "name": "Culinary Dropout Gilbert"
+    },
+    {
+      "id": 3513,
+      "name": "Culinary Dropout Tempe"
+    },
+    {
+      "id": 3515,
+      "name": "The Churchill"
+    },
+    {
+      "id": 3516,
+      "name": "Carlsbad Tavern"
+    },
+    {
+      "id": 3518,
+      "name": "Paradise Bakery & Café (Original)"
+    }
+  ],
+  "no_geocode": [
+    {
+      "id": 3508,
+      "name": "Blanco Tacos + Tequila"
+    }
+  ],
+  "outside_bbox": []
+}
