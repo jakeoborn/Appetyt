@@ -1,0 +1,207 @@
+{
+  "updated": [
+    {
+      "id": 4089,
+      "name": "News Cafe",
+      "dist_mi": 0.3198847928217212,
+      "from": [
+        25.7736,
+        -80.1304
+      ],
+      "to": [
+        25.7781331,
+        -80.131445
+      ]
+    },
+    {
+      "id": 4090,
+      "name": "Big Pink",
+      "dist_mi": 0.34160619049321095,
+      "from": [
+        25.7659,
+        -80.1342
+      ],
+      "to": [
+        25.7708129,
+        -80.133584
+      ]
+    },
+    {
+      "id": 4095,
+      "name": "Catch Miami",
+      "dist_mi": 0.44433808130258734,
+      "from": [
+        25.805,
+        -80.1268
+      ],
+      "to": [
+        25.7986402,
+        -80.1278598
+      ]
+    },
+    {
+      "id": 4105,
+      "name": "Doya",
+      "dist_mi": 0.3336443941500493,
+      "from": [
+        25.8016,
+        -80.1963
+      ],
+      "to": [
+        25.8002568,
+        -80.2014519
+      ]
+    },
+    {
+      "id": 4106,
+      "name": "Enriqueta's Sandwich Shop",
+      "dist_mi": 0.35098727132790036,
+      "from": [
+        25.809,
+        -80.1913
+      ],
+      "to": [
+        25.8039221,
+        -80.1914581
+      ]
+    },
+    {
+      "id": 4109,
+      "name": "Rusty Pelican",
+      "dist_mi": 2.69967352203676,
+      "from": [
+        25.7416,
+        -80.1743
+      ],
+      "to": [
+        25.7050639,
+        -80.1589275
+      ]
+    }
+  ],
+  "confirmed": [
+    {
+      "id": 4083,
+      "name": "Casa Tua",
+      "dist_mi": 0.1596065630280657
+    },
+    {
+      "id": 4084,
+      "name": "Carbone Miami",
+      "dist_mi": 0.08872846606412756
+    },
+    {
+      "id": 4085,
+      "name": "Papi Steak",
+      "dist_mi": 0.14486810592914925
+    },
+    {
+      "id": 4087,
+      "name": "Queen Miami Beach",
+      "dist_mi": 0.12366088571701432
+    },
+    {
+      "id": 4088,
+      "name": "Byblos Miami",
+      "dist_mi": 0.04132093100887714
+    },
+    {
+      "id": 4091,
+      "name": "Prime Italian",
+      "dist_mi": 0.08484490239649975
+    },
+    {
+      "id": 4092,
+      "name": "Puerto Sagua",
+      "dist_mi": 0.26657383703763543
+    },
+    {
+      "id": 4093,
+      "name": "Stripsteak by Michael Mina",
+      "dist_mi": 0.10176764738085019
+    },
+    {
+      "id": 4094,
+      "name": "Scarpetta Miami Beach",
+      "dist_mi": 0.08853113982802228
+    },
+    {
+      "id": 4096,
+      "name": "Beachcraft",
+      "dist_mi": 0.09946457058711765
+    },
+    {
+      "id": 4097,
+      "name": "La Petite Maison Miami",
+      "dist_mi": 0.10835438852850073
+    },
+    {
+      "id": 4098,
+      "name": "KOMODO Miami",
+      "dist_mi": 0.009954571193178387
+    },
+    {
+      "id": 4099,
+      "name": "Nusr-Et Steakhouse Miami",
+      "dist_mi": 0.17243638650374932
+    },
+    {
+      "id": 4100,
+      "name": "Cantina La Veinte",
+      "dist_mi": 0.2726249601351831
+    },
+    {
+      "id": 4101,
+      "name": "Novikov Miami",
+      "dist_mi": 0.1046166478212626
+    },
+    {
+      "id": 4102,
+      "name": "Itamae AO",
+      "dist_mi": 0.07339644163837124
+    },
+    {
+      "id": 4103,
+      "name": "Coyo Taco",
+      "dist_mi": 0.0448327116379565
+    },
+    {
+      "id": 4104,
+      "name": "Beaker & Gray",
+      "dist_mi": 0.09132889079249891
+    },
+    {
+      "id": 4107,
+      "name": "La Camaronera Fish Market",
+      "dist_mi": 0.24358564524213674
+    },
+    {
+      "id": 4108,
+      "name": "Ball & Chain",
+      "dist_mi": 0.25926187269768586
+    },
+    {
+      "id": 4111,
+      "name": "Ortanique on the Mile",
+      "dist_mi": 0.036934050432595185
+    },
+    {
+      "id": 4112,
+      "name": "Hillstone Coral Gables",
+      "dist_mi": 0.05294008138926928
+    }
+  ],
+  "no_geocode": [
+    {
+      "id": 4086,
+      "name": "Mila Restaurant",
+      "address": "1636 Meridian Ave Rooftop, Miami Beach FL 33139"
+    },
+    {
+      "id": 4110,
+      "name": "Monty's Raw Bar",
+      "address": "2550 S Bayshore Dr, Coconut Grove FL 33133"
+    }
+  ],
+  "outside_bbox": []
+}
