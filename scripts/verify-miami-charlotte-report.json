@@ -2,36 +2,36 @@
   "updated": [
     {
       "var": "MIAMI_DATA",
-      "id": 4005,
-      "name": "The Surf Club Restaurant",
+      "id": 4034,
+      "name": "Mother Wolf Miami",
       "from": [
-        25.8816,
-        -80.1218
+        25.8085,
+        -80.1925
       ],
       "to": [
-        25.8778748,
-        -80.1214053
+        25.8302898,
+        -80.1942845
       ],
-      "miles": 0.259
+      "miles": 1.51
     },
     {
       "var": "MIAMI_DATA",
-      "id": 4006,
-      "name": "Zuma Miami",
+      "id": 4037,
+      "name": "Taquiza",
       "from": [
-        25.7744,
-        -80.1887
+        25.8538,
+        -80.1226
       ],
       "to": [
-        25.770387,
-        -80.1890608
+        25.8604817,
+        -80.1201761
       ],
-      "miles": 0.278
+      "miles": 0.486
     },
     {
       "var": "MIAMI_DATA",
-      "id": 4012,
-      "name": "Mr Chow Miami",
+      "id": 4039,
+      "name": "Torno Subito",
       "from": [
         25.793,
         -80.1296
@@ -44,367 +44,479 @@
     },
     {
       "var": "MIAMI_DATA",
-      "id": 4018,
-      "name": "Ariete",
+      "id": 4044,
+      "name": "El Bagel",
       "from": [
-        25.7308,
-        -80.2423
+        25.8376,
+        -80.1884
       ],
       "to": [
-        25.725139,
-        -80.2454316
+        25.8393105,
+        -80.1845968
+      ],
+      "miles": 0.264
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4047,
+      "name": "Double Luck Chinese",
+      "from": [
+        25.8478,
+        -80.188
+      ],
+      "to": [
+        25.8482835,
+        -80.1747936
+      ],
+      "miles": 0.822
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4048,
+      "name": "Midorie",
+      "from": [
+        25.8472,
+        -80.1914
+      ],
+      "to": [
+        25.8482133,
+        -80.1790134
+      ],
+      "miles": 0.773
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4049,
+      "name": "San Lorenzo Ristorante",
+      "from": [
+        25.8454,
+        -80.1915
+      ],
+      "to": [
+        25.846809,
+        -80.1840291
+      ],
+      "miles": 0.475
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4057,
+      "name": "Aviv",
+      "from": [
+        25.7956,
+        -80.1298
+      ],
+      "to": [
+        25.7990556,
+        -80.1276091
+      ],
+      "miles": 0.275
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4058,
+      "name": "Las' Lap",
+      "from": [
+        25.7925,
+        -80.1308
+      ],
+      "to": [
+        25.7986325,
+        -80.1304046
+      ],
+      "miles": 0.424
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4059,
+      "name": "Paya",
+      "from": [
+        25.7961,
+        -80.1365
+      ],
+      "to": [
+        25.7921172,
+        -80.1414468
+      ],
+      "miles": 0.413
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4061,
+      "name": "Wolf of Tacos at Central Fare",
+      "from": [
+        25.7805,
+        -80.1971
+      ],
+      "to": [
+        25.7974232,
+        -80.1968002
+      ],
+      "miles": 1.169
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8031,
+      "name": "Original Chicken & Ribs",
+      "from": [
+        35.2392,
+        -80.8608
+      ],
+      "to": [
+        35.252919,
+        -80.856007
+      ],
+      "miles": 0.986
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8033,
+      "name": "The Dumpling Lady",
+      "from": [
+        35.2378,
+        -80.8235
+      ],
+      "to": [
+        35.2340005,
+        -80.8282186
+      ],
+      "miles": 0.374
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8034,
+      "name": "Restaurant Constance",
+      "from": [
+        35.2208,
+        -80.8757
+      ],
+      "to": [
+        35.2339721,
+        -80.872704
+      ],
+      "miles": 0.926
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8035,
+      "name": "Bird Pizzeria",
+      "from": [
+        35.2388,
+        -80.823
+      ],
+      "to": [
+        35.2328502,
+        -80.8256258
       ],
       "miles": 0.437
     },
     {
-      "var": "MIAMI_DATA",
-      "id": 4019,
-      "name": "Chug's Diner",
+      "var": "CHARLOTTE_DATA",
+      "id": 8036,
+      "name": "Community Matters Cafe",
       "from": [
-        25.7313,
-        -80.2423
+        35.2322,
+        -80.8493
       ],
       "to": [
-        25.727493,
-        -80.243396
+        35.2293619,
+        -80.8552093
       ],
-      "miles": 0.272
-    },
-    {
-      "var": "MIAMI_DATA",
-      "id": 4020,
-      "name": "Eating House",
-      "from": [
-        25.7508,
-        -80.258
-      ],
-      "to": [
-        25.7642142,
-        -80.259446
-      ],
-      "miles": 0.931
-    },
-    {
-      "var": "MIAMI_DATA",
-      "id": 4027,
-      "name": "Stiltsville Fish Bar",
-      "from": [
-        25.7896,
-        -80.1414
-      ],
-      "to": [
-        25.793236,
-        -80.1442069
-      ],
-      "miles": 0.306
-    },
-    {
-      "var": "MIAMI_DATA",
-      "id": 4028,
-      "name": "27 Restaurant",
-      "from": [
-        25.8014,
-        -80.1304
-      ],
-      "to": [
-        25.8045422,
-        -80.1263489
-      ],
-      "miles": 0.333
+      "miles": 0.387
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8003,
-      "name": "Barrington's Restaurant",
+      "id": 8037,
+      "name": "Counter-",
       "from": [
-        35.1434,
-        -80.8249
+        35.2189,
+        -80.8708
       ],
       "to": [
-        35.1469521,
-        -80.8086362
+        35.2270109,
+        -80.8734658
       ],
-      "miles": 0.951
+      "miles": 0.58
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8005,
-      "name": "Leah & Louise",
+      "id": 8038,
+      "name": "Albertine",
       "from": [
-        35.25,
-        -80.8242
+        35.2241,
+        -80.842
+      ],
+      "to": [
+        35.2232869,
+        -80.8474645
+      ],
+      "miles": 0.314
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8039,
+      "name": "Customshop",
+      "from": [
+        35.2102,
+        -80.8243
+      ],
+      "to": [
+        35.2137792,
+        -80.8264353
+      ],
+      "miles": 0.275
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8040,
+      "name": "Vicente",
+      "from": [
+        35.2076,
+        -80.8634
+      ],
+      "to": [
+        35.2033478,
+        -80.8649861
+      ],
+      "miles": 0.307
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8042,
+      "name": "Rada",
+      "from": [
+        35.191,
+        -80.8425
+      ],
+      "to": [
+        35.1744672,
+        -80.8401157
+      ],
+      "miles": 1.15
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8043,
+      "name": "Omakase Experience by Primefish",
+      "from": [
+        35.1857,
+        -80.8058
+      ],
+      "to": [
+        35.1713028,
+        -80.8075355
+      ],
+      "miles": 1
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8044,
+      "name": "L'Ostrica",
+      "from": [
+        35.172,
+        -80.8522
+      ],
+      "to": [
+        35.1666023,
+        -80.8501448
+      ],
+      "miles": 0.391
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8045,
+      "name": "Little Mama's Italian",
+      "from": [
+        35.1443,
+        -80.8272
+      ],
+      "to": [
+        35.1506178,
+        -80.8286274
+      ],
+      "miles": 0.444
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8048,
+      "name": "Vavela Cafe",
+      "from": [
+        35.3144,
+        -80.7443
+      ],
+      "to": [
+        35.3035309,
+        -80.7566698
+      ],
+      "miles": 1.025
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8050,
+      "name": "Surefire Market",
+      "from": [
+        35.2506,
+        -80.8233
       ],
       "to": [
         35.2457871,
         -80.8341269
       ],
-      "miles": 0.631
+      "miles": 0.696
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8006,
-      "name": "Good Food on Montford",
+      "id": 8051,
+      "name": "Eso Artisanal Pasta",
       "from": [
-        35.1742,
-        -80.857
+        35.2378,
+        -80.8235
       ],
       "to": [
-        35.1709438,
-        -80.8483224
+        35.2340005,
+        -80.8282186
       ],
-      "miles": 0.539
+      "miles": 0.374
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8009,
-      "name": "Bulla Gastrobar",
+      "id": 8052,
+      "name": "Spaghett",
       "from": [
-        35.1508,
-        -80.8328
+        35.233,
+        -80.8475
       ],
       "to": [
-        35.1525625,
-        -80.8272009
+        35.2328869,
+        -80.837987
       ],
-      "miles": 0.339
+      "miles": 0.537
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8010,
-      "name": "Haberdish",
+      "id": 8053,
+      "name": "Painted Rooster",
       "from": [
-        35.2461,
-        -80.8113
+        35.2183,
+        -80.8167
       ],
       "to": [
-        35.2465011,
-        -80.8061275
+        35.2205353,
+        -80.8118359
       ],
-      "miles": 0.293
+      "miles": 0.315
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8011,
-      "name": "Fig Tree Restaurant",
+      "id": 8054,
+      "name": "Clark's Snack Bar",
       "from": [
-        35.2113,
-        -80.8188
+        35.22,
+        -80.8058
       ],
       "to": [
-        35.2165898,
-        -80.8225567
+        35.2181643,
+        -80.7940873
       ],
-      "miles": 0.423
+      "miles": 0.673
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8012,
-      "name": "Carpe Diem",
+      "id": 8055,
+      "name": "The Story of Mi Cariño",
       "from": [
-        35.2092,
-        -80.8231
+        35.2162,
+        -80.8506
       ],
       "to": [
-        35.2144539,
-        -80.8273755
-      ],
-      "miles": 0.436
-    },
-    {
-      "var": "CHARLOTTE_DATA",
-      "id": 8015,
-      "name": "Yamazuru",
-      "from": [
-        35.2168,
-        -80.8182
-      ],
-      "to": [
-        35.220569,
-        -80.815176
+        35.2163724,
+        -80.8561116
       ],
       "miles": 0.311
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8016,
-      "name": "Midwood Smokehouse",
+      "id": 8056,
+      "name": "La Lima Sanguchería",
       "from": [
-        35.2165,
-        -80.8181
+        35.2115,
+        -80.8481
       ],
       "to": [
-        35.2210252,
-        -80.8148776
+        35.2143065,
+        -80.8563144
       ],
-      "miles": 0.362
+      "miles": 0.503
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8017,
-      "name": "Bonterra Dining & Wine Room",
+      "id": 8057,
+      "name": "DŌZO Japanese American Kitchen",
       "from": [
-        35.2095,
-        -80.8498
+        35.2037,
+        -80.852
       ],
       "to": [
-        35.2104945,
-        -80.8568151
-      ],
-      "miles": 0.402
-    },
-    {
-      "var": "CHARLOTTE_DATA",
-      "id": 8018,
-      "name": "Lang Van",
-      "from": [
-        35.2373,
-        -80.7818
-      ],
-      "to": [
-        35.2366589,
-        -80.7751732
-      ],
-      "miles": 0.377
-    },
-    {
-      "var": "CHARLOTTE_DATA",
-      "id": 8019,
-      "name": "La Belle Helene",
-      "from": [
-        35.2262,
-        -80.8448
-      ],
-      "to": [
-        35.2195882,
-        -80.8538419
-      ],
-      "miles": 0.685
-    },
-    {
-      "var": "CHARLOTTE_DATA",
-      "id": 8020,
-      "name": "Dogwood Southern Table & Bar",
-      "from": [
-        35.1418,
-        -80.8408
-      ],
-      "to": [
-        35.1459251,
-        -80.8301248
-      ],
-      "miles": 0.667
-    },
-    {
-      "var": "CHARLOTTE_DATA",
-      "id": 8021,
-      "name": "Heirloom Restaurant",
-      "from": [
-        35.3107,
-        -80.9347
-      ],
-      "to": [
-        35.3050585,
-        -80.9377669
-      ],
-      "miles": 0.426
-    },
-    {
-      "var": "CHARLOTTE_DATA",
-      "id": 8022,
-      "name": "Soul Gastrolounge",
-      "from": [
-        35.2167,
-        -80.8192
-      ],
-      "to": [
-        35.2202015,
-        -80.8133174
-      ],
-      "miles": 0.411
-    },
-    {
-      "var": "CHARLOTTE_DATA",
-      "id": 8023,
-      "name": "300 East",
-      "from": [
-        35.214,
-        -80.8476
-      ],
-      "to": [
-        35.2105604,
-        -80.8566302
+        35.200665,
+        -80.842756
       ],
       "miles": 0.562
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8024,
-      "name": "Earl's Grocery",
+      "id": 8059,
+      "name": "Emmy Lou's",
       "from": [
-        35.21,
-        -80.8222
+        35.208,
+        -80.853
       ],
       "to": [
-        35.2136888,
-        -80.8264256
+        35.19851,
+        -80.852007
       ],
-      "miles": 0.349
+      "miles": 0.658
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8025,
-      "name": "Supperland",
+      "id": 8060,
+      "name": "Kudzu Bakery",
       "from": [
-        35.2356,
-        -80.8059
+        35.2086,
+        -80.8531
       ],
       "to": [
-        35.2189857,
-        -80.810512
+        35.1976047,
+        -80.8525289
       ],
-      "miles": 1.177
+      "miles": 0.76
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8026,
-      "name": "The Suffolk Punch",
+      "id": 8061,
+      "name": "Sora",
       "from": [
-        35.2073,
-        -80.8573
+        35.1839,
+        -80.8457
       ],
       "to": [
-        35.200485,
-        -80.8691139
+        35.1736529,
+        -80.8401706
       ],
-      "miles": 0.816
+      "miles": 0.774
     },
     {
       "var": "CHARLOTTE_DATA",
-      "id": 8028,
-      "name": "Sweet Lew's BBQ",
+      "id": 8062,
+      "name": "Primefish Cellar",
       "from": [
-        35.2371,
-        -80.8135
+        35.1855,
+        -80.805
       ],
       "to": [
-        35.2280701,
-        -80.8211487
+        35.1708662,
+        -80.8073422
       ],
-      "miles": 0.759
-    },
-    {
-      "var": "CHARLOTTE_DATA",
-      "id": 8030,
-      "name": "Viva Chicken",
-      "from": [
-        35.2074,
-        -80.8512
-      ],
-      "to": [
-        35.1998633,
-        -80.8519944
-      ],
-      "miles": 0.523
+      "miles": 1.02
     }
   ],
   "confirmed": [
@@ -434,9 +546,21 @@
     },
     {
       "var": "MIAMI_DATA",
+      "id": 4005,
+      "name": "The Surf Club Restaurant",
+      "miles": 0
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4006,
+      "name": "Zuma Miami",
+      "miles": 0.01
+    },
+    {
+      "var": "MIAMI_DATA",
       "id": 4007,
       "name": "L'Atelier de Joël Robuchon",
-      "miles": 0.152
+      "miles": 0.154
     },
     {
       "var": "MIAMI_DATA",
@@ -461,6 +585,12 @@
       "id": 4011,
       "name": "KYU",
       "miles": 0.16
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4012,
+      "name": "Mr Chow Miami",
+      "miles": 0
     },
     {
       "var": "MIAMI_DATA",
@@ -494,6 +624,24 @@
     },
     {
       "var": "MIAMI_DATA",
+      "id": 4018,
+      "name": "Ariete",
+      "miles": 0
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4019,
+      "name": "Chug's Diner",
+      "miles": 0
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4020,
+      "name": "Eating House",
+      "miles": 0
+    },
+    {
+      "var": "MIAMI_DATA",
       "id": 4021,
       "name": "Bachour Restaurant",
       "miles": 0.203
@@ -524,6 +672,18 @@
     },
     {
       "var": "MIAMI_DATA",
+      "id": 4027,
+      "name": "Stiltsville Fish Bar",
+      "miles": 0
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4028,
+      "name": "27 Restaurant",
+      "miles": 0
+    },
+    {
+      "var": "MIAMI_DATA",
       "id": 4029,
       "name": "Garcia's Seafood Grille & Fish Market",
       "miles": 0.232
@@ -535,6 +695,126 @@
       "miles": 0.14
     },
     {
+      "var": "MIAMI_DATA",
+      "id": 4031,
+      "name": "Motek",
+      "miles": 0.086
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4032,
+      "name": "Makoto",
+      "miles": 0.057
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4035,
+      "name": "Amara at Paraiso",
+      "miles": 0.104
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4036,
+      "name": "Klaw Miami",
+      "miles": 0.026
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4038,
+      "name": "Niu Kitchen",
+      "miles": 0.037
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4040,
+      "name": "El Rey de las Fritas",
+      "miles": 0.085
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4041,
+      "name": "Osaka Miami",
+      "miles": 0.147
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4042,
+      "name": "Zitz Sum",
+      "miles": 0.072
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4043,
+      "name": "Luca Osteria",
+      "miles": 0.14
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4045,
+      "name": "Rice Mediterranean Kitchen",
+      "miles": 0.037
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4046,
+      "name": "Ezio's",
+      "miles": 0.241
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4050,
+      "name": "Fooq's",
+      "miles": 0.161
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4051,
+      "name": "Bar Bucce",
+      "miles": 0.243
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4052,
+      "name": "Pluma",
+      "miles": 0.122
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4053,
+      "name": "Shiso",
+      "miles": 0.128
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4054,
+      "name": "Presidente Bar Miami",
+      "miles": 0.1
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4055,
+      "name": "Pari Pari",
+      "miles": 0.06
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4056,
+      "name": "Ted's Burgers",
+      "miles": 0.183
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4060,
+      "name": "Yue Chinese",
+      "miles": 0.063
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8003,
+      "name": "Barrington's Restaurant",
+      "miles": 0
+    },
+    {
       "var": "CHARLOTTE_DATA",
       "id": 8004,
       "name": "Stanley",
@@ -542,9 +822,45 @@
     },
     {
       "var": "CHARLOTTE_DATA",
+      "id": 8005,
+      "name": "Leah & Louise",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8006,
+      "name": "Good Food on Montford",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
       "id": 8008,
       "name": "The Palm",
       "miles": 0.18
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8009,
+      "name": "Bulla Gastrobar",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8010,
+      "name": "Haberdish",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8011,
+      "name": "Fig Tree Restaurant",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8012,
+      "name": "Carpe Diem",
+      "miles": 0
     },
     {
       "var": "CHARLOTTE_DATA",
@@ -560,15 +876,123 @@
     },
     {
       "var": "CHARLOTTE_DATA",
+      "id": 8015,
+      "name": "Yamazuru",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8016,
+      "name": "Midwood Smokehouse",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8017,
+      "name": "Bonterra Dining & Wine Room",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8018,
+      "name": "Lang Van",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8019,
+      "name": "La Belle Helene",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8020,
+      "name": "Dogwood Southern Table & Bar",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8021,
+      "name": "Heirloom Restaurant",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8022,
+      "name": "Soul Gastrolounge",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8023,
+      "name": "300 East",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8024,
+      "name": "Earl's Grocery",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8025,
+      "name": "Supperland",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8026,
+      "name": "The Suffolk Punch",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
       "id": 8027,
       "name": "5Church Charlotte",
       "miles": 0.1
     },
     {
       "var": "CHARLOTTE_DATA",
+      "id": 8028,
+      "name": "Sweet Lew's BBQ",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
       "id": 8029,
       "name": "Mert's Heart & Soul",
       "miles": 0.015
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8030,
+      "name": "Viva Chicken",
+      "miles": 0
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8032,
+      "name": "The Goodyear House",
+      "miles": 0.173
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8041,
+      "name": "Stagioni",
+      "miles": 0.134
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8049,
+      "name": "McHale's Pub",
+      "miles": 0.22
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8058,
+      "name": "Sala",
+      "miles": 0.134
     }
   ],
   "no_geocode": [
@@ -577,6 +1001,12 @@
       "id": 4024,
       "name": "The Forge",
       "address": "432 W 41st St, Miami Beach FL 33140"
+    },
+    {
+      "var": "MIAMI_DATA",
+      "id": 4033,
+      "name": "Bombay Darbar",
+      "address": "2976 McFarlane Rd, Coconut Grove FL 33133"
     },
     {
       "var": "CHARLOTTE_DATA",
@@ -595,6 +1025,18 @@
       "id": 8007,
       "name": "Rooster's Wood-Fired Kitchen",
       "address": "6601 Morrison Blvd, Charlotte NC 28211"
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8046,
+      "name": "Jon G's Barbecue",
+      "address": "116 Glenn Falls St, Peachland NC 28133"
+    },
+    {
+      "var": "CHARLOTTE_DATA",
+      "id": 8047,
+      "name": "Seaboy",
+      "address": "20822 N Main St, Cornelius NC 28031"
     }
   ],
   "outside_bbox": []
