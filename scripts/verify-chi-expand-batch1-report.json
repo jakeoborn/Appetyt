@@ -1,0 +1,158 @@
+{
+  "updated": [],
+  "confirmed": [
+    {
+      "id": 12569,
+      "name": "The Violet Hour",
+      "dist_mi": 0.043813004414680536
+    },
+    {
+      "id": 12570,
+      "name": "Bar Ramone",
+      "dist_mi": 0.029541661107973845
+    },
+    {
+      "id": 12571,
+      "name": "Stetson's Modern Steak + Sushi",
+      "dist_mi": 0.02391510560231635
+    },
+    {
+      "id": 12572,
+      "name": "Etta",
+      "dist_mi": 0.029247147119990508
+    },
+    {
+      "id": 12573,
+      "name": "Cantina Loca",
+      "dist_mi": 0.051050910165624915
+    },
+    {
+      "id": 12575,
+      "name": "Le Sud",
+      "dist_mi": 0.059233805003884275
+    },
+    {
+      "id": 12576,
+      "name": "Bar Marilou",
+      "dist_mi": 0.05709484559625268
+    },
+    {
+      "id": 12577,
+      "name": "Lawry's The Prime Rib",
+      "dist_mi": 0.02423100368508592
+    },
+    {
+      "id": 12578,
+      "name": "Brindille",
+      "dist_mi": 0.032913269976118244
+    },
+    {
+      "id": 12579,
+      "name": "Les Nomades",
+      "dist_mi": 0.04626136747069527
+    },
+    {
+      "id": 12580,
+      "name": "NoMI Kitchen",
+      "dist_mi": 0.09723535336049315
+    },
+    {
+      "id": 12581,
+      "name": "NICO Osteria",
+      "dist_mi": 0.10773668596181302
+    },
+    {
+      "id": 12582,
+      "name": "Bar Biscay",
+      "dist_mi": 0.18683909409676416
+    },
+    {
+      "id": 12583,
+      "name": "Bar Goa",
+      "dist_mi": 0.14621860102589845
+    },
+    {
+      "id": 12584,
+      "name": "The Hampton Social",
+      "dist_mi": 0.03516021413240631
+    },
+    {
+      "id": 12585,
+      "name": "Osteria Langhe",
+      "dist_mi": 0.04430603189641981
+    },
+    {
+      "id": 12586,
+      "name": "Mfk.",
+      "dist_mi": 0.15447080099883312
+    },
+    {
+      "id": 12587,
+      "name": "La Storia",
+      "dist_mi": 0.048469362058438055
+    },
+    {
+      "id": 12588,
+      "name": "Morton's The Steakhouse (Original)",
+      "dist_mi": 0.04557222157458183
+    },
+    {
+      "id": 12589,
+      "name": "Pelago",
+      "dist_mi": 0.15004533272297418
+    },
+    {
+      "id": 12590,
+      "name": "Erie Cafe",
+      "dist_mi": 0.0554218991461464
+    },
+    {
+      "id": 12591,
+      "name": "Sunda New Asian",
+      "dist_mi": 0.011790382057204977
+    },
+    {
+      "id": 12592,
+      "name": "Ramen-San",
+      "dist_mi": 0.05004751066336557
+    },
+    {
+      "id": 12593,
+      "name": "Gibsons Italia",
+      "dist_mi": 0.07287845941039515
+    },
+    {
+      "id": 12594,
+      "name": "Naoki Sushi",
+      "dist_mi": 0.053109744484578135
+    },
+    {
+      "id": 12595,
+      "name": "Maude's Liquor Bar",
+      "dist_mi": 0.02961063031561102
+    },
+    {
+      "id": 12596,
+      "name": "Rose Angelis",
+      "dist_mi": 0.03782244491059927
+    },
+    {
+      "id": 12597,
+      "name": "Weber Grill Chicago",
+      "dist_mi": 0.045935019226290334
+    },
+    {
+      "id": 12598,
+      "name": "Gold Coast Dogs",
+      "dist_mi": 0.031098856465657583
+    }
+  ],
+  "no_geocode": [
+    {
+      "id": 12574,
+      "name": "Bar Sótano",
+      "address": "445 N Clark St Lower, Chicago IL 60654"
+    }
+  ],
+  "outside_bbox": []
+}
