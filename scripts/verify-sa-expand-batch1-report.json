@@ -1,0 +1,166 @@
+{
+  "updated": [
+    {
+      "id": 6057,
+      "name": "El Mirador",
+      "dist_mi": 0.3587760872403432
+    },
+    {
+      "id": 6058,
+      "name": "Los Barrios Mexican Restaurant",
+      "dist_mi": 0.42775785278535816
+    },
+    {
+      "id": 6059,
+      "name": "Taco Taco Cafe",
+      "dist_mi": 0.5622957075880253
+    },
+    {
+      "id": 6060,
+      "name": "Taco Haven",
+      "dist_mi": 0.5137373912451318
+    },
+    {
+      "id": 6061,
+      "name": "Alamo Cafe",
+      "dist_mi": 1.5564372288959376
+    },
+    {
+      "id": 6062,
+      "name": "Bill Miller Bar-B-Q",
+      "dist_mi": 0.5837171794708984
+    },
+    {
+      "id": 6063,
+      "name": "Rudy's Country Store and Bar-B-Q",
+      "dist_mi": 0.466079563252726
+    },
+    {
+      "id": 6070,
+      "name": "Luce Ristorante e Enoteca",
+      "dist_mi": 1.3401106049875464
+    },
+    {
+      "id": 6071,
+      "name": "Max's Wine Dive",
+      "dist_mi": 0.9768822964250123
+    },
+    {
+      "id": 6072,
+      "name": "La Tuna Grill & Ice House",
+      "dist_mi": 0.45012592983949573
+    },
+    {
+      "id": 6073,
+      "name": "Hi-Tones",
+      "dist_mi": 0.6483998116743622
+    },
+    {
+      "id": 6077,
+      "name": "Magnolia Pancake Haus",
+      "dist_mi": 2.2604787372752
+    },
+    {
+      "id": 6078,
+      "name": "Liberty Bar",
+      "dist_mi": 0.34552670970261373
+    },
+    {
+      "id": 6080,
+      "name": "The County Line BBQ",
+      "dist_mi": 1.3352688843897635
+    },
+    {
+      "id": 6082,
+      "name": "Aldaco's Mexican Cuisine",
+      "dist_mi": 2.453491689563726
+    },
+    {
+      "id": 6083,
+      "name": "Pharm Table",
+      "dist_mi": 0.4854477293108151
+    },
+    {
+      "id": 6085,
+      "name": "Piatti Ristorante & Bar",
+      "dist_mi": 0.6660779853545256
+    }
+  ],
+  "confirmed": [
+    {
+      "id": 6051,
+      "name": "Casa Rio"
+    },
+    {
+      "id": 6052,
+      "name": "Boudro's on the Riverwalk"
+    },
+    {
+      "id": 6053,
+      "name": "Little Rhein Steak House"
+    },
+    {
+      "id": 6054,
+      "name": "The Fig Tree Restaurant"
+    },
+    {
+      "id": 6055,
+      "name": "Paesanos Riverwalk"
+    },
+    {
+      "id": 6056,
+      "name": "Bohanan's Prime Steaks & Seafood"
+    },
+    {
+      "id": 6064,
+      "name": "Cured at Pearl"
+    },
+    {
+      "id": 6065,
+      "name": "Boiler House Texas Grill & Wine Garden"
+    },
+    {
+      "id": 6066,
+      "name": "Arcade Midtown Kitchen"
+    },
+    {
+      "id": 6067,
+      "name": "Down on Grayson at Pearl"
+    },
+    {
+      "id": 6074,
+      "name": "Sam's Burger Joint"
+    },
+    {
+      "id": 6075,
+      "name": "Still Golden Social House"
+    },
+    {
+      "id": 6076,
+      "name": "Lulu's Bakery & Cafe"
+    },
+    {
+      "id": 6079,
+      "name": "La Fogata"
+    },
+    {
+      "id": 6081,
+      "name": "Feast at the Pearl"
+    },
+    {
+      "id": 6084,
+      "name": "Dashi Sichuan Kitchen + Bar"
+    }
+  ],
+  "no_geocode": [
+    {
+      "id": 6068,
+      "name": "Cappy's Restaurant"
+    },
+    {
+      "id": 6069,
+      "name": "Paloma Blanca Mexican Cuisine"
+    }
+  ],
+  "outside_bbox": []
+}
