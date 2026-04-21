@@ -1,0 +1,166 @@
+{
+  "updated": [
+    {
+      "id": 9541,
+      "name": "Cafe Ibex",
+      "dist_mi": 0.5433202092609499,
+      "from": [
+        47.5675,
+        -122.2792
+      ],
+      "to": [
+        47.562384,
+        -122.2880503
+      ]
+    },
+    {
+      "id": 9545,
+      "name": "Harvest Vine",
+      "dist_mi": 0.6200351976914438,
+      "from": [
+        47.6311,
+        -122.2931
+      ],
+      "to": [
+        47.6225707,
+        -122.297239
+      ]
+    },
+    {
+      "id": 9549,
+      "name": "Dacha Diner",
+      "dist_mi": 0.3253149380823303,
+      "from": [
+        47.6179,
+        -122.3196
+      ],
+      "to": [
+        47.6176107,
+        -122.3265717
+      ]
+    },
+    {
+      "id": 9551,
+      "name": "Vios Cafe & Marketplace",
+      "dist_mi": 0.364713941339328,
+      "from": [
+        47.6323,
+        -122.3068
+      ],
+      "to": [
+        47.6270436,
+        -122.307517
+      ]
+    }
+  ],
+  "confirmed": [
+    {
+      "id": 9533,
+      "name": "Barnacle",
+      "dist_mi": 0.11898349544466157
+    },
+    {
+      "id": 9534,
+      "name": "Bar Cotto",
+      "dist_mi": 0.0520692944480297
+    },
+    {
+      "id": 9535,
+      "name": "White Swan Public House",
+      "dist_mi": 0.2270211386307277
+    },
+    {
+      "id": 9536,
+      "name": "Mbar",
+      "dist_mi": 0.22529931140064202
+    },
+    {
+      "id": 9537,
+      "name": "Agrodolce",
+      "dist_mi": 0.059290454205567916
+    },
+    {
+      "id": 9538,
+      "name": "Cafe Mondello",
+      "dist_mi": 0.18117762409783594
+    },
+    {
+      "id": 9539,
+      "name": "La Vita é Bella",
+      "dist_mi": 0.1661341188720974
+    },
+    {
+      "id": 9540,
+      "name": "Blotto",
+      "dist_mi": 0.10912887512784183
+    },
+    {
+      "id": 9542,
+      "name": "Byrek & Baguette",
+      "dist_mi": 0.07767971472910133
+    },
+    {
+      "id": 9543,
+      "name": "El Camión",
+      "dist_mi": 0.17649229729852325
+    },
+    {
+      "id": 9544,
+      "name": "Le Petit Cochon",
+      "dist_mi": 0.057746820150934
+    },
+    {
+      "id": 9547,
+      "name": "The Pine Box",
+      "dist_mi": 0.0881085637353364
+    },
+    {
+      "id": 9548,
+      "name": "Plenty of Clouds",
+      "dist_mi": 0.25804817182217477
+    },
+    {
+      "id": 9550,
+      "name": "Essex",
+      "dist_mi": 0.06071069969497248
+    },
+    {
+      "id": 9552,
+      "name": "Meet the Moon",
+      "dist_mi": 0.036684648171827046
+    },
+    {
+      "id": 9553,
+      "name": "Saint Helens Cafe",
+      "dist_mi": 0.03156697913579001
+    },
+    {
+      "id": 9554,
+      "name": "Chaco Canyon Organic Cafe",
+      "dist_mi": 0.10654133813627413
+    },
+    {
+      "id": 9555,
+      "name": "Big Time Brewery & Alehouse",
+      "dist_mi": 0.023805921130326826
+    },
+    {
+      "id": 9556,
+      "name": "The Kraken Bar & Lounge",
+      "dist_mi": 0.10141726571737891
+    },
+    {
+      "id": 9557,
+      "name": "The Masonry",
+      "dist_mi": 0.08191354154244457
+    }
+  ],
+  "no_geocode": [
+    {
+      "id": 9546,
+      "name": "Needle & Thread",
+      "address": "1406 12th Ave Upstairs, Seattle WA 98122"
+    }
+  ],
+  "outside_bbox": []
+}
