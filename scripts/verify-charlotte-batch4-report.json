@@ -3,20 +3,317 @@
     {
       "id": 8184,
       "name": "Reid's Fine Foods",
-      "oldLat": 35.177899,
-      "oldLng": -80.851049,
-      "newLat": 35.177899,
-      "newLng": -80.851049,
+      "oldLat": 35.1612733,
+      "oldLng": -80.848872,
+      "newLat": 35.1612733,
+      "newLng": -80.848872,
       "dist": "1.155"
     },
     {
-      "id": 8199,
-      "name": "Harper's Restaurant — SouthPark",
-      "oldLat": 35.1486494,
-      "oldLng": -80.8319938,
-      "newLat": 35.1486494,
-      "newLng": -80.8319938,
-      "dist": "0.796"
+      "id": 8201,
+      "name": "Barcelona Wine Bar",
+      "oldLat": 35.2115079,
+      "oldLng": -80.8600267,
+      "newLat": 35.2115079,
+      "newLng": -80.8600267,
+      "dist": "0.274"
+    },
+    {
+      "id": 8202,
+      "name": "Blue Door Pub",
+      "oldLat": 35.2192696,
+      "oldLng": -80.8608642,
+      "newLat": 35.2192696,
+      "newLng": -80.8608642,
+      "dist": "0.686"
+    },
+    {
+      "id": 8203,
+      "name": "Brigid's Irish Pub",
+      "oldLat": 35.2163724,
+      "oldLng": -80.8561116,
+      "newLat": 35.2163724,
+      "newLng": -80.8561116,
+      "dist": "0.388"
+    },
+    {
+      "id": 8205,
+      "name": "Craft Tasting Room & Growler Shop",
+      "oldLat": 35.2199178,
+      "oldLng": -80.8567954,
+      "newLat": 35.2199178,
+      "newLng": -80.8567954,
+      "dist": "0.458"
+    },
+    {
+      "id": 8206,
+      "name": "Dolce & Amaro",
+      "oldLat": 35.2115079,
+      "oldLng": -80.8600267,
+      "newLat": 35.2115079,
+      "newLng": -80.8600267,
+      "dist": "0.274"
+    },
+    {
+      "id": 8207,
+      "name": "Emmy Squared Pizza",
+      "oldLat": 35.2116678,
+      "oldLng": -80.8615489,
+      "newLat": 35.2116678,
+      "newLng": -80.8615489,
+      "dist": "0.426"
+    },
+    {
+      "id": 8209,
+      "name": "Hawthorne's New York Pizza & Bar",
+      "oldLat": 35.2152861,
+      "oldLng": -80.8577064,
+      "newLat": 35.2152861,
+      "newLng": -80.8577064,
+      "dist": "0.415"
+    },
+    {
+      "id": 8210,
+      "name": "HopFly Brewing Co.",
+      "oldLat": 35.220507,
+      "oldLng": -80.8575519,
+      "newLat": 35.220507,
+      "newLng": -80.8575519,
+      "dist": "0.443"
+    },
+    {
+      "id": 8212,
+      "name": "Leroy Fox",
+      "oldLat": 35.2141008,
+      "oldLng": -80.8577913,
+      "newLat": 35.2141008,
+      "newLng": -80.8577913,
+      "dist": "0.272"
+    },
+    {
+      "id": 8213,
+      "name": "Let's Meat Korean BBQ",
+      "oldLat": 35.2191391,
+      "oldLng": -80.8577349,
+      "newLat": 35.2191391,
+      "newLng": -80.8577349,
+      "dist": "0.358"
+    },
+    {
+      "id": 8214,
+      "name": "Lincoln Street Kitchen + Cocktails",
+      "oldLat": 35.2199178,
+      "oldLng": -80.8567954,
+      "newLat": 35.2199178,
+      "newLng": -80.8567954,
+      "dist": "0.458"
+    },
+    {
+      "id": 8216,
+      "name": "Monday Night Garden Co.",
+      "oldLat": 35.2088503,
+      "oldLng": -80.8665138,
+      "newLat": 35.2088503,
+      "newLng": -80.8665138,
+      "dist": "0.478"
+    },
+    {
+      "id": 8218,
+      "name": "Nickyo's Rodeo",
+      "oldLat": 35.2177719,
+      "oldLng": -80.8550336,
+      "newLat": 35.2177719,
+      "newLng": -80.8550336,
+      "dist": "0.584"
+    },
+    {
+      "id": 8222,
+      "name": "The Rose Honky Tonk",
+      "oldLat": 35.2163615,
+      "oldLng": -80.8547283,
+      "newLat": 35.2163615,
+      "newLng": -80.8547283,
+      "dist": "0.427"
+    },
+    {
+      "id": 8223,
+      "name": "Sabor Latin Street Grill",
+      "oldLat": 35.2141008,
+      "oldLng": -80.8577913,
+      "newLat": 35.2141008,
+      "newLng": -80.8577913,
+      "dist": "0.272"
+    },
+    {
+      "id": 8224,
+      "name": "Small Bar South End",
+      "oldLat": 35.2097567,
+      "oldLng": -80.8665744,
+      "newLat": 35.2097567,
+      "newLng": -80.8665744,
+      "dist": "0.456"
+    },
+    {
+      "id": 8225,
+      "name": "Sushi Taku",
+      "oldLat": 35.2161201,
+      "oldLng": -80.8527262,
+      "newLat": 35.2161201,
+      "newLng": -80.8527262,
+      "dist": "0.312"
+    },
+    {
+      "id": 8226,
+      "name": "Tacos El Flacko",
+      "oldLat": 35.2052138,
+      "oldLng": -80.8626188,
+      "newLat": 35.2052138,
+      "newLng": -80.8626188,
+      "dist": "0.256"
+    },
+    {
+      "id": 8227,
+      "name": "Trolley Barn Fermentory & Food Hall",
+      "oldLat": 35.2086881,
+      "oldLng": -80.861583,
+      "newLat": 35.2086881,
+      "newLng": -80.861583,
+      "dist": "0.309"
+    },
+    {
+      "id": 8228,
+      "name": "Tutti Gelato",
+      "oldLat": 35.213627,
+      "oldLng": -80.858082,
+      "newLat": 35.213627,
+      "newLng": -80.858082,
+      "dist": "0.280"
+    },
+    {
+      "id": 8229,
+      "name": "Two Scoops Creamery",
+      "oldLat": 35.2141008,
+      "oldLng": -80.8577913,
+      "newLat": 35.2141008,
+      "newLng": -80.8577913,
+      "dist": "0.272"
+    },
+    {
+      "id": 8230,
+      "name": "The Union",
+      "oldLat": 35.2156303,
+      "oldLng": -80.8538503,
+      "newLat": 35.2156303,
+      "newLng": -80.8538503,
+      "dist": "0.397"
+    },
+    {
+      "id": 8231,
+      "name": "Wheatberry Bakeshop",
+      "oldLat": 35.217772,
+      "oldLng": -80.8564193,
+      "newLat": 35.217772,
+      "newLng": -80.8564193,
+      "dist": "0.441"
+    },
+    {
+      "id": 8232,
+      "name": "Yume Sushi & Ramen",
+      "oldLat": 35.2192696,
+      "oldLng": -80.8608642,
+      "newLat": 35.2192696,
+      "newLng": -80.8608642,
+      "dist": "0.686"
+    },
+    {
+      "id": 8238,
+      "name": "Belfast Mill Irish Pub",
+      "oldLat": 35.2211752,
+      "oldLng": -80.8509684,
+      "newLat": 35.2211752,
+      "newLng": -80.8509684,
+      "dist": "0.604"
+    },
+    {
+      "id": 8243,
+      "name": "Free Range Brewing",
+      "oldLat": 35.240454,
+      "oldLng": -80.8132131,
+      "newLat": 35.240454,
+      "newLng": -80.8132131,
+      "dist": "0.258"
+    },
+    {
+      "id": 8244,
+      "name": "Honeysuckle Gelato",
+      "oldLat": 35.2340005,
+      "oldLng": -80.8282186,
+      "newLat": 35.2340005,
+      "newLng": -80.8282186,
+      "dist": "0.521"
+    },
+    {
+      "id": 8245,
+      "name": "Horace's Hot Chicken",
+      "oldLat": 35.2498229,
+      "oldLng": -80.8007492,
+      "newLat": 35.2498229,
+      "newLng": -80.8007492,
+      "dist": "0.514"
+    },
+    {
+      "id": 8246,
+      "name": "Union Barbecue",
+      "oldLat": 35.0972773,
+      "oldLng": -80.7794151,
+      "newLat": 35.0972773,
+      "newLng": -80.7794151,
+      "dist": "1.123"
+    },
+    {
+      "id": 8247,
+      "name": "The Queen and Glass",
+      "oldLat": 35.2470822,
+      "oldLng": -80.8051538,
+      "newLat": 35.2470822,
+      "newLng": -80.8051538,
+      "dist": "0.258"
+    },
+    {
+      "id": 8249,
+      "name": "Boudreaux's Louisiana Kitchen",
+      "oldLat": 35.2476807,
+      "oldLng": -80.8042851,
+      "newLat": 35.2476807,
+      "newLng": -80.8042851,
+      "dist": "0.322"
+    },
+    {
+      "id": 8250,
+      "name": "Joan's",
+      "oldLat": 35.4460222,
+      "oldLng": -80.8790951,
+      "newLat": 35.4460222,
+      "newLng": -80.8790951,
+      "dist": "1.040"
+    },
+    {
+      "id": 8252,
+      "name": "Armored Cow Brewery",
+      "oldLat": 35.2875675,
+      "oldLng": -80.7303432,
+      "newLat": 35.2875675,
+      "newLng": -80.7303432,
+      "dist": "1.430"
+    },
+    {
+      "id": 8253,
+      "name": "Fontana Di Vino",
+      "oldLat": 35.14965,
+      "oldLng": -80.8302661,
+      "newLat": 35.14965,
+      "newLng": -80.8302661,
+      "dist": "0.260"
     }
   ],
   "confirmed": [
@@ -88,7 +385,7 @@
     {
       "id": 8104,
       "name": "Cloud Bar by David Burke",
-      "dist": "0.209"
+      "dist": "0.206"
     },
     {
       "id": 8105,
@@ -163,7 +460,7 @@
     {
       "id": 8119,
       "name": "O-Ku",
-      "dist": "0.223"
+      "dist": "0.242"
     },
     {
       "id": 8120,
@@ -398,7 +695,7 @@
     {
       "id": 8167,
       "name": "Stoke",
-      "dist": "0.051"
+      "dist": "0.058"
     },
     {
       "id": 8168,
@@ -443,7 +740,7 @@
     {
       "id": 8176,
       "name": "Living Kitchen",
-      "dist": "0.223"
+      "dist": "0.242"
     },
     {
       "id": 8177,
@@ -483,7 +780,7 @@
     {
       "id": 8185,
       "name": "Dressler's Restaurant — Metropolitan",
-      "dist": "0.166"
+      "dist": "0.165"
     },
     {
       "id": 8186,
@@ -546,9 +843,109 @@
       "dist": "0.000"
     },
     {
+      "id": 8199,
+      "name": "Harper's Restaurant — SouthPark",
+      "dist": "0.000"
+    },
+    {
       "id": 8200,
       "name": "Mimosa Grill",
       "dist": "0.185"
+    },
+    {
+      "id": 8204,
+      "name": "Canopy Cocktail",
+      "dist": "0.083"
+    },
+    {
+      "id": 8208,
+      "name": "Golden Cow Creamery",
+      "dist": "0.183"
+    },
+    {
+      "id": 8211,
+      "name": "La Capital MX",
+      "dist": "0.202"
+    },
+    {
+      "id": 8215,
+      "name": "Matador",
+      "dist": "0.246"
+    },
+    {
+      "id": 8217,
+      "name": "Naked Farmer",
+      "dist": "0.135"
+    },
+    {
+      "id": 8219,
+      "name": "Not Just Coffee",
+      "dist": "0.242"
+    },
+    {
+      "id": 8220,
+      "name": "Poppy's Bagels",
+      "dist": "0.228"
+    },
+    {
+      "id": 8221,
+      "name": "Rai Lay Thai",
+      "dist": "0.226"
+    },
+    {
+      "id": 8233,
+      "name": "Hellenic Greek Kitchen",
+      "dist": "0.189"
+    },
+    {
+      "id": 8234,
+      "name": "D9 Brewing — Uptown",
+      "dist": "0.057"
+    },
+    {
+      "id": 8235,
+      "name": "French Quarter",
+      "dist": "0.180"
+    },
+    {
+      "id": 8236,
+      "name": "Valhalla Pub & Eatery",
+      "dist": "0.165"
+    },
+    {
+      "id": 8237,
+      "name": "The Local",
+      "dist": "0.214"
+    },
+    {
+      "id": 8239,
+      "name": "Prohibition",
+      "dist": "0.030"
+    },
+    {
+      "id": 8240,
+      "name": "Graham Street Pub & Patio",
+      "dist": "0.218"
+    },
+    {
+      "id": 8241,
+      "name": "Ink N' Ivy",
+      "dist": "0.057"
+    },
+    {
+      "id": 8242,
+      "name": "Petra's",
+      "dist": "0.091"
+    },
+    {
+      "id": 8248,
+      "name": "Crepe Cellar Kitchen & Pub",
+      "dist": "0.227"
+    },
+    {
+      "id": 8251,
+      "name": "Puerta",
+      "dist": "0.241"
     }
   ],
   "no_geocode": [
