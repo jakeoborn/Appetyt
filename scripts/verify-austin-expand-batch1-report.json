@@ -1,0 +1,221 @@
+{
+  "updated": [
+    {
+      "id": 5598,
+      "name": "Bar Peached",
+      "dist_mi": 0.4118115903092563,
+      "from": [
+        30.2755,
+        -97.7535
+      ],
+      "to": [
+        30.273541,
+        -97.760018
+      ]
+    },
+    {
+      "id": 5612,
+      "name": "Lala's Little Nugget",
+      "dist_mi": 0.43911791222685476,
+      "from": [
+        30.3389,
+        -97.7332
+      ],
+      "to": [
+        30.3446186,
+        -97.736413
+      ]
+    },
+    {
+      "id": 5613,
+      "name": "Circle Brewing Co.",
+      "dist_mi": 0.5014293781009288,
+      "from": [
+        30.391,
+        -97.7238
+      ],
+      "to": [
+        30.3911741,
+        -97.7153891
+      ]
+    },
+    {
+      "id": 5614,
+      "name": "4th Tap Brewing Co-op",
+      "dist_mi": 1.2641016665839147,
+      "from": [
+        30.4034,
+        -97.7105
+      ],
+      "to": [
+        30.3851417,
+        -97.7118527
+      ]
+    },
+    {
+      "id": 5615,
+      "name": "Adelbert's Brewery",
+      "dist_mi": 0.4600796694556966,
+      "from": [
+        30.3887,
+        -97.717
+      ],
+      "to": [
+        30.3826115,
+        -97.7201256
+      ]
+    },
+    {
+      "id": 5616,
+      "name": "Still Austin Whiskey Co.",
+      "dist_mi": 1.08563529368727,
+      "from": [
+        30.2312,
+        -97.77
+      ],
+      "to": [
+        30.2174455,
+        -97.761209
+      ]
+    },
+    {
+      "id": 5617,
+      "name": "The Brewer's Table",
+      "dist_mi": 0.5613916031552857,
+      "from": [
+        30.2594,
+        -97.6967
+      ],
+      "to": [
+        30.2528045,
+        -97.7021935
+      ]
+    },
+    {
+      "id": 5619,
+      "name": "Maudie's Tex-Mex",
+      "dist_mi": 0.44818843791858703,
+      "from": [
+        30.2796,
+        -97.7691
+      ],
+      "to": [
+        30.2828492,
+        -97.7756013
+      ]
+    },
+    {
+      "id": 5625,
+      "name": "Uncle Nicky's Italian Specialties",
+      "dist_mi": 0.4422912433450052,
+      "from": [
+        30.3095,
+        -97.7221
+      ],
+      "to": [
+        30.304361,
+        -97.726521
+      ]
+    }
+  ],
+  "confirmed": [
+    {
+      "id": 5597,
+      "name": "Pool Burger",
+      "dist_mi": 0.1476478724237979
+    },
+    {
+      "id": 5599,
+      "name": "Sammie's",
+      "dist_mi": 0.1051223357265151
+    },
+    {
+      "id": 5600,
+      "name": "Swedish Hill",
+      "dist_mi": 0.19488840215162637
+    },
+    {
+      "id": 5602,
+      "name": "Firehouse Lounge",
+      "dist_mi": 0.050661414419039236
+    },
+    {
+      "id": 5603,
+      "name": "Russian House",
+      "dist_mi": 0.04863955767660612
+    },
+    {
+      "id": 5604,
+      "name": "Iron Works BBQ",
+      "dist_mi": 0.05348018150727429
+    },
+    {
+      "id": 5605,
+      "name": "The Roaring Fork",
+      "dist_mi": 0.0620152266319563
+    },
+    {
+      "id": 5606,
+      "name": "Wu Chow",
+      "dist_mi": 0.08933364557816317
+    },
+    {
+      "id": 5607,
+      "name": "Yellow Jacket Social Club",
+      "dist_mi": 0.10618929603347743
+    },
+    {
+      "id": 5608,
+      "name": "Hi-Hat Public House",
+      "dist_mi": 0.13370730643788709
+    },
+    {
+      "id": 5609,
+      "name": "Tigers Luck",
+      "dist_mi": 0.0784869376822957
+    },
+    {
+      "id": 5610,
+      "name": "Craftsman",
+      "dist_mi": 0.08238531963749404
+    },
+    {
+      "id": 5618,
+      "name": "Curra's Grill",
+      "dist_mi": 0.24435656130788266
+    },
+    {
+      "id": 5620,
+      "name": "Old Thousand",
+      "dist_mi": 0.1947076222944905
+    },
+    {
+      "id": 5621,
+      "name": "Sushi|Bar ATX",
+      "dist_mi": 0.12336139399623847
+    },
+    {
+      "id": 5622,
+      "name": "Il Brutto",
+      "dist_mi": 0.11297277305290794
+    },
+    {
+      "id": 5623,
+      "name": "Hotel Magdalena — Summer House",
+      "dist_mi": 0.222462095136214
+    },
+    {
+      "id": 5624,
+      "name": "Hotel Saint Cecilia",
+      "dist_mi": 0.046745289153233824
+    }
+  ],
+  "no_geocode": [
+    {
+      "id": 5611,
+      "name": "Workhorse Bar",
+      "address": "100 N Loop Blvd E, Austin TX 78751"
+    }
+  ],
+  "outside_bbox": []
+}
