@@ -1,0 +1,85 @@
+{
+  "updated": [
+    {
+      "id": 12548,
+      "name": "Main Street Provisions",
+      "dist_mi": 0.3344292313090735
+    },
+    {
+      "id": 12550,
+      "name": "Flock & Fowl",
+      "dist_mi": 0.3690774771749416
+    },
+    {
+      "id": 12552,
+      "name": "Vivienne",
+      "dist_mi": 0.35248578379787393
+    },
+    {
+      "id": 12555,
+      "name": "Eatt Gourmet Bistro",
+      "dist_mi": 1.6035748168482014
+    },
+    {
+      "id": 12558,
+      "name": "Bachi Burger",
+      "dist_mi": 1.0494187764677665
+    },
+    {
+      "id": 12561,
+      "name": "EDO Gastro Tapas & Wine",
+      "dist_mi": 0.418988258114758
+    },
+    {
+      "id": 12562,
+      "name": "Oyster Bar at Palace Station",
+      "dist_mi": 0.7332651026853583
+    },
+    {
+      "id": 12563,
+      "name": "Skinny Fats Henderson",
+      "dist_mi": 1.511393183886029
+    },
+    {
+      "id": 12564,
+      "name": "Viva Mercado's",
+      "dist_mi": 0.4509192648918873
+    }
+  ],
+  "confirmed": [
+    {
+      "id": 12549,
+      "name": "VegeNation"
+    },
+    {
+      "id": 12551,
+      "name": "Lamaii"
+    },
+    {
+      "id": 12553,
+      "name": "Nacho Daddy"
+    },
+    {
+      "id": 12554,
+      "name": "Harvest by Roy Ellamar"
+    },
+    {
+      "id": 12556,
+      "name": "Spiedini Ristorante"
+    },
+    {
+      "id": 12557,
+      "name": "Gold Spike"
+    },
+    {
+      "id": 12559,
+      "name": "Bocho Sushi"
+    },
+    {
+      "id": 12565,
+      "name": "Joyful House Chinese Cuisine"
+    }
+  ],
+  "no_geocode": [],
+  "outside_bbox": []
+}
