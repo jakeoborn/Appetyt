@@ -1,0 +1,89 @@
+{
+  "updated": [
+    {
+      "id": 11596,
+      "name": "Level Crossing Brewing Company",
+      "dist_mi": 1.13483613246048
+    },
+    {
+      "id": 11597,
+      "name": "Beerhive Pub",
+      "dist_mi": 0.532985324691322
+    },
+    {
+      "id": 11598,
+      "name": "Cucina Wine Bar",
+      "dist_mi": 0.30882747006284156
+    },
+    {
+      "id": 11599,
+      "name": "Dodo Restaurant",
+      "dist_mi": 0.7140767012031858
+    },
+    {
+      "id": 11600,
+      "name": "Apollo Sushi Bistro",
+      "dist_mi": 0.47122023636745336
+    },
+    {
+      "id": 11604,
+      "name": "Mikado",
+      "dist_mi": 0.398166372600208
+    },
+    {
+      "id": 11608,
+      "name": "Red Moose Coffee Co.",
+      "dist_mi": 0.5971332843718554
+    }
+  ],
+  "confirmed": [
+    {
+      "id": 11595,
+      "name": "TF Brewing"
+    },
+    {
+      "id": 11601,
+      "name": "Current Fish & Oyster"
+    },
+    {
+      "id": 11605,
+      "name": "Wahso Asian Grill"
+    },
+    {
+      "id": 11606,
+      "name": "Shabu"
+    }
+  ],
+  "no_geocode": [
+    {
+      "id": 11602,
+      "name": "Sea Salt"
+    },
+    {
+      "id": 11603,
+      "name": "Carmine Ristorante Italiano"
+    },
+    {
+      "id": 11607,
+      "name": "Ghidotti's Classic Italian"
+    },
+    {
+      "id": 11609,
+      "name": "Park City Brewery"
+    },
+    {
+      "id": 11610,
+      "name": "Yellow Fin Sushi"
+    },
+    {
+      "id": 11611,
+      "name": "Leatherby's Family Creamery"
+    }
+  ],
+  "outside_bbox": [
+    {
+      "id": 11612,
+      "name": "Moab Brewery"
+    }
+  ]
+}
