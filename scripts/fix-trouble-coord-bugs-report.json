@@ -1,0 +1,19 @@
+{
+  "fixed": [],
+  "skipped": [
+    {
+      "city": "dallas",
+      "id": 410,
+      "name": "III Forks",
+      "reason": "current coord within 0.08 mi of geocode"
+    }
+  ],
+  "no_geocode": [],
+  "card_not_found": [
+    {
+      "city": "dallas",
+      "id": 409,
+      "name": "Ella"
+    }
+  ]
+}
