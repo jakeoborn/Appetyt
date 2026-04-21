@@ -1,0 +1,153 @@
+{
+  "updated": [],
+  "confirmed": [
+    {
+      "id": 1951,
+      "name": "Cafe Carmellini",
+      "dist_mi": 0.09570522433030332
+    },
+    {
+      "id": 1952,
+      "name": "Carne Mare",
+      "dist_mi": 0.12007214141965618
+    },
+    {
+      "id": 1953,
+      "name": "Leuca",
+      "dist_mi": 0.08502186557823851
+    },
+    {
+      "id": 1954,
+      "name": "Jeffrey's Grocery",
+      "dist_mi": 0.033873915101562777
+    },
+    {
+      "id": 1955,
+      "name": "Joseph Leonard",
+      "dist_mi": 0.05577790445523514
+    },
+    {
+      "id": 1956,
+      "name": "Fairfax",
+      "dist_mi": 0.058287219778095034
+    },
+    {
+      "id": 1957,
+      "name": "Bar Sardine",
+      "dist_mi": 0.027355112952848794
+    },
+    {
+      "id": 1958,
+      "name": "Red Rooster Harlem",
+      "dist_mi": 0.09238445587316194
+    },
+    {
+      "id": 1959,
+      "name": "La Grenouille",
+      "dist_mi": 0.03603209419685892
+    },
+    {
+      "id": 1960,
+      "name": "Patsy's Italian Restaurant",
+      "dist_mi": 0.03200081303988762
+    },
+    {
+      "id": 1961,
+      "name": "Pietro's",
+      "dist_mi": 0.10345660258302035
+    },
+    {
+      "id": 1962,
+      "name": "Sparks Steak House",
+      "dist_mi": 0.06603796999730589
+    },
+    {
+      "id": 1963,
+      "name": "The Palm Too",
+      "dist_mi": 0.0790248917744141
+    },
+    {
+      "id": 1964,
+      "name": "Rolf's German Restaurant",
+      "dist_mi": 0.01687453418969905
+    },
+    {
+      "id": 1965,
+      "name": "Lexington Candy Shop Luncheonette",
+      "dist_mi": 0.14623257289278876
+    },
+    {
+      "id": 1966,
+      "name": "Bar Six",
+      "dist_mi": 0.07087452835203557
+    },
+    {
+      "id": 1967,
+      "name": "Chumley's",
+      "dist_mi": 0.046271006773355654
+    },
+    {
+      "id": 1968,
+      "name": "Waverly Inn",
+      "dist_mi": 0.01733937512177236
+    },
+    {
+      "id": 1969,
+      "name": "Cafe Habana",
+      "dist_mi": 0.10130702084223843
+    },
+    {
+      "id": 1970,
+      "name": "Temple Bar",
+      "dist_mi": 0.05584277983978799
+    },
+    {
+      "id": 1971,
+      "name": "The Smile",
+      "dist_mi": 0.08424367492839634
+    },
+    {
+      "id": 1972,
+      "name": "BondSt",
+      "dist_mi": 0.0835869592002049
+    },
+    {
+      "id": 1973,
+      "name": "Kajitsu",
+      "dist_mi": 0.07343769789571594
+    },
+    {
+      "id": 1974,
+      "name": "Kyo Ya",
+      "dist_mi": 0.08198272256635845
+    },
+    {
+      "id": 1976,
+      "name": "Gallow Green",
+      "dist_mi": 0.18513840307830573
+    },
+    {
+      "id": 1977,
+      "name": "Pebble Bar",
+      "dist_mi": 0.09442232865680475
+    },
+    {
+      "id": 1979,
+      "name": "Le Bilboquet",
+      "dist_mi": 0.019329352945474356
+    },
+    {
+      "id": 1980,
+      "name": "Peking Duck House",
+      "dist_mi": 0.03134858735622928
+    }
+  ],
+  "no_geocode": [
+    {
+      "id": 1975,
+      "name": "Tiki Tabu",
+      "address": "120 Allen St Rooftop, New York NY 10002"
+    }
+  ],
+  "outside_bbox": []
+}
