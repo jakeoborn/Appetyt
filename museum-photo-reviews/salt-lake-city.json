@@ -1,0 +1,22 @@
+[
+  {
+    "id": "2",
+    "name": "Clark Planetarium",
+    "address": "110 S 400 W, Salt Lake City, UT 84101",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Clark_Planetarium_at_The_Gateway.JPG",
+    "source": "wikipedia:Clark Planetarium",
+    "dims": "2816x2112",
+    "ar": 1.33,
+    "kb": 2306
+  },
+  {
+    "id": "3",
+    "name": "The Leonardo",
+    "address": "209 E 500 S, Salt Lake City, UT 84111",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Leonardo_Exterior.jpg",
+    "source": "wikipedia:The Leonardo (Salt Lake City)",
+    "dims": "4884x2766",
+    "ar": 1.77,
+    "kb": 8214
+  }
+]

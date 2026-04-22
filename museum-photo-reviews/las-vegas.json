@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "The Mob Museum",
+    "address": "300 Stewart Ave, Las Vegas, NV 89101",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Las_Vegas_Mob_Museum_2012.jpg",
+    "source": "wikipedia:Mob Museum",
+    "dims": "1600x1200",
+    "ar": 1.33,
+    "kb": 643
+  },
+  {
+    "id": "6",
+    "name": "Hoover Dam",
+    "address": "Hoover Dam Access Rd, Boulder City, NV 89005",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Ansel_Adams_-_National_Archives_79-AAB-01.jpg",
+    "source": "wikipedia:Hoover Dam",
+    "dims": "2964x2373",
+    "ar": 1.25,
+    "kb": 2227
+  },
+  {
+    "id": "7",
+    "name": "Madame Tussauds Las Vegas",
+    "address": "3377 S Las Vegas Blvd, Las Vegas, NV 89109",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Palazzo_%28Jan_2014%29_12.JPG",
+    "source": "wikipedia:Madame Tussauds Las Vegas",
+    "dims": "3473x2865",
+    "ar": 1.21,
+    "kb": 4659
+  }
+]

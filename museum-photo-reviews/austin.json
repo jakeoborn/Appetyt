@@ -1,0 +1,22 @@
+[
+  {
+    "id": "3",
+    "name": "The Contemporary Austin",
+    "address": "700 Congress Ave, Austin, TX 78701",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/4/40/Formal_OnTrans.jpg",
+    "source": "wikipedia:The Contemporary Austin",
+    "dims": "1200x600",
+    "ar": 2,
+    "kb": 106
+  },
+  {
+    "id": "7",
+    "name": "Texas State Capitol",
+    "address": "1100 Congress Ave, Austin, TX 78701",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/d/df/TexasStateCapitol-2010-01.JPG",
+    "source": "wikipedia:Texas State Capitol",
+    "dims": "2673x1782",
+    "ar": 1.5,
+    "kb": 2094
+  }
+]

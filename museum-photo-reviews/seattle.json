@@ -1,0 +1,22 @@
+[
+  {
+    "id": "6",
+    "name": "Museum of Flight",
+    "address": "9404 E Marginal Way S, Seattle WA 98108",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/0/08/Museum_of_Flight%2C_Seattle.jpg",
+    "source": "wikipedia:Museum of Flight",
+    "dims": "2592x1944",
+    "ar": 1.33,
+    "kb": 1717
+  },
+  {
+    "id": "8",
+    "name": "Frye Art Museum",
+    "address": "704 Terry Ave, Seattle WA 98104",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Frye_Museum_winter.jpg",
+    "source": "wikipedia:Frye Art Museum",
+    "dims": "2592x1944",
+    "ar": 1.33,
+    "kb": 765
+  }
+]

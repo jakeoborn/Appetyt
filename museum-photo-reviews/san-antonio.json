@@ -1,0 +1,42 @@
+[
+  {
+    "id": "3",
+    "name": "McNay Art Museum",
+    "address": "6000 N New Braunfels Ave, San Antonio TX 78209",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/e/e5/McNayArtMuseum.jpg",
+    "source": "wikipedia:McNay Art Museum",
+    "dims": "1600x1200",
+    "ar": 1.33,
+    "kb": 631
+  },
+  {
+    "id": "6",
+    "name": "Tower of the Americas",
+    "address": "739 E Cesar E Chavez Blvd, San Antonio TX 78205",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/5/58/San_Antonio_May_2018_8_%28Tower_of_the_Americas%29.jpg",
+    "source": "wikipedia:Tower of the Americas",
+    "dims": "6000x4000",
+    "ar": 1.5,
+    "kb": 5728
+  },
+  {
+    "id": "9",
+    "name": "Ruby City",
+    "address": "150 Camp St, San Antonio TX 78204",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/5/52/Ruby_city_outside.jpg",
+    "source": "wikipedia:Ruby City (San Antonio)",
+    "dims": "4000x2668",
+    "ar": 1.5,
+    "kb": 1099
+  },
+  {
+    "id": "10",
+    "name": "Institute of Texan Cultures",
+    "address": "801 E Cesar E Chavez Blvd, San Antonio TX 78205",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/7/73/HemisFair_Park_May_2018_13_%28Institute_of_Texan_Cultures%29.jpg",
+    "source": "wikipedia:Institute of Texan Cultures",
+    "dims": "6000x4000",
+    "ar": 1.5,
+    "kb": 7808
+  }
+]

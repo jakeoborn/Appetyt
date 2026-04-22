@@ -1,0 +1,32 @@
+[
+  {
+    "id": "3",
+    "name": "Museum of Science and Industry",
+    "address": "5700 S DuSable Lake Shore Dr, Chicago, IL 60637",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/7/72/Museum_of_Science_and_Industry_%28Chicago%29.jpg",
+    "source": "wikipedia:Museum of Science and Industry (Chicago)",
+    "dims": "2397x1687",
+    "ar": 1.42,
+    "kb": 2101
+  },
+  {
+    "id": "4",
+    "name": "Shedd Aquarium",
+    "address": "1200 S DuSable Lake Shore Dr, Chicago, IL 60605",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Shedd_Aquarium_E.jpg",
+    "source": "wikipedia:Shedd Aquarium",
+    "dims": "3896x2192",
+    "ar": 1.78,
+    "kb": 1187
+  },
+  {
+    "id": "5",
+    "name": "Adler Planetarium",
+    "address": "1300 S DuSable Lake Shore Dr, Chicago, IL 60605",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Adler_Planetarium_E.jpg",
+    "source": "wikipedia:Adler Planetarium",
+    "dims": "3931x2211",
+    "ar": 1.78,
+    "kb": 926
+  }
+]
