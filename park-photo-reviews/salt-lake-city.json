@@ -1,0 +1,22 @@
+[
+  {
+    "id": "3",
+    "name": "Liberty Park",
+    "address": "600 E 900 S, Salt Lake City, UT 84105",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Chase_Mill_Salt_Lake_City_Utah.jpeg",
+    "source": "wikipedia:Liberty Park (Salt Lake City)",
+    "dims": "3296x2472",
+    "ar": 1.33,
+    "kb": 1867
+  },
+  {
+    "id": "6",
+    "name": "Temple Square",
+    "address": "50 N Temple, Salt Lake City, UT 84150",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Temple_Square%2C_Salt_Lake_City%2C_1899_retouched.jpg",
+    "source": "wikipedia:Temple Square",
+    "dims": "3484x2794",
+    "ar": 1.25,
+    "kb": 8363
+  }
+]

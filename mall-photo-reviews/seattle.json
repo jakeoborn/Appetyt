@@ -1,0 +1,22 @@
+[
+  {
+    "id": "5",
+    "name": "Pacific Place",
+    "address": "600 Pine St, Seattle WA 98101",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/7/73/Seattle_-_Pacific_Place_interior_pano_01.jpg",
+    "source": "wikipedia:Pacific Place (Seattle)",
+    "dims": "5540x3478",
+    "ar": 1.59,
+    "kb": 7219
+  },
+  {
+    "id": "6",
+    "name": "Westlake Center",
+    "address": "400 Pine St, Seattle WA 98101",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/3/30/Seattle_-_Westlake_Mall_pano_01.jpg",
+    "source": "wikipedia:Westlake Center",
+    "dims": "5203x3333",
+    "ar": 1.56,
+    "kb": 3393
+  }
+]

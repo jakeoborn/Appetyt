@@ -38,6 +38,8 @@ function sleepMs(ms) { return new Promise((r) => setTimeout(r, ms)); }
 
 async function fetchText(url, maxRedirects = 5, attempt = 0) {
   return new Promise((resolve) => {
+    let settled = false;
+    const done = (v) => { if (!settled) { settled = true; resolve(v); } };
     try {
       const u = new URL(url);
       const lib = u.protocol === 'https:' ? https : http;
@@ -45,21 +47,31 @@ async function fetchText(url, maxRedirects = 5, attempt = 0) {
         if ([301, 302, 303, 307, 308].includes(res.statusCode) && res.headers.location && maxRedirects > 0) {
           const next = new URL(res.headers.location, url).toString();
           res.resume();
-          return resolve(fetchText(next, maxRedirects - 1, 0));
+          return done(fetchText(next, maxRedirects - 1, 0));
         }
         if (res.statusCode === 429 && attempt < 3) {
           res.resume();
           const wait = parseInt(res.headers['retry-after'] || '0', 10) * 1000 || (1500 * Math.pow(2, attempt));
-          return sleepMs(wait).then(() => fetchText(url, maxRedirects, attempt + 1)).then(resolve);
+          return sleepMs(wait).then(() => fetchText(url, maxRedirects, attempt + 1)).then(done);
         }
         let body = '';
         res.setEncoding('utf8');
-        res.on('data', (c) => { body += c; if (body.length > 3_000_000) req.destroy(); });
-        res.on('end', () => resolve({ status: res.statusCode, body, finalUrl: url }));
+        res.on('data', (c) => {
+          body += c;
+          if (body.length > 3_000_000) {
+            // Resolve with what we have so far before destroying — req.destroy() does not
+            // reliably fire 'error', so without this the await hangs forever.
+            done({ status: res.statusCode, body, finalUrl: url });
+            req.destroy();
+          }
+        });
+        res.on('end', () => done({ status: res.statusCode, body, finalUrl: url }));
+        res.on('close', () => done({ status: res.statusCode, body, finalUrl: url }));
       });
-      req.on('error', () => resolve({ status: 0, body: '', finalUrl: url }));
-      req.on('timeout', () => { req.destroy(); resolve({ status: 0, body: '', finalUrl: url }); });
-    } catch (_) { resolve({ status: 0, body: '', finalUrl: url }); }
+      req.on('error', () => done({ status: 0, body: '', finalUrl: url }));
+      req.on('timeout', () => { req.destroy(); done({ status: 0, body: '', finalUrl: url }); });
+      req.on('close', () => done({ status: 0, body: '', finalUrl: url }));
+    } catch (_) { done({ status: 0, body: '', finalUrl: url }); }
   });
 }
 

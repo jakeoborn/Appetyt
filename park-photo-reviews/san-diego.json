@@ -1,0 +1,22 @@
+[
+  {
+    "id": "7",
+    "name": "Cabrillo National Monument",
+    "address": "1800 Cabrillo Memorial Dr, San Diego CA 92106",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/6/63/Cabrillo_National_Monument_and_Lighthouse.jpg",
+    "source": "wikipedia:Cabrillo National Monument",
+    "dims": "4032x3024",
+    "ar": 1.33,
+    "kb": 1488
+  },
+  {
+    "id": "9",
+    "name": "Presidio Park",
+    "address": "2811 Jackson St, San Diego CA 92110",
+    "proposed": "https://upload.wikimedia.org/wikipedia/commons/5/54/San_Diego%2C_CA_USA_-_Presidio_Park_-_El_Presidio_Re%C3%A1l_de_San_Diego_%28Royal_Presidio_of_San_Diego%29_-_The_Jun%C3%ADpero_Serra_Museum_-_panoramio.jpg",
+    "source": "wikipedia:Presidio Park",
+    "dims": "3369x2246",
+    "ar": 1.5,
+    "kb": 1809
+  }
+]
