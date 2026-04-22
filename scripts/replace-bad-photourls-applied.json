@@ -1,0 +1,979 @@
+{
+  "perCity": {
+    "DALLAS_DATA": {
+      "scanned": 682,
+      "replaced": 24,
+      "badNoFix": 20
+    },
+    "SD_DATA": {
+      "scanned": 523,
+      "replaced": 0,
+      "badNoFix": 0
+    },
+    "PHX_DATA": {
+      "scanned": 518,
+      "replaced": 1,
+      "badNoFix": 5
+    },
+    "LV_DATA": {
+      "scanned": 527,
+      "replaced": 4,
+      "badNoFix": 11
+    },
+    "LA_DATA": {
+      "scanned": 528,
+      "replaced": 2,
+      "badNoFix": 8
+    },
+    "SLC_DATA": {
+      "scanned": 515,
+      "replaced": 7,
+      "badNoFix": 15
+    },
+    "AUSTIN_DATA": {
+      "scanned": 529,
+      "replaced": 20,
+      "badNoFix": 13
+    },
+    "SEATTLE_DATA": {
+      "scanned": 532,
+      "replaced": 11,
+      "badNoFix": 9
+    },
+    "CHICAGO_DATA": {
+      "scanned": 556,
+      "replaced": 16,
+      "badNoFix": 11
+    },
+    "HOUSTON_DATA": {
+      "scanned": 541,
+      "replaced": 12,
+      "badNoFix": 2
+    },
+    "NYC_DATA": {
+      "scanned": 929,
+      "replaced": 32,
+      "badNoFix": 16
+    },
+    "SANANTONIO_DATA": {
+      "scanned": 82,
+      "replaced": 0,
+      "badNoFix": 0
+    },
+    "MIAMI_DATA": {
+      "scanned": 112,
+      "replaced": 0,
+      "badNoFix": 0
+    },
+    "CHARLOTTE_DATA": {
+      "scanned": 252,
+      "replaced": 0,
+      "badNoFix": 0
+    }
+  },
+  "swaps": [
+    {
+      "city": "DALLAS_DATA",
+      "name": "Pappadeaux Seafood Kitchen",
+      "reason": "fn:socialshare",
+      "oldUrl": "https://pappadeaux.com/app/uploads/2024/11/cropped-PDX-SocialShare.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMQbyePbwZrA9mJgNQfGosh16YYKprM6No2WbWA=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Pluckers Wing Bar",
+      "reason": "fn:meta-image",
+      "oldUrl": "https://cdn.prod.website-files.com/592740e995c3096bba010fd0/5b9aaff5099d0955dabd569f_meta-image-lrg.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOk7mpw1JmtWLTl26CAg-KC5fVSweVbB0ExrDAt=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Far Out",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/67d067a97b4e027d4870a503/t/67e088a347f9a570406e4f01/1742768291526/Far+Out+Brand+Assets_BirdEye.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOmf1ootrvehrUvfy1NHXomUZOHN2R6t_vyI0Sx=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Turan Uyghur Kitchen",
+      "reason": "fn:og-image",
+      "oldUrl": "https://www.turanuyghurkitchentx.com/tg9dv5ea/opengraph-image-959cal/og-image?0b56cf29834ff804",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipO7tiOwkczDqxxdLEdHowyg3NMCtfdXW9ULGHwp=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Wayward Coffee Co.",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5d0fd4e1c73c0b00016fdf22/t/5ec2a8178efcc22fc277ab33/1589815324671/Wayward+Cowboy+Profile+Pic.PNG?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNRViG-6BCrv5RpjK_b8YAWxtGvMCq6mA3nt1K3=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Milo Butterfingers",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/66749fc32cea966ff3c3ddb2/t/6974efaf028f182e8bfd9832/1769271215409/MB55Logo.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMn3EZ1jV6w7o7v6EGheVO5qcSWj4kepJK83UZ8=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Sundown at Granada",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/600b3423ebbc9f2117bb31c6/t/67573e97f549e4407e85649c/1733770903641/Assets-07.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipN18l1kJjgVxgAJ2WJ71-krvk3-5NS-vUGhbBBU=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Los Charros Tex-Mex Smokehouse",
+      "reason": "fn:opengraph",
+      "oldUrl": "https://cdn.prod.website-files.com/67eaeea33828e5f23865a9fa/680d67cf66f6511b23260f92_Opengraph-LC.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMzNosf-vwzEBpEqH3nyMU9QQLS0ws2DGB-wkOo=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Crispy Cones",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/673d65caa56c4032cf98d7db/t/686da27b96c8480de25ebb18/1752015483614/CRISPY+CONES+LOGOS+cream+transparent-01.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOSynOZfS69b9qQLdwkSiD9cYT38WOaNkAq9mYx=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Hendy's on Henderson",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/68770e2e1695fd50bfc99b54/t/68b874bd2dc1bc48f824f5a8/1756918973414/NowOpen.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMoT5XKwPZbGkYYvjxRDFm8KczLsHeG8h9FzSrP=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Claremont",
+      "reason": "fn:og-image",
+      "oldUrl": "https://claremontdallas.com/wp-content/uploads/2024/11/Claremont-OG-Image.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPVg2bmfJhrF7IW_lQzNeyBnHiN6EehOBvArN0x=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Goodwins",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/661efc2989a93a0236d2065d/t/6620466076d4f3002bd16edb/1713391200436/Untitled+design.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipM-dlS-93dAZ3ZzzCjlK_mZF0MSUtjs74C4eeQ6=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Olivella's Pizza and Wine",
+      "reason": "fn:og_image",
+      "oldUrl": "https://cdn.prod.website-files.com/60ca096b7d077df8076d591d/60ce27eb52531415a63730b9_olivellas_pizza_og_image-min.jpeg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOLuhHTGgj9tHSoI_KGsZMbQjBCR3gyfMtneobr=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Celestial Beerworks",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5adcd795af20962b3d9d9ef2/t/649daf079733ed10c98321dd/1688055559280/celestial+sticker+copy.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPkA6_yGyiAtOzPSpRmsizAZJHhzuOZUSHkd1eJ=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Intrinsic Smokehouse & Brewery",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/6206c446ce223e42dd7d3397/t/663a3f39e1972b7e7fe5f2b9/1715093305085/social-sharing%402x.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNFGk8wuudhbkjhxOEYtgoCjI5WEuxn7M6Ze3ni=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Clifton Club",
+      "reason": "fn:og-image",
+      "oldUrl": "https://cliftonclubdallas.com/wp-content/uploads/2023/01/clifton-club-og-image.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNShYlNEBXY9vsLUcNu14yC8QumTCAeqZJNQLs=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Botolino Gelato Artigianale",
+      "reason": "fn:open-graph",
+      "oldUrl": "https://botolino.com/storage/app/media/open-graph/v2/beig_main.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMSjh1T2elHI2s1mPYsgoAywffEYHYNHf9mugkj=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Park Bistro",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/6953065b8dec464352dc40f5/t/69581f75fc503c01aa188f6f/1767382901935/Park+Bistro-02.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipO_zBCg48onlKqSISe21_JbYSNG1XFYaxgEoK0j=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Big Fish Seafood Grill & Bar",
+      "reason": "fn:social_share",
+      "oldUrl": "https://static.spotapps.co/website_images/ab_websites/184280_website_v1/social_share.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOUSjusTKaol5chj9pwLLZ1JVFyK4g8XzRNMBO7=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Rustico Wood Fired Grill and Wine Bar",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5ca63f2565a707683c647af0/t/5db76033269906406c9cf8d4/1572298814111/Screen+Shot+2019-10-28+at+5.39.57+PM.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPx2V4NgMm2UfATeB_AVIt8EKXfak3puHJvLMO-=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "1845 Taste Texas",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5e161a902018632bb85dd466/t/5f5fb0a45dcee615c1688ea1/1600106669144/Screen+Shot+2020-09-14+at+2.04.06+PM.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMIYg-QSMZNG3BoIZCfzvMC_ug5jlRP7LpOQNp1=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Mun Gai Thai Street Food",
+      "reason": "fn:social_share",
+      "oldUrl": "https://static.spotapps.co/website_images/ab_websites/700623_website_v1/social_share.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOT1MDrYmNBFpnoz0dE0qaH03_NC2lYCTTbcWkG=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Ghost Donkey",
+      "reason": "fn:_logo",
+      "oldUrl": "http://static1.squarespace.com/static/6888d5712e979b4f6f594960/t/6888e9c0d19c5078ea559bad/1753803200643/GhostDonkey_Logotype.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPZQvai9ILxw7g8SSaJ5bYOcjdssWNBWPN2BTKE=w1920-h1080-k-no"
+    },
+    {
+      "city": "DALLAS_DATA",
+      "name": "Granada Theater",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/600a0807f286e15b2ba203ce/t/6791750561336c0f1710a98d/1737585925718/Assets-87.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNPgZTWX1EH55ZwlrpDDWdKfXia7C26RkpwakU=w1920-h1080-k-no"
+    },
+    {
+      "city": "PHX_DATA",
+      "name": "Lupita's Hot Dogs",
+      "reason": "fn:-logo",
+      "oldUrl": "https://lupitashotdogs.com/wp-content/uploads/2024/07/cropped-LOGOS-VARIADOS-1-2048x1026.png",
+      "newUrl": "https://lh6.googleusercontent.com/proxy/yOfut32q7-xTN35crHEDOHcOo7kCBUeCvdC7ILJKuWJ1ep_c11i3mIYLvDutES12t3kRBjDGLD9hTQBTWx10LtxFzWt4XS_a8qSJgMhSd4YoZkdND6ub9uRBNBV79Lid7KOvTLaFehO0P0zaGqXgbs34TotHSyQ=w1920-h1080-k-no"
+    },
+    {
+      "city": "LV_DATA",
+      "name": "Velveteen Rabbit",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5ce7085d97edaf000146dc2a/t/5ce71f85f4e1fcc695389e78/1558650760218/VelveteenRabbit-Web.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOhtTT4E7ocfXih-sxH7PO194D1k1_fwxSpUiZL=w1920-h1080-k-no"
+    },
+    {
+      "city": "LV_DATA",
+      "name": "Echo & Rig Butcher & Steakhouse",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/62ccca18424c3120f98944aa/t/69b9c1121b8bed24465b38fe/1774958844144/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPy9LMbQ0Me89cflpaBY5wP_s0b87JroWzdsCMt=w1920-h1080-k-no"
+    },
+    {
+      "city": "LV_DATA",
+      "name": "Atomic Liquors",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/62572ad46ef1a308af8c298e/t/625745e698ef8c52d9e7e736/1764368718115/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPeVj7xJ1puvWEOHyuMqEM3-4-_1wJDRVMj8MG4=w1920-h1080-k-no"
+    },
+    {
+      "city": "LV_DATA",
+      "name": "Grimaldi's Pizzeria Henderson",
+      "reason": "fn:open_graph",
+      "oldUrl": "https://grimaldispizzeria.b-cdn.net/dbcwp/wp-content/themes/grimaldis2022/images/misc/open_graph_thumb.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMrofRPtlZkauRRh-_CUCb_rBQGt7DIxRshXSS6=w1920-h1080-k-no"
+    },
+    {
+      "city": "LA_DATA",
+      "name": "Mélisse",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5dd6fcec102f557c3d9486e1/t/5e6ee29ec3035453bffc0d29/1584325280873/Logos-06.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipN3rXDcdqKAPw8yjwNKHaz0AFD34aBDfIUIP3s=w1920-h1080-k-no"
+    },
+    {
+      "city": "LA_DATA",
+      "name": "Yang's Kitchen",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5c42b91c697a9873ebf844b8/t/5d6be608e4f17a000198992a/1567352333129/social-img.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPoPcudIjKvc8zV8tsVzwjE2nk8MLKSjFy-9nw6=w1920-h1080-k-no"
+    },
+    {
+      "city": "SLC_DATA",
+      "name": "Tea Zaanti",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/5bd9d82785ede1751504f348/t/5bd9ec300ebbe80db3b71cad/1774632307259/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOr7DQdHcFFHl1TaCoeuG9etmGYj5_V-VInnIbD=w1920-h1080-k-no"
+    },
+    {
+      "city": "SLC_DATA",
+      "name": "Settebello Pizzeria Napoletana",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/5e8628fd2335d7362289654b/t/5ea06cfadaa0f10e57b44bce/1771707728000/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOI_l9TJYM8Ksz76kmNS2C-oieUZB3UIw704ECK=w1920-h1080-k-no"
+    },
+    {
+      "city": "SLC_DATA",
+      "name": "White Horse Spirits & Kitchen",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/68c21b87e77ff73cfc9f27c6/t/68c21c52ba5fca65d72fb96a/1757551698432/White+Horse-Identity-NameAndTag-RGB-150dpi-White.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOdymuxQP0OhYSSeLKrGv0t_bGVdGLcdS3mJrlT=w1920-h1080-k-no"
+    },
+    {
+      "city": "SLC_DATA",
+      "name": "Manoli's",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/555d0baee4b03ac80592a606/t/5570d3dfe4b03164bcd883bc/1776380828662/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOiiimEyqJBVEL8J0x1LP0wUofDugQ7hWNjlFyl=w1920-h1080-k-no"
+    },
+    {
+      "city": "SLC_DATA",
+      "name": "Mar Muntanya",
+      "reason": "fn:logo-",
+      "oldUrl": "https://images.getbento.com/accounts/cb6de8751228374c2a6b8aaf2b238432/media/images/71427logo-white.svg?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=EDEDF1&pad=100",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNeAu6q2kQms4eh3-aRQyWjJLo_ySldsIt9DJR1=w1920-h1080-k-no"
+    },
+    {
+      "city": "SLC_DATA",
+      "name": "Atomic Biscuit",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/68d345d2aff23566a93cdf61/t/68ffa6e93b829a2588437c60/1761584873485/Heading+%2873%29.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPga-L5oMCnWX6pOvRNNR80OLiPdviJYifHdIPk=w1920-h1080-k-no"
+    },
+    {
+      "city": "SLC_DATA",
+      "name": "Neighbors Bar",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/6876cdc545620421094481aa/t/6876d1330d76b57b46290dd1/1752617267390/Asset+3.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPWegFFHgV_aVyUaMc2jAgva9HbApUXODrcZ8ZJ=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Nixta Taqueria",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/64d44de71358c050d2fdf5c6/t/652f17add24d550a773bf02c/1776548066745/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMAQxnv24CnU2c3iQEQCZF3cx6zHYeN7KSke3A0=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Red Ash",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/65380974351a1a5e9cb321db/t/65411a3783262e56eecbf473/1764700228974/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOdrt4LTvoq7roXi_yDg2FdtX4e02IiaqEwqcTL=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Veracruz All Natural",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/678526a0f5699a1308c6757e/t/67852c79eb7754541d988858/1751310568605/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNDQw1YX8-0UK_CL3S1tcbfwdTRGw3FAnCIbRtW=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Roosevelt Room",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/5821fc5ed1758ec12ed422ac/t/59aae85ae45a7c3665c2579a/1776470915157/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOTKBcVYt4P3NJ3anPZlQOInHN9IPpi9E7QG3mo=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Pueblo Viejo",
+      "reason": "fn:social_share",
+      "oldUrl": "https://static.spotapps.co/website_images/ab_websites/86128_website_v1/social_share.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOYRpZIMNR1J-u-JMsBWGAUPhFRcOMrXZTcJbOd=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Wanderlust Wine Co.",
+      "reason": "fn:logo_",
+      "oldUrl": "http://static1.squarespace.com/static/58ba08bf3a04117b53227757/t/690a17a096e919240d392ef2/1762269088414/WanderlustLogo_Stacked_DarkPink_TM.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOTAJW22IUIARovEGZSRl-M1S9q5aDkMQM6pP_5=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Magnolia Cafe",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/556f483ce4b037539dac6851/t/5f22e3d94d1e9814f2919baa/1596122079443/MagCircle-ATX79-clean%403x.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOS_I7IBQnsGUgcCA7MT5x14XDjPNr6jVWy414=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Ling Wu",
+      "reason": "fn:open_graph",
+      "oldUrl": "https://lingwulantana.com/wp-content/uploads/2019/04/open_graph.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipM10hhgm3x0voalDVDFfaYYZc8dSwg1NHoo7diP=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Taqueria Diez",
+      "reason": "fn:og-image",
+      "oldUrl": "https://taqueriadediez.com/images/og-image.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipO1Cll9mKaSYAJYB8rWJabqKm-pkhCMRLb_IIlq=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Drink.Well",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/67326b7d9803bd1098059bd7/t/67326c5b022c9c342e1d1e5e/1768838077197/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOJQ1DonnmlYtaoJOhSl1KUlPrHKzL12NJX4XCm=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Poet's",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/64893ee47d328276201cfc34/t/690caf9f86f56c07b9cbbecf/1762439071430/green+teeee.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOUjX2F4bAE_aKlvhubRvI6BpR2XdwY5Rg_IcCP=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Loro",
+      "reason": "fn:og-image",
+      "oldUrl": "https://www.loroeats.com/wp-content/uploads/2023/03/loro-og-image.png",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPvG0633_A11qcgqAJhr4LZIdyDi-Xoc7C6uA=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Mi Madre's",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/54ac32f5e4b060bee014710f/t/5e0e1d958102e638c7795a9d/1761839814702/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMJbiCzTocoI12JLQfg5HhlwL3IBDYBEblZMbuS=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Spokesman",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/563fed56e4b04f0e6efdf6f9/t/685eda9d22419c70c654e11f/1751046813056/PONO-MUG-ARTWORK-BLACKSKY.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipME2b81qkSLg4fwlq2WgGaDoSMf1sv3aETzFTqx=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "VanHorn's",
+      "reason": "fn:social_share",
+      "oldUrl": "https://static.spotapps.co/website_images/ab_websites/593802_website_v1/social_share.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNL9wIg7sbo8qmJGiScNL4sX5bDRZ4krFMc5ORE=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Loro Burnet",
+      "reason": "fn:og-image",
+      "oldUrl": "https://www.loroeats.com/wp-content/uploads/2023/03/loro-og-image.png",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMwEQNtkSurU3vgd8-nczw6OlF60zHc_71scGoW=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Nixta South",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/64d44de71358c050d2fdf5c6/t/652f17add24d550a773bf02c/1776548066745/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOq7oxLePTF6Et08zRji5vuZlUrZ9NsXsoX8tNV=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Poeta",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/64893ee47d328276201cfc34/t/690caf9f86f56c07b9cbbecf/1762439071430/green+teeee.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOUjX2F4bAE_aKlvhubRvI6BpR2XdwY5Rg_IcCP=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Knuckle Sandwich",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/67eea1fb0cff674f3ff2d7d7/t/67f41b1e39ffa70bb68baac3/1772125801804/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipP67J5mZ5ugGA59uqWcv6Noeur_7ZVjeN0aJf6Q=w1920-h1080-k-no"
+    },
+    {
+      "city": "AUSTIN_DATA",
+      "name": "Spokesman Coffee",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/563fed56e4b04f0e6efdf6f9/t/685eda9d22419c70c654e11f/1751046813056/PONO-MUG-ARTWORK-BLACKSKY.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipME2b81qkSLg4fwlq2WgGaDoSMf1sv3aETzFTqx=w1920-h1080-k-no"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "name": "Archipelago",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5b1e08c8cc8fed4594709a0d/t/5b3455611ae6cf453dc10f0b/1530156391591/archipelago.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOOtYSpc0PKNz23ft9SkNb7F85vdgAOTcFEuhr2=w1920-h1080-k-no"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "name": "Dick's Drive-In",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/6887c5401fee1563c81f299b/t/6887d5c3f4ff092ab112f06a/1753732547526/DDIR_cloud_script_ORANGE.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNLTaoTB8JaCJVokQw6lIKoTuXfnu8rizNnRT8e=w1920-h1080-k-no"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "name": "Sea Wolf Bakers",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/52282143e4b021ee97a28e23/t/648a0c98366b3d59a19249cb/1686768792713/Screen+Shot+2018-09-18+at+2.08.38+AM.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPpK3ILpl8tSDuI3GJPZuf8lt2ep2jxLaif9oPg=w1920-h1080-k-no"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "name": "Poquitos",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/60e5f07ffd702f4c7760daa7/t/67eb6a32b54fb9199c4087ad/1775685090028/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOrlKFhPD7pqkkfFHiv3A64e9p0vrH5Oh1EfAsr=w1920-h1080-k-no"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "name": "Sushi Kappo Tamura",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/58fd2e9c1e5b6c4ffcc27c67/t/5908270b1b10e3089ef1817c/1776555706468/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMqRnugLrCxlarxtcdYS4d1m9XoAZNFfY_cm53J=w1920-h1080-k-no"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "name": "Meskel Ethiopian Restaurant",
+      "reason": "fn:-logo",
+      "oldUrl": "http://static1.squarespace.com/static/5dd9f277cf1ec60b307aef2c/t/68362f68f4a94755c3883ff2/1748455283351/meskel-best-ethiopian-food-seattle-logo2.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOXGVQemkV3ieszXwds20ciF116JiNyUGjG_CSM=w1920-h1080-k-no"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "name": "Harry's Fine Foods",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/631a436d1caad674fe6f0dba/t/64a926f1cd12e74f595d7e15/1776205830773/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOmGwkGj92ooC9tYOOmtAgizEBKQeottOFHXaPI=w1920-h1080-k-no"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "name": "Lighthouse Roasters",
+      "reason": "fn:social_share",
+      "oldUrl": "http://lighthouseroasters.com/cdn/shop/files/Social_Share_Template.jpg?v=1695764201",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipM7kpGjARicQh3btu4zJ-sGHVBVI29jY27jctCh=w1920-h1080-k-no"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "name": "Manolin",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/550c8399e4b0961711db921c/t/5510da06e4b0e0dc5c9cff18/1427167755727/logo1-01.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMnwxgBpP1hCwOobyheePEj6DLI-PTLaJYxoevU=w1920-h1080-k-no"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "name": "Mamnoon",
+      "reason": "fn:og-image",
+      "oldUrl": "https://mamnoonrestaurant.com/static/assets/og-image.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipODff2ghNI2_G7u-OUk2GzbTP7Pc_-hse4scMuY=w1920-h1080-k-no"
+    },
+    {
+      "city": "SEATTLE_DATA",
+      "name": "Elysian Brewing Capitol Hill",
+      "reason": "fn:ogimage",
+      "oldUrl": "https://www.elysianbrewing.com/sites/default/files/opengraph/ogimage.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPnvP9ZBnqW5je8-LuGy5Qwu0AO4TnZq_SDQMLN=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Au Cheval",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/66e88482bbf8191c95a0db67/t/670ee5f0fe7c597f9f760e41/1729029616495/AuCheval_SocialShar.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipM16Igm8wX-DIVS8ADIekZ4uEDvpGW9RO4mE5rd=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Bavette's Bar & Boeuf",
+      "reason": "fn:socialshare",
+      "oldUrl": "http://static1.squarespace.com/static/669e9025fce79d4f8c356b3e/t/66d9af001a3d923d872ced00/1725542145054/HOGSALT_SocialShare_Bavettes.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMkNzEMXpxs7HDE8fPAgJvBFwDwCUhIsvyQeL9i=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Dove's Luncheonette",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/54285a68e4b0948d76932ee5/t/5e1e02764110974fbd7f77db/1579025017865/dovesBandwcropped.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNUeYowk22CLqC5PXVFiSVJJctzriIl3uib8D-v=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Galit",
+      "reason": "logo-file",
+      "oldUrl": "https://images.squarespace-cdn.com/content/v1/5c6c4e79d7819e08b6282ddd/666ae7ce-7df4-40d6-9350-8d9ec44080eb/Galit+Logos+%281%29.png",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPzSIsnOaCquGrJVO0sFnA5MF1Xy1wJP6N85_Eg=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Bang Bang Pie & Biscuits",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/51a3b636e4b012a705dd47a4/t/6568425b55baf83232071eee/1776436417013/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOYUPargrbC944ot80Z5ZfSFh3vioPPvn7W7_pl=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Cariño",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/65242e410bb72d468102c145/t/65242f66ee7a0978e4548063/1696870246281/Carino_Gold_no+backgrounsd.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPsjKhTkPv-ShlNHGg2enDSivF-9mqBshspDUGg=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Gilt Bar",
+      "reason": "fn:socialshare",
+      "oldUrl": "http://static1.squarespace.com/static/66d86247519ea05910ef4f62/t/66d9b0425b544c5a13d37fe4/1725542466530/HOGSALT_SocialShare_GiltBar.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNRThS0Y0vSuXpNozqaFj0dBfLDF7BpCs64wCMz=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Mirra",
+      "reason": "fn:logo_",
+      "oldUrl": "http://static1.squarespace.com/static/66b10b371134b65f4011c438/t/66b20d795283f67d86f2538b/1731704306588/Mirra_PrimaryLogo_DarkGreen.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPjKNcZT7WfacV4JIZ2se9L1btiGzpB6xb0Vk5i=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Ciccio Mio",
+      "reason": "fn:socialshare",
+      "oldUrl": "http://static1.squarespace.com/static/66fb069ad9de6e3340a1bdef/t/672e4d0d145b4f7ad33d1399/1731087629694/CICCIO-socialshare.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMvIO_FqvXJCUsmPybldHELS--W568gOCXBaO2I=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Green Street Smoked Meats",
+      "reason": "fn:socialshare",
+      "oldUrl": "http://static1.squarespace.com/static/66796d776badab5315907cae/t/668f008215845677484c3434/1720647811027/GSSM_SocialShare_Cream.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNYnbbFG4o5_ldEJJGr5bDMPhW94Aee_EYhm9it=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Cafe Yaya",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/66c789a35320ad740ec8d560/t/67bcb9d3d9a0ce125af3a837/1740421587263/cafeyayaFULLlogo+%281%29.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOqrYIp6G7R9NxM7VXi-wrb-ApnKkX-SsJUNZDw=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Spacca Napoli Pizzeria",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/66df109a79103c3b13692458/t/6852dc29601072514036d6a9/1750260777649/Asset+21%402x.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOEp4UE84i1lX_7n-BFUesNqsKkhGbREfEw4B7X=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "The Gage",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5c62fca87a1fbd4531111740/t/5c634c10e5e5f06983e06895/1550011411768/gage_white.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOLrvsxYQ_Jpst9CaB4ykdL3PGFtLuFhGWYrohv=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Petite Edith",
+      "reason": "fn:opengraph",
+      "oldUrl": "https://petiteedith.com/en/opengraph-image?66fbee4c09a189ac",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipO4r1wYcJmuPT7140Syr9O0ZGk6nN0vbX7vrPoJ=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "Lalo's on Maxwell",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/595fa3bb6a496373132cb9b5/t/5ed6c9b25366727e03256157/1757948629669/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOWT5N11_hiyAnSd7CAoVD7bZswN2EQCt7NUzxX=w1920-h1080-k-no"
+    },
+    {
+      "city": "CHICAGO_DATA",
+      "name": "El Che Steakhouse & Bar",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/6729225aee342654e7e8c3da/t/672939152899f937c7a6092e/1730754837237/el-che-social-sharing.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMQxw4qS120TeMiGBLM5aM-EVMm3Bu4xX1b-haD=w1920-h1080-k-no"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "name": "Loro",
+      "reason": "fn:og-image",
+      "oldUrl": "https://www.loroeats.com/wp-content/uploads/2023/03/loro-og-image.png",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPUCbZ9YM-bOzNcODEaYmBR08S7oNM8DHBe7Ffb=w1920-h1080-k-no"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "name": "Pappadeaux Seafood Kitchen",
+      "reason": "fn:socialshare",
+      "oldUrl": "https://pappadeaux.com/app/uploads/2024/11/cropped-PDX-SocialShare.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipN_vQlRufTa2vWaX_IuOUZtEYF8w1DeDiVgzvkU=w1920-h1080-k-no"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "name": "Rainbow Lodge",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5adf456650a54f1de9dde486/t/5df2b95704b7db043c729c85/1726860377087/RBLpencilsketchsocshare.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMkkO7E0avnyDb3SKwUq0eq5rwdfzwt5R_9ByHZ=w1920-h1080-k-no"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "name": "Agnes and Sherman",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/657227f72895f578e889a5c3/t/693f4ae2144d875d2d94d695/1765755618894/MICHELIN_Selected+restaurant_2025_Round_Red.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPDqU-7EMqo_PAAeX7tD5tWqAyO-Rz7hPcQmHdB=w1920-h1080-k-no"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "name": "Heights Bier Garten",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/6504b942ea9c974684097b31/t/6505ff1b7e887c1fd4856642/1725988774164/hieghtsbiergarten.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOaMUeR0wMLDoiVr-VXuq7Nd86637WzD3IGpoTj=w1920-h1080-k-no"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "name": "Gringo's Mexican Kitchen",
+      "reason": "fn:logo_",
+      "oldUrl": "https://www.gringostexmex.com/wp-content/uploads/2022/05/GringosLogo_imageCS1.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPS6gdYD1bSdDZLiIOzxrMfD91JzfPLndnUip0S=w1920-h1080-k-no"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "name": "Double Trouble Caffeine & Cocktails",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/546d3c7fe4b08120e5411b85/t/5473b128e4b0ed05fd46306e/1668647413009/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipM5WH8fTXupDgLXnKOeFnhVHaTRwtV1CIi1veXR=w1920-h1080-k-no"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "name": "Andes Cafe",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/65f5dc2ddd95ec2c344f6c27/t/65f6407134ebbe3e90c3cbe3/1765394362361/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOJbjsgHSbgGvF_JM7BxGF_xiUjXF0O_7KUBfFT=w1920-h1080-k-no"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "name": "Cafe Express",
+      "reason": "fn:logo_",
+      "oldUrl": "https://images.squarespace-cdn.com/content/v1/5eae304831fba72bbdd05375/1616610234453-4CM8ISU09H5LRU3SY8PH/CafeExpress_SecondaryLogo_TwoColor-01.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNWoq33V_LSFpZ79PH_0XEZDm3yGsrReJQF1qZM=w1920-h1080-k-no"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "name": "Eunice",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/66070d6796b08937a6daa488/t/6607107abe8c6e616b5626d9/1774717414727/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOq9ncjGJb7rrWoHE_TiVCEEDu4ot7Oe45xqlHy=w1920-h1080-k-no"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "name": "Maderas Kitchen & Cantina",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/62c9e9f47e4961711a994ed1/t/62c9f2da2acf6c18d7f3b29f/1754756182624/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPeCqvT3Dk45EjqPv-3b4qxEa60pLpzrjJOfSeP=w1920-h1080-k-no"
+    },
+    {
+      "city": "HOUSTON_DATA",
+      "name": "Yiayia's Greek Kitchen",
+      "reason": "fn:socialshare",
+      "oldUrl": "https://yiayiasgreekkitchen.com/app/uploads/2025/07/yiayia-socialshare.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOgrtIm8Gta0tHniip29mNVnfblg1VInDcVgjpk=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "L'Artusi",
+      "reason": "fn:_logo",
+      "oldUrl": "https://images.getbento.com/accounts/bdb69cbcf8445b793b8602ba4bf3f6c2/media/images/279372023-07_L-ArtusiSupperClub_LogoConcept_FINAL_OL.png?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPF1FNTK4jmohDO0-pT-UxgAfctoCjWOAONfz_C=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Sylvia's",
+      "reason": "fn:social_share",
+      "oldUrl": "https://static.spotapps.co/website_images/ab_websites/10649_website_v1/social_share.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMf-EOw2rLhPVQyeYj147zn13nPXOFc8FCZoKAX=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "787 Coffee",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/6256e7c9ffcbf452d1da5e6d/t/625716d30910085adf760795/1776635992267/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMxTzUAFMbUg6fZbvehSGSORBQtQfpiz9SjC5a7=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Superbueno",
+      "reason": "fn:logo-",
+      "oldUrl": "https://images.squarespace-cdn.com/content/v1/63f519ee4bcf1d117e7f6570/4cfce742-f292-410b-9a66-74524b0b258b/SB_BeveledLogo-Zoom_BK.png",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMqq6ZFl_PYQvgnlFrUSCfr2h4SyuAptmNNogW_=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Juliana's Pizza",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/68caf0b6b0086817f4cd0556/t/68caf0d0b0086817f4cd081f/1769564027952/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPgmHfjPLo2lvEDaifbZjdRJ8Oczkiv_GX0JFRM=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "King",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/57a0c0ac6b8f5bcfaa1327bb/t/57a4aa4bf7e0ab3289b8282c/1776635401488/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipP1pOfvFg8PPH5oVy5jdX_aA_cqOtnCe1mED7Yw=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Falansai",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/66785cad9a7fb9744397c1dd/t/6689ef35bdde483305ca3d6f/1720315704013/Falansai%2BLogo%2BTurtle%2BOrange.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPauL0s5nTFLEW2wIqszaGYoXWjkQJ-hgU6B-ju=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Gertie",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/68e7de1240dc5b446fe0c49d/t/6931de04ed7bd92b55ec0ee4/1764875780317/hero.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOoKQHOrnFWNMe4W6Z4AyVBkHuNoAprL9KLgA15=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Hyderabadi Zaiqa",
+      "reason": "fn:open_graph",
+      "oldUrl": "https://laurent.qodeinteractive.com/elementor/wp-content/themes/laurent/assets/img/open_graph.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipO5k7m1eX4_UN18Xa1XMKUYpAswVGrtxuHBVsdd=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Ops",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/659d8bee5337de3aa0cbb060/t/659ec33a5d35c903c20afa33/1704903482610/Artboard+1_Gold.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOGRK4qkwfp7kr22kAixruERV6Oft7Nil9pI8w=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Christos Steakhouse",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/5c4a48ac2487fd181c885af3/t/5c897c29b208fcdbf5a3b04a/1746812161646/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMMPuI7C0dgwQ1Kf_uIjTlq1U3ds_nk4sVaiThQ=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "House of Yes",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/60eefee8ddd3d006b4096467/t/60fc11d16afa3c563d5a90f3/1776446715348/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMM4eHPrZYCZOlNccG2rtvwxhZNkhRN7EXPoTqO=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "By Chloe",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5fa0642d186e84316d96eaba/t/5fa60ea62057b138b429fd47/1604718251831/Untitled+design.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipP9Q3rCzZ8hXqKmrrRJwg1-tazB8SSEBQREyvHz=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Teranga",
+      "reason": "fn:_logo",
+      "oldUrl": "http://static1.squarespace.com/static/5b5f594dda02bc305761d6ab/t/67c50ac4421f253d6002aafa/1740966596852/NO900_teranga_logolockup.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPDRW_BXRoz45VGRp6R117QUsI5j_jz3zhppEHV=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Theodora",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/64d13bfc5cb6bc4f8b42575a/t/656942e07dc45e2cd1ae2f43/1701397216391/Theodora_name.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNTc8r66caphozigKxkK937CrNK4snQY-iCoBrM=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Nami Nori",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5ce5a075d10d8800011f0906/t/5dadd7a28bb2a1554ac1e64e/1571674025827/image.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNSawoKkJAVs_7K4_20YhY_iPUgNthqzMdv0gjJ=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Mokbar",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5c6af352d745627864a4a407/t/5cc0f17b7817f7e445a56296/1556148605601/unnamed+%282%29-min+%281%29.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMwZmHifexO-bS1-tvPiB2Bukl6cYFCzNBdJVHN=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Cervo's",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/65b9a8caa67cf220bc4d2ac0/t/65c4338e2f930137a0c1fea5/1707357071071/04c+copy+2.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOpP19ABmTKw1JTF6usM8XtMC0I6FaodMfTJaBs=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Spring Lounge",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/67c744af0fa6fa250c3a1ce5/t/682c9ba87d30a341ec333256/1747753896246/Spring+Lounge+Cocktail+Bar+-+Home+Page_Website+Image.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPTsso-axbofNSrNkJ8fFE-GwvE_9UhNhv4kM_-=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Patent Pending",
+      "reason": "fn:social-share",
+      "oldUrl": "http://static1.squarespace.com/static/59668f3a8419c2f5f1473c09/t/5a73511dec212d92a8d1111f/1517506852913/social-share.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPIH_pFnn5Ov2fWX4vXAQlpoosvzeorTyi_ZdV7=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Mace",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/607733688463f53c8ff482a3/t/60956e62b79bb1012512ecb3/1773965226063/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNOfL-Gq1KQ4aUmN8Ao0dnQ1cb08Zaz4UWGjCjw=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "C'mon Everybody",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/61085d1a8cb27e464b476150/t/610ad632f2072a5600746024/1628100146514/CE_Poster_11x11.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPY9Gp5FM92Q1_rluzyP1cGdGxurPM0W8CFuRW1=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "The Stand",
+      "reason": "fn:twitter-card",
+      "oldUrl": "https://thestandnyc.com//images/site/twitter-card.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipP_Q-Z6jt9nIuyi792xyovmHfTjHoU47QOOw3Me=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Royal Palms Shuffleboard Club",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/55523370e4b012049c5fa690/t/5a77e2e0085229a6168d7a0a/1517806314389/Screen+Shot+2018-02-04+at+10.47.27+PM.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMnz7DKg5fS6uJAwKiylT3T4TFwXXm4NEVNV-xj=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Artechouse NYC",
+      "reason": "fn:og-image",
+      "oldUrl": "https://www.artechouse.com/wp-content/uploads/2021/03/Website-Journal-Blog-Images-1920x1206-14.jpg",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPDu-icfpTuKdy7nHCxp-XSJSRAvfhJqNbz5yQL=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "The Roof at PUBLIC",
+      "reason": "fn:opengraph",
+      "oldUrl": "https://publichotelsv3-q5fcibo6d-ouat.vercel.app/opengraph-image.jpg?c09639ca7b33e972",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNo-l1x911Sz9-4cyWFcVoHAxTkH1oIb98URDSz=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Williamsburg Pizza",
+      "reason": "fn:meta_image",
+      "oldUrl": "http://static1.squarespace.com/static/637530210715007320223224/t/63d408d23d84ba17ff7329c9/1674840274998/wp_meta_image.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipM8dqhrzfFT06WQp_AwqiLWEdIA4GXp5iMyTzKP=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Blank Street Coffee",
+      "reason": "fn:socialshare",
+      "oldUrl": "https://res.cloudinary.com/blank-street/image/upload/f_auto,q_auto/v1773113282/web/spring2026/Spring26__SocialShare_zt9byz.png",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipPKxIYPV_q_Pd_UnF5TPc6v0tyEZ8iBWo7MB8s=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Mochidoki",
+      "reason": "logo-file",
+      "oldUrl": "https://cdn.shopify.com/s/files/1/0019/6408/1218/files/logo2.png?height=628&pad_color=fff&v=1738498059&width=1200",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipNhd8jKOH_tDPwOEc3Sk6lGu5RvkQ_LgwbV6Ly8=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Bungalow",
+      "reason": "fn:logo_",
+      "oldUrl": "http://static1.squarespace.com/static/65983d57438d713cfc579485/t/659eb82fffabdc513c1cb36f/1704900655940/Bungalow_FullLogo_Mint.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipMYZkT2lNCdvCpSEqzvj2PgKjUl2DoXs7ZpsbHi=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Madame Vo",
+      "reason": "sq-png",
+      "oldUrl": "http://static1.squarespace.com/static/5f4d6ae372fe255b4ffe9bb3/t/5f7a549d3a3d8f5ec6f7e338/1601852588568/Screen+Shot+2020-10-04+at+4.02.21+PM.png?format=1500w",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOCw6tRn5Fj2zEkqJliqQbp7ZH7Bb8PPox6Z5IO=w1920-h1080-k-no"
+    },
+    {
+      "city": "NYC_DATA",
+      "name": "Hasaki",
+      "reason": "empty-squarespace",
+      "oldUrl": "https://static1.squarespace.com/static/59bc0eee017db22a2ccbff0e/t/5ba2709a4fa51a7fb2c25c76/1743030568862/",
+      "newUrl": "https://lh3.googleusercontent.com/p/AF1QipOjYDrLONblAj2hkdTpJ7aPdnyzDvc6O6C65xC2=w1920-h1080-k-no"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "city": "NYC",
+    "name": "L'Artusi",
+    "address": "228 W 10th St, New York NY 10014",
+    "reason": "MCP candidates were patio/staff shots, not interior dining room",
+    "currentPhotoUrl": "https://images.getbento.com/accounts/bdb69cbcf8445b793b8602ba4bf3f6c2/media/images/279372023-07_L-ArtusiSupperClub_LogoConcept_FINAL_OL.png"
+  },
+  {
+    "city": "NYC",
+    "name": "Sylvia's",
+    "address": "328 Malcolm X Blvd, New York NY 10027",
+    "reason": "MCP candidates from spothopper slideshow are food shots",
+    "currentPhotoUrl": "https://static.spotapps.co/website_images/ab_websites/10649_website_v1/social_share.jpg"
+  },
+  {
+    "city": "NYC",
+    "name": "SEY Coffee",
+    "address": "18 Grattan St, Brooklyn, NY 11206",
+    "reason": "Site only has product shots (cupping bowl, coffee bags)",
+    "currentPhotoUrl": "https://www.seycoffee.com/cdn/shop/t/34/assets/og-image.jpg"
+  },
+  {
+    "city": "NYC",
+    "name": "787 Coffee",
+    "address": "131 E 7th St, New York, NY 10009",
+    "reason": "Site only has stickers/products/illustrations, no cafe interior",
+    "currentPhotoUrl": "(empty squarespace path)"
+  },
+  {
+    "city": "NYC",
+    "name": "Superiority Burger",
+    "address": "119 Avenue A, New York, NY 10009",
+    "reason": "JS-heavy Squarespace site returns no img tags via fetch",
+    "currentPhotoUrl": "(empty squarespace path)"
+  },
+  {
+    "city": "NYC",
+    "name": "Bonnie's",
+    "address": "398 Manhattan Ave, Brooklyn, NY 11211",
+    "reason": "MCP candidates are master logo PNG and a single dish photo, no interior",
+    "currentPhotoUrl": "https://static1.squarespace.com/static/6030209f94276d7bd778b53d/t/603192cb940d67348c99389b/1613861584044/squarespace_bonnies_logofull.jpeg"
+  },
+  {
+    "city": "NYC",
+    "name": "Superbueno",
+    "address": "13 1st Ave, New York, NY 10003",
+    "reason": "MCP candidates are cocktails, no interior",
+    "currentPhotoUrl": "https://images.squarespace-cdn.com/content/v1/63f519ee4bcf1d117e7f6570/4cfce742-f292-410b-9a66-74524b0b258b/SB_BeveledLogo-Zoom_BK.png"
+  },
+  {
+    "city": "NYC",
+    "name": "Miss Ada",
+    "address": "184 DeKalb Ave, Brooklyn, NY 11205",
+    "reason": "MCP candidates are catering/team/events PNGs, no interior dining room",
+    "currentPhotoUrl": "(empty squarespace path)"
+  }
+]

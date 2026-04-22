@@ -1,0 +1,301 @@
+[
+  {
+    "city": "NYC",
+    "name": "L'Artusi",
+    "address": "228 W 10th St, New York NY 10014",
+    "website": "https://www.lartusi.com/",
+    "currentPhotoUrl": "https://images.getbento.com/accounts/bdb69cbcf8445b793b8602ba4bf3f6c2/media/images/279372023-07_L-ArtusiSupperClub_LogoConcept_FINAL_OL.png?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5",
+    "currentPhotos0": "https://images.getbento.com/accounts/bdb69cbcf8445b793b8602ba4bf3f6c2/media/images/279372023-07_L-ArtusiSupperClub_LogoConcept_FINAL_OL.png?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5",
+    "state": "bad-photo",
+    "candidates": [
+      {
+        "url": "https://images.getbento.com/accounts/bdb69cbcf8445b793b8602ba4bf3f6c2/media/images/90152Anfora_and_LArtusi_June_2021-81.jpg?w=1200&fit=max&auto=compress,format&cs=origin",
+        "alt": "css-bg",
+        "score": 5
+      },
+      {
+        "url": "https://images.getbento.com/accounts/bdb69cbcf8445b793b8602ba4bf3f6c2/media/images/65294LArtusi_Overall_4.jpg?w=1200&fit=max&auto=compress,format&cs=origin",
+        "alt": "css-bg",
+        "score": 5
+      },
+      {
+        "url": "https://images.getbento.com/accounts/bdb69cbcf8445b793b8602ba4bf3f6c2/media/images/37088Lartusi_Bartusi_Via_Porta_05252023-149.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5",
+        "alt": "css-bg",
+        "score": 5
+      },
+      {
+        "url": "https://images.getbento.com/accounts/bdb69cbcf8445b793b8602ba4bf3f6c2/media/images/63019LArtusi_Overall_2.jpg?w=1200&fit=max&auto=compress,format&cs=origin",
+        "alt": "css-bg",
+        "score": 5
+      },
+      {
+        "url": "https://images.getbento.com/accounts/bdb69cbcf8445b793b8602ba4bf3f6c2/media/images/95038Lartusi_Bartusi_Via_Porta_05252023-28.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5",
+        "alt": "css-bg",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "city": "NYC",
+    "name": "Sylvia's",
+    "address": "328 Malcolm X Blvd, New York NY 10027",
+    "website": "https://sylviasrestaurant.com/",
+    "currentPhotoUrl": "https://static.spotapps.co/website_images/ab_websites/10649_website_v1/social_share.jpg",
+    "currentPhotos0": "https://static.spotapps.co/website_images/ab_websites/10649_website_v1/social_share.jpg",
+    "state": "bad-photo",
+    "candidates": [
+      {
+        "url": "https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/be/5c6fcd7d5b478494ed09007eaa4650/:original",
+        "alt": "slideshow photo number 1",
+        "score": 12.8
+      },
+      {
+        "url": "https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/e1/ccffd194864db58946b18d6754c2db/:original",
+        "alt": "slideshow photo number 2",
+        "score": 12.75
+      },
+      {
+        "url": "https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/25/213c0658a248629a68fb93a0c30353/:original",
+        "alt": "slideshow photo number 3",
+        "score": 12.7
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/10649_website_v1/video_poster.jpg",
+        "alt": "css-bg",
+        "score": 5
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/10649_website_v1/about_us_back_1_new.jpg",
+        "alt": "css-bg",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "city": "NYC",
+    "name": "SEY Coffee",
+    "address": "18 Grattan St, Brooklyn, NY 11206",
+    "website": "https://www.seycoffee.com",
+    "currentPhotoUrl": "https://www.seycoffee.com/cdn/shop/t/34/assets/og-image.jpg?v=120275937164661624301703179605",
+    "currentPhotos0": "https://www.seycoffee.com/cdn/shop/t/34/assets/og-image.jpg?v=120275937164661624301703179605",
+    "state": "bad-photo",
+    "candidates": [
+      {
+        "url": "https://www.seycoffee.com/cdn/shop/files/elida_5760x.jpg?v=1613535023",
+        "alt": "Cupping from above.",
+        "score": 20
+      },
+      {
+        "url": "https://www.seycoffee.com/cdn/shop/files/2026GenezardPerez_VistaAlegre-Peru_5760x.png?v=1775118873",
+        "alt": "2026 Genezard Perez; Vista Alegre - Peru",
+        "score": 19.9
+      }
+    ]
+  },
+  {
+    "city": "NYC",
+    "name": "787 Coffee",
+    "address": "131 E 7th St, New York, NY 10009",
+    "website": "https://www.787coffee.com",
+    "currentPhotoUrl": "https://static1.squarespace.com/static/6256e7c9ffcbf452d1da5e6d/t/625716d30910085adf760795/1776635992267/",
+    "currentPhotos0": "https://static1.squarespace.com/static/6256e7c9ffcbf452d1da5e6d/t/625716d30910085adf760795/1776635992267/",
+    "state": "bad-photo",
+    "candidates": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6256e7c9ffcbf452d1da5e6d/758920c1-6de9-4046-9521-a2ac1fe301fe/Puerto+Rican+coffee%2C+best+coffee+online",
+        "alt": "Puerto Rican coffee, best coffee online",
+        "score": 38.15
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6256e7c9ffcbf452d1da5e6d/d29286ed-563c-4e13-a952-601793a65930/Puerto+Rican+coffee%2C+best+coffee+online",
+        "alt": "Puerto Rican coffee, best coffee online",
+        "score": 18.07
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6256e7c9ffcbf452d1da5e6d/441d5d5a-94b5-41dd-903a-c41c57246433/Roles+in+the+Food+Chain+Website+in+Dark+Green+Brown+Scrapbook+Style-2.png",
+        "alt": "",
+        "score": 12.6
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6256e7c9ffcbf452d1da5e6d/c46cc40e-88d3-4d6d-8982-57a1393db059/Roles+in+the+Food+Chain+Website+in+Dark+Green+Brown+Scrapbook+Style.png",
+        "alt": "",
+        "score": 12.05
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6256e7c9ffcbf452d1da5e6d/d0d292d6-281c-4bad-bda6-6413f440936d/Puerto+Rican+coffee%2C+best+coffee+online",
+        "alt": "Puerto Rican coffee, best coffee online",
+        "score": 9.4
+      }
+    ]
+  },
+  {
+    "city": "NYC",
+    "name": "Bar Snack",
+    "address": "92 2nd Ave, New York, NY 10003",
+    "website": "https://www.barsnacknyc.com",
+    "currentPhotoUrl": "http://static1.squarespace.com/static/67f52d14bb809d52e75d2025/t/67f54b1806b84e7cf2988f06/1744128792723/BS+Logos_-39.png?format=1500w",
+    "currentPhotos0": "http://static1.squarespace.com/static/67f52d14bb809d52e75d2025/t/67f54b1806b84e7cf2988f06/1744128792723/BS+Logos_-39.png?format=1500w",
+    "state": "bad-photo",
+    "candidates": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/67f52d14bb809d52e75d2025/9b09c0ff-3656-4550-80e2-2cf63d671f8e/SnackBar_Opening_Medsker_015.jpg",
+        "alt": "SnackBar_Opening_Medsker_015.jpg",
+        "score": 46.75
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/67f52d14bb809d52e75d2025/6f3edef9-b6b1-4efd-a658-60175f420ea5/SnackBar_Opening_Medsker_254.jpg",
+        "alt": "",
+        "score": 20.08
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/67f52d14bb809d52e75d2025/7c560114-f817-4c98-8f1a-6e7e02f117b6/SnackBar_Opening_Medsker_371.jpg",
+        "alt": "SnackBar_Opening_Medsker_371.jpg",
+        "score": 16.9
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/67f52d14bb809d52e75d2025/323e3f01-afbd-46c4-874d-dd6cdca7880d/SnackBar_Opening_Medsker_001+%281%29.jpg",
+        "alt": "SnackBar_Opening_Medsker_001 (1).jpg",
+        "score": 16.85
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/67f52d14bb809d52e75d2025/444c4a56-6fbe-4fd3-934e-beb883bd10a7/SnackBar_Opening_Medsker_367.jpg",
+        "alt": "SnackBar_Opening_Medsker_367.jpg",
+        "score": 16.8
+      }
+    ]
+  },
+  {
+    "city": "NYC",
+    "name": "Superiority Burger",
+    "address": "119 Avenue A, New York, NY 10009",
+    "website": "https://www.superiorityburger.com",
+    "currentPhotoUrl": "https://static1.squarespace.com/static/5584c6b9e4b0867743016574/t/5584c7f1e4b02d6f0db9a977/1763487911532/",
+    "currentPhotos0": "https://static1.squarespace.com/static/5584c6b9e4b0867743016574/t/5584c7f1e4b02d6f0db9a977/1763487911532/",
+    "state": "bad-photo",
+    "candidates": []
+  },
+  {
+    "city": "NYC",
+    "name": "Bonnie's",
+    "address": "398 Manhattan Ave, Brooklyn, NY 11211",
+    "website": "https://www.bonniesbrooklyn.com/",
+    "currentPhotoUrl": "http://static1.squarespace.com/static/6030209f94276d7bd778b53d/t/603192cb940d67348c99389b/1613861584044/squarespace_bonnies_logofull.jpeg?format=1500w",
+    "currentPhotos0": "http://static1.squarespace.com/static/6030209f94276d7bd778b53d/t/603192cb940d67348c99389b/1613861584044/squarespace_bonnies_logofull.jpeg?format=1500w",
+    "state": "bad-photo",
+    "candidates": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6030209f94276d7bd778b53d/c1131615-62d7-42a5-b75c-ed06fb3eb256/bonnies_master-07.png?format=1500w",
+        "alt": "Bonnie&amp;#39;s - Cantonese American Restaurant",
+        "score": 10
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6030209f94276d7bd778b53d/1628030446017-GDR02W057YINNR2ZBTUX/bonnie%27s+dragon+slurping+noodles",
+        "alt": "cantonese american restaurant",
+        "score": -0.1
+      }
+    ]
+  },
+  {
+    "city": "NYC",
+    "name": "Ginny's Supper Club",
+    "address": "310 Malcolm X Blvd, New York, NY 10027",
+    "website": "https://www.ginnyssupperclub.com",
+    "currentPhotoUrl": "http://static1.squarespace.com/static/6091fac0f02d5f148336bb9c/t/6091fd127ccddf65f7433af9/1620180242692/ginnysred.png?format=1500w",
+    "currentPhotos0": "http://static1.squarespace.com/static/6091fac0f02d5f148336bb9c/t/6091fd127ccddf65f7433af9/1620180242692/ginnysred.png?format=1500w",
+    "state": "bad-photo",
+    "candidates": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6091fac0f02d5f148336bb9c/c4bab723-ece3-472d-aed5-004c6a2d8ce9/ginnysred.png?format=1500w",
+        "alt": "Ginny&amp;#39;s Supper Club",
+        "score": 10
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6091fac0f02d5f148336bb9c/1620180693926-85A9XXVIYTRD27QEBSSM/RR_0126.jpg",
+        "alt": "RR_0126.jpg",
+        "score": 9.9
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6091fac0f02d5f148336bb9c/1666227318088-0JKQT0796AUVP9HHG0YD/image001%2B%281%29.jpg",
+        "alt": "image001+(1).jpg",
+        "score": 1.75
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6091fac0f02d5f148336bb9c/1666227321736-EJMC3E1ASK1KT432UO63/image003.jpg",
+        "alt": "image003.jpg",
+        "score": 1.65
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6091fac0f02d5f148336bb9c/1666227272857-9V9BFWG29DBWY18GG8WM/20200121_184840.jpg",
+        "alt": "20200121_184840.jpg",
+        "score": 1.06
+      }
+    ]
+  },
+  {
+    "city": "NYC",
+    "name": "Superbueno",
+    "address": "13 1st Ave, New York, NY 10003",
+    "website": "https://www.superbuenonyc.com/",
+    "currentPhotoUrl": "https://images.squarespace-cdn.com/content/v1/63f519ee4bcf1d117e7f6570/4cfce742-f292-410b-9a66-74524b0b258b/SB_BeveledLogo-Zoom_BK.png",
+    "currentPhotos0": "https://images.squarespace-cdn.com/content/v1/63f519ee4bcf1d117e7f6570/4cfce742-f292-410b-9a66-74524b0b258b/SB_BeveledLogo-Zoom_BK.png",
+    "state": "bad-photo",
+    "candidates": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/63f519ee4bcf1d117e7f6570/86f27a09-2695-47f5-aa81-aa922800f9b4/SuperBueno-MushroomMargarita-JohnShyloski-20230417-0987-C1.jpg",
+        "alt": "",
+        "score": 39.85
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/63f519ee4bcf1d117e7f6570/52ba60d9-7025-4cc7-85d1-69e6f9f86ec3/_MG_9276_edited.jpg",
+        "alt": "",
+        "score": 9.8
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/63f519ee4bcf1d117e7f6570/f38e392c-56b6-449c-958a-e8f240da77e8/Terrazzo-beige_bk.jpg",
+        "alt": "",
+        "score": 9.75
+      },
+      {
+        "url": "http://static1.squarespace.com/static/63f519ee4bcf1d117e7f6570/t/643d86cde4861b6d8459f311/1681753805355/SB-winky-solid.png?format=1500w",
+        "alt": "og:image",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "city": "NYC",
+    "name": "Miss Ada",
+    "address": "184 DeKalb Ave, Brooklyn, NY 11205",
+    "website": "https://www.missadanyc.com",
+    "currentPhotoUrl": "https://static1.squarespace.com/static/58ed384edb29d654c6cc8032/t/65a9e301e4c0c95d24fbd5b1/1770331326624/",
+    "currentPhotos0": "https://static1.squarespace.com/static/58ed384edb29d654c6cc8032/t/65a9e301e4c0c95d24fbd5b1/1770331326624/",
+    "state": "bad-photo",
+    "candidates": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/58ed384edb29d654c6cc8032/9aec2fbf-a259-431e-9280-33f13ce1a002/Miss+Ada+Events.png",
+        "alt": "",
+        "score": 10.99
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/58ed384edb29d654c6cc8032/2e9235bb-65ed-45b1-8d30-60401be56822/Team+photo.jpg",
+        "alt": "",
+        "score": 8.5
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/58ed384edb29d654c6cc8032/5b413edf-5f18-4f3f-a59c-c46c34a86d66/Catering+1.jpg",
+        "alt": "",
+        "score": 8.45
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/58ed384edb29d654c6cc8032/40acefbc-b6da-4d13-9302-f22ac9e890f3/IMG_4962+2.JPG",
+        "alt": "",
+        "score": 8.35
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/58ed384edb29d654c6cc8032/74e75078-af26-4a06-a70a-a8eecc5212f2/theadorapopup-42.jpg",
+        "alt": "",
+        "score": 8.3
+      }
+    ]
+  }
+]
