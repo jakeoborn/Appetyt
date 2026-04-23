@@ -1,0 +1,15 @@
+{
+  "description": "Verified non-duplicate pairs — same address but distinct venues/experiences. Audit-duplicates.js skips these. Append entries as user confirms keeps.",
+  "pairs": [
+    {
+      "city": "Las Vegas",
+      "ids": [12170, 12410],
+      "reason": "Underground at the Mob Museum is the speakeasy in the basement — distinct experience from the museum itself. User-confirmed keep-both."
+    },
+    {
+      "city": "New York",
+      "ids": [1676, 1802],
+      "reason": "Empire State Building Observatory is the ticketed deck experience; Empire State Building card is the attraction-wide entry. User-confirmed keep-both."
+    }
+  ]
+}
