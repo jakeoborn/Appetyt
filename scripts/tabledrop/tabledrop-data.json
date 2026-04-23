@@ -1,0 +1,157 @@
+{
+  "bookings": [
+    {
+      "name": "Carbone NYC",
+      "cardId": 1004,
+      "reserveUrl": "https://resy.com/cities/ny/carbone",
+      "platform": "Resy",
+      "window": "30 days in advance",
+      "dropTime": "10:00 AM ET",
+      "summary": "Opens 30 days ahead at 10:00 AM ET on Resy. $25/pp lunch, $50/pp dinner deposit. Dress code: no shorts, open-toed shoes, tank tops.",
+      "rawText": "Reservations open 30 days in advance at 10:00 AM Eastern Time. Book via Resy or by email. $25 per person for lunch, $50 per person for dinner, plus tax. Dinner: cancel by 12:00 PM day-of. Lunch: 12+ hours prior. Dress code: no shorts, open-toed shoes, or tank tops. No strollers."
+    },
+    {
+      "name": "Torrisi Bar & Restaurant",
+      "cardId": 1036,
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/torrisi",
+      "platform": "Resy",
+      "window": "30 days in advance",
+      "dropTime": "10:00 AM ET",
+      "summary": "Opens 30 days ahead at 10:00 AM ET on Resy. Parties up to 6. Bar counter walk-ins first come, first served.",
+      "rawText": "Reservations open 30 days in advance at 10:00 AM Eastern Time. Parties up to 6, exclusively on Resy. Dress code: athletic wear prohibited. No strollers or high chairs. Corkage fee applies."
+    },
+    {
+      "name": "Via Carota",
+      "cardId": 1005,
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/via-carota",
+      "platform": "Resy",
+      "window": "30 days in advance",
+      "dropTime": "10:00 AM ET",
+      "summary": "Opens 30 days ahead at 10:00 AM ET on Resy. Limited releases — walk-ins always welcome.",
+      "rawText": "Reservations open 30 days in advance at 10:00 AM Eastern Time. Limited reservations released on Resy. Walk-ins are always welcome."
+    },
+    {
+      "name": "Tatiana",
+      "cardId": 1012,
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/tatiana",
+      "platform": "Resy",
+      "window": "28 days in advance",
+      "dropTime": "12:00 PM ET",
+      "summary": "Opens 28 days ahead at 12:00 PM ET on Resy. Bar/patio seats may be held for walk-ins.",
+      "rawText": "Reservations open 28 days in advance at 12:00 PM Eastern Time. Book via Resy. Bar seats and patio tables may be held for walk-ins."
+    },
+    {
+      "name": "Semma",
+      "cardId": 1039,
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/semma",
+      "platform": "Resy",
+      "window": "15 days in advance",
+      "dropTime": "9:00 AM ET",
+      "summary": "Opens 15 days ahead at 9:00 AM ET on Resy. Limited walk-in bar seats nightly.",
+      "rawText": "Reservations open 15 days in advance at 9:00 AM Eastern Time. Book via Resy. Walk-in bar seats are first-come, first-served."
+    },
+    {
+      "name": "Lilia",
+      "cardId": 1008,
+      "reserveUrl": "https://resy.com/cities/ny/lilia",
+      "platform": "Resy",
+      "window": "28 days in advance",
+      "dropTime": "10:00 AM ET",
+      "summary": "Opens 28 days ahead at 10:00 AM ET on Resy. Walk-in bar and patio seats possible; arrive early.",
+      "rawText": "Reservations open 28 days in advance at 10:00 AM Eastern Time. Book via Resy. Walk-in bar and patio seats are possible; arrive early."
+    },
+    {
+      "name": "Misi",
+      "cardId": 1093,
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/misi",
+      "platform": "Resy",
+      "window": "30 days in advance",
+      "dropTime": "10:00 AM ET",
+      "summary": "Opens 30 days ahead at 10:00 AM ET on Resy. Popular pasta destination — set a drop alert.",
+      "rawText": "Reservations open 30 days in advance at 10:00 AM Eastern Time. Book via Resy. Popular pasta destination; set an alert for drop time."
+    },
+    {
+      "name": "Don Angie",
+      "cardId": 1009,
+      "reserveUrl": "https://www.opentable.com/r/don-angie-new-york",
+      "platform": "OpenTable",
+      "window": "7 days in advance",
+      "dropTime": "9:00 AM ET",
+      "summary": "Opens 7 days ahead at 9:00 AM ET on OpenTable. Tables disappear quickly after the drop.",
+      "rawText": "Reservations open 7 days in advance at 9:00 AM Eastern Time. Reservations are exclusively on OpenTable. Tables disappear quickly after the drop."
+    },
+    {
+      "name": "I Sodi",
+      "cardId": 1006,
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/i-sodi",
+      "platform": "Resy",
+      "window": "14 days in advance",
+      "dropTime": "12:00 AM ET (midnight)",
+      "summary": "Opens 14 days ahead at midnight ET on Resy. Walk-ins always welcome — midnight releases sell out quickly.",
+      "rawText": "Reservations open 14 days in advance at 12:00 AM Eastern Time. Book via Resy. Walk-ins are always welcome; midnight releases sell out quickly."
+    },
+    {
+      "name": "Double Chicken Please",
+      "cardId": 1073,
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/double-chicken-please",
+      "platform": "Resy",
+      "window": "6 days in advance",
+      "dropTime": "12:00 AM ET (midnight)",
+      "summary": "Opens 6 days ahead at midnight ET on Resy. $2.50/pp booking fee. 70%+ of The Coop is walk-in.",
+      "rawText": "Reservations open 6 days in advance at 12:00 AM Eastern Time. Book via Resy. $2.50 per person booking fee; non-refundable if modified/cancelled. Over 70% of The Coop seating is walk-in."
+    },
+    {
+      "name": "Le Café Louis Vuitton",
+      "cardId": null,
+      "reserveUrl": "https://resy.com/cities/ny/le-cafe-louis-vuitton",
+      "platform": "Resy",
+      "window": "28 days in advance",
+      "dropTime": "12:00 AM ET (midnight)",
+      "summary": "Opens 28 days ahead at midnight ET on Resy.",
+      "rawText": "Reservations open 28 days in advance at 12:00 AM Eastern Time. Book via Resy. Reservations drop at midnight ET.",
+      "missingCard": true
+    },
+    {
+      "name": "Golden Diner",
+      "cardId": 1276,
+      "reserveUrl": "https://resy.com/cities/ny/golden-diner",
+      "platform": "Resy",
+      "window": "30 days in advance",
+      "dropTime": "12:00 AM ET (midnight)",
+      "summary": "Opens 30 days ahead at midnight ET on Resy.",
+      "rawText": "Reservations open 30 days in advance at 12:00 AM Eastern Time. Book via Resy. Reservations drop at midnight ET."
+    }
+  ],
+  "urlsOnly": [
+    {"name": "4 Charles Prime Rib", "cardId": 1015, "reserveUrl": "https://resy.com/cities/ny/4-charles-prime-rib", "platform": "Resy"},
+    {"name": "Rubirosa", "cardId": 1134, "reserveUrl": "https://resy.com/cities/ny/rubirosa", "platform": "Resy", "bookingInfo": "Opens 7 days ahead at midnight ET on Resy. Leftover slots re-drop after cancellations. Midnight releases go fast."},
+    {"name": "Raoul's", "cardId": 1026, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/raoulsrestaurant", "platform": "Resy", "bookingInfo": "Opens 30 days ahead at 8:00 AM ET on Resy. Morning drop — set an alarm."},
+    {"name": "Rezdora", "cardId": null, "reserveUrl": "https://resy.com/cities/ny/rezdora", "platform": "Resy", "missingCard": true},
+    {"name": "L'Artusi", "cardId": 1047, "reserveUrl": "https://resy.com/cities/ny/lartusi-ny", "platform": "Resy", "bookingInfo": "Opens 14 days ahead at 9:00 AM ET on Resy. Two-week rolling window — daily drops at 9 AM."},
+    {"name": "Bangkok Supper Club", "cardId": 1463, "reserveUrl": "https://resy.com/cities/ny/bangkok-supper-club", "platform": "Resy"},
+    {"name": "COQODAQ", "cardId": 1461, "reserveUrl": "https://resy.com/cities/ny/coqodaq", "platform": "Resy"},
+    {"name": "Kisa", "cardId": null, "reserveUrl": "https://resy.com/cities/ny/kisa", "platform": "Resy", "missingCard": true},
+    {"name": "Jeju Noodle Bar", "cardId": 1201, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/jeju-noodle-bar", "platform": "Resy"},
+    {"name": "Bridges", "cardId": 1216, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/bridges", "platform": "Resy"},
+    {"name": "Penny", "cardId": 1900, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/penny", "platform": "Resy"},
+    {"name": "Bungalow", "cardId": 1848, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/bungalow-ny", "platform": "Resy"},
+    {"name": "Jean's", "cardId": null, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/jeans", "platform": "Resy", "missingCard": true},
+    {"name": "Le Veau d'Or", "cardId": 1220, "reserveUrl": "https://www.opentable.com/r/le-veau-dor-new-york", "platform": "OpenTable"},
+    {"name": "Ramen By Ra", "cardId": null, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/ramen-by-ra", "platform": "Resy", "missingCard": true},
+    {"name": "Bistrot Ha", "cardId": 1743, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/bistrot-ha", "platform": "Resy"},
+    {"name": "The Corner Store", "cardId": 1502, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/the-corner-store", "platform": "Resy"},
+    {"name": "The Eighty Six", "cardId": 1737, "reserveUrl": "https://fp.sevenrooms.com/explore/theeightysix/reservations/create/search", "platform": "SevenRooms"},
+    {"name": "The Polo Bar", "cardId": 1241, "reserveUrl": null, "platform": "Phone", "notes": "Phone-only reservations released monthly — no online link."},
+    {"name": "The Four Horsemen", "cardId": 1218, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/the-four-horsemen", "platform": "Resy"},
+    {"name": "I Cavallini", "cardId": null, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/i-cavallini", "platform": "Resy", "missingCard": true},
+    {"name": "Bong", "cardId": 1230, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/bong", "platform": "Resy"},
+    {"name": "Sailor", "cardId": 1228, "reserveUrl": "https://www.opentable.com/r/sailor-brooklyn", "platform": "OpenTable"},
+    {"name": "Theodora (Fort Greene, Brooklyn)", "cardId": null, "reserveUrl": "https://resy.com/cities/new-york-ny/venues/theodora", "platform": "Resy", "missingCard": true, "notes": "NYC_DATA #1450 is a different Theodora (Upper East Side). This is the Fort Greene one from TableDrop."}
+  ],
+  "notes": {
+    "tatianaDupe": "NYC_DATA has TWO Tatiana cards at the same 10 Lincoln Center Plaza address: #1012 'Tatiana by Kwame Onwuachi' (Lincoln Center) and #1893 'Tatiana' (Upper West Side). These are duplicates — merge/fold in a separate pass. Using #1012 for TableDrop data because the neighborhood matches.",
+    "theodoraMismatch": "TableDrop's Theodora is at Fort Greene, Brooklyn (Mediterranean). NYC_DATA #1450 Theodora is at 141 E 62nd St, Upper East Side. Likely different restaurants with the same name — TableDrop's is missing from our guide and needs a new card.",
+    "poloBar": "Phone-only reservations; no online link. Still has card #1241 in NYC_DATA — will get bookingInfo note but no reserveUrl.",
+    "missingCardsBatch1": ["Le Café Louis Vuitton", "Rezdora", "Kisa", "Jean's", "Ramen By Ra", "I Cavallini", "Theodora (Fort Greene)"]
+  }
+}

@@ -1,0 +1,1339 @@
+[
+  {
+    "id": 5,
+    "name": "Frenchie",
+    "neighborhood": "Park Cities",
+    "score": 90,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 6,
+    "name": "Namo",
+    "neighborhood": "West Village",
+    "score": 91,
+    "platform": "Resy"
+  },
+  {
+    "id": 7,
+    "name": "Sachet",
+    "neighborhood": "Oak Lawn",
+    "score": 92,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 17,
+    "name": "Sassetta",
+    "neighborhood": "Downtown Dallas",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 18,
+    "name": "The Henry",
+    "neighborhood": "Uptown",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 20,
+    "name": "Mamani",
+    "neighborhood": "Uptown",
+    "score": 98,
+    "platform": "Resy"
+  },
+  {
+    "id": 21,
+    "name": "Rainbowcat",
+    "neighborhood": "East Dallas / Lakewood",
+    "score": 93,
+    "platform": "Resy"
+  },
+  {
+    "id": 27,
+    "name": "Meso Maya",
+    "neighborhood": "Uptown",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 28,
+    "name": "Las Palmas",
+    "neighborhood": "Uptown",
+    "score": 86,
+    "platform": "Resy"
+  },
+  {
+    "id": 31,
+    "name": "Fogo de Chao",
+    "neighborhood": "Uptown",
+    "score": 89,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 34,
+    "name": "Truluck's",
+    "neighborhood": "Uptown",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 39,
+    "name": "The Joule",
+    "neighborhood": "Downtown Dallas",
+    "score": 98,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 45,
+    "name": "Loro",
+    "neighborhood": "East Dallas / Lakewood",
+    "score": 93,
+    "platform": "Resy"
+  },
+  {
+    "id": 47,
+    "name": "Crown Block",
+    "neighborhood": "Downtown Dallas",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 61,
+    "name": "Texas De Brazil Churrascaria",
+    "neighborhood": "Addison",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 63,
+    "name": "Pappasito's Cantina",
+    "neighborhood": "North Dallas",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 68,
+    "name": "Purépecha",
+    "neighborhood": "Deep Ellum",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 69,
+    "name": "Gemma",
+    "neighborhood": "Knox-Henderson",
+    "score": 94,
+    "platform": "Resy"
+  },
+  {
+    "id": 70,
+    "name": "Partenope Ristorante",
+    "neighborhood": "Downtown Dallas",
+    "score": 89,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 74,
+    "name": "Sushi Kozy",
+    "neighborhood": "Arts District",
+    "score": 85,
+    "platform": "Resy"
+  },
+  {
+    "id": 76,
+    "name": "Fond",
+    "neighborhood": "Downtown Dallas",
+    "score": 95,
+    "platform": "Resy"
+  },
+  {
+    "id": 77,
+    "name": "Beatrice",
+    "neighborhood": "Oak Cliff",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 78,
+    "name": "Beverley's Bistro & Bar",
+    "neighborhood": "Oak Lawn",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 79,
+    "name": "il Bracco",
+    "neighborhood": "Park Cities",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 80,
+    "name": "Hudson House",
+    "neighborhood": "West Village",
+    "score": 91,
+    "platform": "Resy"
+  },
+  {
+    "id": 83,
+    "name": "Norman's Japanese Grill",
+    "neighborhood": "Oak Lawn",
+    "score": 89,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 84,
+    "name": "Wicked Butcher",
+    "neighborhood": "Downtown Dallas",
+    "score": 92,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 86,
+    "name": "Georgie",
+    "neighborhood": "Knox-Henderson",
+    "score": 95,
+    "platform": "Resy"
+  },
+  {
+    "id": 87,
+    "name": "Uchiba",
+    "neighborhood": "Uptown",
+    "score": 89,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 94,
+    "name": "CBD Provisions",
+    "neighborhood": "Downtown Dallas",
+    "score": 85,
+    "platform": "Resy"
+  },
+  {
+    "id": 95,
+    "name": "Salum",
+    "neighborhood": "Uptown",
+    "score": 94,
+    "platform": "Resy"
+  },
+  {
+    "id": 96,
+    "name": "Toulouse Cafe and Bar",
+    "neighborhood": "Knox-Henderson",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 97,
+    "name": "The Capital Grille",
+    "neighborhood": "Downtown Dallas",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 98,
+    "name": "Tei Tei Robata Bar",
+    "neighborhood": "Knox-Henderson",
+    "score": 89,
+    "platform": "Resy"
+  },
+  {
+    "id": 103,
+    "name": "Nuri Steakhouse",
+    "neighborhood": "Uptown",
+    "score": 90,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 112,
+    "name": "Ziziki's",
+    "neighborhood": "Knox-Henderson",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 114,
+    "name": "Javier's Gourmet Mexicano",
+    "neighborhood": "Park Cities",
+    "score": 93,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 115,
+    "name": "Shinsei",
+    "neighborhood": "Park Cities",
+    "score": 93,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 116,
+    "name": "Hugo's Seafood",
+    "neighborhood": "Bishop Arts",
+    "score": 94,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 117,
+    "name": "Pesca Coastal Classics",
+    "neighborhood": "Trinity Groves",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 118,
+    "name": "Flamant",
+    "neighborhood": "Plano",
+    "score": 92,
+    "platform": "Resy"
+  },
+  {
+    "id": 119,
+    "name": "Nonna",
+    "neighborhood": "Highland Park",
+    "score": 89,
+    "platform": "Resy"
+  },
+  {
+    "id": 123,
+    "name": "RH Rooftop Restaurant at RH Dallas",
+    "neighborhood": "Knox-Henderson",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 126,
+    "name": "Mot Hai Ba",
+    "neighborhood": "East Dallas / Lakewood",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 129,
+    "name": "Kessaku",
+    "neighborhood": "Downtown Dallas",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 130,
+    "name": "Shoyo",
+    "neighborhood": "Lower Greenville",
+    "score": 89,
+    "platform": "Resy"
+  },
+  {
+    "id": 136,
+    "name": "The Heritage Table",
+    "neighborhood": "Frisco",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 137,
+    "name": "The Charlotte",
+    "neighborhood": "Knox-Henderson",
+    "score": 87,
+    "platform": "Resy"
+  },
+  {
+    "id": 138,
+    "name": "Sanjh",
+    "neighborhood": "Irving / Las Colinas",
+    "score": 85,
+    "platform": "Resy"
+  },
+  {
+    "id": 139,
+    "name": "Mābo",
+    "neighborhood": "Park Cities",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 145,
+    "name": "Nikki Greek Bistro & Lounge",
+    "neighborhood": "Park Cities",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 148,
+    "name": "Mister Charles",
+    "neighborhood": "Knox-Henderson",
+    "score": 95,
+    "platform": "Resy"
+  },
+  {
+    "id": 149,
+    "name": "Mirador",
+    "neighborhood": "Downtown Dallas",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 151,
+    "name": "Darna",
+    "neighborhood": "Plano",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 153,
+    "name": "Le Bilboquet",
+    "neighborhood": "Knox-Henderson",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 154,
+    "name": "Knox Bistro",
+    "neighborhood": "Knox-Henderson",
+    "score": 93,
+    "platform": "Resy"
+  },
+  {
+    "id": 156,
+    "name": "Avra Dallas",
+    "neighborhood": "Uptown",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 158,
+    "name": "The Mansion on Turtle Creek",
+    "neighborhood": "Uptown",
+    "score": 97,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 161,
+    "name": "Chamberlain's Steak and Fish",
+    "neighborhood": "Addison",
+    "score": 96,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 162,
+    "name": "Encina",
+    "neighborhood": "Bishop Arts",
+    "score": 90,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 163,
+    "name": "Sister",
+    "neighborhood": "Lower Greenville",
+    "score": 89,
+    "platform": "Resy"
+  },
+  {
+    "id": 164,
+    "name": "Mercat Bistro",
+    "neighborhood": "Harwood District",
+    "score": 92,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 165,
+    "name": "Marie Gabrielle",
+    "neighborhood": "Harwood District",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 166,
+    "name": "Saint Ann Restaurant & Bar",
+    "neighborhood": "Harwood District",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 167,
+    "name": "Te Deseo",
+    "neighborhood": "Harwood District",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 168,
+    "name": "Dolce Riviera",
+    "neighborhood": "Harwood District",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 169,
+    "name": "Elephant East",
+    "neighborhood": "Harwood District",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 170,
+    "name": "Docent Steak & Lounge",
+    "neighborhood": "Harwood District",
+    "score": 89,
+    "platform": "Resy"
+  },
+  {
+    "id": 171,
+    "name": "El Carlos Elegante",
+    "neighborhood": "Trinity Groves",
+    "score": 94,
+    "platform": "Resy"
+  },
+  {
+    "id": 173,
+    "name": "Drake's Hollywood",
+    "neighborhood": "Park Cities",
+    "score": 89,
+    "platform": "Resy"
+  },
+  {
+    "id": 174,
+    "name": "Anchor Sushi Bar",
+    "neighborhood": "Knox-Henderson",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 175,
+    "name": "Brentwood",
+    "neighborhood": "Addison",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 177,
+    "name": "Jack & Harry's",
+    "neighborhood": "Park Cities",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 178,
+    "name": "Le Bistrot Bar Sardine",
+    "neighborhood": "Park Cities",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 179,
+    "name": "El Molino",
+    "neighborhood": "Park Cities",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 180,
+    "name": "Mi Cocina",
+    "neighborhood": "Highland Park",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 181,
+    "name": "The Mercury",
+    "neighborhood": "Preston Hollow",
+    "score": 91,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 182,
+    "name": "North Italia",
+    "neighborhood": "Uptown",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 183,
+    "name": "Bar Colette",
+    "neighborhood": "West Village",
+    "score": 91,
+    "platform": "Resy"
+  },
+  {
+    "id": 185,
+    "name": "Kenny's Italian Kitchen",
+    "neighborhood": "Addison",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 186,
+    "name": "Quarter Acre",
+    "neighborhood": "Lower Greenville",
+    "score": 92,
+    "platform": "Resy"
+  },
+  {
+    "id": 196,
+    "name": "Paradiso",
+    "neighborhood": "Bishop Arts",
+    "score": 89,
+    "platform": "Resy"
+  },
+  {
+    "id": 198,
+    "name": "Sky Blossom",
+    "neighborhood": "Downtown Dallas",
+    "score": 86,
+    "platform": "Resy"
+  },
+  {
+    "id": 201,
+    "name": "Goldie's",
+    "neighborhood": "North Dallas",
+    "score": 87,
+    "platform": "Resy"
+  },
+  {
+    "id": 202,
+    "name": "The Mexican",
+    "neighborhood": "Design District",
+    "score": 92,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 203,
+    "name": "Izkina",
+    "neighborhood": "Cedars",
+    "score": 85,
+    "platform": "Resy"
+  },
+  {
+    "id": 209,
+    "name": "CATCH Dallas",
+    "neighborhood": "Uptown",
+    "score": 85,
+    "platform": "Resy"
+  },
+  {
+    "id": 215,
+    "name": "Maman",
+    "neighborhood": "Park Cities",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 217,
+    "name": "Sant Ambroeus Dallas",
+    "neighborhood": "Knox-Henderson",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 219,
+    "name": "Casa Brasa",
+    "neighborhood": "Park Cities",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 221,
+    "name": "Haywire",
+    "neighborhood": "Uptown",
+    "score": 89,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 225,
+    "name": "Stillwell's",
+    "neighborhood": "Harwood District",
+    "score": 92,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 226,
+    "name": "Barsotti's",
+    "neighborhood": "Oak Lawn",
+    "score": 92,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 227,
+    "name": "Stock & Barrel",
+    "neighborhood": "Bishop Arts",
+    "score": 91,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 236,
+    "name": "Harvest at the Masonic",
+    "neighborhood": "McKinney",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 243,
+    "name": "AKAI at Musume",
+    "neighborhood": "Arts District",
+    "score": 91,
+    "platform": "Resy"
+  },
+  {
+    "id": 252,
+    "name": "Topgolf Dallas",
+    "neighborhood": "North Dallas",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 253,
+    "name": "Birdies Golf Lounge",
+    "neighborhood": "Victory Park",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 254,
+    "name": "Electric Shuffle",
+    "neighborhood": "Deep Ellum",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 255,
+    "name": "Punch Bowl Social",
+    "neighborhood": "Deep Ellum",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 256,
+    "name": "Puttery",
+    "neighborhood": "Frisco",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 263,
+    "name": "Batbox",
+    "neighborhood": "Addison",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 265,
+    "name": "Maroma Dallas",
+    "neighborhood": "Design District",
+    "score": 86,
+    "platform": "Resy"
+  },
+  {
+    "id": 268,
+    "name": "Perry's Steakhouse",
+    "neighborhood": "Uptown",
+    "score": 94,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 283,
+    "name": "Puerto Cocina",
+    "neighborhood": "Design District",
+    "score": 93,
+    "platform": "Resy"
+  },
+  {
+    "id": 285,
+    "name": "Immersive Gamebox",
+    "neighborhood": "Deep Ellum",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 288,
+    "name": "Fachini",
+    "neighborhood": "Highland Park",
+    "score": 94,
+    "platform": "Resy"
+  },
+  {
+    "id": 289,
+    "name": "Sadelle's",
+    "neighborhood": "Highland Park",
+    "score": 92,
+    "platform": "Resy"
+  },
+  {
+    "id": 290,
+    "name": "The Ranch at Las Colinas",
+    "neighborhood": "Irving / Las Colinas",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 298,
+    "name": "Mexican Sugar",
+    "neighborhood": "Uptown",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 300,
+    "name": "Ida Claire",
+    "neighborhood": "Addison",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 304,
+    "name": "Carbone",
+    "neighborhood": "Design District",
+    "score": 97,
+    "platform": "Resy"
+  },
+  {
+    "id": 307,
+    "name": "Poco Fiasco",
+    "neighborhood": "Harwood District",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 310,
+    "name": "Los Charros Tex-Mex Smokehouse",
+    "neighborhood": "Park Cities",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 311,
+    "name": "Mariano's Hacienda",
+    "neighborhood": "North Dallas",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 314,
+    "name": "Uncle Julio's",
+    "neighborhood": "Oak Lawn",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 316,
+    "name": "Urban Italia",
+    "neighborhood": "Victory Park",
+    "score": 90,
+    "platform": "Resy"
+  },
+  {
+    "id": 348,
+    "name": "Cane Rosso",
+    "neighborhood": "Deep Ellum",
+    "score": 85,
+    "platform": "Resy"
+  },
+  {
+    "id": 367,
+    "name": "Maison Chinoise",
+    "neighborhood": "Knox-Henderson",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 370,
+    "name": "Oishii",
+    "neighborhood": "Oak Lawn",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 387,
+    "name": "Coupes",
+    "neighborhood": "Oak Lawn",
+    "score": 85,
+    "platform": "Resy"
+  },
+  {
+    "id": 388,
+    "name": "Leela's Wine Bar",
+    "neighborhood": "Uptown",
+    "score": 91,
+    "platform": "Resy"
+  },
+  {
+    "id": 397,
+    "name": "Moodaepo Korean BBQ",
+    "neighborhood": "Carrollton",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 432,
+    "name": "Lounge Here",
+    "neighborhood": "East Dallas / Lakewood",
+    "score": 91,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 433,
+    "name": "Tango Room",
+    "neighborhood": "Design District",
+    "score": 94,
+    "platform": "Resy"
+  },
+  {
+    "id": 437,
+    "name": "Bowen House",
+    "neighborhood": "Uptown",
+    "score": 90,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 438,
+    "name": "Babou's",
+    "neighborhood": "Harwood District",
+    "score": 92,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 440,
+    "name": "Bar Charles",
+    "neighborhood": "Design District",
+    "score": 93,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 448,
+    "name": "Rose Cafe",
+    "neighborhood": "Knox-Henderson",
+    "score": 91,
+    "platform": "Resy"
+  },
+  {
+    "id": 463,
+    "name": "Eataly Dallas",
+    "neighborhood": "North Dallas",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 465,
+    "name": "Del Frisco's Double Eagle",
+    "neighborhood": "Uptown",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 466,
+    "name": "Rise Soufflé",
+    "neighborhood": "Park Cities",
+    "score": 91,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 472,
+    "name": "Malai Kitchen",
+    "neighborhood": "West Village",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 508,
+    "name": "Eno's Pizza Tavern",
+    "neighborhood": "Bishop Arts",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 520,
+    "name": "Cafe Lucca",
+    "neighborhood": "Knox-Henderson",
+    "score": 85,
+    "platform": "Resy"
+  },
+  {
+    "id": 528,
+    "name": "Even Coast",
+    "neighborhood": "Addison",
+    "score": 85,
+    "platform": "Resy"
+  },
+  {
+    "id": 534,
+    "name": "Via Triozzi",
+    "neighborhood": "Lower Greenville",
+    "score": 85,
+    "platform": "Resy"
+  },
+  {
+    "id": 541,
+    "name": "The Reserve at The Highland",
+    "neighborhood": "East Dallas / Lakewood",
+    "score": 89,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 542,
+    "name": "Meridian",
+    "neighborhood": "North Dallas",
+    "score": 89,
+    "platform": "Resy"
+  },
+  {
+    "id": 544,
+    "name": "Toca Madera",
+    "neighborhood": "Downtown Dallas",
+    "score": 87,
+    "platform": "Resy"
+  },
+  {
+    "id": 545,
+    "name": "Élephante",
+    "neighborhood": "Uptown",
+    "score": 89,
+    "platform": "Resy"
+  },
+  {
+    "id": 546,
+    "name": "Clark's Oyster Bar",
+    "neighborhood": "Knox-Henderson",
+    "score": 87,
+    "platform": "Resy"
+  },
+  {
+    "id": 547,
+    "name": "Corsaire",
+    "neighborhood": "Lower Greenville",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 549,
+    "name": "Serritella Prime Italian",
+    "neighborhood": "East Dallas / Lakewood",
+    "score": 87,
+    "platform": "Resy"
+  },
+  {
+    "id": 553,
+    "name": "Neighborhood Sushi",
+    "neighborhood": "Highland Park",
+    "score": 87,
+    "platform": "Resy"
+  },
+  {
+    "id": 555,
+    "name": "Ospi",
+    "neighborhood": "Design District",
+    "score": 87,
+    "platform": "Resy"
+  },
+  {
+    "id": 556,
+    "name": "Alara",
+    "neighborhood": "Design District",
+    "score": 87,
+    "platform": "Resy"
+  },
+  {
+    "id": 557,
+    "name": "Delilah Dallas",
+    "neighborhood": "Design District",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 558,
+    "name": "Night Rooster",
+    "neighborhood": "Design District",
+    "score": 87,
+    "platform": "Resy"
+  },
+  {
+    "id": 1056,
+    "name": "Clifton Club",
+    "neighborhood": "Knox-Henderson",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 1057,
+    "name": "Astra Kitchen + Lounge",
+    "neighborhood": "Arts District",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 1060,
+    "name": "Brass Ram",
+    "neighborhood": "Downtown Dallas",
+    "score": 90,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 1064,
+    "name": "Parigi",
+    "neighborhood": "Oak Lawn",
+    "score": 89,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 1065,
+    "name": "Ramble Room",
+    "neighborhood": "Park Cities",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 1067,
+    "name": "Chelsea Corner",
+    "neighborhood": "Knox-Henderson",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 1069,
+    "name": "Si Tapas",
+    "neighborhood": "Uptown",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 1073,
+    "name": "Enoteca Italia",
+    "neighborhood": "Oak Lawn",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 1074,
+    "name": "Fortune House - Greenville",
+    "neighborhood": "Lower Greenville",
+    "score": 86,
+    "platform": "Resy"
+  },
+  {
+    "id": 1081,
+    "name": "Komodo Dallas",
+    "neighborhood": "Deep Ellum",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 1083,
+    "name": "Muchacho",
+    "neighborhood": "Park Cities",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 1088,
+    "name": "Nora Restaurant and Bar",
+    "neighborhood": "Trinity Groves",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 1089,
+    "name": "Kalachandji's",
+    "neighborhood": "East Dallas / Lakewood",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 1109,
+    "name": "Alamo Club",
+    "neighborhood": "Lower Greenville",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 1111,
+    "name": "DeLucca Gaucho Pizza & Wine",
+    "neighborhood": "Design District",
+    "score": 88,
+    "platform": "Resy"
+  },
+  {
+    "id": 9041,
+    "name": "The French Room",
+    "neighborhood": "Downtown Dallas",
+    "score": 91,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9047,
+    "name": "Pearl",
+    "neighborhood": "Uptown",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9048,
+    "name": "Lyla",
+    "neighborhood": "Uptown",
+    "score": 86,
+    "platform": "Resy"
+  },
+  {
+    "id": 9068,
+    "name": "Mar y Sol",
+    "neighborhood": "Knox-Henderson",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9069,
+    "name": "Local Public Eatery",
+    "neighborhood": "Knox-Henderson",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9073,
+    "name": "At Fault",
+    "neighborhood": "Addison",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9076,
+    "name": "Joe Leo Fine Tex-Mex",
+    "neighborhood": "Knox-Henderson",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9077,
+    "name": "Bobbie's Airway Grill",
+    "neighborhood": "Preston Hollow",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9078,
+    "name": "The Operators Club",
+    "neighborhood": "Downtown Dallas",
+    "score": 87,
+    "platform": "Resy"
+  },
+  {
+    "id": 9079,
+    "name": "Atlas",
+    "neighborhood": "Bishop Arts",
+    "score": 86,
+    "platform": "Resy"
+  },
+  {
+    "id": 9082,
+    "name": "Casablanca",
+    "neighborhood": "Bishop Arts",
+    "score": 85,
+    "platform": "Resy"
+  },
+  {
+    "id": 9084,
+    "name": "Babel",
+    "neighborhood": "Uptown",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9089,
+    "name": "Billy Can Can",
+    "neighborhood": "Victory Park",
+    "score": 87,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9094,
+    "name": "LAW Restaurant",
+    "neighborhood": "Irving / Las Colinas",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9095,
+    "name": "Knife Italian",
+    "neighborhood": "Irving / Las Colinas",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9098,
+    "name": "Zanata",
+    "neighborhood": "Rockwall",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9100,
+    "name": "Bin 303",
+    "neighborhood": "Rockwall",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9107,
+    "name": "Cafe Pacific",
+    "neighborhood": "Highland Park",
+    "score": 86,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9115,
+    "name": "Dino's Steak and Claw House",
+    "neighborhood": "Grapevine",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9120,
+    "name": "Rustico Wood Fired Grill and Wine Bar",
+    "neighborhood": "Flower Mound",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9127,
+    "name": "Tycoon",
+    "neighborhood": "Flower Mound",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9139,
+    "name": "Mercury Chophouse Arlington",
+    "neighborhood": "Arlington / Mid-Cities",
+    "score": 85,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9155,
+    "name": "Centrale Italia",
+    "neighborhood": "Preston Hollow",
+    "score": 88,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9156,
+    "name": "Jo'Seon Wagyu Omakase",
+    "neighborhood": "Design District",
+    "score": 91,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9157,
+    "name": "Winsome Prime",
+    "neighborhood": "Trinity Groves",
+    "score": 89,
+    "platform": "OpenTable"
+  },
+  {
+    "id": 9158,
+    "name": "Cafe Dior by Dominique Crenn",
+    "neighborhood": "Highland Park",
+    "score": 92,
+    "platform": "Resy"
+  },
+  {
+    "id": 9159,
+    "name": "Little Blue Bistro",
+    "neighborhood": "Bishop Arts",
+    "score": 88,
+    "platform": "Resy"
+  }
+]

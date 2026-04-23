@@ -1,0 +1,1079 @@
+{
+  "lowConfidence": [
+    {
+      "id": 39,
+      "name": "The Joule",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/sassetta-dallas",
+      "confidence": 34,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/sassetta-main-st",
+          "platform": "Resy",
+          "title": "Book Your Sassetta - Main St Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/sassetta-dallas",
+          "platform": "OpenTable",
+          "title": "Sassetta Restaurant - Dallas, TX | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.exploretock.com/mirador/",
+          "platform": "Tock",
+          "title": "Mirador - Dallas, TX - Tock",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Purépecha",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/austin-tx/venues/tzintzuntzan",
+      "confidence": 25,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/austin-tx/venues/tzintzuntzan",
+          "platform": "Resy",
+          "title": "Book Your Tzintzuntzan Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Texas De Brazil Churrascaria",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/dallas-fort-worth-tx/venues/local",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/local",
+          "platform": "Resy",
+          "title": "Book Your Local Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Beatrice",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/restaurant-beatrice-dallas",
+      "confidence": 70,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/restaurant-beatrice-dallas",
+          "platform": "OpenTable",
+          "title": "Restaurant Beatrice - Dallas, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Beverley's Bistro & Bar",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/dallas-fort-worth-tx/venues/beverlys",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/beverlys",
+          "platform": "Resy",
+          "title": "Book Your Beverley's Bistro & Bar Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Toulouse Cafe and Bar",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/toulouse-knox-street-dallas-dallas",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/toulouse-knox-street-dallas-dallas",
+          "platform": "OpenTable",
+          "title": "Toulouse - Knox Street (Dallas) Restaurant - OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/toulouse-legacy-west-plano",
+          "platform": "OpenTable",
+          "title": "Toulouse - Legacy West Restaurant - Plano, TX | OpenTable",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "name": "Javier's Gourmet Mexicano",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/javiers-dallas",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/javiers-dallas",
+          "platform": "OpenTable",
+          "title": "Javier's - Updated 2026, Mexican Restaurant in Dallas, TX",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/portland-or/venues/urdaneta",
+          "platform": "Resy",
+          "title": "Book Your Urdaneta Reservation Now on Resy",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "name": "Hugo's Seafood",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/the-reserve-at-the-highland-dallas",
+      "confidence": 32,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/montpelier-vt/venues/hugos-bar-and-grill",
+          "platform": "Resy",
+          "title": "Book Your Hugo's Bar and Grill Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/los-angeles-ca/venues/hugos-restaurant-west-hollywood",
+          "platform": "Resy",
+          "title": "Hugo's Restaurant - West Hollywood Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/los-angeles-ca/venues/hugos-restaurant-studio-city",
+          "platform": "Resy",
+          "title": "Book Your Hugo's Restaurant - Studio City Reservation Now on Resy",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/the-reserve-at-the-highland-dallas",
+          "platform": "OpenTable",
+          "title": "The Reserve at The Highland Restaurant - Dallas, TX | OpenTable",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "name": "Nikki Greek Bistro & Lounge",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/phoenix-az/venues/valentine",
+      "confidence": 18,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/miami-fl/venues/nikki-beach-miami",
+          "platform": "Resy",
+          "title": "Book Your Nikki Beach Miami Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/sushi-akira",
+          "platform": "Resy",
+          "title": "Book Your Sushi Akira Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/phoenix-az/venues/valentine",
+          "platform": "Resy",
+          "title": "Book Your Valentine Reservation Now on Resy",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "name": "The Mansion on Turtle Creek",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/dallas-fort-worth-tx/venues/avra-dallas",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/avra-dallas",
+          "platform": "Resy",
+          "title": "Book Your Avra Dallas Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/local",
+          "platform": "Resy",
+          "title": "Book Your Local Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/ritual-dallas",
+          "platform": "Resy",
+          "title": "Book Your Ritual Dallas Reservation Now on Resy",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 166,
+      "name": "Saint Ann Restaurant & Bar",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/saint-ann-restaurant-and-bar",
+      "confidence": 25,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/saint-ann-restaurant-and-bar",
+          "platform": "OpenTable",
+          "title": "Saint Ann Restaurant and Bar - Dallas, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "name": "Docent Steak & Lounge",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/nda-brasserie-dallas",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/nda-brasserie-dallas",
+          "platform": "OpenTable",
+          "title": "NDA Brasserie Restaurant - Dallas, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 177,
+      "name": "Jack & Harry's",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/jack-and-harrys-dallas",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/jack-and-harrys-dallas",
+          "platform": "OpenTable",
+          "title": "Jack & Harry's Restaurant - Dallas, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 178,
+      "name": "Le Bistrot Bar Sardine",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/bar-sardine-dallas",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/bar-sardine-dallas",
+          "platform": "OpenTable",
+          "title": "Bar Sardine - Dallas, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 181,
+      "name": "The Mercury",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/dallas-fort-worth-tx/venues/avra-dallas",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/avra-dallas",
+          "platform": "Resy",
+          "title": "Book Your Avra Dallas Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/local",
+          "platform": "Resy",
+          "title": "Book Your Local Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/ritual-dallas",
+          "platform": "Resy",
+          "title": "Book Your Ritual Dallas Reservation Now on Resy",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 217,
+      "name": "Sant Ambroeus Dallas",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/hamptons-ny/venues/sant-ambroeus-east-hampton",
+      "confidence": 23,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/sant-ambroeus-west-village",
+          "platform": "Resy",
+          "title": "Book Your Sant Ambroeus - West Village Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/sant-ambroeus-madison-ave",
+          "platform": "Resy",
+          "title": "Book Your Sant Ambroeus - Madison Ave Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/hamptons-ny/venues/sant-ambroeus-east-hampton",
+          "platform": "Resy",
+          "title": "Book Your Sant Ambroeus - East Hampton Reservation Now on Resy",
+          "rank": 2
+        },
+        {
+          "url": "https://resy.com/cities/palm-beach-fl/venues/sant-ambroeus-palm-beach",
+          "platform": "Resy",
+          "title": "Book Your Sant Ambroeus Palm Beach Reservation Now on Resy",
+          "rank": 3
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/san-ambroeus-brookfield-place",
+          "platform": "Resy",
+          "title": "Sant Ambroeus - Brookfield Place Reservation Now on Resy",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 227,
+      "name": "Stock & Barrel",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/stocks-and-bondy-dallas",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/stocks-and-bondy-dallas",
+          "platform": "OpenTable",
+          "title": "Stocks & Bondy - Dallas, TX - OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 243,
+      "name": "AKAI at Musume",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/musume-dallas",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/musume-dallas",
+          "platform": "OpenTable",
+          "title": "Musume - Dallas Restaurant - Dallas, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 252,
+      "name": "Topgolf Dallas",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/topgolf-swing-suites-hilton-anatole-dallas",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/topgolf-swing-suites-hilton-anatole-dallas",
+          "platform": "OpenTable",
+          "title": "Topgolf Swing Suites - Hilton Anatole - Dallas, TX on OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/topgolf-allen",
+          "platform": "OpenTable",
+          "title": "Topgolf - Allen - Updated 2026, American Restaurant in Allen, TX",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/lounge-by-topgolf-frisco",
+          "platform": "OpenTable",
+          "title": "Lounge by Topgolf Restaurant - Frisco, TX | OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/topgolf-swing-suite-at-westin-stonebriar-frisco",
+          "platform": "OpenTable",
+          "title": "Topgolf Swing Suite at Westin Stonebriar - Frisco, TX on OpenTable",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 254,
+      "name": "Electric Shuffle",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "SevenRooms",
+      "reserveUrl": "https://www.sevenrooms.com/explore/electricshuffledallas/reservations/create/search/",
+      "confidence": 20,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.sevenrooms.com/explore/electricshuffledallas/reservations/create/search/",
+          "platform": "SevenRooms",
+          "title": "Reservation at Electric Shuffle Dallas",
+          "rank": 0
+        },
+        {
+          "url": "https://www.sevenrooms.com/explore/electricshuffledallas/reservations/create/search?date=2026-02-08&halo=120&party_size=6&start_time=17%3A30",
+          "platform": "SevenRooms",
+          "title": "Reservation at Electric Shuffle Dallas",
+          "rank": 1
+        },
+        {
+          "url": "https://www.sevenrooms.com/explore/electricshuffledallas/reservations/create/search/?halo=120&party_size=6&start_time=17%3A30",
+          "platform": "SevenRooms",
+          "title": "Reservation at Electric Shuffle Dallas",
+          "rank": 2
+        },
+        {
+          "url": "https://www.sevenrooms.com/explore/electricshuffledallas/reservations/create/search/?date=2025-11-26&halo=120&party_size=6&start_time=18%3A30",
+          "platform": "SevenRooms",
+          "title": "Reservation at Electric Shuffle Dallas",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 253,
+      "name": "Birdies Golf Lounge",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/dearborn-mi-mi/venues/birdies",
+      "confidence": 40,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.sevenrooms.com/explore/birdieseastside/reservations/create/search/",
+          "platform": "SevenRooms",
+          "title": "Reservation at Birdie's Eastside - SevenRooms",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/dearborn-mi-mi/venues/birdies",
+          "platform": "Resy",
+          "title": "Book Your Birdies Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/raleigh-nc/venues/birdies-barroom-and-kitchen",
+          "platform": "Resy",
+          "title": "Book Your Birdie's Barroom & Kitchen Reservation Now on Resy",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/birdies-by-chef-kevin-lee-edmond",
+          "platform": "OpenTable",
+          "title": "Birdies by Chef Kevin Lee Restaurant - Edmond, OK | OpenTable",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 265,
+      "name": "Maroma Dallas",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/el-sol-belmond-maroma-resort-and-spa-playa-del-carmen",
+      "confidence": 20,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/el-sol-belmond-maroma-resort-and-spa-playa-del-carmen",
+          "platform": "OpenTable",
+          "title": "El Sol - Belmond Maroma Resort & Spa, Playa del Carmen, ROO",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 285,
+      "name": "Immersive Gamebox",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/three-strands-family-vineyard-and-winery-dallas",
+      "confidence": 34,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/shoyo",
+          "platform": "Resy",
+          "title": "Book Your Shoyo Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/three-strands-family-vineyard-and-winery-dallas",
+          "platform": "OpenTable",
+          "title": "Three Strands Family Vineyard & Winery - Dallas, GA | OpenTable",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "The Ranch at Las Colinas",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/dallas-fort-worth-tx/venues/avra-dallas",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/avra-dallas",
+          "platform": "Resy",
+          "title": "Book Your Avra Dallas Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/local",
+          "platform": "Resy",
+          "title": "Book Your Local Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/ritual-dallas",
+          "platform": "Resy",
+          "title": "Book Your Ritual Dallas Reservation Now on Resy",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 397,
+      "name": "Moodaepo Korean BBQ",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/carrollton-tx/venues/moodaepo",
+      "confidence": 40,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/carrollton-tx/venues/moodaepo",
+          "platform": "Resy",
+          "title": "Book Your Moodaepo Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 437,
+      "name": "Bowen House",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/the-bowen-house",
+      "confidence": 65,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/the-bowen-house",
+          "platform": "OpenTable",
+          "title": "The Bowen House - Dallas, TX on OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/midnight-rambler-dallas",
+          "platform": "OpenTable",
+          "title": "Midnight Rambler - Dallas, TX | OpenTable",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 440,
+      "name": "Bar Charles",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/the-charles-dallas",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/the-charles-dallas",
+          "platform": "OpenTable",
+          "title": "The Charles Restaurant - Dallas, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 463,
+      "name": "Eataly Dallas",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/terra-eataly-dallas",
+      "confidence": 75,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/terra-eataly-dallas",
+          "platform": "OpenTable",
+          "title": "Eataly Dallas - Terra Restaurant - Dallas, TX | OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/il-pastaio-eataly-dallas",
+          "platform": "OpenTable",
+          "title": "Eataly Dallas - Il Pastaio Restaurant - OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/lapizza-and-lapasta-eataly-dallas",
+          "platform": "OpenTable",
+          "title": "Eataly Dallas - La Pizza & La Pasta Restaurant - OpenTable",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 466,
+      "name": "Rise Soufflé",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/boca-raton-fl/venues/rise-sushi",
+      "confidence": 20,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/boca-raton-fl/venues/rise-sushi",
+          "platform": "Resy",
+          "title": "Book Your Rise Sushi Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/cheeni",
+          "platform": "Resy",
+          "title": "Book Your Cheeni Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/lighthouse",
+          "platform": "Resy",
+          "title": "Book Your Lighthouse Reservation Now on Resy",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 520,
+      "name": "Cafe Lucca",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/dallas-fort-worth-tx/venues/caffe-lucca",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/caffe-lucca",
+          "platform": "Resy",
+          "title": "Book Your Caffe Lucca Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/urbano-cafe",
+          "platform": "Resy",
+          "title": "Book Your Urbano Cafe Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/rose-cafe-dallas",
+          "platform": "OpenTable",
+          "title": "Rose Cafe Restaurant - Dallas, TX | OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/xaman-cafe",
+          "platform": "Resy",
+          "title": "Book Your Xaman Cafe Reservation Now on Resy",
+          "rank": 3
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/bread-winners-cafe-and-bakery-uptown-dallas",
+          "platform": "Resy",
+          "title": "Book Your Bread Winners Cafe & Bakery - Uptown Dallas - Resy",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 545,
+      "name": "Élephante",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/little-rubys-dallas",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/little-rubys-dallas",
+          "platform": "OpenTable",
+          "title": "Little Ruby's - Dallas Restaurant - Dallas, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 546,
+      "name": "Clark's Oyster Bar",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/providence-ri/venues/clarke-cooke-house",
+      "confidence": 25,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/providence-ri/venues/clarke-cooke-house",
+          "platform": "Resy",
+          "title": "Candy Store/Bistro @ Clarke Cooke House - Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/dr-clark",
+          "platform": "Resy",
+          "title": "Book Your Dr Clark Reservation Now on Resy",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 1088,
+      "name": "Nora Restaurant and Bar",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/elia-greek-tavern-dallas",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/elia-greek-tavern-dallas",
+          "platform": "OpenTable",
+          "title": "Elia Greek Tavern Restaurant - Dallas, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1111,
+      "name": "DeLucca Gaucho Pizza & Wine",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/delucca-gaucho-pizza-and-wine-alliance-fort-worth",
+      "confidence": 29,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/delucca-gaucho-pizza-and-wine-irving",
+          "platform": "OpenTable",
+          "title": "Delucca Gaucho Pizza & Wine - Irving - Irving, TX on OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/delucca-gaucho-pizza-and-wine-alliance-fort-worth",
+          "platform": "OpenTable",
+          "title": "Delucca Gaucho Pizza & Wine - Alliance, Fort Worth, TX - OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/delucca-gaucho-pizza-and-wine-southlake",
+          "platform": "OpenTable",
+          "title": "Delucca Gaucho Pizza & Wine - Southlake Restaurant - OpenTable",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 9078,
+      "name": "The Operators Club",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/operators-club-dallas",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/operators-club-dallas",
+          "platform": "OpenTable",
+          "title": "Operators Club Restaurant - Dallas, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 9115,
+      "name": "Dino's Steak and Claw House",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/two-mules-cantina-at-texican-court-irving",
+      "confidence": 25,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/two-mules-cantina-at-texican-court-irving",
+          "platform": "OpenTable",
+          "title": "Two Mules Cantina at Texican Court - Irving, TX on OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 9107,
+      "name": "Cafe Pacific",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/rose-cafe-dallas",
+      "confidence": 33,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/caffe-lucca",
+          "platform": "Resy",
+          "title": "Book Your Caffe Lucca Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/urbano-cafe",
+          "platform": "Resy",
+          "title": "Book Your Urbano Cafe Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/rose-cafe-dallas",
+          "platform": "OpenTable",
+          "title": "Rose Cafe Restaurant - Dallas, TX | OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/xaman-cafe",
+          "platform": "Resy",
+          "title": "Book Your Xaman Cafe Reservation Now on Resy",
+          "rank": 3
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/bread-winners-cafe-and-bakery-uptown-dallas",
+          "platform": "Resy",
+          "title": "Book Your Bread Winners Cafe & Bakery - Uptown Dallas - Resy",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 9095,
+      "name": "Knife Italian",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/the-ritz-carlton-dallas-las-colinas-irving",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/the-ritz-carlton-dallas-las-colinas-irving",
+          "platform": "OpenTable",
+          "title": "Knife Italian Steak Restaurant - Irving, TX - OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 9120,
+      "name": "Rustico Wood Fired Grill and Wine Bar",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/hong-kong/venues/rustico",
+      "confidence": 40,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/rustico-grill-flower-mound",
+          "platform": "OpenTable",
+          "title": "Rustico Grill - Flower Mound - OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/hong-kong/venues/rustico",
+          "platform": "Resy",
+          "title": "Book Your Rustico Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/la-rustica-dallas",
+          "platform": "OpenTable",
+          "title": "La Rustica Restaurant - Oak Point, TX | OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://resy.com/cities/funchal-portugal/venues/rustico",
+          "platform": "Resy",
+          "title": "Book Your Rústico Reservation Now on Resy",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 9156,
+      "name": "Jo'Seon Wagyu Omakase",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/joseon-dallas",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/joseon-dallas",
+          "platform": "OpenTable",
+          "title": "Jo'Seon Wagyu Omakase Restaurant - Dallas, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 9158,
+      "name": "Cafe Dior by Dominique Crenn",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "SevenRooms",
+      "reserveUrl": "https://www.sevenrooms.com/explore/cafedior/reservations/create/search/",
+      "confidence": 20,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.sevenrooms.com/explore/cafedior/reservations/create/search/",
+          "platform": "SevenRooms",
+          "title": "Reservation at Café Dior by Dominique Crenn - SevenRooms",
+          "rank": 0
+        }
+      ]
+    }
+  ],
+  "failed": [
+    {
+      "id": 21,
+      "name": "Rainbowcat",
+      "storedPlatform": "Resy",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 45,
+      "name": "Loro",
+      "storedPlatform": "Resy",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 137,
+      "name": "The Charlotte",
+      "storedPlatform": "Resy",
+      "err": "no-geo-match",
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/the-charlotte-dallas",
+          "platform": "OpenTable",
+          "title": "The Charlotte Restaurant - Dallas, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "name": "Mābo",
+      "storedPlatform": "Resy",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 153,
+      "name": "Le Bilboquet",
+      "storedPlatform": "Resy",
+      "err": "no-geo-match",
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/le-bilboquet-ny-llc",
+          "platform": "Resy",
+          "title": "Book Your Le Bilboquet NY Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/le-bilboquet-new-york",
+          "platform": "OpenTable",
+          "title": "Le Bilboquet - Updated 2026, French Restaurant in New York, NY",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 185,
+      "name": "Kenny's Italian Kitchen",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 263,
+      "name": "Batbox",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 300,
+      "name": "Ida Claire",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 547,
+      "name": "Corsaire",
+      "storedPlatform": "Resy",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 549,
+      "name": "Serritella Prime Italian",
+      "storedPlatform": "Resy",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 9094,
+      "name": "LAW Restaurant",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    }
+  ]
+}

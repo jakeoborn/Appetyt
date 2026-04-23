@@ -1,0 +1,117 @@
+[
+  {
+    "id": 1025,
+    "name": "The Red Rooster",
+    "storedPlatform": "Resy",
+    "resolvedPlatform": "OpenTable",
+    "reserveUrl": "https://www.opentable.com/r/red-rooster-harlem-new-york",
+    "confidence": 30,
+    "mismatch": true,
+    "allHits": [
+      {
+        "url": "https://www.opentable.com/r/red-rooster-harlem-new-york",
+        "platform": "OpenTable",
+        "title": "Red Rooster Harlem - New York, NY | OpenTable",
+        "rank": 0
+      },
+      {
+        "url": "https://www.opentable.com/r/red-rooster-overtown-miami",
+        "platform": "OpenTable",
+        "title": "Red Rooster Overtown Restaurant - Miami, FL - OpenTable",
+        "rank": 1
+      },
+      {
+        "url": "https://resy.com/cities/woodstock-vt/venues/the-red-rooster",
+        "platform": "Resy",
+        "title": "Book Your The Red Rooster Reservation Now on Resy",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "id": 1037,
+    "name": "COTE Korean Steakhouse",
+    "storedPlatform": "Resy",
+    "resolvedPlatform": "SevenRooms",
+    "reserveUrl": "https://www.sevenrooms.com/reservations/cote",
+    "confidence": 40,
+    "mismatch": true,
+    "allHits": [
+      {
+        "url": "https://www.sevenrooms.com/reservations/cote",
+        "platform": "SevenRooms",
+        "title": "COTE Korean Steakhouse Reservations - SevenRooms",
+        "rank": 0
+      },
+      {
+        "url": "https://www.sevenrooms.com/reservations/cotesingapore/group-lny",
+        "platform": "SevenRooms",
+        "title": "Reservation at COTE Korean Steakhouse - SevenRooms",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "id": 1029,
+    "name": "Thai Diner",
+    "storedPlatform": "Resy",
+    "resolvedPlatform": "Resy",
+    "reserveUrl": "https://resy.com/cities/new-york-ny/venues/thai-diner",
+    "confidence": 115,
+    "mismatch": false,
+    "allHits": [
+      {
+        "url": "https://resy.com/cities/new-york-ny/venues/thai-diner",
+        "platform": "Resy",
+        "title": "Book Your Thai Diner Reservation Now on Resy",
+        "rank": 0
+      }
+    ]
+  },
+  {
+    "id": 1040,
+    "name": "Le Pavillon",
+    "storedPlatform": "Resy",
+    "resolvedPlatform": "Resy",
+    "reserveUrl": "https://resy.com/cities/new-york-ny/venues/le-pavillon",
+    "confidence": 115,
+    "mismatch": false,
+    "allHits": [
+      {
+        "url": "https://resy.com/cities/new-york-ny/venues/le-pavillon",
+        "platform": "Resy",
+        "title": "Right This Way - Resy",
+        "rank": 0
+      },
+      {
+        "url": "https://resy.com/cities/new-york-ny/venues/bluebox-cafe-by-daniel-boulud",
+        "platform": "Resy",
+        "title": "Book Your Blue Box Café by Daniel Boulud Reservation Now on Resy",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "id": 1038,
+    "name": "Estela",
+    "storedPlatform": "Resy",
+    "resolvedPlatform": "OpenTable",
+    "reserveUrl": "https://www.opentable.com/r/estela",
+    "confidence": 100,
+    "mismatch": true,
+    "allHits": [
+      {
+        "url": "https://www.opentable.com/r/estela",
+        "platform": "OpenTable",
+        "title": "Estela Restaurant - New York, NY | OpenTable",
+        "rank": 0
+      },
+      {
+        "url": "https://www.exploretock.com/estela/",
+        "platform": "Tock",
+        "title": "Estela - New York, NY - Tock",
+        "rank": 1
+      }
+    ]
+  }
+]

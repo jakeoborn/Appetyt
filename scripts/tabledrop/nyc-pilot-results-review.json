@@ -1,0 +1,1218 @@
+{
+  "lowConfidence": [
+    {
+      "id": 1037,
+      "name": "COTE Korean Steakhouse",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "SevenRooms",
+      "reserveUrl": "https://www.sevenrooms.com/reservations/cote",
+      "confidence": 40,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.sevenrooms.com/reservations/cote",
+          "platform": "SevenRooms",
+          "title": "COTE Korean Steakhouse Reservations - SevenRooms",
+          "rank": 0
+        },
+        {
+          "url": "https://www.sevenrooms.com/reservations/cotesingapore/group-lny",
+          "platform": "SevenRooms",
+          "title": "Reservation at COTE Korean Steakhouse - SevenRooms",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 1025,
+      "name": "The Red Rooster",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/red-rooster-harlem-new-york",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/red-rooster-harlem-new-york",
+          "platform": "OpenTable",
+          "title": "Red Rooster Harlem - New York, NY | OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/red-rooster-overtown-miami",
+          "platform": "OpenTable",
+          "title": "Red Rooster Overtown Restaurant - Miami, FL - OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/woodstock-vt/venues/the-red-rooster",
+          "platform": "Resy",
+          "title": "Book Your The Red Rooster Reservation Now on Resy",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 1098,
+      "name": "Comedy Cellar",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/the-olive-tree-cafe-new-york",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/the-olive-tree-cafe-new-york",
+          "platform": "OpenTable",
+          "title": "The Olive Tree Cafe Restaurant - New York, NY | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1104,
+      "name": "Ginny's Supper Club",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/red-rooster-harlem-new-york",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/red-rooster-harlem-new-york",
+          "platform": "OpenTable",
+          "title": "Red Rooster Harlem - New York, NY | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1125,
+      "name": "Blue Note Jazz Club",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/blue-note-jazz-brunch-new-york",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/blue-note-jazz-brunch-new-york",
+          "platform": "OpenTable",
+          "title": "Blue Note Jazz Brunch Restaurant - New York, NY | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1189,
+      "name": "Jōji",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/joji",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/joji",
+          "platform": "Resy",
+          "title": "Book Your Jōji Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1190,
+      "name": "Nōksu",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/noksu",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/noksu",
+          "platform": "Resy",
+          "title": "Book Your Nōksu Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/noksu-new-york-city",
+          "platform": "OpenTable",
+          "title": "Noksu - Updated 2026, Unspecified Restaurant in New York City, NY",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 1196,
+      "name": "Bōm",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/bom-new-york",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/bom-new-york",
+          "platform": "OpenTable",
+          "title": "bōm Restaurant - New York, NY | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1197,
+      "name": "Rezdôra",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Tock",
+      "reserveUrl": "https://www.exploretock.com/rezdora/",
+      "confidence": 20,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.exploretock.com/rezdora/",
+          "platform": "Tock",
+          "title": "Rezdôra - New York, NY - Tock",
+          "rank": 0
+        },
+        {
+          "url": "https://www.sevenrooms.com/explore/rezdora/reservations/create/search/?venues=rezdora,massaraonpark",
+          "platform": "SevenRooms",
+          "title": "Reservation at Rezdôra - SevenRooms",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 1211,
+      "name": "63 Clinton",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/sixty-three-clinton",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/sixty-three-clinton",
+          "platform": "Resy",
+          "title": "Book Your Sixty Three Clinton Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/the-line-up-slice-shop-new-york",
+          "platform": "OpenTable",
+          "title": "The Lineup Slice Shop - Amagansett, NY - OpenTable",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 1212,
+      "name": "Shion 69 Leonard",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/69leonardstreet",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/69leonardstreet",
+          "platform": "Resy",
+          "title": "Book Your 69 Leonard Street Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://www.exploretock.com/69leonardstreet/",
+          "platform": "Tock",
+          "title": "Shoji at 69 Leonard Street - New York, NY - Tock",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 1226,
+      "name": "Adda",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "SevenRooms",
+      "reserveUrl": "https://www.sevenrooms.com/explore/adda/reservations/create/search/",
+      "confidence": 20,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.sevenrooms.com/explore/adda/reservations/create/search/",
+          "platform": "SevenRooms",
+          "title": "Reserve - SevenRooms",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1223,
+      "name": "Grand Central Oyster Bar",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/grand-bar-and-lounge-at-soho-grand-hotel-new-york",
+      "confidence": 33,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/the-grand",
+          "platform": "Resy",
+          "title": "Book Your The Grand Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/grand-bar-and-lounge-at-soho-grand-hotel",
+          "platform": "Resy",
+          "title": "Grand Bar & Salon at Soho Grand - Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/grand-bar-and-lounge-at-soho-grand-hotel-new-york",
+          "platform": "OpenTable",
+          "title": "Grand Bar & Lounge at Soho Grand Hotel, New York, NY - OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/club-room-at-soho-grand-hotel",
+          "platform": "Resy",
+          "title": "Book Your Club Room Reservation Now on Resy",
+          "rank": 3
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/grand-banks",
+          "platform": "Resy",
+          "title": "Book Your Grand Banks Reservation Now on Resy",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 1234,
+      "name": "One If By Land, Two If By Sea",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/one-white-street",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/one-white-street",
+          "platform": "Resy",
+          "title": "Book Your One White Street Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/una-pizza-napoletana-new-york",
+          "platform": "OpenTable",
+          "title": "Una Pizza Napoletana Restaurant - New York, NY | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/jean-georges",
+          "platform": "Resy",
+          "title": "Book Your Jean-Georges Reservation Now on Resy",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 1253,
+      "name": "River Cafe",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/the-river-cafe-brooklyn",
+      "confidence": 75,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/the-river-cafe-brooklyn",
+          "platform": "OpenTable",
+          "title": "The River Cafe Restaurant - Brooklyn, NY | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1283,
+      "name": "Llama San",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/papa-san",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/papa-san",
+          "platform": "Resy",
+          "title": "Book Your Papa San Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1266,
+      "name": "Sky Pavilion",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/skybar-rooftop-restaurant-queens",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/skybar-rooftop-restaurant-queens",
+          "platform": "OpenTable",
+          "title": "Skybar - LIC - Long Island City, NY - OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/42nd-and-sky-lounge-hilton-times-square-new-york",
+          "platform": "OpenTable",
+          "title": "42nd and Sky Lounge - Hilton New York Times Square - OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/smith-and-wollensky-new-york",
+          "platform": "OpenTable",
+          "title": "Smith & Wollensky - New York Restaurant - OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/cafe-skye-new-york",
+          "platform": "OpenTable",
+          "title": "Cafe Skye Restaurant - New York, NY | OpenTable",
+          "rank": 3
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/crown-shy",
+          "platform": "Resy",
+          "title": "Book Your Crown Shy Reservation Now on Resy",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 1362,
+      "name": "Please Don't Tell",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/pdt",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/pdt",
+          "platform": "Resy",
+          "title": "Book Your Please Don't Tell (PDT) Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/kees",
+          "platform": "Resy",
+          "title": "Book Your Kees Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/highball-limited",
+          "platform": "Resy",
+          "title": "Book Your Highball Ltd. Reservation Now on Resy",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 1451,
+      "name": "Roscioli NYC",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/roscioli-a-la-carte-new-york",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/roscioli-a-la-carte-new-york",
+          "platform": "OpenTable",
+          "title": "Roscioli NYC Restaurant - New York, NY | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1456,
+      "name": "Place des Fêtes",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/place-des-fetes",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/place-des-fetes",
+          "platform": "Resy",
+          "title": "Book Your Place des Fêtes Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/golden-ratio",
+          "platform": "Resy",
+          "title": "Book Your Golden Ratio Reservation Now on Resy",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 1475,
+      "name": "Frankies 457 Spuntino",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/frankies-restaurant-arthur-avenue",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/frankies-restaurant-arthur-avenue",
+          "platform": "Resy",
+          "title": "Book Your Frankie's Restaurant Arthur Avenue Reservation ... - Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/lil-frankies",
+          "platform": "Resy",
+          "title": "Book Your Lil' Frankie's Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/frankies-spuntino-brooklyn",
+          "platform": "OpenTable",
+          "title": "Frankies Spuntino Restaurant - Brooklyn, NY | OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/frankies-restaurant-arthur-ave-bronx-county",
+          "platform": "OpenTable",
+          "title": "Frankie's Restaurant Arthur Ave. - Bronx County, NY | OpenTable",
+          "rank": 3
+        },
+        {
+          "url": "https://resy.com/cities/hamptons-ny/venues/frankies-fabulous-italiano",
+          "platform": "Resy",
+          "title": "Book Your Frankie's Fabulous Italiano Reservation Now on Resy",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 1492,
+      "name": "Café Carmellini",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/cafe-carmellini",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/cafe-carmellini",
+          "platform": "Resy",
+          "title": "Book Your Café Carmellini Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1505,
+      "name": "Brasserie Fouquet",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/fouquets-new-york",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/fouquets-new-york",
+          "platform": "Resy",
+          "title": "Book Your Brasserie Fouquet's New York Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/Elysee",
+          "platform": "Resy",
+          "title": "Book Your Elysée's Reservation Now on Resy",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 1517,
+      "name": "The Odeon",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/ambassadors-clubhouse-new-york",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/ambassadors-clubhouse-new-york",
+          "platform": "Resy",
+          "title": "Book Your Ambassadors Clubhouse New York Reservation ... - Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1523,
+      "name": "Contra",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/bar-contra-new-york",
+      "confidence": 70,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/bar-contra-new-york",
+          "platform": "OpenTable",
+          "title": "Bar Contra Restaurant - New York, NY",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1533,
+      "name": "Momofuku Ssäm Bar",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/analogue",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/analogue",
+          "platform": "Resy",
+          "title": "Book Your Analogue Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1593,
+      "name": "Decoy",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "SevenRooms",
+      "reserveUrl": "https://www.sevenrooms.com/reservations/redfarmwestvillage/goog",
+      "confidence": 20,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.sevenrooms.com/reservations/redfarmwestvillage/goog",
+          "platform": "SevenRooms",
+          "title": "Reservation at RedFarm West Village - SevenRooms",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1589,
+      "name": "Existing Conditions",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/tacombi-fort-greene",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/tacombi-fort-greene",
+          "platform": "Resy",
+          "title": "Book Your Tacombi - Fort Greene Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1605,
+      "name": "Death & Co",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/death-and-co-east-village",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/death-and-co-east-village",
+          "platform": "Resy",
+          "title": "Book Your Death & Co East Village Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/los-angeles-ca/venues/death-and-co-la",
+          "platform": "Resy",
+          "title": "Book Your Death & Co LA Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/washington-dc/venues/death-and-co-dc",
+          "platform": "Resy",
+          "title": "Book Your Death & Co DC Reservation Now on Resy",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 1628,
+      "name": "Joe's Pub",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Tock",
+      "reserveUrl": "https://www.exploretock.com/jo-new-york",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.exploretock.com/jo-new-york",
+          "platform": "Tock",
+          "title": "Jō - New York, NY - Tock",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/joe-and-pats-nyc-new-york",
+          "platform": "OpenTable",
+          "title": "Joe & Pat's NYC Restaurant - New York, NY | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/joes-lobster-house-staten-island",
+          "platform": "OpenTable",
+          "title": "Joe's Lobster House - Staten Island, NY on OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/joe-g-restaurant",
+          "platform": "OpenTable",
+          "title": "Joe G Restaurant - New York, NY | OpenTable",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 1630,
+      "name": "Dizzy's Club",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/bar-masa",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/bar-masa",
+          "platform": "Resy",
+          "title": "Book Your Bar Masa Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1740,
+      "name": "Or'esh",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "SevenRooms",
+      "reserveUrl": "https://www.sevenrooms.com/explore/450wbroadway/reservations/create/search/",
+      "confidence": 20,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.sevenrooms.com/explore/450wbroadway/reservations/create/search/",
+          "platform": "SevenRooms",
+          "title": "Reservation at Or'esh - SevenRooms",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1742,
+      "name": "Bufón",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/bufon-new-york",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/bufon-new-york",
+          "platform": "OpenTable",
+          "title": "Bufon Restaurant - New York, NY | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1838,
+      "name": "Hanjan",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/soogil",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/soogil",
+          "platform": "Resy",
+          "title": "Book Your SOOGIL Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1849,
+      "name": "Masalawala & Sons",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/pangat",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/pangat",
+          "platform": "Resy",
+          "title": "Book Your Pangat Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1858,
+      "name": "Van Da",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/bobby-vans-grill-50th-street-new-york",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/bobby-vans-grill-50th-street-new-york",
+          "platform": "OpenTable",
+          "title": "Bobby Van's Grill - 50th Street Restaurant - New York, NY | OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/bobby-vans-steakhouse-54th-street-new-york",
+          "platform": "OpenTable",
+          "title": "Bobby Van's Steakhouse - 54th Street, New York, NY - OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/bobby-vans-park-avenue-the-original-new-york",
+          "platform": "OpenTable",
+          "title": "Bobby Van's Park Avenue - 'The Original', New York, NY - OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/bobby-vans-steakhouse-broad-street-new-york",
+          "platform": "OpenTable",
+          "title": "Bobby Van's Steakhouse - Broad Street - New York, NY on OpenTable",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 1871,
+      "name": "Sushi Azabu",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "SevenRooms",
+      "reserveUrl": "https://www.sevenrooms.com/reservations/azabunyc",
+      "confidence": 20,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.sevenrooms.com/reservations/azabunyc",
+          "platform": "SevenRooms",
+          "title": "Sushi Azabu New York Reservations - SevenRooms",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1866,
+      "name": "Little Tong Noodle Shop",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/little-hen-new-york",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/little-hen-new-york",
+          "platform": "Resy",
+          "title": "Book Your Little Hen - New York Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/little-ways",
+          "platform": "Resy",
+          "title": "Book Your Little Ways Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/little-ned-nomad-new-york",
+          "platform": "OpenTable",
+          "title": "Little Ned Restaurant - New York, NY | OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/the-little-shop",
+          "platform": "Resy",
+          "title": "Book Your The Little Shop Reservation Now on Resy",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 1876,
+      "name": "Takashi",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/marumi-restaurant-new-york",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/marumi-restaurant-new-york",
+          "platform": "OpenTable",
+          "title": "Marumi Restaurant - New York, NY on OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1880,
+      "name": "Empellón",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/empellon",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/empellon",
+          "platform": "Resy",
+          "title": "Book Your Empellón Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/empellon-midtown-new-york-2",
+          "platform": "OpenTable",
+          "title": "Empellon Midtown Restaurant - New York, NY | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/empellon-taqueria",
+          "platform": "Resy",
+          "title": "Book Your Empellón Taqueria Reservation Now on Resy",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/empellon-taqueria-new-york",
+          "platform": "OpenTable",
+          "title": "Empellon Taqueria - New York, NY on OpenTable",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 1902,
+      "name": "Hav & Mar",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/hav-and-mar",
+      "confidence": 34,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/hav-and-mar-new-york",
+          "platform": "OpenTable",
+          "title": "Hav & Mar Restaurant - New York, NY | OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/hav-and-mar",
+          "platform": "Resy",
+          "title": "Book Your Hav & Mar Reservation Now on Resy",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 1905,
+      "name": "Café Altro Paradiso",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/cafe-commerce",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/cafe-commerce",
+          "platform": "Resy",
+          "title": "Book Your Cafe Commerce Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/le-cafe-louis-vuitton",
+          "platform": "Resy",
+          "title": "Book Your Le Café Louis Vuitton Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/cafeteria",
+          "platform": "Resy",
+          "title": "Book Your Cafeteria Reservation Now on Resy",
+          "rank": 2
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/cafe-chelsea",
+          "platform": "Resy",
+          "title": "Book Your Café Chelsea Reservation Now on Resy",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 1906,
+      "name": "Cafe Luxembourg",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/cafe-commerce",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/cafe-commerce",
+          "platform": "Resy",
+          "title": "Book Your Cafe Commerce Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/cafeteria",
+          "platform": "Resy",
+          "title": "Book Your Cafeteria Reservation Now on Resy",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/cafe-boulud-at-maison-barnes",
+          "platform": "Resy",
+          "title": "Book Your Café Boulud at Maison Barnes Reservation Now on Resy",
+          "rank": 2
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/cafe-chelsea",
+          "platform": "Resy",
+          "title": "Book Your Café Chelsea Reservation Now on Resy",
+          "rank": 3
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/le-cafe-louis-vuitton",
+          "platform": "Resy",
+          "title": "Book Your Le Café Louis Vuitton Reservation Now on Resy",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 1950,
+      "name": "STK Steakhouse",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/stk-nyc-midtown-new-york",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/stk-nyc-midtown-new-york",
+          "platform": "OpenTable",
+          "title": "STK - NYC - Midtown Restaurant - New York, NY | OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/stk-nyc-meatpacking-new-york",
+          "platform": "OpenTable",
+          "title": "STK - NYC - Meatpacking Restaurant - New York, NY | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/stk-midtown",
+          "platform": "Resy",
+          "title": "Book Your STK Midtown Reservation Now on Resy",
+          "rank": 2
+        },
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/stk-meatpacking",
+          "platform": "Resy",
+          "title": "Book Your STK Meatpacking Reservation Now on Resy",
+          "rank": 3
+        },
+        {
+          "url": "https://www.opentable.com/r/stk-rooftop-new-york",
+          "platform": "OpenTable",
+          "title": "STK - Rooftop Restaurant - New York, NY | OpenTable",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 1959,
+      "name": "La Grenouille",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "SevenRooms",
+      "reserveUrl": "https://www.sevenrooms.com/explore/idenquanjudebeijingduckhousenewyork/reservations/create/search/",
+      "confidence": 20,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.sevenrooms.com/explore/idenquanjudebeijingduckhousenewyork/reservations/create/search/",
+          "platform": "SevenRooms",
+          "title": "Reservation at New York – iDen & Quan Ju De Beijing Duck House",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1968,
+      "name": "Waverly Inn",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/the-waverly-inn",
+      "confidence": 75,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/the-waverly-inn",
+          "platform": "Resy",
+          "title": "Book Your The Waverly Inn Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/the-waverly-inn",
+          "platform": "OpenTable",
+          "title": "The Waverly Inn - New York, NY on OpenTable",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 1973,
+      "name": "Kajitsu",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/odo-new-york",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/odo-new-york",
+          "platform": "OpenTable",
+          "title": "odo Restaurant - New York, NY | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1976,
+      "name": "Gallow Green",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/galo-tavern-18-new-hyde-park",
+      "confidence": 20,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/galo-tavern-18-new-hyde-park",
+          "platform": "OpenTable",
+          "title": "Galo Tavern 18 Restaurant - New Hyde Park, NY | OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/the-gallows-boston",
+          "platform": "OpenTable",
+          "title": "the gallows - Updated 2026, American Restaurant in Boston, MA",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/the-gallo-room-lewes",
+          "platform": "OpenTable",
+          "title": "The Gallo Room - Lewes, DE - OpenTable",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 1974,
+      "name": "Kyo Ya",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/kyu",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/new-york-ny/venues/kyu",
+          "platform": "Resy",
+          "title": "Book Your KYU NYC Reservation Now on Resy",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/kyu-nyc-new-york",
+          "platform": "OpenTable",
+          "title": "KYU NYC Restaurant - New York, NY | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/dallas-fort-worth-tx/venues/kyo-sushi-and-omakase",
+          "platform": "Resy",
+          "title": "Book Your Kyo Sushi and Omakase Reservation Now on Resy",
+          "rank": 2
+        }
+      ]
+    }
+  ],
+  "failed": [
+    {
+      "id": 1458,
+      "name": "Zou Zou's",
+      "err": "primary: Firecrawl 502: Bad Gateway"
+    },
+    {
+      "id": 1584,
+      "name": "Apothéke",
+      "storedPlatform": "Resy",
+      "err": "no-geo-match",
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/los-angeles-ca/venues/apotheke-la",
+          "platform": "Resy",
+          "title": "Book Your Apotheke LA Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 1850,
+      "name": "Pippali",
+      "storedPlatform": "Resy",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 1899,
+      "name": "Foxface Natural",
+      "storedPlatform": "Resy",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 1903,
+      "name": "Naks",
+      "storedPlatform": "Resy",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 1962,
+      "name": "Sparks Steak House",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    }
+  ]
+}

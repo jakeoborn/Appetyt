@@ -1,0 +1,1271 @@
+{
+  "lowConfidence": [
+    {
+      "id": 15004,
+      "name": "Herb & Wood",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/herb-and-sea-encinitas",
+      "confidence": 25,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/herb-and-sea-encinitas",
+          "platform": "OpenTable",
+          "title": "Herb & Sea Restaurant - Encinitas, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15016,
+      "name": "The Marine Room",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/the-marine-room-la-jolla",
+      "confidence": 75,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/the-marine-room-la-jolla",
+          "platform": "OpenTable",
+          "title": "The Marine Room Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15053,
+      "name": "JRDN at Tower23",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/jrdn-restaurant-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/jrdn-restaurant-san-diego",
+          "platform": "OpenTable",
+          "title": "JRDN Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15059,
+      "name": "The Plot",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/the-plot-oceanside",
+      "confidence": 65,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/the-plot-oceanside",
+          "platform": "OpenTable",
+          "title": "The Plot Restaurant - Oceanside, CA | OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/the-plot-costa-mesa",
+          "platform": "OpenTable",
+          "title": "The Plot - Costa Mesa - Updated 2026, Farm To Table Restaurant in ...",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 15054,
+      "name": "The Fishery",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/addison-by-william-bradley",
+      "confidence": 25,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/addison-by-william-bradley",
+          "platform": "OpenTable",
+          "title": "Addison by William Bradley Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15068,
+      "name": "1500 Ocean",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/torreyana-san-diego",
+      "confidence": 34,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.exploretock.com/yakitori-tsuta/",
+          "platform": "Tock",
+          "title": "Yakitori Tsuta - San Diego, CA - Tock",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/torreyana-san-diego",
+          "platform": "OpenTable",
+          "title": "Torreyana Restaurant - San Diego, CA | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.sevenrooms.com/reservations/sidebarsd/?tracking=WEB_DIRECT&client_id=0589e29a00fa1b1449036e102995f9f11e3f2be3c5145a6c297d806734c244425bd136b36259324d5f151e212482afed4e3ef8292cdd26b4405b10dd7547650c&package-topReserve",
+          "platform": "SevenRooms",
+          "title": "Reservation at Sidebar San Diego - SevenRooms",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/veranda-coronado",
+          "platform": "OpenTable",
+          "title": "Veranda Restaurant - Coronado, CA - OpenTable",
+          "rank": 3
+        },
+        {
+          "url": "https://www.opentable.com/r/serea-coronado",
+          "platform": "OpenTable",
+          "title": "Seréa Restaurant - Coronado, CA - OpenTable",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 15084,
+      "name": "The Prado at Balboa Park",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/the-prado-at-balboa-park-san-diego",
+      "confidence": 75,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/the-prado-at-balboa-park-san-diego",
+          "platform": "OpenTable",
+          "title": "The Prado at Balboa Park Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15093,
+      "name": "Herringbone La Jolla",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/trick-rider-frisco",
+      "confidence": 25,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/trick-rider-frisco",
+          "platform": "OpenTable",
+          "title": "Trick Rider Restaurant - Frisco, TX | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15094,
+      "name": "Whisknladle",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/catania-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/catania-san-diego",
+          "platform": "OpenTable",
+          "title": "Catania Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15115,
+      "name": "Island Prime & C Level",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/c-level-san-diego",
+      "confidence": 55,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/island-prime-san-diego-4",
+          "platform": "OpenTable",
+          "title": "Island Prime Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/c-level-san-diego",
+          "platform": "OpenTable",
+          "title": "C-Level - San Diego, CA - OpenTable",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 15128,
+      "name": "Stake Chophouse",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/outback-steakhouse-san-diego-2",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/outback-steakhouse-san-diego-2",
+          "platform": "OpenTable",
+          "title": "Outback Steakhouse - San Diego - Clairemont Mesa Blvd.",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15125,
+      "name": "The Hake Kitchen & Bar",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/addison-by-william-bradley",
+      "confidence": 25,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/addison-by-william-bradley",
+          "platform": "OpenTable",
+          "title": "Addison by William Bradley Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15139,
+      "name": "Solace & The Moonlight Lounge",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/bronze-bird-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/bronze-bird-san-diego",
+          "platform": "OpenTable",
+          "title": "Bronze Bird Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/firestones",
+          "platform": "OpenTable",
+          "title": "Firestone's - Updated 2026, American Restaurant in Frederick, MD",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 15153,
+      "name": "Civico 1845",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/san-diego-ca/venues/civico-1845",
+      "confidence": 50,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/san-diego-ca/venues/civico-1845",
+          "platform": "Resy",
+          "title": "Book Your Civico 1845 Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15196,
+      "name": "Bang Bang",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/bang-on-5th-san-diego",
+      "confidence": 30,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/bang-on-5th-san-diego",
+          "platform": "OpenTable",
+          "title": "Bang on 5th Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15203,
+      "name": "Trattoria La Strada",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/trattoria-da-sofia-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/trattoria-da-sofia-san-diego",
+          "platform": "OpenTable",
+          "title": "Trattoria Da Sofia Restaurant - San Diego, CA - OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/cori-pastificio-trattoria-san-diego",
+          "platform": "OpenTable",
+          "title": "Cori Pastificio Trattoria Restaurant - San Diego, CA | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/trattoria-don-pietro-san-diego",
+          "platform": "OpenTable",
+          "title": "Trattoria Don Pietro Restaurant - San Diego, CA | OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/seneca-san-diego",
+          "platform": "OpenTable",
+          "title": "Seneca Restaurant - San Diego, CA | OpenTable",
+          "rank": 3
+        },
+        {
+          "url": "https://www.opentable.com/r/mia-trattoria-san-diego",
+          "platform": "OpenTable",
+          "title": "Mia Trattoria - Updated 2026, Italian Restaurant in San Diego, CA",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 15211,
+      "name": "The Grass Skirt",
+      "storedPlatform": "Resy",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/the-grass-skirt-san-diego",
+      "confidence": 70,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/the-grass-skirt-san-diego",
+          "platform": "OpenTable",
+          "title": "The Grass Skirt Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15223,
+      "name": "The Med at La Valencia Hotel",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/addison-by-william-bradley",
+      "confidence": 25,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/addison-by-william-bradley",
+          "platform": "OpenTable",
+          "title": "Addison by William Bradley Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15234,
+      "name": "333 Pacific",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/three-three-seven-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/three-three-seven-san-diego",
+          "platform": "OpenTable",
+          "title": "Three Three Seven Restaurant - San Diego, CA - OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15238,
+      "name": "Pacific Coast Grill",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/pacific-social-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/pacific-social-san-diego",
+          "platform": "OpenTable",
+          "title": "Pacific Social - San Diego, CA - OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/pacific-beach-hideaway-san-diego",
+          "platform": "OpenTable",
+          "title": "Pacific Beach Hideaway Restaurant - San Diego, CA | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/pacific-catch-la-jolla",
+          "platform": "OpenTable",
+          "title": "Pacific Catch La Jolla Restaurant - OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/the-rooftop-bar-at-mission-pacific-oceanside",
+          "platform": "OpenTable",
+          "title": "The Rooftop Bar at Mission Pacific - Oceanside, CA on OpenTable",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 15239,
+      "name": "Kitchen 1540",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/kitchen-1540",
+      "confidence": 45,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/kitchen-1540",
+          "platform": "OpenTable",
+          "title": "KITCHEN 1540 - Del Mar, CA on OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15242,
+      "name": "Hello Betty Fish House",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/cowboy-star-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/cowboy-star-san-diego",
+          "platform": "OpenTable",
+          "title": "Cowboy Star Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15243,
+      "name": "The Lion's Share",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Tock",
+      "reserveUrl": "https://www.exploretock.com/the-lions-share-san-diego",
+      "confidence": 70,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.exploretock.com/the-lions-share-san-diego",
+          "platform": "Tock",
+          "title": "The Lion's Share - San Diego, CA - Tock",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/the-lions-share",
+          "platform": "OpenTable",
+          "title": "The Lion's Share - San Diego, CA on OpenTable",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 15177,
+      "name": "The Shores Restaurant",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/addison-by-william-bradley",
+      "confidence": 25,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/addison-by-william-bradley",
+          "platform": "OpenTable",
+          "title": "Addison by William Bradley Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15254,
+      "name": "The Red Door",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/the-red-door-san-diego",
+      "confidence": 75,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/the-red-door-san-diego",
+          "platform": "OpenTable",
+          "title": "The Red Door Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15248,
+      "name": "Crust Pizzeria Napoletana",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/crust-and-brew-san-diego",
+      "confidence": 34,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/crust-pizzeria-carmel-valley",
+          "platform": "OpenTable",
+          "title": "Crust Pizzeria - Carmel Valley - San Diego, CA on OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/crust-and-brew-san-diego",
+          "platform": "OpenTable",
+          "title": "Crust & Brew Restaurant - San Diego, CA | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://resy.com/cities/san-diego-ca/venues/ambrogio15-pacific-beach",
+          "platform": "Resy",
+          "title": "Book Your Ambrogio15- Pacific Beach Reservation Now on Resy",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 15261,
+      "name": "Romesco Baja Med Bistro",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/romesco",
+      "confidence": 45,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/romesco",
+          "platform": "OpenTable",
+          "title": "Romesco - Updated 2026, Mediterranean Restaurant in Bonita, CA",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/island-prime-san-diego-4",
+          "platform": "OpenTable",
+          "title": "Island Prime Restaurant - San Diego, CA | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/calusso-fort-lauderdale",
+          "platform": "OpenTable",
+          "title": "Calusso Restaurant - Fort Lauderdale, FL | OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/trust-restaurant",
+          "platform": "OpenTable",
+          "title": "Trust Restaurant - San Diego, CA | OpenTable",
+          "rank": 3
+        },
+        {
+          "url": "https://www.opentable.com/r/wormwood-san-diego",
+          "platform": "OpenTable",
+          "title": "Wormwood Restaurant - San Diego, CA | OpenTable",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 15270,
+      "name": "Blue Ribbon Pizzeria",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/house-of-blues-restaurant-and-bar-san-diego",
+      "confidence": 34,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/blue-wave-bar-and-grill",
+          "platform": "OpenTable",
+          "title": "Blue Wave Bar and Grill - San Diego, CA on OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/house-of-blues-restaurant-and-bar-san-diego",
+          "platform": "OpenTable",
+          "title": "House of Blues Restaurant & Bar - San Diego, CA - OpenTable",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 15294,
+      "name": "Cucina Enoteca — Del Mar",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/cucina-urbana-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/cucina-urbana-san-diego",
+          "platform": "OpenTable",
+          "title": "CUCINA urbana Restaurant - San Diego, CA - OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/cocina-35-liberty-station-san-diego",
+          "platform": "OpenTable",
+          "title": "Cocina 35 Liberty Station Restaurant - San Diego, CA | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/vincenzo-cucina-and-lounge-san-diego",
+          "platform": "OpenTable",
+          "title": "Vincenzo Cucina & Lounge Restaurant - San Diego, CA - OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/cucina-caprese-pizzeria-and-trattoria-san-diego",
+          "platform": "OpenTable",
+          "title": "CUCINA CAPRESE PIZZERIA & TRATTORIA, San Diego, CA",
+          "rank": 3
+        },
+        {
+          "url": "https://www.opentable.com/r/rusticucina-san-diego",
+          "platform": "OpenTable",
+          "title": "RustiCucina Restaurant - San Diego, CA | OpenTable",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 15299,
+      "name": "Flying Pig Pub & Kitchen — Oceanside",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/flight-deck-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/flight-deck-san-diego",
+          "platform": "OpenTable",
+          "title": "Flight Deck - Updated 2026, American Restaurant in San Diego, CA",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/fly-room-jamul-casino-resort-jamul",
+          "platform": "OpenTable",
+          "title": "Fly Room - Jamul Casino Resort - Jamul, CA | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/94th-aero-squadron-san-diego",
+          "platform": "OpenTable",
+          "title": "94th Aero Squadron - San Diego Restaurant - OpenTable",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 15300,
+      "name": "Blue Point Coastal Cuisine",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/house-of-blues-restaurant-and-bar-san-diego",
+      "confidence": 34,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/blue-wave-bar-and-grill",
+          "platform": "OpenTable",
+          "title": "Blue Wave Bar and Grill - San Diego, CA on OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/house-of-blues-restaurant-and-bar-san-diego",
+          "platform": "OpenTable",
+          "title": "House of Blues Restaurant & Bar - San Diego, CA - OpenTable",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 15319,
+      "name": "Lamont Street Grill",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/the-patio-on-lamont-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/the-patio-on-lamont-san-diego",
+          "platform": "OpenTable",
+          "title": "The Patio on Lamont - San Diego, CA on OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15331,
+      "name": "The Smoking Goat",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/addison-by-william-bradley",
+      "confidence": 25,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/addison-by-william-bradley",
+          "platform": "OpenTable",
+          "title": "Addison by William Bradley Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15333,
+      "name": "Veladora at The Inn at Rancho Santa Fe",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/shorebird-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/shorebird-san-diego",
+          "platform": "OpenTable",
+          "title": "Shorebird San Diego Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15341,
+      "name": "Cafe Pacifica",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/baci-coffee-san-diego",
+      "confidence": 34,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.exploretock.com/little-lion-cafe/",
+          "platform": "Tock",
+          "title": "Little Lion Cafe - San Diego, CA - Tock",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/baci-coffee-san-diego",
+          "platform": "OpenTable",
+          "title": "Baci Coffee - San Diego, CA | OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/mimis-cafe-mission-valley-san-diego",
+          "platform": "OpenTable",
+          "title": "Mimi's Cafe - Mission Valley (San Diego) Restaurant - OpenTable",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 15351,
+      "name": "Bernardo Winery & Cafe Merlot",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Tock",
+      "reserveUrl": "https://www.exploretock.com/bernardowinery/",
+      "confidence": 40,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://www.exploretock.com/bernardowinery/",
+          "platform": "Tock",
+          "title": "Bernardo Winery - San Diego, CA - Tock",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/the-shop-rancho-bernardo-san-diego",
+          "platform": "OpenTable",
+          "title": "The Shop - Rancho Bernardo - SAN DIEGO, CA on OpenTable",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 15380,
+      "name": "Bandar Fine Persian Cuisine",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/bandar-restaurant-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/bandar-restaurant-san-diego",
+          "platform": "OpenTable",
+          "title": "Bandar Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15396,
+      "name": "West Steak & Seafood",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/a-louest-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/a-louest-san-diego",
+          "platform": "OpenTable",
+          "title": "A L'ouest Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/west-coast-tavern-san-diego",
+          "platform": "OpenTable",
+          "title": "West Coast Tavern - San Diego Restaurant - OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/new-york-west-san-diego-2",
+          "platform": "OpenTable",
+          "title": "New York West Restaurant - San Diego, CA | OpenTable",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 15416,
+      "name": "Encontro North Park",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/encontro-san-diego",
+      "confidence": 55,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/encontro-san-diego",
+          "platform": "OpenTable",
+          "title": "Encontro - Updated 2026, American Restaurant in San Diego, CA",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/quince-rooftop-san-miguel-de-allende",
+          "platform": "OpenTable",
+          "title": "Quince Rooftop - San Miguel de Allende, AGU on OpenTable",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 15422,
+      "name": "Bistro West",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/queenstown-bistro-utc-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/queenstown-bistro-utc-san-diego",
+          "platform": "OpenTable",
+          "title": "Queenstown Bistro - UTC Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/et-voila-french-bistro-san-diego",
+          "platform": "OpenTable",
+          "title": "Et Voilà! French Bistro - San Diego Restaurant - OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/parc-bistro-brasserie-san-diego",
+          "platform": "OpenTable",
+          "title": "Parc Bistro-Brasserie Restaurant - San Diego, CA - OpenTable",
+          "rank": 2
+        },
+        {
+          "url": "https://www.opentable.com/r/fleurette-san-diego",
+          "platform": "OpenTable",
+          "title": "Fleurette Restaurant - San Diego, CA - OpenTable",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 15440,
+      "name": "Kaiserhof Restaurant & Bar",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/kaiserhof-san-diego",
+      "confidence": 55,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/kaiserhof-san-diego",
+          "platform": "OpenTable",
+          "title": "Kaiserhof - Updated 2026, German Restaurant in San Diego, CA",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15445,
+      "name": "Water Grill",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/waterbar-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/waterbar-san-diego",
+          "platform": "OpenTable",
+          "title": "Waterbar San Diego Restaurant - OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15443,
+      "name": "D Bar — Hillcrest",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/dunedin-new-zealand-eats-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/dunedin-new-zealand-eats-san-diego",
+          "platform": "OpenTable",
+          "title": "Dunedin New Zealand Eats Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15464,
+      "name": "Harry's Bar & American Grill — Rancho Santa Fe",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/harrys-steakhouse-and-raw-bar-cabo",
+      "confidence": 25,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/harrys-steakhouse-and-raw-bar-cabo",
+          "platform": "OpenTable",
+          "title": "Harry's Steakhouse & Raw Bar | Cabo Restaurant - OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/harrys-dolci-venezia",
+          "platform": "OpenTable",
+          "title": "Harry's Dolci Venezia Restaurant - OpenTable",
+          "rank": 1
+        },
+        {
+          "url": "https://www.opentable.com/r/harrys-bar-san-francisco",
+          "platform": "OpenTable",
+          "title": "Harry's Bar - San Francisco - OpenTable",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 15462,
+      "name": "Lou & Mickey's",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "Resy",
+      "reserveUrl": "https://resy.com/cities/encinitas-ca-ca/venues/leu-leu",
+      "confidence": 20,
+      "mismatch": true,
+      "allHits": [
+        {
+          "url": "https://resy.com/cities/encinitas-ca-ca/venues/leu-leu",
+          "platform": "Resy",
+          "title": "Book Your Leu Leu Reservation Now on Resy",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15472,
+      "name": "Cafe Japengo",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/baci-coffee-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/baci-coffee-san-diego",
+          "platform": "OpenTable",
+          "title": "Baci Coffee - San Diego, CA | OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.exploretock.com/little-lion-cafe/",
+          "platform": "Tock",
+          "title": "Little Lion Cafe - San Diego, CA - Tock",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 15493,
+      "name": "Viewpoint Brewing Co.",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/miguels-portside-pier-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/miguels-portside-pier-san-diego",
+          "platform": "OpenTable",
+          "title": "Miguel's - Portside Pier Restaurant - San Diego, CA | OpenTable",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": 15477,
+      "name": "CUCINA sorella",
+      "storedPlatform": "OpenTable",
+      "resolvedPlatform": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/cucina-urbana-san-diego",
+      "confidence": 35,
+      "mismatch": false,
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/cucina-urbana-san-diego",
+          "platform": "OpenTable",
+          "title": "CUCINA urbana Restaurant - San Diego, CA - OpenTable",
+          "rank": 0
+        }
+      ]
+    }
+  ],
+  "failed": [
+    {
+      "id": 15006,
+      "name": "Ironside Fish & Oyster",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15014,
+      "name": "Grant Grill",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15020,
+      "name": "Eddie V's La Jolla",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15033,
+      "name": "Brooklyn Girl",
+      "storedPlatform": "OpenTable",
+      "err": "no-geo-match",
+      "allHits": [
+        {
+          "url": "https://www.opentable.com/r/brooklyn-high-low-brooklyn",
+          "platform": "OpenTable",
+          "title": "Brooklyn High Low - OpenTable",
+          "rank": 0
+        },
+        {
+          "url": "https://www.opentable.com/r/the-brooklyn-deli-times-square-new-york",
+          "platform": "OpenTable",
+          "title": "The Brooklyn Deli - Times Square - New York, NY on OpenTable",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 15065,
+      "name": "Jake's Del Mar",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15124,
+      "name": "BO-beau Kitchen + Bar — Ocean Beach",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15135,
+      "name": "Stone Brewing World Bistro & Gardens — Escondido",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15147,
+      "name": "Hundred Proof",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15161,
+      "name": "Starlite",
+      "err": "primary: Firecrawl 502: Bad Gateway"
+    },
+    {
+      "id": 15159,
+      "name": "Farmer's Bottega",
+      "err": "primary: Firecrawl 429: {\"success\":false,\"error\":\"Rate limit exceeded. Consumed (req/min): 115, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 24s, "
+    },
+    {
+      "id": 15162,
+      "name": "Jayne's Gastropub",
+      "err": "primary: Firecrawl 429: {\"success\":false,\"error\":\"Rate limit exceeded. Consumed (req/min): 122, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 12s, "
+    },
+    {
+      "id": 15222,
+      "name": "A.R. Valentien",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15233,
+      "name": "Vintana Wine + Dine",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15156,
+      "name": "Bencotto Italian Kitchen",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15262,
+      "name": "Roppongi Restaurant & Sushi Bar",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15268,
+      "name": "JSix Restaurant",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15286,
+      "name": "Bleu Boheme",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15296,
+      "name": "Madison on Park",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15301,
+      "name": "Dobson's Bar & Restaurant",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15314,
+      "name": "Zenbu Sushi Bar & Restaurant",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15337,
+      "name": "Paon Restaurant & Wine Bar",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15340,
+      "name": "Tidal at Paradise Point Resort",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15344,
+      "name": "Mastro's Ocean Club — Del Mar",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15343,
+      "name": "Donovan's Steakhouse — La Jolla",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15354,
+      "name": "Donovan's Prime Seafood Grill",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15471,
+      "name": "Brockton Villa",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15495,
+      "name": "Quixote — Lafayette Hotel",
+      "err": "primary: Firecrawl 402: {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value."
+    },
+    {
+      "id": 15497,
+      "name": "Ciccia Osteria",
+      "err": "primary: Firecrawl 402: {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value."
+    },
+    {
+      "id": 15505,
+      "name": "Officine Buona Forchetta",
+      "err": "primary: Firecrawl 402: {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value."
+    },
+    {
+      "id": 15510,
+      "name": "Ranch 45",
+      "err": "primary: Firecrawl 402: {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value."
+    },
+    {
+      "id": 15512,
+      "name": "Puesto Downtown",
+      "err": "primary: Firecrawl 402: {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value."
+    },
+    {
+      "id": 15480,
+      "name": "Trattoria Acqua",
+      "storedPlatform": "OpenTable",
+      "err": "no-venue-hit"
+    },
+    {
+      "id": 15524,
+      "name": "Top of the Market",
+      "err": "primary: Firecrawl 402: {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value."
+    }
+  ]
+}
