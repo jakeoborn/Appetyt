@@ -49,12 +49,12 @@
       "count": 20
     },
     {
-      "name": "Harwood District",
+      "name": "Plano",
       "count": 17
     },
     {
-      "name": "Plano",
-      "count": 16
+      "name": "Harwood District",
+      "count": 17
     },
     {
       "name": "Carrollton",
@@ -81,6 +81,10 @@
       "count": 11
     },
     {
+      "name": "Frisco",
+      "count": 11
+    },
+    {
       "name": "West Village",
       "count": 10
     },
@@ -90,10 +94,6 @@
     },
     {
       "name": "Richardson",
-      "count": 10
-    },
-    {
-      "name": "Frisco",
       "count": 10
     },
     {
@@ -122,7 +122,7 @@
     },
     {
       "name": "McKinney",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Rockwall",
@@ -133,15 +133,15 @@
       "count": 5
     },
     {
+      "name": "Fort Worth",
+      "count": 2
+    },
+    {
       "name": "The Colony",
       "count": 1
     },
     {
       "name": "Allen",
-      "count": 1
-    },
-    {
-      "name": "Fort Worth",
       "count": 1
     },
     {
@@ -154,6 +154,26 @@
     },
     {
       "name": "Denton",
+      "count": 1
+    },
+    {
+      "name": "Bedford",
+      "count": 1
+    },
+    {
+      "name": "Celina",
+      "count": 1
+    },
+    {
+      "name": "Euless",
+      "count": 1
+    },
+    {
+      "name": "Lewisville",
+      "count": 1
+    },
+    {
+      "name": "Wylie",
       "count": 1
     }
   ],
@@ -1095,15 +1115,15 @@
       "count": 47
     },
     {
+      "name": "SoHo",
+      "count": 41
+    },
+    {
       "name": "Midtown East",
       "count": 40
     },
     {
       "name": "Greenwich Village",
-      "count": 38
-    },
-    {
-      "name": "SoHo",
       "count": 38
     },
     {
@@ -1155,12 +1175,12 @@
       "count": 17
     },
     {
-      "name": "Bronx",
+      "name": "Bushwick",
       "count": 15
     },
     {
-      "name": "Bushwick",
-      "count": 14
+      "name": "Bronx",
+      "count": 15
     },
     {
       "name": "Hell's Kitchen",
