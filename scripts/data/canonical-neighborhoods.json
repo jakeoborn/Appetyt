@@ -184,18 +184,18 @@
   "Houston": [
     {
       "name": "Heights",
-      "count": 81
+      "count": 80
     },
     {
       "name": "Montrose",
       "count": 65
     },
     {
-      "name": "Chinatown / Bellaire",
-      "count": 36
+      "name": "Galleria",
+      "count": 33
     },
     {
-      "name": "Galleria",
+      "name": "Chinatown / Bellaire",
       "count": 33
     },
     {
@@ -204,7 +204,7 @@
     },
     {
       "name": "Midtown",
-      "count": 32
+      "count": 31
     },
     {
       "name": "Upper Kirby",
@@ -239,19 +239,15 @@
       "count": 13
     },
     {
-      "name": "Museum District",
-      "count": 12
-    },
-    {
       "name": "West University",
       "count": 12
     },
     {
-      "name": "East End",
+      "name": "Museum District",
       "count": 11
     },
     {
-      "name": "Southwest Houston",
+      "name": "East End",
       "count": 11
     },
     {
@@ -275,15 +271,15 @@
       "count": 10
     },
     {
+      "name": "Southwest Houston",
+      "count": 9
+    },
+    {
       "name": "Garden Oaks",
       "count": 9
     },
     {
       "name": "West Houston",
-      "count": 8
-    },
-    {
-      "name": "Greenway Plaza",
       "count": 8
     },
     {
@@ -309,6 +305,10 @@
     {
       "name": "Washington",
       "count": 5
+    },
+    {
+      "name": "Greenway Plaza",
+      "count": 3
     },
     {
       "name": "Friendswood",
