@@ -14,14 +14,14 @@
     },
     {
       "name": "Lower Greenville",
-      "count": 43
-    },
-    {
-      "name": "Downtown Dallas",
-      "count": 40
+      "count": 44
     },
     {
       "name": "Knox-Henderson",
+      "count": 41
+    },
+    {
+      "name": "Downtown Dallas",
       "count": 40
     },
     {
@@ -220,7 +220,7 @@
     },
     {
       "name": "EaDo",
-      "count": 17
+      "count": 16
     },
     {
       "name": "Washington Corridor",
@@ -633,12 +633,20 @@
       "count": 22
     },
     {
+      "name": "Kimball Junction",
+      "count": 19
+    },
+    {
       "name": "9th & 9th",
       "count": 17
     },
     {
       "name": "The Avenues",
       "count": 16
+    },
+    {
+      "name": "Little Cottonwood Canyon",
+      "count": 13
     },
     {
       "name": "Millcreek",
@@ -659,6 +667,10 @@
     {
       "name": "Central City",
       "count": 11
+    },
+    {
+      "name": "Big Cottonwood Canyon",
+      "count": 10
     },
     {
       "name": "Gateway",
@@ -693,11 +705,11 @@
       "count": 7
     },
     {
-      "name": "Liberty Park",
-      "count": 5
+      "name": "Westside SLC",
+      "count": 6
     },
     {
-      "name": "Westside SLC",
+      "name": "Liberty Park",
       "count": 5
     },
     {
