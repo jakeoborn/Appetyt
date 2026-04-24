@@ -6,7 +6,7 @@
     },
     {
       "name": "East Dallas / Lakewood",
-      "count": 53
+      "count": 55
     },
     {
       "name": "Deep Ellum",
@@ -14,7 +14,7 @@
     },
     {
       "name": "Lower Greenville",
-      "count": 42
+      "count": 43
     },
     {
       "name": "Downtown Dallas",
@@ -22,15 +22,15 @@
     },
     {
       "name": "Knox-Henderson",
-      "count": 39
+      "count": 40
     },
     {
       "name": "Design District",
-      "count": 37
+      "count": 38
     },
     {
       "name": "Park Cities",
-      "count": 35
+      "count": 37
     },
     {
       "name": "Oak Lawn",
@@ -42,7 +42,7 @@
     },
     {
       "name": "Addison",
-      "count": 23
+      "count": 24
     },
     {
       "name": "North Dallas",
@@ -53,6 +53,10 @@
       "count": 17
     },
     {
+      "name": "Plano",
+      "count": 16
+    },
+    {
       "name": "Carrollton",
       "count": 15
     },
@@ -61,15 +65,15 @@
       "count": 15
     },
     {
-      "name": "Plano",
-      "count": 15
-    },
-    {
       "name": "Trinity Groves",
       "count": 13
     },
     {
       "name": "Victory Park",
+      "count": 11
+    },
+    {
+      "name": "Far North Dallas",
       "count": 11
     },
     {
@@ -89,15 +93,19 @@
       "count": 10
     },
     {
-      "name": "Far North Dallas",
-      "count": 10
-    },
-    {
       "name": "Frisco",
       "count": 10
     },
     {
+      "name": "Arlington / Mid-Cities",
+      "count": 10
+    },
+    {
       "name": "Flower Mound",
+      "count": 10
+    },
+    {
+      "name": "Grapevine",
       "count": 10
     },
     {
@@ -113,14 +121,6 @@
       "count": 9
     },
     {
-      "name": "Arlington / Mid-Cities",
-      "count": 9
-    },
-    {
-      "name": "Grapevine",
-      "count": 9
-    },
-    {
       "name": "McKinney",
       "count": 8
     },
@@ -131,6 +131,30 @@
     {
       "name": "Forney",
       "count": 5
+    },
+    {
+      "name": "The Colony",
+      "count": 1
+    },
+    {
+      "name": "Allen",
+      "count": 1
+    },
+    {
+      "name": "Fort Worth",
+      "count": 1
+    },
+    {
+      "name": "Mansfield",
+      "count": 1
+    },
+    {
+      "name": "Grand Prairie",
+      "count": 1
+    },
+    {
+      "name": "Denton",
+      "count": 1
     }
   ],
   "Houston": [
@@ -262,11 +286,11 @@
   "Chicago": [
     {
       "name": "River North",
-      "count": 63
+      "count": 64
     },
     {
       "name": "West Loop / Fulton Market",
-      "count": 54
+      "count": 55
     },
     {
       "name": "Logan Square",
@@ -337,15 +361,19 @@
       "count": 9
     },
     {
+      "name": "Irving Park",
+      "count": 8
+    },
+    {
+      "name": "Little Italy / University Village",
+      "count": 8
+    },
+    {
       "name": "Avondale",
       "count": 7
     },
     {
       "name": "Little Village",
-      "count": 7
-    },
-    {
-      "name": "Irving Park",
       "count": 7
     },
     {
@@ -358,10 +386,6 @@
     },
     {
       "name": "Bronzeville",
-      "count": 7
-    },
-    {
-      "name": "Little Italy / University Village",
       "count": 7
     },
     {
@@ -470,6 +494,22 @@
     },
     {
       "name": "Englewood",
+      "count": 1
+    },
+    {
+      "name": "Cicero",
+      "count": 1
+    },
+    {
+      "name": "Joliet",
+      "count": 1
+    },
+    {
+      "name": "Arlington Heights",
+      "count": 1
+    },
+    {
+      "name": "Crestwood",
       "count": 1
     }
   ],
@@ -1032,11 +1072,11 @@
   "New York": [
     {
       "name": "East Village",
-      "count": 90
+      "count": 91
     },
     {
       "name": "Williamsburg",
-      "count": 65
+      "count": 67
     },
     {
       "name": "West Village",
@@ -1048,7 +1088,7 @@
     },
     {
       "name": "Lower East Side",
-      "count": 53
+      "count": 54
     },
     {
       "name": "Midtown",
@@ -1056,7 +1096,7 @@
     },
     {
       "name": "Midtown East",
-      "count": 39
+      "count": 40
     },
     {
       "name": "Greenwich Village",
@@ -1064,7 +1104,7 @@
     },
     {
       "name": "SoHo",
-      "count": 37
+      "count": 38
     },
     {
       "name": "Chinatown",
@@ -1072,7 +1112,7 @@
     },
     {
       "name": "Chelsea",
-      "count": 29
+      "count": 30
     },
     {
       "name": "Upper East Side",
@@ -1084,7 +1124,7 @@
     },
     {
       "name": "Upper West Side",
-      "count": 24
+      "count": 25
     },
     {
       "name": "Financial District",
@@ -1119,12 +1159,12 @@
       "count": 15
     },
     {
-      "name": "Hell's Kitchen",
+      "name": "Bushwick",
       "count": 14
     },
     {
-      "name": "Bushwick",
-      "count": 13
+      "name": "Hell's Kitchen",
+      "count": 14
     },
     {
       "name": "Brooklyn Heights",
@@ -1208,6 +1248,10 @@
     },
     {
       "name": "Concourse",
+      "count": 2
+    },
+    {
+      "name": "Flatiron",
       "count": 2
     },
     {
