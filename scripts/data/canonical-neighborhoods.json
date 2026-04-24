@@ -26,7 +26,7 @@
     },
     {
       "name": "Design District",
-      "count": 38
+      "count": 39
     },
     {
       "name": "Park Cities",
@@ -38,7 +38,7 @@
     },
     {
       "name": "Bishop Arts",
-      "count": 27
+      "count": 28
     },
     {
       "name": "Addison",
@@ -141,6 +141,10 @@
       "count": 2
     },
     {
+      "name": "Lewisville",
+      "count": 2
+    },
+    {
       "name": "The Colony",
       "count": 1
     },
@@ -173,11 +177,11 @@
       "count": 1
     },
     {
-      "name": "Lewisville",
+      "name": "Wylie",
       "count": 1
     },
     {
-      "name": "Wylie",
+      "name": "Rowlett",
       "count": 1
     }
   ],
@@ -208,7 +212,7 @@
     },
     {
       "name": "Upper Kirby",
-      "count": 25
+      "count": 28
     },
     {
       "name": "River Oaks",
@@ -305,10 +309,6 @@
     {
       "name": "Washington",
       "count": 5
-    },
-    {
-      "name": "Greenway Plaza",
-      "count": 3
     },
     {
       "name": "Friendswood",
