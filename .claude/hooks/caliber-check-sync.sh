@@ -1,5 +1,8 @@
 #!/bin/sh
-if grep -q "caliber" .git/hooks/pre-commit 2>/dev/null; then
+# Honor core.hooksPath if set (we use hooks/ via scripts/install-hooks.sh).
+HOOKS_DIR=$(git config core.hooksPath 2>/dev/null)
+HOOKS_DIR="${HOOKS_DIR:-.git/hooks}"
+if grep -q "caliber" "$HOOKS_DIR/pre-commit" 2>/dev/null; then
   exit 0
 fi
 FLAG="/tmp/caliber-nudge-$(echo "$PWD" | (shasum 2>/dev/null || sha1sum 2>/dev/null || md5sum 2>/dev/null || cksum) | cut -c1-8)"
