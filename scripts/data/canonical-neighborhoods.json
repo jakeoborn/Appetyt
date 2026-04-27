@@ -46,7 +46,7 @@
     },
     {
       "name": "North Dallas",
-      "count": 20
+      "count": 19
     },
     {
       "name": "Plano",
@@ -97,6 +97,10 @@
       "count": 10
     },
     {
+      "name": "Lake Highlands",
+      "count": 10
+    },
+    {
       "name": "Arlington / Mid-Cities",
       "count": 10
     },
@@ -106,10 +110,6 @@
     },
     {
       "name": "Grapevine",
-      "count": 10
-    },
-    {
-      "name": "Lake Highlands",
       "count": 10
     },
     {
@@ -761,10 +761,6 @@
       "count": 4
     },
     {
-      "name": "Logan",
-      "count": 4
-    },
-    {
       "name": "Emigration Canyon",
       "count": 3
     },
@@ -774,6 +770,10 @@
     },
     {
       "name": "Post District",
+      "count": 3
+    },
+    {
+      "name": "Logan",
       "count": 3
     },
     {
@@ -802,6 +802,10 @@
     },
     {
       "name": "Midway (Heber Valley)",
+      "count": 1
+    },
+    {
+      "name": "Moab",
       "count": 1
     },
     {
