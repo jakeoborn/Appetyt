@@ -1,13 +1,13 @@
-# Appetyt
+# Dim Hour
 
-Restaurant discovery app for iOS and web. Helps users find the best restaurants across 248+ cities worldwide.
+Restaurant discovery app for iOS and web. Currently covers 7,200+ restaurants across 15 US cities (NYC, LA, Miami, Dallas, Austin, Chicago, Houston, Las Vegas, Seattle, SF, Charlotte, San Diego, Phoenix, Salt Lake City, San Antonio).
 
 ## Tech Stack
 
 - **Frontend**: Vanilla HTML/CSS/JavaScript (single-page app in `index.html`)
-- **Mobile**: Capacitor v6 for iOS (app ID: `app.appetyt.ios`)
+- **Mobile**: Capacitor v6 for iOS (app ID: `app.dimhour.ios`)
 - **AI**: Anthropic Claude API for restaurant concierge chatbot ([concierge.js](concierge.js))
-- **Hosting**: Static site at appetyt.app (GitHub Pages via [CNAME](CNAME))
+- **Hosting**: Static site at dimhour.com (GitHub Pages via [CNAME](CNAME))
 - **CI/CD**: GitHub Actions ([.github/workflows/ios-build.yml](.github/workflows/ios-build.yml)) + CodeMagic ([codemagic.yaml](codemagic.yaml))
 
 ## Commands
@@ -21,13 +21,20 @@ npm run cap:build      # Build + sync + open Xcode
 
 ## Architecture
 
-- `index.html` — Main app (single-file SPA, ~3.5MB minified)
+- `index.html` — Main app (single-file SPA, ~11.7MB unminified, includes inline city data)
 - `concierge.js` — Netlify/Lambda function for Claude AI chatbot endpoint
 - `sw.js` — Service Worker for offline PWA support
 - `capacitor.config.ts` — iOS app configuration (Capacitor)
 - `ios/` — Capacitor-generated iOS project (Xcode workspace)
-- `scripts/` — Data ingestion scripts (city data, restaurant descriptions, audits)
+- `scripts/` — Data ingestion + validation scripts (`add-*.js` for city batches, `validate-vocabulary.js`, `validate-data.js`, `check-js-integrity.js`, `fix-vocabulary-dupes.js`, `build-canonical-neighborhoods.js`)
+- `hooks/pre-commit` — repo-tracked git hook (run `npm run setup` once to wire `core.hooksPath`); runs JS integrity + vocab validation, then `caliber refresh` if Caliber is installed
 - `icons/` — PWA icons
+- City SEO landing dirs: `dallas/`, `nyc/`, `chicago/`, `houston/`, `austin/`, `seattle/`, `las-vegas/`, `los-angeles/`, `salt-lake-city/`, `san-antonio/` (each has category subpages: `bbq/`, `brunch/`, `date-night/`, etc.). Miami, San Diego, Phoenix, Charlotte, SF have data but no static pages yet.
+
+## Data Layout
+
+Every city's restaurants are inline arrays in `index.html`, named `{CITY}_DATA`:
+`NYC_DATA`, `DALLAS_DATA`, `HOUSTON_DATA`, `AUSTIN_DATA`, `CHICAGO_DATA`, `SLC_DATA`, `LV_DATA`, `SEATTLE_DATA`, `LA_DATA`, `MIAMI_DATA`, `SF_DATA`, `CHARLOTTE_DATA`, `PHX_DATA`, `SD_DATA`, `SANANTONIO_DATA`. Each entry follows the schema in [.claude/rules/data-integrity.md](.claude/rules/data-integrity.md). Editorial rankings live in the `bestOf` array on each entry (e.g. `["#1 Best Italian"]`). Canonical neighborhoods in [scripts/data/canonical-neighborhoods.json](scripts/data/canonical-neighborhoods.json).
 
 ## Key Patterns
 
