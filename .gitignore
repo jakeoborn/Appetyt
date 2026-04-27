@@ -9,5 +9,9 @@ ios/App/App/public/
 ios/App/build/
 ios/DerivedData/
 
-# Caliber transient logs
+# Caliber transient logs + session-local learning state
 .caliber/refresh-hook.log
+.caliber/learning/current-session.jsonl
+.caliber/learning/state.json
+.caliber/learning/finalize.log
+.caliber/learning/last-error.json
