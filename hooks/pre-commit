@@ -1,6 +1,7 @@
 #!/bin/sh
-# Dim Hour pre-commit: run data integrity + vocabulary validation.
-# Only runs when index.html is staged.
+# Dim Hour pre-commit:
+#   1. JS integrity + vocabulary validation when index.html is staged.
+#   2. Caliber refresh (if installed) to keep agent configs in sync.
 
 set -e
 
@@ -26,3 +27,13 @@ case " $CHANGED " in
   *)
     ;;
 esac
+
+# caliber:pre-commit:start
+if command -v caliber >/dev/null 2>&1; then
+  mkdir -p .caliber
+  echo "▸ Caliber: refreshing agent configs..."
+  caliber refresh --quiet 2>.caliber/refresh-hook.log || true
+  caliber learn finalize 2>>.caliber/refresh-hook.log || true
+  git diff --name-only -- CLAUDE.md .claude/ .cursor/ AGENTS.md CALIBER_LEARNINGS.md .github/ .agents/ .opencode/ 2>/dev/null | xargs git add 2>/dev/null || true
+fi
+# caliber:pre-commit:end
