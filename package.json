@@ -8,7 +8,9 @@
     "build": "mkdir -p dist && cp index.html robots.txt sitemap.xml 404.html _headers dist/ && cp -r dallas chicago nyc houston austin los-angeles seattle san-antonio dist/",
     "cap:sync": "npm run build && npx cap sync ios",
     "cap:open": "npx cap open ios",
-    "cap:build": "npm run build && npx cap sync ios && npx cap open ios"
+    "cap:build": "npm run build && npx cap sync ios && npx cap open ios",
+    "setup": "./scripts/install-hooks.sh",
+    "prepare": "./scripts/install-hooks.sh"
   },
   "dependencies": {
     "@capacitor/app": "^6.0.0",
