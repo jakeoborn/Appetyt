@@ -73,6 +73,41 @@ const BESTOF = {
     { name: 'Red Iguana',        bestOf: ['#1 Best Mexican','#1 Best Mole'] },
     { name: 'Riverhorse on Main',bestOf: ['#1 Best Park City Fine Dining','#1 Best Celebration'] },
   ],
+
+  SEATTLE_DATA: [
+    { name: 'Canlis',                      bestOf: ['#1 Best Fine Dining','#1 Best Date Night','#1 Best Overall'] },
+    { name: 'Archipelago',                 bestOf: ['#2 Best Fine Dining','#1 Best Tasting Menu','#2 Best Overall'] },
+    { name: 'Sushi Kashiba',               bestOf: ['#1 Best Sushi','#1 Best Omakase','#1 Best Japanese'] },
+    { name: 'The Walrus and the Carpenter',bestOf: ['#1 Best Oysters','#1 Best Seafood Bar'] },
+    { name: 'Altura',                      bestOf: ['#3 Best Fine Dining','#2 Best Date Night'] },
+    { name: 'Cascina Spinasse',            bestOf: ['#1 Best Italian','#3 Best Date Night'] },
+    { name: 'Musang',                      bestOf: ['#1 Best Filipino','#1 Best Neighborhood'] },
+    { name: 'Canon',                       bestOf: ['#1 Best Cocktails','#1 Best Whiskey Bar'] },
+    { name: "Dick's Drive-In",             bestOf: ['#1 Best Burger','#1 Best Late Night'] },
+    { name: 'Din Tai Fung',                bestOf: ['#1 Best Dumplings','#1 Best Chinese'] },
+  ],
+
+  PHX_DATA: [
+    { name: 'Pizzeria Bianco',             bestOf: ['#1 Best Pizza','#1 Best Overall'] },
+    { name: 'Kai Restaurant',              bestOf: ['#1 Best Fine Dining','#1 Best Tasting Menu','#2 Best Overall'] },
+    { name: 'FnB Restaurant',              bestOf: ['#1 Best New American','#1 Best Date Night'] },
+    { name: 'Bacanora',                    bestOf: ['#1 Best Mexican','#1 Best Sonoran'] },
+    { name: "Matt's Big Breakfast",        bestOf: ['#1 Best Breakfast','#1 Best Brunch'] },
+    { name: 'Tacos Chiwas',               bestOf: ['#1 Best Tacos'] },
+  ],
+
+  LV_DATA: [
+    { name: 'Joël Robuchon',              bestOf: ['#1 Best Fine Dining','#1 Best Overall','#1 Best Tasting Menu'] },
+    { name: 'Restaurant Guy Savoy',        bestOf: ['#2 Best Fine Dining','#2 Best Tasting Menu'] },
+    { name: 'é by José Andrés',            bestOf: ['#3 Best Fine Dining','#3 Best Tasting Menu'] },
+    { name: 'Carbone Riviera',             bestOf: ['#1 Best Italian','#1 Best Date Night'] },
+    { name: 'Bazaar Meat by José Andrés',  bestOf: ['#1 Best Steakhouse','#2 Best Date Night'] },
+    { name: "Esther's Kitchen",            bestOf: ['#1 Best Off-Strip','#2 Best Italian'] },
+    { name: 'Lotus of Siam',               bestOf: ['#1 Best Thai','#1 Best Local Fave'] },
+    { name: 'Tacos El Gordo',              bestOf: ['#1 Best Tacos','#1 Best Late Night'] },
+    { name: 'Herbs & Rye',                 bestOf: ['#1 Best Cocktails','#1 Best Off-Strip Bar'] },
+    { name: "Momofuku",                    bestOf: ['#1 Best Ramen','#1 Best Asian Casual'] },
+  ],
 };
 
 const htmlPath = path.join(__dirname, '..', 'index.html');
