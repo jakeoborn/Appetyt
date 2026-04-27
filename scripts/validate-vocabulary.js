@@ -26,22 +26,30 @@ try {
 
 // Map internal city name (from const) to canonical key used in the JSON file.
 const CANONICAL_CITY_KEY = {
-  'DALLAS':        'Dallas',
-  'HOUSTON':       'Houston',
-  'CHICAGO':       'Chicago',
-  'AUSTIN':        'Austin',
-  'SLC':           'Salt Lake City',
-  'LV':            'Las Vegas',
-  'SEATTLE':       'Seattle',
-  'NEW_YORK':      'New York',
+  'DALLAS':      'Dallas',
+  'HOUSTON':     'Houston',
+  'CHICAGO':     'Chicago',
+  'AUSTIN':      'Austin',
+  'SLC':         'Salt Lake City',
+  'LV':          'Las Vegas',
+  'SEATTLE':     'Seattle',
+  'NYC':         'New York',
+  'LA':          'Los Angeles',
+  'PHX':         'Phoenix',
+  'SD':          'San Diego',
+  'MIAMI':       'Miami',
+  'CHARLOTTE':   'Charlotte',
+  'SANANTONIO':  'San Antonio',
+  'SF':          'San Francisco',
 };
 
-// Own-const cities (JSON-parseable)
+// All city data constants (all use JSON format)
 const CONSTS = [
   'DALLAS_DATA', 'HOUSTON_DATA', 'CHICAGO_DATA', 'AUSTIN_DATA',
-  'SLC_DATA', 'LV_DATA', 'SEATTLE_DATA',
+  'SLC_DATA', 'LV_DATA', 'SEATTLE_DATA', 'NYC_DATA',
+  'LA_DATA', 'PHX_DATA', 'SD_DATA', 'MIAMI_DATA',
+  'CHARLOTTE_DATA', 'SANANTONIO_DATA', 'SF_DATA',
 ];
-// NYC_DATA is a JS object literal (keys unquoted) — we parse entries by regex
 
 function readConstArray(constName) {
   const s = html.indexOf('const ' + constName);
@@ -55,40 +63,6 @@ function readConstArray(constName) {
   try { return JSON.parse(html.slice(a, e)); } catch { return null; }
 }
 
-function readNycEntries() {
-  // NYC_DATA const is declared earlier in the file (before CITY_DATA object)
-  const s = html.indexOf('const NYC_DATA');
-  if (s < 0) return [];
-  const a = html.indexOf('[', s);
-  let d = 0, e = a;
-  let inStr = false, strCh = '', esc = false;
-  for (let i = a; i < html.length; i++) {
-    const c = html[i];
-    if (esc) { esc = false; continue; }
-    if (c === '\\' && inStr) { esc = true; continue; }
-    if (inStr) { if (c === strCh) inStr = false; continue; }
-    if (c === '"' || c === "'") { inStr = true; strCh = c; continue; }
-    if (c === '[') d++;
-    if (c === ']') { d--; if (d === 0) { e = i + 1; break; } }
-  }
-  const slice = html.slice(a, e);
-  // Extract just name + neighborhood + tags list per entry via loose regex
-  const entries = [];
-  // Split roughly on entry boundaries: objects start with {id:
-  const objRe = /\{id\s*:\s*(\d+)/g;
-  let m;
-  const starts = [];
-  while ((m = objRe.exec(slice)) !== null) starts.push({ idx: m.index, id: parseInt(m[1], 10) });
-  for (let i = 0; i < starts.length; i++) {
-    const chunk = slice.slice(starts[i].idx, (i + 1 < starts.length) ? starts[i + 1].idx : slice.length);
-    const nm = chunk.match(/name\s*:\s*(["'])([^"']+)\1/);
-    const nb = chunk.match(/neighborhood\s*:\s*(["'])([^"']*)\1/);
-    const tg = chunk.match(/tags\s*:\s*\[([^\]]*)\]/);
-    const tags = tg ? Array.from(tg[1].matchAll(/(["'])([^"']*)\1/g)).map(x => x[2]) : [];
-    entries.push({ id: starts[i].id, name: nm ? nm[2] : '', neighborhood: nb ? nb[2] : '', tags });
-  }
-  return entries;
-}
 
 function normalizeNeighborhood(n) {
   return String(n).toLowerCase()
@@ -217,7 +191,6 @@ CONSTS.forEach(c => {
   const cityName = c.replace(/_DATA$/, '');
   audit(cityName, readConstArray(c));
 });
-audit('NEW_YORK', readNycEntries());
 
 if (errors.length) {
   console.log('❌ Vocabulary validation FAILED');

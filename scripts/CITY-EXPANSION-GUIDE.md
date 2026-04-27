@@ -12,8 +12,22 @@
 ## Step 9: Hotels, Malls, Parks, Museums (Local tab)
 ## Step 10: Discover Tab (Coming Soon, Groups, Guides, Viator)
 
-## Status:
-- NYC: Steps 0-10 COMPLETE (774 spots)
-- Dallas: Steps 0-10 COMPLETE (594 spots)
-- Chicago: Steps 0,1,8,10 done (34 spots) - NEEDS 2-7,9
-- Houston: Steps 0,1,8,10 done (39 spots) - NEEDS 2-7,9
+## Status (as of 2026-04-27):
+
+| City | Spots | Status |
+|------|------:|--------|
+| NYC | 971 | Steps 0-10 COMPLETE ✅ |
+| Dallas | 727 | Steps 0-10 COMPLETE ✅ |
+| Houston | 575 | Steps 0-10 COMPLETE ✅ |
+| SLC | 569 | Steps 0-10 COMPLETE ✅ |
+| Chicago | 561 | Steps 0-10 COMPLETE ✅ |
+| LA | 533 | Steps 0-10 COMPLETE ✅ |
+| Austin | 536 | Steps 0-10 COMPLETE ✅ |
+| Seattle | 524 | Steps 0-10 COMPLETE ✅ |
+| SD | 522 | Steps 0-10 COMPLETE ✅ |
+| PHX | 510 | Steps 0-10 COMPLETE ✅ |
+| LV | 518 | Steps 0-10 COMPLETE ✅ |
+| Miami | 250 | Steps 0-8, 10 done — NEEDS Step 9 (Local tab) |
+| Charlotte | 253 | Steps 0-8, 10 done — NEEDS Step 9 (Local tab) |
+| San Antonio | 82 | Steps 0-1, 8, 10 done — NEEDS 2-7, 9 |
+| SF | 73 | Steps 0-1, 8 done — NEEDS 2-7, 9-10 |
