@@ -108,6 +108,21 @@ const BESTOF = {
     { name: 'Herbs & Rye',                 bestOf: ['#1 Best Cocktails','#1 Best Off-Strip Bar'] },
     { name: "Momofuku",                    bestOf: ['#1 Best Ramen','#1 Best Asian Casual'] },
   ],
+
+  SD_DATA: [
+    { name: 'Addison at The Fairmont Grand Del Mar', bestOf: ['#1 Best Fine Dining','#1 Best Tasting Menu','#1 Best Overall'] },
+    { name: 'Valle at Mission Pacific Hotel',        bestOf: ['#1 Best Mexican Fine Dining','#2 Best Fine Dining'] },
+    { name: 'Soichi Sushi',                          bestOf: ['#1 Best Omakase','#1 Best Sushi','#1 Best Japanese'] },
+    { name: 'Jeune et Jolie',                        bestOf: ['#1 Best French','#1 Best Date Night'] },
+    { name: 'Juniper & Ivy',                         bestOf: ['#1 Best New American','#2 Best Date Night'] },
+    { name: 'Born and Raised',                       bestOf: ['#1 Best Steakhouse','#3 Best Date Night'] },
+    { name: "Hodad's — Ocean Beach",                 bestOf: ['#1 Best Burger'] },
+    { name: 'Puesto La Jolla',                       bestOf: ['#1 Best Tacos'] },
+    { name: 'Las Cuatro Milpas',                     bestOf: ['#1 Best Mexican','#1 Best Local Fave'] },
+    { name: "Carnitas' Snack Shack — North Park",    bestOf: ['#1 Best Sandwiches','#1 Best Casual'] },
+    { name: "Phil's BBQ",                            bestOf: ['#1 Best BBQ'] },
+    { name: "Buona Forchetta",                       bestOf: ['#1 Best Pizza','#1 Best Italian'] },
+  ],
 };
 
 const htmlPath = path.join(__dirname, '..', 'index.html');
