@@ -82,17 +82,6 @@
         ]
       }
     ],
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": ".claude/hooks/caliber-check-sync.sh",
-            "description": "Caliber: offer setup if not configured"
-          }
-        ]
-      }
-    ]
+    "Stop": []
   }
 }
