@@ -110,7 +110,7 @@ function buildCityPage(city) {
 <meta name="twitter:title" content="${data.length}+ Best Restaurants in ${name} 2026">
 <meta name="twitter:description" content="Curated guide to ${name} restaurants. Scored & reviewed by Dim Hour.">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"Best Restaurants in ${name} 2026","description":"${data.length}+ curated restaurants in ${name}, scored and reviewed.","url":"https://dimhour.com/${slug}/","numberOfItems":${data.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"${r.score}","bestRating":"100"}}}`).join(',')}]}
+{"@context":"https://schema.org","@type":"ItemList","name":"Best Restaurants in ${name} 2026","description":"${data.length}+ curated restaurants in ${name}, scored and reviewed.","url":"https://dimhour.com/${slug}/","numberOfItems":${data.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"}}}`).join(',')}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[${faqs.map(f => `{"@type":"Question","name":"${esc(f.q)}","acceptedAnswer":{"@type":"Answer","text":"${esc(f.a)}"}}`).join(',')}]}
