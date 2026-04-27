@@ -37,10 +37,10 @@ Secondary: Travel
 Dim Hour is a curated restaurant discovery app for people who actually care about where they eat. No sponsored placements. No ads. No user-generated noise. Just the restaurants worth knowing about — sourced from Michelin, James Beard, Eater, The Infatuation, and Bon Appétit — organized in a dark, luxurious interface designed for quick decisions and serious dining.
 
 BUILT FOR FIFA WORLD CUP 2026
-Dim Hour launches with all 16 World Cup host cities fully loaded — from New York and Los Angeles to Miami, Houston, Dallas, Seattle, and Mexico City. Whether you're flying in for the group stage or the final, open Dim Hour and instantly know where to eat. No research required.
+Dim Hour covers the US host cities — New York, Los Angeles, Miami, Houston, Dallas, Seattle, San Francisco, and more. Whether you're flying in for the group stage or the final, open Dim Hour and instantly know where to eat. No research required.
 
-17 CITIES. ZERO FILLER.
-Every restaurant in Dim Hour has been vetted against major editorial sources. We cover Dallas (our most deeply built-out city), plus all 16 FIFA World Cup 2026 host cities including Chicago, Philadelphia, Atlanta, San Francisco, Boston, Toronto, Vancouver, Guadalajara, and Monterrey. Each city includes neighborhood-level guides so you can eat well no matter which part of town you're in.
+15 CITIES. ZERO FILLER.
+Every restaurant in Dim Hour has been vetted against major editorial sources. Current cities: New York, Los Angeles, Miami, Dallas, Austin, Chicago, Houston, Las Vegas, Seattle, San Francisco, Charlotte, San Diego, Phoenix, Salt Lake City, and San Antonio. Each city includes neighborhood-level guides so you can eat well no matter which part of town you're in.
 
 WHAT YOU CAN DO
 • Search & Filter — Find restaurants by cuisine, price range, neighborhood, vibe, or accolade. Filter by Michelin stars, James Beard winners, Eater 38 picks, and more.
@@ -76,19 +76,13 @@ restaurants,dining,food guide,world cup 2026,travel,michelin,best restaurants,wh
 ## 7. What's New (Version 1.0)
 
 ```
-Welcome to Dim Hour — launching with 17 cities, AI concierge, trip planning, and full coverage of every FIFA World Cup 2026 host city. Eat well everywhere.
+Welcome to Dim Hour — launching with 15 cities, AI concierge, trip planning, and full coverage of all US FIFA World Cup 2026 host cities. Eat well everywhere.
 ```
 
 ## 8. Promotional Text (170 characters max)
 
 ```
-The World Cup is coming. Dim Hour covers all 16 host cities with curated restaurant picks from Michelin, Eater, and James Beard. Free. No ads. Know where to eat before you land.
-```
-
-(176 characters — trimmed version below)
-
-```
-The World Cup is coming. Dim Hour covers all 16 host cities with curated picks from Michelin, Eater & James Beard. Free, no ads. Know where to eat before you land.
+The World Cup is coming. Dim Hour covers all US host cities with curated picks from Michelin, Eater & James Beard. Free, no ads. Know where to eat before you land.
 ```
 
 (163 characters)
@@ -120,7 +114,7 @@ App Store allows up to 10 screenshots per device size. Capture for 6.7" (iPhone 
 | 5 | AI Concierge conversation — user asks "best tacos near downtown Dallas under $20" | "Ask the AI concierge. Get an instant pick." | Highlights the Claude-powered differentiator. |
 | 6 | Neighborhood guide — e.g., Deep Ellum or Williamsburg | "Neighborhood guides for every city." | Shows editorial depth beyond a flat list. |
 | 7 | Trip planner — multi-city itinerary with restaurant shortlists | "Plan your World Cup dining itinerary." | Timely World Cup hook. |
-| 8 | City selector — grid of 17 cities | "17 cities. Every World Cup host city covered." | Scale and coverage at a glance. |
+| 8 | City selector — grid of 15 cities | "15 cities. Every US World Cup host city covered." | Scale and coverage at a glance. |
 | 9 | Wishlist view — saved restaurants organized by city | "Save spots. Never forget a recommendation." | Shows organizational utility. |
 | 10 | Morning briefing email preview or opt-in screen | "Wake up knowing where to eat tonight." | Unique feature most competitors lack. |
 
@@ -146,7 +140,7 @@ App Store allows up to 10 screenshots per device size. Capture for 6.7" (iPhone 
 | 12–17 | AI Concierge: user types "best Italian near me" — answer appears | Text: "AI concierge powered by Claude" |
 | 17–22 | Trip planner: user builds a 3-city World Cup itinerary | Text: "Plan your World Cup dining trip" |
 | 22–26 | Reservation button tap — Resy opens | Text: "Book in one tap" |
-| 26–30 | Pull back to city grid showing all 17 cities, fade to tagline | Text: "Dim Hour — Know where to eat." |
+| 26–30 | Pull back to city grid showing all 15 cities, fade to tagline | Text: "Dim Hour — Know where to eat." |
 
 ### Video Production Notes
 
