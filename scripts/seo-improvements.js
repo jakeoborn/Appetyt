@@ -166,7 +166,7 @@ function createCityPage(city, slug, data, state) {
   "url": "https://dimhour.com/${slug}/",
   "numberOfItems": ${data.length},
   "itemListElement": [
-    ${top5.map((r,i) => `{"@type":"ListItem","position":${i+1},"item":{"@type":"Restaurant","name":"${r.name.replace(/"/g,'\\"')}","servesCuisine":"${r.cuisine}","address":{"@type":"PostalAddress","addressLocality":"${city}","addressRegion":"${state}"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"${r.score}","bestRating":"100"}}}`).join(',\n    ')}
+    ${top5.map((r,i) => `{"@type":"ListItem","position":${i+1},"item":{"@type":"Restaurant","name":"${r.name.replace(/"/g,'\\"')}","servesCuisine":"${r.cuisine}","address":{"@type":"PostalAddress","addressLocality":"${city}","addressRegion":"${state}"}}}`).join(',\n    ')}
   ]
 }
 </script>
