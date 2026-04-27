@@ -2,7 +2,7 @@
   "Dallas": [
     {
       "name": "Uptown",
-      "count": 67
+      "count": 68
     },
     {
       "name": "East Dallas / Lakewood",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Knox-Henderson",
-      "count": 41
+      "count": 42
     },
     {
       "name": "Downtown Dallas",
@@ -251,16 +251,16 @@
       "count": 11
     },
     {
+      "name": "Spring",
+      "count": 11
+    },
+    {
       "name": "East End",
       "count": 11
     },
     {
       "name": "Katy",
       "count": 11
-    },
-    {
-      "name": "Spring",
-      "count": 10
     },
     {
       "name": "Third Ward",
@@ -623,16 +623,16 @@
       "count": 7
     },
     {
+      "name": "Mueller",
+      "count": 5
+    },
+    {
       "name": "Red River",
       "count": 5
     },
     {
       "name": "Domain",
       "count": 5
-    },
-    {
-      "name": "Mueller",
-      "count": 4
     },
     {
       "name": "Lockhart",
@@ -1140,11 +1140,11 @@
     },
     {
       "name": "West Village",
-      "count": 57
+      "count": 58
     },
     {
       "name": "Flatiron / NoMad",
-      "count": 55
+      "count": 57
     },
     {
       "name": "Lower East Side",
@@ -1152,19 +1152,19 @@
     },
     {
       "name": "Midtown",
-      "count": 47
+      "count": 48
     },
     {
       "name": "SoHo",
-      "count": 41
+      "count": 43
+    },
+    {
+      "name": "Greenwich Village",
+      "count": 40
     },
     {
       "name": "Midtown East",
       "count": 40
-    },
-    {
-      "name": "Greenwich Village",
-      "count": 38
     },
     {
       "name": "Chinatown",
@@ -1176,7 +1176,7 @@
     },
     {
       "name": "Upper East Side",
-      "count": 26
+      "count": 27
     },
     {
       "name": "Nolita",
@@ -1199,6 +1199,10 @@
       "count": 21
     },
     {
+      "name": "Carroll Gardens / Cobble Hill",
+      "count": 20
+    },
+    {
       "name": "Park Slope / Prospect Heights",
       "count": 20
     },
@@ -1207,12 +1211,8 @@
       "count": 19
     },
     {
-      "name": "Carroll Gardens / Cobble Hill",
-      "count": 19
-    },
-    {
       "name": "Tribeca",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Bushwick",
@@ -1224,7 +1224,7 @@
     },
     {
       "name": "Hell's Kitchen",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Brooklyn Heights",
@@ -1268,7 +1268,7 @@
     },
     {
       "name": "Hudson Yards",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Flushing",
@@ -1287,7 +1287,15 @@
       "count": 4
     },
     {
+      "name": "Flatiron",
+      "count": 4
+    },
+    {
       "name": "Queens",
+      "count": 3
+    },
+    {
+      "name": "Gramercy",
       "count": 3
     },
     {
@@ -1303,15 +1311,7 @@
       "count": 2
     },
     {
-      "name": "Gramercy",
-      "count": 2
-    },
-    {
       "name": "Concourse",
-      "count": 2
-    },
-    {
-      "name": "Flatiron",
       "count": 2
     },
     {
@@ -1332,6 +1332,1296 @@
     },
     {
       "name": "Roosevelt Island",
+      "count": 1
+    }
+  ],
+  "Los Angeles": [
+    {
+      "name": "West Hollywood",
+      "count": 46
+    },
+    {
+      "name": "Hollywood",
+      "count": 40
+    },
+    {
+      "name": "Koreatown",
+      "count": 39
+    },
+    {
+      "name": "Downtown LA",
+      "count": 36
+    },
+    {
+      "name": "Santa Monica",
+      "count": 33
+    },
+    {
+      "name": "Silver Lake",
+      "count": 26
+    },
+    {
+      "name": "Beverly Hills",
+      "count": 25
+    },
+    {
+      "name": "Echo Park",
+      "count": 23
+    },
+    {
+      "name": "Arts District",
+      "count": 20
+    },
+    {
+      "name": "Pasadena",
+      "count": 19
+    },
+    {
+      "name": "Venice",
+      "count": 17
+    },
+    {
+      "name": "Chinatown",
+      "count": 10
+    },
+    {
+      "name": "Los Feliz",
+      "count": 9
+    },
+    {
+      "name": "Alhambra",
+      "count": 9
+    },
+    {
+      "name": "Thai Town",
+      "count": 8
+    },
+    {
+      "name": "East Hollywood",
+      "count": 8
+    },
+    {
+      "name": "Fairfax",
+      "count": 8
+    },
+    {
+      "name": "Mid-Wilshire",
+      "count": 7
+    },
+    {
+      "name": "Brentwood",
+      "count": 7
+    },
+    {
+      "name": "Highland Park",
+      "count": 6
+    },
+    {
+      "name": "Beverly Grove",
+      "count": 6
+    },
+    {
+      "name": "Culver City",
+      "count": 5
+    },
+    {
+      "name": "Sherman Oaks",
+      "count": 5
+    },
+    {
+      "name": "Studio City",
+      "count": 5
+    },
+    {
+      "name": "San Gabriel",
+      "count": 5
+    },
+    {
+      "name": "Inglewood",
+      "count": 5
+    },
+    {
+      "name": "Long Beach",
+      "count": 5
+    },
+    {
+      "name": "Eagle Rock",
+      "count": 5
+    },
+    {
+      "name": "Malibu",
+      "count": 4
+    },
+    {
+      "name": "West LA",
+      "count": 3
+    },
+    {
+      "name": "Altadena",
+      "count": 3
+    },
+    {
+      "name": "Frogtown",
+      "count": 3
+    },
+    {
+      "name": "Melrose",
+      "count": 3
+    },
+    {
+      "name": "Mid-City",
+      "count": 3
+    },
+    {
+      "name": "Little Tokyo",
+      "count": 3
+    },
+    {
+      "name": "Westwood",
+      "count": 3
+    },
+    {
+      "name": "West Adams",
+      "count": 3
+    },
+    {
+      "name": "Century City",
+      "count": 3
+    },
+    {
+      "name": "Woodland Hills",
+      "count": 3
+    },
+    {
+      "name": "Glendale",
+      "count": 3
+    },
+    {
+      "name": "Monterey Park",
+      "count": 3
+    },
+    {
+      "name": "Palms",
+      "count": 2
+    },
+    {
+      "name": "Winnetka",
+      "count": 2
+    },
+    {
+      "name": "Temple City",
+      "count": 2
+    },
+    {
+      "name": "South LA",
+      "count": 2
+    },
+    {
+      "name": "Huntington Park",
+      "count": 2
+    },
+    {
+      "name": "Arcadia",
+      "count": 2
+    },
+    {
+      "name": "Northridge",
+      "count": 2
+    },
+    {
+      "name": "Rosemead",
+      "count": 2
+    },
+    {
+      "name": "Fashion District",
+      "count": 2
+    },
+    {
+      "name": "Larchmont",
+      "count": 2
+    },
+    {
+      "name": "Manhattan Beach",
+      "count": 2
+    },
+    {
+      "name": "Glassell Park",
+      "count": 1
+    },
+    {
+      "name": "Cypress Park",
+      "count": 1
+    },
+    {
+      "name": "Vermont Square",
+      "count": 1
+    },
+    {
+      "name": "Hermosa Beach",
+      "count": 1
+    },
+    {
+      "name": "Pico-Robertson",
+      "count": 1
+    },
+    {
+      "name": "Leimert Park",
+      "count": 1
+    },
+    {
+      "name": "Melrose Hill",
+      "count": 1
+    },
+    {
+      "name": "Hermon",
+      "count": 1
+    },
+    {
+      "name": "East Los Angeles",
+      "count": 1
+    },
+    {
+      "name": "Virgil Village",
+      "count": 1
+    },
+    {
+      "name": "Lincoln Heights",
+      "count": 1
+    },
+    {
+      "name": "Downtown",
+      "count": 1
+    },
+    {
+      "name": "Torrance",
+      "count": 1
+    },
+    {
+      "name": "Canoga Park",
+      "count": 1
+    },
+    {
+      "name": "Granada Hills",
+      "count": 1
+    },
+    {
+      "name": "Encino",
+      "count": 1
+    },
+    {
+      "name": "Van Nuys",
+      "count": 1
+    },
+    {
+      "name": "Valley Glen",
+      "count": 1
+    },
+    {
+      "name": "Toluca Lake",
+      "count": 1
+    },
+    {
+      "name": "Playa Vista",
+      "count": 1
+    },
+    {
+      "name": "El Monte",
+      "count": 1
+    },
+    {
+      "name": "West Covina",
+      "count": 1
+    },
+    {
+      "name": "City of Industry",
+      "count": 1
+    },
+    {
+      "name": "Hacienda Heights",
+      "count": 1
+    },
+    {
+      "name": "Norwalk",
+      "count": 1
+    },
+    {
+      "name": "Westlake",
+      "count": 1
+    },
+    {
+      "name": "Historic Filipinotown",
+      "count": 1
+    },
+    {
+      "name": "Mar Vista",
+      "count": 1
+    },
+    {
+      "name": "South Pasadena",
+      "count": 1
+    },
+    {
+      "name": "Bel-Air",
+      "count": 1
+    },
+    {
+      "name": "Miracle Mile",
+      "count": 1
+    },
+    {
+      "name": "Gardena",
+      "count": 1
+    },
+    {
+      "name": "Rancho Palos Verdes",
+      "count": 1
+    },
+    {
+      "name": "Calabasas",
+      "count": 1
+    }
+  ],
+  "Phoenix": [
+    {
+      "name": "Old Town Scottsdale",
+      "count": 80
+    },
+    {
+      "name": "Scottsdale",
+      "count": 49
+    },
+    {
+      "name": "Downtown Phoenix",
+      "count": 47
+    },
+    {
+      "name": "Arcadia",
+      "count": 34
+    },
+    {
+      "name": "Uptown",
+      "count": 33
+    },
+    {
+      "name": "Tempe",
+      "count": 29
+    },
+    {
+      "name": "Central Phoenix",
+      "count": 22
+    },
+    {
+      "name": "North Phoenix",
+      "count": 21
+    },
+    {
+      "name": "Biltmore",
+      "count": 15
+    },
+    {
+      "name": "Mesa",
+      "count": 14
+    },
+    {
+      "name": "North Scottsdale",
+      "count": 14
+    },
+    {
+      "name": "Chandler",
+      "count": 13
+    },
+    {
+      "name": "Paradise Valley",
+      "count": 12
+    },
+    {
+      "name": "Coronado",
+      "count": 12
+    },
+    {
+      "name": "Surprise",
+      "count": 11
+    },
+    {
+      "name": "Roosevelt Row",
+      "count": 10
+    },
+    {
+      "name": "Gilbert",
+      "count": 10
+    },
+    {
+      "name": "West Phoenix",
+      "count": 9
+    },
+    {
+      "name": "Ahwatukee",
+      "count": 8
+    },
+    {
+      "name": "Melrose",
+      "count": 7
+    },
+    {
+      "name": "Cave Creek",
+      "count": 7
+    },
+    {
+      "name": "East Phoenix",
+      "count": 6
+    },
+    {
+      "name": "Garfield",
+      "count": 6
+    },
+    {
+      "name": "Glendale",
+      "count": 6
+    },
+    {
+      "name": "South Phoenix",
+      "count": 6
+    },
+    {
+      "name": "Grand Avenue",
+      "count": 5
+    },
+    {
+      "name": "Midtown",
+      "count": 4
+    },
+    {
+      "name": "Heritage Square",
+      "count": 3
+    },
+    {
+      "name": "Phoenix",
+      "count": 3
+    },
+    {
+      "name": "Mesa Asian District",
+      "count": 2
+    },
+    {
+      "name": "Wild Horse Pass",
+      "count": 2
+    },
+    {
+      "name": "Peoria",
+      "count": 2
+    },
+    {
+      "name": "Central Scottsdale",
+      "count": 1
+    },
+    {
+      "name": "Near Sky Harbor",
+      "count": 1
+    },
+    {
+      "name": "Mesa (Eastmark)",
+      "count": 1
+    },
+    {
+      "name": "Miracle Mile",
+      "count": 1
+    },
+    {
+      "name": "Warehouse District",
+      "count": 1
+    },
+    {
+      "name": "Carefree",
+      "count": 1
+    },
+    {
+      "name": "Uptown Phoenix",
+      "count": 1
+    },
+    {
+      "name": "Downtown Mesa",
+      "count": 1
+    }
+  ],
+  "San Diego": [
+    {
+      "name": "North Park",
+      "count": 40
+    },
+    {
+      "name": "Little Italy",
+      "count": 36
+    },
+    {
+      "name": "La Jolla",
+      "count": 34
+    },
+    {
+      "name": "Gaslamp",
+      "count": 32
+    },
+    {
+      "name": "Kearny Mesa",
+      "count": 26
+    },
+    {
+      "name": "Hillcrest",
+      "count": 22
+    },
+    {
+      "name": "Pacific Beach",
+      "count": 20
+    },
+    {
+      "name": "Del Mar",
+      "count": 17
+    },
+    {
+      "name": "East Village",
+      "count": 17
+    },
+    {
+      "name": "Coronado",
+      "count": 17
+    },
+    {
+      "name": "Point Loma",
+      "count": 16
+    },
+    {
+      "name": "Ocean Beach",
+      "count": 15
+    },
+    {
+      "name": "University Heights",
+      "count": 12
+    },
+    {
+      "name": "Downtown",
+      "count": 11
+    },
+    {
+      "name": "Encinitas",
+      "count": 11
+    },
+    {
+      "name": "Oceanside",
+      "count": 11
+    },
+    {
+      "name": "Mission Hills",
+      "count": 10
+    },
+    {
+      "name": "Normal Heights",
+      "count": 10
+    },
+    {
+      "name": "Carlsbad",
+      "count": 9
+    },
+    {
+      "name": "Solana Beach",
+      "count": 9
+    },
+    {
+      "name": "Bankers Hill",
+      "count": 9
+    },
+    {
+      "name": "South Park",
+      "count": 9
+    },
+    {
+      "name": "Old Town",
+      "count": 9
+    },
+    {
+      "name": "Barrio Logan",
+      "count": 8
+    },
+    {
+      "name": "Point Loma / Liberty Station",
+      "count": 8
+    },
+    {
+      "name": "Mission Beach",
+      "count": 6
+    },
+    {
+      "name": "Kensington",
+      "count": 6
+    },
+    {
+      "name": "La Jolla Shores",
+      "count": 5
+    },
+    {
+      "name": "La Jolla / UTC",
+      "count": 5
+    },
+    {
+      "name": "Leucadia / Encinitas",
+      "count": 5
+    },
+    {
+      "name": "La Mesa",
+      "count": 5
+    },
+    {
+      "name": "Rancho Bernardo",
+      "count": 5
+    },
+    {
+      "name": "Downtown / Embarcadero",
+      "count": 4
+    },
+    {
+      "name": "Escondido",
+      "count": 4
+    },
+    {
+      "name": "Mission Valley",
+      "count": 4
+    },
+    {
+      "name": "Bird Rock",
+      "count": 4
+    },
+    {
+      "name": "Golden Hill",
+      "count": 4
+    },
+    {
+      "name": "Balboa Park",
+      "count": 3
+    },
+    {
+      "name": "Harbor Island",
+      "count": 3
+    },
+    {
+      "name": "Rancho Santa Fe",
+      "count": 3
+    },
+    {
+      "name": "Cardiff-by-the-Sea",
+      "count": 3
+    },
+    {
+      "name": "City Heights",
+      "count": 2
+    },
+    {
+      "name": "Miramar",
+      "count": 2
+    },
+    {
+      "name": "Bonita",
+      "count": 2
+    },
+    {
+      "name": "Chula Vista",
+      "count": 2
+    },
+    {
+      "name": "Shelter Island",
+      "count": 2
+    },
+    {
+      "name": "Bay Park",
+      "count": 2
+    },
+    {
+      "name": "Mission Bay",
+      "count": 2
+    },
+    {
+      "name": "Mira Mesa",
+      "count": 2
+    },
+    {
+      "name": "College Area",
+      "count": 2
+    },
+    {
+      "name": "Linda Vista",
+      "count": 2
+    },
+    {
+      "name": "Bird Rock / La Jolla",
+      "count": 1
+    },
+    {
+      "name": "Sorrento Valley / Mira Mesa",
+      "count": 1
+    },
+    {
+      "name": "Imperial Beach",
+      "count": 1
+    },
+    {
+      "name": "Clairemont",
+      "count": 1
+    },
+    {
+      "name": "La Jolla / Torrey Pines",
+      "count": 1
+    },
+    {
+      "name": "Vista",
+      "count": 1
+    },
+    {
+      "name": "Poway",
+      "count": 1
+    },
+    {
+      "name": "Mission Hills / Middletown",
+      "count": 1
+    },
+    {
+      "name": "Barrio Logan / Logan Heights",
+      "count": 1
+    },
+    {
+      "name": "Ramona",
+      "count": 1
+    },
+    {
+      "name": "Carmel Valley",
+      "count": 1
+    },
+    {
+      "name": "Mira Mesa / Scripps Ranch",
+      "count": 1
+    },
+    {
+      "name": "Carmel Valley / Del Mar Heights",
+      "count": 1
+    },
+    {
+      "name": "Marina",
+      "count": 1
+    },
+    {
+      "name": "Liberty Station",
+      "count": 1
+    }
+  ],
+  "Miami": [
+    {
+      "name": "South Beach",
+      "count": 47
+    },
+    {
+      "name": "Wynwood",
+      "count": 37
+    },
+    {
+      "name": "Coral Gables",
+      "count": 23
+    },
+    {
+      "name": "Brickell",
+      "count": 20
+    },
+    {
+      "name": "Coconut Grove",
+      "count": 12
+    },
+    {
+      "name": "Little Havana",
+      "count": 11
+    },
+    {
+      "name": "Design District",
+      "count": 11
+    },
+    {
+      "name": "Downtown Miami",
+      "count": 11
+    },
+    {
+      "name": "Little River",
+      "count": 9
+    },
+    {
+      "name": "Mid-Beach",
+      "count": 6
+    },
+    {
+      "name": "Miami Beach",
+      "count": 6
+    },
+    {
+      "name": "MiMo",
+      "count": 6
+    },
+    {
+      "name": "Mid Beach",
+      "count": 4
+    },
+    {
+      "name": "Surfside",
+      "count": 3
+    },
+    {
+      "name": "Buena Vista",
+      "count": 3
+    },
+    {
+      "name": "Edgewater",
+      "count": 3
+    },
+    {
+      "name": "Aventura",
+      "count": 3
+    },
+    {
+      "name": "Bal Harbour",
+      "count": 3
+    },
+    {
+      "name": "Westchester",
+      "count": 3
+    },
+    {
+      "name": "Sunset Harbour",
+      "count": 2
+    },
+    {
+      "name": "North Beach",
+      "count": 2
+    },
+    {
+      "name": "South of Fifth",
+      "count": 2
+    },
+    {
+      "name": "Little Haiti",
+      "count": 2
+    },
+    {
+      "name": "Doral",
+      "count": 2
+    },
+    {
+      "name": "Brickell Key",
+      "count": 2
+    },
+    {
+      "name": "South Miami",
+      "count": 2
+    },
+    {
+      "name": "Upper East Side",
+      "count": 2
+    },
+    {
+      "name": "Downtown",
+      "count": 1
+    },
+    {
+      "name": "Miami River",
+      "count": 1
+    },
+    {
+      "name": "Upper Eastside",
+      "count": 1
+    },
+    {
+      "name": "Key Biscayne",
+      "count": 1
+    },
+    {
+      "name": "South Pointe",
+      "count": 1
+    },
+    {
+      "name": "Overtown",
+      "count": 1
+    },
+    {
+      "name": "Midtown Miami",
+      "count": 1
+    },
+    {
+      "name": "Watson Island",
+      "count": 1
+    },
+    {
+      "name": "Liberty City",
+      "count": 1
+    },
+    {
+      "name": "North Miami",
+      "count": 1
+    },
+    {
+      "name": "Sunny Isles Beach",
+      "count": 1
+    },
+    {
+      "name": "Park West",
+      "count": 1
+    },
+    {
+      "name": "Belle Isle",
+      "count": 1
+    }
+  ],
+  "Charlotte": [
+    {
+      "name": "South End",
+      "count": 78
+    },
+    {
+      "name": "Uptown",
+      "count": 41
+    },
+    {
+      "name": "NoDa",
+      "count": 16
+    },
+    {
+      "name": "Plaza Midwood",
+      "count": 16
+    },
+    {
+      "name": "SouthPark",
+      "count": 13
+    },
+    {
+      "name": "Dilworth",
+      "count": 8
+    },
+    {
+      "name": "Elizabeth",
+      "count": 7
+    },
+    {
+      "name": "Optimist Hall",
+      "count": 7
+    },
+    {
+      "name": "Myers Park",
+      "count": 6
+    },
+    {
+      "name": "Cotswold",
+      "count": 5
+    },
+    {
+      "name": "Park Road",
+      "count": 5
+    },
+    {
+      "name": "Ballantyne",
+      "count": 4
+    },
+    {
+      "name": "Camp North End",
+      "count": 3
+    },
+    {
+      "name": "Belmont",
+      "count": 3
+    },
+    {
+      "name": "West Charlotte",
+      "count": 3
+    },
+    {
+      "name": "Wesley Heights",
+      "count": 3
+    },
+    {
+      "name": "Fourth Ward",
+      "count": 3
+    },
+    {
+      "name": "Huntersville",
+      "count": 3
+    },
+    {
+      "name": "Davidson",
+      "count": 2
+    },
+    {
+      "name": "Cornelius / Lake Norman",
+      "count": 2
+    },
+    {
+      "name": "East Charlotte",
+      "count": 2
+    },
+    {
+      "name": "Optimist Park",
+      "count": 2
+    },
+    {
+      "name": "Mooresville",
+      "count": 2
+    },
+    {
+      "name": "Midtown",
+      "count": 2
+    },
+    {
+      "name": "SouthEnd / Montford",
+      "count": 1
+    },
+    {
+      "name": "Paw Creek",
+      "count": 1
+    },
+    {
+      "name": "SouthEnd",
+      "count": 1
+    },
+    {
+      "name": "Peachland",
+      "count": 1
+    },
+    {
+      "name": "University Area",
+      "count": 1
+    },
+    {
+      "name": "Collingwood",
+      "count": 1
+    },
+    {
+      "name": "Madison Park",
+      "count": 1
+    },
+    {
+      "name": "Matthews",
+      "count": 1
+    },
+    {
+      "name": "Villa Heights",
+      "count": 1
+    },
+    {
+      "name": "Montford",
+      "count": 1
+    },
+    {
+      "name": "Brevard Court",
+      "count": 1
+    },
+    {
+      "name": "Lower South End",
+      "count": 1
+    },
+    {
+      "name": "Foxcroft",
+      "count": 1
+    },
+    {
+      "name": "Cornelius",
+      "count": 1
+    },
+    {
+      "name": "Concord",
+      "count": 1
+    },
+    {
+      "name": "South Charlotte",
+      "count": 1
+    },
+    {
+      "name": "University City",
+      "count": 1
+    }
+  ],
+  "San Antonio": [
+    {
+      "name": "Pearl District",
+      "count": 17
+    },
+    {
+      "name": "Southtown",
+      "count": 13
+    },
+    {
+      "name": "North San Antonio",
+      "count": 11
+    },
+    {
+      "name": "Downtown",
+      "count": 9
+    },
+    {
+      "name": "Alamo Heights",
+      "count": 9
+    },
+    {
+      "name": "River Walk",
+      "count": 6
+    },
+    {
+      "name": "Stone Oak",
+      "count": 4
+    },
+    {
+      "name": "St. Mary's Strip",
+      "count": 3
+    },
+    {
+      "name": "Monte Vista",
+      "count": 3
+    },
+    {
+      "name": "La Cantera",
+      "count": 2
+    },
+    {
+      "name": "Southside",
+      "count": 1
+    },
+    {
+      "name": "King William",
+      "count": 1
+    },
+    {
+      "name": "Boerne",
+      "count": 1
+    },
+    {
+      "name": "South Side",
+      "count": 1
+    },
+    {
+      "name": "Fredericksburg Road",
+      "count": 1
+    }
+  ],
+  "San Francisco": [
+    {
+      "name": "Mission",
+      "count": 16
+    },
+    {
+      "name": "Jackson Square",
+      "count": 6
+    },
+    {
+      "name": "North Beach",
+      "count": 6
+    },
+    {
+      "name": "Embarcadero",
+      "count": 5
+    },
+    {
+      "name": "SoMa",
+      "count": 4
+    },
+    {
+      "name": "Dogpatch",
+      "count": 3
+    },
+    {
+      "name": "Marina",
+      "count": 3
+    },
+    {
+      "name": "Pacific Heights",
+      "count": 2
+    },
+    {
+      "name": "Financial District",
+      "count": 2
+    },
+    {
+      "name": "Mid-Market",
+      "count": 2
+    },
+    {
+      "name": "Union Square",
+      "count": 2
+    },
+    {
+      "name": "Mission Bay",
+      "count": 2
+    },
+    {
+      "name": "Chinatown",
+      "count": 2
+    },
+    {
+      "name": "NoPa",
+      "count": 1
+    },
+    {
+      "name": "Presidio Heights",
+      "count": 1
+    },
+    {
+      "name": "Presidio",
+      "count": 1
+    },
+    {
+      "name": "Japantown",
+      "count": 1
+    },
+    {
+      "name": "Rincon Hill",
+      "count": 1
+    },
+    {
+      "name": "Inner Richmond",
+      "count": 1
+    },
+    {
+      "name": "Laurel Heights",
+      "count": 1
+    },
+    {
+      "name": "Haight-Ashbury",
+      "count": 1
+    },
+    {
+      "name": "Western Addition",
+      "count": 1
+    },
+    {
+      "name": "Hayes Valley",
+      "count": 1
+    },
+    {
+      "name": "Tenderloin",
+      "count": 1
+    },
+    {
+      "name": "FiDi",
+      "count": 1
+    },
+    {
+      "name": "Nob Hill",
+      "count": 1
+    },
+    {
+      "name": "Fisherman's Wharf",
+      "count": 1
+    },
+    {
+      "name": "Castro",
+      "count": 1
+    },
+    {
+      "name": "Upper Haight",
+      "count": 1
+    },
+    {
+      "name": "Russian Hill",
+      "count": 1
+    },
+    {
+      "name": "Fort Mason",
       "count": 1
     }
   ]

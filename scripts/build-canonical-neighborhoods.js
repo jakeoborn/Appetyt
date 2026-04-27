@@ -25,14 +25,21 @@ function readArray(constName) {
 }
 
 const CITIES = {
-  'DALLAS_DATA':   'Dallas',
-  'HOUSTON_DATA':  'Houston',
-  'CHICAGO_DATA':  'Chicago',
-  'AUSTIN_DATA':   'Austin',
-  'SLC_DATA':      'Salt Lake City',
-  'LV_DATA':       'Las Vegas',
-  'SEATTLE_DATA':  'Seattle',
-  'NYC_DATA':      'New York',
+  'DALLAS_DATA':      'Dallas',
+  'HOUSTON_DATA':     'Houston',
+  'CHICAGO_DATA':     'Chicago',
+  'AUSTIN_DATA':      'Austin',
+  'SLC_DATA':         'Salt Lake City',
+  'LV_DATA':          'Las Vegas',
+  'SEATTLE_DATA':     'Seattle',
+  'NYC_DATA':         'New York',
+  'LA_DATA':          'Los Angeles',
+  'PHX_DATA':         'Phoenix',
+  'SD_DATA':          'San Diego',
+  'MIAMI_DATA':       'Miami',
+  'CHARLOTTE_DATA':   'Charlotte',
+  'SANANTONIO_DATA':  'San Antonio',
+  'SF_DATA':          'San Francisco',
 };
 
 const canonical = {};
