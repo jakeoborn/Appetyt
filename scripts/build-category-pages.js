@@ -70,7 +70,6 @@ function buildCategoryPage(city, cat, spots) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${cat.searchTerm} in ${name} 2026 | Top ${spots.length} Spots | Dim Hour</title>
 <meta name="description" content="${cat.searchTerm} in ${name} — ${spots.length} curated ${cat.title.toLowerCase()} spots scored and reviewed. ${top5.map(r => r.name).join(', ')}, and more.">
-<meta name="keywords" content="${cat.searchTerm} ${name}, ${cat.searchTerm} ${short}, ${cat.title.toLowerCase()} ${name}, where to eat ${name}, ${name} restaurant guide 2026">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://dimhour.com/${citySlug}/${cat.slug}/">
 <meta property="og:type" content="article">
@@ -78,9 +77,9 @@ function buildCategoryPage(city, cat, spots) {
 <meta property="og:title" content="${cat.searchTerm} in ${name} 2026 — Top ${spots.length} Spots">
 <meta property="og:description" content="${spots.length} curated ${cat.title.toLowerCase()} spots in ${name}. ${top5.map(r => r.name).join(', ')}.">
 <meta property="og:url" content="https://dimhour.com/${citySlug}/${cat.slug}/">
-<meta property="og:image" content="https://dimhour.com/icons/icon-512.png">
+<meta property="og:image" content="${top5.find(r => r.photoUrl) ? top5.find(r => r.photoUrl).photoUrl : 'https://dimhour.com/icons/icon-512.png'}">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"${cat.searchTerm} in ${name} 2026","description":"${spots.length} curated ${cat.title.toLowerCase()} spots in ${name}.","url":"https://dimhour.com/${citySlug}/${cat.slug}/","numberOfItems":${spots.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"${r.score}","bestRating":"100"}}}`).join(',')}]}
+{"@context":"https://schema.org","@type":"ItemList","name":"${cat.searchTerm} in ${name} 2026","description":"${spots.length} curated ${cat.title.toLowerCase()} spots in ${name}.","url":"https://dimhour.com/${citySlug}/${cat.slug}/","numberOfItems":${spots.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"}}}`).join(',')}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Dim Hour","item":"https://dimhour.com/"},{"@type":"ListItem","position":2,"name":"${name}","item":"https://dimhour.com/${citySlug}/"},{"@type":"ListItem","position":3,"name":"${cat.title}","item":"https://dimhour.com/${citySlug}/${cat.slug}/"}]}

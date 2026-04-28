@@ -145,7 +145,6 @@ function createCityPage(city, slug, data, state) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Best Restaurants in ${city} 2026 | Brunch, Patio, Date Night | Dim Hour</title>
 <meta name="description" content="Discover the best restaurants in ${city} — top brunch spots, patio dining, date night, happy hour, and fine dining. Curated guide to ${data.length}+ ${city} restaurants with scores and reviews.">
-<meta name="keywords" content="best restaurants ${city}, best brunch ${city}, best patio ${city}, best date night ${city}, best happy hour ${city}, fine dining ${city}, ${city} restaurant guide, where to eat ${city}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://dimhour.com/${slug}/">
 <meta property="og:type" content="article">
@@ -153,7 +152,7 @@ function createCityPage(city, slug, data, state) {
 <meta property="og:title" content="Best Restaurants in ${city} 2026 — Curated Guide">
 <meta property="og:description" content="${data.length}+ ${city} restaurants scored and reviewed. Find the best brunch, patio, date night, and fine dining spots.">
 <meta property="og:url" content="https://dimhour.com/${slug}/">
-<meta property="og:image" content="https://dimhour.com/icons/icon-512.png">
+<meta property="og:image" content="${top5.find(r => r.photoUrl) ? top5.find(r => r.photoUrl).photoUrl : 'https://dimhour.com/icons/icon-512.png'}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Best Restaurants in ${city} 2026 — Curated Guide">
 <meta name="twitter:description" content="${data.length}+ ${city} restaurants scored and reviewed. Find the best brunch, patio, date night, and fine dining spots.">
@@ -166,7 +165,7 @@ function createCityPage(city, slug, data, state) {
   "url": "https://dimhour.com/${slug}/",
   "numberOfItems": ${data.length},
   "itemListElement": [
-    ${top5.map((r,i) => `{"@type":"ListItem","position":${i+1},"item":{"@type":"Restaurant","name":"${r.name.replace(/"/g,'\\"')}","servesCuisine":"${r.cuisine}","address":{"@type":"PostalAddress","addressLocality":"${city}","addressRegion":"${state}"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"${r.score}","bestRating":"100"}}}`).join(',\n    ')}
+    ${top5.map((r,i) => `{"@type":"ListItem","position":${i+1},"item":{"@type":"Restaurant","name":"${r.name.replace(/"/g,'\\"')}","servesCuisine":"${r.cuisine}","address":{"@type":"PostalAddress","addressLocality":"${city}","addressRegion":"${state}"}}}`).join(',\n    ')}
   ]
 }
 </script>

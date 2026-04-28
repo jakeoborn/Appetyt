@@ -97,7 +97,6 @@ function buildCityPage(city) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Best Restaurants in ${name} 2026 | ${data.length}+ Curated Spots | Dim Hour</title>
 <meta name="description" content="Discover ${data.length}+ best restaurants in ${name} — curated guide with scores, neighborhoods, and categories. Brunch, date night, fine dining, BBQ, bars, and more.">
-<meta name="keywords" content="best restaurants ${name}, ${name} restaurant guide, where to eat ${name}, best brunch ${name}, best date night ${name}, fine dining ${name}, ${name} food guide 2026">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://dimhour.com/${slug}/">
 <meta property="og:type" content="article">
@@ -105,12 +104,12 @@ function buildCityPage(city) {
 <meta property="og:title" content="${data.length}+ Best Restaurants in ${name} 2026 — Dim Hour">
 <meta property="og:description" content="Curated guide to ${data.length}+ ${name} restaurants. Scored, reviewed, organized by neighborhood.">
 <meta property="og:url" content="https://dimhour.com/${slug}/">
-<meta property="og:image" content="https://dimhour.com/icons/icon-512.png">
+<meta property="og:image" content="${top5.find(r => r.photoUrl) ? top5.find(r => r.photoUrl).photoUrl : 'https://dimhour.com/icons/icon-512.png'}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${data.length}+ Best Restaurants in ${name} 2026">
 <meta name="twitter:description" content="Curated guide to ${name} restaurants. Scored & reviewed by Dim Hour.">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"Best Restaurants in ${name} 2026","description":"${data.length}+ curated restaurants in ${name}, scored and reviewed.","url":"https://dimhour.com/${slug}/","numberOfItems":${data.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"${r.score}","bestRating":"100"}}}`).join(',')}]}
+{"@context":"https://schema.org","@type":"ItemList","name":"Best Restaurants in ${name} 2026","description":"${data.length}+ curated restaurants in ${name}, scored and reviewed.","url":"https://dimhour.com/${slug}/","numberOfItems":${data.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"}}}`).join(',')}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[${faqs.map(f => `{"@type":"Question","name":"${esc(f.q)}","acceptedAnswer":{"@type":"Answer","text":"${esc(f.a)}"}}`).join(',')}]}
