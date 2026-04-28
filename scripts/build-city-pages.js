@@ -33,6 +33,7 @@ const cities = [
   { name: 'Salt Lake City', slug: 'salt-lake-city', state: 'UT', data: parseArray('const SLC_DATA=') },
   { name: 'Seattle', slug: 'seattle', state: 'WA', data: parseArray('const SEATTLE_DATA') },
   { name: 'Las Vegas', slug: 'las-vegas', state: 'NV', data: parseArray('const LV_DATA') },
+  { name: 'Los Angeles', slug: 'los-angeles', state: 'CA', data: parseArray('const LA_DATA') },
 ];
 
 const allCityLinks = cities.map(c => ({ name: c.name, slug: c.slug }));

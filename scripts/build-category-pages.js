@@ -32,6 +32,7 @@ const cities = [
   { name: 'Salt Lake City', short: 'Salt Lake City', slug: 'salt-lake-city', state: 'UT', data: parseArray('const SLC_DATA=') },
   { name: 'Seattle', short: 'Seattle', slug: 'seattle', state: 'WA', data: parseArray('const SEATTLE_DATA') },
   { name: 'Las Vegas', short: 'Las Vegas', slug: 'las-vegas', state: 'NV', data: parseArray('const LV_DATA') },
+  { name: 'Los Angeles', short: 'Los Angeles', slug: 'los-angeles', state: 'CA', data: parseArray('const LA_DATA') },
 ];
 
 // Categories that match high-volume Google searches
