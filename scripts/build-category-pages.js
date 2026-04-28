@@ -45,16 +45,32 @@ const categories = [
   { tags: ['Cocktails', 'Bar'], slug: 'bars', title: 'Bars & Cocktails', icon: '🍹', searchTerm: 'best cocktail bars' },
   { tags: ['Italian', 'Pizza'], slug: 'italian', title: 'Italian & Pizza', icon: '🍕', searchTerm: 'best Italian restaurants' },
   { tag: 'Mexican', slug: 'mexican', title: 'Mexican & Tex-Mex', icon: '🌮', searchTerm: 'best Mexican restaurants' },
-  { tags: ['Japanese', 'Sushi'], slug: 'sushi', title: 'Sushi & Japanese', icon: '🍣', searchTerm: 'best sushi' },
+  { tags: ['Japanese', 'Sushi', 'Omakase'], slug: 'sushi', title: 'Sushi & Japanese', icon: '🍣', searchTerm: 'best sushi' },
   { tag: 'Casual', slug: 'casual', title: 'Casual Dining', icon: '😎', searchTerm: 'best casual restaurants' },
   { tags: ['Brewery', 'Craft Beer'], slug: 'breweries', title: 'Breweries & Craft Beer', icon: '🍺', searchTerm: 'best breweries' },
+  { tags: ['Korean'], slug: 'korean', title: 'Korean', icon: '🥘', searchTerm: 'best Korean restaurants' },
+  { tags: ['Vietnamese'], slug: 'vietnamese', title: 'Vietnamese', icon: '🍜', searchTerm: 'best Vietnamese restaurants' },
+  { tags: ['Ramen', 'Noodles'], slug: 'ramen', title: 'Ramen & Noodles', icon: '🍝', searchTerm: 'best ramen' },
+  { tags: ['Indian'], slug: 'indian', title: 'Indian', icon: '🫓', searchTerm: 'best Indian restaurants' },
+  { tags: ['Thai'], slug: 'thai', title: 'Thai', icon: '🌿', searchTerm: 'best Thai restaurants' },
+  { tags: ['Seafood'], slug: 'seafood', title: 'Seafood', icon: '🦞', searchTerm: 'best seafood restaurants' },
+  { tags: ['Tacos', 'Taco'], slug: 'tacos', title: 'Tacos', icon: '🌮', searchTerm: 'best tacos' },
+  { tags: ['Vegan', 'Plant-Based', 'Plant-Forward', 'Vegetarian'], slug: 'vegan', title: 'Vegan & Plant-Based', icon: '🥦', searchTerm: 'best vegan restaurants' },
+  { tags: ['Coffee', 'Café', 'Bakery/Coffee', 'Bakery'], slug: 'coffee', title: 'Coffee & Cafés', icon: '☕', searchTerm: 'best coffee shops' },
+  { tags: ['Steakhouse', 'Steak'], slug: 'steakhouses', title: 'Steakhouses', icon: '🥩', searchTerm: 'best steakhouses' },
+  { tags: ['Rooftop', 'Views'], slug: 'rooftop', title: 'Rooftop & Views', icon: '🌆', searchTerm: 'best rooftop bars and restaurants' },
 ];
 
 function filterByCategory(data, cat) {
-  if (cat.tags) {
-    return data.filter(r => (r.tags || []).some(t => cat.tags.some(ct => t.includes(ct)))).sort((a, b) => b.score - a.score);
-  }
-  return data.filter(r => (r.tags || []).includes(cat.tag)).sort((a, b) => b.score - a.score);
+  const matchTags = cat.tags || (cat.tag ? [cat.tag] : []);
+  return data.filter(r => {
+    const tags = r.tags || [];
+    const cuisine = (r.cuisine || '').toLowerCase();
+    return matchTags.some(ct => {
+      const ctLower = ct.toLowerCase();
+      return tags.some(t => t.toLowerCase().includes(ctLower)) || cuisine.includes(ctLower);
+    });
+  }).sort((a, b) => b.score - a.score);
 }
 
 function buildCategoryPage(city, cat, spots) {
