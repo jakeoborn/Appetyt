@@ -104,6 +104,7 @@ function buildCityPage(city) {
 <meta property="og:title" content="${data.length}+ Best Restaurants in ${name} 2026 — Dim Hour">
 <meta property="og:description" content="Curated guide to ${data.length}+ ${name} restaurants. Scored, reviewed, organized by neighborhood.">
 <meta property="og:url" content="https://dimhour.com/${slug}/">
+
 <meta property="og:image" content="${top5.find(r => r.photoUrl) ? top5.find(r => r.photoUrl).photoUrl : 'https://dimhour.com/icons/icon-512.png'}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${data.length}+ Best Restaurants in ${name} 2026">
