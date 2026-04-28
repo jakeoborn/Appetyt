@@ -109,14 +109,14 @@ for (const [cityKey, hoodMap] of Object.entries(cityNeighborhoods)) {
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y37FGSEPXR"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Y37FGSEPXR');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best Restaurants in ${esc(hoodName)}, ${esc(cfg.name)} 2026 | Dim Hour</title>
-<meta name="description" content="${esc(spots.length + ' restaurants in ' + hoodName + ', ' + cfg.name)} — curated guide with scores and reviews. ${esc(hoodInfo.bestFor || '')}. ${esc(top5.slice(0,3).map(r=>r.name).join(', '))}.">
+<title>Best Restaurants in ${esc(hoodName)}, ${esc(cfg.name)} 2026 | ${spots.length} Picks | Dim Hour</title>
+<meta name="description" content="${spots.length} restaurants in ${esc(hoodName)}, ${esc(cfg.name)}. ${hoodInfo.bestFor ? esc(hoodInfo.bestFor) + '. ' : ''}Top picks: ${esc(top5.slice(0,3).map(r=>r.name).join(', '))}.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://dimhour.com/${cfg.slug}/${hoodSlug}/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Dim Hour">
-<meta property="og:title" content="Best Restaurants in ${esc(hoodName)}, ${esc(cfg.name)} — Dim Hour">
-<meta property="og:description" content="${esc(hoodInfo.vibe || '')} ${spots.length} curated spots.">
+<meta property="og:title" content="Best Restaurants in ${esc(hoodName)}, ${esc(cfg.name)} 2026 — ${spots.length} Picks">
+<meta property="og:description" content="${spots.length} restaurants in ${esc(hoodName)}. ${hoodInfo.vibe ? esc(hoodInfo.vibe.split('.')[0]) + '.' : ''}">
 <meta property="og:url" content="https://dimhour.com/${cfg.slug}/${hoodSlug}/">
 <meta property="og:image" content="${esc(ogImage)}">
 <meta name="twitter:card" content="summary_large_image">
@@ -166,7 +166,7 @@ a{color:var(--gold)}
 <div class="wrap">
 <a href="/${cfg.slug}/" class="back">← All ${esc(cfg.name)} Restaurants</a>
 <h1>${esc(hoodInfo.emoji || '📍')} ${esc(hoodName)}, ${esc(cfg.name)}</h1>
-<p class="subtitle">${spots.length} curated restaurants · 2026 Guide</p>
+<p class="subtitle">${spots.length} restaurants · 2026</p>
 
 <div style="margin:12px 0 20px">
 <span class="stat">🍽️ ${spots.length} Restaurants</span>
@@ -218,7 +218,7 @@ ${topTags.map(([t, c]) => `<span class="tag">${esc(t)} (${c})</span>`).join('\n'
 ${otherHoods.map(h => `<a href="/${cfg.slug}/${neighborhoodSlug(h)}/" class="hood-link">${esc(hoodMap[h]?.emoji || '📍')} ${esc(h)}</a>`).join('\n')}
 </div>
 
-<p style="margin-top:24px;font-size:12px;color:var(--text3)">Dim Hour curates the best restaurants across America. Updated weekly. <a href="https://dimhour.com">Full guide →</a> · <a href="/${cfg.slug}/">All ${esc(cfg.name)} restaurants →</a></p>
+<p style="margin-top:24px;font-size:12px;color:var(--text3)">Dim Hour scores the best restaurants across America. <a href="https://dimhour.com">Full guide →</a> · <a href="/${cfg.slug}/">All ${esc(cfg.name)} restaurants →</a></p>
 </div>
 </body>
 </html>`;

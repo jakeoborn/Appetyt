@@ -95,20 +95,20 @@ function buildCityPage(city) {
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y37FGSEPXR"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Y37FGSEPXR');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best Restaurants in ${name} 2026 | ${data.length}+ Curated Spots | Dim Hour</title>
-<meta name="description" content="Discover ${data.length}+ best restaurants in ${name} — curated guide with scores, neighborhoods, and categories. Brunch, date night, fine dining, BBQ, bars, and more.">
+<title>Best Restaurants in ${name} 2026 — ${data.length} Picks | Dim Hour</title>
+<meta name="description" content="${data.length} restaurants in ${name}, scored and ranked. Fine dining, brunch, date night, bars — the full guide across ${hoodEntries.length} neighborhoods.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://dimhour.com/${slug}/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Dim Hour">
-<meta property="og:title" content="${data.length}+ Best Restaurants in ${name} 2026 — Dim Hour">
-<meta property="og:description" content="Curated guide to ${data.length}+ ${name} restaurants. Scored, reviewed, organized by neighborhood.">
+<meta property="og:title" content="Best Restaurants in ${name} 2026 — ${data.length} Picks | Dim Hour">
+<meta property="og:description" content="${data.length} restaurants in ${name}, scored and ranked by neighborhood.">
 <meta property="og:url" content="https://dimhour.com/${slug}/">
 
 <meta property="og:image" content="${top5.find(r => r.photoUrl) ? top5.find(r => r.photoUrl).photoUrl : 'https://dimhour.com/icons/icon-512.png'}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${data.length}+ Best Restaurants in ${name} 2026">
-<meta name="twitter:description" content="Curated guide to ${name} restaurants. Scored & reviewed by Dim Hour.">
+<meta name="twitter:title" content="Best Restaurants in ${name} 2026 — ${data.length} Picks">
+<meta name="twitter:description" content="${data.length} restaurants in ${name}, scored and ranked by Dim Hour.">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ItemList","name":"Best Restaurants in ${name} 2026","description":"${data.length}+ curated restaurants in ${name}, scored and reviewed.","url":"https://dimhour.com/${slug}/","numberOfItems":${data.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"}}}`).join(',')}]}
 </script>
@@ -158,7 +158,7 @@ a{color:var(--gold)}
 <div class="wrap">
 <a href="/" class="back">← Back to Dim Hour</a>
 <h1>Best Restaurants in ${name}</h1>
-<p class="subtitle">${data.length} curated restaurants · Scored & reviewed · 2026 Guide</p>
+<p class="subtitle">${data.length} restaurants · ${hoodEntries.length} neighborhoods · 2026</p>
 
 <div style="margin:16px 0 24px">
 <span class="stat">🍽️ ${data.length} Restaurants</span>
@@ -198,7 +198,7 @@ ${spots.map(r => `<div class="r"><div><div class="rn">${esc(r.name)}</div><div c
 ${otherCities.map(c => `<a href="/${c.slug}/" class="city-link">${c.name}</a>`).join('\n')}
 </div>
 
-<p style="margin-top:32px;font-size:13px;color:var(--text3)">Dim Hour curates the best restaurants across America. Every restaurant is scored based on food quality, service, ambiance, and value. Updated weekly. <a href="https://dimhour.com">Explore the full guide →</a></p>
+<p style="margin-top:32px;font-size:13px;color:var(--text3)">Dim Hour scores every restaurant on food, service, ambiance, and value. Every pick is verified. <a href="https://dimhour.com">Explore the full guide →</a></p>
 </div>
 </body>
 </html>`;

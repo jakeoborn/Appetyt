@@ -84,14 +84,14 @@ function buildCategoryPage(city, cat, spots) {
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y37FGSEPXR"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Y37FGSEPXR');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${cat.searchTerm} in ${name} 2026 | Top ${spots.length} Spots | Dim Hour</title>
-<meta name="description" content="${cat.searchTerm} in ${name} — ${spots.length} curated ${cat.title.toLowerCase()} spots scored and reviewed. ${top5.map(r => r.name).join(', ')}, and more.">
+<title>Best ${cat.title} in ${name} 2026 | ${spots.length} Picks | Dim Hour</title>
+<meta name="description" content="${spots.length} ${cat.title.toLowerCase()} spots in ${name}, scored and ranked. Top picks: ${top5.slice(0,3).map(r => r.name).join(', ')}.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://dimhour.com/${citySlug}/${cat.slug}/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Dim Hour">
-<meta property="og:title" content="${cat.searchTerm} in ${name} 2026 — Top ${spots.length} Spots">
-<meta property="og:description" content="${spots.length} curated ${cat.title.toLowerCase()} spots in ${name}. ${top5.map(r => r.name).join(', ')}.">
+<meta property="og:title" content="Best ${cat.title} in ${name} 2026 — ${spots.length} Picks">
+<meta property="og:description" content="${spots.length} ${cat.title.toLowerCase()} spots in ${name}. ${top5.slice(0,3).map(r => r.name).join(', ')}.">
 <meta property="og:url" content="https://dimhour.com/${citySlug}/${cat.slug}/">
 
 <meta property="og:image" content="${top5.find(r => r.photoUrl) ? top5.find(r => r.photoUrl).photoUrl : 'https://dimhour.com/icons/icon-512.png'}">
@@ -135,7 +135,7 @@ a{color:var(--gold)}
 <div class="wrap">
 <a href="/${citySlug}/" class="back">← ${name} Restaurants</a>
 <h1>${cat.icon} Best ${cat.title} in ${name}</h1>
-<p>${spots.length} curated ${cat.title.toLowerCase()} spots, scored and reviewed for 2026.</p>
+<p>${spots.length} ${cat.title.toLowerCase()} spots in ${name}, scored and ranked for 2026.</p>
 <a href="https://dimhour.com" class="cta">🍽️ Open Interactive Guide</a>
 
 <h2>Top ${Math.min(10, spots.length)} ${cat.title} Spots</h2>
@@ -173,7 +173,7 @@ ${categories.filter(c => c.slug !== cat.slug).map(c => `<a href="/${citySlug}/${
 ${cities.filter(c => c.slug !== citySlug).map(c => `<a href="/${c.slug}/${cat.slug}/" class="city-link">${c.short}</a>`).join('\n')}
 </div>
 
-<p style="margin-top:24px;font-size:12px;color:var(--text3)">Dim Hour curates the best restaurants across America. Updated weekly. <a href="https://dimhour.com">Full guide →</a> · <a href="/${citySlug}/">All ${name} restaurants →</a></p>
+<p style="margin-top:24px;font-size:12px;color:var(--text3)">Dim Hour scores the best restaurants across America. <a href="https://dimhour.com">Full guide →</a> · <a href="/${citySlug}/">All ${name} restaurants →</a></p>
 </div>
 </body>
 </html>`;
