@@ -16,7 +16,13 @@ function getData(city) {
 }
 
 function norm(s) {
-  return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[''']/g, "'").replace(/[&]/g, 'and');
+  return s.toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')     // strip accent combining chars
+    .replace(/['''‘’]/g, '')   // strip apostrophes (don't keep them)
+    .replace(/&/g, 'and')               // & → and
+    .replace(/\s+/g, ' ')               // collapse whitespace
+    .trim();
 }
 
 function check(city, list) {

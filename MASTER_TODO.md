@@ -1,6 +1,6 @@
 # Dim Hour — Master To-Do List
 
-_Last updated: 2026-04-27. Update this file at the end of every session._
+_Last updated: 2026-04-29. Update this file at the end of every session._
 
 ---
 
@@ -15,6 +15,13 @@ _Last updated: 2026-04-27. Update this file at the end of every session._
 ---
 
 ## 🟠 HIGH PRIORITY
+
+### TikTok Reels
+- [ ] **Connect Apify MCP connector** — https://claude.ai/customize/connectors — must do before scheduling the re-run routine
+- [ ] **Re-run SF + San Antonio through Apify** (~May 20, when quota resets) — SF: 117 done via low-quality WebSearch + 49 still missing; SA: 41 done via WebSearch + 41 missing. Replace WebSearch picks with proper play-count-sorted Apify results
+- [ ] **Start 7 new cities via Apify** — PHX (510), Seattle (525), SLC (574), Miami (271), Charlotte (254), Las Vegas (518), San Diego (522). Script: `scripts/replace-reels-tiktok.js`
+- [ ] **Low-quality upgrades** — Odd Duck Austin (5004) is a listicle; Distant Relatives Austin (5057) only 3,993 plays. Replace when better found
+- [ ] **Permanently missing** — Foreign & Domestic Austin (5094), Black's Barbecue Austin (5162): no TikTok found via any method
 
 ### City Expansion
 - [ ] **San Antonio** — Steps 2-7 needed (~400+ spots, only 82 currently). ID range 6001+
@@ -101,6 +108,12 @@ _Last updated: 2026-04-27. Update this file at the end of every session._
 - [ ] **UI design review** — run `design-an-interface` skill on target surface (Discover tab card grid + filter pills, or Trips dossier, or compact-row card) to get 3-5 alternate visual directions vs current Linear/Vercel caliber bar
 
 ---
+
+## Recently Shipped (2026-04-29)
+
+- TikTok reels: all 6 original cities done (NYC, Dallas, Chicago, LA, Austin, Houston — ~154 restaurants)
+- TikTok reels: SF (117/166) and San Antonio (41/82) done via WebSearch — quality ~80%, needs Apify re-run
+- YouTube reels fully stripped across all 15 cities
 
 ## Recently Shipped (2026-04-27)
 
