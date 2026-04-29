@@ -50,6 +50,18 @@ const reelUrls = {
   1177:  'https://www.youtube.com/shorts/CjsBJfo52kU',  // Chef's Table at Brooklyn Fare
   1180:  'https://www.youtube.com/shorts/tkWrc5YBf0I',  // Aska
   1182:  'https://www.youtube.com/shorts/MnCRRtc8bIE',  // Saga
+  // Dallas — Batch 1
+  20:  'https://www.youtube.com/shorts/GyjpvjX73Yk',  // Mamani
+  304: 'https://www.youtube.com/shorts/9rslnEYuYhY',  // Carbone Dallas
+  148: 'https://www.youtube.com/shorts/Hg-JeP6brro',  // Mister Charles
+  49:  'https://www.youtube.com/shorts/_w0UWr-flpg',  // Nick & Sam's Steakhouse
+  14:  'https://www.youtube.com/shorts/XwW3k1AL_rY',  // Cattleack Barbeque
+  57:  'https://www.youtube.com/shorts/fJcIddADKOQ',  // Pecan Lodge
+  32:  'https://www.youtube.com/shorts/UBqv3P-l2EQ',  // Nobu Dallas
+  84:  'https://www.youtube.com/shorts/cnUwc3LlDM4',  // Wicked Butcher
+  205: 'https://www.youtube.com/shorts/IknMcE4hoIg',  // The Slow Bone
+  289: 'https://www.youtube.com/shorts/10EC8VFlgW8',  // Sadelle's Dallas
+  86:  'https://www.youtube.com/shorts/sRxkeqH179Q',  // Georgie Dallas
 };
 
 let updated = 0;
