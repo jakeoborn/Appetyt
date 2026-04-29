@@ -150,6 +150,168 @@ const cityReels = {
     5163: 'https://www.tiktok.com/@kevinsbbqjoints/video/7571524434985553182',  // Kreuz Market
     5465: 'https://www.tiktok.com/@512bites/video/7171942462783704366',  // Este
   },
+  SF: {
+    5001: 'https://www.tiktok.com/@infatuation_sf/video/7375327968400297259',  // Quince
+    5002: 'https://www.tiktok.com/@infatuation_sf/video/7261725856169463082',  // Lazy Bear
+    5003: 'https://www.tiktok.com/@highspeeddining/video/7040503862163459375',  // Birdsong
+    5004: 'https://www.tiktok.com/@highspeeddining/video/7312232308319407406',  // Angler
+    5005: 'https://www.tiktok.com/@highspeeddining/video/7313320562414210346',  // Kokkari Estiatorio
+    5006: 'https://www.tiktok.com/@thefirstdatedude/video/7470224872271236398',  // Foreign Cinema
+    5007: 'https://www.tiktok.com/@celinerrzz/video/7223238689269337387',  // Flour + Water
+    5008: 'https://www.tiktok.com/@celinerrzz/video/7421764618076425502',  // Che Fico
+    5009: 'https://www.tiktok.com/@eatwithseth/video/7225039605437877550',  // Bar Crenn
+    5010: 'https://www.tiktok.com/@highspeeddining/video/7311852426938551594',  // Cotogna
+    5011: 'https://www.tiktok.com/@chumperjreats/video/7263513602873888046',  // Rintaro
+    5012: 'https://www.tiktok.com/@highspeeddining/video/7042020674105560366',  // Spruce
+    5015: 'https://www.tiktok.com/@the.weekend.abroad/video/7518608827772652855',  // Wayfare Tavern
+    5016: 'https://www.tiktok.com/@austin.klar/video/7445436390810340654',  // Park Tavern
+    5017: 'https://www.tiktok.com/@chumperjreats/video/7126589163071147310',  // Ernest
+    5018: 'https://www.tiktok.com/@loganraehill/video/7128496041220918571',  // La Mar Cebicheria
+    5019: 'https://www.tiktok.com/@sfstandard/video/7299488057248714030',  // Dalida
+    5020: 'https://www.tiktok.com/@millie.lai/video/7436105789078539551',  // Lolinda
+    5021: 'https://www.tiktok.com/@janiedevours/video/7439103363507146026',  // Nari
+    5023: 'https://www.tiktok.com/@fashionbyally/video/7279221415625116970',  // Bar Sprezzatura
+    5025: 'https://www.tiktok.com/@miriamhershman/video/7349365322551495978',  // Piccino
+    5026: 'https://www.tiktok.com/@emilyinnew.york/video/7222851736866917678',  // Penny Roma
+    5027: 'https://www.tiktok.com/@jacksdiningroom/video/7197925503171398955',  // Waterbar
+    5029: 'https://www.tiktok.com/@andrewtourssf/video/7292446147703033131',  // Chotto Matte
+    5031: 'https://www.tiktok.com/@infatuation_sf/video/7449552114977623327',  // Tiya
+    5033: 'https://www.tiktok.com/@andrewtourssf/video/7250212250634505515',  // Arcana
+    5034: 'https://www.tiktok.com/@laurenwickham/video/7363824786037837086',  // Itria
+    5035: 'https://www.tiktok.com/@sutonashari/video/7204901185030016302',  // Ungrafted
+    5036: 'https://www.tiktok.com/@travelwithtraut/video/7129544038520261931',  // Sorrel
+    5037: 'https://www.tiktok.com/@harborviewsf/video/7262459657044708651',  // Harborview
+    5038: 'https://www.tiktok.com/@sherryeatworld/video/7341257387224911135',  // Niku Steakhouse
+    5039: 'https://www.tiktok.com/@allie.eats/video/6989023967570955525',  // Fang
+    5040: 'https://www.tiktok.com/@charweeezy/video/7232446720787909931',  // Izzy's Steakhouse
+    5041: 'https://www.tiktok.com/@sherryeatworld/video/7326786472076610862',  // ABV
+    5044: 'https://www.tiktok.com/@unionsquaresf_/video/7256890727135710506',  // Pacific Cocktail Haven
+    5046: 'https://www.tiktok.com/@onlyinsf/video/7332649930747645215',  // The Alembic
+    5047: 'https://www.tiktok.com/@sherryeatworld/video/7304135767968812318',  // The Progress
+    5048: 'https://www.tiktok.com/@yourglobalfoodiebff/video/7538654243868265759',  // Sohn
+    5049: 'https://www.tiktok.com/@danielluriesf/video/7560776174260047135',  // Via Aurelia
+    5050: 'https://www.tiktok.com/@sipwithash/video/7233271468841405742',  // Smuggler's Cove
+    5051: 'https://www.tiktok.com/@whimsysoul/video/7322225632946048299',  // Bourbon & Branch
+    5052: 'https://www.tiktok.com/@sipnsavorsd/video/7255058989891767595',  // Pagan Idol
+    5053: 'https://www.tiktok.com/@heatherr.eats/video/7429378804738542879',  // Local Edition
+    5054: 'https://www.tiktok.com/@janiedevours/video/7437798124401331502',  // Tonga Room & Hurricane Bar
+    5055: 'https://www.tiktok.com/@12darialove/video/7250303778904231210',  // The Buena Vista Cafe
+    5056: 'https://www.tiktok.com/@kimmconn/video/7269058164904037634',  // Vesuvio Cafe
+    5058: 'https://www.tiktok.com/@katwalksf/video/7343870636881677611',  // Li Po Cocktail Lounge
+    5060: 'https://www.tiktok.com/@andrewtourssf/video/7398626230649638187',  // Cold Drinks Bar at China Live
+    5062: 'https://www.tiktok.com/@blackfoodietravelguy/video/7227892242214669611',  // Last Rites
+    5065: 'https://www.tiktok.com/@girlies_in_sf/video/7355920259318041899',  // Tartine Manufactory
+    5066: 'https://www.tiktok.com/@mattandomar/video/7526667881187167518',  // Verjus
+    5067: 'https://www.tiktok.com/@melindasheckells/video/7332174736119680298',  // Starlite
+    5068: 'https://www.tiktok.com/@sfburneraccount/video/7581359413571669303',  // Zam Zam
+    5070: 'https://www.tiktok.com/@thefirstdatedude/video/7261981289421770030',  // Cavaña
+    5072: 'https://www.tiktok.com/@sideofstef/video/7353777522967956779',  // Causwells
+    5073: 'https://www.tiktok.com/@jessevicario/video/7373000018355096878',  // Novela
+    5075: 'https://www.tiktok.com/@snackateriansf/video/7293546783962074411',  // Anchor Oyster Bar
+    5076: 'https://www.tiktok.com/@andrewtourssf/video/7288845611934240030',  // Starbelly
+    5078: 'https://www.tiktok.com/@luiscarloszara/video/7572705063299271967',  // Zuni Café
+    5079: 'https://www.tiktok.com/@robcwillis/video/7103731270286314798',  // Rich Table
+    5081: 'https://www.tiktok.com/@absinthe.sf/video/7575951423548951822',  // Absinthe Brasserie & Bar
+    5082: 'https://www.tiktok.com/@hungere.for.diy/video/7379865998482099499',  // Burma Superstar
+    5083: 'https://www.tiktok.com/@oneminreviews/video/7600929471549410590',  // Pizzetta 211
+    5085: 'https://www.tiktok.com/@yourglobalfoodiebff/video/7479601979946323231',  // Chapeau!
+    5087: 'https://www.tiktok.com/@sophiaxwhatever/video/7420663445852359982',  // Acquerello
+    5088: 'https://www.tiktok.com/@ricklox/video/7311942740374293803',  // Swan Oyster Depot
+    5089: 'https://www.tiktok.com/@highspeeddining/video/7316304750377487658',  // Gary Danko
+    5091: 'https://www.tiktok.com/@noevalleybakery/video/7106930210171571502',  // Noe Valley Bakery
+    5093: 'https://www.tiktok.com/@robcwillis/video/7087770256965373227',  // The Front Porch
+    5094: 'https://www.tiktok.com/@ashyizzle/video/7026818434860190981',  // Prubechu
+    5095: 'https://www.tiktok.com/@highspeeddining/video/7317424061519318314',  // Atelier Crenn
+    5096: 'https://www.tiktok.com/@andreweatsinsf/video/7379758349488819499',  // State Bird Provisions
+    5099: 'https://www.tiktok.com/@laurenwickham/video/7336278281336999198',  // A16
+    5101: 'https://www.tiktok.com/@carbdashians_sf/video/7324170741002423594',  // Bix
+    5102: 'https://www.tiktok.com/@allie.eats/video/7501030128005172522',  // Yank Sing
+    5103: 'https://www.tiktok.com/@yourglobalfoodiebff/video/7441979128288480558',  // Z & Y Restaurant
+    5105: 'https://www.tiktok.com/@itssaramorgan/video/7472986470853250347',  // Delfina
+    5106: 'https://www.tiktok.com/@realphdfoodie/video/7439898245914053931',  // Chez Maman
+    5112: 'https://www.tiktok.com/@highspeeddining/video/7312616652393385262',  // Saison
+    5113: 'https://www.tiktok.com/@sherryeatworld/video/7528202337827998990',  // Benu
+    5114: 'https://www.tiktok.com/@ligier/video/7214249599303830826',  // Sons & Daughters
+    5115: 'https://www.tiktok.com/@coffee.finds/video/7348707460430990635',  // The Interval at Long Now
+    5116: 'https://www.tiktok.com/@hogislandoysterco/video/7492258785088572714',  // Hog Island Oyster Co.
+    5117: 'https://www.tiktok.com/@marufukuramen/video/7607477955018689805',  // Marufuku Ramen
+    5118: 'https://www.tiktok.com/@cynthiamhuang/video/7124456741118577966',  // Octavia
+    5120: 'https://www.tiktok.com/@fkachef/video/7098844551124651306',  // Frascati
+    5121: 'https://www.tiktok.com/@sophiaxwhatever/video/7143805930566618411',  // Perbacco
+    5122: 'https://www.tiktok.com/@fashionbyally/video/7234727751754943790',  // Pabu Izakaya
+    5123: 'https://www.tiktok.com/@food.with.karm/video/7240312744602324270',  // Saigon Sandwich
+    5126: 'https://www.tiktok.com/@andreweatsinsf/video/7535966488461724942',  // Beretta
+    5127: 'https://www.tiktok.com/@onlyinsf/video/7315150754753432875',  // Dandelion Chocolate
+    5128: 'https://www.tiktok.com/@millie.lai/video/7436842411546004766',  // Craftsman and Wolves
+    5129: 'https://www.tiktok.com/@eatingwithrobert/video/7343003211365698848',  // Taqueria Cancun
+    5130: 'https://www.tiktok.com/@shirleyluong/video/7432822461839707422',  // Saru Sushi Bar
+    5131: 'https://www.tiktok.com/@marincountyvegan/video/7307301211298876715',  // Wildseed
+    5132: 'https://www.tiktok.com/@roam_burgers/video/7122899815922437418',  // Roam Artisan Burgers
+    5133: 'https://www.tiktok.com/@jackiewirt/video/7492128114659691807',  // Trestle
+    5134: 'https://www.tiktok.com/@allie.eats/video/7221688219824327979',  // Fiorella
+    5135: 'https://www.tiktok.com/@infatuation_sf/video/7341217819952024874',  // Noodle in a Haystack
+    5137: 'https://www.tiktok.com/@iamchristymac/video/7524785846403304717',  // Thanh Long
+    5139: 'https://www.tiktok.com/@infatuation_sf/video/7320414422038531359',  // San Tung
+    5140: 'https://www.tiktok.com/@charweeezy/video/7104847904933743915',  // Dragon Beaux
+    5141: 'https://www.tiktok.com/@foodwithmichel/video/7130080133880237354',  // PPQ Dungeness Island
+    5143: 'https://www.tiktok.com/@fashionbyally/video/7522503215280033038',  // 7 Adams
+    5144: 'https://www.tiktok.com/@nikandsarina/video/7560450336863866143',  // Bourbon Steak
+    5146: 'https://www.tiktok.com/@tundemodupee/video/7277614050660617518',  // The Vault Garden
+    5147: 'https://www.tiktok.com/@sherryeatworld/video/7298214805544897834',  // La Connessa
+    5148: 'https://www.tiktok.com/@tablesidepizza/video/7298111835885309230',  // Flour + Water Pizzeria
+    5149: 'https://www.tiktok.com/@infatuation_sf/video/7277731905078824234',  // Flour + Water Pasta Shop
+    5150: 'https://www.tiktok.com/@citygirlatm/video/7436987775519411499',  // Morella
+    5153: 'https://www.tiktok.com/@charweeezy/video/7242466702921846058',  // International Smoke
+    5155: 'https://www.tiktok.com/@citygirlatm/video/7438846056760298798',  // Local Edition
+    5156: 'https://www.tiktok.com/@andreweatsinsf/video/7338143525063773471',  // The Pawn Shop
+    5157: 'https://www.tiktok.com/@booziebrunch/video/7501361485843631403',  // Rise Over Run
+    5158: 'https://www.tiktok.com/@eileenis/video/7457675803908803886',  // Flores
+    5159: 'https://www.tiktok.com/@andrewtourssf/video/7320676178858118443',  // Left Door
+    5164: 'https://www.tiktok.com/@infatuation_sf/video/7361234883852635423',  // Bar Jambroni
+  },
+  SANANTONIO: {
+    6001: 'https://www.tiktok.com/@rosamariasmith/video/7515224295166184750',  // Mixtli
+    6002: 'https://www.tiktok.com/@visitsanantonio/video/7242771937947143467',  // 2M Smokehouse
+    6004: 'https://www.tiktok.com/@bollywoodnand27/video/7205662051577089326',  // Botika
+    6006: 'https://www.tiktok.com/@arnietex/video/7264227026200972590',  // Mi Tierra Cafe & Bakery
+    6007: 'https://www.tiktok.com/@eatmigos/video/7270273180504329518',  // La Gloria
+    6008: 'https://www.tiktok.com/@sanantoniofoodie/video/7160370499871132971',  // Southerleigh Fine Food & Brewery
+    6009: 'https://www.tiktok.com/@esquiretavernsa/video/7179652177294658858',  // The Esquire Tavern
+    6012: 'https://www.tiktok.com/@tristacastillo/video/7205946616380034350',  // Battalion
+    6014: 'https://www.tiktok.com/@satxhealthyfoodie/video/7239415409525525806',  // Best Quality Daughter
+    6015: 'https://www.tiktok.com/@sanantoniofoodie/video/7260157264592686382',  // Sangria on the Burg
+    6016: 'https://www.tiktok.com/@treyschowdown/video/7233763557370793258',  // 2Bros BBQ Market
+    6017: 'https://www.tiktok.com/@fiestybtclassy/video/7227068712489176363',  // Biga on the Banks
+    6018: 'https://www.tiktok.com/@sanantoniofoodie/video/7436866348036181278',  // Bliss
+    6019: 'https://www.tiktok.com/@moysayzeats/video/7069573184374197547',  // Dough Pizzeria Napoletana
+    6021: 'https://www.tiktok.com/@1blessedjourney/video/7218014232598662442',  // Silo Elevated Cuisine
+    6023: 'https://www.tiktok.com/@historicpearl/video/7151892557478481198',  // Supper at Hotel Emma
+    6025: 'https://www.tiktok.com/@satxhealthyfoodie/video/7229720582470880554',  // Paloma Blanca
+    6029: 'https://www.tiktok.com/@sanantoniofoodie/video/7408686635036052779',  // Curry Boys BBQ
+    6031: 'https://www.tiktok.com/@sanantoniofoodie/video/7198273504972934446',  // Rosario's Mexican Cafe y Cantina
+    6032: 'https://www.tiktok.com/@thefoodiewithabooty/video/7467760878293650731',  // Southerleigh Haute South
+    6033: 'https://www.tiktok.com/@faithroberts210/video/7286273383560482090',  // Ocho at Hotel Havana
+    6034: 'https://www.tiktok.com/@california_texan/video/7447378012053703982',  // Sternewirth at Hotel Emma
+    6035: 'https://www.tiktok.com/@lonestarlatina/video/7496312468378012974',  // Two Bros BBQ Market
+    6037: 'https://www.tiktok.com/@sanantoniofoodie/video/7462530623144643886',  // Toro Kitchen + Bar
+    6038: 'https://www.tiktok.com/@lapanaderia1/video/7472799839328259371',  // La Panaderia
+    6041: 'https://www.tiktok.com/@leslieemzz/video/7340683828475759903',  // Burgerteca
+    6044: 'https://www.tiktok.com/@sanantoniofoodie/video/7484365138674388255',  // Carnitas Lonja
+    6050: 'https://www.tiktok.com/@thetacotackler/video/7302446295527050538',  // Garcia's Mexican Food
+    6052: 'https://www.tiktok.com/@visitsanantonio/video/7283722025300921631',  // Boudro's on the Riverwalk
+    6064: 'https://www.tiktok.com/@hbic_favfinds/video/7544492232787742007',  // Cured at Pearl
+    6065: 'https://www.tiktok.com/@chefkelsey/video/7155532561433906475',  // Boiler House Texas Grill & Wine Garden
+    6067: 'https://www.tiktok.com/@satxhealthyfoodie/video/7248636255037115694',  // Down on Grayson at Pearl
+    6068: 'https://www.tiktok.com/@sanantoniofoodie/video/7273925151912250667',  // Cappy's Restaurant
+    6069: 'https://www.tiktok.com/@sanantoniofoodie/video/6905059432690928901',  // Paloma Blanca Mexican Cuisine
+    6074: 'https://www.tiktok.com/@eldereats/video/7211289209586404650',  // Sam's Burger Joint
+    6077: 'https://www.tiktok.com/@loulous.cocina/video/7147455255112895790',  // Magnolia Pancake Haus
+    6079: 'https://www.tiktok.com/@nayahnatre/video/7248417345402768686',  // La Fogata
+    6080: 'https://www.tiktok.com/@robbyctv/video/6960065274028494085',  // The County Line BBQ
+    6082: 'https://www.tiktok.com/@sanantoniofoodie/video/7382644470673575211',  // Aldaco's Mexican Cuisine
+    6084: 'https://www.tiktok.com/@sanantoniofoodie/video/7094754539345120558',  // Dashi Sichuan Kitchen + Bar
+    6085: 'https://www.tiktok.com/@satexasfoodies/video/7194610064957721899',  // Piatti Ristorante & Bar
+  },
   HOUSTON: {
     7001: 'https://www.tiktok.com/@highspeeddining/video/7370296410148703531',  // March
     7002: 'https://www.tiktok.com/@jesus.aguilar.12/video/7630168752159526158',  // Tatemó
