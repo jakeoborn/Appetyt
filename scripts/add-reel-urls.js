@@ -197,7 +197,6 @@ let totalAdded = 0, totalSkipped = 0, totalNotFound = 0;
 for (const [cityKey, reelUrls] of Object.entries(cityReels)) {
   let cityAdded = 0;
   for (const [id, url] of Object.entries(reelUrls)) {
-    // Re-compute bounds each iteration since insertions shift offsets
     const bounds = getCityBounds(cityKey);
     if (!bounds) { console.warn(`${cityKey}: array not found`); break; }
 
@@ -208,14 +207,32 @@ for (const [cityKey, reelUrls] of Object.entries(cityReels)) {
       const idx = content.indexOf(needle, pos);
       if (idx === -1 || idx > bounds.end) break;
       found = true;
-      if (content.slice(idx, idx + 600).includes('"reelUrl"')) {
-        totalSkipped++;
+      const win = content.slice(idx, idx + 1000);
+
+      // Already has this exact URL — skip
+      if (win.includes(url)) { totalSkipped++; break; }
+
+      // Has reels array — append before closing ]
+      const reelsStart = win.indexOf('"reels":[');
+      if (reelsStart !== -1) {
+        const absStart = idx + reelsStart + '"reels":['.length;
+        // Find the closing ] of this array
+        let depth2 = 1, j = absStart;
+        while (j < content.length && depth2 > 0) {
+          if (content[j] === '[') depth2++;
+          else if (content[j] === ']') depth2--;
+          j++;
+        }
+        const closeIdx = j - 1; // position of ]
+        content = content.slice(0, closeIdx) + `,"${url}"` + content.slice(closeIdx);
+        cityAdded++; totalAdded++;
         break;
       }
+
+      // No reels field yet — insert new array
       const insertAt = idx + needle.length;
-      content = content.slice(0, insertAt) + `"reelUrl":"${url}",` + content.slice(insertAt);
-      cityAdded++;
-      totalAdded++;
+      content = content.slice(0, insertAt) + `"reels":["${url}"],` + content.slice(insertAt);
+      cityAdded++; totalAdded++;
       break;
     }
     if (!found) {
