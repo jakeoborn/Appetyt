@@ -150,6 +150,31 @@ const cityReels = {
     2072: 'https://www.youtube.com/shorts/ZBTj9lzFDu0',  // Lielle LA
     2027: 'https://www.youtube.com/shorts/LxCuQqa9NiI',  // Sushi Park LA
   },
+  AUSTIN: {
+    5001: 'https://www.youtube.com/shorts/HkQK6qi9HM0',  // Franklin Barbecue
+    5004: 'https://www.youtube.com/shorts/APgLCoKRBqw',  // Odd Duck
+    5008: 'https://www.youtube.com/shorts/8lJDuX0lW5Y',  // la Barbecue
+    5011: 'https://www.youtube.com/shorts/gbctFkkvttU',  // Nixta Taqueria
+    5013: 'https://www.youtube.com/shorts/dM9fASYuynE',  // Kemuri Tatsu-ya
+    5018: 'https://www.youtube.com/shorts/0OphI1lAAKk',  // Valentina's Tex Mex BBQ
+    5022: 'https://www.youtube.com/shorts/9gMfIdAQdU0',  // Hestia
+    5026: 'https://www.youtube.com/shorts/FdVwXoXNqBc',  // Barley Swine
+    5032: 'https://www.youtube.com/shorts/XuWmL9IJZ-Y',  // Craft Omakase
+    5033: 'https://www.youtube.com/shorts/Jnt14J2upQ8',  // InterStellar BBQ
+    5035: 'https://www.youtube.com/shorts/XXWqNwBhKNk',  // Canje
+    5038: 'https://www.youtube.com/shorts/EfEW8pOmMyk',  // Red Ash
+    5039: 'https://www.youtube.com/shorts/ES8Ys_4mBb0',  // Veracruz All Natural
+    5044: 'https://www.youtube.com/shorts/g1wdU1X_zeA',  // Parish Barbecue
+    5056: 'https://www.youtube.com/shorts/xscqYu2UULg',  // LeRoy and Lewis Barbecue
+    5057: 'https://www.youtube.com/shorts/jviyWQiW8DU',  // Distant Relatives
+    5059: 'https://www.youtube.com/shorts/-i9LnIVhd90',  // Midnight Cowboy
+    5064: 'https://www.youtube.com/shorts/SSPO07XaCiM',  // Jester King Brewery
+    5087: 'https://www.youtube.com/shorts/dimBG2gEZhg',  // Stiles Switch BBQ
+    5094: 'https://www.youtube.com/shorts/bPAWzmfYEPE',  // Foreign & Domestic
+    5162: 'https://www.youtube.com/shorts/n-nwJJuaLI8',  // Black's Barbecue
+    5163: 'https://www.youtube.com/shorts/DBX8eUUKzfY',  // Kreuz Market
+    5465: 'https://www.youtube.com/shorts/LTI8aTw6xBU',  // Este
+  },
 };
 
 // Find the byte range of a city's data array in the file
