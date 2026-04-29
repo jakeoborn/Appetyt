@@ -120,6 +120,36 @@ const cityReels = {
     255:   'https://www.youtube.com/shorts/17CRUddI8SM',  // Pizz'Amici
     12538: 'https://www.youtube.com/shorts/ZenrJ91vO_8',  // Ever
   },
+  LA: {
+    2003: 'https://www.youtube.com/shorts/0Cbz5E_0EQk',  // n/naka
+    2004: 'https://www.youtube.com/shorts/5_b9Hf9wUdc',  // Providence LA
+    2127: 'https://www.youtube.com/shorts/CvXJa8SJAig',  // Somni
+    2128: 'https://www.youtube.com/shorts/H6zph1Aw98U',  // Hayato LA
+    2006: 'https://www.youtube.com/shorts/LyrzTUrtGVo',  // Spago Beverly Hills
+    2026: 'https://www.youtube.com/shorts/8_RNs-3d23E',  // Osteria Mozza
+    2051: 'https://www.youtube.com/shorts/zXNZvH7w4pk',  // Restaurant Ki
+    2129: 'https://www.youtube.com/shorts/6-MtRw_h9lY',  // Mélisse
+    2132: 'https://www.youtube.com/shorts/s_OgN_RSKp0',  // Sushi Kaneyoshi
+    2056: 'https://www.youtube.com/shorts/dypht2LOSds',  // Holbox LA
+    2130: 'https://www.youtube.com/shorts/9PnUDRahqyM',  // Vespertine
+    2134: 'https://www.youtube.com/shorts/rdU4aWg2EBw',  // Kato Restaurant LA
+    2364: 'https://www.youtube.com/shorts/yz0JS2TF5lQ',  // CUT by Wolfgang Puck
+    2474: 'https://www.youtube.com/shorts/cRh9b_hswjs',  // Matsuhisa Beverly Hills
+    2534: 'https://www.youtube.com/shorts/H1wCP3NgYWc',  // Mírate
+    2033: 'https://www.youtube.com/shorts/MGkX2sc2EmE',  // Anajak Thai Cuisine
+    2088: 'https://www.youtube.com/shorts/LMaClbk9JMY',  // Chi Spacca
+    2089: 'https://www.youtube.com/shorts/wqPWuvllPKE',  // Camphor LA
+    2247: 'https://www.youtube.com/shorts/tJbogHt74yU',  // Langer's Delicatessen
+    2341: 'https://www.youtube.com/shorts/_NF9IdlWAd8',  // Funke LA
+    2360: 'https://www.youtube.com/shorts/_ds8LINEokQ',  // Mother Wolf LA
+    2005: 'https://www.youtube.com/shorts/ByAJN1mJBsA',  // Republique LA
+    2025: 'https://www.youtube.com/shorts/GNciKxF9GDc',  // Majordomo LA
+    2030: 'https://www.youtube.com/shorts/r9R05dJ8Y8Y',  // Horses LA
+    2224: 'https://www.youtube.com/shorts/A-l9ONJXogs',  // Jitlada Restaurant
+    2337: 'https://www.youtube.com/shorts/vvOuOANsQOQ',  // Howlin' Ray's Pasadena
+    2072: 'https://www.youtube.com/shorts/ZBTj9lzFDu0',  // Lielle LA
+    2027: 'https://www.youtube.com/shorts/LxCuQqa9NiI',  // Sushi Park LA
+  },
 };
 
 // Find the byte range of a city's data array in the file
