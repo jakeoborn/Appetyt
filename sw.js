@@ -1,4 +1,4 @@
-var CACHE_VERSION = 'dimhour-v1';
+var CACHE_VERSION = 'dimhour-v2';
 var STATIC_CACHE = CACHE_VERSION + '-static';
 var DYNAMIC_CACHE = CACHE_VERSION + '-dynamic';
 
