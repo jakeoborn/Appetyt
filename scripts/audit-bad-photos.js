@@ -23,11 +23,15 @@ const REPORT_JSON = path.join(ROOT, 'scripts', 'data', 'bad-photo-audit.json');
 
 const html = fs.readFileSync(HTML_PATH, 'utf8');
 
-const SECTIONS = [
-  'SLC_DATA', 'SEATTLE_DATA', 'DALLAS_DATA', 'NYC_DATA', 'LA_DATA',
-  'AUSTIN_DATA', 'HOUSTON_DATA', 'CHICAGO_DATA', 'MIAMI_DATA',
-  'CHARLOTTE_DATA', 'LV_DATA',
-];
+// Dynamic discovery — every `const <NAME>_DATA = [` declaration in index.html.
+// Was hardcoded; missing SF/PHX/SD/SANANTONIO until 2026-04-26.
+const SECTIONS = (() => {
+  const re = /const\s+([A-Z][A-Z0-9_]*_DATA)\s*=\s*\[/g;
+  const found = new Set();
+  let m;
+  while ((m = re.exec(html)) !== null) found.add(m[1]);
+  return [...found];
+})();
 
 const findArrayBounds = (sectionName) => {
   const declStart = html.indexOf('const ' + sectionName);

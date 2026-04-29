@@ -7,10 +7,10 @@ _Last updated: 2026-04-27. Update this file at the end of every session._
 ## 🔴 CRITICAL (do before anything else)
 
 ### SEO — bundle as one PR (all touch the page-build script)
-- [ ] **Strip `aggregateRating` from all per-page schema** — misuse of internal score = Google manual-action risk + rich-results suppression. Either remove entirely or re-frame as `Review` with `Author = Dim Hour`. Find via `grep -lr "aggregateRating" scripts/`
-- [ ] **Regenerate stale pages + add Miami / Charlotte / SF** — sitemap lastmod = 2026-04-17; counts wrong sitewide ("665 Dallas" but data has 727); `/miami/`, `/charlotte/`, `/san-francisco/` all return 404
-- [ ] **Replace logo `og:image` with per-page hero photo** — every page emits `/icons/icon-512.png`. Fix at build time: use #1 ranked venue's `photoUrl`; skip if empty
-- [ ] **Regenerate or remove stale `noscript` block in root `index.html`** — hard-codes contradictory top-10 lists per city for bots (e.g. Mamani listed as "Modern Mexican, West Village" vs correct "French / Riviera, Uptown")
+- [x] **Strip `aggregateRating` from all per-page schema** — misuse of internal score = Google manual-action risk + rich-results suppression. Either remove entirely or re-frame as `Review` with `Author = Dim Hour`. Find via `grep -lr "aggregateRating" scripts/`
+- [x] **Regenerate stale pages + add Miami / Charlotte / SF** — sitemap lastmod = 2026-04-17; counts wrong sitewide ("665 Dallas" but data has 727); `/miami/`, `/charlotte/`, `/san-francisco/` all return 404
+- [x] **Replace logo `og:image` with per-page hero photo** — every page emits `/icons/icon-512.png`. Fix at build time: use #1 ranked venue's `photoUrl`; skip if empty
+- [x] **Regenerate or remove stale `noscript` block in root `index.html`** — hard-codes contradictory top-10 lists per city for bots (e.g. Mamani listed as "Modern Mexican, West Village" vs correct "French / Riviera, Uptown")
 
 ---
 
@@ -67,7 +67,7 @@ _Last updated: 2026-04-27. Update this file at the end of every session._
   Decide: pilot on new cards first vs. one-shot recompute across all cities
 
 ### SEO Extension (after critical SEO items land)
-- [ ] **Rewrite title/description templates** per voice rules in `.agents/product-marketing-context.md` — fix title casing, drop generic SEO-speak, remove false "Updated weekly" claim
+- [x] **Rewrite title/description templates** per voice rules in `.agents/product-marketing-context.md` — fix title casing, drop generic SEO-speak, remove false "Updated weekly" claim
 - [ ] **Neighborhood pages** — `/{city}/{neighborhood}/` (~150 pages across 12 cities × ~12 neighborhoods). Data already in `CITY_NEIGHBORHOODS` dicts. Use `programmatic-seo` skill
 - [ ] **Indicator pages** — `/{city}/{indicator}/` — 12 × 10 = 120 pages, all high-intent ("halal restaurants in nyc"). Indicators already on every card
 - [ ] **Extend cuisine breadth** — add korean, vietnamese, ramen, indian, thai, vegan, pizza, tacos, seafood, dessert, coffee to the build script's cuisine dict

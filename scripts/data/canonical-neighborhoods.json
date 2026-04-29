@@ -642,7 +642,7 @@
   "Salt Lake City": [
     {
       "name": "Downtown SLC",
-      "count": 167
+      "count": 168
     },
     {
       "name": "Sugar House",
@@ -650,7 +650,7 @@
     },
     {
       "name": "Park City",
-      "count": 42
+      "count": 45
     },
     {
       "name": "Provo",
@@ -681,6 +681,10 @@
       "count": 12
     },
     {
+      "name": "Central City",
+      "count": 12
+    },
+    {
       "name": "Cottonwood Heights",
       "count": 12
     },
@@ -690,10 +694,6 @@
     },
     {
       "name": "Granary District",
-      "count": 11
-    },
-    {
-      "name": "Central City",
       "count": 11
     },
     {
@@ -1054,7 +1054,7 @@
     },
     {
       "name": "Eastlake",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Magnolia",
@@ -1143,12 +1143,12 @@
       "count": 67
     },
     {
-      "name": "West Village",
-      "count": 58
+      "name": "Flatiron / NoMad",
+      "count": 59
     },
     {
-      "name": "Flatiron / NoMad",
-      "count": 57
+      "name": "West Village",
+      "count": 59
     },
     {
       "name": "Lower East Side",
@@ -1156,19 +1156,19 @@
     },
     {
       "name": "Midtown",
-      "count": 48
+      "count": 49
     },
     {
       "name": "SoHo",
-      "count": 43
-    },
-    {
-      "name": "Greenwich Village",
-      "count": 40
+      "count": 44
     },
     {
       "name": "Midtown East",
-      "count": 40
+      "count": 42
+    },
+    {
+      "name": "Greenwich Village",
+      "count": 41
     },
     {
       "name": "Chinatown",
@@ -1192,11 +1192,11 @@
     },
     {
       "name": "Financial District",
-      "count": 23
+      "count": 24
     },
     {
       "name": "Midtown West",
-      "count": 22
+      "count": 23
     },
     {
       "name": "Harlem",
@@ -1216,7 +1216,7 @@
     },
     {
       "name": "Tribeca",
-      "count": 18
+      "count": 19
     },
     {
       "name": "Bushwick",
@@ -1243,11 +1243,11 @@
       "count": 11
     },
     {
-      "name": "Fort Greene / Clinton Hill",
-      "count": 10
+      "name": "Meatpacking District",
+      "count": 11
     },
     {
-      "name": "Meatpacking District",
+      "name": "Fort Greene / Clinton Hill",
       "count": 10
     },
     {
@@ -1275,6 +1275,10 @@
       "count": 7
     },
     {
+      "name": "Flatiron",
+      "count": 6
+    },
+    {
       "name": "Flushing",
       "count": 5
     },
@@ -1291,15 +1295,11 @@
       "count": 4
     },
     {
-      "name": "Flatiron",
+      "name": "Gramercy",
       "count": 4
     },
     {
       "name": "Queens",
-      "count": 3
-    },
-    {
-      "name": "Gramercy",
       "count": 3
     },
     {
@@ -1374,7 +1374,7 @@
     },
     {
       "name": "Arts District",
-      "count": 20
+      "count": 21
     },
     {
       "name": "Pasadena",
@@ -1382,7 +1382,7 @@
     },
     {
       "name": "Venice",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Chinatown",
@@ -1393,15 +1393,15 @@
       "count": 9
     },
     {
+      "name": "East Hollywood",
+      "count": 9
+    },
+    {
       "name": "Alhambra",
       "count": 9
     },
     {
       "name": "Thai Town",
-      "count": 8
-    },
-    {
-      "name": "East Hollywood",
       "count": 8
     },
     {
@@ -1457,6 +1457,10 @@
       "count": 4
     },
     {
+      "name": "Little Tokyo",
+      "count": 4
+    },
+    {
       "name": "West LA",
       "count": 3
     },
@@ -1474,10 +1478,6 @@
     },
     {
       "name": "Mid-City",
-      "count": 3
-    },
-    {
-      "name": "Little Tokyo",
       "count": 3
     },
     {
@@ -1525,6 +1525,10 @@
       "count": 2
     },
     {
+      "name": "Pico-Robertson",
+      "count": 2
+    },
+    {
       "name": "Arcadia",
       "count": 2
     },
@@ -1562,10 +1566,6 @@
     },
     {
       "name": "Hermosa Beach",
-      "count": 1
-    },
-    {
-      "name": "Pico-Robertson",
       "count": 1
     },
     {
@@ -1682,6 +1682,18 @@
     },
     {
       "name": "Calabasas",
+      "count": 1
+    },
+    {
+      "name": "Boyle Heights",
+      "count": 1
+    },
+    {
+      "name": "Little Armenia",
+      "count": 1
+    },
+    {
+      "name": "Westchester",
       "count": 1
     }
   ],
@@ -2116,39 +2128,39 @@
   "Miami": [
     {
       "name": "South Beach",
-      "count": 47
+      "count": 51
     },
     {
       "name": "Wynwood",
-      "count": 37
+      "count": 39
     },
     {
       "name": "Coral Gables",
-      "count": 23
+      "count": 24
     },
     {
       "name": "Brickell",
-      "count": 20
-    },
-    {
-      "name": "Coconut Grove",
-      "count": 12
-    },
-    {
-      "name": "Little Havana",
-      "count": 11
+      "count": 21
     },
     {
       "name": "Design District",
-      "count": 11
+      "count": 15
+    },
+    {
+      "name": "Coconut Grove",
+      "count": 15
+    },
+    {
+      "name": "Little Havana",
+      "count": 12
     },
     {
       "name": "Downtown Miami",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Little River",
-      "count": 9
+      "count": 11
     },
     {
       "name": "Mid-Beach",
@@ -2164,14 +2176,14 @@
     },
     {
       "name": "Mid Beach",
+      "count": 5
+    },
+    {
+      "name": "Buena Vista",
       "count": 4
     },
     {
       "name": "Surfside",
-      "count": 3
-    },
-    {
-      "name": "Buena Vista",
       "count": 3
     },
     {
@@ -2282,7 +2294,7 @@
     },
     {
       "name": "Uptown",
-      "count": 41
+      "count": 42
     },
     {
       "name": "NoDa",
@@ -2506,22 +2518,54 @@
   "San Francisco": [
     {
       "name": "Mission",
-      "count": 16
-    },
-    {
-      "name": "Jackson Square",
-      "count": 6
-    },
-    {
-      "name": "North Beach",
-      "count": 6
-    },
-    {
-      "name": "Embarcadero",
-      "count": 5
+      "count": 25
     },
     {
       "name": "SoMa",
+      "count": 13
+    },
+    {
+      "name": "North Beach",
+      "count": 9
+    },
+    {
+      "name": "Jackson Square",
+      "count": 8
+    },
+    {
+      "name": "Inner Richmond",
+      "count": 8
+    },
+    {
+      "name": "Embarcadero",
+      "count": 7
+    },
+    {
+      "name": "Castro",
+      "count": 7
+    },
+    {
+      "name": "Cow Hollow",
+      "count": 7
+    },
+    {
+      "name": "Financial District",
+      "count": 6
+    },
+    {
+      "name": "Marina",
+      "count": 6
+    },
+    {
+      "name": "Pacific Heights",
+      "count": 5
+    },
+    {
+      "name": "Hayes Valley",
+      "count": 5
+    },
+    {
+      "name": "NoPa",
       "count": 4
     },
     {
@@ -2529,23 +2573,39 @@
       "count": 3
     },
     {
-      "name": "Marina",
+      "name": "Mid-Market",
       "count": 3
     },
     {
-      "name": "Pacific Heights",
-      "count": 2
-    },
-    {
-      "name": "Financial District",
-      "count": 2
-    },
-    {
-      "name": "Mid-Market",
-      "count": 2
-    },
-    {
       "name": "Union Square",
+      "count": 3
+    },
+    {
+      "name": "Haight-Ashbury",
+      "count": 3
+    },
+    {
+      "name": "Tenderloin",
+      "count": 3
+    },
+    {
+      "name": "Chinatown",
+      "count": 3
+    },
+    {
+      "name": "Fillmore",
+      "count": 3
+    },
+    {
+      "name": "Noe Valley",
+      "count": 3
+    },
+    {
+      "name": "Presidio Heights",
+      "count": 2
+    },
+    {
+      "name": "Japantown",
       "count": 2
     },
     {
@@ -2553,23 +2613,43 @@
       "count": 2
     },
     {
-      "name": "Chinatown",
+      "name": "Nob Hill",
       "count": 2
     },
     {
-      "name": "NoPa",
-      "count": 1
+      "name": "Fisherman's Wharf",
+      "count": 2
     },
     {
-      "name": "Presidio Heights",
-      "count": 1
+      "name": "Russian Hill",
+      "count": 2
+    },
+    {
+      "name": "Fort Mason",
+      "count": 2
+    },
+    {
+      "name": "Polk Gulch",
+      "count": 2
+    },
+    {
+      "name": "Outer Sunset",
+      "count": 2
+    },
+    {
+      "name": "Potrero Hill",
+      "count": 2
+    },
+    {
+      "name": "Inner Sunset",
+      "count": 2
+    },
+    {
+      "name": "Outer Richmond",
+      "count": 2
     },
     {
       "name": "Presidio",
-      "count": 1
-    },
-    {
-      "name": "Japantown",
       "count": 1
     },
     {
@@ -2577,15 +2657,7 @@
       "count": 1
     },
     {
-      "name": "Inner Richmond",
-      "count": 1
-    },
-    {
       "name": "Laurel Heights",
-      "count": 1
-    },
-    {
-      "name": "Haight-Ashbury",
       "count": 1
     },
     {
@@ -2593,27 +2665,7 @@
       "count": 1
     },
     {
-      "name": "Hayes Valley",
-      "count": 1
-    },
-    {
-      "name": "Tenderloin",
-      "count": 1
-    },
-    {
       "name": "FiDi",
-      "count": 1
-    },
-    {
-      "name": "Nob Hill",
-      "count": 1
-    },
-    {
-      "name": "Fisherman's Wharf",
-      "count": 1
-    },
-    {
-      "name": "Castro",
       "count": 1
     },
     {
@@ -2621,11 +2673,11 @@
       "count": 1
     },
     {
-      "name": "Russian Hill",
+      "name": "Bernal Heights",
       "count": 1
     },
     {
-      "name": "Fort Mason",
+      "name": "Cole Valley",
       "count": 1
     }
   ]

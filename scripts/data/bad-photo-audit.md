@@ -1,27 +1,31 @@
 # Bad Photo Audit
 
-Run: 2026-04-24 03:52:51
-Total cards scanned: 5743
+Run: 2026-04-26 15:36:03
+Total cards scanned: 7184
 
 ## Summary by city
 
 | City | BAD | SUSPECT | OK |
 |---|---:|---:|---:|
-| AUSTIN | 60 | 304 | 161 |
-| CHARLOTTE | 253 | 0 | 0 |
-| CHICAGO | 47 | 368 | 146 |
-| DALLAS | 147 | 272 | 281 |
-| HOUSTON | 61 | 347 | 133 |
-| LA | 125 | 327 | 74 |
-| LV | 118 | 200 | 200 |
-| MIAMI | 113 | 0 | 1 |
-| NYC | 64 | 572 | 319 |
-| SEATTLE | 52 | 318 | 154 |
-| SLC | 201 | 179 | 146 |
-| **TOTAL** | **1241** | **2887** | **1615** |
+| AUSTIN | 60 | 302 | 173 |
+| CHARLOTTE | 217 | 1 | 35 |
+| CHICAGO | 41 | 367 | 153 |
+| DALLAS | 170 | 270 | 285 |
+| HOUSTON | 81 | 346 | 147 |
+| LA | 127 | 327 | 79 |
+| LV | 110 | 199 | 209 |
+| MIAMI | 234 | 0 | 16 |
+| NYC | 69 | 570 | 316 |
+| PHX | 200 | 229 | 81 |
+| SANANTONIO | 55 | 18 | 9 |
+| SD | 236 | 261 | 25 |
+| SEATTLE | 50 | 317 | 157 |
+| SF | 41 | 0 | 32 |
+| SLC | 228 | 180 | 161 |
+| **TOTAL** | **1919** | **3387** | **1878** |
 
 
-## AUSTIN — 364 flagged
+## AUSTIN — 362 flagged
 
 | Severity | id | Name | Neighborhood | Reason | URL |
 |---|---|---|---|---|---|
@@ -30,13 +34,14 @@ Total cards scanned: 5743
 | BAD | 5085 | Lady Bird Lake | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5092 | Pieous | South Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5116 | Hotel San José | South Congress | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 5141 | Amy's Ice Creams | South Congress | default.* image | https://amysicecreams.com/wp-content/uploads/2024/03/amys-social-share-default.p… |
+| BAD | 5141 | Amy's Ice Creams | South Congress | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5164 | Smitty's Market | Lockhart | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5224 | The Hideaway on Lake Travis | West Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5232 | ACL Live at The Moody Theater | Downtown | default-image placeholder | https://www.acllive.com/assets/img/default_image-ba94b67b47.jpg |
 | BAD | 5316 | Gus's Fried Chicken | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5319 | Whistler's | East Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5326 | Austin's Pizza | North Loop | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5341 | Loro Bee Caves | West Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5349 | Cru Wine Bar | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5371 | Loro West Lake | West Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5375 | Loro Westlake | West Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -46,6 +51,7 @@ Total cards scanned: 5743
 | BAD | 5394 | Loro South Park Meadows | South Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5399 | Loro Anderson | North Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5402 | Thai Kitchen | North Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5419 | Taqueria de Diez | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5421 | June's All Day | South Congress | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5422 | Loro Round Rock | North Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5446 | Loro Cedar Park | North Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -60,13 +66,7 @@ Total cards scanned: 5743
 | BAD | 5597 | Pool Burger | West Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5598 | Bar Peached | West Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5599 | Sammie's | East Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 5600 | Swedish Hill | Hyde Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5602 | Firehouse Lounge | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 5603 | Russian House | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 5604 | Iron Works BBQ | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 5605 | The Roaring Fork | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 5606 | Wu Chow | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 5607 | Yellow Jacket Social Club | East Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5608 | Hi-Hat Public House | East Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5609 | Tigers Luck | East Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5610 | Craftsman | East Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -75,9 +75,7 @@ Total cards scanned: 5743
 | BAD | 5613 | Circle Brewing Co. | North Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5614 | 4th Tap Brewing Co-op | North Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5615 | Adelbert's Brewery | North Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 5616 | Still Austin Whiskey Co. | South Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5617 | The Brewer's Table | East Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 5618 | Curra's Grill | South Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5619 | Maudie's Tex-Mex | Clarksville | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5620 | Old Thousand | East Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5621 | Sushi|Bar ATX | East Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -85,6 +83,12 @@ Total cards scanned: 5743
 | BAD | 5623 | Hotel Magdalena — Summer House | South Congress | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5624 | Hotel Saint Cecilia | South Austin | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 5625 | Uncle Nicky's Italian Specialties | Hyde Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5629 | Salt Lick BBQ (Round Rock) | Round Rock | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5631 | Finley's Round Rock | Round Rock | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5632 | COVER 3 (Round Rock) | Round Rock | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5633 | Q Bola Cuban Restaurant & Bar | Round Rock | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5634 | Nikala | Round Rock | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5635 | The Rustic Table | Round Rock | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | SUSPECT | 5006 | Suerte | East Austin | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFiQfWSGy8ng3I6kWIo3m2mPje3tGrFf… |
 | SUSPECT | 5007 | Emmer & Rye | Rainey Street | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPmxF0j3QM53zZCfvoj9do3Nbi15FpoQpW417cr… |
 | SUSPECT | 5011 | Nixta Taqueria | East Austin | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMAQxnv24CnU2c3iQEQCZF3cx6zHYeN7KSke3A0… |
@@ -263,7 +267,6 @@ Total cards scanned: 5743
 | SUSPECT | 5338 | Laala's | South Austin | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNRb77Pj21FMzi8-qX-Q7HjuHcncvlULB-S4oKs… |
 | SUSPECT | 5339 | Cane Rosso | East Austin | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFk47ny2HXvvj4zSzHobVGzB-HFoTq0x… |
 | SUSPECT | 5340 | Thai-Kun North Lamar | North Lamar | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP-zYPWvfUumtE6Enc1tiDkot2Op1-clE9tVfw_… |
-| SUSPECT | 5341 | Loro Bee Caves | West Austin | og:image meta tag asset | https://www.loroeats.com/wp-content/uploads/2023/03/loro-og-image.png |
 | SUSPECT | 5342 | Eastside Tavern | East Austin | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNNQ4ChgEGZ_54yELO2IuwK5LwoPXIH9oSGAWv3… |
 | SUSPECT | 5343 | Contigo | East Austin | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPt8JNHTcjOQ80a5XRzcRfgmnwT9d4DKTiBo_XK… |
 | SUSPECT | 5344 | Hillside Farmacy | East Austin | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEg6S9njvmQdXeLzevDEjo24_LlmlYdW… |
@@ -311,7 +314,6 @@ Total cards scanned: 5743
 | SUSPECT | 5413 | Blue Apsara | South Lamar | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPpxg9Y7FwHBzz0ezIHRu_m5WrAtBG9EyJjjKI=… |
 | SUSPECT | 5414 | Churchrow Tejas BBQ | North Loop | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPfuqkIywrF-OkLxcKtj6ix4iRCZwCBzCyKah5R… |
 | SUSPECT | 5416 | Moderna Bar & Pizzeria | Downtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOqw2c4thJVUmZSt0yyVCx79wEXBXSXzPW9x3Ij… |
-| SUSPECT | 5419 | Taqueria de Diez | Downtown | og:image meta tag asset | https://taqueriadediez.com/images/og-image.jpg |
 | SUSPECT | 5420 | Leona Botanical Cafe & Bar | South Austin | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMZvttMRjxqanJy3S7EpjpVA_BzeGeYCUSd9MP5… |
 | SUSPECT | 5424 | Licha's Cantina | East Austin | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN7yvxcuUFRdu1Ywj3k3iajEYEfAovrzyN4aebL… |
 | SUSPECT | 5428 | Desnudo South Lamar | South Lamar | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMs1NHBvX1Wl0Ii4PZtCRuO2NFOj6kyH4kMyvyE… |
@@ -390,17 +392,15 @@ Total cards scanned: 5743
 | SUSPECT | 5595 | Sweetgreen | South Congress | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMgIwOnI7i7yDNrvOieLthBl-9czJfDmjkCkoMQ… |
 | SUSPECT | 5596 | CAVA | Downtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNYEQHgJ24_4TgnGL565EP65WsztPiOV_WpZrI7… |
 
-## CHARLOTTE — 253 flagged
+## CHARLOTTE — 218 flagged
 
 | Severity | id | Name | Neighborhood | Reason | URL |
 |---|---|---|---|---|---|
-| BAD | 8001 | Kindred | Davidson | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8002 | Hello, Sailor | Cornelius / Lake Norman | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8003 | Barrington's Restaurant | SouthPark | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8004 | Stanley | Elizabeth | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8005 | Leah & Louise | Camp North End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8006 | Good Food on Montford | SouthEnd / Montford | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8007 | Rooster's Wood-Fired Kitchen | SouthPark | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8008 | The Palm | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8009 | Bulla Gastrobar | SouthPark | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8010 | Haberdish | NoDa | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -409,12 +409,8 @@ Total cards scanned: 5743
 | BAD | 8013 | The Asbury | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8014 | Haymaker | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8015 | Yamazuru | Plaza Midwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8016 | Midwood Smokehouse | Plaza Midwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8017 | Bonterra Dining & Wine Room | Dilworth | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8018 | Lang Van | East Charlotte | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8019 | La Belle Helene | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8020 | Dogwood Southern Table & Bar | SouthPark | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8021 | Heirloom Restaurant | Paw Creek | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8022 | Soul Gastrolounge | Plaza Midwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8023 | 300 East | Dilworth | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8024 | Earl's Grocery | Elizabeth | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -425,9 +421,6 @@ Total cards scanned: 5743
 | BAD | 8029 | Mert's Heart & Soul | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8030 | Viva Chicken | Dilworth | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8031 | Original Chicken & Ribs | West Charlotte | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8032 | The Goodyear House | NoDa | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8033 | The Dumpling Lady | Optimist Hall | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8034 | Restaurant Constance | Wesley Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8035 | Bird Pizzeria | Optimist Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8036 | Community Matters Cafe | Fourth Ward | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8037 | Counter- | Wesley Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -435,16 +428,10 @@ Total cards scanned: 5743
 | BAD | 8039 | Customshop | Elizabeth | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8040 | Vicente | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8041 | Stagioni | Myers Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8042 | Rada | Myers Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8043 | Omakase Experience by Primefish | Cotswold | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8044 | L'Ostrica | Myers Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8045 | Little Mama's Italian | SouthPark | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8046 | Jon G's Barbecue | Peachland | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8047 | Seaboy | Cornelius / Lake Norman | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8048 | Vavela Cafe | University Area | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8049 | McHale's Pub | NoDa | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8050 | Surefire Market | Camp North End | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8051 | Eso Artisanal Pasta | Optimist Hall | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8052 | Spaghett | Fourth Ward | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8053 | Painted Rooster | Plaza Midwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8054 | Clark's Snack Bar | Plaza Midwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -454,11 +441,9 @@ Total cards scanned: 5743
 | BAD | 8058 | Sala | Myers Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8059 | Emmy Lou's | Park Road | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8060 | Kudzu Bakery | Park Road | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8061 | Sora | Myers Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8062 | Primefish Cellar | Cotswold | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8063 | Alexander Michael's | Fourth Ward | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8064 | Angeline's | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8065 | Coquette | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8066 | Fin & Fino | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8067 | Mariposa | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8068 | Sea Level NC | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -473,15 +458,10 @@ Total cards scanned: 5743
 | BAD | 8077 | Noche Bruta | Camp North End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8078 | Calle Sol | Plaza Midwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8079 | Dish | Plaza Midwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8080 | Peppervine | SouthPark | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8081 | Steak 48 | SouthPark | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8082 | Beef 'N Bottle Steakhouse | Collingwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8083 | Aqua e Vino | Cotswold | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8084 | Dilworth Tasting Room | Dilworth | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8085 | El Puro Cuban Restaurant | Madison Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8086 | Hestia Rooftop | Ballantyne | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8087 | Lam's Kitchen | Matthews | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8088 | Sanctuary Bistro | Ballantyne | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8089 | Epic Chophouse | Mooresville | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8090 | The Bottle Tree | Belmont | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8091 | Idlewild | NoDa | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -494,7 +474,6 @@ Total cards scanned: 5743
 | BAD | 8098 | Moosehead Grill | Montford | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8099 | Sophia's Lounge | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8100 | Fahrenheit | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8101 | Middle C Jazz | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8102 | The Cellar at Duckworth's | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8103 | Aura Rooftop | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8104 | Cloud Bar by David Burke | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -516,7 +495,6 @@ Total cards scanned: 5743
 | BAD | 8120 | Superica | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8121 | Charlotte Beer Garden | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8122 | Triple C Brewing Company | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8123 | Wooden Robot Brewery | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8124 | Hi-Wire Brewing | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8125 | PIE.ZAA | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8126 | PARA | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -532,8 +510,6 @@ Total cards scanned: 5743
 | BAD | 8136 | Shake Shack | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8137 | North Italia | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8138 | Velvet Taco | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8139 | Hawkers Asian Street Fare | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8140 | Sixty Vines | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8141 | The Salty Donut | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8142 | Snooze, an A.M. Eatery | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8143 | Flower Child | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -544,7 +520,6 @@ Total cards scanned: 5743
 | BAD | 8148 | Mac's Speed Shop | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8149 | Ruby Sunshine | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8150 | Brooks' Sandwich House | NoDa | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8151 | Cabo Fish Taco | NoDa | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8152 | Amélie's French Bakery — NoDa | NoDa | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8153 | Bardo | NoDa | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8154 | Heist Brewery | NoDa | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -560,16 +535,12 @@ Total cards scanned: 5743
 | BAD | 8165 | King's Kitchen | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8166 | Halcyon, Flavors from the Earth | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8167 | Stoke | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8168 | Rí Rá Irish Pub | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8169 | Connolly's on 5th | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8170 | Café Monte French Bakery & Bistro | Foxcroft | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8171 | Pasta & Provisions | Cotswold | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8172 | Ru San's | Park Road | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8173 | Selwyn Avenue Pub | Myers Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8174 | Pinky's Westside Grill | Wesley Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8175 | The Mayobird | Dilworth | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8176 | Living Kitchen | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8177 | Bossy Beulah's Chicken Shack | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8178 | Hoppin' | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8179 | Yummi Banh Mi | East Charlotte | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8180 | North Harbor Club | Davidson | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -591,9 +562,7 @@ Total cards scanned: 5743
 | BAD | 8196 | Chief's | Cornelius | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8197 | Rosemont | Plaza Midwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8198 | Three Amigos | Concord | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8199 | Harper's Restaurant — SouthPark | SouthPark | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8200 | Mimosa Grill | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8201 | Barcelona Wine Bar | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8202 | Blue Door Pub | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8203 | Brigid's Irish Pub | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8204 | Canopy Cocktail | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -601,7 +570,6 @@ Total cards scanned: 5743
 | BAD | 8206 | Dolce & Amaro | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8207 | Emmy Squared Pizza | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8208 | Golden Cow Creamery | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8209 | Hawthorne's New York Pizza & Bar | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8210 | HopFly Brewing Co. | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8211 | La Capital MX | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8212 | Leroy Fox | South End | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -636,8 +604,6 @@ Total cards scanned: 5743
 | BAD | 8241 | Ink N' Ivy | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8242 | Petra's | Plaza Midwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8243 | Free Range Brewing | NoDa | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8244 | Honeysuckle Gelato | Optimist Hall | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 8245 | Horace's Hot Chicken | NoDa | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8246 | Union Barbecue | South Charlotte | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8247 | The Queen and Glass | Plaza Midwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8248 | Crepe Cellar Kitchen & Pub | NoDa | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -647,14 +613,15 @@ Total cards scanned: 5743
 | BAD | 8252 | Armored Cow Brewery | University City | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8253 | Fontana Di Vino | SouthPark | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 8254 | PopUp Bagels | Ballantyne | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| SUSPECT | 8082 | Beef 'N Bottle Steakhouse | Collingwood | reused on 7 cards (likely placeholder) | https://img1.wsimg.com/isteam/videos/uA41GmyyG8IMaxXdb |
 
-## CHICAGO — 415 flagged
+## CHICAGO — 408 flagged
 
 | Severity | id | Name | Neighborhood | Reason | URL |
 |---|---|---|---|---|---|
+| BAD | 26 | Willis Tower Skydeck | The Loop | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 31 | Millennium Park | The Loop | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 48 | Johnnie's Beef | Elmwood Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 99 | The Warehouse | West Loop / Fulton Market | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 140 | Cafe Marie-Jeanne | Humboldt Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 237 | Lost Larson | Andersonville | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 357 | Cowabunga Pizza Pies | Bridgeport | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -669,28 +636,22 @@ Total cards scanned: 5743
 | BAD | 12572 | Etta | Bucktown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12573 | Cantina Loca | West Loop / Fulton Market | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12574 | Bar Sótano | River North | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12575 | Le Sud | Lincoln Square | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12576 | Bar Marilou | The Loop | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12577 | Lawry's The Prime Rib | River North | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12578 | Brindille | River North | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12579 | Les Nomades | Streeterville | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12580 | NoMI Kitchen | Streeterville | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12581 | NICO Osteria | Gold Coast | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12582 | Bar Biscay | West Loop / Fulton Market | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12583 | Bar Goa | River North | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12584 | The Hampton Social | River North | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12585 | Osteria Langhe | Logan Square | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12586 | Mfk. | Lincoln Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12587 | La Storia | Gold Coast | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12588 | Morton's The Steakhouse (Original) | Gold Coast | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12589 | Pelago | Gold Coast | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12590 | Erie Cafe | River North | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12591 | Sunda New Asian | River North | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12592 | Ramen-San | River North | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12594 | Naoki Sushi | Lincoln Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12595 | Maude's Liquor Bar | West Loop / Fulton Market | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12596 | Rose Angelis | Lincoln Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12597 | Weber Grill Chicago | River North | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12598 | Gold Coast Dogs | The Loop | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 15525 | Portillo's & Barnelli's - River North | River North | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 15526 | Portillo's - Canal & Taylor | Little Italy / University Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -717,7 +678,6 @@ Total cards scanned: 5743
 | SUSPECT | 23 | Pilsen Rooftop | Pilsen | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPpmnqePur9ziIMb4YrfLYHmpftFsEjQ0U-SvBu… |
 | SUSPECT | 24 | Intelligentsia Coffee | The Loop | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOXNi15ZNd1NTgyW2ifwqttnX-VnLvdH3SO1lmH… |
 | SUSPECT | 25 | Cloud Gate (The Bean) | The Loop | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEstKQvYx5BpdeFb8V6fZnL5vFcbRejd… |
-| SUSPECT | 26 | Willis Tower Skydeck | The Loop | og:image meta tag asset | https://theskydeck.com/wp-content/uploads/2024/10/skydeck-og-image.jpg |
 | SUSPECT | 33 | Wrigley Field | Lakeview / Wrigleyville | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFYINZ-LbXs3yOdWH7TgtsyGNnGo_KhN… |
 | SUSPECT | 34 | Chicago Riverwalk | The Loop | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGedJbC-MGHTFhtGVzIeRI267k5xwa4y… |
 | SUSPECT | 36 | Maple & Ash | Gold Coast | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMeRKrnJG1iHbwaYCsG-F_kTEiSTRkEZfvccBIC… |
@@ -833,6 +793,7 @@ Total cards scanned: 5743
 | SUSPECT | 232 | Fat Chris's Pizza & Such | Avondale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNj7MLKJDcxIoF-ftRV9E_s0CweTKA8RU7wlChZ… |
 | SUSPECT | 233 | The Duck Inn | Bridgeport | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOmSDW1hJdDUtTDIPwV1uL1rQONRZDuF8edlWVP… |
 | SUSPECT | 234 | Alla Vita | West Town | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNkem-4evzmgXZf50XktwmLE9ScqxxB1SxRo8dM… |
+| SUSPECT | 235 | Bar Tutto | West Loop / Fulton Market | reused on 7 cards (likely placeholder) | https://img1.wsimg.com/isteam/videos/uA41GmyyG8IMaxXdb |
 | SUSPECT | 238 | Floriole Cafe & Bakery | Lincoln Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPSYuIsgZBT-035R7l9ggi5fPNbxKqSq1yDlrJW… |
 | SUSPECT | 241 | Munno Pizzeria & Bistro | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNhNNj5Q66zM0an1aM0hgT3mVJJz4MCmGxnG-4n… |
 | SUSPECT | 243 | Tango Sur | Lakeview / Wrigleyville | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGF0k5nZi5iwD7Qdy1nTB4hhzqva5uh4… |
@@ -1066,15 +1027,15 @@ Total cards scanned: 5743
 | SUSPECT | 12565 | TAO Chicago | River North | reused on 7 cards (likely placeholder) | https://taogroup.com/wp-content/uploads/2026/04/260300_TAOLA_TAO-MothersDay_Soci… |
 | SUSPECT | 12566 | Shake Shack | River North | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPksiO2khJvM5hOSbHhkqsv6Yikm8GNOslx3_mE… |
 | SUSPECT | 12568 | CAVA | Streeterville | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPrifzqvni8C_Kff7DRtWbgzhgik1PldIrDa2CO… |
-| SUSPECT | 12593 | Gibsons Italia | West Loop / Fulton Market | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOS8-Tu4iENZ8j349cCqH399CFjlQpVRFxcFich… |
 
-## DALLAS — 419 flagged
+## DALLAS — 440 flagged
 
 | Severity | id | Name | Neighborhood | Reason | URL |
 |---|---|---|---|---|---|
 | BAD | 24 | Katy Trail Ice House | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 28 | Las Palmas | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 38 | Adair's | Deep Ellum | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 45 | Loro | East Dallas / Lakewood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 139 | Mābo | Park Cities | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 141 | Kitchen + Kocktails by Kevin Kelley | Downtown Dallas | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 145 | Nikki Greek Bistro & Lounge | Park Cities | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -1117,7 +1078,6 @@ Total cards scanned: 5743
 | BAD | 340 | Milk Cream | Lower Greenville | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 346 | Wingstop | Downtown Dallas | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 347 | Pie Tap Pizza Workshop | Knox-Henderson | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 352 | Fortunate Son | Richardson | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 353 | Lakewood Landing | East Dallas / Lakewood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 359 | Keller's Drive-In | North Dallas | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 364 | Black Tap Craft Burgers & Beer | Victory Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -1133,6 +1093,7 @@ Total cards scanned: 5743
 | BAD | 431 | Shorty's Coneys & Cocktails | McKinney | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 443 | AM/FM | Design District | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 449 | The Old Crow | Lower Greenville | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 452 | Black Swan Saloon | East Dallas / Lakewood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 457 | La Viuda Negra | East Dallas / Lakewood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 463 | Eataly Dallas | North Dallas | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 473 | Whistle Britches | Plano | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -1145,10 +1106,10 @@ Total cards scanned: 5743
 | BAD | 533 | Monkey Bar | Highland Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 540 | Blues Burgers | Forney | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 543 | SILO Dallas | Design District | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 545 | Élephante | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 546 | Clark's Oyster Bar | Knox-Henderson | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 547 | Corsaire | Lower Greenville | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 548 | Molino Olōyō | East Dallas / Lakewood | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 549 | Serritella Prime Italian | East Dallas / Lakewood | logo file | https://images.squarespace-cdn.com/content/v1/68efc4c84248e0110b025abb/efc11f2b-… |
+| BAD | 549 | Serritella Prime Italian | East Dallas / Lakewood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 552 | Brazamar | Lower Greenville | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 553 | Neighborhood Sushi | Highland Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 561 | The Factory in Deep Ellum | Deep Ellum | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -1172,17 +1133,16 @@ Total cards scanned: 5743
 | BAD | 9048 | Lyla | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9054 | The Landing | Arlington / Mid-Cities | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9059 | Dallas Museum of Art | Arts District | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 9062 | AT&T Stadium | Arlington / Mid-Cities | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9092 | Sevy's Grill | Preston Hollow | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9099 | Dodie's Cajun Diner at The Harbor | Rockwall | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9106 | Cotton Patch Cafe (Rockwall) | Rockwall | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9111 | Willhoite's | Grapevine | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9113 | Farina's Winery & Cafe | Grapevine | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 9117 | Rio Lerma Mexican Restaurant | Forney | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9118 | Conti Seafood Eatery | Forney | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9125 | Bonchon | Flower Mound | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9130 | la Madeleine Country French Cafe - Preston Forest | Far North Dallas | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9135 | Gold Spoon | Carrollton | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9137 | Han's Noodles & Dumplings | Carrollton | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9140 | J. Gilligan's Bar & Grill | Arlington / Mid-Cities | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9147 | White Rock Coffee | East Dallas / Lakewood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9148 | Foxtrot | Knox-Henderson | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -1219,6 +1179,29 @@ Total cards scanned: 5743
 | BAD | 9202 | Portillo's | Grapevine | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9203 | Portillo's | Denton | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9204 | Portillo's | Far North Dallas | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9205 | Bojangles | Bedford | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9206 | Bojangles | Celina | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9207 | Bojangles | Euless | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9208 | Bojangles | Fort Worth | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9209 | Bojangles | Frisco | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9210 | Bojangles | Lewisville | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9211 | Bojangles | McKinney | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9212 | Bojangles | Plano | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9213 | Bojangles | Wylie | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9214 | Théa Mediterranean Rooftop | Knox-Henderson | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9215 | Rodeo Cold | Lower Greenville | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9216 | Lochland's | Lake Highlands | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9218 | MoMo Italian Kitchen | Lake Highlands | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9219 | Cane Rosso Lake Highlands | Lake Highlands | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9220 | Mi Cocina (Lake Highlands) | Lake Highlands | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9221 | Taco Diner (Lake Highlands) | Lake Highlands | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9222 | Jake's Burgers and Beer | Lake Highlands | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9223 | Fish City Grill (Lake Highlands) | Lake Highlands | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9224 | Lake Highlands Cafe | Lake Highlands | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9225 | Olivella's Lake Highlands | Lake Highlands | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9226 | Trades Delicatessen | Bishop Arts | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9228 | Drizl Coffee | Rowlett | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9229 | Beyond the Bun | Lewisville | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | SUSPECT | 1 | Lucia | Bishop Arts | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAF59XOau7ACMWc8UJoAo2o_yyJSTLwTu… |
 | SUSPECT | 2 | Tatsu Dallas | Deep Ellum | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFb67auqpgwQfqAzMBYP0DOrSA2_svmg… |
 | SUSPECT | 3 | Written by the Seasons | Bishop Arts | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMmtDEbr3hXX71RCubLpUkCyf_MN1zWR_r3NYOk… |
@@ -1235,7 +1218,6 @@ Total cards scanned: 5743
 | SUSPECT | 29 | The Salty Donut | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPxhE9I8X5bzjh5yCrLwaPf-DQDBcItdzvW_BgL… |
 | SUSPECT | 41 | The Rustic | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMcGzCdveIYFzD50b4CvM9mtqPxxmFyD2ikR_8k… |
 | SUSPECT | 43 | Pappas Bros. Steakhouse | North Dallas | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMGpv6B-RZ6qTG662mI7ABp_XLgW-cGblzIPDPV… |
-| SUSPECT | 45 | Loro | East Dallas / Lakewood | og:image meta tag asset | https://www.loroeats.com/wp-content/uploads/2023/03/loro-og-image.png |
 | SUSPECT | 50 | Pappadeaux Seafood Kitchen | Oak Lawn | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMQbyePbwZrA9mJgNQfGosh16YYKprM6No2WbWA… |
 | SUSPECT | 55 | Fuel City Tacos | Cedars | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNGS6MhCe7_feje9nAGdTdhobOcSv5FCx0cVJhd… |
 | SUSPECT | 56 | Lakewood Brewing Company | Richardson | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP70yWrmAd3ndxHhOWml0PYKM3rH4Zg_1A7Ov1N… |
@@ -1386,13 +1368,13 @@ Total cards scanned: 5743
 | SUSPECT | 433 | Tango Room | Design District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN2GgIHvslMA_L0yyyd_yw3BM22IfnLFnxc4xQE… |
 | SUSPECT | 434 | Besos Day & Night | Bishop Arts | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPUz8lIGfCpdxOoeorxrK0G4GH__BVoe-VWLkBO… |
 | SUSPECT | 435 | Olivella's Pizza and Wine | Park Cities | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOLuhHTGgj9tHSoI_KGsZMbQjBCR3gyfMtneobr… |
+| SUSPECT | 437 | Bowen House | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO-JSF31f_73IyCuRp1RvUepLqutBj4h9M-CG1Y… |
 | SUSPECT | 438 | Babou's | Harwood District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP8yqjtmB5Zuyq0qJPIX3syMWSp1SyDmSTTyP2F… |
 | SUSPECT | 444 | The Tipsy Alchemist | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPW7OY3lQUOA5cuL4cwZ1ghXjfQsoumfkJDqjPP… |
 | SUSPECT | 446 | Taco y Vino | Bishop Arts | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM6Eb2WibOmW7XMjkIitkBdXFqQoMIHUf_zBxE_… |
 | SUSPECT | 450 | Saint Valentine | East Dallas / Lakewood | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMq8_Ok9whA6iSc1XgBx_cUFAzw4jBUwUTcAog3… |
-| SUSPECT | 452 | Black Swan Saloon | East Dallas / Lakewood | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMuNwvEsAQskD7jQHwm7IP-9nRRr8GAiRo76_3I… |
 | SUSPECT | 453 | Tiny Victories | Bishop Arts | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOEu_SMp21ceQZa1ZVx-ryGQLx6wmCtL6BkpEgO… |
-| SUSPECT | 456 | Boxcar | Lower Greenville | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOSc0j8BVh2vvaB8JaPKKYUGDMGCq5p87iBZCEJ… |
+| SUSPECT | 456 | Boxcar | Lower Greenville | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNS8AGHdAQAcI9XUSK-2fQm-_uo2aGmon3OaQoW… |
 | SUSPECT | 465 | Del Frisco's Double Eagle | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPOL-WpuKBn23orXlHsWwpHcQtpjhQGpfL5Djp7… |
 | SUSPECT | 480 | Whataburger | East Dallas / Lakewood | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPv9rf6BEGVTIMlTk9UTu0aAUOoAoKX4haaRk6-… |
 | SUSPECT | 461 | Standard Pour | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMqBcInojSipg2oHgUH03kpQicn4As8GSqgKxfD… |
@@ -1477,7 +1459,6 @@ Total cards scanned: 5743
 | SUSPECT | 9127 | Tycoon | Flower Mound | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNSomvOhNjKvFj7IxgcjvEzVbBOPtBIjQzGff3p… |
 | SUSPECT | 9128 | Vinifera Wine Lounge & Bistro | Flower Mound | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMhO9EWwq-S12AlZIbGXQt3IpCUfAJFtIkpVRqf… |
 | SUSPECT | 9136 | Mun Gai Thai Street Food | Carrollton | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOT1MDrYmNBFpnoz0dE0qaH03_NC2lYCTTbcWkG… |
-| SUSPECT | 9137 | Han's Noodles & Dumplings | Carrollton | og:image meta tag asset | https://www.hansnoodlesdumplings.com/gs6fyav5/opengraph-image-959cal/og-image?0b… |
 | SUSPECT | 9138 | Pho Bistro | Carrollton | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPj5s_C0cSIMgny3yQiX_Px9mJ4abh71GlA9yL0… |
 | SUSPECT | 9139 | Mercury Chophouse Arlington | Arlington / Mid-Cities | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPrXR3ooZncHocSlTot02TqAIIkSzieQcSJTtUo… |
 | SUSPECT | 9141 | Prince Lebanese Grill | Arlington / Mid-Cities | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNjayvXAh_8GzqJt0qDuL0hlDc1SnvKF361fOBH… |
@@ -1492,7 +1473,7 @@ Total cards scanned: 5743
 | SUSPECT | 9173 | Tyler Station | Bishop Arts | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOVmhKxCpkpxHeIC8XDl4zs3iM11Tfjo7fg9AeW… |
 | SUSPECT | 9177 | Saint Ann Court | Harwood District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM25AbRArIR47ZdVrKLOFzwUrt5VcZjI9ozHET_… |
 
-## HOUSTON — 408 flagged
+## HOUSTON — 427 flagged
 
 | Severity | id | Name | Neighborhood | Reason | URL |
 |---|---|---|---|---|---|
@@ -1500,10 +1481,8 @@ Total cards scanned: 5743
 | BAD | 7083 | Present Company | Montrose | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7112 | Flora Mexican Kitchen | Upper Kirby | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7145 | Phat Eatery | Katy | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7150 | Aga's Restaurant | Southwest Houston | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7163 | Rosemeyer Bar-B-Q | Spring | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7173 | Underbelly Hospitality / Bar Bludorn | Memorial | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7177 | Dandelion Café | Chinatown / Bellaire | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7173 | Bar Bludorn | Memorial | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7214 | Harold's Restaurant | Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7239 | B.B. Italia | Memorial | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7302 | The Honeymoon Cafe | Museum District | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -1519,8 +1498,6 @@ Total cards scanned: 5743
 | BAD | 7400 | Crú Food & Wine Bar Woodlands | The Woodlands | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7445 | Pondi Bake Lab | Upper Kirby | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7495 | Tacos La Sultana | East End | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7538 | New Orleans Seafood Kitchen | La Porte | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7540 | El Toro Mexican Restaurant | La Porte | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7542 | Graze Tomball | Tomball | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7544 | Tony's Italian Delicatessen | Tomball | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7558 | ChopnBlok | Montrose | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -1536,27 +1513,51 @@ Total cards scanned: 5743
 | BAD | 7599 | Molina's Cantina | Memorial | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7600 | El Real Tex-Mex Cafe | Montrose | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7601 | Spanish Flowers | Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7602 | Lupe Tortilla | Spring Branch | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7603 | Damian's Cucina Italiana | Midtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7604 | Tony's Restaurant | Upper Kirby | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7605 | Arturo's Uptown Italiano | Galleria | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7606 | Holler Brewing Co. | Washington Corridor | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7607 | Eureka Heights Brew Co. | Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7608 | Under the Radar Brewery | Midtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7609 | City Acre Brewing Co. | Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7610 | SpindleTap Brewery | Northwest Houston | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7611 | Equal Parts Brewing | Washington Corridor | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7612 | Kirby Ice House | Upper Kirby | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7613 | Hans' Bier Haus | Rice Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7614 | D&T Drive Inn | Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7615 | Onion Creek Coffee House & Bar | Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7616 | Fadi's Mediterranean Grill — Westheimer | West Houston | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7617 | Van Loc Restaurant | Midtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7618 | Les Givral's Kahve | Washington Corridor | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7619 | Beaver's | Washington Corridor | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7620 | Chama Gaucha Brazilian Steakhouse | Galleria | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 7621 | POST Houston | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 7622 | Three Brothers Bakery | Southwest Houston | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7625 | This Is It Soul Food | Third Ward | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7627 | Alfreda's Soul Food | Third Ward | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7628 | Ray's Real Pit BBQ Shack | Third Ward | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7629 | MAM's House of Ice | Third Ward | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7630 | Cupcake Kitchen | Third Ward | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7631 | Crumbville TX | Third Ward | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7632 | Navy Seafood | Third Ward | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7634 | Plonk! Bistro & Wine Cellar | Garden Oaks | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7635 | BeauSoleil | Garden Oaks | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7636 | Local Table (Garden Oaks) | Garden Oaks | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7637 | Sunday Press | Garden Oaks | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7638 | d'Alba Craft Kitchen & Cocktails | Garden Oaks | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7639 | La Viva Tex-Mex | Garden Oaks | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7640 | Jax on the Tracks | Garden Oaks | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7641 | Lazy Lane | Garden Oaks | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7645 | Grace's on Kirby | Upper Kirby | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7646 | Houston's (Kirby) | Upper Kirby | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7648 | Mia Bella Trattoria (Greenway) | Upper Kirby | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7652 | Bombay Sweets | Hillcroft | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7655 | Bismillah Chaat | Hillcroft | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7656 | Biryani Pot | Hillcroft | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7657 | Udipi Cafe | Hillcroft | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7659 | Hot Breads | Hillcroft | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7661 | Jonathan's The Rub (Bridgeland) | Cypress | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7662 | Local Table (Cypress) | Cypress | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7663 | Carmelita's Kitchen + Tequila | Cypress | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7664 | The Union Kitchen (Towne Lake) | Cypress | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7665 | She Goat | Cypress | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7666 | Cypress Breakfast House | Cypress | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7667 | 88 Korean BBQ & Sushi | Cypress | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7668 | Mia's Table (Cypress) | Cypress | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 7669 | Le Emperor | Cypress | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | SUSPECT | 7001 | March | Montrose | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPuHFCJ5s08egoRocYHn8ErBHUzOARN7KkApHvt… |
 | SUSPECT | 7004 | BCN Taste & Tradition | Montrose | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP_57eprPcakC6p7o0qojFjMeUBM9Qxotwwf0a5… |
 | SUSPECT | 7005 | Musaafer | Galleria | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHBC17wPend6dJeoaOEVM8HV9TpcW9FM… |
@@ -1572,11 +1573,10 @@ Total cards scanned: 5743
 | SUSPECT | 7021 | Caracol | Galleria | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMYlVJAyimAtWex_s1s4Uyu1m99bg9RcfmcuE79… |
 | SUSPECT | 7024 | Loro | Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPUCbZ9YM-bOzNcODEaYmBR08S7oNM8DHBe7Ffb… |
 | SUSPECT | 7025 | Anvil Bar & Refuge | Montrose | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHe-yo4LAca9iHO3qpJV_FAvdmgYcRkl… |
-| SUSPECT | 7026 | Underbelly Hospitality / Georgia James | EaDo | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHeAbPl26cEuqdzWhDwLCG2vpdhly4zg… |
-| SUSPECT | 7028 | The Breakfast Klub | Midtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP7NOlIHpaK3scdLzDX0enaq8yLSkEq-Sr3-6CX… |
+| SUSPECT | 7028 | The Breakfast Klub | Third Ward | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP7NOlIHpaK3scdLzDX0enaq8yLSkEq-Sr3-6CX… |
 | SUSPECT | 7034 | Turner's | Galleria | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPyS3h2NtnUbgiVL9ghzg1YZaNuwoYl_J2drHIH… |
 | SUSPECT | 7035 | State of Grace | River Oaks | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM6jRBLG9QTF5RXzy4lY86Dm1ywLBep3HWxftby… |
-| SUSPECT | 7037 | Underbelly Hospitality / Wild Oats | Spring Branch | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHwGcsHETio5KITew9xzRGpjuAC23EDZ… |
+| SUSPECT | 7037 | Wild Oats | Spring Branch | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHwGcsHETio5KITew9xzRGpjuAC23EDZ… |
 | SUSPECT | 7038 | Trattoria Sofia | Montrose | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMCNnUdRZXmizQRplT0d3hm_OmuGQZixRQE4B6j… |
 | SUSPECT | 7042 | Vietopia | Southwest Houston | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEaVkY3D4JboUR7IjQ7oNsE_clF89GdZ… |
 | SUSPECT | 7043 | Cafe Annie / The Annie Cafe & Bar | Galleria | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNjw487yfdp2zK1mFQjy76k-hc1QadhEFCeMlT7… |
@@ -1594,7 +1594,7 @@ Total cards scanned: 5743
 | SUSPECT | 7060 | Eight Row Flint | Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPSqsG0t5QQrfg5ioH3hPIGHieY1BW0V-zSentH… |
 | SUSPECT | 7062 | The Dunlavy | Midtown | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHajnsTYL8gQP4Mj0vK42TI2bAii9NaA… |
 | SUSPECT | 7063 | Riel | Montrose | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFDVtOK5pKd6_efrbrdlPZyKaKEXblL-… |
-| SUSPECT | 7064 | Gatlin's BBQ | Heights | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEX-VZ90FWzjHuIxZQdtVty5tPkcTztj… |
+| SUSPECT | 7064 | Gatlin's BBQ | Garden Oaks | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEX-VZ90FWzjHuIxZQdtVty5tPkcTztj… |
 | SUSPECT | 7065 | Indigo | Midtown | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAECvykimtWjV2pgKtEJZOW49PSkEjlMx… |
 | SUSPECT | 7066 | Tiger Den | Chinatown / Bellaire | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEW6iTXiSju2Y2x2fvom6frj6h3TUMc1… |
 | SUSPECT | 7067 | Nam Giao | Chinatown / Bellaire | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAE29zpf9jd2FphxuaPlVkcx6vN9pDtdA… |
@@ -1714,7 +1714,7 @@ Total cards scanned: 5743
 | SUSPECT | 7289 | Cochinita & Co. | East End | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO8dAt-wHy3iTwS168_a0MHP9RzukGHjz54JLYX… |
 | SUSPECT | 7290 | Andes Cafe | Downtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOJbjsgHSbgGvF_JM7BxGF_xiUjXF0O_7KUBfFT… |
 | SUSPECT | 7292 | Pi Pizza | Midtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOl-3-Z7m_dxKzEb4H3WNYtCky3iTgsWY-E8mzl… |
-| SUSPECT | 7294 | Underbelly Hospitality / Georgia James Tavern | Upper Kirby | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHdqT9biqFf9CZFi20HTHWHmNNDcg3PC… |
+| SUSPECT | 7294 | Georgia James Tavern | Upper Kirby | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHdqT9biqFf9CZFi20HTHWHmNNDcg3PC… |
 | SUSPECT | 7296 | Brasserie 19 | Memorial | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMlHj8EQF8sZ18b1taKcMXaQF4K1fMbFLjqpdI7… |
 | SUSPECT | 7298 | Goode Co. Kitchen & Cantina | Memorial | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNXp6aREo97dEsdO543SeG_L0GjEtGa-N5XN-w=… |
 | SUSPECT | 7299 | Eddie V's Prime Seafood | Memorial | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOmawfbtv3GEQpE24L9fn9f2lcq2xntjXhy0Hr7… |
@@ -1777,7 +1777,7 @@ Total cards scanned: 5743
 | SUSPECT | 7416 | La Griglia | River Oaks | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNDGPZ__J1-afTgPLp4q__hkujC0BbE8Yxf8zER… |
 | SUSPECT | 7417 | Hai Cang Harbor Seafood | Chinatown / Bellaire | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAG7uHGzAnqJDTPQh2qzVvSEUnJbHcJiO… |
 | SUSPECT | 7418 | Christie's Seafood & Steaks | Galleria | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMpP4AUzB_fZuTY6G8WsnogSVHJb9N3tsxZ1uf_… |
-| SUSPECT | 7421 | Shri Balaji Bhavan | Chinatown / Bellaire | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFT6-Ey_szjtjL8vn4XeUPYB1FnV8hGi… |
+| SUSPECT | 7421 | Shri Balaji Bhavan | Hillcroft | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFT6-Ey_szjtjL8vn4XeUPYB1FnV8hGi… |
 | SUSPECT | 7423 | Yiayia's Greek Kitchen | Upper Kirby | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOgrtIm8Gta0tHniip29mNVnfblg1VInDcVgjpk… |
 | SUSPECT | 7424 | Captain Foxheart's Bad News Bar | Downtown | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHfJPVEr48N4DNGSuZCceztK-WG6IlXm… |
 | SUSPECT | 7425 | West Alabama Ice House | Montrose | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEaz34goQLQe8AihWqVo6x_6AsA459OS… |
@@ -1797,7 +1797,7 @@ Total cards scanned: 5743
 | SUSPECT | 7447 | Kaisen Sushi | Museum District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNn4TJgyHQr8nrPLPEnOTOZzvmWabhAenPIghNx… |
 | SUSPECT | 7448 | Shady Acres Saloon | Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMoSRxQ_I-Yl_OKFfBJJKHlelyAqQHbALNmSeNk… |
 | SUSPECT | 7449 | Backyard Boil House | Southwest Houston | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHxDy3WqEmw4fyF-qGBt6Agwj83rS_Yc… |
-| SUSPECT | 7450 | Raja Sweets | Chinatown / Bellaire | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN2SSvThG1g8oXZf0QgVX-xrDl0ZmzLf5M-eXOS… |
+| SUSPECT | 7450 | Raja Sweets | Hillcroft | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN2SSvThG1g8oXZf0QgVX-xrDl0ZmzLf5M-eXOS… |
 | SUSPECT | 7451 | Tree Garden | Spring Branch | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAG6F5y9N9RgBzv3_nK5XRwz65eLTlKya… |
 | SUSPECT | 7452 | Mo' Brunch + Brews | Midtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNx21r-lnngwOCQNnwr2FrEedvz-ONvX0EOvzpU… |
 | SUSPECT | 7454 | Tio Trompo | Montrose | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNi6ZNkjAM_VfEGmEPD7MbFA93QsL8CrGWw7Fp8… |
@@ -1841,7 +1841,7 @@ Total cards scanned: 5743
 | SUSPECT | 7497 | Tacos Dona Lena | East End | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFucZDkzbwWrvff-nh0OKSgII1r7zhQe… |
 | SUSPECT | 7498 | Pho Sapa Noodle House | Chinatown / Bellaire | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAG-XCOCaW-OD_tcvmDe-TFYgQm4LXvtX… |
 | SUSPECT | 7499 | Dakao Restaurant & Bar | Midtown | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEIT2spqp6i5aQ8-KGvEDMWgSPJSsr5g… |
-| SUSPECT | 7500 | Shiv Sagar | Chinatown / Bellaire | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMQUwNRUQTnfbQ5hiK2CSAYg9BNBPhLya6aY9g1… |
+| SUSPECT | 7500 | Shiv Sagar | Hillcroft | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMQUwNRUQTnfbQ5hiK2CSAYg9BNBPhLya6aY9g1… |
 | SUSPECT | 7501 | Chai Shai | Chinatown / Bellaire | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN3i5nbLYuPM9WiRKsnA3VhdI6Ydqh3rIy8n4QA… |
 | SUSPECT | 7502 | Reggae Hut | Midtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP2-bu18lC7s_oXoBdUY0CNxWIMfounRu8A4GuT… |
 | SUSPECT | 7503 | Cool Runnings Jamaican Grill | Southwest Houston | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNp3LuCarf3ARUrsEyEUPe-lBPDSTOZv0Q6yi22… |
@@ -1905,7 +1905,7 @@ Total cards scanned: 5743
 | SUSPECT | 7590 | Shake Shack | Rice Village | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO3wCiVGxHnS115wIZBTIl4LNbaMRN6Db4sVUN-… |
 | SUSPECT | 7592 | CAVA | Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMI9EC5Tp79kufbJL6CBnYg-F3E7IPI33qH7OTk… |
 
-## LA — 452 flagged
+## LA — 454 flagged
 
 | Severity | id | Name | Neighborhood | Reason | URL |
 |---|---|---|---|---|---|
@@ -1913,7 +1913,6 @@ Total cards scanned: 5743
 | BAD | 2027 | Sushi Park | West Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2034 | Oy Bar | Studio City | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2063 | Two Hommes | Inglewood | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 2066 | San & Wolves | Long Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2111 | Chengdu Taste | Alhambra | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2124 | Shake Shack | West Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2173 | Dai Ho | Temple City | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -1934,6 +1933,7 @@ Total cards scanned: 5743
 | BAD | 2220 | Miya | Altadena | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2234 | The Grill on the Alley | Beverly Hills | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2236 | Dante Beverly Hills | Beverly Hills | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 2242 | Botanica | Silver Lake | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2262 | The Roger Room | Beverly Grove | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2265 | Tokyo Noir | Long Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2271 | The Bamboo Club | Long Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -1950,7 +1950,6 @@ Total cards scanned: 5743
 | BAD | 2345 | Marea | Beverly Hills | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2352 | Fat Cow | Beverly Hills | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2353 | Matū | Beverly Hills | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 2364 | CUT by Wolfgang Puck | Beverly Hills | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2365 | Craig's | West Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2366 | Cecconi's | West Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2371 | Felix Trattoria | Venice | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -1965,7 +1964,6 @@ Total cards scanned: 5743
 | BAD | 2393 | Di Di | West Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2398 | Katana Robata & Sushi | West Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2400 | The Troubadour | West Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 2405 | The Echo | Echo Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2407 | La Descarga | Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2412 | 71 Above | Downtown LA | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2413 | Cabra | Downtown LA | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -1990,6 +1988,7 @@ Total cards scanned: 5743
 | BAD | 2461 | The Morrison | Los Feliz | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2464 | Cape Seafood & Provisions | Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2468 | The Tasting Kitchen | Venice | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 2469 | Found Oyster | East Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2472 | Morihiro | Echo Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2473 | Tacos Los Cholos | Huntington Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2474 | Matsuhisa Beverly Hills | Beverly Hills | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2006,26 +2005,22 @@ Total cards scanned: 5743
 | BAD | 2497 | Golden Dragon Restaurant | Chinatown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2500 | Chego! | Chinatown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2506 | Mr Chow Beverly Hills | Beverly Hills | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 2507 | Wally's Beverly Hills | Beverly Hills | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2508 | The Tower Bar | West Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2509 | The Formosa Cafe | West Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2510 | Tiki Ti | Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2511 | Harvard & Stone | East Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2512 | Melrose Umbrella Co. | Fairfax | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 2513 | Ye Rustic Inn | Los Feliz | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2514 | Lock & Key Social Drinkery | Koreatown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2515 | Bar Clacson | Downtown LA | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2516 | Best Girl | Downtown LA | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2517 | Drago Centro | Downtown LA | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2518 | Honeybee Burger | Silver Lake | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 2519 | Cafe Stella | Silver Lake | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2520 | Winsome | Echo Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2521 | Oriel | Echo Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2522 | Tesse | West Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2523 | LouLou Bistrot | Santa Monica | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2524 | Giorgio Baldi | Santa Monica | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2525 | Birdie G's | Santa Monica | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 2526 | Chinois on Main | Santa Monica | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2527 | Mel's Drive-In | West Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2528 | Saddle Peak Lodge | Calabasas | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2529 | Burritos La Palma | Highland Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2034,6 +2029,13 @@ Total cards scanned: 5743
 | BAD | 2532 | Elephante | Santa Monica | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2533 | Moonshadows Malibu | Malibu | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 2536 | PopUp Bagels | Brentwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 2537 | Great White | Venice | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 2538 | Great White | Larchmont | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 2539 | Great White | West Hollywood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 2540 | Great White | Brentwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 2541 | Great White | Studio City | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 2542 | Javier's Century City | Century City | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 2543 | Escuela Taqueria | Beverly Grove | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | SUSPECT | 2001 | Bestia | Arts District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOlTY4VKrjcMJwVsffsmoGCXOFS0FW6tWMfJmOZ… |
 | SUSPECT | 2002 | Bavel | Arts District | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAH5_RQDUaZP2iweT7XivSy0TUEo-Ay8S… |
 | SUSPECT | 2003 | n/naka | Palms | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGlfztFkuqNcL0K9GOQfpS5RQ-baGKVg… |
@@ -2362,17 +2364,15 @@ Total cards scanned: 5743
 | SUSPECT | 2503 | In-N-Out Burger Hollywood | Hollywood | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM_Ohc8BnCeFUOdoJa_AB_AL9MztsGYeuo5nv5v… |
 | SUSPECT | 2504 | Joe's Pizza Hollywood | Hollywood | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOeIU_n2etB2C-pi2vytBP3yOjD8QXrY-GRXwU3… |
 
-## LV — 318 flagged
+## LV — 309 flagged
 
 | Severity | id | Name | Neighborhood | Reason | URL |
 |---|---|---|---|---|---|
 | BAD | 12001 | L'Atelier de Joël Robuchon | The Strip (MGM Grand) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12004 | Carbone Riviera | The Strip (Bellagio) | SVG (icon, not photo) | https://cdn.sanity.io/images/gb1p0gbj/production/c8d2433a9516e51f43040189f9c05eb… |
-| BAD | 12026 | Jaleo by José Andrés | The Strip (The Cosmopolitan) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12034 | Sage | The Strip (Aria) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12042 | YUI Edomae Sushi | Chinatown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12055 | Aburiya Raku | Chinatown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12077 | Marssa Steak & Sushi | Henderson | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12090 | Tacos El Gordo | The Strip | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12101 | Fleur by Hubert Keller | The Strip (Mandalay Bay) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12117 | Amalfi by Bobby Flay | The Strip (Caesars Palace) | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2383,10 +2383,9 @@ Total cards scanned: 5743
 | BAD | 12171 | The Mayfair Supper Club | The Strip (Bellagio) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12172 | Skyfall Lounge | The Strip (Mandalay Bay) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12180 | The Chandelier | The Strip (The Cosmopolitan) | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12208 | Herringbone | The Strip (Aria) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12209 | Craftsteak | The Strip (MGM Grand) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12226 | Toridokoro Raku | Paradise | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12236 | CraftHaus Brewery Henderson | Henderson | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 12244 | Tamba Contemporary Indian | Paradise | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12246 | Mint Indian Bistro | Paradise | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12250 | Lullabar | Chinatown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12254 | Limoncello | Summerlin | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2399,7 +2398,6 @@ Total cards scanned: 5743
 | BAD | 12296 | Lindo Michoacan | Paradise | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12299 | Nobu Caesars Palace | The Strip (Caesars Palace) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12300 | Tom Colicchio's Craftsteak | The Strip (MGM Grand) | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12304 | Din Tai Fung Aria | The Strip (Aria) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12312 | Morels French Steakhouse | The Strip (The Palazzo) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12313 | Picasso Bellagio | The Strip (Bellagio) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12318 | Raku | Chinatown | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2426,7 +2424,6 @@ Total cards scanned: 5743
 | BAD | 12389 | Monzu Italian Oven + Bar | Spring Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12390 | Nora Italian Cuisine | Spring Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12393 | Tom Colicchio Craftsteak | The Strip (MGM Grand) | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12394 | Ferraro's Vino | Paradise | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12400 | Wally's Wine & Spirits | The Strip (Resorts World) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12405 | Diablo's Cantina | The Strip | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12408 | High Roller Observation Wheel | The Strip | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2446,8 +2443,6 @@ Total cards scanned: 5743
 | BAD | 12483 | Julian Serrano Tapas | The Strip (Aria) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12485 | Five50 Pizza Bar | The Strip (Aria) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12487 | Spago by Wolfgang Puck | The Strip (Bellagio) | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12492 | Washing Potatoes | The Strip (Fontainebleau) | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12493 | Kissa Tanto | The Strip (Fontainebleau) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12499 | Kung Fu Plaza | Chinatown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12501 | Holstein's Shakes and Buns | The Strip (The Cosmopolitan) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12504 | Mr Chow Las Vegas | The Strip (Caesars Palace) | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2470,7 +2465,6 @@ Total cards scanned: 5743
 | BAD | 12548 | Main Street Provisions | Downtown (Circa) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12549 | VegeNation | Downtown (Circa) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12550 | Flock & Fowl | Chinatown | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 12551 | Lamaii | Chinatown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12552 | Vivienne | Downtown (Circa) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12553 | Nacho Daddy | Downtown (Circa) | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 12554 | Harvest by Roy Ellamar | Paradise | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2574,7 +2568,6 @@ Total cards scanned: 5743
 | SUSPECT | 12239 | Hussong's Cantina | The Strip (Mandalay Bay) | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMYCfpgK-6LIOigdeswHILl_p7malljX6fEHQmj… |
 | SUSPECT | 12240 | Scotch 80 Prime | West of Strip | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipODyVXIyzCfQtG5yPGtVCt-EF7xyvKvVfvrBM-R… |
 | SUSPECT | 12242 | Naxos Taverna & Oyster Bar | Summerlin (Red Rock Resort) | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMtpFXPqF8l4b0QFZiiXafLlk9cLEr5lboEux1h… |
-| SUSPECT | 12244 | Tamba Contemporary Indian | Paradise | og:image meta tag asset | https://www.tambalasvegas.com/og-image.jpg |
 | SUSPECT | 12248 | Beijing Noodle No. 9 | The Strip (Caesars Palace) | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNjjga1sUaEvyKwp9TW2h7sFTu9H7K4faQ8716C… |
 | SUSPECT | 12251 | China Mama | Chinatown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO053bvCqfgcxMualuTvaDlEYmi55CAIwYDZtZb… |
 | SUSPECT | 12252 | Holsteins | Arts District | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHAc2rd6Xdo0Yl8_K9P4bZ0wXfyGyT7x… |
@@ -2685,7 +2678,7 @@ Total cards scanned: 5743
 | SUSPECT | 12546 | Downtown Container Park | Downtown (Fremont East) | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNmfbS3exhEgrxBa4MT_sRsHhvFcVU9zJTFdaUz… |
 | SUSPECT | 12547 | Shake Shack | The Strip (New York-New York) | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPe_vmR1HH_Cy-vEFxj8uT2kxrZm-AE5lqJTbtQ… |
 
-## MIAMI — 113 flagged
+## MIAMI — 234 flagged
 
 | Severity | id | Name | Neighborhood | Reason | URL |
 |---|---|---|---|---|---|
@@ -2694,7 +2687,6 @@ Total cards scanned: 5743
 | BAD | 4003 | Cote Miami | Design District | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4004 | Stubborn Seed | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4005 | The Surf Club Restaurant | Surfside | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 4006 | Zuma Miami | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4007 | L'Atelier de Joël Robuchon | Design District | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4008 | Boia De | Buena Vista | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4009 | Michael's Genuine Food & Drink | Design District | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2704,7 +2696,6 @@ Total cards scanned: 5743
 | BAD | 4013 | Nobu Miami | Mid-Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4014 | Swan | Design District | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4015 | LPM Restaurant & Bar Miami | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 4016 | Macchialina | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4017 | Cafe La Trova | Little Havana | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4018 | Ariete | Coconut Grove | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4019 | Chug's Diner | Coconut Grove | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2736,7 +2727,6 @@ Total cards scanned: 5743
 | BAD | 4045 | Rice Mediterranean Kitchen | Coconut Grove | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4046 | Ezio's | North Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4047 | Double Luck Chinese | Little River | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 4048 | Midorie | Little River | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4049 | San Lorenzo Ristorante | Little River | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4050 | Fooq's | Little River | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4051 | Bar Bucce | Little River | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2752,7 +2742,6 @@ Total cards scanned: 5743
 | BAD | 4061 | Wolf of Tacos at Central Fare | Downtown Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4062 | Elcielo Miami | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4063 | Hiden | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 4064 | Zak The Baker | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4065 | Hometown Barbecue Miami | Little River | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4066 | Sanguich de Miami | Little Havana | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4067 | Walrus Rodeo | Buena Vista | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2771,9 +2760,7 @@ Total cards scanned: 5743
 | BAD | 4080 | Lung Yai Thai Tapas | Little Havana | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4081 | Hiyakawa Miami | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4082 | Tropezón | South of Fifth | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 4083 | Casa Tua | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4084 | Carbone Miami | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 4085 | Papi Steak | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4086 | Mila Restaurant | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4087 | Queen Miami Beach | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4088 | Byblos Miami | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2786,10 +2773,8 @@ Total cards scanned: 5743
 | BAD | 4095 | Catch Miami | Miami Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4096 | Beachcraft | Miami Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4097 | La Petite Maison Miami | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 4098 | KOMODO Miami | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4099 | Nusr-Et Steakhouse Miami | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4100 | Cantina La Veinte | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 4101 | Novikov Miami | Downtown Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4102 | Itamae AO | Design District | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4103 | Coyo Taco | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4104 | Beaker & Gray | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2802,23 +2787,157 @@ Total cards scanned: 5743
 | BAD | 4111 | Ortanique on the Mile | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4112 | Hillstone Coral Gables | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 4114 | PopUp Bagels | Aventura | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4115 | The Broken Shaker | Mid Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4117 | Daniel's Miami | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4118 | Slim's Bal Harbour | Bal Harbour | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4119 | Pastis Miami | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4120 | Jaguar Sun | Downtown Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4121 | Tâm Tâm | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4122 | Carbone Vino | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4125 | Dante's HiFi | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4126 | Smith & Wollensky Miami Beach | South Pointe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4128 | Cerveceria La Tropical | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4129 | Red Rooster Overtown | Overtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4130 | LIV Miami | Mid Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4131 | STORY Miami | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4132 | Club Space | Downtown Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4133 | E11EVEN Miami | Downtown Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4134 | Bourbon Steak Miami | Aventura | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4135 | Dirty French Steakhouse | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4136 | Hoy Como Ayer | Little Havana | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4137 | Bodega Taqueria y Tequila South Beach | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4138 | Rosa Sky Rooftop | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4139 | Tacombi Wynwood | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4140 | Treehouse Miami | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4142 | Bar Kaiju | Little River | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4143 | Mama Tried | Downtown Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4144 | The Sylvester | Midtown Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4145 | WALL Lounge | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4146 | Pubbelly Sushi Sunset Harbour | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4147 | Strawberry Moon | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4148 | Champagne Bar at The Surf Club | Surfside | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4149 | Joia Beach | Watson Island | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4150 | World Famous House of Mac | Liberty City | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4151 | Lagniappe | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4153 | Blackbird Ordinary | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4154 | Magie | Little River | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4155 | Lost Weekend | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4156 | Watr at the 1 Rooftop | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4157 | Villa Azur | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4158 | Mynt Lounge | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4159 | Kill Your Idol | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4160 | Sugar at East Miami | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4161 | Basement Miami | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4162 | ZeyZey | Little Haiti | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4163 | Aromas del Peru | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4164 | Dukunoo Jamaican Kitchen | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4165 | Prime 54 | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4166 | Gordon Ramsay Hell's Kitchen Miami | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4167 | Bistro 8 | Little Havana | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4168 | Rao's Miami | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4169 | Palma | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4170 | Otto & Pepe | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4171 | Tripping Animals Brewing Co. | Doral | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4172 | Ensenada | MiMo | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4173 | Casa La Rubia Brewery & Pub | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4174 | Le Jardinier Miami | Design District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4175 | Hutong Miami | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4176 | La Mar by Gastón Acurio | Brickell Key | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4177 | Toro Toro Miami | Downtown Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4178 | Plant Food + Wine | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4179 | Fiola Miami | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4180 | Chotto Matte Wynwood | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4181 | The Salty Donut | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4182 | Madruga Bakery | South Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4183 | Pinch Kitchen | MiMo | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4184 | Doce Provisions | Little Havana | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4185 | Bayshore Club Coconut Grove | Coconut Grove | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4186 | The Citadel | Little Haiti | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4187 | Buya Ramen | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4188 | Tigertail + Mary | South Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4189 | Krüs Kitchen | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4190 | Toscana Divino | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4191 | Le Sirenuse Miami | Surfside | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4192 | The Bazaar by José Andrés | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4193 | Edge Steak & Bar | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4194 | Tre at Faena Hotel | Mid Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4195 | Quinto La Huella | Coconut Grove | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4196 | Habitat at 1 Hotel South Beach | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4197 | Caffe Abbracci | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4198 | Pascal's on Ponce | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4199 | Cibo Wine Bar | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4200 | Della Test Kitchen | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4201 | Beat Culture Brewing | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4202 | Veza Sur Brewing Co. | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4203 | J. Wakefield Brewing | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4204 | Greenstreet Cafe | Coconut Grove | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4205 | LoKal Burger & Beer | Coconut Grove | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4206 | The Anderson | MiMo | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4207 | Carpaccio at Bal Harbour Shops | Bal Harbour | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4208 | Faena Theater | Mid Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4209 | 11th Street Diner | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4210 | Threefold Cafe | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4211 | Bulla Gastrobar Coral Gables | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4213 | Vicky Bakery | Westchester | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4214 | Ms. Cheezious | Upper East Side | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4215 | Islas Canarias Restaurant | Westchester | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4216 | Naoe | Brickell Key | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4217 | American Social Brickell | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4218 | Flanigan's Seafood Bar & Grill — Coconut Grove | Coconut Grove | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4219 | Bayside Marketplace | Downtown Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4220 | Wynwood Walls | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4221 | Pura Vida | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4222 | Copper 29 Bar | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4223 | Wagyuya MiMo | MiMo | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4224 | Wynwood Brewing Company | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4225 | Azucar Ice Cream Company | Little Havana | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4226 | Tap 42 Coral Gables | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4227 | The Local Craft Food & Drink | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4228 | Oasis Wynwood | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4229 | Daddy Dough Donuts | Downtown Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4230 | Mister O1 Extraordinary Pizza Design District | Design District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4231 | Miami Beach Pizza | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4232 | 1-800-Lucky | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4233 | Arbetter's Hot Dogs | Westchester | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4234 | Havana 1957 | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4235 | Ogawa | Little River | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4237 | Cotoa | North Miami | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4238 | The Joyce | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4239 | Claudie | Brickell | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4240 | Caracas Bakery | Upper East Side | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4241 | Karyu | Design District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4242 | BeyBey | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4243 | Fuku Coral Gables | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4244 | Il Mulino New York at Acqualina | Sunny Isles Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4245 | Eight Bar | Park West | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4246 | Bellini Coconut Grove | Coconut Grove | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4247 | Tina in the Gables | Coral Gables | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4248 | Lido Bayside Grill | Belle Isle | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4249 | Contessa Miami | Design District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4250 | PASTA Wynwood | Wynwood | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 4251 | Casa Isola Sunset Harbour | South Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
 
-## NYC — 636 flagged
+## NYC — 639 flagged
 
 | Severity | id | Name | Neighborhood | Reason | URL |
 |---|---|---|---|---|---|
+| BAD | 1066 | SEY Coffee | Bushwick | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1074 | Sip & Guzzle | West Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 1269 | Border Town | Greenpoint | logo file | https://images.squarespace-cdn.com/content/v1/66352088d1b7192f45285f78/49600cbd-… |
+| BAD | 1094 | Bonnie's | Williamsburg | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 1269 | Border Town | Greenpoint | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1333 | Barker Cafeteria | Crown Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1335 | Dollar Slice NYC | Midtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1452 | Mama's Too | Upper West Side | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 1529 | Peter Pan Donut & Pastry Shop | Greenpoint | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1530 | P.J. Clarke's | Midtown East | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1538 | Robataya | East Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1609 | Darling | Flatiron / NoMad | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 1614 | Berry Park | Williamsburg | logo file | http://static1.squarespace.com/static/564240eee4b0a60899286722/t/69d6b9a79d13b17… |
+| BAD | 1614 | Berry Park | Williamsburg | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1639 | Donna | Williamsburg | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1701 | Salon de Ning | Midtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 1715 | Yankee Stadium | Bronx | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1761 | Toby's Estate Coffee | Williamsburg | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 1771 | Chip City | Astoria | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1785 | Claw Daddy | Downtown Brooklyn | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1797 | Eataly Panini Counter | Flatiron / NoMad | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 1799 | Torrisi Sandwich Shop | Nolita | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -2913,7 +3032,6 @@ Total cards scanned: 5743
 | SUSPECT | 1061 | Vanessa's Dumpling House | Chinatown | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHT7LcPGX-jZrNHegqTaJnqwhZy2-v1T… |
 | SUSPECT | 1062 | Prince Street Pizza | Nolita | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAG8y_spqHnuGxzlA-PbStBYRVNxl7YL3… |
 | SUSPECT | 1063 | L'Industrie Pizzeria | Williamsburg | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHsDMzm4UxTDblNaGc7VEiE6X5c0LK8M… |
-| SUSPECT | 1066 | SEY Coffee | Bushwick | og:image meta tag asset | https://www.seycoffee.com/cdn/shop/t/34/assets/og-image.jpg?v=120275937164661624… |
 | SUSPECT | 1068 | 787 Coffee | East Village | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMxTzUAFMbUg6fZbvehSGSORBQtQfpiz9SjC5a7… |
 | SUSPECT | 1069 | Abraço | East Village | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGCPepg8Ka5mYt07O-UmgYrUvzwiWhXI… |
 | SUSPECT | 1070 | La Cabra | Bushwick | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHyLQokF9qW-yPuk5MarhwxgU7x3th52… |
@@ -3324,7 +3442,6 @@ Total cards scanned: 5743
 | SUSPECT | 1767 | Ground Support | SoHo | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPZiVbZTgJ1ZgPQm3qP0GEn7iG_k-7wHISUK0kx… |
 | SUSPECT | 1768 | Insomnia Cookies | East Village | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipON4CP8UW2GrdN4QFhGpNxJa1PZScUvOnCGEqfg… |
 | SUSPECT | 1769 | Bibble & Sip | Midtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMqxxYjM4kVheD7QTsBuaTwBfwu8iyGNl8sU8A6… |
-| SUSPECT | 1771 | Chip City | Astoria | og:image meta tag asset | https://chipcitycookies.com/og_image.jpg |
 | SUSPECT | 1772 | Ferrara Bakery | Nolita | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOJElIhWtnhJ1-vw72aY1lq9LyKQomHf5EZPs8d… |
 | SUSPECT | 1773 | Mochidoki | Greenwich Village | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNhd8jKOH_tDPwOEc3Sk6lGu5RvkQ_LgwbV6Ly8… |
 | SUSPECT | 1775 | Ichiran Ramen | Williamsburg | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP8NerFgyt0GNctGibXBHvghkVeQK5BHbjw4Kf6… |
@@ -3444,12 +3561,1027 @@ Total cards scanned: 5743
 | SUSPECT | 1948 | Brooklyn Academy of Music (BAM) | Fort Greene / Clinton Hill | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHH84ixZfc8xQGbFpY-TIGu4ZsGuLd46… |
 | SUSPECT | 1949 | BRIC House | Fort Greene / Clinton Hill | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMStOYjJrblro-q3G9G5bomVL_PIKR5EkuDt7KI… |
 
-## SEATTLE — 370 flagged
+## PHX — 429 flagged
+
+| Severity | id | Name | Neighborhood | Reason | URL |
+|---|---|---|---|---|---|
+| BAD | 3053 | Steadfast Diner | Mesa (Eastmark) | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3079 | Harlem Coffee House | Roosevelt Row | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3083 | Regroup Coffee | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3092 | Hope's Fry Bread | Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3109 | DraftKings Sportsbook at TPC Scottsdale | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3112 | Filthy Animal | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3114 | Cafetal | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3115 | Mandi House | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3117 | Cocina Chiwas | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3132 | O.H.S.O. Brewery — Gilbert | Gilbert | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3134 | Talavera at Four Seasons Scottsdale | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3136 | Franco's Italian Caffe | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3139 | Craft 64 | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3151 | Kazimierz World Wine Bar | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3153 | El Hefe Super Macho Taqueria | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3157 | Riot House | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3161 | Hi-Fi Kitchen and Cocktails | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3162 | WET Deck at W Scottsdale | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3167 | Matt's Big Breakfast | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3176 | Little Cleo's Seafood Legend | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3180 | Binkley's Restaurant | Arcadia | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3185 | Bandera Phoenix | North Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3186 | Eddie V's Prime Seafood Scottsdale | North Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3187 | Cibo Urban Pizzeria | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3189 | Grassroots Kitchen & Tap | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3193 | Rokerij | Central Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3194 | Revolu Modern Taqueria | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3196 | Cooperstown | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3197 | The Dhaba Indian Cuisine | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3200 | Macayo's Mexican Kitchen | Central Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3203 | Prado at Omni Scottsdale Montelucia | Paradise Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3207 | Southern Rail | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3211 | Lane Park | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3217 | The Americano | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3218 | Sushi Roku Scottsdale | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3219 | True Food Kitchen Biltmore | Biltmore | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3220 | Houston's Scottsdale | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3226 | Los Sombreros Cafe & Cantina | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3228 | Dick's Hideaway | Central Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3230 | O.H.S.O. Brewery — Arcadia | Arcadia | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3231 | Arizona Wilderness Brewing Co. | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3233 | Rhythm Room | Arcadia | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3237 | FEZ on Central | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3239 | Quiessence at The Farm | South Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3241 | Pig & Pickle | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3244 | Undertow | Arcadia | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3247 | Rancho Pinot | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3248 | Chino Bandido | North Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3249 | Schreiner's Fine Sausages | Central Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3250 | Pinkau's Schnitzelhaus | Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3251 | Rúla Búla Irish Pub | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3253 | Flora's Market Run | Melrose | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3254 | The Tuck Shop | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3255 | Bahia Kino Mexican Seafood | East Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3256 | Huss Brewing Co. | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3259 | Pa'La Kitchen + Market | Arcadia | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3261 | Baratin Restaurant | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3262 | Tortas El Güero | West Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3266 | Virtù Honest Craft | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3268 | La Stalla Cucina Rustica | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3269 | El Bravo Mexican Restaurant | North Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3270 | Sip Coffee & Beer House | Arcadia | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3271 | Giant Coffee | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3272 | The Womack | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3273 | Crust Simply Italian | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3274 | Butters Pancakes & Cafe | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3278 | Cotton & Copper | Chandler | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3279 | Gertrude's at Desert Botanical Garden | East Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3280 | Pomegranate Cafe | Ahwatukee | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3282 | Mrs. White's Golden Rule Cafe | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3283 | Papago Brewing Company | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3284 | State 48 Brewery | West Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3285 | The Shop Beer Co | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3286 | Be Coffee + Food + Drink + Market | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3288 | Phoenix Public Market Cafe | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3289 | Mother Bunch Brewing | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3291 | Mora Italian | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3298 | Second Story Liquor Bar | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3299 | Barrio Cafe | Central Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3304 | Flower Child Phoenix | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3307 | Original Breakfast House | North Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3308 | Artizen at The Camby | Biltmore | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3309 | Frank & Albert's at Arizona Biltmore | Biltmore | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3314 | El Chullo Peruvian Restaurant | Arcadia | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3318 | Bar 1912 | Melrose | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3319 | Killer Whale Sex Club | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3320 | FYPM | Roosevelt Row | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3321 | Carry On | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3330 | Coach House | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3331 | Patty's First Avenue Lounge | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3332 | The Hot Chick | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3335 | The Mix Up Bar at Royal Palms Resort | Arcadia | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3336 | The Grapevine Restaurant & Karaoke Bar | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3337 | Living Room Wine Cafe & Lounge | Chandler | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3338 | The Plaza Bar at Fairmont Scottsdale Princess | North Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3340 | Wine Girl | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3343 | Shiv Supper Club | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3357 | La Perla Cafe | Glendale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3358 | Kiss Pollos Estilo Sinaloa | Glendale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3360 | Elements at Sanctuary | Paradise Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3361 | Jade Bar at Sanctuary | Paradise Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3363 | Nobuo at Teeter House | Heritage Square | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3365 | Tia Rosa's | Ahwatukee | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3366 | Phil's Filling Station Grill | Ahwatukee | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3367 | Kai at Sheraton Wild Horse Pass | Wild Horse Pass | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3370 | Snooze A.M. Eatery Gilbert | Gilbert | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3375 | Pedal Haus Brewery Chandler | Chandler | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3377 | Pomo Pizzeria Napoletana Downtown | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3378 | Citrus Cafe | Chandler | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3379 | North Italia Kierland | North Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3381 | Tratto | Biltmore | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3384 | The Vig Arcadia | Arcadia | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3385 | The Vig Uptown | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3387 | Hillstone | Arcadia | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3391 | Davanti Enoteca | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3392 | Flower Child Biltmore | Biltmore | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3393 | Sugar Bowl | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3394 | Tomaso's | Biltmore | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3396 | The Breadfruit & Rum Bar | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3400 | Coup Des Tartes | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3401 | Luci's Marketplace | Biltmore | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3402 | Gourmet House of Hong Kong | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3403 | La Santisima Gourmet Tacos | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3404 | China Chili | Midtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3405 | Joe's Midnight Run | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3406 | Phoenix Ale Brewery Central Kitchen | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3408 | Essence Bakery Cafe | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3409 | Gadzooks Enchiladas + Soup | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3411 | Hillside Spot | Ahwatukee | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3413 | Grassroots Kitchen | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3419 | Mi Patio Mexican Food | Central Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3420 | Via Delosantos | North Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3421 | Sierra Bonita Grill | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3427 | Hiro Sushi | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3429 | BLT Steak at Camelback Inn | Paradise Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3433 | Lolo's Chicken & Waffles | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3434 | NiMarco's Pizza | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3435 | Bobby-Q | West Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3436 | Pizza People Pub | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3437 | Republica Empanada | Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3438 | C-Fu Gourmet | Chandler | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3439 | Cherry Blossom Noodle Cafe | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3440 | Karl's Quality Bakery | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3443 | Roosevelt Tavern | Roosevelt Row | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3445 | Provision Coffee | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3446 | SunUp Brewing Co. | Uptown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3447 | Beer Research Institute | Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3448 | Fate Brewing Company — Scottsdale South | North Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3449 | Scottsdale Beer Company | North Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3450 | Helton Brewing Company | Arcadia | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3451 | OHSO Brewery — Paradise Valley | Paradise Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3453 | Short Leash Hot Dogs + Rollover Doughnuts | Melrose | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3454 | Mr. Mesquite Taqueria | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3458 | Handlebar Tempe | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3461 | Crudo | Arcadia | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3464 | Twisted Grove Parlor + Bar | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3465 | Valle Luna | North Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3467 | Nelsen's Meat + Fish | North Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3468 | Pomo Pizzeria Downtown Mesa | Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3469 | District American Kitchen | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3471 | Squid Ink Sushi | North Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3473 | Handlebar-J | North Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3475 | St. Francis | Midtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3476 | The Main Ingredient Ale House & Cafe | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3478 | Wally's American Pub 'n Grille | Ahwatukee | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3480 | Taqueria Pico de Gallo | Melrose | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3481 | Mastro's Ocean Club | North Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3483 | Cartwright's Sonoran Ranch House | Cave Creek | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3484 | El Encanto | Cave Creek | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3485 | Buffalo Chip Saloon | Cave Creek | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3486 | Bryan's Black Mountain BBQ | Cave Creek | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3487 | Big Earl's Greasy Eats | Cave Creek | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3489 | Chianti Cucina Italiana | Carefree | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3490 | Greenwood Brewing | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3491 | Maizie's Cafe & Bistro | Central Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3492 | Switch | Central Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3493 | Cuff Uptown | Uptown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3494 | Carly's Bistro | Roosevelt Row | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3495 | Zinburger Wine & Burger Bar | Biltmore | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3496 | Serrano's Mexican Restaurant | Downtown Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3497 | Farm & Craft | Old Town Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3498 | Compass Arizona Grill | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3499 | Gus's World Famous Fried Chicken | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3500 | Morton's The Steakhouse | North Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3502 | Taggia | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3503 | The Stockyards | Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3504 | Merkin Vineyards Osteria | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3505 | Sing High Chop Suey House | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3506 | Miracle Mile Deli | Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3507 | Tommy V's Urban Grill | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3508 | Blanco Tacos + Tequila | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3509 | Second Chance Tavern | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3510 | Postino Gilbert | Gilbert | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3511 | Postino Highland | Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3512 | Culinary Dropout Gilbert | Gilbert | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3513 | Culinary Dropout Tempe | Tempe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3515 | The Churchill | Downtown Phoenix | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3516 | Carlsbad Tavern | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3517 | Salt Cellar Restaurant | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 3518 | Paradise Bakery & Café (Original) | Scottsdale | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| SUSPECT | 3001 | City of Spice | North Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNtN3p131TxJtbzm7GoDWyxI9aunC-5tgJkdOQJ… |
+| SUSPECT | 3002 | Course Restaurant | Central Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPlANRXTMVTXQpywzH4gwBJ89iOZKn654XX8FnS… |
+| SUSPECT | 3005 | Christopher's at the Wrigley Mansion | Biltmore | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNSTDpCOdXOgQ5Hf7W6Kfsw6fxadn8thWL4VuGM… |
+| SUSPECT | 3006 | Hana Japanese Eatery | Melrose | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGxoG2h1y_a69x9x1TjosRe1WMBZ0OnM… |
+| SUSPECT | 3008 | Fry Bread House | Central Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGdLoGfk7ObDdY7laj39xwrdNABy4bg1… |
+| SUSPECT | 3010 | Bad Jimmy's | Old Town Scottsdale | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFBkfUI4LQQjPNJyME9Z8jSH6SW5-dvo… |
+| SUSPECT | 3011 | Valentine | Melrose | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEDJZEuU4DQXokvHwBHLec5s04bbOKK5… |
+| SUSPECT | 3014 | Kid Sister | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP4yNWPqGbxdMb7_x92zaXT7m9JQ-Eaybi5PT3g… |
+| SUSPECT | 3015 | Glai Baan | Central Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGttRhlgV_j4giVMQ4LEx9h8_A3PcYzd… |
+| SUSPECT | 3016 | DiMaggio's | Scottsdale | share-image asset | https://static.spotapps.co/website_images/ab_websites/410828_website_v1/share_im… |
+| SUSPECT | 3018 | pho 43 | West Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGoD0Y4kDpdr8TEmbjx9D6JVPUHinze9… |
+| SUSPECT | 3019 | El Caprichoso Hot Dogs | West Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPB7LDHQdaFShMgbVq09UxhS2DDllUtJWlvNOys… |
+| SUSPECT | 3021 | Pa'la | East Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEzXZ_RDoPGx_9dvP5_OlwCKs9dpqZRk… |
+| SUSPECT | 3023 | Lom Wong | Roosevelt Row | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEvwYI1LLnEY3LkA-MEAL0xv8AMaJOk9… |
+| SUSPECT | 3024 | Saint Pasta | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNHe9M_Jz5-14PS5zTVQw2l9279rJV37m8ts-0M… |
+| SUSPECT | 3025 | Stoop Kid | Downtown Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAF1LU911YtyNzLuw936TWI6foav4DIOi… |
+| SUSPECT | 3026 | Mariscos Playa Hermosa | Garfield | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEnLNrJMHau4RocEcXw0h_dUcKgkyuu8… |
+| SUSPECT | 3027 | Huarachis Taqueria | Downtown Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEYtKMTs70NqtTvUctDEtwq0o1vr5LOX… |
+| SUSPECT | 3030 | Latha | Heritage Square | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMHdX-tZCyW43kgogziv6Dn9RVXllQLjlfe_Yw7… |
+| SUSPECT | 3032 | Little Miss BBQ-University | Near Sky Harbor | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOJppK6vdm_bWBh0TSVDatlnC1iMSWHwOG6qt2F… |
+| SUSPECT | 3033 | Cafe Lalibela Ethiopian Cuisine | Tempe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOeDOk-taPvSunL4_VptfmbrlnHCcWdGG92GT47… |
+| SUSPECT | 3035 | Haji-Baba | Tempe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOBu-fdZlpxwYe7hZ1GAGXvweq-Fqf-UNPcHFb9… |
+| SUSPECT | 3038 | Kai Restaurant | Wild Horse Pass | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO65b_p6xt69_pKo2XvEtVYt3-t_yXGBBB1tTVa… |
+| SUSPECT | 3039 | Alden | Roosevelt Row | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAExqMsCugWE6wFJwoi1RTZH-dkDqwUWK… |
+| SUSPECT | 3040 | Mr. Baan's Bar and Mookata | Roosevelt Row | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGV69CA-hjz83ZqSBFBE6e2dI0L2LE0G… |
+| SUSPECT | 3041 | CP Coffee & Pâtisserie | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN4sqz-jgKoWrhNqN36_EZAbViCHNV2rocJ8U7s… |
+| SUSPECT | 3042 | Pretty Penny | Roosevelt Row | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMlnXVjQ8kYIlEUb3Vpjb__0zMSz9lOOF4SYRqk… |
+| SUSPECT | 3043 | Marisco Boys | Central Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEEzOL5MSodjqHFWGoYgth1ux9yv4Akv… |
+| SUSPECT | 3044 | Sidewinder | Garfield | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFVbYsSQkK16AkAw8ZHnWhIxALO3LTub… |
+| SUSPECT | 3045 | Lydia's Kitchen | Uptown | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGfwLb5KWFuy4RHK2MJMScRZmJycjUqd… |
+| SUSPECT | 3046 | Minnow | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN1QQmNUO3POI1ebY7-XflgyOLV5y3iNxB7-efo… |
+| SUSPECT | 3047 | Warren's Supper Club | Chandler | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPtw8zaseIg4NeLmoWrLlGQEKV_2JgqFGsj_izm… |
+| SUSPECT | 3050 | Uchi Scottsdale | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP-M5aFNy9yCsyTGwiRwBu2M9iBwff0ByF2uYDe… |
+| SUSPECT | 3051 | Frybread Lounge | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM-vEEBm7Of82zJ1qHSLoqZa91P8_Hm3YBkZzI2… |
+| SUSPECT | 3054 | Mastro's Steakhouse | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM0Jk3EjSHrKSib-mVFSqw-9L4_9qXdUdFNl0_b… |
+| SUSPECT | 3055 | Arrowhead Grill | Glendale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPGKrUWGWxa9wmVSU91SNiwPZSS1PlJjxC27A1V… |
+| SUSPECT | 3058 | Le Ame | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOetENhprsn63_WQ_peGrGoJPWtGRfW-7bz2Nni… |
+| SUSPECT | 3061 | The Stockyards Steakhouse | East Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN0x1uuTnMm1k8LWASEK7PN3PDonjx2iPbwAtFr… |
+| SUSPECT | 3062 | SugarJam Southern Kitchen | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNwVTWcJV9a5BsxLM_LsbgEi2bf10eu5EYnaCUP… |
+| SUSPECT | 3063 | SumoMaya | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPRkfwGwMgN2m-ksrecR1yfLm4BHY_62a9TFqfm… |
+| SUSPECT | 3064 | Otro Cafe | Uptown | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFDOsWrMFEPf02op1J_EHy1TzVGjMDha… |
+| SUSPECT | 3065 | Lon's at the Hermosa Inn | Paradise Valley | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNqpTV-lNdb3Df_p3BgSdvpEfAOZDz8MXEaqpK-… |
+| SUSPECT | 3066 | Fàme Cafe | Central Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMIW_pJBPlujAeOIEDcCjqabLKHihWWXEvMA53c… |
+| SUSPECT | 3067 | Lux Central | Central Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFOeU-hHveydvOZbsudIhIXgji2yv4gs… |
+| SUSPECT | 3070 | Welcome Diner | Garfield | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMwHi8AaM_3QNtGM8R7ot-uGpUldrmP2etlcS4F… |
+| SUSPECT | 3071 | Webe Coffee Roasters | North Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPJ2eT7N86ehtrnoX_ImeVKziWK8z1J4lOXtv5r… |
+| SUSPECT | 3072 | Driftwood Coffee Co. | Peoria | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO0QjhwndVfQEdkonnc5UH3tsQCKDm9ph7FMssa… |
+| SUSPECT | 3073 | Satellite Coffee Bar | Central Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_fCs8NrChvS3ZtW8n-4nh1vngHQQC6… |
+| SUSPECT | 3074 | Esso Coffeehouse | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOGl5yrOE7wDSrQhMVPicnsYJ1oU6wPkg3v9yz-… |
+| SUSPECT | 3075 | Berdena's | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNbImjlXQxDETYlLJPYibpIh2H82itJpfVmTcZZ… |
+| SUSPECT | 3077 | Strip Mall | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMRGJUhHNNVyvch8re5sSp_egYObfF3P2azofsx… |
+| SUSPECT | 3078 | PIP Coffee + Clay | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPCaN8S9zyt32qS8Vi7_fVS-ZAUxezkrjfa7JXw… |
+| SUSPECT | 3080 | dialog | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMvSTkHN5Im423M7stUhthwvMnw3ZexuGl-dN3Y… |
+| SUSPECT | 3081 | Futuro | Downtown Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGv9ELszOYTOTfdYAInQTKwHALzjaEaZ… |
+| SUSPECT | 3082 | aftermarket. | Grand Avenue | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOfwgUsukn7vpGStcylNVDEie1N4CH65ftZBFoo… |
+| SUSPECT | 3084 | Wonderift | Ahwatukee | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPCDGNK73soE1WFkuEDxYBVvvp0LlIhpL7vzAO-… |
+| SUSPECT | 3085 | Las 15 Salsas Restaurant Oaxaqueño | North Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNimnTQIpOrQC9FDLLPKm8Pb8vTKclr8rfmtL60… |
+| SUSPECT | 3086 | Los Reyes De La Torta | North Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO0DcKhq2s2gvHs8ATTeBthmv7Refx5qX-5uRSv… |
+| SUSPECT | 3087 | Kabob Grill N' Go | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN2QNWJFL9YASw4yoWf57mOC03Ugopq0XR-uVWj… |
+| SUSPECT | 3089 | El Horseshoe Restaurant | West Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHmZEgMHHZGTBHR9MVv6c3ghgj-5Y5nt… |
+| SUSPECT | 3090 | The Original Carolina's Mexican Food | South Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEecwk_wpVtS7LVa-kYPmWw4_p7cKTnP… |
+| SUSPECT | 3091 | Comedor Guadalajara | South Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHcapacijMwJom5UoA-mP_DVEQZwAoTh… |
+| SUSPECT | 3094 | La Pasadita Hot Dogs | West Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAH0MBXeWVlJj5S5m8Wpo4fc77MpMr6bH… |
+| SUSPECT | 3095 | El Sabroso | West Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMUvhiN-1pU8FR9Eqai1Mt9cgK90M15ss_Nq8J2… |
+| SUSPECT | 3096 | Nogales Hot Dogs No. 2 | East Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOm2AADkX-dP5pYZnMcnj1AhAs-u2FJAOv8UzZg… |
+| SUSPECT | 3097 | Fruitlandia | West Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN0Qd-uvuQDpOvSTMIUEIn_xAS9XQXGH-LSkLIQ… |
+| SUSPECT | 3098 | Condesa | Downtown Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHeIRq2tbXvoYX1tkFHwAdXcpgysfqes… |
+| SUSPECT | 3099 | Micky's Hot Dogs | Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM44OHjy7DCzyjpKOX0KAfpNCmumFTWMrYKEPVk… |
+| SUSPECT | 3100 | Tacos and Dogos Don Nico | Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOiRSDAmDnSSVwTzM3ejr1k9BzWsaGqnTQThJYM… |
+| SUSPECT | 3101 | Lakeside Bar and Grill | Peoria | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNgp8tnPT-fqD7sZV6kG4vlWL6BiJ8tN_zwkQzQ… |
+| SUSPECT | 3102 | Zipps Sports Grill | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPencvnCw99I29vWtWZy-DZpGk7DCucMxh1Pzul… |
+| SUSPECT | 3105 | The Porch | Gilbert | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPN7PeWdBa6PNSUvIbtaPnQmFoK6gdzBxBFclfD… |
+| SUSPECT | 3108 | Casa Amigos | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOJmMcvPSA0Hr5GKn_s2S37kaFmDAY570BxYcrv… |
+| SUSPECT | 3110 | Little Szechuan | Tempe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM9jAI2cQtEG4osttGbF5zMyJTb1kRRKKP-Lqpy… |
+| SUSPECT | 3116 | Kungfu Noodles | Tempe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOOaJivMAh1SRSBbzyybFYVFP5PR2fP5tkMWigD… |
+| SUSPECT | 3119 | Ollie Vaughn's | Miracle Mile | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMG2j8zT0ZnDWMqzqkpvukuzoHdL1iIx3te5RuG… |
+| SUSPECT | 3120 | Gallo Blanco | Garfield | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPROxDYOarEFuK7NoTJP7MvYOyM-dOpZrzhqxp1… |
+| SUSPECT | 3121 | Lovebite Dumplings | Downtown Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFDifORHzk1OOIHLQ494GGXdLdELIPTc… |
+| SUSPECT | 3122 | North Italia | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOhS5ZPYQRKVwDmghsoKQs5B4p4ta0h_dozBuMH… |
+| SUSPECT | 3123 | Volanti | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMnmiNsK9Lk2p-P1Aqs8e302XumnFJsTiykg8m7… |
+| SUSPECT | 3124 | Over Easy | North Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHTMoMaq1ie8VZ2XXSdmqJLgtHNpCw4L… |
+| SUSPECT | 3125 | Pita Jungle | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipODnmpR0zALt52OjdnDZSMswJNcRZDfe7PdnKkH… |
+| SUSPECT | 3126 | 32 Shea | North Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP0al_2Pv9hJHwo5v6IlAnQwYYvos4CfmJVKsd_… |
+| SUSPECT | 3127 | Butterfield's Pancake House & Restaurant | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMdqLfVjKy65XzA-BZ7loLL0Q6acUERqyS-TS7Y… |
+| SUSPECT | 3128 | Luci's at the Orchard | North Phoenix | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHbMhaMrxdnsd1Y85ONINF3S0rhXPCNK… |
+| SUSPECT | 3129 | Chelsea's Kitchen | Arcadia | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFYTJxlUtbOE1FbkhsdP-xbZgztAg-8P… |
+| SUSPECT | 3131 | Rustler's Rooste | Ahwatukee | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMn7N3U-14ms1BbS9vm_Dny01BmygjRHgqQ2-Pm… |
+| SUSPECT | 3133 | Joe's Farm Grill | Gilbert | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN6YT-6UGSgFNFBBsg0WqfUXuiOKv6DafZiDcB7… |
+| SUSPECT | 3137 | Sel Restaurant | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMNEtTC61IrVicW0CYTqqnfWMxt_bVK82eWOr0a… |
+| SUSPECT | 3140 | Fat Ox | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNeeczaAQ6CrOfXKNNCrPaWuWeYNLABti1WX84S… |
+| SUSPECT | 3141 | Maple & Ash Scottsdale | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNrhdykHASxuKnLSWMX4D6fT22uGZbJ3ZdDf2Vu… |
+| SUSPECT | 3142 | Francine | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOtuwW0JP5MFHb4XFTIloPnGjWshP_ckBpsmop_… |
+| SUSPECT | 3147 | Toca Madera Scottsdale | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOmOTBWI8r8pJV3PDuA7FxsmEvreGKcuXL0bJJQ… |
+| SUSPECT | 3148 | Shinbay | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPTw22gqN3Hr03cwX4a9tfxsCEUmFtmc1Mnn3oH… |
+| SUSPECT | 3149 | Culinary Dropout Scottsdale | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP4WWZyAREGyYUn3cn4omF3jZ1tUAktN6rfYMba… |
+| SUSPECT | 3150 | Olive & Ivy | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPZTF_8c_nkOCnTtniLppOkVfxOBC0VhVaqgF-r… |
+| SUSPECT | 3152 | Bottled Blonde | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO2WQnJV-S55HzKU8jR_lgMFZ9ftiPv-ZLJ6ADU… |
+| SUSPECT | 3155 | Dierks Bentley's Whiskey Row | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM3Vpd2o7leryKXOCuoUBOnmj5a62xSXfMHPYMs… |
+| SUSPECT | 3156 | Maya Day & Night Club | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN0m0Apcf1BXxuqZNZQxsXwAhuaAd9LrKzKfIMC… |
+| SUSPECT | 3164 | Brat Haus | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMgy6Z3RCF1TPUlN_A9BA-Naq3hRKQ7KrEbfLjt… |
+| SUSPECT | 3165 | Atlas Bistro | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM7QsZyy8_kYA9BJwhIdXBz-dLH8nfs60IUzcE=… |
+| SUSPECT | 3166 | Porter's Saloon | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNN8FNoqJvxEH0GDC-IUD2ZPlWhSUj7r-_8D6ex… |
+| SUSPECT | 3168 | Durant's | Central Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNtJJFOUHtXbD9gQZnp8hgtAZ-YM7rm8g37CfU9… |
+| SUSPECT | 3169 | El Chorro | Paradise Valley | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNPXscttYxL_J8JrOqDQgKkvA8Mw95MtFj9LfR9… |
+| SUSPECT | 3173 | The Arrogant Butcher | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOH3xe5V_NYVPnH2sBbfoICqlkLV1BrZLqA4S2l… |
+| SUSPECT | 3174 | The Henry | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM7git6bHBA9MPt7vPunnY_DTLPURduo-kW0abP… |
+| SUSPECT | 3175 | Doughbird | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO2SBCL-Isc0zEfOaZyRvkI1s6GwaqN87JG0HW7… |
+| SUSPECT | 3177 | Postino Arcadia | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMJ8OaWX4pvR0yUiiWCtThO872n2RhFIMCqe-89… |
+| SUSPECT | 3178 | Windsor | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP8MPQc3qLGt_DVMfGi5KVAEKI7ODz_Q7j6XHx-… |
+| SUSPECT | 3179 | Federal Pizza | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOiE6DbP1h95iR5lo4DnTllQeu_vu0eCLf_dmFN… |
+| SUSPECT | 3198 | Bobby-Q BBQ | Glendale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPyN3dV24V3xtnE3YxGUo2tmaDMKWJBXIVkUPg_… |
+| SUSPECT | 3201 | House of Tricks | Tempe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMI_QoNy1HuRlRM1mE16enEAURS5vPOmrsqqJ60… |
+| SUSPECT | 3208 | Cafe Monarch | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM0pJDZzKwXHl6RxEjgZnw8IF-5JKjQ0kWUC2KK… |
+| SUSPECT | 3209 | Social Tap Scottsdale | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPoshcKx8vUiRm_3IjAFvS_k54rJXnAZgEvC2MM… |
+| SUSPECT | 3210 | Goodwood Tavern | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNuZdRyLuIST19v_IoNyq4_ePI-ef6Sj7Bfar6b… |
+| SUSPECT | 3212 | Not My First Rodeo | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOPtRvasXxMAcXlTJvy5NwECBbK8Ui1vA5eeNGP… |
+| SUSPECT | 3213 | Beverly On Main | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNriw7CMVQjySUnWnJpnSJ8o4Rw1mDXWCLuS_Se… |
+| SUSPECT | 3215 | Original ChopShop | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM82LqaX9c1Q_TQwvKxX6t59iVOAVfwzLw6uZx-… |
+| SUSPECT | 3221 | Hillstone Phoenix | Biltmore | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPwL5aRYEhPjNTh-PKwbKsnykdNbDRjHE7jiyGa… |
+| SUSPECT | 3224 | Ghost Ranch: Modern Southwest Cuisine | Tempe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPoM-2csP9fUEyMIpmUxWWcj9T2Auaix3Nyd7Ln… |
+| SUSPECT | 3225 | Texaz Grill | Central Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOi3PpRNkLAZp977H8q-xLDhzNDHZHmD9npp6Yk… |
+| SUSPECT | 3229 | Churn | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN0mROwLp4BsIPN2EPDEQ8b_-t2JvrQ1UxeHxjr… |
+| SUSPECT | 3232 | Wren House Brewing Co. | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMZb6IZ7DdgPl8qHioQjPBHHxnvXTFS1VU5yvr2… |
+| SUSPECT | 3234 | Crescent Ballroom | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMXet3qujXJ87thNKkpkRpLEWkqPtpRZOteMyNo… |
+| SUSPECT | 3235 | The Van Buren | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMUUlRgNRL6wI9EG9vXHclJoWHSrTr4Pe0cxnhq… |
+| SUSPECT | 3236 | The Duce | Warehouse District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipON_1RZKs7VS8OQMasgvup7eppygh_FEg0b9Agk… |
+| SUSPECT | 3238 | Vincent on Camelback | Biltmore | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMKcmHhZkDhhM110ZXVtlNS0VB7lvw_XU6X0M1c… |
+| SUSPECT | 3242 | Liberty Market | Gilbert | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO3-7LEDlxZBPIp5Gm9qPJz5QDDhzonJFy2c_GG… |
+| SUSPECT | 3243 | Thunderbird Lounge | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN87dnoMechYUQaRQKLT3QO0N1gqlSko6iq8U1u… |
+| SUSPECT | 3245 | Century Grand | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOhcoxLGyRjR3qcDxEr8-VyzuWytucYDscCWNJ8… |
+| SUSPECT | 3246 | Little Rituals | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPp2t0p4IIOC21xxgOPpv6SCVcRhmsXGVZwEW1z… |
+| SUSPECT | 3258 | Four Peaks Brewing Company | Tempe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOmIxUNwV-fLppqaC2XWsZYqgiSlsGcnyr3jrxl… |
+| SUSPECT | 3260 | Sweet Republic | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPiLocwnBGubur_OdYmMTt1CUzD3pW6skbnOHjG… |
+| SUSPECT | 3264 | Bitter & Twisted Cocktail Parlour | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPKb6VkpxAwrrs3byKeE0ml6oVUiXvn96AqsARb… |
+| SUSPECT | 3275 | Joe's Real BBQ | Gilbert | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMKAnWXSkYB9s3eFELx2WKAqumCXF3zOdlNIPo3… |
+| SUSPECT | 3276 | Tee Pee Mexican Food | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMZsRUReYTBCPFkhVL-tuy7eHPi2IFt7icKooq1… |
+| SUSPECT | 3277 | Caffe Boa | Tempe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNL9zPGmbuEbDHxsx-uNizAaaPz-saIwJKhJ907… |
+| SUSPECT | 3281 | Trapp Haus BBQ | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNTVhgtL1wU1xvw5vRdW53d-SfBYZm4O2ojBxtz… |
+| SUSPECT | 3287 | Copper Star Coffee | Melrose | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNeuIDPfIz0LPE_fQccr2V6TEGY378ICMYuVWB9… |
+| SUSPECT | 3290 | Worth Takeaway | Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNDYaTzzLR4B3XNzAbYXGneJF1qIcG7cK_WQ76C… |
+| SUSPECT | 3292 | Honey Bear's BBQ | Central Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNCcgyEHeRnXIW2VmQhza3eULh7g8KabE_LjCV2… |
+| SUSPECT | 3293 | Restaurant Progress | Grand Avenue | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPGWu_1WhDJ8snrALH0xmIaxGwpBlNVA5hZVRCM… |
+| SUSPECT | 3294 | Goldwater Brewing Co | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMO67VIZmGNVMTeMe9ySkqBLZ_gbl5dgxViXmTW… |
+| SUSPECT | 3295 | The Pemberton | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMiYLbESR_u3IwhUNGlOJKDwCHQfWYLOMRNZzF8… |
+| SUSPECT | 3296 | Taco Guild | Central Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPbm8EgzkGvOOe3WEVQIzWs_vX7tQHIaa0PpVp1… |
+| SUSPECT | 3297 | Chico Malo | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOqaZKPSWY79Gkmat49VZV84Agv5pHlwaCi7mkV… |
+| SUSPECT | 3300 | The Sicilian Butcher | North Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN38kWE9UZrccjGhEGOypdhi2o_MBqWyGMHW_D9… |
+| SUSPECT | 3301 | The Sicilian Baker | North Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOzAKwq3FBji1njXRaC-V5iQZP-7eluJqVOTK16… |
+| SUSPECT | 3302 | Daily Dose Grill | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMhDcSrDOmGcJg4TQh91mgFAAuU-bmSxvgNfywY… |
+| SUSPECT | 3303 | Cornish Pasty Co | Tempe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMmd1YwDum2f13XaT_xk12_j0Ewx4NSHpoGO2mp… |
+| SUSPECT | 3305 | Stand Up Live Phoenix | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipORZLZ53kJsNGuEeLu5jxM-DKX74fazEdtUrScA… |
+| SUSPECT | 3306 | Arizona Wilderness Beer Garden — Gilbert | Gilbert | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOPtZZ_C0T-E2FeylX4RhZPzpC6RjVNmm2_mO8=… |
+| SUSPECT | 3310 | The Clever Koi | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP49iSQQQR7yrh4Jv_XpWxeoOyrbWAgYMtdDY5Q… |
+| SUSPECT | 3311 | The Parlor Pizzeria | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMTQa0xvIofg7l8q9M3XaiEfzn-1C9YwCF75xAJ… |
+| SUSPECT | 3312 | The Herb Box | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPf9zkLFfiIKdCQ1jSEfYL2AlfyZDbCrBBT7iE_… |
+| SUSPECT | 3313 | Hand Cut Burgers and Chophouse | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMfeaOoqTuMWZGp638Bi6qGTS32GSOeH96hpXiV… |
+| SUSPECT | 3315 | Highball | Midtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPOG7M6joL9iVcidF3QEX1mqv8HTYxaeMjMpJUd… |
+| SUSPECT | 3316 | Barcoa Agaveria | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPSXwZ3fVGV3YfedIxz-yHHDzM3XxlY9rUBIVLB… |
+| SUSPECT | 3317 | Quartz | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOgHt7rdL9_bSzyXB1eO7kUsN01oT-d4ShVQAo=… |
+| SUSPECT | 3322 | The Ostrich | Chandler | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOElpwaC5gdkesu1p-vS2mc_OkGL7QznCoeIVqX… |
+| SUSPECT | 3323 | The White Rabbit | Gilbert | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO42mR7uNK0XW3KDNr9gykzE32fYwzjLG9oHbN0… |
+| SUSPECT | 3324 | Don Wood's Say When | Uptown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM8QNO0GWO9ryVpi3NZokiYua64K-rZEw6Oi-t8… |
+| SUSPECT | 3325 | Upstairs at Flint | Biltmore | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNRmR7foteFdtVbYzomJZZVUFHMIp9rNxoLoi1d… |
+| SUSPECT | 3326 | Lon's Last Drop | Paradise Valley | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM-vimHweNZ9QQ9ynujDs71u20kzpg726pp69-k… |
+| SUSPECT | 3327 | Coabana | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM-WrMvOc8OiU6T98iee6f8AnPxeaazeGMPamWV… |
+| SUSPECT | 3328 | The Brickyard Downtown | Chandler | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOmEo5xA2NiSm6_0ZKz95v35twMMPcY_qP-ziD1… |
+| SUSPECT | 3329 | Tell Your Friends | North Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMJe8PWwk4jH_axhbJgQS1HzcayA5TnvoKPAlNv… |
+| SUSPECT | 3333 | CAKE Nightclub | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNS6lsaRPgDEHHx-5zZvNPZOLeLnE1DvV6cTnzq… |
+| SUSPECT | 3334 | Jamie's Bottle Shop | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOuXhDMntdDbRHvakZJinsbEUJrtIu4PSPzy9qT… |
+| SUSPECT | 3339 | OH Pool Bar + Cabanas at Hotel Valley Ho | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMfGG_zgivFwTUs3mDIXhaL91s-Uz8cztAwksu_… |
+| SUSPECT | 3341 | One Handsome Bastard | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNZujOV_WfplbFWCJrRn-xzjuftlEFL7r9c1zA0… |
+| SUSPECT | 3342 | Rockbar Inc. | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOfHzjlUuQXnKStP4ZOkrCMShDalBCbx0G0G_E=… |
+| SUSPECT | 3344 | Yellow Spruce Roasters & Wine Bar | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPKXa9fgMxMl-8nu2DghiZOu46bdLc-sQgwFfpP… |
+| SUSPECT | 3345 | Babbo Italian Eatery | Surprise | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOsGEyhitQqAFv3ShdOr1Su3V3i4Ktw7T38mUk=… |
+| SUSPECT | 3346 | Barrio Queen — Surprise | Surprise | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOe8gkMGR2pLBoa7Q4bCRDqNeKn-3ljb4A_uGCi… |
+| SUSPECT | 3347 | Angry Crab Shack — Surprise | Surprise | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNg9QDq9QD15xIQ8-G5wUKJFX7WQaCBt7T6FGOw… |
+| SUSPECT | 3348 | The Toast Craft Kitchen & Cocktails | Surprise | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNW6CIc59Fxb78EjkFNAjaDCwooH1WnUEw9CgVQ… |
+| SUSPECT | 3350 | Rio Mirage Cafe — Surprise | Surprise | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM6rpZTy0S1ZJJZrvJRlQrkltnTLkyz48kARyUS… |
+| SUSPECT | 3351 | Irish Wolfhound Pub | Surprise | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMO5x37ft_6_KgngjD3Bng1lrb5Zx7iyghKlsaW… |
+| SUSPECT | 3352 | Bonfire Craft Kitchen & Tap House | Surprise | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipON45jmmYlVwJYBualVtbohdL6SJJTLz3ZVmNSC… |
+| SUSPECT | 3353 | Spencer's Place | Surprise | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNp2pFGk8_FmiI0O6RUuNcTKcH4H0cwvzomXzgz… |
+| SUSPECT | 3354 | Hurricane Grill & Wings | Surprise | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMmENrOWzfZXx-0b8ALCJRcQcL02zRmy5apC34c… |
+| SUSPECT | 3355 | O.H.S.O. Brewery — Surprise | Surprise | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMNt1rdobPlKA9sXCq7Og67CQ1p29n5tqEWadBr… |
+| SUSPECT | 3356 | Haus Murphy's | Glendale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipML5bN-ec4Ph2mSoX7rfxT3tDwq9vJhAg_whF8n… |
+| SUSPECT | 3359 | Bitz-ee Mama's | Glendale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPtLH4zceAj5VfNWKurHoYOibQltN1Ti3_XkA3y… |
+| SUSPECT | 3364 | Cibo | Roosevelt Row | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPlEtG0Qsfi8f8ZU-6QOuolbjzSoX8gBpy9cw-A… |
+| SUSPECT | 3368 | Ocotillo Restaurant | Midtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPEv0QMsmKgaaO7DJDnca1VgdkZVu9Y6NR8KhG0… |
+| SUSPECT | 3371 | Perch Pub and Brewery | Chandler | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOmcfOSytXf6yEjZgrLmkc8TNERzTy6GDmmE8g-… |
+| SUSPECT | 3372 | Los Dos Molinos | South Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMJNRFc6j94RrokxN4RMv7S9YAXSY_DGDISCFvN… |
+| SUSPECT | 3373 | Mekong Palace | Mesa Asian District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOlWcWxdzdCLyOgUeFyCvsl3mZgmInIuCNXtjSA… |
+| SUSPECT | 3374 | Cider Corps | Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPhEi-Gp1V_VALqVdQWVZwZ3HD_raEIpALX9D9B… |
+| SUSPECT | 3376 | Craft 64 Chandler | Chandler | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOwTZ9WuEuNIJhf8BqreTAyvo7QatoqVaKer4um… |
+| SUSPECT | 3380 | Pedal Haus Brewery Tempe | Tempe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN26r88guNQIMAuBJKeVUwjMUmTE2EuPMqGXHXO… |
+| SUSPECT | 3382 | Los Sombreros | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPjvwjABFmkZ-4gWGg2EV3a-vC91bCfGJmZ0jI9… |
+| SUSPECT | 3383 | Diego Pops | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOuuPhGSAl32KeDIoIh-dNOrDEcBhx1XHlROBAh… |
+| SUSPECT | 3386 | Obon Sushi + Bar + Ramen | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOWUSES6yoZcuAkJa48d7z71fn83kMOoVkP3wMU… |
+| SUSPECT | 3388 | Mastro's City Hall Steakhouse | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN1hxK-B4sB2GYSpexSWMzBghappQ-JhJLJBoh9… |
+| SUSPECT | 3389 | True Food Kitchen Kierland | North Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMGhBEyebA76yyOCtn-136rl4XyumVOjj2Pq_VB… |
+| SUSPECT | 3390 | Greene House | North Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPlzVIZKCHBFVK3xxMPxzf0mpPaQKlMCv0qmzOP… |
+| SUSPECT | 3395 | Angel's Trumpet Ale House | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNU7gRGvAR9ohFWQdxgExl80EpxzqHl-2nZUqbF… |
+| SUSPECT | 3397 | Myke's Pizza | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOe4b3PL38GHSL4RQW0HTqsvCTFPSkROgVIpC46… |
+| SUSPECT | 3398 | Cartel Roasting Co. Roosevelt Row | Roosevelt Row | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMjlsXPCxb8R21JzmsVf3qdqwrg55bsRXUyOWKN… |
+| SUSPECT | 3399 | Alice Cooper'stown | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMBLOLU6Fj5gwlqQaw4vWykynNIUL2wfCV6FA_S… |
+| SUSPECT | 3407 | Ingo's Tasty Diner | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNEo2wOIELC8C-J73CynET7OsuAoqLzoRKw_SJV… |
+| SUSPECT | 3410 | Morning Glory Cafe at the Farm | South Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMCdnM6cvghSscOh1MKcoqxCoBGj0V-hug_3PMH… |
+| SUSPECT | 3412 | Pane e Vino | North Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNYupRfor2UVuaE1jttK1fZKYrH-r65umAO18Kw… |
+| SUSPECT | 3416 | Bourbon Steak at Fairmont Scottsdale Princess | North Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOX5h-T8JSUpL2_T11DNlS01DNLDXKm0rlxYA17… |
+| SUSPECT | 3418 | Aunt Chilada's Squaw Peak | North Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN7dgNfN6jouL8DN5RRgzSqNbyf5wVFfx6BjpYL… |
+| SUSPECT | 3422 | Rosita's Place | Garfield | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNk691d44GPX6eFj23iyHEcJvOv42zyvra-g40P… |
+| SUSPECT | 3424 | Harlow's Cafe | Tempe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN_o_AEe4XhrUYBXbyptGFkxU376FZleMlpqeiR… |
+| SUSPECT | 3425 | Peixoto Coffee Roasters | Chandler | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOsHEfI2CDIiKLmvcXr8UxXzb9wQuZlinSJC9j5… |
+| SUSPECT | 3428 | The Capital Grille Biltmore | Biltmore | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP4FFOmAXvYxn7WtzKobsZbIhBJtRF-7f5KriJi… |
+| SUSPECT | 3430 | House Brasserie | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOafD_WAqE_7n1t7i8AR8fwXOw1wU3p8H7CpAwB… |
+| SUSPECT | 3431 | Gracie's Tax Bar | Grand Avenue | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipONfXIva_HdUQJ9gNkZfwbKihnMhzJLKKD7gZIj… |
+| SUSPECT | 3432 | The Wandering Tortoise | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOXaYBU4g1bflNdBKR0Lg7mvQW-0sLMgMByWH7G… |
+| SUSPECT | 3441 | Forno 301 | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPO6nO-N1xHKyFluukduh93O4lk6ApcNdtMEgiK… |
+| SUSPECT | 3444 | Rehab Burger Therapy | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMgbw4S46e_SOYjg1YTQwDC_i_8aSLEwCkcowL-… |
+| SUSPECT | 3452 | Pete's Fish & Chips | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMeQBx92mCgHPrmo6vYMXrLhPAUg-HHOVkuBHBx… |
+| SUSPECT | 3455 | Orange Sky at Talking Stick Resort | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMY2jKnYLv9lFkJcI7YnWDlWIEQ4eA6-JpoYLhC… |
+| SUSPECT | 3456 | Walter Station Brewery | East Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMzRgWd7KwgS1LhLgavz8yZtzwDloWkPjrGZIiW… |
+| SUSPECT | 3457 | Ruth's Chris Steak House — Scottsdale | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOqNR8nxo3k84wxdL_qFHbFvU0myCrMxHC2S9yo… |
+| SUSPECT | 3459 | Coronado Cafe | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM0xzZJlx_RFuueWuogKwqP43NRiv7A2_SSwa2J… |
+| SUSPECT | 3460 | The Rebel Lounge | Arcadia | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMFQblGNv7Fb0YimAqUzUudRJ6C0kvjPfocMyJS… |
+| SUSPECT | 3462 | Il Vinaio | Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPlees9Ki4HLSG43mNWln58qlki0td9UBo6OWQk… |
+| SUSPECT | 3463 | Chula Seafood | Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP6MSkK1mkFpwAOlR8L7y8Ulh_LL4iYMt4NCCjf… |
+| SUSPECT | 3466 | Arcadia Farms Cafe | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOJQTXIzpm7V5bYft9BfAMobY9m3EQ70gMOGt0j… |
+| SUSPECT | 3470 | Blue Hound Kitchen & Cocktails | Downtown Phoenix | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPwrcFKW1E-kvuxCEBGRcs71hPC2FIqSfUOEeg4… |
+| SUSPECT | 3472 | Cien Agaves Tacos & Tequila | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNKQ0aghrteJgAdp7k6S8SETWuCeXeNyGvvGiti… |
+| SUSPECT | 3479 | Breakfast Club Scottsdale | Old Town Scottsdale | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMoxeqffGdI1T7Fw18QXc4NE4tNTA_bhJjL7Jst… |
+
+## SANANTONIO — 73 flagged
+
+| Severity | id | Name | Neighborhood | Reason | URL |
+|---|---|---|---|---|---|
+| BAD | 6001 | Mixtli | Southtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6004 | Botika | Pearl District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6006 | Mi Tierra Cafe & Bakery | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6015 | Sangria on the Burg | Alamo Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6016 | 2Bros BBQ Market | North San Antonio | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6017 | Biga on the Banks | River Walk | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6018 | Bliss | Southtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6021 | Silo Elevated Cuisine | Alamo Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6022 | The Luxury | St. Mary's Strip | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6023 | Supper at Hotel Emma | Pearl District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6024 | Tenko Ramen | Monte Vista | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6027 | Pinch Boil House | North San Antonio | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6028 | Signature at La Cantera | La Cantera | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6030 | El Mirasol | Stone Oak | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6031 | Rosario's Mexican Cafe y Cantina | Southtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6033 | Ocho at Hotel Havana | River Walk | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6034 | Sternewirth at Hotel Emma | Pearl District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6039 | Maverick Texas Brasserie | Southtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6041 | Burgerteca | Southtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6042 | Rebelle | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6043 | Folc | Alamo Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6045 | Shuck Shack | Pearl District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6046 | Feast | Southtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6047 | The Magician | Southtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6048 | Botero Tapas & Wine | Alamo Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6050 | Garcia's Mexican Food | Fredericksburg Road | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6051 | Casa Rio | River Walk | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6052 | Boudro's on the Riverwalk | River Walk | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6053 | Little Rhein Steak House | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6054 | The Fig Tree Restaurant | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6055 | Paesanos Riverwalk | River Walk | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6057 | El Mirador | Southtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6058 | Los Barrios Mexican Restaurant | Monte Vista | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6059 | Taco Taco Cafe | Monte Vista | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6060 | Taco Haven | Southtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6061 | Alamo Cafe | North San Antonio | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6063 | Rudy's Country Store and Bar-B-Q | North San Antonio | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6064 | Cured at Pearl | Pearl District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6065 | Boiler House Texas Grill & Wine Garden | Pearl District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6066 | Arcade Midtown Kitchen | Pearl District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6068 | Cappy's Restaurant | Alamo Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6069 | Paloma Blanca Mexican Cuisine | Alamo Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6070 | Luce Ristorante e Enoteca | Stone Oak | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6071 | Max's Wine Dive | Alamo Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6072 | La Tuna Grill & Ice House | Southtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6073 | Hi-Tones | St. Mary's Strip | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6074 | Sam's Burger Joint | St. Mary's Strip | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6075 | Still Golden Social House | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6076 | Lulu's Bakery & Cafe | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6077 | Magnolia Pancake Haus | North San Antonio | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6079 | La Fogata | North San Antonio | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6080 | The County Line BBQ | North San Antonio | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6081 | Feast at the Pearl | Pearl District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6082 | Aldaco's Mexican Cuisine | Stone Oak | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 6084 | Dashi Sichuan Kitchen + Bar | Pearl District | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| SUSPECT | 6002 | 2M Smokehouse | Southside | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMcsI0Gu_vpTUR9OgQX-10ZIJl2t_FGyPSW6Ryz… |
+| SUSPECT | 6005 | Clementine | King William | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMYGcwqvuiP-nLHRXapnjy9kziMrJi9uvGi0Kc=… |
+| SUSPECT | 6007 | La Gloria | Pearl District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPIC8eKVP-ztucoD2IDXby_VHrSfoigr7plBfBa… |
+| SUSPECT | 6008 | Southerleigh Fine Food & Brewery | Pearl District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMdP3W1VWlAFFhTl8kXlbyI8UWmxR0Q4pZ-_vnq… |
+| SUSPECT | 6009 | The Esquire Tavern | River Walk | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMkR07_J83EK_PkjxolhsL-wHRhiK8N_5eX4anT… |
+| SUSPECT | 6010 | Bakery Lorraine | Pearl District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN8a8IA3LmvI1aIDyDCatbJguuCjOY4QE9IkEKk… |
+| SUSPECT | 6012 | Battalion | Southtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNzhsb9C-LbuxXqyYsOaE4euB-ewvE2c7mj-hyh… |
+| SUSPECT | 6014 | Best Quality Daughter | Pearl District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOAINLfUc5eX_1cx5qyy-S5dO6C4Von65wtZOof… |
+| SUSPECT | 6019 | Dough Pizzeria Napoletana | North San Antonio | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM-vbh_oAv7x-7e9DiXT6FLuNBY8JBjb6EK56vz… |
+| SUSPECT | 6025 | Paloma Blanca | Alamo Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO4mCyuoUtbxShYsFg-FWd_wAvFbT4YkCbFMVmc… |
+| SUSPECT | 6026 | Meadow Neighborhood Eatery + Bar | North San Antonio | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPiAMGw-W2AC98FNDZZ-pntVFaBvn7ZJmrZFTNO… |
+| SUSPECT | 6029 | Curry Boys BBQ | Southtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO2IREQRKLlxTHk4WhouPWWruMWSI4kNPa9v3SB… |
+| SUSPECT | 6032 | Southerleigh Haute South | Boerne | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP7eP1bgCiIgjKTnPXBqup9UAeIVP_BeMiY2jte… |
+| SUSPECT | 6035 | Two Bros BBQ Market | North San Antonio | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO8wC_1FXBhpYY-kPaY7_6c6B11JKFbcM1oMKoA… |
+| SUSPECT | 6037 | Toro Kitchen + Bar | Stone Oak | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM2xtVdmP0_3DxcXPio9Kge24UjndkQ8Z67uaEe… |
+| SUSPECT | 6040 | Tre Trattoria | Alamo Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOWUSvnir3Q9nRg7YNaNUMSHBnK_F8oDGsC9e2m… |
+| SUSPECT | 6044 | Carnitas Lonja | South Side | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipORY10nEDZbnA6jB0n84qaj3EWQM6ybCQFeCoNI… |
+| SUSPECT | 6049 | Range | Pearl District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMDz_OTqYrPZ6FkLVG7UCRdPpiXhfBdAtkp9L1W… |
+
+## SD — 497 flagged
+
+| Severity | id | Name | Neighborhood | Reason | URL |
+|---|---|---|---|---|---|
+| BAD | 15000 | Jeune et Jolie | Carlsbad | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15002 | Kaito Sushi | Solana Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15007 | Craft and Commerce | Little Italy | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15009 | Addison at The Fairmont Grand Del Mar | Del Mar | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15010 | Lionfish | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15011 | Lola 55 | East Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15014 | Grant Grill | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15020 | Eddie V's La Jolla | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15021 | Galaxy Taco | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15027 | Carnitas' Snack Shack — North Park | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15030 | Great Maple | Hillcrest | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15033 | Brooklyn Girl | Mission Hills | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15035 | Las Cuatro Milpas | Barrio Logan | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15036 | Cafe 21 | University Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15038 | Alchemy | South Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15041 | Okan | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15043 | Tsuruhashi Japanese BBQ | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15050 | Noble Experiment | East Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15053 | JRDN at Tower23 | Pacific Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15054 | The Fishery | Pacific Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15055 | World Famous | Pacific Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15057 | Campfire | Carlsbad | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15061 | Pamplemousse Grille | Solana Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15068 | 1500 Ocean | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15078 | Mitch's Seafood | Point Loma | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15080 | Liberty Public Market | Point Loma / Liberty Station | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15081 | Salud! | Barrio Logan | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15082 | Border X Brewing | Barrio Logan | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15086 | Searsucker | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15088 | Tahona | Old Town | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15091 | Waypoint Public | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15092 | Super Cocina | City Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15093 | Herringbone La Jolla | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15094 | Whisknladle | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15099 | Karl Strauss Brewing Company — Downtown | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15101 | Altitude Sky Lounge | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15102 | Modern Times Beer Lomaland Fermentorium | Point Loma | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15105 | Donut Bar | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15107 | Raised by Wolves | La Jolla / UTC | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15112 | Holsem Coffee | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15120 | Pannikin Coffee & Tea — La Jolla | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15124 | BO-beau Kitchen + Bar — Ocean Beach | Ocean Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15125 | The Hake Kitchen & Bar | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15127 | Monello | Little Italy | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15130 | Soda & Swine | Normal Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15131 | El Zarape | University Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15132 | Sea180° Coastal Tavern | Imperial Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15133 | TJ Oyster Bar | Bonita | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15134 | Tacos El Gordo — Chula Vista | Chula Vista | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15136 | Humphreys by the Bay | Shelter Island | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15139 | Solace & The Moonlight Lounge | Encinitas | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15145 | Napizza — Little Italy | Little Italy | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15147 | Hundred Proof | University Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15150 | Point Loma Seafoods | Point Loma | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15155 | Mimmo's Italian Village | Little Italy | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15156 | Bencotto Italian Kitchen | Little Italy | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15160 | Shakespeare Pub & Grille | Mission Hills | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15162 | Jayne's Gastropub | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15165 | Breakfast Bitch | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15168 | Phuong Trang | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15172 | China Max | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15173 | The Cottage | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15176 | Jose's Court Room | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15180 | The Brigantine — Coronado | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15183 | Valle at Mission Pacific Hotel | Oceanside | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15186 | Don Chido | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15187 | Cafe Sevilla | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15188 | Osetra Seafood & Steakhouse | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15190 | Basic Bar + Pizza | East Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15192 | Half Door Brewing Co. | East Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15193 | Kindred | South Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15194 | Crazee Burger | Normal Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15199 | Bay Park Fish Co. | Bay Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15202 | Cafe 1134 | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15203 | Trattoria La Strada | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15204 | Bar Pink | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15210 | PB AleHouse | Pacific Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15213 | Ambrogio15 | Little Italy | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15214 | Barbusa | Little Italy | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15220 | Extraordinary Desserts | Bankers Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15224 | The Taco Stand — La Jolla | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15227 | Small Bar | University Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15230 | BO-beau Kitchen + Garden — La Mesa | La Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15231 | The Brigantine — La Mesa | La Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15232 | Hacienda de Vega | Escondido | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15235 | Senor Grubby's | Carlsbad | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15239 | Kitchen 1540 | Del Mar | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15241 | OB Noodle House | Ocean Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15246 | Neighborhood | East Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15248 | Crust Pizzeria Napoletana | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15253 | Saska's Steakhouse & Sushi | Mission Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15256 | Hash House a Go Go — Hillcrest | Hillcrest | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15260 | Bahia Don Bravo | Bird Rock | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15261 | Romesco Baja Med Bistro | Bonita | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15262 | Roppongi Restaurant & Sushi Bar | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15268 | JSix Restaurant | East Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15269 | Parakeet Cafe — Solana Beach | Solana Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15271 | Spices Thai Cafe | Hillcrest | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15272 | Luigi's At the Beach | Mission Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15274 | Fathom Bistro, Bait & Tackle | Shelter Island | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15278 | Havana 1920 | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15280 | Ritual Kitchen & Beer Garden | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15282 | Caffe Calabria | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15285 | Manpuku | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15286 | Bleu Boheme | Kensington | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15288 | El Camino | Little Italy | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15289 | Krakatoa Cafe | Golden Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15291 | Barrio Star | Bankers Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15292 | Isabel's Cantina | Pacific Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15294 | Cucina Enoteca — Del Mar | Del Mar | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15300 | Blue Point Coastal Cuisine | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15308 | Sessions Public | Point Loma | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15309 | Newport Pizza & Ale House | Ocean Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15311 | Shabu Shabu House | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15312 | Yakyudori Yakitori & Ramen | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15313 | Sushi Diner II | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15318 | Cass Street Bar & Grill | Pacific Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15319 | Lamont Street Grill | Pacific Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15321 | North Park Beer Co. | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15322 | Thorn Brewing Co. — Barrio Logan | Barrio Logan | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15324 | Resident Brewing Company | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15325 | Bitter Brothers Brewing Co. | Bay Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15326 | Culture Brewing Co. — Ocean Beach | Ocean Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15327 | Ichiban — Hillcrest | Hillcrest | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15328 | Sushi on Fifth | Hillcrest | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15334 | Lil' Frenchie | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15335 | Bluewater Boathouse Seafood Grill | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15338 | Solterra Winery & Kitchen | Leucadia / Encinitas | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15340 | Tidal at Paradise Point Resort | Mission Bay | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15341 | Cafe Pacifica | Old Town | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15342 | The Chart House — Mission Bay | Mission Bay | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15343 | Donovan's Steakhouse — La Jolla | La Jolla / UTC | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15344 | Mastro's Ocean Club — Del Mar | Del Mar | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15346 | Zel's Del Mar | Del Mar | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15354 | Donovan's Prime Seafood Grill | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15356 | You & Yours Distilling Co. | East Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15357 | The Red Fox Room | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15358 | Boxing Monk Sichuan Kitchen | Point Loma | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15361 | El Indio | Mission Hills / Middletown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15362 | Spicy City | Mira Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15366 | Jimmy Love's | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15368 | Sbicca Del Mar | Del Mar | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15369 | Swell Cafe | Bird Rock | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15370 | Mitsuwa Marketplace | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15373 | Sessions Market | La Jolla Shores | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15374 | Nate's Garden Grill | City Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15375 | Kilowatt Brewing — Barrio Logan | Barrio Logan | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15376 | Bolt Brewery — La Mesa | La Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15378 | Bankers Hill Bar + Restaurant | Bankers Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15380 | Bandar Fine Persian Cuisine | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15381 | Himalayan Cuisine | Hillcrest | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15382 | Surati Farsan Mart | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15383 | Soltan Banoo | University Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15385 | Eve Encinitas | Encinitas | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15386 | Chin's Szechwan Cuisine | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15387 | SURF Korean BBQ | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15391 | Picchu Peruvian | Ocean Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15396 | West Steak & Seafood | Carlsbad | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15397 | Portside Pier | Downtown / Embarcadero | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15398 | The Venetian | Point Loma | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15399 | Farmer's Table — La Jolla | La Jolla / UTC | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15400 | Backyard Kitchen & Tap | Pacific Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15403 | The Brigantine — Del Mar | Del Mar | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15407 | Zanzibar Cafe | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15411 | Mission Brewery | East Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15415 | Cafe Virtuoso | Barrio Logan / Logan Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15418 | Bub's at the Beach — Oceanside | Oceanside | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15422 | Bistro West | Carlsbad | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15423 | Craft House Gastropub | Carmel Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15425 | Las Olas Mexican Food | Cardiff-by-the-Sea | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15426 | Lefty's Chicago Pizzeria — North Park | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15429 | Caroline's Seaside Cafe | La Jolla Shores | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15430 | The Crab Catcher | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15433 | Le Papagayo | Leucadia / Encinitas | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15434 | OB Warehouse Kitchen & Taps | Ocean Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15435 | The Original 40 Brewing Company | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15436 | Callahan's Pub & Brewery | Mira Mesa / Scripps Ranch | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15438 | Hooleys Irish Pub & Grill — La Mesa | La Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15440 | Kaiserhof Restaurant & Bar | Ocean Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15443 | D Bar — Hillcrest | Hillcrest | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15444 | Casa Sol y Mar | Carmel Valley / Del Mar Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15446 | The Brigantine — Shelter Island | Point Loma | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15448 | Oggi's Pizza & Brewing — Del Mar | Del Mar | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15449 | The Original Pancake House — Kearny Mesa | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15450 | Urge American Gastropub — Rancho Bernardo | Rancho Bernardo | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15451 | Acqua al 2 | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15453 | The Big Kitchen | Golden Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15454 | Tin Fish Gaslamp | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15457 | Red Sails Inn | Point Loma | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15459 | Spice & Rice Thai Kitchen | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15460 | Primavera Ristorante | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15463 | The Sicilian Thing Pizza | Little Italy | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15464 | Harry's Bar & American Grill — Rancho Santa Fe | Rancho Santa Fe | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15465 | Manhattan of La Jolla | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15466 | Flower Child — Fashion Valley | Mission Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15469 | Spike Africa's | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15470 | Sam Woo BBQ | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15472 | Cafe Japengo | La Jolla / UTC | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15475 | El Callejon | Encinitas | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15476 | St. Tropez Bistro & Bakery | Encinitas | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15477 | CUCINA sorella | Kensington | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15478 | Scotch & Sirloin | Kearny Mesa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15480 | Trattoria Acqua | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15481 | The Barrel Room | Rancho Bernardo | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15482 | Liberty Call Whiskey House — Kensington | Kensington | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15483 | Jong Ga House | College Area | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15484 | Ortega's Bistro | Hillcrest | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15485 | Lotus Cafe & Juice Bar | Encinitas | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15486 | Milton's Delicatessen | Del Mar | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15487 | Rose Donuts & Cafe | Point Loma | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15488 | The Local Eatery & Drinking Hole — Pacific Beach | Pacific Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15489 | OB Brewery | Ocean Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15490 | White Rice Filipino | Normal Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15491 | Cafe Bella Italia | Pacific Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15492 | Aladdin Mediterranean Cafe | College Area | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15494 | Harumama Noodles & Buns | Little Italy | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15495 | Quixote — Lafayette Hotel | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15496 | Beginner's Diner — Lafayette Hotel | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15498 | Original Sab-E-Lee Thai | Linda Vista | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15500 | Hamilton's Tavern | South Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15501 | Garage Kitchen + Bar | East Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15502 | Feast | Hillcrest | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15503 | Tartine | Coronado | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15504 | Bice Ristorante San Diego | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15505 | Officine Buona Forchetta | North Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15506 | Sally's Fish House & Bar | Marina | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15507 | Oceanaire Seafood Room | Gaslamp | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15508 | Chart House San Diego | Downtown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15511 | Candor Thai Kitchen | Liberty Station | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15514 | Il Fornaio — Del Mar | Del Mar | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15515 | Eclipse Chocolate Bar & Bistro | South Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15516 | Cafe Chloe | East Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15517 | Cork & Craft | Rancho Bernardo | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15519 | Javier's La Jolla | La Jolla | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15521 | Kous Kous Moroccan | Hillcrest | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 15523 | Uptown Tavern | Hillcrest | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| SUSPECT | 15003 | Juniper & Ivy | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMhXHRHDYNOlMgIgqKr52jKkdpsbgDSpufig1x0… |
+| SUSPECT | 15004 | Herb & Wood | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPMJCbbyLUnLQMhuIg9bsiG75ZU3tkVpz7J9yqG… |
+| SUSPECT | 15005 | Born and Raised | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNIzaXLNMVaRrvore5HovsE8BzGwWEXH5GFG3in… |
+| SUSPECT | 15006 | Ironside Fish & Oyster | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPNtqkMC7RHNXqg-kFlDH1TBnfnYLXhS-NQtyAH… |
+| SUSPECT | 15008 | False Idol | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOcQ6AKSJRXWYvYA95VRb83Wf33CW-M4gxthZJF… |
+| SUSPECT | 15012 | Cowboy Star | East Village | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOGWnsutSqWLpxgjN3rWPGMi4lsFr8Wm2P_01_X… |
+| SUSPECT | 15013 | Rustic Root | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMHT6yNPwOnNDD-1vo7o5rYJXjN9xTLM8cd4NB1… |
+| SUSPECT | 15015 | Prohibition | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNWQx-Ln5llWdkRaA8ieQhiTXvXqG4r0pCKmnGI… |
+| SUSPECT | 15016 | The Marine Room | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPsHbzDZkqhLfbUbN3hggrrsODP5tJ5X7AWAWB4… |
+| SUSPECT | 15017 | George's at the Cove | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO9GPnc7FPStpQEEdil_EozjsA9C4tomomp3hGP… |
+| SUSPECT | 15018 | Nine-Ten | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOtPJcCwsziA7xMn2bSirFOQtuiJGtR-g-RITDD… |
+| SUSPECT | 15019 | Puesto La Jolla | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNl2VjNelY-qJsgSZWQHKpl9UBwz-h4t50lYKf_… |
+| SUSPECT | 15022 | Polite Provisions | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN_bretgE44BqqwH9_OcQ58MkETXm0wcvBVPBbo… |
+| SUSPECT | 15023 | Cucina Urbana | Bankers Hill | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMIo12UsW2n2MCamaowSGpJhzbCpJodqCNZ6Q0E… |
+| SUSPECT | 15024 | Buona Forchetta | South Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOyljnWhjwVWym9HEjpH6vJgX-G76u41V970wny… |
+| SUSPECT | 15025 | Saffron Thai | Mission Hills | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOoiQXc5VStMfe2tN1v-P5aiHW-ZhIGmLN96f2R… |
+| SUSPECT | 15026 | Mister A's | Bankers Hill | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNDtDv72cuVMhPPqfXj3_v-yJik6kTxusO_8Cmy… |
+| SUSPECT | 15028 | Tribute Pizza | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPj6ynDWZfFrXlvlqx6dN3xtANjqqeIBC4vXMOI… |
+| SUSPECT | 15029 | Communal Coffee | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOTIltbFv9n_fpOTEiHjembsnnGWSLHXjrTSorI… |
+| SUSPECT | 15031 | Crest Cafe | Hillcrest | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOn7K0FYEmejWmabtbl0t4yJkeEapEKeKMyJJ64… |
+| SUSPECT | 15032 | Oscar's Mexican Seafood — Hillcrest | Hillcrest | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP4BLjivpww8DBEmvGdVpAzwwUEBTVgreznAzFc… |
+| SUSPECT | 15034 | Lucha Libre Gourmet Taco Shop | Mission Hills | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOZ9Sup828lDLZZz57kQZDXG2OF95geYh0qa1Q4… |
+| SUSPECT | 15037 | Callie | East Village | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPTL1O0V-Ije07TgqX_gy9kyCnUx0XPKKJSmd1K… |
+| SUSPECT | 15039 | The Rose Wine Bar | South Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM63LNeN-DL8cJyG1frJ0Aiur7v1a2dR56NnKdr… |
+| SUSPECT | 15040 | RakiRaki Ramen & Tsukemen | Kearny Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP5y1rSVjx420BiDOwAa3iBZtVtVhl_jqPmsVjQ… |
+| SUSPECT | 15042 | Tajima Ramen Kearny Mesa | Kearny Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOcVdWPUXnHXGD3mZrdvCQV9rg805gYKhPw3M4e… |
+| SUSPECT | 15044 | Jasmine Seafood Restaurant | Kearny Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPs_VSJN1X_6Rm6zo35VBHc5OQ8DcZaZ-jX6cuY… |
+| SUSPECT | 15045 | Sushi Tadokoro | Old Town | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNh_dWIcI1nbJVB_8mKXLigN0NzeNx9z74-uZzG… |
+| SUSPECT | 15046 | Kettner Exchange | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOtx-SFpJ6sP6MQd_OkRJICwIswa1P0urWr-gPD… |
+| SUSPECT | 15047 | Davanti Enoteca | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMbDS9elPd5pN7apocPABBcZeuPnVC8PviH8fMt… |
+| SUSPECT | 15048 | The Crack Shack | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMQRd7MDt4xX0LrO9hOJef-0AdjvYV89geqCBkZ… |
+| SUSPECT | 15049 | Animae | Downtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMdhxMVE7XRpYxgkILc7118l3tXgr-z_W8SQVna… |
+| SUSPECT | 15051 | Hodad's — Ocean Beach | Ocean Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM5_5BnIulaDesjAudU20J4jwDT_scCskiHRBH6… |
+| SUSPECT | 15052 | Phil's BBQ | Point Loma | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPtAlMAVEZzKq4ZBFw2yHCa75-9_0piEH1Np48u… |
+| SUSPECT | 15056 | Wormwood | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOGqxE4kg6EHX7ysl6q_NYDpYjC_e9kFjkDJAQO… |
+| SUSPECT | 15058 | Herb & Sea | Encinitas | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP-CmvqolU5TeBQWloS7sRy0Pf6RK4lJa1vCeg0… |
+| SUSPECT | 15059 | The Plot | Oceanside | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMOA7FD595BEKBzgFSZl8X1lxLX1Zn6Z5PwGb4u… |
+| SUSPECT | 15060 | Wrench + Rodent Seabasstropub | Oceanside | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM6zL8nCi6oNuTSdl8jBLASI4fxa3VcDTUqYPw=… |
+| SUSPECT | 15062 | Claire's on Cedros | Solana Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNkiIZkKapGaj_SYWcSUE7yuqN56CgnO9P2pJoa… |
+| SUSPECT | 15063 | Fidel's Little Mexico | Solana Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOOxMSytA2fnms5SjySnP9yMwBQ9Kd8tPDwPxfw… |
+| SUSPECT | 15065 | Jake's Del Mar | Del Mar | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP4LONFBNBoOD1d_ns-jGlninpJtFCnmRL5arx5… |
+| SUSPECT | 15066 | Poseidon on the Beach | Del Mar | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO9o1SmMD-P-yfPO_ZxIvKc8WEKcCHxaQrLtvMf… |
+| SUSPECT | 15067 | Pacifica Del Mar | Del Mar | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOP3DXx5LAg9gq71xUtFmQYpWgUDI01xWz2xTYl… |
+| SUSPECT | 15069 | Coronado Brewing Company | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMEYvxX4cvR_zGtawHUI7YwS1juSYPTIrPj-2Ko… |
+| SUSPECT | 15070 | Leroy's Kitchen + Lounge | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOzyWdbt1Jl1OL9axgNMkxYC8HF7JNHFb0Pw_bK… |
+| SUSPECT | 15071 | MooTime Creamery | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOMlIbmhxszqFd5FzW6tmkuXvxDqlGLCfp0rk99… |
+| SUSPECT | 15072 | Clayton's Coffee Shop | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOTCjdyD7DcYimZ7drueTNVlkWMb-4Vexx6UvXD… |
+| SUSPECT | 15073 | The Mission Mission Beach | Mission Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNTx8ckOp3qiseUnmX_fI8spwdMxcEOivR4Wced… |
+| SUSPECT | 15074 | Cannonball | Mission Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNjg5tyW_7lA0MM_DUTreDPe4fs6VGLmMejl4DZ… |
+| SUSPECT | 15075 | Trust Restaurant | Hillcrest | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOjvcBis6XsUZOE-d__37UnVO91JjNaxGFZEkTh… |
+| SUSPECT | 15076 | Fort Oak | Mission Hills | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNmSoQ5JoSQ0Cx2nnn_TQIwV-v_UjrqQItXCMw=… |
+| SUSPECT | 15077 | Sushi Ota | Pacific Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPuUy_cq2QAdxIUbndcxWniMvbCt9LlLL30YRlf… |
+| SUSPECT | 15079 | Stone Brewing World Bistro & Gardens — Liberty Station | Point Loma / Liberty Station | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPFMed4AMPOkTe9p9O2NYa8Q4NTLaiDmUf40KoC… |
+| SUSPECT | 15083 | Panama 66 | Balboa Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM4_JZOsHjGlUxj6FYN2C91MadAq4sHcd9Vogrq… |
+| SUSPECT | 15084 | The Prado at Balboa Park | Balboa Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMEF9f0OgGPoBoxEVibuOovnSerYIEH30UHo5gB… |
+| SUSPECT | 15085 | Nobu San Diego | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM0t8KruDUkRqvD5sXawgasT25QQZQUkuM5CXud… |
+| SUSPECT | 15087 | The Fish Market | Downtown / Embarcadero | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNrE7Bx3PaKFP8yKMKEvpzdehJUqm9loV48BU8v… |
+| SUSPECT | 15089 | El Agave Tequileria | Old Town | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM20Z4UlL73_iTooK0i2Gwxd3Vz4Epir9c_ZY3d… |
+| SUSPECT | 15090 | Underbelly North Park | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPqhr5S9j6y9pvK29QYC6Knp7Db4bWMkl1RoQs=… |
+| SUSPECT | 15096 | Catania | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMmENO6d802AwhmtpCpxTHhwvb50YGR2djnMTlK… |
+| SUSPECT | 15097 | Barbarella Restaurant | La Jolla Shores | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPuS9IsvvJcCEzW-44i7CrBc7hWeAJSlevOzYzG… |
+| SUSPECT | 15098 | Hob Nob Hill | Bankers Hill | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNNSutT4cTbWxrq_OQ053MvdH7WoU7ZFnRil_8_… |
+| SUSPECT | 15100 | The Nolen Rooftop Bar | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOBnrkd3Lwi6czLwfsURKPicPx44Efc9GSoV6kp… |
+| SUSPECT | 15103 | Societe Brewing Company | Kearny Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM07UW9leHZYXuq4XHkup6yJOv-XFaEU_YE5tyb… |
+| SUSPECT | 15104 | Ballast Point Little Italy | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNnxjOm-9EYDebkEfJrEA3uZwHbvd6snIJhaUE=… |
+| SUSPECT | 15106 | Nomad Donuts | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNTiKg7Ecf_AowOwGbJG8YTjV3OI9dJkG6XhpeO… |
+| SUSPECT | 15108 | Bread & Cie | Hillcrest | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPLlwxLDgbG8izspoRGZWn62N8lJTmeRFzam2g9… |
+| SUSPECT | 15109 | Brick & Bell Cafe | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN5_TRbIuBnmhT2VjjhuJJ8v8pnU61F3GBss_KI… |
+| SUSPECT | 15110 | Bird Rock Coffee Roasters | Bird Rock / La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPqFTALn6khdmAGuRsjn3jBoBasU4-qV9BOV2iJ… |
+| SUSPECT | 15111 | Morning Glory | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN2KlzPCr0X5jFZKjD27yODa2JdgWyfaf2qpSaK… |
+| SUSPECT | 15114 | Tom Ham's Lighthouse | Harbor Island | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN128nvdSjr03MwKPHwtFiEBLfA6LTa12qgCKga… |
+| SUSPECT | 15115 | Island Prime & C Level | Harbor Island | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPuvdmViDsG8R8idD8P1xZOufzwOz1dAUyCKfJo… |
+| SUSPECT | 15116 | Casa Guadalajara | Old Town | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOrrBGtRvA7Nb_ti8lroTpBXS7mMH2Gwx_GMmcX… |
+| SUSPECT | 15118 | Gravity Heights | Sorrento Valley / Mira Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNf6yZ81xWf9whMGAqfaz1K-8xBC577Wg694WtM… |
+| SUSPECT | 15119 | AleSmith Brewing Company | Miramar | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMMMMmWFvMX33d1xrRAvmMzlVB8NsRN9HIpjiEX… |
+| SUSPECT | 15121 | James Coffee Co | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM6Nhu3DnQUpP0ohBxd175kdGsqZk2q66uS5yiN… |
+| SUSPECT | 15122 | Rocky's Crown Pub | Pacific Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN7suRMrDFn3o0nrtJzndVtJgkGkwV1o2a_30EE… |
+| SUSPECT | 15123 | El Pescador Fish Market | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPPXouUxTAZhfJanN7nVJORVfzPgtIZWzotUOXu… |
+| SUSPECT | 15126 | Cloak & Petal | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPf4j171RjgAxCe3LMrNBzwubcnkeNj5pbm4oPC… |
+| SUSPECT | 15128 | Stake Chophouse | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN8eYAQHeRx8m_lfLr6Lh1NvKtrTFdGtP-HZSF0… |
+| SUSPECT | 15129 | The Blind Burro | East Village | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMZw0N5bL8U1ZM1QXM3pOiUbhRFyt0YitjNOScu… |
+| SUSPECT | 15135 | Stone Brewing World Bistro & Gardens — Escondido | Escondido | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPy26jHjtbDuFzW2iKcxNO27Aqi7q3XbhmtzlM=… |
+| SUSPECT | 15137 | The Pearl Hotel Restaurant | Point Loma | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM1LZzQH9fEb-lu8vSy6qcCHMno5bzJg7SjIamG… |
+| SUSPECT | 15138 | Union Kitchen & Tap — Encinitas | Encinitas | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNt10snv3A40XDOiSUYmtTjQ667zTuKJxMmvCZi… |
+| SUSPECT | 15140 | Haggo's Organic Taco | Leucadia / Encinitas | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMVD0lYjRVLhm5rNXWsK9IInaFyR2LSGPXU06Nk… |
+| SUSPECT | 15141 | Market Restaurant + Bar | Del Mar | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOLEFkgei0UE4bgaSooJEoh4hEYEnnzhewbfzyC… |
+| SUSPECT | 15142 | Mille Fleurs | Rancho Santa Fe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN7rEtWTX30SbpuXnbcmAnh1z6uWFeitYf0khFg… |
+| SUSPECT | 15143 | Azuki Sushi | Bankers Hill | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOLB-79li-ZrgKbZcg1nldw0vm9-2n0qnIbtRNF… |
+| SUSPECT | 15144 | Bobboi Natural Gelato | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM1ND4WAoxlxPoxNREjgMR3WcEEaQSp58k8Tpc6… |
+| SUSPECT | 15146 | Rare Society — Solana Beach | Solana Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPFoqGll0O-T-pFHOFYoD6Pw7Gf3kXqKVABr4-2… |
+| SUSPECT | 15148 | City Tacos — Normal Heights | Normal Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMaM3A0ykkBfeAipr1bIajLAe7sjeL42ZT5yFr-… |
+| SUSPECT | 15149 | Pacific Beach Fish Shop | Pacific Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOvlyMHWQK8tZPTWIZ1KVxn3xzU5tf_oRwBCJcx… |
+| SUSPECT | 15151 | Solare Ristorante | Point Loma / Liberty Station | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOSxfa_dNz6xUSg51mKU3qmCOCWOeHRehrmMMcV… |
+| SUSPECT | 15152 | Slater's 50/50 — Liberty Station | Point Loma / Liberty Station | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN3BW9ISt9s_CJ_mOggfjT2nECXPbbNyOW8g-EC… |
+| SUSPECT | 15153 | Civico 1845 | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNdtTxbBZx2kmqC6BHrIuAiO8fBS0PxR7AycAQ-… |
+| SUSPECT | 15154 | Buon Appetito | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN0dWXTGYENwDFeliRwDHQbCFfVhx7rDftJ7cE6… |
+| SUSPECT | 15157 | Pete's Seafood & Sandwich | Mission Hills | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPLOkpJ1TQFNHOjK_sJa2d6CMxG5zeD4cfsbr5N… |
+| SUSPECT | 15158 | Nolita Hall | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNfIqpdBsHvm4g7d743vKBRl1V7R5-WqT9Jtb5E… |
+| SUSPECT | 15159 | Farmer's Bottega | Mission Hills | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNxdHI4JoD-aLng0VRt5haaIlfjXM6s4Cd57hxt… |
+| SUSPECT | 15161 | Starlite | Mission Hills | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMI8pN9K8GA9jUlMjJsPVkC-rDCDST0jxztvR4H… |
+| SUSPECT | 15163 | West Coast Tavern | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMZQzgBeEeMNfx8UEm0ej7zAK_ZkiCa7L-ORRE4… |
+| SUSPECT | 15164 | Mr. Moto Pizza House | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOX2hAUnTy0BGSL4vVxa6MsPrAsbkFo-G7tMXJ7… |
+| SUSPECT | 15166 | Park & Rec | University Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO0Oe_O75YVRwQAfLRJu47iP7zHPnRpgmAMno5i… |
+| SUSPECT | 15167 | Sycamore Den | Normal Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOR2MGM39SmbbugHcik7fk45AuhR7b6YPnDfC_b… |
+| SUSPECT | 15169 | Buga Korean BBQ | Clairemont | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNfRCuOem-0TAc_mySCZISzbDOweehpkEtAkGg5… |
+| SUSPECT | 15170 | Cross Street Chicken & Beer | Kearny Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPaMbz0ofF5SijSYTpjMdSqitttXuNungMjl8-r… |
+| SUSPECT | 15171 | Common Theory Public House | Kearny Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNxgK6ZezcOSYJ3VmnG8nkgrSlDbSTMPSOvBx5D… |
+| SUSPECT | 15174 | Harry's Coffee Shop | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN5yRfZHkb2iPoKJyvwnS9ZlwHPBu1AoaqJMCWA… |
+| SUSPECT | 15175 | Duke's La Jolla | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNZsiiZxrBYiEAnej0m2HGJDaejSmBUO0FJVWcr… |
+| SUSPECT | 15177 | The Shores Restaurant | La Jolla Shores | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNnbSvCTG8P3ZmJBNQfirow2gLc-tVr7sMEXVke… |
+| SUSPECT | 15178 | Kono's Cafe | Pacific Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNE_gIGSEqsQXUpnWA2OUTkjATlPrebFex8UTuE… |
+| SUSPECT | 15179 | Miguel's Cocina — Coronado | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP_EzDzkXdyL15Zg2ivpIcLuMj5Dmq3Y2bvbN41… |
+| SUSPECT | 15181 | Village Pizzeria — Coronado | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM1GRMd8fp5m7_7ecdFxuScgZgK-m25C8qZIVsC… |
+| SUSPECT | 15182 | 101 Cafe | Oceanside | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNqKmbAMj2RkPXEiZUeda4HZfzhnXuRo1Ts_eCG… |
+| SUSPECT | 15184 | Swami's Cafe | Encinitas | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPHV27wUb_gXI-dKji-yr286XxnodpMRKnMTEWO… |
+| SUSPECT | 15185 | Fish 101 | Leucadia / Encinitas | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPiGeDjeaThAA23wgZp89v7HE56aO18VViR07ZU… |
+| SUSPECT | 15189 | Coin-Op Game Room — North Park | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOf3qP6rJoK0f2h6X4RCXau9FwPEi1ZxUvtvZlJ… |
+| SUSPECT | 15191 | Monkey Paw Brewing Co. | East Village | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNmx8PWsEKR8L4aSlKXD9zwkW0CdULEObnIhbCQ… |
+| SUSPECT | 15195 | 3rd Corner Wine Shop & Bistro | Ocean Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPSaiLDN2JLfQpJBjs92e3cqyHChXUaduCV1pho… |
+| SUSPECT | 15196 | Bang Bang | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMmTExnIa9TAHRVUo8Byyf2LG2eKX1SfT9fHkJU… |
+| SUSPECT | 15197 | The Mission — North Park | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNIq0uPwXC3IuZa3ruColXpkESZ46c7ohvqcvgp… |
+| SUSPECT | 15200 | Breakfast Republic — North Park | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPdWziYNOMX5bCurAyvOl3WVz65a9SY8_uWnTm3… |
+| SUSPECT | 15205 | The Haven Pizzeria | Normal Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOq-VLyKdd_4cjg2F600peTtxgK6-otvzhLP7uG… |
+| SUSPECT | 15206 | Station Tavern & Burgers | South Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP577oNlMrLxxIacR-r0k7UDp3MJeVqGV1iE5aX… |
+| SUSPECT | 15207 | Whistle Stop Bar | South Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNE2xgcKcDzP94GOWw8a5BZw6aF5c6u-XE--Rc=… |
+| SUSPECT | 15208 | Duck Dive | Pacific Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPpfOeUpkKx418fGtsOAZ-GJZwl6kj8tIiQQxuE… |
+| SUSPECT | 15209 | Miss B's Coconut Club | Mission Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMcGr4I1C8IW9Arog2jU4KcjaXMQPVdFk1yvKBB… |
+| SUSPECT | 15211 | The Grass Skirt | Pacific Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNMlHismV6NntBE_mzEDcBlrTM3A73FpQ7dFems… |
+| SUSPECT | 15212 | Queenstown Public House | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPNOyls_dgRv0UnK4x-zsTF4N0I7XUYcYJMpbC0… |
+| SUSPECT | 15215 | North Italia — Fashion Valley | Mission Valley | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNUnbm0PYTtyVWptsaNauWdrxfkzqHcNpadYUIj… |
+| SUSPECT | 15216 | True Food Kitchen — Fashion Valley | Mission Valley | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM7CrjaH-uo4i7B4sRAO09b9t2DQukCivrmQHoE… |
+| SUSPECT | 15217 | Din Tai Fung — UTC | La Jolla / UTC | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOki5tlkCrGr_R4okAfaQ4rD5j7BIJjxB0pbrij… |
+| SUSPECT | 15218 | Urban Mo's Bar & Grill | Hillcrest | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO1I3fvAbPFNFu-3qdjvUpmfUAuTHAS4BgoXqU-… |
+| SUSPECT | 15221 | Parc Bistro-Brasserie | Bankers Hill | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNI3bBl5s1_kvFdg_ayHp9hd156NPEguJbg6-RK… |
+| SUSPECT | 15222 | A.R. Valentien | La Jolla / Torrey Pines | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNBikUUTHtgw8aflDzbdZYhVzXRm1AisaqkppTQ… |
+| SUSPECT | 15225 | Con Pane Rustic Breads & Cafe | Point Loma / Liberty Station | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPEqDLm2VOMJeZg_YRu_0Sg_q1l2ev-1IRezond… |
+| SUSPECT | 15226 | Kairoa Brewing Company | University Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP9buO_Mn8Sl2Ewo7Q-04bcnNkfERBpRBPK_gh8… |
+| SUSPECT | 15228 | Ponce's Mexican Restaurant | Kensington | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPWtNVPDBA3sY53OkmzASvly9EZHJpQuv5JFsQK… |
+| SUSPECT | 15229 | Mujeres Brew House | Barrio Logan | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM2c8ONIIo2ilk4qsIx6jyboXT_-74xvOPAhs5i… |
+| SUSPECT | 15233 | Vintana Wine + Dine | Escondido | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMkviMWU9YkwnYsR7wJXWY5cS2Hjf6cxWJL28Zf… |
+| SUSPECT | 15234 | 333 Pacific | Oceanside | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN4EK0J_Um_A9ohyDi2DkuhvPF8y3ZtP2GXm5YS… |
+| SUSPECT | 15236 | Belching Beaver Brewery — Vista | Vista | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOs3WFm-mqkYj6cYHFnyXVUhJ4W6NmOOfIEzo9b… |
+| SUSPECT | 15237 | Vigilucci's Pizzeria Trattoria | Encinitas | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNP-tEjeur2rOFRffQ4pgKDdk-5oEYE8LBRx7aU… |
+| SUSPECT | 15238 | Pacific Coast Grill | Cardiff-by-the-Sea | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNp7a0LcKXb_hX2MWBahhByyCHrGP1165QK2BLk… |
+| SUSPECT | 15240 | Cesarina | Point Loma | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPjfxstLJufwiiSkzgyfAoTSXE5P_xRdMn5MAEZ… |
+| SUSPECT | 15242 | Hello Betty Fish House | Oceanside | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO8z5rgxDkNvhIjaiKTEw1hYFP_z_Uob90pZIU5… |
+| SUSPECT | 15243 | The Lion's Share | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPc9VFX01SAa21TGi-KzTQx-PrzZ9I8ooSDOg_5… |
+| SUSPECT | 15244 | La Puerta | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMqASIOPOeKJv-N3UjpKV4MHAGIw6_6EeU3LdcY… |
+| SUSPECT | 15245 | Werewolf | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNamte0bZvI9lbOtSrOLlDN2KN7QrsbpmnjDTMb… |
+| SUSPECT | 15249 | Mike Hess Brewing — North Park | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPCIPkswLa30EOjiHTzToYZRgfsrsBncXbga-is… |
+| SUSPECT | 15250 | Bivouac Ciderworks | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOKmZbS-U15Hnf3rUBBjhnTqTlRAxNJrcWehYS4… |
+| SUSPECT | 15252 | Blind Lady Ale House | Normal Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOZ_x6MECxoRqgLw1d1-BFKgoqYgwrpJl9a9EkW… |
+| SUSPECT | 15254 | The Red Door | Mission Hills | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOlTtpjImttLBEYnGYGCGIDCKSggY7rcfXdrSpS… |
+| SUSPECT | 15255 | Sammy's Woodfired Pizza & Grill — La Jolla | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP7zRGWmDfP1pqK3-H_sMZx1Y0k1XLDSv_-4Oee… |
+| SUSPECT | 15257 | Baja Betty's | Hillcrest | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOPAHRuTwRRFckbJXOEQAf8v7uULhlbtEWvqnI8… |
+| SUSPECT | 15258 | Sunshine Co. Saloon | Ocean Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMdeMAu9zun-uFcq0Qj2DRZVL8bQrqnYUo06MlD… |
+| SUSPECT | 15263 | Cafe 222 | East Village | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMk_zR5RW4ZKgZcqOhYf_nRC-FsS64-Hjdlta-K… |
+| SUSPECT | 15264 | Broken Yolk Cafe — Pacific Beach | Pacific Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipObB-qjWc4AWd_qVdWu8FrcmmZLZDahsnIjjEjU… |
+| SUSPECT | 15265 | Puerto La Boca | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNm1APjR1CeyhlAW49av5mlBdlhDh7S1Wgqpa5R… |
+| SUSPECT | 15266 | Rockin' Baja Lobster — Old Town | Old Town | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOO0Pi5BAQDCJw-2M87eHzew7WGnx3Z_F5IA7sY… |
+| SUSPECT | 15267 | Waterfront Bar & Grill | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM-9U2E6FNr5SsfLwVPOgIlxhV73unZonL7osWJ… |
+| SUSPECT | 15273 | Tobey's 19th Hole Cafe | Balboa Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMXyFkF3Q76egKx7BwGOx9pAzYipAFpWRzydmzt… |
+| SUSPECT | 15275 | Harney Sushi — Old Town | Old Town | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOYAjyrSCHNG26kRuwIO732jSpCopyYIxHo7FtK… |
+| SUSPECT | 15276 | Pappalecco | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOLaOiqCjCkLfdrWP8LK3-5WM9unroaJijMIyiP… |
+| SUSPECT | 15277 | The Tipsy Crow | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPsIdpq6wPuiR4mDQQN0uHsUSnRgcLCzCMFEcb6… |
+| SUSPECT | 15279 | Saiko Sushi — Coronado | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPhOoFOT3gI2wVnAOiXOicWCzaFaglcDq2kU5V_… |
+| SUSPECT | 15281 | Bronx Pizza | Hillcrest | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNpDEOcegrw9KDoYM3NTbMJcnOxutyRKz1V_J8M… |
+| SUSPECT | 15283 | Pop Pie Co. | University Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPVBlXLzmtggSrJc04TIlMEd27Xi8rzvyvU2k3h… |
+| SUSPECT | 15284 | Wayfarer Bread & Pastry | Bird Rock | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMyZFxzukAq0ty_LVRwMeO_CyYxOuhwamPV-C3_… |
+| SUSPECT | 15287 | Blue Water Seafood Market & Grill | Mission Hills | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOVRScFgYMZrzBvQxip6qDtIWQw5rwnmLnnL0QX… |
+| SUSPECT | 15290 | Turf Supper Club | Golden Hill | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPoWjLG-RxdBazo3Wc19Qhxt9drR-3SXNU4gGi6… |
+| SUSPECT | 15293 | Fig Tree Cafe — Liberty Station | Point Loma / Liberty Station | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMSH37CnFQVd4miNZTQ-hL5SikzrHSurnJhaGjR… |
+| SUSPECT | 15295 | Better Buzz Coffee — Pacific Beach | Pacific Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM7FMWDfMMRm_WHsM5wF_en2FUYULehrJhC1lNo… |
+| SUSPECT | 15297 | Cafe Coyote | Old Town | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNArl_ZhIHvxKjso2N-1d9bhosFiRhx-04fVyAU… |
+| SUSPECT | 15298 | Marisi | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPAZVsHt3wurYDNbaCl_tms_v3CjR8PUdS80elt… |
+| SUSPECT | 15299 | Flying Pig Pub & Kitchen — Oceanside | Oceanside | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOutZjAYaPnHn9TbZozCqBpmuaIU5-RVFbw31rT… |
+| SUSPECT | 15301 | Dobson's Bar & Restaurant | Downtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNOhyaiO1Dk3zkp6m37_ratOsHifWJJOaLSHCOq… |
+| SUSPECT | 15302 | Athens Market Taverna | Downtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM3ob6LpjjDZg_xQtnAOIeZW34Z2TkJKYOCOF7P… |
+| SUSPECT | 15303 | Osteria Panevino | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMcEIBe-3-eIXfg_SlVMgbCPqq5lf3mfPNyQ3n7… |
+| SUSPECT | 15304 | Henry's Pub | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPpumZCrlxOq8l4QM90qCJcb6T7B8XrWGg3YjbZ… |
+| SUSPECT | 15305 | Filippi's Pizza Grotto | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPcMW0TyBPkUTwrx3V56aTOC_mM-spNzraKV9-Q… |
+| SUSPECT | 15306 | Mona Lisa Italian Foods | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNdzovpLc2ihff_yq4mquIEHSl5dIJbB7V2GDDb… |
+| SUSPECT | 15307 | Old Venice | Point Loma | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPBDjUpGBTF7iOthM0hdWrRzA48vVM24uWkd-9j… |
+| SUSPECT | 15310 | Dumpling Inn | Kearny Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPSPMRDiJQxliO3Pzp91FW7UJ1J1IzPoAL-VHwL… |
+| SUSPECT | 15315 | Drift La Jolla | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOS_-Vc9A72cl81PEWzDmZp7pUrnjJOUJibKLSR… |
+| SUSPECT | 15316 | Beaumont's Eatery | Bird Rock | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipORVg3QMpvc9qKF5FiB3UjXPSpqJoUEY3WJFqGV… |
+| SUSPECT | 15317 | Coaster Saloon | Mission Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMMw_p7a78KIvpWUn04RUmEQJovTyyfUkG9Q4vM… |
+| SUSPECT | 15320 | Pure Project Brewing — Miramar | Miramar | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOyYMf9F4gJzGeP3tlyqF-tevVBJOY4W7odnAZs… |
+| SUSPECT | 15323 | Fall Brewing Co. | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOa1gwdD_azBjtfNy-Dux9PPXrDZOwA2buQqbhM… |
+| SUSPECT | 15329 | Mama's Bakery & Lebanese Deli | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNpTDlxVI_sZa8bsfHoVg3kQVjRUFoqq43y0euS… |
+| SUSPECT | 15330 | Kensington Cafe | Kensington | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOvd7Lsp-5WtDJUMJKh7Jqh09wtvBlRGwzeTpYE… |
+| SUSPECT | 15331 | The Smoking Goat | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM2MyrOV--kGlDWa6Ymx8EhR5RQffb0Si2xKjcw… |
+| SUSPECT | 15332 | Influx Cafe | Golden Hill | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOrkrATgd-EMpQncMkudua3nYPgaUBY-9-k1Mtw… |
+| SUSPECT | 15333 | Veladora at The Inn at Rancho Santa Fe | Rancho Santa Fe | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO334OkIuAykvpjYywMYKrbWUcpbZnfL2pNyb2R… |
+| SUSPECT | 15336 | Stratford Court Cafe | Del Mar | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNIB9VzOPU0PPZltC52bro7Pj_1T5-VLpYW1Yo0… |
+| SUSPECT | 15337 | Paon Restaurant & Wine Bar | Carlsbad | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMNwmizg7sFuntr8KetdGZExit-nJPeP2VxVsDe… |
+| SUSPECT | 15339 | Peohe's | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO6X4guY3-1SeZHPFFgNkDmTP92wwICHgzgmsNV… |
+| SUSPECT | 15345 | En Fuego Cantina & Grill | Del Mar | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNRJvgltplDy1KvtY_-clwnXyT9zO49LNIoUXM6… |
+| SUSPECT | 15347 | Carnitas' Snack Shack — Embarcadero | Downtown / Embarcadero | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNQ7lTXdFT-_jQSioXltHfFBG7Z-0XIW8fvgEct… |
+| SUSPECT | 15348 | Bully's East | Mission Valley | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNpP-jXFfuf69nYw4nzSsckeUXKyQwtW5IP8S0-… |
+| SUSPECT | 15349 | Casa de Pico | La Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipODaRxeJlwTs-pMEZzfa1aLG_zltZjbRWRjHuTo… |
+| SUSPECT | 15350 | Hamburger Factory Family Restaurant | Poway | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNrFQapf-CGL57ANjeulGfITF1DV_CaqbdGpFfK… |
+| SUSPECT | 15351 | Bernardo Winery & Cafe Merlot | Rancho Bernardo | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOQflKtdExsiX_JmT4NQMIC9tZMVbe_-KH-L0HD… |
+| SUSPECT | 15352 | Corvette Diner | Point Loma / Liberty Station | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMaF5YCWA1UwLaZBoXgy6GcdwLDUfSJGecB3CTD… |
+| SUSPECT | 15353 | Olive Tree Marketplace | Ocean Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMtB_I_Acclh-ZyqrwiLMOcGPDEkwPXr1GwMBRK… |
+| SUSPECT | 15355 | Coasterra | Harbor Island | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPkNgb1wfJmM47ypBL1N3zXP_j2HmKH4NH-RSaK… |
+| SUSPECT | 15359 | The Butcher Shop Steakhouse | Kearny Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM5nmiaAKrhElrHxtXDj7VfPCBV3WoaXNhjCykX… |
+| SUSPECT | 15360 | Tajima Ramen — Downtown | East Village | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOy2_yt6tM4Cf1wfbXXGEvQzTJrfEBiz6xyb3vE… |
+| SUSPECT | 15363 | Little Italy Food Hall | Little Italy | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMJiWp1RHFjo679fdISzR8bwVffzmT68Pt8eFKq… |
+| SUSPECT | 15364 | Stella Jean's Ice Cream | University Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM2FdVPwdc5B5U42ypSdIc-tZfMBxXf0Xq8N1Jd… |
+| SUSPECT | 15365 | Moniker General — Liberty Station | Point Loma / Liberty Station | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMbxMyeu5QgN7yrbEJCa9lHBfrzvlui0ZeN_eVE… |
+| SUSPECT | 15371 | Hillcrest Brewing Company | Hillcrest | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNkC7NdYbCD1qe-m-4RGZ_oB9Xy7tP_a5EZ8hHo… |
+| SUSPECT | 15372 | The Kebab Shop — East Village | East Village | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO808EVrTuUQqkiKSHZsJqxYyziQIOREG-WKKZD… |
+| SUSPECT | 15377 | Crab Hut | Kearny Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO46ij4eI3kkT77TkRlEr4vBbK-_XYmnBkzGn7X… |
+| SUSPECT | 15379 | Royal India — Gaslamp | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMHMjxwIRcIbDd-DCbsAq5XMQc5px2OZ21Ze3-T… |
+| SUSPECT | 15384 | Plumeria Vegetarian Restaurant | University Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPL8qifKt9h1YnvSIs7xMKk2EjlogiW6KVJ4BZi… |
+| SUSPECT | 15388 | The Smoking Gun | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMeOSX59TkFqUazEAmktX9kJsefLr9oTLpUkxVF… |
+| SUSPECT | 15389 | Leucadia Donut Shoppe | Leucadia / Encinitas | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMxQvbbVioM4evVbSPkG3rMVZ1Dx2APTvGrP1y-… |
+| SUSPECT | 15390 | Cafe Moto | Barrio Logan | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPFI_u4bj3r6p2_7mZSPpVM9ArIej64kYm5xIrF… |
+| SUSPECT | 15392 | Piacere Mio | South Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNiCls_2FoCR4aeDj8ss_wbAnIsaBqMp6-IFdFa… |
+| SUSPECT | 15393 | Costa Brava Spanish Tapas | Pacific Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM8OFqbH1cKHmIS5NatxdMIKWbYuVwywga5r1PB… |
+| SUSPECT | 15394 | Donna Jean | Bankers Hill | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMXIYwOE93LCfrVN5ApqKt4bmCdiRvbU07tgh8M… |
+| SUSPECT | 15395 | Board & Brew — Carlsbad | Carlsbad | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOywl2nZPsjKrlFPbrjqihmOIWV92Pa2pXjKlgE… |
+| SUSPECT | 15401 | Night & Day Cafe | Coronado | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNaH_2sBTFvJ-miMSdNQ-mR6ZIRt2TDCMckNeO7… |
+| SUSPECT | 15402 | Tony's Jacal | Solana Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN36MxdkR423ztdGpXZtZkA1a8McG6nazgEkCKv… |
+| SUSPECT | 15404 | Ki's Restaurant | Cardiff-by-the-Sea | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMwpw-ialbB-alXkFya6NCjApn6slTNPf3BJk7k… |
+| SUSPECT | 15405 | Dark Horse Coffee Roasters — North Park | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPtD1UiNR5LN7BA9zx6nDXJAV6ODcBMxHy6WQVH… |
+| SUSPECT | 15406 | Revolution Roasters | Oceanside | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNtUMpFUF6n_ifHJft7Ycprdt2E4QdVTZQ36gSb… |
+| SUSPECT | 15408 | Beach Break Cafe | Oceanside | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP2A4Ui_yHBvkj6gpfalZp5vWX2jHeu2Jxzu2MD… |
+| SUSPECT | 15409 | Rudford's Restaurant | Normal Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMJGn3JQtzr9hPIsRJ_masq6ZXI42rhsxAWenEk… |
+| SUSPECT | 15410 | Karl Strauss Brewing Co. — Mira Mesa | Mira Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNtJwA-3n1Qnfa8yyWOlRfio8SlmsE8NG1dzJfX… |
+| SUSPECT | 15412 | Rich's San Diego | Hillcrest | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNhz7v9DH54_KOQwNcNRMNb0iUlIucyuI9TX6wF… |
+| SUSPECT | 15413 | Gossip Grill | Hillcrest | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOfjn4fOicaMSfF48qzdljkxjlif5SokmYNyRaM… |
+| SUSPECT | 15416 | Encontro North Park | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPo6AXIfWCdtjcBgI-26Plp-J9qTCYePie-6LPA… |
+| SUSPECT | 15417 | Roxy Encinitas | Encinitas | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOLQKazK1eZl2bc3HZRbdJsMFQhlblxfI1QplkQ… |
+| SUSPECT | 15419 | Rubio's Coastal Grill — Mission Bay | Pacific Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOl5LgyxKmqUyiMFI-bZkljG3MBQGkbr1TMtZj5… |
+| SUSPECT | 15420 | Third Avenue Alehouse | Chula Vista | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNnjCD1BQyRphtUYlUIt7v6A45YfhFqk0zU6pkO… |
+| SUSPECT | 15421 | Ramona Cafe | Ramona | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPJUyFiv4dEyoVNl_IUdz_PLZWmUETpcgS5ghzu… |
+| SUSPECT | 15424 | BCD Tofu House — Convoy | Kearny Mesa | reused on 7 cards (likely placeholder) | https://img1.wsimg.com/isteam/videos/uA41GmyyG8IMaxXdb |
+| SUSPECT | 15427 | Grand Ole BBQ y Asado | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMsuYCWTywDV8OU2nU2MPO1xx57yAvv1jGMSUkh… |
+| SUSPECT | 15428 | Louisiana Purchase | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNTgFEQBt2M0qBjMzq1THlS7ToDjZoDy-4PF1fa… |
+| SUSPECT | 15431 | Privateer Coal Fire Pizza | Oceanside | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPq6bqyFm5zdjgrpifBoG2J8VDIwOGr2xeIUX__… |
+| SUSPECT | 15437 | Ranchos Cocina | North Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMa6J5C0sBwvkLkpOp9i_A6E3eDR8hzYQH8q49y… |
+| SUSPECT | 15439 | Casa de Bandini | Carlsbad | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPE2-7IeDZoM0GxHSglCeuCvpKhN2LKlZbbLULd… |
+| SUSPECT | 15441 | Studio Diner | Kearny Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMYg5SpPPk-78d2DmgqHPRVD9LQ7L3ukKjwsSL3… |
+| SUSPECT | 15442 | Burger Lounge — Kensington | Kensington | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipN44EJUdJoTI1cC7jl8EzUubp5Krnm7Ys5jg9UX… |
+| SUSPECT | 15445 | Water Grill | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMiMTAzY9n8sQcxSMZTN8nzM_15JbuGvh42EKWF… |
+| SUSPECT | 15447 | Filippi's Pizza Grotto — Escondido | Escondido | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNMkBHJTbAaMffZgOSV9aBO_9TlaN4LRCDTlL22… |
+| SUSPECT | 15452 | Kansas City Barbeque | Downtown | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO_FcdCUMZjaUJuCb18zarmJeEZ4zY6LgNwWG5r… |
+| SUSPECT | 15455 | Fisherman's Landing | Point Loma | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPMZKsxO4yP5iGWelrRozTnXdJzhOvfPT2aP_ge… |
+| SUSPECT | 15456 | H&M Landing | Point Loma | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM88CgJHECc1J63fu33eWj88QoAb20RRVBfTnHD… |
+| SUSPECT | 15458 | House of Blues San Diego | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO0ISblkD16vSMLRnv70A2IutSFKYKyorxlx0tY… |
+| SUSPECT | 15461 | Koon Thai Kitchen | Kearny Mesa | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMFITwQpY00x3mzGrGnF5vqMaNBhQz2ZSPTWTdg… |
+| SUSPECT | 15462 | Lou & Mickey's | Gaslamp | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP3k0Ac3N8aWmRoQsclZ6yXLyhku1gkJ-mZtgUm… |
+| SUSPECT | 15468 | Pizza Nova — Point Loma | Point Loma | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO2Od43cfiUNeP9VuJzAC-sQW_BpY9y74ihbWZJ… |
+| SUSPECT | 15471 | Brockton Villa | La Jolla | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNkoSO7rzl9ldSWS_LSTM_DqVSkKvdYYwfUn3m1… |
+| SUSPECT | 15473 | The Rabbit Hole | Normal Heights | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPQv5G6uufFiTAqNcpeiBy63ELBjO48qIATvHgT… |
+| SUSPECT | 15493 | Viewpoint Brewing Co. | Del Mar | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOcRtIPC0g9enW4rh8yk7EhdGlPXBYeJ_auerJG… |
+| SUSPECT | 15497 | Ciccia Osteria | Barrio Logan | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOxhsJ0AGMlLmuGRngWDdBLAr0NdxPIptbWC471… |
+| SUSPECT | 15499 | Pacific Shores Cocktail Lounge | Ocean Beach | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOmFm_BwDBB5ER4ea_Szp2DBfoGQohTzwOYRGr6… |
+| SUSPECT | 15518 | Lolita's Mexican Food | Linda Vista | reused on 7 cards (likely placeholder) | https://img1.wsimg.com/isteam/videos/uA41GmyyG8IMaxXdb |
+
+## SEATTLE — 367 flagged
 
 | Severity | id | Name | Neighborhood | Reason | URL |
 |---|---|---|---|---|---|
 | BAD | 9043 | Hey Bagel | University Village | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9192 | Volterra Kirkland | Kirkland | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 9221 | Pabla Indian Cuisine | South Seattle | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9281 | Paseo Caribbean Food | Fremont | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9314 | Museum of Flight | Tukwila | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9366 | The Fat Hen | Ballard | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -3476,7 +4608,6 @@ Total cards scanned: 5743
 | BAD | 9511 | Fremont Bridge | Fremont | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9520 | Bellevue Downtown Park | Bellevue | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9527 | West Seattle Junction | West Seattle | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 9533 | Barnacle | Ballard | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9534 | Bar Cotto | Capitol Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9536 | Mbar | South Lake Union | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9537 | Agrodolce | Fremont | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -3487,8 +4618,6 @@ Total cards scanned: 5743
 | BAD | 9542 | Byrek & Baguette | South Lake Union | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9543 | El Camión | South Seattle | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9544 | Le Petit Cochon | Fremont | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 9546 | Needle & Thread | Capitol Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 9547 | The Pine Box | Capitol Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9549 | Dacha Diner | Capitol Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9550 | Essex | Ballard | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 9551 | Vios Cafe & Marketplace | Capitol Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -3619,7 +4748,6 @@ Total cards scanned: 5743
 | SUSPECT | 9217 | Chengdu Memory | Chinatown-International District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPGUxQoZ3pgSRkERBEccTOdYqMVNOGnziW06_Sh… |
 | SUSPECT | 9219 | Caffè Umbria | Pioneer Square | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO0Ew44-JyvKvc-TVVMCYKpz0hMNDsCcOlNW3fj… |
 | SUSPECT | 9220 | Bar Harbor | South Lake Union | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEVS1qV9vFmCbDDdgFUB5140cmwqphG5… |
-| SUSPECT | 9221 | Pabla Indian Cuisine | South Seattle | og:image meta tag asset | https://www.pablaindian.com/r9x9e5rh/opengraph-image-959cal/og-image?0b56cf29834… |
 | SUSPECT | 9225 | Georgetown Liquor Company | Georgetown | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHg2svoN4NUVp3I2ATOn7rpYN0pSORkp… |
 | SUSPECT | 9226 | The 5 Spot | Queen Anne | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNp66xOhkL1a0M67WXaXep6_DNmdSKM3yAn1rAd… |
 | SUSPECT | 9228 | Piroshky Piroshky | Pike Place Market | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOaXge0fewS0xpMMIfaZc36ALOoEAjSOryLnKb7… |
@@ -3819,24 +4947,71 @@ Total cards scanned: 5743
 | SUSPECT | 9532 | Oxbow Park (Hat ’n’ Boots) | Georgetown | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvZinxIIW-TxVlZI2BtO1sSHPEOiC8t… |
 | SUSPECT | 9548 | Plenty of Clouds | Capitol Hill | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGsl3SHz7-zHdFIaBcgMyECwdX6Y0VN9… |
 
-## SLC — 380 flagged
+## SF — 41 flagged
+
+| Severity | id | Name | Neighborhood | Reason | URL |
+|---|---|---|---|---|---|
+| BAD | 5002 | Lazy Bear | Mission | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5005 | Kokkari Estiatorio | Jackson Square | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5009 | Bar Crenn | Pacific Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5014 | Boulevard | Embarcadero | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5016 | Park Tavern | North Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5018 | La Mar Cebicheria | Embarcadero | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5019 | Dalida | Presidio | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5028 | Prospect | Rincon Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5029 | Chotto Matte | Mid-Market | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5032 | Palmer's Tavern | Pacific Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5034 | Itria | Mission | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5039 | Fang | SoMa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5040 | Izzy's Steakhouse | Marina | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5042 | Trick Dog | Mission | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5043 | True Laurel | Mission | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5044 | Pacific Cocktail Haven | Union Square | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5046 | The Alembic | Haight-Ashbury | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5050 | Smuggler's Cove | Hayes Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5051 | Bourbon & Branch | Tenderloin | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5052 | Pagan Idol | FiDi | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5053 | Local Edition | Mid-Market | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5054 | Tonga Room & Hurricane Bar | Nob Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5055 | The Buena Vista Cafe | Fisherman's Wharf | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5056 | Vesuvio Cafe | North Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5057 | Specs' Twelve Adler Museum Cafe | North Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5058 | Li Po Cocktail Lounge | Chinatown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5059 | The Devil's Acre | North Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5060 | Cold Drinks Bar at China Live | Chinatown | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5061 | Long Weekend | North Beach | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5062 | Last Rites | Castro | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5063 | Elixir Saloon | Mission | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5064 | Lost Resort | Mission | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5065 | Tartine Manufactory | Mission | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5066 | Verjus | Jackson Square | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5067 | Starlite | Union Square | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5068 | Zam Zam | Upper Haight | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5069 | Bar Iris | Russian Hill | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5070 | Cavaña | Mission Bay | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5071 | Radhaus | Fort Mason | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5072 | Causwells | Marina | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 5073 | Novela | SoMa | no photoUrl and no photos[0] (will fall back to emoji) |  |
+
+## SLC — 408 flagged
 
 | Severity | id | Name | Neighborhood | Reason | URL |
 |---|---|---|---|---|---|
 | BAD | 11017 | Lone Star Taqueria | Sandy | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11021 | Sapa Sushi Bar & Asian Grill | Central City | logo file | https://images.squarespace-cdn.com/content/v1/5b3875b875f9eef54c617b32/153194046… |
+| BAD | 11021 | Sapa Sushi Bar & Asian Grill | Central City | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11022 | Kaze Sushi Bar & Grill | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11023 | Boba World | North Salt Lake | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11026 | The Pie Pizzeria | The Avenues | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11032 | Oquirrh | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11034 | Epic Brewing Company | Granary District | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11038 | Squatters Pub Brewery | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11057 | Pig & A Jelly Jar | Central City | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11059 | Le Depot | Park City | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11062 | Firewood on Main | Park City | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11072 | Park City Mountain Resort | Park City | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11082 | Halgatteok | South Salt Lake | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11083 | CupBop | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11084 | Under Current | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11086 | Bodega | Downtown SLC | logo file | https://images.squarespace-cdn.com/content/v1/54d2e184e4b0efe7320f2079/c9955906-… |
 | BAD | 11088 | Alibi | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11092 | Communal | Provo | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11101 | Yuki Arashi | Sugar House | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -3845,8 +5020,8 @@ Total cards scanned: 5743
 | BAD | 11111 | Proper Brewing | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11112 | Skiing at Alta / Snowbird | Cottonwood Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11113 | Great Salt Lake | Suburban SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11124 | Beijing Restaurant | Sugar House | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11127 | Tradition | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11130 | Rouser | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11133 | Feldman's Deli | Downtown SLC | SVG (icon, not photo) | https://www.feldmansdeli.com/cdn/shop/files/Awards_Banner_1e48b563-7790-4ba3-b19… |
 | BAD | 11136 | Zeitoon Cafe | Midvale | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11139 | Pho 777 | Westside SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -3855,7 +5030,6 @@ Total cards scanned: 5743
 | BAD | 11153 | Mint Tapas & Sushi | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11157 | Five5eeds Park City | Park City | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11158 | The Continental | Provo | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11174 | Beirut Cafe | Midvale | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11176 | Best Chicken and Ribs | South Salt Lake | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11178 | Enrico's Deli | South Jordan | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11187 | Fat Jack's Tap House | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -3872,7 +5046,6 @@ Total cards scanned: 5743
 | BAD | 11252 | Real Taqueria | Holladay | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11253 | Guisado's Homestyle Cooking | West Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11255 | Ave Bakery | The Avenues | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11263 | Mensho | Post District | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11275 | Mother | Marmalade | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11282 | Ekamai Thai | Sugar House | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11285 | La Cai Noodle House | Westside SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -3952,6 +5125,7 @@ Total cards scanned: 5743
 | BAD | 11459 | Aristo's Greek | South Salt Lake | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11468 | Zaferan Cafe | Cottonwood Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11479 | Paulino's Contigo Peru | West Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11480 | Melancholy Wine Lounge | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11481 | Carson Kitchen SLC | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11489 | Tiburon Fine Dining | Sandy | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11493 | Eight Settlers Distillery | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -3976,13 +5150,10 @@ Total cards scanned: 5743
 | BAD | 11587 | 9th and 9th Sculpture (Monument to Children) | 9th & 9th | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11588 | Columbus Center | South Salt Lake | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11594 | Sushi by Scratch Restaurants: Park City | Park City | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11595 | TF Brewing | South Salt Lake | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11596 | Level Crossing Brewing Company | South Salt Lake | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11597 | Beerhive Pub | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11598 | Cucina Wine Bar | The Avenues | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11599 | Dodo Restaurant | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11600 | Apollo Sushi Bistro | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11601 | Current Fish & Oyster | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11602 | Sea Salt | Sugar House | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11603 | Carmine Ristorante Italiano | Holladay | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11604 | Mikado | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
@@ -4006,24 +5177,54 @@ Total cards scanned: 5743
 | BAD | 11632 | Sip N Dip | Central 9th | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11633 | Soup & Sip | West Valley | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11634 | Taverna Pizza | Marmalade | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11635 | Verona Cafe | Millcreek | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11636 | Wariqe Peruvian Food | Provo | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11617 | 7Sins | Holladay | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11618 | All Purpose Bakehouse | Central City | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11619 | Argentina's Cafe | Liberty Park | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11620 | Burger Fusion | East Central | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11621 | Burger Lab Bar | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11622 | El Parce Colombian Grill | Murray | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11623 | Eva | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11624 | Grove Market & Deli | Ballpark | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11625 | Halalepeños | Riverton | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11626 | La Lola Taco | Murray | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11637 | Wombat Bagels | West Jordan | no photoUrl and no photos[0] (will fall back to emoji) |  |
-| BAD | 11638 | The Yeti Bar & Lounge | Cottonwood Heights | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11639 | Oishi Ramen | South Salt Lake | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11640 | Urban Gyro & Chicken | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11641 | Xiao Bao Bao | East Central | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | BAD | 11642 | Sri Annapoorani | Downtown SLC | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11644 | Alta Lodge Dining Room | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11645 | Rustler Lodge Dining Room | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11646 | Alta Peruvian Lodge (P-Dog) | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11647 | Goldminer's Daughter Lodge | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11648 | SeventyOne at Cliff Lodge | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11649 | The Aerie | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11650 | The Steak Pit | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11651 | The Forklift | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11652 | El Chanate | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11653 | The Summit at Hidden Peak | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11654 | Collins Grill at Watson Shelter | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11655 | Swen's at Snowpine Lodge | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11656 | Wildflower at Iron Blosam Lodge | Little Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11658 | Honeycomb Grill | Big Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11659 | Stone Haus Pizzeria & Creamery | Big Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11660 | St. Bernard's | Big Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11661 | The Thirsty Squirrel | Big Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11662 | The Yurt at Solitude | Big Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11663 | The Roundhouse at Solitude | Big Cottonwood Canyon | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11669 | Sterling Steakhouse & Lounge | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11670 | Sushi Blue | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11671 | Maxwell's East Coast Eatery | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11672 | Red Rock Junction | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11673 | Park City Brewing | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11674 | Hill's Kitchen | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11676 | Hana Ramen Bar | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11677 | Aubergine Kitchen | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11678 | Chop Shop Park City | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11679 | Tilly's Charcoal Chicken | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11680 | Full House Asian Bistro | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11681 | Loco Lizard Cantina | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11682 | The Bagel Den | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11683 | 11Hauz | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11684 | Cortona | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
+| BAD | 11685 | Glyn Thai Restaurant & Bar | Kimball Junction | no photoUrl and no photos[0] (will fall back to emoji) |  |
 | SUSPECT | 11001 | HSL | Downtown SLC | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHqj1vRf6X3RH6zKqt_rYlFReODrhmvJ… |
 | SUSPECT | 11006 | Handle | Park City | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMIcyCSqzotQjKMtZSPsBX4DZZgaSBlOsVy-eLx… |
 | SUSPECT | 11010 | Crown Burgers | Downtown SLC | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAGttOh97Yh3jYfOBkEkweIeE4PwV3AJG… |
@@ -4039,7 +5240,6 @@ Total cards scanned: 5743
 | SUSPECT | 11046 | Pago | 9th & 9th | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipO9qfczzF8BN1lI0Sb9mpIdQ7GXRepOMIgf7Xi_… |
 | SUSPECT | 11047 | Finca | Liberty Park | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPa_OPI4qYxXp_Q9U1LpyIsw6cfWH-dAuOb_Ds1… |
 | SUSPECT | 11058 | Even Stevens Sandwiches | Downtown SLC | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMWbgm-vlOb1LSgnwd5pGHbZARyBM2LgU9f6kJu… |
-| SUSPECT | 11062 | Firewood on Main | Park City | og:image meta tag asset | http://firewoodonmain.com/wp-content/uploads/2016/12/Firewood_FB_OG_Image.jpg |
 | SUSPECT | 11064 | Eating Establishment | Park City | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNYFpObgjhT064WE6H_UBJfMQ62fqUFEwaaD0et… |
 | SUSPECT | 11065 | Manoli's | The Avenues | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOiiimEyqJBVEL8J0x1LP0wUofDugQ7hWNjlFyl… |
 | SUSPECT | 11074 | Kin Sen Thai | Millcreek | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPbDsEeyW9qRLvN04XHc-3slfoalMY3QyyBPBKz… |
@@ -4049,6 +5249,7 @@ Total cards scanned: 5743
 | SUSPECT | 11085 | Repeal | Downtown SLC | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMuUDVjG97q-CODtPbHifnt5fQnn8_2sQ-Xlxu8… |
 | SUSPECT | 11093 | Black Sheep Cafe | Provo | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNHH49xCMyIdmE_Gzz-LlyE7wMmChBJ4oycVa4-… |
 | SUSPECT | 11094 | Block Restaurant | Provo | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMQiqH13gQXzvX1as91lPxe-WG1BB6gzYRgCMiv… |
+| SUSPECT | 11095 | Mozz Artisan Pizza | Provo | reused on 7 cards (likely placeholder) | https://img1.wsimg.com/isteam/videos/uA41GmyyG8IMaxXdb |
 | SUSPECT | 11096 | J Dawgs | Provo | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipMmdcNTt_PukrWRaammj4iST72tcffd2O1fyGYV… |
 | SUSPECT | 11098 | La Vaca Steakhouse | Provo | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipP9RcejijR-SPWXzVTn8l1JW5ayV1aaFjXMQsn9… |
 | SUSPECT | 11099 | Station 22 Cafe | Provo | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPWzdnchDmW-t1UNNE2g1gQY4898JoqBqN17gj4… |
@@ -4058,7 +5259,6 @@ Total cards scanned: 5743
 | SUSPECT | 11109 | Red Rock Brewing Company | Downtown SLC | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPywxS_jSd6Bx6Dr1yBITHwYSXRo20-sHNhT_0=… |
 | SUSPECT | 11117 | Tacos Don Rafa | Downtown SLC | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFcFlSBHH0CQz8oBQ1hrLLnbZlN3i9K6… |
 | SUSPECT | 11121 | Publik Coffee Roasters | Granary District | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOzmHZx2PH0ykg71zCmY7bJWa8E0jCMROhXk1ia… |
-| SUSPECT | 11124 | Beijing Restaurant | Sugar House | og:image meta tag asset | https://www.beijingut.com/ib8hy89p/opengraph-image-959cal/og-image?0b56cf29834ff… |
 | SUSPECT | 11126 | Killa Nikkei | Downtown SLC | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNgytzJoJHDq2B47rFwrj10WM-K_gT-_897D3za… |
 | SUSPECT | 11128 | Bar Nohm | Central 9th | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPsXL2aEmKM87Xx7_YvlKSNa-ltcnxjKUoTIkEo… |
 | SUSPECT | 11131 | Avenues Proper | The Avenues | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNZTFiqhG1kHMLc3YytBlDUNdJLFlX3rSi7l7Yc… |
@@ -4193,6 +5393,7 @@ Total cards scanned: 5743
 | SUSPECT | 11556 | Junah | 9th & 9th | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipNfGaT_a7OPjE19ySdHOCZ9nNjQkG-mfVPFegBn… |
 | SUSPECT | 11557 | Craft by Proper | Sugar House | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAEFXPOuYC2L3a0qDIykPZnm7TIfUG2C3… |
 | SUSPECT | 11563 | Pitada Brazil | Provo | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipORTSGQ7DRzUTErwrNj76rupuIVzY1FG97GOybz… |
+| SUSPECT | 11573 | The Brick | Central City | reused on 7 cards (likely placeholder) | https://img1.wsimg.com/isteam/videos/uA41GmyyG8IMaxXdb |
 | SUSPECT | 11575 | Neighbors Bar | Central City | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPWegFFHgV_aVyUaMc2jAgva9HbApUXODrcZ8ZJ… |
 | SUSPECT | 11576 | Powder | Park City | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipM1B4TYgZRhS9t1twQaMdVvsuC-hiTuzV8rWBe9… |
 | SUSPECT | 11578 | Itto Sushi | Downtown SLC | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipOFE52j55sotaGhYtN8sNXjE-X90VF0ePw52Klb… |
@@ -4203,3 +5404,4 @@ Total cards scanned: 5743
 | SUSPECT | 11590 | Salt Lake City Cemetery | The Avenues | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAHcjJWW8M3GOIujb-grkln4DsGNjYFov… |
 | SUSPECT | 11591 | Brownstone 22 | Downtown SLC | Google Places shared upload | https://lh3.googleusercontent.com/gps-cs-s/APNQkAFd6sIJAQYSb68wqxgkmJLQveXLRbKK5… |
 | SUSPECT | 11592 | Drunken Kitchen | South Salt Lake | Google Places user upload (often low quality) | https://lh3.googleusercontent.com/p/AF1QipPVNLYQuKXRe_d8SGwD6vbGCOBKOQglk7cdNmdo… |
+| SUSPECT | 11668 | Bartolo's | Kimball Junction | reused on 7 cards (likely placeholder) | https://img1.wsimg.com/isteam/videos/uA41GmyyG8IMaxXdb |

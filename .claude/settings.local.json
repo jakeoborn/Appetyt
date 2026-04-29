@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(node *)",
+      "Bash(rtk git *)",
+      "Bash(git commit *)",
+      "WebSearch",
+      "WebFetch(domain:www.yelp.com)",
+      "WebFetch(domain:web.roundrockchamber.org)",
+      "WebFetch(domain:www.google.com)",
+      "Bash(cat)",
+      "Bash(python /tmp/extract_venues.py)",
+      "Bash(awk '/^const NYC_DATA=\\\\[/,/^\\\\];const [A-Z]/' \"/c/Users/jakeo/OneDrive/Appetyt-temp/index.html\")",
+      "Bash(python /tmp/parse_nyc.py)",
+      "Bash(grep -i -o '{\"id\":[0-9]*,[^}]*\"natural wine\\\\|wine bar\\\\|sommelier' /tmp/nyc_section.txt)",
+      "Bash(grep -i -o '{\"id\":[0-9]*,[^}]*\"wine' /tmp/nyc_section.txt)",
+      "Bash(git add *)",
+      "PowerShell($env:TEMP)",
+      "Bash(chmod +x /tmp/find_themes.sh)",
+      "Bash(/tmp/find_themes.sh)",
+      "Bash(python3 *)",
+      "Bash(awk '-F|' '{ *)",
+      "Bash(sort -t'|' -k1 -n)",
+      "Bash(git fetch *)",
+      "Bash(git cherry-pick *)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "supabase"
+  ]
+}
