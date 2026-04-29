@@ -62,6 +62,32 @@ const reelUrls = {
   205: 'https://www.youtube.com/shorts/IknMcE4hoIg',  // The Slow Bone
   289: 'https://www.youtube.com/shorts/10EC8VFlgW8',  // Sadelle's Dallas
   86:  'https://www.youtube.com/shorts/sRxkeqH179Q',  // Georgie Dallas
+  // Houston — Batch 1
+  7002: 'https://www.youtube.com/shorts/Fi3CpUJjKaI',  // Tatemó
+  7001: 'https://www.youtube.com/shorts/6KRbxu5E_fg',  // March
+  7003: 'https://www.youtube.com/shorts/YpVuj186nTk',  // Le Jardinier Houston
+  7006: 'https://www.youtube.com/shorts/lk1WYghH59o',  // CorkScrew BBQ
+  7005: 'https://www.youtube.com/shorts/3OdrQm8YzTU',  // Musaafer
+  7007: 'https://www.youtube.com/shorts/juM0gZcYOLc',  // Truth BBQ
+  7009: 'https://www.youtube.com/shorts/WoiVF92G0fM',  // Nancy's Hustle
+  7010: 'https://www.youtube.com/shorts/_me2Zh7kMQI',  // Uchi Houston
+  7027: 'https://www.youtube.com/shorts/kF0E8OSArD4',  // Killen's BBQ
+  7014: 'https://www.youtube.com/shorts/9oh9tV_KGRY',  // Theodore Rex
+  7015: 'https://www.youtube.com/shorts/Pnsw9QsMjow',  // Xochi
+  7017: 'https://www.youtube.com/shorts/XMFV_0swYPc',  // Street to Kitchen
+  7018: 'https://www.youtube.com/shorts/rqLYxp91dOE',  // Blood Bros. BBQ
+  7016: 'https://www.youtube.com/shorts/0fx8cg_xCnc',  // Pappas Bros. Steakhouse
+  7022: 'https://www.youtube.com/shorts/RMI_S6KMRbI',  // Pinkerton's Barbecue
+  7161: 'https://www.youtube.com/shorts/D6GVXhhaJDU',  // Belly of the Beast
+  7118: 'https://www.youtube.com/shorts/-Ug_Yd1QWRk',  // ChòpnBlọk
+  7149: 'https://www.youtube.com/shorts/Z2i9ZzuiE1I',  // Bludorn
+  7028: 'https://www.youtube.com/shorts/UJsJlEaUzR0',  // The Breakfast Klub
+  7036: 'https://www.youtube.com/shorts/aulay7xjZbs',  // Nobie's
+  7011: 'https://www.youtube.com/shorts/yFynf9R4u-E',  // Crawfish & Noodles
+  7041: 'https://www.youtube.com/shorts/CYXH_qGA5aQ',  // Himalaya
+  7023: 'https://www.youtube.com/shorts/W1iF2FcpXzc',  // Coltivare
+  7024: 'https://www.youtube.com/shorts/2UkiCqkJ9AI',  // Loro Houston
+  7407: 'https://www.youtube.com/shorts/Ws1sCoEppvI',  // Bandista
 };
 
 let updated = 0;
