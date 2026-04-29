@@ -2,7 +2,7 @@
   "Dallas": [
     {
       "name": "Uptown",
-      "count": 68
+      "count": 69
     },
     {
       "name": "East Dallas / Lakewood",
@@ -10,11 +10,11 @@
     },
     {
       "name": "Deep Ellum",
-      "count": 44
+      "count": 45
     },
     {
       "name": "Lower Greenville",
-      "count": 44
+      "count": 45
     },
     {
       "name": "Knox-Henderson",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Downtown Dallas",
-      "count": 40
+      "count": 41
     },
     {
       "name": "Design District",
@@ -42,7 +42,7 @@
     },
     {
       "name": "Addison",
-      "count": 24
+      "count": 25
     },
     {
       "name": "North Dallas",
@@ -57,11 +57,11 @@
       "count": 17
     },
     {
-      "name": "Carrollton",
-      "count": 15
+      "name": "Oak Cliff",
+      "count": 16
     },
     {
-      "name": "Oak Cliff",
+      "name": "Carrollton",
       "count": 15
     },
     {
@@ -183,6 +183,38 @@
     {
       "name": "Rowlett",
       "count": 1
+    },
+    {
+      "name": "Fort Worth Cultural District",
+      "count": 1
+    },
+    {
+      "name": "Downtown Fort Worth",
+      "count": 1
+    },
+    {
+      "name": "Fairmount / Magnolia Avenue, Fort Worth",
+      "count": 1
+    },
+    {
+      "name": "Las Colinas, Irving",
+      "count": 1
+    },
+    {
+      "name": "Plano (Legacy West)",
+      "count": 1
+    },
+    {
+      "name": "North Oak Cliff",
+      "count": 1
+    },
+    {
+      "name": "Old East Dallas",
+      "count": 1
+    },
+    {
+      "name": "East Dallas",
+      "count": 1
     }
   ],
   "Houston": [
@@ -287,11 +319,11 @@
       "count": 8
     },
     {
-      "name": "Pearland",
-      "count": 6
+      "name": "Clear Lake",
+      "count": 7
     },
     {
-      "name": "Clear Lake",
+      "name": "Pearland",
       "count": 6
     },
     {
@@ -1152,7 +1184,7 @@
     },
     {
       "name": "Lower East Side",
-      "count": 54
+      "count": 55
     },
     {
       "name": "Midtown",
@@ -1207,15 +1239,15 @@
       "count": 20
     },
     {
+      "name": "Tribeca",
+      "count": 20
+    },
+    {
       "name": "Park Slope / Prospect Heights",
       "count": 20
     },
     {
       "name": "Greenpoint",
-      "count": 19
-    },
-    {
-      "name": "Tribeca",
       "count": 19
     },
     {
