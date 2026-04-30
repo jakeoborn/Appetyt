@@ -11,3 +11,6 @@ ios/DerivedData/
 
 # Caliber transient logs
 .caliber/refresh-hook.log
+
+# Claude Code worktrees (stray gitlinks broke Pages deploy)
+.claude/worktrees/

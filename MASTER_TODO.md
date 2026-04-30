@@ -82,6 +82,7 @@ _Last updated: 2026-04-29. Update this file at the end of every session._
 ### Infrastructure
 - [ ] **Gmail OAuth** — Phase 3 reservation-sync. 4 Netlify functions + Supabase `gmail_connections` table. Yahoo/iCloud not feasible. Outlook feasible via Graph API
 - [ ] **MCP installs** — Next: `joelio/stocky` (photos), `temporal-cortex/mcp` (Outlook calendar), `mcp-gateway` (tool-bloat reduction)
+- [ ] **Skills review — `addyosmani/web-quality-skills` + `browser-trace`** — installed 2026-04-30. Audit what each skill does (web-quality-audit, accessibility, best-practices, core-web-vitals, performance, seo + browser-trace) and decide which to invoke proactively on Dim Hour: e.g. core-web-vitals + performance on `index.html`, accessibility pass on the Discover/Trips UIs, seo on per-city build script, browser-trace to profile reels rendering. Output: prioritized run plan with concrete targets per skill
 
 ---
 
@@ -108,6 +109,12 @@ _Last updated: 2026-04-29. Update this file at the end of every session._
 - [ ] **UI design review** — run `design-an-interface` skill on target surface (Discover tab card grid + filter pills, or Trips dossier, or compact-row card) to get 3-5 alternate visual directions vs current Linear/Vercel caliber bar
 
 ---
+
+## Recently Shipped — Plursky / Vibestar (2026-04-30)
+
+- **v73**: Ask Plursky AI chat (Claude Haiku streaming, API key in localStorage), push notification auto-scheduling, auto-schedule builder (✦ AUTO in NightWizard), crew/group mode (Supabase broadcast channels), notification nudge banner in home screen
+- **v74**: Single combined Spotify playlist (deprecated audio-features + recommendations removed), FRI/SAT/SUN per-day buttons removed, ICS export fixed for iOS (text/plain MIME for Web Share + data: URL fallback for standalone PWA)
+- **Future**: Consider backend proxy for Anthropic key so friends don't each need their own key
 
 ## Recently Shipped (2026-04-29)
 
