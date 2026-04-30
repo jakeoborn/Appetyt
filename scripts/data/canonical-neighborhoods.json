@@ -279,10 +279,6 @@
       "count": 12
     },
     {
-      "name": "Museum District",
-      "count": 11
-    },
-    {
       "name": "Spring",
       "count": 11
     },
@@ -291,11 +287,15 @@
       "count": 11
     },
     {
+      "name": "Third Ward",
+      "count": 11
+    },
+    {
       "name": "Katy",
       "count": 11
     },
     {
-      "name": "Third Ward",
+      "name": "Museum District",
       "count": 10
     },
     {
@@ -370,7 +370,7 @@
     },
     {
       "name": "Logan Square",
-      "count": 36
+      "count": 37
     },
     {
       "name": "Lincoln Park",
@@ -402,7 +402,7 @@
     },
     {
       "name": "Pilsen",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Streeterville",
@@ -413,11 +413,11 @@
       "count": 14
     },
     {
-      "name": "Chinatown",
-      "count": 13
+      "name": "Bucktown",
+      "count": 14
     },
     {
-      "name": "Bucktown",
+      "name": "Chinatown",
       "count": 13
     },
     {
@@ -437,7 +437,15 @@
       "count": 9
     },
     {
+      "name": "Avondale",
+      "count": 8
+    },
+    {
       "name": "Irving Park",
+      "count": 8
+    },
+    {
+      "name": "Hyde Park",
       "count": 8
     },
     {
@@ -445,15 +453,7 @@
       "count": 8
     },
     {
-      "name": "Avondale",
-      "count": 7
-    },
-    {
       "name": "Little Village",
-      "count": 7
-    },
-    {
-      "name": "Hyde Park",
       "count": 7
     },
     {
@@ -587,12 +587,20 @@
     {
       "name": "Crestwood",
       "count": 1
+    },
+    {
+      "name": "Greater Grand Crossing",
+      "count": 1
+    },
+    {
+      "name": "Dunning",
+      "count": 1
     }
   ],
   "Austin": [
     {
       "name": "East Austin",
-      "count": 157
+      "count": 158
     },
     {
       "name": "Downtown",
@@ -600,7 +608,7 @@
     },
     {
       "name": "North Austin",
-      "count": 45
+      "count": 46
     },
     {
       "name": "South Austin",
@@ -616,7 +624,7 @@
     },
     {
       "name": "North Loop",
-      "count": 31
+      "count": 32
     },
     {
       "name": "Rainey Street",
@@ -631,6 +639,10 @@
       "count": 11
     },
     {
+      "name": "Hyde Park",
+      "count": 11
+    },
+    {
       "name": "6th Street",
       "count": 11
     },
@@ -639,12 +651,28 @@
       "count": 10
     },
     {
-      "name": "Hyde Park",
+      "name": "Round Rock",
       "count": 10
     },
     {
-      "name": "Round Rock",
+      "name": "Dripping Springs",
       "count": 10
+    },
+    {
+      "name": "Lake Travis",
+      "count": 10
+    },
+    {
+      "name": "Westlake",
+      "count": 9
+    },
+    {
+      "name": "Cedar Park",
+      "count": 8
+    },
+    {
+      "name": "Great Hills",
+      "count": 8
     },
     {
       "name": "Clarksville",
@@ -653,6 +681,14 @@
     {
       "name": "South 1st",
       "count": 7
+    },
+    {
+      "name": "Driftwood",
+      "count": 7
+    },
+    {
+      "name": "UT Campus",
+      "count": 6
     },
     {
       "name": "Mueller",
@@ -669,6 +705,10 @@
     {
       "name": "Lockhart",
       "count": 3
+    },
+    {
+      "name": "Northwest Austin",
+      "count": 1
     }
   ],
   "Salt Lake City": [
