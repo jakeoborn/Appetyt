@@ -1,6 +1,6 @@
 # Dim Hour — Master To-Do List
 
-_Last updated: 2026-04-30 (post-reservation-audit). Update this file at the end of every session._
+_Last updated: 2026-04-30 (quick-wins pass). Update this file at the end of every session._
 
 ---
 
@@ -17,7 +17,7 @@ _Last updated: 2026-04-30 (post-reservation-audit). Update this file at the end 
 ## 🟠 HIGH PRIORITY
 
 ### TikTok Reels
-- [ ] **Connect Apify MCP connector** — https://claude.ai/customize/connectors — must do before scheduling the re-run routine
+- [x] **Connect Apify MCP connector** — verified 2026-04-30, `mcp__apify__*` tools available in session
 - [ ] **Re-run SF + San Antonio through Apify** (~May 20, when quota resets) — SF: 117 done via low-quality WebSearch + 49 still missing; SA: 41 done via WebSearch + 41 missing. Replace WebSearch picks with proper play-count-sorted Apify results
 - [ ] **Start 7 new cities via Apify** — PHX (510), Seattle (525), SLC (574), Miami (271), Charlotte (254), Las Vegas (518), San Diego (522). Script: `scripts/replace-reels-tiktok.js`
 - [ ] **Low-quality upgrades** — Odd Duck Austin (5004) is a listicle; Distant Relatives Austin (5057) only 3,993 plays. Replace when better found
@@ -30,12 +30,12 @@ _Last updated: 2026-04-30 (post-reservation-audit). Update this file at the end 
 - [ ] **Charlotte Step 9** — Same as Miami (~253 cards done)
 
 ### Austin Cleanup
-- [ ] **Round Rock geocode** — IDs 5633 (Q Bola Cuban, 351 W Palm Valley Blvd) and 5635 (The Rustic Table, 2400 S I-35 Frontage Rd Ste 160) have `lat:0, lng:0`. Retry Nominatim with full ZIP or alternative geocoder
+- [x] **Round Rock geocode** — verified 2026-04-30: 5633 already at 30.5169,-97.6859 and 5635 at 30.4871,-97.679 (no remaining lat:0/lng:0 entries in dataset)
 - [ ] **Austin 7 remaining neighborhoods** (10 verified cards each, next ID 5636+):
   - Cedar Park · Dripping Springs · Westlake · Lake Travis · Driftwood · UT Campus · Great Hills
 
 ### Data Quality
-- [ ] **Blue Sushi Sake Grill Uptown (id 9230) — identify reservation platform.** Has venue reservations URL but `reservation` field is empty. Flagged by reservation audit on 2026-04-30 (`scripts/reservation-audit.json` → `res_set_url_empty` bucket). Resolve by visiting the URL, identifying platform, and updating the field.
+- [x] **Blue Sushi Sake Grill Uptown (id 9230) — reservation platform identified.** Set `reservation: "OpenTable"`, `reserveUrl: "https://www.opentable.com/r/blue-sushi-sake-grill-uptown-dallas"` on 2026-04-30. Audit high-severity bucket dropped 8 → 7 (remaining 7 are designed-as-walk-in tourist attractions).
 - [ ] **Re-run `scripts/reservation-audit.py` after every wave of inserts.** Catches walk-in→Resy mismatches (Copper Common class), wrong-platform link bugs, and Toast-takeout-URLs-as-reservation bugs. See `feedback_reservation_audit.md` for the three bug classes + tourist-attraction false positives.
 - [ ] **Duplicate IDs across cities** — Discovered during Wave 4 OpenTable Brunch tagging: id 5006 = Suerte (Austin) AND Foreign Cinema (SF); id 5019 = Salt Lick BBQ AND Dalida; id 236 = Harvest at the Masonic AND Duck Duck Goat; id 5124 = Perla's AND Marlowe. Likely many more — IDs collide across city data arrays. Audit + reassign from a max-id base per city. Tagging script (`scripts/wave4-tag.py`) used (id + address) match to disambiguate; future mass updates need same defense or unique-id reassignment first.
 - [ ] **OpenTable Top 100 Brunch 2026 — deferred entries** — Wave 5 added 27 new entries + tagged 4 existing (Cafe Monarch 3208, Al Biernat's 23, Zuni Cafe 5078, Mila Restaurant 4086). Still deferred: Motek NYC (no verified address), Ammatolí (Long Beach, not LA proper), 4 Atlanta entries (city not supported — would seed new market: Blue Ridge Grill, Poor Calvin's, Rumi's Kitchen, The Chastain), 2 Long Island NY (Del Vino Vineyards Northport, The Northport Hotel — outside NYC scope). Source data: `scripts/wave4-matches.json` (`not_found` array).
@@ -107,7 +107,7 @@ _Last updated: 2026-04-30 (post-reservation-audit). Update this file at the end 
 - [ ] **Data split** — `index.html` (~6MB) → `data/{city}.json` files. Biggest performance win; biggest lift
 - [ ] **Utility-class pass** — 1,204 inline styles → CSS classes
 - [ ] **Event delegation** — 399 `onclick` handlers → `data-action` pattern
-- [ ] **Dallas weekend guide bug** — `id:7` in guide references `Dakotas` but real Dakotas is id 9038; guide item should reference Sachet (Oak Lawn Mediterranean)
+- [x] **Dallas weekend guide bug** — verified 2026-04-30: guide already shows `spot:'Dinner at Sachet',id:7` correctly (madison-weekend Friday slot); no "Dakotas" string appears anywhere in WEEKEND_GUIDES Dallas section. Bug already resolved in earlier pass.
 
 ### UI / Design
 - [ ] **UI design review** — run `design-an-interface` skill on target surface (Discover tab card grid + filter pills, or Trips dossier, or compact-row card) to get 3-5 alternate visual directions vs current Linear/Vercel caliber bar

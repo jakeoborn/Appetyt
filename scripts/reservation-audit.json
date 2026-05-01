@@ -1,38 +1,6 @@
 {
   "url_set_res_walkin": [
     {
-      "id": 9230,
-      "name": "Blue Sushi Sake Grill Uptown",
-      "address": "3220 McKinney Ave, Dallas, TX 75204",
-      "reservation": "",
-      "reserveUrl": "https://www.bluesushisakegrill.com/reservations",
-      "website": "https://www.bluesushisakegrill.com/locations/uptown-dallas"
-    },
-    {
-      "id": 1005,
-      "name": "Via Carota",
-      "address": "51 Grove St, New York NY 10014",
-      "reservation": "walk-in",
-      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/via-carota",
-      "website": "https://www.viacarota.com"
-    },
-    {
-      "id": 1216,
-      "name": "Bridges",
-      "address": "9 Chatham Square, New York, NY 10038",
-      "reservation": "walk-in",
-      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/bridges",
-      "website": "https://www.bridgesnyc.com"
-    },
-    {
-      "id": 1461,
-      "name": "Coqodaq",
-      "address": "12 E 22nd St, New York, NY 10010",
-      "reservation": "walk-in",
-      "reserveUrl": "https://resy.com/cities/ny/coqodaq",
-      "website": "https://www.coqodaq.com"
-    },
-    {
       "id": 1802,
       "name": "Empire State Building",
       "address": "20 W 34th St, New York, NY 10001",
@@ -55,54 +23,6 @@
       "reservation": "walk-in",
       "reserveUrl": "https://www.amberroomnyc.com/events",
       "website": "https://www.amberroomnyc.com"
-    },
-    {
-      "id": 15588,
-      "name": "Wholy Bagel - William Cannon",
-      "address": "4404 W William Cannon Dr, Austin, TX 78749",
-      "reservation": "walk-in",
-      "reserveUrl": "https://wholybagel-wc.square.site/s/order",
-      "website": "http://www.wholybagelatx.com/"
-    },
-    {
-      "id": 15589,
-      "name": "Wholy Bagel - Far West",
-      "address": "3637 Far West Blvd, Austin, TX 78731",
-      "reservation": "walk-in",
-      "reserveUrl": "https://wholybagel-wc.square.site/s/order",
-      "website": "http://www.wholybagelatx.com/"
-    },
-    {
-      "id": 15592,
-      "name": "Rosen's Bagel Co - Burnet Road",
-      "address": "11101 Burnet Rd Ste A100, Austin, TX 78758",
-      "reservation": "walk-in",
-      "reserveUrl": "https://order.toasttab.com/online/rosensbagels",
-      "website": "https://rosensbagels.com/"
-    },
-    {
-      "id": 15593,
-      "name": "Rosen's Bagel Co - Republic Square",
-      "address": "422 W 5th St C, Austin, TX 78701",
-      "reservation": "walk-in",
-      "reserveUrl": "https://order.toasttab.com/online/rosens-bagels-republic-square-422-guadalupe-st-suite-c",
-      "website": "https://rosensbagels.com/"
-    },
-    {
-      "id": 15594,
-      "name": "David Doughie's Bagelry",
-      "address": "2427 Webberville Rd, Austin, TX 78702",
-      "reservation": "walk-in",
-      "reserveUrl": "https://order.toasttab.com/online/david-doughies-food-truck-10400-manchaca-road",
-      "website": "https://www.daviddoughies.com/"
-    },
-    {
-      "id": 15595,
-      "name": "Rockstar Bagels",
-      "address": "1900 Rosewood Ave, Austin, TX 78702",
-      "reservation": "walk-in",
-      "reserveUrl": "https://www.toasttab.com/rockstar-bagels-1900-rosewood-ave",
-      "website": "https://www.rockstarbagels.com/"
     },
     {
       "id": 7030,
@@ -157,24 +77,6 @@
       "_slug": "stk-dallas-2"
     },
     {
-      "id": 1028,
-      "name": "Dhamaka",
-      "address": "119 Delancey St, New York NY 10002",
-      "reservation": "SevenRooms",
-      "reserveUrl": "https://www.sevenrooms.com/explore/dhamakanyc/reservations/create/search",
-      "website": "https://www.dhamakanyc.com",
-      "_slug": "search"
-    },
-    {
-      "id": 1737,
-      "name": "The Eighty Six",
-      "address": "86 Bedford St, New York, NY 10014",
-      "reservation": "Resy",
-      "reserveUrl": "https://fp.sevenrooms.com/explore/theeightysix/reservations/create/search",
-      "website": "https://www.the86.nyc/",
-      "_slug": "search"
-    },
-    {
       "id": 3521,
       "name": "Thea Mediterranean Rooftop",
       "address": "4360 E Camelback Rd, Phoenix, AZ 85018",
@@ -211,7 +113,7 @@
       "_slug": "search"
     }
   ],
-  "res_set_url_empty_count": 2322,
+  "res_set_url_empty_count": 2324,
   "res_set_url_empty_sample": [
     {
       "id": 11001,
