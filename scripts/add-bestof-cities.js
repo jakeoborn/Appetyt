@@ -123,6 +123,112 @@ const BESTOF = {
     { name: "Phil's BBQ",                            bestOf: ['#1 Best BBQ'] },
     { name: "Buona Forchetta",                       bestOf: ['#1 Best Pizza','#1 Best Italian'] },
   ],
+
+  SF_DATA: [
+    // Fine Dining tier
+    { name: 'Atelier Crenn',          bestOf: ['#1 Best Fine Dining','#1 Best Overall','#1 Best Tasting Menu'] },
+    { name: 'Quince',                 bestOf: ['#2 Best Fine Dining','#1 Best Italian Fine Dining','#2 Best Tasting Menu'] },
+    { name: 'Benu',                   bestOf: ['#3 Best Fine Dining','#3 Best Tasting Menu','#1 Best Date Night'] },
+    { name: 'Saison',                 bestOf: ['#4 Best Fine Dining','#4 Best Tasting Menu'] },
+    { name: 'Lazy Bear',              bestOf: ['#5 Best Fine Dining','#1 Best Modern American'] },
+    { name: 'Acquerello',             bestOf: ['#2 Best Italian Fine Dining','#2 Best Date Night'] },
+    { name: 'Birdsong',               bestOf: ['#5 Best Tasting Menu'] },
+    { name: 'Sons & Daughters',       bestOf: ['#3 Best Date Night'] },
+    { name: 'Gary Danko',             bestOf: ['#4 Best Date Night','#1 Best Celebrations'] },
+    // Italian / Pasta
+    { name: 'Cotogna',                bestOf: ['#1 Best Italian (Casual)','#1 Best Pasta'] },
+    { name: 'Flour + Water',          bestOf: ['#2 Best Pasta','#3 Best Italian'] },
+    { name: 'Che Fico',               bestOf: ['#1 Best Cal-Italian','#5 Best Date Night'] },
+    { name: 'Sorrel',                 bestOf: ['#3 Best Italian Fine Dining'] },
+    // Iconic SF / James Beard classics
+    { name: 'Zuni Café',              bestOf: ['#1 Best Iconic SF','#1 Best Roast Chicken','#1 Best Brunch'] },
+    { name: 'Swan Oyster Depot',      bestOf: ['#1 Best Oysters','#1 Best SF Classic','#1 Best Walk-In'] },
+    { name: 'Tadich Grill',           bestOf: ['#2 Best SF Classic','#1 Best Cioppino'] },
+    { name: 'House of Prime Rib',     bestOf: ['#1 Best Steakhouse','#1 Best Prime Rib','#3 Best SF Classic'] },
+    { name: 'Tartine Bakery',         bestOf: ['#1 Best Bakery','#1 Best Pastry'] },
+    { name: 'Tartine Manufactory',    bestOf: ['#2 Best Bakery'] },
+    { name: 'Sotto Mare',             bestOf: ['#2 Best Cioppino','#1 Best North Beach'] },
+    // Asian / Modern
+    { name: "Mister Jiu's",           bestOf: ['#1 Best Chinese','#1 Best Chinatown','#1 Best Cantonese'] },
+    { name: 'Kin Khao',               bestOf: ['#1 Best Thai'] },
+    { name: 'Niku Steakhouse',        bestOf: ['#1 Best Japanese Steakhouse','#2 Best Steakhouse'] },
+    { name: 'Rintaro',                bestOf: ['#1 Best Izakaya','#1 Best Japanese (Casual)'] },
+    { name: 'Noodle in a Haystack',   bestOf: ['#1 Best Ramen'] },
+    // Cocktails
+    { name: 'Trick Dog',              bestOf: ['#1 Best Cocktails','#1 Best Mission Bar'] },
+    { name: "Smuggler's Cove",        bestOf: ['#1 Best Tiki Bar','#1 Best Hayes Valley Bar'] },
+    { name: 'Bourbon & Branch',       bestOf: ['#1 Best Speakeasy'] },
+    { name: 'Pacific Cocktail Haven', bestOf: ['#2 Best Cocktails'] },
+    { name: 'ABV',                    bestOf: ['#3 Best Cocktails'] },
+    // Other
+    { name: 'Foreign Cinema',         bestOf: ['#2 Best Brunch','#1 Best Mission Brunch'] },
+    { name: 'Nopalito',               bestOf: ['#1 Best Mexican'] },
+    { name: 'La Mar Cebicheria',      bestOf: ['#1 Best Peruvian','#1 Best Embarcadero'] },
+    { name: 'Kokkari Estiatorio',     bestOf: ['#1 Best Greek'] },
+    { name: 'A16',                    bestOf: ['#1 Best Pizza','#4 Best Italian'] },
+    { name: 'Nopa',                   bestOf: ['#1 Best Late Night','#1 Best NoPa'] },
+    { name: 'Rich Table',             bestOf: ['#2 Best Modern American','#1 Best Hayes Valley'] },
+    { name: 'State Bird Provisions',  bestOf: ['#3 Best Modern American'] },
+  ],
+
+  CHARLOTTE_DATA: [
+    // Fine Dining
+    { name: 'Counter-',                       bestOf: ['#1 Best Fine Dining','#1 Best Tasting Menu','#1 Best Overall'] },
+    { name: 'Kindred',                        bestOf: ['#2 Best Fine Dining','#1 Best Davidson','#1 Best Date Night'] },
+    { name: 'Leah & Louise',                  bestOf: ['#1 Best Modern Southern','#1 Best Camp North End','#3 Best Fine Dining'] },
+    { name: "Barrington's Restaurant",        bestOf: ['#3 Best Date Night','#4 Best Fine Dining'] },
+    { name: 'Stanley',                        bestOf: ['#5 Best Fine Dining','#1 Best Elizabeth'] },
+    { name: 'Restaurant Constance',           bestOf: ['#2 Best Tasting Menu','#1 Best Wesley Heights'] },
+    { name: 'Bardo',                          bestOf: ['#3 Best Tasting Menu','#1 Best NoDa New American'] },
+    { name: 'Haymaker',                       bestOf: ['#1 Best Uptown Fine Dining'] },
+    { name: 'Heirloom Restaurant',            bestOf: ['#1 Best Farm-to-Table'] },
+    // BBQ
+    { name: "Jon G's Barbecue",               bestOf: ['#1 Best BBQ','#1 Best Brisket','#1 Best Day Trip'] },
+    { name: "Sweet Lew's BBQ",                bestOf: ['#2 Best BBQ'] },
+    { name: 'Noble Smoke',                    bestOf: ['#3 Best BBQ'] },
+    { name: 'Midwood Smokehouse',             bestOf: ['#4 Best BBQ','#1 Best Plaza Midwood BBQ'] },
+    // Brunch / Southern
+    { name: 'Supperland',                     bestOf: ['#1 Best Brunch','#1 Best Southern','#2 Best Date Night'] },
+    { name: 'The Goodyear House',             bestOf: ['#2 Best Brunch','#1 Best NoDa Brunch'] },
+    { name: 'Haberdish',                      bestOf: ['#3 Best Brunch','#2 Best Southern'] },
+    // Cocktails
+    { name: 'Idlewild',                       bestOf: ['#1 Best Cocktails','#1 Best NoDa Cocktail Bar'] },
+    { name: 'The Crunkleton',                 bestOf: ['#1 Best Speakeasy'] },
+    { name: 'Lorem Ipsum',                    bestOf: ['#1 Best Listening Bar','#2 Best Cocktails'] },
+    { name: 'Humbug',                         bestOf: ['#3 Best Cocktails'] },
+    { name: 'The Cellar at Duckworth\'s',     bestOf: ['#2 Best Speakeasy'] },
+    // Burger / Sandwich
+    { name: "Brooks' Sandwich House",         bestOf: ['#1 Best Burger','#1 Best Sandwich','#1 Best Local Fave'] },
+    // Steakhouse
+    { name: 'Steak 48',                       bestOf: ['#1 Best Steakhouse'] },
+    { name: "Dressler's Restaurant — Metropolitan", bestOf: ['#2 Best Steakhouse'] },
+    { name: 'Oak Steakhouse',                 bestOf: ['#3 Best Steakhouse','#2 Best Uptown Fine Dining'] },
+    // Italian / Pasta
+    { name: 'Stagioni',                       bestOf: ['#1 Best Italian','#1 Best Myers Park'] },
+    { name: 'Spaghett',                       bestOf: ['#2 Best Italian'] },
+    { name: 'Eso Artisanal Pasta',            bestOf: ['#1 Best Pasta','#1 Best Optimist Hall'] },
+    { name: 'Ever Andalo',                    bestOf: ['#3 Best Italian','#2 Best NoDa'] },
+    // Sushi / Japanese / Nikkei
+    { name: 'Omakase Experience by Primefish',bestOf: ['#1 Best Omakase','#1 Best Japanese'] },
+    { name: 'Sora',                           bestOf: ['#2 Best Omakase','#2 Best Japanese'] },
+    { name: 'Yunta',                          bestOf: ['#1 Best Nikkei','#1 Best Peruvian'] },
+    { name: 'Muraya',                         bestOf: ['#3 Best Sushi','#1 Best South End Sushi'] },
+    { name: 'Primefish Cellar',               bestOf: ['#2 Best Sushi','#1 Best Cotswold'] },
+    // Mexican / Latin
+    { name: 'The Story of Mi Cariño',         bestOf: ['#1 Best Mexican'] },
+    { name: 'Maiz Agua Sal',                  bestOf: ['#2 Best Mexican','#1 Best West Charlotte'] },
+    { name: 'Noche Bruta',                    bestOf: ['#3 Best Mexican'] },
+    // Vietnamese / Asian
+    { name: 'Lang Van',                       bestOf: ['#1 Best Vietnamese','#1 Best Charlotte Institution','#2 Best Local Fave'] },
+    // Seafood
+    { name: 'Hello, Sailor',                  bestOf: ['#1 Best Lake Norman','#1 Best Seafood','#1 Best Waterfront'] },
+    { name: 'Seaboy',                         bestOf: ['#2 Best Seafood','#2 Best Lake Norman'] },
+    // Pizza / French
+    { name: 'Bird Pizzeria',                  bestOf: ['#1 Best Pizza'] },
+    { name: 'La Belle Helene',                bestOf: ['#1 Best French','#3 Best Brunch'] },
+    { name: 'Fig Tree Restaurant',            bestOf: ['#1 Best Wine List','#4 Best Fine Dining'] },
+    { name: 'Bonterra Dining & Wine Room',    bestOf: ['#2 Best Wine List'] },
+  ],
 };
 
 const htmlPath = path.join(__dirname, '..', 'index.html');
