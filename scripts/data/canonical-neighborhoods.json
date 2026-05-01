@@ -10,7 +10,7 @@
     },
     {
       "name": "Deep Ellum",
-      "count": 45
+      "count": 46
     },
     {
       "name": "Lower Greenville",
@@ -38,7 +38,7 @@
     },
     {
       "name": "Bishop Arts",
-      "count": 28
+      "count": 29
     },
     {
       "name": "Addison",
@@ -49,16 +49,16 @@
       "count": 19
     },
     {
+      "name": "Oak Cliff",
+      "count": 17
+    },
+    {
       "name": "Plano",
       "count": 17
     },
     {
       "name": "Harwood District",
       "count": 17
-    },
-    {
-      "name": "Oak Cliff",
-      "count": 16
     },
     {
       "name": "Carrollton",
@@ -69,11 +69,11 @@
       "count": 13
     },
     {
-      "name": "Victory Park",
-      "count": 11
+      "name": "Far North Dallas",
+      "count": 13
     },
     {
-      "name": "Far North Dallas",
+      "name": "Victory Park",
       "count": 11
     },
     {
@@ -130,7 +130,7 @@
     },
     {
       "name": "Rockwall",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Forney",
@@ -142,6 +142,14 @@
     },
     {
       "name": "Lewisville",
+      "count": 2
+    },
+    {
+      "name": "East Dallas",
+      "count": 2
+    },
+    {
+      "name": "Las Colinas",
       "count": 2
     },
     {
@@ -213,7 +221,11 @@
       "count": 1
     },
     {
-      "name": "East Dallas",
+      "name": "Preston Center",
+      "count": 1
+    },
+    {
+      "name": "South Dallas",
       "count": 1
     }
   ],
@@ -362,7 +374,7 @@
   "Chicago": [
     {
       "name": "River North",
-      "count": 64
+      "count": 65
     },
     {
       "name": "West Loop / Fulton Market",
@@ -374,15 +386,19 @@
     },
     {
       "name": "Lincoln Park",
-      "count": 30
+      "count": 32
     },
     {
       "name": "Wicker Park",
-      "count": 29
+      "count": 30
     },
     {
       "name": "Lakeview / Wrigleyville",
       "count": 29
+    },
+    {
+      "name": "Gold Coast",
+      "count": 20
     },
     {
       "name": "West Town",
@@ -390,10 +406,6 @@
     },
     {
       "name": "The Loop",
-      "count": 18
-    },
-    {
-      "name": "Gold Coast",
       "count": 18
     },
     {
@@ -406,7 +418,7 @@
     },
     {
       "name": "Streeterville",
-      "count": 14
+      "count": 15
     },
     {
       "name": "South Loop",
@@ -600,7 +612,7 @@
   "Austin": [
     {
       "name": "East Austin",
-      "count": 158
+      "count": 160
     },
     {
       "name": "Downtown",
@@ -608,18 +620,18 @@
     },
     {
       "name": "North Austin",
-      "count": 46
+      "count": 47
     },
     {
       "name": "South Austin",
       "count": 40
     },
     {
-      "name": "South Lamar",
-      "count": 38
+      "name": "South Congress",
+      "count": 39
     },
     {
-      "name": "South Congress",
+      "name": "South Lamar",
       "count": 38
     },
     {
@@ -663,20 +675,20 @@
       "count": 10
     },
     {
+      "name": "Cedar Park",
+      "count": 9
+    },
+    {
       "name": "Westlake",
       "count": 9
     },
     {
-      "name": "Cedar Park",
+      "name": "Clarksville",
       "count": 8
     },
     {
       "name": "Great Hills",
       "count": 8
-    },
-    {
-      "name": "Clarksville",
-      "count": 7
     },
     {
       "name": "South 1st",
@@ -700,7 +712,7 @@
     },
     {
       "name": "Domain",
-      "count": 5
+      "count": 4
     },
     {
       "name": "Lockhart",
@@ -708,6 +720,18 @@
     },
     {
       "name": "Northwest Austin",
+      "count": 1
+    },
+    {
+      "name": "Southwest Austin",
+      "count": 1
+    },
+    {
+      "name": "Northwest Hills",
+      "count": 1
+    },
+    {
+      "name": "Brentwood",
       "count": 1
     }
   ],
@@ -753,10 +777,6 @@
       "count": 12
     },
     {
-      "name": "Central City",
-      "count": 12
-    },
-    {
       "name": "Cottonwood Heights",
       "count": 12
     },
@@ -766,6 +786,10 @@
     },
     {
       "name": "Granary District",
+      "count": 11
+    },
+    {
+      "name": "Central City",
       "count": 11
     },
     {
@@ -888,7 +912,7 @@
   "Las Vegas": [
     {
       "name": "Chinatown",
-      "count": 60
+      "count": 59
     },
     {
       "name": "Paradise",
@@ -931,11 +955,11 @@
       "count": 18
     },
     {
-      "name": "The Strip (Mandalay Bay)",
-      "count": 17
+      "name": "The Strip (Aria)",
+      "count": 16
     },
     {
-      "name": "The Strip (Aria)",
+      "name": "The Strip (Mandalay Bay)",
       "count": 16
     },
     {
@@ -963,6 +987,10 @@
       "count": 11
     },
     {
+      "name": "The Strip",
+      "count": 11
+    },
+    {
       "name": "Downtown (Circa)",
       "count": 11
     },
@@ -971,12 +999,12 @@
       "count": 11
     },
     {
-      "name": "The Strip",
+      "name": "North Las Vegas",
       "count": 10
     },
     {
-      "name": "Summerlin (Downtown Summerlin)",
-      "count": 9
+      "name": "Boulder City",
+      "count": 10
     },
     {
       "name": "The Strip (The Palazzo)",
@@ -984,6 +1012,10 @@
     },
     {
       "name": "The Strip (Paris Las Vegas)",
+      "count": 8
+    },
+    {
+      "name": "Summerlin (Downtown Summerlin)",
       "count": 8
     },
     {
@@ -997,10 +1029,6 @@
     {
       "name": "Summerlin (Red Rock Resort)",
       "count": 6
-    },
-    {
-      "name": "North Las Vegas",
-      "count": 5
     },
     {
       "name": "The Strip (Planet Hollywood)",
@@ -1023,10 +1051,6 @@
       "count": 1
     },
     {
-      "name": "Boulder City",
-      "count": 1
-    },
-    {
       "name": "The Strip (Showcase Mall)",
       "count": 1
     },
@@ -1040,6 +1064,10 @@
     },
     {
       "name": "The Strip (New York-New York)",
+      "count": 1
+    },
+    {
+      "name": "CityCenter",
       "count": 1
     }
   ],
@@ -1208,18 +1236,18 @@
   "New York": [
     {
       "name": "East Village",
-      "count": 91
+      "count": 92
     },
     {
       "name": "Williamsburg",
       "count": 67
     },
     {
-      "name": "Flatiron / NoMad",
-      "count": 59
+      "name": "West Village",
+      "count": 63
     },
     {
-      "name": "West Village",
+      "name": "Flatiron / NoMad",
       "count": 59
     },
     {
@@ -1228,7 +1256,11 @@
     },
     {
       "name": "Midtown",
-      "count": 49
+      "count": 53
+    },
+    {
+      "name": "Greenwich Village",
+      "count": 44
     },
     {
       "name": "SoHo",
@@ -1236,39 +1268,39 @@
     },
     {
       "name": "Midtown East",
-      "count": 42
-    },
-    {
-      "name": "Greenwich Village",
-      "count": 41
+      "count": 43
     },
     {
       "name": "Chinatown",
       "count": 35
     },
     {
-      "name": "Chelsea",
-      "count": 30
+      "name": "Upper East Side",
+      "count": 33
     },
     {
-      "name": "Upper East Side",
-      "count": 27
+      "name": "Chelsea",
+      "count": 32
+    },
+    {
+      "name": "Upper West Side",
+      "count": 26
     },
     {
       "name": "Nolita",
       "count": 26
     },
     {
-      "name": "Upper West Side",
-      "count": 25
-    },
-    {
       "name": "Financial District",
-      "count": 24
+      "count": 25
     },
     {
       "name": "Midtown West",
       "count": 23
+    },
+    {
+      "name": "Tribeca",
+      "count": 22
     },
     {
       "name": "Harlem",
@@ -1276,10 +1308,6 @@
     },
     {
       "name": "Carroll Gardens / Cobble Hill",
-      "count": 20
-    },
-    {
-      "name": "Tribeca",
       "count": 20
     },
     {
@@ -1307,6 +1335,14 @@
       "count": 12
     },
     {
+      "name": "Astoria",
+      "count": 12
+    },
+    {
+      "name": "Meatpacking District",
+      "count": 12
+    },
+    {
       "name": "Coney Island / South Brooklyn",
       "count": 11
     },
@@ -1315,16 +1351,8 @@
       "count": 11
     },
     {
-      "name": "Meatpacking District",
-      "count": 11
-    },
-    {
       "name": "Fort Greene / Clinton Hill",
       "count": 10
-    },
-    {
-      "name": "Astoria",
-      "count": 9
     },
     {
       "name": "DUMBO",
@@ -1391,6 +1419,18 @@
       "count": 2
     },
     {
+      "name": "Times Square",
+      "count": 2
+    },
+    {
+      "name": "Cobble Hill",
+      "count": 2
+    },
+    {
+      "name": "Murray Hill",
+      "count": 2
+    },
+    {
       "name": "Lincoln Center",
       "count": 1
     },
@@ -1408,6 +1448,26 @@
     },
     {
       "name": "Roosevelt Island",
+      "count": 1
+    },
+    {
+      "name": "Hamilton Heights",
+      "count": 1
+    },
+    {
+      "name": "Morningside Heights",
+      "count": 1
+    },
+    {
+      "name": "Little Italy",
+      "count": 1
+    },
+    {
+      "name": "Prospect Heights",
+      "count": 1
+    },
+    {
+      "name": "Carroll Gardens",
       "count": 1
     }
   ],
@@ -1605,6 +1665,10 @@
       "count": 2
     },
     {
+      "name": "Downtown",
+      "count": 2
+    },
+    {
       "name": "Northridge",
       "count": 2
     },
@@ -1662,10 +1726,6 @@
     },
     {
       "name": "Lincoln Heights",
-      "count": 1
-    },
-    {
-      "name": "Downtown",
       "count": 1
     },
     {
@@ -1784,7 +1844,7 @@
     },
     {
       "name": "Arcadia",
-      "count": 34
+      "count": 35
     },
     {
       "name": "Uptown",
@@ -1795,12 +1855,12 @@
       "count": 29
     },
     {
-      "name": "Central Phoenix",
+      "name": "North Phoenix",
       "count": 22
     },
     {
-      "name": "North Phoenix",
-      "count": 21
+      "name": "Central Phoenix",
+      "count": 22
     },
     {
       "name": "Biltmore",
@@ -1954,11 +2014,15 @@
     },
     {
       "name": "Hillcrest",
-      "count": 22
+      "count": 23
     },
     {
       "name": "Pacific Beach",
       "count": 20
+    },
+    {
+      "name": "Coronado",
+      "count": 18
     },
     {
       "name": "Del Mar",
@@ -1966,10 +2030,6 @@
     },
     {
       "name": "East Village",
-      "count": 17
-    },
-    {
-      "name": "Coronado",
       "count": 17
     },
     {
@@ -2069,6 +2129,10 @@
       "count": 4
     },
     {
+      "name": "Rancho Santa Fe",
+      "count": 4
+    },
+    {
       "name": "Mission Valley",
       "count": 4
     },
@@ -2086,10 +2150,6 @@
     },
     {
       "name": "Harbor Island",
-      "count": 3
-    },
-    {
-      "name": "Rancho Santa Fe",
       "count": 3
     },
     {
@@ -2216,7 +2276,7 @@
     },
     {
       "name": "Design District",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Coconut Grove",
@@ -2224,7 +2284,7 @@
     },
     {
       "name": "Little Havana",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Downtown Miami",
@@ -2232,34 +2292,42 @@
     },
     {
       "name": "Little River",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Mid-Beach",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Miami Beach",
-      "count": 6
+      "count": 7
     },
     {
       "name": "MiMo",
       "count": 6
     },
     {
+      "name": "Buena Vista",
+      "count": 5
+    },
+    {
       "name": "Mid Beach",
       "count": 5
     },
     {
-      "name": "Buena Vista",
+      "name": "Surfside",
       "count": 4
     },
     {
-      "name": "Surfside",
-      "count": 3
+      "name": "Bal Harbour",
+      "count": 4
     },
     {
       "name": "Edgewater",
+      "count": 3
+    },
+    {
+      "name": "Sunset Harbour",
       "count": 3
     },
     {
@@ -2267,16 +2335,12 @@
       "count": 3
     },
     {
-      "name": "Bal Harbour",
+      "name": "Little Haiti",
       "count": 3
     },
     {
       "name": "Westchester",
       "count": 3
-    },
-    {
-      "name": "Sunset Harbour",
-      "count": 2
     },
     {
       "name": "North Beach",
@@ -2287,7 +2351,7 @@
       "count": 2
     },
     {
-      "name": "Little Haiti",
+      "name": "Key Biscayne",
       "count": 2
     },
     {
@@ -2316,10 +2380,6 @@
     },
     {
       "name": "Upper Eastside",
-      "count": 1
-    },
-    {
-      "name": "Key Biscayne",
       "count": 1
     },
     {
@@ -2552,7 +2612,7 @@
     },
     {
       "name": "Stone Oak",
-      "count": 4
+      "count": 5
     },
     {
       "name": "St. Mary's Strip",
@@ -2590,11 +2650,11 @@
   "San Francisco": [
     {
       "name": "Mission",
-      "count": 25
+      "count": 26
     },
     {
       "name": "SoMa",
-      "count": 13
+      "count": 12
     },
     {
       "name": "North Beach",
@@ -2613,20 +2673,20 @@
       "count": 7
     },
     {
+      "name": "Financial District",
+      "count": 7
+    },
+    {
+      "name": "Marina",
+      "count": 7
+    },
+    {
       "name": "Castro",
       "count": 7
     },
     {
       "name": "Cow Hollow",
       "count": 7
-    },
-    {
-      "name": "Financial District",
-      "count": 6
-    },
-    {
-      "name": "Marina",
-      "count": 6
     },
     {
       "name": "Pacific Heights",
@@ -2638,6 +2698,14 @@
     },
     {
       "name": "NoPa",
+      "count": 4
+    },
+    {
+      "name": "Tenderloin",
+      "count": 4
+    },
+    {
+      "name": "Chinatown",
       "count": 4
     },
     {
@@ -2657,15 +2725,11 @@
       "count": 3
     },
     {
-      "name": "Tenderloin",
-      "count": 3
-    },
-    {
-      "name": "Chinatown",
-      "count": 3
-    },
-    {
       "name": "Fillmore",
+      "count": 3
+    },
+    {
+      "name": "Polk Gulch",
       "count": 3
     },
     {
@@ -2698,10 +2762,6 @@
     },
     {
       "name": "Fort Mason",
-      "count": 2
-    },
-    {
-      "name": "Polk Gulch",
       "count": 2
     },
     {
@@ -2750,6 +2810,14 @@
     },
     {
       "name": "Cole Valley",
+      "count": 1
+    },
+    {
+      "name": "West Portal",
+      "count": 1
+    },
+    {
+      "name": "Woodside",
       "count": 1
     }
   ]
