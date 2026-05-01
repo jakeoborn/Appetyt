@@ -1,0 +1,377 @@
+{
+  "url_set_res_walkin": [
+    {
+      "id": 9230,
+      "name": "Blue Sushi Sake Grill Uptown",
+      "address": "3220 McKinney Ave, Dallas, TX 75204",
+      "reservation": "",
+      "reserveUrl": "https://www.bluesushisakegrill.com/reservations",
+      "website": "https://www.bluesushisakegrill.com/locations/uptown-dallas"
+    },
+    {
+      "id": 1005,
+      "name": "Via Carota",
+      "address": "51 Grove St, New York NY 10014",
+      "reservation": "walk-in",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/via-carota",
+      "website": "https://www.viacarota.com"
+    },
+    {
+      "id": 1216,
+      "name": "Bridges",
+      "address": "9 Chatham Square, New York, NY 10038",
+      "reservation": "walk-in",
+      "reserveUrl": "https://resy.com/cities/new-york-ny/venues/bridges",
+      "website": "https://www.bridgesnyc.com"
+    },
+    {
+      "id": 1461,
+      "name": "Coqodaq",
+      "address": "12 E 22nd St, New York, NY 10010",
+      "reservation": "walk-in",
+      "reserveUrl": "https://resy.com/cities/ny/coqodaq",
+      "website": "https://www.coqodaq.com"
+    },
+    {
+      "id": 1802,
+      "name": "Empire State Building",
+      "address": "20 W 34th St, New York, NY 10001",
+      "reservation": "walk-in",
+      "reserveUrl": "https://www.esbnyc.com/buy-tickets",
+      "website": "https://www.esbnyc.com"
+    },
+    {
+      "id": 1806,
+      "name": "MET Museum",
+      "address": "1000 5th Ave, New York, NY 10028",
+      "reservation": "walk-in",
+      "reserveUrl": "https://www.metmuseum.org/visit/plan-your-visit",
+      "website": "https://www.metmuseum.org"
+    },
+    {
+      "id": 2004,
+      "name": "Amber Room",
+      "address": "55 W 21st St, New York, NY 10010",
+      "reservation": "walk-in",
+      "reserveUrl": "https://www.amberroomnyc.com/events",
+      "website": "https://www.amberroomnyc.com"
+    },
+    {
+      "id": 15588,
+      "name": "Wholy Bagel - William Cannon",
+      "address": "4404 W William Cannon Dr, Austin, TX 78749",
+      "reservation": "walk-in",
+      "reserveUrl": "https://wholybagel-wc.square.site/s/order",
+      "website": "http://www.wholybagelatx.com/"
+    },
+    {
+      "id": 15589,
+      "name": "Wholy Bagel - Far West",
+      "address": "3637 Far West Blvd, Austin, TX 78731",
+      "reservation": "walk-in",
+      "reserveUrl": "https://wholybagel-wc.square.site/s/order",
+      "website": "http://www.wholybagelatx.com/"
+    },
+    {
+      "id": 15592,
+      "name": "Rosen's Bagel Co - Burnet Road",
+      "address": "11101 Burnet Rd Ste A100, Austin, TX 78758",
+      "reservation": "walk-in",
+      "reserveUrl": "https://order.toasttab.com/online/rosensbagels",
+      "website": "https://rosensbagels.com/"
+    },
+    {
+      "id": 15593,
+      "name": "Rosen's Bagel Co - Republic Square",
+      "address": "422 W 5th St C, Austin, TX 78701",
+      "reservation": "walk-in",
+      "reserveUrl": "https://order.toasttab.com/online/rosens-bagels-republic-square-422-guadalupe-st-suite-c",
+      "website": "https://rosensbagels.com/"
+    },
+    {
+      "id": 15594,
+      "name": "David Doughie's Bagelry",
+      "address": "2427 Webberville Rd, Austin, TX 78702",
+      "reservation": "walk-in",
+      "reserveUrl": "https://order.toasttab.com/online/david-doughies-food-truck-10400-manchaca-road",
+      "website": "https://www.daviddoughies.com/"
+    },
+    {
+      "id": 15595,
+      "name": "Rockstar Bagels",
+      "address": "1900 Rosewood Ave, Austin, TX 78702",
+      "reservation": "walk-in",
+      "reserveUrl": "https://www.toasttab.com/rockstar-bagels-1900-rosewood-ave",
+      "website": "https://www.rockstarbagels.com/"
+    },
+    {
+      "id": 7030,
+      "name": "Space Center Houston",
+      "address": "1601 E NASA Pkwy, Houston, TX 77058",
+      "reservation": "walk-in",
+      "reserveUrl": "https://spacecenter.org/tickets/",
+      "website": "https://spacecenter.org"
+    },
+    {
+      "id": 26,
+      "name": "Willis Tower Skydeck",
+      "address": "233 S Wacker Dr, Chicago, IL 60606",
+      "reservation": "walk-in",
+      "reserveUrl": "https://theskydeck.com/buy-tickets/",
+      "website": "https://theskydeck.com"
+    },
+    {
+      "id": 27,
+      "name": "Art Institute of Chicago",
+      "address": "111 S Michigan Ave, Chicago, IL 60603",
+      "reservation": "walk-in",
+      "reserveUrl": "https://www.artic.edu/visit",
+      "website": "https://www.artic.edu"
+    },
+    {
+      "id": 33,
+      "name": "Wrigley Field",
+      "address": "1060 W Addison St, Chicago, IL 60613",
+      "reservation": "walk-in",
+      "reserveUrl": "https://www.mlb.com/cubs/tickets",
+      "website": "https://www.mlb.com/cubs/ballpark"
+    }
+  ],
+  "slug_mismatch": [
+    {
+      "id": 49,
+      "name": "Nick & Sam's Steakhouse",
+      "address": "3008 Maple Ave, Dallas TX 75201",
+      "reservation": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/nick-and-sams-dallas",
+      "website": "https://www.nick-sams.com",
+      "_slug": "nick-and-sams-dallas"
+    },
+    {
+      "id": 1116,
+      "name": "STK Steakhouse",
+      "address": "2000 McKinney Ave, Dallas TX 75201",
+      "reservation": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/stk-dallas-2",
+      "website": "https://stksteakhouse.com",
+      "_slug": "stk-dallas-2"
+    },
+    {
+      "id": 1028,
+      "name": "Dhamaka",
+      "address": "119 Delancey St, New York NY 10002",
+      "reservation": "SevenRooms",
+      "reserveUrl": "https://www.sevenrooms.com/explore/dhamakanyc/reservations/create/search",
+      "website": "https://www.dhamakanyc.com",
+      "_slug": "search"
+    },
+    {
+      "id": 1737,
+      "name": "The Eighty Six",
+      "address": "86 Bedford St, New York, NY 10014",
+      "reservation": "Resy",
+      "reserveUrl": "https://fp.sevenrooms.com/explore/theeightysix/reservations/create/search",
+      "website": "https://www.the86.nyc/",
+      "_slug": "search"
+    },
+    {
+      "id": 3521,
+      "name": "Thea Mediterranean Rooftop",
+      "address": "4360 E Camelback Rd, Phoenix, AZ 85018",
+      "reservation": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/thea-phoenix?restref=1294264",
+      "website": "https://globalambassadorhotel.com/restaurants/thea",
+      "_slug": "thea-phoenix"
+    },
+    {
+      "id": 15058,
+      "name": "Herb & Sea",
+      "address": "131 W D St, Encinitas, CA 92024",
+      "reservation": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/herb-and-sea-encinitas",
+      "website": "https://herbandsea.com",
+      "_slug": "herb-and-sea-encinitas"
+    },
+    {
+      "id": 15126,
+      "name": "Cloak & Petal",
+      "address": "1953 India St, San Diego, CA 92101",
+      "reservation": "OpenTable",
+      "reserveUrl": "https://www.opentable.com/r/cloak-and-petal-san-diego",
+      "website": "https://cloakandpetal.com",
+      "_slug": "cloak-and-petal-san-diego"
+    },
+    {
+      "id": 5144,
+      "name": "Bourbon Steak",
+      "address": "335 Powell St, San Francisco, CA 94102",
+      "reservation": "SevenRooms",
+      "reserveUrl": "https://www.sevenrooms.com/explore/bourbonsteaksanfrancisco/reservations/create/search",
+      "website": "https://michaelmina.net/restaurants/bourbon-steak-san-francisco",
+      "_slug": "search"
+    }
+  ],
+  "res_set_url_empty_count": 2322,
+  "res_set_url_empty_sample": [
+    {
+      "id": 11001,
+      "name": "HSL",
+      "address": "418 E 200 S, Salt Lake City, UT 84111",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "https://www.hslrestaurant.com"
+    },
+    {
+      "id": 11003,
+      "name": "Log Haven",
+      "address": "6451 E Millcreek Canyon Rd, Salt Lake City, UT 84109",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "https://log-haven.com"
+    },
+    {
+      "id": 11005,
+      "name": "Riverhorse on Main",
+      "address": "540 Main St, Park City, UT 84060",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "https://www.riverhorseparkcity.com"
+    },
+    {
+      "id": 11006,
+      "name": "Handle",
+      "address": "136 Heber Ave, Park City, UT 84060",
+      "reservation": "Resy",
+      "reserveUrl": "",
+      "website": "https://www.handleparkcity.com"
+    },
+    {
+      "id": 11007,
+      "name": "Glitretind at Stein Eriksen Lodge",
+      "address": "7700 Stein Way, Park City, UT 84060",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "https://www.steinlodge.com"
+    },
+    {
+      "id": 11008,
+      "name": "Urban Hill",
+      "address": "510 S 300 W #100, Salt Lake City, UT 84101",
+      "reservation": "Resy",
+      "reserveUrl": "",
+      "website": "https://www.urban-hill.com"
+    },
+    {
+      "id": 11009,
+      "name": "Red Iguana",
+      "address": "736 W N Temple, Salt Lake City, UT 84116",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "https://www.rediguana.com"
+    },
+    {
+      "id": 11012,
+      "name": "The Copper Onion",
+      "address": "111 E Broadway, Salt Lake City, UT 84111",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "https://www.thecopperonion.com"
+    },
+    {
+      "id": 11021,
+      "name": "Sapa Sushi Bar & Asian Grill",
+      "address": "722 S State St, Salt Lake City, UT 84111",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "https://www.sapabarandgrill.com"
+    },
+    {
+      "id": 11028,
+      "name": "Caffe Molise",
+      "address": "404 S West Temple, Salt Lake City, UT 84101",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "http://www.caffemolise.com"
+    },
+    {
+      "id": 11032,
+      "name": "Oquirrh",
+      "address": "368 E 100 S, Salt Lake City, UT 84111",
+      "reservation": "Tock",
+      "reserveUrl": "",
+      "website": "https://oquirrhslc.com"
+    },
+    {
+      "id": 11033,
+      "name": "Market Street Grill",
+      "address": "48 W Market St, Salt Lake City, UT 84101",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "https://www.marketstreetgrill.com"
+    },
+    {
+      "id": 11040,
+      "name": "White Horse Spirits & Kitchen",
+      "address": "325 S Main St, Salt Lake City, UT 84111",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "https://www.whitehorseslc.com"
+    },
+    {
+      "id": 11042,
+      "name": "Lake Effect",
+      "address": "155 W 200 S, Salt Lake City, UT 84101",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "https://www.lakeeffectslc.com"
+    },
+    {
+      "id": 11043,
+      "name": "High West Distillery & Saloon",
+      "address": "703 Park Ave, Park City, UT 84060",
+      "reservation": "Tock",
+      "reserveUrl": "",
+      "website": "https://highwest.com"
+    },
+    {
+      "id": 11044,
+      "name": "Grappa",
+      "address": "151 Main St, Park City, UT 84060",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "https://www.grapparestaurant.com"
+    },
+    {
+      "id": 11045,
+      "name": "350 Main Brasserie",
+      "address": "350 Main St, Park City, UT 84060",
+      "reservation": "OpenTable",
+      "reserveUrl": "",
+      "website": "http://www.350main.com"
+    },
+    {
+      "id": 11046,
+      "name": "Pago",
+      "address": "878 S 900 E, Salt Lake City, UT 84102",
+      "reservation": "Tock",
+      "reserveUrl": "",
+      "website": "https://pagoslc.com"
+    },
+    {
+      "id": 11047,
+      "name": "Finca",
+      "address": "1513 S 1500 E, Salt Lake City, UT 84105",
+      "reservation": "Tock",
+      "reserveUrl": "",
+      "website": "https://www.fincaslc.com"
+    },
+    {
+      "id": 11049,
+      "name": "Franklin Ave. Cocktails & Kitchen",
+      "address": "231 S Edison St, Salt Lake City, UT 84111",
+      "reservation": "Resy",
+      "reserveUrl": "",
+      "website": "https://franklinaveslc.com"
+    }
+  ]
+}
