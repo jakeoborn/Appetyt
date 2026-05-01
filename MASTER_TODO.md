@@ -1,6 +1,6 @@
 # Dim Hour — Master To-Do List
 
-_Last updated: 2026-04-30 (quick-wins pass). Update this file at the end of every session._
+_Last updated: 2026-05-01 (skill + MCP bloat cleanup; 4 productivity skills installed). Update this file at the end of every session._
 
 ---
 
@@ -36,7 +36,7 @@ _Last updated: 2026-04-30 (quick-wins pass). Update this file at the end of ever
 
 ### Data Quality
 - [x] **Blue Sushi Sake Grill Uptown (id 9230) — reservation platform identified.** Set `reservation: "OpenTable"`, `reserveUrl: "https://www.opentable.com/r/blue-sushi-sake-grill-uptown-dallas"` on 2026-04-30. Audit high-severity bucket dropped 8 → 7 (remaining 7 are designed-as-walk-in tourist attractions).
-- [ ] **Re-run `scripts/reservation-audit.py` after every wave of inserts.** Catches walk-in→Resy mismatches (Copper Common class), wrong-platform link bugs, and Toast-takeout-URLs-as-reservation bugs. See `feedback_reservation_audit.md` for the three bug classes + tourist-attraction false positives.
+- [x] **Re-run `scripts/reservation-audit.py` (2026-05-01)** — 0 real bugs post-Wave-7. 7 high-severity flags are all tourist attractions (designed as walk-in with ticket URLs). 6 slug mismatches all false positives: 4 cosmetic `&`→`and` normalizations (Nick & Sam's, Herb & Sea, Cloak & Petal); 2 mis-detect SevenRooms URLs (Bourbon Steak id=5144 — the script's slug extraction takes URL's last path segment `create`, not the venue slug). **Future improvement**: tighten audit script to handle SevenRooms `/explore/{slug}/reservations/create/` format + `&`→`and` normalization. Continue re-running after every wave.
 - [ ] **Duplicate IDs across cities** — Discovered during Wave 4 OpenTable Brunch tagging: id 5006 = Suerte (Austin) AND Foreign Cinema (SF); id 5019 = Salt Lick BBQ AND Dalida; id 236 = Harvest at the Masonic AND Duck Duck Goat; id 5124 = Perla's AND Marlowe. Likely many more — IDs collide across city data arrays. Audit + reassign from a max-id base per city. Tagging script (`scripts/wave4-tag.py`) used (id + address) match to disambiguate; future mass updates need same defense or unique-id reassignment first.
 - [ ] **OpenTable Top 100 Brunch 2026 — deferred entries** — Wave 5 added 27 new entries + tagged 4 existing (Cafe Monarch 3208, Al Biernat's 23, Zuni Cafe 5078, Mila Restaurant 4086). Still deferred: Motek NYC (no verified address), Ammatolí (Long Beach, not LA proper), 4 Atlanta entries (city not supported — would seed new market: Blue Ridge Grill, Poor Calvin's, Rumi's Kitchen, The Chastain), 2 Long Island NY (Del Vino Vineyards Northport, The Northport Hotel — outside NYC scope). Source data: `scripts/wave4-matches.json` (`not_found` array).
 - [ ] **Empty dishes** — Austin 106, SLC 85, LV 112 entries with no dishes. Pull from live menus
@@ -52,8 +52,8 @@ _Last updated: 2026-04-30 (quick-wins pass). Update this file at the end of ever
   1. NYC — "Unmarked Doors Lower Manhattan", "West Village Townhouse Dinners", "Koreatown After Midnight", "Michelin Under $50", "Sommelier-Led Natural Wine", "Rooftops with a View", "Old Four Seasons Exiles", "Employees Only Crew Reunion"
   2. LA — "Strip Mall Gems", "Old Hollywood Survivors", "Edendale Cocktail Spine", "Hidden at Grand Central Market", "Mariscos Trucks", "Arts District After Dark"
   3. Chicago — "West Loop Before Blackhawks", "Fulton Market Old-School", "Alinea Alumni", "Chinatown After 10pm", "Classic Chicago Since 19XX"
-  4. Miami — "Wynwood Graffiti Bars", "Design District Date Night", "Little Havana After Midnight", "Omakase South of Fifth"
-  5. Las Vegas — "Delilah Energy", "Omakase Row", "Off-Strip Locals Only", "Chinatown Late-Night", "Gas Station Steaks"
+  4. Miami — ✅ 7 lists shipped 2026-04-30: Little Havana After Midnight, Omakase Row, Wynwood Art-District Circuit, Wynwood Graffiti Bars (NEW), Design District Power Dinner, Little River Rising, Biscayne Rooftops. Brief themes "Date Night" / "South of Fifth" rolled into existing Power Dinner + Omakase Row (no SoFi-only omakase cluster in data).
+  5. Las Vegas — ✅ 9 lists shipped 2026-04-30: Chinatown Locals Circuit, Strip Fine Dining, Omakase Row, Great American Steakhouse, Cocktail Circuit, Off-Strip Surprises, Delilah Energy (NEW), Chinatown Late-Night (NEW), Old Vegas Steakhouses (NEW — interpretation of brief's "Gas Station Steaks").
   6. Seattle — "Ballard Oyster Circuit", "Capitol Hill Cocktail Mile", "Post Alley Hideouts", "West Seattle Sunsets"
   7. Austin, Houston, SF, Phoenix, SLC, Charlotte — similar treatment
   - Rule: unique local angles only, NOT generic "Best Steakhouses". 6-8 lists × 5-8 IDs each. All IDs must exist in city `*_DATA`
@@ -111,8 +111,17 @@ _Last updated: 2026-04-30 (quick-wins pass). Update this file at the end of ever
 
 ### UI / Design
 - [ ] **UI design review** — run `design-an-interface` skill on target surface (Discover tab card grid + filter pills, or Trips dossier, or compact-row card) to get 3-5 alternate visual directions vs current Linear/Vercel caliber bar
+  - **Before starting**: install `nexu-io/open-design` (cloned at `C:\Users\jakeo\OneDrive\Claude\repos\open-design`). Setup is heavy — pnpm 10 + Node 24 + Electron + Next.js 16; run via `pnpm tools-dev`. Bundles 73 design-system style packs (Airbnb, Apple, Linear, Stripe, etc.) and a sandboxed iframe preview. Use it to redesign the Discover surface against Airbnb/Linear style packs without leaving Claude Code.
 
 ---
+
+## Recently Shipped — Tooling Cleanup (2026-05-01)
+
+- **Skills bloat audit**: removed 16 unused/duplicate skills from `~/.claude/skills/` — 11 firecrawl-* duplicates (covered by Firecrawl MCP), `page-cro`, `ai-seo`, `seo-audit`, `competitor-alternatives`, `proposal-write` (academic-tuned, low Dim Hour fit). Skills folder: 40 → 24.
+- **MCP bloat audit**: removed 5 MCP servers — `lastminute_com`, `DirectBooker` (travel, not Dim Hour), `plugin:toprank:adsagent` (Google Ads), `read-website-fast` + `screenshot-website-fast` (duplicate WebFetch + agent-browser). Final active MCP roster: apify, firecrawl, github, openstreetmap, context7, claude-in-chrome, Gmail, Google Drive, Google Calendar (pending auth), supabase.
+- **Productivity skills installed** at `~/.claude/skills/`: `/deep-research`, `/morning-brief`, `/weekly-review` from claudeblattman repo. Memory wired so they trigger on user signals ("research X", "kickoff", "weekly recap"). Source clones live at `~/OneDrive/Claude/repos/{webpull,open-design,claudeblattman,link-cli}/`.
+- **Stripe MPP tracking** scheduled (one-time): routine `trig_01Fa1iQjoVfvZL3H9Ewibsrm` fires 2026-07-30 09:00 Central — researches MPP merchant adoption + Tier-1 platform commits + ecosystem traction, writes findings to MASTER_TODO.md.
+- **open-design** install reminder pinned to the "UI design review" backlog item — install when starting that work, not before (heavy pnpm 10 + Node 24 + Electron stack).
 
 ## Recently Shipped — Wave 1-7 Data Refresh (2026-04-30)
 

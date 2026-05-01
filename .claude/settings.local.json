@@ -23,7 +23,8 @@
       "Bash(awk '-F|' '{ *)",
       "Bash(sort -t'|' -k1 -n)",
       "Bash(git fetch *)",
-      "Bash(git cherry-pick *)"
+      "Bash(git cherry-pick *)",
+      "Bash(curl *)"
     ]
   },
   "enableAllProjectMcpServers": true,
