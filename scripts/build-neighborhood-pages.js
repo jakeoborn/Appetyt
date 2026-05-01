@@ -233,19 +233,21 @@ ${otherHoods.map(h => `<a href="/${cfg.slug}/${neighborhoodSlug(h)}/" class="hoo
   console.log(`  ✓ ${cfg.name}: ${Object.keys(hoodMap).length} neighborhoods processed`);
 }
 
-// Append to sitemap
+// Append to sitemap — dedupe against existing entries
 const today = new Date().toISOString().split('T')[0];
 let sitemap = fs.readFileSync('sitemap.xml', 'utf8');
 const closingTag = '</urlset>';
-const newUrls = sitemapUrls.map(url => `  <url>
+const existingLocs = new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]));
+const freshUrls = sitemapUrls.filter(u => !existingLocs.has(u));
+const newUrls = freshUrls.map(url => `  <url>
     <loc>${url}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>`).join('\n');
 
-sitemap = sitemap.replace(closingTag, newUrls + '\n' + closingTag);
+if (freshUrls.length) sitemap = sitemap.replace(closingTag, newUrls + '\n' + closingTag);
 fs.writeFileSync('sitemap.xml', sitemap);
 
 console.log(`\n✅ Built ${totalPages} neighborhood pages across ${Object.keys(cityNeighborhoods).length} cities`);
-console.log(`   Sitemap updated with ${sitemapUrls.length} new URLs`);
+console.log(`   Sitemap: ${freshUrls.length} new URLs added (${sitemapUrls.length - freshUrls.length} already present)`);
