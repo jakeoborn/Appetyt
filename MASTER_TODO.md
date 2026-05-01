@@ -1,6 +1,6 @@
 # Dim Hour — Master To-Do List
 
-_Last updated: 2026-05-01 (skill + MCP bloat cleanup; 4 productivity skills installed). Update this file at the end of every session._
+_Last updated: 2026-05-01 (Supabase backend migration: concierge + gmail-* edge functions; Apple Sign In wired end-to-end). Update this file at the end of every session._
 
 ---
 
@@ -84,7 +84,16 @@ _Last updated: 2026-05-01 (skill + MCP bloat cleanup; 4 productivity skills inst
 - [ ] **Extend cuisine breadth** — add korean, vietnamese, ramen, indian, thai, vegan, pizza, tacos, seafood, dessert, coffee to the build script's cuisine dict
 
 ### Infrastructure
-- [ ] **Gmail OAuth** — Phase 3 reservation-sync. 4 Netlify functions + Supabase `gmail_connections` table. Yahoo/iCloud not feasible. Outlook feasible via Graph API
+- [x] **Gmail OAuth — backend migration** — 4 Netlify functions ported to Supabase Edge Functions (`gmail-oauth-start`, `gmail-oauth-callback`, `gmail-sync`, `gmail-disconnect`). All 4 smoke-tested 2026-05-01. Commit `9c9195a`. **Still TODO**: end-to-end OAuth round-trip test with a real Google account (currently only verified that endpoints return correct status codes for the unconnected-device path).
+- [x] **Concierge backend migration** — Netlify `concierge.js` → Supabase Edge Function (`concierge`) running Claude Haiku 4.5 with 30/hr per-device rate limit. Wired in `index.html` chatSend with BYOK fallback path preserved. Commit `9c9195a`.
+- [x] **Apple Sign In — server side** — Apple Developer App ID `com.dimhour.app` + Services ID `com.dimhour.signin` configured. .p8 key `H895HHBZ7Y` downloaded. JWT generator at `scripts/gen-apple-jwt.js`. JWT pasted into Supabase Auth > Providers > Apple, provider toggled on. Expires 2026-10-28.
+- [ ] **Apple Sign In — verify end-to-end** — go to https://dimhour.com → Sign In with Apple → confirm successful round-trip + signed-in state. Failure cases to watch: redirect_uri mismatch (Services ID return URL must be `https://nsmwgokjjnpwwvearwxf.supabase.co/auth/v1/callback`), Site URL still empty.
+- [ ] **Supabase Site URL** — set `Auth > URL Configuration > Site URL = https://dimhour.com` (still empty per last `/auth/v1/settings` check)
+- [ ] **Google OAuth** — still disabled in Supabase (apple=true, google=false). Enable Google provider for sign-in button parity.
+- [ ] **iOS native Apple Sign In** — current flow is web redirect via `signInWithOAuth({provider:'apple'})`. Awkward inside Capacitor webview. Future: install `@capacitor-community/apple-sign-in` and switch to `sb.auth.signInWithIdToken({provider:'apple', token: identityToken})`.
+- [ ] **Verify Capacitor bundle ID** — confirm `capacitor.config.ts` is `com.dimhour.app` not `app.appetyt.ios` before next iOS build (CLAUDE.md still has the stale value).
+- [ ] **Netlify cleanup** — once Gmail OAuth round-trip verified, delete `netlify/functions/` directory and root `concierge.js` (now superseded by Supabase edge functions).
+- [ ] **Apple JWT regeneration** — runs out 2026-10-28 (Apple caps client_secret at 180 days). Rerun `node scripts/gen-apple-jwt.js "C:/Users/jakeo/Downloads/AuthKey_H895HHBZ7Y.p8" H895HHBZ7Y` and paste new JWT into Supabase. Reminder: schedule an agent for ~2026-10-21.
 - [ ] **MCP installs** — Next: `joelio/stocky` (photos), `temporal-cortex/mcp` (Outlook calendar), `mcp-gateway` (tool-bloat reduction)
 - [ ] **Skills review — `addyosmani/web-quality-skills` + `browser-trace`** — installed 2026-04-30. Audit what each skill does (web-quality-audit, accessibility, best-practices, core-web-vitals, performance, seo + browser-trace) and decide which to invoke proactively on Dim Hour: e.g. core-web-vitals + performance on `index.html`, accessibility pass on the Discover/Trips UIs, seo on per-city build script, browser-trace to profile reels rendering. Output: prioritized run plan with concrete targets per skill
 
@@ -114,6 +123,14 @@ _Last updated: 2026-05-01 (skill + MCP bloat cleanup; 4 productivity skills inst
   - **Before starting**: install `nexu-io/open-design` (cloned at `C:\Users\jakeo\OneDrive\Claude\repos\open-design`). Setup is heavy — pnpm 10 + Node 24 + Electron + Next.js 16; run via `pnpm tools-dev`. Bundles 73 design-system style packs (Airbnb, Apple, Linear, Stripe, etc.) and a sandboxed iframe preview. Use it to redesign the Discover surface against Airbnb/Linear style packs without leaving Claude Code.
 
 ---
+
+## Recently Shipped — Backend Migration + Apple Sign In (2026-05-01)
+
+- **Concierge → Supabase**: ported `concierge.js` from Netlify to Supabase Edge Function (`supabase/functions/concierge/index.ts`). Claude Haiku 4.5 (`claude-haiku-4-5-20251001`), 30/hr per-device rate limit using shared `rate_limits` table (feature='concierge'). `index.html` chatSend updated to call new endpoint with `device_id + city + messages + restaurants` body, anon key in apikey/Authorization headers. BYOK path preserved.
+- **Gmail OAuth → Supabase**: 4 functions ported (`gmail-oauth-start`, `gmail-oauth-callback`, `gmail-sync`, `gmail-disconnect`). GET endpoints (start/callback) deployed with `--no-verify-jwt`. State param uses base64url(device_id). Sync queries `from:(noreply@resy.com OR reservations@opentable.com OR tock@exploretock.com OR confirm@opentable.com) newer_than:6m`, parses venue/date/time/party/code with regex, dedupes, never returns email bodies.
+- **Smoke tests** (`scripts/test-gmail-fns.ps1`): all 4 endpoints pass — start returns 302→accounts.google.com, callback returns 302→dimhour.com#error=missing_code_or_state, sync returns 404 not_connected for fresh device, disconnect returns 200 disconnected:true.
+- **Apple Sign In**: full setup — App ID `com.dimhour.app` (Sign In with Apple capability), Services ID `com.dimhour.signin` with return URL `https://nsmwgokjjnpwwvearwxf.supabase.co/auth/v1/callback`, .p8 key `H895HHBZ7Y` downloaded. Wrote `scripts/gen-apple-jwt.js` (ES256, DER→JOSE signature conversion, 6-month expiry). JWT pasted into Supabase Auth > Providers > Apple → provider enabled. Memory file `reference_apple_signin.md` captures the regen recipe.
+- Commit `9c9195a` pushed: "backend: migrate concierge + gmail-* from Netlify to Supabase Edge Functions"
 
 ## Recently Shipped — Tooling Cleanup (2026-05-01)
 
