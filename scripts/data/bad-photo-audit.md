@@ -3,6 +3,12 @@
 Run: 2026-04-26 15:36:03
 Total cards scanned: 7184
 
+## 2026-05-01 manual additions (from Curated list hero-strip review)
+
+| Severity | id | Name | Neighborhood | Reason | URL |
+|---|---|---|---|---|---|
+| BAD | 1005 | Via Carota | West Village | photoUrl is a literal menu image (filename "MENU"); seen in WV Townhouse Dinners hero strip | https://images.squarespace-cdn.com/content/v1/609dae90c469194aa5b1f0a9/403c6f09-ee6a-4b2b-8856-e142fff6b0d1/VC+MENU+04-02-202+c6.jpg |
+
 ## Summary by city
 
 | City | BAD | SUSPECT | OK |

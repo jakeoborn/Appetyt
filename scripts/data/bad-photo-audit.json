@@ -16,7 +16,7 @@
       "OK": 285
     },
     "NYC": {
-      "BAD": 69,
+      "BAD": 70,
       "SUSPECT": 570,
       "OK": 316
     },
@@ -77,7 +77,7 @@
     }
   },
   "totals": {
-    "BAD": 1919,
+    "BAD": 1920,
     "SUSPECT": 3387,
     "OK": 1878
   },
@@ -63755,6 +63755,20 @@
       "reasons": [
         "no photoUrl and no photos[0] (will fall back to emoji)"
       ]
+    },
+    {
+      "city": "NYC",
+      "id": "1005",
+      "name": "Via Carota",
+      "neighborhood": "West Village",
+      "photoUrl": "https://images.squarespace-cdn.com/content/v1/609dae90c469194aa5b1f0a9/403c6f09-ee6a-4b2b-8856-e142fff6b0d1/VC+MENU+04-02-202+c6.jpg",
+      "firstPhoto": "",
+      "severity": "BAD",
+      "reasons": [
+        "photoUrl is a literal menu image (filename contains \"MENU\"); appears as scrappy white sheet in Curated WV Townhouse Dinners hero strip"
+      ],
+      "flaggedAt": "2026-05-01",
+      "flaggedFrom": "Curated list \"West Village Townhouse Dinners\" hero strip user review"
     }
   ]
 }
