@@ -109,7 +109,7 @@ function buildCityPage(city) {
 <meta property="og:description" content="${data.length} restaurants in ${name}, scored and ranked by neighborhood.">
 <meta property="og:url" content="https://dimhour.com/${slug}/">
 
-<meta property="og:image" content="${top5.find(r => r.photoUrl) ? top5.find(r => r.photoUrl).photoUrl : 'https://dimhour.com/icons/icon-512.png'}">
+<meta property="og:image" content="${sorted.find(r => r.photoUrl) ? sorted.find(r => r.photoUrl).photoUrl : 'https://dimhour.com/icons/icon-512.png'}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Best Restaurants in ${name} 2026 — ${data.length} Picks">
 <meta name="twitter:description" content="${data.length} restaurants in ${name}, scored and ranked by Dim Hour.">

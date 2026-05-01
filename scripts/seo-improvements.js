@@ -152,7 +152,7 @@ function createCityPage(city, slug, data, state) {
 <meta property="og:title" content="Best Restaurants in ${city} 2026 — Curated Guide">
 <meta property="og:description" content="${data.length}+ ${city} restaurants scored and reviewed. Find the best brunch, patio, date night, and fine dining spots.">
 <meta property="og:url" content="https://dimhour.com/${slug}/">
-<meta property="og:image" content="${top5.find(r => r.photoUrl) ? top5.find(r => r.photoUrl).photoUrl : 'https://dimhour.com/icons/icon-512.png'}">
+<meta property="og:image" content="${data.find(r => r.photoUrl) ? data.find(r => r.photoUrl).photoUrl : 'https://dimhour.com/icons/icon-512.png'}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Best Restaurants in ${city} 2026 — Curated Guide">
 <meta name="twitter:description" content="${data.length}+ ${city} restaurants scored and reviewed. Find the best brunch, patio, date night, and fine dining spots.">

@@ -98,7 +98,7 @@ function buildCategoryPage(city, cat, spots) {
 <meta property="og:description" content="${spots.length} ${cat.title.toLowerCase()} spots in ${name}. ${top5.slice(0,3).map(r => r.name).join(', ')}.">
 <meta property="og:url" content="https://dimhour.com/${citySlug}/${cat.slug}/">
 
-<meta property="og:image" content="${top5.find(r => r.photoUrl) ? top5.find(r => r.photoUrl).photoUrl : 'https://dimhour.com/icons/icon-512.png'}">
+<meta property="og:image" content="${spots.find(r => r.photoUrl) ? spots.find(r => r.photoUrl).photoUrl : 'https://dimhour.com/icons/icon-512.png'}">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ItemList","name":"${cat.searchTerm} in ${name} 2026","description":"${spots.length} curated ${cat.title.toLowerCase()} spots in ${name}.","url":"https://dimhour.com/${citySlug}/${cat.slug}/","numberOfItems":${spots.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"}}}`).join(',')}]}
 </script>

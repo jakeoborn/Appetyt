@@ -100,7 +100,7 @@ for (const [cityKey, hoodMap] of Object.entries(cityNeighborhoods)) {
       .filter(h => h !== hoodName && cityData.filter(r => r.neighborhood === h).length >= 3)
       .slice(0, 12);
 
-    const ogImage = top5.find(r => r.photoUrl)?.photoUrl || 'https://dimhour.com/icons/icon-512.png';
+    const ogImage = spots.find(r => r.photoUrl)?.photoUrl || 'https://dimhour.com/icons/icon-512.png';
 
     const html = `<!DOCTYPE html>
 <html lang="en">
