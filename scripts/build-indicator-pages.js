@@ -1,0 +1,200 @@
+#!/usr/bin/env node
+// Build SEO indicator pages targeting long-tail searches
+// e.g. "best women-owned restaurants in NYC", "halal NYC", "dive bars Austin"
+// Run: node scripts/build-indicator-pages.js
+
+const fs = require('fs');
+const path = require('path');
+
+const indexHtml = fs.readFileSync('index.html', 'utf8');
+
+function parseArray(tag) {
+  const s = indexHtml.indexOf(tag);
+  if (s === -1) return [];
+  const a = indexHtml.indexOf('[', s);
+  let d = 0, e = a;
+  for (let i = a; i < indexHtml.length; i++) { if (indexHtml[i] === '[') d++; if (indexHtml[i] === ']') d--; if (d === 0) { e = i + 1; break; } }
+  const slice = indexHtml.slice(a, e);
+  try { return JSON.parse(slice); } catch (e1) {
+    try { return (new Function('return ' + slice))(); } catch (e2) { return []; }
+  }
+}
+
+function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+const cities = [
+  { name: 'New York City', short: 'NYC', slug: 'nyc', state: 'NY', data: parseArray('const NYC_DATA') },
+  { name: 'Dallas', short: 'Dallas', slug: 'dallas', state: 'TX', data: parseArray('const DALLAS_DATA') },
+  { name: 'Houston', short: 'Houston', slug: 'houston', state: 'TX', data: parseArray('const HOUSTON_DATA') },
+  { name: 'Austin', short: 'Austin', slug: 'austin', state: 'TX', data: parseArray('const AUSTIN_DATA') },
+  { name: 'Chicago', short: 'Chicago', slug: 'chicago', state: 'IL', data: parseArray('const CHICAGO_DATA') },
+  { name: 'Salt Lake City', short: 'Salt Lake City', slug: 'salt-lake-city', state: 'UT', data: parseArray('const SLC_DATA=') },
+  { name: 'Seattle', short: 'Seattle', slug: 'seattle', state: 'WA', data: parseArray('const SEATTLE_DATA') },
+  { name: 'Las Vegas', short: 'Las Vegas', slug: 'las-vegas', state: 'NV', data: parseArray('const LV_DATA') },
+  { name: 'Los Angeles', short: 'Los Angeles', slug: 'los-angeles', state: 'CA', data: parseArray('const LA_DATA') },
+  { name: 'Miami', short: 'Miami', slug: 'miami', state: 'FL', data: parseArray('const MIAMI_DATA') },
+  { name: 'Charlotte', short: 'Charlotte', slug: 'charlotte', state: 'NC', data: parseArray('const CHARLOTTE_DATA') },
+  { name: 'San Francisco', short: 'San Francisco', slug: 'san-francisco', state: 'CA', data: parseArray('const SF_DATA') },
+  { name: 'San Antonio', short: 'San Antonio', slug: 'san-antonio', state: 'TX', data: parseArray('const SANANTONIO_DATA') },
+];
+
+// Indicator pages — long-tail searchable identities
+// `match` is the set of indicator IDs that count toward this page (handles variants)
+const indicators = [
+  { slug: 'late-night',     title: 'Late Night',           icon: '🌙', match: ['late-night'],                   searchTerm: 'best late night restaurants' },
+  { slug: 'hidden-gems',    title: 'Hidden Gems',          icon: '💎', match: ['hidden-gem'],                   searchTerm: 'hidden gem restaurants' },
+  { slug: 'women-owned',    title: 'Women-Owned',          icon: '♀',  match: ['women-owned'],                  searchTerm: 'women-owned restaurants' },
+  { slug: 'black-owned',    title: 'Black-Owned',          icon: '✊', match: ['black-owned'],                  searchTerm: 'black-owned restaurants' },
+  { slug: 'halal',          title: 'Halal',                icon: '☪',  match: ['halal'],                        searchTerm: 'halal restaurants' },
+  { slug: 'lgbtq-friendly', title: 'LGBTQ+ Friendly',      icon: '🏳‍🌈', match: ['lgbtq-friendly'],              searchTerm: 'LGBTQ+ friendly restaurants' },
+  { slug: 'dive-bars',      title: 'Dive Bars',            icon: '🍺', match: ['dive-bar'],                     searchTerm: 'best dive bars' },
+  { slug: 'hole-in-the-wall', title: 'Hole-in-the-Wall',   icon: '🕳️', match: ['hole-in-the-wall', 'hole-in-wall'], searchTerm: 'hole in the wall restaurants' },
+];
+
+function filterByIndicator(data, ind) {
+  return data.filter(r => {
+    const inds = r.indicators || [];
+    return ind.match.some(m => inds.includes(m));
+  }).sort((a, b) => b.score - a.score);
+}
+
+function buildIndicatorPage(city, ind, spots) {
+  const { name, short, slug: citySlug, state } = city;
+  const top5 = spots.slice(0, 5);
+  const ogImage = spots.find(r => r.photoUrl)?.photoUrl || 'https://dimhour.com/icons/icon-512.png';
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y37FGSEPXR"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Y37FGSEPXR');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best ${ind.title} Restaurants in ${name} 2026 | ${spots.length} Picks | Dim Hour</title>
+<meta name="description" content="${spots.length} ${ind.title.toLowerCase()} spots in ${name}, scored and ranked. Top picks: ${top5.slice(0,3).map(r => r.name).join(', ')}.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://dimhour.com/${citySlug}/${ind.slug}/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dim Hour">
+<meta property="og:title" content="Best ${ind.title} Restaurants in ${name} 2026 — ${spots.length} Picks">
+<meta property="og:description" content="${spots.length} ${ind.title.toLowerCase()} spots in ${name}. ${top5.slice(0,3).map(r => r.name).join(', ')}.">
+<meta property="og:url" content="https://dimhour.com/${citySlug}/${ind.slug}/">
+<meta property="og:image" content="${ogImage}">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"${ind.searchTerm} in ${name} 2026","description":"${spots.length} curated ${ind.title.toLowerCase()} spots in ${name}.","url":"https://dimhour.com/${citySlug}/${ind.slug}/","numberOfItems":${spots.length},"itemListElement":[${top5.map((r, i) => `{"@type":"ListItem","position":${i + 1},"item":{"@type":"Restaurant","name":"${esc(r.name)}","servesCuisine":"${esc(r.cuisine)}","address":{"@type":"PostalAddress","addressLocality":"${name}","addressRegion":"${state}"}}}`).join(',')}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Dim Hour","item":"https://dimhour.com/"},{"@type":"ListItem","position":2,"name":"${name}","item":"https://dimhour.com/${citySlug}/"},{"@type":"ListItem","position":3,"name":"${ind.title}","item":"https://dimhour.com/${citySlug}/${ind.slug}/"}]}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#c8a96e;--dark:#0a0d14;--card:#11151f;--text:#e8dfc8;--text2:#9a8e72;--text3:#5a4e38;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--dark);color:var(--text);font-family:var(--sans);line-height:1.6;padding:0 16px}
+.wrap{max-width:700px;margin:0 auto;padding:40px 0 60px}
+h1{font-family:var(--serif);color:var(--gold);font-size:26px;margin-bottom:8px;font-style:italic}
+h2{font-family:var(--serif);color:var(--gold);font-size:18px;margin:28px 0 12px;font-style:italic}
+p{color:var(--text2);margin-bottom:16px;font-size:15px}
+.cta{display:inline-block;background:var(--gold);color:var(--dark);padding:12px 28px;border-radius:28px;font-weight:700;text-decoration:none;font-size:14px;margin:16px 0;transition:opacity .2s}
+.cta:hover{opacity:.85}
+.rank{display:flex;align-items:flex-start;gap:12px;background:var(--card);border:1px solid rgba(200,169,110,.15);border-radius:12px;padding:16px;margin-bottom:10px}
+.rank-num{font-family:var(--serif);font-size:24px;font-weight:700;color:var(--gold);min-width:28px;font-style:italic}
+.rank-name{font-weight:700;font-size:15px;color:var(--text)}
+.rank-meta{font-size:12px;color:var(--text2);margin-top:2px}
+.rank-desc{font-size:13px;color:var(--text2);margin-top:6px;line-height:1.5}
+.rank-score{font-size:20px;font-weight:700;color:var(--gold);margin-left:auto;flex-shrink:0}
+.more{background:var(--card);border:1px solid rgba(200,169,110,.1);border-radius:10px;padding:8px 14px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center}
+.more-name{font-weight:600;font-size:13px;color:var(--text)}
+.more-meta{font-size:11px;color:var(--text2)}
+.more-score{color:var(--gold);font-weight:700;font-size:12px}
+a{color:var(--gold)}
+.back{font-size:13px;color:var(--text2);text-decoration:none;display:inline-block;margin-bottom:20px}
+.cities{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.city-link{background:var(--card);border:1px solid rgba(200,169,110,.2);padding:6px 14px;border-radius:10px;text-decoration:none;color:var(--text);font-size:12px;font-weight:600}
+.city-link:hover{border-color:var(--gold);color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a href="/${citySlug}/" class="back">← ${name} Restaurants</a>
+<h1>${ind.icon} Best ${ind.title} Spots in ${name}</h1>
+<p>${spots.length} ${ind.title.toLowerCase()} ${spots.length === 1 ? 'spot' : 'spots'} in ${name}, scored and ranked for 2026.</p>
+<a href="https://dimhour.com" class="cta">🍽️ Open Interactive Guide</a>
+
+<h2>Top ${Math.min(10, spots.length)} ${ind.title} Spots</h2>
+
+${spots.slice(0, 10).map((r, i) => `
+<div class="rank">
+<div class="rank-num">${i + 1}</div>
+<div style="flex:1">
+<div class="rank-name">${esc(r.name)}</div>
+<div class="rank-meta">${esc(r.cuisine)} · ${esc(r.neighborhood)}${r.awards ? ' · ' + esc(r.awards) : ''}</div>
+${r.description ? `<div class="rank-desc">${esc(r.description).substring(0, 200)}${r.description.length > 200 ? '...' : ''}</div>` : ''}
+</div>
+<div class="rank-score">${r.score}</div>
+</div>`).join('\n')}
+
+${spots.length > 10 ? `
+<h2>All ${spots.length} ${ind.title} Spots in ${name}</h2>
+${spots.slice(10).map(r => `
+<div class="more">
+<div><div class="more-name">${esc(r.name)}</div><div class="more-meta">${esc(r.cuisine)} · ${esc(r.neighborhood)}</div></div>
+<div class="more-score">${r.score}</div>
+</div>`).join('\n')}` : ''}
+
+<div style="text-align:center;margin:28px 0">
+<a href="https://dimhour.com" class="cta">🍽️ Explore All ${name} Restaurants</a>
+</div>
+
+<h2>${ind.title} in Other Cities</h2>
+<div class="cities">
+${cities.filter(c => c.slug !== citySlug).map(c => `<a href="/${c.slug}/${ind.slug}/" class="city-link">${c.short}</a>`).join('\n')}
+</div>
+
+<p style="margin-top:24px;font-size:12px;color:var(--text3)">Dim Hour scores the best restaurants across America. <a href="https://dimhour.com">Full guide →</a> · <a href="/${citySlug}/">All ${name} restaurants →</a></p>
+</div>
+</body>
+</html>`;
+}
+
+// Build all indicator pages
+let totalPages = 0;
+const sitemapUrls = [];
+const perCityCount = {};
+
+for (const city of cities) {
+  let cityPages = 0;
+  for (const ind of indicators) {
+    const spots = filterByIndicator(city.data, ind);
+    if (spots.length < 3) continue; // Skip if too few results
+
+    const dir = path.join(city.slug, ind.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, 'index.html'), buildIndicatorPage(city, ind, spots));
+    sitemapUrls.push(`https://dimhour.com/${city.slug}/${ind.slug}/`);
+    cityPages++;
+    totalPages++;
+  }
+  if (cityPages > 0) {
+    perCityCount[city.short] = cityPages;
+    console.log(`  ✓ ${city.name}: ${cityPages} indicator pages`);
+  }
+}
+
+// Update sitemap with indicator pages — dedupe against existing entries
+const today = new Date().toISOString().split('T')[0];
+let sitemap = fs.readFileSync('sitemap.xml', 'utf8');
+const closingTag = '</urlset>';
+const existingLocs = new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]));
+const freshUrls = sitemapUrls.filter(u => !existingLocs.has(u));
+const newUrls = freshUrls.map(url => `  <url>
+    <loc>${url}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>`).join('\n');
+
+if (freshUrls.length) sitemap = sitemap.replace(closingTag, newUrls + '\n' + closingTag);
+fs.writeFileSync('sitemap.xml', sitemap);
+
+console.log(`\n✅ Built ${totalPages} indicator pages across ${Object.keys(perCityCount).length} cities`);
+console.log(`   Sitemap: ${freshUrls.length} new URLs added (${sitemapUrls.length - freshUrls.length} already present)`);

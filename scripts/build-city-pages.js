@@ -42,6 +42,18 @@ const cities = [
 
 const allCityLinks = cities.map(c => ({ name: c.name, slug: c.slug }));
 
+// Indicator pages — kept in sync with scripts/build-indicator-pages.js
+const indicatorPages = [
+  { slug: 'late-night',       title: 'Late Night',        icon: '🌙', match: ['late-night'] },
+  { slug: 'hidden-gems',      title: 'Hidden Gems',       icon: '💎', match: ['hidden-gem'] },
+  { slug: 'women-owned',      title: 'Women-Owned',       icon: '♀',  match: ['women-owned'] },
+  { slug: 'black-owned',      title: 'Black-Owned',       icon: '✊', match: ['black-owned'] },
+  { slug: 'halal',            title: 'Halal',             icon: '☪',  match: ['halal'] },
+  { slug: 'lgbtq-friendly',   title: 'LGBTQ+ Friendly',   icon: '🏳‍🌈', match: ['lgbtq-friendly'] },
+  { slug: 'dive-bars',        title: 'Dive Bars',         icon: '🍺', match: ['dive-bar'] },
+  { slug: 'hole-in-the-wall', title: 'Hole-in-the-Wall',  icon: '🕳️', match: ['hole-in-the-wall', 'hole-in-wall'] },
+];
+
 function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
 function buildCityPage(city) {
@@ -92,6 +104,11 @@ function buildCityPage(city) {
   ];
 
   const otherCities = allCityLinks.filter(c => c.slug !== slug);
+
+  // Indicator pages available for this city (3+ matching spots)
+  const cityIndicators = indicatorPages
+    .map(ind => ({ ...ind, count: data.filter(r => (r.indicators || []).some(i => ind.match.includes(i))).length }))
+    .filter(ind => ind.count >= 3);
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -197,6 +214,11 @@ ${spots.map(r => `<div class="r"><div><div class="rn">${esc(r.name)}</div><div c
 <div style="text-align:center;margin:32px 0">
 <a href="https://dimhour.com" class="cta">🍽️ Explore the Full Interactive Guide</a>
 </div>
+
+${cityIndicators.length ? `<h2>Browse ${name} by Identity</h2>
+<div class="cities">
+${cityIndicators.map(ind => `<a href="/${slug}/${ind.slug}/" class="city-link">${ind.icon} ${ind.title} (${ind.count})</a>`).join('\n')}
+</div>` : ''}
 
 <h2>Explore More Cities</h2>
 <div class="cities">
