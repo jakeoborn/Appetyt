@@ -229,6 +229,149 @@ const BESTOF = {
     { name: 'Fig Tree Restaurant',            bestOf: ['#1 Best Wine List','#4 Best Fine Dining'] },
     { name: 'Bonterra Dining & Wine Room',    bestOf: ['#2 Best Wine List'] },
   ],
+
+  NYC_DATA: [
+    // Fine Dining / Tasting Menu
+    { name: 'Le Bernardin',                  bestOf: ['#1 Best Fine Dining','#1 Best French','#1 Best Seafood'] },
+    { name: 'Eleven Madison Park',           bestOf: ['#1 Best Tasting Menu','#2 Best Fine Dining'] },
+    { name: 'Per Se',                        bestOf: ['#2 Best Tasting Menu','#3 Best Fine Dining'] },
+    { name: "Chef's Table at Brooklyn Fare", bestOf: ['#3 Best Tasting Menu','#1 Best Brooklyn Fine Dining'] },
+    { name: 'Atera',                         bestOf: ['#4 Best Tasting Menu'] },
+    { name: 'Saga',                          bestOf: ['#1 Best FiDi Fine Dining','#5 Best Tasting Menu'] },
+    { name: 'Aska',                          bestOf: ['#1 Best Scandinavian','#1 Best Williamsburg Fine Dining'] },
+    { name: 'Gabriel Kreuther',              bestOf: ['#1 Best Alsatian','#4 Best Fine Dining'] },
+    // Steakhouse
+    { name: 'Peter Luger Steak House',       bestOf: ['#1 Best Steakhouse','#1 Best Iconic NY'] },
+    { name: '4 Charles Prime Rib',           bestOf: ['#2 Best Steakhouse','#1 Best Prime Rib'] },
+    { name: 'Gage & Tollner',                bestOf: ['#1 Best Brooklyn Steakhouse','#1 Best Restored Classic'] },
+    // Italian
+    { name: 'Carbone',                       bestOf: ['#1 Best Italian-American','#1 Best Celebration'] },
+    { name: 'Via Carota',                    bestOf: ['#1 Best West Village','#1 Best Italian Trattoria'] },
+    { name: 'Lilia',                         bestOf: ['#1 Best Pasta','#1 Best Williamsburg Italian'] },
+    { name: 'Don Angie',                     bestOf: ['#2 Best Italian-American','#1 Best Date Night'] },
+    { name: 'I Sodi',                        bestOf: ['#1 Best Tuscan','#2 Best West Village'] },
+    // Sushi / Japanese
+    { name: 'Sushi Nakazawa',                bestOf: ['#1 Best Sushi (Accessible)','#3 Best Omakase'] },
+    { name: 'Sushi Sho',                     bestOf: ['#1 Best Omakase','#1 Best Sushi'] },
+    { name: 'Sushi Noz',                     bestOf: ['#2 Best Omakase','#2 Best Sushi'] },
+    // Korean
+    { name: 'Atomix',                        bestOf: ['#1 Best Korean','#1 Best Modern Korean Tasting'] },
+    { name: 'Jungsik',                       bestOf: ['#2 Best Korean','#5 Best Fine Dining'] },
+    // French
+    { name: 'Le Coucou',                     bestOf: ['#2 Best French','#1 Best French Bistro'] },
+    { name: 'Balthazar',                     bestOf: ['#1 Best French Brasserie','#1 Best SoHo Brunch'] },
+    // Mexican / Latin
+    { name: 'Cosme',                         bestOf: ['#1 Best Mexican Fine Dining','#1 Best Modern Mexican'] },
+    { name: 'Tatiana by Kwame Onwuachi',     bestOf: ['#1 Best Afro-Caribbean','#1 Best Lincoln Center'] },
+    // New American
+    { name: 'Gramercy Tavern',               bestOf: ['#1 Best New American','#1 Best Hospitality'] },
+    { name: 'Crown Shy',                     bestOf: ['#1 Best Financial District'] },
+    { name: 'Olmsted',                       bestOf: ['#1 Best Brooklyn New American'] },
+    // Indian / South Asian
+    { name: 'Dhamaka',                       bestOf: ['#1 Best Indian','#1 Best Lower East Side'] },
+    // Iconic / Classics
+    { name: 'Russ & Daughters',              bestOf: ['#1 Best Jewish Appetizing','#1 Best Bagel Spread'] },
+  ],
+
+  HOUSTON_DATA: [
+    // Fine Dining / Tasting Menu
+    { name: 'Tatemó',                        bestOf: ['#1 Best Fine Dining','#1 Best Mexican Tasting Menu','#1 Best Overall'] },
+    { name: 'March',                         bestOf: ['#2 Best Fine Dining','#1 Best Mediterranean','#1 Best Tasting Menu'] },
+    { name: 'Le Jardinier',                  bestOf: ['#3 Best Fine Dining','#1 Best French'] },
+    { name: 'BCN Taste & Tradition',         bestOf: ['#1 Best Spanish','#4 Best Fine Dining'] },
+    // BBQ
+    { name: 'CorkScrew BBQ',                 bestOf: ['#1 Best BBQ','#1 Best Brisket'] },
+    { name: 'Truth BBQ',                     bestOf: ['#2 Best BBQ'] },
+    { name: "Killen's BBQ",                  bestOf: ['#3 Best BBQ'] },
+    { name: 'Blood Bros. BBQ',               bestOf: ['#4 Best BBQ','#1 Best BBQ Fusion'] },
+    { name: "Pinkerton's Barbecue",          bestOf: ['#5 Best BBQ'] },
+    // Mexican
+    { name: "Hugo's",                        bestOf: ['#1 Best Mexican','#1 Best Regional Mexican'] },
+    { name: 'Xochi',                         bestOf: ['#2 Best Mexican','#1 Best Oaxacan'] },
+    { name: 'Caracol',                       bestOf: ['#1 Best Mexican Seafood','#3 Best Mexican'] },
+    // Japanese / Sushi
+    { name: 'Uchi Houston',                  bestOf: ['#1 Best Japanese','#1 Best Sushi'] },
+    { name: 'Katami',                        bestOf: ['#2 Best Japanese','#1 Best Omakase'] },
+    // New American
+    { name: "Nancy's Hustle",                bestOf: ['#1 Best New American','#1 Best East End'] },
+    { name: 'Theodore Rex',                  bestOf: ['#2 Best New American','#1 Best Date Night'] },
+    // Indian / Thai / Vietnamese / Chinese
+    { name: 'Musaafer',                      bestOf: ['#1 Best Indian','#1 Best Indian Fine Dining'] },
+    { name: 'Street to Kitchen',             bestOf: ['#1 Best Thai'] },
+    { name: 'Crawfish & Noodles',            bestOf: ['#1 Best Vietnamese','#1 Best Cajun Fusion'] },
+    { name: 'Mala Sichuan Bistro',           bestOf: ['#1 Best Sichuan','#1 Best Chinese'] },
+    // Steakhouse
+    { name: 'Pappas Bros. Steakhouse',       bestOf: ['#1 Best Steakhouse','#1 Best Wine List'] },
+    { name: "Killen's Steakhouse",           bestOf: ['#2 Best Steakhouse'] },
+    { name: 'Georgia James',                 bestOf: ['#3 Best Steakhouse','#1 Best Modern Steakhouse'] },
+  ],
+
+  MIAMI_DATA: [
+    // Iconic / Stone Crab
+    { name: "Joe's Stone Crab",              bestOf: ['#1 Best Iconic Miami','#1 Best Stone Crab','#1 Best South Beach Classic'] },
+    // Fine Dining / Omakase
+    { name: 'Naoe',                          bestOf: ['#1 Best Omakase','#1 Best Fine Dining','#1 Best Tasting Menu'] },
+    { name: 'Stubborn Seed',                 bestOf: ['#2 Best Fine Dining','#1 Best South Beach Tasting'] },
+    { name: 'The Surf Club Restaurant',      bestOf: ['#1 Best Hotel Restaurant','#1 Best Surfside','#3 Best Fine Dining'] },
+    { name: "L'Atelier de Joël Robuchon",    bestOf: ['#1 Best French','#4 Best Fine Dining'] },
+    { name: 'Le Jardinier Miami',            bestOf: ['#2 Best French','#1 Best Vegetable-Forward'] },
+    { name: 'Shingo',                        bestOf: ['#2 Best Omakase'] },
+    { name: 'Hiden',                         bestOf: ['#3 Best Omakase'] },
+    { name: 'Ogawa',                         bestOf: ['#4 Best Omakase'] },
+    { name: 'The Den at Azabu Miami Beach',  bestOf: ['#5 Best Omakase'] },
+    // Steakhouse
+    { name: 'Cote Miami',                    bestOf: ['#1 Best Steakhouse','#1 Best Korean Steakhouse'] },
+    // Italian
+    { name: 'Boia De',                       bestOf: ['#1 Best Italian','#1 Best Buena Vista','#1 Best Date Night'] },
+    { name: 'Le Sirenuse Miami',             bestOf: ['#2 Best Italian','#1 Best Amalfi'] },
+    { name: 'Lucali Miami Beach',            bestOf: ['#1 Best Pizza'] },
+    // Cuban
+    { name: 'Cafe La Trova',                 bestOf: ['#1 Best Cuban','#1 Best Bar Program'] },
+    { name: 'Versailles Restaurant',         bestOf: ['#2 Best Cuban','#1 Best Little Havana','#1 Best Cuban Institution'] },
+    { name: 'Ariete',                        bestOf: ['#1 Best Cuban-American','#1 Best Coconut Grove'] },
+    // Greek / Seafood
+    { name: 'Estiatorio Milos',              bestOf: ['#1 Best Greek','#1 Best Seafood (Modern)'] },
+    // Asian Fusion
+    { name: 'KYU',                           bestOf: ['#1 Best Asian Fusion','#1 Best Wynwood'] },
+    // Cocktail Bars
+    { name: 'The Broken Shaker',             bestOf: ['#2 Best Bar Program','#1 Best Hotel Bar'] },
+    { name: "Sweet Liberty Drinks & Supply Co.", bestOf: ['#3 Best Bar Program'] },
+    { name: "Dante's HiFi",                  bestOf: ['#1 Best Listening Bar'] },
+    { name: 'Viceversa',                     bestOf: ['#1 Best Italian Bar','#4 Best Bar Program'] },
+  ],
+
+  SANANTONIO_DATA: [
+    // Fine Dining / Mexican
+    { name: 'Mixtli',                        bestOf: ['#1 Best Overall','#1 Best Fine Dining','#1 Best Mexican','#1 Best Tasting Menu'] },
+    { name: 'Botika',                        bestOf: ['#1 Best Peruvian','#1 Best Fusion'] },
+    { name: 'Clementine',                    bestOf: ['#1 Best New American','#1 Best Date Night'] },
+    { name: 'Bliss',                         bestOf: ['#2 Best New American','#2 Best Date Night'] },
+    { name: 'Folc',                          bestOf: ['#2 Best Fine Dining','#1 Best Tower of the Americas Skyline'] },
+    { name: 'Supper at Hotel Emma',          bestOf: ['#1 Best Hotel Restaurant','#1 Best Pearl District'] },
+    { name: 'Meadow Neighborhood Eatery + Bar', bestOf: ['#1 Best Neighborhood'] },
+    // BBQ
+    { name: '2M Smokehouse',                 bestOf: ['#1 Best BBQ','#1 Best Texas Monthly Pick'] },
+    { name: 'Curry Boys BBQ',                bestOf: ['#2 Best BBQ','#1 Best Indian-Texas BBQ'] },
+    // Italian / Pizza
+    { name: 'Battalion',                     bestOf: ['#1 Best Italian'] },
+    { name: 'Dough Pizzeria Napoletana',     bestOf: ['#1 Best Pizza','#1 Best Neapolitan'] },
+    // Asian
+    { name: 'Best Quality Daughter',         bestOf: ['#1 Best Asian-American'] },
+    // Tex-Mex / Mexican Classics
+    { name: 'Mi Tierra Cafe & Bakery',       bestOf: ['#1 Best Tex-Mex Institution','#1 Best Market Square'] },
+    { name: 'La Gloria',                     bestOf: ['#1 Best Mexican Street Food'] },
+    { name: 'Carnitas Lonja',                bestOf: ['#1 Best Tacos','#1 Best Carnitas'] },
+    // Bakery / Cafe
+    { name: 'Bakery Lorraine',               bestOf: ['#1 Best Bakery','#1 Best Cafe'] },
+    { name: 'La Panaderia',                  bestOf: ['#1 Best Mexican Bakery'] },
+    // Cocktail / Gastropub
+    { name: 'The Esquire Tavern',            bestOf: ['#1 Best Cocktail Bar','#1 Best Riverwalk Bar'] },
+    { name: 'Biga on the Banks',             bestOf: ['#1 Best Riverwalk Restaurant'] },
+    // Seafood / Cajun
+    { name: 'Pinch Boil House',              bestOf: ['#1 Best Cajun'] },
+    // Brewery
+    { name: 'Southerleigh Fine Food & Brewery', bestOf: ['#1 Best Brewery'] },
+  ],
 };
 
 const htmlPath = path.join(__dirname, '..', 'index.html');
