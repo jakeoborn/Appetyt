@@ -24,7 +24,11 @@
       "Bash(sort -t'|' -k1 -n)",
       "Bash(git fetch *)",
       "Bash(git cherry-pick *)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(git push *)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f'Count: {len\\(d\\)}'\\); [print\\(f'  - {r[\\\\\"name\\\\\"]} \\({r.get\\(\\\\\"neighborhood\\\\\",\\\\\"?\\\\\"\\)}\\)'\\) for r in d]\")",
+      "Bash(python -c ' *)",
+      "Bash(python *)"
     ]
   },
   "enableAllProjectMcpServers": true,
