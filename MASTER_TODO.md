@@ -112,7 +112,7 @@ _Last updated: 2026-04-30. Update this file at the end of every session._
 
 ---
 
-## Recently Shipped — Wave 1-5 Data Refresh (2026-04-30)
+## Recently Shipped — Wave 1-6 Data Refresh (2026-04-30)
 
 - **Wave 1**: Cleared `coming-soon` indicator on 5 entries (5049, 12548, 11613, 9508, 1853). Commit `00c97a5`.
 - **Pages deploy fix**: Removed 13 stray `.claude/worktrees/*` gitlinks from index, added pattern to `.gitignore`. GitHub Actions Pages build now green; reels page serves TikTok again.
@@ -120,6 +120,8 @@ _Last updated: 2026-04-30. Update this file at the end of every session._
 - **Wave 3**: Refreshed Fond (id 76, Dallas) — corrected hours (closed Sat-Sun, was previously listing weekend hours), updated dishes (Brussel Crowe pizza, Smoked Salmon Niçoise, Chicky Parm, French-ish ham/salami sandwich, House Breads), rewrote description naming chefs Jennie Kelley + Brandon Moore and Better Half Bistro origin.
 - **Wave 4**: Tagged 18 existing records with `OpenTable Top 100 Brunch 2026` award (Cesarina, Mister A's, Dalida, Foreign Cinema, Daisies, Duck Duck Goat, Mon Ami Gabi, Esther's Kitchen, Cafe Luxembourg, Gallaghers, The Odeon, Cafe Pacific, Hudson House, Le Jardinier, Maximo, Perla's, Perry's, Suerte). Scripts: `scripts/wave4-brunch-match.py` (city-aware matcher), `scripts/wave4-tag.py` (id+address disambiguating tagger).
 - **Wave 5** (commit `06691af`): Inserted 27 new verified OpenTable Top 100 Brunch 2026 entries across PHX, SD, AUSTIN, SANANTONIO, CHICAGO, LV, SF, NYC. Tagged 4 more existing records (Cafe Monarch 3208, Al Biernat's 23, Zuni Cafe 5078, Mila 4086). Fixed Copper Common (id 11048): walk-in → Resy with reserveUrl. New ids: 3520-3521, 5700-5701, 6086, 15539-15560. Scripts: `scripts/wave5-brunch.py`, `scripts/wave5-fix-dup-ids.py` (renumbered 15 collisions onto fresh ids ≥15546). Deferred: Motek NYC, Ammatolí Long Beach, 4 Atlanta, 2 Long Island NY.
+- **Ospi Dallas indicator** (commit `a324d25`): cleared `new-opening` from id 555 (Oak Lawn) — restaurant fully open.
+- **Wave 6** (commit `520d0f5`): Inserted 35 user-listed venues — 25 NYC (ids 15561-15585): Marcel, Lord's, Cafe Luluc, Hen House, Commerce Inn, Bubby's Tribeca, Cocina Consuelo, Golden Hof, Faicco's, Milano Market UES + Westside, Di Palo's, Pisillo FiDi + Midtown, Agata & Valentina + GF, Avra Madison + 48th + Rockefeller + 33rd&9th, 2nd Ave Deli Midtown + UES, Shelsky's, GO Catering, Fermento. + 2 Miami (15586-15587): Vecinos Miami Beach, True Loaf Bakery. + 8 Austin (15588-15595): Wholy Bagel x2, Nervous Charlie's x2, Rosen's Bagel Co x2, David Doughie's, Rockstar Bagels. **Skipped (need user clarification):** Boia De/Mandolin/Walrus/Surf Club/Fooqs/Gramps/Lung Yai/Joe's Stone Crab/Makoto/Corteza (Miami-only or no NYC venue), "Salt Cure"→Salt+Charcoal mismatch, "Montagus Gusto"→Felice Montague mismatch, DiSO's (food truck no fixed addr), Bubby's High Line (closed), Lighthouse Miami (unverifiable). Scripts: `scripts/wave6-{insert,a-nyc-backlog,b-nyc-newlist,c-miami-austin}.{py,json}`.
 
 ## Recently Shipped — Plursky / Vibestar (2026-04-30)
 
