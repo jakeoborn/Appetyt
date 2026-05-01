@@ -36,6 +36,7 @@ const cities = [
   { name: 'Miami', short: 'Miami', slug: 'miami', state: 'FL', data: parseArray('const MIAMI_DATA') },
   { name: 'Charlotte', short: 'Charlotte', slug: 'charlotte', state: 'NC', data: parseArray('const CHARLOTTE_DATA') },
   { name: 'San Francisco', short: 'San Francisco', slug: 'san-francisco', state: 'CA', data: parseArray('const SF_DATA') },
+  { name: 'San Antonio', short: 'San Antonio', slug: 'san-antonio', state: 'TX', data: parseArray('const SANANTONIO_DATA') },
 ];
 
 // Categories that match high-volume Google searches
