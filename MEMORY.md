@@ -1,6 +1,8 @@
 # Dim Hour — Project Memory
 
-_Last updated: 2026-04-27. Update this file at the end of every session._
+_Last updated: 2026-04-30. Update this file at the end of every session._
+
+> Source-of-truth task list lives in `MASTER_TODO.md` — read it first.
 
 ---
 
@@ -79,6 +81,9 @@ _Last updated: 2026-04-27. Update this file at the end of every session._
 - Match `VAR\s*=\s*\[` not bare `VAR` when appending cards (48 DALLAS_DATA refs, only 2 are real declarations)
 - Use `'utf8'` encoding — never `'binary'` (mangles ñ, ü, °, em-dash)
 - After adding a neighborhood, rebuild `canonical-neighborhoods.json`: `node scripts/build-canonical-neighborhoods.js`
+- **Duplicate IDs across cities** — confirmed during Wave 4: id 5006 = Suerte (Austin) AND Foreign Cinema (SF), id 5019 = Salt Lick AND Dalida, id 236 = Harvest at the Masonic AND Duck Duck Goat, id 5124 = Perla's AND Marlowe. ID is NOT unique across the dataset. For mass updates that target by id, ALWAYS disambiguate with address (or city array context). Future cleanup ticket lives in MASTER_TODO under Data Quality.
+- **Award field convention** — `awards` is a single string; multiple awards joined with ` · ` (middle dot, U+00B7). Examples in dataset: "Michelin Bib Gourmand · James Beard America's Classics".
+- **Pages deploy gotcha** — committing `.claude/worktrees/*` as gitlinks (mode 160000) without a `.gitmodules` breaks the GitHub Pages workflow checkout. Pattern is now in `.gitignore`. If Pages goes red again with "fatal: No url found for submodule path", check `git ls-files -s | grep ^160000`.
 
 **Deploy**
 - GitHub Pages only — no Netlify. Backend → Supabase.

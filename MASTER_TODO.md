@@ -1,6 +1,6 @@
 # Dim Hour — Master To-Do List
 
-_Last updated: 2026-04-29. Update this file at the end of every session._
+_Last updated: 2026-04-30. Update this file at the end of every session._
 
 ---
 
@@ -35,6 +35,8 @@ _Last updated: 2026-04-29. Update this file at the end of every session._
   - Cedar Park · Dripping Springs · Westlake · Lake Travis · Driftwood · UT Campus · Great Hills
 
 ### Data Quality
+- [ ] **Duplicate IDs across cities** — Discovered during Wave 4 OpenTable Brunch tagging: id 5006 = Suerte (Austin) AND Foreign Cinema (SF); id 5019 = Salt Lick BBQ AND Dalida; id 236 = Harvest at the Masonic AND Duck Duck Goat; id 5124 = Perla's AND Marlowe. Likely many more — IDs collide across city data arrays. Audit + reassign from a max-id base per city. Tagging script (`scripts/wave4-tag.py`) used (id + address) match to disambiguate; future mass updates need same defense or unique-id reassignment first.
+- [ ] **OpenTable Top 100 Brunch 2026 — 39 missing entries** — Wave 4 matched/tagged 18 existing; remaining 39 are not in our supported-city data and need full-record adds. Source list mirrored on restaurantnews.com 2026 announcement. Top of queue (per priority cuisine fit / city volume): Atlanta (Blue Ridge Grill, Poor Calvin's, Rumi's Kitchen, The Chastain — Atlanta isn't yet a supported city, so adding these would seed a new market), NYC missing (Carmine's, Little Owl, Motek, RH Rooftop NY, Tavern on the Green, Tony's Di Napoli, Lips, Del Vino Vineyards Northport, The Northport Hotel), Chicago missing (3 Arts Club Cafe / RH Chicago, Cafe Ba-Ba-Reeba, Le Colonial, Mott Street, North Pond, Obelix, Robert's Pizza), SF missing (Elena's, Hilda & Jesse, Little Original Joe's, Zuni Cafe, The Village Pub Woodside), SD missing (insideOUT, The Henry Coronado, The Pony Room), Phoenix (Cafe Monarch, Rusconi's, thea Mediterranean), LA (AMMATOLI), Miami (MILA), LV (Eiffel Tower, Ocean Prime), Austin (Aba, Josephine House), Dallas (Al Biernat's), San Antonio (Chama Gaucha). Source data: `scripts/wave4-matches.json` (`not_found` array).
 - [ ] **Empty dishes** — Austin 106, SLC 85, LV 112 entries with no dishes. Pull from live menus
 - [ ] **agent-browser Pass A** — retry ~85 "dead site" cards that WebFetch returned empty on. Agent-browser executes real JS and recovers ~25%. Target: `project_audit_trouble_cases.md` queue + any "skipped" cards from prior city sessions
 - [ ] **agent-browser Pass B** — backfill empty `photoUrl` across all cities. SF has 24 known empties (IDs 5050-5073). Run Norman's quality gate; skip rather than lower the bar
@@ -109,6 +111,14 @@ _Last updated: 2026-04-29. Update this file at the end of every session._
 - [ ] **UI design review** — run `design-an-interface` skill on target surface (Discover tab card grid + filter pills, or Trips dossier, or compact-row card) to get 3-5 alternate visual directions vs current Linear/Vercel caliber bar
 
 ---
+
+## Recently Shipped — Wave 1-4 Data Refresh (2026-04-30)
+
+- **Wave 1**: Cleared `coming-soon` indicator on 5 entries (5049, 12548, 11613, 9508, 1853). Commit `00c97a5`.
+- **Pages deploy fix**: Removed 13 stray `.claude/worktrees/*` gitlinks from index, added pattern to `.gitignore`. GitHub Actions Pages build now green; reels page serves TikTok again.
+- **Wave 2**: Inserted 13 new restaurant entries — 8 Dallas/DFW + 5 NYC Brooklyn Bagel & Coffee Co. locations (Greenwich Village, Chelsea, Astoria-Ditmars, Astoria-Broadway, Astoria-30th Ave). All addresses, phones, hours, and lat/lng verified via OSM Nominatim or official sources. Commit `1caf019`.
+- **Wave 3**: Refreshed Fond (id 76, Dallas) — corrected hours (closed Sat-Sun, was previously listing weekend hours), updated dishes (Brussel Crowe pizza, Smoked Salmon Niçoise, Chicky Parm, French-ish ham/salami sandwich, House Breads), rewrote description naming chefs Jennie Kelley + Brandon Moore and Better Half Bistro origin.
+- **Wave 4**: Tagged 18 existing records with `OpenTable Top 100 Brunch 2026` award (Cesarina, Mister A's, Dalida, Foreign Cinema, Daisies, Duck Duck Goat, Mon Ami Gabi, Esther's Kitchen, Cafe Luxembourg, Gallaghers, The Odeon, Cafe Pacific, Hudson House, Le Jardinier, Maximo, Perla's, Perry's, Suerte). Scripts: `scripts/wave4-brunch-match.py` (city-aware matcher), `scripts/wave4-tag.py` (id+address disambiguating tagger). 39 missing entries deferred — see Data Quality section above.
 
 ## Recently Shipped — Plursky / Vibestar (2026-04-30)
 
