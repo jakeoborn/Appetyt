@@ -1,6 +1,6 @@
 # Dim Hour — Master To-Do List
 
-_Last updated: 2026-04-30. Update this file at the end of every session._
+_Last updated: 2026-04-30 (post-reservation-audit). Update this file at the end of every session._
 
 ---
 
@@ -35,6 +35,8 @@ _Last updated: 2026-04-30. Update this file at the end of every session._
   - Cedar Park · Dripping Springs · Westlake · Lake Travis · Driftwood · UT Campus · Great Hills
 
 ### Data Quality
+- [ ] **Blue Sushi Sake Grill Uptown (id 9230) — identify reservation platform.** Has venue reservations URL but `reservation` field is empty. Flagged by reservation audit on 2026-04-30 (`scripts/reservation-audit.json` → `res_set_url_empty` bucket). Resolve by visiting the URL, identifying platform, and updating the field.
+- [ ] **Re-run `scripts/reservation-audit.py` after every wave of inserts.** Catches walk-in→Resy mismatches (Copper Common class), wrong-platform link bugs, and Toast-takeout-URLs-as-reservation bugs. See `feedback_reservation_audit.md` for the three bug classes + tourist-attraction false positives.
 - [ ] **Duplicate IDs across cities** — Discovered during Wave 4 OpenTable Brunch tagging: id 5006 = Suerte (Austin) AND Foreign Cinema (SF); id 5019 = Salt Lick BBQ AND Dalida; id 236 = Harvest at the Masonic AND Duck Duck Goat; id 5124 = Perla's AND Marlowe. Likely many more — IDs collide across city data arrays. Audit + reassign from a max-id base per city. Tagging script (`scripts/wave4-tag.py`) used (id + address) match to disambiguate; future mass updates need same defense or unique-id reassignment first.
 - [ ] **OpenTable Top 100 Brunch 2026 — deferred entries** — Wave 5 added 27 new entries + tagged 4 existing (Cafe Monarch 3208, Al Biernat's 23, Zuni Cafe 5078, Mila Restaurant 4086). Still deferred: Motek NYC (no verified address), Ammatolí (Long Beach, not LA proper), 4 Atlanta entries (city not supported — would seed new market: Blue Ridge Grill, Poor Calvin's, Rumi's Kitchen, The Chastain), 2 Long Island NY (Del Vino Vineyards Northport, The Northport Hotel — outside NYC scope). Source data: `scripts/wave4-matches.json` (`not_found` array).
 - [ ] **Empty dishes** — Austin 106, SLC 85, LV 112 entries with no dishes. Pull from live menus
