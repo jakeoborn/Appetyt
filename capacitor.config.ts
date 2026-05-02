@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'app.dimhour.ios',
+  appId: 'com.dimhour.app',
   appName: 'Dim Hour',
   webDir: 'dist',
 

@@ -5,7 +5,7 @@ Restaurant discovery app for iOS and web. Helps users find the best restaurants 
 ## Tech Stack
 
 - **Frontend**: Vanilla HTML/CSS/JavaScript (single-page app in `index.html`)
-- **Mobile**: Capacitor v6 for iOS (app ID: `app.appetyt.ios`)
+- **Mobile**: Capacitor v6 for iOS (app ID: `com.dimhour.app`)
 - **AI**: Anthropic Claude API for restaurant concierge chatbot ([concierge.js](concierge.js))
 - **Hosting**: Static site at appetyt.app (GitHub Pages via [CNAME](CNAME))
 - **CI/CD**: GitHub Actions ([.github/workflows/ios-build.yml](.github/workflows/ios-build.yml)) + CodeMagic ([codemagic.yaml](codemagic.yaml))

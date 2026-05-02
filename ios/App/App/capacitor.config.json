@@ -1,5 +1,5 @@
 {
-	"appId": "app.dimhour.ios",
+	"appId": "com.dimhour.app",
 	"appName": "Dim Hour",
 	"webDir": "dist",
 	"server": {
@@ -34,12 +34,13 @@
 		"contentInset": "automatic",
 		"backgroundColor": "#0a0d14",
 		"preferredContentMode": "mobile",
-		"scheme": "Dim Hour",
+		"scheme": "DimHour",
 		"associatedDomains": [
 			"applinks:dimhour.com"
 		]
 	},
 	"packageClassList": [
+		"SignInWithApple",
 		"AppPlugin",
 		"HapticsPlugin",
 		"KeyboardPlugin",
