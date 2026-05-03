@@ -1,0 +1,86 @@
+RECOVERY SNIPPET — Apple Sign In native iOS flow
+=================================================
+Created: 2026-05-01
+Purpose: Backup of the signInWithApple() function in index.html that adds
+         Capacitor native iOS detection. Held back from commit f034a9d
+         because another tab was concurrently editing index.html (cards
+         rewrite port). If OneDrive sync clobbers this code from
+         index.html, paste this snippet back into the A object near where
+         signInWithGoogle() lives.
+
+Current location (post-cards-rewrite): index.html:42035-42070
+Function key: A.signInWithApple
+
+Pre-reqs already shipped in commit f034a9d:
+  - @capacitor-community/apple-sign-in@6.0.0 in package.json
+  - npx cap sync ios already run (plugin in iOS Capacitor bridge)
+  - ios/App/App/App.entitlements has com.apple.developer.applesignin
+  - capacitor.config.ts appId = com.dimhour.app
+
+----- BEGIN SNIPPET -----
+  async signInWithApple(){
+    const sb = getSB();
+    if(!sb){ this.showToast('Sign-in unavailable -- try again later'); return; }
+    try{
+      // Native iOS: use Capacitor plugin so Apple's system sheet appears (no webview redirect)
+      if (window.Capacitor && window.Capacitor.isNativePlatform()) {
+        const SignInWithApple = window.Capacitor.Plugins.SignInWithApple;
+        if (SignInWithApple) {
+          const result = await SignInWithApple.authorize({
+            clientId: 'com.dimhour.app',
+            redirectURI: 'https://nsmwgokjjnpwwvearwxf.supabase.co/auth/v1/callback',
+            scopes: 'email name'
+          });
+          const idToken = result && result.response && result.response.identityToken;
+          if (!idToken) throw new Error('No identity token from Apple');
+          const {error: idErr} = await sb.auth.signInWithIdToken({
+            provider: 'apple',
+            token: idToken
+          });
+          if (idErr) throw idErr;
+          return;
+        }
+      }
+      // Web fallback: redirect-based OAuth
+      const {data, error} = await sb.auth.signInWithOAuth({
+        provider: 'apple',
+        options: { redirectTo: 'https://dimhour.com' }
+      });
+      if(error){ console.error('[Apple OAuth]', error); throw error; }
+    } catch(e){
+      console.error('[Apple OAuth]', e);
+      const errEl = document.getElementById('auth-err');
+      errEl.textContent = 'Apple sign-in failed: ' + (e.message||'Try email instead');
+      errEl.style.display = 'block';
+    }
+  },
+----- END SNIPPET -----
+
+PRE-OVERWRITE VERSION (web-only, what the function used to be):
+This is what the function looks like BEFORE the native flow was added.
+If you see this version in HEAD/main, the native code was clobbered and
+needs the snippet above re-applied.
+
+  async signInWithApple(){
+    const sb = getSB();
+    if(!sb){ this.showToast('Sign-in unavailable -- try again later'); return; }
+    try{
+      const {data, error} = await sb.auth.signInWithOAuth({
+        provider: 'apple',
+        options: { redirectTo: 'https://dimhour.com' }
+      });
+      if(error){ console.error('[Apple OAuth]', error); throw error; }
+    } catch(e){
+      console.error('[Apple OAuth]', e);
+      const errEl = document.getElementById('auth-err');
+      errEl.textContent = 'Apple sign-in failed: ' + (e.message||'Try email instead');
+      errEl.style.display = 'block';
+    }
+  },
+
+VERIFICATION COMMAND:
+  grep -n "isNativePlatform\|SignInWithApple" index.html
+Expected result: at least 4 matches inside the signInWithApple function
+(the if guard, the plugin lookup, the authorize call). If only the unrelated
+StatusBar/PushNotifications matches at lines ~52400-52500 appear, the
+native code is missing — paste the snippet above back in.
